@@ -21,11 +21,11 @@ module.exports = {
     });
 
     /*
-    if one want to place css files elsewhere push additional instance of MiniCssExtractPlugin
-    with desired file location
-    * Note: files will only be generated during production build
+      if one want to place css files elsewhere push additional instance of MiniCssExtractPlugin
+      with desired file location
+      * Note: files will only be generated during production build
 
-    config.plugins.push(new MiniCssExtractPlugin({ filename: '../static/styles/[name].css' }));
+      config.plugins.push(new MiniCssExtractPlugin({ filename: '../static/styles/[name].css' }));
     */
     config.plugins.push(new MiniCssExtractPlugin({ filename: '[name].css' }));
 
