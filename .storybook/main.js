@@ -1,21 +1,18 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials', 'storybook-readme'],
   webpackFinal: async (config, { configType }) => {
-    // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
-    // You can change the configuration based on that.
-    // 'PRODUCTION' is used when building the static version of storybook.
-
-    // Make whatever fine-grained changes you need
     config.module.rules.push({
       test: /\.scss$/,
-      use: ['style-loader', 'css-loader', 'sass-loader'],
-      include: path.resolve(__dirname, '../'),
+      loaders: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      include: path.resolve(__dirname, '../scss'),
     });
 
-    // Return the altered config
+    config.plugins.push(new MiniCssExtractPlugin({ filename: '[name].css' }));
+
     return config;
   },
 };
