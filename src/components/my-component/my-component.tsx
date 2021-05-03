@@ -7,19 +7,8 @@ import { format } from '../../utils/utils';
   shadow: true,
 })
 export class MyComponent {
-  /**
-   * The first name
-   */
   @Prop() first: string;
-
-  /**
-   * The middle name
-   */
   @Prop() middle: string;
-
-  /**
-   * The last name
-   */
   @Prop() last: string;
 
   private getText(): string {
@@ -27,6 +16,6 @@ export class MyComponent {
   }
 
   render() {
-    return <div class="hello">Hello, You! I'm {this.getText()}</div>;
+    return <div class="hello">Hello, Another! I'm {this.getText()}</div>;
   }
 }

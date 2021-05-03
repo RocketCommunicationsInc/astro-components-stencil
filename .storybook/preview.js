@@ -1,5 +1,6 @@
 import { configure, addParameters, addDecorator } from '@storybook/web-components';
 import { addReadme } from 'storybook-readme/html';
+
 import styles from '../scss/base.scss';
 
 addDecorator(addReadme);

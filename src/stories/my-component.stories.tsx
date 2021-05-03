@@ -22,7 +22,7 @@ export const Default = ({ first, middle, last }) => {
 };
 
 Default.args = {
-  first: 'Millie',
+  first: 'Default',
   middle: 'Bobby',
-  last: 'Brown',
+  last: 'Julie',
 };
