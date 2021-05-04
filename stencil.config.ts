@@ -3,7 +3,7 @@ import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'astro-web-components',
-  buildEs5: true,
+  globalStyle: 'src/global/global.css',
   outputTargets: [
     {
       type: 'dist',
