@@ -21,7 +21,7 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "storybook": "start-storybook -p 6006 -s ./dist",
-    "build-storybook": "build-storybook -c .storybook -s static",
+    "build-storybook": "build-storybook -c .storybook -s ./dist",
     "astro": "npm-run-all --parallel start storybook"
   },
   "dependencies": {
