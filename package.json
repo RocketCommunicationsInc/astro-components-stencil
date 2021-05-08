@@ -22,7 +22,8 @@
     "generate": "stencil generate",
     "storybook": "start-storybook -p 6006 -s ./dist",
     "build-storybook": "build-storybook -c .storybook -s ./dist",
-    "astro": "npm-run-all --parallel start storybook"
+    "astro": "npm-run-all --parallel start storybook",
+    "generate:icons": "node ./src/utils/generate-icons.js"
   },
   "dependencies": {
     "@stencil/core": "^2.0.1",
