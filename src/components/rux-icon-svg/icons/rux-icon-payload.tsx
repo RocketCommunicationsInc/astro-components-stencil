@@ -1,0 +1,20 @@
+import { Component, Prop, h } from '@stencil/core';
+import svgIcon from '../../../icons/payload.svg';
+
+/** @internal **/
+@Component({
+  tag: 'rux-icon-payload',
+  shadow: false,
+})
+export class RuxIconPayload {
+  @Prop() size: string;
+  @Prop() viewBox: string;
+
+  render() {
+    return (
+      <svg class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+        <use xlinkHref={`${svgIcon}#payload`}></use>
+      </svg>
+    );
+  }
+}

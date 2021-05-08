@@ -27,6 +27,1053 @@ export namespace Components {
         "appname": string;
         "version": string;
     }
+    interface RuxIcon {
+        /**
+          * The icon name
+         */
+        "name": string;
+        /**
+          * The icon size
+         */
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAcUnit {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAccessibility {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAccessibilityNew {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAdb {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAirlineSeatFlatAngled {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAirlineSeatIndividualSuite {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAirlineSeatLegroomExtra {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAirlineSeatReclineExtra {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAirportShuttle {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAlarm {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAllInclusive {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAllOut {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAltitude {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAntenna {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAntennaOff {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAntennaReceive {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAntennaTransmit {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAssessment {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAssignmentLate {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAssignmentReturned {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAttachMoney {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconAttachment {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBarChart {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBeachAccess {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBluetoothAudio {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBookmark {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBorderAll {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBorderClear {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBorderHorizontal {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBorderInner {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBorderLeft {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBorderOuter {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBorderRight {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBorderStyle {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBorderVertical {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBubbleChart {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconBusinessCenter {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCached {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCake {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCasino {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCast {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCastConnected {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCheckBox {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCheckBoxOutlineBlank {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconChildCare {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconChildFriendly {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconChromeReaderMode {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCloud {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCloudCircle {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCloudDone {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCloudDownload {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCloudOff {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCloudQueue {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCloudUpload {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconComputer {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconConfirmationNumber {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconCreateNewFolder {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconDateRange {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconDeviceHub {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconDeviceUnknown {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconDevicesOther {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconDiscFull {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconDomain {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconDone {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconDriveEta {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconEquipment {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconEventAvailable {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconEventBusy {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFavoriteBorder {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFingerprint {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFitnessCenter {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFlipToBack {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFolder {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFolderOpen {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFolderShared {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFolderSpecial {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatAlignCenter {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatAlignJustify {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatAlignLeft {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatAlignRight {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatColorReset {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatColorText {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatIndentDecrease {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatIndentIncrease {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatItalic {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatLineSpacing {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatListBulleted {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatListNumbered {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatListNumberedRtl {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatQuote {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatStrikethrough {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatTextdirectionLToR {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatTextdirectionRToL {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFormatUnderlined {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFreeBreakfast {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconFunctions {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconGamepad {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconGavel {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconGolfCourse {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconGroup {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconGroupAdd {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconGroupWork {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconHelp {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconHelpOutline {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconHighlight {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconHighlightOff {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconHistory {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconHotTub {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconIndeterminateCheckBox {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconInsertChart {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconInsertChartOutlined {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconInsertDriveFile {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconInsertEmoticon {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconInsertPhoto {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconKeyboardArrowDown {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconKeyboardArrowLeft {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconKeyboardArrowRight {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconKeyboardBackspace {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconKeyboardCapslock {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconKeyboardHide {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconKeyboardReturn {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconKeyboardTab {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconKeyboardVoice {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconKitchen {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconLaptop {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconLaptopMac {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconLaptopWindows {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconLinearScale {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconLiveTv {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconLocationCity {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconLoyalty {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconMeetingRoom {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconMemory {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconMergeType {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconMission {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconMms {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconModeComment {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconMonetizationOn {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconMoneyOff {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconMood {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconMoodBad {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconMore {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconMotorcycle {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconMouse {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconNetcom {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconNetworkLocked {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconNoEncryption {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconNoMeetingRoom {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconNotes {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconNotifications {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconNotificationsActive {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconNotificationsNone {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconNotificationsOff {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconNotificationsPaused {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconOfflinePin {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconOndemandVideo {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconOpenInNew {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconOpenWith {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPages {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPartyMode {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPayload {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPeopleOutline {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPermPhoneMsg {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPerson {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPersonAdd {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPersonOutline {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPersonalVideo {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPets {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPhoneBluetoothSpeaker {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPhoneCallback {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPhoneForwarded {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPhoneInTalk {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPhoneIphone {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPhoneLocked {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPhoneMissed {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPieChart {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPlusOne {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPoll {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPool {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPower {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPowerOff {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPrint {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPriorityHigh {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconProcessor {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconProcessorAlt {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPropulsionPower {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPublic {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconPublish {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconQuestionAnswer {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconRadioButtonChecked {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconRadioButtonUnchecked {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconRoomService {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconRouter {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconRvHookup {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSatelliteOff {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSatelliteReceive {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSatelliteTransmit {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconScanner {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconScatterPlot {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSchool {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSeat {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSecurity {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSentimentDissatisfied {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSentimentSatisfied {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSentimentVeryDissatisfied {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSentimentVerySatisfied {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSettingsApplications {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSettingsInputComponent {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSettingsPower {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconShare {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconShoppingBasket {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconShowChart {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSmokeFree {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSmokingRooms {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSms {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSmsFailed {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSolar {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSpa {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSpaceBar {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSpeaker {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSpeakerGroup {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconStar {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconStarBorder {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconStarHalf {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconStarRate {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconStrikethroughS {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSync {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSyncDisabled {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconSystemUpdate {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconTableChart {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconTablet {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconTabletAndroid {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconTabletMac {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconTapAndPlay {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconTextFields {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconTextRotationNone {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconThermal {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconThumbDownAlt {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconThumbUpAlt {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconTimeToLeave {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconTitle {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconToggleOff {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconToggleOn {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconTurnedInNot {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconTv {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconTvOff {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconVerticalAlignCenter {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconVerticalAlignTop {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconVideogameAsset {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconViewColumn {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconViewWeek {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconVoiceChat {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconVoiceOverOff {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconWatch {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconWc {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconWhatshot {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconWifi {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconWrapText {
+        "size": string;
+        "viewBox": string;
+    }
+    interface RuxIconZoomOut {
+        "size": string;
+        "viewBox": string;
+    }
 }
 declare global {
     interface HTMLRuxButtonElement extends Components.RuxButton, HTMLStencilElement {
@@ -47,10 +1094,1830 @@ declare global {
         prototype: HTMLRuxGlobalStatusBarElement;
         new (): HTMLRuxGlobalStatusBarElement;
     };
+    interface HTMLRuxIconElement extends Components.RuxIcon, HTMLStencilElement {
+    }
+    var HTMLRuxIconElement: {
+        prototype: HTMLRuxIconElement;
+        new (): HTMLRuxIconElement;
+    };
+    interface HTMLRuxIconAcUnitElement extends Components.RuxIconAcUnit, HTMLStencilElement {
+    }
+    var HTMLRuxIconAcUnitElement: {
+        prototype: HTMLRuxIconAcUnitElement;
+        new (): HTMLRuxIconAcUnitElement;
+    };
+    interface HTMLRuxIconAccessibilityElement extends Components.RuxIconAccessibility, HTMLStencilElement {
+    }
+    var HTMLRuxIconAccessibilityElement: {
+        prototype: HTMLRuxIconAccessibilityElement;
+        new (): HTMLRuxIconAccessibilityElement;
+    };
+    interface HTMLRuxIconAccessibilityNewElement extends Components.RuxIconAccessibilityNew, HTMLStencilElement {
+    }
+    var HTMLRuxIconAccessibilityNewElement: {
+        prototype: HTMLRuxIconAccessibilityNewElement;
+        new (): HTMLRuxIconAccessibilityNewElement;
+    };
+    interface HTMLRuxIconAdbElement extends Components.RuxIconAdb, HTMLStencilElement {
+    }
+    var HTMLRuxIconAdbElement: {
+        prototype: HTMLRuxIconAdbElement;
+        new (): HTMLRuxIconAdbElement;
+    };
+    interface HTMLRuxIconAirlineSeatFlatAngledElement extends Components.RuxIconAirlineSeatFlatAngled, HTMLStencilElement {
+    }
+    var HTMLRuxIconAirlineSeatFlatAngledElement: {
+        prototype: HTMLRuxIconAirlineSeatFlatAngledElement;
+        new (): HTMLRuxIconAirlineSeatFlatAngledElement;
+    };
+    interface HTMLRuxIconAirlineSeatIndividualSuiteElement extends Components.RuxIconAirlineSeatIndividualSuite, HTMLStencilElement {
+    }
+    var HTMLRuxIconAirlineSeatIndividualSuiteElement: {
+        prototype: HTMLRuxIconAirlineSeatIndividualSuiteElement;
+        new (): HTMLRuxIconAirlineSeatIndividualSuiteElement;
+    };
+    interface HTMLRuxIconAirlineSeatLegroomExtraElement extends Components.RuxIconAirlineSeatLegroomExtra, HTMLStencilElement {
+    }
+    var HTMLRuxIconAirlineSeatLegroomExtraElement: {
+        prototype: HTMLRuxIconAirlineSeatLegroomExtraElement;
+        new (): HTMLRuxIconAirlineSeatLegroomExtraElement;
+    };
+    interface HTMLRuxIconAirlineSeatReclineExtraElement extends Components.RuxIconAirlineSeatReclineExtra, HTMLStencilElement {
+    }
+    var HTMLRuxIconAirlineSeatReclineExtraElement: {
+        prototype: HTMLRuxIconAirlineSeatReclineExtraElement;
+        new (): HTMLRuxIconAirlineSeatReclineExtraElement;
+    };
+    interface HTMLRuxIconAirportShuttleElement extends Components.RuxIconAirportShuttle, HTMLStencilElement {
+    }
+    var HTMLRuxIconAirportShuttleElement: {
+        prototype: HTMLRuxIconAirportShuttleElement;
+        new (): HTMLRuxIconAirportShuttleElement;
+    };
+    interface HTMLRuxIconAlarmElement extends Components.RuxIconAlarm, HTMLStencilElement {
+    }
+    var HTMLRuxIconAlarmElement: {
+        prototype: HTMLRuxIconAlarmElement;
+        new (): HTMLRuxIconAlarmElement;
+    };
+    interface HTMLRuxIconAllInclusiveElement extends Components.RuxIconAllInclusive, HTMLStencilElement {
+    }
+    var HTMLRuxIconAllInclusiveElement: {
+        prototype: HTMLRuxIconAllInclusiveElement;
+        new (): HTMLRuxIconAllInclusiveElement;
+    };
+    interface HTMLRuxIconAllOutElement extends Components.RuxIconAllOut, HTMLStencilElement {
+    }
+    var HTMLRuxIconAllOutElement: {
+        prototype: HTMLRuxIconAllOutElement;
+        new (): HTMLRuxIconAllOutElement;
+    };
+    interface HTMLRuxIconAltitudeElement extends Components.RuxIconAltitude, HTMLStencilElement {
+    }
+    var HTMLRuxIconAltitudeElement: {
+        prototype: HTMLRuxIconAltitudeElement;
+        new (): HTMLRuxIconAltitudeElement;
+    };
+    interface HTMLRuxIconAntennaElement extends Components.RuxIconAntenna, HTMLStencilElement {
+    }
+    var HTMLRuxIconAntennaElement: {
+        prototype: HTMLRuxIconAntennaElement;
+        new (): HTMLRuxIconAntennaElement;
+    };
+    interface HTMLRuxIconAntennaOffElement extends Components.RuxIconAntennaOff, HTMLStencilElement {
+    }
+    var HTMLRuxIconAntennaOffElement: {
+        prototype: HTMLRuxIconAntennaOffElement;
+        new (): HTMLRuxIconAntennaOffElement;
+    };
+    interface HTMLRuxIconAntennaReceiveElement extends Components.RuxIconAntennaReceive, HTMLStencilElement {
+    }
+    var HTMLRuxIconAntennaReceiveElement: {
+        prototype: HTMLRuxIconAntennaReceiveElement;
+        new (): HTMLRuxIconAntennaReceiveElement;
+    };
+    interface HTMLRuxIconAntennaTransmitElement extends Components.RuxIconAntennaTransmit, HTMLStencilElement {
+    }
+    var HTMLRuxIconAntennaTransmitElement: {
+        prototype: HTMLRuxIconAntennaTransmitElement;
+        new (): HTMLRuxIconAntennaTransmitElement;
+    };
+    interface HTMLRuxIconAssessmentElement extends Components.RuxIconAssessment, HTMLStencilElement {
+    }
+    var HTMLRuxIconAssessmentElement: {
+        prototype: HTMLRuxIconAssessmentElement;
+        new (): HTMLRuxIconAssessmentElement;
+    };
+    interface HTMLRuxIconAssignmentLateElement extends Components.RuxIconAssignmentLate, HTMLStencilElement {
+    }
+    var HTMLRuxIconAssignmentLateElement: {
+        prototype: HTMLRuxIconAssignmentLateElement;
+        new (): HTMLRuxIconAssignmentLateElement;
+    };
+    interface HTMLRuxIconAssignmentReturnedElement extends Components.RuxIconAssignmentReturned, HTMLStencilElement {
+    }
+    var HTMLRuxIconAssignmentReturnedElement: {
+        prototype: HTMLRuxIconAssignmentReturnedElement;
+        new (): HTMLRuxIconAssignmentReturnedElement;
+    };
+    interface HTMLRuxIconAttachMoneyElement extends Components.RuxIconAttachMoney, HTMLStencilElement {
+    }
+    var HTMLRuxIconAttachMoneyElement: {
+        prototype: HTMLRuxIconAttachMoneyElement;
+        new (): HTMLRuxIconAttachMoneyElement;
+    };
+    interface HTMLRuxIconAttachmentElement extends Components.RuxIconAttachment, HTMLStencilElement {
+    }
+    var HTMLRuxIconAttachmentElement: {
+        prototype: HTMLRuxIconAttachmentElement;
+        new (): HTMLRuxIconAttachmentElement;
+    };
+    interface HTMLRuxIconBarChartElement extends Components.RuxIconBarChart, HTMLStencilElement {
+    }
+    var HTMLRuxIconBarChartElement: {
+        prototype: HTMLRuxIconBarChartElement;
+        new (): HTMLRuxIconBarChartElement;
+    };
+    interface HTMLRuxIconBeachAccessElement extends Components.RuxIconBeachAccess, HTMLStencilElement {
+    }
+    var HTMLRuxIconBeachAccessElement: {
+        prototype: HTMLRuxIconBeachAccessElement;
+        new (): HTMLRuxIconBeachAccessElement;
+    };
+    interface HTMLRuxIconBluetoothAudioElement extends Components.RuxIconBluetoothAudio, HTMLStencilElement {
+    }
+    var HTMLRuxIconBluetoothAudioElement: {
+        prototype: HTMLRuxIconBluetoothAudioElement;
+        new (): HTMLRuxIconBluetoothAudioElement;
+    };
+    interface HTMLRuxIconBookmarkElement extends Components.RuxIconBookmark, HTMLStencilElement {
+    }
+    var HTMLRuxIconBookmarkElement: {
+        prototype: HTMLRuxIconBookmarkElement;
+        new (): HTMLRuxIconBookmarkElement;
+    };
+    interface HTMLRuxIconBorderAllElement extends Components.RuxIconBorderAll, HTMLStencilElement {
+    }
+    var HTMLRuxIconBorderAllElement: {
+        prototype: HTMLRuxIconBorderAllElement;
+        new (): HTMLRuxIconBorderAllElement;
+    };
+    interface HTMLRuxIconBorderClearElement extends Components.RuxIconBorderClear, HTMLStencilElement {
+    }
+    var HTMLRuxIconBorderClearElement: {
+        prototype: HTMLRuxIconBorderClearElement;
+        new (): HTMLRuxIconBorderClearElement;
+    };
+    interface HTMLRuxIconBorderHorizontalElement extends Components.RuxIconBorderHorizontal, HTMLStencilElement {
+    }
+    var HTMLRuxIconBorderHorizontalElement: {
+        prototype: HTMLRuxIconBorderHorizontalElement;
+        new (): HTMLRuxIconBorderHorizontalElement;
+    };
+    interface HTMLRuxIconBorderInnerElement extends Components.RuxIconBorderInner, HTMLStencilElement {
+    }
+    var HTMLRuxIconBorderInnerElement: {
+        prototype: HTMLRuxIconBorderInnerElement;
+        new (): HTMLRuxIconBorderInnerElement;
+    };
+    interface HTMLRuxIconBorderLeftElement extends Components.RuxIconBorderLeft, HTMLStencilElement {
+    }
+    var HTMLRuxIconBorderLeftElement: {
+        prototype: HTMLRuxIconBorderLeftElement;
+        new (): HTMLRuxIconBorderLeftElement;
+    };
+    interface HTMLRuxIconBorderOuterElement extends Components.RuxIconBorderOuter, HTMLStencilElement {
+    }
+    var HTMLRuxIconBorderOuterElement: {
+        prototype: HTMLRuxIconBorderOuterElement;
+        new (): HTMLRuxIconBorderOuterElement;
+    };
+    interface HTMLRuxIconBorderRightElement extends Components.RuxIconBorderRight, HTMLStencilElement {
+    }
+    var HTMLRuxIconBorderRightElement: {
+        prototype: HTMLRuxIconBorderRightElement;
+        new (): HTMLRuxIconBorderRightElement;
+    };
+    interface HTMLRuxIconBorderStyleElement extends Components.RuxIconBorderStyle, HTMLStencilElement {
+    }
+    var HTMLRuxIconBorderStyleElement: {
+        prototype: HTMLRuxIconBorderStyleElement;
+        new (): HTMLRuxIconBorderStyleElement;
+    };
+    interface HTMLRuxIconBorderVerticalElement extends Components.RuxIconBorderVertical, HTMLStencilElement {
+    }
+    var HTMLRuxIconBorderVerticalElement: {
+        prototype: HTMLRuxIconBorderVerticalElement;
+        new (): HTMLRuxIconBorderVerticalElement;
+    };
+    interface HTMLRuxIconBubbleChartElement extends Components.RuxIconBubbleChart, HTMLStencilElement {
+    }
+    var HTMLRuxIconBubbleChartElement: {
+        prototype: HTMLRuxIconBubbleChartElement;
+        new (): HTMLRuxIconBubbleChartElement;
+    };
+    interface HTMLRuxIconBusinessCenterElement extends Components.RuxIconBusinessCenter, HTMLStencilElement {
+    }
+    var HTMLRuxIconBusinessCenterElement: {
+        prototype: HTMLRuxIconBusinessCenterElement;
+        new (): HTMLRuxIconBusinessCenterElement;
+    };
+    interface HTMLRuxIconCachedElement extends Components.RuxIconCached, HTMLStencilElement {
+    }
+    var HTMLRuxIconCachedElement: {
+        prototype: HTMLRuxIconCachedElement;
+        new (): HTMLRuxIconCachedElement;
+    };
+    interface HTMLRuxIconCakeElement extends Components.RuxIconCake, HTMLStencilElement {
+    }
+    var HTMLRuxIconCakeElement: {
+        prototype: HTMLRuxIconCakeElement;
+        new (): HTMLRuxIconCakeElement;
+    };
+    interface HTMLRuxIconCasinoElement extends Components.RuxIconCasino, HTMLStencilElement {
+    }
+    var HTMLRuxIconCasinoElement: {
+        prototype: HTMLRuxIconCasinoElement;
+        new (): HTMLRuxIconCasinoElement;
+    };
+    interface HTMLRuxIconCastElement extends Components.RuxIconCast, HTMLStencilElement {
+    }
+    var HTMLRuxIconCastElement: {
+        prototype: HTMLRuxIconCastElement;
+        new (): HTMLRuxIconCastElement;
+    };
+    interface HTMLRuxIconCastConnectedElement extends Components.RuxIconCastConnected, HTMLStencilElement {
+    }
+    var HTMLRuxIconCastConnectedElement: {
+        prototype: HTMLRuxIconCastConnectedElement;
+        new (): HTMLRuxIconCastConnectedElement;
+    };
+    interface HTMLRuxIconCheckBoxElement extends Components.RuxIconCheckBox, HTMLStencilElement {
+    }
+    var HTMLRuxIconCheckBoxElement: {
+        prototype: HTMLRuxIconCheckBoxElement;
+        new (): HTMLRuxIconCheckBoxElement;
+    };
+    interface HTMLRuxIconCheckBoxOutlineBlankElement extends Components.RuxIconCheckBoxOutlineBlank, HTMLStencilElement {
+    }
+    var HTMLRuxIconCheckBoxOutlineBlankElement: {
+        prototype: HTMLRuxIconCheckBoxOutlineBlankElement;
+        new (): HTMLRuxIconCheckBoxOutlineBlankElement;
+    };
+    interface HTMLRuxIconChildCareElement extends Components.RuxIconChildCare, HTMLStencilElement {
+    }
+    var HTMLRuxIconChildCareElement: {
+        prototype: HTMLRuxIconChildCareElement;
+        new (): HTMLRuxIconChildCareElement;
+    };
+    interface HTMLRuxIconChildFriendlyElement extends Components.RuxIconChildFriendly, HTMLStencilElement {
+    }
+    var HTMLRuxIconChildFriendlyElement: {
+        prototype: HTMLRuxIconChildFriendlyElement;
+        new (): HTMLRuxIconChildFriendlyElement;
+    };
+    interface HTMLRuxIconChromeReaderModeElement extends Components.RuxIconChromeReaderMode, HTMLStencilElement {
+    }
+    var HTMLRuxIconChromeReaderModeElement: {
+        prototype: HTMLRuxIconChromeReaderModeElement;
+        new (): HTMLRuxIconChromeReaderModeElement;
+    };
+    interface HTMLRuxIconCloudElement extends Components.RuxIconCloud, HTMLStencilElement {
+    }
+    var HTMLRuxIconCloudElement: {
+        prototype: HTMLRuxIconCloudElement;
+        new (): HTMLRuxIconCloudElement;
+    };
+    interface HTMLRuxIconCloudCircleElement extends Components.RuxIconCloudCircle, HTMLStencilElement {
+    }
+    var HTMLRuxIconCloudCircleElement: {
+        prototype: HTMLRuxIconCloudCircleElement;
+        new (): HTMLRuxIconCloudCircleElement;
+    };
+    interface HTMLRuxIconCloudDoneElement extends Components.RuxIconCloudDone, HTMLStencilElement {
+    }
+    var HTMLRuxIconCloudDoneElement: {
+        prototype: HTMLRuxIconCloudDoneElement;
+        new (): HTMLRuxIconCloudDoneElement;
+    };
+    interface HTMLRuxIconCloudDownloadElement extends Components.RuxIconCloudDownload, HTMLStencilElement {
+    }
+    var HTMLRuxIconCloudDownloadElement: {
+        prototype: HTMLRuxIconCloudDownloadElement;
+        new (): HTMLRuxIconCloudDownloadElement;
+    };
+    interface HTMLRuxIconCloudOffElement extends Components.RuxIconCloudOff, HTMLStencilElement {
+    }
+    var HTMLRuxIconCloudOffElement: {
+        prototype: HTMLRuxIconCloudOffElement;
+        new (): HTMLRuxIconCloudOffElement;
+    };
+    interface HTMLRuxIconCloudQueueElement extends Components.RuxIconCloudQueue, HTMLStencilElement {
+    }
+    var HTMLRuxIconCloudQueueElement: {
+        prototype: HTMLRuxIconCloudQueueElement;
+        new (): HTMLRuxIconCloudQueueElement;
+    };
+    interface HTMLRuxIconCloudUploadElement extends Components.RuxIconCloudUpload, HTMLStencilElement {
+    }
+    var HTMLRuxIconCloudUploadElement: {
+        prototype: HTMLRuxIconCloudUploadElement;
+        new (): HTMLRuxIconCloudUploadElement;
+    };
+    interface HTMLRuxIconComputerElement extends Components.RuxIconComputer, HTMLStencilElement {
+    }
+    var HTMLRuxIconComputerElement: {
+        prototype: HTMLRuxIconComputerElement;
+        new (): HTMLRuxIconComputerElement;
+    };
+    interface HTMLRuxIconConfirmationNumberElement extends Components.RuxIconConfirmationNumber, HTMLStencilElement {
+    }
+    var HTMLRuxIconConfirmationNumberElement: {
+        prototype: HTMLRuxIconConfirmationNumberElement;
+        new (): HTMLRuxIconConfirmationNumberElement;
+    };
+    interface HTMLRuxIconCreateNewFolderElement extends Components.RuxIconCreateNewFolder, HTMLStencilElement {
+    }
+    var HTMLRuxIconCreateNewFolderElement: {
+        prototype: HTMLRuxIconCreateNewFolderElement;
+        new (): HTMLRuxIconCreateNewFolderElement;
+    };
+    interface HTMLRuxIconDateRangeElement extends Components.RuxIconDateRange, HTMLStencilElement {
+    }
+    var HTMLRuxIconDateRangeElement: {
+        prototype: HTMLRuxIconDateRangeElement;
+        new (): HTMLRuxIconDateRangeElement;
+    };
+    interface HTMLRuxIconDeviceHubElement extends Components.RuxIconDeviceHub, HTMLStencilElement {
+    }
+    var HTMLRuxIconDeviceHubElement: {
+        prototype: HTMLRuxIconDeviceHubElement;
+        new (): HTMLRuxIconDeviceHubElement;
+    };
+    interface HTMLRuxIconDeviceUnknownElement extends Components.RuxIconDeviceUnknown, HTMLStencilElement {
+    }
+    var HTMLRuxIconDeviceUnknownElement: {
+        prototype: HTMLRuxIconDeviceUnknownElement;
+        new (): HTMLRuxIconDeviceUnknownElement;
+    };
+    interface HTMLRuxIconDevicesOtherElement extends Components.RuxIconDevicesOther, HTMLStencilElement {
+    }
+    var HTMLRuxIconDevicesOtherElement: {
+        prototype: HTMLRuxIconDevicesOtherElement;
+        new (): HTMLRuxIconDevicesOtherElement;
+    };
+    interface HTMLRuxIconDiscFullElement extends Components.RuxIconDiscFull, HTMLStencilElement {
+    }
+    var HTMLRuxIconDiscFullElement: {
+        prototype: HTMLRuxIconDiscFullElement;
+        new (): HTMLRuxIconDiscFullElement;
+    };
+    interface HTMLRuxIconDomainElement extends Components.RuxIconDomain, HTMLStencilElement {
+    }
+    var HTMLRuxIconDomainElement: {
+        prototype: HTMLRuxIconDomainElement;
+        new (): HTMLRuxIconDomainElement;
+    };
+    interface HTMLRuxIconDoneElement extends Components.RuxIconDone, HTMLStencilElement {
+    }
+    var HTMLRuxIconDoneElement: {
+        prototype: HTMLRuxIconDoneElement;
+        new (): HTMLRuxIconDoneElement;
+    };
+    interface HTMLRuxIconDriveEtaElement extends Components.RuxIconDriveEta, HTMLStencilElement {
+    }
+    var HTMLRuxIconDriveEtaElement: {
+        prototype: HTMLRuxIconDriveEtaElement;
+        new (): HTMLRuxIconDriveEtaElement;
+    };
+    interface HTMLRuxIconEquipmentElement extends Components.RuxIconEquipment, HTMLStencilElement {
+    }
+    var HTMLRuxIconEquipmentElement: {
+        prototype: HTMLRuxIconEquipmentElement;
+        new (): HTMLRuxIconEquipmentElement;
+    };
+    interface HTMLRuxIconEventAvailableElement extends Components.RuxIconEventAvailable, HTMLStencilElement {
+    }
+    var HTMLRuxIconEventAvailableElement: {
+        prototype: HTMLRuxIconEventAvailableElement;
+        new (): HTMLRuxIconEventAvailableElement;
+    };
+    interface HTMLRuxIconEventBusyElement extends Components.RuxIconEventBusy, HTMLStencilElement {
+    }
+    var HTMLRuxIconEventBusyElement: {
+        prototype: HTMLRuxIconEventBusyElement;
+        new (): HTMLRuxIconEventBusyElement;
+    };
+    interface HTMLRuxIconFavoriteBorderElement extends Components.RuxIconFavoriteBorder, HTMLStencilElement {
+    }
+    var HTMLRuxIconFavoriteBorderElement: {
+        prototype: HTMLRuxIconFavoriteBorderElement;
+        new (): HTMLRuxIconFavoriteBorderElement;
+    };
+    interface HTMLRuxIconFingerprintElement extends Components.RuxIconFingerprint, HTMLStencilElement {
+    }
+    var HTMLRuxIconFingerprintElement: {
+        prototype: HTMLRuxIconFingerprintElement;
+        new (): HTMLRuxIconFingerprintElement;
+    };
+    interface HTMLRuxIconFitnessCenterElement extends Components.RuxIconFitnessCenter, HTMLStencilElement {
+    }
+    var HTMLRuxIconFitnessCenterElement: {
+        prototype: HTMLRuxIconFitnessCenterElement;
+        new (): HTMLRuxIconFitnessCenterElement;
+    };
+    interface HTMLRuxIconFlipToBackElement extends Components.RuxIconFlipToBack, HTMLStencilElement {
+    }
+    var HTMLRuxIconFlipToBackElement: {
+        prototype: HTMLRuxIconFlipToBackElement;
+        new (): HTMLRuxIconFlipToBackElement;
+    };
+    interface HTMLRuxIconFolderElement extends Components.RuxIconFolder, HTMLStencilElement {
+    }
+    var HTMLRuxIconFolderElement: {
+        prototype: HTMLRuxIconFolderElement;
+        new (): HTMLRuxIconFolderElement;
+    };
+    interface HTMLRuxIconFolderOpenElement extends Components.RuxIconFolderOpen, HTMLStencilElement {
+    }
+    var HTMLRuxIconFolderOpenElement: {
+        prototype: HTMLRuxIconFolderOpenElement;
+        new (): HTMLRuxIconFolderOpenElement;
+    };
+    interface HTMLRuxIconFolderSharedElement extends Components.RuxIconFolderShared, HTMLStencilElement {
+    }
+    var HTMLRuxIconFolderSharedElement: {
+        prototype: HTMLRuxIconFolderSharedElement;
+        new (): HTMLRuxIconFolderSharedElement;
+    };
+    interface HTMLRuxIconFolderSpecialElement extends Components.RuxIconFolderSpecial, HTMLStencilElement {
+    }
+    var HTMLRuxIconFolderSpecialElement: {
+        prototype: HTMLRuxIconFolderSpecialElement;
+        new (): HTMLRuxIconFolderSpecialElement;
+    };
+    interface HTMLRuxIconFormatAlignCenterElement extends Components.RuxIconFormatAlignCenter, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatAlignCenterElement: {
+        prototype: HTMLRuxIconFormatAlignCenterElement;
+        new (): HTMLRuxIconFormatAlignCenterElement;
+    };
+    interface HTMLRuxIconFormatAlignJustifyElement extends Components.RuxIconFormatAlignJustify, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatAlignJustifyElement: {
+        prototype: HTMLRuxIconFormatAlignJustifyElement;
+        new (): HTMLRuxIconFormatAlignJustifyElement;
+    };
+    interface HTMLRuxIconFormatAlignLeftElement extends Components.RuxIconFormatAlignLeft, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatAlignLeftElement: {
+        prototype: HTMLRuxIconFormatAlignLeftElement;
+        new (): HTMLRuxIconFormatAlignLeftElement;
+    };
+    interface HTMLRuxIconFormatAlignRightElement extends Components.RuxIconFormatAlignRight, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatAlignRightElement: {
+        prototype: HTMLRuxIconFormatAlignRightElement;
+        new (): HTMLRuxIconFormatAlignRightElement;
+    };
+    interface HTMLRuxIconFormatColorResetElement extends Components.RuxIconFormatColorReset, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatColorResetElement: {
+        prototype: HTMLRuxIconFormatColorResetElement;
+        new (): HTMLRuxIconFormatColorResetElement;
+    };
+    interface HTMLRuxIconFormatColorTextElement extends Components.RuxIconFormatColorText, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatColorTextElement: {
+        prototype: HTMLRuxIconFormatColorTextElement;
+        new (): HTMLRuxIconFormatColorTextElement;
+    };
+    interface HTMLRuxIconFormatIndentDecreaseElement extends Components.RuxIconFormatIndentDecrease, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatIndentDecreaseElement: {
+        prototype: HTMLRuxIconFormatIndentDecreaseElement;
+        new (): HTMLRuxIconFormatIndentDecreaseElement;
+    };
+    interface HTMLRuxIconFormatIndentIncreaseElement extends Components.RuxIconFormatIndentIncrease, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatIndentIncreaseElement: {
+        prototype: HTMLRuxIconFormatIndentIncreaseElement;
+        new (): HTMLRuxIconFormatIndentIncreaseElement;
+    };
+    interface HTMLRuxIconFormatItalicElement extends Components.RuxIconFormatItalic, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatItalicElement: {
+        prototype: HTMLRuxIconFormatItalicElement;
+        new (): HTMLRuxIconFormatItalicElement;
+    };
+    interface HTMLRuxIconFormatLineSpacingElement extends Components.RuxIconFormatLineSpacing, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatLineSpacingElement: {
+        prototype: HTMLRuxIconFormatLineSpacingElement;
+        new (): HTMLRuxIconFormatLineSpacingElement;
+    };
+    interface HTMLRuxIconFormatListBulletedElement extends Components.RuxIconFormatListBulleted, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatListBulletedElement: {
+        prototype: HTMLRuxIconFormatListBulletedElement;
+        new (): HTMLRuxIconFormatListBulletedElement;
+    };
+    interface HTMLRuxIconFormatListNumberedElement extends Components.RuxIconFormatListNumbered, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatListNumberedElement: {
+        prototype: HTMLRuxIconFormatListNumberedElement;
+        new (): HTMLRuxIconFormatListNumberedElement;
+    };
+    interface HTMLRuxIconFormatListNumberedRtlElement extends Components.RuxIconFormatListNumberedRtl, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatListNumberedRtlElement: {
+        prototype: HTMLRuxIconFormatListNumberedRtlElement;
+        new (): HTMLRuxIconFormatListNumberedRtlElement;
+    };
+    interface HTMLRuxIconFormatQuoteElement extends Components.RuxIconFormatQuote, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatQuoteElement: {
+        prototype: HTMLRuxIconFormatQuoteElement;
+        new (): HTMLRuxIconFormatQuoteElement;
+    };
+    interface HTMLRuxIconFormatStrikethroughElement extends Components.RuxIconFormatStrikethrough, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatStrikethroughElement: {
+        prototype: HTMLRuxIconFormatStrikethroughElement;
+        new (): HTMLRuxIconFormatStrikethroughElement;
+    };
+    interface HTMLRuxIconFormatTextdirectionLToRElement extends Components.RuxIconFormatTextdirectionLToR, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatTextdirectionLToRElement: {
+        prototype: HTMLRuxIconFormatTextdirectionLToRElement;
+        new (): HTMLRuxIconFormatTextdirectionLToRElement;
+    };
+    interface HTMLRuxIconFormatTextdirectionRToLElement extends Components.RuxIconFormatTextdirectionRToL, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatTextdirectionRToLElement: {
+        prototype: HTMLRuxIconFormatTextdirectionRToLElement;
+        new (): HTMLRuxIconFormatTextdirectionRToLElement;
+    };
+    interface HTMLRuxIconFormatUnderlinedElement extends Components.RuxIconFormatUnderlined, HTMLStencilElement {
+    }
+    var HTMLRuxIconFormatUnderlinedElement: {
+        prototype: HTMLRuxIconFormatUnderlinedElement;
+        new (): HTMLRuxIconFormatUnderlinedElement;
+    };
+    interface HTMLRuxIconFreeBreakfastElement extends Components.RuxIconFreeBreakfast, HTMLStencilElement {
+    }
+    var HTMLRuxIconFreeBreakfastElement: {
+        prototype: HTMLRuxIconFreeBreakfastElement;
+        new (): HTMLRuxIconFreeBreakfastElement;
+    };
+    interface HTMLRuxIconFunctionsElement extends Components.RuxIconFunctions, HTMLStencilElement {
+    }
+    var HTMLRuxIconFunctionsElement: {
+        prototype: HTMLRuxIconFunctionsElement;
+        new (): HTMLRuxIconFunctionsElement;
+    };
+    interface HTMLRuxIconGamepadElement extends Components.RuxIconGamepad, HTMLStencilElement {
+    }
+    var HTMLRuxIconGamepadElement: {
+        prototype: HTMLRuxIconGamepadElement;
+        new (): HTMLRuxIconGamepadElement;
+    };
+    interface HTMLRuxIconGavelElement extends Components.RuxIconGavel, HTMLStencilElement {
+    }
+    var HTMLRuxIconGavelElement: {
+        prototype: HTMLRuxIconGavelElement;
+        new (): HTMLRuxIconGavelElement;
+    };
+    interface HTMLRuxIconGolfCourseElement extends Components.RuxIconGolfCourse, HTMLStencilElement {
+    }
+    var HTMLRuxIconGolfCourseElement: {
+        prototype: HTMLRuxIconGolfCourseElement;
+        new (): HTMLRuxIconGolfCourseElement;
+    };
+    interface HTMLRuxIconGroupElement extends Components.RuxIconGroup, HTMLStencilElement {
+    }
+    var HTMLRuxIconGroupElement: {
+        prototype: HTMLRuxIconGroupElement;
+        new (): HTMLRuxIconGroupElement;
+    };
+    interface HTMLRuxIconGroupAddElement extends Components.RuxIconGroupAdd, HTMLStencilElement {
+    }
+    var HTMLRuxIconGroupAddElement: {
+        prototype: HTMLRuxIconGroupAddElement;
+        new (): HTMLRuxIconGroupAddElement;
+    };
+    interface HTMLRuxIconGroupWorkElement extends Components.RuxIconGroupWork, HTMLStencilElement {
+    }
+    var HTMLRuxIconGroupWorkElement: {
+        prototype: HTMLRuxIconGroupWorkElement;
+        new (): HTMLRuxIconGroupWorkElement;
+    };
+    interface HTMLRuxIconHelpElement extends Components.RuxIconHelp, HTMLStencilElement {
+    }
+    var HTMLRuxIconHelpElement: {
+        prototype: HTMLRuxIconHelpElement;
+        new (): HTMLRuxIconHelpElement;
+    };
+    interface HTMLRuxIconHelpOutlineElement extends Components.RuxIconHelpOutline, HTMLStencilElement {
+    }
+    var HTMLRuxIconHelpOutlineElement: {
+        prototype: HTMLRuxIconHelpOutlineElement;
+        new (): HTMLRuxIconHelpOutlineElement;
+    };
+    interface HTMLRuxIconHighlightElement extends Components.RuxIconHighlight, HTMLStencilElement {
+    }
+    var HTMLRuxIconHighlightElement: {
+        prototype: HTMLRuxIconHighlightElement;
+        new (): HTMLRuxIconHighlightElement;
+    };
+    interface HTMLRuxIconHighlightOffElement extends Components.RuxIconHighlightOff, HTMLStencilElement {
+    }
+    var HTMLRuxIconHighlightOffElement: {
+        prototype: HTMLRuxIconHighlightOffElement;
+        new (): HTMLRuxIconHighlightOffElement;
+    };
+    interface HTMLRuxIconHistoryElement extends Components.RuxIconHistory, HTMLStencilElement {
+    }
+    var HTMLRuxIconHistoryElement: {
+        prototype: HTMLRuxIconHistoryElement;
+        new (): HTMLRuxIconHistoryElement;
+    };
+    interface HTMLRuxIconHotTubElement extends Components.RuxIconHotTub, HTMLStencilElement {
+    }
+    var HTMLRuxIconHotTubElement: {
+        prototype: HTMLRuxIconHotTubElement;
+        new (): HTMLRuxIconHotTubElement;
+    };
+    interface HTMLRuxIconIndeterminateCheckBoxElement extends Components.RuxIconIndeterminateCheckBox, HTMLStencilElement {
+    }
+    var HTMLRuxIconIndeterminateCheckBoxElement: {
+        prototype: HTMLRuxIconIndeterminateCheckBoxElement;
+        new (): HTMLRuxIconIndeterminateCheckBoxElement;
+    };
+    interface HTMLRuxIconInsertChartElement extends Components.RuxIconInsertChart, HTMLStencilElement {
+    }
+    var HTMLRuxIconInsertChartElement: {
+        prototype: HTMLRuxIconInsertChartElement;
+        new (): HTMLRuxIconInsertChartElement;
+    };
+    interface HTMLRuxIconInsertChartOutlinedElement extends Components.RuxIconInsertChartOutlined, HTMLStencilElement {
+    }
+    var HTMLRuxIconInsertChartOutlinedElement: {
+        prototype: HTMLRuxIconInsertChartOutlinedElement;
+        new (): HTMLRuxIconInsertChartOutlinedElement;
+    };
+    interface HTMLRuxIconInsertDriveFileElement extends Components.RuxIconInsertDriveFile, HTMLStencilElement {
+    }
+    var HTMLRuxIconInsertDriveFileElement: {
+        prototype: HTMLRuxIconInsertDriveFileElement;
+        new (): HTMLRuxIconInsertDriveFileElement;
+    };
+    interface HTMLRuxIconInsertEmoticonElement extends Components.RuxIconInsertEmoticon, HTMLStencilElement {
+    }
+    var HTMLRuxIconInsertEmoticonElement: {
+        prototype: HTMLRuxIconInsertEmoticonElement;
+        new (): HTMLRuxIconInsertEmoticonElement;
+    };
+    interface HTMLRuxIconInsertPhotoElement extends Components.RuxIconInsertPhoto, HTMLStencilElement {
+    }
+    var HTMLRuxIconInsertPhotoElement: {
+        prototype: HTMLRuxIconInsertPhotoElement;
+        new (): HTMLRuxIconInsertPhotoElement;
+    };
+    interface HTMLRuxIconKeyboardArrowDownElement extends Components.RuxIconKeyboardArrowDown, HTMLStencilElement {
+    }
+    var HTMLRuxIconKeyboardArrowDownElement: {
+        prototype: HTMLRuxIconKeyboardArrowDownElement;
+        new (): HTMLRuxIconKeyboardArrowDownElement;
+    };
+    interface HTMLRuxIconKeyboardArrowLeftElement extends Components.RuxIconKeyboardArrowLeft, HTMLStencilElement {
+    }
+    var HTMLRuxIconKeyboardArrowLeftElement: {
+        prototype: HTMLRuxIconKeyboardArrowLeftElement;
+        new (): HTMLRuxIconKeyboardArrowLeftElement;
+    };
+    interface HTMLRuxIconKeyboardArrowRightElement extends Components.RuxIconKeyboardArrowRight, HTMLStencilElement {
+    }
+    var HTMLRuxIconKeyboardArrowRightElement: {
+        prototype: HTMLRuxIconKeyboardArrowRightElement;
+        new (): HTMLRuxIconKeyboardArrowRightElement;
+    };
+    interface HTMLRuxIconKeyboardBackspaceElement extends Components.RuxIconKeyboardBackspace, HTMLStencilElement {
+    }
+    var HTMLRuxIconKeyboardBackspaceElement: {
+        prototype: HTMLRuxIconKeyboardBackspaceElement;
+        new (): HTMLRuxIconKeyboardBackspaceElement;
+    };
+    interface HTMLRuxIconKeyboardCapslockElement extends Components.RuxIconKeyboardCapslock, HTMLStencilElement {
+    }
+    var HTMLRuxIconKeyboardCapslockElement: {
+        prototype: HTMLRuxIconKeyboardCapslockElement;
+        new (): HTMLRuxIconKeyboardCapslockElement;
+    };
+    interface HTMLRuxIconKeyboardHideElement extends Components.RuxIconKeyboardHide, HTMLStencilElement {
+    }
+    var HTMLRuxIconKeyboardHideElement: {
+        prototype: HTMLRuxIconKeyboardHideElement;
+        new (): HTMLRuxIconKeyboardHideElement;
+    };
+    interface HTMLRuxIconKeyboardReturnElement extends Components.RuxIconKeyboardReturn, HTMLStencilElement {
+    }
+    var HTMLRuxIconKeyboardReturnElement: {
+        prototype: HTMLRuxIconKeyboardReturnElement;
+        new (): HTMLRuxIconKeyboardReturnElement;
+    };
+    interface HTMLRuxIconKeyboardTabElement extends Components.RuxIconKeyboardTab, HTMLStencilElement {
+    }
+    var HTMLRuxIconKeyboardTabElement: {
+        prototype: HTMLRuxIconKeyboardTabElement;
+        new (): HTMLRuxIconKeyboardTabElement;
+    };
+    interface HTMLRuxIconKeyboardVoiceElement extends Components.RuxIconKeyboardVoice, HTMLStencilElement {
+    }
+    var HTMLRuxIconKeyboardVoiceElement: {
+        prototype: HTMLRuxIconKeyboardVoiceElement;
+        new (): HTMLRuxIconKeyboardVoiceElement;
+    };
+    interface HTMLRuxIconKitchenElement extends Components.RuxIconKitchen, HTMLStencilElement {
+    }
+    var HTMLRuxIconKitchenElement: {
+        prototype: HTMLRuxIconKitchenElement;
+        new (): HTMLRuxIconKitchenElement;
+    };
+    interface HTMLRuxIconLaptopElement extends Components.RuxIconLaptop, HTMLStencilElement {
+    }
+    var HTMLRuxIconLaptopElement: {
+        prototype: HTMLRuxIconLaptopElement;
+        new (): HTMLRuxIconLaptopElement;
+    };
+    interface HTMLRuxIconLaptopMacElement extends Components.RuxIconLaptopMac, HTMLStencilElement {
+    }
+    var HTMLRuxIconLaptopMacElement: {
+        prototype: HTMLRuxIconLaptopMacElement;
+        new (): HTMLRuxIconLaptopMacElement;
+    };
+    interface HTMLRuxIconLaptopWindowsElement extends Components.RuxIconLaptopWindows, HTMLStencilElement {
+    }
+    var HTMLRuxIconLaptopWindowsElement: {
+        prototype: HTMLRuxIconLaptopWindowsElement;
+        new (): HTMLRuxIconLaptopWindowsElement;
+    };
+    interface HTMLRuxIconLinearScaleElement extends Components.RuxIconLinearScale, HTMLStencilElement {
+    }
+    var HTMLRuxIconLinearScaleElement: {
+        prototype: HTMLRuxIconLinearScaleElement;
+        new (): HTMLRuxIconLinearScaleElement;
+    };
+    interface HTMLRuxIconLiveTvElement extends Components.RuxIconLiveTv, HTMLStencilElement {
+    }
+    var HTMLRuxIconLiveTvElement: {
+        prototype: HTMLRuxIconLiveTvElement;
+        new (): HTMLRuxIconLiveTvElement;
+    };
+    interface HTMLRuxIconLocationCityElement extends Components.RuxIconLocationCity, HTMLStencilElement {
+    }
+    var HTMLRuxIconLocationCityElement: {
+        prototype: HTMLRuxIconLocationCityElement;
+        new (): HTMLRuxIconLocationCityElement;
+    };
+    interface HTMLRuxIconLoyaltyElement extends Components.RuxIconLoyalty, HTMLStencilElement {
+    }
+    var HTMLRuxIconLoyaltyElement: {
+        prototype: HTMLRuxIconLoyaltyElement;
+        new (): HTMLRuxIconLoyaltyElement;
+    };
+    interface HTMLRuxIconMeetingRoomElement extends Components.RuxIconMeetingRoom, HTMLStencilElement {
+    }
+    var HTMLRuxIconMeetingRoomElement: {
+        prototype: HTMLRuxIconMeetingRoomElement;
+        new (): HTMLRuxIconMeetingRoomElement;
+    };
+    interface HTMLRuxIconMemoryElement extends Components.RuxIconMemory, HTMLStencilElement {
+    }
+    var HTMLRuxIconMemoryElement: {
+        prototype: HTMLRuxIconMemoryElement;
+        new (): HTMLRuxIconMemoryElement;
+    };
+    interface HTMLRuxIconMergeTypeElement extends Components.RuxIconMergeType, HTMLStencilElement {
+    }
+    var HTMLRuxIconMergeTypeElement: {
+        prototype: HTMLRuxIconMergeTypeElement;
+        new (): HTMLRuxIconMergeTypeElement;
+    };
+    interface HTMLRuxIconMissionElement extends Components.RuxIconMission, HTMLStencilElement {
+    }
+    var HTMLRuxIconMissionElement: {
+        prototype: HTMLRuxIconMissionElement;
+        new (): HTMLRuxIconMissionElement;
+    };
+    interface HTMLRuxIconMmsElement extends Components.RuxIconMms, HTMLStencilElement {
+    }
+    var HTMLRuxIconMmsElement: {
+        prototype: HTMLRuxIconMmsElement;
+        new (): HTMLRuxIconMmsElement;
+    };
+    interface HTMLRuxIconModeCommentElement extends Components.RuxIconModeComment, HTMLStencilElement {
+    }
+    var HTMLRuxIconModeCommentElement: {
+        prototype: HTMLRuxIconModeCommentElement;
+        new (): HTMLRuxIconModeCommentElement;
+    };
+    interface HTMLRuxIconMonetizationOnElement extends Components.RuxIconMonetizationOn, HTMLStencilElement {
+    }
+    var HTMLRuxIconMonetizationOnElement: {
+        prototype: HTMLRuxIconMonetizationOnElement;
+        new (): HTMLRuxIconMonetizationOnElement;
+    };
+    interface HTMLRuxIconMoneyOffElement extends Components.RuxIconMoneyOff, HTMLStencilElement {
+    }
+    var HTMLRuxIconMoneyOffElement: {
+        prototype: HTMLRuxIconMoneyOffElement;
+        new (): HTMLRuxIconMoneyOffElement;
+    };
+    interface HTMLRuxIconMoodElement extends Components.RuxIconMood, HTMLStencilElement {
+    }
+    var HTMLRuxIconMoodElement: {
+        prototype: HTMLRuxIconMoodElement;
+        new (): HTMLRuxIconMoodElement;
+    };
+    interface HTMLRuxIconMoodBadElement extends Components.RuxIconMoodBad, HTMLStencilElement {
+    }
+    var HTMLRuxIconMoodBadElement: {
+        prototype: HTMLRuxIconMoodBadElement;
+        new (): HTMLRuxIconMoodBadElement;
+    };
+    interface HTMLRuxIconMoreElement extends Components.RuxIconMore, HTMLStencilElement {
+    }
+    var HTMLRuxIconMoreElement: {
+        prototype: HTMLRuxIconMoreElement;
+        new (): HTMLRuxIconMoreElement;
+    };
+    interface HTMLRuxIconMotorcycleElement extends Components.RuxIconMotorcycle, HTMLStencilElement {
+    }
+    var HTMLRuxIconMotorcycleElement: {
+        prototype: HTMLRuxIconMotorcycleElement;
+        new (): HTMLRuxIconMotorcycleElement;
+    };
+    interface HTMLRuxIconMouseElement extends Components.RuxIconMouse, HTMLStencilElement {
+    }
+    var HTMLRuxIconMouseElement: {
+        prototype: HTMLRuxIconMouseElement;
+        new (): HTMLRuxIconMouseElement;
+    };
+    interface HTMLRuxIconNetcomElement extends Components.RuxIconNetcom, HTMLStencilElement {
+    }
+    var HTMLRuxIconNetcomElement: {
+        prototype: HTMLRuxIconNetcomElement;
+        new (): HTMLRuxIconNetcomElement;
+    };
+    interface HTMLRuxIconNetworkLockedElement extends Components.RuxIconNetworkLocked, HTMLStencilElement {
+    }
+    var HTMLRuxIconNetworkLockedElement: {
+        prototype: HTMLRuxIconNetworkLockedElement;
+        new (): HTMLRuxIconNetworkLockedElement;
+    };
+    interface HTMLRuxIconNoEncryptionElement extends Components.RuxIconNoEncryption, HTMLStencilElement {
+    }
+    var HTMLRuxIconNoEncryptionElement: {
+        prototype: HTMLRuxIconNoEncryptionElement;
+        new (): HTMLRuxIconNoEncryptionElement;
+    };
+    interface HTMLRuxIconNoMeetingRoomElement extends Components.RuxIconNoMeetingRoom, HTMLStencilElement {
+    }
+    var HTMLRuxIconNoMeetingRoomElement: {
+        prototype: HTMLRuxIconNoMeetingRoomElement;
+        new (): HTMLRuxIconNoMeetingRoomElement;
+    };
+    interface HTMLRuxIconNotesElement extends Components.RuxIconNotes, HTMLStencilElement {
+    }
+    var HTMLRuxIconNotesElement: {
+        prototype: HTMLRuxIconNotesElement;
+        new (): HTMLRuxIconNotesElement;
+    };
+    interface HTMLRuxIconNotificationsElement extends Components.RuxIconNotifications, HTMLStencilElement {
+    }
+    var HTMLRuxIconNotificationsElement: {
+        prototype: HTMLRuxIconNotificationsElement;
+        new (): HTMLRuxIconNotificationsElement;
+    };
+    interface HTMLRuxIconNotificationsActiveElement extends Components.RuxIconNotificationsActive, HTMLStencilElement {
+    }
+    var HTMLRuxIconNotificationsActiveElement: {
+        prototype: HTMLRuxIconNotificationsActiveElement;
+        new (): HTMLRuxIconNotificationsActiveElement;
+    };
+    interface HTMLRuxIconNotificationsNoneElement extends Components.RuxIconNotificationsNone, HTMLStencilElement {
+    }
+    var HTMLRuxIconNotificationsNoneElement: {
+        prototype: HTMLRuxIconNotificationsNoneElement;
+        new (): HTMLRuxIconNotificationsNoneElement;
+    };
+    interface HTMLRuxIconNotificationsOffElement extends Components.RuxIconNotificationsOff, HTMLStencilElement {
+    }
+    var HTMLRuxIconNotificationsOffElement: {
+        prototype: HTMLRuxIconNotificationsOffElement;
+        new (): HTMLRuxIconNotificationsOffElement;
+    };
+    interface HTMLRuxIconNotificationsPausedElement extends Components.RuxIconNotificationsPaused, HTMLStencilElement {
+    }
+    var HTMLRuxIconNotificationsPausedElement: {
+        prototype: HTMLRuxIconNotificationsPausedElement;
+        new (): HTMLRuxIconNotificationsPausedElement;
+    };
+    interface HTMLRuxIconOfflinePinElement extends Components.RuxIconOfflinePin, HTMLStencilElement {
+    }
+    var HTMLRuxIconOfflinePinElement: {
+        prototype: HTMLRuxIconOfflinePinElement;
+        new (): HTMLRuxIconOfflinePinElement;
+    };
+    interface HTMLRuxIconOndemandVideoElement extends Components.RuxIconOndemandVideo, HTMLStencilElement {
+    }
+    var HTMLRuxIconOndemandVideoElement: {
+        prototype: HTMLRuxIconOndemandVideoElement;
+        new (): HTMLRuxIconOndemandVideoElement;
+    };
+    interface HTMLRuxIconOpenInNewElement extends Components.RuxIconOpenInNew, HTMLStencilElement {
+    }
+    var HTMLRuxIconOpenInNewElement: {
+        prototype: HTMLRuxIconOpenInNewElement;
+        new (): HTMLRuxIconOpenInNewElement;
+    };
+    interface HTMLRuxIconOpenWithElement extends Components.RuxIconOpenWith, HTMLStencilElement {
+    }
+    var HTMLRuxIconOpenWithElement: {
+        prototype: HTMLRuxIconOpenWithElement;
+        new (): HTMLRuxIconOpenWithElement;
+    };
+    interface HTMLRuxIconPagesElement extends Components.RuxIconPages, HTMLStencilElement {
+    }
+    var HTMLRuxIconPagesElement: {
+        prototype: HTMLRuxIconPagesElement;
+        new (): HTMLRuxIconPagesElement;
+    };
+    interface HTMLRuxIconPartyModeElement extends Components.RuxIconPartyMode, HTMLStencilElement {
+    }
+    var HTMLRuxIconPartyModeElement: {
+        prototype: HTMLRuxIconPartyModeElement;
+        new (): HTMLRuxIconPartyModeElement;
+    };
+    interface HTMLRuxIconPayloadElement extends Components.RuxIconPayload, HTMLStencilElement {
+    }
+    var HTMLRuxIconPayloadElement: {
+        prototype: HTMLRuxIconPayloadElement;
+        new (): HTMLRuxIconPayloadElement;
+    };
+    interface HTMLRuxIconPeopleOutlineElement extends Components.RuxIconPeopleOutline, HTMLStencilElement {
+    }
+    var HTMLRuxIconPeopleOutlineElement: {
+        prototype: HTMLRuxIconPeopleOutlineElement;
+        new (): HTMLRuxIconPeopleOutlineElement;
+    };
+    interface HTMLRuxIconPermPhoneMsgElement extends Components.RuxIconPermPhoneMsg, HTMLStencilElement {
+    }
+    var HTMLRuxIconPermPhoneMsgElement: {
+        prototype: HTMLRuxIconPermPhoneMsgElement;
+        new (): HTMLRuxIconPermPhoneMsgElement;
+    };
+    interface HTMLRuxIconPersonElement extends Components.RuxIconPerson, HTMLStencilElement {
+    }
+    var HTMLRuxIconPersonElement: {
+        prototype: HTMLRuxIconPersonElement;
+        new (): HTMLRuxIconPersonElement;
+    };
+    interface HTMLRuxIconPersonAddElement extends Components.RuxIconPersonAdd, HTMLStencilElement {
+    }
+    var HTMLRuxIconPersonAddElement: {
+        prototype: HTMLRuxIconPersonAddElement;
+        new (): HTMLRuxIconPersonAddElement;
+    };
+    interface HTMLRuxIconPersonOutlineElement extends Components.RuxIconPersonOutline, HTMLStencilElement {
+    }
+    var HTMLRuxIconPersonOutlineElement: {
+        prototype: HTMLRuxIconPersonOutlineElement;
+        new (): HTMLRuxIconPersonOutlineElement;
+    };
+    interface HTMLRuxIconPersonalVideoElement extends Components.RuxIconPersonalVideo, HTMLStencilElement {
+    }
+    var HTMLRuxIconPersonalVideoElement: {
+        prototype: HTMLRuxIconPersonalVideoElement;
+        new (): HTMLRuxIconPersonalVideoElement;
+    };
+    interface HTMLRuxIconPetsElement extends Components.RuxIconPets, HTMLStencilElement {
+    }
+    var HTMLRuxIconPetsElement: {
+        prototype: HTMLRuxIconPetsElement;
+        new (): HTMLRuxIconPetsElement;
+    };
+    interface HTMLRuxIconPhoneBluetoothSpeakerElement extends Components.RuxIconPhoneBluetoothSpeaker, HTMLStencilElement {
+    }
+    var HTMLRuxIconPhoneBluetoothSpeakerElement: {
+        prototype: HTMLRuxIconPhoneBluetoothSpeakerElement;
+        new (): HTMLRuxIconPhoneBluetoothSpeakerElement;
+    };
+    interface HTMLRuxIconPhoneCallbackElement extends Components.RuxIconPhoneCallback, HTMLStencilElement {
+    }
+    var HTMLRuxIconPhoneCallbackElement: {
+        prototype: HTMLRuxIconPhoneCallbackElement;
+        new (): HTMLRuxIconPhoneCallbackElement;
+    };
+    interface HTMLRuxIconPhoneForwardedElement extends Components.RuxIconPhoneForwarded, HTMLStencilElement {
+    }
+    var HTMLRuxIconPhoneForwardedElement: {
+        prototype: HTMLRuxIconPhoneForwardedElement;
+        new (): HTMLRuxIconPhoneForwardedElement;
+    };
+    interface HTMLRuxIconPhoneInTalkElement extends Components.RuxIconPhoneInTalk, HTMLStencilElement {
+    }
+    var HTMLRuxIconPhoneInTalkElement: {
+        prototype: HTMLRuxIconPhoneInTalkElement;
+        new (): HTMLRuxIconPhoneInTalkElement;
+    };
+    interface HTMLRuxIconPhoneIphoneElement extends Components.RuxIconPhoneIphone, HTMLStencilElement {
+    }
+    var HTMLRuxIconPhoneIphoneElement: {
+        prototype: HTMLRuxIconPhoneIphoneElement;
+        new (): HTMLRuxIconPhoneIphoneElement;
+    };
+    interface HTMLRuxIconPhoneLockedElement extends Components.RuxIconPhoneLocked, HTMLStencilElement {
+    }
+    var HTMLRuxIconPhoneLockedElement: {
+        prototype: HTMLRuxIconPhoneLockedElement;
+        new (): HTMLRuxIconPhoneLockedElement;
+    };
+    interface HTMLRuxIconPhoneMissedElement extends Components.RuxIconPhoneMissed, HTMLStencilElement {
+    }
+    var HTMLRuxIconPhoneMissedElement: {
+        prototype: HTMLRuxIconPhoneMissedElement;
+        new (): HTMLRuxIconPhoneMissedElement;
+    };
+    interface HTMLRuxIconPieChartElement extends Components.RuxIconPieChart, HTMLStencilElement {
+    }
+    var HTMLRuxIconPieChartElement: {
+        prototype: HTMLRuxIconPieChartElement;
+        new (): HTMLRuxIconPieChartElement;
+    };
+    interface HTMLRuxIconPlusOneElement extends Components.RuxIconPlusOne, HTMLStencilElement {
+    }
+    var HTMLRuxIconPlusOneElement: {
+        prototype: HTMLRuxIconPlusOneElement;
+        new (): HTMLRuxIconPlusOneElement;
+    };
+    interface HTMLRuxIconPollElement extends Components.RuxIconPoll, HTMLStencilElement {
+    }
+    var HTMLRuxIconPollElement: {
+        prototype: HTMLRuxIconPollElement;
+        new (): HTMLRuxIconPollElement;
+    };
+    interface HTMLRuxIconPoolElement extends Components.RuxIconPool, HTMLStencilElement {
+    }
+    var HTMLRuxIconPoolElement: {
+        prototype: HTMLRuxIconPoolElement;
+        new (): HTMLRuxIconPoolElement;
+    };
+    interface HTMLRuxIconPowerElement extends Components.RuxIconPower, HTMLStencilElement {
+    }
+    var HTMLRuxIconPowerElement: {
+        prototype: HTMLRuxIconPowerElement;
+        new (): HTMLRuxIconPowerElement;
+    };
+    interface HTMLRuxIconPowerOffElement extends Components.RuxIconPowerOff, HTMLStencilElement {
+    }
+    var HTMLRuxIconPowerOffElement: {
+        prototype: HTMLRuxIconPowerOffElement;
+        new (): HTMLRuxIconPowerOffElement;
+    };
+    interface HTMLRuxIconPrintElement extends Components.RuxIconPrint, HTMLStencilElement {
+    }
+    var HTMLRuxIconPrintElement: {
+        prototype: HTMLRuxIconPrintElement;
+        new (): HTMLRuxIconPrintElement;
+    };
+    interface HTMLRuxIconPriorityHighElement extends Components.RuxIconPriorityHigh, HTMLStencilElement {
+    }
+    var HTMLRuxIconPriorityHighElement: {
+        prototype: HTMLRuxIconPriorityHighElement;
+        new (): HTMLRuxIconPriorityHighElement;
+    };
+    interface HTMLRuxIconProcessorElement extends Components.RuxIconProcessor, HTMLStencilElement {
+    }
+    var HTMLRuxIconProcessorElement: {
+        prototype: HTMLRuxIconProcessorElement;
+        new (): HTMLRuxIconProcessorElement;
+    };
+    interface HTMLRuxIconProcessorAltElement extends Components.RuxIconProcessorAlt, HTMLStencilElement {
+    }
+    var HTMLRuxIconProcessorAltElement: {
+        prototype: HTMLRuxIconProcessorAltElement;
+        new (): HTMLRuxIconProcessorAltElement;
+    };
+    interface HTMLRuxIconPropulsionPowerElement extends Components.RuxIconPropulsionPower, HTMLStencilElement {
+    }
+    var HTMLRuxIconPropulsionPowerElement: {
+        prototype: HTMLRuxIconPropulsionPowerElement;
+        new (): HTMLRuxIconPropulsionPowerElement;
+    };
+    interface HTMLRuxIconPublicElement extends Components.RuxIconPublic, HTMLStencilElement {
+    }
+    var HTMLRuxIconPublicElement: {
+        prototype: HTMLRuxIconPublicElement;
+        new (): HTMLRuxIconPublicElement;
+    };
+    interface HTMLRuxIconPublishElement extends Components.RuxIconPublish, HTMLStencilElement {
+    }
+    var HTMLRuxIconPublishElement: {
+        prototype: HTMLRuxIconPublishElement;
+        new (): HTMLRuxIconPublishElement;
+    };
+    interface HTMLRuxIconQuestionAnswerElement extends Components.RuxIconQuestionAnswer, HTMLStencilElement {
+    }
+    var HTMLRuxIconQuestionAnswerElement: {
+        prototype: HTMLRuxIconQuestionAnswerElement;
+        new (): HTMLRuxIconQuestionAnswerElement;
+    };
+    interface HTMLRuxIconRadioButtonCheckedElement extends Components.RuxIconRadioButtonChecked, HTMLStencilElement {
+    }
+    var HTMLRuxIconRadioButtonCheckedElement: {
+        prototype: HTMLRuxIconRadioButtonCheckedElement;
+        new (): HTMLRuxIconRadioButtonCheckedElement;
+    };
+    interface HTMLRuxIconRadioButtonUncheckedElement extends Components.RuxIconRadioButtonUnchecked, HTMLStencilElement {
+    }
+    var HTMLRuxIconRadioButtonUncheckedElement: {
+        prototype: HTMLRuxIconRadioButtonUncheckedElement;
+        new (): HTMLRuxIconRadioButtonUncheckedElement;
+    };
+    interface HTMLRuxIconRoomServiceElement extends Components.RuxIconRoomService, HTMLStencilElement {
+    }
+    var HTMLRuxIconRoomServiceElement: {
+        prototype: HTMLRuxIconRoomServiceElement;
+        new (): HTMLRuxIconRoomServiceElement;
+    };
+    interface HTMLRuxIconRouterElement extends Components.RuxIconRouter, HTMLStencilElement {
+    }
+    var HTMLRuxIconRouterElement: {
+        prototype: HTMLRuxIconRouterElement;
+        new (): HTMLRuxIconRouterElement;
+    };
+    interface HTMLRuxIconRvHookupElement extends Components.RuxIconRvHookup, HTMLStencilElement {
+    }
+    var HTMLRuxIconRvHookupElement: {
+        prototype: HTMLRuxIconRvHookupElement;
+        new (): HTMLRuxIconRvHookupElement;
+    };
+    interface HTMLRuxIconSatelliteOffElement extends Components.RuxIconSatelliteOff, HTMLStencilElement {
+    }
+    var HTMLRuxIconSatelliteOffElement: {
+        prototype: HTMLRuxIconSatelliteOffElement;
+        new (): HTMLRuxIconSatelliteOffElement;
+    };
+    interface HTMLRuxIconSatelliteReceiveElement extends Components.RuxIconSatelliteReceive, HTMLStencilElement {
+    }
+    var HTMLRuxIconSatelliteReceiveElement: {
+        prototype: HTMLRuxIconSatelliteReceiveElement;
+        new (): HTMLRuxIconSatelliteReceiveElement;
+    };
+    interface HTMLRuxIconSatelliteTransmitElement extends Components.RuxIconSatelliteTransmit, HTMLStencilElement {
+    }
+    var HTMLRuxIconSatelliteTransmitElement: {
+        prototype: HTMLRuxIconSatelliteTransmitElement;
+        new (): HTMLRuxIconSatelliteTransmitElement;
+    };
+    interface HTMLRuxIconScannerElement extends Components.RuxIconScanner, HTMLStencilElement {
+    }
+    var HTMLRuxIconScannerElement: {
+        prototype: HTMLRuxIconScannerElement;
+        new (): HTMLRuxIconScannerElement;
+    };
+    interface HTMLRuxIconScatterPlotElement extends Components.RuxIconScatterPlot, HTMLStencilElement {
+    }
+    var HTMLRuxIconScatterPlotElement: {
+        prototype: HTMLRuxIconScatterPlotElement;
+        new (): HTMLRuxIconScatterPlotElement;
+    };
+    interface HTMLRuxIconSchoolElement extends Components.RuxIconSchool, HTMLStencilElement {
+    }
+    var HTMLRuxIconSchoolElement: {
+        prototype: HTMLRuxIconSchoolElement;
+        new (): HTMLRuxIconSchoolElement;
+    };
+    interface HTMLRuxIconSeatElement extends Components.RuxIconSeat, HTMLStencilElement {
+    }
+    var HTMLRuxIconSeatElement: {
+        prototype: HTMLRuxIconSeatElement;
+        new (): HTMLRuxIconSeatElement;
+    };
+    interface HTMLRuxIconSecurityElement extends Components.RuxIconSecurity, HTMLStencilElement {
+    }
+    var HTMLRuxIconSecurityElement: {
+        prototype: HTMLRuxIconSecurityElement;
+        new (): HTMLRuxIconSecurityElement;
+    };
+    interface HTMLRuxIconSentimentDissatisfiedElement extends Components.RuxIconSentimentDissatisfied, HTMLStencilElement {
+    }
+    var HTMLRuxIconSentimentDissatisfiedElement: {
+        prototype: HTMLRuxIconSentimentDissatisfiedElement;
+        new (): HTMLRuxIconSentimentDissatisfiedElement;
+    };
+    interface HTMLRuxIconSentimentSatisfiedElement extends Components.RuxIconSentimentSatisfied, HTMLStencilElement {
+    }
+    var HTMLRuxIconSentimentSatisfiedElement: {
+        prototype: HTMLRuxIconSentimentSatisfiedElement;
+        new (): HTMLRuxIconSentimentSatisfiedElement;
+    };
+    interface HTMLRuxIconSentimentVeryDissatisfiedElement extends Components.RuxIconSentimentVeryDissatisfied, HTMLStencilElement {
+    }
+    var HTMLRuxIconSentimentVeryDissatisfiedElement: {
+        prototype: HTMLRuxIconSentimentVeryDissatisfiedElement;
+        new (): HTMLRuxIconSentimentVeryDissatisfiedElement;
+    };
+    interface HTMLRuxIconSentimentVerySatisfiedElement extends Components.RuxIconSentimentVerySatisfied, HTMLStencilElement {
+    }
+    var HTMLRuxIconSentimentVerySatisfiedElement: {
+        prototype: HTMLRuxIconSentimentVerySatisfiedElement;
+        new (): HTMLRuxIconSentimentVerySatisfiedElement;
+    };
+    interface HTMLRuxIconSettingsApplicationsElement extends Components.RuxIconSettingsApplications, HTMLStencilElement {
+    }
+    var HTMLRuxIconSettingsApplicationsElement: {
+        prototype: HTMLRuxIconSettingsApplicationsElement;
+        new (): HTMLRuxIconSettingsApplicationsElement;
+    };
+    interface HTMLRuxIconSettingsInputComponentElement extends Components.RuxIconSettingsInputComponent, HTMLStencilElement {
+    }
+    var HTMLRuxIconSettingsInputComponentElement: {
+        prototype: HTMLRuxIconSettingsInputComponentElement;
+        new (): HTMLRuxIconSettingsInputComponentElement;
+    };
+    interface HTMLRuxIconSettingsPowerElement extends Components.RuxIconSettingsPower, HTMLStencilElement {
+    }
+    var HTMLRuxIconSettingsPowerElement: {
+        prototype: HTMLRuxIconSettingsPowerElement;
+        new (): HTMLRuxIconSettingsPowerElement;
+    };
+    interface HTMLRuxIconShareElement extends Components.RuxIconShare, HTMLStencilElement {
+    }
+    var HTMLRuxIconShareElement: {
+        prototype: HTMLRuxIconShareElement;
+        new (): HTMLRuxIconShareElement;
+    };
+    interface HTMLRuxIconShoppingBasketElement extends Components.RuxIconShoppingBasket, HTMLStencilElement {
+    }
+    var HTMLRuxIconShoppingBasketElement: {
+        prototype: HTMLRuxIconShoppingBasketElement;
+        new (): HTMLRuxIconShoppingBasketElement;
+    };
+    interface HTMLRuxIconShowChartElement extends Components.RuxIconShowChart, HTMLStencilElement {
+    }
+    var HTMLRuxIconShowChartElement: {
+        prototype: HTMLRuxIconShowChartElement;
+        new (): HTMLRuxIconShowChartElement;
+    };
+    interface HTMLRuxIconSmokeFreeElement extends Components.RuxIconSmokeFree, HTMLStencilElement {
+    }
+    var HTMLRuxIconSmokeFreeElement: {
+        prototype: HTMLRuxIconSmokeFreeElement;
+        new (): HTMLRuxIconSmokeFreeElement;
+    };
+    interface HTMLRuxIconSmokingRoomsElement extends Components.RuxIconSmokingRooms, HTMLStencilElement {
+    }
+    var HTMLRuxIconSmokingRoomsElement: {
+        prototype: HTMLRuxIconSmokingRoomsElement;
+        new (): HTMLRuxIconSmokingRoomsElement;
+    };
+    interface HTMLRuxIconSmsElement extends Components.RuxIconSms, HTMLStencilElement {
+    }
+    var HTMLRuxIconSmsElement: {
+        prototype: HTMLRuxIconSmsElement;
+        new (): HTMLRuxIconSmsElement;
+    };
+    interface HTMLRuxIconSmsFailedElement extends Components.RuxIconSmsFailed, HTMLStencilElement {
+    }
+    var HTMLRuxIconSmsFailedElement: {
+        prototype: HTMLRuxIconSmsFailedElement;
+        new (): HTMLRuxIconSmsFailedElement;
+    };
+    interface HTMLRuxIconSolarElement extends Components.RuxIconSolar, HTMLStencilElement {
+    }
+    var HTMLRuxIconSolarElement: {
+        prototype: HTMLRuxIconSolarElement;
+        new (): HTMLRuxIconSolarElement;
+    };
+    interface HTMLRuxIconSpaElement extends Components.RuxIconSpa, HTMLStencilElement {
+    }
+    var HTMLRuxIconSpaElement: {
+        prototype: HTMLRuxIconSpaElement;
+        new (): HTMLRuxIconSpaElement;
+    };
+    interface HTMLRuxIconSpaceBarElement extends Components.RuxIconSpaceBar, HTMLStencilElement {
+    }
+    var HTMLRuxIconSpaceBarElement: {
+        prototype: HTMLRuxIconSpaceBarElement;
+        new (): HTMLRuxIconSpaceBarElement;
+    };
+    interface HTMLRuxIconSpeakerElement extends Components.RuxIconSpeaker, HTMLStencilElement {
+    }
+    var HTMLRuxIconSpeakerElement: {
+        prototype: HTMLRuxIconSpeakerElement;
+        new (): HTMLRuxIconSpeakerElement;
+    };
+    interface HTMLRuxIconSpeakerGroupElement extends Components.RuxIconSpeakerGroup, HTMLStencilElement {
+    }
+    var HTMLRuxIconSpeakerGroupElement: {
+        prototype: HTMLRuxIconSpeakerGroupElement;
+        new (): HTMLRuxIconSpeakerGroupElement;
+    };
+    interface HTMLRuxIconStarElement extends Components.RuxIconStar, HTMLStencilElement {
+    }
+    var HTMLRuxIconStarElement: {
+        prototype: HTMLRuxIconStarElement;
+        new (): HTMLRuxIconStarElement;
+    };
+    interface HTMLRuxIconStarBorderElement extends Components.RuxIconStarBorder, HTMLStencilElement {
+    }
+    var HTMLRuxIconStarBorderElement: {
+        prototype: HTMLRuxIconStarBorderElement;
+        new (): HTMLRuxIconStarBorderElement;
+    };
+    interface HTMLRuxIconStarHalfElement extends Components.RuxIconStarHalf, HTMLStencilElement {
+    }
+    var HTMLRuxIconStarHalfElement: {
+        prototype: HTMLRuxIconStarHalfElement;
+        new (): HTMLRuxIconStarHalfElement;
+    };
+    interface HTMLRuxIconStarRateElement extends Components.RuxIconStarRate, HTMLStencilElement {
+    }
+    var HTMLRuxIconStarRateElement: {
+        prototype: HTMLRuxIconStarRateElement;
+        new (): HTMLRuxIconStarRateElement;
+    };
+    interface HTMLRuxIconStrikethroughSElement extends Components.RuxIconStrikethroughS, HTMLStencilElement {
+    }
+    var HTMLRuxIconStrikethroughSElement: {
+        prototype: HTMLRuxIconStrikethroughSElement;
+        new (): HTMLRuxIconStrikethroughSElement;
+    };
+    interface HTMLRuxIconSyncElement extends Components.RuxIconSync, HTMLStencilElement {
+    }
+    var HTMLRuxIconSyncElement: {
+        prototype: HTMLRuxIconSyncElement;
+        new (): HTMLRuxIconSyncElement;
+    };
+    interface HTMLRuxIconSyncDisabledElement extends Components.RuxIconSyncDisabled, HTMLStencilElement {
+    }
+    var HTMLRuxIconSyncDisabledElement: {
+        prototype: HTMLRuxIconSyncDisabledElement;
+        new (): HTMLRuxIconSyncDisabledElement;
+    };
+    interface HTMLRuxIconSystemUpdateElement extends Components.RuxIconSystemUpdate, HTMLStencilElement {
+    }
+    var HTMLRuxIconSystemUpdateElement: {
+        prototype: HTMLRuxIconSystemUpdateElement;
+        new (): HTMLRuxIconSystemUpdateElement;
+    };
+    interface HTMLRuxIconTableChartElement extends Components.RuxIconTableChart, HTMLStencilElement {
+    }
+    var HTMLRuxIconTableChartElement: {
+        prototype: HTMLRuxIconTableChartElement;
+        new (): HTMLRuxIconTableChartElement;
+    };
+    interface HTMLRuxIconTabletElement extends Components.RuxIconTablet, HTMLStencilElement {
+    }
+    var HTMLRuxIconTabletElement: {
+        prototype: HTMLRuxIconTabletElement;
+        new (): HTMLRuxIconTabletElement;
+    };
+    interface HTMLRuxIconTabletAndroidElement extends Components.RuxIconTabletAndroid, HTMLStencilElement {
+    }
+    var HTMLRuxIconTabletAndroidElement: {
+        prototype: HTMLRuxIconTabletAndroidElement;
+        new (): HTMLRuxIconTabletAndroidElement;
+    };
+    interface HTMLRuxIconTabletMacElement extends Components.RuxIconTabletMac, HTMLStencilElement {
+    }
+    var HTMLRuxIconTabletMacElement: {
+        prototype: HTMLRuxIconTabletMacElement;
+        new (): HTMLRuxIconTabletMacElement;
+    };
+    interface HTMLRuxIconTapAndPlayElement extends Components.RuxIconTapAndPlay, HTMLStencilElement {
+    }
+    var HTMLRuxIconTapAndPlayElement: {
+        prototype: HTMLRuxIconTapAndPlayElement;
+        new (): HTMLRuxIconTapAndPlayElement;
+    };
+    interface HTMLRuxIconTextFieldsElement extends Components.RuxIconTextFields, HTMLStencilElement {
+    }
+    var HTMLRuxIconTextFieldsElement: {
+        prototype: HTMLRuxIconTextFieldsElement;
+        new (): HTMLRuxIconTextFieldsElement;
+    };
+    interface HTMLRuxIconTextRotationNoneElement extends Components.RuxIconTextRotationNone, HTMLStencilElement {
+    }
+    var HTMLRuxIconTextRotationNoneElement: {
+        prototype: HTMLRuxIconTextRotationNoneElement;
+        new (): HTMLRuxIconTextRotationNoneElement;
+    };
+    interface HTMLRuxIconThermalElement extends Components.RuxIconThermal, HTMLStencilElement {
+    }
+    var HTMLRuxIconThermalElement: {
+        prototype: HTMLRuxIconThermalElement;
+        new (): HTMLRuxIconThermalElement;
+    };
+    interface HTMLRuxIconThumbDownAltElement extends Components.RuxIconThumbDownAlt, HTMLStencilElement {
+    }
+    var HTMLRuxIconThumbDownAltElement: {
+        prototype: HTMLRuxIconThumbDownAltElement;
+        new (): HTMLRuxIconThumbDownAltElement;
+    };
+    interface HTMLRuxIconThumbUpAltElement extends Components.RuxIconThumbUpAlt, HTMLStencilElement {
+    }
+    var HTMLRuxIconThumbUpAltElement: {
+        prototype: HTMLRuxIconThumbUpAltElement;
+        new (): HTMLRuxIconThumbUpAltElement;
+    };
+    interface HTMLRuxIconTimeToLeaveElement extends Components.RuxIconTimeToLeave, HTMLStencilElement {
+    }
+    var HTMLRuxIconTimeToLeaveElement: {
+        prototype: HTMLRuxIconTimeToLeaveElement;
+        new (): HTMLRuxIconTimeToLeaveElement;
+    };
+    interface HTMLRuxIconTitleElement extends Components.RuxIconTitle, HTMLStencilElement {
+    }
+    var HTMLRuxIconTitleElement: {
+        prototype: HTMLRuxIconTitleElement;
+        new (): HTMLRuxIconTitleElement;
+    };
+    interface HTMLRuxIconToggleOffElement extends Components.RuxIconToggleOff, HTMLStencilElement {
+    }
+    var HTMLRuxIconToggleOffElement: {
+        prototype: HTMLRuxIconToggleOffElement;
+        new (): HTMLRuxIconToggleOffElement;
+    };
+    interface HTMLRuxIconToggleOnElement extends Components.RuxIconToggleOn, HTMLStencilElement {
+    }
+    var HTMLRuxIconToggleOnElement: {
+        prototype: HTMLRuxIconToggleOnElement;
+        new (): HTMLRuxIconToggleOnElement;
+    };
+    interface HTMLRuxIconTurnedInNotElement extends Components.RuxIconTurnedInNot, HTMLStencilElement {
+    }
+    var HTMLRuxIconTurnedInNotElement: {
+        prototype: HTMLRuxIconTurnedInNotElement;
+        new (): HTMLRuxIconTurnedInNotElement;
+    };
+    interface HTMLRuxIconTvElement extends Components.RuxIconTv, HTMLStencilElement {
+    }
+    var HTMLRuxIconTvElement: {
+        prototype: HTMLRuxIconTvElement;
+        new (): HTMLRuxIconTvElement;
+    };
+    interface HTMLRuxIconTvOffElement extends Components.RuxIconTvOff, HTMLStencilElement {
+    }
+    var HTMLRuxIconTvOffElement: {
+        prototype: HTMLRuxIconTvOffElement;
+        new (): HTMLRuxIconTvOffElement;
+    };
+    interface HTMLRuxIconVerticalAlignCenterElement extends Components.RuxIconVerticalAlignCenter, HTMLStencilElement {
+    }
+    var HTMLRuxIconVerticalAlignCenterElement: {
+        prototype: HTMLRuxIconVerticalAlignCenterElement;
+        new (): HTMLRuxIconVerticalAlignCenterElement;
+    };
+    interface HTMLRuxIconVerticalAlignTopElement extends Components.RuxIconVerticalAlignTop, HTMLStencilElement {
+    }
+    var HTMLRuxIconVerticalAlignTopElement: {
+        prototype: HTMLRuxIconVerticalAlignTopElement;
+        new (): HTMLRuxIconVerticalAlignTopElement;
+    };
+    interface HTMLRuxIconVideogameAssetElement extends Components.RuxIconVideogameAsset, HTMLStencilElement {
+    }
+    var HTMLRuxIconVideogameAssetElement: {
+        prototype: HTMLRuxIconVideogameAssetElement;
+        new (): HTMLRuxIconVideogameAssetElement;
+    };
+    interface HTMLRuxIconViewColumnElement extends Components.RuxIconViewColumn, HTMLStencilElement {
+    }
+    var HTMLRuxIconViewColumnElement: {
+        prototype: HTMLRuxIconViewColumnElement;
+        new (): HTMLRuxIconViewColumnElement;
+    };
+    interface HTMLRuxIconViewWeekElement extends Components.RuxIconViewWeek, HTMLStencilElement {
+    }
+    var HTMLRuxIconViewWeekElement: {
+        prototype: HTMLRuxIconViewWeekElement;
+        new (): HTMLRuxIconViewWeekElement;
+    };
+    interface HTMLRuxIconVoiceChatElement extends Components.RuxIconVoiceChat, HTMLStencilElement {
+    }
+    var HTMLRuxIconVoiceChatElement: {
+        prototype: HTMLRuxIconVoiceChatElement;
+        new (): HTMLRuxIconVoiceChatElement;
+    };
+    interface HTMLRuxIconVoiceOverOffElement extends Components.RuxIconVoiceOverOff, HTMLStencilElement {
+    }
+    var HTMLRuxIconVoiceOverOffElement: {
+        prototype: HTMLRuxIconVoiceOverOffElement;
+        new (): HTMLRuxIconVoiceOverOffElement;
+    };
+    interface HTMLRuxIconWatchElement extends Components.RuxIconWatch, HTMLStencilElement {
+    }
+    var HTMLRuxIconWatchElement: {
+        prototype: HTMLRuxIconWatchElement;
+        new (): HTMLRuxIconWatchElement;
+    };
+    interface HTMLRuxIconWcElement extends Components.RuxIconWc, HTMLStencilElement {
+    }
+    var HTMLRuxIconWcElement: {
+        prototype: HTMLRuxIconWcElement;
+        new (): HTMLRuxIconWcElement;
+    };
+    interface HTMLRuxIconWhatshotElement extends Components.RuxIconWhatshot, HTMLStencilElement {
+    }
+    var HTMLRuxIconWhatshotElement: {
+        prototype: HTMLRuxIconWhatshotElement;
+        new (): HTMLRuxIconWhatshotElement;
+    };
+    interface HTMLRuxIconWifiElement extends Components.RuxIconWifi, HTMLStencilElement {
+    }
+    var HTMLRuxIconWifiElement: {
+        prototype: HTMLRuxIconWifiElement;
+        new (): HTMLRuxIconWifiElement;
+    };
+    interface HTMLRuxIconWrapTextElement extends Components.RuxIconWrapText, HTMLStencilElement {
+    }
+    var HTMLRuxIconWrapTextElement: {
+        prototype: HTMLRuxIconWrapTextElement;
+        new (): HTMLRuxIconWrapTextElement;
+    };
+    interface HTMLRuxIconZoomOutElement extends Components.RuxIconZoomOut, HTMLStencilElement {
+    }
+    var HTMLRuxIconZoomOutElement: {
+        prototype: HTMLRuxIconZoomOutElement;
+        new (): HTMLRuxIconZoomOutElement;
+    };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
         "rux-clock": HTMLRuxClockElement;
         "rux-global-status-bar": HTMLRuxGlobalStatusBarElement;
+        "rux-icon": HTMLRuxIconElement;
+        "rux-icon-ac-unit": HTMLRuxIconAcUnitElement;
+        "rux-icon-accessibility": HTMLRuxIconAccessibilityElement;
+        "rux-icon-accessibility-new": HTMLRuxIconAccessibilityNewElement;
+        "rux-icon-adb": HTMLRuxIconAdbElement;
+        "rux-icon-airline-seat-flat-angled": HTMLRuxIconAirlineSeatFlatAngledElement;
+        "rux-icon-airline-seat-individual-suite": HTMLRuxIconAirlineSeatIndividualSuiteElement;
+        "rux-icon-airline-seat-legroom-extra": HTMLRuxIconAirlineSeatLegroomExtraElement;
+        "rux-icon-airline-seat-recline-extra": HTMLRuxIconAirlineSeatReclineExtraElement;
+        "rux-icon-airport-shuttle": HTMLRuxIconAirportShuttleElement;
+        "rux-icon-alarm": HTMLRuxIconAlarmElement;
+        "rux-icon-all-inclusive": HTMLRuxIconAllInclusiveElement;
+        "rux-icon-all-out": HTMLRuxIconAllOutElement;
+        "rux-icon-altitude": HTMLRuxIconAltitudeElement;
+        "rux-icon-antenna": HTMLRuxIconAntennaElement;
+        "rux-icon-antenna-off": HTMLRuxIconAntennaOffElement;
+        "rux-icon-antenna-receive": HTMLRuxIconAntennaReceiveElement;
+        "rux-icon-antenna-transmit": HTMLRuxIconAntennaTransmitElement;
+        "rux-icon-assessment": HTMLRuxIconAssessmentElement;
+        "rux-icon-assignment-late": HTMLRuxIconAssignmentLateElement;
+        "rux-icon-assignment-returned": HTMLRuxIconAssignmentReturnedElement;
+        "rux-icon-attach-money": HTMLRuxIconAttachMoneyElement;
+        "rux-icon-attachment": HTMLRuxIconAttachmentElement;
+        "rux-icon-bar-chart": HTMLRuxIconBarChartElement;
+        "rux-icon-beach-access": HTMLRuxIconBeachAccessElement;
+        "rux-icon-bluetooth-audio": HTMLRuxIconBluetoothAudioElement;
+        "rux-icon-bookmark": HTMLRuxIconBookmarkElement;
+        "rux-icon-border-all": HTMLRuxIconBorderAllElement;
+        "rux-icon-border-clear": HTMLRuxIconBorderClearElement;
+        "rux-icon-border-horizontal": HTMLRuxIconBorderHorizontalElement;
+        "rux-icon-border-inner": HTMLRuxIconBorderInnerElement;
+        "rux-icon-border-left": HTMLRuxIconBorderLeftElement;
+        "rux-icon-border-outer": HTMLRuxIconBorderOuterElement;
+        "rux-icon-border-right": HTMLRuxIconBorderRightElement;
+        "rux-icon-border-style": HTMLRuxIconBorderStyleElement;
+        "rux-icon-border-vertical": HTMLRuxIconBorderVerticalElement;
+        "rux-icon-bubble-chart": HTMLRuxIconBubbleChartElement;
+        "rux-icon-business-center": HTMLRuxIconBusinessCenterElement;
+        "rux-icon-cached": HTMLRuxIconCachedElement;
+        "rux-icon-cake": HTMLRuxIconCakeElement;
+        "rux-icon-casino": HTMLRuxIconCasinoElement;
+        "rux-icon-cast": HTMLRuxIconCastElement;
+        "rux-icon-cast-connected": HTMLRuxIconCastConnectedElement;
+        "rux-icon-check-box": HTMLRuxIconCheckBoxElement;
+        "rux-icon-check-box-outline-blank": HTMLRuxIconCheckBoxOutlineBlankElement;
+        "rux-icon-child-care": HTMLRuxIconChildCareElement;
+        "rux-icon-child-friendly": HTMLRuxIconChildFriendlyElement;
+        "rux-icon-chrome-reader-mode": HTMLRuxIconChromeReaderModeElement;
+        "rux-icon-cloud": HTMLRuxIconCloudElement;
+        "rux-icon-cloud-circle": HTMLRuxIconCloudCircleElement;
+        "rux-icon-cloud-done": HTMLRuxIconCloudDoneElement;
+        "rux-icon-cloud-download": HTMLRuxIconCloudDownloadElement;
+        "rux-icon-cloud-off": HTMLRuxIconCloudOffElement;
+        "rux-icon-cloud-queue": HTMLRuxIconCloudQueueElement;
+        "rux-icon-cloud-upload": HTMLRuxIconCloudUploadElement;
+        "rux-icon-computer": HTMLRuxIconComputerElement;
+        "rux-icon-confirmation-number": HTMLRuxIconConfirmationNumberElement;
+        "rux-icon-create-new-folder": HTMLRuxIconCreateNewFolderElement;
+        "rux-icon-date-range": HTMLRuxIconDateRangeElement;
+        "rux-icon-device-hub": HTMLRuxIconDeviceHubElement;
+        "rux-icon-device-unknown": HTMLRuxIconDeviceUnknownElement;
+        "rux-icon-devices-other": HTMLRuxIconDevicesOtherElement;
+        "rux-icon-disc-full": HTMLRuxIconDiscFullElement;
+        "rux-icon-domain": HTMLRuxIconDomainElement;
+        "rux-icon-done": HTMLRuxIconDoneElement;
+        "rux-icon-drive-eta": HTMLRuxIconDriveEtaElement;
+        "rux-icon-equipment": HTMLRuxIconEquipmentElement;
+        "rux-icon-event-available": HTMLRuxIconEventAvailableElement;
+        "rux-icon-event-busy": HTMLRuxIconEventBusyElement;
+        "rux-icon-favorite-border": HTMLRuxIconFavoriteBorderElement;
+        "rux-icon-fingerprint": HTMLRuxIconFingerprintElement;
+        "rux-icon-fitness-center": HTMLRuxIconFitnessCenterElement;
+        "rux-icon-flip-to-back": HTMLRuxIconFlipToBackElement;
+        "rux-icon-folder": HTMLRuxIconFolderElement;
+        "rux-icon-folder-open": HTMLRuxIconFolderOpenElement;
+        "rux-icon-folder-shared": HTMLRuxIconFolderSharedElement;
+        "rux-icon-folder-special": HTMLRuxIconFolderSpecialElement;
+        "rux-icon-format-align-center": HTMLRuxIconFormatAlignCenterElement;
+        "rux-icon-format-align-justify": HTMLRuxIconFormatAlignJustifyElement;
+        "rux-icon-format-align-left": HTMLRuxIconFormatAlignLeftElement;
+        "rux-icon-format-align-right": HTMLRuxIconFormatAlignRightElement;
+        "rux-icon-format-color-reset": HTMLRuxIconFormatColorResetElement;
+        "rux-icon-format-color-text": HTMLRuxIconFormatColorTextElement;
+        "rux-icon-format-indent-decrease": HTMLRuxIconFormatIndentDecreaseElement;
+        "rux-icon-format-indent-increase": HTMLRuxIconFormatIndentIncreaseElement;
+        "rux-icon-format-italic": HTMLRuxIconFormatItalicElement;
+        "rux-icon-format-line-spacing": HTMLRuxIconFormatLineSpacingElement;
+        "rux-icon-format-list-bulleted": HTMLRuxIconFormatListBulletedElement;
+        "rux-icon-format-list-numbered": HTMLRuxIconFormatListNumberedElement;
+        "rux-icon-format-list-numbered-rtl": HTMLRuxIconFormatListNumberedRtlElement;
+        "rux-icon-format-quote": HTMLRuxIconFormatQuoteElement;
+        "rux-icon-format-strikethrough": HTMLRuxIconFormatStrikethroughElement;
+        "rux-icon-format-textdirection-l-to-r": HTMLRuxIconFormatTextdirectionLToRElement;
+        "rux-icon-format-textdirection-r-to-l": HTMLRuxIconFormatTextdirectionRToLElement;
+        "rux-icon-format-underlined": HTMLRuxIconFormatUnderlinedElement;
+        "rux-icon-free-breakfast": HTMLRuxIconFreeBreakfastElement;
+        "rux-icon-functions": HTMLRuxIconFunctionsElement;
+        "rux-icon-gamepad": HTMLRuxIconGamepadElement;
+        "rux-icon-gavel": HTMLRuxIconGavelElement;
+        "rux-icon-golf-course": HTMLRuxIconGolfCourseElement;
+        "rux-icon-group": HTMLRuxIconGroupElement;
+        "rux-icon-group-add": HTMLRuxIconGroupAddElement;
+        "rux-icon-group-work": HTMLRuxIconGroupWorkElement;
+        "rux-icon-help": HTMLRuxIconHelpElement;
+        "rux-icon-help-outline": HTMLRuxIconHelpOutlineElement;
+        "rux-icon-highlight": HTMLRuxIconHighlightElement;
+        "rux-icon-highlight-off": HTMLRuxIconHighlightOffElement;
+        "rux-icon-history": HTMLRuxIconHistoryElement;
+        "rux-icon-hot-tub": HTMLRuxIconHotTubElement;
+        "rux-icon-indeterminate-check-box": HTMLRuxIconIndeterminateCheckBoxElement;
+        "rux-icon-insert-chart": HTMLRuxIconInsertChartElement;
+        "rux-icon-insert-chart-outlined": HTMLRuxIconInsertChartOutlinedElement;
+        "rux-icon-insert-drive-file": HTMLRuxIconInsertDriveFileElement;
+        "rux-icon-insert-emoticon": HTMLRuxIconInsertEmoticonElement;
+        "rux-icon-insert-photo": HTMLRuxIconInsertPhotoElement;
+        "rux-icon-keyboard-arrow-down": HTMLRuxIconKeyboardArrowDownElement;
+        "rux-icon-keyboard-arrow-left": HTMLRuxIconKeyboardArrowLeftElement;
+        "rux-icon-keyboard-arrow-right": HTMLRuxIconKeyboardArrowRightElement;
+        "rux-icon-keyboard-backspace": HTMLRuxIconKeyboardBackspaceElement;
+        "rux-icon-keyboard-capslock": HTMLRuxIconKeyboardCapslockElement;
+        "rux-icon-keyboard-hide": HTMLRuxIconKeyboardHideElement;
+        "rux-icon-keyboard-return": HTMLRuxIconKeyboardReturnElement;
+        "rux-icon-keyboard-tab": HTMLRuxIconKeyboardTabElement;
+        "rux-icon-keyboard-voice": HTMLRuxIconKeyboardVoiceElement;
+        "rux-icon-kitchen": HTMLRuxIconKitchenElement;
+        "rux-icon-laptop": HTMLRuxIconLaptopElement;
+        "rux-icon-laptop-mac": HTMLRuxIconLaptopMacElement;
+        "rux-icon-laptop-windows": HTMLRuxIconLaptopWindowsElement;
+        "rux-icon-linear-scale": HTMLRuxIconLinearScaleElement;
+        "rux-icon-live-tv": HTMLRuxIconLiveTvElement;
+        "rux-icon-location-city": HTMLRuxIconLocationCityElement;
+        "rux-icon-loyalty": HTMLRuxIconLoyaltyElement;
+        "rux-icon-meeting-room": HTMLRuxIconMeetingRoomElement;
+        "rux-icon-memory": HTMLRuxIconMemoryElement;
+        "rux-icon-merge-type": HTMLRuxIconMergeTypeElement;
+        "rux-icon-mission": HTMLRuxIconMissionElement;
+        "rux-icon-mms": HTMLRuxIconMmsElement;
+        "rux-icon-mode-comment": HTMLRuxIconModeCommentElement;
+        "rux-icon-monetization-on": HTMLRuxIconMonetizationOnElement;
+        "rux-icon-money-off": HTMLRuxIconMoneyOffElement;
+        "rux-icon-mood": HTMLRuxIconMoodElement;
+        "rux-icon-mood-bad": HTMLRuxIconMoodBadElement;
+        "rux-icon-more": HTMLRuxIconMoreElement;
+        "rux-icon-motorcycle": HTMLRuxIconMotorcycleElement;
+        "rux-icon-mouse": HTMLRuxIconMouseElement;
+        "rux-icon-netcom": HTMLRuxIconNetcomElement;
+        "rux-icon-network-locked": HTMLRuxIconNetworkLockedElement;
+        "rux-icon-no-encryption": HTMLRuxIconNoEncryptionElement;
+        "rux-icon-no-meeting-room": HTMLRuxIconNoMeetingRoomElement;
+        "rux-icon-notes": HTMLRuxIconNotesElement;
+        "rux-icon-notifications": HTMLRuxIconNotificationsElement;
+        "rux-icon-notifications-active": HTMLRuxIconNotificationsActiveElement;
+        "rux-icon-notifications-none": HTMLRuxIconNotificationsNoneElement;
+        "rux-icon-notifications-off": HTMLRuxIconNotificationsOffElement;
+        "rux-icon-notifications-paused": HTMLRuxIconNotificationsPausedElement;
+        "rux-icon-offline-pin": HTMLRuxIconOfflinePinElement;
+        "rux-icon-ondemand-video": HTMLRuxIconOndemandVideoElement;
+        "rux-icon-open-in-new": HTMLRuxIconOpenInNewElement;
+        "rux-icon-open-with": HTMLRuxIconOpenWithElement;
+        "rux-icon-pages": HTMLRuxIconPagesElement;
+        "rux-icon-party-mode": HTMLRuxIconPartyModeElement;
+        "rux-icon-payload": HTMLRuxIconPayloadElement;
+        "rux-icon-people-outline": HTMLRuxIconPeopleOutlineElement;
+        "rux-icon-perm-phone-msg": HTMLRuxIconPermPhoneMsgElement;
+        "rux-icon-person": HTMLRuxIconPersonElement;
+        "rux-icon-person-add": HTMLRuxIconPersonAddElement;
+        "rux-icon-person-outline": HTMLRuxIconPersonOutlineElement;
+        "rux-icon-personal-video": HTMLRuxIconPersonalVideoElement;
+        "rux-icon-pets": HTMLRuxIconPetsElement;
+        "rux-icon-phone-bluetooth-speaker": HTMLRuxIconPhoneBluetoothSpeakerElement;
+        "rux-icon-phone-callback": HTMLRuxIconPhoneCallbackElement;
+        "rux-icon-phone-forwarded": HTMLRuxIconPhoneForwardedElement;
+        "rux-icon-phone-in-talk": HTMLRuxIconPhoneInTalkElement;
+        "rux-icon-phone-iphone": HTMLRuxIconPhoneIphoneElement;
+        "rux-icon-phone-locked": HTMLRuxIconPhoneLockedElement;
+        "rux-icon-phone-missed": HTMLRuxIconPhoneMissedElement;
+        "rux-icon-pie-chart": HTMLRuxIconPieChartElement;
+        "rux-icon-plus-one": HTMLRuxIconPlusOneElement;
+        "rux-icon-poll": HTMLRuxIconPollElement;
+        "rux-icon-pool": HTMLRuxIconPoolElement;
+        "rux-icon-power": HTMLRuxIconPowerElement;
+        "rux-icon-power-off": HTMLRuxIconPowerOffElement;
+        "rux-icon-print": HTMLRuxIconPrintElement;
+        "rux-icon-priority-high": HTMLRuxIconPriorityHighElement;
+        "rux-icon-processor": HTMLRuxIconProcessorElement;
+        "rux-icon-processor-alt": HTMLRuxIconProcessorAltElement;
+        "rux-icon-propulsion-power": HTMLRuxIconPropulsionPowerElement;
+        "rux-icon-public": HTMLRuxIconPublicElement;
+        "rux-icon-publish": HTMLRuxIconPublishElement;
+        "rux-icon-question-answer": HTMLRuxIconQuestionAnswerElement;
+        "rux-icon-radio-button-checked": HTMLRuxIconRadioButtonCheckedElement;
+        "rux-icon-radio-button-unchecked": HTMLRuxIconRadioButtonUncheckedElement;
+        "rux-icon-room-service": HTMLRuxIconRoomServiceElement;
+        "rux-icon-router": HTMLRuxIconRouterElement;
+        "rux-icon-rv-hookup": HTMLRuxIconRvHookupElement;
+        "rux-icon-satellite-off": HTMLRuxIconSatelliteOffElement;
+        "rux-icon-satellite-receive": HTMLRuxIconSatelliteReceiveElement;
+        "rux-icon-satellite-transmit": HTMLRuxIconSatelliteTransmitElement;
+        "rux-icon-scanner": HTMLRuxIconScannerElement;
+        "rux-icon-scatter-plot": HTMLRuxIconScatterPlotElement;
+        "rux-icon-school": HTMLRuxIconSchoolElement;
+        "rux-icon-seat": HTMLRuxIconSeatElement;
+        "rux-icon-security": HTMLRuxIconSecurityElement;
+        "rux-icon-sentiment-dissatisfied": HTMLRuxIconSentimentDissatisfiedElement;
+        "rux-icon-sentiment-satisfied": HTMLRuxIconSentimentSatisfiedElement;
+        "rux-icon-sentiment-very-dissatisfied": HTMLRuxIconSentimentVeryDissatisfiedElement;
+        "rux-icon-sentiment-very-satisfied": HTMLRuxIconSentimentVerySatisfiedElement;
+        "rux-icon-settings-applications": HTMLRuxIconSettingsApplicationsElement;
+        "rux-icon-settings-input-component": HTMLRuxIconSettingsInputComponentElement;
+        "rux-icon-settings-power": HTMLRuxIconSettingsPowerElement;
+        "rux-icon-share": HTMLRuxIconShareElement;
+        "rux-icon-shopping-basket": HTMLRuxIconShoppingBasketElement;
+        "rux-icon-show-chart": HTMLRuxIconShowChartElement;
+        "rux-icon-smoke-free": HTMLRuxIconSmokeFreeElement;
+        "rux-icon-smoking-rooms": HTMLRuxIconSmokingRoomsElement;
+        "rux-icon-sms": HTMLRuxIconSmsElement;
+        "rux-icon-sms-failed": HTMLRuxIconSmsFailedElement;
+        "rux-icon-solar": HTMLRuxIconSolarElement;
+        "rux-icon-spa": HTMLRuxIconSpaElement;
+        "rux-icon-space-bar": HTMLRuxIconSpaceBarElement;
+        "rux-icon-speaker": HTMLRuxIconSpeakerElement;
+        "rux-icon-speaker-group": HTMLRuxIconSpeakerGroupElement;
+        "rux-icon-star": HTMLRuxIconStarElement;
+        "rux-icon-star-border": HTMLRuxIconStarBorderElement;
+        "rux-icon-star-half": HTMLRuxIconStarHalfElement;
+        "rux-icon-star-rate": HTMLRuxIconStarRateElement;
+        "rux-icon-strikethrough-s": HTMLRuxIconStrikethroughSElement;
+        "rux-icon-sync": HTMLRuxIconSyncElement;
+        "rux-icon-sync-disabled": HTMLRuxIconSyncDisabledElement;
+        "rux-icon-system-update": HTMLRuxIconSystemUpdateElement;
+        "rux-icon-table-chart": HTMLRuxIconTableChartElement;
+        "rux-icon-tablet": HTMLRuxIconTabletElement;
+        "rux-icon-tablet-android": HTMLRuxIconTabletAndroidElement;
+        "rux-icon-tablet-mac": HTMLRuxIconTabletMacElement;
+        "rux-icon-tap-and-play": HTMLRuxIconTapAndPlayElement;
+        "rux-icon-text-fields": HTMLRuxIconTextFieldsElement;
+        "rux-icon-text-rotation-none": HTMLRuxIconTextRotationNoneElement;
+        "rux-icon-thermal": HTMLRuxIconThermalElement;
+        "rux-icon-thumb-down-alt": HTMLRuxIconThumbDownAltElement;
+        "rux-icon-thumb-up-alt": HTMLRuxIconThumbUpAltElement;
+        "rux-icon-time-to-leave": HTMLRuxIconTimeToLeaveElement;
+        "rux-icon-title": HTMLRuxIconTitleElement;
+        "rux-icon-toggle-off": HTMLRuxIconToggleOffElement;
+        "rux-icon-toggle-on": HTMLRuxIconToggleOnElement;
+        "rux-icon-turned-in-not": HTMLRuxIconTurnedInNotElement;
+        "rux-icon-tv": HTMLRuxIconTvElement;
+        "rux-icon-tv-off": HTMLRuxIconTvOffElement;
+        "rux-icon-vertical-align-center": HTMLRuxIconVerticalAlignCenterElement;
+        "rux-icon-vertical-align-top": HTMLRuxIconVerticalAlignTopElement;
+        "rux-icon-videogame-asset": HTMLRuxIconVideogameAssetElement;
+        "rux-icon-view-column": HTMLRuxIconViewColumnElement;
+        "rux-icon-view-week": HTMLRuxIconViewWeekElement;
+        "rux-icon-voice-chat": HTMLRuxIconVoiceChatElement;
+        "rux-icon-voice-over-off": HTMLRuxIconVoiceOverOffElement;
+        "rux-icon-watch": HTMLRuxIconWatchElement;
+        "rux-icon-wc": HTMLRuxIconWcElement;
+        "rux-icon-whatshot": HTMLRuxIconWhatshotElement;
+        "rux-icon-wifi": HTMLRuxIconWifiElement;
+        "rux-icon-wrap-text": HTMLRuxIconWrapTextElement;
+        "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
     }
 }
 declare namespace LocalJSX {
@@ -75,10 +2942,1317 @@ declare namespace LocalJSX {
         "appname"?: string;
         "version"?: string;
     }
+    interface RuxIcon {
+        /**
+          * The icon name
+         */
+        "name"?: string;
+        /**
+          * The icon size
+         */
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAcUnit {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAccessibility {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAccessibilityNew {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAdb {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAirlineSeatFlatAngled {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAirlineSeatIndividualSuite {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAirlineSeatLegroomExtra {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAirlineSeatReclineExtra {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAirportShuttle {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAlarm {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAllInclusive {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAllOut {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAltitude {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAntenna {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAntennaOff {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAntennaReceive {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAntennaTransmit {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAssessment {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAssignmentLate {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAssignmentReturned {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAttachMoney {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconAttachment {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBarChart {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBeachAccess {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBluetoothAudio {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBookmark {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBorderAll {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBorderClear {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBorderHorizontal {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBorderInner {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBorderLeft {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBorderOuter {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBorderRight {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBorderStyle {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBorderVertical {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBubbleChart {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconBusinessCenter {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCached {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCake {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCasino {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCast {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCastConnected {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCheckBox {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCheckBoxOutlineBlank {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconChildCare {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconChildFriendly {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconChromeReaderMode {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCloud {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCloudCircle {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCloudDone {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCloudDownload {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCloudOff {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCloudQueue {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCloudUpload {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconComputer {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconConfirmationNumber {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconCreateNewFolder {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconDateRange {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconDeviceHub {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconDeviceUnknown {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconDevicesOther {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconDiscFull {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconDomain {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconDone {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconDriveEta {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconEquipment {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconEventAvailable {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconEventBusy {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFavoriteBorder {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFingerprint {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFitnessCenter {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFlipToBack {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFolder {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFolderOpen {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFolderShared {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFolderSpecial {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatAlignCenter {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatAlignJustify {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatAlignLeft {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatAlignRight {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatColorReset {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatColorText {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatIndentDecrease {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatIndentIncrease {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatItalic {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatLineSpacing {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatListBulleted {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatListNumbered {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatListNumberedRtl {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatQuote {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatStrikethrough {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatTextdirectionLToR {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatTextdirectionRToL {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFormatUnderlined {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFreeBreakfast {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconFunctions {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconGamepad {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconGavel {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconGolfCourse {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconGroup {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconGroupAdd {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconGroupWork {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconHelp {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconHelpOutline {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconHighlight {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconHighlightOff {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconHistory {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconHotTub {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconIndeterminateCheckBox {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconInsertChart {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconInsertChartOutlined {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconInsertDriveFile {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconInsertEmoticon {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconInsertPhoto {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconKeyboardArrowDown {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconKeyboardArrowLeft {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconKeyboardArrowRight {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconKeyboardBackspace {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconKeyboardCapslock {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconKeyboardHide {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconKeyboardReturn {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconKeyboardTab {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconKeyboardVoice {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconKitchen {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconLaptop {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconLaptopMac {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconLaptopWindows {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconLinearScale {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconLiveTv {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconLocationCity {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconLoyalty {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconMeetingRoom {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconMemory {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconMergeType {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconMission {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconMms {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconModeComment {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconMonetizationOn {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconMoneyOff {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconMood {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconMoodBad {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconMore {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconMotorcycle {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconMouse {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconNetcom {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconNetworkLocked {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconNoEncryption {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconNoMeetingRoom {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconNotes {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconNotifications {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconNotificationsActive {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconNotificationsNone {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconNotificationsOff {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconNotificationsPaused {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconOfflinePin {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconOndemandVideo {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconOpenInNew {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconOpenWith {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPages {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPartyMode {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPayload {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPeopleOutline {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPermPhoneMsg {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPerson {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPersonAdd {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPersonOutline {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPersonalVideo {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPets {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPhoneBluetoothSpeaker {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPhoneCallback {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPhoneForwarded {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPhoneInTalk {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPhoneIphone {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPhoneLocked {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPhoneMissed {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPieChart {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPlusOne {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPoll {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPool {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPower {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPowerOff {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPrint {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPriorityHigh {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconProcessor {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconProcessorAlt {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPropulsionPower {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPublic {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconPublish {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconQuestionAnswer {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconRadioButtonChecked {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconRadioButtonUnchecked {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconRoomService {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconRouter {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconRvHookup {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSatelliteOff {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSatelliteReceive {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSatelliteTransmit {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconScanner {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconScatterPlot {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSchool {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSeat {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSecurity {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSentimentDissatisfied {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSentimentSatisfied {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSentimentVeryDissatisfied {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSentimentVerySatisfied {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSettingsApplications {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSettingsInputComponent {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSettingsPower {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconShare {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconShoppingBasket {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconShowChart {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSmokeFree {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSmokingRooms {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSms {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSmsFailed {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSolar {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSpa {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSpaceBar {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSpeaker {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSpeakerGroup {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconStar {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconStarBorder {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconStarHalf {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconStarRate {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconStrikethroughS {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSync {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSyncDisabled {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconSystemUpdate {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconTableChart {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconTablet {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconTabletAndroid {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconTabletMac {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconTapAndPlay {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconTextFields {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconTextRotationNone {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconThermal {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconThumbDownAlt {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconThumbUpAlt {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconTimeToLeave {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconTitle {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconToggleOff {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconToggleOn {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconTurnedInNot {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconTv {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconTvOff {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconVerticalAlignCenter {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconVerticalAlignTop {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconVideogameAsset {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconViewColumn {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconViewWeek {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconVoiceChat {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconVoiceOverOff {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconWatch {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconWc {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconWhatshot {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconWifi {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconWrapText {
+        "size"?: string;
+        "viewBox"?: string;
+    }
+    interface RuxIconZoomOut {
+        "size"?: string;
+        "viewBox"?: string;
+    }
     interface IntrinsicElements {
         "rux-button": RuxButton;
         "rux-clock": RuxClock;
         "rux-global-status-bar": RuxGlobalStatusBar;
+        "rux-icon": RuxIcon;
+        "rux-icon-ac-unit": RuxIconAcUnit;
+        "rux-icon-accessibility": RuxIconAccessibility;
+        "rux-icon-accessibility-new": RuxIconAccessibilityNew;
+        "rux-icon-adb": RuxIconAdb;
+        "rux-icon-airline-seat-flat-angled": RuxIconAirlineSeatFlatAngled;
+        "rux-icon-airline-seat-individual-suite": RuxIconAirlineSeatIndividualSuite;
+        "rux-icon-airline-seat-legroom-extra": RuxIconAirlineSeatLegroomExtra;
+        "rux-icon-airline-seat-recline-extra": RuxIconAirlineSeatReclineExtra;
+        "rux-icon-airport-shuttle": RuxIconAirportShuttle;
+        "rux-icon-alarm": RuxIconAlarm;
+        "rux-icon-all-inclusive": RuxIconAllInclusive;
+        "rux-icon-all-out": RuxIconAllOut;
+        "rux-icon-altitude": RuxIconAltitude;
+        "rux-icon-antenna": RuxIconAntenna;
+        "rux-icon-antenna-off": RuxIconAntennaOff;
+        "rux-icon-antenna-receive": RuxIconAntennaReceive;
+        "rux-icon-antenna-transmit": RuxIconAntennaTransmit;
+        "rux-icon-assessment": RuxIconAssessment;
+        "rux-icon-assignment-late": RuxIconAssignmentLate;
+        "rux-icon-assignment-returned": RuxIconAssignmentReturned;
+        "rux-icon-attach-money": RuxIconAttachMoney;
+        "rux-icon-attachment": RuxIconAttachment;
+        "rux-icon-bar-chart": RuxIconBarChart;
+        "rux-icon-beach-access": RuxIconBeachAccess;
+        "rux-icon-bluetooth-audio": RuxIconBluetoothAudio;
+        "rux-icon-bookmark": RuxIconBookmark;
+        "rux-icon-border-all": RuxIconBorderAll;
+        "rux-icon-border-clear": RuxIconBorderClear;
+        "rux-icon-border-horizontal": RuxIconBorderHorizontal;
+        "rux-icon-border-inner": RuxIconBorderInner;
+        "rux-icon-border-left": RuxIconBorderLeft;
+        "rux-icon-border-outer": RuxIconBorderOuter;
+        "rux-icon-border-right": RuxIconBorderRight;
+        "rux-icon-border-style": RuxIconBorderStyle;
+        "rux-icon-border-vertical": RuxIconBorderVertical;
+        "rux-icon-bubble-chart": RuxIconBubbleChart;
+        "rux-icon-business-center": RuxIconBusinessCenter;
+        "rux-icon-cached": RuxIconCached;
+        "rux-icon-cake": RuxIconCake;
+        "rux-icon-casino": RuxIconCasino;
+        "rux-icon-cast": RuxIconCast;
+        "rux-icon-cast-connected": RuxIconCastConnected;
+        "rux-icon-check-box": RuxIconCheckBox;
+        "rux-icon-check-box-outline-blank": RuxIconCheckBoxOutlineBlank;
+        "rux-icon-child-care": RuxIconChildCare;
+        "rux-icon-child-friendly": RuxIconChildFriendly;
+        "rux-icon-chrome-reader-mode": RuxIconChromeReaderMode;
+        "rux-icon-cloud": RuxIconCloud;
+        "rux-icon-cloud-circle": RuxIconCloudCircle;
+        "rux-icon-cloud-done": RuxIconCloudDone;
+        "rux-icon-cloud-download": RuxIconCloudDownload;
+        "rux-icon-cloud-off": RuxIconCloudOff;
+        "rux-icon-cloud-queue": RuxIconCloudQueue;
+        "rux-icon-cloud-upload": RuxIconCloudUpload;
+        "rux-icon-computer": RuxIconComputer;
+        "rux-icon-confirmation-number": RuxIconConfirmationNumber;
+        "rux-icon-create-new-folder": RuxIconCreateNewFolder;
+        "rux-icon-date-range": RuxIconDateRange;
+        "rux-icon-device-hub": RuxIconDeviceHub;
+        "rux-icon-device-unknown": RuxIconDeviceUnknown;
+        "rux-icon-devices-other": RuxIconDevicesOther;
+        "rux-icon-disc-full": RuxIconDiscFull;
+        "rux-icon-domain": RuxIconDomain;
+        "rux-icon-done": RuxIconDone;
+        "rux-icon-drive-eta": RuxIconDriveEta;
+        "rux-icon-equipment": RuxIconEquipment;
+        "rux-icon-event-available": RuxIconEventAvailable;
+        "rux-icon-event-busy": RuxIconEventBusy;
+        "rux-icon-favorite-border": RuxIconFavoriteBorder;
+        "rux-icon-fingerprint": RuxIconFingerprint;
+        "rux-icon-fitness-center": RuxIconFitnessCenter;
+        "rux-icon-flip-to-back": RuxIconFlipToBack;
+        "rux-icon-folder": RuxIconFolder;
+        "rux-icon-folder-open": RuxIconFolderOpen;
+        "rux-icon-folder-shared": RuxIconFolderShared;
+        "rux-icon-folder-special": RuxIconFolderSpecial;
+        "rux-icon-format-align-center": RuxIconFormatAlignCenter;
+        "rux-icon-format-align-justify": RuxIconFormatAlignJustify;
+        "rux-icon-format-align-left": RuxIconFormatAlignLeft;
+        "rux-icon-format-align-right": RuxIconFormatAlignRight;
+        "rux-icon-format-color-reset": RuxIconFormatColorReset;
+        "rux-icon-format-color-text": RuxIconFormatColorText;
+        "rux-icon-format-indent-decrease": RuxIconFormatIndentDecrease;
+        "rux-icon-format-indent-increase": RuxIconFormatIndentIncrease;
+        "rux-icon-format-italic": RuxIconFormatItalic;
+        "rux-icon-format-line-spacing": RuxIconFormatLineSpacing;
+        "rux-icon-format-list-bulleted": RuxIconFormatListBulleted;
+        "rux-icon-format-list-numbered": RuxIconFormatListNumbered;
+        "rux-icon-format-list-numbered-rtl": RuxIconFormatListNumberedRtl;
+        "rux-icon-format-quote": RuxIconFormatQuote;
+        "rux-icon-format-strikethrough": RuxIconFormatStrikethrough;
+        "rux-icon-format-textdirection-l-to-r": RuxIconFormatTextdirectionLToR;
+        "rux-icon-format-textdirection-r-to-l": RuxIconFormatTextdirectionRToL;
+        "rux-icon-format-underlined": RuxIconFormatUnderlined;
+        "rux-icon-free-breakfast": RuxIconFreeBreakfast;
+        "rux-icon-functions": RuxIconFunctions;
+        "rux-icon-gamepad": RuxIconGamepad;
+        "rux-icon-gavel": RuxIconGavel;
+        "rux-icon-golf-course": RuxIconGolfCourse;
+        "rux-icon-group": RuxIconGroup;
+        "rux-icon-group-add": RuxIconGroupAdd;
+        "rux-icon-group-work": RuxIconGroupWork;
+        "rux-icon-help": RuxIconHelp;
+        "rux-icon-help-outline": RuxIconHelpOutline;
+        "rux-icon-highlight": RuxIconHighlight;
+        "rux-icon-highlight-off": RuxIconHighlightOff;
+        "rux-icon-history": RuxIconHistory;
+        "rux-icon-hot-tub": RuxIconHotTub;
+        "rux-icon-indeterminate-check-box": RuxIconIndeterminateCheckBox;
+        "rux-icon-insert-chart": RuxIconInsertChart;
+        "rux-icon-insert-chart-outlined": RuxIconInsertChartOutlined;
+        "rux-icon-insert-drive-file": RuxIconInsertDriveFile;
+        "rux-icon-insert-emoticon": RuxIconInsertEmoticon;
+        "rux-icon-insert-photo": RuxIconInsertPhoto;
+        "rux-icon-keyboard-arrow-down": RuxIconKeyboardArrowDown;
+        "rux-icon-keyboard-arrow-left": RuxIconKeyboardArrowLeft;
+        "rux-icon-keyboard-arrow-right": RuxIconKeyboardArrowRight;
+        "rux-icon-keyboard-backspace": RuxIconKeyboardBackspace;
+        "rux-icon-keyboard-capslock": RuxIconKeyboardCapslock;
+        "rux-icon-keyboard-hide": RuxIconKeyboardHide;
+        "rux-icon-keyboard-return": RuxIconKeyboardReturn;
+        "rux-icon-keyboard-tab": RuxIconKeyboardTab;
+        "rux-icon-keyboard-voice": RuxIconKeyboardVoice;
+        "rux-icon-kitchen": RuxIconKitchen;
+        "rux-icon-laptop": RuxIconLaptop;
+        "rux-icon-laptop-mac": RuxIconLaptopMac;
+        "rux-icon-laptop-windows": RuxIconLaptopWindows;
+        "rux-icon-linear-scale": RuxIconLinearScale;
+        "rux-icon-live-tv": RuxIconLiveTv;
+        "rux-icon-location-city": RuxIconLocationCity;
+        "rux-icon-loyalty": RuxIconLoyalty;
+        "rux-icon-meeting-room": RuxIconMeetingRoom;
+        "rux-icon-memory": RuxIconMemory;
+        "rux-icon-merge-type": RuxIconMergeType;
+        "rux-icon-mission": RuxIconMission;
+        "rux-icon-mms": RuxIconMms;
+        "rux-icon-mode-comment": RuxIconModeComment;
+        "rux-icon-monetization-on": RuxIconMonetizationOn;
+        "rux-icon-money-off": RuxIconMoneyOff;
+        "rux-icon-mood": RuxIconMood;
+        "rux-icon-mood-bad": RuxIconMoodBad;
+        "rux-icon-more": RuxIconMore;
+        "rux-icon-motorcycle": RuxIconMotorcycle;
+        "rux-icon-mouse": RuxIconMouse;
+        "rux-icon-netcom": RuxIconNetcom;
+        "rux-icon-network-locked": RuxIconNetworkLocked;
+        "rux-icon-no-encryption": RuxIconNoEncryption;
+        "rux-icon-no-meeting-room": RuxIconNoMeetingRoom;
+        "rux-icon-notes": RuxIconNotes;
+        "rux-icon-notifications": RuxIconNotifications;
+        "rux-icon-notifications-active": RuxIconNotificationsActive;
+        "rux-icon-notifications-none": RuxIconNotificationsNone;
+        "rux-icon-notifications-off": RuxIconNotificationsOff;
+        "rux-icon-notifications-paused": RuxIconNotificationsPaused;
+        "rux-icon-offline-pin": RuxIconOfflinePin;
+        "rux-icon-ondemand-video": RuxIconOndemandVideo;
+        "rux-icon-open-in-new": RuxIconOpenInNew;
+        "rux-icon-open-with": RuxIconOpenWith;
+        "rux-icon-pages": RuxIconPages;
+        "rux-icon-party-mode": RuxIconPartyMode;
+        "rux-icon-payload": RuxIconPayload;
+        "rux-icon-people-outline": RuxIconPeopleOutline;
+        "rux-icon-perm-phone-msg": RuxIconPermPhoneMsg;
+        "rux-icon-person": RuxIconPerson;
+        "rux-icon-person-add": RuxIconPersonAdd;
+        "rux-icon-person-outline": RuxIconPersonOutline;
+        "rux-icon-personal-video": RuxIconPersonalVideo;
+        "rux-icon-pets": RuxIconPets;
+        "rux-icon-phone-bluetooth-speaker": RuxIconPhoneBluetoothSpeaker;
+        "rux-icon-phone-callback": RuxIconPhoneCallback;
+        "rux-icon-phone-forwarded": RuxIconPhoneForwarded;
+        "rux-icon-phone-in-talk": RuxIconPhoneInTalk;
+        "rux-icon-phone-iphone": RuxIconPhoneIphone;
+        "rux-icon-phone-locked": RuxIconPhoneLocked;
+        "rux-icon-phone-missed": RuxIconPhoneMissed;
+        "rux-icon-pie-chart": RuxIconPieChart;
+        "rux-icon-plus-one": RuxIconPlusOne;
+        "rux-icon-poll": RuxIconPoll;
+        "rux-icon-pool": RuxIconPool;
+        "rux-icon-power": RuxIconPower;
+        "rux-icon-power-off": RuxIconPowerOff;
+        "rux-icon-print": RuxIconPrint;
+        "rux-icon-priority-high": RuxIconPriorityHigh;
+        "rux-icon-processor": RuxIconProcessor;
+        "rux-icon-processor-alt": RuxIconProcessorAlt;
+        "rux-icon-propulsion-power": RuxIconPropulsionPower;
+        "rux-icon-public": RuxIconPublic;
+        "rux-icon-publish": RuxIconPublish;
+        "rux-icon-question-answer": RuxIconQuestionAnswer;
+        "rux-icon-radio-button-checked": RuxIconRadioButtonChecked;
+        "rux-icon-radio-button-unchecked": RuxIconRadioButtonUnchecked;
+        "rux-icon-room-service": RuxIconRoomService;
+        "rux-icon-router": RuxIconRouter;
+        "rux-icon-rv-hookup": RuxIconRvHookup;
+        "rux-icon-satellite-off": RuxIconSatelliteOff;
+        "rux-icon-satellite-receive": RuxIconSatelliteReceive;
+        "rux-icon-satellite-transmit": RuxIconSatelliteTransmit;
+        "rux-icon-scanner": RuxIconScanner;
+        "rux-icon-scatter-plot": RuxIconScatterPlot;
+        "rux-icon-school": RuxIconSchool;
+        "rux-icon-seat": RuxIconSeat;
+        "rux-icon-security": RuxIconSecurity;
+        "rux-icon-sentiment-dissatisfied": RuxIconSentimentDissatisfied;
+        "rux-icon-sentiment-satisfied": RuxIconSentimentSatisfied;
+        "rux-icon-sentiment-very-dissatisfied": RuxIconSentimentVeryDissatisfied;
+        "rux-icon-sentiment-very-satisfied": RuxIconSentimentVerySatisfied;
+        "rux-icon-settings-applications": RuxIconSettingsApplications;
+        "rux-icon-settings-input-component": RuxIconSettingsInputComponent;
+        "rux-icon-settings-power": RuxIconSettingsPower;
+        "rux-icon-share": RuxIconShare;
+        "rux-icon-shopping-basket": RuxIconShoppingBasket;
+        "rux-icon-show-chart": RuxIconShowChart;
+        "rux-icon-smoke-free": RuxIconSmokeFree;
+        "rux-icon-smoking-rooms": RuxIconSmokingRooms;
+        "rux-icon-sms": RuxIconSms;
+        "rux-icon-sms-failed": RuxIconSmsFailed;
+        "rux-icon-solar": RuxIconSolar;
+        "rux-icon-spa": RuxIconSpa;
+        "rux-icon-space-bar": RuxIconSpaceBar;
+        "rux-icon-speaker": RuxIconSpeaker;
+        "rux-icon-speaker-group": RuxIconSpeakerGroup;
+        "rux-icon-star": RuxIconStar;
+        "rux-icon-star-border": RuxIconStarBorder;
+        "rux-icon-star-half": RuxIconStarHalf;
+        "rux-icon-star-rate": RuxIconStarRate;
+        "rux-icon-strikethrough-s": RuxIconStrikethroughS;
+        "rux-icon-sync": RuxIconSync;
+        "rux-icon-sync-disabled": RuxIconSyncDisabled;
+        "rux-icon-system-update": RuxIconSystemUpdate;
+        "rux-icon-table-chart": RuxIconTableChart;
+        "rux-icon-tablet": RuxIconTablet;
+        "rux-icon-tablet-android": RuxIconTabletAndroid;
+        "rux-icon-tablet-mac": RuxIconTabletMac;
+        "rux-icon-tap-and-play": RuxIconTapAndPlay;
+        "rux-icon-text-fields": RuxIconTextFields;
+        "rux-icon-text-rotation-none": RuxIconTextRotationNone;
+        "rux-icon-thermal": RuxIconThermal;
+        "rux-icon-thumb-down-alt": RuxIconThumbDownAlt;
+        "rux-icon-thumb-up-alt": RuxIconThumbUpAlt;
+        "rux-icon-time-to-leave": RuxIconTimeToLeave;
+        "rux-icon-title": RuxIconTitle;
+        "rux-icon-toggle-off": RuxIconToggleOff;
+        "rux-icon-toggle-on": RuxIconToggleOn;
+        "rux-icon-turned-in-not": RuxIconTurnedInNot;
+        "rux-icon-tv": RuxIconTv;
+        "rux-icon-tv-off": RuxIconTvOff;
+        "rux-icon-vertical-align-center": RuxIconVerticalAlignCenter;
+        "rux-icon-vertical-align-top": RuxIconVerticalAlignTop;
+        "rux-icon-videogame-asset": RuxIconVideogameAsset;
+        "rux-icon-view-column": RuxIconViewColumn;
+        "rux-icon-view-week": RuxIconViewWeek;
+        "rux-icon-voice-chat": RuxIconVoiceChat;
+        "rux-icon-voice-over-off": RuxIconVoiceOverOff;
+        "rux-icon-watch": RuxIconWatch;
+        "rux-icon-wc": RuxIconWc;
+        "rux-icon-whatshot": RuxIconWhatshot;
+        "rux-icon-wifi": RuxIconWifi;
+        "rux-icon-wrap-text": RuxIconWrapText;
+        "rux-icon-zoom-out": RuxIconZoomOut;
     }
 }
 export { LocalJSX as JSX };
@@ -88,6 +4262,266 @@ declare module "@stencil/core" {
             "rux-button": LocalJSX.RuxButton & JSXBase.HTMLAttributes<HTMLRuxButtonElement>;
             "rux-clock": LocalJSX.RuxClock & JSXBase.HTMLAttributes<HTMLRuxClockElement>;
             "rux-global-status-bar": LocalJSX.RuxGlobalStatusBar & JSXBase.HTMLAttributes<HTMLRuxGlobalStatusBarElement>;
+            "rux-icon": LocalJSX.RuxIcon & JSXBase.HTMLAttributes<HTMLRuxIconElement>;
+            "rux-icon-ac-unit": LocalJSX.RuxIconAcUnit & JSXBase.HTMLAttributes<HTMLRuxIconAcUnitElement>;
+            "rux-icon-accessibility": LocalJSX.RuxIconAccessibility & JSXBase.HTMLAttributes<HTMLRuxIconAccessibilityElement>;
+            "rux-icon-accessibility-new": LocalJSX.RuxIconAccessibilityNew & JSXBase.HTMLAttributes<HTMLRuxIconAccessibilityNewElement>;
+            "rux-icon-adb": LocalJSX.RuxIconAdb & JSXBase.HTMLAttributes<HTMLRuxIconAdbElement>;
+            "rux-icon-airline-seat-flat-angled": LocalJSX.RuxIconAirlineSeatFlatAngled & JSXBase.HTMLAttributes<HTMLRuxIconAirlineSeatFlatAngledElement>;
+            "rux-icon-airline-seat-individual-suite": LocalJSX.RuxIconAirlineSeatIndividualSuite & JSXBase.HTMLAttributes<HTMLRuxIconAirlineSeatIndividualSuiteElement>;
+            "rux-icon-airline-seat-legroom-extra": LocalJSX.RuxIconAirlineSeatLegroomExtra & JSXBase.HTMLAttributes<HTMLRuxIconAirlineSeatLegroomExtraElement>;
+            "rux-icon-airline-seat-recline-extra": LocalJSX.RuxIconAirlineSeatReclineExtra & JSXBase.HTMLAttributes<HTMLRuxIconAirlineSeatReclineExtraElement>;
+            "rux-icon-airport-shuttle": LocalJSX.RuxIconAirportShuttle & JSXBase.HTMLAttributes<HTMLRuxIconAirportShuttleElement>;
+            "rux-icon-alarm": LocalJSX.RuxIconAlarm & JSXBase.HTMLAttributes<HTMLRuxIconAlarmElement>;
+            "rux-icon-all-inclusive": LocalJSX.RuxIconAllInclusive & JSXBase.HTMLAttributes<HTMLRuxIconAllInclusiveElement>;
+            "rux-icon-all-out": LocalJSX.RuxIconAllOut & JSXBase.HTMLAttributes<HTMLRuxIconAllOutElement>;
+            "rux-icon-altitude": LocalJSX.RuxIconAltitude & JSXBase.HTMLAttributes<HTMLRuxIconAltitudeElement>;
+            "rux-icon-antenna": LocalJSX.RuxIconAntenna & JSXBase.HTMLAttributes<HTMLRuxIconAntennaElement>;
+            "rux-icon-antenna-off": LocalJSX.RuxIconAntennaOff & JSXBase.HTMLAttributes<HTMLRuxIconAntennaOffElement>;
+            "rux-icon-antenna-receive": LocalJSX.RuxIconAntennaReceive & JSXBase.HTMLAttributes<HTMLRuxIconAntennaReceiveElement>;
+            "rux-icon-antenna-transmit": LocalJSX.RuxIconAntennaTransmit & JSXBase.HTMLAttributes<HTMLRuxIconAntennaTransmitElement>;
+            "rux-icon-assessment": LocalJSX.RuxIconAssessment & JSXBase.HTMLAttributes<HTMLRuxIconAssessmentElement>;
+            "rux-icon-assignment-late": LocalJSX.RuxIconAssignmentLate & JSXBase.HTMLAttributes<HTMLRuxIconAssignmentLateElement>;
+            "rux-icon-assignment-returned": LocalJSX.RuxIconAssignmentReturned & JSXBase.HTMLAttributes<HTMLRuxIconAssignmentReturnedElement>;
+            "rux-icon-attach-money": LocalJSX.RuxIconAttachMoney & JSXBase.HTMLAttributes<HTMLRuxIconAttachMoneyElement>;
+            "rux-icon-attachment": LocalJSX.RuxIconAttachment & JSXBase.HTMLAttributes<HTMLRuxIconAttachmentElement>;
+            "rux-icon-bar-chart": LocalJSX.RuxIconBarChart & JSXBase.HTMLAttributes<HTMLRuxIconBarChartElement>;
+            "rux-icon-beach-access": LocalJSX.RuxIconBeachAccess & JSXBase.HTMLAttributes<HTMLRuxIconBeachAccessElement>;
+            "rux-icon-bluetooth-audio": LocalJSX.RuxIconBluetoothAudio & JSXBase.HTMLAttributes<HTMLRuxIconBluetoothAudioElement>;
+            "rux-icon-bookmark": LocalJSX.RuxIconBookmark & JSXBase.HTMLAttributes<HTMLRuxIconBookmarkElement>;
+            "rux-icon-border-all": LocalJSX.RuxIconBorderAll & JSXBase.HTMLAttributes<HTMLRuxIconBorderAllElement>;
+            "rux-icon-border-clear": LocalJSX.RuxIconBorderClear & JSXBase.HTMLAttributes<HTMLRuxIconBorderClearElement>;
+            "rux-icon-border-horizontal": LocalJSX.RuxIconBorderHorizontal & JSXBase.HTMLAttributes<HTMLRuxIconBorderHorizontalElement>;
+            "rux-icon-border-inner": LocalJSX.RuxIconBorderInner & JSXBase.HTMLAttributes<HTMLRuxIconBorderInnerElement>;
+            "rux-icon-border-left": LocalJSX.RuxIconBorderLeft & JSXBase.HTMLAttributes<HTMLRuxIconBorderLeftElement>;
+            "rux-icon-border-outer": LocalJSX.RuxIconBorderOuter & JSXBase.HTMLAttributes<HTMLRuxIconBorderOuterElement>;
+            "rux-icon-border-right": LocalJSX.RuxIconBorderRight & JSXBase.HTMLAttributes<HTMLRuxIconBorderRightElement>;
+            "rux-icon-border-style": LocalJSX.RuxIconBorderStyle & JSXBase.HTMLAttributes<HTMLRuxIconBorderStyleElement>;
+            "rux-icon-border-vertical": LocalJSX.RuxIconBorderVertical & JSXBase.HTMLAttributes<HTMLRuxIconBorderVerticalElement>;
+            "rux-icon-bubble-chart": LocalJSX.RuxIconBubbleChart & JSXBase.HTMLAttributes<HTMLRuxIconBubbleChartElement>;
+            "rux-icon-business-center": LocalJSX.RuxIconBusinessCenter & JSXBase.HTMLAttributes<HTMLRuxIconBusinessCenterElement>;
+            "rux-icon-cached": LocalJSX.RuxIconCached & JSXBase.HTMLAttributes<HTMLRuxIconCachedElement>;
+            "rux-icon-cake": LocalJSX.RuxIconCake & JSXBase.HTMLAttributes<HTMLRuxIconCakeElement>;
+            "rux-icon-casino": LocalJSX.RuxIconCasino & JSXBase.HTMLAttributes<HTMLRuxIconCasinoElement>;
+            "rux-icon-cast": LocalJSX.RuxIconCast & JSXBase.HTMLAttributes<HTMLRuxIconCastElement>;
+            "rux-icon-cast-connected": LocalJSX.RuxIconCastConnected & JSXBase.HTMLAttributes<HTMLRuxIconCastConnectedElement>;
+            "rux-icon-check-box": LocalJSX.RuxIconCheckBox & JSXBase.HTMLAttributes<HTMLRuxIconCheckBoxElement>;
+            "rux-icon-check-box-outline-blank": LocalJSX.RuxIconCheckBoxOutlineBlank & JSXBase.HTMLAttributes<HTMLRuxIconCheckBoxOutlineBlankElement>;
+            "rux-icon-child-care": LocalJSX.RuxIconChildCare & JSXBase.HTMLAttributes<HTMLRuxIconChildCareElement>;
+            "rux-icon-child-friendly": LocalJSX.RuxIconChildFriendly & JSXBase.HTMLAttributes<HTMLRuxIconChildFriendlyElement>;
+            "rux-icon-chrome-reader-mode": LocalJSX.RuxIconChromeReaderMode & JSXBase.HTMLAttributes<HTMLRuxIconChromeReaderModeElement>;
+            "rux-icon-cloud": LocalJSX.RuxIconCloud & JSXBase.HTMLAttributes<HTMLRuxIconCloudElement>;
+            "rux-icon-cloud-circle": LocalJSX.RuxIconCloudCircle & JSXBase.HTMLAttributes<HTMLRuxIconCloudCircleElement>;
+            "rux-icon-cloud-done": LocalJSX.RuxIconCloudDone & JSXBase.HTMLAttributes<HTMLRuxIconCloudDoneElement>;
+            "rux-icon-cloud-download": LocalJSX.RuxIconCloudDownload & JSXBase.HTMLAttributes<HTMLRuxIconCloudDownloadElement>;
+            "rux-icon-cloud-off": LocalJSX.RuxIconCloudOff & JSXBase.HTMLAttributes<HTMLRuxIconCloudOffElement>;
+            "rux-icon-cloud-queue": LocalJSX.RuxIconCloudQueue & JSXBase.HTMLAttributes<HTMLRuxIconCloudQueueElement>;
+            "rux-icon-cloud-upload": LocalJSX.RuxIconCloudUpload & JSXBase.HTMLAttributes<HTMLRuxIconCloudUploadElement>;
+            "rux-icon-computer": LocalJSX.RuxIconComputer & JSXBase.HTMLAttributes<HTMLRuxIconComputerElement>;
+            "rux-icon-confirmation-number": LocalJSX.RuxIconConfirmationNumber & JSXBase.HTMLAttributes<HTMLRuxIconConfirmationNumberElement>;
+            "rux-icon-create-new-folder": LocalJSX.RuxIconCreateNewFolder & JSXBase.HTMLAttributes<HTMLRuxIconCreateNewFolderElement>;
+            "rux-icon-date-range": LocalJSX.RuxIconDateRange & JSXBase.HTMLAttributes<HTMLRuxIconDateRangeElement>;
+            "rux-icon-device-hub": LocalJSX.RuxIconDeviceHub & JSXBase.HTMLAttributes<HTMLRuxIconDeviceHubElement>;
+            "rux-icon-device-unknown": LocalJSX.RuxIconDeviceUnknown & JSXBase.HTMLAttributes<HTMLRuxIconDeviceUnknownElement>;
+            "rux-icon-devices-other": LocalJSX.RuxIconDevicesOther & JSXBase.HTMLAttributes<HTMLRuxIconDevicesOtherElement>;
+            "rux-icon-disc-full": LocalJSX.RuxIconDiscFull & JSXBase.HTMLAttributes<HTMLRuxIconDiscFullElement>;
+            "rux-icon-domain": LocalJSX.RuxIconDomain & JSXBase.HTMLAttributes<HTMLRuxIconDomainElement>;
+            "rux-icon-done": LocalJSX.RuxIconDone & JSXBase.HTMLAttributes<HTMLRuxIconDoneElement>;
+            "rux-icon-drive-eta": LocalJSX.RuxIconDriveEta & JSXBase.HTMLAttributes<HTMLRuxIconDriveEtaElement>;
+            "rux-icon-equipment": LocalJSX.RuxIconEquipment & JSXBase.HTMLAttributes<HTMLRuxIconEquipmentElement>;
+            "rux-icon-event-available": LocalJSX.RuxIconEventAvailable & JSXBase.HTMLAttributes<HTMLRuxIconEventAvailableElement>;
+            "rux-icon-event-busy": LocalJSX.RuxIconEventBusy & JSXBase.HTMLAttributes<HTMLRuxIconEventBusyElement>;
+            "rux-icon-favorite-border": LocalJSX.RuxIconFavoriteBorder & JSXBase.HTMLAttributes<HTMLRuxIconFavoriteBorderElement>;
+            "rux-icon-fingerprint": LocalJSX.RuxIconFingerprint & JSXBase.HTMLAttributes<HTMLRuxIconFingerprintElement>;
+            "rux-icon-fitness-center": LocalJSX.RuxIconFitnessCenter & JSXBase.HTMLAttributes<HTMLRuxIconFitnessCenterElement>;
+            "rux-icon-flip-to-back": LocalJSX.RuxIconFlipToBack & JSXBase.HTMLAttributes<HTMLRuxIconFlipToBackElement>;
+            "rux-icon-folder": LocalJSX.RuxIconFolder & JSXBase.HTMLAttributes<HTMLRuxIconFolderElement>;
+            "rux-icon-folder-open": LocalJSX.RuxIconFolderOpen & JSXBase.HTMLAttributes<HTMLRuxIconFolderOpenElement>;
+            "rux-icon-folder-shared": LocalJSX.RuxIconFolderShared & JSXBase.HTMLAttributes<HTMLRuxIconFolderSharedElement>;
+            "rux-icon-folder-special": LocalJSX.RuxIconFolderSpecial & JSXBase.HTMLAttributes<HTMLRuxIconFolderSpecialElement>;
+            "rux-icon-format-align-center": LocalJSX.RuxIconFormatAlignCenter & JSXBase.HTMLAttributes<HTMLRuxIconFormatAlignCenterElement>;
+            "rux-icon-format-align-justify": LocalJSX.RuxIconFormatAlignJustify & JSXBase.HTMLAttributes<HTMLRuxIconFormatAlignJustifyElement>;
+            "rux-icon-format-align-left": LocalJSX.RuxIconFormatAlignLeft & JSXBase.HTMLAttributes<HTMLRuxIconFormatAlignLeftElement>;
+            "rux-icon-format-align-right": LocalJSX.RuxIconFormatAlignRight & JSXBase.HTMLAttributes<HTMLRuxIconFormatAlignRightElement>;
+            "rux-icon-format-color-reset": LocalJSX.RuxIconFormatColorReset & JSXBase.HTMLAttributes<HTMLRuxIconFormatColorResetElement>;
+            "rux-icon-format-color-text": LocalJSX.RuxIconFormatColorText & JSXBase.HTMLAttributes<HTMLRuxIconFormatColorTextElement>;
+            "rux-icon-format-indent-decrease": LocalJSX.RuxIconFormatIndentDecrease & JSXBase.HTMLAttributes<HTMLRuxIconFormatIndentDecreaseElement>;
+            "rux-icon-format-indent-increase": LocalJSX.RuxIconFormatIndentIncrease & JSXBase.HTMLAttributes<HTMLRuxIconFormatIndentIncreaseElement>;
+            "rux-icon-format-italic": LocalJSX.RuxIconFormatItalic & JSXBase.HTMLAttributes<HTMLRuxIconFormatItalicElement>;
+            "rux-icon-format-line-spacing": LocalJSX.RuxIconFormatLineSpacing & JSXBase.HTMLAttributes<HTMLRuxIconFormatLineSpacingElement>;
+            "rux-icon-format-list-bulleted": LocalJSX.RuxIconFormatListBulleted & JSXBase.HTMLAttributes<HTMLRuxIconFormatListBulletedElement>;
+            "rux-icon-format-list-numbered": LocalJSX.RuxIconFormatListNumbered & JSXBase.HTMLAttributes<HTMLRuxIconFormatListNumberedElement>;
+            "rux-icon-format-list-numbered-rtl": LocalJSX.RuxIconFormatListNumberedRtl & JSXBase.HTMLAttributes<HTMLRuxIconFormatListNumberedRtlElement>;
+            "rux-icon-format-quote": LocalJSX.RuxIconFormatQuote & JSXBase.HTMLAttributes<HTMLRuxIconFormatQuoteElement>;
+            "rux-icon-format-strikethrough": LocalJSX.RuxIconFormatStrikethrough & JSXBase.HTMLAttributes<HTMLRuxIconFormatStrikethroughElement>;
+            "rux-icon-format-textdirection-l-to-r": LocalJSX.RuxIconFormatTextdirectionLToR & JSXBase.HTMLAttributes<HTMLRuxIconFormatTextdirectionLToRElement>;
+            "rux-icon-format-textdirection-r-to-l": LocalJSX.RuxIconFormatTextdirectionRToL & JSXBase.HTMLAttributes<HTMLRuxIconFormatTextdirectionRToLElement>;
+            "rux-icon-format-underlined": LocalJSX.RuxIconFormatUnderlined & JSXBase.HTMLAttributes<HTMLRuxIconFormatUnderlinedElement>;
+            "rux-icon-free-breakfast": LocalJSX.RuxIconFreeBreakfast & JSXBase.HTMLAttributes<HTMLRuxIconFreeBreakfastElement>;
+            "rux-icon-functions": LocalJSX.RuxIconFunctions & JSXBase.HTMLAttributes<HTMLRuxIconFunctionsElement>;
+            "rux-icon-gamepad": LocalJSX.RuxIconGamepad & JSXBase.HTMLAttributes<HTMLRuxIconGamepadElement>;
+            "rux-icon-gavel": LocalJSX.RuxIconGavel & JSXBase.HTMLAttributes<HTMLRuxIconGavelElement>;
+            "rux-icon-golf-course": LocalJSX.RuxIconGolfCourse & JSXBase.HTMLAttributes<HTMLRuxIconGolfCourseElement>;
+            "rux-icon-group": LocalJSX.RuxIconGroup & JSXBase.HTMLAttributes<HTMLRuxIconGroupElement>;
+            "rux-icon-group-add": LocalJSX.RuxIconGroupAdd & JSXBase.HTMLAttributes<HTMLRuxIconGroupAddElement>;
+            "rux-icon-group-work": LocalJSX.RuxIconGroupWork & JSXBase.HTMLAttributes<HTMLRuxIconGroupWorkElement>;
+            "rux-icon-help": LocalJSX.RuxIconHelp & JSXBase.HTMLAttributes<HTMLRuxIconHelpElement>;
+            "rux-icon-help-outline": LocalJSX.RuxIconHelpOutline & JSXBase.HTMLAttributes<HTMLRuxIconHelpOutlineElement>;
+            "rux-icon-highlight": LocalJSX.RuxIconHighlight & JSXBase.HTMLAttributes<HTMLRuxIconHighlightElement>;
+            "rux-icon-highlight-off": LocalJSX.RuxIconHighlightOff & JSXBase.HTMLAttributes<HTMLRuxIconHighlightOffElement>;
+            "rux-icon-history": LocalJSX.RuxIconHistory & JSXBase.HTMLAttributes<HTMLRuxIconHistoryElement>;
+            "rux-icon-hot-tub": LocalJSX.RuxIconHotTub & JSXBase.HTMLAttributes<HTMLRuxIconHotTubElement>;
+            "rux-icon-indeterminate-check-box": LocalJSX.RuxIconIndeterminateCheckBox & JSXBase.HTMLAttributes<HTMLRuxIconIndeterminateCheckBoxElement>;
+            "rux-icon-insert-chart": LocalJSX.RuxIconInsertChart & JSXBase.HTMLAttributes<HTMLRuxIconInsertChartElement>;
+            "rux-icon-insert-chart-outlined": LocalJSX.RuxIconInsertChartOutlined & JSXBase.HTMLAttributes<HTMLRuxIconInsertChartOutlinedElement>;
+            "rux-icon-insert-drive-file": LocalJSX.RuxIconInsertDriveFile & JSXBase.HTMLAttributes<HTMLRuxIconInsertDriveFileElement>;
+            "rux-icon-insert-emoticon": LocalJSX.RuxIconInsertEmoticon & JSXBase.HTMLAttributes<HTMLRuxIconInsertEmoticonElement>;
+            "rux-icon-insert-photo": LocalJSX.RuxIconInsertPhoto & JSXBase.HTMLAttributes<HTMLRuxIconInsertPhotoElement>;
+            "rux-icon-keyboard-arrow-down": LocalJSX.RuxIconKeyboardArrowDown & JSXBase.HTMLAttributes<HTMLRuxIconKeyboardArrowDownElement>;
+            "rux-icon-keyboard-arrow-left": LocalJSX.RuxIconKeyboardArrowLeft & JSXBase.HTMLAttributes<HTMLRuxIconKeyboardArrowLeftElement>;
+            "rux-icon-keyboard-arrow-right": LocalJSX.RuxIconKeyboardArrowRight & JSXBase.HTMLAttributes<HTMLRuxIconKeyboardArrowRightElement>;
+            "rux-icon-keyboard-backspace": LocalJSX.RuxIconKeyboardBackspace & JSXBase.HTMLAttributes<HTMLRuxIconKeyboardBackspaceElement>;
+            "rux-icon-keyboard-capslock": LocalJSX.RuxIconKeyboardCapslock & JSXBase.HTMLAttributes<HTMLRuxIconKeyboardCapslockElement>;
+            "rux-icon-keyboard-hide": LocalJSX.RuxIconKeyboardHide & JSXBase.HTMLAttributes<HTMLRuxIconKeyboardHideElement>;
+            "rux-icon-keyboard-return": LocalJSX.RuxIconKeyboardReturn & JSXBase.HTMLAttributes<HTMLRuxIconKeyboardReturnElement>;
+            "rux-icon-keyboard-tab": LocalJSX.RuxIconKeyboardTab & JSXBase.HTMLAttributes<HTMLRuxIconKeyboardTabElement>;
+            "rux-icon-keyboard-voice": LocalJSX.RuxIconKeyboardVoice & JSXBase.HTMLAttributes<HTMLRuxIconKeyboardVoiceElement>;
+            "rux-icon-kitchen": LocalJSX.RuxIconKitchen & JSXBase.HTMLAttributes<HTMLRuxIconKitchenElement>;
+            "rux-icon-laptop": LocalJSX.RuxIconLaptop & JSXBase.HTMLAttributes<HTMLRuxIconLaptopElement>;
+            "rux-icon-laptop-mac": LocalJSX.RuxIconLaptopMac & JSXBase.HTMLAttributes<HTMLRuxIconLaptopMacElement>;
+            "rux-icon-laptop-windows": LocalJSX.RuxIconLaptopWindows & JSXBase.HTMLAttributes<HTMLRuxIconLaptopWindowsElement>;
+            "rux-icon-linear-scale": LocalJSX.RuxIconLinearScale & JSXBase.HTMLAttributes<HTMLRuxIconLinearScaleElement>;
+            "rux-icon-live-tv": LocalJSX.RuxIconLiveTv & JSXBase.HTMLAttributes<HTMLRuxIconLiveTvElement>;
+            "rux-icon-location-city": LocalJSX.RuxIconLocationCity & JSXBase.HTMLAttributes<HTMLRuxIconLocationCityElement>;
+            "rux-icon-loyalty": LocalJSX.RuxIconLoyalty & JSXBase.HTMLAttributes<HTMLRuxIconLoyaltyElement>;
+            "rux-icon-meeting-room": LocalJSX.RuxIconMeetingRoom & JSXBase.HTMLAttributes<HTMLRuxIconMeetingRoomElement>;
+            "rux-icon-memory": LocalJSX.RuxIconMemory & JSXBase.HTMLAttributes<HTMLRuxIconMemoryElement>;
+            "rux-icon-merge-type": LocalJSX.RuxIconMergeType & JSXBase.HTMLAttributes<HTMLRuxIconMergeTypeElement>;
+            "rux-icon-mission": LocalJSX.RuxIconMission & JSXBase.HTMLAttributes<HTMLRuxIconMissionElement>;
+            "rux-icon-mms": LocalJSX.RuxIconMms & JSXBase.HTMLAttributes<HTMLRuxIconMmsElement>;
+            "rux-icon-mode-comment": LocalJSX.RuxIconModeComment & JSXBase.HTMLAttributes<HTMLRuxIconModeCommentElement>;
+            "rux-icon-monetization-on": LocalJSX.RuxIconMonetizationOn & JSXBase.HTMLAttributes<HTMLRuxIconMonetizationOnElement>;
+            "rux-icon-money-off": LocalJSX.RuxIconMoneyOff & JSXBase.HTMLAttributes<HTMLRuxIconMoneyOffElement>;
+            "rux-icon-mood": LocalJSX.RuxIconMood & JSXBase.HTMLAttributes<HTMLRuxIconMoodElement>;
+            "rux-icon-mood-bad": LocalJSX.RuxIconMoodBad & JSXBase.HTMLAttributes<HTMLRuxIconMoodBadElement>;
+            "rux-icon-more": LocalJSX.RuxIconMore & JSXBase.HTMLAttributes<HTMLRuxIconMoreElement>;
+            "rux-icon-motorcycle": LocalJSX.RuxIconMotorcycle & JSXBase.HTMLAttributes<HTMLRuxIconMotorcycleElement>;
+            "rux-icon-mouse": LocalJSX.RuxIconMouse & JSXBase.HTMLAttributes<HTMLRuxIconMouseElement>;
+            "rux-icon-netcom": LocalJSX.RuxIconNetcom & JSXBase.HTMLAttributes<HTMLRuxIconNetcomElement>;
+            "rux-icon-network-locked": LocalJSX.RuxIconNetworkLocked & JSXBase.HTMLAttributes<HTMLRuxIconNetworkLockedElement>;
+            "rux-icon-no-encryption": LocalJSX.RuxIconNoEncryption & JSXBase.HTMLAttributes<HTMLRuxIconNoEncryptionElement>;
+            "rux-icon-no-meeting-room": LocalJSX.RuxIconNoMeetingRoom & JSXBase.HTMLAttributes<HTMLRuxIconNoMeetingRoomElement>;
+            "rux-icon-notes": LocalJSX.RuxIconNotes & JSXBase.HTMLAttributes<HTMLRuxIconNotesElement>;
+            "rux-icon-notifications": LocalJSX.RuxIconNotifications & JSXBase.HTMLAttributes<HTMLRuxIconNotificationsElement>;
+            "rux-icon-notifications-active": LocalJSX.RuxIconNotificationsActive & JSXBase.HTMLAttributes<HTMLRuxIconNotificationsActiveElement>;
+            "rux-icon-notifications-none": LocalJSX.RuxIconNotificationsNone & JSXBase.HTMLAttributes<HTMLRuxIconNotificationsNoneElement>;
+            "rux-icon-notifications-off": LocalJSX.RuxIconNotificationsOff & JSXBase.HTMLAttributes<HTMLRuxIconNotificationsOffElement>;
+            "rux-icon-notifications-paused": LocalJSX.RuxIconNotificationsPaused & JSXBase.HTMLAttributes<HTMLRuxIconNotificationsPausedElement>;
+            "rux-icon-offline-pin": LocalJSX.RuxIconOfflinePin & JSXBase.HTMLAttributes<HTMLRuxIconOfflinePinElement>;
+            "rux-icon-ondemand-video": LocalJSX.RuxIconOndemandVideo & JSXBase.HTMLAttributes<HTMLRuxIconOndemandVideoElement>;
+            "rux-icon-open-in-new": LocalJSX.RuxIconOpenInNew & JSXBase.HTMLAttributes<HTMLRuxIconOpenInNewElement>;
+            "rux-icon-open-with": LocalJSX.RuxIconOpenWith & JSXBase.HTMLAttributes<HTMLRuxIconOpenWithElement>;
+            "rux-icon-pages": LocalJSX.RuxIconPages & JSXBase.HTMLAttributes<HTMLRuxIconPagesElement>;
+            "rux-icon-party-mode": LocalJSX.RuxIconPartyMode & JSXBase.HTMLAttributes<HTMLRuxIconPartyModeElement>;
+            "rux-icon-payload": LocalJSX.RuxIconPayload & JSXBase.HTMLAttributes<HTMLRuxIconPayloadElement>;
+            "rux-icon-people-outline": LocalJSX.RuxIconPeopleOutline & JSXBase.HTMLAttributes<HTMLRuxIconPeopleOutlineElement>;
+            "rux-icon-perm-phone-msg": LocalJSX.RuxIconPermPhoneMsg & JSXBase.HTMLAttributes<HTMLRuxIconPermPhoneMsgElement>;
+            "rux-icon-person": LocalJSX.RuxIconPerson & JSXBase.HTMLAttributes<HTMLRuxIconPersonElement>;
+            "rux-icon-person-add": LocalJSX.RuxIconPersonAdd & JSXBase.HTMLAttributes<HTMLRuxIconPersonAddElement>;
+            "rux-icon-person-outline": LocalJSX.RuxIconPersonOutline & JSXBase.HTMLAttributes<HTMLRuxIconPersonOutlineElement>;
+            "rux-icon-personal-video": LocalJSX.RuxIconPersonalVideo & JSXBase.HTMLAttributes<HTMLRuxIconPersonalVideoElement>;
+            "rux-icon-pets": LocalJSX.RuxIconPets & JSXBase.HTMLAttributes<HTMLRuxIconPetsElement>;
+            "rux-icon-phone-bluetooth-speaker": LocalJSX.RuxIconPhoneBluetoothSpeaker & JSXBase.HTMLAttributes<HTMLRuxIconPhoneBluetoothSpeakerElement>;
+            "rux-icon-phone-callback": LocalJSX.RuxIconPhoneCallback & JSXBase.HTMLAttributes<HTMLRuxIconPhoneCallbackElement>;
+            "rux-icon-phone-forwarded": LocalJSX.RuxIconPhoneForwarded & JSXBase.HTMLAttributes<HTMLRuxIconPhoneForwardedElement>;
+            "rux-icon-phone-in-talk": LocalJSX.RuxIconPhoneInTalk & JSXBase.HTMLAttributes<HTMLRuxIconPhoneInTalkElement>;
+            "rux-icon-phone-iphone": LocalJSX.RuxIconPhoneIphone & JSXBase.HTMLAttributes<HTMLRuxIconPhoneIphoneElement>;
+            "rux-icon-phone-locked": LocalJSX.RuxIconPhoneLocked & JSXBase.HTMLAttributes<HTMLRuxIconPhoneLockedElement>;
+            "rux-icon-phone-missed": LocalJSX.RuxIconPhoneMissed & JSXBase.HTMLAttributes<HTMLRuxIconPhoneMissedElement>;
+            "rux-icon-pie-chart": LocalJSX.RuxIconPieChart & JSXBase.HTMLAttributes<HTMLRuxIconPieChartElement>;
+            "rux-icon-plus-one": LocalJSX.RuxIconPlusOne & JSXBase.HTMLAttributes<HTMLRuxIconPlusOneElement>;
+            "rux-icon-poll": LocalJSX.RuxIconPoll & JSXBase.HTMLAttributes<HTMLRuxIconPollElement>;
+            "rux-icon-pool": LocalJSX.RuxIconPool & JSXBase.HTMLAttributes<HTMLRuxIconPoolElement>;
+            "rux-icon-power": LocalJSX.RuxIconPower & JSXBase.HTMLAttributes<HTMLRuxIconPowerElement>;
+            "rux-icon-power-off": LocalJSX.RuxIconPowerOff & JSXBase.HTMLAttributes<HTMLRuxIconPowerOffElement>;
+            "rux-icon-print": LocalJSX.RuxIconPrint & JSXBase.HTMLAttributes<HTMLRuxIconPrintElement>;
+            "rux-icon-priority-high": LocalJSX.RuxIconPriorityHigh & JSXBase.HTMLAttributes<HTMLRuxIconPriorityHighElement>;
+            "rux-icon-processor": LocalJSX.RuxIconProcessor & JSXBase.HTMLAttributes<HTMLRuxIconProcessorElement>;
+            "rux-icon-processor-alt": LocalJSX.RuxIconProcessorAlt & JSXBase.HTMLAttributes<HTMLRuxIconProcessorAltElement>;
+            "rux-icon-propulsion-power": LocalJSX.RuxIconPropulsionPower & JSXBase.HTMLAttributes<HTMLRuxIconPropulsionPowerElement>;
+            "rux-icon-public": LocalJSX.RuxIconPublic & JSXBase.HTMLAttributes<HTMLRuxIconPublicElement>;
+            "rux-icon-publish": LocalJSX.RuxIconPublish & JSXBase.HTMLAttributes<HTMLRuxIconPublishElement>;
+            "rux-icon-question-answer": LocalJSX.RuxIconQuestionAnswer & JSXBase.HTMLAttributes<HTMLRuxIconQuestionAnswerElement>;
+            "rux-icon-radio-button-checked": LocalJSX.RuxIconRadioButtonChecked & JSXBase.HTMLAttributes<HTMLRuxIconRadioButtonCheckedElement>;
+            "rux-icon-radio-button-unchecked": LocalJSX.RuxIconRadioButtonUnchecked & JSXBase.HTMLAttributes<HTMLRuxIconRadioButtonUncheckedElement>;
+            "rux-icon-room-service": LocalJSX.RuxIconRoomService & JSXBase.HTMLAttributes<HTMLRuxIconRoomServiceElement>;
+            "rux-icon-router": LocalJSX.RuxIconRouter & JSXBase.HTMLAttributes<HTMLRuxIconRouterElement>;
+            "rux-icon-rv-hookup": LocalJSX.RuxIconRvHookup & JSXBase.HTMLAttributes<HTMLRuxIconRvHookupElement>;
+            "rux-icon-satellite-off": LocalJSX.RuxIconSatelliteOff & JSXBase.HTMLAttributes<HTMLRuxIconSatelliteOffElement>;
+            "rux-icon-satellite-receive": LocalJSX.RuxIconSatelliteReceive & JSXBase.HTMLAttributes<HTMLRuxIconSatelliteReceiveElement>;
+            "rux-icon-satellite-transmit": LocalJSX.RuxIconSatelliteTransmit & JSXBase.HTMLAttributes<HTMLRuxIconSatelliteTransmitElement>;
+            "rux-icon-scanner": LocalJSX.RuxIconScanner & JSXBase.HTMLAttributes<HTMLRuxIconScannerElement>;
+            "rux-icon-scatter-plot": LocalJSX.RuxIconScatterPlot & JSXBase.HTMLAttributes<HTMLRuxIconScatterPlotElement>;
+            "rux-icon-school": LocalJSX.RuxIconSchool & JSXBase.HTMLAttributes<HTMLRuxIconSchoolElement>;
+            "rux-icon-seat": LocalJSX.RuxIconSeat & JSXBase.HTMLAttributes<HTMLRuxIconSeatElement>;
+            "rux-icon-security": LocalJSX.RuxIconSecurity & JSXBase.HTMLAttributes<HTMLRuxIconSecurityElement>;
+            "rux-icon-sentiment-dissatisfied": LocalJSX.RuxIconSentimentDissatisfied & JSXBase.HTMLAttributes<HTMLRuxIconSentimentDissatisfiedElement>;
+            "rux-icon-sentiment-satisfied": LocalJSX.RuxIconSentimentSatisfied & JSXBase.HTMLAttributes<HTMLRuxIconSentimentSatisfiedElement>;
+            "rux-icon-sentiment-very-dissatisfied": LocalJSX.RuxIconSentimentVeryDissatisfied & JSXBase.HTMLAttributes<HTMLRuxIconSentimentVeryDissatisfiedElement>;
+            "rux-icon-sentiment-very-satisfied": LocalJSX.RuxIconSentimentVerySatisfied & JSXBase.HTMLAttributes<HTMLRuxIconSentimentVerySatisfiedElement>;
+            "rux-icon-settings-applications": LocalJSX.RuxIconSettingsApplications & JSXBase.HTMLAttributes<HTMLRuxIconSettingsApplicationsElement>;
+            "rux-icon-settings-input-component": LocalJSX.RuxIconSettingsInputComponent & JSXBase.HTMLAttributes<HTMLRuxIconSettingsInputComponentElement>;
+            "rux-icon-settings-power": LocalJSX.RuxIconSettingsPower & JSXBase.HTMLAttributes<HTMLRuxIconSettingsPowerElement>;
+            "rux-icon-share": LocalJSX.RuxIconShare & JSXBase.HTMLAttributes<HTMLRuxIconShareElement>;
+            "rux-icon-shopping-basket": LocalJSX.RuxIconShoppingBasket & JSXBase.HTMLAttributes<HTMLRuxIconShoppingBasketElement>;
+            "rux-icon-show-chart": LocalJSX.RuxIconShowChart & JSXBase.HTMLAttributes<HTMLRuxIconShowChartElement>;
+            "rux-icon-smoke-free": LocalJSX.RuxIconSmokeFree & JSXBase.HTMLAttributes<HTMLRuxIconSmokeFreeElement>;
+            "rux-icon-smoking-rooms": LocalJSX.RuxIconSmokingRooms & JSXBase.HTMLAttributes<HTMLRuxIconSmokingRoomsElement>;
+            "rux-icon-sms": LocalJSX.RuxIconSms & JSXBase.HTMLAttributes<HTMLRuxIconSmsElement>;
+            "rux-icon-sms-failed": LocalJSX.RuxIconSmsFailed & JSXBase.HTMLAttributes<HTMLRuxIconSmsFailedElement>;
+            "rux-icon-solar": LocalJSX.RuxIconSolar & JSXBase.HTMLAttributes<HTMLRuxIconSolarElement>;
+            "rux-icon-spa": LocalJSX.RuxIconSpa & JSXBase.HTMLAttributes<HTMLRuxIconSpaElement>;
+            "rux-icon-space-bar": LocalJSX.RuxIconSpaceBar & JSXBase.HTMLAttributes<HTMLRuxIconSpaceBarElement>;
+            "rux-icon-speaker": LocalJSX.RuxIconSpeaker & JSXBase.HTMLAttributes<HTMLRuxIconSpeakerElement>;
+            "rux-icon-speaker-group": LocalJSX.RuxIconSpeakerGroup & JSXBase.HTMLAttributes<HTMLRuxIconSpeakerGroupElement>;
+            "rux-icon-star": LocalJSX.RuxIconStar & JSXBase.HTMLAttributes<HTMLRuxIconStarElement>;
+            "rux-icon-star-border": LocalJSX.RuxIconStarBorder & JSXBase.HTMLAttributes<HTMLRuxIconStarBorderElement>;
+            "rux-icon-star-half": LocalJSX.RuxIconStarHalf & JSXBase.HTMLAttributes<HTMLRuxIconStarHalfElement>;
+            "rux-icon-star-rate": LocalJSX.RuxIconStarRate & JSXBase.HTMLAttributes<HTMLRuxIconStarRateElement>;
+            "rux-icon-strikethrough-s": LocalJSX.RuxIconStrikethroughS & JSXBase.HTMLAttributes<HTMLRuxIconStrikethroughSElement>;
+            "rux-icon-sync": LocalJSX.RuxIconSync & JSXBase.HTMLAttributes<HTMLRuxIconSyncElement>;
+            "rux-icon-sync-disabled": LocalJSX.RuxIconSyncDisabled & JSXBase.HTMLAttributes<HTMLRuxIconSyncDisabledElement>;
+            "rux-icon-system-update": LocalJSX.RuxIconSystemUpdate & JSXBase.HTMLAttributes<HTMLRuxIconSystemUpdateElement>;
+            "rux-icon-table-chart": LocalJSX.RuxIconTableChart & JSXBase.HTMLAttributes<HTMLRuxIconTableChartElement>;
+            "rux-icon-tablet": LocalJSX.RuxIconTablet & JSXBase.HTMLAttributes<HTMLRuxIconTabletElement>;
+            "rux-icon-tablet-android": LocalJSX.RuxIconTabletAndroid & JSXBase.HTMLAttributes<HTMLRuxIconTabletAndroidElement>;
+            "rux-icon-tablet-mac": LocalJSX.RuxIconTabletMac & JSXBase.HTMLAttributes<HTMLRuxIconTabletMacElement>;
+            "rux-icon-tap-and-play": LocalJSX.RuxIconTapAndPlay & JSXBase.HTMLAttributes<HTMLRuxIconTapAndPlayElement>;
+            "rux-icon-text-fields": LocalJSX.RuxIconTextFields & JSXBase.HTMLAttributes<HTMLRuxIconTextFieldsElement>;
+            "rux-icon-text-rotation-none": LocalJSX.RuxIconTextRotationNone & JSXBase.HTMLAttributes<HTMLRuxIconTextRotationNoneElement>;
+            "rux-icon-thermal": LocalJSX.RuxIconThermal & JSXBase.HTMLAttributes<HTMLRuxIconThermalElement>;
+            "rux-icon-thumb-down-alt": LocalJSX.RuxIconThumbDownAlt & JSXBase.HTMLAttributes<HTMLRuxIconThumbDownAltElement>;
+            "rux-icon-thumb-up-alt": LocalJSX.RuxIconThumbUpAlt & JSXBase.HTMLAttributes<HTMLRuxIconThumbUpAltElement>;
+            "rux-icon-time-to-leave": LocalJSX.RuxIconTimeToLeave & JSXBase.HTMLAttributes<HTMLRuxIconTimeToLeaveElement>;
+            "rux-icon-title": LocalJSX.RuxIconTitle & JSXBase.HTMLAttributes<HTMLRuxIconTitleElement>;
+            "rux-icon-toggle-off": LocalJSX.RuxIconToggleOff & JSXBase.HTMLAttributes<HTMLRuxIconToggleOffElement>;
+            "rux-icon-toggle-on": LocalJSX.RuxIconToggleOn & JSXBase.HTMLAttributes<HTMLRuxIconToggleOnElement>;
+            "rux-icon-turned-in-not": LocalJSX.RuxIconTurnedInNot & JSXBase.HTMLAttributes<HTMLRuxIconTurnedInNotElement>;
+            "rux-icon-tv": LocalJSX.RuxIconTv & JSXBase.HTMLAttributes<HTMLRuxIconTvElement>;
+            "rux-icon-tv-off": LocalJSX.RuxIconTvOff & JSXBase.HTMLAttributes<HTMLRuxIconTvOffElement>;
+            "rux-icon-vertical-align-center": LocalJSX.RuxIconVerticalAlignCenter & JSXBase.HTMLAttributes<HTMLRuxIconVerticalAlignCenterElement>;
+            "rux-icon-vertical-align-top": LocalJSX.RuxIconVerticalAlignTop & JSXBase.HTMLAttributes<HTMLRuxIconVerticalAlignTopElement>;
+            "rux-icon-videogame-asset": LocalJSX.RuxIconVideogameAsset & JSXBase.HTMLAttributes<HTMLRuxIconVideogameAssetElement>;
+            "rux-icon-view-column": LocalJSX.RuxIconViewColumn & JSXBase.HTMLAttributes<HTMLRuxIconViewColumnElement>;
+            "rux-icon-view-week": LocalJSX.RuxIconViewWeek & JSXBase.HTMLAttributes<HTMLRuxIconViewWeekElement>;
+            "rux-icon-voice-chat": LocalJSX.RuxIconVoiceChat & JSXBase.HTMLAttributes<HTMLRuxIconVoiceChatElement>;
+            "rux-icon-voice-over-off": LocalJSX.RuxIconVoiceOverOff & JSXBase.HTMLAttributes<HTMLRuxIconVoiceOverOffElement>;
+            "rux-icon-watch": LocalJSX.RuxIconWatch & JSXBase.HTMLAttributes<HTMLRuxIconWatchElement>;
+            "rux-icon-wc": LocalJSX.RuxIconWc & JSXBase.HTMLAttributes<HTMLRuxIconWcElement>;
+            "rux-icon-whatshot": LocalJSX.RuxIconWhatshot & JSXBase.HTMLAttributes<HTMLRuxIconWhatshotElement>;
+            "rux-icon-wifi": LocalJSX.RuxIconWifi & JSXBase.HTMLAttributes<HTMLRuxIconWifiElement>;
+            "rux-icon-wrap-text": LocalJSX.RuxIconWrapText & JSXBase.HTMLAttributes<HTMLRuxIconWrapTextElement>;
+            "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
         }
     }
 }

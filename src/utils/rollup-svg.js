@@ -1,0 +1,41 @@
+const SVGO = require('svgo');
+
+const usePlugin = (fileName) => {
+    return /-svg.svg$/i.test(fileName);
+}
+
+const decodeBase64SourceText = (sourceText) => {
+    let [, base64Code] = sourceText.split('base64,');
+    if (!base64Code) {
+        return null;
+    }
+
+    base64Code = base64Code.slice(0, base64Code.indexOf(`';`));
+
+    return Buffer.from(base64Code, 'base64').toString();
+}
+
+exports.svgOptimizerPlugin = () => {
+    return {
+        name: 'rollup-svg-optimizer-plugin',
+        transform(sourceText, fileName) {
+            if (!usePlugin(fileName) || sourceText === '') {
+                return null;
+            }
+
+            const svgBase64 = decodeBase64SourceText(sourceText);
+            if (!svgBase64) {
+                return null
+            }
+            console.log(fileName)
+
+            const svgo = new SVGO();
+            return svgo.optimize(svgBase64, { path: fileName }).then((result) => {
+                return {
+                    id: fileName,
+                    code: `export default '${result.data}'`,
+                }
+            });
+        },
+    };
+}

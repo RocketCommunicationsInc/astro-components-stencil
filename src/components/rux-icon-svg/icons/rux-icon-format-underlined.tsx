@@ -1,0 +1,20 @@
+import { Component, Prop, h } from '@stencil/core';
+import svgIcon from '../../../icons/format-underlined.svg';
+
+/** @internal **/
+@Component({
+  tag: 'rux-icon-format-underlined',
+  shadow: false,
+})
+export class RuxIconFormatUnderlined {
+  @Prop() size: string;
+  @Prop() viewBox: string;
+
+  render() {
+    return (
+      <svg class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+        <use xlinkHref={`${svgIcon}#format-underlined`}></use>
+      </svg>
+    );
+  }
+}
