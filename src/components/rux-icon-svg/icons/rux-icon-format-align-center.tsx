@@ -12,7 +12,7 @@ export class RuxIconFormatAlignCenter {
 
   render() {
     return (
-      <svg class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#format-align-center`}></use>
       </svg>
     );

@@ -12,7 +12,7 @@ export class RuxIconSentimentVeryDissatisfied {
 
   render() {
     return (
-      <svg class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#sentiment-very-dissatisfied`}></use>
       </svg>
     );

@@ -1,0 +1,20 @@
+import { Component, Prop, h } from '@stencil/core';
+import svgIcon from '../../../icons/undo.svg';
+
+/** @internal **/
+@Component({
+  tag: 'rux-icon-undo',
+  shadow: false,
+})
+export class RuxIconUndo {
+  @Prop() size: string;
+  @Prop() viewBox: string;
+
+  render() {
+    return (
+      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+        <use xlinkHref={`${svgIcon}#undo`}></use>
+      </svg>
+    );
+  }
+}

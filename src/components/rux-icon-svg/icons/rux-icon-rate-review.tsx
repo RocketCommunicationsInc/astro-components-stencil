@@ -1,0 +1,20 @@
+import { Component, Prop, h } from '@stencil/core';
+import svgIcon from '../../../icons/rate-review.svg';
+
+/** @internal **/
+@Component({
+  tag: 'rux-icon-rate-review',
+  shadow: false,
+})
+export class RuxIconRateReview {
+  @Prop() size: string;
+  @Prop() viewBox: string;
+
+  render() {
+    return (
+      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+        <use xlinkHref={`${svgIcon}#rate-review`}></use>
+      </svg>
+    );
+  }
+}

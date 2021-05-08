@@ -12,7 +12,7 @@ export class RuxIconTextRotationNone {
 
   render() {
     return (
-      <svg class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#text-rotation-none`}></use>
       </svg>
     );

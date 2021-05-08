@@ -12,7 +12,7 @@ export class RuxIconModeComment {
 
   render() {
     return (
-      <svg class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#mode-comment`}></use>
       </svg>
     );

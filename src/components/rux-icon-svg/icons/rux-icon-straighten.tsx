@@ -1,0 +1,20 @@
+import { Component, Prop, h } from '@stencil/core';
+import svgIcon from '../../../icons/straighten.svg';
+
+/** @internal **/
+@Component({
+  tag: 'rux-icon-straighten',
+  shadow: false,
+})
+export class RuxIconStraighten {
+  @Prop() size: string;
+  @Prop() viewBox: string;
+
+  render() {
+    return (
+      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+        <use xlinkHref={`${svgIcon}#straighten`}></use>
+      </svg>
+    );
+  }
+}

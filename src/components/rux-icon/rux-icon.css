@@ -4,8 +4,8 @@
 
   display: inline-block;
 
-  height: var(--iconDefaultSize);
-  width: var(--iconDefaultSize);
+  /* height: var(--iconDefaultSize);
+  width: var(--iconDefaultSize); */
 }
 
 svg,
@@ -13,6 +13,9 @@ svg > use {
   height: 100%;
   width: auto;
   fill: var(--iconColor);
+}
+.icon {
+  margin: 0 auto;
 }
 
 .rux-button--outline rux-icon {

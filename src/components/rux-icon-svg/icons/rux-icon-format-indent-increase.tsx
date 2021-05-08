@@ -12,7 +12,7 @@ export class RuxIconFormatIndentIncrease {
 
   render() {
     return (
-      <svg class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#format-indent-increase`}></use>
       </svg>
     );

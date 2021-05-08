@@ -1,0 +1,20 @@
+import { Component, Prop, h } from '@stencil/core';
+import svgIcon from '../../../icons/text-rotate-up.svg';
+
+/** @internal **/
+@Component({
+  tag: 'rux-icon-text-rotate-up',
+  shadow: false,
+})
+export class RuxIconTextRotateUp {
+  @Prop() size: string;
+  @Prop() viewBox: string;
+
+  render() {
+    return (
+      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+        <use xlinkHref={`${svgIcon}#text-rotate-up`}></use>
+      </svg>
+    );
+  }
+}

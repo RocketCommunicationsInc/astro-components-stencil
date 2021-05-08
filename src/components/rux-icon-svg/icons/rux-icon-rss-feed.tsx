@@ -1,0 +1,20 @@
+import { Component, Prop, h } from '@stencil/core';
+import svgIcon from '../../../icons/rss-feed.svg';
+
+/** @internal **/
+@Component({
+  tag: 'rux-icon-rss-feed',
+  shadow: false,
+})
+export class RuxIconRssFeed {
+  @Prop() size: string;
+  @Prop() viewBox: string;
+
+  render() {
+    return (
+      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+        <use xlinkHref={`${svgIcon}#rss-feed`}></use>
+      </svg>
+    );
+  }
+}

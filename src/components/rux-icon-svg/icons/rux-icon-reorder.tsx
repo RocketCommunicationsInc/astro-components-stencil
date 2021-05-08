@@ -1,0 +1,20 @@
+import { Component, Prop, h } from '@stencil/core';
+import svgIcon from '../../../icons/reorder.svg';
+
+/** @internal **/
+@Component({
+  tag: 'rux-icon-reorder',
+  shadow: false,
+})
+export class RuxIconReorder {
+  @Prop() size: string;
+  @Prop() viewBox: string;
+
+  render() {
+    return (
+      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+        <use xlinkHref={`${svgIcon}#reorder`}></use>
+      </svg>
+    );
+  }
+}

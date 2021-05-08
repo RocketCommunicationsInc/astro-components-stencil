@@ -12,7 +12,7 @@ export class RuxIconGroupAdd {
 
   render() {
     return (
-      <svg class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#group-add`}></use>
       </svg>
     );

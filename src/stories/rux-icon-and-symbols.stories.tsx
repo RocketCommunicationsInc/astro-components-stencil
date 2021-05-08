@@ -1,12 +1,12 @@
 import { html, render } from 'lit-html';
-import { boolean, text, number, select, withKnobs } from '@storybook/addon-knobs';
-import { RuxIcon } from '../src/components/rux-icon/rux-icon.js';
-import { RuxStatus } from '../src/components/rux-status/rux-status.js';
-import { RuxMonitoringIcon } from '../src/components/rux-monitoring-icon/rux-monitoring-icon.js';
-import { RuxMonitoringProgressIcon } from '../src/components/rux-monitoring-icon/rux-monitoring-progress-icon.js';
-import Readme from '../src/components/rux-icon/README.md';
-import ReadmeMonitoring from '../src/components/rux-monitoring-icon/README.md';
-import ruxIconsJson from '../static/json/rux-icons.json';
+import { text, number, select, withKnobs } from '@storybook/addon-knobs';
+// import { RuxIcon } from '../src/components/rux-icon/rux-icon.js';
+// import { RuxStatus } from '../src/components/rux-status/rux-status.js';
+// import { RuxMonitoringIcon } from '../src/components/rux-monitoring-icon/rux-monitoring-icon.js';
+// import { RuxMonitoringProgressIcon } from '../src/components/rux-monitoring-icon/rux-monitoring-progress-icon.js';
+import Readme from '../../src/components/rux-icon/readme.md';
+// import ReadmeMonitoring from '../src/components/rux-monitoring-icon/README.md';
+import ruxIconsJson from './rux-icons.json';
 
 
 export default {
@@ -47,7 +47,7 @@ export const AllIcons = () => {
                 ${ruxIconsJson['solid'][section].map(icon => {
                   return html`
                   <li class="icon__list-item" title="${icon.name}">
-                    <i class="rux-icon rux-icon--${icon.name}"></i>
+                  <rux-icon name="${icon.name}"></rux-icon>
                     <div class="icon__name">${icon.name}</div>
                   </li>`
                 })}
@@ -76,6 +76,14 @@ export const AllIcons = () => {
         padding: 1rem;
       }
 
+      rux-icon::part(svg) {
+        width: 3rem;
+        height: 3rem;
+      }
+
+      h3 {
+        margin: 0 0 0.5rem 0;
+      }
       .icon__list-item .rux-icon {
         width: ${sizeKnob};
         height: ${sizeKnob};
@@ -107,7 +115,7 @@ export const AllIcons = () => {
 
       .icon__name {
         display: block;
-        margin-top: 0.5rem;
+        margin-top: 0.25rem;
         font-size: 0.75rem;
         width: 5rem;
         white-space: nowrap;
@@ -215,17 +223,17 @@ export const MonitoringIcons = () => {
   `;
 };
 
-MonitoringIcons.story = {
-  parameters: {
-    exports: {
-      render,
-      html,
-    },
-    readme: {
-      sidebar: ReadmeMonitoring,
-    },
-  },
-};
+// MonitoringIcons.story = {
+//   parameters: {
+//     exports: {
+//       render,
+//       html,
+//     },
+//     readme: {
+//       sidebar: ReadmeMonitoring,
+//     },
+//   },
+// };
 
 export const ProgressIcon = () => {
   const groupId = 'Options';
@@ -352,16 +360,16 @@ export const MonitoringIconSet = () => html`
     </ul>
   `;
 
-MonitoringIconSet.story = {
-  name: 'Monitoring Icon (set)',
+// MonitoringIconSet.story = {
+//   name: 'Monitoring Icon (set)',
 
-  parameters: {
-    exports: {
-      render,
-      html,
-    },
-    readme: {
-      sidebar: ReadmeMonitoring,
-    },
-  },
-};
+//   parameters: {
+//     exports: {
+//       render,
+//       html,
+//     },
+//     readme: {
+//       sidebar: ReadmeMonitoring,
+//     },
+//   },
+// };
