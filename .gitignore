@@ -2,6 +2,7 @@ dist/
 www/
 loader/
 storybook-static/
+src/components/rux-icon-svg
 
 *~
 *.sw[mnpcod]
