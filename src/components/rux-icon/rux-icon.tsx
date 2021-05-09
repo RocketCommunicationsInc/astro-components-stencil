@@ -8,21 +8,13 @@ import { Component, Host, Prop, h } from '@stencil/core';
 export class RuxIcon {
     svg: string;
 
-    /**
-     * The icon size
-     */
-    @Prop() size: string = 'base'
+    @Prop() size: 'extra small' | 'small' | 'base' | 'large' = 'base'
 
-    /**
-    * The icon name
-    */
     @Prop() name: string;
 
     @Prop() viewBox: string = '0 0 24 24';
 
-    @Prop() color: string = 'primary'
-
-    connectedCallback
+    @Prop() color: 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'white' = 'primary';
 
     render() {
         const SVG = `rux-icon-${this.name}`;

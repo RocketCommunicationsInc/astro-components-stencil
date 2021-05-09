@@ -41,9 +41,13 @@ import svgIcon from '../../../icons/${iconPath}';
   shadow: false,
 })
 export class RuxIcon${toPascalCase(iconName)} {
-  @Prop() size: string;
+  @Prop() color: 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'white';
+
+  @Prop() name: string;
+
+  @Prop() size: 'extra small' | 'small' | 'base' | 'large';
+
   @Prop() viewBox: string;
-  @Prop() color: string;
 
   render() {
     return (
