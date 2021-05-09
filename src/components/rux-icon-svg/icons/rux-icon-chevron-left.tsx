@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/chevron-left.svg';
 export class RuxIconChevronLeft {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#chevron-left`}></use>
       </svg>
     );

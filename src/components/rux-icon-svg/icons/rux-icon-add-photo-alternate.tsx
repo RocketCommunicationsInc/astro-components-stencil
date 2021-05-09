@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/add-photo-alternate.svg';
 export class RuxIconAddPhotoAlternate {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#add-photo-alternate`}></use>
       </svg>
     );

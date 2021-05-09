@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/how-to-reg.svg';
 export class RuxIconHowToReg {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#how-to-reg`}></use>
       </svg>
     );

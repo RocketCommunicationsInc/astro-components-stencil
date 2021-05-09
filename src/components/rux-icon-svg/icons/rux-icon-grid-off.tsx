@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/grid-off.svg';
 export class RuxIconGridOff {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#grid-off`}></use>
       </svg>
     );

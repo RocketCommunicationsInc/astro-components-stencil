@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/fitness-center.svg';
 export class RuxIconFitnessCenter {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#fitness-center`}></use>
       </svg>
     );

@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/hot-tub.svg';
 export class RuxIconHotTub {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#hot-tub`}></use>
       </svg>
     );

@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/picture-in-picture-alt.svg';
 export class RuxIconPictureInPictureAlt {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#picture-in-picture-alt`}></use>
       </svg>
     );

@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/filter-center-focus.svg';
 export class RuxIconFilterCenterFocus {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#filter-center-focus`}></use>
       </svg>
     );

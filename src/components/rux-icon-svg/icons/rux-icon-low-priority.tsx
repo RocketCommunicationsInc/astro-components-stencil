@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/low-priority.svg';
 export class RuxIconLowPriority {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#low-priority`}></use>
       </svg>
     );

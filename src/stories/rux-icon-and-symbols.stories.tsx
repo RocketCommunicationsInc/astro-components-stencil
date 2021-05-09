@@ -16,11 +16,11 @@ export default {
 
 export const AllIcons = () => {
   const colors = {
-    Primary: 'var(--primary)',
-    Secondary: 'var(--primaryLight)',
-    Tertiary: '#52667a',
-    Quaternary: '#ced6e4',
-    White: '#ffffff',
+    Primary: 'primary',
+    Secondary: 'secondary',
+    Tertiary: 'tertiary',
+    Quaternary: 'quaternary',
+    White: 'white',
   };
 
   const sizes = {
@@ -30,7 +30,7 @@ export const AllIcons = () => {
     'Large': 'large',
   };
 
-  const colorKnob = select('Color', colors, 'var(--primary)');
+  const colorKnob = select('Color', colors, 'primary');
   const sizeKnob = select('Size', sizes, 'base');
 
 
@@ -47,7 +47,7 @@ export const AllIcons = () => {
                 ${ruxIconsJson['solid'][section].map(icon => {
                   return html`
                   <li class="icon__list-item" title="${icon.name}">
-                  <rux-icon name="${icon.name}" size="${sizeKnob}"></rux-icon>
+                  <rux-icon name="${icon.name}" color="${colorKnob}" size="${sizeKnob}"></rux-icon>
                     <div class="icon__name">${icon.name}</div>
                   </li>`
                 })}

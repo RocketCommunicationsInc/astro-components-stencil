@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/surround-sound.svg';
 export class RuxIconSurroundSound {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#surround-sound`}></use>
       </svg>
     );

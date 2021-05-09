@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/flip-to-front.svg';
 export class RuxIconFlipToFront {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#flip-to-front`}></use>
       </svg>
     );

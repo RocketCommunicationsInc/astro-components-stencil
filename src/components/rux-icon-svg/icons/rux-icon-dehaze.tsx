@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/dehaze.svg';
 export class RuxIconDehaze {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#dehaze`}></use>
       </svg>
     );

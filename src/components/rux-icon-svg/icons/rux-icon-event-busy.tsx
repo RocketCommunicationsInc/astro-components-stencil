@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/event-busy.svg';
 export class RuxIconEventBusy {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#event-busy`}></use>
       </svg>
     );

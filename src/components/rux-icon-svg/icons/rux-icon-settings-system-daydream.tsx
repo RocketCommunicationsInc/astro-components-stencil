@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/settings-system-daydream.svg';
 export class RuxIconSettingsSystemDaydream {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#settings-system-daydream`}></use>
       </svg>
     );

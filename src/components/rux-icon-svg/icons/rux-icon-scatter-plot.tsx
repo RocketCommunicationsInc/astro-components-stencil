@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/scatter-plot.svg';
 export class RuxIconScatterPlot {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#scatter-plot`}></use>
       </svg>
     );

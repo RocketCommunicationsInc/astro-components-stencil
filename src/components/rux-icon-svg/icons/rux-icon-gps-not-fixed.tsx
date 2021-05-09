@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/gps-not-fixed.svg';
 export class RuxIconGpsNotFixed {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#gps-not-fixed`}></use>
       </svg>
     );

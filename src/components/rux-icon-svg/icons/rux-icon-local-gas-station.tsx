@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/local-gas-station.svg';
 export class RuxIconLocalGasStation {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#local-gas-station`}></use>
       </svg>
     );

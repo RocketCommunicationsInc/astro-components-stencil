@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/signal-wifi-0-bar.svg';
 export class RuxIconSignalWifi0Bar {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#signal-wifi-0-bar`}></use>
       </svg>
     );

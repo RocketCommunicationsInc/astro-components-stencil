@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/exposure-neg-1.svg';
 export class RuxIconExposureNeg1 {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#exposure-neg-1`}></use>
       </svg>
     );

@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/signal-cellular-connected-no-internet-3-bar.
 export class RuxIconSignalCellularConnectedNoInternet3Bar {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#signal-cellular-connected-no-internet-3-bar`}></use>
       </svg>
     );

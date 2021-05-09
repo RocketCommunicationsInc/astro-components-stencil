@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/crop-5-4.svg';
 export class RuxIconCrop54 {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#crop-5-4`}></use>
       </svg>
     );

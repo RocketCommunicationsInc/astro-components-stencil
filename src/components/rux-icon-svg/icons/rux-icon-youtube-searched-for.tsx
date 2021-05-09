@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/youtube-searched-for.svg';
 export class RuxIconYoutubeSearchedFor {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#youtube-searched-for`}></use>
       </svg>
     );

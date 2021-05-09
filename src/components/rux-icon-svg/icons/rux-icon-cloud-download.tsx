@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/cloud-download.svg';
 export class RuxIconCloudDownload {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#cloud-download`}></use>
       </svg>
     );

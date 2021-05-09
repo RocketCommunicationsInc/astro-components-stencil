@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/contact-mail.svg';
 export class RuxIconContactMail {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#contact-mail`}></use>
       </svg>
     );

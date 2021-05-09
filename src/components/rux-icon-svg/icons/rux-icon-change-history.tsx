@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/change-history.svg';
 export class RuxIconChangeHistory {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#change-history`}></use>
       </svg>
     );

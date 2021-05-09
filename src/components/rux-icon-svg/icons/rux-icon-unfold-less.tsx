@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/unfold-less.svg';
 export class RuxIconUnfoldLess {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#unfold-less`}></use>
       </svg>
     );

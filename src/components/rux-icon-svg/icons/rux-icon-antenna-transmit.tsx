@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/antenna-transmit.svg';
 export class RuxIconAntennaTransmit {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#antenna-transmit`}></use>
       </svg>
     );

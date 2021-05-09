@@ -28,6 +28,7 @@ export namespace Components {
         "version": string;
     }
     interface RuxIcon {
+        "color": string;
         /**
           * The icon name
          */
@@ -39,4190 +40,5237 @@ export namespace Components {
         "viewBox": string;
     }
     interface RuxIcon360 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIcon3dRotation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIcon4k {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAcUnit {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAccessAlarms {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAccessTime {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAccessibility {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAccessibilityNew {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAccessible {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAccessibleForward {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAccountBalance {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAccountBalanceWallet {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAccountBox {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAccountCircle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAdb {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAdd {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAddAPhoto {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAddAlarm {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAddAlert {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAddBox {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAddCircle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAddCircleOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAddLocation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAddPhotoAlternate {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAddShoppingCart {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAddToHomeScreen {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAddToPhotos {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAddToQueue {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAdjust {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAirlineSeatFlat {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAirlineSeatFlatAngled {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAirlineSeatIndividualSuite {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAirlineSeatLegroomExtra {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAirlineSeatLegroomNormal {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAirlineSeatLegroomReduced {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAirlineSeatReclineExtra {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAirlineSeatReclineNormal {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAirplanemodeActive {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAirplanemodeInactive {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAirplay {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAirportShuttle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAlarm {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAlarmAdd {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAlarmOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAlarmOn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAlbum {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAllInbox {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAllInclusive {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAllOut {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAlternateEmail {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAltitude {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAndroid {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAnnouncement {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAntenna {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAntennaOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAntennaReceive {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAntennaTransmit {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconApps {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArchive {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArrowBack {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArrowBackIos {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArrowDownward {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArrowDropDown {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArrowDropDownCircle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArrowDropUp {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArrowForward {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArrowForwardIos {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArrowLeft {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArrowRight {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArrowRightAlt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArrowUpward {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconArtTrack {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAspectRatio {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAssessment {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAssignment {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAssignmentFind {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAssignmentLate {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAssignmentReturn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAssignmentReturned {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAssignmentTurnedIn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAssistant {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAssistantPhoto {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAttachMoney {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAttachment {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAudiotrack {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAutorenew {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconAvTimer {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBackspace {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBackup {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBallot {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBarChart {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBattery20 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBattery30 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBattery50 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBattery60 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBattery80 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBattery90 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBatteryAlert {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBatteryCharging20 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBatteryCharging30 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBatteryCharging50 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBatteryCharging60 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBatteryCharging80 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBatteryCharging90 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBatteryChargingFull {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBatteryFull {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBatteryStd {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBatteryUnknown {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBeachAccess {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBeenhere {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBlock {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBluetooth {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBluetoothAudio {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBluetoothConnected {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBluetoothDisabled {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBluetoothSearching {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBlurCircular {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBlurLinear {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBlurOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBlurOn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBook {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBookmark {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBookmarkBorder {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBookmarks {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBorderAll {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBorderClear {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBorderColor {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBorderHorizontal {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBorderInner {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBorderLeft {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBorderOuter {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBorderRight {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBorderStyle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBorderTop {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBorderVertical {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrandingWatermark {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrightness1 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrightness2 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrightness3 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrightness4 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrightness5 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrightness6 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrightness7 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrightnessAuto {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrightnessHigh {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrightnessLow {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrightnessMedium {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrokenImage {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBrush {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBubbleChart {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBugReport {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBuild {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBurstMode {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBusiness {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconBusinessCenter {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCached {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCake {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCalendarToday {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCalendarViewDay {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCall {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCallEnd {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCallMade {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCallMerge {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCallMissed {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCallMissedOutgoing {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCallReceived {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCallSplit {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCallToAction {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCamera {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCameraAlt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCameraEnhance {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCameraFront {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCameraRear {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCameraRoll {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCancel {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCancelPresentation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCardGiftcard {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCardMembership {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCardTravel {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCasino {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCast {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCastConnected {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCastForEducation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCategory {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCellWifi {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCenterFocusStrong {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCenterFocusWeak {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconChangeHistory {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconChat {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconChatBubble {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconChatBubbleOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCheck {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCheckBox {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCheckBoxOutlineBlank {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCheckCircle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCheckCircleOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconChevronLeft {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconChevronRight {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconChildCare {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconChildFriendly {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconChromeReaderMode {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconClass {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconClear {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconClearAll {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconClose {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconClosedCaption {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCloud {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCloudCircle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCloudDone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCloudDownload {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCloudOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCloudQueue {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCloudUpload {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCode {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCollections {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCollectionsBookmark {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconColorLens {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconColorize {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconComment {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCommute {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCompare {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCompareArrows {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCompassCalibration {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconComputer {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconConfirmationNumber {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconContactMail {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconContactPhone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconContactSupport {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconContacts {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconControlCamera {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconControlPoint {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconControlPointDuplicate {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCopyright {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCreate {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCreateNewFolder {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCreditCard {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCrop {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCrop169 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCrop32 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCrop54 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCrop75 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCropDin {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCropFree {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCropLandscape {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCropOriginal {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCropPortrait {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCropRotate {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconCropSquare {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDashboard {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDataUsage {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDateRange {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDehaze {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDelete {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDeleteForever {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDeleteOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDeleteSweep {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDepartureBoard {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDescription {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDesktopAccessDisabled {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDesktopMac {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDesktopWindows {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDetails {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDeveloperBoard {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDeveloperMode {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDeviceHub {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDeviceUnknown {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDevices {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDevicesOther {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDialerSip {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDialpad {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDirections {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDirectionsBike {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDirectionsBoat {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDirectionsBus {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDirectionsCar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDirectionsRailway {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDirectionsRun {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDirectionsSubway {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDirectionsTransit {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDirectionsWalk {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDiscFull {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDns {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDock {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDomain {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDomainDisabled {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDoneAll {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDoneOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDonutLarge {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDonutSmall {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDrafts {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDragHandle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDragIndicator {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDriveEta {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDuo {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconDvr {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEdit {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEditAttributes {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEditLocation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEject {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEmail {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEnhancedEncryption {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEqualizer {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEquipment {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconError {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconErrorOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEuroSymbol {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEvStation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEvent {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEventAvailable {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEventBusy {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconEventNote {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExitToApp {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExpandLess {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExpandMore {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExplicit {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExplore {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExploreOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExposure {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExposureNeg1 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExposureNeg2 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExposurePlus1 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExposurePlus2 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExposureZero {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconExtension {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFace {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFastForward {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFastRewind {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFastfood {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFavorite {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFavoriteBorder {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFeaturedPlayList {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFeaturedVideo {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFeedback {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFiberDvr {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFiberManualRecord {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFiberNew {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFiberPin {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFiberSmartRecord {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFileCopy {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilter {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilter1 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilter2 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilter3 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilter4 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilter5 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilter6 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilter7 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilter8 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilter9 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilter9Plus {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilterBAndW {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilterCenterFocus {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilterDrama {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilterFrames {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilterHdr {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilterList {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilterNone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilterTiltShift {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFilterVintage {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFindInPage {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFindReplace {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFingerprint {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFirstPage {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFitnessCenter {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFlag {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFlare {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFlashAuto {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFlashOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFlashOn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFlight {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFlightLand {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFlightTakeoff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFlip {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFlipToBack {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFlipToFront {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFolder {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFolderOpen {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFolderShared {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFolderSpecial {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFontDownload {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatAlignCenter {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatAlignJustify {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatAlignLeft {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatAlignRight {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatBold {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatClear {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatColorFill {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatColorReset {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatColorText {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatIndentDecrease {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatIndentIncrease {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatItalic {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatLineSpacing {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatListBulleted {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatListNumbered {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatListNumberedRtl {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatPaint {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatQuote {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatShapes {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatStrikethrough {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatTextdirectionLToR {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatTextdirectionRToL {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFormatUnderlined {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconForum {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconForward {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconForward10 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconForward30 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconForward5 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFreeBreakfast {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFullscreen {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFullscreenExit {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconFunctions {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGTranslate {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGamepad {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGames {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGavel {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGesture {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGetApp {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGif {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGolfCourse {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGpsFixed {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGpsNotFixed {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGpsOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGrade {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGradient {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGrain {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGraphicEq {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGridOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGridOn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGroup {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGroupAdd {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconGroupWork {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHd {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHdrOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHdrOn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHdrStrong {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHdrWeak {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHeadset {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHeadsetMic {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHealing {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHearing {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHelp {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHelpOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHighQuality {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHighlight {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHighlightOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHistory {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHome {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHorizontalSplit {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHotTub {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHotel {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHourglassEmpty {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHourglassFull {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHowToReg {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHowToVote {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHttp {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconHttps {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconImage {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconImageAspectRatio {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconImageSearch {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconImportContacts {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconImportExport {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconImportantDevices {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconInbox {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconIndeterminateCheckBox {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconInfo {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconInput {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconInsertChart {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconInsertChartOutlined {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconInsertDriveFile {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconInsertEmoticon {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconInsertInvitation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconInsertPhoto {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconInvertColors {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconInvertColorsOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconIso {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconKeyboard {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconKeyboardArrowDown {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconKeyboardArrowLeft {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconKeyboardArrowRight {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconKeyboardArrowUp {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconKeyboardBackspace {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconKeyboardCapslock {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconKeyboardHide {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconKeyboardReturn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconKeyboardTab {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconKeyboardVoice {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconKitchen {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLabel {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLabelImportant {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLabelOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLandscape {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLanguage {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLaptop {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLaptopChromebook {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLaptopMac {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLaptopWindows {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLastPage {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLaunch {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLayers {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLayersClear {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLeakAdd {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLeakRemove {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLens {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLibraryAdd {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLibraryBooks {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLibraryMusic {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLineStyle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLineWeight {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLinearScale {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLink {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLinkOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLinkedCamera {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconList {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconListAlt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLiveHelp {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLiveTv {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalActivity {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalAirport {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalAtm {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalBar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalCafe {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalConvenienceStore {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalDining {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalDrink {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalGasStation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalGroceryStore {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalHospital {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalHotel {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalLaundryService {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalLibrary {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalMall {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalMovies {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalOffer {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalParking {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalPharmacy {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalPhone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalPlay {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalPostOffice {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalPrintshop {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalSee {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalShipping {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocalTaxi {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocationCity {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocationDisabled {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocationOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocationOn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLocationSearching {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLock {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLockOpen {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLooks {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLooks1 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLooks2 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLooks3 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLooks4 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLooks5 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLooks6 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLoop {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLoupe {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLowPriority {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconLoyalty {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMail {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMailOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMap {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMarkunread {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMarkunreadMailbox {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMaximize {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMeetingRoom {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMemory {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMenu {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMergeType {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMessage {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMic {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMicNone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMicOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMinimize {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMissedVideoCall {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMission {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMms {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMobileFriendly {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMobileOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMobileScreenShare {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconModeComment {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMonetizationOn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMoney {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMoneyOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMonochromePhotos {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMood {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMoodBad {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMore {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMoreHoriz {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMoreVert {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMotorcycle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMouse {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMoveToInbox {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMovie {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMovieCreation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMovieFilter {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMultilineChart {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMusicNote {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMusicOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMusicVideo {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconMyLocation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNature {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNaturePeople {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNavigateBefore {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNavigateNext {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNavigation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNearMe {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNetcom {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNetworkCell {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNetworkCheck {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNetworkLocked {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNetworkWifi {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNewReleases {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNextWeek {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNfc {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNoEncryption {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNoMeetingRoom {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNoSim {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNotInterested {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNotListedLocation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNote {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNoteAdd {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNotes {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNotificationImportant {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNotifications {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNotificationsActive {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNotificationsNone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNotificationsOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconNotificationsPaused {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconOfflineBolt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconOfflinePin {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconOndemandVideo {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconOpacity {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconOpenInBrowser {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconOpenInNew {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconOpenWith {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconOutlinedFlag {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPages {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPageview {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPalette {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPanTool {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPanorama {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPanoramaFishEye {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPanoramaHorizontal {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPanoramaVertical {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPanoramaWideAngle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPartyMode {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPause {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPauseCircleFilled {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPauseCircleOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPausePresentation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPayload {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPayment {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPeopleOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPermCameraMic {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPermContactCalendar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPermDataSetting {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPermDeviceInformation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPermIdentity {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPermMedia {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPermPhoneMsg {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPermScanWifi {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPerson {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPersonAdd {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPersonAddDisabled {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPersonOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPersonPin {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPersonPinCircle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPersonalVideo {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPets {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhoneAndroid {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhoneBluetoothSpeaker {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhoneCallback {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhoneForwarded {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhoneInTalk {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhoneIphone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhoneLocked {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhoneMissed {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhonePaused {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhonelink {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhonelinkErase {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhonelinkLock {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhonelinkOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhonelinkRing {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhonelinkSetup {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhoto {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhotoAlbum {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhotoCamera {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhotoFilter {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhotoLibrary {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhotoSizeSelectActual {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhotoSizeSelectLarge {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPhotoSizeSelectSmall {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPictureAsPdf {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPictureInPicture {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPictureInPictureAlt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPieChart {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPinDrop {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPlace {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPlayArrow {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPlayCircleFilled {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPlayCircleFilledWhite {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPlayCircleOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPlayForWork {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPlaylistAdd {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPlaylistAddCheck {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPlaylistPlay {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPlusOne {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPoll {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPool {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPortableWifiOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPortrait {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPower {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPowerInput {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPowerOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPowerSettingsNew {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPregnantWoman {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPresentToAll {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPrint {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPrintDisabled {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPriorityHigh {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconProcessor {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconProcessorAlt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPropulsionPower {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPublic {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconPublish {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconQueryBuilder {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconQuestionAnswer {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconQueue {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconQueueMusic {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconQueuePlayNext {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRadio {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRadioButtonChecked {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRadioButtonUnchecked {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRateReview {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconReceipt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRecentActors {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRecordVoiceOver {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRedeem {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRedo {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRefresh {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRemove {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRemoveCircle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRemoveCircleOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRemoveFromQueue {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRemoveRedEye {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRemoveShoppingCart {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconReorder {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRepeat {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRepeatOne {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconReplay {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconReplay10 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconReplay30 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconReplay5 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconReply {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconReplyAll {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconReport {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconReportOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconReportProblem {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRestaurant {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRestaurantMenu {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRestore {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRestoreFromTrash {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRestorePage {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRingVolume {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRoom {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRoomService {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRotate90DegreesCc {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRotateLeft {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRotateRight {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRoundedCorner {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRouter {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRowing {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRssFeed {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconRvHookup {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSatellite {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSatelliteOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSatelliteReceive {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSatelliteTransmit {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSave {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSaveAlt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconScanner {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconScatterPlot {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSchedule {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSchool {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconScore {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconScreenLockLandscape {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconScreenLockPortrait {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconScreenLockRotation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconScreenRotation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconScreenShare {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSdCard {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSdStorage {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSearch {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSeat {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSecurity {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSelectAll {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSend {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSentimentDissatisfied {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSentimentSatisfied {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSentimentSatisfiedAlt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSentimentVeryDissatisfied {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSentimentVerySatisfied {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettings {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsApplications {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsBackupRestore {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsBluetooth {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsBrightness {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsCell {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsEthernet {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsInputAntenna {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsInputComponent {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsInputComposite {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsInputHdmi {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsInputSvideo {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsOverscan {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsPhone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsPower {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsRemote {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsSystemDaydream {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSettingsVoice {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconShare {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconShop {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconShopTwo {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconShoppingBasket {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconShoppingCart {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconShowChart {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconShuffle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconShutterSpeed {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellular0Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellular1Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellular2Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellular3Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellular4Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellularAlt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellularConnectedNoInternet0Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellularConnectedNoInternet1Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellularConnectedNoInternet2Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellularConnectedNoInternet3Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellularConnectedNoInternet4Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellularNoSim {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellularNull {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalCellularOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalWifi0Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalWifi1Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalWifi1BarLock {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalWifi2Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalWifi2BarLock {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalWifi3Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalWifi3BarLock {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalWifi4Bar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalWifi4BarLock {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSignalWifiOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSimCard {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSkipNext {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSkipPrevious {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSlideshow {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSlowMotionVideo {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSmartphone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSmokeFree {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSmokingRooms {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSms {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSmsFailed {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSnooze {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSolar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSort {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSortByAlpha {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSpa {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSpaceBar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSpeaker {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSpeakerGroup {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSpeakerNotes {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSpeakerNotesOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSpeakerPhone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSpellcheck {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStar {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStarBorder {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStarHalf {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStarRate {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStars {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStayCurrentLandscape {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStayCurrentPortrait {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStayPrimaryLandscape {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStayPrimaryPortrait {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStop {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStopScreenShare {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStorage {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStore {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStoreMallDirectory {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStraighten {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStreetview {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStrikethroughS {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconStyle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSubdirectoryArrowLeft {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSubdirectoryArrowRight {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSubject {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSubscriptions {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSubtitles {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSubway {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSupervisedUserCircle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSupervisorAccount {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSurroundSound {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSwapCalls {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSwapHoriz {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSwapHorizontalCircle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSwapVert {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSwapVerticalCircle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSwitchCamera {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSwitchVideo {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSync {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSyncDisabled {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSyncProblem {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconSystemUpdate {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTab {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTabUnselected {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTableChart {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTablet {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTabletAndroid {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTabletMac {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTagFaces {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTapAndPlay {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTerrain {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTextFields {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTextFormat {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTextRotateUp {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTextRotateVertical {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTextRotationNone {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTextsms {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTexture {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTheaters {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconThermal {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconThumbDown {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconThumbDownAlt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconThumbUp {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconThumbUpAlt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconThumbsUpDown {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTimeToLeave {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTimelapse {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTimeline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTimer {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTimer10 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTimer3 {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTimerOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTitle {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconToc {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconToday {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconToggleOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconToggleOn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconToll {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTonality {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTouchApp {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconToys {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTrackChanges {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTraffic {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTrain {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTram {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTransferWithinAStation {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTransform {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTransitEnterexit {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTranslate {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTrendingDown {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTrendingFlat {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTrendingUp {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTripOrigin {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTune {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTurnedIn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTurnedInNot {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTv {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconTvOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconUnarchive {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconUndo {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconUnfoldLess {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconUnfoldMore {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconUnsubscribe {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconUpdate {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconUsb {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVerifiedUser {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVerticalAlignBottom {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVerticalAlignCenter {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVerticalAlignTop {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVerticalSplit {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVibration {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVideoCall {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVideoLabel {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVideoLibrary {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVideocam {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVideocamOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVideogameAsset {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewAgenda {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewArray {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewCarousel {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewColumn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewComfy {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewCompact {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewDay {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewHeadline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewList {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewModule {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewQuilt {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewStream {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconViewWeek {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVignette {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVisibility {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVisibilityOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVoiceChat {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVoiceOverOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVoicemail {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVolumeDown {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVolumeMute {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVolumeOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVolumeUp {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVpnKey {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconVpnLock {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWallpaper {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWarning {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWatch {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWatchLater {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWaves {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWbAuto {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWbCloudy {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWbIncandescent {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWbIridescent {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWbSunny {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWc {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWeb {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWebAsset {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWeekend {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWhatshot {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWhereToVote {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWidgets {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWifi {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWifiLock {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWifiOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWifiTethering {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWork {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWorkOff {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWorkOutline {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconWrapText {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconYoutubeSearchedFor {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconZoomIn {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconZoomInMap {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconZoomOut {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
     interface RuxIconZoomOutMap {
+        "color": string;
         "size": string;
         "viewBox": string;
     }
@@ -11611,6 +12659,7 @@ declare namespace LocalJSX {
         "version"?: string;
     }
     interface RuxIcon {
+        "color"?: string;
         /**
           * The icon name
          */
@@ -11622,4190 +12671,5237 @@ declare namespace LocalJSX {
         "viewBox"?: string;
     }
     interface RuxIcon360 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIcon3dRotation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIcon4k {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAcUnit {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAccessAlarms {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAccessTime {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAccessibility {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAccessibilityNew {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAccessible {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAccessibleForward {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAccountBalance {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAccountBalanceWallet {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAccountBox {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAccountCircle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAdb {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAdd {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAddAPhoto {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAddAlarm {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAddAlert {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAddBox {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAddCircle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAddCircleOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAddLocation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAddPhotoAlternate {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAddShoppingCart {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAddToHomeScreen {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAddToPhotos {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAddToQueue {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAdjust {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAirlineSeatFlat {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAirlineSeatFlatAngled {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAirlineSeatIndividualSuite {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAirlineSeatLegroomExtra {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAirlineSeatLegroomNormal {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAirlineSeatLegroomReduced {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAirlineSeatReclineExtra {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAirlineSeatReclineNormal {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAirplanemodeActive {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAirplanemodeInactive {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAirplay {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAirportShuttle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAlarm {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAlarmAdd {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAlarmOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAlarmOn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAlbum {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAllInbox {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAllInclusive {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAllOut {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAlternateEmail {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAltitude {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAndroid {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAnnouncement {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAntenna {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAntennaOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAntennaReceive {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAntennaTransmit {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconApps {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArchive {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArrowBack {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArrowBackIos {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArrowDownward {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArrowDropDown {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArrowDropDownCircle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArrowDropUp {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArrowForward {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArrowForwardIos {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArrowLeft {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArrowRight {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArrowRightAlt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArrowUpward {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconArtTrack {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAspectRatio {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAssessment {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAssignment {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAssignmentFind {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAssignmentLate {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAssignmentReturn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAssignmentReturned {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAssignmentTurnedIn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAssistant {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAssistantPhoto {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAttachMoney {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAttachment {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAudiotrack {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAutorenew {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconAvTimer {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBackspace {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBackup {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBallot {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBarChart {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBattery20 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBattery30 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBattery50 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBattery60 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBattery80 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBattery90 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBatteryAlert {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBatteryCharging20 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBatteryCharging30 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBatteryCharging50 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBatteryCharging60 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBatteryCharging80 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBatteryCharging90 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBatteryChargingFull {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBatteryFull {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBatteryStd {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBatteryUnknown {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBeachAccess {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBeenhere {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBlock {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBluetooth {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBluetoothAudio {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBluetoothConnected {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBluetoothDisabled {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBluetoothSearching {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBlurCircular {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBlurLinear {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBlurOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBlurOn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBook {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBookmark {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBookmarkBorder {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBookmarks {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBorderAll {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBorderClear {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBorderColor {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBorderHorizontal {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBorderInner {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBorderLeft {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBorderOuter {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBorderRight {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBorderStyle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBorderTop {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBorderVertical {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrandingWatermark {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrightness1 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrightness2 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrightness3 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrightness4 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrightness5 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrightness6 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrightness7 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrightnessAuto {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrightnessHigh {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrightnessLow {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrightnessMedium {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrokenImage {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBrush {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBubbleChart {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBugReport {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBuild {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBurstMode {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBusiness {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconBusinessCenter {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCached {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCake {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCalendarToday {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCalendarViewDay {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCall {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCallEnd {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCallMade {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCallMerge {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCallMissed {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCallMissedOutgoing {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCallReceived {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCallSplit {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCallToAction {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCamera {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCameraAlt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCameraEnhance {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCameraFront {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCameraRear {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCameraRoll {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCancel {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCancelPresentation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCardGiftcard {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCardMembership {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCardTravel {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCasino {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCast {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCastConnected {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCastForEducation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCategory {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCellWifi {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCenterFocusStrong {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCenterFocusWeak {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconChangeHistory {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconChat {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconChatBubble {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconChatBubbleOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCheck {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCheckBox {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCheckBoxOutlineBlank {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCheckCircle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCheckCircleOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconChevronLeft {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconChevronRight {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconChildCare {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconChildFriendly {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconChromeReaderMode {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconClass {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconClear {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconClearAll {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconClose {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconClosedCaption {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCloud {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCloudCircle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCloudDone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCloudDownload {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCloudOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCloudQueue {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCloudUpload {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCode {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCollections {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCollectionsBookmark {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconColorLens {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconColorize {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconComment {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCommute {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCompare {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCompareArrows {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCompassCalibration {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconComputer {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconConfirmationNumber {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconContactMail {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconContactPhone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconContactSupport {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconContacts {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconControlCamera {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconControlPoint {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconControlPointDuplicate {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCopyright {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCreate {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCreateNewFolder {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCreditCard {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCrop {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCrop169 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCrop32 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCrop54 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCrop75 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCropDin {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCropFree {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCropLandscape {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCropOriginal {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCropPortrait {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCropRotate {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconCropSquare {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDashboard {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDataUsage {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDateRange {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDehaze {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDelete {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDeleteForever {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDeleteOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDeleteSweep {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDepartureBoard {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDescription {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDesktopAccessDisabled {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDesktopMac {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDesktopWindows {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDetails {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDeveloperBoard {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDeveloperMode {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDeviceHub {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDeviceUnknown {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDevices {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDevicesOther {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDialerSip {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDialpad {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDirections {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDirectionsBike {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDirectionsBoat {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDirectionsBus {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDirectionsCar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDirectionsRailway {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDirectionsRun {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDirectionsSubway {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDirectionsTransit {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDirectionsWalk {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDiscFull {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDns {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDock {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDomain {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDomainDisabled {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDoneAll {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDoneOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDonutLarge {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDonutSmall {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDrafts {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDragHandle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDragIndicator {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDriveEta {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDuo {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconDvr {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEdit {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEditAttributes {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEditLocation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEject {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEmail {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEnhancedEncryption {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEqualizer {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEquipment {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconError {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconErrorOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEuroSymbol {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEvStation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEvent {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEventAvailable {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEventBusy {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconEventNote {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExitToApp {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExpandLess {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExpandMore {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExplicit {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExplore {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExploreOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExposure {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExposureNeg1 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExposureNeg2 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExposurePlus1 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExposurePlus2 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExposureZero {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconExtension {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFace {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFastForward {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFastRewind {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFastfood {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFavorite {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFavoriteBorder {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFeaturedPlayList {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFeaturedVideo {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFeedback {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFiberDvr {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFiberManualRecord {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFiberNew {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFiberPin {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFiberSmartRecord {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFileCopy {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilter {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilter1 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilter2 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilter3 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilter4 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilter5 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilter6 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilter7 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilter8 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilter9 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilter9Plus {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilterBAndW {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilterCenterFocus {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilterDrama {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilterFrames {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilterHdr {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilterList {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilterNone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilterTiltShift {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFilterVintage {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFindInPage {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFindReplace {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFingerprint {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFirstPage {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFitnessCenter {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFlag {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFlare {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFlashAuto {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFlashOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFlashOn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFlight {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFlightLand {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFlightTakeoff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFlip {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFlipToBack {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFlipToFront {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFolder {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFolderOpen {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFolderShared {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFolderSpecial {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFontDownload {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatAlignCenter {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatAlignJustify {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatAlignLeft {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatAlignRight {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatBold {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatClear {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatColorFill {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatColorReset {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatColorText {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatIndentDecrease {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatIndentIncrease {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatItalic {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatLineSpacing {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatListBulleted {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatListNumbered {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatListNumberedRtl {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatPaint {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatQuote {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatShapes {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatStrikethrough {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatTextdirectionLToR {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatTextdirectionRToL {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFormatUnderlined {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconForum {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconForward {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconForward10 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconForward30 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconForward5 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFreeBreakfast {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFullscreen {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFullscreenExit {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconFunctions {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGTranslate {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGamepad {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGames {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGavel {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGesture {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGetApp {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGif {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGolfCourse {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGpsFixed {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGpsNotFixed {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGpsOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGrade {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGradient {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGrain {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGraphicEq {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGridOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGridOn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGroup {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGroupAdd {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconGroupWork {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHd {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHdrOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHdrOn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHdrStrong {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHdrWeak {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHeadset {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHeadsetMic {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHealing {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHearing {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHelp {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHelpOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHighQuality {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHighlight {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHighlightOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHistory {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHome {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHorizontalSplit {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHotTub {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHotel {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHourglassEmpty {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHourglassFull {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHowToReg {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHowToVote {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHttp {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconHttps {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconImage {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconImageAspectRatio {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconImageSearch {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconImportContacts {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconImportExport {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconImportantDevices {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconInbox {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconIndeterminateCheckBox {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconInfo {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconInput {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconInsertChart {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconInsertChartOutlined {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconInsertDriveFile {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconInsertEmoticon {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconInsertInvitation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconInsertPhoto {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconInvertColors {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconInvertColorsOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconIso {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconKeyboard {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconKeyboardArrowDown {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconKeyboardArrowLeft {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconKeyboardArrowRight {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconKeyboardArrowUp {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconKeyboardBackspace {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconKeyboardCapslock {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconKeyboardHide {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconKeyboardReturn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconKeyboardTab {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconKeyboardVoice {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconKitchen {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLabel {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLabelImportant {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLabelOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLandscape {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLanguage {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLaptop {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLaptopChromebook {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLaptopMac {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLaptopWindows {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLastPage {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLaunch {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLayers {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLayersClear {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLeakAdd {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLeakRemove {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLens {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLibraryAdd {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLibraryBooks {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLibraryMusic {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLineStyle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLineWeight {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLinearScale {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLink {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLinkOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLinkedCamera {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconList {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconListAlt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLiveHelp {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLiveTv {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalActivity {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalAirport {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalAtm {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalBar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalCafe {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalConvenienceStore {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalDining {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalDrink {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalGasStation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalGroceryStore {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalHospital {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalHotel {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalLaundryService {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalLibrary {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalMall {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalMovies {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalOffer {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalParking {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalPharmacy {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalPhone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalPlay {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalPostOffice {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalPrintshop {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalSee {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalShipping {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocalTaxi {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocationCity {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocationDisabled {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocationOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocationOn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLocationSearching {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLock {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLockOpen {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLooks {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLooks1 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLooks2 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLooks3 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLooks4 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLooks5 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLooks6 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLoop {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLoupe {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLowPriority {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconLoyalty {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMail {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMailOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMap {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMarkunread {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMarkunreadMailbox {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMaximize {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMeetingRoom {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMemory {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMenu {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMergeType {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMessage {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMic {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMicNone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMicOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMinimize {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMissedVideoCall {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMission {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMms {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMobileFriendly {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMobileOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMobileScreenShare {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconModeComment {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMonetizationOn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMoney {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMoneyOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMonochromePhotos {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMood {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMoodBad {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMore {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMoreHoriz {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMoreVert {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMotorcycle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMouse {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMoveToInbox {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMovie {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMovieCreation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMovieFilter {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMultilineChart {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMusicNote {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMusicOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMusicVideo {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconMyLocation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNature {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNaturePeople {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNavigateBefore {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNavigateNext {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNavigation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNearMe {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNetcom {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNetworkCell {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNetworkCheck {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNetworkLocked {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNetworkWifi {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNewReleases {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNextWeek {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNfc {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNoEncryption {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNoMeetingRoom {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNoSim {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNotInterested {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNotListedLocation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNote {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNoteAdd {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNotes {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNotificationImportant {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNotifications {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNotificationsActive {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNotificationsNone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNotificationsOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconNotificationsPaused {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconOfflineBolt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconOfflinePin {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconOndemandVideo {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconOpacity {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconOpenInBrowser {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconOpenInNew {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconOpenWith {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconOutlinedFlag {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPages {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPageview {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPalette {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPanTool {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPanorama {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPanoramaFishEye {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPanoramaHorizontal {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPanoramaVertical {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPanoramaWideAngle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPartyMode {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPause {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPauseCircleFilled {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPauseCircleOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPausePresentation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPayload {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPayment {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPeopleOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPermCameraMic {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPermContactCalendar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPermDataSetting {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPermDeviceInformation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPermIdentity {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPermMedia {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPermPhoneMsg {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPermScanWifi {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPerson {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPersonAdd {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPersonAddDisabled {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPersonOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPersonPin {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPersonPinCircle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPersonalVideo {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPets {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhoneAndroid {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhoneBluetoothSpeaker {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhoneCallback {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhoneForwarded {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhoneInTalk {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhoneIphone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhoneLocked {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhoneMissed {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhonePaused {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhonelink {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhonelinkErase {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhonelinkLock {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhonelinkOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhonelinkRing {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhonelinkSetup {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhoto {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhotoAlbum {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhotoCamera {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhotoFilter {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhotoLibrary {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhotoSizeSelectActual {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhotoSizeSelectLarge {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPhotoSizeSelectSmall {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPictureAsPdf {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPictureInPicture {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPictureInPictureAlt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPieChart {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPinDrop {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPlace {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPlayArrow {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPlayCircleFilled {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPlayCircleFilledWhite {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPlayCircleOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPlayForWork {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPlaylistAdd {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPlaylistAddCheck {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPlaylistPlay {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPlusOne {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPoll {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPool {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPortableWifiOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPortrait {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPower {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPowerInput {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPowerOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPowerSettingsNew {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPregnantWoman {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPresentToAll {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPrint {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPrintDisabled {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPriorityHigh {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconProcessor {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconProcessorAlt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPropulsionPower {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPublic {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconPublish {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconQueryBuilder {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconQuestionAnswer {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconQueue {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconQueueMusic {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconQueuePlayNext {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRadio {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRadioButtonChecked {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRadioButtonUnchecked {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRateReview {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconReceipt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRecentActors {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRecordVoiceOver {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRedeem {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRedo {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRefresh {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRemove {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRemoveCircle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRemoveCircleOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRemoveFromQueue {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRemoveRedEye {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRemoveShoppingCart {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconReorder {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRepeat {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRepeatOne {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconReplay {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconReplay10 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconReplay30 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconReplay5 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconReply {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconReplyAll {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconReport {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconReportOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconReportProblem {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRestaurant {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRestaurantMenu {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRestore {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRestoreFromTrash {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRestorePage {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRingVolume {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRoom {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRoomService {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRotate90DegreesCc {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRotateLeft {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRotateRight {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRoundedCorner {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRouter {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRowing {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRssFeed {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconRvHookup {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSatellite {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSatelliteOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSatelliteReceive {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSatelliteTransmit {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSave {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSaveAlt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconScanner {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconScatterPlot {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSchedule {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSchool {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconScore {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconScreenLockLandscape {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconScreenLockPortrait {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconScreenLockRotation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconScreenRotation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconScreenShare {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSdCard {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSdStorage {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSearch {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSeat {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSecurity {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSelectAll {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSend {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSentimentDissatisfied {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSentimentSatisfied {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSentimentSatisfiedAlt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSentimentVeryDissatisfied {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSentimentVerySatisfied {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettings {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsApplications {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsBackupRestore {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsBluetooth {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsBrightness {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsCell {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsEthernet {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsInputAntenna {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsInputComponent {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsInputComposite {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsInputHdmi {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsInputSvideo {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsOverscan {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsPhone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsPower {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsRemote {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsSystemDaydream {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSettingsVoice {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconShare {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconShop {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconShopTwo {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconShoppingBasket {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconShoppingCart {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconShowChart {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconShuffle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconShutterSpeed {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellular0Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellular1Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellular2Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellular3Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellular4Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellularAlt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellularConnectedNoInternet0Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellularConnectedNoInternet1Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellularConnectedNoInternet2Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellularConnectedNoInternet3Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellularConnectedNoInternet4Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellularNoSim {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellularNull {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalCellularOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalWifi0Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalWifi1Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalWifi1BarLock {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalWifi2Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalWifi2BarLock {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalWifi3Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalWifi3BarLock {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalWifi4Bar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalWifi4BarLock {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSignalWifiOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSimCard {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSkipNext {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSkipPrevious {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSlideshow {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSlowMotionVideo {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSmartphone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSmokeFree {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSmokingRooms {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSms {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSmsFailed {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSnooze {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSolar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSort {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSortByAlpha {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSpa {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSpaceBar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSpeaker {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSpeakerGroup {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSpeakerNotes {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSpeakerNotesOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSpeakerPhone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSpellcheck {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStar {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStarBorder {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStarHalf {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStarRate {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStars {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStayCurrentLandscape {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStayCurrentPortrait {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStayPrimaryLandscape {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStayPrimaryPortrait {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStop {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStopScreenShare {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStorage {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStore {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStoreMallDirectory {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStraighten {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStreetview {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStrikethroughS {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconStyle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSubdirectoryArrowLeft {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSubdirectoryArrowRight {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSubject {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSubscriptions {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSubtitles {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSubway {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSupervisedUserCircle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSupervisorAccount {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSurroundSound {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSwapCalls {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSwapHoriz {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSwapHorizontalCircle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSwapVert {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSwapVerticalCircle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSwitchCamera {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSwitchVideo {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSync {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSyncDisabled {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSyncProblem {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconSystemUpdate {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTab {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTabUnselected {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTableChart {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTablet {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTabletAndroid {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTabletMac {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTagFaces {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTapAndPlay {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTerrain {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTextFields {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTextFormat {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTextRotateUp {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTextRotateVertical {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTextRotationNone {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTextsms {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTexture {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTheaters {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconThermal {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconThumbDown {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconThumbDownAlt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconThumbUp {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconThumbUpAlt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconThumbsUpDown {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTimeToLeave {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTimelapse {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTimeline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTimer {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTimer10 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTimer3 {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTimerOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTitle {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconToc {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconToday {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconToggleOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconToggleOn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconToll {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTonality {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTouchApp {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconToys {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTrackChanges {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTraffic {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTrain {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTram {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTransferWithinAStation {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTransform {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTransitEnterexit {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTranslate {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTrendingDown {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTrendingFlat {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTrendingUp {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTripOrigin {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTune {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTurnedIn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTurnedInNot {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTv {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconTvOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconUnarchive {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconUndo {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconUnfoldLess {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconUnfoldMore {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconUnsubscribe {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconUpdate {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconUsb {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVerifiedUser {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVerticalAlignBottom {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVerticalAlignCenter {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVerticalAlignTop {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVerticalSplit {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVibration {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVideoCall {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVideoLabel {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVideoLibrary {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVideocam {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVideocamOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVideogameAsset {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewAgenda {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewArray {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewCarousel {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewColumn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewComfy {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewCompact {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewDay {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewHeadline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewList {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewModule {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewQuilt {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewStream {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconViewWeek {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVignette {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVisibility {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVisibilityOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVoiceChat {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVoiceOverOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVoicemail {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVolumeDown {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVolumeMute {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVolumeOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVolumeUp {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVpnKey {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconVpnLock {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWallpaper {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWarning {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWatch {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWatchLater {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWaves {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWbAuto {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWbCloudy {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWbIncandescent {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWbIridescent {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWbSunny {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWc {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWeb {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWebAsset {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWeekend {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWhatshot {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWhereToVote {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWidgets {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWifi {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWifiLock {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWifiOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWifiTethering {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWork {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWorkOff {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWorkOutline {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconWrapText {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconYoutubeSearchedFor {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconZoomIn {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconZoomInMap {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconZoomOut {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }
     interface RuxIconZoomOutMap {
+        "color"?: string;
         "size"?: string;
         "viewBox"?: string;
     }

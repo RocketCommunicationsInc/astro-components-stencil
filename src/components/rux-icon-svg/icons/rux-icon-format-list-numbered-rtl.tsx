@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/format-list-numbered-rtl.svg';
 export class RuxIconFormatListNumberedRtl {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#format-list-numbered-rtl`}></use>
       </svg>
     );

@@ -19,6 +19,23 @@ svg > use {
   margin: 0 auto;
 }
 
+.rux-icon--primary > use {
+  fill: var(--primary);
+}
+.rux-icon--secondary > use {
+  fill: var(--primaryLight);
+}
+.rux-icon--tertiary > use {
+  fill: #52667a;
+}
+.rux-icon--quaternary > use {
+  fill: #ced6e4;
+}
+
+.rux-icon--white > use {
+  fill: #ffffff;
+}
+
 .rux-button--outline rux-icon {
 
 }

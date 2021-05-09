@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/stay-primary-portrait.svg';
 export class RuxIconStayPrimaryPortrait {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#stay-primary-portrait`}></use>
       </svg>
     );

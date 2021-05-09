@@ -20,12 +20,16 @@ export class RuxIcon {
 
     @Prop() viewBox: string = '0 0 24 24';
 
+    @Prop() color: string = 'primary'
+
+    connectedCallback
+
     render() {
         const SVG = `rux-icon-${this.name}`;
 
         return (
           <Host>
-            <SVG class="icon" size={this.size} viewBox={this.viewBox}></SVG>
+            <SVG class="icon" color={this.color} size={this.size} viewBox={this.viewBox}></SVG>
           </Host>
         );
     }

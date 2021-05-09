@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/not-interested.svg';
 export class RuxIconNotInterested {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#not-interested`}></use>
       </svg>
     );

@@ -9,10 +9,11 @@ import svgIcon from '../../../icons/access-time.svg';
 export class RuxIconAccessTime {
   @Prop() size: string;
   @Prop() viewBox: string;
+  @Prop() color: string;
 
   render() {
     return (
-      <svg part="svg" class={`rux-icon--${this.size}`}  viewBox={this.viewBox}>
+      <svg part="svg" class={`rux-icon--${this.color} rux-icon--${this.size}`}  viewBox={this.viewBox}>
         <use xlinkHref={`${svgIcon}#access-time`}></use>
       </svg>
     );
