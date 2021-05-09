@@ -24,14 +24,14 @@ export const AllIcons = () => {
   };
 
   const sizes = {
-    'Extra Small': '1rem',
-    'Small': '2rem',
-    'Normal': '3rem',
-    'Large': '5rem',
+    'Extra Small': 'extra-small',
+    'Small': 'small',
+    'Normal': 'base',
+    'Large': 'large',
   };
 
   const colorKnob = select('Color', colors, 'var(--primary)');
-  const sizeKnob = select('Size', sizes, '3rem');
+  const sizeKnob = select('Size', sizes, 'base');
 
 
   const capitalize = (s) => {
@@ -47,7 +47,7 @@ export const AllIcons = () => {
                 ${ruxIconsJson['solid'][section].map(icon => {
                   return html`
                   <li class="icon__list-item" title="${icon.name}">
-                  <rux-icon name="${icon.name}"></rux-icon>
+                  <rux-icon name="${icon.name}" size="${sizeKnob}"></rux-icon>
                     <div class="icon__name">${icon.name}</div>
                   </li>`
                 })}
@@ -73,13 +73,17 @@ export const AllIcons = () => {
       }
 
       .icon__list-item {
-        padding: 1rem;
+        padding: 1rem .5rem;
+      }
+      .icon__name {
+        padding: 0 .5rem;
       }
 
-      rux-icon::part(svg) {
-        width: 3rem;
-        height: 3rem;
-      }
+
+      // rux-icon::part(svg) {
+      //   width: 3rem;
+      //   height: 3rem;
+      // }
 
       h3 {
         margin: 0 0 0.5rem 0;

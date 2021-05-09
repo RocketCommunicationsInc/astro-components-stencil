@@ -11,7 +11,7 @@ export class RuxIcon {
     /**
      * The icon size
      */
-    @Prop() size: string;
+    @Prop() size: string = 'base'
 
     /**
     * The icon name

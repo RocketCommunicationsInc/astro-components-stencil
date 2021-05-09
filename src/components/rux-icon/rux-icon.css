@@ -2,7 +2,7 @@
   --iconDefaultSize: 2.7rem;
   --iconColor: var(--iconDefaultColor);
 
-  display: inline-block;
+  display: inline-flex;
 
   /* height: var(--iconDefaultSize);
   width: var(--iconDefaultSize); */
@@ -15,6 +15,7 @@ svg > use {
   fill: var(--iconColor);
 }
 .icon {
+  display: inline-flex;
   margin: 0 auto;
 }
 
@@ -38,8 +39,10 @@ svg > use {
 }
 
 .rux-icon--base {
-  height: 24px;
-  width: auto;
+  height: 3rem;
+  width: 3rem;
+  /* height: 24px;
+  width: auto; */
 }
 
 
