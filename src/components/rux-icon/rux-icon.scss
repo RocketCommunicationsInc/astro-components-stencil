@@ -9,7 +9,7 @@
 }
 
 svg,
-svg > use {
+svg > svg {
   height: 100%;
   width: auto;
   fill: var(--iconColor);
@@ -19,20 +19,20 @@ svg > use {
   margin: 0 auto;
 }
 
-.rux-icon--primary > use {
+.rux-icon--primary > svg {
   fill: var(--primary);
 }
-.rux-icon--secondary > use {
+.rux-icon--secondary > svg {
   fill: var(--primaryLight);
 }
-.rux-icon--tertiary > use {
+.rux-icon--tertiary > svg {
   fill: #52667a;
 }
-.rux-icon--quaternary > use {
+.rux-icon--quaternary > svg {
   fill: #ced6e4;
 }
 
-.rux-icon--white > use {
+.rux-icon--white > svg {
   fill: #ffffff;
 }
 

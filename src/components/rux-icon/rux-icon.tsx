@@ -2,7 +2,7 @@ import { Component, Host, Prop, h } from '@stencil/core';
 
 @Component({
     tag: 'rux-icon',
-    styleUrl: 'rux-icon.css',
+    styleUrl: 'rux-icon.scss',
     shadow: true,
 })
 export class RuxIcon {
