@@ -1,7 +1,7 @@
-const SVGO = require('svgo');
+const { optimize } = require('svgo');
 
 const usePlugin = (fileName) => {
-    return /-svg.svg$/i.test(fileName);
+    return /.svg$/i.test(fileName);
 }
 
 const decodeBase64SourceText = (sourceText) => {
@@ -27,15 +27,12 @@ exports.svgOptimizerPlugin = () => {
             if (!svgBase64) {
                 return null
             }
-            console.log(fileName)
 
-            const svgo = new SVGO();
-            return svgo.optimize(svgBase64, { path: fileName }).then((result) => {
-                return {
-                    id: fileName,
-                    code: `export default '${result.data}'`,
-                }
-            });
+            const result = optimize(svgBase64, { path: fileName});
+            return {
+              id: fileName,
+              code: `export default '${result.data}'`,
+            }
         },
     };
 }
