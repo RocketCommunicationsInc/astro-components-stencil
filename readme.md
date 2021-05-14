@@ -24,3 +24,10 @@ This command takes each .svg file in `src/icons` and creates Stencil components 
 ### Adding a new Icon or updating an existing Icon
 
 The `src/icons` folder is the single source of truth for Astro icons. To add a new icon, simply add the SVG file to the directory and run `npm run build`. To update an icon, the process is the same--simply copy the new SVG to the `src/icons` folder and run the build step again.
+## Generating New Components
+
+`stencil generate`
+
+Once your component has been created, rename the css file to .scss and update the path in your component.tsx file.
+
+`npm run build`
