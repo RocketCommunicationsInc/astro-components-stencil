@@ -1,7 +1,7 @@
 import { html, render } from 'lit-html'
 import { boolean, select, date, withKnobs } from '@storybook/addon-knobs'
 //@ts-ignore
-import readme from '../../src/components/rux-clock/readme.md'
+import readme from '../components/rux-clock/readme.md'
 
 export default {
     title: 'Components/Clock',
@@ -43,15 +43,13 @@ export const Clock = () => {
     `
 }
 
-Clock.story = {
-    parameters: {
-        exports: {
-            render,
-            html,
-        },
-        readme: {
-            sidebar: readme,
-        },
+Clock.parameters = {
+    exports: {
+        render,
+        html,
+    },
+    readme: {
+        sidebar: readme,
     },
 }
 
@@ -90,16 +88,14 @@ export const ClockWithAosLos = () => {
     `
 }
 
-ClockWithAosLos.story = {
-    name: 'Clock with AOS/LOS',
+ClockWithAosLos.storyName = 'Clock with AOS/LOS'
 
-    parameters: {
-        exports: {
-            render,
-            html,
-        },
-        readme: {
-            sidebar: readme,
-        },
+ClockWithAosLos.parameters = {
+    exports: {
+        render,
+        html,
+    },
+    readme: {
+        sidebar: readme,
     },
 }

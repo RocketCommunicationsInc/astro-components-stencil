@@ -2,7 +2,7 @@ import { html, render } from 'lit-html'
 import { text, withKnobs } from '@storybook/addon-knobs'
 
 //@ts-ignore
-import readme from '../../src/components/rux-global-status-bar/readme.md'
+import readme from '../components/rux-global-status-bar/readme.md'
 
 export default {
     title: 'Components/Global Status Bar',
@@ -28,15 +28,13 @@ export const GlobalStatusBar = () => {
     `
 }
 
-GlobalStatusBar.story = {
-    parameters: {
-        exports: {
-            render,
-            html,
-        },
-        readme: {
-            sidebar: readme,
-        },
+GlobalStatusBar.parameters = {
+    exports: {
+        render,
+        html,
+    },
+    readme: {
+        sidebar: readme,
     },
 }
 
@@ -59,17 +57,15 @@ export const GlobalStatusBarWithSlotContent = () => {
     `
 }
 
-GlobalStatusBarWithSlotContent.story = {
-    name: 'Global Status Bar with Slot Content',
+GlobalStatusBarWithSlotContent.storyName = 'Global Status Bar with Slot Content'
 
-    parameters: {
-        exports: {
-            render,
-            html,
-        },
-        readme: {
-            sidebar: readme,
-        },
+GlobalStatusBarWithSlotContent.parameters = {
+    exports: {
+        render,
+        html,
+    },
+    readme: {
+        sidebar: readme,
     },
 }
 
@@ -112,16 +108,14 @@ export const GlobalStatusBarWithTabs = () => {
     `
 }
 
-GlobalStatusBarWithTabs.story = {
-    name: 'Global Status Bar with Tabs',
+GlobalStatusBarWithTabs.storyName = 'Global Status Bar with Tabs'
 
-    parameters: {
-        exports: {
-            render,
-            html,
-        },
-        readme: {
-            sidebar: readme,
-        },
+GlobalStatusBarWithTabs.parameters = {
+    exports: {
+        render,
+        html,
+    },
+    readme: {
+        sidebar: readme,
     },
 }

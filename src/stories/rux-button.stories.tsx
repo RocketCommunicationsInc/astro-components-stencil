@@ -36,15 +36,13 @@ export const StandardButton = () => {
     `
 }
 
-StandardButton.story = {
-    parameters: {
-        exports: {
-            render,
-            html,
-        },
-        readme: {
-            sidebar: Readme,
-        },
+StandardButton.parameters = {
+    exports: {
+        render,
+        html,
+    },
+    readme: {
+        sidebar: Readme,
     },
 }
 
@@ -122,16 +120,14 @@ export const GroupedButtons = () => html`
     </div>
 `
 
-GroupedButtons.story = {
-    parameters: {
-        exports: {
-            render,
-            html,
-        },
-        readme: {
-            sidebar:
-                '# Grouped Buttons\n\nCommon button groupings follow these conventions: \n\n- Cancel buttons are always presented to the left of actions such as “Submit.”\n\n- Always group together “Ok/Cancel” buttons. Do not justify them apart, but keep a reasonable margin between the buttons.\n\n- Buttons within the same group should maintain their inherent size. Do not stretch one button to match another’s width. \n\nRead the [Rux-Buttons Readme](/?path=/info/components-buttons--standard-button) for more information.',
-        },
+GroupedButtons.parameters = {
+    exports: {
+        render,
+        html,
+    },
+    readme: {
+        sidebar:
+            '# Grouped Buttons\n\nCommon button groupings follow these conventions: \n\n- Cancel buttons are always presented to the left of actions such as “Submit.”\n\n- Always group together “Ok/Cancel” buttons. Do not justify them apart, but keep a reasonable margin between the buttons.\n\n- Buttons within the same group should maintain their inherent size. Do not stretch one button to match another’s width. \n\nRead the [Rux-Buttons Readme](/?path=/info/components-buttons--standard-button) for more information.',
     },
 }
 
@@ -334,14 +330,12 @@ export const AllButtonVariants = () => html`
     </div>
 `
 
-AllButtonVariants.story = {
-    parameters: {
-        exports: {
-            render,
-            html,
-        },
-        readme: {
-            sidebar: Readme,
-        },
+AllButtonVariants.parameters = {
+    exports: {
+        render,
+        html,
+    },
+    readme: {
+        sidebar: Readme,
     },
 }
