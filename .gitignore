@@ -2,6 +2,7 @@ dist/
 www/
 loader/
 storybook-static/
+package-lock
 
 *~
 *.sw[mnpcod]
@@ -25,3 +26,5 @@ $RECYCLE.BIN/
 Thumbs.db
 UserInterfaceState.xcuserstate
 .env
+
+
