@@ -76,12 +76,18 @@ export class RuxClassificationMarking {
     }
 
   render() {
+    const classificationTag = this._setClassificationMarking(this.classification).labelTag
+    const classificationLabel = this._setClassificationMarking(this.classification).label
+
     return (
-      <Host class="rux-classification-marking">
-        ${this.tag
-            ? `${this._setClassificationMarking(this.classification).labelTag}`
-            : `${this._setClassificationMarking(this.classification).label}`}
-        ${this.label}
+      <Host>
+        <div class="rux-classification-marking">
+          {this.tag
+            ? { classificationTag }
+            : { classificationLabel }
+          }
+          {this.label}
+        </div>
       </Host>
     );
   }
