@@ -2,7 +2,7 @@ import { Component, Host, h } from '@stencil/core';
 
 @Component({
   tag: 'rux-classification-markings',
-  styleUrl: 'rux-classification-markings.css',
+  styleUrl: 'rux-classification-markings.scss',
   shadow: true,
 })
 export class RuxClassificationMarkings {
@@ -16,3 +16,7 @@ export class RuxClassificationMarkings {
   }
 
 }
+
+
+
+

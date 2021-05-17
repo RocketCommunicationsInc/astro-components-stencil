@@ -1,5 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { RuxClassificationMarkings } from '../rux-classification-markings';
+import { RuxClassificationMarkings } from '../rux-classification-marking';
 
 describe('rux-classification-markings', () => {
   it('renders', async () => {
