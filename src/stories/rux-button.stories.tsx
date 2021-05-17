@@ -2,7 +2,8 @@ import { html, render } from 'lit-html'
 import { boolean, select, withKnobs } from '@storybook/addon-knobs'
 // import { RuxButton } from '../src/components/rux-button/rux-button.js';
 // import { RuxIcon } from '../src/components/rux-icon/rux-icon.js'; // not finished yet
-import Readme from '../components/rux-button/readme.md'
+import RuxButtonReadme from '../components/rux-button/readme.md'
+import RuxButtonGroupReadme from '../components/rux-button-group/readme.md'
 
 export default {
     title: 'Components/Buttons',
@@ -42,7 +43,7 @@ StandardButton.parameters = {
         html,
     },
     readme: {
-        sidebar: Readme,
+        sidebar: RuxButtonReadme,
     },
 }
 
@@ -91,9 +92,6 @@ StandardButton.parameters = {
 
 export const GroupedButtons = () => html`
     <style>
-        .rux-button-group rux-button:not(:last-child) {
-            margin-right: 0.625rem;
-        }
         .light-theme {
             --exampleContainerBackgroundColor: var(--primaryElementText);
             --exampleContainerBorderColor: var(--colorQuaternaryLighten1);
@@ -112,10 +110,11 @@ export const GroupedButtons = () => html`
     </style>
     <div style="padding: 10%; display: flex; justify-content: center;">
         <div class="example-container">
-            <div class="rux-button-group">
-                <rux-button outline>Cancel</rux-button>
-                <rux-button>Continue</rux-button>
-            </div>
+            <rux-button-group>
+                <rux-button outline>Outline</rux-button>
+                <rux-button>Normal</rux-button>
+                <rux-button disabled>Disabled</rux-button>
+            </rux-button-group>
         </div>
     </div>
 `
@@ -126,8 +125,7 @@ GroupedButtons.parameters = {
         html,
     },
     readme: {
-        sidebar:
-            '# Grouped Buttons\n\nCommon button groupings follow these conventions: \n\n- Cancel buttons are always presented to the left of actions such as “Submit.”\n\n- Always group together “Ok/Cancel” buttons. Do not justify them apart, but keep a reasonable margin between the buttons.\n\n- Buttons within the same group should maintain their inherent size. Do not stretch one button to match another’s width. \n\nRead the [Rux-Buttons Readme](/?path=/info/components-buttons--standard-button) for more information.',
+        sidebar: RuxButtonGroupReadme,
     },
 }
 
@@ -336,6 +334,6 @@ AllButtonVariants.parameters = {
         html,
     },
     readme: {
-        sidebar: Readme,
+        sidebar: RuxButtonReadme,
     },
 }

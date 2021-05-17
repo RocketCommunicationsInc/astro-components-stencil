@@ -14,6 +14,8 @@ export namespace Components {
         "size"?: 'small' | 'large';
         "type": string;
     }
+    interface RuxButtonGroup {
+    }
     interface RuxClock {
         "aos": number;
         "dayOfYear": number;
@@ -36,6 +38,12 @@ declare global {
         prototype: HTMLRuxButtonElement;
         new (): HTMLRuxButtonElement;
     };
+    interface HTMLRuxButtonGroupElement extends Components.RuxButtonGroup, HTMLStencilElement {
+    }
+    var HTMLRuxButtonGroupElement: {
+        prototype: HTMLRuxButtonGroupElement;
+        new (): HTMLRuxButtonGroupElement;
+    };
     interface HTMLRuxClockElement extends Components.RuxClock, HTMLStencilElement {
     }
     var HTMLRuxClockElement: {
@@ -50,6 +58,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
+        "rux-button-group": HTMLRuxButtonGroupElement;
         "rux-clock": HTMLRuxClockElement;
         "rux-global-status-bar": HTMLRuxGlobalStatusBarElement;
     }
@@ -62,6 +71,8 @@ declare namespace LocalJSX {
         "outline"?: boolean;
         "size"?: 'small' | 'large';
         "type"?: string;
+    }
+    interface RuxButtonGroup {
     }
     interface RuxClock {
         "aos"?: number;
@@ -79,6 +90,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;
+        "rux-button-group": RuxButtonGroup;
         "rux-clock": RuxClock;
         "rux-global-status-bar": RuxGlobalStatusBar;
     }
@@ -88,6 +100,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "rux-button": LocalJSX.RuxButton & JSXBase.HTMLAttributes<HTMLRuxButtonElement>;
+            "rux-button-group": LocalJSX.RuxButtonGroup & JSXBase.HTMLAttributes<HTMLRuxButtonGroupElement>;
             "rux-clock": LocalJSX.RuxClock & JSXBase.HTMLAttributes<HTMLRuxClockElement>;
             "rux-global-status-bar": LocalJSX.RuxGlobalStatusBar & JSXBase.HTMLAttributes<HTMLRuxGlobalStatusBarElement>;
         }

@@ -1,0 +1,6 @@
+.rux-button-group {
+    display: flex;
+    rux-button:not(:last-child) {
+        margin-right: 0.625rem;
+    }
+}
