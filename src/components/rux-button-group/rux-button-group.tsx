@@ -6,7 +6,7 @@ import { Prop, Component, h } from '@stencil/core'
     shadow: false,
 })
 export class RuxButtonGroup {
-    @Prop() align: string = 'left'
+    @Prop() align: 'left' | 'center' | 'right' = 'left'
 
     render() {
         const { align } = this

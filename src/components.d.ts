@@ -15,7 +15,7 @@ export namespace Components {
         "type": string;
     }
     interface RuxButtonGroup {
-        "align": string;
+        "align": 'left' | 'center' | 'right';
     }
     interface RuxClock {
         "aos": number;
@@ -32,7 +32,7 @@ export namespace Components {
         "version": string;
     }
     interface RuxIcon {
-        "color": 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'white';
+        "color": 'primary' | 'dark';
         "name": string;
         "size": 'extra small' | 'small' | 'base' | 'large';
         "viewBox": string;
@@ -12651,7 +12651,7 @@ declare namespace LocalJSX {
         "type"?: string;
     }
     interface RuxButtonGroup {
-        "align"?: string;
+        "align"?: 'left' | 'center' | 'right';
     }
     interface RuxClock {
         "aos"?: number;
@@ -12668,7 +12668,7 @@ declare namespace LocalJSX {
         "version"?: string;
     }
     interface RuxIcon {
-        "color"?: 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'white';
+        "color"?: 'primary' | 'dark';
         "name"?: string;
         "size"?: 'extra small' | 'small' | 'base' | 'large';
         "viewBox"?: string;

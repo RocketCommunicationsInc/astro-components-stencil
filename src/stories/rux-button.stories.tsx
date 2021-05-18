@@ -29,7 +29,7 @@ export const StandardButton = () => {
                 .size="${size}"
                 ?disabled="${disabled}"
                 ?outline="${outline}"
-                ?iconOnly="${iconOnly}"
+                .iconOnly="${iconOnly}"
                 .icon="${withIcon ? 'settings' : null}"
                 >Button</rux-button
             >

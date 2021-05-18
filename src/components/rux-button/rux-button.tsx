@@ -1,4 +1,5 @@
 import { Prop, Component, h } from '@stencil/core'
+import '../rux-icon/rux-icon'
 
 @Component({
     tag: 'rux-button',
@@ -14,7 +15,8 @@ export class RuxButton {
     @Prop({ reflect: true }) size?: 'small' | 'large'
 
     render() {
-        const { type, size, iconOnly, outline, disabled } = this
+        const { type, size, iconOnly, outline, disabled, icon } = this
+        console.log('iconOnly', iconOnly)
         return (
             <button
                 type={type}
@@ -28,6 +30,13 @@ export class RuxButton {
                 aria-disabled={disabled ? 'true' : null}
                 disabled={disabled}
             >
+                {icon ? (
+                    <rux-icon
+                        name={icon}
+                        color={outline ? 'primary' : 'dark'}
+                    ></rux-icon>
+                ) : null}
+
                 <slot></slot>
             </button>
         )
