@@ -1,4 +1,4 @@
-import { Component, Host, Prop, h } from '@stencil/core';
+import { Component, Host, Prop, h } from '@stencil/core'
 
 @Component({
     tag: 'rux-icon',
@@ -6,23 +6,28 @@ import { Component, Host, Prop, h } from '@stencil/core';
     shadow: true,
 })
 export class RuxIcon {
-    svg: string;
+    svg: string
 
     @Prop() size: 'extra small' | 'small' | 'base' | 'large' = 'base'
 
-    @Prop() name: string;
+    @Prop() name: string
 
-    @Prop() viewBox: string = '0 0 24 24';
+    @Prop() viewBox: string = '0 0 24 24'
 
-    @Prop() color: 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'white' = 'primary';
+    @Prop() color: 'primary' | 'dark'
 
     render() {
-        const SVG = `rux-icon-${this.name}`;
+        const SVG = `rux-icon-${this.name}`
 
         return (
-          <Host>
-            <SVG class="icon" color={this.color} size={this.size} viewBox={this.viewBox}></SVG>
-          </Host>
-        );
+            <Host>
+                <SVG
+                    class="icon"
+                    color={this.color}
+                    size={this.size}
+                    viewBox={this.viewBox}
+                ></SVG>
+            </Host>
+        )
     }
 }
