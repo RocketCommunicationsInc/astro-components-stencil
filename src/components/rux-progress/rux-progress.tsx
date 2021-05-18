@@ -17,7 +17,9 @@ getProgressAsString(){
     return (
       <Host>
        
-          
+        <progress class="rux-progress" value={this.value} max={this.maxvalue}></progress>
+        <output class="rux_progress__value" hidden={this.hidelabel} >{this.getProgressAsString()}</output>
+
         <slot></slot>
       </Host>
     );
