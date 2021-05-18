@@ -5269,8 +5269,8 @@ export namespace Components {
         "size": 'extra small' | 'small' | 'base' | 'large';
     }
     interface RuxProgress {
-        "hidelabel": boolean;
-        "maxvalue": number;
+        "hideLabel": boolean;
+        "maxValue": number;
         "value": number;
     }
 }
@@ -17906,8 +17906,8 @@ declare namespace LocalJSX {
         "size"?: 'extra small' | 'small' | 'base' | 'large';
     }
     interface RuxProgress {
-        "hidelabel"?: boolean;
-        "maxvalue"?: number;
+        "hideLabel"?: boolean;
+        "maxValue"?: number;
         "value"?: number;
     }
     interface IntrinsicElements {
