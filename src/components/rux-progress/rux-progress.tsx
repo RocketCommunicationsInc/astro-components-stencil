@@ -36,11 +36,3 @@ getProgressAsString(){
 
 }
 
-/*
-*This is how the old component did it 
-
-<progress class="rux-progress" value={this.value} max={this.maxvalue}></progress>
-<output class="rux_progress__value" /*need hidden class >{this.getProgressAsString()}</output>
-! Not passing props correctly after getting rid of default value for maxValue. If I have the default, 
-! Determinate Progress (Max) Is out of 100 instead of 10. 
-*/
