@@ -13,6 +13,11 @@ export namespace Components {
         "outline": boolean;
         "size"?: 'small' | 'large';
     }
+    interface RuxClassificationMarking {
+        "classification": string;
+        "label": string;
+        "tag": boolean;
+    }
     interface RuxClock {
         "aos": number;
         "dayOfYear": number;
@@ -5275,6 +5280,12 @@ declare global {
     var HTMLRuxButtonElement: {
         prototype: HTMLRuxButtonElement;
         new (): HTMLRuxButtonElement;
+    };
+    interface HTMLRuxClassificationMarkingElement extends Components.RuxClassificationMarking, HTMLStencilElement {
+    }
+    var HTMLRuxClassificationMarkingElement: {
+        prototype: HTMLRuxClassificationMarkingElement;
+        new (): HTMLRuxClassificationMarkingElement;
     };
     interface HTMLRuxClockElement extends Components.RuxClock, HTMLStencilElement {
     }
@@ -11578,6 +11589,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
+        "rux-classification-marking": HTMLRuxClassificationMarkingElement;
         "rux-clock": HTMLRuxClockElement;
         "rux-global-status-bar": HTMLRuxGlobalStatusBarElement;
         "rux-icon": HTMLRuxIconElement;
@@ -12637,6 +12649,11 @@ declare namespace LocalJSX {
         "iconOnly"?: boolean;
         "outline"?: boolean;
         "size"?: 'small' | 'large';
+    }
+    interface RuxClassificationMarking {
+        "classification"?: string;
+        "label"?: string;
+        "tag"?: boolean;
     }
     interface RuxClock {
         "aos"?: number;
@@ -17895,6 +17912,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;
+        "rux-classification-marking": RuxClassificationMarking;
         "rux-clock": RuxClock;
         "rux-global-status-bar": RuxGlobalStatusBar;
         "rux-icon": RuxIcon;
@@ -18952,6 +18970,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "rux-button": LocalJSX.RuxButton & JSXBase.HTMLAttributes<HTMLRuxButtonElement>;
+            "rux-classification-marking": LocalJSX.RuxClassificationMarking & JSXBase.HTMLAttributes<HTMLRuxClassificationMarkingElement>;
             "rux-clock": LocalJSX.RuxClock & JSXBase.HTMLAttributes<HTMLRuxClockElement>;
             "rux-global-status-bar": LocalJSX.RuxGlobalStatusBar & JSXBase.HTMLAttributes<HTMLRuxGlobalStatusBarElement>;
             "rux-icon": LocalJSX.RuxIcon & JSXBase.HTMLAttributes<HTMLRuxIconElement>;
