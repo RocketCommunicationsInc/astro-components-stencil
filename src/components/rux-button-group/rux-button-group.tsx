@@ -14,6 +14,7 @@ export class RuxButtonGroup {
             <div
                 class={{
                     'rux-button-group': true,
+                    'rux-button-group--left': align === 'left',
                     'rux-button-group--right': align === 'right',
                     'rux-button-group--center': align === 'center',
                 }}
