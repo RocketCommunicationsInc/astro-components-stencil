@@ -19,10 +19,10 @@ getProgressAsString(){
       <Host>
        {
          this.value ? (
-        <div>
-         <progress class="rux-progress" value={this.value} max={this.maxValue}></progress>
-         <output class="rux_progress__value" hidden={this.hideLabel} >{this.getProgressAsString()}</output>
-         </div>
+        [
+         <progress class="rux-progress" value={this.value} max={this.maxValue}></progress>,
+         <output class="rux-progress__value" hidden={this.hideLabel} >{this.getProgressAsString()}</output>
+        ]
          )
          
          : <progress class="rux-progress"></progress>
@@ -41,5 +41,6 @@ getProgressAsString(){
 
 <progress class="rux-progress" value={this.value} max={this.maxvalue}></progress>
 <output class="rux_progress__value" /*need hidden class >{this.getProgressAsString()}</output>
-
+! Not passing props correctly after getting rid of default value for maxValue. If I have the default, 
+! Determinate Progress (Max) Is out of 100 instead of 10. 
 */

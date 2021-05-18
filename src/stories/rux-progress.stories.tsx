@@ -1,5 +1,5 @@
 import { html, render } from 'lit-html';
-import { boolean, text, withKnobs, number, } from '@storybook/addon-knobs';
+import { boolean, withKnobs, number } from '@storybook/addon-knobs';
 //! May need range in import above 
 //@ts-ignore
 import readme from '../../src/components/rux-progress/readme.md';
@@ -33,7 +33,7 @@ export const DeterminateProgress = () => {
 
     return html`
     <div style="margin: 3rem auto;  padding: 2rem; text-align: center;">
-        <rux-progress value="${progress}" ?hide-label="${!hideLabel}"></rux-progress>    
+        <rux-progress value="${progress}" ?hide-label="${hideLabel}"></rux-progress>    
     </div>    
     `;
 };
@@ -68,7 +68,7 @@ DeterminateProgress.story = {
       const hideLabel = boolean('Hide Label', true);
       return html`
         <div style="margin: 3rem auto;  padding: 2rem; text-align: center;">
-          <rux-progress value="${progress}" max="${maxLimit}" ?hide-label="${!hideLabel}"></rux-progress>
+          <rux-progress value="${progress}" max="${maxLimit}" ?hide-label="${hideLabel}"></rux-progress>
         </div>
       `;
     };

@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property    | Attribute   | Description | Type      | Default     |
-| ----------- | ----------- | ----------- | --------- | ----------- |
-| `hidelabel` | `hidelabel` |             | `boolean` | `false`     |
-| `maxvalue`  | `maxvalue`  |             | `number`  | `100`       |
-| `value`     | `value`     |             | `number`  | `undefined` |
+| Property    | Attribute    | Description | Type      | Default     |
+| ----------- | ------------ | ----------- | --------- | ----------- |
+| `hideLabel` | `hide-label` |             | `boolean` | `false`     |
+| `maxValue`  | `max-value`  |             | `number`  | `100`       |
+| `value`     | `value`      |             | `number`  | `undefined` |
 
 
 ----------------------------------------------
