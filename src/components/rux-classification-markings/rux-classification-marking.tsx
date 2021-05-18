@@ -1,4 +1,4 @@
-import { Component, Host, Prop, h } from '@stencil/core';
+import { Component, Host, Prop, h, } from '@stencil/core';
 
 @Component({
   tag: 'rux-classification-marking',
@@ -7,86 +7,43 @@ import { Component, Host, Prop, h } from '@stencil/core';
 })
 export class RuxClassificationMarking {
   @Prop() classification: string = "unclassified";
-  @Prop({reflect: true}) tag: boolean = false
   @Prop() label: string = ""
+  @Prop({reflect: true}) tag: boolean = false
 
-  _slugFilter(label) {
-        let slug = label.toLowerCase()
+  _getDisplayData(requestedClassification) {
+      const approvedClassifications = {
+        controlled: { bannerText: 'cui', tagText: 'cui' },
+        confidential: { bannerText: 'cconfidential', tagText: 'c'},
+        secret: { bannerText: 'secret', tagText: 's'},
+        topsecret: { bannerText: 'top secret', tagText: 'ts'},
+        topsecretsci: { bannerText: 'top secret//sci', tagText: 'TS//SCI'},
+        unclassified: { bannerText: 'unclassified', tagText: 'u'},
+      }
+    
+    const displayData = { text: '', label: ''}
 
-        slug = label
-            .replace(/^\s+|\s+$/g, '') // trim
-            .replace(/[^a-z0-9 -]/g, '') // remove invalid chars like //
-            .replace(/\s+/g, '') // collapse whitespace
-            .replace(/-+/g, '') // collapse dashes to whitespace
-
-        return slug
-  }
-  
-  _setClassificationMarking(marker) {
-        const markingClass = this._slugFilter(this.classification)
-        const markingLabel = this._slugFilter(marker)
-        let bannerLabel
-        let tagLabel
-        let markingStyle
-
-        if (markingClass == markingLabel) {
-            switch (markingLabel) {
-                case 'controlled':
-                    bannerLabel = 'cui'
-                    tagLabel = 'cui'
-                    markingStyle = 'controlled'
-                    break
-                case 'confidential':
-                    bannerLabel = 'confidential'
-                    tagLabel = 'c'
-                    markingStyle = 'confidential'
-                    break
-                case 'secret':
-                    bannerLabel = 'secret'
-                    tagLabel = 's'
-                    markingStyle = 'secret'
-                    break
-                case 'topsecret':
-                    bannerLabel = 'top secret'
-                    tagLabel = 'ts'
-                    markingStyle = 'top secret'
-                    break
-                case 'topsecretsci':
-                    bannerLabel = 'top secret//sci'
-                    tagLabel = 'TS//SCI'
-                    markingStyle = 'top secret//sci'
-                    break
-                default:
-                    bannerLabel = 'unclassified'
-                    tagLabel = 'u'
-                    markingStyle = 'unclassified'
-            }
-        } else {
-            bannerLabel = 'Select a Classification Marking type'
-            tagLabel = bannerLabel
-        }
-
-        const markingData = {
-            label: bannerLabel,
-            labelTag: tagLabel,
-            style: markingStyle,
-        }
-
-        return markingData
+    if (Object.keys(approvedClassifications).includes(requestedClassification)) {
+      //set display data to appropriate classification object
+      if (this.tag)
+        displayData.text = approvedClassifications[this.classification].tagText
+      if (!this.tag) {
+        displayData.text = approvedClassifications[this.classification].bannerText
+      }
+    } else {
+      //set display data to error state
+      displayData.text = "Select a Classification Marking"
     }
+    return displayData
+  }
 
   render() {
-    const classificationTag = this._setClassificationMarking(this.classification).labelTag
-    const classificationLabel = this._setClassificationMarking(this.classification).label
+    const {text, label} = this._getDisplayData(this.classification)
 
     return (
       <Host>
         <div class="rux-classification-marking">
-          {this.tag
-            ? { classificationTag }
-            : { classificationLabel }
-          }
-          {this.label}
+          {text}
+          {label}
         </div>
       </Host>
     );
