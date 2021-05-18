@@ -44,7 +44,6 @@ Pass properties as attributes of the Astro Button custom element:
 <rux-button size="large" disabled outline>
   Large disabled outline button
 </rux-button>
-
 ```
 
 The component auto-imports the default Astro Icon Web Component for icons, if you specify one:

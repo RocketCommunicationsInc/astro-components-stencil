@@ -15,6 +15,7 @@ export namespace Components {
         "type": string;
     }
     interface RuxButtonGroup {
+        "align": string;
     }
     interface RuxClock {
         "aos": number;
@@ -73,6 +74,7 @@ declare namespace LocalJSX {
         "type"?: string;
     }
     interface RuxButtonGroup {
+        "align"?: string;
     }
     interface RuxClock {
         "aos"?: number;

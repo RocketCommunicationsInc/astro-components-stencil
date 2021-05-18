@@ -1,6 +1,15 @@
 .rux-button-group {
     display: flex;
+    align-items: center;
     rux-button:not(:last-child) {
         margin-right: 0.625rem;
+    }
+
+    &--right {
+        justify-content: flex-end;
+    }
+
+    &--center {
+        justify-content: center;
     }
 }

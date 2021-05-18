@@ -90,34 +90,43 @@ StandardButton.parameters = {
 //   },
 // };
 
-export const GroupedButtons = () => html`
-    <style>
-        .light-theme {
-            --exampleContainerBackgroundColor: var(--primaryElementText);
-            --exampleContainerBorderColor: var(--colorQuaternaryLighten1);
-        }
-        .dark-theme {
-            --exampleContainerBackgroundColor: var(--colorTertiaryDarken1);
-            --exampleContainerBorderColor: var(--colorTertiary);
-        }
-        .example-container {
-            min-width: 20rem;
-            background: var(--exampleContainerBackgroundColor);
-            border: 1px solid var(--exampleContainerBorderColor);
-            padding: 0.625rem;
-            display: flex;
-        }
-    </style>
-    <div style="padding: 10%; display: flex; justify-content: center;">
-        <div class="example-container">
-            <rux-button-group>
-                <rux-button outline>Outline</rux-button>
-                <rux-button>Normal</rux-button>
-                <rux-button disabled>Disabled</rux-button>
-            </rux-button-group>
+export const GroupedButtons = () => {
+    const alignOptions = {
+        Default: '',
+        Right: 'right',
+        Center: 'center',
+    }
+
+    const align = select('Align', alignOptions, '')
+
+    return html`
+        <style>
+            .light-theme {
+                --exampleContainerBackgroundColor: var(--primaryElementText);
+                --exampleContainerBorderColor: var(--colorQuaternaryLighten1);
+            }
+            .dark-theme {
+                --exampleContainerBackgroundColor: var(--colorTertiaryDarken1);
+                --exampleContainerBorderColor: var(--colorTertiary);
+            }
+            .example-container {
+                min-width: 20rem;
+                background: var(--exampleContainerBackgroundColor);
+                border: 1px solid var(--exampleContainerBorderColor);
+                padding: 0.625rem;
+                display: block;
+            }
+        </style>
+        <div style="padding: 10%; display: flex; justify-content: center;">
+            <div class="example-container">
+                <rux-button-group .align="${align}">
+                    <rux-button outline>Outline</rux-button>
+                    <rux-button>Normal</rux-button>
+                </rux-button-group>
+            </div>
         </div>
-    </div>
-`
+    `
+}
 
 GroupedButtons.parameters = {
     exports: {

@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core'
+import { Prop, Component, h } from '@stencil/core'
 
 @Component({
     tag: 'rux-button-group',
@@ -6,9 +6,18 @@ import { Component, h } from '@stencil/core'
     shadow: false,
 })
 export class RuxButtonGroup {
+    @Prop() align: string = 'left'
+
     render() {
+        const { align } = this
         return (
-            <div class="rux-button-group">
+            <div
+                class={{
+                    'rux-button-group': true,
+                    'rux-button-group--right': align === 'right',
+                    'rux-button-group--center': align === 'center',
+                }}
+            >
                 <slot></slot>
             </div>
         )
