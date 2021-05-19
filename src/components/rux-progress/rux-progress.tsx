@@ -6,13 +6,13 @@ import { Component, Host, h, Prop } from '@stencil/core';
   shadow: true,
 })
 export class RuxProgress {
-@Prop() maxValue: number = 100;
+@Prop() max: number = 100;
 @Prop() value: number;
 @Prop() hideLabel: boolean = false;
 
 getProgressAsString(){
   //? Would we want the condition to be >= 100? Just in case someone uses this for a weird/specific value
-  return this.maxValue === 100 ? `${this.value}%` : `${this.value}/${this.maxValue}`
+  return this.max === 100 ? `${this.value}%` : `${this.value}/${this.max}`
 }
   render() {
     return (
@@ -20,7 +20,7 @@ getProgressAsString(){
        {
          this.value ? (
         [
-         <progress class="rux-progress" value={this.value} max={this.maxValue}></progress>,
+         <progress class="rux-progress" value={this.value} max={this.max}></progress>,
          <output class="rux-progress__value" hidden={this.hideLabel} >{this.getProgressAsString()}</output>
         ]
          )

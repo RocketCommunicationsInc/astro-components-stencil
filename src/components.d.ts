@@ -5270,7 +5270,7 @@ export namespace Components {
     }
     interface RuxProgress {
         "hideLabel": boolean;
-        "maxValue": number;
+        "max": number;
         "value": number;
     }
 }
@@ -17907,7 +17907,7 @@ declare namespace LocalJSX {
     }
     interface RuxProgress {
         "hideLabel"?: boolean;
-        "maxValue"?: number;
+        "max"?: number;
         "value"?: number;
     }
     interface IntrinsicElements {
