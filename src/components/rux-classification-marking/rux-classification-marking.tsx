@@ -5,7 +5,7 @@ import { Component, Host, Prop, h } from '@stencil/core';
   styleUrl: 'rux-classification-marking.scss',
   shadow: true,
 })
-export class RuxClassification {
+export class RuxClassificationMarking {
   @Prop() classification: string = "unclassified";
   @Prop() label: string = ""
   @Prop({ reflect: true }) tag: boolean = false
@@ -33,6 +33,7 @@ export class RuxClassification {
     } else {
       //set display data to error state
       displayData.text = "Select a Classification Marking"
+      displayData.label = ""
     }
     return displayData
   }
