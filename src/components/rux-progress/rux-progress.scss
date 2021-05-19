@@ -78,3 +78,11 @@
 .rux-progress:indeterminate::-webkit-progress-bar {
     background-color: transparent;
 }
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
