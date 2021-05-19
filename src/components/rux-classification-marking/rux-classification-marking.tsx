@@ -1,4 +1,4 @@
-import { Component, Host, Prop, h, } from '@stencil/core';
+import { Component, Host, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'rux-classification-marking',
@@ -8,15 +8,16 @@ import { Component, Host, Prop, h, } from '@stencil/core';
 export class RuxClassification {
   @Prop() classification: string = "unclassified";
   @Prop() label: string = ""
-  @Prop({reflect: true}) tag: boolean = false
+  @Prop({ reflect: true }) tag: boolean = false
+
 
   _getDisplayData(requestedClassification) {
       const approvedClassifications = {
         controlled: { bannerText: 'cui', tagText: 'cui' },
-        confidential: { bannerText: 'cconfidential', tagText: 'c'},
+        confidential: { bannerText: 'confidential', tagText: 'c'},
         secret: { bannerText: 'secret', tagText: 's'},
-        topsecret: { bannerText: 'top secret', tagText: 'ts'},
-        topsecretsci: { bannerText: 'top secret//sci', tagText: 'TS//SCI'},
+        "top-secret": { bannerText: 'top secret', tagText: 'ts'},
+        "top-secret-sci": { bannerText: 'top secret//sci', tagText: 'TS//SCI'},
         unclassified: { bannerText: 'unclassified', tagText: 'u'},
       }
     

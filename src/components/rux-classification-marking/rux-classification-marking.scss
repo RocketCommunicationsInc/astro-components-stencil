@@ -33,14 +33,15 @@
     padding: 0.25rem 0.9375rem;
     border-radius: 3px;
     font-size: var(--fontSizeMD);
+    flex-grow: 0;
 }
 
-:host([classification='topsecretsci']) {
+:host([classification='top-secret-sci']) {
     background-color: var(--classificationTopSecretSCIBackgroundColor);
     color: var(--classificationTextColorDark);
 }
 
-:host([classification='topsecret']) {
+:host([classification='top-secret']) {
     background-color: var(--classificationTopSecretBackgroundColor);
     color: var(--classificationTextColorDark);
 }

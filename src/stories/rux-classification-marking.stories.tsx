@@ -1,6 +1,6 @@
 import { html, render } from 'lit-html';
 import { text, select, withKnobs } from '@storybook/addon-knobs';
-import Readme from '../src/components/rux-classification-marking/readme.md';
+import Readme from '../../src/components/rux-classification-marking/readme.md';
 
 
 export default {
@@ -24,10 +24,14 @@ export const ClassificationMarkings = () => {
   }
 
   function markingFilter() {
-    const markingClass = classification.toLowerCase();
-    return markingClass;
+    let markingClass = classification
+        .toLowerCase()
+        .replace(/[//]/g, ' ') // replace forwards slashes of Top Secret//SCI with single space
+        .replace(/\s+/g, '-') // replace spaces with dashes
+
+      return markingClass
   }
-  
+
   const markingTemplate = `
     <div style="display: flex; flex-flow: row; justify-content: center;margin-top:30px;">
       <rux-classification-marking
@@ -58,13 +62,13 @@ export const ClassificationMarkingBanners = () => html`
     <div style="display: flex; flex-flow: column; justify-content: center; margin:20px;">
       <div style="display: flex; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;">
         <rux-classification-marking
-          classification="topsecretsci"
+          classification="top-secret-sci"
         ></rux-classification-marking>
       </div>
       
       <div style="display: flex; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;">
         <rux-classification-marking          
-          classification="top secret"
+          classification="top-secret"
         ></rux-classification-marking>
       </div>
       
@@ -114,7 +118,7 @@ export const ClassificationMarkingTags = () => html`
         <p style="display:flex; width:225px; font-size:14px; font-style:italic; color:#d5d7d9;">Top Secret//SCI</p>
         <rux-classification-marking
           tag
-          classification="top secret//sci"
+          classification="top-secret-sci"
         ></rux-classification-marking>
       </div>
 
@@ -122,7 +126,7 @@ export const ClassificationMarkingTags = () => html`
         <p style="display:flex; width:225px; font-size:14px; font-style:italic; color:#d5d7d9;">Top Secret</p>	
         <rux-classification-marking
           tag
-          classification="top secret"
+          classification="top-secret"
         ></rux-classification-marking>
       </div>
       <div style="display: flex; align-items:baseline;  position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;">
