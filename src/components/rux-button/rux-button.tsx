@@ -16,7 +16,6 @@ export class RuxButton {
 
     render() {
         const { type, size, iconOnly, outline, disabled, icon } = this
-        console.log('iconOnly', iconOnly)
         return (
             <button
                 type={type}
