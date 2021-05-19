@@ -1,11 +1,11 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { RuxClassificationMarkings } from '../rux-classification-marking';
+import { RuxClassificationMarking } from '../rux-classification-marking';
 
-describe('rux-classification-markings', () => {
+describe('rux-classification-marking', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [RuxClassificationMarkings],
-      html: `<rux-classification-markings></rux-classification-markings>`,
+      components: [RuxClassificationMarking],
+      html: `<rux-classification-marking></rux-classification-marking>`,
     });
     expect(page.root).toEqualHtml(`
       <rux-classification-markings>
@@ -15,4 +15,14 @@ describe('rux-classification-markings', () => {
       </rux-classification-markings>
     `);
   });
+
+  // Write test for _getDisplayData to return proper data for all classifications and error state
+  // test('getDisplayData', () => {
+  //   const getDisplayDataMock = RuxClassificationMarking.
+  //   expect(getDisplayDataMock).toMatchObject({text: "",label: ""})
+  // })
+
+
 });
+
+
