@@ -21,7 +21,7 @@ export class RuxClassification {
         unclassified: { bannerText: 'unclassified', tagText: 'u'},
       }
     
-    const displayData = { text: '', label: ''}
+    const displayData = { text: '', label: this.label}
 
     if (Object.keys(approvedClassifications).includes(requestedClassification)) {
       //set display data to appropriate classification object
