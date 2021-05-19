@@ -10,6 +10,7 @@ describe('rux-progress', () => {
     expect(page.root).toEqualHtml(`
       <rux-progress>
         <mock:shadow-root>
+        <progress class="rux-progress"></progress>
           <slot></slot>
         </mock:shadow-root>
       </rux-progress>
