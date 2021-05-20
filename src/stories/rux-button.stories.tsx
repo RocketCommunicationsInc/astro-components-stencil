@@ -1,9 +1,13 @@
 import { html, render } from 'lit-html'
 import { boolean, select, withKnobs } from '@storybook/addon-knobs'
-// import { RuxButton } from '../src/components/rux-button/rux-button.js';
-// import { RuxIcon } from '../src/components/rux-icon/rux-icon.js'; // not finished yet
 import RuxButtonReadme from '../components/rux-button/readme.md'
 import RuxButtonGroupReadme from '../components/rux-button-group/readme.md'
+
+const sizeOptions = {
+    Small: 'small',
+    Standard: '',
+    Large: 'large',
+}
 
 export default {
     title: 'Components/Buttons',
@@ -11,12 +15,6 @@ export default {
 }
 
 export const StandardButton = () => {
-    const sizeOptions = {
-        Small: 'small',
-        Standard: '',
-        Large: 'large',
-    }
-
     const size = select('Size', sizeOptions, '')
     const disabled = boolean('Disabled', false)
     const outline = boolean('Outline', false)
@@ -47,48 +45,41 @@ StandardButton.parameters = {
     },
 }
 
-// export const slottedIconButton = () => {
-//   const sizeOptions = {
-//     Small: 'small',
-//     Standard: '',
-//     Large: 'large',
-//   };
+export const slottedIconButton = () => {
+    const size = select('Size', sizeOptions, 'small')
+    const disabled = boolean('Disabled', false)
+    const outline = boolean('Outline', false)
+    const iconOnly = boolean('Icon only', false)
 
-//   const size = select('Size', sizeOptions, 'small');
-//   const disabled = boolean('Disabled', false);
-//   const outline = boolean('Outline', false);
-//   const iconOnly = boolean('Icon only', false);
-//   return html`
-//     <div style="padding: 10%; display: flex; justify-content: center;">
-//       <rux-button
-//         .size="${size}"
-//         ?disabled="${disabled}"
-//         ?outline="${outline}"
-//         ?iconOnly="${iconOnly}"
-//         >
-//         <rux-icon
-//           icon="custom"
-//           library="/icons/custom.svg"
-//           viewBox="0 0 128 128"
-//           color="${outline ? 'var(--buttonOutlineTextColor)' : 'var(--buttonTextColor)'}"
-//         ></rux-icon>
-//         Slotted icon button</rux-button
-//       >
-//     </div>
-//   `;
-// };
+    return html`
+        <div style="padding: 10%; display: flex; justify-content: center;">
+            <rux-button
+                .size="${size}"
+                ?disabled="${disabled}"
+                ?outline="${outline}"
+                ?iconOnly="${iconOnly}"
+            >
+                <rux-icon
+                    name="palette"
+                    color="${outline ? 'primary' : 'dark'}"
+                ></rux-icon>
+                Slotted icon button</rux-button
+            >
+        </div>
+    `
+}
 
-// slottedIconButton.story = {
-//   parameters: {
-//     exports: {
-//       render,
-//       html,
-//     },
-//     readme: {
-//       sidebar: Readme,
-//     },
-//   },
-// };
+slottedIconButton.story = {
+    parameters: {
+        exports: {
+            render,
+            html,
+        },
+        readme: {
+            sidebar: RuxButtonReadme,
+        },
+    },
+}
 
 export const GroupedButtons = () => {
     const alignOptions = {

@@ -45,7 +45,7 @@
 
     user-select: none;
 
-    // &::slotted(rux-icon),
+    ::slotted(rux-icon),
     rux-icon {
         height: 1.5rem;
         width: 1.5rem;
@@ -175,25 +175,25 @@
     margin-right: -1rem;
 }
 
-// .rux-button--icon-only ::slotted(rux-icon),
+.rux-button--icon-only ::slotted(rux-icon),
 .rux-button--icon-only rux-icon {
     margin-left: -0.625rem;
     margin-right: -0.625rem;
 }
 
-// .rux-button--large.rux-button--icon-only ::slotted(rux-icon),
+.rux-button--large.rux-button--icon-only ::slotted(rux-icon),
 .rux-button--large.rux-button--icon-only rux-icon {
     margin-left: -1rem;
     margin-right: -1rem;
 }
 
-// .rux-button--small ::slotted(rux-icon),
+.rux-button--small ::slotted(rux-icon),
 .rux-button--small rux-icon {
     height: 0.875rem;
     width: 0.875rem;
 }
 
-// .rux-button--large ::slotted(rux-icon),
+.rux-button--large ::slotted(rux-icon),
 .rux-button--large rux-icon {
     height: 1.75rem;
     width: 1.75rem;
