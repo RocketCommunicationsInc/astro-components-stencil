@@ -1,12 +1,10 @@
-@use "../../global/variables";
-
 :host {
     --iconDefaultSize: 2.7rem;
     --iconColor: var(--iconDefaultColor);
 
     display: inline-flex;
     height: var(--iconDefaultSize);
-    width: var(--iconDe‘faultSize);
+    width: var(--iconDefaultSize);
 }
 
 svg,
