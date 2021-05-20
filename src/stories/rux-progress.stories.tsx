@@ -1,6 +1,6 @@
 import { html, render } from 'lit-html';
 import { boolean, withKnobs, number } from '@storybook/addon-knobs';
-//! May need range in import above 
+
 //@ts-ignore
 import readme from '../../src/components/rux-progress/readme.md';
 
@@ -10,6 +10,11 @@ export default {
     parameters: {
         readme: {
             sidebar: readme,
+            // theme: {
+            //   bodyColor: "white",
+            //   tableTrBackgroundColor: "#182635",
+            //   tableOddTrBackgroundColor: "#141f2c"
+            // }
         },
     },
 };
