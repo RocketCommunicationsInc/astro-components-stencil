@@ -1,4 +1,4 @@
-:host {
+:host div {
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@
     width: 100%;
 }
 
-:host([tag]) {
+:host([tag]) div {
     position: relative;
     align-items: center;
     top: auto;
@@ -36,24 +36,28 @@
     flex-grow: 0;
 }
 
-:host([classification='top-secret-sci']) {
+:host([tag]) {
+    padding: 0.25rem 0.9375rem;
+}
+
+:host([classification='top-secret-sci']) div {
     background-color: var(--classificationTopSecretSCIBackgroundColor);
     color: var(--classificationTextColorDark);
 }
 
-:host([classification='top-secret']) {
+:host([classification='top-secret']) div {
     background-color: var(--classificationTopSecretBackgroundColor);
     color: var(--classificationTextColorDark);
 }
-:host([classification='secret']) {
+:host([classification='secret']) div {
     background-color: var(--classificationSecretBackgroundColor);
 }
-:host([classification='confidential']) {
+:host([classification='confidential']) div {
     background-color: var(--classificationConfidentialBackgroundColor);
 }
-:host([classification='controlled']) {
+:host([classification='controlled']) div {
     background-color: var(--classificationControlledBackgroundColor);
 }
-:host([classification='unclassified']) {
+:host([classification='unclassified']) div {
     background-color: var(--classificationUnclassifiedBackgroundColor);
 }

@@ -43,8 +43,10 @@ export class RuxClassificationMarking {
 
     return (
       <Host>
+        <div>
           {text}
           {label}
+        </div>
       </Host>
     );
   }
