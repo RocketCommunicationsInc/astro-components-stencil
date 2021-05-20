@@ -47,7 +47,7 @@ Indeterminate Progress
 Determinate Progress
 
 ```xml
-<rux-progress value="50" max="100" hide-label></rux-progress>
+<rux-progress value="50" max="150" hide-label></rux-progress>
 ```
 
 ## Properties
