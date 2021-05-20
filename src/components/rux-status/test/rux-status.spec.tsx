@@ -21,14 +21,13 @@ describe('rux-status', () => {
     `)
   });
 
-  // it ('errors with invalid status', async () => {
-  //   const page = await newSpecPage({
-  //     components: [RuxStatus],
-  //     html:`<rux-status status='regular'></rux-status>`
-  //   });
+  it ('errors with invalid status', async () => {
+    const status = new RuxStatus()
 
-  //   expect(page.root).toThrowError('valid status required')
-  // })
+    expect(() => {
+      status.validateStatus('invalid');
+    }).toThrowError('valid status required')
+  })
 });
 
 
