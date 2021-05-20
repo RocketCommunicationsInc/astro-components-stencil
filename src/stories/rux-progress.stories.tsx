@@ -10,11 +10,6 @@ export default {
     parameters: {
         readme: {
             sidebar: readme,
-            // theme: {
-            //   bodyColor: "white",
-            //   tableTrBackgroundColor: "#182635",
-            //   tableOddTrBackgroundColor: "#141f2c"
-            // }
         },
     },
 };
