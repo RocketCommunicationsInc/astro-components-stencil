@@ -11,7 +11,6 @@ export class RuxProgress {
 @Prop() hideLabel: boolean = false;
 
 getProgressAsString(){
-  //? Would we want the condition to be >= 100? Just in case someone uses this for a weird/specific value
   return this.max === 100 ? `${this.value}%` : `${this.value}/${this.max}`
 }
   render() {
