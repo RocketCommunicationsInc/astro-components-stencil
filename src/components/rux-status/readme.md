@@ -46,9 +46,9 @@ Pass properties as attributes of the Astro Status custom element:
 
 ### Properties
 
-| Property | Type   | Default | Required | Description                                                                                               |
-| -------- | ------ | ------- | -------- | --------------------------------------------------------------------------------------------------------- |
-| `status` | String | `''`    | Yes      | Sets the status symbol, valid options are `critical`, `serious`, `caution`, `normal`, `standby` and `off` |
+| Property | Type   | Default   | Required | Description                                                                                               |
+| -------- | ------ | --------- | -------- | --------------------------------------------------------------------------------------------------------- |
+| `status` | String | undefined | Yes      | Sets the status symbol, valid options are `critical`, `serious`, `caution`, `normal`, `standby` and `off` |
 
 ---
 

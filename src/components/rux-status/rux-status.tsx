@@ -7,7 +7,7 @@ import { Prop, Component, Host, h, Watch } from '@stencil/core';
 })
 
 export class RuxStatus {
-    @Prop({reflect: true}) status: string = '';
+    @Prop({reflect: true}) status: string;
 
     @Watch('status')
     validateStatus(newValue: string) {
