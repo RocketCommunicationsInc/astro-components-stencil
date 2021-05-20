@@ -43,10 +43,8 @@ export class RuxClassificationMarking {
 
     return (
       <Host>
-        <div class="rux-classification-marking">
           {text}
           {label}
-        </div>
       </Host>
     );
   }
