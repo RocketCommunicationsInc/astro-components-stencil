@@ -27,9 +27,6 @@ export namespace Components {
         "appname": string;
         "version": string;
     }
-    interface RuxStatus {
-        "status": string;
-    }
     interface RuxIcon {
         "color": 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'white';
         "name": string;
@@ -5271,6 +5268,9 @@ export namespace Components {
         "name": string;
         "size": 'extra small' | 'small' | 'base' | 'large';
     }
+    interface RuxStatus {
+        "status": string;
+    }
 }
 declare global {
     interface HTMLRuxButtonElement extends Components.RuxButton, HTMLStencilElement {
@@ -5290,12 +5290,6 @@ declare global {
     var HTMLRuxGlobalStatusBarElement: {
         prototype: HTMLRuxGlobalStatusBarElement;
         new (): HTMLRuxGlobalStatusBarElement;
-    };
-    interface HTMLRuxStatusElement extends Components.RuxStatus, HTMLStencilElement {
-    }
-    var HTMLRuxStatusElement: {
-        prototype: HTMLRuxStatusElement;
-        new (): HTMLRuxStatusElement;
     };
     interface HTMLRuxIconElement extends Components.RuxIcon, HTMLStencilElement {
     }
@@ -11585,11 +11579,16 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement;
         new (): HTMLRuxIconZoomOutMapElement;
     };
+    interface HTMLRuxStatusElement extends Components.RuxStatus, HTMLStencilElement {
+    }
+    var HTMLRuxStatusElement: {
+        prototype: HTMLRuxStatusElement;
+        new (): HTMLRuxStatusElement;
+    };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
         "rux-clock": HTMLRuxClockElement;
         "rux-global-status-bar": HTMLRuxGlobalStatusBarElement;
-        "rux-status": HTMLRuxStatusElement;
         "rux-icon": HTMLRuxIconElement;
         "rux-icon-360": HTMLRuxIcon360Element;
         "rux-icon-3d-rotation": HTMLRuxIcon3dRotationElement;
@@ -12638,6 +12637,7 @@ declare global {
         "rux-icon-zoom-in-map": HTMLRuxIconZoomInMapElement;
         "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
+        "rux-status": HTMLRuxStatusElement;
     }
 }
 declare namespace LocalJSX {
@@ -17910,7 +17910,6 @@ declare namespace LocalJSX {
         "rux-button": RuxButton;
         "rux-clock": RuxClock;
         "rux-global-status-bar": RuxGlobalStatusBar;
-        "rux-status": RuxStatus;
         "rux-icon": RuxIcon;
         "rux-icon-360": RuxIcon360;
         "rux-icon-3d-rotation": RuxIcon3dRotation;
@@ -18959,6 +18958,7 @@ declare namespace LocalJSX {
         "rux-icon-zoom-in-map": RuxIconZoomInMap;
         "rux-icon-zoom-out": RuxIconZoomOut;
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
+        "rux-status": RuxStatus;
     }
 }
 export { LocalJSX as JSX };
@@ -18968,7 +18968,6 @@ declare module "@stencil/core" {
             "rux-button": LocalJSX.RuxButton & JSXBase.HTMLAttributes<HTMLRuxButtonElement>;
             "rux-clock": LocalJSX.RuxClock & JSXBase.HTMLAttributes<HTMLRuxClockElement>;
             "rux-global-status-bar": LocalJSX.RuxGlobalStatusBar & JSXBase.HTMLAttributes<HTMLRuxGlobalStatusBarElement>;
-            "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
             "rux-icon": LocalJSX.RuxIcon & JSXBase.HTMLAttributes<HTMLRuxIconElement>;
             "rux-icon-360": LocalJSX.RuxIcon360 & JSXBase.HTMLAttributes<HTMLRuxIcon360Element>;
             "rux-icon-3d-rotation": LocalJSX.RuxIcon3dRotation & JSXBase.HTMLAttributes<HTMLRuxIcon3dRotationElement>;
@@ -20017,6 +20016,7 @@ declare module "@stencil/core" {
             "rux-icon-zoom-in-map": LocalJSX.RuxIconZoomInMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomInMapElement>;
             "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
+            "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
         }
     }
 }
