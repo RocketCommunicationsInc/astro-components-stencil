@@ -40,7 +40,10 @@ const getTemplateSvg = (iconPath, iconName) => {
       @Prop() size: 'extra-small' | 'small' | 'normal' | 'large';
 
       render() {
-        return <div class={\`rux-icon--\${this.size}\`}  innerHTML={svgIcon}></div>;
+        const style = {
+          fill: this.color
+        }
+        return <div class={\`rux-icon--\${this.size}\`} style={style} innerHTML={svgIcon}></div>;
       }
     }
   `
