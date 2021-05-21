@@ -15,14 +15,6 @@ export default {
 };
 
 export const AllIcons = () => {
-  // const colors = {
-  //   Primary: 'primary',
-  //   Secondary: 'secondary',
-  //   Tertiary: 'tertiary',
-  //   Quaternary: 'quaternary',
-  //   White: 'white',
-  // };
-
   const sizes = {
     'Extra Small': 'extra-small',
     'Small': 'small',
