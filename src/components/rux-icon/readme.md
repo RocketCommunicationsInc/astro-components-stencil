@@ -113,7 +113,6 @@ In Astro 4.0, these groups have been flattened, and each icon is now imported di
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
 | Property  | Attribute  | Description | Type                                              | Default       |
@@ -124,7 +123,6 @@ In Astro 4.0, these groups have been flattened, and each icon is now imported di
 | `size`    | `size`     |             | `"extra-small" \| "large" \| "normal" \| "small"` | `'normal'`    |
 | `viewBox` | `view-box` |             | `string`                                          | `'0 0 24 24'` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_
