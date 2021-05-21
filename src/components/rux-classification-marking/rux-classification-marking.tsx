@@ -12,29 +12,30 @@ export class RuxClassificationMarking {
 
 
   _getDisplayData(requestedClassification) {
-      const approvedClassifications = {
-        controlled: { bannerText: 'cui', tagText: 'cui' },
-        confidential: { bannerText: 'confidential', tagText: 'c'},
-        secret: { bannerText: 'secret', tagText: 's'},
-        "top-secret": { bannerText: 'top secret', tagText: 'ts'},
-        "top-secret-sci": { bannerText: 'top secret//sci', tagText: 'TS//SCI'},
-        unclassified: { bannerText: 'unclassified', tagText: 'u'},
-      }
+    const approvedClassifications = {
+      controlled: { bannerText: 'cui', tagText: 'cui' },
+      confidential: { bannerText: 'confidential', tagText: 'c'},
+      secret: { bannerText: 'secret', tagText: 's'},
+      "top-secret": { bannerText: 'top secret', tagText: 'ts'},
+      "top-secret-sci": { bannerText: 'top secret//sci', tagText: 'TS//SCI'},
+      unclassified: { bannerText: 'unclassified', tagText: 'u'},
+    }
     
     const displayData = { text: '', label: this.label}
 
     if (Object.keys(approvedClassifications).includes(requestedClassification)) {
-      //set display data to appropriate classification object
+      //maps display data to displayData object depending on banner or tag proeprty if classification is approved
       if (this.tag)
         displayData.text = approvedClassifications[this.classification].tagText
       if (!this.tag) {
         displayData.text = approvedClassifications[this.classification].bannerText
       }
     } else {
-      //set display data to error state
+      //set display data to error state if classification is not in approved list
       displayData.text = "Select a Classification Marking"
       displayData.label = ""
     }
+
     return displayData
   }
 
