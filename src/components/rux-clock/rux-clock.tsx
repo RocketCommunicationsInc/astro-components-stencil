@@ -39,12 +39,35 @@ export class RuxClock {
     Z: '+00:00',
   };
 
+  /**
+   * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
+   */
   @Prop() aos: number;
+
+  /**
+   * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax), displays a timestamp labeled "LOS" next to the standard clock.
+   */
   @Prop() los: string;
+
+  /**
+   * Accepts the [IANA timezone string format](https://www.iana.org/time-zones) such as `'America/Los_Angeles'` or any single-character designation for a [military timezones](https://en.wikipedia.org/wiki/List_of_military_time_zones) (`'A'` through `'Z'`, excluding `'J'`), both case-insensitive. If no value for timezone is provided, the clock will use `'UTC'`. See [`toLocaleString()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString#Parameters) for more details.
+   */
   @Prop({ mutable: true }) timezone: string = 'UTC';
+  /**
+   * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
+   */
   @Prop() hideTimezone: boolean = false;
+
+  /**
+   * Hides the day of the year.
+   */
   @Prop() hideDate: boolean = false;
+
+  /**
+   * Applies a smaller clock style.
+   */
   @Prop() small: boolean;
+
   @Prop({ mutable: true }) time: string;
   @Prop({ mutable: true }) dayOfYear: number;
 
@@ -87,7 +110,9 @@ export class RuxClock {
   render() {
     return (
       <Host>
-        <div class="rux-clock__segment rux-clock__day-of-the-year">
+
+      {!this.hideDate ? (
+          <div class="rux-clock__segment rux-clock__day-of-the-year">
           <div class="rux-clock__segment__value" aria-labelledby="rux-clock__day-of-year-label">
             {this.dayOfYear}
           </div>
@@ -95,6 +120,11 @@ export class RuxClock {
             Date
           </div>
         </div>
+        ) : (
+          ''
+        )}
+
+
         <div class="rux-clock__segment rux-clock__time">
           <div class="rux-clock__segment__value" aria-labelledby="rux-clock__time-label">
             {this.time}
