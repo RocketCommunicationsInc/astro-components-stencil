@@ -16,4 +16,16 @@ describe('rux-progress', () => {
       </rux-progress>
     `);
   });
+  it('returns progress as string', async() => {
+    const progress = new RuxProgress()
+    progress.value = 10;
+    const string = progress.getProgressAsString()
+    expect(string).toBe('10%');
+  })
+
+  it('returns zero percent if no value is given', async() => {
+    const progress = new RuxProgress()
+    const string = progress.getProgressAsString()
+    expect(string).toBe('0%');
+  })
 });

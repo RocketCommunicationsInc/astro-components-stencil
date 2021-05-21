@@ -6,9 +6,9 @@ import { Component, Host, h, Prop } from '@stencil/core';
   shadow: true,
 })
 export class RuxProgress {
-@Prop() max: number = 100;
-@Prop() value: number;
-@Prop() hideLabel: boolean = false;
+@Prop({ mutable: true }) max: number = 100;
+@Prop({ mutable: true }) value: number = 0;
+@Prop({ mutable: true }) hideLabel: boolean = false;
 
 getProgressAsString(){
   return this.max === 100 ? `${this.value}%` : `${this.value}/${this.max}`
