@@ -5269,6 +5269,9 @@ export namespace Components {
         "icon": string;
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
+    interface RuxStatus {
+        "status": string;
+    }
 }
 declare global {
     interface HTMLRuxButtonElement extends Components.RuxButton, HTMLStencilElement {
@@ -11577,6 +11580,12 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement;
         new (): HTMLRuxIconZoomOutMapElement;
     };
+    interface HTMLRuxStatusElement extends Components.RuxStatus, HTMLStencilElement {
+    }
+    var HTMLRuxStatusElement: {
+        prototype: HTMLRuxStatusElement;
+        new (): HTMLRuxStatusElement;
+    };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
         "rux-clock": HTMLRuxClockElement;
@@ -12629,6 +12638,7 @@ declare global {
         "rux-icon-zoom-in-map": HTMLRuxIconZoomInMapElement;
         "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
+        "rux-status": HTMLRuxStatusElement;
     }
 }
 declare namespace LocalJSX {
@@ -17895,6 +17905,9 @@ declare namespace LocalJSX {
         "icon"?: string;
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
+    interface RuxStatus {
+        "status"?: string;
+    }
     interface IntrinsicElements {
         "rux-button": RuxButton;
         "rux-clock": RuxClock;
@@ -18947,6 +18960,7 @@ declare namespace LocalJSX {
         "rux-icon-zoom-in-map": RuxIconZoomInMap;
         "rux-icon-zoom-out": RuxIconZoomOut;
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
+        "rux-status": RuxStatus;
     }
 }
 export { LocalJSX as JSX };
@@ -20004,6 +20018,7 @@ declare module "@stencil/core" {
             "rux-icon-zoom-in-map": LocalJSX.RuxIconZoomInMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomInMapElement>;
             "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
+            "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
         }
     }
 }
