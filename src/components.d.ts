@@ -5269,13 +5269,13 @@ export namespace Components {
         "icon": string;
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
-    interface RuxStatus {
-        "status": string;
-    }
     interface RuxProgress {
         "hideLabel": boolean;
         "max": number;
         "value": number;
+    }
+    interface RuxStatus {
+        "status": string;
     }
 }
 declare global {
@@ -11590,7 +11590,7 @@ declare global {
     var HTMLRuxProgressElement: {
         prototype: HTMLRuxProgressElement;
         new (): HTMLRuxProgressElement;
-    }
+    };
     interface HTMLRuxStatusElement extends Components.RuxStatus, HTMLStencilElement {
     }
     var HTMLRuxStatusElement: {
@@ -17917,13 +17917,13 @@ declare namespace LocalJSX {
         "icon"?: string;
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
-    interface RuxStatus {
-        "status"?: string;
-    }
     interface RuxProgress {
         "hideLabel"?: boolean;
         "max"?: number;
         "value"?: number;
+    }
+    interface RuxStatus {
+        "status"?: string;
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;
