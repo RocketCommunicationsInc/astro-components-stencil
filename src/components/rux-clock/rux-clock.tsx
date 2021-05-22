@@ -92,12 +92,12 @@ export class RuxClock {
 
     private updateTime() {
         this.time = format(
-            utcToZonedTime(new Date(), this._timezone),
+            utcToZonedTime(new Date(Date.now()), this._timezone),
             `HH:mm:ss ${this.hideTimezone ? '' : this.tzFormat}`,
             { timeZone: this._timezone }
         )
         this.dayOfYear = getDayOfYear(
-            zonedTimeToUtc(new Date(), this._timezone)
+            zonedTimeToUtc(new Date(Date.now()), this._timezone)
         )
     }
 
