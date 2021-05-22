@@ -8,7 +8,6 @@ import { format, utcToZonedTime, zonedTimeToUtc } from 'date-fns-tz'
     shadow: true,
 })
 export class RuxClock {
-    private _timezone: string = 'UTC'
     private tzFormat: string = 'z'
     private _timer: number
     private militaryTimezones = {
@@ -77,8 +76,6 @@ export class RuxClock {
     }
 
     connectedCallback() {
-        this._timezone = this.timezone
-
         this.updateTime()
 
         this._timer = window.setInterval(() => {
@@ -92,20 +89,20 @@ export class RuxClock {
 
     private updateTime() {
         this.time = format(
-            utcToZonedTime(new Date(Date.now()), this._timezone),
+            utcToZonedTime(new Date(Date.now()), this.timezone),
             `HH:mm:ss ${this.hideTimezone ? '' : this.tzFormat}`,
-            { timeZone: this._timezone }
+            { timeZone: this.timezone }
         )
         this.dayOfYear = getDayOfYear(
-            zonedTimeToUtc(new Date(Date.now()), this._timezone)
+            zonedTimeToUtc(new Date(Date.now()), this.timezone)
         )
     }
 
     private convertTimezone(timezone: string) {
-        this._timezone = this.militaryTimezones[timezone.toUpperCase()]
+        this.timezone = this.militaryTimezones[timezone.toUpperCase()]
         this.tzFormat = 'O'
-        if (!this._timezone) {
-            this._timezone = timezone
+        if (!this.timezone) {
+            this.timezone = timezone
             this.tzFormat = 'zzz'
         } else if (timezone.toUpperCase() == 'Z') {
             this.tzFormat = 'X'
@@ -156,7 +153,7 @@ export class RuxClock {
                             aria-labelledby="rux-clock__time-label--aos"
                         >
                             {format(
-                                utcToZonedTime(this.aos, this._timezone),
+                                utcToZonedTime(this.aos, this.timezone),
                                 'HH:mm:ss'
                             )}
                         </div>
@@ -178,7 +175,7 @@ export class RuxClock {
                             aria-labelledby="rux-clock__time-label--los"
                         >
                             {format(
-                                utcToZonedTime(this.los, this._timezone),
+                                utcToZonedTime(this.los, this.timezone),
                                 'HH:mm:ss'
                             )}
                         </div>
