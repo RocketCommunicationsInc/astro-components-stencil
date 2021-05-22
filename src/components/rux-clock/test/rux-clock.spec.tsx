@@ -2,21 +2,6 @@ import { newSpecPage } from '@stencil/core/testing'
 import { RuxClock } from '../rux-clock'
 
 describe('rux-clock', () => {
-
-  // it('renders', async () => {
-  //   const page = await newSpecPage({
-  //     components: [RuxButton],
-  //     html: `<rux-button></rux-button>`,
-  //   });
-  //   expect(page.root).toEqualHtml(`
-  //     <rux-button>
-  //       <mock:shadow-root>
-  //         <slot></slot>
-  //       </mock:shadow-root>
-  //     </rux-button>
-  //   `);
-  // });
-
     it('shows the current time', async () => {
         // Save original global.Date.now so we can put it back
         const realDateNow = Date.now.bind(global.Date)
@@ -30,7 +15,6 @@ describe('rux-clock', () => {
             html: `<rux-clock></rux-clock>`,
         })
 
-
         expect(page.root.time).toBe('05:02:03 UTC')
 
         // Put back the original global.date.now
@@ -38,47 +22,73 @@ describe('rux-clock', () => {
     })
 
     it('converts time to timezone', async () => {
-      // Save original global.Date.now so we can put it back
-      const realDateNow = Date.now.bind(global.Date)
+        // Save original global.Date.now so we can put it back
+        const realDateNow = Date.now.bind(global.Date)
 
-      // Swap date.now with our stub
-      const dateNowStub = jest.fn(() => 577688523000) // April 22, 1988 01:02:03 EDT
-      global.Date.now = dateNowStub
+        // Swap date.now with our stub
+        const dateNowStub = jest.fn(() => 577688523000) // April 22, 1988 01:02:03 EDT
+        global.Date.now = dateNowStub
 
-      const page = await newSpecPage({
-          components: [RuxClock],
-          html: `<rux-clock timezone="America/New_York"></rux-clock>`,
-      })
+        const page = await newSpecPage({
+            components: [RuxClock],
+            html: `<rux-clock timezone="America/New_York"></rux-clock>`,
+        })
 
-      expect(page.root.time).toBe('01:02:03 EDT')
+        expect(page.root.time).toBe('01:02:03 EDT')
 
-      // Put back the original global.date.now
-      global.Date.now = realDateNow
-  })
-
-  it('hides the date', async () => {
-    const realDateNow = Date.now.bind(global.Date)
-
-    // Swap date.now with our stub
-    const dateNowStub = jest.fn(() => 577688523000) // April 22, 1988 01:02:03 EDT
-    global.Date.now = dateNowStub
-
-    const page = await newSpecPage({
-        components: [RuxClock],
-        html: `<rux-clock hide-timezone></rux-clock>`,
+        // Put back the original global.date.now
+        global.Date.now = realDateNow
     })
 
-    expect(page.root.time).toBe('05:02:03 ')
+    it('hides the timezone', async () => {
+        const realDateNow = Date.now.bind(global.Date)
 
-    // Put back the original global.date.now
-    global.Date.now = realDateNow
-  })
-  // hides date
+        // Swap date.now with our stub
+        const dateNowStub = jest.fn(() => 577688523000) // April 22, 1988 01:02:03 EDT
+        global.Date.now = dateNowStub
 
-  // hides timezone
+        const page = await newSpecPage({
+            components: [RuxClock],
+            html: `<rux-clock hide-timezone></rux-clock>`,
+        })
 
-  // shows aos
+        expect(page.root.time).toBe('05:02:03 ')
 
-  // shows los
+        // Put back the original global.date.now
+        global.Date.now = realDateNow
+    })
 
+    it('hides the timezone', async () => {
+        const realDateNow = Date.now.bind(global.Date)
+
+        // Swap date.now with our stub
+        const dateNowStub = jest.fn(() => 577688523000) // April 22, 1988 01:02:03 EDT
+        global.Date.now = dateNowStub
+
+        const page = await newSpecPage({
+            components: [RuxClock],
+            html: `<rux-clock hide-date></rux-clock>`,
+        })
+
+        expect(page.root).toEqualHtml(`
+      <rux-clock hide-date>
+        <mock:shadow-root>
+          <div class="rux-clock__segment rux-clock__time">
+            <div class="rux-clock__segment__value" aria-labelledby="rux-clock__time-label">
+              05:02:03 UTC
+            </div>
+            <div class="rux-clock__segment__label" id="rux-clock__time-label">
+              Time
+            </div>
+          </div>
+        </mock:shadow-root>
+      </rux-clock>
+    `)
+
+        global.Date.now = realDateNow
+    })
+
+    // shows aos
+
+    // shows los
 })
