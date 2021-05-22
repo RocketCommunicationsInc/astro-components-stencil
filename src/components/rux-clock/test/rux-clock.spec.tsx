@@ -1,70 +1,56 @@
 import { newSpecPage } from '@stencil/core/testing'
 import { RuxClock } from '../rux-clock'
 
+const RealDate = Date.now
+
+beforeAll(() => {
+    //Swap Date.now() with global mock
+    global.Date.now = jest.fn(() => new Date('1988-04-22 01:02:03').getTime())
+})
+
+afterAll(() => {
+    //Replace our mock with the OG global Date.now()
+    global.Date.now = RealDate
+})
+
 describe('rux-clock', () => {
     it('shows the current time', async () => {
-        // Save original global.Date.now so we can put it back
-        const realDateNow = Date.now.bind(global.Date)
-
-        // Swap date.now with our stub
-        const dateNowStub = jest.fn(() => 577688523000) // April 22, 1988 01:02:03 EDT
-        global.Date.now = dateNowStub
-
         const page = await newSpecPage({
             components: [RuxClock],
             html: `<rux-clock></rux-clock>`,
         })
 
         expect(page.root.time).toBe('05:02:03 UTC')
-
-        // Put back the original global.date.now
-        global.Date.now = realDateNow
     })
 
     it('converts time to timezone', async () => {
-        // Save original global.Date.now so we can put it back
-        const realDateNow = Date.now.bind(global.Date)
-
-        // Swap date.now with our stub
-        const dateNowStub = jest.fn(() => 577688523000) // April 22, 1988 01:02:03 EDT
-        global.Date.now = dateNowStub
-
         const page = await newSpecPage({
             components: [RuxClock],
             html: `<rux-clock timezone="America/New_York"></rux-clock>`,
         })
 
         expect(page.root.time).toBe('01:02:03 EDT')
-
-        // Put back the original global.date.now
-        global.Date.now = realDateNow
     })
 
+    // it('converts time to timezone on the fly', async () => {
+    //   const clock = new RuxClock()
+    //   clock.timezone = 'UTAC'
+
+    //     clock.timezone = 'UTC'
+    //   expect(clock['time']).toBe(2)
+
+    // })
+
     it('hides the timezone', async () => {
-        const realDateNow = Date.now.bind(global.Date)
-
-        // Swap date.now with our stub
-        const dateNowStub = jest.fn(() => 577688523000) // April 22, 1988 01:02:03 EDT
-        global.Date.now = dateNowStub
-
         const page = await newSpecPage({
             components: [RuxClock],
             html: `<rux-clock hide-timezone></rux-clock>`,
         })
 
         expect(page.root.time).toBe('05:02:03 ')
-
-        // Put back the original global.date.now
-        global.Date.now = realDateNow
     })
 
-    it('hides the timezone', async () => {
-        const realDateNow = Date.now.bind(global.Date)
-
-        // Swap date.now with our stub
-        const dateNowStub = jest.fn(() => 577688523000) // April 22, 1988 01:02:03 EDT
-        global.Date.now = dateNowStub
-
+    it('hides the date', async () => {
         const page = await newSpecPage({
             components: [RuxClock],
             html: `<rux-clock hide-date></rux-clock>`,
@@ -84,8 +70,6 @@ describe('rux-clock', () => {
         </mock:shadow-root>
       </rux-clock>
     `)
-
-        global.Date.now = realDateNow
     })
 
     // shows aos
