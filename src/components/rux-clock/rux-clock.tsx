@@ -158,6 +158,7 @@ export class RuxClock {
                         <div
                             class="rux-clock__segment__value"
                             aria-labelledby="rux-clock__time-label--aos"
+                            id="rux-clock__time--aos"
                         >
                             {format(
                                 utcToZonedTime(this.aos, this._timezone),
@@ -180,6 +181,7 @@ export class RuxClock {
                         <div
                             class="rux-clock__segment__value"
                             aria-labelledby="rux-clock__time-label--los"
+                            id="rux-clock__time--los"
                         >
                             {format(
                                 utcToZonedTime(this.los, this._timezone),

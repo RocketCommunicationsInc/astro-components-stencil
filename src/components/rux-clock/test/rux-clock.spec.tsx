@@ -26,10 +26,10 @@ describe('rux-clock', () => {
     it('converts time to timezone', async () => {
         const page = await newSpecPage({
             components: [RuxClock],
-            html: `<rux-clock timezone="America/New_York"></rux-clock>`,
+            html: `<rux-clock timezone="America/Los_Angeles"></rux-clock>`,
         })
 
-        expect(page.root.time).toBe('01:02:03 EDT')
+        expect(page.root.time).toBe('22:02:03 PDT')
     })
 
     // it('converts time to timezone on the fly', async () => {
@@ -72,7 +72,26 @@ describe('rux-clock', () => {
     `)
     })
 
-    // shows aos
+    it('shows los', async () => {
+        const page = await newSpecPage({
+            components: [RuxClock],
+            html: `<rux-clock timezone="America/New_York" los="1988-04-22 12:12:12" hide-date></rux-clock>`,
+        })
 
-    // shows los
+        const val = page.root.shadowRoot.querySelector('#rux-clock__time--los')
+            .innerHTML
+        expect(val).toBe('12:12:12')
+    })
+
+    it('shows aos', async () => {
+        const date = Date.now()
+        const page = await newSpecPage({
+            components: [RuxClock],
+            html: `<rux-clock timezone="America/New_York" aos="${date}" hide-date></rux-clock>`,
+        })
+
+        const val = page.root.shadowRoot.querySelector('#rux-clock__time--aos')
+            .innerHTML
+        expect(val).toBe('01:02:03')
+    })
 })
