@@ -1,5 +1,6 @@
 import { newSpecPage } from '@stencil/core/testing'
 import { RuxClock } from '../rux-clock'
+import { militaryTimezones } from '../military-timezones'
 
 const RealDate = Date.now
 
@@ -14,6 +15,25 @@ afterAll(() => {
 })
 
 describe('rux-clock', () => {
+    it('validates timezones', async () => {
+        const clock = new RuxClock()
+        clock.timezone = 'America/New_York'
+        expect(clock.validateTimezone()).toBe(true)
+    })
+
+    it('validates military timezones', async () => {
+        const clock = new RuxClock()
+        Object.keys(militaryTimezones).forEach((zone) => {
+            clock.timezone = zone
+            expect(clock.validateTimezone()).toBe(true)
+        })
+    })
+    it('validates timezones error', async () => {
+        const clock = new RuxClock()
+        clock.timezone = 'Notavalidtimezone'
+        expect(clock.validateTimezone()).toBe(false)
+    })
+
     it('shows the current time', async () => {
         const page = await newSpecPage({
             components: [RuxClock],
@@ -24,12 +44,14 @@ describe('rux-clock', () => {
     })
 
     it('converts time to timezone', async () => {
-        const page = await newSpecPage({
-            components: [RuxClock],
-            html: `<rux-clock timezone="America/New_York"></rux-clock>`,
-        })
+        // const page = await newSpecPage({
+        //     components: [RuxClock],
+        //     html: `<rux-clock timezone="America/New_York"></rux-clock>`,
+        // })
+        const clock = new RuxClock()
+        clock.timezone = 'America/New_York'
 
-        expect(page.root.time).toBe('01:02:03 EDT')
+        expect(clock.formattedDate()).toBe('01:02:03 EDT')
     })
 
     // it('converts time to timezone on the fly', async () => {
@@ -72,7 +94,64 @@ describe('rux-clock', () => {
     `)
     })
 
-    // shows aos
+    it('shows los', async () => {
+        const page = await newSpecPage({
+            components: [RuxClock],
+            html: `<rux-clock hide-date los="1999-02-02 12:12:21"></rux-clock>`,
+        })
 
-    // shows los
+        expect(page.root).toEqualHtml(`
+          <rux-clock hide-date los="1999-02-02 12:12:21">
+            <mock:shadow-root>
+              <div class="rux-clock__segment rux-clock__time">
+                <div class="rux-clock__segment__value" aria-labelledby="rux-clock__time-label">
+                  05:02:03 UTC
+                </div>
+                <div class="rux-clock__segment__label" id="rux-clock__time-label">
+                  Time
+                </div>
+              </div>
+              <div class="rux-clock__segment rux-clock__segment--secondary rux-clock__los">
+                <div class="rux-clock__segment__value" aria-labelledby="rux-clock__time-label--los">
+                  17:12:21
+                </div>
+                <div class="rux-clock__segment__label" id="rux-clock__time-label--los">
+                  LOS
+                </div>
+            </div>
+            </mock:shadow-root>
+          </rux-clock>
+        `)
+    })
+
+
+    it('shows aos', async () => {
+      const page = await newSpecPage({
+          components: [RuxClock],
+          html: `<rux-clock hide-date aos="1621784737685"></rux-clock>`,
+      })
+
+      expect(page.root).toEqualHtml(`
+        <rux-clock hide-date aos="1621784737685">
+          <mock:shadow-root>
+            <div class="rux-clock__segment rux-clock__time">
+              <div class="rux-clock__segment__value" aria-labelledby="rux-clock__time-label">
+                05:02:03 UTC
+              </div>
+              <div class="rux-clock__segment__label" id="rux-clock__time-label">
+                Time
+              </div>
+            </div>
+            <div class="rux-clock__segment rux-clock__segment--secondary rux-clock__aos">
+              <div class="rux-clock__segment__value" aria-labelledby="rux-clock__time-label--aos">
+                15:45:37
+              </div>
+              <div class="rux-clock__segment__label" id="rux-clock__time-label--aos">
+                AOS
+              </div>
+          </div>
+          </mock:shadow-root>
+        </rux-clock>
+      `)
+  })
 })
