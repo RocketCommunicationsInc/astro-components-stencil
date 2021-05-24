@@ -15,31 +15,40 @@ afterAll(() => {
 
 describe('rux-clock', () => {
     it('shows the current time', async () => {
-        const page = await newSpecPage({
-            components: [RuxClock],
-            html: `<rux-clock></rux-clock>`,
-        })
+           const clock = new RuxClock()
+        // clock.updateTime()
 
-        expect(page.root.time).toBe('05:02:03 UTC')
+        // await page.waitForChanges()
+
+        expect(clock.time).toBe('05:02:03 UTC')
     })
 
     it('converts time to timezone', async () => {
-        const page = await newSpecPage({
-            components: [RuxClock],
-            html: `<rux-clock timezone="America/Los_Angeles"></rux-clock>`,
-        })
+        const clock = new RuxClock()
+        clock.timezone = "America/Los_Angeles"
+        clock.watchHandler()
+        clock.updateTime()
 
-        expect(page.root.time).toBe('22:02:03 PDT')
+        expect(clock.time).toBe('22:02:03 PDT')
+
     })
 
-    // it('converts time to timezone on the fly', async () => {
-    //   const clock = new RuxClock()
-    //   clock.timezone = 'UTAC'
+    it('accepts military tz', async() => {
+      const clock = new RuxClock()
+      clock.timezone = 'a'
+      clock.watchHandler()
+      clock.updateTime()
+      expect(clock.time).toBe('06:02:03 GMT+1')
+    })
 
-    //     clock.timezone = 'UTC'
-    //   expect(clock['time']).toBe(2)
-
-    // })
+    it('converts time to timezone on the fly', async () => {
+      const clock = new RuxClock()
+      expect(clock.time).toBe('05:02:03 UTC')
+      clock.timezone = 'America/Los_Angeles'
+      clock.watchHandler()
+      clock.updateTime()
+      expect(clock.time).toBe('22:02:03 PDT')
+    })
 
     it('hides the timezone', async () => {
         const page = await newSpecPage({
@@ -47,7 +56,28 @@ describe('rux-clock', () => {
             html: `<rux-clock hide-timezone></rux-clock>`,
         })
 
-        expect(page.root.time).toBe('05:02:03 ')
+        expect(page.root).toEqualHtml(`
+          <rux-clock hide-timezone>
+            <mock:shadow-root>
+              <div class="rux-clock__segment rux-clock__day-of-the-year">
+                <div class="rux-clock__segment__value" aria-labelledby="rux-clock__day-of-year-label">
+                  112
+                </div>
+                <div class="rux-clock__segment__label" id="rux-clock__day-of-year-label">
+                  Date
+                </div>
+              </div>
+              <div class="rux-clock__segment rux-clock__time">
+                <div class="rux-clock__segment__value" aria-labelledby="rux-clock__time-label">
+                  05:02:03
+                </div>
+                <div class="rux-clock__segment__label" id="rux-clock__time-label">
+                  Time
+                </div>
+              </div>
+            </mock:shadow-root>
+          </rux-clock
+        `)
     })
 
     it('hides the date', async () => {

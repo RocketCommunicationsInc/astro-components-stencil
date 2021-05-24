@@ -1,6 +1,7 @@
-import { Watch, Prop, Component, Host, h } from '@stencil/core'
+import { Watch, Prop, State, Component, Host, h } from '@stencil/core'
 import { getDayOfYear } from 'date-fns'
 import { format, utcToZonedTime, zonedTimeToUtc } from 'date-fns-tz'
+import { militaryTimezones } from './military-timezones'
 
 @Component({
     tag: 'rux-clock',
@@ -11,34 +12,6 @@ export class RuxClock {
     private tzFormat: string = 'z'
     private _timer: number
     private _timezone: string = 'UTC'
-
-    private militaryTimezones = {
-        A: '+01:00',
-        B: '+02:00',
-        C: '+03:00',
-        D: '+04:00',
-        E: '+05:00',
-        F: '+06:00',
-        G: '+07:00',
-        H: '+08:00',
-        I: '+09:00',
-        K: '+10:00',
-        L: '+11:00',
-        M: '+12:00',
-        N: '-01:00',
-        O: '-02:00',
-        P: '-03:00',
-        Q: '-04:00',
-        R: '-05:00',
-        S: '-06:00',
-        T: '-07:00',
-        U: '-08:00',
-        V: '-09:00',
-        W: '-10:00',
-        X: '-11:00',
-        Y: '-12:00',
-        Z: '+00:00',
-    }
 
     /**
      * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
@@ -57,19 +30,19 @@ export class RuxClock {
     /**
      * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
      */
-    @Prop() hideTimezone: boolean = false
+    @Prop() hideTimezone?: boolean
 
     /**
      * Hides the day of the year.
      */
-    @Prop() hideDate: boolean = false
+    @Prop({mutable: true}) hideDate: boolean = false
 
     /**
      * Applies a smaller clock style.
      */
     @Prop() small: boolean
 
-    @Prop({ mutable: true }) time: string
+    @State() _time: string;
     @Prop({ mutable: true }) dayOfYear: number
 
     @Watch('timezone')
@@ -78,12 +51,17 @@ export class RuxClock {
     }
 
     constructor() {
-      this._timezone = this.timezone
+        this._timezone = this.timezone
+        this.updateTime()
+    }
+
+    get time() {
+      return this._time
     }
 
     connectedCallback() {
+        this.convertTimezone(this.timezone)
 
-        this.updateTime()
 
         this._timer = window.setInterval(() => {
             this.updateTime()
@@ -94,19 +72,23 @@ export class RuxClock {
         clearTimeout(this._timer)
     }
 
-    private updateTime() {
-        this.time = format(
-            utcToZonedTime(new Date(Date.now()), this._timezone),
+    formatTime(time: Date, timezone: string): string {
+        return format(
+            utcToZonedTime(time, timezone),
             `HH:mm:ss ${this.hideTimezone ? '' : this.tzFormat}`,
-            { timeZone: this._timezone }
-        )
-        this.dayOfYear = getDayOfYear(
-            zonedTimeToUtc(new Date(Date.now()), this._timezone)
+            { timeZone: timezone }
         )
     }
 
+    updateTime() {
+      this._time = this.formatTime(new Date(Date.now()), this._timezone)
+      this.dayOfYear = getDayOfYear(
+          zonedTimeToUtc(new Date(Date.now()), this._timezone)
+      )
+    }
+
     private convertTimezone(timezone: string) {
-        this._timezone = this.militaryTimezones[timezone.toUpperCase()]
+        this._timezone = militaryTimezones[timezone.toUpperCase()]
         this.tzFormat = 'O'
         if (!this._timezone) {
             this._timezone = timezone
