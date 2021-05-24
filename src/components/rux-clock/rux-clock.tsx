@@ -9,9 +9,14 @@ import { militaryTimezones } from './military-timezones'
     shadow: true,
 })
 export class RuxClock {
-    private tzFormat: string = 'z'
+    // private tzFormat: string = 'z'
     private _timer: number
     private _timezone: string = 'UTC'
+
+    private _time: string;
+    // @State() _time: string;
+    @State() dayOfYear: number;
+    @State() tzFormat: string = 'z'
 
     /**
      * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
@@ -42,12 +47,12 @@ export class RuxClock {
      */
     @Prop() small: boolean
 
-    @State() _time: string;
-    @Prop({ mutable: true }) dayOfYear: number
+
 
     @Watch('timezone')
-    watchHandler() {
+    timezoneChanged() {
         this.convertTimezone(this.timezone)
+        this.updateTime()
     }
 
     constructor() {
@@ -61,7 +66,6 @@ export class RuxClock {
 
     connectedCallback() {
         this.convertTimezone(this.timezone)
-
 
         this._timer = window.setInterval(() => {
             this.updateTime()
@@ -80,7 +84,7 @@ export class RuxClock {
         )
     }
 
-    updateTime() {
+    private updateTime() {
       this._time = this.formatTime(new Date(Date.now()), this._timezone)
       this.dayOfYear = getDayOfYear(
           zonedTimeToUtc(new Date(Date.now()), this._timezone)

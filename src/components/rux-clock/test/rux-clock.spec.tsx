@@ -15,19 +15,14 @@ afterAll(() => {
 
 describe('rux-clock', () => {
     it('shows the current time', async () => {
-           const clock = new RuxClock()
-        // clock.updateTime()
-
-        // await page.waitForChanges()
-
+        const clock = new RuxClock()
         expect(clock.time).toBe('05:02:03 UTC')
     })
 
     it('converts time to timezone', async () => {
         const clock = new RuxClock()
         clock.timezone = "America/Los_Angeles"
-        clock.watchHandler()
-        clock.updateTime()
+        clock.timezoneChanged()
 
         expect(clock.time).toBe('22:02:03 PDT')
 
@@ -36,8 +31,7 @@ describe('rux-clock', () => {
     it('accepts military tz', async() => {
       const clock = new RuxClock()
       clock.timezone = 'a'
-      clock.watchHandler()
-      clock.updateTime()
+      clock.timezoneChanged()
       expect(clock.time).toBe('06:02:03 GMT+1')
     })
 
@@ -45,11 +39,17 @@ describe('rux-clock', () => {
       const clock = new RuxClock()
       expect(clock.time).toBe('05:02:03 UTC')
       clock.timezone = 'America/Los_Angeles'
-      clock.watchHandler()
-      clock.updateTime()
+      clock.timezoneChanged()
       expect(clock.time).toBe('22:02:03 PDT')
     })
 
+    it('responds to change', async() => {
+      const page = await newSpecPage({
+        components: [RuxClock],
+        html: `<rux-clock hide-timezone></rux-clock>`,
+      })
+
+    })
     it('hides the timezone', async () => {
         const page = await newSpecPage({
             components: [RuxClock],
