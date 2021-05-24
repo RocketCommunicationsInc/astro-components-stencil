@@ -5,6 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Classification } from "./components/rux-classification-marking/rux-classification-marking";
 export namespace Components {
     interface RuxButton {
         "disabled": boolean;
@@ -14,7 +15,7 @@ export namespace Components {
         "size"?: 'small' | 'large';
     }
     interface RuxClassificationMarking {
-        "classification": string;
+        "classification": Classification;
         "label": string;
         "tag": boolean;
     }
@@ -12758,7 +12759,7 @@ declare namespace LocalJSX {
         "size"?: 'small' | 'large';
     }
     interface RuxClassificationMarking {
-        "classification"?: string;
+        "classification"?: Classification;
         "label"?: string;
         "tag"?: boolean;
     }

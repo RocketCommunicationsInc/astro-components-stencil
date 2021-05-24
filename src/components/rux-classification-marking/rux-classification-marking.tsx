@@ -1,46 +1,84 @@
 import { Component, Host, Prop, h } from '@stencil/core';
 
+export type Classification =
+    | "controlled"
+    | "confidential"
+    | "secret"
+    | "top-secret"
+    | "top-secret-sci"
+    | "unclassified";
+
 @Component({
   tag: 'rux-classification-marking',
   styleUrl: 'rux-classification-marking.scss',
   shadow: true,
-})
+})  
+  
 export class RuxClassificationMarking {
-  @Prop() classification: string = "unclassified";
-  @Prop() label: string = ""
+  @Prop() classification: Classification = "unclassified"
+  @Prop() label: string 
   @Prop({ reflect: true }) tag: boolean = false
 
-
-  _getDisplayData(requestedClassification) {
-    const approvedClassifications = {
-      controlled: { bannerText: 'cui', tagText: 'cui' },
-      confidential: { bannerText: 'confidential', tagText: 'c'},
-      secret: { bannerText: 'secret', tagText: 's'},
-      "top-secret": { bannerText: 'top secret', tagText: 'ts'},
-      "top-secret-sci": { bannerText: 'top secret//sci', tagText: 'TS//SCI'},
-      unclassified: { bannerText: 'unclassified', tagText: 'u'},
-    }
+  _getDisplayData() {
+    const displayData = { text: '', label: this.label }
     
-    const displayData = { text: '', label: this.label}
-
-    if (Object.keys(approvedClassifications).includes(requestedClassification)) {
-      //maps display data to displayData object depending on banner or tag proeprty if classification is approved
-      if (this.tag)
-        displayData.text = approvedClassifications[this.classification].tagText
-      if (!this.tag) {
-        displayData.text = approvedClassifications[this.classification].bannerText
+    if (!this.tag) {
+      switch (this.classification) {
+        case "controlled":
+          displayData.text = "cui"
+          break;
+        case "confidential":
+          displayData.text = "confidential"
+          break;
+        case "secret":
+          displayData.text = "secret"
+          break;
+        case "top-secret":
+          displayData.text = "top secret"
+          break;
+        case "top-secret-sci":
+          displayData.text = "top secret//sci"
+          break;
+        case "unclassified":
+          displayData.text = "unclassified"
+          break;
+        default:
+          displayData.text = "Select a Classification Marking"
+          break;
       }
-    } else {
-      //set display data to error state if classification is not in approved list
-      displayData.text = "Select a Classification Marking"
-      displayData.label = ""
+    }
+
+    if (this.tag) {
+      switch (this.classification) {
+        case "controlled":
+          displayData.text = "cui"
+          break;
+        case "confidential":
+          displayData.text = "c"
+          break;
+        case "secret":
+          displayData.text = "s"
+          break;
+        case "top-secret":
+          displayData.text = "ts"
+          break;
+        case "top-secret-sci":
+          displayData.text = "TS//SCI"
+          break;
+        case "unclassified":
+          displayData.text = "u"
+          break;
+        default:
+          displayData.text = "Select a Classification Marking"
+          break;
+      }
     }
 
     return displayData
   }
 
   render() {
-    const {text, label} = this._getDisplayData(this.classification)
+    const {text, label} = this._getDisplayData()
 
     return (
       <Host>
