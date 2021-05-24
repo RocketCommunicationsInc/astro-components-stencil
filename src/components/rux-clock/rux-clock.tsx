@@ -9,24 +9,21 @@ import { militaryTimezones } from './military-timezones'
     shadow: true,
 })
 export class RuxClock {
-    // private tzFormat: string = 'z'
     private _timer: number
     private _timezone: string = 'UTC'
+    private dayOfYear: number
+    private tzFormat: string = 'z'
 
-    private _time: string;
-    // @State() _time: string;
-    @State() dayOfYear: number;
-    @State() tzFormat: string = 'z'
-
+    @State() _time: string
     /**
      * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
      */
-    @Prop() aos: number
+    @Prop() aos?: number
 
     /**
      * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax), displays a timestamp labeled "LOS" next to the standard clock.
      */
-    @Prop() los: string
+    @Prop() los?: string
 
     /**
      * Accepts the [IANA timezone string format](https://www.iana.org/time-zones) such as `'America/Los_Angeles'` or any single-character designation for a [military timezones](https://en.wikipedia.org/wiki/List_of_military_time_zones) (`'A'` through `'Z'`, excluding `'J'`), both case-insensitive. If no value for timezone is provided, the clock will use `'UTC'`. See [`toLocaleString()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString#Parameters) for more details.
@@ -40,14 +37,12 @@ export class RuxClock {
     /**
      * Hides the day of the year.
      */
-    @Prop({mutable: true}) hideDate: boolean = false
+    @Prop() hideDate?: boolean
 
     /**
      * Applies a smaller clock style.
      */
-    @Prop() small: boolean
-
-
+    @Prop() small?: boolean
 
     @Watch('timezone')
     timezoneChanged() {
@@ -60,8 +55,8 @@ export class RuxClock {
         this.updateTime()
     }
 
-    get time() {
-      return this._time
+    get time(): string {
+        return this._time
     }
 
     connectedCallback() {
@@ -84,14 +79,14 @@ export class RuxClock {
         )
     }
 
-    private updateTime() {
-      this._time = this.formatTime(new Date(Date.now()), this._timezone)
-      this.dayOfYear = getDayOfYear(
-          zonedTimeToUtc(new Date(Date.now()), this._timezone)
-      )
+    private updateTime(): void {
+        this._time = this.formatTime(new Date(Date.now()), this._timezone)
+        this.dayOfYear = getDayOfYear(
+            zonedTimeToUtc(new Date(Date.now()), this._timezone)
+        )
     }
 
-    private convertTimezone(timezone: string) {
+    convertTimezone(timezone: string) {
         this._timezone = militaryTimezones[timezone.toUpperCase()]
         this.tzFormat = 'O'
         if (!this._timezone) {

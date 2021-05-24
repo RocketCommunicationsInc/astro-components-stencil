@@ -1,5 +1,6 @@
 import { newSpecPage } from '@stencil/core/testing'
 import { RuxClock } from '../rux-clock'
+import { militaryTimezones } from '../military-timezones'
 
 const RealDate = Date.now
 
@@ -21,35 +22,35 @@ describe('rux-clock', () => {
 
     it('converts time to timezone', async () => {
         const clock = new RuxClock()
-        clock.timezone = "America/Los_Angeles"
+        clock.timezone = 'America/Los_Angeles'
         clock.timezoneChanged()
 
         expect(clock.time).toBe('22:02:03 PDT')
-
     })
 
-    it('accepts military tz', async() => {
-      const clock = new RuxClock()
-      clock.timezone = 'a'
-      clock.timezoneChanged()
-      expect(clock.time).toBe('06:02:03 GMT+1')
+    it('converts all military timezones', async () => {
+        const clock = new RuxClock()
+        const time = new Date(Date.now())
+        for (const timezone in militaryTimezones) {
+            clock.convertTimezone(timezone)
+            const militaryTime = clock.formatTime(
+                time,
+                militaryTimezones[timezone]
+            )
+            clock.timezone = timezone
+            clock.timezoneChanged()
+            expect(clock.time).toBe(militaryTime)
+        }
     })
 
     it('converts time to timezone on the fly', async () => {
-      const clock = new RuxClock()
-      expect(clock.time).toBe('05:02:03 UTC')
-      clock.timezone = 'America/Los_Angeles'
-      clock.timezoneChanged()
-      expect(clock.time).toBe('22:02:03 PDT')
+        const clock = new RuxClock()
+        expect(clock.time).toBe('05:02:03 UTC')
+        clock.timezone = 'America/Los_Angeles'
+        clock.timezoneChanged()
+        expect(clock.time).toBe('22:02:03 PDT')
     })
 
-    it('responds to change', async() => {
-      const page = await newSpecPage({
-        components: [RuxClock],
-        html: `<rux-clock hide-timezone></rux-clock>`,
-      })
-
-    })
     it('hides the timezone', async () => {
         const page = await newSpecPage({
             components: [RuxClock],
@@ -87,19 +88,19 @@ describe('rux-clock', () => {
         })
 
         expect(page.root).toEqualHtml(`
-      <rux-clock hide-date>
-        <mock:shadow-root>
-          <div class="rux-clock__segment rux-clock__time">
-            <div class="rux-clock__segment__value" aria-labelledby="rux-clock__time-label">
-              05:02:03 UTC
-            </div>
-            <div class="rux-clock__segment__label" id="rux-clock__time-label">
-              Time
-            </div>
-          </div>
-        </mock:shadow-root>
-      </rux-clock>
-    `)
+          <rux-clock hide-date>
+            <mock:shadow-root>
+              <div class="rux-clock__segment rux-clock__time">
+                <div class="rux-clock__segment__value" aria-labelledby="rux-clock__time-label">
+                  05:02:03 UTC
+                </div>
+                <div class="rux-clock__segment__label" id="rux-clock__time-label">
+                  Time
+                </div>
+              </div>
+            </mock:shadow-root>
+          </rux-clock>
+        `)
     })
 
     it('shows los', async () => {
@@ -108,9 +109,10 @@ describe('rux-clock', () => {
             html: `<rux-clock timezone="America/New_York" los="1988-04-22 12:12:12" hide-date></rux-clock>`,
         })
 
-        const val = page.root.shadowRoot.querySelector('#rux-clock__time--los')
-            .innerHTML
-        expect(val).toBe('12:12:12')
+        const losTime = page.root.shadowRoot.querySelector(
+            '#rux-clock__time--los'
+        ).innerHTML
+        expect(losTime).toBe('12:12:12')
     })
 
     it('shows aos', async () => {
@@ -120,8 +122,9 @@ describe('rux-clock', () => {
             html: `<rux-clock timezone="America/New_York" aos="${date}" hide-date></rux-clock>`,
         })
 
-        const val = page.root.shadowRoot.querySelector('#rux-clock__time--aos')
-            .innerHTML
-        expect(val).toBe('01:02:03')
+        const aosTime = page.root.shadowRoot.querySelector(
+            '#rux-clock__time--aos'
+        ).innerHTML
+        expect(aosTime).toBe('01:02:03')
     })
 })
