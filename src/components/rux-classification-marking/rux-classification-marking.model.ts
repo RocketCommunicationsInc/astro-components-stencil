@@ -7,20 +7,20 @@ export type Classification =
     | "unclassified";
 
 export const Markings = {
-      banner: {
+    banner: {
         controlled: 'cui',
         confidential: 'confidential',
         secret: 'secret',
         'top-secret': 'top secret',
         'top-secret-sci': 'top secret//sci',
         unclassified: 'unclassified'
-      },
-      tag: {
+    },
+    tag: {
         controlled: 'cui',
         confidential: 'c',
         secret: 's',
         'top-secret': 'ts',
         'top-secret-sci': 'TS//SCI',
         unclassified: 'u'
-      }
+    }
     }
