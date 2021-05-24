@@ -1,13 +1,5 @@
 import { Component, Host, Prop, h } from '@stencil/core';
-
-export type Classification =
-    | "controlled"
-    | "confidential"
-    | "secret"
-    | "top-secret"
-    | "top-secret-sci"
-    | "unclassified";
-
+import { Classification, Markings } from './rux-classification-marking.model'
 @Component({
   tag: 'rux-classification-marking',
   styleUrl: 'rux-classification-marking.scss',
@@ -23,25 +15,7 @@ export class RuxClassificationMarking {
     return this.tag ? 'tag' : 'banner'
   }
   _getDisplayData() {
-    const markings = {
-      banner: {
-        controlled: 'cui',
-        confidential: 'confidential',
-        secret: 'secret',
-        'top-secret': 'top secret',
-        'top-secret-sci': 'top secret//sci',
-        unclassified: 'unclassified'
-      },
-      tag: {
-        controlled: 'cui',
-        confidential: 'c',
-        secret: 's',
-        'top-secret': 'ts',
-        'top-secret-sci': 'TS//SCI',
-        unclassified: 'u'
-      }
-    }
-    const text = markings[this.type][this.classification]
+    const text = Markings[this.type][this.classification]
     if (!text) { return 'Select a Classification Marking'}
     return text
   }
