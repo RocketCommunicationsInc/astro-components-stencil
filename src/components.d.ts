@@ -5312,6 +5312,15 @@ export namespace Components {
     interface RuxStatus {
         "status": string;
     }
+    interface RuxTab {
+        "disabled": boolean;
+        "id": string;
+        "selected": boolean;
+    }
+    interface RuxTabs {
+        "id": string;
+        "small": boolean;
+    }
 }
 declare global {
     interface HTMLRuxButtonElement extends Components.RuxButton, HTMLStencilElement {
@@ -11674,6 +11683,18 @@ declare global {
         prototype: HTMLRuxStatusElement;
         new (): HTMLRuxStatusElement;
     };
+    interface HTMLRuxTabElement extends Components.RuxTab, HTMLStencilElement {
+    }
+    var HTMLRuxTabElement: {
+        prototype: HTMLRuxTabElement;
+        new (): HTMLRuxTabElement;
+    };
+    interface HTMLRuxTabsElement extends Components.RuxTabs, HTMLStencilElement {
+    }
+    var HTMLRuxTabsElement: {
+        prototype: HTMLRuxTabsElement;
+        new (): HTMLRuxTabsElement;
+    };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
         "rux-clock": HTMLRuxClockElement;
@@ -12735,6 +12756,8 @@ declare global {
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-status": HTMLRuxStatusElement;
+        "rux-tab": HTMLRuxTabElement;
+        "rux-tabs": HTMLRuxTabsElement;
     }
 }
 declare namespace LocalJSX {
@@ -18044,6 +18067,15 @@ declare namespace LocalJSX {
     interface RuxStatus {
         "status"?: string;
     }
+    interface RuxTab {
+        "disabled"?: boolean;
+        "id"?: string;
+        "selected"?: boolean;
+    }
+    interface RuxTabs {
+        "id"?: string;
+        "small"?: boolean;
+    }
     interface IntrinsicElements {
         "rux-button": RuxButton;
         "rux-clock": RuxClock;
@@ -19105,6 +19137,8 @@ declare namespace LocalJSX {
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
         "rux-progress": RuxProgress;
         "rux-status": RuxStatus;
+        "rux-tab": RuxTab;
+        "rux-tabs": RuxTabs;
     }
 }
 export { LocalJSX as JSX };
@@ -20171,6 +20205,8 @@ declare module "@stencil/core" {
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
+            "rux-tab": LocalJSX.RuxTab & JSXBase.HTMLAttributes<HTMLRuxTabElement>;
+            "rux-tabs": LocalJSX.RuxTabs & JSXBase.HTMLAttributes<HTMLRuxTabsElement>;
         }
     }
 }
