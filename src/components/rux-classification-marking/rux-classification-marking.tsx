@@ -19,72 +19,39 @@ export class RuxClassificationMarking {
   @Prop() label: string 
   @Prop({ reflect: true }) tag: boolean = false
 
+  get type(): 'tag' | 'banner' {
+    return this.tag ? 'tag' : 'banner'
+  }
   _getDisplayData() {
-    const displayData = { text: '', label: this.label }
-    
-    if (!this.tag) {
-      switch (this.classification) {
-        case "controlled":
-          displayData.text = "cui"
-          break;
-        case "confidential":
-          displayData.text = "confidential"
-          break;
-        case "secret":
-          displayData.text = "secret"
-          break;
-        case "top-secret":
-          displayData.text = "top secret"
-          break;
-        case "top-secret-sci":
-          displayData.text = "top secret//sci"
-          break;
-        case "unclassified":
-          displayData.text = "unclassified"
-          break;
-        default:
-          displayData.text = "Select a Classification Marking"
-          break;
+    const markings = {
+      banner: {
+        controlled: 'cui',
+        confidential: 'confidential',
+        secret: 'secret',
+        'top-secret': 'top secret',
+        'top-secret-sci': 'top secret//sci',
+        unclassified: 'unclassified'
+      },
+      tag: {
+        controlled: 'cui',
+        confidential: 'c',
+        secret: 's',
+        'top-secret': 'ts',
+        'top-secret-sci': 'TS//SCI',
+        unclassified: 'u'
       }
     }
-
-    if (this.tag) {
-      switch (this.classification) {
-        case "controlled":
-          displayData.text = "cui"
-          break;
-        case "confidential":
-          displayData.text = "c"
-          break;
-        case "secret":
-          displayData.text = "s"
-          break;
-        case "top-secret":
-          displayData.text = "ts"
-          break;
-        case "top-secret-sci":
-          displayData.text = "TS//SCI"
-          break;
-        case "unclassified":
-          displayData.text = "u"
-          break;
-        default:
-          displayData.text = "Select a Classification Marking"
-          break;
-      }
-    }
-
-    return displayData
+    const text = markings[this.type][this.classification]
+    if (!text) { return 'Select a Classification Marking'}
+    return text
   }
 
   render() {
-    const {text, label} = this._getDisplayData()
-
     return (
       <Host>
         <div>
-          {text}
-          {label}
+          {this._getDisplayData()}
+          {this.label}
         </div>
       </Host>
     );
