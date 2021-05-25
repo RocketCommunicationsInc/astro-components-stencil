@@ -5,6 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Status } from "./common/commonTypes.module";
 export namespace Components {
     interface RuxButton {
         "disabled": boolean;
@@ -5308,7 +5309,7 @@ export namespace Components {
         "icon": string;
         "label": string;
         "notifications": number;
-        "status": string;
+        "status": Status;
         "sublabel": string;
     }
     interface RuxProgress {
@@ -5317,7 +5318,7 @@ export namespace Components {
         "value": number;
     }
     interface RuxStatus {
-        "status": string;
+        "status": Status;
     }
 }
 declare global {
@@ -18054,7 +18055,7 @@ declare namespace LocalJSX {
         "icon"?: string;
         "label"?: string;
         "notifications"?: number;
-        "status"?: string;
+        "status"?: Status;
         "sublabel"?: string;
     }
     interface RuxProgress {
@@ -18063,7 +18064,7 @@ declare namespace LocalJSX {
         "value"?: number;
     }
     interface RuxStatus {
-        "status"?: string;
+        "status"?: Status;
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;

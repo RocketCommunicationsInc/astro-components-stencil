@@ -1,4 +1,5 @@
 import { Component, h, Prop, Watch } from '@stencil/core';
+import { Status } from '../../common/commonTypes.module'
 
 @Component({
   tag: 'rux-monitoring-icon',
@@ -6,10 +7,25 @@ import { Component, h, Prop, Watch } from '@stencil/core';
   shadow: true,
 })
 export class RuxMonitoringIcon {
-  @Prop({reflect: true}) status: string = 'normal';
+  /*
+  * Styles the icon according to the Astro Status colors. Valid options are the Astro statuses `critical`, `serious`, `caution`, `normal`, `standby` and `off`
+  */
+  @Prop({reflect: true}) status: Status = 'normal';
+  /*
+  * Displays a label below the icon
+  */
   @Prop() label: string;
+  /*
+  * Displays a smaller label underneath the icon label 
+  */
   @Prop() sublabel: string;
+  /*
+  * Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+  */
   @Prop() icon: string;
+  /*
+  * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon. Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands, `'1.5M'` for millions, and `'1.5B'` for billions. The badge uses `'∞'` for one trillion or higher.
+  */
   @Prop() notifications: number = 0;
 
   _collapseNotification(value: number) {
