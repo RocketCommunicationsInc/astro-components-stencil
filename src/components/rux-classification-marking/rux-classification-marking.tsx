@@ -7,8 +7,17 @@ import { Classification } from '../../common/commonTypes.module'
 })  
   
 export class RuxClassificationMarking {
+  /**
+   * Defines which classification marking will be displayed.
+   */
   @Prop() classification: Classification = "unclassified"
-  @Prop() label?: string 
+  /**
+   * Allows additional text labels to be added to the a marking
+   */
+  @Prop() label?: string
+  /**
+   * Declares the marking as a `tag` rather than the default banner style
+   */
   @Prop({ reflect: true }) tag: boolean = false
 
   get type(): 'tag' | 'banner' {

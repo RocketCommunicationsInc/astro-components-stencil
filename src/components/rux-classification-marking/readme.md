@@ -107,8 +107,4 @@ Applying the `label` property attribute to the classification custom element add
 ></rux-classification-marking>
 ```
 
-## Revision History
-
-#### **Verison # TBD**
-
--   standardized classification property options to approved list
+<!-- Auto Generated Below -->
