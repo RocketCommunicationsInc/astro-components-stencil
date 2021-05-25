@@ -17,25 +17,23 @@ export namespace Components {
         /**
           * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
          */
-        "aos": number;
-        "dayOfYear": number;
+        "aos"?: number;
         /**
           * Hides the day of the year.
          */
-        "hideDate": boolean;
+        "hideDate"?: boolean;
         /**
           * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
          */
-        "hideTimezone": boolean;
+        "hideTimezone"?: boolean;
         /**
           * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax), displays a timestamp labeled "LOS" next to the standard clock.
          */
-        "los": string;
+        "los"?: string;
         /**
           * Applies a smaller clock style.
          */
-        "small": boolean;
-        "time": string;
+        "small"?: boolean;
         /**
           * Accepts the [IANA timezone string format](https://www.iana.org/time-zones) such as `'America/Los_Angeles'` or any single-character designation for a [military timezones](https://en.wikipedia.org/wiki/List_of_military_time_zones) (`'A'` through `'Z'`, excluding `'J'`), both case-insensitive. If no value for timezone is provided, the clock will use `'UTC'`. See [`toLocaleString()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString#Parameters) for more details.
          */
@@ -12768,7 +12766,6 @@ declare namespace LocalJSX {
           * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
          */
         "aos"?: number;
-        "dayOfYear"?: number;
         /**
           * Hides the day of the year.
          */
@@ -12785,7 +12782,6 @@ declare namespace LocalJSX {
           * Applies a smaller clock style.
          */
         "small"?: boolean;
-        "time"?: string;
         /**
           * Accepts the [IANA timezone string format](https://www.iana.org/time-zones) such as `'America/Los_Angeles'` or any single-character designation for a [military timezones](https://en.wikipedia.org/wiki/List_of_military_time_zones) (`'A'` through `'Z'`, excluding `'J'`), both case-insensitive. If no value for timezone is provided, the clock will use `'UTC'`. See [`toLocaleString()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString#Parameters) for more details.
          */
