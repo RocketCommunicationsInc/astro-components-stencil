@@ -7,11 +7,10 @@ import { Component, Host, h, Prop, Watch } from '@stencil/core';
 })
 export class RuxMonitoringIcon {
   @Prop({reflect: true}) status: string = 'normal';
-  @Prop() label: string = '';
-  @Prop() sublabel: string = '';
-  @Prop() icon: string = '';
+  @Prop() label: string;
+  @Prop() sublabel: string;
+  @Prop() icon: string;
   @Prop() notifications: number = 0;
-  @Prop() library: string = undefined;
 
   _collapseNotification(value: number) {
     const n = Math.floor(value);
@@ -54,16 +53,16 @@ export class RuxMonitoringIcon {
       if (!statusTypes[newValue]) { throw new Error('valid status required') }
   }
 
-    iconTemplate() {
+  iconTemplate() {
     return (
-      <rux-icon icon="${this.icon}" class="rux-status--${this.status}"></rux-icon>
+      <rux-icon icon={this.icon} class={`rux-status--${this.status}`}></rux-icon>
     )
   }
 
   badgeTemplate() {
     return (
-      <div class="rux-advanced-status__badge" aria-hidden="${!this.notifications}">
-        ${this._collapseNotification(this.notifications)}
+      <div class="rux-advanced-status__badge" aria-hidden={!this.notifications}>
+        {this._collapseNotification(this.notifications)}
       </div>
     )
   }
@@ -71,8 +70,8 @@ export class RuxMonitoringIcon {
   labelTemplate() {
     return (
       <div class="rux-advanced-status__label">
-        ${this.label}
-        <span class="rux-advanced-status__sublabel" aria-hidden="${!this.sublabel}">${this.sublabel}</span>
+        {this.label}
+        <span class="rux-advanced-status__sublabel" aria-hidden={!this.sublabel}>{this.sublabel}</span>
       </div>
     );
   }
@@ -83,15 +82,15 @@ export class RuxMonitoringIcon {
       <div
         id="rux-advanced-status__icon"
         class="rux-advanced-status"
-        title="${this.notifications} ${this.label} ${this.sublabel}"
+        title={`${this.notifications} ${this.label} ${this.sublabel}`}
       >
         <div class="rux-advanced-status__icon-group">
-          <rux-status status="${this.status}"></rux-status>
+          <rux-status status={this.status}></rux-status>
 
-          ${this.iconTemplate} ${this.badgeTemplate}
+          {this.iconTemplate()} {this.badgeTemplate()}
         </div>
 
-        ${this.labelTemplate}
+        {this.labelTemplate()}
       </div>
     );
   }

@@ -5304,13 +5304,17 @@ export namespace Components {
         "icon": string;
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
+    interface RuxMonitoringIcon {
+        "icon": string;
+        "label": string;
+        "notifications": number;
+        "status": string;
+        "sublabel": string;
+    }
     interface RuxProgress {
         "hideLabel": boolean;
         "max": number;
         "value": number;
-    }
-    interface RuxStatus {
-        "status": string;
     }
     interface RuxStatus {
         "status": string;
@@ -11665,6 +11669,12 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement;
         new (): HTMLRuxIconZoomOutMapElement;
     };
+    interface HTMLRuxMonitoringIconElement extends Components.RuxMonitoringIcon, HTMLStencilElement {
+    }
+    var HTMLRuxMonitoringIconElement: {
+        prototype: HTMLRuxMonitoringIconElement;
+        new (): HTMLRuxMonitoringIconElement;
+    };
     interface HTMLRuxProgressElement extends Components.RuxProgress, HTMLStencilElement {
     }
     var HTMLRuxProgressElement: {
@@ -12736,6 +12746,7 @@ declare global {
         "rux-icon-zoom-in-map": HTMLRuxIconZoomInMapElement;
         "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
+        "rux-monitoring-icon": HTMLRuxMonitoringIconElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-status": HTMLRuxStatusElement;
     }
@@ -18039,6 +18050,13 @@ declare namespace LocalJSX {
         "icon"?: string;
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
+    interface RuxMonitoringIcon {
+        "icon"?: string;
+        "label"?: string;
+        "notifications"?: number;
+        "status"?: string;
+        "sublabel"?: string;
+    }
     interface RuxProgress {
         "hideLabel"?: boolean;
         "max"?: number;
@@ -19106,6 +19124,7 @@ declare namespace LocalJSX {
         "rux-icon-zoom-in-map": RuxIconZoomInMap;
         "rux-icon-zoom-out": RuxIconZoomOut;
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
+        "rux-monitoring-icon": RuxMonitoringIcon;
         "rux-progress": RuxProgress;
         "rux-status": RuxStatus;
     }
@@ -20172,6 +20191,7 @@ declare module "@stencil/core" {
             "rux-icon-zoom-in-map": LocalJSX.RuxIconZoomInMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomInMapElement>;
             "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
+            "rux-monitoring-icon": LocalJSX.RuxMonitoringIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
         }
