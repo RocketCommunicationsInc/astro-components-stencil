@@ -8,7 +8,7 @@ import { Classification, Markings } from './rux-classification-marking.model'
   
 export class RuxClassificationMarking {
   @Prop() classification: Classification = "unclassified"
-  @Prop() label: string 
+  @Prop() label?: string 
   @Prop({ reflect: true }) tag: boolean = false
 
   get type(): 'tag' | 'banner' {

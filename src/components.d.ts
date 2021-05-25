@@ -16,7 +16,7 @@ export namespace Components {
     }
     interface RuxClassificationMarking {
         "classification": Classification;
-        "label": string;
+        "label"?: string;
         "tag": boolean;
     }
     interface RuxClock {
