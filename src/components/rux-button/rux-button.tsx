@@ -31,7 +31,7 @@ export class RuxButton {
             >
                 {icon ? (
                     <rux-icon
-                        name={icon}
+                        label={icon}
                         color={outline ? 'primary' : 'dark'}
                     ></rux-icon>
                 ) : null}
