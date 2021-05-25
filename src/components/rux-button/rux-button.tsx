@@ -7,8 +7,8 @@ import '../rux-icon/rux-icon'
     shadow: true,
 })
 export class RuxButton {
-    @Prop() icon: string = ''
-    @Prop() iconOnly: boolean = false
+    @Prop({ reflect: true }) icon: string = ''
+    @Prop({ reflect: true, attribute: 'iconOnly' }) iconOnly: boolean = false
     @Prop() outline: boolean = false
     @Prop() type: string = 'button'
     @Prop({ reflect: true }) disabled = false
@@ -31,7 +31,7 @@ export class RuxButton {
             >
                 {icon ? (
                     <rux-icon
-                        label={icon}
+                        icon={icon}
                         color={outline ? 'primary' : 'dark'}
                     ></rux-icon>
                 ) : null}

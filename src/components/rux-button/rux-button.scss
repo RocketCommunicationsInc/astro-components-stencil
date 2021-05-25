@@ -80,7 +80,6 @@
     // .rux-button-group
     &-group {
         display: flex;
-
         .rux-button:not(:last-child) {
             margin-right: 0.625rem;
         }
@@ -127,14 +126,6 @@
         }
     }
 
-    &--icon-only {
-        font-size: 0px;
-        .rux-button__icon {
-            margin-left: -0.625rem;
-            margin-right: -0.625rem;
-        }
-    }
-
     &--small {
         font-size: var(--smallLabelFontSize);
         height: 1.625rem;
@@ -166,6 +157,14 @@
         &:hover:not([active]):not([disabled]) {
             background-color: var(--colorCritical);
             border-color: var(--colorCritical);
+        }
+    }
+
+    &--icon-only {
+        font-size: 0px;
+        .rux-button__icon {
+            margin-left: -0.625rem;
+            margin-right: -0.625rem;
         }
     }
 }

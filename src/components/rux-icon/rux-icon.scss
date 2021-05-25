@@ -3,8 +3,8 @@
     --iconColor: var(--iconDefaultColor);
 
     display: inline-flex;
-    height: var(--iconDefaultSize);
-    width: var(--iconDefaultSize);
+    // height: var(--iconDefaultSize);
+    // width: var(--iconDefaultSize);
     fill: var(--iconColor);
 }
 
@@ -15,7 +15,6 @@ svg > svg {
 }
 .icon {
     display: inline-flex;
-    margin: 0 auto;
 }
 
 .rux-button--outline rux-icon {
@@ -37,6 +36,6 @@ svg > svg {
 }
 
 .rux-icon--normal {
-    height: 3rem;
-    width: 3rem;
+    // height: 3rem;
+    // width: 3rem;
 }
