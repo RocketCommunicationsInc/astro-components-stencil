@@ -88,7 +88,7 @@ export const GroupedButtons = () => {
         Center: 'center',
     }
 
-    const align = select('Align', alignOptions, '')
+    const align = select('Align', alignOptions, 'right')
 
     return html`
         <style>
@@ -111,8 +111,8 @@ export const GroupedButtons = () => {
         <div style="padding: 10%; display: flex; justify-content: center;">
             <div class="example-container">
                 <rux-button-group .align="${align}">
-                    <rux-button outline>Outline</rux-button>
-                    <rux-button>Normal</rux-button>
+                    <rux-button outline>Cancel</rux-button>
+                    <rux-button>Continue</rux-button>
                 </rux-button-group>
             </div>
         </div>
