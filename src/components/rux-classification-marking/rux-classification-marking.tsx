@@ -1,5 +1,5 @@
 import { Component, Host, Prop, h } from '@stencil/core';
-import { Classification } from '../../common/common-types'
+import { Classification } from '../../common/commonTypes.module'
 @Component({
   tag: 'rux-classification-marking',
   styleUrl: 'rux-classification-marking.scss',
