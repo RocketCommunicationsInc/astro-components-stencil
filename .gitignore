@@ -2,7 +2,6 @@ dist/
 www/
 loader/
 storybook-static/
-package-lock
 
 *~
 *.sw[mnpcod]
