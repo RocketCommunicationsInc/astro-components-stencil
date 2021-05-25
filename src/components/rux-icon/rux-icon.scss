@@ -1,5 +1,5 @@
 :host {
-    --iconDefaultSize: 2.7rem;
+    // --iconDefaultSize: 2.7rem;
     --iconColor: var(--iconDefaultColor);
     fill: var(--iconColor);
 
@@ -35,6 +35,6 @@ svg > svg {
 }
 
 .rux-icon--normal {
-    height: 3rem;
-    width: 3rem;
+    height: 2.7rem;
+    width: 2.7rem;
 }
