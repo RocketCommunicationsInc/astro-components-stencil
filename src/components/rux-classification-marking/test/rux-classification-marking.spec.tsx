@@ -8,7 +8,6 @@ describe('rux-classification-marking', () => {
     expect(classificationMarking).toBeTruthy()
     expect(classificationMarking).toEqual({
       classification: "unclassified",
-      label: "",
       tag: false,
     })
   })
