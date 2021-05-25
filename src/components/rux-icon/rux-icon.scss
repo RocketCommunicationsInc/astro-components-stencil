@@ -5,26 +5,20 @@
     display: inline-flex;
     height: var(--iconDefaultSize);
     width: var(--iconDefaultSize);
+    fill: var(--iconColor);
 }
 
 svg,
 svg > svg {
     height: 100%;
     width: auto;
-    fill: var(--iconColor);
 }
 .icon {
     display: inline-flex;
-    width: 100%;
-    height: 100%;
+    margin: 0 auto;
 }
 
-.rux-icon--primary > svg {
-    fill: var(--primary);
-}
-
-.rux-icon--dark > svg {
-    fill: var(--primaryElementText);
+.rux-button--outline rux-icon {
 }
 
 .rux-icon--extra-small {
@@ -40,4 +34,9 @@ svg > svg {
 .rux-icon--large {
     height: 4rem;
     width: 4rem;
+}
+
+.rux-icon--normal {
+    height: 3rem;
+    width: 3rem;
 }

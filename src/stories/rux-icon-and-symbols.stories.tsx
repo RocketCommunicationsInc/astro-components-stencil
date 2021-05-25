@@ -1,6 +1,5 @@
 import { html, render } from 'lit-html'
-import { classMap } from 'lit-html/directives/class-map.js'
-import { text, number, select, withKnobs } from '@storybook/addon-knobs'
+import { text, number, select, color, withKnobs } from '@storybook/addon-knobs'
 // import { RuxIcon } from '../src/components/rux-icon/rux-icon.js';
 // import { RuxStatus } from '../src/components/rux-status/rux-status.js';
 // import { RuxMonitoringIcon } from '../src/components/rux-monitoring-icon/rux-monitoring-icon.js';
@@ -15,20 +14,15 @@ export default {
 }
 
 export const AllIcons = () => {
-    const colors = {
-        Primary: 'primary',
-        Dark: 'dark',
-    }
-
     const sizes = {
         'Extra Small': 'extra-small',
         Small: 'small',
-        Normal: 'base',
+        Normal: 'normal',
         Large: 'large',
     }
 
-    const colorKnob = select('Color', colors, 'primary')
-    const sizeKnob = select('Size', sizes, 'base')
+    const colorKnob = color('Color', '#4dacff')
+    const sizeKnob = select('Size', sizes, 'normal')
 
     const capitalize = (s) => {
         if (typeof s !== 'string') return ''
@@ -36,29 +30,21 @@ export const AllIcons = () => {
     }
 
     const displaySection = (section) => {
-        const listItemClass = {
-            'icon__list-item': true,
-            'icon__list--base': sizeKnob === 'base',
-            'icon__list--large': sizeKnob === 'large',
-            'icon__list--small': sizeKnob === 'small',
-            'icon__list--extra-small': sizeKnob === 'extra-small',
-        }
-
         return html`
             <div class="icon__section">
                 <h3>${capitalize(section)}</h3>
                 <ul class="icon__list">
                     ${ruxIconsJson['solid'][section].map((icon) => {
                         return html` <li
-                            class="${classMap(listItemClass)}"
-                            title="${icon.name}"
+                            class="icon__list-item"
+                            title="${icon.icon}"
                         >
                             <rux-icon
-                                name="${icon.name}"
+                                icon="${icon.icon}"
                                 color="${colorKnob}"
                                 size="${sizeKnob}"
                             ></rux-icon>
-                            <div class="icon__name">${icon.name}</div>
+                            <div class="icon__name">${icon.icon}</div>
                         </li>`
                     })}
                 </ul>

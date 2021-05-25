@@ -20,9 +20,11 @@
         "test": "stencil test --spec --e2e",
         "test.watch": "stencil test --spec --e2e --watchAll",
         "generate": "stencil generate",
+        "generate:icons": "node src/utils/generate-icons.js",
         "storybook": "start-storybook -p 6006 -s ./dist",
         "build-storybook": "build-storybook -c .storybook -s ./dist",
-        "astro": "npm-run-all --parallel start storybook"
+        "astro": "npm-run-all --parallel start storybook",
+        "build-astro-prod": "npm-run-all build build-storybook"
     },
     "dependencies": {
         "@stencil/core": "^2.0.1",
