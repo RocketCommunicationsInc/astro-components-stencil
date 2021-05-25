@@ -40,20 +40,6 @@ import { RuxClassification } from '@astrouxds/rux-classification-marking/rux-cla
 
 ### 3. Render the Classification Markings Component
 
-Pass properties as attributes of the Astro Classification custom element:
-
-```javascript
-
-## Properties
-
-| Property       | Type     | Default          | Required | Description                                                                 |
-| ---------------| ---------| ---------------- | -------- | --------------------------------------------------------------------------- |
-| classification |  String  | `"unclassified"` | Yes      | This property defines which classification marking will be displayed        |
-| label          |  String  | `""`             | No       | This property allows additional text labels to be added to the a marking    |
-| tag            |  Boolean | `false`          | No       | This property defines the marking as a `tag` rather than the default banner |
-
-```
-
 #### Marking Classification Declaration
 
 By default classification property is set to "unclassified".
@@ -117,6 +103,14 @@ Applying the `label` property attribute to the classification custom element add
 | `classification` | `classification` | Defines which classification marking will be displayed.              | `"confidential" \| "controlled" \| "secret" \| "top-secret" \| "top-secret-sci" \| "unclassified"` | `"unclassified"` |
 | `label`          | `label`          | Allows additional text labels to be added to the a marking           | `string`                                                                                           | `undefined`      |
 | `tag`            | `tag`            | Declares the marking as a `tag` rather than the default banner style | `boolean`                                                                                          | `false`          |
+
+
+## CSS Custom Properties
+
+| Name                             | Description                                           |
+| -------------------------------- | ----------------------------------------------------- |
+| `--classificationTextColorDark`  | the color of dark text in the classification marking  |
+| `--classificationTextColorLight` | the color of light text in the classification marking |
 
 
 ----------------------------------------------
