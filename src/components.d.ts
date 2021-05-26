@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { Status } from "./common/commonTypes.module";
+import { Status, Classification } from "./common/commonTypes.module";
 export namespace Components {
     interface RuxButton {
         "disabled": boolean;
@@ -13,6 +13,20 @@ export namespace Components {
         "iconOnly": boolean;
         "outline": boolean;
         "size"?: 'small' | 'large';
+    }
+    interface RuxClassificationMarking {
+        /**
+          * Defines which classification marking will be displayed.
+         */
+        "classification": Classification;
+        /**
+          * Allows additional text labels to be added to the a marking
+         */
+        "label"?: string;
+        /**
+          * Declares the marking as a `tag` rather than the default banner style
+         */
+        "tag": boolean;
     }
     interface RuxClock {
         "aos": number;
@@ -5327,6 +5341,12 @@ declare global {
     var HTMLRuxButtonElement: {
         prototype: HTMLRuxButtonElement;
         new (): HTMLRuxButtonElement;
+    };
+    interface HTMLRuxClassificationMarkingElement extends Components.RuxClassificationMarking, HTMLStencilElement {
+    }
+    var HTMLRuxClassificationMarkingElement: {
+        prototype: HTMLRuxClassificationMarkingElement;
+        new (): HTMLRuxClassificationMarkingElement;
     };
     interface HTMLRuxClockElement extends Components.RuxClock, HTMLStencilElement {
     }
@@ -11690,6 +11710,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
+        "rux-classification-marking": HTMLRuxClassificationMarkingElement;
         "rux-clock": HTMLRuxClockElement;
         "rux-global-status-bar": HTMLRuxGlobalStatusBarElement;
         "rux-icon": HTMLRuxIconElement;
@@ -12759,6 +12780,20 @@ declare namespace LocalJSX {
         "iconOnly"?: boolean;
         "outline"?: boolean;
         "size"?: 'small' | 'large';
+    }
+    interface RuxClassificationMarking {
+        /**
+          * Defines which classification marking will be displayed.
+         */
+        "classification"?: Classification;
+        /**
+          * Allows additional text labels to be added to the a marking
+         */
+        "label"?: string;
+        /**
+          * Declares the marking as a `tag` rather than the default banner style
+         */
+        "tag"?: boolean;
     }
     interface RuxClock {
         "aos"?: number;
@@ -18068,6 +18103,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;
+        "rux-classification-marking": RuxClassificationMarking;
         "rux-clock": RuxClock;
         "rux-global-status-bar": RuxGlobalStatusBar;
         "rux-icon": RuxIcon;
@@ -19135,6 +19171,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "rux-button": LocalJSX.RuxButton & JSXBase.HTMLAttributes<HTMLRuxButtonElement>;
+            "rux-classification-marking": LocalJSX.RuxClassificationMarking & JSXBase.HTMLAttributes<HTMLRuxClassificationMarkingElement>;
             "rux-clock": LocalJSX.RuxClock & JSXBase.HTMLAttributes<HTMLRuxClockElement>;
             "rux-global-status-bar": LocalJSX.RuxGlobalStatusBar & JSXBase.HTMLAttributes<HTMLRuxGlobalStatusBarElement>;
             "rux-icon": LocalJSX.RuxIcon & JSXBase.HTMLAttributes<HTMLRuxIconElement>;
