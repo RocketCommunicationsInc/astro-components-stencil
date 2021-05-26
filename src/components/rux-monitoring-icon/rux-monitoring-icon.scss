@@ -94,6 +94,10 @@ rux-status {
     display: block;
 }
 
+.rux-advanced-status__hidden {
+    display: none;
+}
+
 :host([status='off']) {
     rux-icon {
         fill: var(--colorOff);

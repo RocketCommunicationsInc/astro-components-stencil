@@ -77,7 +77,7 @@ export class RuxMonitoringIcon {
 
   badgeTemplate() {
     return (
-      <div class="rux-advanced-status__badge" aria-hidden={!this.notifications}>
+      <div class={`rux-advanced-status__badge ${!this.notifications && 'rux-advanced-status__hidden'}`}>
         {this._collapseNotification(this.notifications)}
       </div>
     )
@@ -87,7 +87,7 @@ export class RuxMonitoringIcon {
     return (
       <div class="rux-advanced-status__label">
         {this.label}
-        <span class="rux-advanced-status__sublabel" aria-hidden={!this.sublabel}>{this.sublabel}</span>
+        <span class={`rux-advanced-status__sublabel ${!this.sublabel && 'rux-advanced-status__hidden'}`}>{this.sublabel}</span>
       </div>
     );
   }

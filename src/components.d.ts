@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { Status, Classification } from "./common/commonTypes.module";
+import { Classification, Status } from "./common/commonTypes.module";
 export namespace Components {
     interface RuxButton {
         "disabled": boolean;
