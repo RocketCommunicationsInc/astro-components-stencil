@@ -130,9 +130,18 @@
         font-size: var(--smallLabelFontSize);
         height: 1.625rem;
         padding: 0 1rem;
-        .rux-button__icon {
-            height: 0.875rem;
-            width: 0.875rem;
+        line-height: 1;
+
+        &.rux-button {
+            &__icon {
+                height: 0.875rem;
+                width: 0.875rem;
+            }
+
+            &--icon-only {
+                min-width: 1.625rem;
+                padding: 0 0.75rem;
+            }
         }
     }
 
