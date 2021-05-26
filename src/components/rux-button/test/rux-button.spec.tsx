@@ -30,7 +30,7 @@ describe('rux-button', () => {
         })
 
         expect(page.root).toEqualHtml(`
-          <rux-button>
+          <rux-button icon="">
             <mock:shadow-root>
               <button type="button" class="rux-button">
                 <slot></slot>
@@ -48,7 +48,7 @@ describe('rux-button', () => {
         })
 
         expect(page.root).toEqualHtml(`
-          <rux-button type="submit" outline disabled>
+          <rux-button icon="" type="submit" outline disabled>
             <mock:shadow-root>
               <button type="submit" class="rux-button rux-button--outline" disabled aria-disabled="true">
                 <slot></slot>

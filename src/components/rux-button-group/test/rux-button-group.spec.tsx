@@ -16,15 +16,15 @@ describe('rux-button-group', () => {
         const page = await newSpecPage({
             components: [RuxButtonGroup, RuxButton],
             html: `<rux-button-group>
-              <rux-button outline>Button</rux-button>
-              <rux-button>Button</rux-button>
+              <rux-button icon="" outline>Button</rux-button>
+              <rux-button icon="">Button</rux-button>
             </rux-button-group>`,
         })
 
         expect(page.root).toEqualHtml(`
           <rux-button-group>
             <div class="rux-button-group rux-button-group--left">
-              <rux-button outline>
+              <rux-button icon="" outline>
                 <mock:shadow-root>
                   <button type="button" class="rux-button rux-button--outline">
                     <slot></slot>
@@ -32,7 +32,7 @@ describe('rux-button-group', () => {
                 </mock:shadow-root>
                 Button
               </rux-button>
-              <rux-button>
+              <rux-button icon="">
                 <mock:shadow-root>
                   <button type="button" class="rux-button">
                     <slot></slot>
