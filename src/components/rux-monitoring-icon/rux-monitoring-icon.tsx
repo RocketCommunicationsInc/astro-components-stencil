@@ -69,13 +69,13 @@ export class RuxMonitoringIcon {
       if (!statusTypes[newValue]) { throw new Error('valid status required') }
   }
 
-  iconTemplate() {
+  private _iconTemplate() {
     return (
       <rux-icon icon={this.icon} class={`rux-status--${this.status}`}></rux-icon>
     )
   }
 
-  badgeTemplate() {
+  private _badgeTemplate() {
     return (
       <div class={`rux-advanced-status__badge ${!this.notifications && 'rux-advanced-status__hidden'}`}>
         {this._collapseNotification(this.notifications)}
@@ -83,7 +83,7 @@ export class RuxMonitoringIcon {
     )
   }
 
-  labelTemplate() {
+  private _labelTemplate() {
     return (
       <div class="rux-advanced-status__label">
         {this.label}
@@ -103,10 +103,10 @@ export class RuxMonitoringIcon {
         <div class="rux-advanced-status__icon-group">
           <rux-status status={this.status}></rux-status>
 
-          {this.iconTemplate()} {this.badgeTemplate()}
+          {this._iconTemplate()} {this._badgeTemplate()}
         </div>
 
-        {this.labelTemplate()}
+        {this._labelTemplate()}
       </div>
     );
   }
