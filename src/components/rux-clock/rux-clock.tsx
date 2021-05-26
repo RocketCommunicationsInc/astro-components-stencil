@@ -32,7 +32,7 @@ export class RuxClock {
     /**
      * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
      */
-    @Prop() hideTimezone?: boolean
+    @Prop() hideTimezone: boolean
 
     /**
      * Hides the day of the year.
@@ -47,12 +47,12 @@ export class RuxClock {
     @Watch('timezone')
     timezoneChanged() {
         this.convertTimezone(this.timezone)
-        this.updateTime()
+        this._updateTime()
     }
 
     constructor() {
         this._timezone = this.timezone
-        this.updateTime()
+        this._updateTime()
     }
 
     get time(): string {
@@ -63,7 +63,7 @@ export class RuxClock {
         this.convertTimezone(this.timezone)
 
         this._timer = window.setInterval(() => {
-            this.updateTime()
+            this._updateTime()
         }, 1000)
     }
 
@@ -79,7 +79,7 @@ export class RuxClock {
         )
     }
 
-    private updateTime(): void {
+    private _updateTime(): void {
         this._time = this.formatTime(new Date(Date.now()), this._timezone)
         this.dayOfYear = getDayOfYear(
             zonedTimeToUtc(new Date(Date.now()), this._timezone)
