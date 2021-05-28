@@ -5,6 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Classification, Status } from "./common/commonTypes.module";
 export namespace Components {
     interface RuxButton {
         "disabled": boolean;
@@ -13,14 +14,44 @@ export namespace Components {
         "outline": boolean;
         "size"?: 'small' | 'large';
     }
+    interface RuxClassificationMarking {
+        /**
+          * Defines which classification marking will be displayed.
+         */
+        "classification": Classification;
+        /**
+          * Allows additional text labels to be added to the a marking
+         */
+        "label"?: string;
+        /**
+          * Declares the marking as a `tag` rather than the default banner style
+         */
+        "tag": boolean;
+    }
     interface RuxClock {
-        "aos": number;
-        "dayOfYear": number;
-        "hideDate": boolean;
-        "hideTimezone": boolean;
-        "los": string;
-        "small": boolean;
-        "time": string;
+        /**
+          * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
+         */
+        "aos"?: number;
+        /**
+          * Hides the day of the year.
+         */
+        "hideDate"?: boolean;
+        /**
+          * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
+         */
+        "hideTimezone"?: boolean;
+        /**
+          * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax), displays a timestamp labeled "LOS" next to the standard clock.
+         */
+        "los"?: string;
+        /**
+          * Applies a smaller clock style.
+         */
+        "small"?: boolean;
+        /**
+          * Accepts the [IANA timezone string format](https://www.iana.org/time-zones) such as `'America/Los_Angeles'` or any single-character designation for a [military timezones](https://en.wikipedia.org/wiki/List_of_military_time_zones) (`'A'` through `'Z'`, excluding `'J'`), both case-insensitive. If no value for timezone is provided, the clock will use `'UTC'`. See [`toLocaleString()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString#Parameters) for more details.
+         */
         "timezone": string;
     }
     interface RuxGlobalStatusBar {
@@ -5304,13 +5335,20 @@ export namespace Components {
         "icon": string;
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
+    interface RuxMonitoringIcon {
+        "icon": string;
+        "label": string;
+        "notifications": number;
+        "status": Status;
+        "sublabel": string;
+    }
     interface RuxProgress {
         "hideLabel": boolean;
         "max": number;
         "value": number;
     }
     interface RuxStatus {
-        "status": string;
+        "status": Status;
     }
     interface RuxTab {
         "disabled": boolean;
@@ -5328,6 +5366,12 @@ declare global {
     var HTMLRuxButtonElement: {
         prototype: HTMLRuxButtonElement;
         new (): HTMLRuxButtonElement;
+    };
+    interface HTMLRuxClassificationMarkingElement extends Components.RuxClassificationMarking, HTMLStencilElement {
+    }
+    var HTMLRuxClassificationMarkingElement: {
+        prototype: HTMLRuxClassificationMarkingElement;
+        new (): HTMLRuxClassificationMarkingElement;
     };
     interface HTMLRuxClockElement extends Components.RuxClock, HTMLStencilElement {
     }
@@ -11671,6 +11715,12 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement;
         new (): HTMLRuxIconZoomOutMapElement;
     };
+    interface HTMLRuxMonitoringIconElement extends Components.RuxMonitoringIcon, HTMLStencilElement {
+    }
+    var HTMLRuxMonitoringIconElement: {
+        prototype: HTMLRuxMonitoringIconElement;
+        new (): HTMLRuxMonitoringIconElement;
+    };
     interface HTMLRuxProgressElement extends Components.RuxProgress, HTMLStencilElement {
     }
     var HTMLRuxProgressElement: {
@@ -11697,6 +11747,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
+        "rux-classification-marking": HTMLRuxClassificationMarkingElement;
         "rux-clock": HTMLRuxClockElement;
         "rux-global-status-bar": HTMLRuxGlobalStatusBarElement;
         "rux-icon": HTMLRuxIconElement;
@@ -12754,6 +12805,7 @@ declare global {
         "rux-icon-zoom-in-map": HTMLRuxIconZoomInMapElement;
         "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
+        "rux-monitoring-icon": HTMLRuxMonitoringIconElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-status": HTMLRuxStatusElement;
         "rux-tab": HTMLRuxTabElement;
@@ -12768,14 +12820,44 @@ declare namespace LocalJSX {
         "outline"?: boolean;
         "size"?: 'small' | 'large';
     }
+    interface RuxClassificationMarking {
+        /**
+          * Defines which classification marking will be displayed.
+         */
+        "classification"?: Classification;
+        /**
+          * Allows additional text labels to be added to the a marking
+         */
+        "label"?: string;
+        /**
+          * Declares the marking as a `tag` rather than the default banner style
+         */
+        "tag"?: boolean;
+    }
     interface RuxClock {
+        /**
+          * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
+         */
         "aos"?: number;
-        "dayOfYear"?: number;
+        /**
+          * Hides the day of the year.
+         */
         "hideDate"?: boolean;
+        /**
+          * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
+         */
         "hideTimezone"?: boolean;
+        /**
+          * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax), displays a timestamp labeled "LOS" next to the standard clock.
+         */
         "los"?: string;
+        /**
+          * Applies a smaller clock style.
+         */
         "small"?: boolean;
-        "time"?: string;
+        /**
+          * Accepts the [IANA timezone string format](https://www.iana.org/time-zones) such as `'America/Los_Angeles'` or any single-character designation for a [military timezones](https://en.wikipedia.org/wiki/List_of_military_time_zones) (`'A'` through `'Z'`, excluding `'J'`), both case-insensitive. If no value for timezone is provided, the clock will use `'UTC'`. See [`toLocaleString()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString#Parameters) for more details.
+         */
         "timezone"?: string;
     }
     interface RuxGlobalStatusBar {
@@ -18059,13 +18141,20 @@ declare namespace LocalJSX {
         "icon"?: string;
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
+    interface RuxMonitoringIcon {
+        "icon"?: string;
+        "label"?: string;
+        "notifications"?: number;
+        "status"?: Status;
+        "sublabel"?: string;
+    }
     interface RuxProgress {
         "hideLabel"?: boolean;
         "max"?: number;
         "value"?: number;
     }
     interface RuxStatus {
-        "status"?: string;
+        "status"?: Status;
     }
     interface RuxTab {
         "disabled"?: boolean;
@@ -18078,6 +18167,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;
+        "rux-classification-marking": RuxClassificationMarking;
         "rux-clock": RuxClock;
         "rux-global-status-bar": RuxGlobalStatusBar;
         "rux-icon": RuxIcon;
@@ -19135,6 +19225,7 @@ declare namespace LocalJSX {
         "rux-icon-zoom-in-map": RuxIconZoomInMap;
         "rux-icon-zoom-out": RuxIconZoomOut;
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
+        "rux-monitoring-icon": RuxMonitoringIcon;
         "rux-progress": RuxProgress;
         "rux-status": RuxStatus;
         "rux-tab": RuxTab;
@@ -19146,6 +19237,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "rux-button": LocalJSX.RuxButton & JSXBase.HTMLAttributes<HTMLRuxButtonElement>;
+            "rux-classification-marking": LocalJSX.RuxClassificationMarking & JSXBase.HTMLAttributes<HTMLRuxClassificationMarkingElement>;
             "rux-clock": LocalJSX.RuxClock & JSXBase.HTMLAttributes<HTMLRuxClockElement>;
             "rux-global-status-bar": LocalJSX.RuxGlobalStatusBar & JSXBase.HTMLAttributes<HTMLRuxGlobalStatusBarElement>;
             "rux-icon": LocalJSX.RuxIcon & JSXBase.HTMLAttributes<HTMLRuxIconElement>;
@@ -20203,6 +20295,7 @@ declare module "@stencil/core" {
             "rux-icon-zoom-in-map": LocalJSX.RuxIconZoomInMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomInMapElement>;
             "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
+            "rux-monitoring-icon": LocalJSX.RuxMonitoringIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
             "rux-tab": LocalJSX.RuxTab & JSXBase.HTMLAttributes<HTMLRuxTabElement>;
