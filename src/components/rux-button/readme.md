@@ -8,35 +8,7 @@ Buttons allow users to trigger actions.
 
 ## Web Components Usage
 
-### 1. Installation
-
-#### Install the Astro UXDS Button package via Command Line (Preferred Method)
-
-```sh
-npm i --save @astrouxds/rux-button
-```
-
-You may use Yarn, NPM, or your Node package manager of choice. The `--save` flag adds this component as a dependency in your `package.json` file.
-
-#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components/src/master/) source to your project.
-
-Via CLI:
-
-```sh
-git clone https://github.com/RocketCommunicationsInc/astro-components.git
-```
-
-Or, [download the Astro UXDS Components as a .zip](https://github.com/RocketCommunicationsInc/astro-components/archive/master.zip)
-
-### 2. Import the Astro Button Web Component
-
-This example assumes you're using the NPM package in `node_modules`. Otherwise, import the component using the path to the Astro Components directory in your project.
-
-```javascript
-import { RuxButton } from '@astrouxds/rux-button/rux-button.js'
-```
-
-### 3. Render the Astro Button Web Component
+### 2. Render the Astro Button Web Component
 
 Pass properties as attributes of the Astro Button custom element:
 
@@ -109,16 +81,6 @@ Otherwise, wrap your icon SVG in an HTML element with the [BEM-style](http://get
 </button>
 ```
 
-### Attributes
-
-| Attribute               | Type    | Default | Required | Description                                                                                                                                                                                                                                                                                                                                                                                                               |
-| ----------------------- | ------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `disabled`              | Boolean | `false` | No       | Disables the button via HTML `disabled` attribute. Icon takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.                                                                                                                                                                                                                                 |
-| `outline`               | Boolean | `false` | No       | Displays an outlined visual treatment suitable for secondary actions, such as a non-preferred alternative to an action identified by a standard button. For example, use an outline button for the less preferred option in Ok/Cancel button pairings.                                                                                                                                                                    |
-| `rux-button--icon-only` | Class   | —       | No       | Visually hides all text on the button, suitable for use cases where space is at a premium and the button intent is unambiguous, like a Play/Pause button. Must be used with the `rux-button--icon` class.                                                                                                                                                                                                                 |
-| `rux-button--icon`      | Class   | —       | No       | Displays an Astro icon matching this string to the left of the button text. Required when element also has the class `rux-button--icon-only`. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols) Note: Astro UXDS icons are only available when using the Web Component usage pattern, which imports the `<rux-icon>` component. |
-| `rux-button--size`      | Class   | —       | No       | Displays the button as a `'small'` or `'large'` variant.                                                                                                                                                                                                                                                                                                                                                                  |
-
 For more information about AstroUXDS usage outside of a Web Component environment, please see [Astro UXDS Stylesheets](https://www.astrouxds.com/components/readme/#getting-started-with-html-%26-css)
 
 ---
@@ -157,13 +119,55 @@ For more information about AstroUXDS usage outside of a Web Component environmen
 -   Removed `user-select` and placed it in astro.css to apply to all input types
 -   Embedded master off icon and removed the additional states required to handle icons and gradient backgrounds
 
+<!-- Auto Generated Below -->
+
+
 ## Properties
 
-| Property   | Attribute   | Description | Type                              | Default     |
-| ---------- | ----------- | ----------- | --------------------------------- | ----------- |
-| `disabled` | `disabled`  |             | `boolean`                         | `false`     |
-| `icon`     | `icon`      |             | `string`                          | `''`        |
-| `iconOnly` | `icon-only` |             | `boolean`                         | `false`     |
-| `outline`  | `outline`   |             | `boolean`                         | `false`     |
-| `size`     | `size`      |             | `"large" \| "small"`              | `undefined` |
-| `type`     | `type`      |             | `"submit" \| "button" \| "reset"` | `button`    |
+| Property   | Attribute  | Description | Type                 | Default     |
+| ---------- | ---------- | ----------- | -------------------- | ----------- |
+| `disabled` | `disabled` |             | `boolean`            | `false`     |
+| `icon`     | `icon`     |             | `string`             | `''`        |
+| `iconOnly` | `icononly` |             | `boolean`            | `false`     |
+| `outline`  | `outline`  |             | `boolean`            | `false`     |
+| `size`     | `size`     |             | `"large" \| "small"` | `undefined` |
+| `type`     | `type`     |             | `string`             | `'button'`  |
+
+
+## CSS Custom Properties
+
+| Name                                  | Description                           |
+| ------------------------------------- | ------------------------------------- |
+| `--buttonActiveBackgroundColor`       | Button active background color        |
+| `--buttonActiveBorderColor`           | Button active border color            |
+| `--buttonActiveControlTextColor`      | Button active text color              |
+| `--buttonBackgroundColor`             | Button background color               |
+| `--buttonBorderColor`                 | Button border color                   |
+| `--buttonHoverBackgroundColor`        | Button hover background color         |
+| `--buttonHoverBorderColor`            | Button hover border color             |
+| `--buttonHoverTextColor`              | Button hover text color               |
+| `--buttonOutlineBackgroundColor`      | Button outline background color       |
+| `--buttonOutlineBorderColor`          | Button outline border color           |
+| `--buttonOutlineHoverBackgroundColor` | Button outline hover background color |
+| `--buttonOutlineHoverBorderColor`     | Button outline hover border color     |
+| `--buttonOutlineHoverTextColor`       | Button outline hover text color       |
+| `--buttonOutlineTextColor`            | Button outline text color             |
+| `--buttonTextColor`                   | Button text color                     |
+
+
+## Dependencies
+
+### Depends on
+
+- [rux-icon](../rux-icon)
+
+### Graph
+```mermaid
+graph TD;
+  rux-button --> rux-icon
+  style rux-button fill:#f9f,stroke:#333,stroke-width:4px
+```
+
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

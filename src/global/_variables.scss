@@ -265,39 +265,6 @@ $theme: (
 
     /*
 
-    Button Colors
-    ==========================================================================
-    For standard and outline buttons
-
-  */
-
-    /* Button */
-    --buttonTextColor: var(--primaryElementText);
-    --buttonBackgroundColor: var(--primary);
-    --buttonBorderColor: transparent;
-
-    /* Button Hover State */
-    --buttonHoverTextColor: var(--primaryElementText);
-    --buttonHoverBackgroundColor: var(--primaryLight);
-    --buttonHoverBorderColor: transparent;
-
-    /* Button Active State */
-    --buttonActiveControlTextColor: var(--defaultText);
-    --buttonActiveBackgroundColor: var(--primary);
-    --buttonActiveBorderColor: var(--primary);
-
-    /* Outline Button Variant */
-    --buttonOutlineTextColor: var(--primary);
-    --buttonOutlineBackgroundColor: transparent;
-    --buttonOutlineBorderColor: var(--colorPrimary, rgb(0, 90, 143));
-
-    /* Outline Button Variant Hover State */
-    --buttonOutlineHoverTextColor: var(--primaryLight);
-    --buttonOutlineHoverBackgroundColor: transparent;
-    --buttonOutlineHoverBorderColor: var(--primaryLight);
-
-    /*
-
     Control Colors
     ==========================================================================
     For checkboxes, radio buttons etc …
@@ -445,7 +412,7 @@ $theme: (
     --pushbuttonSelectedBackgroundColor: var(--colorNormal);
     --pushbuttonSelectedBorderColor: var(--colorNormal);
     --pushbuttonSelectedTextColor: var(--primaryElementText);
-
+    /*
     Modal Colors
     ==========================================================================
 
