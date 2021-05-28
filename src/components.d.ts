@@ -5356,6373 +5356,6373 @@ declare global {
     }
     var HTMLRuxButtonElement: {
         prototype: HTMLRuxButtonElement;
-        new(): HTMLRuxButtonElement;
+        new (): HTMLRuxButtonElement;
     };
     interface HTMLRuxClassificationMarkingElement extends Components.RuxClassificationMarking, HTMLStencilElement {
     }
     var HTMLRuxClassificationMarkingElement: {
         prototype: HTMLRuxClassificationMarkingElement;
-        new(): HTMLRuxClassificationMarkingElement;
+        new (): HTMLRuxClassificationMarkingElement;
     };
     interface HTMLRuxClockElement extends Components.RuxClock, HTMLStencilElement {
     }
     var HTMLRuxClockElement: {
         prototype: HTMLRuxClockElement;
-        new(): HTMLRuxClockElement;
+        new (): HTMLRuxClockElement;
     };
     interface HTMLRuxGlobalStatusBarElement extends Components.RuxGlobalStatusBar, HTMLStencilElement {
     }
     var HTMLRuxGlobalStatusBarElement: {
         prototype: HTMLRuxGlobalStatusBarElement;
-        new(): HTMLRuxGlobalStatusBarElement;
+        new (): HTMLRuxGlobalStatusBarElement;
     };
     interface HTMLRuxIconElement extends Components.RuxIcon, HTMLStencilElement {
     }
     var HTMLRuxIconElement: {
         prototype: HTMLRuxIconElement;
-        new(): HTMLRuxIconElement;
+        new (): HTMLRuxIconElement;
     };
     interface HTMLRuxIcon360Element extends Components.RuxIcon360, HTMLStencilElement {
     }
     var HTMLRuxIcon360Element: {
         prototype: HTMLRuxIcon360Element;
-        new(): HTMLRuxIcon360Element;
+        new (): HTMLRuxIcon360Element;
     };
     interface HTMLRuxIcon3dRotationElement extends Components.RuxIcon3dRotation, HTMLStencilElement {
     }
     var HTMLRuxIcon3dRotationElement: {
         prototype: HTMLRuxIcon3dRotationElement;
-        new(): HTMLRuxIcon3dRotationElement;
+        new (): HTMLRuxIcon3dRotationElement;
     };
     interface HTMLRuxIcon4kElement extends Components.RuxIcon4k, HTMLStencilElement {
     }
     var HTMLRuxIcon4kElement: {
         prototype: HTMLRuxIcon4kElement;
-        new(): HTMLRuxIcon4kElement;
+        new (): HTMLRuxIcon4kElement;
     };
     interface HTMLRuxIconAcUnitElement extends Components.RuxIconAcUnit, HTMLStencilElement {
     }
     var HTMLRuxIconAcUnitElement: {
         prototype: HTMLRuxIconAcUnitElement;
-        new(): HTMLRuxIconAcUnitElement;
+        new (): HTMLRuxIconAcUnitElement;
     };
     interface HTMLRuxIconAccessAlarmsElement extends Components.RuxIconAccessAlarms, HTMLStencilElement {
     }
     var HTMLRuxIconAccessAlarmsElement: {
         prototype: HTMLRuxIconAccessAlarmsElement;
-        new(): HTMLRuxIconAccessAlarmsElement;
+        new (): HTMLRuxIconAccessAlarmsElement;
     };
     interface HTMLRuxIconAccessTimeElement extends Components.RuxIconAccessTime, HTMLStencilElement {
     }
     var HTMLRuxIconAccessTimeElement: {
         prototype: HTMLRuxIconAccessTimeElement;
-        new(): HTMLRuxIconAccessTimeElement;
+        new (): HTMLRuxIconAccessTimeElement;
     };
     interface HTMLRuxIconAccessibilityElement extends Components.RuxIconAccessibility, HTMLStencilElement {
     }
     var HTMLRuxIconAccessibilityElement: {
         prototype: HTMLRuxIconAccessibilityElement;
-        new(): HTMLRuxIconAccessibilityElement;
+        new (): HTMLRuxIconAccessibilityElement;
     };
     interface HTMLRuxIconAccessibilityNewElement extends Components.RuxIconAccessibilityNew, HTMLStencilElement {
     }
     var HTMLRuxIconAccessibilityNewElement: {
         prototype: HTMLRuxIconAccessibilityNewElement;
-        new(): HTMLRuxIconAccessibilityNewElement;
+        new (): HTMLRuxIconAccessibilityNewElement;
     };
     interface HTMLRuxIconAccessibleElement extends Components.RuxIconAccessible, HTMLStencilElement {
     }
     var HTMLRuxIconAccessibleElement: {
         prototype: HTMLRuxIconAccessibleElement;
-        new(): HTMLRuxIconAccessibleElement;
+        new (): HTMLRuxIconAccessibleElement;
     };
     interface HTMLRuxIconAccessibleForwardElement extends Components.RuxIconAccessibleForward, HTMLStencilElement {
     }
     var HTMLRuxIconAccessibleForwardElement: {
         prototype: HTMLRuxIconAccessibleForwardElement;
-        new(): HTMLRuxIconAccessibleForwardElement;
+        new (): HTMLRuxIconAccessibleForwardElement;
     };
     interface HTMLRuxIconAccountBalanceElement extends Components.RuxIconAccountBalance, HTMLStencilElement {
     }
     var HTMLRuxIconAccountBalanceElement: {
         prototype: HTMLRuxIconAccountBalanceElement;
-        new(): HTMLRuxIconAccountBalanceElement;
+        new (): HTMLRuxIconAccountBalanceElement;
     };
     interface HTMLRuxIconAccountBalanceWalletElement extends Components.RuxIconAccountBalanceWallet, HTMLStencilElement {
     }
     var HTMLRuxIconAccountBalanceWalletElement: {
         prototype: HTMLRuxIconAccountBalanceWalletElement;
-        new(): HTMLRuxIconAccountBalanceWalletElement;
+        new (): HTMLRuxIconAccountBalanceWalletElement;
     };
     interface HTMLRuxIconAccountBoxElement extends Components.RuxIconAccountBox, HTMLStencilElement {
     }
     var HTMLRuxIconAccountBoxElement: {
         prototype: HTMLRuxIconAccountBoxElement;
-        new(): HTMLRuxIconAccountBoxElement;
+        new (): HTMLRuxIconAccountBoxElement;
     };
     interface HTMLRuxIconAccountCircleElement extends Components.RuxIconAccountCircle, HTMLStencilElement {
     }
     var HTMLRuxIconAccountCircleElement: {
         prototype: HTMLRuxIconAccountCircleElement;
-        new(): HTMLRuxIconAccountCircleElement;
+        new (): HTMLRuxIconAccountCircleElement;
     };
     interface HTMLRuxIconAdbElement extends Components.RuxIconAdb, HTMLStencilElement {
     }
     var HTMLRuxIconAdbElement: {
         prototype: HTMLRuxIconAdbElement;
-        new(): HTMLRuxIconAdbElement;
+        new (): HTMLRuxIconAdbElement;
     };
     interface HTMLRuxIconAddElement extends Components.RuxIconAdd, HTMLStencilElement {
     }
     var HTMLRuxIconAddElement: {
         prototype: HTMLRuxIconAddElement;
-        new(): HTMLRuxIconAddElement;
+        new (): HTMLRuxIconAddElement;
     };
     interface HTMLRuxIconAddAPhotoElement extends Components.RuxIconAddAPhoto, HTMLStencilElement {
     }
     var HTMLRuxIconAddAPhotoElement: {
         prototype: HTMLRuxIconAddAPhotoElement;
-        new(): HTMLRuxIconAddAPhotoElement;
+        new (): HTMLRuxIconAddAPhotoElement;
     };
     interface HTMLRuxIconAddAlarmElement extends Components.RuxIconAddAlarm, HTMLStencilElement {
     }
     var HTMLRuxIconAddAlarmElement: {
         prototype: HTMLRuxIconAddAlarmElement;
-        new(): HTMLRuxIconAddAlarmElement;
+        new (): HTMLRuxIconAddAlarmElement;
     };
     interface HTMLRuxIconAddAlertElement extends Components.RuxIconAddAlert, HTMLStencilElement {
     }
     var HTMLRuxIconAddAlertElement: {
         prototype: HTMLRuxIconAddAlertElement;
-        new(): HTMLRuxIconAddAlertElement;
+        new (): HTMLRuxIconAddAlertElement;
     };
     interface HTMLRuxIconAddBoxElement extends Components.RuxIconAddBox, HTMLStencilElement {
     }
     var HTMLRuxIconAddBoxElement: {
         prototype: HTMLRuxIconAddBoxElement;
-        new(): HTMLRuxIconAddBoxElement;
+        new (): HTMLRuxIconAddBoxElement;
     };
     interface HTMLRuxIconAddCircleElement extends Components.RuxIconAddCircle, HTMLStencilElement {
     }
     var HTMLRuxIconAddCircleElement: {
         prototype: HTMLRuxIconAddCircleElement;
-        new(): HTMLRuxIconAddCircleElement;
+        new (): HTMLRuxIconAddCircleElement;
     };
     interface HTMLRuxIconAddCircleOutlineElement extends Components.RuxIconAddCircleOutline, HTMLStencilElement {
     }
     var HTMLRuxIconAddCircleOutlineElement: {
         prototype: HTMLRuxIconAddCircleOutlineElement;
-        new(): HTMLRuxIconAddCircleOutlineElement;
+        new (): HTMLRuxIconAddCircleOutlineElement;
     };
     interface HTMLRuxIconAddCommentElement extends Components.RuxIconAddComment, HTMLStencilElement {
     }
     var HTMLRuxIconAddCommentElement: {
         prototype: HTMLRuxIconAddCommentElement;
-        new(): HTMLRuxIconAddCommentElement;
+        new (): HTMLRuxIconAddCommentElement;
     };
     interface HTMLRuxIconAddLocationElement extends Components.RuxIconAddLocation, HTMLStencilElement {
     }
     var HTMLRuxIconAddLocationElement: {
         prototype: HTMLRuxIconAddLocationElement;
-        new(): HTMLRuxIconAddLocationElement;
+        new (): HTMLRuxIconAddLocationElement;
     };
     interface HTMLRuxIconAddPhotoAlternateElement extends Components.RuxIconAddPhotoAlternate, HTMLStencilElement {
     }
     var HTMLRuxIconAddPhotoAlternateElement: {
         prototype: HTMLRuxIconAddPhotoAlternateElement;
-        new(): HTMLRuxIconAddPhotoAlternateElement;
+        new (): HTMLRuxIconAddPhotoAlternateElement;
     };
     interface HTMLRuxIconAddShoppingCartElement extends Components.RuxIconAddShoppingCart, HTMLStencilElement {
     }
     var HTMLRuxIconAddShoppingCartElement: {
         prototype: HTMLRuxIconAddShoppingCartElement;
-        new(): HTMLRuxIconAddShoppingCartElement;
+        new (): HTMLRuxIconAddShoppingCartElement;
     };
     interface HTMLRuxIconAddToHomeScreenElement extends Components.RuxIconAddToHomeScreen, HTMLStencilElement {
     }
     var HTMLRuxIconAddToHomeScreenElement: {
         prototype: HTMLRuxIconAddToHomeScreenElement;
-        new(): HTMLRuxIconAddToHomeScreenElement;
+        new (): HTMLRuxIconAddToHomeScreenElement;
     };
     interface HTMLRuxIconAddToPhotosElement extends Components.RuxIconAddToPhotos, HTMLStencilElement {
     }
     var HTMLRuxIconAddToPhotosElement: {
         prototype: HTMLRuxIconAddToPhotosElement;
-        new(): HTMLRuxIconAddToPhotosElement;
+        new (): HTMLRuxIconAddToPhotosElement;
     };
     interface HTMLRuxIconAddToQueueElement extends Components.RuxIconAddToQueue, HTMLStencilElement {
     }
     var HTMLRuxIconAddToQueueElement: {
         prototype: HTMLRuxIconAddToQueueElement;
-        new(): HTMLRuxIconAddToQueueElement;
+        new (): HTMLRuxIconAddToQueueElement;
     };
     interface HTMLRuxIconAdjustElement extends Components.RuxIconAdjust, HTMLStencilElement {
     }
     var HTMLRuxIconAdjustElement: {
         prototype: HTMLRuxIconAdjustElement;
-        new(): HTMLRuxIconAdjustElement;
+        new (): HTMLRuxIconAdjustElement;
     };
     interface HTMLRuxIconAirlineSeatFlatElement extends Components.RuxIconAirlineSeatFlat, HTMLStencilElement {
     }
     var HTMLRuxIconAirlineSeatFlatElement: {
         prototype: HTMLRuxIconAirlineSeatFlatElement;
-        new(): HTMLRuxIconAirlineSeatFlatElement;
+        new (): HTMLRuxIconAirlineSeatFlatElement;
     };
     interface HTMLRuxIconAirlineSeatFlatAngledElement extends Components.RuxIconAirlineSeatFlatAngled, HTMLStencilElement {
     }
     var HTMLRuxIconAirlineSeatFlatAngledElement: {
         prototype: HTMLRuxIconAirlineSeatFlatAngledElement;
-        new(): HTMLRuxIconAirlineSeatFlatAngledElement;
+        new (): HTMLRuxIconAirlineSeatFlatAngledElement;
     };
     interface HTMLRuxIconAirlineSeatIndividualSuiteElement extends Components.RuxIconAirlineSeatIndividualSuite, HTMLStencilElement {
     }
     var HTMLRuxIconAirlineSeatIndividualSuiteElement: {
         prototype: HTMLRuxIconAirlineSeatIndividualSuiteElement;
-        new(): HTMLRuxIconAirlineSeatIndividualSuiteElement;
+        new (): HTMLRuxIconAirlineSeatIndividualSuiteElement;
     };
     interface HTMLRuxIconAirlineSeatLegroomExtraElement extends Components.RuxIconAirlineSeatLegroomExtra, HTMLStencilElement {
     }
     var HTMLRuxIconAirlineSeatLegroomExtraElement: {
         prototype: HTMLRuxIconAirlineSeatLegroomExtraElement;
-        new(): HTMLRuxIconAirlineSeatLegroomExtraElement;
+        new (): HTMLRuxIconAirlineSeatLegroomExtraElement;
     };
     interface HTMLRuxIconAirlineSeatLegroomNormalElement extends Components.RuxIconAirlineSeatLegroomNormal, HTMLStencilElement {
     }
     var HTMLRuxIconAirlineSeatLegroomNormalElement: {
         prototype: HTMLRuxIconAirlineSeatLegroomNormalElement;
-        new(): HTMLRuxIconAirlineSeatLegroomNormalElement;
+        new (): HTMLRuxIconAirlineSeatLegroomNormalElement;
     };
     interface HTMLRuxIconAirlineSeatLegroomReducedElement extends Components.RuxIconAirlineSeatLegroomReduced, HTMLStencilElement {
     }
     var HTMLRuxIconAirlineSeatLegroomReducedElement: {
         prototype: HTMLRuxIconAirlineSeatLegroomReducedElement;
-        new(): HTMLRuxIconAirlineSeatLegroomReducedElement;
+        new (): HTMLRuxIconAirlineSeatLegroomReducedElement;
     };
     interface HTMLRuxIconAirlineSeatReclineExtraElement extends Components.RuxIconAirlineSeatReclineExtra, HTMLStencilElement {
     }
     var HTMLRuxIconAirlineSeatReclineExtraElement: {
         prototype: HTMLRuxIconAirlineSeatReclineExtraElement;
-        new(): HTMLRuxIconAirlineSeatReclineExtraElement;
+        new (): HTMLRuxIconAirlineSeatReclineExtraElement;
     };
     interface HTMLRuxIconAirlineSeatReclineNormalElement extends Components.RuxIconAirlineSeatReclineNormal, HTMLStencilElement {
     }
     var HTMLRuxIconAirlineSeatReclineNormalElement: {
         prototype: HTMLRuxIconAirlineSeatReclineNormalElement;
-        new(): HTMLRuxIconAirlineSeatReclineNormalElement;
+        new (): HTMLRuxIconAirlineSeatReclineNormalElement;
     };
     interface HTMLRuxIconAirplanemodeActiveElement extends Components.RuxIconAirplanemodeActive, HTMLStencilElement {
     }
     var HTMLRuxIconAirplanemodeActiveElement: {
         prototype: HTMLRuxIconAirplanemodeActiveElement;
-        new(): HTMLRuxIconAirplanemodeActiveElement;
+        new (): HTMLRuxIconAirplanemodeActiveElement;
     };
     interface HTMLRuxIconAirplanemodeInactiveElement extends Components.RuxIconAirplanemodeInactive, HTMLStencilElement {
     }
     var HTMLRuxIconAirplanemodeInactiveElement: {
         prototype: HTMLRuxIconAirplanemodeInactiveElement;
-        new(): HTMLRuxIconAirplanemodeInactiveElement;
+        new (): HTMLRuxIconAirplanemodeInactiveElement;
     };
     interface HTMLRuxIconAirplayElement extends Components.RuxIconAirplay, HTMLStencilElement {
     }
     var HTMLRuxIconAirplayElement: {
         prototype: HTMLRuxIconAirplayElement;
-        new(): HTMLRuxIconAirplayElement;
+        new (): HTMLRuxIconAirplayElement;
     };
     interface HTMLRuxIconAirportShuttleElement extends Components.RuxIconAirportShuttle, HTMLStencilElement {
     }
     var HTMLRuxIconAirportShuttleElement: {
         prototype: HTMLRuxIconAirportShuttleElement;
-        new(): HTMLRuxIconAirportShuttleElement;
+        new (): HTMLRuxIconAirportShuttleElement;
     };
     interface HTMLRuxIconAlarmElement extends Components.RuxIconAlarm, HTMLStencilElement {
     }
     var HTMLRuxIconAlarmElement: {
         prototype: HTMLRuxIconAlarmElement;
-        new(): HTMLRuxIconAlarmElement;
+        new (): HTMLRuxIconAlarmElement;
     };
     interface HTMLRuxIconAlarmAddElement extends Components.RuxIconAlarmAdd, HTMLStencilElement {
     }
     var HTMLRuxIconAlarmAddElement: {
         prototype: HTMLRuxIconAlarmAddElement;
-        new(): HTMLRuxIconAlarmAddElement;
+        new (): HTMLRuxIconAlarmAddElement;
     };
     interface HTMLRuxIconAlarmOffElement extends Components.RuxIconAlarmOff, HTMLStencilElement {
     }
     var HTMLRuxIconAlarmOffElement: {
         prototype: HTMLRuxIconAlarmOffElement;
-        new(): HTMLRuxIconAlarmOffElement;
+        new (): HTMLRuxIconAlarmOffElement;
     };
     interface HTMLRuxIconAlarmOnElement extends Components.RuxIconAlarmOn, HTMLStencilElement {
     }
     var HTMLRuxIconAlarmOnElement: {
         prototype: HTMLRuxIconAlarmOnElement;
-        new(): HTMLRuxIconAlarmOnElement;
+        new (): HTMLRuxIconAlarmOnElement;
     };
     interface HTMLRuxIconAlbumElement extends Components.RuxIconAlbum, HTMLStencilElement {
     }
     var HTMLRuxIconAlbumElement: {
         prototype: HTMLRuxIconAlbumElement;
-        new(): HTMLRuxIconAlbumElement;
+        new (): HTMLRuxIconAlbumElement;
     };
     interface HTMLRuxIconAllInboxElement extends Components.RuxIconAllInbox, HTMLStencilElement {
     }
     var HTMLRuxIconAllInboxElement: {
         prototype: HTMLRuxIconAllInboxElement;
-        new(): HTMLRuxIconAllInboxElement;
+        new (): HTMLRuxIconAllInboxElement;
     };
     interface HTMLRuxIconAllInclusiveElement extends Components.RuxIconAllInclusive, HTMLStencilElement {
     }
     var HTMLRuxIconAllInclusiveElement: {
         prototype: HTMLRuxIconAllInclusiveElement;
-        new(): HTMLRuxIconAllInclusiveElement;
+        new (): HTMLRuxIconAllInclusiveElement;
     };
     interface HTMLRuxIconAllOutElement extends Components.RuxIconAllOut, HTMLStencilElement {
     }
     var HTMLRuxIconAllOutElement: {
         prototype: HTMLRuxIconAllOutElement;
-        new(): HTMLRuxIconAllOutElement;
+        new (): HTMLRuxIconAllOutElement;
     };
     interface HTMLRuxIconAlternateEmailElement extends Components.RuxIconAlternateEmail, HTMLStencilElement {
     }
     var HTMLRuxIconAlternateEmailElement: {
         prototype: HTMLRuxIconAlternateEmailElement;
-        new(): HTMLRuxIconAlternateEmailElement;
+        new (): HTMLRuxIconAlternateEmailElement;
     };
     interface HTMLRuxIconAltitudeElement extends Components.RuxIconAltitude, HTMLStencilElement {
     }
     var HTMLRuxIconAltitudeElement: {
         prototype: HTMLRuxIconAltitudeElement;
-        new(): HTMLRuxIconAltitudeElement;
+        new (): HTMLRuxIconAltitudeElement;
     };
     interface HTMLRuxIconAndroidElement extends Components.RuxIconAndroid, HTMLStencilElement {
     }
     var HTMLRuxIconAndroidElement: {
         prototype: HTMLRuxIconAndroidElement;
-        new(): HTMLRuxIconAndroidElement;
+        new (): HTMLRuxIconAndroidElement;
     };
     interface HTMLRuxIconAnnouncementElement extends Components.RuxIconAnnouncement, HTMLStencilElement {
     }
     var HTMLRuxIconAnnouncementElement: {
         prototype: HTMLRuxIconAnnouncementElement;
-        new(): HTMLRuxIconAnnouncementElement;
+        new (): HTMLRuxIconAnnouncementElement;
     };
     interface HTMLRuxIconAntennaElement extends Components.RuxIconAntenna, HTMLStencilElement {
     }
     var HTMLRuxIconAntennaElement: {
         prototype: HTMLRuxIconAntennaElement;
-        new(): HTMLRuxIconAntennaElement;
+        new (): HTMLRuxIconAntennaElement;
     };
     interface HTMLRuxIconAntennaOffElement extends Components.RuxIconAntennaOff, HTMLStencilElement {
     }
     var HTMLRuxIconAntennaOffElement: {
         prototype: HTMLRuxIconAntennaOffElement;
-        new(): HTMLRuxIconAntennaOffElement;
+        new (): HTMLRuxIconAntennaOffElement;
     };
     interface HTMLRuxIconAntennaReceiveElement extends Components.RuxIconAntennaReceive, HTMLStencilElement {
     }
     var HTMLRuxIconAntennaReceiveElement: {
         prototype: HTMLRuxIconAntennaReceiveElement;
-        new(): HTMLRuxIconAntennaReceiveElement;
+        new (): HTMLRuxIconAntennaReceiveElement;
     };
     interface HTMLRuxIconAntennaTransmitElement extends Components.RuxIconAntennaTransmit, HTMLStencilElement {
     }
     var HTMLRuxIconAntennaTransmitElement: {
         prototype: HTMLRuxIconAntennaTransmitElement;
-        new(): HTMLRuxIconAntennaTransmitElement;
+        new (): HTMLRuxIconAntennaTransmitElement;
     };
     interface HTMLRuxIconAppsElement extends Components.RuxIconApps, HTMLStencilElement {
     }
     var HTMLRuxIconAppsElement: {
         prototype: HTMLRuxIconAppsElement;
-        new(): HTMLRuxIconAppsElement;
+        new (): HTMLRuxIconAppsElement;
     };
     interface HTMLRuxIconArchiveElement extends Components.RuxIconArchive, HTMLStencilElement {
     }
     var HTMLRuxIconArchiveElement: {
         prototype: HTMLRuxIconArchiveElement;
-        new(): HTMLRuxIconArchiveElement;
+        new (): HTMLRuxIconArchiveElement;
     };
     interface HTMLRuxIconArrowBackElement extends Components.RuxIconArrowBack, HTMLStencilElement {
     }
     var HTMLRuxIconArrowBackElement: {
         prototype: HTMLRuxIconArrowBackElement;
-        new(): HTMLRuxIconArrowBackElement;
+        new (): HTMLRuxIconArrowBackElement;
     };
     interface HTMLRuxIconArrowBackIosElement extends Components.RuxIconArrowBackIos, HTMLStencilElement {
     }
     var HTMLRuxIconArrowBackIosElement: {
         prototype: HTMLRuxIconArrowBackIosElement;
-        new(): HTMLRuxIconArrowBackIosElement;
+        new (): HTMLRuxIconArrowBackIosElement;
     };
     interface HTMLRuxIconArrowDownwardElement extends Components.RuxIconArrowDownward, HTMLStencilElement {
     }
     var HTMLRuxIconArrowDownwardElement: {
         prototype: HTMLRuxIconArrowDownwardElement;
-        new(): HTMLRuxIconArrowDownwardElement;
+        new (): HTMLRuxIconArrowDownwardElement;
     };
     interface HTMLRuxIconArrowDropDownElement extends Components.RuxIconArrowDropDown, HTMLStencilElement {
     }
     var HTMLRuxIconArrowDropDownElement: {
         prototype: HTMLRuxIconArrowDropDownElement;
-        new(): HTMLRuxIconArrowDropDownElement;
+        new (): HTMLRuxIconArrowDropDownElement;
     };
     interface HTMLRuxIconArrowDropDownCircleElement extends Components.RuxIconArrowDropDownCircle, HTMLStencilElement {
     }
     var HTMLRuxIconArrowDropDownCircleElement: {
         prototype: HTMLRuxIconArrowDropDownCircleElement;
-        new(): HTMLRuxIconArrowDropDownCircleElement;
+        new (): HTMLRuxIconArrowDropDownCircleElement;
     };
     interface HTMLRuxIconArrowDropUpElement extends Components.RuxIconArrowDropUp, HTMLStencilElement {
     }
     var HTMLRuxIconArrowDropUpElement: {
         prototype: HTMLRuxIconArrowDropUpElement;
-        new(): HTMLRuxIconArrowDropUpElement;
+        new (): HTMLRuxIconArrowDropUpElement;
     };
     interface HTMLRuxIconArrowForwardElement extends Components.RuxIconArrowForward, HTMLStencilElement {
     }
     var HTMLRuxIconArrowForwardElement: {
         prototype: HTMLRuxIconArrowForwardElement;
-        new(): HTMLRuxIconArrowForwardElement;
+        new (): HTMLRuxIconArrowForwardElement;
     };
     interface HTMLRuxIconArrowForwardIosElement extends Components.RuxIconArrowForwardIos, HTMLStencilElement {
     }
     var HTMLRuxIconArrowForwardIosElement: {
         prototype: HTMLRuxIconArrowForwardIosElement;
-        new(): HTMLRuxIconArrowForwardIosElement;
+        new (): HTMLRuxIconArrowForwardIosElement;
     };
     interface HTMLRuxIconArrowLeftElement extends Components.RuxIconArrowLeft, HTMLStencilElement {
     }
     var HTMLRuxIconArrowLeftElement: {
         prototype: HTMLRuxIconArrowLeftElement;
-        new(): HTMLRuxIconArrowLeftElement;
+        new (): HTMLRuxIconArrowLeftElement;
     };
     interface HTMLRuxIconArrowRightElement extends Components.RuxIconArrowRight, HTMLStencilElement {
     }
     var HTMLRuxIconArrowRightElement: {
         prototype: HTMLRuxIconArrowRightElement;
-        new(): HTMLRuxIconArrowRightElement;
+        new (): HTMLRuxIconArrowRightElement;
     };
     interface HTMLRuxIconArrowRightAltElement extends Components.RuxIconArrowRightAlt, HTMLStencilElement {
     }
     var HTMLRuxIconArrowRightAltElement: {
         prototype: HTMLRuxIconArrowRightAltElement;
-        new(): HTMLRuxIconArrowRightAltElement;
+        new (): HTMLRuxIconArrowRightAltElement;
     };
     interface HTMLRuxIconArrowUpwardElement extends Components.RuxIconArrowUpward, HTMLStencilElement {
     }
     var HTMLRuxIconArrowUpwardElement: {
         prototype: HTMLRuxIconArrowUpwardElement;
-        new(): HTMLRuxIconArrowUpwardElement;
+        new (): HTMLRuxIconArrowUpwardElement;
     };
     interface HTMLRuxIconArtTrackElement extends Components.RuxIconArtTrack, HTMLStencilElement {
     }
     var HTMLRuxIconArtTrackElement: {
         prototype: HTMLRuxIconArtTrackElement;
-        new(): HTMLRuxIconArtTrackElement;
+        new (): HTMLRuxIconArtTrackElement;
     };
     interface HTMLRuxIconAspectRatioElement extends Components.RuxIconAspectRatio, HTMLStencilElement {
     }
     var HTMLRuxIconAspectRatioElement: {
         prototype: HTMLRuxIconAspectRatioElement;
-        new(): HTMLRuxIconAspectRatioElement;
+        new (): HTMLRuxIconAspectRatioElement;
     };
     interface HTMLRuxIconAssessmentElement extends Components.RuxIconAssessment, HTMLStencilElement {
     }
     var HTMLRuxIconAssessmentElement: {
         prototype: HTMLRuxIconAssessmentElement;
-        new(): HTMLRuxIconAssessmentElement;
+        new (): HTMLRuxIconAssessmentElement;
     };
     interface HTMLRuxIconAssignmentElement extends Components.RuxIconAssignment, HTMLStencilElement {
     }
     var HTMLRuxIconAssignmentElement: {
         prototype: HTMLRuxIconAssignmentElement;
-        new(): HTMLRuxIconAssignmentElement;
+        new (): HTMLRuxIconAssignmentElement;
     };
     interface HTMLRuxIconAssignmentFindElement extends Components.RuxIconAssignmentFind, HTMLStencilElement {
     }
     var HTMLRuxIconAssignmentFindElement: {
         prototype: HTMLRuxIconAssignmentFindElement;
-        new(): HTMLRuxIconAssignmentFindElement;
+        new (): HTMLRuxIconAssignmentFindElement;
     };
     interface HTMLRuxIconAssignmentLateElement extends Components.RuxIconAssignmentLate, HTMLStencilElement {
     }
     var HTMLRuxIconAssignmentLateElement: {
         prototype: HTMLRuxIconAssignmentLateElement;
-        new(): HTMLRuxIconAssignmentLateElement;
+        new (): HTMLRuxIconAssignmentLateElement;
     };
     interface HTMLRuxIconAssignmentReturnElement extends Components.RuxIconAssignmentReturn, HTMLStencilElement {
     }
     var HTMLRuxIconAssignmentReturnElement: {
         prototype: HTMLRuxIconAssignmentReturnElement;
-        new(): HTMLRuxIconAssignmentReturnElement;
+        new (): HTMLRuxIconAssignmentReturnElement;
     };
     interface HTMLRuxIconAssignmentReturnedElement extends Components.RuxIconAssignmentReturned, HTMLStencilElement {
     }
     var HTMLRuxIconAssignmentReturnedElement: {
         prototype: HTMLRuxIconAssignmentReturnedElement;
-        new(): HTMLRuxIconAssignmentReturnedElement;
+        new (): HTMLRuxIconAssignmentReturnedElement;
     };
     interface HTMLRuxIconAssignmentTurnedInElement extends Components.RuxIconAssignmentTurnedIn, HTMLStencilElement {
     }
     var HTMLRuxIconAssignmentTurnedInElement: {
         prototype: HTMLRuxIconAssignmentTurnedInElement;
-        new(): HTMLRuxIconAssignmentTurnedInElement;
+        new (): HTMLRuxIconAssignmentTurnedInElement;
     };
     interface HTMLRuxIconAssistantElement extends Components.RuxIconAssistant, HTMLStencilElement {
     }
     var HTMLRuxIconAssistantElement: {
         prototype: HTMLRuxIconAssistantElement;
-        new(): HTMLRuxIconAssistantElement;
+        new (): HTMLRuxIconAssistantElement;
     };
     interface HTMLRuxIconAssistantPhotoElement extends Components.RuxIconAssistantPhoto, HTMLStencilElement {
     }
     var HTMLRuxIconAssistantPhotoElement: {
         prototype: HTMLRuxIconAssistantPhotoElement;
-        new(): HTMLRuxIconAssistantPhotoElement;
+        new (): HTMLRuxIconAssistantPhotoElement;
     };
     interface HTMLRuxIconAttachFileElement extends Components.RuxIconAttachFile, HTMLStencilElement {
     }
     var HTMLRuxIconAttachFileElement: {
         prototype: HTMLRuxIconAttachFileElement;
-        new(): HTMLRuxIconAttachFileElement;
+        new (): HTMLRuxIconAttachFileElement;
     };
     interface HTMLRuxIconAttachMoneyElement extends Components.RuxIconAttachMoney, HTMLStencilElement {
     }
     var HTMLRuxIconAttachMoneyElement: {
         prototype: HTMLRuxIconAttachMoneyElement;
-        new(): HTMLRuxIconAttachMoneyElement;
+        new (): HTMLRuxIconAttachMoneyElement;
     };
     interface HTMLRuxIconAttachmentElement extends Components.RuxIconAttachment, HTMLStencilElement {
     }
     var HTMLRuxIconAttachmentElement: {
         prototype: HTMLRuxIconAttachmentElement;
-        new(): HTMLRuxIconAttachmentElement;
+        new (): HTMLRuxIconAttachmentElement;
     };
     interface HTMLRuxIconAudiotrackElement extends Components.RuxIconAudiotrack, HTMLStencilElement {
     }
     var HTMLRuxIconAudiotrackElement: {
         prototype: HTMLRuxIconAudiotrackElement;
-        new(): HTMLRuxIconAudiotrackElement;
+        new (): HTMLRuxIconAudiotrackElement;
     };
     interface HTMLRuxIconAutorenewElement extends Components.RuxIconAutorenew, HTMLStencilElement {
     }
     var HTMLRuxIconAutorenewElement: {
         prototype: HTMLRuxIconAutorenewElement;
-        new(): HTMLRuxIconAutorenewElement;
+        new (): HTMLRuxIconAutorenewElement;
     };
     interface HTMLRuxIconAvTimerElement extends Components.RuxIconAvTimer, HTMLStencilElement {
     }
     var HTMLRuxIconAvTimerElement: {
         prototype: HTMLRuxIconAvTimerElement;
-        new(): HTMLRuxIconAvTimerElement;
+        new (): HTMLRuxIconAvTimerElement;
     };
     interface HTMLRuxIconBackspaceElement extends Components.RuxIconBackspace, HTMLStencilElement {
     }
     var HTMLRuxIconBackspaceElement: {
         prototype: HTMLRuxIconBackspaceElement;
-        new(): HTMLRuxIconBackspaceElement;
+        new (): HTMLRuxIconBackspaceElement;
     };
     interface HTMLRuxIconBackupElement extends Components.RuxIconBackup, HTMLStencilElement {
     }
     var HTMLRuxIconBackupElement: {
         prototype: HTMLRuxIconBackupElement;
-        new(): HTMLRuxIconBackupElement;
+        new (): HTMLRuxIconBackupElement;
     };
     interface HTMLRuxIconBallotElement extends Components.RuxIconBallot, HTMLStencilElement {
     }
     var HTMLRuxIconBallotElement: {
         prototype: HTMLRuxIconBallotElement;
-        new(): HTMLRuxIconBallotElement;
+        new (): HTMLRuxIconBallotElement;
     };
     interface HTMLRuxIconBarChartElement extends Components.RuxIconBarChart, HTMLStencilElement {
     }
     var HTMLRuxIconBarChartElement: {
         prototype: HTMLRuxIconBarChartElement;
-        new(): HTMLRuxIconBarChartElement;
+        new (): HTMLRuxIconBarChartElement;
     };
     interface HTMLRuxIconBattery20Element extends Components.RuxIconBattery20, HTMLStencilElement {
     }
     var HTMLRuxIconBattery20Element: {
         prototype: HTMLRuxIconBattery20Element;
-        new(): HTMLRuxIconBattery20Element;
+        new (): HTMLRuxIconBattery20Element;
     };
     interface HTMLRuxIconBattery30Element extends Components.RuxIconBattery30, HTMLStencilElement {
     }
     var HTMLRuxIconBattery30Element: {
         prototype: HTMLRuxIconBattery30Element;
-        new(): HTMLRuxIconBattery30Element;
+        new (): HTMLRuxIconBattery30Element;
     };
     interface HTMLRuxIconBattery50Element extends Components.RuxIconBattery50, HTMLStencilElement {
     }
     var HTMLRuxIconBattery50Element: {
         prototype: HTMLRuxIconBattery50Element;
-        new(): HTMLRuxIconBattery50Element;
+        new (): HTMLRuxIconBattery50Element;
     };
     interface HTMLRuxIconBattery60Element extends Components.RuxIconBattery60, HTMLStencilElement {
     }
     var HTMLRuxIconBattery60Element: {
         prototype: HTMLRuxIconBattery60Element;
-        new(): HTMLRuxIconBattery60Element;
+        new (): HTMLRuxIconBattery60Element;
     };
     interface HTMLRuxIconBattery80Element extends Components.RuxIconBattery80, HTMLStencilElement {
     }
     var HTMLRuxIconBattery80Element: {
         prototype: HTMLRuxIconBattery80Element;
-        new(): HTMLRuxIconBattery80Element;
+        new (): HTMLRuxIconBattery80Element;
     };
     interface HTMLRuxIconBattery90Element extends Components.RuxIconBattery90, HTMLStencilElement {
     }
     var HTMLRuxIconBattery90Element: {
         prototype: HTMLRuxIconBattery90Element;
-        new(): HTMLRuxIconBattery90Element;
+        new (): HTMLRuxIconBattery90Element;
     };
     interface HTMLRuxIconBatteryAlertElement extends Components.RuxIconBatteryAlert, HTMLStencilElement {
     }
     var HTMLRuxIconBatteryAlertElement: {
         prototype: HTMLRuxIconBatteryAlertElement;
-        new(): HTMLRuxIconBatteryAlertElement;
+        new (): HTMLRuxIconBatteryAlertElement;
     };
     interface HTMLRuxIconBatteryCharging20Element extends Components.RuxIconBatteryCharging20, HTMLStencilElement {
     }
     var HTMLRuxIconBatteryCharging20Element: {
         prototype: HTMLRuxIconBatteryCharging20Element;
-        new(): HTMLRuxIconBatteryCharging20Element;
+        new (): HTMLRuxIconBatteryCharging20Element;
     };
     interface HTMLRuxIconBatteryCharging30Element extends Components.RuxIconBatteryCharging30, HTMLStencilElement {
     }
     var HTMLRuxIconBatteryCharging30Element: {
         prototype: HTMLRuxIconBatteryCharging30Element;
-        new(): HTMLRuxIconBatteryCharging30Element;
+        new (): HTMLRuxIconBatteryCharging30Element;
     };
     interface HTMLRuxIconBatteryCharging50Element extends Components.RuxIconBatteryCharging50, HTMLStencilElement {
     }
     var HTMLRuxIconBatteryCharging50Element: {
         prototype: HTMLRuxIconBatteryCharging50Element;
-        new(): HTMLRuxIconBatteryCharging50Element;
+        new (): HTMLRuxIconBatteryCharging50Element;
     };
     interface HTMLRuxIconBatteryCharging60Element extends Components.RuxIconBatteryCharging60, HTMLStencilElement {
     }
     var HTMLRuxIconBatteryCharging60Element: {
         prototype: HTMLRuxIconBatteryCharging60Element;
-        new(): HTMLRuxIconBatteryCharging60Element;
+        new (): HTMLRuxIconBatteryCharging60Element;
     };
     interface HTMLRuxIconBatteryCharging80Element extends Components.RuxIconBatteryCharging80, HTMLStencilElement {
     }
     var HTMLRuxIconBatteryCharging80Element: {
         prototype: HTMLRuxIconBatteryCharging80Element;
-        new(): HTMLRuxIconBatteryCharging80Element;
+        new (): HTMLRuxIconBatteryCharging80Element;
     };
     interface HTMLRuxIconBatteryCharging90Element extends Components.RuxIconBatteryCharging90, HTMLStencilElement {
     }
     var HTMLRuxIconBatteryCharging90Element: {
         prototype: HTMLRuxIconBatteryCharging90Element;
-        new(): HTMLRuxIconBatteryCharging90Element;
+        new (): HTMLRuxIconBatteryCharging90Element;
     };
     interface HTMLRuxIconBatteryChargingFullElement extends Components.RuxIconBatteryChargingFull, HTMLStencilElement {
     }
     var HTMLRuxIconBatteryChargingFullElement: {
         prototype: HTMLRuxIconBatteryChargingFullElement;
-        new(): HTMLRuxIconBatteryChargingFullElement;
+        new (): HTMLRuxIconBatteryChargingFullElement;
     };
     interface HTMLRuxIconBatteryFullElement extends Components.RuxIconBatteryFull, HTMLStencilElement {
     }
     var HTMLRuxIconBatteryFullElement: {
         prototype: HTMLRuxIconBatteryFullElement;
-        new(): HTMLRuxIconBatteryFullElement;
+        new (): HTMLRuxIconBatteryFullElement;
     };
     interface HTMLRuxIconBatteryStdElement extends Components.RuxIconBatteryStd, HTMLStencilElement {
     }
     var HTMLRuxIconBatteryStdElement: {
         prototype: HTMLRuxIconBatteryStdElement;
-        new(): HTMLRuxIconBatteryStdElement;
+        new (): HTMLRuxIconBatteryStdElement;
     };
     interface HTMLRuxIconBatteryUnknownElement extends Components.RuxIconBatteryUnknown, HTMLStencilElement {
     }
     var HTMLRuxIconBatteryUnknownElement: {
         prototype: HTMLRuxIconBatteryUnknownElement;
-        new(): HTMLRuxIconBatteryUnknownElement;
+        new (): HTMLRuxIconBatteryUnknownElement;
     };
     interface HTMLRuxIconBeachAccessElement extends Components.RuxIconBeachAccess, HTMLStencilElement {
     }
     var HTMLRuxIconBeachAccessElement: {
         prototype: HTMLRuxIconBeachAccessElement;
-        new(): HTMLRuxIconBeachAccessElement;
+        new (): HTMLRuxIconBeachAccessElement;
     };
     interface HTMLRuxIconBeenhereElement extends Components.RuxIconBeenhere, HTMLStencilElement {
     }
     var HTMLRuxIconBeenhereElement: {
         prototype: HTMLRuxIconBeenhereElement;
-        new(): HTMLRuxIconBeenhereElement;
+        new (): HTMLRuxIconBeenhereElement;
     };
     interface HTMLRuxIconBlockElement extends Components.RuxIconBlock, HTMLStencilElement {
     }
     var HTMLRuxIconBlockElement: {
         prototype: HTMLRuxIconBlockElement;
-        new(): HTMLRuxIconBlockElement;
+        new (): HTMLRuxIconBlockElement;
     };
     interface HTMLRuxIconBluetoothElement extends Components.RuxIconBluetooth, HTMLStencilElement {
     }
     var HTMLRuxIconBluetoothElement: {
         prototype: HTMLRuxIconBluetoothElement;
-        new(): HTMLRuxIconBluetoothElement;
+        new (): HTMLRuxIconBluetoothElement;
     };
     interface HTMLRuxIconBluetoothAudioElement extends Components.RuxIconBluetoothAudio, HTMLStencilElement {
     }
     var HTMLRuxIconBluetoothAudioElement: {
         prototype: HTMLRuxIconBluetoothAudioElement;
-        new(): HTMLRuxIconBluetoothAudioElement;
+        new (): HTMLRuxIconBluetoothAudioElement;
     };
     interface HTMLRuxIconBluetoothConnectedElement extends Components.RuxIconBluetoothConnected, HTMLStencilElement {
     }
     var HTMLRuxIconBluetoothConnectedElement: {
         prototype: HTMLRuxIconBluetoothConnectedElement;
-        new(): HTMLRuxIconBluetoothConnectedElement;
+        new (): HTMLRuxIconBluetoothConnectedElement;
     };
     interface HTMLRuxIconBluetoothDisabledElement extends Components.RuxIconBluetoothDisabled, HTMLStencilElement {
     }
     var HTMLRuxIconBluetoothDisabledElement: {
         prototype: HTMLRuxIconBluetoothDisabledElement;
-        new(): HTMLRuxIconBluetoothDisabledElement;
+        new (): HTMLRuxIconBluetoothDisabledElement;
     };
     interface HTMLRuxIconBluetoothSearchingElement extends Components.RuxIconBluetoothSearching, HTMLStencilElement {
     }
     var HTMLRuxIconBluetoothSearchingElement: {
         prototype: HTMLRuxIconBluetoothSearchingElement;
-        new(): HTMLRuxIconBluetoothSearchingElement;
+        new (): HTMLRuxIconBluetoothSearchingElement;
     };
     interface HTMLRuxIconBlurCircularElement extends Components.RuxIconBlurCircular, HTMLStencilElement {
     }
     var HTMLRuxIconBlurCircularElement: {
         prototype: HTMLRuxIconBlurCircularElement;
-        new(): HTMLRuxIconBlurCircularElement;
+        new (): HTMLRuxIconBlurCircularElement;
     };
     interface HTMLRuxIconBlurLinearElement extends Components.RuxIconBlurLinear, HTMLStencilElement {
     }
     var HTMLRuxIconBlurLinearElement: {
         prototype: HTMLRuxIconBlurLinearElement;
-        new(): HTMLRuxIconBlurLinearElement;
+        new (): HTMLRuxIconBlurLinearElement;
     };
     interface HTMLRuxIconBlurOffElement extends Components.RuxIconBlurOff, HTMLStencilElement {
     }
     var HTMLRuxIconBlurOffElement: {
         prototype: HTMLRuxIconBlurOffElement;
-        new(): HTMLRuxIconBlurOffElement;
+        new (): HTMLRuxIconBlurOffElement;
     };
     interface HTMLRuxIconBlurOnElement extends Components.RuxIconBlurOn, HTMLStencilElement {
     }
     var HTMLRuxIconBlurOnElement: {
         prototype: HTMLRuxIconBlurOnElement;
-        new(): HTMLRuxIconBlurOnElement;
+        new (): HTMLRuxIconBlurOnElement;
     };
     interface HTMLRuxIconBookElement extends Components.RuxIconBook, HTMLStencilElement {
     }
     var HTMLRuxIconBookElement: {
         prototype: HTMLRuxIconBookElement;
-        new(): HTMLRuxIconBookElement;
+        new (): HTMLRuxIconBookElement;
     };
     interface HTMLRuxIconBookmarkElement extends Components.RuxIconBookmark, HTMLStencilElement {
     }
     var HTMLRuxIconBookmarkElement: {
         prototype: HTMLRuxIconBookmarkElement;
-        new(): HTMLRuxIconBookmarkElement;
+        new (): HTMLRuxIconBookmarkElement;
     };
     interface HTMLRuxIconBookmarkBorderElement extends Components.RuxIconBookmarkBorder, HTMLStencilElement {
     }
     var HTMLRuxIconBookmarkBorderElement: {
         prototype: HTMLRuxIconBookmarkBorderElement;
-        new(): HTMLRuxIconBookmarkBorderElement;
+        new (): HTMLRuxIconBookmarkBorderElement;
     };
     interface HTMLRuxIconBookmarksElement extends Components.RuxIconBookmarks, HTMLStencilElement {
     }
     var HTMLRuxIconBookmarksElement: {
         prototype: HTMLRuxIconBookmarksElement;
-        new(): HTMLRuxIconBookmarksElement;
+        new (): HTMLRuxIconBookmarksElement;
     };
     interface HTMLRuxIconBorderAllElement extends Components.RuxIconBorderAll, HTMLStencilElement {
     }
     var HTMLRuxIconBorderAllElement: {
         prototype: HTMLRuxIconBorderAllElement;
-        new(): HTMLRuxIconBorderAllElement;
+        new (): HTMLRuxIconBorderAllElement;
     };
     interface HTMLRuxIconBorderBottomElement extends Components.RuxIconBorderBottom, HTMLStencilElement {
     }
     var HTMLRuxIconBorderBottomElement: {
         prototype: HTMLRuxIconBorderBottomElement;
-        new(): HTMLRuxIconBorderBottomElement;
+        new (): HTMLRuxIconBorderBottomElement;
     };
     interface HTMLRuxIconBorderClearElement extends Components.RuxIconBorderClear, HTMLStencilElement {
     }
     var HTMLRuxIconBorderClearElement: {
         prototype: HTMLRuxIconBorderClearElement;
-        new(): HTMLRuxIconBorderClearElement;
+        new (): HTMLRuxIconBorderClearElement;
     };
     interface HTMLRuxIconBorderColorElement extends Components.RuxIconBorderColor, HTMLStencilElement {
     }
     var HTMLRuxIconBorderColorElement: {
         prototype: HTMLRuxIconBorderColorElement;
-        new(): HTMLRuxIconBorderColorElement;
+        new (): HTMLRuxIconBorderColorElement;
     };
     interface HTMLRuxIconBorderHorizontalElement extends Components.RuxIconBorderHorizontal, HTMLStencilElement {
     }
     var HTMLRuxIconBorderHorizontalElement: {
         prototype: HTMLRuxIconBorderHorizontalElement;
-        new(): HTMLRuxIconBorderHorizontalElement;
+        new (): HTMLRuxIconBorderHorizontalElement;
     };
     interface HTMLRuxIconBorderInnerElement extends Components.RuxIconBorderInner, HTMLStencilElement {
     }
     var HTMLRuxIconBorderInnerElement: {
         prototype: HTMLRuxIconBorderInnerElement;
-        new(): HTMLRuxIconBorderInnerElement;
+        new (): HTMLRuxIconBorderInnerElement;
     };
     interface HTMLRuxIconBorderLeftElement extends Components.RuxIconBorderLeft, HTMLStencilElement {
     }
     var HTMLRuxIconBorderLeftElement: {
         prototype: HTMLRuxIconBorderLeftElement;
-        new(): HTMLRuxIconBorderLeftElement;
+        new (): HTMLRuxIconBorderLeftElement;
     };
     interface HTMLRuxIconBorderOuterElement extends Components.RuxIconBorderOuter, HTMLStencilElement {
     }
     var HTMLRuxIconBorderOuterElement: {
         prototype: HTMLRuxIconBorderOuterElement;
-        new(): HTMLRuxIconBorderOuterElement;
+        new (): HTMLRuxIconBorderOuterElement;
     };
     interface HTMLRuxIconBorderRightElement extends Components.RuxIconBorderRight, HTMLStencilElement {
     }
     var HTMLRuxIconBorderRightElement: {
         prototype: HTMLRuxIconBorderRightElement;
-        new(): HTMLRuxIconBorderRightElement;
+        new (): HTMLRuxIconBorderRightElement;
     };
     interface HTMLRuxIconBorderStyleElement extends Components.RuxIconBorderStyle, HTMLStencilElement {
     }
     var HTMLRuxIconBorderStyleElement: {
         prototype: HTMLRuxIconBorderStyleElement;
-        new(): HTMLRuxIconBorderStyleElement;
+        new (): HTMLRuxIconBorderStyleElement;
     };
     interface HTMLRuxIconBorderTopElement extends Components.RuxIconBorderTop, HTMLStencilElement {
     }
     var HTMLRuxIconBorderTopElement: {
         prototype: HTMLRuxIconBorderTopElement;
-        new(): HTMLRuxIconBorderTopElement;
+        new (): HTMLRuxIconBorderTopElement;
     };
     interface HTMLRuxIconBorderVerticalElement extends Components.RuxIconBorderVertical, HTMLStencilElement {
     }
     var HTMLRuxIconBorderVerticalElement: {
         prototype: HTMLRuxIconBorderVerticalElement;
-        new(): HTMLRuxIconBorderVerticalElement;
+        new (): HTMLRuxIconBorderVerticalElement;
     };
     interface HTMLRuxIconBrandingWatermarkElement extends Components.RuxIconBrandingWatermark, HTMLStencilElement {
     }
     var HTMLRuxIconBrandingWatermarkElement: {
         prototype: HTMLRuxIconBrandingWatermarkElement;
-        new(): HTMLRuxIconBrandingWatermarkElement;
+        new (): HTMLRuxIconBrandingWatermarkElement;
     };
     interface HTMLRuxIconBrightness1Element extends Components.RuxIconBrightness1, HTMLStencilElement {
     }
     var HTMLRuxIconBrightness1Element: {
         prototype: HTMLRuxIconBrightness1Element;
-        new(): HTMLRuxIconBrightness1Element;
+        new (): HTMLRuxIconBrightness1Element;
     };
     interface HTMLRuxIconBrightness2Element extends Components.RuxIconBrightness2, HTMLStencilElement {
     }
     var HTMLRuxIconBrightness2Element: {
         prototype: HTMLRuxIconBrightness2Element;
-        new(): HTMLRuxIconBrightness2Element;
+        new (): HTMLRuxIconBrightness2Element;
     };
     interface HTMLRuxIconBrightness3Element extends Components.RuxIconBrightness3, HTMLStencilElement {
     }
     var HTMLRuxIconBrightness3Element: {
         prototype: HTMLRuxIconBrightness3Element;
-        new(): HTMLRuxIconBrightness3Element;
+        new (): HTMLRuxIconBrightness3Element;
     };
     interface HTMLRuxIconBrightness4Element extends Components.RuxIconBrightness4, HTMLStencilElement {
     }
     var HTMLRuxIconBrightness4Element: {
         prototype: HTMLRuxIconBrightness4Element;
-        new(): HTMLRuxIconBrightness4Element;
+        new (): HTMLRuxIconBrightness4Element;
     };
     interface HTMLRuxIconBrightness5Element extends Components.RuxIconBrightness5, HTMLStencilElement {
     }
     var HTMLRuxIconBrightness5Element: {
         prototype: HTMLRuxIconBrightness5Element;
-        new(): HTMLRuxIconBrightness5Element;
+        new (): HTMLRuxIconBrightness5Element;
     };
     interface HTMLRuxIconBrightness6Element extends Components.RuxIconBrightness6, HTMLStencilElement {
     }
     var HTMLRuxIconBrightness6Element: {
         prototype: HTMLRuxIconBrightness6Element;
-        new(): HTMLRuxIconBrightness6Element;
+        new (): HTMLRuxIconBrightness6Element;
     };
     interface HTMLRuxIconBrightness7Element extends Components.RuxIconBrightness7, HTMLStencilElement {
     }
     var HTMLRuxIconBrightness7Element: {
         prototype: HTMLRuxIconBrightness7Element;
-        new(): HTMLRuxIconBrightness7Element;
+        new (): HTMLRuxIconBrightness7Element;
     };
     interface HTMLRuxIconBrightnessAutoElement extends Components.RuxIconBrightnessAuto, HTMLStencilElement {
     }
     var HTMLRuxIconBrightnessAutoElement: {
         prototype: HTMLRuxIconBrightnessAutoElement;
-        new(): HTMLRuxIconBrightnessAutoElement;
+        new (): HTMLRuxIconBrightnessAutoElement;
     };
     interface HTMLRuxIconBrightnessHighElement extends Components.RuxIconBrightnessHigh, HTMLStencilElement {
     }
     var HTMLRuxIconBrightnessHighElement: {
         prototype: HTMLRuxIconBrightnessHighElement;
-        new(): HTMLRuxIconBrightnessHighElement;
+        new (): HTMLRuxIconBrightnessHighElement;
     };
     interface HTMLRuxIconBrightnessLowElement extends Components.RuxIconBrightnessLow, HTMLStencilElement {
     }
     var HTMLRuxIconBrightnessLowElement: {
         prototype: HTMLRuxIconBrightnessLowElement;
-        new(): HTMLRuxIconBrightnessLowElement;
+        new (): HTMLRuxIconBrightnessLowElement;
     };
     interface HTMLRuxIconBrightnessMediumElement extends Components.RuxIconBrightnessMedium, HTMLStencilElement {
     }
     var HTMLRuxIconBrightnessMediumElement: {
         prototype: HTMLRuxIconBrightnessMediumElement;
-        new(): HTMLRuxIconBrightnessMediumElement;
+        new (): HTMLRuxIconBrightnessMediumElement;
     };
     interface HTMLRuxIconBrokenImageElement extends Components.RuxIconBrokenImage, HTMLStencilElement {
     }
     var HTMLRuxIconBrokenImageElement: {
         prototype: HTMLRuxIconBrokenImageElement;
-        new(): HTMLRuxIconBrokenImageElement;
+        new (): HTMLRuxIconBrokenImageElement;
     };
     interface HTMLRuxIconBrushElement extends Components.RuxIconBrush, HTMLStencilElement {
     }
     var HTMLRuxIconBrushElement: {
         prototype: HTMLRuxIconBrushElement;
-        new(): HTMLRuxIconBrushElement;
+        new (): HTMLRuxIconBrushElement;
     };
     interface HTMLRuxIconBubbleChartElement extends Components.RuxIconBubbleChart, HTMLStencilElement {
     }
     var HTMLRuxIconBubbleChartElement: {
         prototype: HTMLRuxIconBubbleChartElement;
-        new(): HTMLRuxIconBubbleChartElement;
+        new (): HTMLRuxIconBubbleChartElement;
     };
     interface HTMLRuxIconBugReportElement extends Components.RuxIconBugReport, HTMLStencilElement {
     }
     var HTMLRuxIconBugReportElement: {
         prototype: HTMLRuxIconBugReportElement;
-        new(): HTMLRuxIconBugReportElement;
+        new (): HTMLRuxIconBugReportElement;
     };
     interface HTMLRuxIconBuildElement extends Components.RuxIconBuild, HTMLStencilElement {
     }
     var HTMLRuxIconBuildElement: {
         prototype: HTMLRuxIconBuildElement;
-        new(): HTMLRuxIconBuildElement;
+        new (): HTMLRuxIconBuildElement;
     };
     interface HTMLRuxIconBurstModeElement extends Components.RuxIconBurstMode, HTMLStencilElement {
     }
     var HTMLRuxIconBurstModeElement: {
         prototype: HTMLRuxIconBurstModeElement;
-        new(): HTMLRuxIconBurstModeElement;
+        new (): HTMLRuxIconBurstModeElement;
     };
     interface HTMLRuxIconBusinessElement extends Components.RuxIconBusiness, HTMLStencilElement {
     }
     var HTMLRuxIconBusinessElement: {
         prototype: HTMLRuxIconBusinessElement;
-        new(): HTMLRuxIconBusinessElement;
+        new (): HTMLRuxIconBusinessElement;
     };
     interface HTMLRuxIconBusinessCenterElement extends Components.RuxIconBusinessCenter, HTMLStencilElement {
     }
     var HTMLRuxIconBusinessCenterElement: {
         prototype: HTMLRuxIconBusinessCenterElement;
-        new(): HTMLRuxIconBusinessCenterElement;
+        new (): HTMLRuxIconBusinessCenterElement;
     };
     interface HTMLRuxIconCachedElement extends Components.RuxIconCached, HTMLStencilElement {
     }
     var HTMLRuxIconCachedElement: {
         prototype: HTMLRuxIconCachedElement;
-        new(): HTMLRuxIconCachedElement;
+        new (): HTMLRuxIconCachedElement;
     };
     interface HTMLRuxIconCakeElement extends Components.RuxIconCake, HTMLStencilElement {
     }
     var HTMLRuxIconCakeElement: {
         prototype: HTMLRuxIconCakeElement;
-        new(): HTMLRuxIconCakeElement;
+        new (): HTMLRuxIconCakeElement;
     };
     interface HTMLRuxIconCalendarTodayElement extends Components.RuxIconCalendarToday, HTMLStencilElement {
     }
     var HTMLRuxIconCalendarTodayElement: {
         prototype: HTMLRuxIconCalendarTodayElement;
-        new(): HTMLRuxIconCalendarTodayElement;
+        new (): HTMLRuxIconCalendarTodayElement;
     };
     interface HTMLRuxIconCalendarViewDayElement extends Components.RuxIconCalendarViewDay, HTMLStencilElement {
     }
     var HTMLRuxIconCalendarViewDayElement: {
         prototype: HTMLRuxIconCalendarViewDayElement;
-        new(): HTMLRuxIconCalendarViewDayElement;
+        new (): HTMLRuxIconCalendarViewDayElement;
     };
     interface HTMLRuxIconCallElement extends Components.RuxIconCall, HTMLStencilElement {
     }
     var HTMLRuxIconCallElement: {
         prototype: HTMLRuxIconCallElement;
-        new(): HTMLRuxIconCallElement;
+        new (): HTMLRuxIconCallElement;
     };
     interface HTMLRuxIconCallEndElement extends Components.RuxIconCallEnd, HTMLStencilElement {
     }
     var HTMLRuxIconCallEndElement: {
         prototype: HTMLRuxIconCallEndElement;
-        new(): HTMLRuxIconCallEndElement;
+        new (): HTMLRuxIconCallEndElement;
     };
     interface HTMLRuxIconCallMadeElement extends Components.RuxIconCallMade, HTMLStencilElement {
     }
     var HTMLRuxIconCallMadeElement: {
         prototype: HTMLRuxIconCallMadeElement;
-        new(): HTMLRuxIconCallMadeElement;
+        new (): HTMLRuxIconCallMadeElement;
     };
     interface HTMLRuxIconCallMergeElement extends Components.RuxIconCallMerge, HTMLStencilElement {
     }
     var HTMLRuxIconCallMergeElement: {
         prototype: HTMLRuxIconCallMergeElement;
-        new(): HTMLRuxIconCallMergeElement;
+        new (): HTMLRuxIconCallMergeElement;
     };
     interface HTMLRuxIconCallMissedElement extends Components.RuxIconCallMissed, HTMLStencilElement {
     }
     var HTMLRuxIconCallMissedElement: {
         prototype: HTMLRuxIconCallMissedElement;
-        new(): HTMLRuxIconCallMissedElement;
+        new (): HTMLRuxIconCallMissedElement;
     };
     interface HTMLRuxIconCallMissedOutgoingElement extends Components.RuxIconCallMissedOutgoing, HTMLStencilElement {
     }
     var HTMLRuxIconCallMissedOutgoingElement: {
         prototype: HTMLRuxIconCallMissedOutgoingElement;
-        new(): HTMLRuxIconCallMissedOutgoingElement;
+        new (): HTMLRuxIconCallMissedOutgoingElement;
     };
     interface HTMLRuxIconCallReceivedElement extends Components.RuxIconCallReceived, HTMLStencilElement {
     }
     var HTMLRuxIconCallReceivedElement: {
         prototype: HTMLRuxIconCallReceivedElement;
-        new(): HTMLRuxIconCallReceivedElement;
+        new (): HTMLRuxIconCallReceivedElement;
     };
     interface HTMLRuxIconCallSplitElement extends Components.RuxIconCallSplit, HTMLStencilElement {
     }
     var HTMLRuxIconCallSplitElement: {
         prototype: HTMLRuxIconCallSplitElement;
-        new(): HTMLRuxIconCallSplitElement;
+        new (): HTMLRuxIconCallSplitElement;
     };
     interface HTMLRuxIconCallToActionElement extends Components.RuxIconCallToAction, HTMLStencilElement {
     }
     var HTMLRuxIconCallToActionElement: {
         prototype: HTMLRuxIconCallToActionElement;
-        new(): HTMLRuxIconCallToActionElement;
+        new (): HTMLRuxIconCallToActionElement;
     };
     interface HTMLRuxIconCameraElement extends Components.RuxIconCamera, HTMLStencilElement {
     }
     var HTMLRuxIconCameraElement: {
         prototype: HTMLRuxIconCameraElement;
-        new(): HTMLRuxIconCameraElement;
+        new (): HTMLRuxIconCameraElement;
     };
     interface HTMLRuxIconCameraAltElement extends Components.RuxIconCameraAlt, HTMLStencilElement {
     }
     var HTMLRuxIconCameraAltElement: {
         prototype: HTMLRuxIconCameraAltElement;
-        new(): HTMLRuxIconCameraAltElement;
+        new (): HTMLRuxIconCameraAltElement;
     };
     interface HTMLRuxIconCameraEnhanceElement extends Components.RuxIconCameraEnhance, HTMLStencilElement {
     }
     var HTMLRuxIconCameraEnhanceElement: {
         prototype: HTMLRuxIconCameraEnhanceElement;
-        new(): HTMLRuxIconCameraEnhanceElement;
+        new (): HTMLRuxIconCameraEnhanceElement;
     };
     interface HTMLRuxIconCameraFrontElement extends Components.RuxIconCameraFront, HTMLStencilElement {
     }
     var HTMLRuxIconCameraFrontElement: {
         prototype: HTMLRuxIconCameraFrontElement;
-        new(): HTMLRuxIconCameraFrontElement;
+        new (): HTMLRuxIconCameraFrontElement;
     };
     interface HTMLRuxIconCameraRearElement extends Components.RuxIconCameraRear, HTMLStencilElement {
     }
     var HTMLRuxIconCameraRearElement: {
         prototype: HTMLRuxIconCameraRearElement;
-        new(): HTMLRuxIconCameraRearElement;
+        new (): HTMLRuxIconCameraRearElement;
     };
     interface HTMLRuxIconCameraRollElement extends Components.RuxIconCameraRoll, HTMLStencilElement {
     }
     var HTMLRuxIconCameraRollElement: {
         prototype: HTMLRuxIconCameraRollElement;
-        new(): HTMLRuxIconCameraRollElement;
+        new (): HTMLRuxIconCameraRollElement;
     };
     interface HTMLRuxIconCancelElement extends Components.RuxIconCancel, HTMLStencilElement {
     }
     var HTMLRuxIconCancelElement: {
         prototype: HTMLRuxIconCancelElement;
-        new(): HTMLRuxIconCancelElement;
+        new (): HTMLRuxIconCancelElement;
     };
     interface HTMLRuxIconCancelPresentationElement extends Components.RuxIconCancelPresentation, HTMLStencilElement {
     }
     var HTMLRuxIconCancelPresentationElement: {
         prototype: HTMLRuxIconCancelPresentationElement;
-        new(): HTMLRuxIconCancelPresentationElement;
+        new (): HTMLRuxIconCancelPresentationElement;
     };
     interface HTMLRuxIconCardGiftcardElement extends Components.RuxIconCardGiftcard, HTMLStencilElement {
     }
     var HTMLRuxIconCardGiftcardElement: {
         prototype: HTMLRuxIconCardGiftcardElement;
-        new(): HTMLRuxIconCardGiftcardElement;
+        new (): HTMLRuxIconCardGiftcardElement;
     };
     interface HTMLRuxIconCardMembershipElement extends Components.RuxIconCardMembership, HTMLStencilElement {
     }
     var HTMLRuxIconCardMembershipElement: {
         prototype: HTMLRuxIconCardMembershipElement;
-        new(): HTMLRuxIconCardMembershipElement;
+        new (): HTMLRuxIconCardMembershipElement;
     };
     interface HTMLRuxIconCardTravelElement extends Components.RuxIconCardTravel, HTMLStencilElement {
     }
     var HTMLRuxIconCardTravelElement: {
         prototype: HTMLRuxIconCardTravelElement;
-        new(): HTMLRuxIconCardTravelElement;
+        new (): HTMLRuxIconCardTravelElement;
     };
     interface HTMLRuxIconCasinoElement extends Components.RuxIconCasino, HTMLStencilElement {
     }
     var HTMLRuxIconCasinoElement: {
         prototype: HTMLRuxIconCasinoElement;
-        new(): HTMLRuxIconCasinoElement;
+        new (): HTMLRuxIconCasinoElement;
     };
     interface HTMLRuxIconCastElement extends Components.RuxIconCast, HTMLStencilElement {
     }
     var HTMLRuxIconCastElement: {
         prototype: HTMLRuxIconCastElement;
-        new(): HTMLRuxIconCastElement;
+        new (): HTMLRuxIconCastElement;
     };
     interface HTMLRuxIconCastConnectedElement extends Components.RuxIconCastConnected, HTMLStencilElement {
     }
     var HTMLRuxIconCastConnectedElement: {
         prototype: HTMLRuxIconCastConnectedElement;
-        new(): HTMLRuxIconCastConnectedElement;
+        new (): HTMLRuxIconCastConnectedElement;
     };
     interface HTMLRuxIconCastForEducationElement extends Components.RuxIconCastForEducation, HTMLStencilElement {
     }
     var HTMLRuxIconCastForEducationElement: {
         prototype: HTMLRuxIconCastForEducationElement;
-        new(): HTMLRuxIconCastForEducationElement;
+        new (): HTMLRuxIconCastForEducationElement;
     };
     interface HTMLRuxIconCategoryElement extends Components.RuxIconCategory, HTMLStencilElement {
     }
     var HTMLRuxIconCategoryElement: {
         prototype: HTMLRuxIconCategoryElement;
-        new(): HTMLRuxIconCategoryElement;
+        new (): HTMLRuxIconCategoryElement;
     };
     interface HTMLRuxIconCellWifiElement extends Components.RuxIconCellWifi, HTMLStencilElement {
     }
     var HTMLRuxIconCellWifiElement: {
         prototype: HTMLRuxIconCellWifiElement;
-        new(): HTMLRuxIconCellWifiElement;
+        new (): HTMLRuxIconCellWifiElement;
     };
     interface HTMLRuxIconCenterFocusStrongElement extends Components.RuxIconCenterFocusStrong, HTMLStencilElement {
     }
     var HTMLRuxIconCenterFocusStrongElement: {
         prototype: HTMLRuxIconCenterFocusStrongElement;
-        new(): HTMLRuxIconCenterFocusStrongElement;
+        new (): HTMLRuxIconCenterFocusStrongElement;
     };
     interface HTMLRuxIconCenterFocusWeakElement extends Components.RuxIconCenterFocusWeak, HTMLStencilElement {
     }
     var HTMLRuxIconCenterFocusWeakElement: {
         prototype: HTMLRuxIconCenterFocusWeakElement;
-        new(): HTMLRuxIconCenterFocusWeakElement;
+        new (): HTMLRuxIconCenterFocusWeakElement;
     };
     interface HTMLRuxIconChangeHistoryElement extends Components.RuxIconChangeHistory, HTMLStencilElement {
     }
     var HTMLRuxIconChangeHistoryElement: {
         prototype: HTMLRuxIconChangeHistoryElement;
-        new(): HTMLRuxIconChangeHistoryElement;
+        new (): HTMLRuxIconChangeHistoryElement;
     };
     interface HTMLRuxIconChatElement extends Components.RuxIconChat, HTMLStencilElement {
     }
     var HTMLRuxIconChatElement: {
         prototype: HTMLRuxIconChatElement;
-        new(): HTMLRuxIconChatElement;
+        new (): HTMLRuxIconChatElement;
     };
     interface HTMLRuxIconChatBubbleElement extends Components.RuxIconChatBubble, HTMLStencilElement {
     }
     var HTMLRuxIconChatBubbleElement: {
         prototype: HTMLRuxIconChatBubbleElement;
-        new(): HTMLRuxIconChatBubbleElement;
+        new (): HTMLRuxIconChatBubbleElement;
     };
     interface HTMLRuxIconChatBubbleOutlineElement extends Components.RuxIconChatBubbleOutline, HTMLStencilElement {
     }
     var HTMLRuxIconChatBubbleOutlineElement: {
         prototype: HTMLRuxIconChatBubbleOutlineElement;
-        new(): HTMLRuxIconChatBubbleOutlineElement;
+        new (): HTMLRuxIconChatBubbleOutlineElement;
     };
     interface HTMLRuxIconCheckElement extends Components.RuxIconCheck, HTMLStencilElement {
     }
     var HTMLRuxIconCheckElement: {
         prototype: HTMLRuxIconCheckElement;
-        new(): HTMLRuxIconCheckElement;
+        new (): HTMLRuxIconCheckElement;
     };
     interface HTMLRuxIconCheckBoxElement extends Components.RuxIconCheckBox, HTMLStencilElement {
     }
     var HTMLRuxIconCheckBoxElement: {
         prototype: HTMLRuxIconCheckBoxElement;
-        new(): HTMLRuxIconCheckBoxElement;
+        new (): HTMLRuxIconCheckBoxElement;
     };
     interface HTMLRuxIconCheckBoxOutlineBlankElement extends Components.RuxIconCheckBoxOutlineBlank, HTMLStencilElement {
     }
     var HTMLRuxIconCheckBoxOutlineBlankElement: {
         prototype: HTMLRuxIconCheckBoxOutlineBlankElement;
-        new(): HTMLRuxIconCheckBoxOutlineBlankElement;
+        new (): HTMLRuxIconCheckBoxOutlineBlankElement;
     };
     interface HTMLRuxIconCheckCircleElement extends Components.RuxIconCheckCircle, HTMLStencilElement {
     }
     var HTMLRuxIconCheckCircleElement: {
         prototype: HTMLRuxIconCheckCircleElement;
-        new(): HTMLRuxIconCheckCircleElement;
+        new (): HTMLRuxIconCheckCircleElement;
     };
     interface HTMLRuxIconCheckCircleOutlineElement extends Components.RuxIconCheckCircleOutline, HTMLStencilElement {
     }
     var HTMLRuxIconCheckCircleOutlineElement: {
         prototype: HTMLRuxIconCheckCircleOutlineElement;
-        new(): HTMLRuxIconCheckCircleOutlineElement;
+        new (): HTMLRuxIconCheckCircleOutlineElement;
     };
     interface HTMLRuxIconChevronLeftElement extends Components.RuxIconChevronLeft, HTMLStencilElement {
     }
     var HTMLRuxIconChevronLeftElement: {
         prototype: HTMLRuxIconChevronLeftElement;
-        new(): HTMLRuxIconChevronLeftElement;
+        new (): HTMLRuxIconChevronLeftElement;
     };
     interface HTMLRuxIconChevronRightElement extends Components.RuxIconChevronRight, HTMLStencilElement {
     }
     var HTMLRuxIconChevronRightElement: {
         prototype: HTMLRuxIconChevronRightElement;
-        new(): HTMLRuxIconChevronRightElement;
+        new (): HTMLRuxIconChevronRightElement;
     };
     interface HTMLRuxIconChildCareElement extends Components.RuxIconChildCare, HTMLStencilElement {
     }
     var HTMLRuxIconChildCareElement: {
         prototype: HTMLRuxIconChildCareElement;
-        new(): HTMLRuxIconChildCareElement;
+        new (): HTMLRuxIconChildCareElement;
     };
     interface HTMLRuxIconChildFriendlyElement extends Components.RuxIconChildFriendly, HTMLStencilElement {
     }
     var HTMLRuxIconChildFriendlyElement: {
         prototype: HTMLRuxIconChildFriendlyElement;
-        new(): HTMLRuxIconChildFriendlyElement;
+        new (): HTMLRuxIconChildFriendlyElement;
     };
     interface HTMLRuxIconChromeReaderModeElement extends Components.RuxIconChromeReaderMode, HTMLStencilElement {
     }
     var HTMLRuxIconChromeReaderModeElement: {
         prototype: HTMLRuxIconChromeReaderModeElement;
-        new(): HTMLRuxIconChromeReaderModeElement;
+        new (): HTMLRuxIconChromeReaderModeElement;
     };
     interface HTMLRuxIconClassElement extends Components.RuxIconClass, HTMLStencilElement {
     }
     var HTMLRuxIconClassElement: {
         prototype: HTMLRuxIconClassElement;
-        new(): HTMLRuxIconClassElement;
+        new (): HTMLRuxIconClassElement;
     };
     interface HTMLRuxIconClearElement extends Components.RuxIconClear, HTMLStencilElement {
     }
     var HTMLRuxIconClearElement: {
         prototype: HTMLRuxIconClearElement;
-        new(): HTMLRuxIconClearElement;
+        new (): HTMLRuxIconClearElement;
     };
     interface HTMLRuxIconClearAllElement extends Components.RuxIconClearAll, HTMLStencilElement {
     }
     var HTMLRuxIconClearAllElement: {
         prototype: HTMLRuxIconClearAllElement;
-        new(): HTMLRuxIconClearAllElement;
+        new (): HTMLRuxIconClearAllElement;
     };
     interface HTMLRuxIconCloseElement extends Components.RuxIconClose, HTMLStencilElement {
     }
     var HTMLRuxIconCloseElement: {
         prototype: HTMLRuxIconCloseElement;
-        new(): HTMLRuxIconCloseElement;
+        new (): HTMLRuxIconCloseElement;
     };
     interface HTMLRuxIconClosedCaptionElement extends Components.RuxIconClosedCaption, HTMLStencilElement {
     }
     var HTMLRuxIconClosedCaptionElement: {
         prototype: HTMLRuxIconClosedCaptionElement;
-        new(): HTMLRuxIconClosedCaptionElement;
+        new (): HTMLRuxIconClosedCaptionElement;
     };
     interface HTMLRuxIconCloudElement extends Components.RuxIconCloud, HTMLStencilElement {
     }
     var HTMLRuxIconCloudElement: {
         prototype: HTMLRuxIconCloudElement;
-        new(): HTMLRuxIconCloudElement;
+        new (): HTMLRuxIconCloudElement;
     };
     interface HTMLRuxIconCloudCircleElement extends Components.RuxIconCloudCircle, HTMLStencilElement {
     }
     var HTMLRuxIconCloudCircleElement: {
         prototype: HTMLRuxIconCloudCircleElement;
-        new(): HTMLRuxIconCloudCircleElement;
+        new (): HTMLRuxIconCloudCircleElement;
     };
     interface HTMLRuxIconCloudDoneElement extends Components.RuxIconCloudDone, HTMLStencilElement {
     }
     var HTMLRuxIconCloudDoneElement: {
         prototype: HTMLRuxIconCloudDoneElement;
-        new(): HTMLRuxIconCloudDoneElement;
+        new (): HTMLRuxIconCloudDoneElement;
     };
     interface HTMLRuxIconCloudDownloadElement extends Components.RuxIconCloudDownload, HTMLStencilElement {
     }
     var HTMLRuxIconCloudDownloadElement: {
         prototype: HTMLRuxIconCloudDownloadElement;
-        new(): HTMLRuxIconCloudDownloadElement;
+        new (): HTMLRuxIconCloudDownloadElement;
     };
     interface HTMLRuxIconCloudOffElement extends Components.RuxIconCloudOff, HTMLStencilElement {
     }
     var HTMLRuxIconCloudOffElement: {
         prototype: HTMLRuxIconCloudOffElement;
-        new(): HTMLRuxIconCloudOffElement;
+        new (): HTMLRuxIconCloudOffElement;
     };
     interface HTMLRuxIconCloudQueueElement extends Components.RuxIconCloudQueue, HTMLStencilElement {
     }
     var HTMLRuxIconCloudQueueElement: {
         prototype: HTMLRuxIconCloudQueueElement;
-        new(): HTMLRuxIconCloudQueueElement;
+        new (): HTMLRuxIconCloudQueueElement;
     };
     interface HTMLRuxIconCloudUploadElement extends Components.RuxIconCloudUpload, HTMLStencilElement {
     }
     var HTMLRuxIconCloudUploadElement: {
         prototype: HTMLRuxIconCloudUploadElement;
-        new(): HTMLRuxIconCloudUploadElement;
+        new (): HTMLRuxIconCloudUploadElement;
     };
     interface HTMLRuxIconCodeElement extends Components.RuxIconCode, HTMLStencilElement {
     }
     var HTMLRuxIconCodeElement: {
         prototype: HTMLRuxIconCodeElement;
-        new(): HTMLRuxIconCodeElement;
+        new (): HTMLRuxIconCodeElement;
     };
     interface HTMLRuxIconCollectionsElement extends Components.RuxIconCollections, HTMLStencilElement {
     }
     var HTMLRuxIconCollectionsElement: {
         prototype: HTMLRuxIconCollectionsElement;
-        new(): HTMLRuxIconCollectionsElement;
+        new (): HTMLRuxIconCollectionsElement;
     };
     interface HTMLRuxIconCollectionsBookmarkElement extends Components.RuxIconCollectionsBookmark, HTMLStencilElement {
     }
     var HTMLRuxIconCollectionsBookmarkElement: {
         prototype: HTMLRuxIconCollectionsBookmarkElement;
-        new(): HTMLRuxIconCollectionsBookmarkElement;
+        new (): HTMLRuxIconCollectionsBookmarkElement;
     };
     interface HTMLRuxIconColorLensElement extends Components.RuxIconColorLens, HTMLStencilElement {
     }
     var HTMLRuxIconColorLensElement: {
         prototype: HTMLRuxIconColorLensElement;
-        new(): HTMLRuxIconColorLensElement;
+        new (): HTMLRuxIconColorLensElement;
     };
     interface HTMLRuxIconColorizeElement extends Components.RuxIconColorize, HTMLStencilElement {
     }
     var HTMLRuxIconColorizeElement: {
         prototype: HTMLRuxIconColorizeElement;
-        new(): HTMLRuxIconColorizeElement;
+        new (): HTMLRuxIconColorizeElement;
     };
     interface HTMLRuxIconCommentElement extends Components.RuxIconComment, HTMLStencilElement {
     }
     var HTMLRuxIconCommentElement: {
         prototype: HTMLRuxIconCommentElement;
-        new(): HTMLRuxIconCommentElement;
+        new (): HTMLRuxIconCommentElement;
     };
     interface HTMLRuxIconCommuteElement extends Components.RuxIconCommute, HTMLStencilElement {
     }
     var HTMLRuxIconCommuteElement: {
         prototype: HTMLRuxIconCommuteElement;
-        new(): HTMLRuxIconCommuteElement;
+        new (): HTMLRuxIconCommuteElement;
     };
     interface HTMLRuxIconCompareElement extends Components.RuxIconCompare, HTMLStencilElement {
     }
     var HTMLRuxIconCompareElement: {
         prototype: HTMLRuxIconCompareElement;
-        new(): HTMLRuxIconCompareElement;
+        new (): HTMLRuxIconCompareElement;
     };
     interface HTMLRuxIconCompareArrowsElement extends Components.RuxIconCompareArrows, HTMLStencilElement {
     }
     var HTMLRuxIconCompareArrowsElement: {
         prototype: HTMLRuxIconCompareArrowsElement;
-        new(): HTMLRuxIconCompareArrowsElement;
+        new (): HTMLRuxIconCompareArrowsElement;
     };
     interface HTMLRuxIconCompassCalibrationElement extends Components.RuxIconCompassCalibration, HTMLStencilElement {
     }
     var HTMLRuxIconCompassCalibrationElement: {
         prototype: HTMLRuxIconCompassCalibrationElement;
-        new(): HTMLRuxIconCompassCalibrationElement;
+        new (): HTMLRuxIconCompassCalibrationElement;
     };
     interface HTMLRuxIconComputerElement extends Components.RuxIconComputer, HTMLStencilElement {
     }
     var HTMLRuxIconComputerElement: {
         prototype: HTMLRuxIconComputerElement;
-        new(): HTMLRuxIconComputerElement;
+        new (): HTMLRuxIconComputerElement;
     };
     interface HTMLRuxIconConfirmationNumberElement extends Components.RuxIconConfirmationNumber, HTMLStencilElement {
     }
     var HTMLRuxIconConfirmationNumberElement: {
         prototype: HTMLRuxIconConfirmationNumberElement;
-        new(): HTMLRuxIconConfirmationNumberElement;
+        new (): HTMLRuxIconConfirmationNumberElement;
     };
     interface HTMLRuxIconContactMailElement extends Components.RuxIconContactMail, HTMLStencilElement {
     }
     var HTMLRuxIconContactMailElement: {
         prototype: HTMLRuxIconContactMailElement;
-        new(): HTMLRuxIconContactMailElement;
+        new (): HTMLRuxIconContactMailElement;
     };
     interface HTMLRuxIconContactPhoneElement extends Components.RuxIconContactPhone, HTMLStencilElement {
     }
     var HTMLRuxIconContactPhoneElement: {
         prototype: HTMLRuxIconContactPhoneElement;
-        new(): HTMLRuxIconContactPhoneElement;
+        new (): HTMLRuxIconContactPhoneElement;
     };
     interface HTMLRuxIconContactSupportElement extends Components.RuxIconContactSupport, HTMLStencilElement {
     }
     var HTMLRuxIconContactSupportElement: {
         prototype: HTMLRuxIconContactSupportElement;
-        new(): HTMLRuxIconContactSupportElement;
+        new (): HTMLRuxIconContactSupportElement;
     };
     interface HTMLRuxIconContactsElement extends Components.RuxIconContacts, HTMLStencilElement {
     }
     var HTMLRuxIconContactsElement: {
         prototype: HTMLRuxIconContactsElement;
-        new(): HTMLRuxIconContactsElement;
+        new (): HTMLRuxIconContactsElement;
     };
     interface HTMLRuxIconControlCameraElement extends Components.RuxIconControlCamera, HTMLStencilElement {
     }
     var HTMLRuxIconControlCameraElement: {
         prototype: HTMLRuxIconControlCameraElement;
-        new(): HTMLRuxIconControlCameraElement;
+        new (): HTMLRuxIconControlCameraElement;
     };
     interface HTMLRuxIconControlPointElement extends Components.RuxIconControlPoint, HTMLStencilElement {
     }
     var HTMLRuxIconControlPointElement: {
         prototype: HTMLRuxIconControlPointElement;
-        new(): HTMLRuxIconControlPointElement;
+        new (): HTMLRuxIconControlPointElement;
     };
     interface HTMLRuxIconControlPointDuplicateElement extends Components.RuxIconControlPointDuplicate, HTMLStencilElement {
     }
     var HTMLRuxIconControlPointDuplicateElement: {
         prototype: HTMLRuxIconControlPointDuplicateElement;
-        new(): HTMLRuxIconControlPointDuplicateElement;
+        new (): HTMLRuxIconControlPointDuplicateElement;
     };
     interface HTMLRuxIconCopyrightElement extends Components.RuxIconCopyright, HTMLStencilElement {
     }
     var HTMLRuxIconCopyrightElement: {
         prototype: HTMLRuxIconCopyrightElement;
-        new(): HTMLRuxIconCopyrightElement;
+        new (): HTMLRuxIconCopyrightElement;
     };
     interface HTMLRuxIconCreateElement extends Components.RuxIconCreate, HTMLStencilElement {
     }
     var HTMLRuxIconCreateElement: {
         prototype: HTMLRuxIconCreateElement;
-        new(): HTMLRuxIconCreateElement;
+        new (): HTMLRuxIconCreateElement;
     };
     interface HTMLRuxIconCreateNewFolderElement extends Components.RuxIconCreateNewFolder, HTMLStencilElement {
     }
     var HTMLRuxIconCreateNewFolderElement: {
         prototype: HTMLRuxIconCreateNewFolderElement;
-        new(): HTMLRuxIconCreateNewFolderElement;
+        new (): HTMLRuxIconCreateNewFolderElement;
     };
     interface HTMLRuxIconCreditCardElement extends Components.RuxIconCreditCard, HTMLStencilElement {
     }
     var HTMLRuxIconCreditCardElement: {
         prototype: HTMLRuxIconCreditCardElement;
-        new(): HTMLRuxIconCreditCardElement;
+        new (): HTMLRuxIconCreditCardElement;
     };
     interface HTMLRuxIconCropElement extends Components.RuxIconCrop, HTMLStencilElement {
     }
     var HTMLRuxIconCropElement: {
         prototype: HTMLRuxIconCropElement;
-        new(): HTMLRuxIconCropElement;
+        new (): HTMLRuxIconCropElement;
     };
     interface HTMLRuxIconCrop169Element extends Components.RuxIconCrop169, HTMLStencilElement {
     }
     var HTMLRuxIconCrop169Element: {
         prototype: HTMLRuxIconCrop169Element;
-        new(): HTMLRuxIconCrop169Element;
+        new (): HTMLRuxIconCrop169Element;
     };
     interface HTMLRuxIconCrop32Element extends Components.RuxIconCrop32, HTMLStencilElement {
     }
     var HTMLRuxIconCrop32Element: {
         prototype: HTMLRuxIconCrop32Element;
-        new(): HTMLRuxIconCrop32Element;
+        new (): HTMLRuxIconCrop32Element;
     };
     interface HTMLRuxIconCrop54Element extends Components.RuxIconCrop54, HTMLStencilElement {
     }
     var HTMLRuxIconCrop54Element: {
         prototype: HTMLRuxIconCrop54Element;
-        new(): HTMLRuxIconCrop54Element;
+        new (): HTMLRuxIconCrop54Element;
     };
     interface HTMLRuxIconCrop75Element extends Components.RuxIconCrop75, HTMLStencilElement {
     }
     var HTMLRuxIconCrop75Element: {
         prototype: HTMLRuxIconCrop75Element;
-        new(): HTMLRuxIconCrop75Element;
+        new (): HTMLRuxIconCrop75Element;
     };
     interface HTMLRuxIconCropDinElement extends Components.RuxIconCropDin, HTMLStencilElement {
     }
     var HTMLRuxIconCropDinElement: {
         prototype: HTMLRuxIconCropDinElement;
-        new(): HTMLRuxIconCropDinElement;
+        new (): HTMLRuxIconCropDinElement;
     };
     interface HTMLRuxIconCropFreeElement extends Components.RuxIconCropFree, HTMLStencilElement {
     }
     var HTMLRuxIconCropFreeElement: {
         prototype: HTMLRuxIconCropFreeElement;
-        new(): HTMLRuxIconCropFreeElement;
+        new (): HTMLRuxIconCropFreeElement;
     };
     interface HTMLRuxIconCropLandscapeElement extends Components.RuxIconCropLandscape, HTMLStencilElement {
     }
     var HTMLRuxIconCropLandscapeElement: {
         prototype: HTMLRuxIconCropLandscapeElement;
-        new(): HTMLRuxIconCropLandscapeElement;
+        new (): HTMLRuxIconCropLandscapeElement;
     };
     interface HTMLRuxIconCropOriginalElement extends Components.RuxIconCropOriginal, HTMLStencilElement {
     }
     var HTMLRuxIconCropOriginalElement: {
         prototype: HTMLRuxIconCropOriginalElement;
-        new(): HTMLRuxIconCropOriginalElement;
+        new (): HTMLRuxIconCropOriginalElement;
     };
     interface HTMLRuxIconCropPortraitElement extends Components.RuxIconCropPortrait, HTMLStencilElement {
     }
     var HTMLRuxIconCropPortraitElement: {
         prototype: HTMLRuxIconCropPortraitElement;
-        new(): HTMLRuxIconCropPortraitElement;
+        new (): HTMLRuxIconCropPortraitElement;
     };
     interface HTMLRuxIconCropRotateElement extends Components.RuxIconCropRotate, HTMLStencilElement {
     }
     var HTMLRuxIconCropRotateElement: {
         prototype: HTMLRuxIconCropRotateElement;
-        new(): HTMLRuxIconCropRotateElement;
+        new (): HTMLRuxIconCropRotateElement;
     };
     interface HTMLRuxIconCropSquareElement extends Components.RuxIconCropSquare, HTMLStencilElement {
     }
     var HTMLRuxIconCropSquareElement: {
         prototype: HTMLRuxIconCropSquareElement;
-        new(): HTMLRuxIconCropSquareElement;
+        new (): HTMLRuxIconCropSquareElement;
     };
     interface HTMLRuxIconDashboardElement extends Components.RuxIconDashboard, HTMLStencilElement {
     }
     var HTMLRuxIconDashboardElement: {
         prototype: HTMLRuxIconDashboardElement;
-        new(): HTMLRuxIconDashboardElement;
+        new (): HTMLRuxIconDashboardElement;
     };
     interface HTMLRuxIconDataUsageElement extends Components.RuxIconDataUsage, HTMLStencilElement {
     }
     var HTMLRuxIconDataUsageElement: {
         prototype: HTMLRuxIconDataUsageElement;
-        new(): HTMLRuxIconDataUsageElement;
+        new (): HTMLRuxIconDataUsageElement;
     };
     interface HTMLRuxIconDateRangeElement extends Components.RuxIconDateRange, HTMLStencilElement {
     }
     var HTMLRuxIconDateRangeElement: {
         prototype: HTMLRuxIconDateRangeElement;
-        new(): HTMLRuxIconDateRangeElement;
+        new (): HTMLRuxIconDateRangeElement;
     };
     interface HTMLRuxIconDehazeElement extends Components.RuxIconDehaze, HTMLStencilElement {
     }
     var HTMLRuxIconDehazeElement: {
         prototype: HTMLRuxIconDehazeElement;
-        new(): HTMLRuxIconDehazeElement;
+        new (): HTMLRuxIconDehazeElement;
     };
     interface HTMLRuxIconDeleteElement extends Components.RuxIconDelete, HTMLStencilElement {
     }
     var HTMLRuxIconDeleteElement: {
         prototype: HTMLRuxIconDeleteElement;
-        new(): HTMLRuxIconDeleteElement;
+        new (): HTMLRuxIconDeleteElement;
     };
     interface HTMLRuxIconDeleteForeverElement extends Components.RuxIconDeleteForever, HTMLStencilElement {
     }
     var HTMLRuxIconDeleteForeverElement: {
         prototype: HTMLRuxIconDeleteForeverElement;
-        new(): HTMLRuxIconDeleteForeverElement;
+        new (): HTMLRuxIconDeleteForeverElement;
     };
     interface HTMLRuxIconDeleteOutlineElement extends Components.RuxIconDeleteOutline, HTMLStencilElement {
     }
     var HTMLRuxIconDeleteOutlineElement: {
         prototype: HTMLRuxIconDeleteOutlineElement;
-        new(): HTMLRuxIconDeleteOutlineElement;
+        new (): HTMLRuxIconDeleteOutlineElement;
     };
     interface HTMLRuxIconDeleteSweepElement extends Components.RuxIconDeleteSweep, HTMLStencilElement {
     }
     var HTMLRuxIconDeleteSweepElement: {
         prototype: HTMLRuxIconDeleteSweepElement;
-        new(): HTMLRuxIconDeleteSweepElement;
+        new (): HTMLRuxIconDeleteSweepElement;
     };
     interface HTMLRuxIconDepartureBoardElement extends Components.RuxIconDepartureBoard, HTMLStencilElement {
     }
     var HTMLRuxIconDepartureBoardElement: {
         prototype: HTMLRuxIconDepartureBoardElement;
-        new(): HTMLRuxIconDepartureBoardElement;
+        new (): HTMLRuxIconDepartureBoardElement;
     };
     interface HTMLRuxIconDescriptionElement extends Components.RuxIconDescription, HTMLStencilElement {
     }
     var HTMLRuxIconDescriptionElement: {
         prototype: HTMLRuxIconDescriptionElement;
-        new(): HTMLRuxIconDescriptionElement;
+        new (): HTMLRuxIconDescriptionElement;
     };
     interface HTMLRuxIconDesktopAccessDisabledElement extends Components.RuxIconDesktopAccessDisabled, HTMLStencilElement {
     }
     var HTMLRuxIconDesktopAccessDisabledElement: {
         prototype: HTMLRuxIconDesktopAccessDisabledElement;
-        new(): HTMLRuxIconDesktopAccessDisabledElement;
+        new (): HTMLRuxIconDesktopAccessDisabledElement;
     };
     interface HTMLRuxIconDesktopMacElement extends Components.RuxIconDesktopMac, HTMLStencilElement {
     }
     var HTMLRuxIconDesktopMacElement: {
         prototype: HTMLRuxIconDesktopMacElement;
-        new(): HTMLRuxIconDesktopMacElement;
+        new (): HTMLRuxIconDesktopMacElement;
     };
     interface HTMLRuxIconDesktopWindowsElement extends Components.RuxIconDesktopWindows, HTMLStencilElement {
     }
     var HTMLRuxIconDesktopWindowsElement: {
         prototype: HTMLRuxIconDesktopWindowsElement;
-        new(): HTMLRuxIconDesktopWindowsElement;
+        new (): HTMLRuxIconDesktopWindowsElement;
     };
     interface HTMLRuxIconDetailsElement extends Components.RuxIconDetails, HTMLStencilElement {
     }
     var HTMLRuxIconDetailsElement: {
         prototype: HTMLRuxIconDetailsElement;
-        new(): HTMLRuxIconDetailsElement;
+        new (): HTMLRuxIconDetailsElement;
     };
     interface HTMLRuxIconDeveloperBoardElement extends Components.RuxIconDeveloperBoard, HTMLStencilElement {
     }
     var HTMLRuxIconDeveloperBoardElement: {
         prototype: HTMLRuxIconDeveloperBoardElement;
-        new(): HTMLRuxIconDeveloperBoardElement;
+        new (): HTMLRuxIconDeveloperBoardElement;
     };
     interface HTMLRuxIconDeveloperModeElement extends Components.RuxIconDeveloperMode, HTMLStencilElement {
     }
     var HTMLRuxIconDeveloperModeElement: {
         prototype: HTMLRuxIconDeveloperModeElement;
-        new(): HTMLRuxIconDeveloperModeElement;
+        new (): HTMLRuxIconDeveloperModeElement;
     };
     interface HTMLRuxIconDeviceHubElement extends Components.RuxIconDeviceHub, HTMLStencilElement {
     }
     var HTMLRuxIconDeviceHubElement: {
         prototype: HTMLRuxIconDeviceHubElement;
-        new(): HTMLRuxIconDeviceHubElement;
+        new (): HTMLRuxIconDeviceHubElement;
     };
     interface HTMLRuxIconDeviceUnknownElement extends Components.RuxIconDeviceUnknown, HTMLStencilElement {
     }
     var HTMLRuxIconDeviceUnknownElement: {
         prototype: HTMLRuxIconDeviceUnknownElement;
-        new(): HTMLRuxIconDeviceUnknownElement;
+        new (): HTMLRuxIconDeviceUnknownElement;
     };
     interface HTMLRuxIconDevicesElement extends Components.RuxIconDevices, HTMLStencilElement {
     }
     var HTMLRuxIconDevicesElement: {
         prototype: HTMLRuxIconDevicesElement;
-        new(): HTMLRuxIconDevicesElement;
+        new (): HTMLRuxIconDevicesElement;
     };
     interface HTMLRuxIconDevicesOtherElement extends Components.RuxIconDevicesOther, HTMLStencilElement {
     }
     var HTMLRuxIconDevicesOtherElement: {
         prototype: HTMLRuxIconDevicesOtherElement;
-        new(): HTMLRuxIconDevicesOtherElement;
+        new (): HTMLRuxIconDevicesOtherElement;
     };
     interface HTMLRuxIconDialerSipElement extends Components.RuxIconDialerSip, HTMLStencilElement {
     }
     var HTMLRuxIconDialerSipElement: {
         prototype: HTMLRuxIconDialerSipElement;
-        new(): HTMLRuxIconDialerSipElement;
+        new (): HTMLRuxIconDialerSipElement;
     };
     interface HTMLRuxIconDialpadElement extends Components.RuxIconDialpad, HTMLStencilElement {
     }
     var HTMLRuxIconDialpadElement: {
         prototype: HTMLRuxIconDialpadElement;
-        new(): HTMLRuxIconDialpadElement;
+        new (): HTMLRuxIconDialpadElement;
     };
     interface HTMLRuxIconDirectionsElement extends Components.RuxIconDirections, HTMLStencilElement {
     }
     var HTMLRuxIconDirectionsElement: {
         prototype: HTMLRuxIconDirectionsElement;
-        new(): HTMLRuxIconDirectionsElement;
+        new (): HTMLRuxIconDirectionsElement;
     };
     interface HTMLRuxIconDirectionsBikeElement extends Components.RuxIconDirectionsBike, HTMLStencilElement {
     }
     var HTMLRuxIconDirectionsBikeElement: {
         prototype: HTMLRuxIconDirectionsBikeElement;
-        new(): HTMLRuxIconDirectionsBikeElement;
+        new (): HTMLRuxIconDirectionsBikeElement;
     };
     interface HTMLRuxIconDirectionsBoatElement extends Components.RuxIconDirectionsBoat, HTMLStencilElement {
     }
     var HTMLRuxIconDirectionsBoatElement: {
         prototype: HTMLRuxIconDirectionsBoatElement;
-        new(): HTMLRuxIconDirectionsBoatElement;
+        new (): HTMLRuxIconDirectionsBoatElement;
     };
     interface HTMLRuxIconDirectionsBusElement extends Components.RuxIconDirectionsBus, HTMLStencilElement {
     }
     var HTMLRuxIconDirectionsBusElement: {
         prototype: HTMLRuxIconDirectionsBusElement;
-        new(): HTMLRuxIconDirectionsBusElement;
+        new (): HTMLRuxIconDirectionsBusElement;
     };
     interface HTMLRuxIconDirectionsCarElement extends Components.RuxIconDirectionsCar, HTMLStencilElement {
     }
     var HTMLRuxIconDirectionsCarElement: {
         prototype: HTMLRuxIconDirectionsCarElement;
-        new(): HTMLRuxIconDirectionsCarElement;
+        new (): HTMLRuxIconDirectionsCarElement;
     };
     interface HTMLRuxIconDirectionsRailwayElement extends Components.RuxIconDirectionsRailway, HTMLStencilElement {
     }
     var HTMLRuxIconDirectionsRailwayElement: {
         prototype: HTMLRuxIconDirectionsRailwayElement;
-        new(): HTMLRuxIconDirectionsRailwayElement;
+        new (): HTMLRuxIconDirectionsRailwayElement;
     };
     interface HTMLRuxIconDirectionsRunElement extends Components.RuxIconDirectionsRun, HTMLStencilElement {
     }
     var HTMLRuxIconDirectionsRunElement: {
         prototype: HTMLRuxIconDirectionsRunElement;
-        new(): HTMLRuxIconDirectionsRunElement;
+        new (): HTMLRuxIconDirectionsRunElement;
     };
     interface HTMLRuxIconDirectionsSubwayElement extends Components.RuxIconDirectionsSubway, HTMLStencilElement {
     }
     var HTMLRuxIconDirectionsSubwayElement: {
         prototype: HTMLRuxIconDirectionsSubwayElement;
-        new(): HTMLRuxIconDirectionsSubwayElement;
+        new (): HTMLRuxIconDirectionsSubwayElement;
     };
     interface HTMLRuxIconDirectionsTransitElement extends Components.RuxIconDirectionsTransit, HTMLStencilElement {
     }
     var HTMLRuxIconDirectionsTransitElement: {
         prototype: HTMLRuxIconDirectionsTransitElement;
-        new(): HTMLRuxIconDirectionsTransitElement;
+        new (): HTMLRuxIconDirectionsTransitElement;
     };
     interface HTMLRuxIconDirectionsWalkElement extends Components.RuxIconDirectionsWalk, HTMLStencilElement {
     }
     var HTMLRuxIconDirectionsWalkElement: {
         prototype: HTMLRuxIconDirectionsWalkElement;
-        new(): HTMLRuxIconDirectionsWalkElement;
+        new (): HTMLRuxIconDirectionsWalkElement;
     };
     interface HTMLRuxIconDiscFullElement extends Components.RuxIconDiscFull, HTMLStencilElement {
     }
     var HTMLRuxIconDiscFullElement: {
         prototype: HTMLRuxIconDiscFullElement;
-        new(): HTMLRuxIconDiscFullElement;
+        new (): HTMLRuxIconDiscFullElement;
     };
     interface HTMLRuxIconDnsElement extends Components.RuxIconDns, HTMLStencilElement {
     }
     var HTMLRuxIconDnsElement: {
         prototype: HTMLRuxIconDnsElement;
-        new(): HTMLRuxIconDnsElement;
+        new (): HTMLRuxIconDnsElement;
     };
     interface HTMLRuxIconDockElement extends Components.RuxIconDock, HTMLStencilElement {
     }
     var HTMLRuxIconDockElement: {
         prototype: HTMLRuxIconDockElement;
-        new(): HTMLRuxIconDockElement;
+        new (): HTMLRuxIconDockElement;
     };
     interface HTMLRuxIconDomainElement extends Components.RuxIconDomain, HTMLStencilElement {
     }
     var HTMLRuxIconDomainElement: {
         prototype: HTMLRuxIconDomainElement;
-        new(): HTMLRuxIconDomainElement;
+        new (): HTMLRuxIconDomainElement;
     };
     interface HTMLRuxIconDomainDisabledElement extends Components.RuxIconDomainDisabled, HTMLStencilElement {
     }
     var HTMLRuxIconDomainDisabledElement: {
         prototype: HTMLRuxIconDomainDisabledElement;
-        new(): HTMLRuxIconDomainDisabledElement;
+        new (): HTMLRuxIconDomainDisabledElement;
     };
     interface HTMLRuxIconDoneElement extends Components.RuxIconDone, HTMLStencilElement {
     }
     var HTMLRuxIconDoneElement: {
         prototype: HTMLRuxIconDoneElement;
-        new(): HTMLRuxIconDoneElement;
+        new (): HTMLRuxIconDoneElement;
     };
     interface HTMLRuxIconDoneAllElement extends Components.RuxIconDoneAll, HTMLStencilElement {
     }
     var HTMLRuxIconDoneAllElement: {
         prototype: HTMLRuxIconDoneAllElement;
-        new(): HTMLRuxIconDoneAllElement;
+        new (): HTMLRuxIconDoneAllElement;
     };
     interface HTMLRuxIconDoneOutlineElement extends Components.RuxIconDoneOutline, HTMLStencilElement {
     }
     var HTMLRuxIconDoneOutlineElement: {
         prototype: HTMLRuxIconDoneOutlineElement;
-        new(): HTMLRuxIconDoneOutlineElement;
+        new (): HTMLRuxIconDoneOutlineElement;
     };
     interface HTMLRuxIconDonutLargeElement extends Components.RuxIconDonutLarge, HTMLStencilElement {
     }
     var HTMLRuxIconDonutLargeElement: {
         prototype: HTMLRuxIconDonutLargeElement;
-        new(): HTMLRuxIconDonutLargeElement;
+        new (): HTMLRuxIconDonutLargeElement;
     };
     interface HTMLRuxIconDonutSmallElement extends Components.RuxIconDonutSmall, HTMLStencilElement {
     }
     var HTMLRuxIconDonutSmallElement: {
         prototype: HTMLRuxIconDonutSmallElement;
-        new(): HTMLRuxIconDonutSmallElement;
+        new (): HTMLRuxIconDonutSmallElement;
     };
     interface HTMLRuxIconDraftsElement extends Components.RuxIconDrafts, HTMLStencilElement {
     }
     var HTMLRuxIconDraftsElement: {
         prototype: HTMLRuxIconDraftsElement;
-        new(): HTMLRuxIconDraftsElement;
+        new (): HTMLRuxIconDraftsElement;
     };
     interface HTMLRuxIconDragHandleElement extends Components.RuxIconDragHandle, HTMLStencilElement {
     }
     var HTMLRuxIconDragHandleElement: {
         prototype: HTMLRuxIconDragHandleElement;
-        new(): HTMLRuxIconDragHandleElement;
+        new (): HTMLRuxIconDragHandleElement;
     };
     interface HTMLRuxIconDragIndicatorElement extends Components.RuxIconDragIndicator, HTMLStencilElement {
     }
     var HTMLRuxIconDragIndicatorElement: {
         prototype: HTMLRuxIconDragIndicatorElement;
-        new(): HTMLRuxIconDragIndicatorElement;
+        new (): HTMLRuxIconDragIndicatorElement;
     };
     interface HTMLRuxIconDriveEtaElement extends Components.RuxIconDriveEta, HTMLStencilElement {
     }
     var HTMLRuxIconDriveEtaElement: {
         prototype: HTMLRuxIconDriveEtaElement;
-        new(): HTMLRuxIconDriveEtaElement;
+        new (): HTMLRuxIconDriveEtaElement;
     };
     interface HTMLRuxIconDuoElement extends Components.RuxIconDuo, HTMLStencilElement {
     }
     var HTMLRuxIconDuoElement: {
         prototype: HTMLRuxIconDuoElement;
-        new(): HTMLRuxIconDuoElement;
+        new (): HTMLRuxIconDuoElement;
     };
     interface HTMLRuxIconDvrElement extends Components.RuxIconDvr, HTMLStencilElement {
     }
     var HTMLRuxIconDvrElement: {
         prototype: HTMLRuxIconDvrElement;
-        new(): HTMLRuxIconDvrElement;
+        new (): HTMLRuxIconDvrElement;
     };
     interface HTMLRuxIconEditElement extends Components.RuxIconEdit, HTMLStencilElement {
     }
     var HTMLRuxIconEditElement: {
         prototype: HTMLRuxIconEditElement;
-        new(): HTMLRuxIconEditElement;
+        new (): HTMLRuxIconEditElement;
     };
     interface HTMLRuxIconEditAttributesElement extends Components.RuxIconEditAttributes, HTMLStencilElement {
     }
     var HTMLRuxIconEditAttributesElement: {
         prototype: HTMLRuxIconEditAttributesElement;
-        new(): HTMLRuxIconEditAttributesElement;
+        new (): HTMLRuxIconEditAttributesElement;
     };
     interface HTMLRuxIconEditLocationElement extends Components.RuxIconEditLocation, HTMLStencilElement {
     }
     var HTMLRuxIconEditLocationElement: {
         prototype: HTMLRuxIconEditLocationElement;
-        new(): HTMLRuxIconEditLocationElement;
+        new (): HTMLRuxIconEditLocationElement;
     };
     interface HTMLRuxIconEjectElement extends Components.RuxIconEject, HTMLStencilElement {
     }
     var HTMLRuxIconEjectElement: {
         prototype: HTMLRuxIconEjectElement;
-        new(): HTMLRuxIconEjectElement;
+        new (): HTMLRuxIconEjectElement;
     };
     interface HTMLRuxIconEmailElement extends Components.RuxIconEmail, HTMLStencilElement {
     }
     var HTMLRuxIconEmailElement: {
         prototype: HTMLRuxIconEmailElement;
-        new(): HTMLRuxIconEmailElement;
+        new (): HTMLRuxIconEmailElement;
     };
     interface HTMLRuxIconEnhancedEncryptionElement extends Components.RuxIconEnhancedEncryption, HTMLStencilElement {
     }
     var HTMLRuxIconEnhancedEncryptionElement: {
         prototype: HTMLRuxIconEnhancedEncryptionElement;
-        new(): HTMLRuxIconEnhancedEncryptionElement;
+        new (): HTMLRuxIconEnhancedEncryptionElement;
     };
     interface HTMLRuxIconEqualizerElement extends Components.RuxIconEqualizer, HTMLStencilElement {
     }
     var HTMLRuxIconEqualizerElement: {
         prototype: HTMLRuxIconEqualizerElement;
-        new(): HTMLRuxIconEqualizerElement;
+        new (): HTMLRuxIconEqualizerElement;
     };
     interface HTMLRuxIconEquipmentElement extends Components.RuxIconEquipment, HTMLStencilElement {
     }
     var HTMLRuxIconEquipmentElement: {
         prototype: HTMLRuxIconEquipmentElement;
-        new(): HTMLRuxIconEquipmentElement;
+        new (): HTMLRuxIconEquipmentElement;
     };
     interface HTMLRuxIconErrorElement extends Components.RuxIconError, HTMLStencilElement {
     }
     var HTMLRuxIconErrorElement: {
         prototype: HTMLRuxIconErrorElement;
-        new(): HTMLRuxIconErrorElement;
+        new (): HTMLRuxIconErrorElement;
     };
     interface HTMLRuxIconErrorOutlineElement extends Components.RuxIconErrorOutline, HTMLStencilElement {
     }
     var HTMLRuxIconErrorOutlineElement: {
         prototype: HTMLRuxIconErrorOutlineElement;
-        new(): HTMLRuxIconErrorOutlineElement;
+        new (): HTMLRuxIconErrorOutlineElement;
     };
     interface HTMLRuxIconEuroSymbolElement extends Components.RuxIconEuroSymbol, HTMLStencilElement {
     }
     var HTMLRuxIconEuroSymbolElement: {
         prototype: HTMLRuxIconEuroSymbolElement;
-        new(): HTMLRuxIconEuroSymbolElement;
+        new (): HTMLRuxIconEuroSymbolElement;
     };
     interface HTMLRuxIconEvStationElement extends Components.RuxIconEvStation, HTMLStencilElement {
     }
     var HTMLRuxIconEvStationElement: {
         prototype: HTMLRuxIconEvStationElement;
-        new(): HTMLRuxIconEvStationElement;
+        new (): HTMLRuxIconEvStationElement;
     };
     interface HTMLRuxIconEventElement extends Components.RuxIconEvent, HTMLStencilElement {
     }
     var HTMLRuxIconEventElement: {
         prototype: HTMLRuxIconEventElement;
-        new(): HTMLRuxIconEventElement;
+        new (): HTMLRuxIconEventElement;
     };
     interface HTMLRuxIconEventAvailableElement extends Components.RuxIconEventAvailable, HTMLStencilElement {
     }
     var HTMLRuxIconEventAvailableElement: {
         prototype: HTMLRuxIconEventAvailableElement;
-        new(): HTMLRuxIconEventAvailableElement;
+        new (): HTMLRuxIconEventAvailableElement;
     };
     interface HTMLRuxIconEventBusyElement extends Components.RuxIconEventBusy, HTMLStencilElement {
     }
     var HTMLRuxIconEventBusyElement: {
         prototype: HTMLRuxIconEventBusyElement;
-        new(): HTMLRuxIconEventBusyElement;
+        new (): HTMLRuxIconEventBusyElement;
     };
     interface HTMLRuxIconEventNoteElement extends Components.RuxIconEventNote, HTMLStencilElement {
     }
     var HTMLRuxIconEventNoteElement: {
         prototype: HTMLRuxIconEventNoteElement;
-        new(): HTMLRuxIconEventNoteElement;
+        new (): HTMLRuxIconEventNoteElement;
     };
     interface HTMLRuxIconExitToAppElement extends Components.RuxIconExitToApp, HTMLStencilElement {
     }
     var HTMLRuxIconExitToAppElement: {
         prototype: HTMLRuxIconExitToAppElement;
-        new(): HTMLRuxIconExitToAppElement;
+        new (): HTMLRuxIconExitToAppElement;
     };
     interface HTMLRuxIconExpandLessElement extends Components.RuxIconExpandLess, HTMLStencilElement {
     }
     var HTMLRuxIconExpandLessElement: {
         prototype: HTMLRuxIconExpandLessElement;
-        new(): HTMLRuxIconExpandLessElement;
+        new (): HTMLRuxIconExpandLessElement;
     };
     interface HTMLRuxIconExpandMoreElement extends Components.RuxIconExpandMore, HTMLStencilElement {
     }
     var HTMLRuxIconExpandMoreElement: {
         prototype: HTMLRuxIconExpandMoreElement;
-        new(): HTMLRuxIconExpandMoreElement;
+        new (): HTMLRuxIconExpandMoreElement;
     };
     interface HTMLRuxIconExplicitElement extends Components.RuxIconExplicit, HTMLStencilElement {
     }
     var HTMLRuxIconExplicitElement: {
         prototype: HTMLRuxIconExplicitElement;
-        new(): HTMLRuxIconExplicitElement;
+        new (): HTMLRuxIconExplicitElement;
     };
     interface HTMLRuxIconExploreElement extends Components.RuxIconExplore, HTMLStencilElement {
     }
     var HTMLRuxIconExploreElement: {
         prototype: HTMLRuxIconExploreElement;
-        new(): HTMLRuxIconExploreElement;
+        new (): HTMLRuxIconExploreElement;
     };
     interface HTMLRuxIconExploreOffElement extends Components.RuxIconExploreOff, HTMLStencilElement {
     }
     var HTMLRuxIconExploreOffElement: {
         prototype: HTMLRuxIconExploreOffElement;
-        new(): HTMLRuxIconExploreOffElement;
+        new (): HTMLRuxIconExploreOffElement;
     };
     interface HTMLRuxIconExposureElement extends Components.RuxIconExposure, HTMLStencilElement {
     }
     var HTMLRuxIconExposureElement: {
         prototype: HTMLRuxIconExposureElement;
-        new(): HTMLRuxIconExposureElement;
+        new (): HTMLRuxIconExposureElement;
     };
     interface HTMLRuxIconExposureNeg1Element extends Components.RuxIconExposureNeg1, HTMLStencilElement {
     }
     var HTMLRuxIconExposureNeg1Element: {
         prototype: HTMLRuxIconExposureNeg1Element;
-        new(): HTMLRuxIconExposureNeg1Element;
+        new (): HTMLRuxIconExposureNeg1Element;
     };
     interface HTMLRuxIconExposureNeg2Element extends Components.RuxIconExposureNeg2, HTMLStencilElement {
     }
     var HTMLRuxIconExposureNeg2Element: {
         prototype: HTMLRuxIconExposureNeg2Element;
-        new(): HTMLRuxIconExposureNeg2Element;
+        new (): HTMLRuxIconExposureNeg2Element;
     };
     interface HTMLRuxIconExposurePlus1Element extends Components.RuxIconExposurePlus1, HTMLStencilElement {
     }
     var HTMLRuxIconExposurePlus1Element: {
         prototype: HTMLRuxIconExposurePlus1Element;
-        new(): HTMLRuxIconExposurePlus1Element;
+        new (): HTMLRuxIconExposurePlus1Element;
     };
     interface HTMLRuxIconExposurePlus2Element extends Components.RuxIconExposurePlus2, HTMLStencilElement {
     }
     var HTMLRuxIconExposurePlus2Element: {
         prototype: HTMLRuxIconExposurePlus2Element;
-        new(): HTMLRuxIconExposurePlus2Element;
+        new (): HTMLRuxIconExposurePlus2Element;
     };
     interface HTMLRuxIconExposureZeroElement extends Components.RuxIconExposureZero, HTMLStencilElement {
     }
     var HTMLRuxIconExposureZeroElement: {
         prototype: HTMLRuxIconExposureZeroElement;
-        new(): HTMLRuxIconExposureZeroElement;
+        new (): HTMLRuxIconExposureZeroElement;
     };
     interface HTMLRuxIconExtensionElement extends Components.RuxIconExtension, HTMLStencilElement {
     }
     var HTMLRuxIconExtensionElement: {
         prototype: HTMLRuxIconExtensionElement;
-        new(): HTMLRuxIconExtensionElement;
+        new (): HTMLRuxIconExtensionElement;
     };
     interface HTMLRuxIconFaceElement extends Components.RuxIconFace, HTMLStencilElement {
     }
     var HTMLRuxIconFaceElement: {
         prototype: HTMLRuxIconFaceElement;
-        new(): HTMLRuxIconFaceElement;
+        new (): HTMLRuxIconFaceElement;
     };
     interface HTMLRuxIconFastForwardElement extends Components.RuxIconFastForward, HTMLStencilElement {
     }
     var HTMLRuxIconFastForwardElement: {
         prototype: HTMLRuxIconFastForwardElement;
-        new(): HTMLRuxIconFastForwardElement;
+        new (): HTMLRuxIconFastForwardElement;
     };
     interface HTMLRuxIconFastRewindElement extends Components.RuxIconFastRewind, HTMLStencilElement {
     }
     var HTMLRuxIconFastRewindElement: {
         prototype: HTMLRuxIconFastRewindElement;
-        new(): HTMLRuxIconFastRewindElement;
+        new (): HTMLRuxIconFastRewindElement;
     };
     interface HTMLRuxIconFastfoodElement extends Components.RuxIconFastfood, HTMLStencilElement {
     }
     var HTMLRuxIconFastfoodElement: {
         prototype: HTMLRuxIconFastfoodElement;
-        new(): HTMLRuxIconFastfoodElement;
+        new (): HTMLRuxIconFastfoodElement;
     };
     interface HTMLRuxIconFavoriteElement extends Components.RuxIconFavorite, HTMLStencilElement {
     }
     var HTMLRuxIconFavoriteElement: {
         prototype: HTMLRuxIconFavoriteElement;
-        new(): HTMLRuxIconFavoriteElement;
+        new (): HTMLRuxIconFavoriteElement;
     };
     interface HTMLRuxIconFavoriteBorderElement extends Components.RuxIconFavoriteBorder, HTMLStencilElement {
     }
     var HTMLRuxIconFavoriteBorderElement: {
         prototype: HTMLRuxIconFavoriteBorderElement;
-        new(): HTMLRuxIconFavoriteBorderElement;
+        new (): HTMLRuxIconFavoriteBorderElement;
     };
     interface HTMLRuxIconFeaturedPlayListElement extends Components.RuxIconFeaturedPlayList, HTMLStencilElement {
     }
     var HTMLRuxIconFeaturedPlayListElement: {
         prototype: HTMLRuxIconFeaturedPlayListElement;
-        new(): HTMLRuxIconFeaturedPlayListElement;
+        new (): HTMLRuxIconFeaturedPlayListElement;
     };
     interface HTMLRuxIconFeaturedVideoElement extends Components.RuxIconFeaturedVideo, HTMLStencilElement {
     }
     var HTMLRuxIconFeaturedVideoElement: {
         prototype: HTMLRuxIconFeaturedVideoElement;
-        new(): HTMLRuxIconFeaturedVideoElement;
+        new (): HTMLRuxIconFeaturedVideoElement;
     };
     interface HTMLRuxIconFeedbackElement extends Components.RuxIconFeedback, HTMLStencilElement {
     }
     var HTMLRuxIconFeedbackElement: {
         prototype: HTMLRuxIconFeedbackElement;
-        new(): HTMLRuxIconFeedbackElement;
+        new (): HTMLRuxIconFeedbackElement;
     };
     interface HTMLRuxIconFiberDvrElement extends Components.RuxIconFiberDvr, HTMLStencilElement {
     }
     var HTMLRuxIconFiberDvrElement: {
         prototype: HTMLRuxIconFiberDvrElement;
-        new(): HTMLRuxIconFiberDvrElement;
+        new (): HTMLRuxIconFiberDvrElement;
     };
     interface HTMLRuxIconFiberManualRecordElement extends Components.RuxIconFiberManualRecord, HTMLStencilElement {
     }
     var HTMLRuxIconFiberManualRecordElement: {
         prototype: HTMLRuxIconFiberManualRecordElement;
-        new(): HTMLRuxIconFiberManualRecordElement;
+        new (): HTMLRuxIconFiberManualRecordElement;
     };
     interface HTMLRuxIconFiberNewElement extends Components.RuxIconFiberNew, HTMLStencilElement {
     }
     var HTMLRuxIconFiberNewElement: {
         prototype: HTMLRuxIconFiberNewElement;
-        new(): HTMLRuxIconFiberNewElement;
+        new (): HTMLRuxIconFiberNewElement;
     };
     interface HTMLRuxIconFiberPinElement extends Components.RuxIconFiberPin, HTMLStencilElement {
     }
     var HTMLRuxIconFiberPinElement: {
         prototype: HTMLRuxIconFiberPinElement;
-        new(): HTMLRuxIconFiberPinElement;
+        new (): HTMLRuxIconFiberPinElement;
     };
     interface HTMLRuxIconFiberSmartRecordElement extends Components.RuxIconFiberSmartRecord, HTMLStencilElement {
     }
     var HTMLRuxIconFiberSmartRecordElement: {
         prototype: HTMLRuxIconFiberSmartRecordElement;
-        new(): HTMLRuxIconFiberSmartRecordElement;
+        new (): HTMLRuxIconFiberSmartRecordElement;
     };
     interface HTMLRuxIconFileCopyElement extends Components.RuxIconFileCopy, HTMLStencilElement {
     }
     var HTMLRuxIconFileCopyElement: {
         prototype: HTMLRuxIconFileCopyElement;
-        new(): HTMLRuxIconFileCopyElement;
+        new (): HTMLRuxIconFileCopyElement;
     };
     interface HTMLRuxIconFilterElement extends Components.RuxIconFilter, HTMLStencilElement {
     }
     var HTMLRuxIconFilterElement: {
         prototype: HTMLRuxIconFilterElement;
-        new(): HTMLRuxIconFilterElement;
+        new (): HTMLRuxIconFilterElement;
     };
     interface HTMLRuxIconFilter1Element extends Components.RuxIconFilter1, HTMLStencilElement {
     }
     var HTMLRuxIconFilter1Element: {
         prototype: HTMLRuxIconFilter1Element;
-        new(): HTMLRuxIconFilter1Element;
+        new (): HTMLRuxIconFilter1Element;
     };
     interface HTMLRuxIconFilter2Element extends Components.RuxIconFilter2, HTMLStencilElement {
     }
     var HTMLRuxIconFilter2Element: {
         prototype: HTMLRuxIconFilter2Element;
-        new(): HTMLRuxIconFilter2Element;
+        new (): HTMLRuxIconFilter2Element;
     };
     interface HTMLRuxIconFilter3Element extends Components.RuxIconFilter3, HTMLStencilElement {
     }
     var HTMLRuxIconFilter3Element: {
         prototype: HTMLRuxIconFilter3Element;
-        new(): HTMLRuxIconFilter3Element;
+        new (): HTMLRuxIconFilter3Element;
     };
     interface HTMLRuxIconFilter4Element extends Components.RuxIconFilter4, HTMLStencilElement {
     }
     var HTMLRuxIconFilter4Element: {
         prototype: HTMLRuxIconFilter4Element;
-        new(): HTMLRuxIconFilter4Element;
+        new (): HTMLRuxIconFilter4Element;
     };
     interface HTMLRuxIconFilter5Element extends Components.RuxIconFilter5, HTMLStencilElement {
     }
     var HTMLRuxIconFilter5Element: {
         prototype: HTMLRuxIconFilter5Element;
-        new(): HTMLRuxIconFilter5Element;
+        new (): HTMLRuxIconFilter5Element;
     };
     interface HTMLRuxIconFilter6Element extends Components.RuxIconFilter6, HTMLStencilElement {
     }
     var HTMLRuxIconFilter6Element: {
         prototype: HTMLRuxIconFilter6Element;
-        new(): HTMLRuxIconFilter6Element;
+        new (): HTMLRuxIconFilter6Element;
     };
     interface HTMLRuxIconFilter7Element extends Components.RuxIconFilter7, HTMLStencilElement {
     }
     var HTMLRuxIconFilter7Element: {
         prototype: HTMLRuxIconFilter7Element;
-        new(): HTMLRuxIconFilter7Element;
+        new (): HTMLRuxIconFilter7Element;
     };
     interface HTMLRuxIconFilter8Element extends Components.RuxIconFilter8, HTMLStencilElement {
     }
     var HTMLRuxIconFilter8Element: {
         prototype: HTMLRuxIconFilter8Element;
-        new(): HTMLRuxIconFilter8Element;
+        new (): HTMLRuxIconFilter8Element;
     };
     interface HTMLRuxIconFilter9Element extends Components.RuxIconFilter9, HTMLStencilElement {
     }
     var HTMLRuxIconFilter9Element: {
         prototype: HTMLRuxIconFilter9Element;
-        new(): HTMLRuxIconFilter9Element;
+        new (): HTMLRuxIconFilter9Element;
     };
     interface HTMLRuxIconFilter9PlusElement extends Components.RuxIconFilter9Plus, HTMLStencilElement {
     }
     var HTMLRuxIconFilter9PlusElement: {
         prototype: HTMLRuxIconFilter9PlusElement;
-        new(): HTMLRuxIconFilter9PlusElement;
+        new (): HTMLRuxIconFilter9PlusElement;
     };
     interface HTMLRuxIconFilterBAndWElement extends Components.RuxIconFilterBAndW, HTMLStencilElement {
     }
     var HTMLRuxIconFilterBAndWElement: {
         prototype: HTMLRuxIconFilterBAndWElement;
-        new(): HTMLRuxIconFilterBAndWElement;
+        new (): HTMLRuxIconFilterBAndWElement;
     };
     interface HTMLRuxIconFilterCenterFocusElement extends Components.RuxIconFilterCenterFocus, HTMLStencilElement {
     }
     var HTMLRuxIconFilterCenterFocusElement: {
         prototype: HTMLRuxIconFilterCenterFocusElement;
-        new(): HTMLRuxIconFilterCenterFocusElement;
+        new (): HTMLRuxIconFilterCenterFocusElement;
     };
     interface HTMLRuxIconFilterDramaElement extends Components.RuxIconFilterDrama, HTMLStencilElement {
     }
     var HTMLRuxIconFilterDramaElement: {
         prototype: HTMLRuxIconFilterDramaElement;
-        new(): HTMLRuxIconFilterDramaElement;
+        new (): HTMLRuxIconFilterDramaElement;
     };
     interface HTMLRuxIconFilterFramesElement extends Components.RuxIconFilterFrames, HTMLStencilElement {
     }
     var HTMLRuxIconFilterFramesElement: {
         prototype: HTMLRuxIconFilterFramesElement;
-        new(): HTMLRuxIconFilterFramesElement;
+        new (): HTMLRuxIconFilterFramesElement;
     };
     interface HTMLRuxIconFilterHdrElement extends Components.RuxIconFilterHdr, HTMLStencilElement {
     }
     var HTMLRuxIconFilterHdrElement: {
         prototype: HTMLRuxIconFilterHdrElement;
-        new(): HTMLRuxIconFilterHdrElement;
+        new (): HTMLRuxIconFilterHdrElement;
     };
     interface HTMLRuxIconFilterListElement extends Components.RuxIconFilterList, HTMLStencilElement {
     }
     var HTMLRuxIconFilterListElement: {
         prototype: HTMLRuxIconFilterListElement;
-        new(): HTMLRuxIconFilterListElement;
+        new (): HTMLRuxIconFilterListElement;
     };
     interface HTMLRuxIconFilterNoneElement extends Components.RuxIconFilterNone, HTMLStencilElement {
     }
     var HTMLRuxIconFilterNoneElement: {
         prototype: HTMLRuxIconFilterNoneElement;
-        new(): HTMLRuxIconFilterNoneElement;
+        new (): HTMLRuxIconFilterNoneElement;
     };
     interface HTMLRuxIconFilterTiltShiftElement extends Components.RuxIconFilterTiltShift, HTMLStencilElement {
     }
     var HTMLRuxIconFilterTiltShiftElement: {
         prototype: HTMLRuxIconFilterTiltShiftElement;
-        new(): HTMLRuxIconFilterTiltShiftElement;
+        new (): HTMLRuxIconFilterTiltShiftElement;
     };
     interface HTMLRuxIconFilterVintageElement extends Components.RuxIconFilterVintage, HTMLStencilElement {
     }
     var HTMLRuxIconFilterVintageElement: {
         prototype: HTMLRuxIconFilterVintageElement;
-        new(): HTMLRuxIconFilterVintageElement;
+        new (): HTMLRuxIconFilterVintageElement;
     };
     interface HTMLRuxIconFindInPageElement extends Components.RuxIconFindInPage, HTMLStencilElement {
     }
     var HTMLRuxIconFindInPageElement: {
         prototype: HTMLRuxIconFindInPageElement;
-        new(): HTMLRuxIconFindInPageElement;
+        new (): HTMLRuxIconFindInPageElement;
     };
     interface HTMLRuxIconFindReplaceElement extends Components.RuxIconFindReplace, HTMLStencilElement {
     }
     var HTMLRuxIconFindReplaceElement: {
         prototype: HTMLRuxIconFindReplaceElement;
-        new(): HTMLRuxIconFindReplaceElement;
+        new (): HTMLRuxIconFindReplaceElement;
     };
     interface HTMLRuxIconFingerprintElement extends Components.RuxIconFingerprint, HTMLStencilElement {
     }
     var HTMLRuxIconFingerprintElement: {
         prototype: HTMLRuxIconFingerprintElement;
-        new(): HTMLRuxIconFingerprintElement;
+        new (): HTMLRuxIconFingerprintElement;
     };
     interface HTMLRuxIconFirstPageElement extends Components.RuxIconFirstPage, HTMLStencilElement {
     }
     var HTMLRuxIconFirstPageElement: {
         prototype: HTMLRuxIconFirstPageElement;
-        new(): HTMLRuxIconFirstPageElement;
+        new (): HTMLRuxIconFirstPageElement;
     };
     interface HTMLRuxIconFitnessCenterElement extends Components.RuxIconFitnessCenter, HTMLStencilElement {
     }
     var HTMLRuxIconFitnessCenterElement: {
         prototype: HTMLRuxIconFitnessCenterElement;
-        new(): HTMLRuxIconFitnessCenterElement;
+        new (): HTMLRuxIconFitnessCenterElement;
     };
     interface HTMLRuxIconFlagElement extends Components.RuxIconFlag, HTMLStencilElement {
     }
     var HTMLRuxIconFlagElement: {
         prototype: HTMLRuxIconFlagElement;
-        new(): HTMLRuxIconFlagElement;
+        new (): HTMLRuxIconFlagElement;
     };
     interface HTMLRuxIconFlareElement extends Components.RuxIconFlare, HTMLStencilElement {
     }
     var HTMLRuxIconFlareElement: {
         prototype: HTMLRuxIconFlareElement;
-        new(): HTMLRuxIconFlareElement;
+        new (): HTMLRuxIconFlareElement;
     };
     interface HTMLRuxIconFlashAutoElement extends Components.RuxIconFlashAuto, HTMLStencilElement {
     }
     var HTMLRuxIconFlashAutoElement: {
         prototype: HTMLRuxIconFlashAutoElement;
-        new(): HTMLRuxIconFlashAutoElement;
+        new (): HTMLRuxIconFlashAutoElement;
     };
     interface HTMLRuxIconFlashOffElement extends Components.RuxIconFlashOff, HTMLStencilElement {
     }
     var HTMLRuxIconFlashOffElement: {
         prototype: HTMLRuxIconFlashOffElement;
-        new(): HTMLRuxIconFlashOffElement;
+        new (): HTMLRuxIconFlashOffElement;
     };
     interface HTMLRuxIconFlashOnElement extends Components.RuxIconFlashOn, HTMLStencilElement {
     }
     var HTMLRuxIconFlashOnElement: {
         prototype: HTMLRuxIconFlashOnElement;
-        new(): HTMLRuxIconFlashOnElement;
+        new (): HTMLRuxIconFlashOnElement;
     };
     interface HTMLRuxIconFlightElement extends Components.RuxIconFlight, HTMLStencilElement {
     }
     var HTMLRuxIconFlightElement: {
         prototype: HTMLRuxIconFlightElement;
-        new(): HTMLRuxIconFlightElement;
+        new (): HTMLRuxIconFlightElement;
     };
     interface HTMLRuxIconFlightLandElement extends Components.RuxIconFlightLand, HTMLStencilElement {
     }
     var HTMLRuxIconFlightLandElement: {
         prototype: HTMLRuxIconFlightLandElement;
-        new(): HTMLRuxIconFlightLandElement;
+        new (): HTMLRuxIconFlightLandElement;
     };
     interface HTMLRuxIconFlightTakeoffElement extends Components.RuxIconFlightTakeoff, HTMLStencilElement {
     }
     var HTMLRuxIconFlightTakeoffElement: {
         prototype: HTMLRuxIconFlightTakeoffElement;
-        new(): HTMLRuxIconFlightTakeoffElement;
+        new (): HTMLRuxIconFlightTakeoffElement;
     };
     interface HTMLRuxIconFlipElement extends Components.RuxIconFlip, HTMLStencilElement {
     }
     var HTMLRuxIconFlipElement: {
         prototype: HTMLRuxIconFlipElement;
-        new(): HTMLRuxIconFlipElement;
+        new (): HTMLRuxIconFlipElement;
     };
     interface HTMLRuxIconFlipToBackElement extends Components.RuxIconFlipToBack, HTMLStencilElement {
     }
     var HTMLRuxIconFlipToBackElement: {
         prototype: HTMLRuxIconFlipToBackElement;
-        new(): HTMLRuxIconFlipToBackElement;
+        new (): HTMLRuxIconFlipToBackElement;
     };
     interface HTMLRuxIconFlipToFrontElement extends Components.RuxIconFlipToFront, HTMLStencilElement {
     }
     var HTMLRuxIconFlipToFrontElement: {
         prototype: HTMLRuxIconFlipToFrontElement;
-        new(): HTMLRuxIconFlipToFrontElement;
+        new (): HTMLRuxIconFlipToFrontElement;
     };
     interface HTMLRuxIconFolderElement extends Components.RuxIconFolder, HTMLStencilElement {
     }
     var HTMLRuxIconFolderElement: {
         prototype: HTMLRuxIconFolderElement;
-        new(): HTMLRuxIconFolderElement;
+        new (): HTMLRuxIconFolderElement;
     };
     interface HTMLRuxIconFolderOpenElement extends Components.RuxIconFolderOpen, HTMLStencilElement {
     }
     var HTMLRuxIconFolderOpenElement: {
         prototype: HTMLRuxIconFolderOpenElement;
-        new(): HTMLRuxIconFolderOpenElement;
+        new (): HTMLRuxIconFolderOpenElement;
     };
     interface HTMLRuxIconFolderSharedElement extends Components.RuxIconFolderShared, HTMLStencilElement {
     }
     var HTMLRuxIconFolderSharedElement: {
         prototype: HTMLRuxIconFolderSharedElement;
-        new(): HTMLRuxIconFolderSharedElement;
+        new (): HTMLRuxIconFolderSharedElement;
     };
     interface HTMLRuxIconFolderSpecialElement extends Components.RuxIconFolderSpecial, HTMLStencilElement {
     }
     var HTMLRuxIconFolderSpecialElement: {
         prototype: HTMLRuxIconFolderSpecialElement;
-        new(): HTMLRuxIconFolderSpecialElement;
+        new (): HTMLRuxIconFolderSpecialElement;
     };
     interface HTMLRuxIconFontDownloadElement extends Components.RuxIconFontDownload, HTMLStencilElement {
     }
     var HTMLRuxIconFontDownloadElement: {
         prototype: HTMLRuxIconFontDownloadElement;
-        new(): HTMLRuxIconFontDownloadElement;
+        new (): HTMLRuxIconFontDownloadElement;
     };
     interface HTMLRuxIconFormatAlignCenterElement extends Components.RuxIconFormatAlignCenter, HTMLStencilElement {
     }
     var HTMLRuxIconFormatAlignCenterElement: {
         prototype: HTMLRuxIconFormatAlignCenterElement;
-        new(): HTMLRuxIconFormatAlignCenterElement;
+        new (): HTMLRuxIconFormatAlignCenterElement;
     };
     interface HTMLRuxIconFormatAlignJustifyElement extends Components.RuxIconFormatAlignJustify, HTMLStencilElement {
     }
     var HTMLRuxIconFormatAlignJustifyElement: {
         prototype: HTMLRuxIconFormatAlignJustifyElement;
-        new(): HTMLRuxIconFormatAlignJustifyElement;
+        new (): HTMLRuxIconFormatAlignJustifyElement;
     };
     interface HTMLRuxIconFormatAlignLeftElement extends Components.RuxIconFormatAlignLeft, HTMLStencilElement {
     }
     var HTMLRuxIconFormatAlignLeftElement: {
         prototype: HTMLRuxIconFormatAlignLeftElement;
-        new(): HTMLRuxIconFormatAlignLeftElement;
+        new (): HTMLRuxIconFormatAlignLeftElement;
     };
     interface HTMLRuxIconFormatAlignRightElement extends Components.RuxIconFormatAlignRight, HTMLStencilElement {
     }
     var HTMLRuxIconFormatAlignRightElement: {
         prototype: HTMLRuxIconFormatAlignRightElement;
-        new(): HTMLRuxIconFormatAlignRightElement;
+        new (): HTMLRuxIconFormatAlignRightElement;
     };
     interface HTMLRuxIconFormatBoldElement extends Components.RuxIconFormatBold, HTMLStencilElement {
     }
     var HTMLRuxIconFormatBoldElement: {
         prototype: HTMLRuxIconFormatBoldElement;
-        new(): HTMLRuxIconFormatBoldElement;
+        new (): HTMLRuxIconFormatBoldElement;
     };
     interface HTMLRuxIconFormatClearElement extends Components.RuxIconFormatClear, HTMLStencilElement {
     }
     var HTMLRuxIconFormatClearElement: {
         prototype: HTMLRuxIconFormatClearElement;
-        new(): HTMLRuxIconFormatClearElement;
+        new (): HTMLRuxIconFormatClearElement;
     };
     interface HTMLRuxIconFormatColorFillElement extends Components.RuxIconFormatColorFill, HTMLStencilElement {
     }
     var HTMLRuxIconFormatColorFillElement: {
         prototype: HTMLRuxIconFormatColorFillElement;
-        new(): HTMLRuxIconFormatColorFillElement;
+        new (): HTMLRuxIconFormatColorFillElement;
     };
     interface HTMLRuxIconFormatColorResetElement extends Components.RuxIconFormatColorReset, HTMLStencilElement {
     }
     var HTMLRuxIconFormatColorResetElement: {
         prototype: HTMLRuxIconFormatColorResetElement;
-        new(): HTMLRuxIconFormatColorResetElement;
+        new (): HTMLRuxIconFormatColorResetElement;
     };
     interface HTMLRuxIconFormatColorTextElement extends Components.RuxIconFormatColorText, HTMLStencilElement {
     }
     var HTMLRuxIconFormatColorTextElement: {
         prototype: HTMLRuxIconFormatColorTextElement;
-        new(): HTMLRuxIconFormatColorTextElement;
+        new (): HTMLRuxIconFormatColorTextElement;
     };
     interface HTMLRuxIconFormatIndentDecreaseElement extends Components.RuxIconFormatIndentDecrease, HTMLStencilElement {
     }
     var HTMLRuxIconFormatIndentDecreaseElement: {
         prototype: HTMLRuxIconFormatIndentDecreaseElement;
-        new(): HTMLRuxIconFormatIndentDecreaseElement;
+        new (): HTMLRuxIconFormatIndentDecreaseElement;
     };
     interface HTMLRuxIconFormatIndentIncreaseElement extends Components.RuxIconFormatIndentIncrease, HTMLStencilElement {
     }
     var HTMLRuxIconFormatIndentIncreaseElement: {
         prototype: HTMLRuxIconFormatIndentIncreaseElement;
-        new(): HTMLRuxIconFormatIndentIncreaseElement;
+        new (): HTMLRuxIconFormatIndentIncreaseElement;
     };
     interface HTMLRuxIconFormatItalicElement extends Components.RuxIconFormatItalic, HTMLStencilElement {
     }
     var HTMLRuxIconFormatItalicElement: {
         prototype: HTMLRuxIconFormatItalicElement;
-        new(): HTMLRuxIconFormatItalicElement;
+        new (): HTMLRuxIconFormatItalicElement;
     };
     interface HTMLRuxIconFormatLineSpacingElement extends Components.RuxIconFormatLineSpacing, HTMLStencilElement {
     }
     var HTMLRuxIconFormatLineSpacingElement: {
         prototype: HTMLRuxIconFormatLineSpacingElement;
-        new(): HTMLRuxIconFormatLineSpacingElement;
+        new (): HTMLRuxIconFormatLineSpacingElement;
     };
     interface HTMLRuxIconFormatListBulletedElement extends Components.RuxIconFormatListBulleted, HTMLStencilElement {
     }
     var HTMLRuxIconFormatListBulletedElement: {
         prototype: HTMLRuxIconFormatListBulletedElement;
-        new(): HTMLRuxIconFormatListBulletedElement;
+        new (): HTMLRuxIconFormatListBulletedElement;
     };
     interface HTMLRuxIconFormatListNumberedElement extends Components.RuxIconFormatListNumbered, HTMLStencilElement {
     }
     var HTMLRuxIconFormatListNumberedElement: {
         prototype: HTMLRuxIconFormatListNumberedElement;
-        new(): HTMLRuxIconFormatListNumberedElement;
+        new (): HTMLRuxIconFormatListNumberedElement;
     };
     interface HTMLRuxIconFormatListNumberedRtlElement extends Components.RuxIconFormatListNumberedRtl, HTMLStencilElement {
     }
     var HTMLRuxIconFormatListNumberedRtlElement: {
         prototype: HTMLRuxIconFormatListNumberedRtlElement;
-        new(): HTMLRuxIconFormatListNumberedRtlElement;
+        new (): HTMLRuxIconFormatListNumberedRtlElement;
     };
     interface HTMLRuxIconFormatPaintElement extends Components.RuxIconFormatPaint, HTMLStencilElement {
     }
     var HTMLRuxIconFormatPaintElement: {
         prototype: HTMLRuxIconFormatPaintElement;
-        new(): HTMLRuxIconFormatPaintElement;
+        new (): HTMLRuxIconFormatPaintElement;
     };
     interface HTMLRuxIconFormatQuoteElement extends Components.RuxIconFormatQuote, HTMLStencilElement {
     }
     var HTMLRuxIconFormatQuoteElement: {
         prototype: HTMLRuxIconFormatQuoteElement;
-        new(): HTMLRuxIconFormatQuoteElement;
+        new (): HTMLRuxIconFormatQuoteElement;
     };
     interface HTMLRuxIconFormatShapesElement extends Components.RuxIconFormatShapes, HTMLStencilElement {
     }
     var HTMLRuxIconFormatShapesElement: {
         prototype: HTMLRuxIconFormatShapesElement;
-        new(): HTMLRuxIconFormatShapesElement;
+        new (): HTMLRuxIconFormatShapesElement;
     };
     interface HTMLRuxIconFormatSizeElement extends Components.RuxIconFormatSize, HTMLStencilElement {
     }
     var HTMLRuxIconFormatSizeElement: {
         prototype: HTMLRuxIconFormatSizeElement;
-        new(): HTMLRuxIconFormatSizeElement;
+        new (): HTMLRuxIconFormatSizeElement;
     };
     interface HTMLRuxIconFormatStrikethroughElement extends Components.RuxIconFormatStrikethrough, HTMLStencilElement {
     }
     var HTMLRuxIconFormatStrikethroughElement: {
         prototype: HTMLRuxIconFormatStrikethroughElement;
-        new(): HTMLRuxIconFormatStrikethroughElement;
+        new (): HTMLRuxIconFormatStrikethroughElement;
     };
     interface HTMLRuxIconFormatTextdirectionLToRElement extends Components.RuxIconFormatTextdirectionLToR, HTMLStencilElement {
     }
     var HTMLRuxIconFormatTextdirectionLToRElement: {
         prototype: HTMLRuxIconFormatTextdirectionLToRElement;
-        new(): HTMLRuxIconFormatTextdirectionLToRElement;
+        new (): HTMLRuxIconFormatTextdirectionLToRElement;
     };
     interface HTMLRuxIconFormatTextdirectionRToLElement extends Components.RuxIconFormatTextdirectionRToL, HTMLStencilElement {
     }
     var HTMLRuxIconFormatTextdirectionRToLElement: {
         prototype: HTMLRuxIconFormatTextdirectionRToLElement;
-        new(): HTMLRuxIconFormatTextdirectionRToLElement;
+        new (): HTMLRuxIconFormatTextdirectionRToLElement;
     };
     interface HTMLRuxIconFormatUnderlinedElement extends Components.RuxIconFormatUnderlined, HTMLStencilElement {
     }
     var HTMLRuxIconFormatUnderlinedElement: {
         prototype: HTMLRuxIconFormatUnderlinedElement;
-        new(): HTMLRuxIconFormatUnderlinedElement;
+        new (): HTMLRuxIconFormatUnderlinedElement;
     };
     interface HTMLRuxIconForumElement extends Components.RuxIconForum, HTMLStencilElement {
     }
     var HTMLRuxIconForumElement: {
         prototype: HTMLRuxIconForumElement;
-        new(): HTMLRuxIconForumElement;
+        new (): HTMLRuxIconForumElement;
     };
     interface HTMLRuxIconForwardElement extends Components.RuxIconForward, HTMLStencilElement {
     }
     var HTMLRuxIconForwardElement: {
         prototype: HTMLRuxIconForwardElement;
-        new(): HTMLRuxIconForwardElement;
+        new (): HTMLRuxIconForwardElement;
     };
     interface HTMLRuxIconForward10Element extends Components.RuxIconForward10, HTMLStencilElement {
     }
     var HTMLRuxIconForward10Element: {
         prototype: HTMLRuxIconForward10Element;
-        new(): HTMLRuxIconForward10Element;
+        new (): HTMLRuxIconForward10Element;
     };
     interface HTMLRuxIconForward30Element extends Components.RuxIconForward30, HTMLStencilElement {
     }
     var HTMLRuxIconForward30Element: {
         prototype: HTMLRuxIconForward30Element;
-        new(): HTMLRuxIconForward30Element;
+        new (): HTMLRuxIconForward30Element;
     };
     interface HTMLRuxIconForward5Element extends Components.RuxIconForward5, HTMLStencilElement {
     }
     var HTMLRuxIconForward5Element: {
         prototype: HTMLRuxIconForward5Element;
-        new(): HTMLRuxIconForward5Element;
+        new (): HTMLRuxIconForward5Element;
     };
     interface HTMLRuxIconFreeBreakfastElement extends Components.RuxIconFreeBreakfast, HTMLStencilElement {
     }
     var HTMLRuxIconFreeBreakfastElement: {
         prototype: HTMLRuxIconFreeBreakfastElement;
-        new(): HTMLRuxIconFreeBreakfastElement;
+        new (): HTMLRuxIconFreeBreakfastElement;
     };
     interface HTMLRuxIconFullscreenElement extends Components.RuxIconFullscreen, HTMLStencilElement {
     }
     var HTMLRuxIconFullscreenElement: {
         prototype: HTMLRuxIconFullscreenElement;
-        new(): HTMLRuxIconFullscreenElement;
+        new (): HTMLRuxIconFullscreenElement;
     };
     interface HTMLRuxIconFullscreenExitElement extends Components.RuxIconFullscreenExit, HTMLStencilElement {
     }
     var HTMLRuxIconFullscreenExitElement: {
         prototype: HTMLRuxIconFullscreenExitElement;
-        new(): HTMLRuxIconFullscreenExitElement;
+        new (): HTMLRuxIconFullscreenExitElement;
     };
     interface HTMLRuxIconFunctionsElement extends Components.RuxIconFunctions, HTMLStencilElement {
     }
     var HTMLRuxIconFunctionsElement: {
         prototype: HTMLRuxIconFunctionsElement;
-        new(): HTMLRuxIconFunctionsElement;
+        new (): HTMLRuxIconFunctionsElement;
     };
     interface HTMLRuxIconGTranslateElement extends Components.RuxIconGTranslate, HTMLStencilElement {
     }
     var HTMLRuxIconGTranslateElement: {
         prototype: HTMLRuxIconGTranslateElement;
-        new(): HTMLRuxIconGTranslateElement;
+        new (): HTMLRuxIconGTranslateElement;
     };
     interface HTMLRuxIconGamepadElement extends Components.RuxIconGamepad, HTMLStencilElement {
     }
     var HTMLRuxIconGamepadElement: {
         prototype: HTMLRuxIconGamepadElement;
-        new(): HTMLRuxIconGamepadElement;
+        new (): HTMLRuxIconGamepadElement;
     };
     interface HTMLRuxIconGamesElement extends Components.RuxIconGames, HTMLStencilElement {
     }
     var HTMLRuxIconGamesElement: {
         prototype: HTMLRuxIconGamesElement;
-        new(): HTMLRuxIconGamesElement;
+        new (): HTMLRuxIconGamesElement;
     };
     interface HTMLRuxIconGavelElement extends Components.RuxIconGavel, HTMLStencilElement {
     }
     var HTMLRuxIconGavelElement: {
         prototype: HTMLRuxIconGavelElement;
-        new(): HTMLRuxIconGavelElement;
+        new (): HTMLRuxIconGavelElement;
     };
     interface HTMLRuxIconGestureElement extends Components.RuxIconGesture, HTMLStencilElement {
     }
     var HTMLRuxIconGestureElement: {
         prototype: HTMLRuxIconGestureElement;
-        new(): HTMLRuxIconGestureElement;
+        new (): HTMLRuxIconGestureElement;
     };
     interface HTMLRuxIconGetAppElement extends Components.RuxIconGetApp, HTMLStencilElement {
     }
     var HTMLRuxIconGetAppElement: {
         prototype: HTMLRuxIconGetAppElement;
-        new(): HTMLRuxIconGetAppElement;
+        new (): HTMLRuxIconGetAppElement;
     };
     interface HTMLRuxIconGifElement extends Components.RuxIconGif, HTMLStencilElement {
     }
     var HTMLRuxIconGifElement: {
         prototype: HTMLRuxIconGifElement;
-        new(): HTMLRuxIconGifElement;
+        new (): HTMLRuxIconGifElement;
     };
     interface HTMLRuxIconGolfCourseElement extends Components.RuxIconGolfCourse, HTMLStencilElement {
     }
     var HTMLRuxIconGolfCourseElement: {
         prototype: HTMLRuxIconGolfCourseElement;
-        new(): HTMLRuxIconGolfCourseElement;
+        new (): HTMLRuxIconGolfCourseElement;
     };
     interface HTMLRuxIconGpsFixedElement extends Components.RuxIconGpsFixed, HTMLStencilElement {
     }
     var HTMLRuxIconGpsFixedElement: {
         prototype: HTMLRuxIconGpsFixedElement;
-        new(): HTMLRuxIconGpsFixedElement;
+        new (): HTMLRuxIconGpsFixedElement;
     };
     interface HTMLRuxIconGpsNotFixedElement extends Components.RuxIconGpsNotFixed, HTMLStencilElement {
     }
     var HTMLRuxIconGpsNotFixedElement: {
         prototype: HTMLRuxIconGpsNotFixedElement;
-        new(): HTMLRuxIconGpsNotFixedElement;
+        new (): HTMLRuxIconGpsNotFixedElement;
     };
     interface HTMLRuxIconGpsOffElement extends Components.RuxIconGpsOff, HTMLStencilElement {
     }
     var HTMLRuxIconGpsOffElement: {
         prototype: HTMLRuxIconGpsOffElement;
-        new(): HTMLRuxIconGpsOffElement;
+        new (): HTMLRuxIconGpsOffElement;
     };
     interface HTMLRuxIconGradeElement extends Components.RuxIconGrade, HTMLStencilElement {
     }
     var HTMLRuxIconGradeElement: {
         prototype: HTMLRuxIconGradeElement;
-        new(): HTMLRuxIconGradeElement;
+        new (): HTMLRuxIconGradeElement;
     };
     interface HTMLRuxIconGradientElement extends Components.RuxIconGradient, HTMLStencilElement {
     }
     var HTMLRuxIconGradientElement: {
         prototype: HTMLRuxIconGradientElement;
-        new(): HTMLRuxIconGradientElement;
+        new (): HTMLRuxIconGradientElement;
     };
     interface HTMLRuxIconGrainElement extends Components.RuxIconGrain, HTMLStencilElement {
     }
     var HTMLRuxIconGrainElement: {
         prototype: HTMLRuxIconGrainElement;
-        new(): HTMLRuxIconGrainElement;
+        new (): HTMLRuxIconGrainElement;
     };
     interface HTMLRuxIconGraphicEqElement extends Components.RuxIconGraphicEq, HTMLStencilElement {
     }
     var HTMLRuxIconGraphicEqElement: {
         prototype: HTMLRuxIconGraphicEqElement;
-        new(): HTMLRuxIconGraphicEqElement;
+        new (): HTMLRuxIconGraphicEqElement;
     };
     interface HTMLRuxIconGridOffElement extends Components.RuxIconGridOff, HTMLStencilElement {
     }
     var HTMLRuxIconGridOffElement: {
         prototype: HTMLRuxIconGridOffElement;
-        new(): HTMLRuxIconGridOffElement;
+        new (): HTMLRuxIconGridOffElement;
     };
     interface HTMLRuxIconGridOnElement extends Components.RuxIconGridOn, HTMLStencilElement {
     }
     var HTMLRuxIconGridOnElement: {
         prototype: HTMLRuxIconGridOnElement;
-        new(): HTMLRuxIconGridOnElement;
+        new (): HTMLRuxIconGridOnElement;
     };
     interface HTMLRuxIconGroupElement extends Components.RuxIconGroup, HTMLStencilElement {
     }
     var HTMLRuxIconGroupElement: {
         prototype: HTMLRuxIconGroupElement;
-        new(): HTMLRuxIconGroupElement;
+        new (): HTMLRuxIconGroupElement;
     };
     interface HTMLRuxIconGroupAddElement extends Components.RuxIconGroupAdd, HTMLStencilElement {
     }
     var HTMLRuxIconGroupAddElement: {
         prototype: HTMLRuxIconGroupAddElement;
-        new(): HTMLRuxIconGroupAddElement;
+        new (): HTMLRuxIconGroupAddElement;
     };
     interface HTMLRuxIconGroupWorkElement extends Components.RuxIconGroupWork, HTMLStencilElement {
     }
     var HTMLRuxIconGroupWorkElement: {
         prototype: HTMLRuxIconGroupWorkElement;
-        new(): HTMLRuxIconGroupWorkElement;
+        new (): HTMLRuxIconGroupWorkElement;
     };
     interface HTMLRuxIconHdElement extends Components.RuxIconHd, HTMLStencilElement {
     }
     var HTMLRuxIconHdElement: {
         prototype: HTMLRuxIconHdElement;
-        new(): HTMLRuxIconHdElement;
+        new (): HTMLRuxIconHdElement;
     };
     interface HTMLRuxIconHdrOffElement extends Components.RuxIconHdrOff, HTMLStencilElement {
     }
     var HTMLRuxIconHdrOffElement: {
         prototype: HTMLRuxIconHdrOffElement;
-        new(): HTMLRuxIconHdrOffElement;
+        new (): HTMLRuxIconHdrOffElement;
     };
     interface HTMLRuxIconHdrOnElement extends Components.RuxIconHdrOn, HTMLStencilElement {
     }
     var HTMLRuxIconHdrOnElement: {
         prototype: HTMLRuxIconHdrOnElement;
-        new(): HTMLRuxIconHdrOnElement;
+        new (): HTMLRuxIconHdrOnElement;
     };
     interface HTMLRuxIconHdrStrongElement extends Components.RuxIconHdrStrong, HTMLStencilElement {
     }
     var HTMLRuxIconHdrStrongElement: {
         prototype: HTMLRuxIconHdrStrongElement;
-        new(): HTMLRuxIconHdrStrongElement;
+        new (): HTMLRuxIconHdrStrongElement;
     };
     interface HTMLRuxIconHdrWeakElement extends Components.RuxIconHdrWeak, HTMLStencilElement {
     }
     var HTMLRuxIconHdrWeakElement: {
         prototype: HTMLRuxIconHdrWeakElement;
-        new(): HTMLRuxIconHdrWeakElement;
+        new (): HTMLRuxIconHdrWeakElement;
     };
     interface HTMLRuxIconHeadsetElement extends Components.RuxIconHeadset, HTMLStencilElement {
     }
     var HTMLRuxIconHeadsetElement: {
         prototype: HTMLRuxIconHeadsetElement;
-        new(): HTMLRuxIconHeadsetElement;
+        new (): HTMLRuxIconHeadsetElement;
     };
     interface HTMLRuxIconHeadsetMicElement extends Components.RuxIconHeadsetMic, HTMLStencilElement {
     }
     var HTMLRuxIconHeadsetMicElement: {
         prototype: HTMLRuxIconHeadsetMicElement;
-        new(): HTMLRuxIconHeadsetMicElement;
+        new (): HTMLRuxIconHeadsetMicElement;
     };
     interface HTMLRuxIconHealingElement extends Components.RuxIconHealing, HTMLStencilElement {
     }
     var HTMLRuxIconHealingElement: {
         prototype: HTMLRuxIconHealingElement;
-        new(): HTMLRuxIconHealingElement;
+        new (): HTMLRuxIconHealingElement;
     };
     interface HTMLRuxIconHearingElement extends Components.RuxIconHearing, HTMLStencilElement {
     }
     var HTMLRuxIconHearingElement: {
         prototype: HTMLRuxIconHearingElement;
-        new(): HTMLRuxIconHearingElement;
+        new (): HTMLRuxIconHearingElement;
     };
     interface HTMLRuxIconHelpElement extends Components.RuxIconHelp, HTMLStencilElement {
     }
     var HTMLRuxIconHelpElement: {
         prototype: HTMLRuxIconHelpElement;
-        new(): HTMLRuxIconHelpElement;
+        new (): HTMLRuxIconHelpElement;
     };
     interface HTMLRuxIconHelpOutlineElement extends Components.RuxIconHelpOutline, HTMLStencilElement {
     }
     var HTMLRuxIconHelpOutlineElement: {
         prototype: HTMLRuxIconHelpOutlineElement;
-        new(): HTMLRuxIconHelpOutlineElement;
+        new (): HTMLRuxIconHelpOutlineElement;
     };
     interface HTMLRuxIconHighQualityElement extends Components.RuxIconHighQuality, HTMLStencilElement {
     }
     var HTMLRuxIconHighQualityElement: {
         prototype: HTMLRuxIconHighQualityElement;
-        new(): HTMLRuxIconHighQualityElement;
+        new (): HTMLRuxIconHighQualityElement;
     };
     interface HTMLRuxIconHighlightElement extends Components.RuxIconHighlight, HTMLStencilElement {
     }
     var HTMLRuxIconHighlightElement: {
         prototype: HTMLRuxIconHighlightElement;
-        new(): HTMLRuxIconHighlightElement;
+        new (): HTMLRuxIconHighlightElement;
     };
     interface HTMLRuxIconHighlightOffElement extends Components.RuxIconHighlightOff, HTMLStencilElement {
     }
     var HTMLRuxIconHighlightOffElement: {
         prototype: HTMLRuxIconHighlightOffElement;
-        new(): HTMLRuxIconHighlightOffElement;
+        new (): HTMLRuxIconHighlightOffElement;
     };
     interface HTMLRuxIconHistoryElement extends Components.RuxIconHistory, HTMLStencilElement {
     }
     var HTMLRuxIconHistoryElement: {
         prototype: HTMLRuxIconHistoryElement;
-        new(): HTMLRuxIconHistoryElement;
+        new (): HTMLRuxIconHistoryElement;
     };
     interface HTMLRuxIconHomeElement extends Components.RuxIconHome, HTMLStencilElement {
     }
     var HTMLRuxIconHomeElement: {
         prototype: HTMLRuxIconHomeElement;
-        new(): HTMLRuxIconHomeElement;
+        new (): HTMLRuxIconHomeElement;
     };
     interface HTMLRuxIconHorizontalSplitElement extends Components.RuxIconHorizontalSplit, HTMLStencilElement {
     }
     var HTMLRuxIconHorizontalSplitElement: {
         prototype: HTMLRuxIconHorizontalSplitElement;
-        new(): HTMLRuxIconHorizontalSplitElement;
+        new (): HTMLRuxIconHorizontalSplitElement;
     };
     interface HTMLRuxIconHotTubElement extends Components.RuxIconHotTub, HTMLStencilElement {
     }
     var HTMLRuxIconHotTubElement: {
         prototype: HTMLRuxIconHotTubElement;
-        new(): HTMLRuxIconHotTubElement;
+        new (): HTMLRuxIconHotTubElement;
     };
     interface HTMLRuxIconHotelElement extends Components.RuxIconHotel, HTMLStencilElement {
     }
     var HTMLRuxIconHotelElement: {
         prototype: HTMLRuxIconHotelElement;
-        new(): HTMLRuxIconHotelElement;
+        new (): HTMLRuxIconHotelElement;
     };
     interface HTMLRuxIconHourglassEmptyElement extends Components.RuxIconHourglassEmpty, HTMLStencilElement {
     }
     var HTMLRuxIconHourglassEmptyElement: {
         prototype: HTMLRuxIconHourglassEmptyElement;
-        new(): HTMLRuxIconHourglassEmptyElement;
+        new (): HTMLRuxIconHourglassEmptyElement;
     };
     interface HTMLRuxIconHourglassFullElement extends Components.RuxIconHourglassFull, HTMLStencilElement {
     }
     var HTMLRuxIconHourglassFullElement: {
         prototype: HTMLRuxIconHourglassFullElement;
-        new(): HTMLRuxIconHourglassFullElement;
+        new (): HTMLRuxIconHourglassFullElement;
     };
     interface HTMLRuxIconHowToRegElement extends Components.RuxIconHowToReg, HTMLStencilElement {
     }
     var HTMLRuxIconHowToRegElement: {
         prototype: HTMLRuxIconHowToRegElement;
-        new(): HTMLRuxIconHowToRegElement;
+        new (): HTMLRuxIconHowToRegElement;
     };
     interface HTMLRuxIconHowToVoteElement extends Components.RuxIconHowToVote, HTMLStencilElement {
     }
     var HTMLRuxIconHowToVoteElement: {
         prototype: HTMLRuxIconHowToVoteElement;
-        new(): HTMLRuxIconHowToVoteElement;
+        new (): HTMLRuxIconHowToVoteElement;
     };
     interface HTMLRuxIconHttpElement extends Components.RuxIconHttp, HTMLStencilElement {
     }
     var HTMLRuxIconHttpElement: {
         prototype: HTMLRuxIconHttpElement;
-        new(): HTMLRuxIconHttpElement;
+        new (): HTMLRuxIconHttpElement;
     };
     interface HTMLRuxIconHttpsElement extends Components.RuxIconHttps, HTMLStencilElement {
     }
     var HTMLRuxIconHttpsElement: {
         prototype: HTMLRuxIconHttpsElement;
-        new(): HTMLRuxIconHttpsElement;
+        new (): HTMLRuxIconHttpsElement;
     };
     interface HTMLRuxIconImageElement extends Components.RuxIconImage, HTMLStencilElement {
     }
     var HTMLRuxIconImageElement: {
         prototype: HTMLRuxIconImageElement;
-        new(): HTMLRuxIconImageElement;
+        new (): HTMLRuxIconImageElement;
     };
     interface HTMLRuxIconImageAspectRatioElement extends Components.RuxIconImageAspectRatio, HTMLStencilElement {
     }
     var HTMLRuxIconImageAspectRatioElement: {
         prototype: HTMLRuxIconImageAspectRatioElement;
-        new(): HTMLRuxIconImageAspectRatioElement;
+        new (): HTMLRuxIconImageAspectRatioElement;
     };
     interface HTMLRuxIconImageSearchElement extends Components.RuxIconImageSearch, HTMLStencilElement {
     }
     var HTMLRuxIconImageSearchElement: {
         prototype: HTMLRuxIconImageSearchElement;
-        new(): HTMLRuxIconImageSearchElement;
+        new (): HTMLRuxIconImageSearchElement;
     };
     interface HTMLRuxIconImportContactsElement extends Components.RuxIconImportContacts, HTMLStencilElement {
     }
     var HTMLRuxIconImportContactsElement: {
         prototype: HTMLRuxIconImportContactsElement;
-        new(): HTMLRuxIconImportContactsElement;
+        new (): HTMLRuxIconImportContactsElement;
     };
     interface HTMLRuxIconImportExportElement extends Components.RuxIconImportExport, HTMLStencilElement {
     }
     var HTMLRuxIconImportExportElement: {
         prototype: HTMLRuxIconImportExportElement;
-        new(): HTMLRuxIconImportExportElement;
+        new (): HTMLRuxIconImportExportElement;
     };
     interface HTMLRuxIconImportantDevicesElement extends Components.RuxIconImportantDevices, HTMLStencilElement {
     }
     var HTMLRuxIconImportantDevicesElement: {
         prototype: HTMLRuxIconImportantDevicesElement;
-        new(): HTMLRuxIconImportantDevicesElement;
+        new (): HTMLRuxIconImportantDevicesElement;
     };
     interface HTMLRuxIconInboxElement extends Components.RuxIconInbox, HTMLStencilElement {
     }
     var HTMLRuxIconInboxElement: {
         prototype: HTMLRuxIconInboxElement;
-        new(): HTMLRuxIconInboxElement;
+        new (): HTMLRuxIconInboxElement;
     };
     interface HTMLRuxIconIndeterminateCheckBoxElement extends Components.RuxIconIndeterminateCheckBox, HTMLStencilElement {
     }
     var HTMLRuxIconIndeterminateCheckBoxElement: {
         prototype: HTMLRuxIconIndeterminateCheckBoxElement;
-        new(): HTMLRuxIconIndeterminateCheckBoxElement;
+        new (): HTMLRuxIconIndeterminateCheckBoxElement;
     };
     interface HTMLRuxIconInfoElement extends Components.RuxIconInfo, HTMLStencilElement {
     }
     var HTMLRuxIconInfoElement: {
         prototype: HTMLRuxIconInfoElement;
-        new(): HTMLRuxIconInfoElement;
+        new (): HTMLRuxIconInfoElement;
     };
     interface HTMLRuxIconInputElement extends Components.RuxIconInput, HTMLStencilElement {
     }
     var HTMLRuxIconInputElement: {
         prototype: HTMLRuxIconInputElement;
-        new(): HTMLRuxIconInputElement;
+        new (): HTMLRuxIconInputElement;
     };
     interface HTMLRuxIconInsertChartElement extends Components.RuxIconInsertChart, HTMLStencilElement {
     }
     var HTMLRuxIconInsertChartElement: {
         prototype: HTMLRuxIconInsertChartElement;
-        new(): HTMLRuxIconInsertChartElement;
+        new (): HTMLRuxIconInsertChartElement;
     };
     interface HTMLRuxIconInsertChartOutlinedElement extends Components.RuxIconInsertChartOutlined, HTMLStencilElement {
     }
     var HTMLRuxIconInsertChartOutlinedElement: {
         prototype: HTMLRuxIconInsertChartOutlinedElement;
-        new(): HTMLRuxIconInsertChartOutlinedElement;
+        new (): HTMLRuxIconInsertChartOutlinedElement;
     };
     interface HTMLRuxIconInsertCommentElement extends Components.RuxIconInsertComment, HTMLStencilElement {
     }
     var HTMLRuxIconInsertCommentElement: {
         prototype: HTMLRuxIconInsertCommentElement;
-        new(): HTMLRuxIconInsertCommentElement;
+        new (): HTMLRuxIconInsertCommentElement;
     };
     interface HTMLRuxIconInsertDriveFileElement extends Components.RuxIconInsertDriveFile, HTMLStencilElement {
     }
     var HTMLRuxIconInsertDriveFileElement: {
         prototype: HTMLRuxIconInsertDriveFileElement;
-        new(): HTMLRuxIconInsertDriveFileElement;
+        new (): HTMLRuxIconInsertDriveFileElement;
     };
     interface HTMLRuxIconInsertEmoticonElement extends Components.RuxIconInsertEmoticon, HTMLStencilElement {
     }
     var HTMLRuxIconInsertEmoticonElement: {
         prototype: HTMLRuxIconInsertEmoticonElement;
-        new(): HTMLRuxIconInsertEmoticonElement;
+        new (): HTMLRuxIconInsertEmoticonElement;
     };
     interface HTMLRuxIconInsertInvitationElement extends Components.RuxIconInsertInvitation, HTMLStencilElement {
     }
     var HTMLRuxIconInsertInvitationElement: {
         prototype: HTMLRuxIconInsertInvitationElement;
-        new(): HTMLRuxIconInsertInvitationElement;
+        new (): HTMLRuxIconInsertInvitationElement;
     };
     interface HTMLRuxIconInsertLinkElement extends Components.RuxIconInsertLink, HTMLStencilElement {
     }
     var HTMLRuxIconInsertLinkElement: {
         prototype: HTMLRuxIconInsertLinkElement;
-        new(): HTMLRuxIconInsertLinkElement;
+        new (): HTMLRuxIconInsertLinkElement;
     };
     interface HTMLRuxIconInsertPhotoElement extends Components.RuxIconInsertPhoto, HTMLStencilElement {
     }
     var HTMLRuxIconInsertPhotoElement: {
         prototype: HTMLRuxIconInsertPhotoElement;
-        new(): HTMLRuxIconInsertPhotoElement;
+        new (): HTMLRuxIconInsertPhotoElement;
     };
     interface HTMLRuxIconInvertColorsElement extends Components.RuxIconInvertColors, HTMLStencilElement {
     }
     var HTMLRuxIconInvertColorsElement: {
         prototype: HTMLRuxIconInvertColorsElement;
-        new(): HTMLRuxIconInvertColorsElement;
+        new (): HTMLRuxIconInvertColorsElement;
     };
     interface HTMLRuxIconInvertColorsOffElement extends Components.RuxIconInvertColorsOff, HTMLStencilElement {
     }
     var HTMLRuxIconInvertColorsOffElement: {
         prototype: HTMLRuxIconInvertColorsOffElement;
-        new(): HTMLRuxIconInvertColorsOffElement;
+        new (): HTMLRuxIconInvertColorsOffElement;
     };
     interface HTMLRuxIconIsoElement extends Components.RuxIconIso, HTMLStencilElement {
     }
     var HTMLRuxIconIsoElement: {
         prototype: HTMLRuxIconIsoElement;
-        new(): HTMLRuxIconIsoElement;
+        new (): HTMLRuxIconIsoElement;
     };
     interface HTMLRuxIconKeyboardElement extends Components.RuxIconKeyboard, HTMLStencilElement {
     }
     var HTMLRuxIconKeyboardElement: {
         prototype: HTMLRuxIconKeyboardElement;
-        new(): HTMLRuxIconKeyboardElement;
+        new (): HTMLRuxIconKeyboardElement;
     };
     interface HTMLRuxIconKeyboardArrowDownElement extends Components.RuxIconKeyboardArrowDown, HTMLStencilElement {
     }
     var HTMLRuxIconKeyboardArrowDownElement: {
         prototype: HTMLRuxIconKeyboardArrowDownElement;
-        new(): HTMLRuxIconKeyboardArrowDownElement;
+        new (): HTMLRuxIconKeyboardArrowDownElement;
     };
     interface HTMLRuxIconKeyboardArrowLeftElement extends Components.RuxIconKeyboardArrowLeft, HTMLStencilElement {
     }
     var HTMLRuxIconKeyboardArrowLeftElement: {
         prototype: HTMLRuxIconKeyboardArrowLeftElement;
-        new(): HTMLRuxIconKeyboardArrowLeftElement;
+        new (): HTMLRuxIconKeyboardArrowLeftElement;
     };
     interface HTMLRuxIconKeyboardArrowRightElement extends Components.RuxIconKeyboardArrowRight, HTMLStencilElement {
     }
     var HTMLRuxIconKeyboardArrowRightElement: {
         prototype: HTMLRuxIconKeyboardArrowRightElement;
-        new(): HTMLRuxIconKeyboardArrowRightElement;
+        new (): HTMLRuxIconKeyboardArrowRightElement;
     };
     interface HTMLRuxIconKeyboardArrowUpElement extends Components.RuxIconKeyboardArrowUp, HTMLStencilElement {
     }
     var HTMLRuxIconKeyboardArrowUpElement: {
         prototype: HTMLRuxIconKeyboardArrowUpElement;
-        new(): HTMLRuxIconKeyboardArrowUpElement;
+        new (): HTMLRuxIconKeyboardArrowUpElement;
     };
     interface HTMLRuxIconKeyboardBackspaceElement extends Components.RuxIconKeyboardBackspace, HTMLStencilElement {
     }
     var HTMLRuxIconKeyboardBackspaceElement: {
         prototype: HTMLRuxIconKeyboardBackspaceElement;
-        new(): HTMLRuxIconKeyboardBackspaceElement;
+        new (): HTMLRuxIconKeyboardBackspaceElement;
     };
     interface HTMLRuxIconKeyboardCapslockElement extends Components.RuxIconKeyboardCapslock, HTMLStencilElement {
     }
     var HTMLRuxIconKeyboardCapslockElement: {
         prototype: HTMLRuxIconKeyboardCapslockElement;
-        new(): HTMLRuxIconKeyboardCapslockElement;
+        new (): HTMLRuxIconKeyboardCapslockElement;
     };
     interface HTMLRuxIconKeyboardHideElement extends Components.RuxIconKeyboardHide, HTMLStencilElement {
     }
     var HTMLRuxIconKeyboardHideElement: {
         prototype: HTMLRuxIconKeyboardHideElement;
-        new(): HTMLRuxIconKeyboardHideElement;
+        new (): HTMLRuxIconKeyboardHideElement;
     };
     interface HTMLRuxIconKeyboardReturnElement extends Components.RuxIconKeyboardReturn, HTMLStencilElement {
     }
     var HTMLRuxIconKeyboardReturnElement: {
         prototype: HTMLRuxIconKeyboardReturnElement;
-        new(): HTMLRuxIconKeyboardReturnElement;
+        new (): HTMLRuxIconKeyboardReturnElement;
     };
     interface HTMLRuxIconKeyboardTabElement extends Components.RuxIconKeyboardTab, HTMLStencilElement {
     }
     var HTMLRuxIconKeyboardTabElement: {
         prototype: HTMLRuxIconKeyboardTabElement;
-        new(): HTMLRuxIconKeyboardTabElement;
+        new (): HTMLRuxIconKeyboardTabElement;
     };
     interface HTMLRuxIconKeyboardVoiceElement extends Components.RuxIconKeyboardVoice, HTMLStencilElement {
     }
     var HTMLRuxIconKeyboardVoiceElement: {
         prototype: HTMLRuxIconKeyboardVoiceElement;
-        new(): HTMLRuxIconKeyboardVoiceElement;
+        new (): HTMLRuxIconKeyboardVoiceElement;
     };
     interface HTMLRuxIconKitchenElement extends Components.RuxIconKitchen, HTMLStencilElement {
     }
     var HTMLRuxIconKitchenElement: {
         prototype: HTMLRuxIconKitchenElement;
-        new(): HTMLRuxIconKitchenElement;
+        new (): HTMLRuxIconKitchenElement;
     };
     interface HTMLRuxIconLabelElement extends Components.RuxIconLabel, HTMLStencilElement {
     }
     var HTMLRuxIconLabelElement: {
         prototype: HTMLRuxIconLabelElement;
-        new(): HTMLRuxIconLabelElement;
+        new (): HTMLRuxIconLabelElement;
     };
     interface HTMLRuxIconLabelImportantElement extends Components.RuxIconLabelImportant, HTMLStencilElement {
     }
     var HTMLRuxIconLabelImportantElement: {
         prototype: HTMLRuxIconLabelImportantElement;
-        new(): HTMLRuxIconLabelImportantElement;
+        new (): HTMLRuxIconLabelImportantElement;
     };
     interface HTMLRuxIconLabelOffElement extends Components.RuxIconLabelOff, HTMLStencilElement {
     }
     var HTMLRuxIconLabelOffElement: {
         prototype: HTMLRuxIconLabelOffElement;
-        new(): HTMLRuxIconLabelOffElement;
+        new (): HTMLRuxIconLabelOffElement;
     };
     interface HTMLRuxIconLandscapeElement extends Components.RuxIconLandscape, HTMLStencilElement {
     }
     var HTMLRuxIconLandscapeElement: {
         prototype: HTMLRuxIconLandscapeElement;
-        new(): HTMLRuxIconLandscapeElement;
+        new (): HTMLRuxIconLandscapeElement;
     };
     interface HTMLRuxIconLanguageElement extends Components.RuxIconLanguage, HTMLStencilElement {
     }
     var HTMLRuxIconLanguageElement: {
         prototype: HTMLRuxIconLanguageElement;
-        new(): HTMLRuxIconLanguageElement;
+        new (): HTMLRuxIconLanguageElement;
     };
     interface HTMLRuxIconLaptopElement extends Components.RuxIconLaptop, HTMLStencilElement {
     }
     var HTMLRuxIconLaptopElement: {
         prototype: HTMLRuxIconLaptopElement;
-        new(): HTMLRuxIconLaptopElement;
+        new (): HTMLRuxIconLaptopElement;
     };
     interface HTMLRuxIconLaptopChromebookElement extends Components.RuxIconLaptopChromebook, HTMLStencilElement {
     }
     var HTMLRuxIconLaptopChromebookElement: {
         prototype: HTMLRuxIconLaptopChromebookElement;
-        new(): HTMLRuxIconLaptopChromebookElement;
+        new (): HTMLRuxIconLaptopChromebookElement;
     };
     interface HTMLRuxIconLaptopMacElement extends Components.RuxIconLaptopMac, HTMLStencilElement {
     }
     var HTMLRuxIconLaptopMacElement: {
         prototype: HTMLRuxIconLaptopMacElement;
-        new(): HTMLRuxIconLaptopMacElement;
+        new (): HTMLRuxIconLaptopMacElement;
     };
     interface HTMLRuxIconLaptopWindowsElement extends Components.RuxIconLaptopWindows, HTMLStencilElement {
     }
     var HTMLRuxIconLaptopWindowsElement: {
         prototype: HTMLRuxIconLaptopWindowsElement;
-        new(): HTMLRuxIconLaptopWindowsElement;
+        new (): HTMLRuxIconLaptopWindowsElement;
     };
     interface HTMLRuxIconLastPageElement extends Components.RuxIconLastPage, HTMLStencilElement {
     }
     var HTMLRuxIconLastPageElement: {
         prototype: HTMLRuxIconLastPageElement;
-        new(): HTMLRuxIconLastPageElement;
+        new (): HTMLRuxIconLastPageElement;
     };
     interface HTMLRuxIconLaunchElement extends Components.RuxIconLaunch, HTMLStencilElement {
     }
     var HTMLRuxIconLaunchElement: {
         prototype: HTMLRuxIconLaunchElement;
-        new(): HTMLRuxIconLaunchElement;
+        new (): HTMLRuxIconLaunchElement;
     };
     interface HTMLRuxIconLayersElement extends Components.RuxIconLayers, HTMLStencilElement {
     }
     var HTMLRuxIconLayersElement: {
         prototype: HTMLRuxIconLayersElement;
-        new(): HTMLRuxIconLayersElement;
+        new (): HTMLRuxIconLayersElement;
     };
     interface HTMLRuxIconLayersClearElement extends Components.RuxIconLayersClear, HTMLStencilElement {
     }
     var HTMLRuxIconLayersClearElement: {
         prototype: HTMLRuxIconLayersClearElement;
-        new(): HTMLRuxIconLayersClearElement;
+        new (): HTMLRuxIconLayersClearElement;
     };
     interface HTMLRuxIconLeakAddElement extends Components.RuxIconLeakAdd, HTMLStencilElement {
     }
     var HTMLRuxIconLeakAddElement: {
         prototype: HTMLRuxIconLeakAddElement;
-        new(): HTMLRuxIconLeakAddElement;
+        new (): HTMLRuxIconLeakAddElement;
     };
     interface HTMLRuxIconLeakRemoveElement extends Components.RuxIconLeakRemove, HTMLStencilElement {
     }
     var HTMLRuxIconLeakRemoveElement: {
         prototype: HTMLRuxIconLeakRemoveElement;
-        new(): HTMLRuxIconLeakRemoveElement;
+        new (): HTMLRuxIconLeakRemoveElement;
     };
     interface HTMLRuxIconLensElement extends Components.RuxIconLens, HTMLStencilElement {
     }
     var HTMLRuxIconLensElement: {
         prototype: HTMLRuxIconLensElement;
-        new(): HTMLRuxIconLensElement;
+        new (): HTMLRuxIconLensElement;
     };
     interface HTMLRuxIconLibraryAddElement extends Components.RuxIconLibraryAdd, HTMLStencilElement {
     }
     var HTMLRuxIconLibraryAddElement: {
         prototype: HTMLRuxIconLibraryAddElement;
-        new(): HTMLRuxIconLibraryAddElement;
+        new (): HTMLRuxIconLibraryAddElement;
     };
     interface HTMLRuxIconLibraryBooksElement extends Components.RuxIconLibraryBooks, HTMLStencilElement {
     }
     var HTMLRuxIconLibraryBooksElement: {
         prototype: HTMLRuxIconLibraryBooksElement;
-        new(): HTMLRuxIconLibraryBooksElement;
+        new (): HTMLRuxIconLibraryBooksElement;
     };
     interface HTMLRuxIconLibraryMusicElement extends Components.RuxIconLibraryMusic, HTMLStencilElement {
     }
     var HTMLRuxIconLibraryMusicElement: {
         prototype: HTMLRuxIconLibraryMusicElement;
-        new(): HTMLRuxIconLibraryMusicElement;
+        new (): HTMLRuxIconLibraryMusicElement;
     };
     interface HTMLRuxIconLineStyleElement extends Components.RuxIconLineStyle, HTMLStencilElement {
     }
     var HTMLRuxIconLineStyleElement: {
         prototype: HTMLRuxIconLineStyleElement;
-        new(): HTMLRuxIconLineStyleElement;
+        new (): HTMLRuxIconLineStyleElement;
     };
     interface HTMLRuxIconLineWeightElement extends Components.RuxIconLineWeight, HTMLStencilElement {
     }
     var HTMLRuxIconLineWeightElement: {
         prototype: HTMLRuxIconLineWeightElement;
-        new(): HTMLRuxIconLineWeightElement;
+        new (): HTMLRuxIconLineWeightElement;
     };
     interface HTMLRuxIconLinearScaleElement extends Components.RuxIconLinearScale, HTMLStencilElement {
     }
     var HTMLRuxIconLinearScaleElement: {
         prototype: HTMLRuxIconLinearScaleElement;
-        new(): HTMLRuxIconLinearScaleElement;
+        new (): HTMLRuxIconLinearScaleElement;
     };
     interface HTMLRuxIconLinkElement extends Components.RuxIconLink, HTMLStencilElement {
     }
     var HTMLRuxIconLinkElement: {
         prototype: HTMLRuxIconLinkElement;
-        new(): HTMLRuxIconLinkElement;
+        new (): HTMLRuxIconLinkElement;
     };
     interface HTMLRuxIconLinkOffElement extends Components.RuxIconLinkOff, HTMLStencilElement {
     }
     var HTMLRuxIconLinkOffElement: {
         prototype: HTMLRuxIconLinkOffElement;
-        new(): HTMLRuxIconLinkOffElement;
+        new (): HTMLRuxIconLinkOffElement;
     };
     interface HTMLRuxIconLinkedCameraElement extends Components.RuxIconLinkedCamera, HTMLStencilElement {
     }
     var HTMLRuxIconLinkedCameraElement: {
         prototype: HTMLRuxIconLinkedCameraElement;
-        new(): HTMLRuxIconLinkedCameraElement;
+        new (): HTMLRuxIconLinkedCameraElement;
     };
     interface HTMLRuxIconListElement extends Components.RuxIconList, HTMLStencilElement {
     }
     var HTMLRuxIconListElement: {
         prototype: HTMLRuxIconListElement;
-        new(): HTMLRuxIconListElement;
+        new (): HTMLRuxIconListElement;
     };
     interface HTMLRuxIconListAltElement extends Components.RuxIconListAlt, HTMLStencilElement {
     }
     var HTMLRuxIconListAltElement: {
         prototype: HTMLRuxIconListAltElement;
-        new(): HTMLRuxIconListAltElement;
+        new (): HTMLRuxIconListAltElement;
     };
     interface HTMLRuxIconLiveHelpElement extends Components.RuxIconLiveHelp, HTMLStencilElement {
     }
     var HTMLRuxIconLiveHelpElement: {
         prototype: HTMLRuxIconLiveHelpElement;
-        new(): HTMLRuxIconLiveHelpElement;
+        new (): HTMLRuxIconLiveHelpElement;
     };
     interface HTMLRuxIconLiveTvElement extends Components.RuxIconLiveTv, HTMLStencilElement {
     }
     var HTMLRuxIconLiveTvElement: {
         prototype: HTMLRuxIconLiveTvElement;
-        new(): HTMLRuxIconLiveTvElement;
+        new (): HTMLRuxIconLiveTvElement;
     };
     interface HTMLRuxIconLocalActivityElement extends Components.RuxIconLocalActivity, HTMLStencilElement {
     }
     var HTMLRuxIconLocalActivityElement: {
         prototype: HTMLRuxIconLocalActivityElement;
-        new(): HTMLRuxIconLocalActivityElement;
+        new (): HTMLRuxIconLocalActivityElement;
     };
     interface HTMLRuxIconLocalAirportElement extends Components.RuxIconLocalAirport, HTMLStencilElement {
     }
     var HTMLRuxIconLocalAirportElement: {
         prototype: HTMLRuxIconLocalAirportElement;
-        new(): HTMLRuxIconLocalAirportElement;
+        new (): HTMLRuxIconLocalAirportElement;
     };
     interface HTMLRuxIconLocalAtmElement extends Components.RuxIconLocalAtm, HTMLStencilElement {
     }
     var HTMLRuxIconLocalAtmElement: {
         prototype: HTMLRuxIconLocalAtmElement;
-        new(): HTMLRuxIconLocalAtmElement;
+        new (): HTMLRuxIconLocalAtmElement;
     };
     interface HTMLRuxIconLocalBarElement extends Components.RuxIconLocalBar, HTMLStencilElement {
     }
     var HTMLRuxIconLocalBarElement: {
         prototype: HTMLRuxIconLocalBarElement;
-        new(): HTMLRuxIconLocalBarElement;
+        new (): HTMLRuxIconLocalBarElement;
     };
     interface HTMLRuxIconLocalCafeElement extends Components.RuxIconLocalCafe, HTMLStencilElement {
     }
     var HTMLRuxIconLocalCafeElement: {
         prototype: HTMLRuxIconLocalCafeElement;
-        new(): HTMLRuxIconLocalCafeElement;
+        new (): HTMLRuxIconLocalCafeElement;
     };
     interface HTMLRuxIconLocalConvenienceStoreElement extends Components.RuxIconLocalConvenienceStore, HTMLStencilElement {
     }
     var HTMLRuxIconLocalConvenienceStoreElement: {
         prototype: HTMLRuxIconLocalConvenienceStoreElement;
-        new(): HTMLRuxIconLocalConvenienceStoreElement;
+        new (): HTMLRuxIconLocalConvenienceStoreElement;
     };
     interface HTMLRuxIconLocalDiningElement extends Components.RuxIconLocalDining, HTMLStencilElement {
     }
     var HTMLRuxIconLocalDiningElement: {
         prototype: HTMLRuxIconLocalDiningElement;
-        new(): HTMLRuxIconLocalDiningElement;
+        new (): HTMLRuxIconLocalDiningElement;
     };
     interface HTMLRuxIconLocalDrinkElement extends Components.RuxIconLocalDrink, HTMLStencilElement {
     }
     var HTMLRuxIconLocalDrinkElement: {
         prototype: HTMLRuxIconLocalDrinkElement;
-        new(): HTMLRuxIconLocalDrinkElement;
+        new (): HTMLRuxIconLocalDrinkElement;
     };
     interface HTMLRuxIconLocalGasStationElement extends Components.RuxIconLocalGasStation, HTMLStencilElement {
     }
     var HTMLRuxIconLocalGasStationElement: {
         prototype: HTMLRuxIconLocalGasStationElement;
-        new(): HTMLRuxIconLocalGasStationElement;
+        new (): HTMLRuxIconLocalGasStationElement;
     };
     interface HTMLRuxIconLocalGroceryStoreElement extends Components.RuxIconLocalGroceryStore, HTMLStencilElement {
     }
     var HTMLRuxIconLocalGroceryStoreElement: {
         prototype: HTMLRuxIconLocalGroceryStoreElement;
-        new(): HTMLRuxIconLocalGroceryStoreElement;
+        new (): HTMLRuxIconLocalGroceryStoreElement;
     };
     interface HTMLRuxIconLocalHospitalElement extends Components.RuxIconLocalHospital, HTMLStencilElement {
     }
     var HTMLRuxIconLocalHospitalElement: {
         prototype: HTMLRuxIconLocalHospitalElement;
-        new(): HTMLRuxIconLocalHospitalElement;
+        new (): HTMLRuxIconLocalHospitalElement;
     };
     interface HTMLRuxIconLocalHotelElement extends Components.RuxIconLocalHotel, HTMLStencilElement {
     }
     var HTMLRuxIconLocalHotelElement: {
         prototype: HTMLRuxIconLocalHotelElement;
-        new(): HTMLRuxIconLocalHotelElement;
+        new (): HTMLRuxIconLocalHotelElement;
     };
     interface HTMLRuxIconLocalLaundryServiceElement extends Components.RuxIconLocalLaundryService, HTMLStencilElement {
     }
     var HTMLRuxIconLocalLaundryServiceElement: {
         prototype: HTMLRuxIconLocalLaundryServiceElement;
-        new(): HTMLRuxIconLocalLaundryServiceElement;
+        new (): HTMLRuxIconLocalLaundryServiceElement;
     };
     interface HTMLRuxIconLocalLibraryElement extends Components.RuxIconLocalLibrary, HTMLStencilElement {
     }
     var HTMLRuxIconLocalLibraryElement: {
         prototype: HTMLRuxIconLocalLibraryElement;
-        new(): HTMLRuxIconLocalLibraryElement;
+        new (): HTMLRuxIconLocalLibraryElement;
     };
     interface HTMLRuxIconLocalMallElement extends Components.RuxIconLocalMall, HTMLStencilElement {
     }
     var HTMLRuxIconLocalMallElement: {
         prototype: HTMLRuxIconLocalMallElement;
-        new(): HTMLRuxIconLocalMallElement;
+        new (): HTMLRuxIconLocalMallElement;
     };
     interface HTMLRuxIconLocalMoviesElement extends Components.RuxIconLocalMovies, HTMLStencilElement {
     }
     var HTMLRuxIconLocalMoviesElement: {
         prototype: HTMLRuxIconLocalMoviesElement;
-        new(): HTMLRuxIconLocalMoviesElement;
+        new (): HTMLRuxIconLocalMoviesElement;
     };
     interface HTMLRuxIconLocalOfferElement extends Components.RuxIconLocalOffer, HTMLStencilElement {
     }
     var HTMLRuxIconLocalOfferElement: {
         prototype: HTMLRuxIconLocalOfferElement;
-        new(): HTMLRuxIconLocalOfferElement;
+        new (): HTMLRuxIconLocalOfferElement;
     };
     interface HTMLRuxIconLocalParkingElement extends Components.RuxIconLocalParking, HTMLStencilElement {
     }
     var HTMLRuxIconLocalParkingElement: {
         prototype: HTMLRuxIconLocalParkingElement;
-        new(): HTMLRuxIconLocalParkingElement;
+        new (): HTMLRuxIconLocalParkingElement;
     };
     interface HTMLRuxIconLocalPharmacyElement extends Components.RuxIconLocalPharmacy, HTMLStencilElement {
     }
     var HTMLRuxIconLocalPharmacyElement: {
         prototype: HTMLRuxIconLocalPharmacyElement;
-        new(): HTMLRuxIconLocalPharmacyElement;
+        new (): HTMLRuxIconLocalPharmacyElement;
     };
     interface HTMLRuxIconLocalPhoneElement extends Components.RuxIconLocalPhone, HTMLStencilElement {
     }
     var HTMLRuxIconLocalPhoneElement: {
         prototype: HTMLRuxIconLocalPhoneElement;
-        new(): HTMLRuxIconLocalPhoneElement;
+        new (): HTMLRuxIconLocalPhoneElement;
     };
     interface HTMLRuxIconLocalPlayElement extends Components.RuxIconLocalPlay, HTMLStencilElement {
     }
     var HTMLRuxIconLocalPlayElement: {
         prototype: HTMLRuxIconLocalPlayElement;
-        new(): HTMLRuxIconLocalPlayElement;
+        new (): HTMLRuxIconLocalPlayElement;
     };
     interface HTMLRuxIconLocalPostOfficeElement extends Components.RuxIconLocalPostOffice, HTMLStencilElement {
     }
     var HTMLRuxIconLocalPostOfficeElement: {
         prototype: HTMLRuxIconLocalPostOfficeElement;
-        new(): HTMLRuxIconLocalPostOfficeElement;
+        new (): HTMLRuxIconLocalPostOfficeElement;
     };
     interface HTMLRuxIconLocalPrintshopElement extends Components.RuxIconLocalPrintshop, HTMLStencilElement {
     }
     var HTMLRuxIconLocalPrintshopElement: {
         prototype: HTMLRuxIconLocalPrintshopElement;
-        new(): HTMLRuxIconLocalPrintshopElement;
+        new (): HTMLRuxIconLocalPrintshopElement;
     };
     interface HTMLRuxIconLocalSeeElement extends Components.RuxIconLocalSee, HTMLStencilElement {
     }
     var HTMLRuxIconLocalSeeElement: {
         prototype: HTMLRuxIconLocalSeeElement;
-        new(): HTMLRuxIconLocalSeeElement;
+        new (): HTMLRuxIconLocalSeeElement;
     };
     interface HTMLRuxIconLocalShippingElement extends Components.RuxIconLocalShipping, HTMLStencilElement {
     }
     var HTMLRuxIconLocalShippingElement: {
         prototype: HTMLRuxIconLocalShippingElement;
-        new(): HTMLRuxIconLocalShippingElement;
+        new (): HTMLRuxIconLocalShippingElement;
     };
     interface HTMLRuxIconLocalTaxiElement extends Components.RuxIconLocalTaxi, HTMLStencilElement {
     }
     var HTMLRuxIconLocalTaxiElement: {
         prototype: HTMLRuxIconLocalTaxiElement;
-        new(): HTMLRuxIconLocalTaxiElement;
+        new (): HTMLRuxIconLocalTaxiElement;
     };
     interface HTMLRuxIconLocationCityElement extends Components.RuxIconLocationCity, HTMLStencilElement {
     }
     var HTMLRuxIconLocationCityElement: {
         prototype: HTMLRuxIconLocationCityElement;
-        new(): HTMLRuxIconLocationCityElement;
+        new (): HTMLRuxIconLocationCityElement;
     };
     interface HTMLRuxIconLocationDisabledElement extends Components.RuxIconLocationDisabled, HTMLStencilElement {
     }
     var HTMLRuxIconLocationDisabledElement: {
         prototype: HTMLRuxIconLocationDisabledElement;
-        new(): HTMLRuxIconLocationDisabledElement;
+        new (): HTMLRuxIconLocationDisabledElement;
     };
     interface HTMLRuxIconLocationOffElement extends Components.RuxIconLocationOff, HTMLStencilElement {
     }
     var HTMLRuxIconLocationOffElement: {
         prototype: HTMLRuxIconLocationOffElement;
-        new(): HTMLRuxIconLocationOffElement;
+        new (): HTMLRuxIconLocationOffElement;
     };
     interface HTMLRuxIconLocationOnElement extends Components.RuxIconLocationOn, HTMLStencilElement {
     }
     var HTMLRuxIconLocationOnElement: {
         prototype: HTMLRuxIconLocationOnElement;
-        new(): HTMLRuxIconLocationOnElement;
+        new (): HTMLRuxIconLocationOnElement;
     };
     interface HTMLRuxIconLocationSearchingElement extends Components.RuxIconLocationSearching, HTMLStencilElement {
     }
     var HTMLRuxIconLocationSearchingElement: {
         prototype: HTMLRuxIconLocationSearchingElement;
-        new(): HTMLRuxIconLocationSearchingElement;
+        new (): HTMLRuxIconLocationSearchingElement;
     };
     interface HTMLRuxIconLockElement extends Components.RuxIconLock, HTMLStencilElement {
     }
     var HTMLRuxIconLockElement: {
         prototype: HTMLRuxIconLockElement;
-        new(): HTMLRuxIconLockElement;
+        new (): HTMLRuxIconLockElement;
     };
     interface HTMLRuxIconLockOpenElement extends Components.RuxIconLockOpen, HTMLStencilElement {
     }
     var HTMLRuxIconLockOpenElement: {
         prototype: HTMLRuxIconLockOpenElement;
-        new(): HTMLRuxIconLockOpenElement;
+        new (): HTMLRuxIconLockOpenElement;
     };
     interface HTMLRuxIconLooksElement extends Components.RuxIconLooks, HTMLStencilElement {
     }
     var HTMLRuxIconLooksElement: {
         prototype: HTMLRuxIconLooksElement;
-        new(): HTMLRuxIconLooksElement;
+        new (): HTMLRuxIconLooksElement;
     };
     interface HTMLRuxIconLooks1Element extends Components.RuxIconLooks1, HTMLStencilElement {
     }
     var HTMLRuxIconLooks1Element: {
         prototype: HTMLRuxIconLooks1Element;
-        new(): HTMLRuxIconLooks1Element;
+        new (): HTMLRuxIconLooks1Element;
     };
     interface HTMLRuxIconLooks2Element extends Components.RuxIconLooks2, HTMLStencilElement {
     }
     var HTMLRuxIconLooks2Element: {
         prototype: HTMLRuxIconLooks2Element;
-        new(): HTMLRuxIconLooks2Element;
+        new (): HTMLRuxIconLooks2Element;
     };
     interface HTMLRuxIconLooks3Element extends Components.RuxIconLooks3, HTMLStencilElement {
     }
     var HTMLRuxIconLooks3Element: {
         prototype: HTMLRuxIconLooks3Element;
-        new(): HTMLRuxIconLooks3Element;
+        new (): HTMLRuxIconLooks3Element;
     };
     interface HTMLRuxIconLooks4Element extends Components.RuxIconLooks4, HTMLStencilElement {
     }
     var HTMLRuxIconLooks4Element: {
         prototype: HTMLRuxIconLooks4Element;
-        new(): HTMLRuxIconLooks4Element;
+        new (): HTMLRuxIconLooks4Element;
     };
     interface HTMLRuxIconLooks5Element extends Components.RuxIconLooks5, HTMLStencilElement {
     }
     var HTMLRuxIconLooks5Element: {
         prototype: HTMLRuxIconLooks5Element;
-        new(): HTMLRuxIconLooks5Element;
+        new (): HTMLRuxIconLooks5Element;
     };
     interface HTMLRuxIconLooks6Element extends Components.RuxIconLooks6, HTMLStencilElement {
     }
     var HTMLRuxIconLooks6Element: {
         prototype: HTMLRuxIconLooks6Element;
-        new(): HTMLRuxIconLooks6Element;
+        new (): HTMLRuxIconLooks6Element;
     };
     interface HTMLRuxIconLoopElement extends Components.RuxIconLoop, HTMLStencilElement {
     }
     var HTMLRuxIconLoopElement: {
         prototype: HTMLRuxIconLoopElement;
-        new(): HTMLRuxIconLoopElement;
+        new (): HTMLRuxIconLoopElement;
     };
     interface HTMLRuxIconLoupeElement extends Components.RuxIconLoupe, HTMLStencilElement {
     }
     var HTMLRuxIconLoupeElement: {
         prototype: HTMLRuxIconLoupeElement;
-        new(): HTMLRuxIconLoupeElement;
+        new (): HTMLRuxIconLoupeElement;
     };
     interface HTMLRuxIconLowPriorityElement extends Components.RuxIconLowPriority, HTMLStencilElement {
     }
     var HTMLRuxIconLowPriorityElement: {
         prototype: HTMLRuxIconLowPriorityElement;
-        new(): HTMLRuxIconLowPriorityElement;
+        new (): HTMLRuxIconLowPriorityElement;
     };
     interface HTMLRuxIconLoyaltyElement extends Components.RuxIconLoyalty, HTMLStencilElement {
     }
     var HTMLRuxIconLoyaltyElement: {
         prototype: HTMLRuxIconLoyaltyElement;
-        new(): HTMLRuxIconLoyaltyElement;
+        new (): HTMLRuxIconLoyaltyElement;
     };
     interface HTMLRuxIconMailElement extends Components.RuxIconMail, HTMLStencilElement {
     }
     var HTMLRuxIconMailElement: {
         prototype: HTMLRuxIconMailElement;
-        new(): HTMLRuxIconMailElement;
+        new (): HTMLRuxIconMailElement;
     };
     interface HTMLRuxIconMailOutlineElement extends Components.RuxIconMailOutline, HTMLStencilElement {
     }
     var HTMLRuxIconMailOutlineElement: {
         prototype: HTMLRuxIconMailOutlineElement;
-        new(): HTMLRuxIconMailOutlineElement;
+        new (): HTMLRuxIconMailOutlineElement;
     };
     interface HTMLRuxIconMapElement extends Components.RuxIconMap, HTMLStencilElement {
     }
     var HTMLRuxIconMapElement: {
         prototype: HTMLRuxIconMapElement;
-        new(): HTMLRuxIconMapElement;
+        new (): HTMLRuxIconMapElement;
     };
     interface HTMLRuxIconMarkunreadElement extends Components.RuxIconMarkunread, HTMLStencilElement {
     }
     var HTMLRuxIconMarkunreadElement: {
         prototype: HTMLRuxIconMarkunreadElement;
-        new(): HTMLRuxIconMarkunreadElement;
+        new (): HTMLRuxIconMarkunreadElement;
     };
     interface HTMLRuxIconMarkunreadMailboxElement extends Components.RuxIconMarkunreadMailbox, HTMLStencilElement {
     }
     var HTMLRuxIconMarkunreadMailboxElement: {
         prototype: HTMLRuxIconMarkunreadMailboxElement;
-        new(): HTMLRuxIconMarkunreadMailboxElement;
+        new (): HTMLRuxIconMarkunreadMailboxElement;
     };
     interface HTMLRuxIconMaximizeElement extends Components.RuxIconMaximize, HTMLStencilElement {
     }
     var HTMLRuxIconMaximizeElement: {
         prototype: HTMLRuxIconMaximizeElement;
-        new(): HTMLRuxIconMaximizeElement;
+        new (): HTMLRuxIconMaximizeElement;
     };
     interface HTMLRuxIconMeetingRoomElement extends Components.RuxIconMeetingRoom, HTMLStencilElement {
     }
     var HTMLRuxIconMeetingRoomElement: {
         prototype: HTMLRuxIconMeetingRoomElement;
-        new(): HTMLRuxIconMeetingRoomElement;
+        new (): HTMLRuxIconMeetingRoomElement;
     };
     interface HTMLRuxIconMemoryElement extends Components.RuxIconMemory, HTMLStencilElement {
     }
     var HTMLRuxIconMemoryElement: {
         prototype: HTMLRuxIconMemoryElement;
-        new(): HTMLRuxIconMemoryElement;
+        new (): HTMLRuxIconMemoryElement;
     };
     interface HTMLRuxIconMenuElement extends Components.RuxIconMenu, HTMLStencilElement {
     }
     var HTMLRuxIconMenuElement: {
         prototype: HTMLRuxIconMenuElement;
-        new(): HTMLRuxIconMenuElement;
+        new (): HTMLRuxIconMenuElement;
     };
     interface HTMLRuxIconMergeTypeElement extends Components.RuxIconMergeType, HTMLStencilElement {
     }
     var HTMLRuxIconMergeTypeElement: {
         prototype: HTMLRuxIconMergeTypeElement;
-        new(): HTMLRuxIconMergeTypeElement;
+        new (): HTMLRuxIconMergeTypeElement;
     };
     interface HTMLRuxIconMessageElement extends Components.RuxIconMessage, HTMLStencilElement {
     }
     var HTMLRuxIconMessageElement: {
         prototype: HTMLRuxIconMessageElement;
-        new(): HTMLRuxIconMessageElement;
+        new (): HTMLRuxIconMessageElement;
     };
     interface HTMLRuxIconMicElement extends Components.RuxIconMic, HTMLStencilElement {
     }
     var HTMLRuxIconMicElement: {
         prototype: HTMLRuxIconMicElement;
-        new(): HTMLRuxIconMicElement;
+        new (): HTMLRuxIconMicElement;
     };
     interface HTMLRuxIconMicNoneElement extends Components.RuxIconMicNone, HTMLStencilElement {
     }
     var HTMLRuxIconMicNoneElement: {
         prototype: HTMLRuxIconMicNoneElement;
-        new(): HTMLRuxIconMicNoneElement;
+        new (): HTMLRuxIconMicNoneElement;
     };
     interface HTMLRuxIconMicOffElement extends Components.RuxIconMicOff, HTMLStencilElement {
     }
     var HTMLRuxIconMicOffElement: {
         prototype: HTMLRuxIconMicOffElement;
-        new(): HTMLRuxIconMicOffElement;
+        new (): HTMLRuxIconMicOffElement;
     };
     interface HTMLRuxIconMinimizeElement extends Components.RuxIconMinimize, HTMLStencilElement {
     }
     var HTMLRuxIconMinimizeElement: {
         prototype: HTMLRuxIconMinimizeElement;
-        new(): HTMLRuxIconMinimizeElement;
+        new (): HTMLRuxIconMinimizeElement;
     };
     interface HTMLRuxIconMissedVideoCallElement extends Components.RuxIconMissedVideoCall, HTMLStencilElement {
     }
     var HTMLRuxIconMissedVideoCallElement: {
         prototype: HTMLRuxIconMissedVideoCallElement;
-        new(): HTMLRuxIconMissedVideoCallElement;
+        new (): HTMLRuxIconMissedVideoCallElement;
     };
     interface HTMLRuxIconMissionElement extends Components.RuxIconMission, HTMLStencilElement {
     }
     var HTMLRuxIconMissionElement: {
         prototype: HTMLRuxIconMissionElement;
-        new(): HTMLRuxIconMissionElement;
+        new (): HTMLRuxIconMissionElement;
     };
     interface HTMLRuxIconMmsElement extends Components.RuxIconMms, HTMLStencilElement {
     }
     var HTMLRuxIconMmsElement: {
         prototype: HTMLRuxIconMmsElement;
-        new(): HTMLRuxIconMmsElement;
+        new (): HTMLRuxIconMmsElement;
     };
     interface HTMLRuxIconMobileFriendlyElement extends Components.RuxIconMobileFriendly, HTMLStencilElement {
     }
     var HTMLRuxIconMobileFriendlyElement: {
         prototype: HTMLRuxIconMobileFriendlyElement;
-        new(): HTMLRuxIconMobileFriendlyElement;
+        new (): HTMLRuxIconMobileFriendlyElement;
     };
     interface HTMLRuxIconMobileOffElement extends Components.RuxIconMobileOff, HTMLStencilElement {
     }
     var HTMLRuxIconMobileOffElement: {
         prototype: HTMLRuxIconMobileOffElement;
-        new(): HTMLRuxIconMobileOffElement;
+        new (): HTMLRuxIconMobileOffElement;
     };
     interface HTMLRuxIconMobileScreenShareElement extends Components.RuxIconMobileScreenShare, HTMLStencilElement {
     }
     var HTMLRuxIconMobileScreenShareElement: {
         prototype: HTMLRuxIconMobileScreenShareElement;
-        new(): HTMLRuxIconMobileScreenShareElement;
+        new (): HTMLRuxIconMobileScreenShareElement;
     };
     interface HTMLRuxIconModeCommentElement extends Components.RuxIconModeComment, HTMLStencilElement {
     }
     var HTMLRuxIconModeCommentElement: {
         prototype: HTMLRuxIconModeCommentElement;
-        new(): HTMLRuxIconModeCommentElement;
+        new (): HTMLRuxIconModeCommentElement;
     };
     interface HTMLRuxIconMonetizationOnElement extends Components.RuxIconMonetizationOn, HTMLStencilElement {
     }
     var HTMLRuxIconMonetizationOnElement: {
         prototype: HTMLRuxIconMonetizationOnElement;
-        new(): HTMLRuxIconMonetizationOnElement;
+        new (): HTMLRuxIconMonetizationOnElement;
     };
     interface HTMLRuxIconMoneyElement extends Components.RuxIconMoney, HTMLStencilElement {
     }
     var HTMLRuxIconMoneyElement: {
         prototype: HTMLRuxIconMoneyElement;
-        new(): HTMLRuxIconMoneyElement;
+        new (): HTMLRuxIconMoneyElement;
     };
     interface HTMLRuxIconMoneyOffElement extends Components.RuxIconMoneyOff, HTMLStencilElement {
     }
     var HTMLRuxIconMoneyOffElement: {
         prototype: HTMLRuxIconMoneyOffElement;
-        new(): HTMLRuxIconMoneyOffElement;
+        new (): HTMLRuxIconMoneyOffElement;
     };
     interface HTMLRuxIconMonochromePhotosElement extends Components.RuxIconMonochromePhotos, HTMLStencilElement {
     }
     var HTMLRuxIconMonochromePhotosElement: {
         prototype: HTMLRuxIconMonochromePhotosElement;
-        new(): HTMLRuxIconMonochromePhotosElement;
+        new (): HTMLRuxIconMonochromePhotosElement;
     };
     interface HTMLRuxIconMoodElement extends Components.RuxIconMood, HTMLStencilElement {
     }
     var HTMLRuxIconMoodElement: {
         prototype: HTMLRuxIconMoodElement;
-        new(): HTMLRuxIconMoodElement;
+        new (): HTMLRuxIconMoodElement;
     };
     interface HTMLRuxIconMoodBadElement extends Components.RuxIconMoodBad, HTMLStencilElement {
     }
     var HTMLRuxIconMoodBadElement: {
         prototype: HTMLRuxIconMoodBadElement;
-        new(): HTMLRuxIconMoodBadElement;
+        new (): HTMLRuxIconMoodBadElement;
     };
     interface HTMLRuxIconMoreElement extends Components.RuxIconMore, HTMLStencilElement {
     }
     var HTMLRuxIconMoreElement: {
         prototype: HTMLRuxIconMoreElement;
-        new(): HTMLRuxIconMoreElement;
+        new (): HTMLRuxIconMoreElement;
     };
     interface HTMLRuxIconMoreHorizElement extends Components.RuxIconMoreHoriz, HTMLStencilElement {
     }
     var HTMLRuxIconMoreHorizElement: {
         prototype: HTMLRuxIconMoreHorizElement;
-        new(): HTMLRuxIconMoreHorizElement;
+        new (): HTMLRuxIconMoreHorizElement;
     };
     interface HTMLRuxIconMoreVertElement extends Components.RuxIconMoreVert, HTMLStencilElement {
     }
     var HTMLRuxIconMoreVertElement: {
         prototype: HTMLRuxIconMoreVertElement;
-        new(): HTMLRuxIconMoreVertElement;
+        new (): HTMLRuxIconMoreVertElement;
     };
     interface HTMLRuxIconMotorcycleElement extends Components.RuxIconMotorcycle, HTMLStencilElement {
     }
     var HTMLRuxIconMotorcycleElement: {
         prototype: HTMLRuxIconMotorcycleElement;
-        new(): HTMLRuxIconMotorcycleElement;
+        new (): HTMLRuxIconMotorcycleElement;
     };
     interface HTMLRuxIconMouseElement extends Components.RuxIconMouse, HTMLStencilElement {
     }
     var HTMLRuxIconMouseElement: {
         prototype: HTMLRuxIconMouseElement;
-        new(): HTMLRuxIconMouseElement;
+        new (): HTMLRuxIconMouseElement;
     };
     interface HTMLRuxIconMoveToInboxElement extends Components.RuxIconMoveToInbox, HTMLStencilElement {
     }
     var HTMLRuxIconMoveToInboxElement: {
         prototype: HTMLRuxIconMoveToInboxElement;
-        new(): HTMLRuxIconMoveToInboxElement;
+        new (): HTMLRuxIconMoveToInboxElement;
     };
     interface HTMLRuxIconMovieElement extends Components.RuxIconMovie, HTMLStencilElement {
     }
     var HTMLRuxIconMovieElement: {
         prototype: HTMLRuxIconMovieElement;
-        new(): HTMLRuxIconMovieElement;
+        new (): HTMLRuxIconMovieElement;
     };
     interface HTMLRuxIconMovieCreationElement extends Components.RuxIconMovieCreation, HTMLStencilElement {
     }
     var HTMLRuxIconMovieCreationElement: {
         prototype: HTMLRuxIconMovieCreationElement;
-        new(): HTMLRuxIconMovieCreationElement;
+        new (): HTMLRuxIconMovieCreationElement;
     };
     interface HTMLRuxIconMovieFilterElement extends Components.RuxIconMovieFilter, HTMLStencilElement {
     }
     var HTMLRuxIconMovieFilterElement: {
         prototype: HTMLRuxIconMovieFilterElement;
-        new(): HTMLRuxIconMovieFilterElement;
+        new (): HTMLRuxIconMovieFilterElement;
     };
     interface HTMLRuxIconMultilineChartElement extends Components.RuxIconMultilineChart, HTMLStencilElement {
     }
     var HTMLRuxIconMultilineChartElement: {
         prototype: HTMLRuxIconMultilineChartElement;
-        new(): HTMLRuxIconMultilineChartElement;
+        new (): HTMLRuxIconMultilineChartElement;
     };
     interface HTMLRuxIconMusicNoteElement extends Components.RuxIconMusicNote, HTMLStencilElement {
     }
     var HTMLRuxIconMusicNoteElement: {
         prototype: HTMLRuxIconMusicNoteElement;
-        new(): HTMLRuxIconMusicNoteElement;
+        new (): HTMLRuxIconMusicNoteElement;
     };
     interface HTMLRuxIconMusicOffElement extends Components.RuxIconMusicOff, HTMLStencilElement {
     }
     var HTMLRuxIconMusicOffElement: {
         prototype: HTMLRuxIconMusicOffElement;
-        new(): HTMLRuxIconMusicOffElement;
+        new (): HTMLRuxIconMusicOffElement;
     };
     interface HTMLRuxIconMusicVideoElement extends Components.RuxIconMusicVideo, HTMLStencilElement {
     }
     var HTMLRuxIconMusicVideoElement: {
         prototype: HTMLRuxIconMusicVideoElement;
-        new(): HTMLRuxIconMusicVideoElement;
+        new (): HTMLRuxIconMusicVideoElement;
     };
     interface HTMLRuxIconMyLocationElement extends Components.RuxIconMyLocation, HTMLStencilElement {
     }
     var HTMLRuxIconMyLocationElement: {
         prototype: HTMLRuxIconMyLocationElement;
-        new(): HTMLRuxIconMyLocationElement;
+        new (): HTMLRuxIconMyLocationElement;
     };
     interface HTMLRuxIconNatureElement extends Components.RuxIconNature, HTMLStencilElement {
     }
     var HTMLRuxIconNatureElement: {
         prototype: HTMLRuxIconNatureElement;
-        new(): HTMLRuxIconNatureElement;
+        new (): HTMLRuxIconNatureElement;
     };
     interface HTMLRuxIconNaturePeopleElement extends Components.RuxIconNaturePeople, HTMLStencilElement {
     }
     var HTMLRuxIconNaturePeopleElement: {
         prototype: HTMLRuxIconNaturePeopleElement;
-        new(): HTMLRuxIconNaturePeopleElement;
+        new (): HTMLRuxIconNaturePeopleElement;
     };
     interface HTMLRuxIconNavigateBeforeElement extends Components.RuxIconNavigateBefore, HTMLStencilElement {
     }
     var HTMLRuxIconNavigateBeforeElement: {
         prototype: HTMLRuxIconNavigateBeforeElement;
-        new(): HTMLRuxIconNavigateBeforeElement;
+        new (): HTMLRuxIconNavigateBeforeElement;
     };
     interface HTMLRuxIconNavigateNextElement extends Components.RuxIconNavigateNext, HTMLStencilElement {
     }
     var HTMLRuxIconNavigateNextElement: {
         prototype: HTMLRuxIconNavigateNextElement;
-        new(): HTMLRuxIconNavigateNextElement;
+        new (): HTMLRuxIconNavigateNextElement;
     };
     interface HTMLRuxIconNavigationElement extends Components.RuxIconNavigation, HTMLStencilElement {
     }
     var HTMLRuxIconNavigationElement: {
         prototype: HTMLRuxIconNavigationElement;
-        new(): HTMLRuxIconNavigationElement;
+        new (): HTMLRuxIconNavigationElement;
     };
     interface HTMLRuxIconNearMeElement extends Components.RuxIconNearMe, HTMLStencilElement {
     }
     var HTMLRuxIconNearMeElement: {
         prototype: HTMLRuxIconNearMeElement;
-        new(): HTMLRuxIconNearMeElement;
+        new (): HTMLRuxIconNearMeElement;
     };
     interface HTMLRuxIconNetcomElement extends Components.RuxIconNetcom, HTMLStencilElement {
     }
     var HTMLRuxIconNetcomElement: {
         prototype: HTMLRuxIconNetcomElement;
-        new(): HTMLRuxIconNetcomElement;
+        new (): HTMLRuxIconNetcomElement;
     };
     interface HTMLRuxIconNetworkCellElement extends Components.RuxIconNetworkCell, HTMLStencilElement {
     }
     var HTMLRuxIconNetworkCellElement: {
         prototype: HTMLRuxIconNetworkCellElement;
-        new(): HTMLRuxIconNetworkCellElement;
+        new (): HTMLRuxIconNetworkCellElement;
     };
     interface HTMLRuxIconNetworkCheckElement extends Components.RuxIconNetworkCheck, HTMLStencilElement {
     }
     var HTMLRuxIconNetworkCheckElement: {
         prototype: HTMLRuxIconNetworkCheckElement;
-        new(): HTMLRuxIconNetworkCheckElement;
+        new (): HTMLRuxIconNetworkCheckElement;
     };
     interface HTMLRuxIconNetworkLockedElement extends Components.RuxIconNetworkLocked, HTMLStencilElement {
     }
     var HTMLRuxIconNetworkLockedElement: {
         prototype: HTMLRuxIconNetworkLockedElement;
-        new(): HTMLRuxIconNetworkLockedElement;
+        new (): HTMLRuxIconNetworkLockedElement;
     };
     interface HTMLRuxIconNetworkWifiElement extends Components.RuxIconNetworkWifi, HTMLStencilElement {
     }
     var HTMLRuxIconNetworkWifiElement: {
         prototype: HTMLRuxIconNetworkWifiElement;
-        new(): HTMLRuxIconNetworkWifiElement;
+        new (): HTMLRuxIconNetworkWifiElement;
     };
     interface HTMLRuxIconNewReleasesElement extends Components.RuxIconNewReleases, HTMLStencilElement {
     }
     var HTMLRuxIconNewReleasesElement: {
         prototype: HTMLRuxIconNewReleasesElement;
-        new(): HTMLRuxIconNewReleasesElement;
+        new (): HTMLRuxIconNewReleasesElement;
     };
     interface HTMLRuxIconNextWeekElement extends Components.RuxIconNextWeek, HTMLStencilElement {
     }
     var HTMLRuxIconNextWeekElement: {
         prototype: HTMLRuxIconNextWeekElement;
-        new(): HTMLRuxIconNextWeekElement;
+        new (): HTMLRuxIconNextWeekElement;
     };
     interface HTMLRuxIconNfcElement extends Components.RuxIconNfc, HTMLStencilElement {
     }
     var HTMLRuxIconNfcElement: {
         prototype: HTMLRuxIconNfcElement;
-        new(): HTMLRuxIconNfcElement;
+        new (): HTMLRuxIconNfcElement;
     };
     interface HTMLRuxIconNoEncryptionElement extends Components.RuxIconNoEncryption, HTMLStencilElement {
     }
     var HTMLRuxIconNoEncryptionElement: {
         prototype: HTMLRuxIconNoEncryptionElement;
-        new(): HTMLRuxIconNoEncryptionElement;
+        new (): HTMLRuxIconNoEncryptionElement;
     };
     interface HTMLRuxIconNoMeetingRoomElement extends Components.RuxIconNoMeetingRoom, HTMLStencilElement {
     }
     var HTMLRuxIconNoMeetingRoomElement: {
         prototype: HTMLRuxIconNoMeetingRoomElement;
-        new(): HTMLRuxIconNoMeetingRoomElement;
+        new (): HTMLRuxIconNoMeetingRoomElement;
     };
     interface HTMLRuxIconNoSimElement extends Components.RuxIconNoSim, HTMLStencilElement {
     }
     var HTMLRuxIconNoSimElement: {
         prototype: HTMLRuxIconNoSimElement;
-        new(): HTMLRuxIconNoSimElement;
+        new (): HTMLRuxIconNoSimElement;
     };
     interface HTMLRuxIconNotInterestedElement extends Components.RuxIconNotInterested, HTMLStencilElement {
     }
     var HTMLRuxIconNotInterestedElement: {
         prototype: HTMLRuxIconNotInterestedElement;
-        new(): HTMLRuxIconNotInterestedElement;
+        new (): HTMLRuxIconNotInterestedElement;
     };
     interface HTMLRuxIconNotListedLocationElement extends Components.RuxIconNotListedLocation, HTMLStencilElement {
     }
     var HTMLRuxIconNotListedLocationElement: {
         prototype: HTMLRuxIconNotListedLocationElement;
-        new(): HTMLRuxIconNotListedLocationElement;
+        new (): HTMLRuxIconNotListedLocationElement;
     };
     interface HTMLRuxIconNoteElement extends Components.RuxIconNote, HTMLStencilElement {
     }
     var HTMLRuxIconNoteElement: {
         prototype: HTMLRuxIconNoteElement;
-        new(): HTMLRuxIconNoteElement;
+        new (): HTMLRuxIconNoteElement;
     };
     interface HTMLRuxIconNoteAddElement extends Components.RuxIconNoteAdd, HTMLStencilElement {
     }
     var HTMLRuxIconNoteAddElement: {
         prototype: HTMLRuxIconNoteAddElement;
-        new(): HTMLRuxIconNoteAddElement;
+        new (): HTMLRuxIconNoteAddElement;
     };
     interface HTMLRuxIconNotesElement extends Components.RuxIconNotes, HTMLStencilElement {
     }
     var HTMLRuxIconNotesElement: {
         prototype: HTMLRuxIconNotesElement;
-        new(): HTMLRuxIconNotesElement;
+        new (): HTMLRuxIconNotesElement;
     };
     interface HTMLRuxIconNotificationImportantElement extends Components.RuxIconNotificationImportant, HTMLStencilElement {
     }
     var HTMLRuxIconNotificationImportantElement: {
         prototype: HTMLRuxIconNotificationImportantElement;
-        new(): HTMLRuxIconNotificationImportantElement;
+        new (): HTMLRuxIconNotificationImportantElement;
     };
     interface HTMLRuxIconNotificationsElement extends Components.RuxIconNotifications, HTMLStencilElement {
     }
     var HTMLRuxIconNotificationsElement: {
         prototype: HTMLRuxIconNotificationsElement;
-        new(): HTMLRuxIconNotificationsElement;
+        new (): HTMLRuxIconNotificationsElement;
     };
     interface HTMLRuxIconNotificationsActiveElement extends Components.RuxIconNotificationsActive, HTMLStencilElement {
     }
     var HTMLRuxIconNotificationsActiveElement: {
         prototype: HTMLRuxIconNotificationsActiveElement;
-        new(): HTMLRuxIconNotificationsActiveElement;
+        new (): HTMLRuxIconNotificationsActiveElement;
     };
     interface HTMLRuxIconNotificationsNoneElement extends Components.RuxIconNotificationsNone, HTMLStencilElement {
     }
     var HTMLRuxIconNotificationsNoneElement: {
         prototype: HTMLRuxIconNotificationsNoneElement;
-        new(): HTMLRuxIconNotificationsNoneElement;
+        new (): HTMLRuxIconNotificationsNoneElement;
     };
     interface HTMLRuxIconNotificationsOffElement extends Components.RuxIconNotificationsOff, HTMLStencilElement {
     }
     var HTMLRuxIconNotificationsOffElement: {
         prototype: HTMLRuxIconNotificationsOffElement;
-        new(): HTMLRuxIconNotificationsOffElement;
+        new (): HTMLRuxIconNotificationsOffElement;
     };
     interface HTMLRuxIconNotificationsPausedElement extends Components.RuxIconNotificationsPaused, HTMLStencilElement {
     }
     var HTMLRuxIconNotificationsPausedElement: {
         prototype: HTMLRuxIconNotificationsPausedElement;
-        new(): HTMLRuxIconNotificationsPausedElement;
+        new (): HTMLRuxIconNotificationsPausedElement;
     };
     interface HTMLRuxIconOfflineBoltElement extends Components.RuxIconOfflineBolt, HTMLStencilElement {
     }
     var HTMLRuxIconOfflineBoltElement: {
         prototype: HTMLRuxIconOfflineBoltElement;
-        new(): HTMLRuxIconOfflineBoltElement;
+        new (): HTMLRuxIconOfflineBoltElement;
     };
     interface HTMLRuxIconOfflinePinElement extends Components.RuxIconOfflinePin, HTMLStencilElement {
     }
     var HTMLRuxIconOfflinePinElement: {
         prototype: HTMLRuxIconOfflinePinElement;
-        new(): HTMLRuxIconOfflinePinElement;
+        new (): HTMLRuxIconOfflinePinElement;
     };
     interface HTMLRuxIconOndemandVideoElement extends Components.RuxIconOndemandVideo, HTMLStencilElement {
     }
     var HTMLRuxIconOndemandVideoElement: {
         prototype: HTMLRuxIconOndemandVideoElement;
-        new(): HTMLRuxIconOndemandVideoElement;
+        new (): HTMLRuxIconOndemandVideoElement;
     };
     interface HTMLRuxIconOpacityElement extends Components.RuxIconOpacity, HTMLStencilElement {
     }
     var HTMLRuxIconOpacityElement: {
         prototype: HTMLRuxIconOpacityElement;
-        new(): HTMLRuxIconOpacityElement;
+        new (): HTMLRuxIconOpacityElement;
     };
     interface HTMLRuxIconOpenInBrowserElement extends Components.RuxIconOpenInBrowser, HTMLStencilElement {
     }
     var HTMLRuxIconOpenInBrowserElement: {
         prototype: HTMLRuxIconOpenInBrowserElement;
-        new(): HTMLRuxIconOpenInBrowserElement;
+        new (): HTMLRuxIconOpenInBrowserElement;
     };
     interface HTMLRuxIconOpenInNewElement extends Components.RuxIconOpenInNew, HTMLStencilElement {
     }
     var HTMLRuxIconOpenInNewElement: {
         prototype: HTMLRuxIconOpenInNewElement;
-        new(): HTMLRuxIconOpenInNewElement;
+        new (): HTMLRuxIconOpenInNewElement;
     };
     interface HTMLRuxIconOpenWithElement extends Components.RuxIconOpenWith, HTMLStencilElement {
     }
     var HTMLRuxIconOpenWithElement: {
         prototype: HTMLRuxIconOpenWithElement;
-        new(): HTMLRuxIconOpenWithElement;
+        new (): HTMLRuxIconOpenWithElement;
     };
     interface HTMLRuxIconOutlinedFlagElement extends Components.RuxIconOutlinedFlag, HTMLStencilElement {
     }
     var HTMLRuxIconOutlinedFlagElement: {
         prototype: HTMLRuxIconOutlinedFlagElement;
-        new(): HTMLRuxIconOutlinedFlagElement;
+        new (): HTMLRuxIconOutlinedFlagElement;
     };
     interface HTMLRuxIconPagesElement extends Components.RuxIconPages, HTMLStencilElement {
     }
     var HTMLRuxIconPagesElement: {
         prototype: HTMLRuxIconPagesElement;
-        new(): HTMLRuxIconPagesElement;
+        new (): HTMLRuxIconPagesElement;
     };
     interface HTMLRuxIconPageviewElement extends Components.RuxIconPageview, HTMLStencilElement {
     }
     var HTMLRuxIconPageviewElement: {
         prototype: HTMLRuxIconPageviewElement;
-        new(): HTMLRuxIconPageviewElement;
+        new (): HTMLRuxIconPageviewElement;
     };
     interface HTMLRuxIconPaletteElement extends Components.RuxIconPalette, HTMLStencilElement {
     }
     var HTMLRuxIconPaletteElement: {
         prototype: HTMLRuxIconPaletteElement;
-        new(): HTMLRuxIconPaletteElement;
+        new (): HTMLRuxIconPaletteElement;
     };
     interface HTMLRuxIconPanToolElement extends Components.RuxIconPanTool, HTMLStencilElement {
     }
     var HTMLRuxIconPanToolElement: {
         prototype: HTMLRuxIconPanToolElement;
-        new(): HTMLRuxIconPanToolElement;
+        new (): HTMLRuxIconPanToolElement;
     };
     interface HTMLRuxIconPanoramaElement extends Components.RuxIconPanorama, HTMLStencilElement {
     }
     var HTMLRuxIconPanoramaElement: {
         prototype: HTMLRuxIconPanoramaElement;
-        new(): HTMLRuxIconPanoramaElement;
+        new (): HTMLRuxIconPanoramaElement;
     };
     interface HTMLRuxIconPanoramaFishEyeElement extends Components.RuxIconPanoramaFishEye, HTMLStencilElement {
     }
     var HTMLRuxIconPanoramaFishEyeElement: {
         prototype: HTMLRuxIconPanoramaFishEyeElement;
-        new(): HTMLRuxIconPanoramaFishEyeElement;
+        new (): HTMLRuxIconPanoramaFishEyeElement;
     };
     interface HTMLRuxIconPanoramaHorizontalElement extends Components.RuxIconPanoramaHorizontal, HTMLStencilElement {
     }
     var HTMLRuxIconPanoramaHorizontalElement: {
         prototype: HTMLRuxIconPanoramaHorizontalElement;
-        new(): HTMLRuxIconPanoramaHorizontalElement;
+        new (): HTMLRuxIconPanoramaHorizontalElement;
     };
     interface HTMLRuxIconPanoramaVerticalElement extends Components.RuxIconPanoramaVertical, HTMLStencilElement {
     }
     var HTMLRuxIconPanoramaVerticalElement: {
         prototype: HTMLRuxIconPanoramaVerticalElement;
-        new(): HTMLRuxIconPanoramaVerticalElement;
+        new (): HTMLRuxIconPanoramaVerticalElement;
     };
     interface HTMLRuxIconPanoramaWideAngleElement extends Components.RuxIconPanoramaWideAngle, HTMLStencilElement {
     }
     var HTMLRuxIconPanoramaWideAngleElement: {
         prototype: HTMLRuxIconPanoramaWideAngleElement;
-        new(): HTMLRuxIconPanoramaWideAngleElement;
+        new (): HTMLRuxIconPanoramaWideAngleElement;
     };
     interface HTMLRuxIconPartyModeElement extends Components.RuxIconPartyMode, HTMLStencilElement {
     }
     var HTMLRuxIconPartyModeElement: {
         prototype: HTMLRuxIconPartyModeElement;
-        new(): HTMLRuxIconPartyModeElement;
+        new (): HTMLRuxIconPartyModeElement;
     };
     interface HTMLRuxIconPauseElement extends Components.RuxIconPause, HTMLStencilElement {
     }
     var HTMLRuxIconPauseElement: {
         prototype: HTMLRuxIconPauseElement;
-        new(): HTMLRuxIconPauseElement;
+        new (): HTMLRuxIconPauseElement;
     };
     interface HTMLRuxIconPauseCircleFilledElement extends Components.RuxIconPauseCircleFilled, HTMLStencilElement {
     }
     var HTMLRuxIconPauseCircleFilledElement: {
         prototype: HTMLRuxIconPauseCircleFilledElement;
-        new(): HTMLRuxIconPauseCircleFilledElement;
+        new (): HTMLRuxIconPauseCircleFilledElement;
     };
     interface HTMLRuxIconPauseCircleOutlineElement extends Components.RuxIconPauseCircleOutline, HTMLStencilElement {
     }
     var HTMLRuxIconPauseCircleOutlineElement: {
         prototype: HTMLRuxIconPauseCircleOutlineElement;
-        new(): HTMLRuxIconPauseCircleOutlineElement;
+        new (): HTMLRuxIconPauseCircleOutlineElement;
     };
     interface HTMLRuxIconPausePresentationElement extends Components.RuxIconPausePresentation, HTMLStencilElement {
     }
     var HTMLRuxIconPausePresentationElement: {
         prototype: HTMLRuxIconPausePresentationElement;
-        new(): HTMLRuxIconPausePresentationElement;
+        new (): HTMLRuxIconPausePresentationElement;
     };
     interface HTMLRuxIconPayloadElement extends Components.RuxIconPayload, HTMLStencilElement {
     }
     var HTMLRuxIconPayloadElement: {
         prototype: HTMLRuxIconPayloadElement;
-        new(): HTMLRuxIconPayloadElement;
+        new (): HTMLRuxIconPayloadElement;
     };
     interface HTMLRuxIconPaymentElement extends Components.RuxIconPayment, HTMLStencilElement {
     }
     var HTMLRuxIconPaymentElement: {
         prototype: HTMLRuxIconPaymentElement;
-        new(): HTMLRuxIconPaymentElement;
+        new (): HTMLRuxIconPaymentElement;
     };
     interface HTMLRuxIconPeopleOutlineElement extends Components.RuxIconPeopleOutline, HTMLStencilElement {
     }
     var HTMLRuxIconPeopleOutlineElement: {
         prototype: HTMLRuxIconPeopleOutlineElement;
-        new(): HTMLRuxIconPeopleOutlineElement;
+        new (): HTMLRuxIconPeopleOutlineElement;
     };
     interface HTMLRuxIconPermCameraMicElement extends Components.RuxIconPermCameraMic, HTMLStencilElement {
     }
     var HTMLRuxIconPermCameraMicElement: {
         prototype: HTMLRuxIconPermCameraMicElement;
-        new(): HTMLRuxIconPermCameraMicElement;
+        new (): HTMLRuxIconPermCameraMicElement;
     };
     interface HTMLRuxIconPermContactCalendarElement extends Components.RuxIconPermContactCalendar, HTMLStencilElement {
     }
     var HTMLRuxIconPermContactCalendarElement: {
         prototype: HTMLRuxIconPermContactCalendarElement;
-        new(): HTMLRuxIconPermContactCalendarElement;
+        new (): HTMLRuxIconPermContactCalendarElement;
     };
     interface HTMLRuxIconPermDataSettingElement extends Components.RuxIconPermDataSetting, HTMLStencilElement {
     }
     var HTMLRuxIconPermDataSettingElement: {
         prototype: HTMLRuxIconPermDataSettingElement;
-        new(): HTMLRuxIconPermDataSettingElement;
+        new (): HTMLRuxIconPermDataSettingElement;
     };
     interface HTMLRuxIconPermDeviceInformationElement extends Components.RuxIconPermDeviceInformation, HTMLStencilElement {
     }
     var HTMLRuxIconPermDeviceInformationElement: {
         prototype: HTMLRuxIconPermDeviceInformationElement;
-        new(): HTMLRuxIconPermDeviceInformationElement;
+        new (): HTMLRuxIconPermDeviceInformationElement;
     };
     interface HTMLRuxIconPermIdentityElement extends Components.RuxIconPermIdentity, HTMLStencilElement {
     }
     var HTMLRuxIconPermIdentityElement: {
         prototype: HTMLRuxIconPermIdentityElement;
-        new(): HTMLRuxIconPermIdentityElement;
+        new (): HTMLRuxIconPermIdentityElement;
     };
     interface HTMLRuxIconPermMediaElement extends Components.RuxIconPermMedia, HTMLStencilElement {
     }
     var HTMLRuxIconPermMediaElement: {
         prototype: HTMLRuxIconPermMediaElement;
-        new(): HTMLRuxIconPermMediaElement;
+        new (): HTMLRuxIconPermMediaElement;
     };
     interface HTMLRuxIconPermPhoneMsgElement extends Components.RuxIconPermPhoneMsg, HTMLStencilElement {
     }
     var HTMLRuxIconPermPhoneMsgElement: {
         prototype: HTMLRuxIconPermPhoneMsgElement;
-        new(): HTMLRuxIconPermPhoneMsgElement;
+        new (): HTMLRuxIconPermPhoneMsgElement;
     };
     interface HTMLRuxIconPermScanWifiElement extends Components.RuxIconPermScanWifi, HTMLStencilElement {
     }
     var HTMLRuxIconPermScanWifiElement: {
         prototype: HTMLRuxIconPermScanWifiElement;
-        new(): HTMLRuxIconPermScanWifiElement;
+        new (): HTMLRuxIconPermScanWifiElement;
     };
     interface HTMLRuxIconPersonElement extends Components.RuxIconPerson, HTMLStencilElement {
     }
     var HTMLRuxIconPersonElement: {
         prototype: HTMLRuxIconPersonElement;
-        new(): HTMLRuxIconPersonElement;
+        new (): HTMLRuxIconPersonElement;
     };
     interface HTMLRuxIconPersonAddElement extends Components.RuxIconPersonAdd, HTMLStencilElement {
     }
     var HTMLRuxIconPersonAddElement: {
         prototype: HTMLRuxIconPersonAddElement;
-        new(): HTMLRuxIconPersonAddElement;
+        new (): HTMLRuxIconPersonAddElement;
     };
     interface HTMLRuxIconPersonAddDisabledElement extends Components.RuxIconPersonAddDisabled, HTMLStencilElement {
     }
     var HTMLRuxIconPersonAddDisabledElement: {
         prototype: HTMLRuxIconPersonAddDisabledElement;
-        new(): HTMLRuxIconPersonAddDisabledElement;
+        new (): HTMLRuxIconPersonAddDisabledElement;
     };
     interface HTMLRuxIconPersonOutlineElement extends Components.RuxIconPersonOutline, HTMLStencilElement {
     }
     var HTMLRuxIconPersonOutlineElement: {
         prototype: HTMLRuxIconPersonOutlineElement;
-        new(): HTMLRuxIconPersonOutlineElement;
+        new (): HTMLRuxIconPersonOutlineElement;
     };
     interface HTMLRuxIconPersonPinElement extends Components.RuxIconPersonPin, HTMLStencilElement {
     }
     var HTMLRuxIconPersonPinElement: {
         prototype: HTMLRuxIconPersonPinElement;
-        new(): HTMLRuxIconPersonPinElement;
+        new (): HTMLRuxIconPersonPinElement;
     };
     interface HTMLRuxIconPersonPinCircleElement extends Components.RuxIconPersonPinCircle, HTMLStencilElement {
     }
     var HTMLRuxIconPersonPinCircleElement: {
         prototype: HTMLRuxIconPersonPinCircleElement;
-        new(): HTMLRuxIconPersonPinCircleElement;
+        new (): HTMLRuxIconPersonPinCircleElement;
     };
     interface HTMLRuxIconPersonalVideoElement extends Components.RuxIconPersonalVideo, HTMLStencilElement {
     }
     var HTMLRuxIconPersonalVideoElement: {
         prototype: HTMLRuxIconPersonalVideoElement;
-        new(): HTMLRuxIconPersonalVideoElement;
+        new (): HTMLRuxIconPersonalVideoElement;
     };
     interface HTMLRuxIconPetsElement extends Components.RuxIconPets, HTMLStencilElement {
     }
     var HTMLRuxIconPetsElement: {
         prototype: HTMLRuxIconPetsElement;
-        new(): HTMLRuxIconPetsElement;
+        new (): HTMLRuxIconPetsElement;
     };
     interface HTMLRuxIconPhoneElement extends Components.RuxIconPhone, HTMLStencilElement {
     }
     var HTMLRuxIconPhoneElement: {
         prototype: HTMLRuxIconPhoneElement;
-        new(): HTMLRuxIconPhoneElement;
+        new (): HTMLRuxIconPhoneElement;
     };
     interface HTMLRuxIconPhoneAndroidElement extends Components.RuxIconPhoneAndroid, HTMLStencilElement {
     }
     var HTMLRuxIconPhoneAndroidElement: {
         prototype: HTMLRuxIconPhoneAndroidElement;
-        new(): HTMLRuxIconPhoneAndroidElement;
+        new (): HTMLRuxIconPhoneAndroidElement;
     };
     interface HTMLRuxIconPhoneBluetoothSpeakerElement extends Components.RuxIconPhoneBluetoothSpeaker, HTMLStencilElement {
     }
     var HTMLRuxIconPhoneBluetoothSpeakerElement: {
         prototype: HTMLRuxIconPhoneBluetoothSpeakerElement;
-        new(): HTMLRuxIconPhoneBluetoothSpeakerElement;
+        new (): HTMLRuxIconPhoneBluetoothSpeakerElement;
     };
     interface HTMLRuxIconPhoneCallbackElement extends Components.RuxIconPhoneCallback, HTMLStencilElement {
     }
     var HTMLRuxIconPhoneCallbackElement: {
         prototype: HTMLRuxIconPhoneCallbackElement;
-        new(): HTMLRuxIconPhoneCallbackElement;
+        new (): HTMLRuxIconPhoneCallbackElement;
     };
     interface HTMLRuxIconPhoneForwardedElement extends Components.RuxIconPhoneForwarded, HTMLStencilElement {
     }
     var HTMLRuxIconPhoneForwardedElement: {
         prototype: HTMLRuxIconPhoneForwardedElement;
-        new(): HTMLRuxIconPhoneForwardedElement;
+        new (): HTMLRuxIconPhoneForwardedElement;
     };
     interface HTMLRuxIconPhoneInTalkElement extends Components.RuxIconPhoneInTalk, HTMLStencilElement {
     }
     var HTMLRuxIconPhoneInTalkElement: {
         prototype: HTMLRuxIconPhoneInTalkElement;
-        new(): HTMLRuxIconPhoneInTalkElement;
+        new (): HTMLRuxIconPhoneInTalkElement;
     };
     interface HTMLRuxIconPhoneIphoneElement extends Components.RuxIconPhoneIphone, HTMLStencilElement {
     }
     var HTMLRuxIconPhoneIphoneElement: {
         prototype: HTMLRuxIconPhoneIphoneElement;
-        new(): HTMLRuxIconPhoneIphoneElement;
+        new (): HTMLRuxIconPhoneIphoneElement;
     };
     interface HTMLRuxIconPhoneLockedElement extends Components.RuxIconPhoneLocked, HTMLStencilElement {
     }
     var HTMLRuxIconPhoneLockedElement: {
         prototype: HTMLRuxIconPhoneLockedElement;
-        new(): HTMLRuxIconPhoneLockedElement;
+        new (): HTMLRuxIconPhoneLockedElement;
     };
     interface HTMLRuxIconPhoneMissedElement extends Components.RuxIconPhoneMissed, HTMLStencilElement {
     }
     var HTMLRuxIconPhoneMissedElement: {
         prototype: HTMLRuxIconPhoneMissedElement;
-        new(): HTMLRuxIconPhoneMissedElement;
+        new (): HTMLRuxIconPhoneMissedElement;
     };
     interface HTMLRuxIconPhonePausedElement extends Components.RuxIconPhonePaused, HTMLStencilElement {
     }
     var HTMLRuxIconPhonePausedElement: {
         prototype: HTMLRuxIconPhonePausedElement;
-        new(): HTMLRuxIconPhonePausedElement;
+        new (): HTMLRuxIconPhonePausedElement;
     };
     interface HTMLRuxIconPhonelinkElement extends Components.RuxIconPhonelink, HTMLStencilElement {
     }
     var HTMLRuxIconPhonelinkElement: {
         prototype: HTMLRuxIconPhonelinkElement;
-        new(): HTMLRuxIconPhonelinkElement;
+        new (): HTMLRuxIconPhonelinkElement;
     };
     interface HTMLRuxIconPhonelinkEraseElement extends Components.RuxIconPhonelinkErase, HTMLStencilElement {
     }
     var HTMLRuxIconPhonelinkEraseElement: {
         prototype: HTMLRuxIconPhonelinkEraseElement;
-        new(): HTMLRuxIconPhonelinkEraseElement;
+        new (): HTMLRuxIconPhonelinkEraseElement;
     };
     interface HTMLRuxIconPhonelinkLockElement extends Components.RuxIconPhonelinkLock, HTMLStencilElement {
     }
     var HTMLRuxIconPhonelinkLockElement: {
         prototype: HTMLRuxIconPhonelinkLockElement;
-        new(): HTMLRuxIconPhonelinkLockElement;
+        new (): HTMLRuxIconPhonelinkLockElement;
     };
     interface HTMLRuxIconPhonelinkOffElement extends Components.RuxIconPhonelinkOff, HTMLStencilElement {
     }
     var HTMLRuxIconPhonelinkOffElement: {
         prototype: HTMLRuxIconPhonelinkOffElement;
-        new(): HTMLRuxIconPhonelinkOffElement;
+        new (): HTMLRuxIconPhonelinkOffElement;
     };
     interface HTMLRuxIconPhonelinkRingElement extends Components.RuxIconPhonelinkRing, HTMLStencilElement {
     }
     var HTMLRuxIconPhonelinkRingElement: {
         prototype: HTMLRuxIconPhonelinkRingElement;
-        new(): HTMLRuxIconPhonelinkRingElement;
+        new (): HTMLRuxIconPhonelinkRingElement;
     };
     interface HTMLRuxIconPhonelinkSetupElement extends Components.RuxIconPhonelinkSetup, HTMLStencilElement {
     }
     var HTMLRuxIconPhonelinkSetupElement: {
         prototype: HTMLRuxIconPhonelinkSetupElement;
-        new(): HTMLRuxIconPhonelinkSetupElement;
+        new (): HTMLRuxIconPhonelinkSetupElement;
     };
     interface HTMLRuxIconPhotoElement extends Components.RuxIconPhoto, HTMLStencilElement {
     }
     var HTMLRuxIconPhotoElement: {
         prototype: HTMLRuxIconPhotoElement;
-        new(): HTMLRuxIconPhotoElement;
+        new (): HTMLRuxIconPhotoElement;
     };
     interface HTMLRuxIconPhotoAlbumElement extends Components.RuxIconPhotoAlbum, HTMLStencilElement {
     }
     var HTMLRuxIconPhotoAlbumElement: {
         prototype: HTMLRuxIconPhotoAlbumElement;
-        new(): HTMLRuxIconPhotoAlbumElement;
+        new (): HTMLRuxIconPhotoAlbumElement;
     };
     interface HTMLRuxIconPhotoCameraElement extends Components.RuxIconPhotoCamera, HTMLStencilElement {
     }
     var HTMLRuxIconPhotoCameraElement: {
         prototype: HTMLRuxIconPhotoCameraElement;
-        new(): HTMLRuxIconPhotoCameraElement;
+        new (): HTMLRuxIconPhotoCameraElement;
     };
     interface HTMLRuxIconPhotoFilterElement extends Components.RuxIconPhotoFilter, HTMLStencilElement {
     }
     var HTMLRuxIconPhotoFilterElement: {
         prototype: HTMLRuxIconPhotoFilterElement;
-        new(): HTMLRuxIconPhotoFilterElement;
+        new (): HTMLRuxIconPhotoFilterElement;
     };
     interface HTMLRuxIconPhotoLibraryElement extends Components.RuxIconPhotoLibrary, HTMLStencilElement {
     }
     var HTMLRuxIconPhotoLibraryElement: {
         prototype: HTMLRuxIconPhotoLibraryElement;
-        new(): HTMLRuxIconPhotoLibraryElement;
+        new (): HTMLRuxIconPhotoLibraryElement;
     };
     interface HTMLRuxIconPhotoSizeSelectActualElement extends Components.RuxIconPhotoSizeSelectActual, HTMLStencilElement {
     }
     var HTMLRuxIconPhotoSizeSelectActualElement: {
         prototype: HTMLRuxIconPhotoSizeSelectActualElement;
-        new(): HTMLRuxIconPhotoSizeSelectActualElement;
+        new (): HTMLRuxIconPhotoSizeSelectActualElement;
     };
     interface HTMLRuxIconPhotoSizeSelectLargeElement extends Components.RuxIconPhotoSizeSelectLarge, HTMLStencilElement {
     }
     var HTMLRuxIconPhotoSizeSelectLargeElement: {
         prototype: HTMLRuxIconPhotoSizeSelectLargeElement;
-        new(): HTMLRuxIconPhotoSizeSelectLargeElement;
+        new (): HTMLRuxIconPhotoSizeSelectLargeElement;
     };
     interface HTMLRuxIconPhotoSizeSelectSmallElement extends Components.RuxIconPhotoSizeSelectSmall, HTMLStencilElement {
     }
     var HTMLRuxIconPhotoSizeSelectSmallElement: {
         prototype: HTMLRuxIconPhotoSizeSelectSmallElement;
-        new(): HTMLRuxIconPhotoSizeSelectSmallElement;
+        new (): HTMLRuxIconPhotoSizeSelectSmallElement;
     };
     interface HTMLRuxIconPictureAsPdfElement extends Components.RuxIconPictureAsPdf, HTMLStencilElement {
     }
     var HTMLRuxIconPictureAsPdfElement: {
         prototype: HTMLRuxIconPictureAsPdfElement;
-        new(): HTMLRuxIconPictureAsPdfElement;
+        new (): HTMLRuxIconPictureAsPdfElement;
     };
     interface HTMLRuxIconPictureInPictureElement extends Components.RuxIconPictureInPicture, HTMLStencilElement {
     }
     var HTMLRuxIconPictureInPictureElement: {
         prototype: HTMLRuxIconPictureInPictureElement;
-        new(): HTMLRuxIconPictureInPictureElement;
+        new (): HTMLRuxIconPictureInPictureElement;
     };
     interface HTMLRuxIconPictureInPictureAltElement extends Components.RuxIconPictureInPictureAlt, HTMLStencilElement {
     }
     var HTMLRuxIconPictureInPictureAltElement: {
         prototype: HTMLRuxIconPictureInPictureAltElement;
-        new(): HTMLRuxIconPictureInPictureAltElement;
+        new (): HTMLRuxIconPictureInPictureAltElement;
     };
     interface HTMLRuxIconPieChartElement extends Components.RuxIconPieChart, HTMLStencilElement {
     }
     var HTMLRuxIconPieChartElement: {
         prototype: HTMLRuxIconPieChartElement;
-        new(): HTMLRuxIconPieChartElement;
+        new (): HTMLRuxIconPieChartElement;
     };
     interface HTMLRuxIconPinDropElement extends Components.RuxIconPinDrop, HTMLStencilElement {
     }
     var HTMLRuxIconPinDropElement: {
         prototype: HTMLRuxIconPinDropElement;
-        new(): HTMLRuxIconPinDropElement;
+        new (): HTMLRuxIconPinDropElement;
     };
     interface HTMLRuxIconPlaceElement extends Components.RuxIconPlace, HTMLStencilElement {
     }
     var HTMLRuxIconPlaceElement: {
         prototype: HTMLRuxIconPlaceElement;
-        new(): HTMLRuxIconPlaceElement;
+        new (): HTMLRuxIconPlaceElement;
     };
     interface HTMLRuxIconPlayArrowElement extends Components.RuxIconPlayArrow, HTMLStencilElement {
     }
     var HTMLRuxIconPlayArrowElement: {
         prototype: HTMLRuxIconPlayArrowElement;
-        new(): HTMLRuxIconPlayArrowElement;
+        new (): HTMLRuxIconPlayArrowElement;
     };
     interface HTMLRuxIconPlayCircleFilledElement extends Components.RuxIconPlayCircleFilled, HTMLStencilElement {
     }
     var HTMLRuxIconPlayCircleFilledElement: {
         prototype: HTMLRuxIconPlayCircleFilledElement;
-        new(): HTMLRuxIconPlayCircleFilledElement;
+        new (): HTMLRuxIconPlayCircleFilledElement;
     };
     interface HTMLRuxIconPlayCircleFilledWhiteElement extends Components.RuxIconPlayCircleFilledWhite, HTMLStencilElement {
     }
     var HTMLRuxIconPlayCircleFilledWhiteElement: {
         prototype: HTMLRuxIconPlayCircleFilledWhiteElement;
-        new(): HTMLRuxIconPlayCircleFilledWhiteElement;
+        new (): HTMLRuxIconPlayCircleFilledWhiteElement;
     };
     interface HTMLRuxIconPlayCircleOutlineElement extends Components.RuxIconPlayCircleOutline, HTMLStencilElement {
     }
     var HTMLRuxIconPlayCircleOutlineElement: {
         prototype: HTMLRuxIconPlayCircleOutlineElement;
-        new(): HTMLRuxIconPlayCircleOutlineElement;
+        new (): HTMLRuxIconPlayCircleOutlineElement;
     };
     interface HTMLRuxIconPlayForWorkElement extends Components.RuxIconPlayForWork, HTMLStencilElement {
     }
     var HTMLRuxIconPlayForWorkElement: {
         prototype: HTMLRuxIconPlayForWorkElement;
-        new(): HTMLRuxIconPlayForWorkElement;
+        new (): HTMLRuxIconPlayForWorkElement;
     };
     interface HTMLRuxIconPlaylistAddElement extends Components.RuxIconPlaylistAdd, HTMLStencilElement {
     }
     var HTMLRuxIconPlaylistAddElement: {
         prototype: HTMLRuxIconPlaylistAddElement;
-        new(): HTMLRuxIconPlaylistAddElement;
+        new (): HTMLRuxIconPlaylistAddElement;
     };
     interface HTMLRuxIconPlaylistAddCheckElement extends Components.RuxIconPlaylistAddCheck, HTMLStencilElement {
     }
     var HTMLRuxIconPlaylistAddCheckElement: {
         prototype: HTMLRuxIconPlaylistAddCheckElement;
-        new(): HTMLRuxIconPlaylistAddCheckElement;
+        new (): HTMLRuxIconPlaylistAddCheckElement;
     };
     interface HTMLRuxIconPlaylistPlayElement extends Components.RuxIconPlaylistPlay, HTMLStencilElement {
     }
     var HTMLRuxIconPlaylistPlayElement: {
         prototype: HTMLRuxIconPlaylistPlayElement;
-        new(): HTMLRuxIconPlaylistPlayElement;
+        new (): HTMLRuxIconPlaylistPlayElement;
     };
     interface HTMLRuxIconPlusOneElement extends Components.RuxIconPlusOne, HTMLStencilElement {
     }
     var HTMLRuxIconPlusOneElement: {
         prototype: HTMLRuxIconPlusOneElement;
-        new(): HTMLRuxIconPlusOneElement;
+        new (): HTMLRuxIconPlusOneElement;
     };
     interface HTMLRuxIconPollElement extends Components.RuxIconPoll, HTMLStencilElement {
     }
     var HTMLRuxIconPollElement: {
         prototype: HTMLRuxIconPollElement;
-        new(): HTMLRuxIconPollElement;
+        new (): HTMLRuxIconPollElement;
     };
     interface HTMLRuxIconPoolElement extends Components.RuxIconPool, HTMLStencilElement {
     }
     var HTMLRuxIconPoolElement: {
         prototype: HTMLRuxIconPoolElement;
-        new(): HTMLRuxIconPoolElement;
+        new (): HTMLRuxIconPoolElement;
     };
     interface HTMLRuxIconPortableWifiOffElement extends Components.RuxIconPortableWifiOff, HTMLStencilElement {
     }
     var HTMLRuxIconPortableWifiOffElement: {
         prototype: HTMLRuxIconPortableWifiOffElement;
-        new(): HTMLRuxIconPortableWifiOffElement;
+        new (): HTMLRuxIconPortableWifiOffElement;
     };
     interface HTMLRuxIconPortraitElement extends Components.RuxIconPortrait, HTMLStencilElement {
     }
     var HTMLRuxIconPortraitElement: {
         prototype: HTMLRuxIconPortraitElement;
-        new(): HTMLRuxIconPortraitElement;
+        new (): HTMLRuxIconPortraitElement;
     };
     interface HTMLRuxIconPowerElement extends Components.RuxIconPower, HTMLStencilElement {
     }
     var HTMLRuxIconPowerElement: {
         prototype: HTMLRuxIconPowerElement;
-        new(): HTMLRuxIconPowerElement;
+        new (): HTMLRuxIconPowerElement;
     };
     interface HTMLRuxIconPowerInputElement extends Components.RuxIconPowerInput, HTMLStencilElement {
     }
     var HTMLRuxIconPowerInputElement: {
         prototype: HTMLRuxIconPowerInputElement;
-        new(): HTMLRuxIconPowerInputElement;
+        new (): HTMLRuxIconPowerInputElement;
     };
     interface HTMLRuxIconPowerOffElement extends Components.RuxIconPowerOff, HTMLStencilElement {
     }
     var HTMLRuxIconPowerOffElement: {
         prototype: HTMLRuxIconPowerOffElement;
-        new(): HTMLRuxIconPowerOffElement;
+        new (): HTMLRuxIconPowerOffElement;
     };
     interface HTMLRuxIconPowerSettingsNewElement extends Components.RuxIconPowerSettingsNew, HTMLStencilElement {
     }
     var HTMLRuxIconPowerSettingsNewElement: {
         prototype: HTMLRuxIconPowerSettingsNewElement;
-        new(): HTMLRuxIconPowerSettingsNewElement;
+        new (): HTMLRuxIconPowerSettingsNewElement;
     };
     interface HTMLRuxIconPregnantWomanElement extends Components.RuxIconPregnantWoman, HTMLStencilElement {
     }
     var HTMLRuxIconPregnantWomanElement: {
         prototype: HTMLRuxIconPregnantWomanElement;
-        new(): HTMLRuxIconPregnantWomanElement;
+        new (): HTMLRuxIconPregnantWomanElement;
     };
     interface HTMLRuxIconPresentToAllElement extends Components.RuxIconPresentToAll, HTMLStencilElement {
     }
     var HTMLRuxIconPresentToAllElement: {
         prototype: HTMLRuxIconPresentToAllElement;
-        new(): HTMLRuxIconPresentToAllElement;
+        new (): HTMLRuxIconPresentToAllElement;
     };
     interface HTMLRuxIconPrintElement extends Components.RuxIconPrint, HTMLStencilElement {
     }
     var HTMLRuxIconPrintElement: {
         prototype: HTMLRuxIconPrintElement;
-        new(): HTMLRuxIconPrintElement;
+        new (): HTMLRuxIconPrintElement;
     };
     interface HTMLRuxIconPrintDisabledElement extends Components.RuxIconPrintDisabled, HTMLStencilElement {
     }
     var HTMLRuxIconPrintDisabledElement: {
         prototype: HTMLRuxIconPrintDisabledElement;
-        new(): HTMLRuxIconPrintDisabledElement;
+        new (): HTMLRuxIconPrintDisabledElement;
     };
     interface HTMLRuxIconPriorityHighElement extends Components.RuxIconPriorityHigh, HTMLStencilElement {
     }
     var HTMLRuxIconPriorityHighElement: {
         prototype: HTMLRuxIconPriorityHighElement;
-        new(): HTMLRuxIconPriorityHighElement;
+        new (): HTMLRuxIconPriorityHighElement;
     };
     interface HTMLRuxIconProcessorElement extends Components.RuxIconProcessor, HTMLStencilElement {
     }
     var HTMLRuxIconProcessorElement: {
         prototype: HTMLRuxIconProcessorElement;
-        new(): HTMLRuxIconProcessorElement;
+        new (): HTMLRuxIconProcessorElement;
     };
     interface HTMLRuxIconProcessorAltElement extends Components.RuxIconProcessorAlt, HTMLStencilElement {
     }
     var HTMLRuxIconProcessorAltElement: {
         prototype: HTMLRuxIconProcessorAltElement;
-        new(): HTMLRuxIconProcessorAltElement;
+        new (): HTMLRuxIconProcessorAltElement;
     };
     interface HTMLRuxIconPropulsionPowerElement extends Components.RuxIconPropulsionPower, HTMLStencilElement {
     }
     var HTMLRuxIconPropulsionPowerElement: {
         prototype: HTMLRuxIconPropulsionPowerElement;
-        new(): HTMLRuxIconPropulsionPowerElement;
+        new (): HTMLRuxIconPropulsionPowerElement;
     };
     interface HTMLRuxIconPublicElement extends Components.RuxIconPublic, HTMLStencilElement {
     }
     var HTMLRuxIconPublicElement: {
         prototype: HTMLRuxIconPublicElement;
-        new(): HTMLRuxIconPublicElement;
+        new (): HTMLRuxIconPublicElement;
     };
     interface HTMLRuxIconPublishElement extends Components.RuxIconPublish, HTMLStencilElement {
     }
     var HTMLRuxIconPublishElement: {
         prototype: HTMLRuxIconPublishElement;
-        new(): HTMLRuxIconPublishElement;
+        new (): HTMLRuxIconPublishElement;
     };
     interface HTMLRuxIconQueryBuilderElement extends Components.RuxIconQueryBuilder, HTMLStencilElement {
     }
     var HTMLRuxIconQueryBuilderElement: {
         prototype: HTMLRuxIconQueryBuilderElement;
-        new(): HTMLRuxIconQueryBuilderElement;
+        new (): HTMLRuxIconQueryBuilderElement;
     };
     interface HTMLRuxIconQuestionAnswerElement extends Components.RuxIconQuestionAnswer, HTMLStencilElement {
     }
     var HTMLRuxIconQuestionAnswerElement: {
         prototype: HTMLRuxIconQuestionAnswerElement;
-        new(): HTMLRuxIconQuestionAnswerElement;
+        new (): HTMLRuxIconQuestionAnswerElement;
     };
     interface HTMLRuxIconQueueElement extends Components.RuxIconQueue, HTMLStencilElement {
     }
     var HTMLRuxIconQueueElement: {
         prototype: HTMLRuxIconQueueElement;
-        new(): HTMLRuxIconQueueElement;
+        new (): HTMLRuxIconQueueElement;
     };
     interface HTMLRuxIconQueueMusicElement extends Components.RuxIconQueueMusic, HTMLStencilElement {
     }
     var HTMLRuxIconQueueMusicElement: {
         prototype: HTMLRuxIconQueueMusicElement;
-        new(): HTMLRuxIconQueueMusicElement;
+        new (): HTMLRuxIconQueueMusicElement;
     };
     interface HTMLRuxIconQueuePlayNextElement extends Components.RuxIconQueuePlayNext, HTMLStencilElement {
     }
     var HTMLRuxIconQueuePlayNextElement: {
         prototype: HTMLRuxIconQueuePlayNextElement;
-        new(): HTMLRuxIconQueuePlayNextElement;
+        new (): HTMLRuxIconQueuePlayNextElement;
     };
     interface HTMLRuxIconRadioElement extends Components.RuxIconRadio, HTMLStencilElement {
     }
     var HTMLRuxIconRadioElement: {
         prototype: HTMLRuxIconRadioElement;
-        new(): HTMLRuxIconRadioElement;
+        new (): HTMLRuxIconRadioElement;
     };
     interface HTMLRuxIconRadioButtonCheckedElement extends Components.RuxIconRadioButtonChecked, HTMLStencilElement {
     }
     var HTMLRuxIconRadioButtonCheckedElement: {
         prototype: HTMLRuxIconRadioButtonCheckedElement;
-        new(): HTMLRuxIconRadioButtonCheckedElement;
+        new (): HTMLRuxIconRadioButtonCheckedElement;
     };
     interface HTMLRuxIconRadioButtonUncheckedElement extends Components.RuxIconRadioButtonUnchecked, HTMLStencilElement {
     }
     var HTMLRuxIconRadioButtonUncheckedElement: {
         prototype: HTMLRuxIconRadioButtonUncheckedElement;
-        new(): HTMLRuxIconRadioButtonUncheckedElement;
+        new (): HTMLRuxIconRadioButtonUncheckedElement;
     };
     interface HTMLRuxIconRateReviewElement extends Components.RuxIconRateReview, HTMLStencilElement {
     }
     var HTMLRuxIconRateReviewElement: {
         prototype: HTMLRuxIconRateReviewElement;
-        new(): HTMLRuxIconRateReviewElement;
+        new (): HTMLRuxIconRateReviewElement;
     };
     interface HTMLRuxIconReceiptElement extends Components.RuxIconReceipt, HTMLStencilElement {
     }
     var HTMLRuxIconReceiptElement: {
         prototype: HTMLRuxIconReceiptElement;
-        new(): HTMLRuxIconReceiptElement;
+        new (): HTMLRuxIconReceiptElement;
     };
     interface HTMLRuxIconRecentActorsElement extends Components.RuxIconRecentActors, HTMLStencilElement {
     }
     var HTMLRuxIconRecentActorsElement: {
         prototype: HTMLRuxIconRecentActorsElement;
-        new(): HTMLRuxIconRecentActorsElement;
+        new (): HTMLRuxIconRecentActorsElement;
     };
     interface HTMLRuxIconRecordVoiceOverElement extends Components.RuxIconRecordVoiceOver, HTMLStencilElement {
     }
     var HTMLRuxIconRecordVoiceOverElement: {
         prototype: HTMLRuxIconRecordVoiceOverElement;
-        new(): HTMLRuxIconRecordVoiceOverElement;
+        new (): HTMLRuxIconRecordVoiceOverElement;
     };
     interface HTMLRuxIconRedeemElement extends Components.RuxIconRedeem, HTMLStencilElement {
     }
     var HTMLRuxIconRedeemElement: {
         prototype: HTMLRuxIconRedeemElement;
-        new(): HTMLRuxIconRedeemElement;
+        new (): HTMLRuxIconRedeemElement;
     };
     interface HTMLRuxIconRedoElement extends Components.RuxIconRedo, HTMLStencilElement {
     }
     var HTMLRuxIconRedoElement: {
         prototype: HTMLRuxIconRedoElement;
-        new(): HTMLRuxIconRedoElement;
+        new (): HTMLRuxIconRedoElement;
     };
     interface HTMLRuxIconRefreshElement extends Components.RuxIconRefresh, HTMLStencilElement {
     }
     var HTMLRuxIconRefreshElement: {
         prototype: HTMLRuxIconRefreshElement;
-        new(): HTMLRuxIconRefreshElement;
+        new (): HTMLRuxIconRefreshElement;
     };
     interface HTMLRuxIconRemoveElement extends Components.RuxIconRemove, HTMLStencilElement {
     }
     var HTMLRuxIconRemoveElement: {
         prototype: HTMLRuxIconRemoveElement;
-        new(): HTMLRuxIconRemoveElement;
+        new (): HTMLRuxIconRemoveElement;
     };
     interface HTMLRuxIconRemoveCircleElement extends Components.RuxIconRemoveCircle, HTMLStencilElement {
     }
     var HTMLRuxIconRemoveCircleElement: {
         prototype: HTMLRuxIconRemoveCircleElement;
-        new(): HTMLRuxIconRemoveCircleElement;
+        new (): HTMLRuxIconRemoveCircleElement;
     };
     interface HTMLRuxIconRemoveCircleOutlineElement extends Components.RuxIconRemoveCircleOutline, HTMLStencilElement {
     }
     var HTMLRuxIconRemoveCircleOutlineElement: {
         prototype: HTMLRuxIconRemoveCircleOutlineElement;
-        new(): HTMLRuxIconRemoveCircleOutlineElement;
+        new (): HTMLRuxIconRemoveCircleOutlineElement;
     };
     interface HTMLRuxIconRemoveFromQueueElement extends Components.RuxIconRemoveFromQueue, HTMLStencilElement {
     }
     var HTMLRuxIconRemoveFromQueueElement: {
         prototype: HTMLRuxIconRemoveFromQueueElement;
-        new(): HTMLRuxIconRemoveFromQueueElement;
+        new (): HTMLRuxIconRemoveFromQueueElement;
     };
     interface HTMLRuxIconRemoveRedEyeElement extends Components.RuxIconRemoveRedEye, HTMLStencilElement {
     }
     var HTMLRuxIconRemoveRedEyeElement: {
         prototype: HTMLRuxIconRemoveRedEyeElement;
-        new(): HTMLRuxIconRemoveRedEyeElement;
+        new (): HTMLRuxIconRemoveRedEyeElement;
     };
     interface HTMLRuxIconRemoveShoppingCartElement extends Components.RuxIconRemoveShoppingCart, HTMLStencilElement {
     }
     var HTMLRuxIconRemoveShoppingCartElement: {
         prototype: HTMLRuxIconRemoveShoppingCartElement;
-        new(): HTMLRuxIconRemoveShoppingCartElement;
+        new (): HTMLRuxIconRemoveShoppingCartElement;
     };
     interface HTMLRuxIconReorderElement extends Components.RuxIconReorder, HTMLStencilElement {
     }
     var HTMLRuxIconReorderElement: {
         prototype: HTMLRuxIconReorderElement;
-        new(): HTMLRuxIconReorderElement;
+        new (): HTMLRuxIconReorderElement;
     };
     interface HTMLRuxIconRepeatElement extends Components.RuxIconRepeat, HTMLStencilElement {
     }
     var HTMLRuxIconRepeatElement: {
         prototype: HTMLRuxIconRepeatElement;
-        new(): HTMLRuxIconRepeatElement;
+        new (): HTMLRuxIconRepeatElement;
     };
     interface HTMLRuxIconRepeatOneElement extends Components.RuxIconRepeatOne, HTMLStencilElement {
     }
     var HTMLRuxIconRepeatOneElement: {
         prototype: HTMLRuxIconRepeatOneElement;
-        new(): HTMLRuxIconRepeatOneElement;
+        new (): HTMLRuxIconRepeatOneElement;
     };
     interface HTMLRuxIconReplayElement extends Components.RuxIconReplay, HTMLStencilElement {
     }
     var HTMLRuxIconReplayElement: {
         prototype: HTMLRuxIconReplayElement;
-        new(): HTMLRuxIconReplayElement;
+        new (): HTMLRuxIconReplayElement;
     };
     interface HTMLRuxIconReplay10Element extends Components.RuxIconReplay10, HTMLStencilElement {
     }
     var HTMLRuxIconReplay10Element: {
         prototype: HTMLRuxIconReplay10Element;
-        new(): HTMLRuxIconReplay10Element;
+        new (): HTMLRuxIconReplay10Element;
     };
     interface HTMLRuxIconReplay30Element extends Components.RuxIconReplay30, HTMLStencilElement {
     }
     var HTMLRuxIconReplay30Element: {
         prototype: HTMLRuxIconReplay30Element;
-        new(): HTMLRuxIconReplay30Element;
+        new (): HTMLRuxIconReplay30Element;
     };
     interface HTMLRuxIconReplay5Element extends Components.RuxIconReplay5, HTMLStencilElement {
     }
     var HTMLRuxIconReplay5Element: {
         prototype: HTMLRuxIconReplay5Element;
-        new(): HTMLRuxIconReplay5Element;
+        new (): HTMLRuxIconReplay5Element;
     };
     interface HTMLRuxIconReplyElement extends Components.RuxIconReply, HTMLStencilElement {
     }
     var HTMLRuxIconReplyElement: {
         prototype: HTMLRuxIconReplyElement;
-        new(): HTMLRuxIconReplyElement;
+        new (): HTMLRuxIconReplyElement;
     };
     interface HTMLRuxIconReplyAllElement extends Components.RuxIconReplyAll, HTMLStencilElement {
     }
     var HTMLRuxIconReplyAllElement: {
         prototype: HTMLRuxIconReplyAllElement;
-        new(): HTMLRuxIconReplyAllElement;
+        new (): HTMLRuxIconReplyAllElement;
     };
     interface HTMLRuxIconReportElement extends Components.RuxIconReport, HTMLStencilElement {
     }
     var HTMLRuxIconReportElement: {
         prototype: HTMLRuxIconReportElement;
-        new(): HTMLRuxIconReportElement;
+        new (): HTMLRuxIconReportElement;
     };
     interface HTMLRuxIconReportOffElement extends Components.RuxIconReportOff, HTMLStencilElement {
     }
     var HTMLRuxIconReportOffElement: {
         prototype: HTMLRuxIconReportOffElement;
-        new(): HTMLRuxIconReportOffElement;
+        new (): HTMLRuxIconReportOffElement;
     };
     interface HTMLRuxIconReportProblemElement extends Components.RuxIconReportProblem, HTMLStencilElement {
     }
     var HTMLRuxIconReportProblemElement: {
         prototype: HTMLRuxIconReportProblemElement;
-        new(): HTMLRuxIconReportProblemElement;
+        new (): HTMLRuxIconReportProblemElement;
     };
     interface HTMLRuxIconRestaurantElement extends Components.RuxIconRestaurant, HTMLStencilElement {
     }
     var HTMLRuxIconRestaurantElement: {
         prototype: HTMLRuxIconRestaurantElement;
-        new(): HTMLRuxIconRestaurantElement;
+        new (): HTMLRuxIconRestaurantElement;
     };
     interface HTMLRuxIconRestaurantMenuElement extends Components.RuxIconRestaurantMenu, HTMLStencilElement {
     }
     var HTMLRuxIconRestaurantMenuElement: {
         prototype: HTMLRuxIconRestaurantMenuElement;
-        new(): HTMLRuxIconRestaurantMenuElement;
+        new (): HTMLRuxIconRestaurantMenuElement;
     };
     interface HTMLRuxIconRestoreElement extends Components.RuxIconRestore, HTMLStencilElement {
     }
     var HTMLRuxIconRestoreElement: {
         prototype: HTMLRuxIconRestoreElement;
-        new(): HTMLRuxIconRestoreElement;
+        new (): HTMLRuxIconRestoreElement;
     };
     interface HTMLRuxIconRestoreFromTrashElement extends Components.RuxIconRestoreFromTrash, HTMLStencilElement {
     }
     var HTMLRuxIconRestoreFromTrashElement: {
         prototype: HTMLRuxIconRestoreFromTrashElement;
-        new(): HTMLRuxIconRestoreFromTrashElement;
+        new (): HTMLRuxIconRestoreFromTrashElement;
     };
     interface HTMLRuxIconRestorePageElement extends Components.RuxIconRestorePage, HTMLStencilElement {
     }
     var HTMLRuxIconRestorePageElement: {
         prototype: HTMLRuxIconRestorePageElement;
-        new(): HTMLRuxIconRestorePageElement;
+        new (): HTMLRuxIconRestorePageElement;
     };
     interface HTMLRuxIconRingVolumeElement extends Components.RuxIconRingVolume, HTMLStencilElement {
     }
     var HTMLRuxIconRingVolumeElement: {
         prototype: HTMLRuxIconRingVolumeElement;
-        new(): HTMLRuxIconRingVolumeElement;
+        new (): HTMLRuxIconRingVolumeElement;
     };
     interface HTMLRuxIconRoomElement extends Components.RuxIconRoom, HTMLStencilElement {
     }
     var HTMLRuxIconRoomElement: {
         prototype: HTMLRuxIconRoomElement;
-        new(): HTMLRuxIconRoomElement;
+        new (): HTMLRuxIconRoomElement;
     };
     interface HTMLRuxIconRoomServiceElement extends Components.RuxIconRoomService, HTMLStencilElement {
     }
     var HTMLRuxIconRoomServiceElement: {
         prototype: HTMLRuxIconRoomServiceElement;
-        new(): HTMLRuxIconRoomServiceElement;
+        new (): HTMLRuxIconRoomServiceElement;
     };
     interface HTMLRuxIconRotate90DegreesCcElement extends Components.RuxIconRotate90DegreesCc, HTMLStencilElement {
     }
     var HTMLRuxIconRotate90DegreesCcElement: {
         prototype: HTMLRuxIconRotate90DegreesCcElement;
-        new(): HTMLRuxIconRotate90DegreesCcElement;
+        new (): HTMLRuxIconRotate90DegreesCcElement;
     };
     interface HTMLRuxIconRotateLeftElement extends Components.RuxIconRotateLeft, HTMLStencilElement {
     }
     var HTMLRuxIconRotateLeftElement: {
         prototype: HTMLRuxIconRotateLeftElement;
-        new(): HTMLRuxIconRotateLeftElement;
+        new (): HTMLRuxIconRotateLeftElement;
     };
     interface HTMLRuxIconRotateRightElement extends Components.RuxIconRotateRight, HTMLStencilElement {
     }
     var HTMLRuxIconRotateRightElement: {
         prototype: HTMLRuxIconRotateRightElement;
-        new(): HTMLRuxIconRotateRightElement;
+        new (): HTMLRuxIconRotateRightElement;
     };
     interface HTMLRuxIconRoundedCornerElement extends Components.RuxIconRoundedCorner, HTMLStencilElement {
     }
     var HTMLRuxIconRoundedCornerElement: {
         prototype: HTMLRuxIconRoundedCornerElement;
-        new(): HTMLRuxIconRoundedCornerElement;
+        new (): HTMLRuxIconRoundedCornerElement;
     };
     interface HTMLRuxIconRouterElement extends Components.RuxIconRouter, HTMLStencilElement {
     }
     var HTMLRuxIconRouterElement: {
         prototype: HTMLRuxIconRouterElement;
-        new(): HTMLRuxIconRouterElement;
+        new (): HTMLRuxIconRouterElement;
     };
     interface HTMLRuxIconRowingElement extends Components.RuxIconRowing, HTMLStencilElement {
     }
     var HTMLRuxIconRowingElement: {
         prototype: HTMLRuxIconRowingElement;
-        new(): HTMLRuxIconRowingElement;
+        new (): HTMLRuxIconRowingElement;
     };
     interface HTMLRuxIconRssFeedElement extends Components.RuxIconRssFeed, HTMLStencilElement {
     }
     var HTMLRuxIconRssFeedElement: {
         prototype: HTMLRuxIconRssFeedElement;
-        new(): HTMLRuxIconRssFeedElement;
+        new (): HTMLRuxIconRssFeedElement;
     };
     interface HTMLRuxIconRvHookupElement extends Components.RuxIconRvHookup, HTMLStencilElement {
     }
     var HTMLRuxIconRvHookupElement: {
         prototype: HTMLRuxIconRvHookupElement;
-        new(): HTMLRuxIconRvHookupElement;
+        new (): HTMLRuxIconRvHookupElement;
     };
     interface HTMLRuxIconSatelliteElement extends Components.RuxIconSatellite, HTMLStencilElement {
     }
     var HTMLRuxIconSatelliteElement: {
         prototype: HTMLRuxIconSatelliteElement;
-        new(): HTMLRuxIconSatelliteElement;
+        new (): HTMLRuxIconSatelliteElement;
     };
     interface HTMLRuxIconSatelliteOffElement extends Components.RuxIconSatelliteOff, HTMLStencilElement {
     }
     var HTMLRuxIconSatelliteOffElement: {
         prototype: HTMLRuxIconSatelliteOffElement;
-        new(): HTMLRuxIconSatelliteOffElement;
+        new (): HTMLRuxIconSatelliteOffElement;
     };
     interface HTMLRuxIconSatelliteReceiveElement extends Components.RuxIconSatelliteReceive, HTMLStencilElement {
     }
     var HTMLRuxIconSatelliteReceiveElement: {
         prototype: HTMLRuxIconSatelliteReceiveElement;
-        new(): HTMLRuxIconSatelliteReceiveElement;
+        new (): HTMLRuxIconSatelliteReceiveElement;
     };
     interface HTMLRuxIconSatelliteTransmitElement extends Components.RuxIconSatelliteTransmit, HTMLStencilElement {
     }
     var HTMLRuxIconSatelliteTransmitElement: {
         prototype: HTMLRuxIconSatelliteTransmitElement;
-        new(): HTMLRuxIconSatelliteTransmitElement;
+        new (): HTMLRuxIconSatelliteTransmitElement;
     };
     interface HTMLRuxIconSaveElement extends Components.RuxIconSave, HTMLStencilElement {
     }
     var HTMLRuxIconSaveElement: {
         prototype: HTMLRuxIconSaveElement;
-        new(): HTMLRuxIconSaveElement;
+        new (): HTMLRuxIconSaveElement;
     };
     interface HTMLRuxIconSaveAltElement extends Components.RuxIconSaveAlt, HTMLStencilElement {
     }
     var HTMLRuxIconSaveAltElement: {
         prototype: HTMLRuxIconSaveAltElement;
-        new(): HTMLRuxIconSaveAltElement;
+        new (): HTMLRuxIconSaveAltElement;
     };
     interface HTMLRuxIconScannerElement extends Components.RuxIconScanner, HTMLStencilElement {
     }
     var HTMLRuxIconScannerElement: {
         prototype: HTMLRuxIconScannerElement;
-        new(): HTMLRuxIconScannerElement;
+        new (): HTMLRuxIconScannerElement;
     };
     interface HTMLRuxIconScatterPlotElement extends Components.RuxIconScatterPlot, HTMLStencilElement {
     }
     var HTMLRuxIconScatterPlotElement: {
         prototype: HTMLRuxIconScatterPlotElement;
-        new(): HTMLRuxIconScatterPlotElement;
+        new (): HTMLRuxIconScatterPlotElement;
     };
     interface HTMLRuxIconScheduleElement extends Components.RuxIconSchedule, HTMLStencilElement {
     }
     var HTMLRuxIconScheduleElement: {
         prototype: HTMLRuxIconScheduleElement;
-        new(): HTMLRuxIconScheduleElement;
+        new (): HTMLRuxIconScheduleElement;
     };
     interface HTMLRuxIconSchoolElement extends Components.RuxIconSchool, HTMLStencilElement {
     }
     var HTMLRuxIconSchoolElement: {
         prototype: HTMLRuxIconSchoolElement;
-        new(): HTMLRuxIconSchoolElement;
+        new (): HTMLRuxIconSchoolElement;
     };
     interface HTMLRuxIconScoreElement extends Components.RuxIconScore, HTMLStencilElement {
     }
     var HTMLRuxIconScoreElement: {
         prototype: HTMLRuxIconScoreElement;
-        new(): HTMLRuxIconScoreElement;
+        new (): HTMLRuxIconScoreElement;
     };
     interface HTMLRuxIconScreenLockLandscapeElement extends Components.RuxIconScreenLockLandscape, HTMLStencilElement {
     }
     var HTMLRuxIconScreenLockLandscapeElement: {
         prototype: HTMLRuxIconScreenLockLandscapeElement;
-        new(): HTMLRuxIconScreenLockLandscapeElement;
+        new (): HTMLRuxIconScreenLockLandscapeElement;
     };
     interface HTMLRuxIconScreenLockPortraitElement extends Components.RuxIconScreenLockPortrait, HTMLStencilElement {
     }
     var HTMLRuxIconScreenLockPortraitElement: {
         prototype: HTMLRuxIconScreenLockPortraitElement;
-        new(): HTMLRuxIconScreenLockPortraitElement;
+        new (): HTMLRuxIconScreenLockPortraitElement;
     };
     interface HTMLRuxIconScreenLockRotationElement extends Components.RuxIconScreenLockRotation, HTMLStencilElement {
     }
     var HTMLRuxIconScreenLockRotationElement: {
         prototype: HTMLRuxIconScreenLockRotationElement;
-        new(): HTMLRuxIconScreenLockRotationElement;
+        new (): HTMLRuxIconScreenLockRotationElement;
     };
     interface HTMLRuxIconScreenRotationElement extends Components.RuxIconScreenRotation, HTMLStencilElement {
     }
     var HTMLRuxIconScreenRotationElement: {
         prototype: HTMLRuxIconScreenRotationElement;
-        new(): HTMLRuxIconScreenRotationElement;
+        new (): HTMLRuxIconScreenRotationElement;
     };
     interface HTMLRuxIconScreenShareElement extends Components.RuxIconScreenShare, HTMLStencilElement {
     }
     var HTMLRuxIconScreenShareElement: {
         prototype: HTMLRuxIconScreenShareElement;
-        new(): HTMLRuxIconScreenShareElement;
+        new (): HTMLRuxIconScreenShareElement;
     };
     interface HTMLRuxIconSdCardElement extends Components.RuxIconSdCard, HTMLStencilElement {
     }
     var HTMLRuxIconSdCardElement: {
         prototype: HTMLRuxIconSdCardElement;
-        new(): HTMLRuxIconSdCardElement;
+        new (): HTMLRuxIconSdCardElement;
     };
     interface HTMLRuxIconSdStorageElement extends Components.RuxIconSdStorage, HTMLStencilElement {
     }
     var HTMLRuxIconSdStorageElement: {
         prototype: HTMLRuxIconSdStorageElement;
-        new(): HTMLRuxIconSdStorageElement;
+        new (): HTMLRuxIconSdStorageElement;
     };
     interface HTMLRuxIconSearchElement extends Components.RuxIconSearch, HTMLStencilElement {
     }
     var HTMLRuxIconSearchElement: {
         prototype: HTMLRuxIconSearchElement;
-        new(): HTMLRuxIconSearchElement;
+        new (): HTMLRuxIconSearchElement;
     };
     interface HTMLRuxIconSeatElement extends Components.RuxIconSeat, HTMLStencilElement {
     }
     var HTMLRuxIconSeatElement: {
         prototype: HTMLRuxIconSeatElement;
-        new(): HTMLRuxIconSeatElement;
+        new (): HTMLRuxIconSeatElement;
     };
     interface HTMLRuxIconSecurityElement extends Components.RuxIconSecurity, HTMLStencilElement {
     }
     var HTMLRuxIconSecurityElement: {
         prototype: HTMLRuxIconSecurityElement;
-        new(): HTMLRuxIconSecurityElement;
+        new (): HTMLRuxIconSecurityElement;
     };
     interface HTMLRuxIconSelectAllElement extends Components.RuxIconSelectAll, HTMLStencilElement {
     }
     var HTMLRuxIconSelectAllElement: {
         prototype: HTMLRuxIconSelectAllElement;
-        new(): HTMLRuxIconSelectAllElement;
+        new (): HTMLRuxIconSelectAllElement;
     };
     interface HTMLRuxIconSendElement extends Components.RuxIconSend, HTMLStencilElement {
     }
     var HTMLRuxIconSendElement: {
         prototype: HTMLRuxIconSendElement;
-        new(): HTMLRuxIconSendElement;
+        new (): HTMLRuxIconSendElement;
     };
     interface HTMLRuxIconSentimentDissatisfiedElement extends Components.RuxIconSentimentDissatisfied, HTMLStencilElement {
     }
     var HTMLRuxIconSentimentDissatisfiedElement: {
         prototype: HTMLRuxIconSentimentDissatisfiedElement;
-        new(): HTMLRuxIconSentimentDissatisfiedElement;
+        new (): HTMLRuxIconSentimentDissatisfiedElement;
     };
     interface HTMLRuxIconSentimentSatisfiedElement extends Components.RuxIconSentimentSatisfied, HTMLStencilElement {
     }
     var HTMLRuxIconSentimentSatisfiedElement: {
         prototype: HTMLRuxIconSentimentSatisfiedElement;
-        new(): HTMLRuxIconSentimentSatisfiedElement;
+        new (): HTMLRuxIconSentimentSatisfiedElement;
     };
     interface HTMLRuxIconSentimentSatisfiedAltElement extends Components.RuxIconSentimentSatisfiedAlt, HTMLStencilElement {
     }
     var HTMLRuxIconSentimentSatisfiedAltElement: {
         prototype: HTMLRuxIconSentimentSatisfiedAltElement;
-        new(): HTMLRuxIconSentimentSatisfiedAltElement;
+        new (): HTMLRuxIconSentimentSatisfiedAltElement;
     };
     interface HTMLRuxIconSentimentVeryDissatisfiedElement extends Components.RuxIconSentimentVeryDissatisfied, HTMLStencilElement {
     }
     var HTMLRuxIconSentimentVeryDissatisfiedElement: {
         prototype: HTMLRuxIconSentimentVeryDissatisfiedElement;
-        new(): HTMLRuxIconSentimentVeryDissatisfiedElement;
+        new (): HTMLRuxIconSentimentVeryDissatisfiedElement;
     };
     interface HTMLRuxIconSentimentVerySatisfiedElement extends Components.RuxIconSentimentVerySatisfied, HTMLStencilElement {
     }
     var HTMLRuxIconSentimentVerySatisfiedElement: {
         prototype: HTMLRuxIconSentimentVerySatisfiedElement;
-        new(): HTMLRuxIconSentimentVerySatisfiedElement;
+        new (): HTMLRuxIconSentimentVerySatisfiedElement;
     };
     interface HTMLRuxIconSettingsElement extends Components.RuxIconSettings, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsElement: {
         prototype: HTMLRuxIconSettingsElement;
-        new(): HTMLRuxIconSettingsElement;
+        new (): HTMLRuxIconSettingsElement;
     };
     interface HTMLRuxIconSettingsApplicationsElement extends Components.RuxIconSettingsApplications, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsApplicationsElement: {
         prototype: HTMLRuxIconSettingsApplicationsElement;
-        new(): HTMLRuxIconSettingsApplicationsElement;
+        new (): HTMLRuxIconSettingsApplicationsElement;
     };
     interface HTMLRuxIconSettingsBackupRestoreElement extends Components.RuxIconSettingsBackupRestore, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsBackupRestoreElement: {
         prototype: HTMLRuxIconSettingsBackupRestoreElement;
-        new(): HTMLRuxIconSettingsBackupRestoreElement;
+        new (): HTMLRuxIconSettingsBackupRestoreElement;
     };
     interface HTMLRuxIconSettingsBluetoothElement extends Components.RuxIconSettingsBluetooth, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsBluetoothElement: {
         prototype: HTMLRuxIconSettingsBluetoothElement;
-        new(): HTMLRuxIconSettingsBluetoothElement;
+        new (): HTMLRuxIconSettingsBluetoothElement;
     };
     interface HTMLRuxIconSettingsBrightnessElement extends Components.RuxIconSettingsBrightness, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsBrightnessElement: {
         prototype: HTMLRuxIconSettingsBrightnessElement;
-        new(): HTMLRuxIconSettingsBrightnessElement;
+        new (): HTMLRuxIconSettingsBrightnessElement;
     };
     interface HTMLRuxIconSettingsCellElement extends Components.RuxIconSettingsCell, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsCellElement: {
         prototype: HTMLRuxIconSettingsCellElement;
-        new(): HTMLRuxIconSettingsCellElement;
+        new (): HTMLRuxIconSettingsCellElement;
     };
     interface HTMLRuxIconSettingsEthernetElement extends Components.RuxIconSettingsEthernet, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsEthernetElement: {
         prototype: HTMLRuxIconSettingsEthernetElement;
-        new(): HTMLRuxIconSettingsEthernetElement;
+        new (): HTMLRuxIconSettingsEthernetElement;
     };
     interface HTMLRuxIconSettingsInputAntennaElement extends Components.RuxIconSettingsInputAntenna, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsInputAntennaElement: {
         prototype: HTMLRuxIconSettingsInputAntennaElement;
-        new(): HTMLRuxIconSettingsInputAntennaElement;
+        new (): HTMLRuxIconSettingsInputAntennaElement;
     };
     interface HTMLRuxIconSettingsInputComponentElement extends Components.RuxIconSettingsInputComponent, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsInputComponentElement: {
         prototype: HTMLRuxIconSettingsInputComponentElement;
-        new(): HTMLRuxIconSettingsInputComponentElement;
+        new (): HTMLRuxIconSettingsInputComponentElement;
     };
     interface HTMLRuxIconSettingsInputCompositeElement extends Components.RuxIconSettingsInputComposite, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsInputCompositeElement: {
         prototype: HTMLRuxIconSettingsInputCompositeElement;
-        new(): HTMLRuxIconSettingsInputCompositeElement;
+        new (): HTMLRuxIconSettingsInputCompositeElement;
     };
     interface HTMLRuxIconSettingsInputHdmiElement extends Components.RuxIconSettingsInputHdmi, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsInputHdmiElement: {
         prototype: HTMLRuxIconSettingsInputHdmiElement;
-        new(): HTMLRuxIconSettingsInputHdmiElement;
+        new (): HTMLRuxIconSettingsInputHdmiElement;
     };
     interface HTMLRuxIconSettingsInputSvideoElement extends Components.RuxIconSettingsInputSvideo, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsInputSvideoElement: {
         prototype: HTMLRuxIconSettingsInputSvideoElement;
-        new(): HTMLRuxIconSettingsInputSvideoElement;
+        new (): HTMLRuxIconSettingsInputSvideoElement;
     };
     interface HTMLRuxIconSettingsOverscanElement extends Components.RuxIconSettingsOverscan, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsOverscanElement: {
         prototype: HTMLRuxIconSettingsOverscanElement;
-        new(): HTMLRuxIconSettingsOverscanElement;
+        new (): HTMLRuxIconSettingsOverscanElement;
     };
     interface HTMLRuxIconSettingsPhoneElement extends Components.RuxIconSettingsPhone, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsPhoneElement: {
         prototype: HTMLRuxIconSettingsPhoneElement;
-        new(): HTMLRuxIconSettingsPhoneElement;
+        new (): HTMLRuxIconSettingsPhoneElement;
     };
     interface HTMLRuxIconSettingsPowerElement extends Components.RuxIconSettingsPower, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsPowerElement: {
         prototype: HTMLRuxIconSettingsPowerElement;
-        new(): HTMLRuxIconSettingsPowerElement;
+        new (): HTMLRuxIconSettingsPowerElement;
     };
     interface HTMLRuxIconSettingsRemoteElement extends Components.RuxIconSettingsRemote, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsRemoteElement: {
         prototype: HTMLRuxIconSettingsRemoteElement;
-        new(): HTMLRuxIconSettingsRemoteElement;
+        new (): HTMLRuxIconSettingsRemoteElement;
     };
     interface HTMLRuxIconSettingsSystemDaydreamElement extends Components.RuxIconSettingsSystemDaydream, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsSystemDaydreamElement: {
         prototype: HTMLRuxIconSettingsSystemDaydreamElement;
-        new(): HTMLRuxIconSettingsSystemDaydreamElement;
+        new (): HTMLRuxIconSettingsSystemDaydreamElement;
     };
     interface HTMLRuxIconSettingsVoiceElement extends Components.RuxIconSettingsVoice, HTMLStencilElement {
     }
     var HTMLRuxIconSettingsVoiceElement: {
         prototype: HTMLRuxIconSettingsVoiceElement;
-        new(): HTMLRuxIconSettingsVoiceElement;
+        new (): HTMLRuxIconSettingsVoiceElement;
     };
     interface HTMLRuxIconShareElement extends Components.RuxIconShare, HTMLStencilElement {
     }
     var HTMLRuxIconShareElement: {
         prototype: HTMLRuxIconShareElement;
-        new(): HTMLRuxIconShareElement;
+        new (): HTMLRuxIconShareElement;
     };
     interface HTMLRuxIconShopElement extends Components.RuxIconShop, HTMLStencilElement {
     }
     var HTMLRuxIconShopElement: {
         prototype: HTMLRuxIconShopElement;
-        new(): HTMLRuxIconShopElement;
+        new (): HTMLRuxIconShopElement;
     };
     interface HTMLRuxIconShopTwoElement extends Components.RuxIconShopTwo, HTMLStencilElement {
     }
     var HTMLRuxIconShopTwoElement: {
         prototype: HTMLRuxIconShopTwoElement;
-        new(): HTMLRuxIconShopTwoElement;
+        new (): HTMLRuxIconShopTwoElement;
     };
     interface HTMLRuxIconShoppingBasketElement extends Components.RuxIconShoppingBasket, HTMLStencilElement {
     }
     var HTMLRuxIconShoppingBasketElement: {
         prototype: HTMLRuxIconShoppingBasketElement;
-        new(): HTMLRuxIconShoppingBasketElement;
+        new (): HTMLRuxIconShoppingBasketElement;
     };
     interface HTMLRuxIconShoppingCartElement extends Components.RuxIconShoppingCart, HTMLStencilElement {
     }
     var HTMLRuxIconShoppingCartElement: {
         prototype: HTMLRuxIconShoppingCartElement;
-        new(): HTMLRuxIconShoppingCartElement;
+        new (): HTMLRuxIconShoppingCartElement;
     };
     interface HTMLRuxIconShortTextElement extends Components.RuxIconShortText, HTMLStencilElement {
     }
     var HTMLRuxIconShortTextElement: {
         prototype: HTMLRuxIconShortTextElement;
-        new(): HTMLRuxIconShortTextElement;
+        new (): HTMLRuxIconShortTextElement;
     };
     interface HTMLRuxIconShowChartElement extends Components.RuxIconShowChart, HTMLStencilElement {
     }
     var HTMLRuxIconShowChartElement: {
         prototype: HTMLRuxIconShowChartElement;
-        new(): HTMLRuxIconShowChartElement;
+        new (): HTMLRuxIconShowChartElement;
     };
     interface HTMLRuxIconShuffleElement extends Components.RuxIconShuffle, HTMLStencilElement {
     }
     var HTMLRuxIconShuffleElement: {
         prototype: HTMLRuxIconShuffleElement;
-        new(): HTMLRuxIconShuffleElement;
+        new (): HTMLRuxIconShuffleElement;
     };
     interface HTMLRuxIconShutterSpeedElement extends Components.RuxIconShutterSpeed, HTMLStencilElement {
     }
     var HTMLRuxIconShutterSpeedElement: {
         prototype: HTMLRuxIconShutterSpeedElement;
-        new(): HTMLRuxIconShutterSpeedElement;
+        new (): HTMLRuxIconShutterSpeedElement;
     };
     interface HTMLRuxIconSignalCellular0BarElement extends Components.RuxIconSignalCellular0Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellular0BarElement: {
         prototype: HTMLRuxIconSignalCellular0BarElement;
-        new(): HTMLRuxIconSignalCellular0BarElement;
+        new (): HTMLRuxIconSignalCellular0BarElement;
     };
     interface HTMLRuxIconSignalCellular1BarElement extends Components.RuxIconSignalCellular1Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellular1BarElement: {
         prototype: HTMLRuxIconSignalCellular1BarElement;
-        new(): HTMLRuxIconSignalCellular1BarElement;
+        new (): HTMLRuxIconSignalCellular1BarElement;
     };
     interface HTMLRuxIconSignalCellular2BarElement extends Components.RuxIconSignalCellular2Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellular2BarElement: {
         prototype: HTMLRuxIconSignalCellular2BarElement;
-        new(): HTMLRuxIconSignalCellular2BarElement;
+        new (): HTMLRuxIconSignalCellular2BarElement;
     };
     interface HTMLRuxIconSignalCellular3BarElement extends Components.RuxIconSignalCellular3Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellular3BarElement: {
         prototype: HTMLRuxIconSignalCellular3BarElement;
-        new(): HTMLRuxIconSignalCellular3BarElement;
+        new (): HTMLRuxIconSignalCellular3BarElement;
     };
     interface HTMLRuxIconSignalCellular4BarElement extends Components.RuxIconSignalCellular4Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellular4BarElement: {
         prototype: HTMLRuxIconSignalCellular4BarElement;
-        new(): HTMLRuxIconSignalCellular4BarElement;
+        new (): HTMLRuxIconSignalCellular4BarElement;
     };
     interface HTMLRuxIconSignalCellularAltElement extends Components.RuxIconSignalCellularAlt, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellularAltElement: {
         prototype: HTMLRuxIconSignalCellularAltElement;
-        new(): HTMLRuxIconSignalCellularAltElement;
+        new (): HTMLRuxIconSignalCellularAltElement;
     };
     interface HTMLRuxIconSignalCellularConnectedNoInternet0BarElement extends Components.RuxIconSignalCellularConnectedNoInternet0Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellularConnectedNoInternet0BarElement: {
         prototype: HTMLRuxIconSignalCellularConnectedNoInternet0BarElement;
-        new(): HTMLRuxIconSignalCellularConnectedNoInternet0BarElement;
+        new (): HTMLRuxIconSignalCellularConnectedNoInternet0BarElement;
     };
     interface HTMLRuxIconSignalCellularConnectedNoInternet1BarElement extends Components.RuxIconSignalCellularConnectedNoInternet1Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellularConnectedNoInternet1BarElement: {
         prototype: HTMLRuxIconSignalCellularConnectedNoInternet1BarElement;
-        new(): HTMLRuxIconSignalCellularConnectedNoInternet1BarElement;
+        new (): HTMLRuxIconSignalCellularConnectedNoInternet1BarElement;
     };
     interface HTMLRuxIconSignalCellularConnectedNoInternet2BarElement extends Components.RuxIconSignalCellularConnectedNoInternet2Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellularConnectedNoInternet2BarElement: {
         prototype: HTMLRuxIconSignalCellularConnectedNoInternet2BarElement;
-        new(): HTMLRuxIconSignalCellularConnectedNoInternet2BarElement;
+        new (): HTMLRuxIconSignalCellularConnectedNoInternet2BarElement;
     };
     interface HTMLRuxIconSignalCellularConnectedNoInternet3BarElement extends Components.RuxIconSignalCellularConnectedNoInternet3Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellularConnectedNoInternet3BarElement: {
         prototype: HTMLRuxIconSignalCellularConnectedNoInternet3BarElement;
-        new(): HTMLRuxIconSignalCellularConnectedNoInternet3BarElement;
+        new (): HTMLRuxIconSignalCellularConnectedNoInternet3BarElement;
     };
     interface HTMLRuxIconSignalCellularConnectedNoInternet4BarElement extends Components.RuxIconSignalCellularConnectedNoInternet4Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellularConnectedNoInternet4BarElement: {
         prototype: HTMLRuxIconSignalCellularConnectedNoInternet4BarElement;
-        new(): HTMLRuxIconSignalCellularConnectedNoInternet4BarElement;
+        new (): HTMLRuxIconSignalCellularConnectedNoInternet4BarElement;
     };
     interface HTMLRuxIconSignalCellularNoSimElement extends Components.RuxIconSignalCellularNoSim, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellularNoSimElement: {
         prototype: HTMLRuxIconSignalCellularNoSimElement;
-        new(): HTMLRuxIconSignalCellularNoSimElement;
+        new (): HTMLRuxIconSignalCellularNoSimElement;
     };
     interface HTMLRuxIconSignalCellularNullElement extends Components.RuxIconSignalCellularNull, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellularNullElement: {
         prototype: HTMLRuxIconSignalCellularNullElement;
-        new(): HTMLRuxIconSignalCellularNullElement;
+        new (): HTMLRuxIconSignalCellularNullElement;
     };
     interface HTMLRuxIconSignalCellularOffElement extends Components.RuxIconSignalCellularOff, HTMLStencilElement {
     }
     var HTMLRuxIconSignalCellularOffElement: {
         prototype: HTMLRuxIconSignalCellularOffElement;
-        new(): HTMLRuxIconSignalCellularOffElement;
+        new (): HTMLRuxIconSignalCellularOffElement;
     };
     interface HTMLRuxIconSignalWifi0BarElement extends Components.RuxIconSignalWifi0Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalWifi0BarElement: {
         prototype: HTMLRuxIconSignalWifi0BarElement;
-        new(): HTMLRuxIconSignalWifi0BarElement;
+        new (): HTMLRuxIconSignalWifi0BarElement;
     };
     interface HTMLRuxIconSignalWifi1BarElement extends Components.RuxIconSignalWifi1Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalWifi1BarElement: {
         prototype: HTMLRuxIconSignalWifi1BarElement;
-        new(): HTMLRuxIconSignalWifi1BarElement;
+        new (): HTMLRuxIconSignalWifi1BarElement;
     };
     interface HTMLRuxIconSignalWifi1BarLockElement extends Components.RuxIconSignalWifi1BarLock, HTMLStencilElement {
     }
     var HTMLRuxIconSignalWifi1BarLockElement: {
         prototype: HTMLRuxIconSignalWifi1BarLockElement;
-        new(): HTMLRuxIconSignalWifi1BarLockElement;
+        new (): HTMLRuxIconSignalWifi1BarLockElement;
     };
     interface HTMLRuxIconSignalWifi2BarElement extends Components.RuxIconSignalWifi2Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalWifi2BarElement: {
         prototype: HTMLRuxIconSignalWifi2BarElement;
-        new(): HTMLRuxIconSignalWifi2BarElement;
+        new (): HTMLRuxIconSignalWifi2BarElement;
     };
     interface HTMLRuxIconSignalWifi2BarLockElement extends Components.RuxIconSignalWifi2BarLock, HTMLStencilElement {
     }
     var HTMLRuxIconSignalWifi2BarLockElement: {
         prototype: HTMLRuxIconSignalWifi2BarLockElement;
-        new(): HTMLRuxIconSignalWifi2BarLockElement;
+        new (): HTMLRuxIconSignalWifi2BarLockElement;
     };
     interface HTMLRuxIconSignalWifi3BarElement extends Components.RuxIconSignalWifi3Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalWifi3BarElement: {
         prototype: HTMLRuxIconSignalWifi3BarElement;
-        new(): HTMLRuxIconSignalWifi3BarElement;
+        new (): HTMLRuxIconSignalWifi3BarElement;
     };
     interface HTMLRuxIconSignalWifi3BarLockElement extends Components.RuxIconSignalWifi3BarLock, HTMLStencilElement {
     }
     var HTMLRuxIconSignalWifi3BarLockElement: {
         prototype: HTMLRuxIconSignalWifi3BarLockElement;
-        new(): HTMLRuxIconSignalWifi3BarLockElement;
+        new (): HTMLRuxIconSignalWifi3BarLockElement;
     };
     interface HTMLRuxIconSignalWifi4BarElement extends Components.RuxIconSignalWifi4Bar, HTMLStencilElement {
     }
     var HTMLRuxIconSignalWifi4BarElement: {
         prototype: HTMLRuxIconSignalWifi4BarElement;
-        new(): HTMLRuxIconSignalWifi4BarElement;
+        new (): HTMLRuxIconSignalWifi4BarElement;
     };
     interface HTMLRuxIconSignalWifi4BarLockElement extends Components.RuxIconSignalWifi4BarLock, HTMLStencilElement {
     }
     var HTMLRuxIconSignalWifi4BarLockElement: {
         prototype: HTMLRuxIconSignalWifi4BarLockElement;
-        new(): HTMLRuxIconSignalWifi4BarLockElement;
+        new (): HTMLRuxIconSignalWifi4BarLockElement;
     };
     interface HTMLRuxIconSignalWifiOffElement extends Components.RuxIconSignalWifiOff, HTMLStencilElement {
     }
     var HTMLRuxIconSignalWifiOffElement: {
         prototype: HTMLRuxIconSignalWifiOffElement;
-        new(): HTMLRuxIconSignalWifiOffElement;
+        new (): HTMLRuxIconSignalWifiOffElement;
     };
     interface HTMLRuxIconSimCardElement extends Components.RuxIconSimCard, HTMLStencilElement {
     }
     var HTMLRuxIconSimCardElement: {
         prototype: HTMLRuxIconSimCardElement;
-        new(): HTMLRuxIconSimCardElement;
+        new (): HTMLRuxIconSimCardElement;
     };
     interface HTMLRuxIconSkipNextElement extends Components.RuxIconSkipNext, HTMLStencilElement {
     }
     var HTMLRuxIconSkipNextElement: {
         prototype: HTMLRuxIconSkipNextElement;
-        new(): HTMLRuxIconSkipNextElement;
+        new (): HTMLRuxIconSkipNextElement;
     };
     interface HTMLRuxIconSkipPreviousElement extends Components.RuxIconSkipPrevious, HTMLStencilElement {
     }
     var HTMLRuxIconSkipPreviousElement: {
         prototype: HTMLRuxIconSkipPreviousElement;
-        new(): HTMLRuxIconSkipPreviousElement;
+        new (): HTMLRuxIconSkipPreviousElement;
     };
     interface HTMLRuxIconSlideshowElement extends Components.RuxIconSlideshow, HTMLStencilElement {
     }
     var HTMLRuxIconSlideshowElement: {
         prototype: HTMLRuxIconSlideshowElement;
-        new(): HTMLRuxIconSlideshowElement;
+        new (): HTMLRuxIconSlideshowElement;
     };
     interface HTMLRuxIconSlowMotionVideoElement extends Components.RuxIconSlowMotionVideo, HTMLStencilElement {
     }
     var HTMLRuxIconSlowMotionVideoElement: {
         prototype: HTMLRuxIconSlowMotionVideoElement;
-        new(): HTMLRuxIconSlowMotionVideoElement;
+        new (): HTMLRuxIconSlowMotionVideoElement;
     };
     interface HTMLRuxIconSmartphoneElement extends Components.RuxIconSmartphone, HTMLStencilElement {
     }
     var HTMLRuxIconSmartphoneElement: {
         prototype: HTMLRuxIconSmartphoneElement;
-        new(): HTMLRuxIconSmartphoneElement;
+        new (): HTMLRuxIconSmartphoneElement;
     };
     interface HTMLRuxIconSmokeFreeElement extends Components.RuxIconSmokeFree, HTMLStencilElement {
     }
     var HTMLRuxIconSmokeFreeElement: {
         prototype: HTMLRuxIconSmokeFreeElement;
-        new(): HTMLRuxIconSmokeFreeElement;
+        new (): HTMLRuxIconSmokeFreeElement;
     };
     interface HTMLRuxIconSmokingRoomsElement extends Components.RuxIconSmokingRooms, HTMLStencilElement {
     }
     var HTMLRuxIconSmokingRoomsElement: {
         prototype: HTMLRuxIconSmokingRoomsElement;
-        new(): HTMLRuxIconSmokingRoomsElement;
+        new (): HTMLRuxIconSmokingRoomsElement;
     };
     interface HTMLRuxIconSmsElement extends Components.RuxIconSms, HTMLStencilElement {
     }
     var HTMLRuxIconSmsElement: {
         prototype: HTMLRuxIconSmsElement;
-        new(): HTMLRuxIconSmsElement;
+        new (): HTMLRuxIconSmsElement;
     };
     interface HTMLRuxIconSmsFailedElement extends Components.RuxIconSmsFailed, HTMLStencilElement {
     }
     var HTMLRuxIconSmsFailedElement: {
         prototype: HTMLRuxIconSmsFailedElement;
-        new(): HTMLRuxIconSmsFailedElement;
+        new (): HTMLRuxIconSmsFailedElement;
     };
     interface HTMLRuxIconSnoozeElement extends Components.RuxIconSnooze, HTMLStencilElement {
     }
     var HTMLRuxIconSnoozeElement: {
         prototype: HTMLRuxIconSnoozeElement;
-        new(): HTMLRuxIconSnoozeElement;
+        new (): HTMLRuxIconSnoozeElement;
     };
     interface HTMLRuxIconSolarElement extends Components.RuxIconSolar, HTMLStencilElement {
     }
     var HTMLRuxIconSolarElement: {
         prototype: HTMLRuxIconSolarElement;
-        new(): HTMLRuxIconSolarElement;
+        new (): HTMLRuxIconSolarElement;
     };
     interface HTMLRuxIconSortElement extends Components.RuxIconSort, HTMLStencilElement {
     }
     var HTMLRuxIconSortElement: {
         prototype: HTMLRuxIconSortElement;
-        new(): HTMLRuxIconSortElement;
+        new (): HTMLRuxIconSortElement;
     };
     interface HTMLRuxIconSortByAlphaElement extends Components.RuxIconSortByAlpha, HTMLStencilElement {
     }
     var HTMLRuxIconSortByAlphaElement: {
         prototype: HTMLRuxIconSortByAlphaElement;
-        new(): HTMLRuxIconSortByAlphaElement;
+        new (): HTMLRuxIconSortByAlphaElement;
     };
     interface HTMLRuxIconSpaElement extends Components.RuxIconSpa, HTMLStencilElement {
     }
     var HTMLRuxIconSpaElement: {
         prototype: HTMLRuxIconSpaElement;
-        new(): HTMLRuxIconSpaElement;
+        new (): HTMLRuxIconSpaElement;
     };
     interface HTMLRuxIconSpaceBarElement extends Components.RuxIconSpaceBar, HTMLStencilElement {
     }
     var HTMLRuxIconSpaceBarElement: {
         prototype: HTMLRuxIconSpaceBarElement;
-        new(): HTMLRuxIconSpaceBarElement;
+        new (): HTMLRuxIconSpaceBarElement;
     };
     interface HTMLRuxIconSpeakerElement extends Components.RuxIconSpeaker, HTMLStencilElement {
     }
     var HTMLRuxIconSpeakerElement: {
         prototype: HTMLRuxIconSpeakerElement;
-        new(): HTMLRuxIconSpeakerElement;
+        new (): HTMLRuxIconSpeakerElement;
     };
     interface HTMLRuxIconSpeakerGroupElement extends Components.RuxIconSpeakerGroup, HTMLStencilElement {
     }
     var HTMLRuxIconSpeakerGroupElement: {
         prototype: HTMLRuxIconSpeakerGroupElement;
-        new(): HTMLRuxIconSpeakerGroupElement;
+        new (): HTMLRuxIconSpeakerGroupElement;
     };
     interface HTMLRuxIconSpeakerNotesElement extends Components.RuxIconSpeakerNotes, HTMLStencilElement {
     }
     var HTMLRuxIconSpeakerNotesElement: {
         prototype: HTMLRuxIconSpeakerNotesElement;
-        new(): HTMLRuxIconSpeakerNotesElement;
+        new (): HTMLRuxIconSpeakerNotesElement;
     };
     interface HTMLRuxIconSpeakerNotesOffElement extends Components.RuxIconSpeakerNotesOff, HTMLStencilElement {
     }
     var HTMLRuxIconSpeakerNotesOffElement: {
         prototype: HTMLRuxIconSpeakerNotesOffElement;
-        new(): HTMLRuxIconSpeakerNotesOffElement;
+        new (): HTMLRuxIconSpeakerNotesOffElement;
     };
     interface HTMLRuxIconSpeakerPhoneElement extends Components.RuxIconSpeakerPhone, HTMLStencilElement {
     }
     var HTMLRuxIconSpeakerPhoneElement: {
         prototype: HTMLRuxIconSpeakerPhoneElement;
-        new(): HTMLRuxIconSpeakerPhoneElement;
+        new (): HTMLRuxIconSpeakerPhoneElement;
     };
     interface HTMLRuxIconSpellcheckElement extends Components.RuxIconSpellcheck, HTMLStencilElement {
     }
     var HTMLRuxIconSpellcheckElement: {
         prototype: HTMLRuxIconSpellcheckElement;
-        new(): HTMLRuxIconSpellcheckElement;
+        new (): HTMLRuxIconSpellcheckElement;
     };
     interface HTMLRuxIconStarElement extends Components.RuxIconStar, HTMLStencilElement {
     }
     var HTMLRuxIconStarElement: {
         prototype: HTMLRuxIconStarElement;
-        new(): HTMLRuxIconStarElement;
+        new (): HTMLRuxIconStarElement;
     };
     interface HTMLRuxIconStarBorderElement extends Components.RuxIconStarBorder, HTMLStencilElement {
     }
     var HTMLRuxIconStarBorderElement: {
         prototype: HTMLRuxIconStarBorderElement;
-        new(): HTMLRuxIconStarBorderElement;
+        new (): HTMLRuxIconStarBorderElement;
     };
     interface HTMLRuxIconStarHalfElement extends Components.RuxIconStarHalf, HTMLStencilElement {
     }
     var HTMLRuxIconStarHalfElement: {
         prototype: HTMLRuxIconStarHalfElement;
-        new(): HTMLRuxIconStarHalfElement;
+        new (): HTMLRuxIconStarHalfElement;
     };
     interface HTMLRuxIconStarRateElement extends Components.RuxIconStarRate, HTMLStencilElement {
     }
     var HTMLRuxIconStarRateElement: {
         prototype: HTMLRuxIconStarRateElement;
-        new(): HTMLRuxIconStarRateElement;
+        new (): HTMLRuxIconStarRateElement;
     };
     interface HTMLRuxIconStarsElement extends Components.RuxIconStars, HTMLStencilElement {
     }
     var HTMLRuxIconStarsElement: {
         prototype: HTMLRuxIconStarsElement;
-        new(): HTMLRuxIconStarsElement;
+        new (): HTMLRuxIconStarsElement;
     };
     interface HTMLRuxIconStayCurrentLandscapeElement extends Components.RuxIconStayCurrentLandscape, HTMLStencilElement {
     }
     var HTMLRuxIconStayCurrentLandscapeElement: {
         prototype: HTMLRuxIconStayCurrentLandscapeElement;
-        new(): HTMLRuxIconStayCurrentLandscapeElement;
+        new (): HTMLRuxIconStayCurrentLandscapeElement;
     };
     interface HTMLRuxIconStayCurrentPortraitElement extends Components.RuxIconStayCurrentPortrait, HTMLStencilElement {
     }
     var HTMLRuxIconStayCurrentPortraitElement: {
         prototype: HTMLRuxIconStayCurrentPortraitElement;
-        new(): HTMLRuxIconStayCurrentPortraitElement;
+        new (): HTMLRuxIconStayCurrentPortraitElement;
     };
     interface HTMLRuxIconStayPrimaryLandscapeElement extends Components.RuxIconStayPrimaryLandscape, HTMLStencilElement {
     }
     var HTMLRuxIconStayPrimaryLandscapeElement: {
         prototype: HTMLRuxIconStayPrimaryLandscapeElement;
-        new(): HTMLRuxIconStayPrimaryLandscapeElement;
+        new (): HTMLRuxIconStayPrimaryLandscapeElement;
     };
     interface HTMLRuxIconStayPrimaryPortraitElement extends Components.RuxIconStayPrimaryPortrait, HTMLStencilElement {
     }
     var HTMLRuxIconStayPrimaryPortraitElement: {
         prototype: HTMLRuxIconStayPrimaryPortraitElement;
-        new(): HTMLRuxIconStayPrimaryPortraitElement;
+        new (): HTMLRuxIconStayPrimaryPortraitElement;
     };
     interface HTMLRuxIconStopElement extends Components.RuxIconStop, HTMLStencilElement {
     }
     var HTMLRuxIconStopElement: {
         prototype: HTMLRuxIconStopElement;
-        new(): HTMLRuxIconStopElement;
+        new (): HTMLRuxIconStopElement;
     };
     interface HTMLRuxIconStopScreenShareElement extends Components.RuxIconStopScreenShare, HTMLStencilElement {
     }
     var HTMLRuxIconStopScreenShareElement: {
         prototype: HTMLRuxIconStopScreenShareElement;
-        new(): HTMLRuxIconStopScreenShareElement;
+        new (): HTMLRuxIconStopScreenShareElement;
     };
     interface HTMLRuxIconStorageElement extends Components.RuxIconStorage, HTMLStencilElement {
     }
     var HTMLRuxIconStorageElement: {
         prototype: HTMLRuxIconStorageElement;
-        new(): HTMLRuxIconStorageElement;
+        new (): HTMLRuxIconStorageElement;
     };
     interface HTMLRuxIconStoreElement extends Components.RuxIconStore, HTMLStencilElement {
     }
     var HTMLRuxIconStoreElement: {
         prototype: HTMLRuxIconStoreElement;
-        new(): HTMLRuxIconStoreElement;
+        new (): HTMLRuxIconStoreElement;
     };
     interface HTMLRuxIconStoreMallDirectoryElement extends Components.RuxIconStoreMallDirectory, HTMLStencilElement {
     }
     var HTMLRuxIconStoreMallDirectoryElement: {
         prototype: HTMLRuxIconStoreMallDirectoryElement;
-        new(): HTMLRuxIconStoreMallDirectoryElement;
+        new (): HTMLRuxIconStoreMallDirectoryElement;
     };
     interface HTMLRuxIconStraightenElement extends Components.RuxIconStraighten, HTMLStencilElement {
     }
     var HTMLRuxIconStraightenElement: {
         prototype: HTMLRuxIconStraightenElement;
-        new(): HTMLRuxIconStraightenElement;
+        new (): HTMLRuxIconStraightenElement;
     };
     interface HTMLRuxIconStreetviewElement extends Components.RuxIconStreetview, HTMLStencilElement {
     }
     var HTMLRuxIconStreetviewElement: {
         prototype: HTMLRuxIconStreetviewElement;
-        new(): HTMLRuxIconStreetviewElement;
+        new (): HTMLRuxIconStreetviewElement;
     };
     interface HTMLRuxIconStrikethroughSElement extends Components.RuxIconStrikethroughS, HTMLStencilElement {
     }
     var HTMLRuxIconStrikethroughSElement: {
         prototype: HTMLRuxIconStrikethroughSElement;
-        new(): HTMLRuxIconStrikethroughSElement;
+        new (): HTMLRuxIconStrikethroughSElement;
     };
     interface HTMLRuxIconStyleElement extends Components.RuxIconStyle, HTMLStencilElement {
     }
     var HTMLRuxIconStyleElement: {
         prototype: HTMLRuxIconStyleElement;
-        new(): HTMLRuxIconStyleElement;
+        new (): HTMLRuxIconStyleElement;
     };
     interface HTMLRuxIconSubdirectoryArrowLeftElement extends Components.RuxIconSubdirectoryArrowLeft, HTMLStencilElement {
     }
     var HTMLRuxIconSubdirectoryArrowLeftElement: {
         prototype: HTMLRuxIconSubdirectoryArrowLeftElement;
-        new(): HTMLRuxIconSubdirectoryArrowLeftElement;
+        new (): HTMLRuxIconSubdirectoryArrowLeftElement;
     };
     interface HTMLRuxIconSubdirectoryArrowRightElement extends Components.RuxIconSubdirectoryArrowRight, HTMLStencilElement {
     }
     var HTMLRuxIconSubdirectoryArrowRightElement: {
         prototype: HTMLRuxIconSubdirectoryArrowRightElement;
-        new(): HTMLRuxIconSubdirectoryArrowRightElement;
+        new (): HTMLRuxIconSubdirectoryArrowRightElement;
     };
     interface HTMLRuxIconSubjectElement extends Components.RuxIconSubject, HTMLStencilElement {
     }
     var HTMLRuxIconSubjectElement: {
         prototype: HTMLRuxIconSubjectElement;
-        new(): HTMLRuxIconSubjectElement;
+        new (): HTMLRuxIconSubjectElement;
     };
     interface HTMLRuxIconSubscriptionsElement extends Components.RuxIconSubscriptions, HTMLStencilElement {
     }
     var HTMLRuxIconSubscriptionsElement: {
         prototype: HTMLRuxIconSubscriptionsElement;
-        new(): HTMLRuxIconSubscriptionsElement;
+        new (): HTMLRuxIconSubscriptionsElement;
     };
     interface HTMLRuxIconSubtitlesElement extends Components.RuxIconSubtitles, HTMLStencilElement {
     }
     var HTMLRuxIconSubtitlesElement: {
         prototype: HTMLRuxIconSubtitlesElement;
-        new(): HTMLRuxIconSubtitlesElement;
+        new (): HTMLRuxIconSubtitlesElement;
     };
     interface HTMLRuxIconSubwayElement extends Components.RuxIconSubway, HTMLStencilElement {
     }
     var HTMLRuxIconSubwayElement: {
         prototype: HTMLRuxIconSubwayElement;
-        new(): HTMLRuxIconSubwayElement;
+        new (): HTMLRuxIconSubwayElement;
     };
     interface HTMLRuxIconSupervisedUserCircleElement extends Components.RuxIconSupervisedUserCircle, HTMLStencilElement {
     }
     var HTMLRuxIconSupervisedUserCircleElement: {
         prototype: HTMLRuxIconSupervisedUserCircleElement;
-        new(): HTMLRuxIconSupervisedUserCircleElement;
+        new (): HTMLRuxIconSupervisedUserCircleElement;
     };
     interface HTMLRuxIconSupervisorAccountElement extends Components.RuxIconSupervisorAccount, HTMLStencilElement {
     }
     var HTMLRuxIconSupervisorAccountElement: {
         prototype: HTMLRuxIconSupervisorAccountElement;
-        new(): HTMLRuxIconSupervisorAccountElement;
+        new (): HTMLRuxIconSupervisorAccountElement;
     };
     interface HTMLRuxIconSurroundSoundElement extends Components.RuxIconSurroundSound, HTMLStencilElement {
     }
     var HTMLRuxIconSurroundSoundElement: {
         prototype: HTMLRuxIconSurroundSoundElement;
-        new(): HTMLRuxIconSurroundSoundElement;
+        new (): HTMLRuxIconSurroundSoundElement;
     };
     interface HTMLRuxIconSwapCallsElement extends Components.RuxIconSwapCalls, HTMLStencilElement {
     }
     var HTMLRuxIconSwapCallsElement: {
         prototype: HTMLRuxIconSwapCallsElement;
-        new(): HTMLRuxIconSwapCallsElement;
+        new (): HTMLRuxIconSwapCallsElement;
     };
     interface HTMLRuxIconSwapHorizElement extends Components.RuxIconSwapHoriz, HTMLStencilElement {
     }
     var HTMLRuxIconSwapHorizElement: {
         prototype: HTMLRuxIconSwapHorizElement;
-        new(): HTMLRuxIconSwapHorizElement;
+        new (): HTMLRuxIconSwapHorizElement;
     };
     interface HTMLRuxIconSwapHorizontalCircleElement extends Components.RuxIconSwapHorizontalCircle, HTMLStencilElement {
     }
     var HTMLRuxIconSwapHorizontalCircleElement: {
         prototype: HTMLRuxIconSwapHorizontalCircleElement;
-        new(): HTMLRuxIconSwapHorizontalCircleElement;
+        new (): HTMLRuxIconSwapHorizontalCircleElement;
     };
     interface HTMLRuxIconSwapVertElement extends Components.RuxIconSwapVert, HTMLStencilElement {
     }
     var HTMLRuxIconSwapVertElement: {
         prototype: HTMLRuxIconSwapVertElement;
-        new(): HTMLRuxIconSwapVertElement;
+        new (): HTMLRuxIconSwapVertElement;
     };
     interface HTMLRuxIconSwapVerticalCircleElement extends Components.RuxIconSwapVerticalCircle, HTMLStencilElement {
     }
     var HTMLRuxIconSwapVerticalCircleElement: {
         prototype: HTMLRuxIconSwapVerticalCircleElement;
-        new(): HTMLRuxIconSwapVerticalCircleElement;
+        new (): HTMLRuxIconSwapVerticalCircleElement;
     };
     interface HTMLRuxIconSwitchCameraElement extends Components.RuxIconSwitchCamera, HTMLStencilElement {
     }
     var HTMLRuxIconSwitchCameraElement: {
         prototype: HTMLRuxIconSwitchCameraElement;
-        new(): HTMLRuxIconSwitchCameraElement;
+        new (): HTMLRuxIconSwitchCameraElement;
     };
     interface HTMLRuxIconSwitchVideoElement extends Components.RuxIconSwitchVideo, HTMLStencilElement {
     }
     var HTMLRuxIconSwitchVideoElement: {
         prototype: HTMLRuxIconSwitchVideoElement;
-        new(): HTMLRuxIconSwitchVideoElement;
+        new (): HTMLRuxIconSwitchVideoElement;
     };
     interface HTMLRuxIconSyncElement extends Components.RuxIconSync, HTMLStencilElement {
     }
     var HTMLRuxIconSyncElement: {
         prototype: HTMLRuxIconSyncElement;
-        new(): HTMLRuxIconSyncElement;
+        new (): HTMLRuxIconSyncElement;
     };
     interface HTMLRuxIconSyncDisabledElement extends Components.RuxIconSyncDisabled, HTMLStencilElement {
     }
     var HTMLRuxIconSyncDisabledElement: {
         prototype: HTMLRuxIconSyncDisabledElement;
-        new(): HTMLRuxIconSyncDisabledElement;
+        new (): HTMLRuxIconSyncDisabledElement;
     };
     interface HTMLRuxIconSyncProblemElement extends Components.RuxIconSyncProblem, HTMLStencilElement {
     }
     var HTMLRuxIconSyncProblemElement: {
         prototype: HTMLRuxIconSyncProblemElement;
-        new(): HTMLRuxIconSyncProblemElement;
+        new (): HTMLRuxIconSyncProblemElement;
     };
     interface HTMLRuxIconSystemUpdateElement extends Components.RuxIconSystemUpdate, HTMLStencilElement {
     }
     var HTMLRuxIconSystemUpdateElement: {
         prototype: HTMLRuxIconSystemUpdateElement;
-        new(): HTMLRuxIconSystemUpdateElement;
+        new (): HTMLRuxIconSystemUpdateElement;
     };
     interface HTMLRuxIconTabElement extends Components.RuxIconTab, HTMLStencilElement {
     }
     var HTMLRuxIconTabElement: {
         prototype: HTMLRuxIconTabElement;
-        new(): HTMLRuxIconTabElement;
+        new (): HTMLRuxIconTabElement;
     };
     interface HTMLRuxIconTabUnselectedElement extends Components.RuxIconTabUnselected, HTMLStencilElement {
     }
     var HTMLRuxIconTabUnselectedElement: {
         prototype: HTMLRuxIconTabUnselectedElement;
-        new(): HTMLRuxIconTabUnselectedElement;
+        new (): HTMLRuxIconTabUnselectedElement;
     };
     interface HTMLRuxIconTableChartElement extends Components.RuxIconTableChart, HTMLStencilElement {
     }
     var HTMLRuxIconTableChartElement: {
         prototype: HTMLRuxIconTableChartElement;
-        new(): HTMLRuxIconTableChartElement;
+        new (): HTMLRuxIconTableChartElement;
     };
     interface HTMLRuxIconTabletElement extends Components.RuxIconTablet, HTMLStencilElement {
     }
     var HTMLRuxIconTabletElement: {
         prototype: HTMLRuxIconTabletElement;
-        new(): HTMLRuxIconTabletElement;
+        new (): HTMLRuxIconTabletElement;
     };
     interface HTMLRuxIconTabletAndroidElement extends Components.RuxIconTabletAndroid, HTMLStencilElement {
     }
     var HTMLRuxIconTabletAndroidElement: {
         prototype: HTMLRuxIconTabletAndroidElement;
-        new(): HTMLRuxIconTabletAndroidElement;
+        new (): HTMLRuxIconTabletAndroidElement;
     };
     interface HTMLRuxIconTabletMacElement extends Components.RuxIconTabletMac, HTMLStencilElement {
     }
     var HTMLRuxIconTabletMacElement: {
         prototype: HTMLRuxIconTabletMacElement;
-        new(): HTMLRuxIconTabletMacElement;
+        new (): HTMLRuxIconTabletMacElement;
     };
     interface HTMLRuxIconTagFacesElement extends Components.RuxIconTagFaces, HTMLStencilElement {
     }
     var HTMLRuxIconTagFacesElement: {
         prototype: HTMLRuxIconTagFacesElement;
-        new(): HTMLRuxIconTagFacesElement;
+        new (): HTMLRuxIconTagFacesElement;
     };
     interface HTMLRuxIconTapAndPlayElement extends Components.RuxIconTapAndPlay, HTMLStencilElement {
     }
     var HTMLRuxIconTapAndPlayElement: {
         prototype: HTMLRuxIconTapAndPlayElement;
-        new(): HTMLRuxIconTapAndPlayElement;
+        new (): HTMLRuxIconTapAndPlayElement;
     };
     interface HTMLRuxIconTerrainElement extends Components.RuxIconTerrain, HTMLStencilElement {
     }
     var HTMLRuxIconTerrainElement: {
         prototype: HTMLRuxIconTerrainElement;
-        new(): HTMLRuxIconTerrainElement;
+        new (): HTMLRuxIconTerrainElement;
     };
     interface HTMLRuxIconTextFieldsElement extends Components.RuxIconTextFields, HTMLStencilElement {
     }
     var HTMLRuxIconTextFieldsElement: {
         prototype: HTMLRuxIconTextFieldsElement;
-        new(): HTMLRuxIconTextFieldsElement;
+        new (): HTMLRuxIconTextFieldsElement;
     };
     interface HTMLRuxIconTextFormatElement extends Components.RuxIconTextFormat, HTMLStencilElement {
     }
     var HTMLRuxIconTextFormatElement: {
         prototype: HTMLRuxIconTextFormatElement;
-        new(): HTMLRuxIconTextFormatElement;
+        new (): HTMLRuxIconTextFormatElement;
     };
     interface HTMLRuxIconTextRotateUpElement extends Components.RuxIconTextRotateUp, HTMLStencilElement {
     }
     var HTMLRuxIconTextRotateUpElement: {
         prototype: HTMLRuxIconTextRotateUpElement;
-        new(): HTMLRuxIconTextRotateUpElement;
+        new (): HTMLRuxIconTextRotateUpElement;
     };
     interface HTMLRuxIconTextRotateVerticalElement extends Components.RuxIconTextRotateVertical, HTMLStencilElement {
     }
     var HTMLRuxIconTextRotateVerticalElement: {
         prototype: HTMLRuxIconTextRotateVerticalElement;
-        new(): HTMLRuxIconTextRotateVerticalElement;
+        new (): HTMLRuxIconTextRotateVerticalElement;
     };
     interface HTMLRuxIconTextRotationNoneElement extends Components.RuxIconTextRotationNone, HTMLStencilElement {
     }
     var HTMLRuxIconTextRotationNoneElement: {
         prototype: HTMLRuxIconTextRotationNoneElement;
-        new(): HTMLRuxIconTextRotationNoneElement;
+        new (): HTMLRuxIconTextRotationNoneElement;
     };
     interface HTMLRuxIconTextsmsElement extends Components.RuxIconTextsms, HTMLStencilElement {
     }
     var HTMLRuxIconTextsmsElement: {
         prototype: HTMLRuxIconTextsmsElement;
-        new(): HTMLRuxIconTextsmsElement;
+        new (): HTMLRuxIconTextsmsElement;
     };
     interface HTMLRuxIconTextureElement extends Components.RuxIconTexture, HTMLStencilElement {
     }
     var HTMLRuxIconTextureElement: {
         prototype: HTMLRuxIconTextureElement;
-        new(): HTMLRuxIconTextureElement;
+        new (): HTMLRuxIconTextureElement;
     };
     interface HTMLRuxIconTheatersElement extends Components.RuxIconTheaters, HTMLStencilElement {
     }
     var HTMLRuxIconTheatersElement: {
         prototype: HTMLRuxIconTheatersElement;
-        new(): HTMLRuxIconTheatersElement;
+        new (): HTMLRuxIconTheatersElement;
     };
     interface HTMLRuxIconThermalElement extends Components.RuxIconThermal, HTMLStencilElement {
     }
     var HTMLRuxIconThermalElement: {
         prototype: HTMLRuxIconThermalElement;
-        new(): HTMLRuxIconThermalElement;
+        new (): HTMLRuxIconThermalElement;
     };
     interface HTMLRuxIconThumbDownElement extends Components.RuxIconThumbDown, HTMLStencilElement {
     }
     var HTMLRuxIconThumbDownElement: {
         prototype: HTMLRuxIconThumbDownElement;
-        new(): HTMLRuxIconThumbDownElement;
+        new (): HTMLRuxIconThumbDownElement;
     };
     interface HTMLRuxIconThumbDownAltElement extends Components.RuxIconThumbDownAlt, HTMLStencilElement {
     }
     var HTMLRuxIconThumbDownAltElement: {
         prototype: HTMLRuxIconThumbDownAltElement;
-        new(): HTMLRuxIconThumbDownAltElement;
+        new (): HTMLRuxIconThumbDownAltElement;
     };
     interface HTMLRuxIconThumbUpElement extends Components.RuxIconThumbUp, HTMLStencilElement {
     }
     var HTMLRuxIconThumbUpElement: {
         prototype: HTMLRuxIconThumbUpElement;
-        new(): HTMLRuxIconThumbUpElement;
+        new (): HTMLRuxIconThumbUpElement;
     };
     interface HTMLRuxIconThumbUpAltElement extends Components.RuxIconThumbUpAlt, HTMLStencilElement {
     }
     var HTMLRuxIconThumbUpAltElement: {
         prototype: HTMLRuxIconThumbUpAltElement;
-        new(): HTMLRuxIconThumbUpAltElement;
+        new (): HTMLRuxIconThumbUpAltElement;
     };
     interface HTMLRuxIconThumbsUpDownElement extends Components.RuxIconThumbsUpDown, HTMLStencilElement {
     }
     var HTMLRuxIconThumbsUpDownElement: {
         prototype: HTMLRuxIconThumbsUpDownElement;
-        new(): HTMLRuxIconThumbsUpDownElement;
+        new (): HTMLRuxIconThumbsUpDownElement;
     };
     interface HTMLRuxIconTimeToLeaveElement extends Components.RuxIconTimeToLeave, HTMLStencilElement {
     }
     var HTMLRuxIconTimeToLeaveElement: {
         prototype: HTMLRuxIconTimeToLeaveElement;
-        new(): HTMLRuxIconTimeToLeaveElement;
+        new (): HTMLRuxIconTimeToLeaveElement;
     };
     interface HTMLRuxIconTimelapseElement extends Components.RuxIconTimelapse, HTMLStencilElement {
     }
     var HTMLRuxIconTimelapseElement: {
         prototype: HTMLRuxIconTimelapseElement;
-        new(): HTMLRuxIconTimelapseElement;
+        new (): HTMLRuxIconTimelapseElement;
     };
     interface HTMLRuxIconTimelineElement extends Components.RuxIconTimeline, HTMLStencilElement {
     }
     var HTMLRuxIconTimelineElement: {
         prototype: HTMLRuxIconTimelineElement;
-        new(): HTMLRuxIconTimelineElement;
+        new (): HTMLRuxIconTimelineElement;
     };
     interface HTMLRuxIconTimerElement extends Components.RuxIconTimer, HTMLStencilElement {
     }
     var HTMLRuxIconTimerElement: {
         prototype: HTMLRuxIconTimerElement;
-        new(): HTMLRuxIconTimerElement;
+        new (): HTMLRuxIconTimerElement;
     };
     interface HTMLRuxIconTimer10Element extends Components.RuxIconTimer10, HTMLStencilElement {
     }
     var HTMLRuxIconTimer10Element: {
         prototype: HTMLRuxIconTimer10Element;
-        new(): HTMLRuxIconTimer10Element;
+        new (): HTMLRuxIconTimer10Element;
     };
     interface HTMLRuxIconTimer3Element extends Components.RuxIconTimer3, HTMLStencilElement {
     }
     var HTMLRuxIconTimer3Element: {
         prototype: HTMLRuxIconTimer3Element;
-        new(): HTMLRuxIconTimer3Element;
+        new (): HTMLRuxIconTimer3Element;
     };
     interface HTMLRuxIconTimerOffElement extends Components.RuxIconTimerOff, HTMLStencilElement {
     }
     var HTMLRuxIconTimerOffElement: {
         prototype: HTMLRuxIconTimerOffElement;
-        new(): HTMLRuxIconTimerOffElement;
+        new (): HTMLRuxIconTimerOffElement;
     };
     interface HTMLRuxIconTitleElement extends Components.RuxIconTitle, HTMLStencilElement {
     }
     var HTMLRuxIconTitleElement: {
         prototype: HTMLRuxIconTitleElement;
-        new(): HTMLRuxIconTitleElement;
+        new (): HTMLRuxIconTitleElement;
     };
     interface HTMLRuxIconTocElement extends Components.RuxIconToc, HTMLStencilElement {
     }
     var HTMLRuxIconTocElement: {
         prototype: HTMLRuxIconTocElement;
-        new(): HTMLRuxIconTocElement;
+        new (): HTMLRuxIconTocElement;
     };
     interface HTMLRuxIconTodayElement extends Components.RuxIconToday, HTMLStencilElement {
     }
     var HTMLRuxIconTodayElement: {
         prototype: HTMLRuxIconTodayElement;
-        new(): HTMLRuxIconTodayElement;
+        new (): HTMLRuxIconTodayElement;
     };
     interface HTMLRuxIconToggleOffElement extends Components.RuxIconToggleOff, HTMLStencilElement {
     }
     var HTMLRuxIconToggleOffElement: {
         prototype: HTMLRuxIconToggleOffElement;
-        new(): HTMLRuxIconToggleOffElement;
+        new (): HTMLRuxIconToggleOffElement;
     };
     interface HTMLRuxIconToggleOnElement extends Components.RuxIconToggleOn, HTMLStencilElement {
     }
     var HTMLRuxIconToggleOnElement: {
         prototype: HTMLRuxIconToggleOnElement;
-        new(): HTMLRuxIconToggleOnElement;
+        new (): HTMLRuxIconToggleOnElement;
     };
     interface HTMLRuxIconTollElement extends Components.RuxIconToll, HTMLStencilElement {
     }
     var HTMLRuxIconTollElement: {
         prototype: HTMLRuxIconTollElement;
-        new(): HTMLRuxIconTollElement;
+        new (): HTMLRuxIconTollElement;
     };
     interface HTMLRuxIconTonalityElement extends Components.RuxIconTonality, HTMLStencilElement {
     }
     var HTMLRuxIconTonalityElement: {
         prototype: HTMLRuxIconTonalityElement;
-        new(): HTMLRuxIconTonalityElement;
+        new (): HTMLRuxIconTonalityElement;
     };
     interface HTMLRuxIconTouchAppElement extends Components.RuxIconTouchApp, HTMLStencilElement {
     }
     var HTMLRuxIconTouchAppElement: {
         prototype: HTMLRuxIconTouchAppElement;
-        new(): HTMLRuxIconTouchAppElement;
+        new (): HTMLRuxIconTouchAppElement;
     };
     interface HTMLRuxIconToysElement extends Components.RuxIconToys, HTMLStencilElement {
     }
     var HTMLRuxIconToysElement: {
         prototype: HTMLRuxIconToysElement;
-        new(): HTMLRuxIconToysElement;
+        new (): HTMLRuxIconToysElement;
     };
     interface HTMLRuxIconTrackChangesElement extends Components.RuxIconTrackChanges, HTMLStencilElement {
     }
     var HTMLRuxIconTrackChangesElement: {
         prototype: HTMLRuxIconTrackChangesElement;
-        new(): HTMLRuxIconTrackChangesElement;
+        new (): HTMLRuxIconTrackChangesElement;
     };
     interface HTMLRuxIconTrafficElement extends Components.RuxIconTraffic, HTMLStencilElement {
     }
     var HTMLRuxIconTrafficElement: {
         prototype: HTMLRuxIconTrafficElement;
-        new(): HTMLRuxIconTrafficElement;
+        new (): HTMLRuxIconTrafficElement;
     };
     interface HTMLRuxIconTrainElement extends Components.RuxIconTrain, HTMLStencilElement {
     }
     var HTMLRuxIconTrainElement: {
         prototype: HTMLRuxIconTrainElement;
-        new(): HTMLRuxIconTrainElement;
+        new (): HTMLRuxIconTrainElement;
     };
     interface HTMLRuxIconTramElement extends Components.RuxIconTram, HTMLStencilElement {
     }
     var HTMLRuxIconTramElement: {
         prototype: HTMLRuxIconTramElement;
-        new(): HTMLRuxIconTramElement;
+        new (): HTMLRuxIconTramElement;
     };
     interface HTMLRuxIconTransferWithinAStationElement extends Components.RuxIconTransferWithinAStation, HTMLStencilElement {
     }
     var HTMLRuxIconTransferWithinAStationElement: {
         prototype: HTMLRuxIconTransferWithinAStationElement;
-        new(): HTMLRuxIconTransferWithinAStationElement;
+        new (): HTMLRuxIconTransferWithinAStationElement;
     };
     interface HTMLRuxIconTransformElement extends Components.RuxIconTransform, HTMLStencilElement {
     }
     var HTMLRuxIconTransformElement: {
         prototype: HTMLRuxIconTransformElement;
-        new(): HTMLRuxIconTransformElement;
+        new (): HTMLRuxIconTransformElement;
     };
     interface HTMLRuxIconTransitEnterexitElement extends Components.RuxIconTransitEnterexit, HTMLStencilElement {
     }
     var HTMLRuxIconTransitEnterexitElement: {
         prototype: HTMLRuxIconTransitEnterexitElement;
-        new(): HTMLRuxIconTransitEnterexitElement;
+        new (): HTMLRuxIconTransitEnterexitElement;
     };
     interface HTMLRuxIconTranslateElement extends Components.RuxIconTranslate, HTMLStencilElement {
     }
     var HTMLRuxIconTranslateElement: {
         prototype: HTMLRuxIconTranslateElement;
-        new(): HTMLRuxIconTranslateElement;
+        new (): HTMLRuxIconTranslateElement;
     };
     interface HTMLRuxIconTrendingDownElement extends Components.RuxIconTrendingDown, HTMLStencilElement {
     }
     var HTMLRuxIconTrendingDownElement: {
         prototype: HTMLRuxIconTrendingDownElement;
-        new(): HTMLRuxIconTrendingDownElement;
+        new (): HTMLRuxIconTrendingDownElement;
     };
     interface HTMLRuxIconTrendingFlatElement extends Components.RuxIconTrendingFlat, HTMLStencilElement {
     }
     var HTMLRuxIconTrendingFlatElement: {
         prototype: HTMLRuxIconTrendingFlatElement;
-        new(): HTMLRuxIconTrendingFlatElement;
+        new (): HTMLRuxIconTrendingFlatElement;
     };
     interface HTMLRuxIconTrendingUpElement extends Components.RuxIconTrendingUp, HTMLStencilElement {
     }
     var HTMLRuxIconTrendingUpElement: {
         prototype: HTMLRuxIconTrendingUpElement;
-        new(): HTMLRuxIconTrendingUpElement;
+        new (): HTMLRuxIconTrendingUpElement;
     };
     interface HTMLRuxIconTripOriginElement extends Components.RuxIconTripOrigin, HTMLStencilElement {
     }
     var HTMLRuxIconTripOriginElement: {
         prototype: HTMLRuxIconTripOriginElement;
-        new(): HTMLRuxIconTripOriginElement;
+        new (): HTMLRuxIconTripOriginElement;
     };
     interface HTMLRuxIconTuneElement extends Components.RuxIconTune, HTMLStencilElement {
     }
     var HTMLRuxIconTuneElement: {
         prototype: HTMLRuxIconTuneElement;
-        new(): HTMLRuxIconTuneElement;
+        new (): HTMLRuxIconTuneElement;
     };
     interface HTMLRuxIconTurnedInElement extends Components.RuxIconTurnedIn, HTMLStencilElement {
     }
     var HTMLRuxIconTurnedInElement: {
         prototype: HTMLRuxIconTurnedInElement;
-        new(): HTMLRuxIconTurnedInElement;
+        new (): HTMLRuxIconTurnedInElement;
     };
     interface HTMLRuxIconTurnedInNotElement extends Components.RuxIconTurnedInNot, HTMLStencilElement {
     }
     var HTMLRuxIconTurnedInNotElement: {
         prototype: HTMLRuxIconTurnedInNotElement;
-        new(): HTMLRuxIconTurnedInNotElement;
+        new (): HTMLRuxIconTurnedInNotElement;
     };
     interface HTMLRuxIconTvElement extends Components.RuxIconTv, HTMLStencilElement {
     }
     var HTMLRuxIconTvElement: {
         prototype: HTMLRuxIconTvElement;
-        new(): HTMLRuxIconTvElement;
+        new (): HTMLRuxIconTvElement;
     };
     interface HTMLRuxIconTvOffElement extends Components.RuxIconTvOff, HTMLStencilElement {
     }
     var HTMLRuxIconTvOffElement: {
         prototype: HTMLRuxIconTvOffElement;
-        new(): HTMLRuxIconTvOffElement;
+        new (): HTMLRuxIconTvOffElement;
     };
     interface HTMLRuxIconUnarchiveElement extends Components.RuxIconUnarchive, HTMLStencilElement {
     }
     var HTMLRuxIconUnarchiveElement: {
         prototype: HTMLRuxIconUnarchiveElement;
-        new(): HTMLRuxIconUnarchiveElement;
+        new (): HTMLRuxIconUnarchiveElement;
     };
     interface HTMLRuxIconUndoElement extends Components.RuxIconUndo, HTMLStencilElement {
     }
     var HTMLRuxIconUndoElement: {
         prototype: HTMLRuxIconUndoElement;
-        new(): HTMLRuxIconUndoElement;
+        new (): HTMLRuxIconUndoElement;
     };
     interface HTMLRuxIconUnfoldLessElement extends Components.RuxIconUnfoldLess, HTMLStencilElement {
     }
     var HTMLRuxIconUnfoldLessElement: {
         prototype: HTMLRuxIconUnfoldLessElement;
-        new(): HTMLRuxIconUnfoldLessElement;
+        new (): HTMLRuxIconUnfoldLessElement;
     };
     interface HTMLRuxIconUnfoldMoreElement extends Components.RuxIconUnfoldMore, HTMLStencilElement {
     }
     var HTMLRuxIconUnfoldMoreElement: {
         prototype: HTMLRuxIconUnfoldMoreElement;
-        new(): HTMLRuxIconUnfoldMoreElement;
+        new (): HTMLRuxIconUnfoldMoreElement;
     };
     interface HTMLRuxIconUnsubscribeElement extends Components.RuxIconUnsubscribe, HTMLStencilElement {
     }
     var HTMLRuxIconUnsubscribeElement: {
         prototype: HTMLRuxIconUnsubscribeElement;
-        new(): HTMLRuxIconUnsubscribeElement;
+        new (): HTMLRuxIconUnsubscribeElement;
     };
     interface HTMLRuxIconUpdateElement extends Components.RuxIconUpdate, HTMLStencilElement {
     }
     var HTMLRuxIconUpdateElement: {
         prototype: HTMLRuxIconUpdateElement;
-        new(): HTMLRuxIconUpdateElement;
+        new (): HTMLRuxIconUpdateElement;
     };
     interface HTMLRuxIconUsbElement extends Components.RuxIconUsb, HTMLStencilElement {
     }
     var HTMLRuxIconUsbElement: {
         prototype: HTMLRuxIconUsbElement;
-        new(): HTMLRuxIconUsbElement;
+        new (): HTMLRuxIconUsbElement;
     };
     interface HTMLRuxIconVerifiedUserElement extends Components.RuxIconVerifiedUser, HTMLStencilElement {
     }
     var HTMLRuxIconVerifiedUserElement: {
         prototype: HTMLRuxIconVerifiedUserElement;
-        new(): HTMLRuxIconVerifiedUserElement;
+        new (): HTMLRuxIconVerifiedUserElement;
     };
     interface HTMLRuxIconVerticalAlignBottomElement extends Components.RuxIconVerticalAlignBottom, HTMLStencilElement {
     }
     var HTMLRuxIconVerticalAlignBottomElement: {
         prototype: HTMLRuxIconVerticalAlignBottomElement;
-        new(): HTMLRuxIconVerticalAlignBottomElement;
+        new (): HTMLRuxIconVerticalAlignBottomElement;
     };
     interface HTMLRuxIconVerticalAlignCenterElement extends Components.RuxIconVerticalAlignCenter, HTMLStencilElement {
     }
     var HTMLRuxIconVerticalAlignCenterElement: {
         prototype: HTMLRuxIconVerticalAlignCenterElement;
-        new(): HTMLRuxIconVerticalAlignCenterElement;
+        new (): HTMLRuxIconVerticalAlignCenterElement;
     };
     interface HTMLRuxIconVerticalAlignTopElement extends Components.RuxIconVerticalAlignTop, HTMLStencilElement {
     }
     var HTMLRuxIconVerticalAlignTopElement: {
         prototype: HTMLRuxIconVerticalAlignTopElement;
-        new(): HTMLRuxIconVerticalAlignTopElement;
+        new (): HTMLRuxIconVerticalAlignTopElement;
     };
     interface HTMLRuxIconVerticalSplitElement extends Components.RuxIconVerticalSplit, HTMLStencilElement {
     }
     var HTMLRuxIconVerticalSplitElement: {
         prototype: HTMLRuxIconVerticalSplitElement;
-        new(): HTMLRuxIconVerticalSplitElement;
+        new (): HTMLRuxIconVerticalSplitElement;
     };
     interface HTMLRuxIconVibrationElement extends Components.RuxIconVibration, HTMLStencilElement {
     }
     var HTMLRuxIconVibrationElement: {
         prototype: HTMLRuxIconVibrationElement;
-        new(): HTMLRuxIconVibrationElement;
+        new (): HTMLRuxIconVibrationElement;
     };
     interface HTMLRuxIconVideoCallElement extends Components.RuxIconVideoCall, HTMLStencilElement {
     }
     var HTMLRuxIconVideoCallElement: {
         prototype: HTMLRuxIconVideoCallElement;
-        new(): HTMLRuxIconVideoCallElement;
+        new (): HTMLRuxIconVideoCallElement;
     };
     interface HTMLRuxIconVideoLabelElement extends Components.RuxIconVideoLabel, HTMLStencilElement {
     }
     var HTMLRuxIconVideoLabelElement: {
         prototype: HTMLRuxIconVideoLabelElement;
-        new(): HTMLRuxIconVideoLabelElement;
+        new (): HTMLRuxIconVideoLabelElement;
     };
     interface HTMLRuxIconVideoLibraryElement extends Components.RuxIconVideoLibrary, HTMLStencilElement {
     }
     var HTMLRuxIconVideoLibraryElement: {
         prototype: HTMLRuxIconVideoLibraryElement;
-        new(): HTMLRuxIconVideoLibraryElement;
+        new (): HTMLRuxIconVideoLibraryElement;
     };
     interface HTMLRuxIconVideocamElement extends Components.RuxIconVideocam, HTMLStencilElement {
     }
     var HTMLRuxIconVideocamElement: {
         prototype: HTMLRuxIconVideocamElement;
-        new(): HTMLRuxIconVideocamElement;
+        new (): HTMLRuxIconVideocamElement;
     };
     interface HTMLRuxIconVideocamOffElement extends Components.RuxIconVideocamOff, HTMLStencilElement {
     }
     var HTMLRuxIconVideocamOffElement: {
         prototype: HTMLRuxIconVideocamOffElement;
-        new(): HTMLRuxIconVideocamOffElement;
+        new (): HTMLRuxIconVideocamOffElement;
     };
     interface HTMLRuxIconVideogameAssetElement extends Components.RuxIconVideogameAsset, HTMLStencilElement {
     }
     var HTMLRuxIconVideogameAssetElement: {
         prototype: HTMLRuxIconVideogameAssetElement;
-        new(): HTMLRuxIconVideogameAssetElement;
+        new (): HTMLRuxIconVideogameAssetElement;
     };
     interface HTMLRuxIconViewAgendaElement extends Components.RuxIconViewAgenda, HTMLStencilElement {
     }
     var HTMLRuxIconViewAgendaElement: {
         prototype: HTMLRuxIconViewAgendaElement;
-        new(): HTMLRuxIconViewAgendaElement;
+        new (): HTMLRuxIconViewAgendaElement;
     };
     interface HTMLRuxIconViewArrayElement extends Components.RuxIconViewArray, HTMLStencilElement {
     }
     var HTMLRuxIconViewArrayElement: {
         prototype: HTMLRuxIconViewArrayElement;
-        new(): HTMLRuxIconViewArrayElement;
+        new (): HTMLRuxIconViewArrayElement;
     };
     interface HTMLRuxIconViewCarouselElement extends Components.RuxIconViewCarousel, HTMLStencilElement {
     }
     var HTMLRuxIconViewCarouselElement: {
         prototype: HTMLRuxIconViewCarouselElement;
-        new(): HTMLRuxIconViewCarouselElement;
+        new (): HTMLRuxIconViewCarouselElement;
     };
     interface HTMLRuxIconViewColumnElement extends Components.RuxIconViewColumn, HTMLStencilElement {
     }
     var HTMLRuxIconViewColumnElement: {
         prototype: HTMLRuxIconViewColumnElement;
-        new(): HTMLRuxIconViewColumnElement;
+        new (): HTMLRuxIconViewColumnElement;
     };
     interface HTMLRuxIconViewComfyElement extends Components.RuxIconViewComfy, HTMLStencilElement {
     }
     var HTMLRuxIconViewComfyElement: {
         prototype: HTMLRuxIconViewComfyElement;
-        new(): HTMLRuxIconViewComfyElement;
+        new (): HTMLRuxIconViewComfyElement;
     };
     interface HTMLRuxIconViewCompactElement extends Components.RuxIconViewCompact, HTMLStencilElement {
     }
     var HTMLRuxIconViewCompactElement: {
         prototype: HTMLRuxIconViewCompactElement;
-        new(): HTMLRuxIconViewCompactElement;
+        new (): HTMLRuxIconViewCompactElement;
     };
     interface HTMLRuxIconViewDayElement extends Components.RuxIconViewDay, HTMLStencilElement {
     }
     var HTMLRuxIconViewDayElement: {
         prototype: HTMLRuxIconViewDayElement;
-        new(): HTMLRuxIconViewDayElement;
+        new (): HTMLRuxIconViewDayElement;
     };
     interface HTMLRuxIconViewHeadlineElement extends Components.RuxIconViewHeadline, HTMLStencilElement {
     }
     var HTMLRuxIconViewHeadlineElement: {
         prototype: HTMLRuxIconViewHeadlineElement;
-        new(): HTMLRuxIconViewHeadlineElement;
+        new (): HTMLRuxIconViewHeadlineElement;
     };
     interface HTMLRuxIconViewListElement extends Components.RuxIconViewList, HTMLStencilElement {
     }
     var HTMLRuxIconViewListElement: {
         prototype: HTMLRuxIconViewListElement;
-        new(): HTMLRuxIconViewListElement;
+        new (): HTMLRuxIconViewListElement;
     };
     interface HTMLRuxIconViewModuleElement extends Components.RuxIconViewModule, HTMLStencilElement {
     }
     var HTMLRuxIconViewModuleElement: {
         prototype: HTMLRuxIconViewModuleElement;
-        new(): HTMLRuxIconViewModuleElement;
+        new (): HTMLRuxIconViewModuleElement;
     };
     interface HTMLRuxIconViewQuiltElement extends Components.RuxIconViewQuilt, HTMLStencilElement {
     }
     var HTMLRuxIconViewQuiltElement: {
         prototype: HTMLRuxIconViewQuiltElement;
-        new(): HTMLRuxIconViewQuiltElement;
+        new (): HTMLRuxIconViewQuiltElement;
     };
     interface HTMLRuxIconViewStreamElement extends Components.RuxIconViewStream, HTMLStencilElement {
     }
     var HTMLRuxIconViewStreamElement: {
         prototype: HTMLRuxIconViewStreamElement;
-        new(): HTMLRuxIconViewStreamElement;
+        new (): HTMLRuxIconViewStreamElement;
     };
     interface HTMLRuxIconViewWeekElement extends Components.RuxIconViewWeek, HTMLStencilElement {
     }
     var HTMLRuxIconViewWeekElement: {
         prototype: HTMLRuxIconViewWeekElement;
-        new(): HTMLRuxIconViewWeekElement;
+        new (): HTMLRuxIconViewWeekElement;
     };
     interface HTMLRuxIconVignetteElement extends Components.RuxIconVignette, HTMLStencilElement {
     }
     var HTMLRuxIconVignetteElement: {
         prototype: HTMLRuxIconVignetteElement;
-        new(): HTMLRuxIconVignetteElement;
+        new (): HTMLRuxIconVignetteElement;
     };
     interface HTMLRuxIconVisibilityElement extends Components.RuxIconVisibility, HTMLStencilElement {
     }
     var HTMLRuxIconVisibilityElement: {
         prototype: HTMLRuxIconVisibilityElement;
-        new(): HTMLRuxIconVisibilityElement;
+        new (): HTMLRuxIconVisibilityElement;
     };
     interface HTMLRuxIconVisibilityOffElement extends Components.RuxIconVisibilityOff, HTMLStencilElement {
     }
     var HTMLRuxIconVisibilityOffElement: {
         prototype: HTMLRuxIconVisibilityOffElement;
-        new(): HTMLRuxIconVisibilityOffElement;
+        new (): HTMLRuxIconVisibilityOffElement;
     };
     interface HTMLRuxIconVoiceChatElement extends Components.RuxIconVoiceChat, HTMLStencilElement {
     }
     var HTMLRuxIconVoiceChatElement: {
         prototype: HTMLRuxIconVoiceChatElement;
-        new(): HTMLRuxIconVoiceChatElement;
+        new (): HTMLRuxIconVoiceChatElement;
     };
     interface HTMLRuxIconVoiceOverOffElement extends Components.RuxIconVoiceOverOff, HTMLStencilElement {
     }
     var HTMLRuxIconVoiceOverOffElement: {
         prototype: HTMLRuxIconVoiceOverOffElement;
-        new(): HTMLRuxIconVoiceOverOffElement;
+        new (): HTMLRuxIconVoiceOverOffElement;
     };
     interface HTMLRuxIconVoicemailElement extends Components.RuxIconVoicemail, HTMLStencilElement {
     }
     var HTMLRuxIconVoicemailElement: {
         prototype: HTMLRuxIconVoicemailElement;
-        new(): HTMLRuxIconVoicemailElement;
+        new (): HTMLRuxIconVoicemailElement;
     };
     interface HTMLRuxIconVolumeDownElement extends Components.RuxIconVolumeDown, HTMLStencilElement {
     }
     var HTMLRuxIconVolumeDownElement: {
         prototype: HTMLRuxIconVolumeDownElement;
-        new(): HTMLRuxIconVolumeDownElement;
+        new (): HTMLRuxIconVolumeDownElement;
     };
     interface HTMLRuxIconVolumeMuteElement extends Components.RuxIconVolumeMute, HTMLStencilElement {
     }
     var HTMLRuxIconVolumeMuteElement: {
         prototype: HTMLRuxIconVolumeMuteElement;
-        new(): HTMLRuxIconVolumeMuteElement;
+        new (): HTMLRuxIconVolumeMuteElement;
     };
     interface HTMLRuxIconVolumeOffElement extends Components.RuxIconVolumeOff, HTMLStencilElement {
     }
     var HTMLRuxIconVolumeOffElement: {
         prototype: HTMLRuxIconVolumeOffElement;
-        new(): HTMLRuxIconVolumeOffElement;
+        new (): HTMLRuxIconVolumeOffElement;
     };
     interface HTMLRuxIconVolumeUpElement extends Components.RuxIconVolumeUp, HTMLStencilElement {
     }
     var HTMLRuxIconVolumeUpElement: {
         prototype: HTMLRuxIconVolumeUpElement;
-        new(): HTMLRuxIconVolumeUpElement;
+        new (): HTMLRuxIconVolumeUpElement;
     };
     interface HTMLRuxIconVpnKeyElement extends Components.RuxIconVpnKey, HTMLStencilElement {
     }
     var HTMLRuxIconVpnKeyElement: {
         prototype: HTMLRuxIconVpnKeyElement;
-        new(): HTMLRuxIconVpnKeyElement;
+        new (): HTMLRuxIconVpnKeyElement;
     };
     interface HTMLRuxIconVpnLockElement extends Components.RuxIconVpnLock, HTMLStencilElement {
     }
     var HTMLRuxIconVpnLockElement: {
         prototype: HTMLRuxIconVpnLockElement;
-        new(): HTMLRuxIconVpnLockElement;
+        new (): HTMLRuxIconVpnLockElement;
     };
     interface HTMLRuxIconWallpaperElement extends Components.RuxIconWallpaper, HTMLStencilElement {
     }
     var HTMLRuxIconWallpaperElement: {
         prototype: HTMLRuxIconWallpaperElement;
-        new(): HTMLRuxIconWallpaperElement;
+        new (): HTMLRuxIconWallpaperElement;
     };
     interface HTMLRuxIconWarningElement extends Components.RuxIconWarning, HTMLStencilElement {
     }
     var HTMLRuxIconWarningElement: {
         prototype: HTMLRuxIconWarningElement;
-        new(): HTMLRuxIconWarningElement;
+        new (): HTMLRuxIconWarningElement;
     };
     interface HTMLRuxIconWatchElement extends Components.RuxIconWatch, HTMLStencilElement {
     }
     var HTMLRuxIconWatchElement: {
         prototype: HTMLRuxIconWatchElement;
-        new(): HTMLRuxIconWatchElement;
+        new (): HTMLRuxIconWatchElement;
     };
     interface HTMLRuxIconWatchLaterElement extends Components.RuxIconWatchLater, HTMLStencilElement {
     }
     var HTMLRuxIconWatchLaterElement: {
         prototype: HTMLRuxIconWatchLaterElement;
-        new(): HTMLRuxIconWatchLaterElement;
+        new (): HTMLRuxIconWatchLaterElement;
     };
     interface HTMLRuxIconWavesElement extends Components.RuxIconWaves, HTMLStencilElement {
     }
     var HTMLRuxIconWavesElement: {
         prototype: HTMLRuxIconWavesElement;
-        new(): HTMLRuxIconWavesElement;
+        new (): HTMLRuxIconWavesElement;
     };
     interface HTMLRuxIconWbAutoElement extends Components.RuxIconWbAuto, HTMLStencilElement {
     }
     var HTMLRuxIconWbAutoElement: {
         prototype: HTMLRuxIconWbAutoElement;
-        new(): HTMLRuxIconWbAutoElement;
+        new (): HTMLRuxIconWbAutoElement;
     };
     interface HTMLRuxIconWbCloudyElement extends Components.RuxIconWbCloudy, HTMLStencilElement {
     }
     var HTMLRuxIconWbCloudyElement: {
         prototype: HTMLRuxIconWbCloudyElement;
-        new(): HTMLRuxIconWbCloudyElement;
+        new (): HTMLRuxIconWbCloudyElement;
     };
     interface HTMLRuxIconWbIncandescentElement extends Components.RuxIconWbIncandescent, HTMLStencilElement {
     }
     var HTMLRuxIconWbIncandescentElement: {
         prototype: HTMLRuxIconWbIncandescentElement;
-        new(): HTMLRuxIconWbIncandescentElement;
+        new (): HTMLRuxIconWbIncandescentElement;
     };
     interface HTMLRuxIconWbIridescentElement extends Components.RuxIconWbIridescent, HTMLStencilElement {
     }
     var HTMLRuxIconWbIridescentElement: {
         prototype: HTMLRuxIconWbIridescentElement;
-        new(): HTMLRuxIconWbIridescentElement;
+        new (): HTMLRuxIconWbIridescentElement;
     };
     interface HTMLRuxIconWbSunnyElement extends Components.RuxIconWbSunny, HTMLStencilElement {
     }
     var HTMLRuxIconWbSunnyElement: {
         prototype: HTMLRuxIconWbSunnyElement;
-        new(): HTMLRuxIconWbSunnyElement;
+        new (): HTMLRuxIconWbSunnyElement;
     };
     interface HTMLRuxIconWcElement extends Components.RuxIconWc, HTMLStencilElement {
     }
     var HTMLRuxIconWcElement: {
         prototype: HTMLRuxIconWcElement;
-        new(): HTMLRuxIconWcElement;
+        new (): HTMLRuxIconWcElement;
     };
     interface HTMLRuxIconWebElement extends Components.RuxIconWeb, HTMLStencilElement {
     }
     var HTMLRuxIconWebElement: {
         prototype: HTMLRuxIconWebElement;
-        new(): HTMLRuxIconWebElement;
+        new (): HTMLRuxIconWebElement;
     };
     interface HTMLRuxIconWebAssetElement extends Components.RuxIconWebAsset, HTMLStencilElement {
     }
     var HTMLRuxIconWebAssetElement: {
         prototype: HTMLRuxIconWebAssetElement;
-        new(): HTMLRuxIconWebAssetElement;
+        new (): HTMLRuxIconWebAssetElement;
     };
     interface HTMLRuxIconWeekendElement extends Components.RuxIconWeekend, HTMLStencilElement {
     }
     var HTMLRuxIconWeekendElement: {
         prototype: HTMLRuxIconWeekendElement;
-        new(): HTMLRuxIconWeekendElement;
+        new (): HTMLRuxIconWeekendElement;
     };
     interface HTMLRuxIconWhatshotElement extends Components.RuxIconWhatshot, HTMLStencilElement {
     }
     var HTMLRuxIconWhatshotElement: {
         prototype: HTMLRuxIconWhatshotElement;
-        new(): HTMLRuxIconWhatshotElement;
+        new (): HTMLRuxIconWhatshotElement;
     };
     interface HTMLRuxIconWhereToVoteElement extends Components.RuxIconWhereToVote, HTMLStencilElement {
     }
     var HTMLRuxIconWhereToVoteElement: {
         prototype: HTMLRuxIconWhereToVoteElement;
-        new(): HTMLRuxIconWhereToVoteElement;
+        new (): HTMLRuxIconWhereToVoteElement;
     };
     interface HTMLRuxIconWidgetsElement extends Components.RuxIconWidgets, HTMLStencilElement {
     }
     var HTMLRuxIconWidgetsElement: {
         prototype: HTMLRuxIconWidgetsElement;
-        new(): HTMLRuxIconWidgetsElement;
+        new (): HTMLRuxIconWidgetsElement;
     };
     interface HTMLRuxIconWifiElement extends Components.RuxIconWifi, HTMLStencilElement {
     }
     var HTMLRuxIconWifiElement: {
         prototype: HTMLRuxIconWifiElement;
-        new(): HTMLRuxIconWifiElement;
+        new (): HTMLRuxIconWifiElement;
     };
     interface HTMLRuxIconWifiLockElement extends Components.RuxIconWifiLock, HTMLStencilElement {
     }
     var HTMLRuxIconWifiLockElement: {
         prototype: HTMLRuxIconWifiLockElement;
-        new(): HTMLRuxIconWifiLockElement;
+        new (): HTMLRuxIconWifiLockElement;
     };
     interface HTMLRuxIconWifiOffElement extends Components.RuxIconWifiOff, HTMLStencilElement {
     }
     var HTMLRuxIconWifiOffElement: {
         prototype: HTMLRuxIconWifiOffElement;
-        new(): HTMLRuxIconWifiOffElement;
+        new (): HTMLRuxIconWifiOffElement;
     };
     interface HTMLRuxIconWifiTetheringElement extends Components.RuxIconWifiTethering, HTMLStencilElement {
     }
     var HTMLRuxIconWifiTetheringElement: {
         prototype: HTMLRuxIconWifiTetheringElement;
-        new(): HTMLRuxIconWifiTetheringElement;
+        new (): HTMLRuxIconWifiTetheringElement;
     };
     interface HTMLRuxIconWorkElement extends Components.RuxIconWork, HTMLStencilElement {
     }
     var HTMLRuxIconWorkElement: {
         prototype: HTMLRuxIconWorkElement;
-        new(): HTMLRuxIconWorkElement;
+        new (): HTMLRuxIconWorkElement;
     };
     interface HTMLRuxIconWorkOffElement extends Components.RuxIconWorkOff, HTMLStencilElement {
     }
     var HTMLRuxIconWorkOffElement: {
         prototype: HTMLRuxIconWorkOffElement;
-        new(): HTMLRuxIconWorkOffElement;
+        new (): HTMLRuxIconWorkOffElement;
     };
     interface HTMLRuxIconWorkOutlineElement extends Components.RuxIconWorkOutline, HTMLStencilElement {
     }
     var HTMLRuxIconWorkOutlineElement: {
         prototype: HTMLRuxIconWorkOutlineElement;
-        new(): HTMLRuxIconWorkOutlineElement;
+        new (): HTMLRuxIconWorkOutlineElement;
     };
     interface HTMLRuxIconWrapTextElement extends Components.RuxIconWrapText, HTMLStencilElement {
     }
     var HTMLRuxIconWrapTextElement: {
         prototype: HTMLRuxIconWrapTextElement;
-        new(): HTMLRuxIconWrapTextElement;
+        new (): HTMLRuxIconWrapTextElement;
     };
     interface HTMLRuxIconYoutubeSearchedForElement extends Components.RuxIconYoutubeSearchedFor, HTMLStencilElement {
     }
     var HTMLRuxIconYoutubeSearchedForElement: {
         prototype: HTMLRuxIconYoutubeSearchedForElement;
-        new(): HTMLRuxIconYoutubeSearchedForElement;
+        new (): HTMLRuxIconYoutubeSearchedForElement;
     };
     interface HTMLRuxIconZoomInElement extends Components.RuxIconZoomIn, HTMLStencilElement {
     }
     var HTMLRuxIconZoomInElement: {
         prototype: HTMLRuxIconZoomInElement;
-        new(): HTMLRuxIconZoomInElement;
+        new (): HTMLRuxIconZoomInElement;
     };
     interface HTMLRuxIconZoomInMapElement extends Components.RuxIconZoomInMap, HTMLStencilElement {
     }
     var HTMLRuxIconZoomInMapElement: {
         prototype: HTMLRuxIconZoomInMapElement;
-        new(): HTMLRuxIconZoomInMapElement;
+        new (): HTMLRuxIconZoomInMapElement;
     };
     interface HTMLRuxIconZoomOutElement extends Components.RuxIconZoomOut, HTMLStencilElement {
     }
     var HTMLRuxIconZoomOutElement: {
         prototype: HTMLRuxIconZoomOutElement;
-        new(): HTMLRuxIconZoomOutElement;
+        new (): HTMLRuxIconZoomOutElement;
     };
     interface HTMLRuxIconZoomOutMapElement extends Components.RuxIconZoomOutMap, HTMLStencilElement {
     }
     var HTMLRuxIconZoomOutMapElement: {
         prototype: HTMLRuxIconZoomOutMapElement;
-        new(): HTMLRuxIconZoomOutMapElement;
+        new (): HTMLRuxIconZoomOutMapElement;
     };
     interface HTMLRuxMonitoringIconElement extends Components.RuxMonitoringIcon, HTMLStencilElement {
     }
     var HTMLRuxMonitoringIconElement: {
         prototype: HTMLRuxMonitoringIconElement;
-        new(): HTMLRuxMonitoringIconElement;
+        new (): HTMLRuxMonitoringIconElement;
     };
     interface HTMLRuxProgressElement extends Components.RuxProgress, HTMLStencilElement {
     }
     var HTMLRuxProgressElement: {
         prototype: HTMLRuxProgressElement;
-        new(): HTMLRuxProgressElement;
+        new (): HTMLRuxProgressElement;
     };
     interface HTMLRuxStatusElement extends Components.RuxStatus, HTMLStencilElement {
     }
     var HTMLRuxStatusElement: {
         prototype: HTMLRuxStatusElement;
-        new(): HTMLRuxStatusElement;
+        new (): HTMLRuxStatusElement;
     };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
