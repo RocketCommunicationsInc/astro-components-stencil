@@ -13,6 +13,7 @@ export class RuxProgress {
 getProgressAsString(){
   return this.max === 100 ? `${this.value}%` : `${this.value}/${this.max}`
 }
+
   render() {
     return (
       <Host>
