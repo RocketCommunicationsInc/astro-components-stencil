@@ -1,5 +1,5 @@
 import { html, render } from 'lit-html';
-import { boolean, withKnobs, number } from '@storybook/addon-knobs';
+import { boolean, withKnobs, number, text} from '@storybook/addon-knobs';
 
 //@ts-ignore
 import readme from '../../src/components/rux-progress/readme.md';
@@ -51,21 +51,19 @@ DeterminateProgress.story = {
     export const DeterminateProgressMax = () => {
       const maxValueLabel = 'Max';
       const maxValueDefaultValue = 10;
-      let maxLimit = number(maxValueLabel, maxValueDefaultValue);
-    
+      const maxLimit = number(maxValueLabel, maxValueDefaultValue);
       const progressLabel = 'Progress';
       const progressDefaultValue = 1;
-      
       const progressOptions = {
         range: true,
         min: 1,
         max: maxLimit,
-        step: 1,
+        step: 1
       };
+      
       let progress = number(progressLabel, progressDefaultValue, progressOptions);
-
       //* max should never be less than progress value
-      if(maxLimit < progress){
+      if(progressOptions.max < progress){
         progress = maxLimit;
       }
     
