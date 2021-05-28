@@ -64,13 +64,9 @@ DeterminateProgress.story = {
       };
       let progress = number(progressLabel, progressDefaultValue, progressOptions);
 
-      //Want to set max to be equal to min if the max ever drops below the min
-      console.log(maxLimit, 'max');
-      console.log(progress, 'progress');
+      //* max should never be less than progress value
       if(maxLimit < progress){
-        console.log('max is now less than progress')
         progress = maxLimit;
-        console.log(`ran, new max val: ${maxLimit}`)
       }
     
       const hideLabel = boolean('Hide Label', true);
