@@ -40,7 +40,7 @@ export namespace Components {
         /**
           * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
          */
-        "hideTimezone"?: boolean;
+        "hideTimezone": boolean;
         /**
           * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax), displays a timestamp labeled "LOS" next to the standard clock.
          */
