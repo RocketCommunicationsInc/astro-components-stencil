@@ -1,5 +1,5 @@
 import { html, render } from 'lit-html';
-import { boolean, withKnobs, number, text} from '@storybook/addon-knobs';
+import { boolean, withKnobs, number } from '@storybook/addon-knobs';
 
 //@ts-ignore
 import readme from '../../src/components/rux-progress/readme.md';

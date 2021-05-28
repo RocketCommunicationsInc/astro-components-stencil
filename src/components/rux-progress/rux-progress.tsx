@@ -19,7 +19,6 @@ checkValueNotOverMax(max:number, value:number){
      this.max = max;
      console.warn("The given max for <rux-progress> was less than the given value. Max has been changed to equal value in the meantime. Please be sure max and value are correct on the <rux-progress> component.")
    }
-  //  return max;
 }
   render() {
     return (
