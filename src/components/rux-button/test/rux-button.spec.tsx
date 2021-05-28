@@ -1,14 +1,6 @@
 import { newSpecPage } from '@stencil/core/testing'
 import { RuxButton } from '../rux-button'
 
-// Button RuxButton {
-//   icon: '',
-//   iconOnly: false,
-//   outline: false,
-//   type: 'button',
-//   disabled: false
-// }
-
 describe('rux-button', () => {
     it('builds', async () => {
         const button = new RuxButton()

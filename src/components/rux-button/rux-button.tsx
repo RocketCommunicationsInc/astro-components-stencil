@@ -15,10 +15,10 @@ export class RuxButton {
     @Prop({ reflect: true }) size?: 'small' | 'large'
 
     render() {
-        const { type, size, iconOnly, outline, disabled, icon } = this
+        const { size, iconOnly, outline, disabled, icon } = this
         return (
             <button
-                type={type}
+                type="button"
                 class={{
                     'rux-button': true,
                     'rux-button--outline': outline,
