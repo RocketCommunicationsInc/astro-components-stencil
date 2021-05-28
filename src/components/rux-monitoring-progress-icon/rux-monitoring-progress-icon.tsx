@@ -101,14 +101,39 @@ export class RuxMonitoringProgressIcon {
   }
 
   // TODO: Fix method or move to render.... can't return without a wrapping element
-  // private _iconTemplate() {
-  //   return (
-  //     <rux-icon icon="progress" class="rux-status--${this.status}"></rux-icon>
-  //     <div class="rux-advanced-status__progress">
-  //       ${Math.ceil((this.progress / this.max) * 100)}%
-  //     </div>
-  //   );
-  // }
+  private _iconTemplate() {
+    return (
+      <div id="icon-template-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="rux-status--${this.status}">
+          <g id="progress">
+            <circle 
+              cx="60" 
+              cy="60" 
+              r="56" 
+              fill="transparent" 
+              stroke="rgba(40, 63, 88, 1)" 
+              stroke-width="10" 
+              transform="rotate(-90 61 60)"/>
+            <circle 
+              cx="60" 
+              cy="60" 
+              r="56" 
+              fill="transparent" 
+              stroke-dasharray="351.8583772 351.8583772" 
+              stroke-dashoffset={this._graphProgress} 
+              stroke-linecap="round" 
+              stroke-width="10" 
+              class="progress-ring__circle" 
+              transform="rotate(-90 61 60)"
+            />
+          </g>
+        </svg>
+        <div class="rux-advanced-status__progress">
+          ${Math.ceil((this.progress / this.max) * 100)}%
+        </div>
+      </div>
+    );
+  }
 
   // updated(changedProperties) {
   //   if (changedProperties.get('progress')) {
@@ -131,7 +156,7 @@ export class RuxMonitoringProgressIcon {
         id="rux-advanced-status__icon"
         class="rux-advanced-status"
         title={`${this.notifications} ${this.label} ${this.sublabel}`}
-        style={{"--monitoring-progress": this._graphProgress.toString()}}
+        // style={{"--monitoring-progress": this._graphProgress.toString()}}
       >
         <div class="rux-advanced-status__icon-group">
           <rux-status status={this.status}></rux-status>
@@ -232,15 +257,15 @@ export class RuxMonitoringProgressIcon {
 
 //   get iconTemplate() {
 //     return html`
-//     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" style="" class="rux-status--${this.status}">
-//       <g id="progress">
-//         <circle cx="60" cy="60" r="56" fill="transparent" stroke="rgba(40, 63, 88, 1)" stroke-width="10" transform="rotate(-90 61 60)"/>
-//         <circle cx="60" cy="60" r="56" fill="transparent" stroke-dasharray="351.8583772 351.8583772" stroke-dashoffset="var(--monitoring-progress, 1)" stroke-linecap="round" stroke-width="10" class="progress-ring__circle" transform="rotate(-90 61 60)"/>
-//       </g>
-//     </svg>
-//       <div class="rux-advanced-status__progress">
-//         ${Math.ceil((this.progress / this.max) * 100)}%
-//       </div>
+    // <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" style="" class="rux-status--${this.status}">
+    //   <g id="progress">
+    //     <circle cx="60" cy="60" r="56" fill="transparent" stroke="rgba(40, 63, 88, 1)" stroke-width="10" transform="rotate(-90 61 60)"/>
+    //     <circle cx="60" cy="60" r="56" fill="transparent" stroke-dasharray="351.8583772 351.8583772" stroke-dashoffset="var(--monitoring-progress, 1)" stroke-linecap="round" stroke-width="10" class="progress-ring__circle" transform="rotate(-90 61 60)"/>
+    //   </g>
+    // </svg>
+    //   <div class="rux-advanced-status__progress">
+    //     ${Math.ceil((this.progress / this.max) * 100)}%
+    //   </div>
 //     `;
 //   }
 
