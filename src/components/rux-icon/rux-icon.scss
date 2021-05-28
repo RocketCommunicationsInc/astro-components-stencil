@@ -1,7 +1,10 @@
 :host {
-    --iconDefaultSize: 2.7rem;
+    /**
+        * @prop --iconColor: the default color of the icon
+    */
     --iconColor: var(--iconDefaultColor);
 
+    fill: var(--iconColor);
     display: inline-flex;
     height: var(--iconDefaultSize);
     width: var(--iconDefaultSize);
