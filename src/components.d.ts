@@ -6,6 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { Classification, Status } from "./common/commonTypes.module";
+import { RangeItem } from "./components/rux-monitoring-progress-icon/rux-monitoring-progress-icon";
 export namespace Components {
     interface RuxButton {
         "disabled": boolean;
@@ -40,7 +41,7 @@ export namespace Components {
         /**
           * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
          */
-        "hideTimezone"?: boolean;
+        "hideTimezone": boolean;
         /**
           * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax), displays a timestamp labeled "LOS" next to the standard clock.
          */
@@ -5341,6 +5342,15 @@ export namespace Components {
         "notifications": number;
         "status": Status;
         "sublabel": string;
+    }
+    interface RuxMonitoringProgressIcon {
+        "label": string;
+        "max"?: number;
+        "min"?: number;
+        "notifications"?: number;
+        "progress": number;
+        "range"?: Array<RangeItem>;
+        "sublabel"?: string;
     }
     interface RuxProgress {
         "hideLabel": boolean;
@@ -11712,6 +11722,12 @@ declare global {
         prototype: HTMLRuxMonitoringIconElement;
         new (): HTMLRuxMonitoringIconElement;
     };
+    interface HTMLRuxMonitoringProgressIconElement extends Components.RuxMonitoringProgressIcon, HTMLStencilElement {
+    }
+    var HTMLRuxMonitoringProgressIconElement: {
+        prototype: HTMLRuxMonitoringProgressIconElement;
+        new (): HTMLRuxMonitoringProgressIconElement;
+    };
     interface HTMLRuxProgressElement extends Components.RuxProgress, HTMLStencilElement {
     }
     var HTMLRuxProgressElement: {
@@ -12785,6 +12801,7 @@ declare global {
         "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
         "rux-monitoring-icon": HTMLRuxMonitoringIconElement;
+        "rux-monitoring-progress-icon": HTMLRuxMonitoringProgressIconElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-status": HTMLRuxStatusElement;
     }
@@ -18119,10 +18136,19 @@ declare namespace LocalJSX {
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
     interface RuxMonitoringIcon {
-        "icon"?: string;
-        "label"?: string;
+        "icon": string;
+        "label": string;
         "notifications"?: number;
         "status"?: Status;
+        "sublabel"?: string;
+    }
+    interface RuxMonitoringProgressIcon {
+        "label": string;
+        "max"?: number;
+        "min"?: number;
+        "notifications"?: number;
+        "progress": number;
+        "range"?: Array<RangeItem>;
         "sublabel"?: string;
     }
     interface RuxProgress {
@@ -19194,6 +19220,7 @@ declare namespace LocalJSX {
         "rux-icon-zoom-out": RuxIconZoomOut;
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
         "rux-monitoring-icon": RuxMonitoringIcon;
+        "rux-monitoring-progress-icon": RuxMonitoringProgressIcon;
         "rux-progress": RuxProgress;
         "rux-status": RuxStatus;
     }
@@ -20262,6 +20289,7 @@ declare module "@stencil/core" {
             "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
             "rux-monitoring-icon": LocalJSX.RuxMonitoringIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>;
+            "rux-monitoring-progress-icon": LocalJSX.RuxMonitoringProgressIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringProgressIconElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
         }
