@@ -12,13 +12,16 @@ export class RuxGlobalStatusBar {
   @Prop() appName?: string;
   @Prop() appVersion?: string;
   @Prop() appDomain?: string;
+  // TODO: validate menuIcon prop to make sure it is a valid library icon
+  @Prop() menuIcon?: string = "apps";
 
   render() {
     return (
       <Host>
         <header>
           <slot name="left-side">
-            <rux-icon icon="apps" size="small" />
+            {/* this icon is a placholder until waffle-menu icon is included in the rux-icon library */}
+            <rux-icon icon={`${this.menuIcon}`} size="small" />
           </slot>
           <slot name="app-meta">
             {/* app=meta div content is fallback component when app-meta slot is unfilled */}

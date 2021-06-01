@@ -58,6 +58,7 @@ export namespace Components {
         "appDomain"?: string;
         "appName"?: string;
         "appVersion"?: string;
+        "menuIcon"?: string;
     }
     interface RuxIcon {
         "color": string;
@@ -12828,6 +12829,7 @@ declare namespace LocalJSX {
         "appDomain"?: string;
         "appName"?: string;
         "appVersion"?: string;
+        "menuIcon"?: string;
     }
     interface RuxIcon {
         "color"?: string;

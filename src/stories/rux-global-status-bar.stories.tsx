@@ -18,10 +18,12 @@ export const GlobalStatusBar = () => {
   const appDomainKnob = text ('App Domain', 'GRM');
   const appNameKnob = text('App Name', 'Dashboard');
   const appVersionKnob = text('Version', '4.0 alpha');
+  const menuIconKnob = text('Menu Icon', 'apps');
+
 
   return html`
     <div style="display: flex; justify-content: center;">
-      <rux-global-status-bar .appDomain="${appDomainKnob}" .appName="${appNameKnob}" .appVersion="${appVersionKnob}"></rux-global-status-bar>
+      <rux-global-status-bar .appDomain="${appDomainKnob}" .appName="${appNameKnob}" .appVersion="${appVersionKnob}" .menuIcon="${menuIconKnob}"></rux-global-status-bar>
     </div>
   `;
 };
