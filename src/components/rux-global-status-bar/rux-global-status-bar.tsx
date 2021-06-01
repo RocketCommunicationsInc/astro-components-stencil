@@ -1,4 +1,7 @@
 import { Prop, Component, Host, h } from '@stencil/core';
+import { AppName } from '../../common/functional-components/appName'
+import { AppVersion } from '../../common/functional-components/appVersion'
+import { AppDomain } from '../../common/functional-components/appDomain'
 
 @Component({
   tag: 'rux-global-status-bar',
@@ -6,17 +9,23 @@ import { Prop, Component, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class RuxGlobalStatusBar {
-  @Prop() appname: string;
-  @Prop() version: string;
+  @Prop() appName?: string;
+  @Prop() appVersion?: string;
+  @Prop() appDomain?: string;
 
   render() {
     return (
       <Host>
         <header>
-        <slot name="left-side"></slot>
-        <div class="app-meta" hidden={!this.appname}>
-          <h1>{this.appname}<span class="app-version">{this.version}</span></h1>
-        </div>
+          <slot name="left-side">
+            <rux-icon icon="apps" size="small" />
+          </slot>
+          <slot name="app-meta">
+            {/* app=meta div content is fallback component when app-meta slot is unfilled */}
+            <div class="app-meta">
+              <AppDomain domain={this.appDomain} /><AppName name={this.appName.toUpperCase()}><AppVersion version={this.appVersion} /></ AppName>
+            </div>
+          </slot>
         <slot></slot>
         <slot name="right-side"></slot>
       </header>

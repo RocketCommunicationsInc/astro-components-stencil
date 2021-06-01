@@ -55,8 +55,9 @@ export namespace Components {
         "timezone": string;
     }
     interface RuxGlobalStatusBar {
-        "appname": string;
-        "version": string;
+        "appDomain"?: string;
+        "appName"?: string;
+        "appVersion"?: string;
     }
     interface RuxIcon {
         "color": string;
@@ -12824,8 +12825,9 @@ declare namespace LocalJSX {
         "timezone"?: string;
     }
     interface RuxGlobalStatusBar {
-        "appname"?: string;
-        "version"?: string;
+        "appDomain"?: string;
+        "appName"?: string;
+        "appVersion"?: string;
     }
     interface RuxIcon {
         "color"?: string;

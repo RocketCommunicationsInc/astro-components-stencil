@@ -15,12 +15,13 @@ export default {
 };
 
 export const GlobalStatusBar = () => {
-  const appnameKnob = text('App Name', 'Astro Global Status Bar');
-  const versionKnob = text('Version', '4.0 alpha');
+  const appDomainKnob = text ('App Domain', 'GRM');
+  const appNameKnob = text('App Name', 'Dashboard');
+  const appVersionKnob = text('Version', '4.0 alpha');
 
   return html`
     <div style="display: flex; justify-content: center;">
-      <rux-global-status-bar .appname="${appnameKnob}" .version="${versionKnob}"></rux-global-status-bar>
+      <rux-global-status-bar .appDomain="${appDomainKnob}" .appName="${appNameKnob}" .appVersion="${appVersionKnob}"></rux-global-status-bar>
     </div>
   `;
 };
