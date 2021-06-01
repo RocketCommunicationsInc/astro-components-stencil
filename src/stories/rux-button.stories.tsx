@@ -63,8 +63,8 @@ export const slottedIconButton = () => {
                     icon="palette"
                     color="${outline ? 'primary' : 'dark'}"
                 ></rux-icon>
-                Slotted icon button</rux-button
-            >
+                Slotted icon button
+            </rux-button>
         </div>
     `
 }
