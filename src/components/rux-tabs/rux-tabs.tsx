@@ -60,6 +60,7 @@ export class RuxTabs {
     this._panels.forEach((panel) => panel.classes.push('hidden'));
   }
 
+  //! Error on tab click, this._setTab is not a funciton
   _setTab(selectedTab) {
     this._reset();
 
