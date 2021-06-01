@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Host, h, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'rux-tab',
@@ -8,28 +8,32 @@ import { Component, Host, h, Prop } from '@stencil/core';
 export class RuxTab {
 
   @Prop({ mutable: true }) id: string = "";
-  @Prop() selected: boolean = false;
-  @Prop() disabled: boolean = false;
+  @Prop({ reflect: true }) selected: boolean = false;
+  @Prop({ reflect: true }) disabled: boolean = false;
   //* Need to be able to change selected through clicks. 
 
+  @Element() el: HTMLElement;
 
-//   @Event() tabClick: EventEmitter<Tab>;
 
-//   tabClickHandler(tab: Tab){
-//       this.tabClick.emit(tab);
-//   }
-//   @Listen('click', {target: 'window'})
+  connectedCallback(){
+    this.el.setAttribute('role', 'tab');
+    this.el.addEventListener('click', this.clickHandler);
 
-//     handleClick(ev){
-//         console.log('doc clicked', ev);
-//     }
+    if(this.el.parentElement.getAttributeNode('small')){
+      this.el.setAttribute('small', '')
+    }
+  }
+  clickHandler(e){
+    if(this.disabled){
+      e.stopImmediatePropagation();
+    }
+  } 
 
 
 
   render() {
     return (
       <Host>
-        TEST
         <slot></slot>
       </Host>
     );

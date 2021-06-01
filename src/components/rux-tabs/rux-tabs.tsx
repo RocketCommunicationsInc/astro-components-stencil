@@ -1,15 +1,78 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Host, h, Prop, Element, Listen } from '@stencil/core';
+import { RuxTab } from './rux-tab/rux-tab';
+import { RuxTabPanels } from './rux-tab-panels/rux-tab-panels'
+import { RuxTabPanel } from './rux-tab-panel/rux-tab-panel';
+
 
 @Component({
   tag: 'rux-tabs',
   styleUrl: 'rux-tabs.scss',
   shadow: true,
 })
+
+
+
 export class RuxTabs {
 
   @Prop({ mutable: true }) id: string = "";
   @Prop() small: boolean = false;
-  
+  //? This might need to be <ruxtabpanel> 
+  @Prop() _panels: Array<RuxTabPanel> = []
+  @Prop() _panelsGroup: string = '';
+  @Prop() _tabs: Array<HTMLRuxTabElement> = [];
+
+  @Element() host: HTMLElement;
+
+  @Listen('registerPanels')
+  handleListen(e){
+    this._registerPanels(e);
+  }
+
+  connectedCallback(){
+    // window.addEventListener('register-panels', this._registerPanels);
+    this.host.addEventListener('click', this._onClick);
+    //build tabs arr
+    this._addTabs();
+    console.log(this._tabs, 'tabs here');
+  }
+
+  _addTabs(){
+    this._tabs = Array.from(this.host.querySelectorAll('rux-tab'));
+    //get all id's from tabs rendered 
+  }
+
+  _registerPanels(e) {
+    if (e.detail.for === this.host.getAttribute('id')){
+      this._panels = Array.from(e.detail.panels);
+    }
+  }
+
+  _onClick(e) {
+    if (e.target.getAttribute('role') === 'tab' && e.target.getAttribute('disabled') === null) {
+      this._setTab(e.target);
+    }
+  }
+
+  _reset() {
+    // hide everything
+    this._tabs.forEach((tab) => (tab.selected = false));
+    //* classLIst on rux-tab-panel is an array of strings.
+    this._panels.forEach((panel) => panel.classes.push('hidden'));
+  }
+
+  _setTab(selectedTab) {
+    this._reset();
+
+    // find the panel whose aria-labeldby attribute matches the tab’s id
+    const selectedPanel = this._panels.find(
+        (panel) => panel.el.getAttribute('aria-labelledby') === selectedTab.getAttribute('id')
+    );
+
+    if (selectedTab) selectedTab.selected = true;
+    //* Find the index in the classList arr where 'hidden' is, remove it. May be a more optimal way to do this.
+    let index = selectedPanel.classes.indexOf('hidden');
+    if (selectedPanel) selectedPanel.classes.splice(index);
+  }
 
   render() {
     return (
