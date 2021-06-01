@@ -4,10 +4,9 @@ import { text, number, select, color, withKnobs } from '@storybook/addon-knobs'
 // import { RuxStatus } from '../src/components/rux-status/rux-status.js';
 // import { RuxMonitoringIcon } from '../src/components/rux-monitoring-icon/rux-monitoring-icon.js';
 // import { RuxMonitoringProgressIcon } from '../src/components/rux-monitoring-icon/rux-monitoring-progress-icon.js';
-import Readme from '../components/rux-icon/readme.md';
-import ReadmeMonitoring from '../components/rux-monitoring-icon/readme.md';
-import ruxIconsJson from './rux-icons.json';
-
+import Readme from '../components/rux-icon/readme.md'
+import ReadmeMonitoring from '../components/rux-monitoring-icon/readme.md'
+import ruxIconsJson from './rux-icons.json'
 
 export default {
     title: 'Components/Icons & Symbols',
@@ -136,7 +135,7 @@ export const AllIcons = () => {
 
             .icon__name {
                 display: block;
-                margin-top: 0.25rem;
+                margin-top: 0.5rem;
                 font-size: 0.75rem;
                 width: 5rem;
                 white-space: nowrap;
@@ -167,94 +166,104 @@ AllIcons.story = {
 }
 
 export const MonitoringIcons = () => {
-  const groupId = 'Options';
+    const groupId = 'Options'
 
-  /* Select Status */
-  const statusLabel = 'Status';
-  const statusOptions = {
-    Critical: 'critical',
-    Serious: 'serious',
-    Caution: 'caution',
-    Normal: 'normal',
-    Standby: 'standby',
-    Off: 'off',
-  };
-  const defaultStatusValue = 'normal';
-  const status = select(statusLabel, statusOptions, defaultStatusValue, groupId);
+    /* Select Status */
+    const statusLabel = 'Status'
+    const statusOptions = {
+        Critical: 'critical',
+        Serious: 'serious',
+        Caution: 'caution',
+        Normal: 'normal',
+        Standby: 'standby',
+        Off: 'off',
+    }
+    const defaultStatusValue = 'normal'
+    const status = select(
+        statusLabel,
+        statusOptions,
+        defaultStatusValue,
+        groupId
+    )
 
-  /* Select Icons */
-  const iconLabel = 'Icon';
-  const iconOptions = {
-    'Altitude': 'altitude',
-    'Antenna': 'antenna',
-    'Antenna (Off)': 'antenna-off',
-    'Antenna (Receive)': 'antenna-receive',
-    'Antenna (Transmit)': 'antenna-transmit',
-    'Equipment': 'equipment',
-    'Mission': 'mission',
-    'Netcom': 'netcom',
-    'Payload': 'payload',
-    'Processor': 'processor',
-    'Processor (Alt)': 'processor-alt',
-    'Propulsion Power': 'propulsion-power',
-    'Satellite (Off)': 'satellite-off',
-    'Satellite (Receive)': 'satellite-receive',
-    'Satellite (Transmit)': 'satellite-transmit',
-    'Solar': 'solar',
-    'Thermal': 'thermal',
-  };
-  const defaultIconValue = 'altitude';
-  const icon = select(iconLabel, iconOptions, defaultIconValue, groupId);
+    /* Select Icons */
+    const iconLabel = 'Icon'
+    const iconOptions = {
+        Altitude: 'altitude',
+        Antenna: 'antenna',
+        'Antenna (Off)': 'antenna-off',
+        'Antenna (Receive)': 'antenna-receive',
+        'Antenna (Transmit)': 'antenna-transmit',
+        Equipment: 'equipment',
+        Mission: 'mission',
+        Netcom: 'netcom',
+        Payload: 'payload',
+        Processor: 'processor',
+        'Processor (Alt)': 'processor-alt',
+        'Propulsion Power': 'propulsion-power',
+        'Satellite (Off)': 'satellite-off',
+        'Satellite (Receive)': 'satellite-receive',
+        'Satellite (Transmit)': 'satellite-transmit',
+        Solar: 'solar',
+        Thermal: 'thermal',
+    }
+    const defaultIconValue = 'altitude'
+    const icon = select(iconLabel, iconOptions, defaultIconValue, groupId)
 
-  /* Icon Labels and Sublabels */
-  const labelLabel = 'Label';
-  const labelDefaultValue = 'Monitoring';
-  const label = text(labelLabel, labelDefaultValue, groupId);
+    /* Icon Labels and Sublabels */
+    const labelLabel = 'Label'
+    const labelDefaultValue = 'Monitoring'
+    const label = text(labelLabel, labelDefaultValue, groupId)
 
-  const sublabelLabel = 'Sub-Label';
-  const sublabelDefaultValue = '';
-  const sublabel = text(sublabelLabel, sublabelDefaultValue, groupId);
+    const sublabelLabel = 'Sub-Label'
+    const sublabelDefaultValue = ''
+    const sublabel = text(sublabelLabel, sublabelDefaultValue, groupId)
 
-  /* Notifications */
-  const notificationLabel = 'Notifications';
-  const notificationDefaultValue = 1;
+    /* Notifications */
+    const notificationLabel = 'Notifications'
+    const notificationDefaultValue = 1
 
-  const notifications = number(notificationLabel, notificationDefaultValue, {}, groupId);
+    const notifications = number(
+        notificationLabel,
+        notificationDefaultValue,
+        {},
+        groupId
+    )
 
-  return html`
-    <div style="margin: 3rem auto; max-width: 5rem; text-align: center;">
-      <rux-monitoring-icon
-        icon="${icon}"
-        label="${label}"
-        sublabel="${sublabel}"
-        status="${status}"
-        notifications="${notifications}"
-      ></rux-monitoring-icon>
-    </div>
-    <div style="margin: 3rem auto; max-width: 5rem; text-align: center;">
-      <rux-monitoring-icon
-        library="/icons/custom.svg"
-        icon="widgets"
-        label="Widgets icon"
-        sublabel="${sublabel}"
-        status="${status}"
-        notifications="${notifications}"
-      ></rux-monitoring-icon>
-    </div>
-  `;
-};
+    return html`
+        <div style="margin: 3rem auto; max-width: 5rem; text-align: center;">
+            <rux-monitoring-icon
+                icon="${icon}"
+                label="${label}"
+                sublabel="${sublabel}"
+                status="${status}"
+                notifications="${notifications}"
+            ></rux-monitoring-icon>
+        </div>
+        <div style="margin: 3rem auto; max-width: 5rem; text-align: center;">
+            <rux-monitoring-icon
+                library="/icons/custom.svg"
+                icon="widgets"
+                label="Widgets icon"
+                sublabel="${sublabel}"
+                status="${status}"
+                notifications="${notifications}"
+            ></rux-monitoring-icon>
+        </div>
+    `
+}
 
 MonitoringIcons.story = {
-  parameters: {
-    exports: {
-      render,
-      html,
+    parameters: {
+        exports: {
+            render,
+            html,
+        },
+        readme: {
+            sidebar: ReadmeMonitoring,
+        },
     },
-    readme: {
-      sidebar: ReadmeMonitoring,
-    },
-  },
-};
+}
 
 export const ProgressIcon = () => {
     const groupId = 'Options'
