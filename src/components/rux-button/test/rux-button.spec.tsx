@@ -39,10 +39,16 @@ describe('rux-button', () => {
             html: `<rux-button type="submit" outline disabled>Button</rux-button>`,
         })
 
+        /*
+          TODO: test other button types in the form. If successfull extend button component to accept
+          type param.
+
+          NOTE: Button type is not being reflected at this time. Default button type is "button"
+        */
         expect(page.root).toEqualHtml(`
           <rux-button icon="" type="submit" outline disabled>
             <mock:shadow-root>
-              <button type="submit" class="rux-button rux-button--outline" disabled aria-disabled="true">
+              <button type="button" class="rux-button rux-button--outline" disabled aria-disabled="true">
                 <slot></slot>
               </button>
             </mock:shadow-root>
