@@ -1,6 +1,7 @@
 import { Component, h, Prop, Watch } from '@stencil/core';
 import { Status } from '../../common/commonTypes.module'
-import { collapseNotifications } from '../../utils/utils'
+import MonitoringBadge from '../../common/functional-components/MonitoringBadge'
+import MonitoringLabel from '../../common/functional-components/MonitoringLabel'
 
 @Component({
   tag: 'rux-monitoring-icon',
@@ -12,7 +13,7 @@ export class RuxMonitoringIcon {
   * Styles the icon according to the Astro Status colors. 
   * Valid options are the Astro statuses `critical`, `serious`, `caution`, `normal`, `standby` and `off`
   */
-  @Prop({reflect: true}) status!: Status = 'normal';
+  @Prop({reflect: true}) status: Status = 'normal';
   /*
   * Displays a label below the icon
   */
@@ -46,30 +47,6 @@ export class RuxMonitoringIcon {
       if (!statusTypes[newValue]) { throw new Error('valid status required') }
   }
 
-  private _iconTemplate() {
-    return (
-      <rux-icon icon={this.icon} class={`rux-status--${this.status}`}></rux-icon>
-    )
-  }
-
-  private _badgeTemplate() {
-    return (
-      <div class={`rux-advanced-status__badge ${!this.notifications && 'rux-advanced-status__hidden'}`}>
-        {collapseNotifications(this.notifications)}
-      </div>
-    )
-  }
-
-  private _labelTemplate() {
-    return (
-      <div class="rux-advanced-status__label">
-        {this.label}
-        <span class={`rux-advanced-status__sublabel ${!this.sublabel && 'rux-advanced-status__hidden'}`}>{this.sublabel}</span>
-      </div>
-    );
-  }
-
-
   render() {
     return (
       <div
@@ -80,10 +57,11 @@ export class RuxMonitoringIcon {
         <div class="rux-advanced-status__icon-group">
           <rux-status status={this.status}></rux-status>
 
-          {this._iconTemplate()} {this._badgeTemplate()}
+          <rux-icon icon={this.icon} class={`rux-status--${this.status}`}></rux-icon>
+          <MonitoringBadge notifications={this.notifications} />
         </div>
 
-        {this._labelTemplate()}
+        <MonitoringLabel label={this.label} sublabel={this.sublabel} />
       </div>
     );
   }

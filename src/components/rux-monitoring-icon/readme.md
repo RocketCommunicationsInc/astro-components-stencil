@@ -105,30 +105,30 @@ Pass properties as attributes of the Astro Monitoring Progress Icon custom eleme
 
 ## Properties
 
-| Property        | Attribute       | Description | Type                                                                     | Default     |
-| --------------- | --------------- | ----------- | ------------------------------------------------------------------------ | ----------- |
-| `icon`          | `icon`          |             | `string`                                                                 | `undefined` |
-| `label`         | `label`         |             | `string`                                                                 | `undefined` |
-| `notifications` | `notifications` |             | `number`                                                                 | `0`         |
-| `status`        | `status`        |             | `"caution" \| "critical" \| "normal" \| "off" \| "serious" \| "standby"` | `'normal'`  |
-| `sublabel`      | `sublabel`      |             | `string`                                                                 | `undefined` |
+| Property             | Attribute       | Description | Type                                                                     | Default     |
+| -------------------- | --------------- | ----------- | ------------------------------------------------------------------------ | ----------- |
+| `icon` _(required)_  | `icon`          |             | `string`                                                                 | `undefined` |
+| `label` _(required)_ | `label`         |             | `string`                                                                 | `undefined` |
+| `notifications`      | `notifications` |             | `number`                                                                 | `0`         |
+| `status`             | `status`        |             | `"caution" \| "critical" \| "normal" \| "off" \| "serious" \| "standby"` | `'normal'`  |
+| `sublabel`           | `sublabel`      |             | `string`                                                                 | `undefined` |
 
 
 ## Dependencies
 
 ### Depends on
 
-- [rux-icon](../rux-icon)
 - [rux-status](../rux-status)
+- [rux-icon](../rux-icon)
 
 ### Graph
 ```mermaid
 graph TD;
-  rux-monitoring-icon --> rux-icon
   rux-monitoring-icon --> rux-status
+  rux-monitoring-icon --> rux-icon
   style rux-monitoring-icon fill:#f9f,stroke:#333,stroke-width:4px
-````
+```
 
----
+----------------------------------------------
 
-_Built with [StencilJS](https://stenciljs.com/)_
+*Built with [StencilJS](https://stenciljs.com/)*

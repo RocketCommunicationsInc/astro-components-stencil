@@ -1,8 +1,10 @@
-import { Component, Host, h, Prop, State, Watch } from '@stencil/core';
-import { collapseNotifications } from '../../utils/utils'
+import { Component, h, Prop, State, Watch } from '@stencil/core';
 import { Status } from '../../common/commonTypes.module'
+import MonitoringBadge from '../../common/functional-components/MonitoringBadge'
+import MonitoringLabel from '../../common/functional-components/MonitoringLabel'
 
-interface RangeItem {
+
+export interface RangeItem {
   threshold: number,
   status: Status
 }
@@ -104,7 +106,7 @@ export class RuxMonitoringProgressIcon {
   private _iconTemplate() {
     return (
       <div id="icon-template-wrapper">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="rux-status--${this.status}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class={`rux-status--${this.status}`}>
           <g id="progress">
             <circle 
               cx="60" 
@@ -135,12 +137,6 @@ export class RuxMonitoringProgressIcon {
     );
   }
 
-  // updated(changedProperties) {
-  //   if (changedProperties.get('progress')) {
-  //     this.updateProgress();
-  //   }
-  // }
-
   updateProgress() {
     this.status = this.range.find((range) => this.progress < range.threshold).status || this.range[0].status;
 
@@ -152,7 +148,7 @@ export class RuxMonitoringProgressIcon {
 
   render() {
     return (
-      <Host
+      <div
         id="rux-advanced-status__icon"
         class="rux-advanced-status"
         title={`${this.notifications} ${this.label} ${this.sublabel}`}
@@ -161,11 +157,38 @@ export class RuxMonitoringProgressIcon {
         <div class="rux-advanced-status__icon-group">
           <rux-status status={this.status}></rux-status>
 
-          {this._iconTemplate()} {this._badgeTemplate()}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class={`rux-status--${this.status}`}>
+          <g id="progress">
+            <circle 
+              cx="60" 
+              cy="60" 
+              r="56" 
+              fill="transparent" 
+              stroke="rgba(40, 63, 88, 1)" 
+              stroke-width="10" 
+              transform="rotate(-90 61 60)"/>
+            <circle 
+              cx="60" 
+              cy="60" 
+              r="56" 
+              fill="transparent" 
+              stroke-dasharray="351.8583772 351.8583772" 
+              stroke-dashoffset={this._graphProgress} 
+              stroke-linecap="round" 
+              stroke-width="10" 
+              class="progress-ring__circle" 
+              transform="rotate(-90 61 60)"
+            />
+          </g>
+        </svg>
+        <div class="rux-advanced-status__progress">
+          ${Math.ceil((this.progress / this.max) * 100)}%
+        </div>
+          <MonitoringBadge notifications={this.notifications} />
         </div>
 
-        {this._labelTemplate()}
-      </Host>
+        <MonitoringLabel label={this.label} sublabel={this.sublabel} />
+      </div>
     );
   }
 
