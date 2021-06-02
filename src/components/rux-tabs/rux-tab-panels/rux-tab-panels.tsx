@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, Element, Event, EventEmitter } from '@stencil/core';
+import { Component, Host, h, Prop, Element, Event, EventEmitter, Watch } from '@stencil/core';
 import { RuxTabPanel } from '../rux-tab-panel/rux-tab-panel';
 
 @Component({
@@ -20,6 +20,7 @@ export class RuxTabPanels {
     }
     connectedCallback(){
         this.el.setAttribute('style', 'position: relative; width: 100%;');
+      
 
     }
     //! Want willLoad instead
@@ -29,12 +30,19 @@ export class RuxTabPanels {
         this._registerTabPanels(this.slottedChildren);
        
     }
+    // @Watch('slottedChildren')
+    // watchHandler(){
+    //     this._getSlottedChildren();
+    // }
 
-    @Event() registerPanels: EventEmitter<HTMLRuxTabPanelsElement[]> //! Might need to be panel not panels
+    @Event({ eventName: 'registerPanels'}) registerPanels: EventEmitter<HTMLRuxTabPanelsElement[]> //! Might need to be panel not panels
     _registerTabPanels(children: HTMLRuxTabPanelsElement[]){
         console.log('attempt register panels')
+        
         //* Emit the whole arr, map on parent
+        console.log(children, 'children to emit');
         this.registerPanels.emit(children);
+
         // this.slottedChildren.map(child => {
         //     console.log(child, "a child here inside of _registerTabPanels");
         //     this.registerPanels.emit(child);

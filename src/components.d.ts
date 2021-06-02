@@ -5324,6 +5324,7 @@ export namespace Components {
     interface RuxTabs {
         "_panels": Array<RuxTabPanel>;
         "_panelsGroup": string;
+        "_selectedTabId": string;
         "_tabs": Array<HTMLRuxTabElement>;
         "id": string;
         "small": boolean;
@@ -18094,6 +18095,7 @@ declare namespace LocalJSX {
     interface RuxTab {
         "disabled"?: boolean;
         "id"?: string;
+        "onSendId"?: (event: CustomEvent<string>) => void;
         "selected"?: boolean;
     }
     interface RuxTabPanels {
@@ -18103,6 +18105,7 @@ declare namespace LocalJSX {
     interface RuxTabs {
         "_panels"?: Array<RuxTabPanel>;
         "_panelsGroup"?: string;
+        "_selectedTabId"?: string;
         "_tabs"?: Array<HTMLRuxTabElement>;
         "id"?: string;
         "small"?: boolean;

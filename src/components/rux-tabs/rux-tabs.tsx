@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, Element, Listen } from '@stencil/core';
+import { Component, Host, h, Prop, Element, Listen, Watch } from '@stencil/core';
 import { RuxTab } from './rux-tab/rux-tab';
 import { RuxTabPanels } from './rux-tab-panels/rux-tab-panels'
 import { RuxTabPanel } from './rux-tab-panel/rux-tab-panel';
@@ -20,23 +20,38 @@ export class RuxTabs {
   @Prop() _panels: Array<RuxTabPanel> = []
   @Prop() _panelsGroup: string = '';
   @Prop() _tabs: Array<HTMLRuxTabElement> = [];
+  @Prop() _selectedTabId: string = '';
 
   @Element() host: HTMLElement;
 
-  @Listen('registerPanels')
-  handleListen(e: CustomEvent<HTMLRuxTabPanelsElement[]>){
-    console.log('heard the registerPanels e', e);
-    // this._registerPanels(e);
+  @Listen('sendId', {target: 'window'})
+  handleListenSendId(e){
+    // console.log('heard sendId', e)
+    this._selectedTabId = e.detail;
+  }
+  @Watch('_selectedTabId')
+  tabSwitcher(e){
+    this._registerPanels(e)
+  }
+  @Listen('registerPanels', {target: 'window'})
+  handleListen(e){
+    // console.log('heard the registerPanels e', e);
+    // e.detail.forEach(panel => {
+    //   console.log(panel.attributes[0].value, 'TESTING HERE')
+    //   console.log(this.host.getAttribute('id'), 'TESTING HOST ID')
+    // })
+    this._registerPanels(e);
   }
 
 
   connectedCallback(){
     // window.addEventListener('register-panels', this._registerPanels);
     this.host.addEventListener('click', (e) => this._onClick(e));
-    console.log(this.host, 'host')
+    // console.log(this.host, 'host')
     //build tabs arr
     this._addTabs();
-    console.log(this._tabs, 'tabs here');
+    this._selectedTabId = this._tabs[0].id;
+    // console.log(this._tabs, 'tabs here');
   }
 
   _addTabs(){
@@ -45,9 +60,20 @@ export class RuxTabs {
   }
 
   _registerPanels(e) {
-    if (e.detail.for === this.host.getAttribute('id')){
-      this._panels = Array.from(e.detail.panels);
-    }
+    console.log(e.detail, 'E DETAIL')
+    e.detail.forEach(panel => {
+      console.log(`Pannel Attr Val: ${panel.attributes[0].value}, selcted tab id: ${this._selectedTabId}`)
+      if(panel.attributes[0].value === this._selectedTabId){
+        console.log(`panel.attr[0].val: ${panel.attributes[0].value}, selectedTab: ${this._selectedTabId}`)
+        this._panels.push(panel);
+      }
+    })
+    // if (e.detail. === this.host.getAttribute('id')){
+    //   this._panels = Array.from(e.detail.panels);
+    // }
+    // if tab isn't selected, default to the first tab
+    const selectedTab = this._tabs.find((tab) => tab.selected) || this._tabs[0];
+    this._setTab(selectedTab);
   }
 
   _onClick(e) {
