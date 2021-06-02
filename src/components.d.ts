@@ -40,7 +40,7 @@ export namespace Components {
         /**
           * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
          */
-        "hideTimezone"?: boolean;
+        "hideTimezone": boolean;
         /**
           * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax), displays a timestamp labeled "LOS" next to the standard clock.
          */
@@ -5349,6 +5349,8 @@ export namespace Components {
     }
     interface RuxStatus {
         "status": Status;
+    }
+    interface RuxSwitch {
     }
 }
 declare global {
@@ -11724,6 +11726,12 @@ declare global {
         prototype: HTMLRuxStatusElement;
         new (): HTMLRuxStatusElement;
     };
+    interface HTMLRuxSwitchElement extends Components.RuxSwitch, HTMLStencilElement {
+    }
+    var HTMLRuxSwitchElement: {
+        prototype: HTMLRuxSwitchElement;
+        new (): HTMLRuxSwitchElement;
+    };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
         "rux-classification-marking": HTMLRuxClassificationMarkingElement;
@@ -12787,6 +12795,7 @@ declare global {
         "rux-monitoring-icon": HTMLRuxMonitoringIconElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-status": HTMLRuxStatusElement;
+        "rux-switch": HTMLRuxSwitchElement;
     }
 }
 declare namespace LocalJSX {
@@ -18133,6 +18142,8 @@ declare namespace LocalJSX {
     interface RuxStatus {
         "status"?: Status;
     }
+    interface RuxSwitch {
+    }
     interface IntrinsicElements {
         "rux-button": RuxButton;
         "rux-classification-marking": RuxClassificationMarking;
@@ -19196,6 +19207,7 @@ declare namespace LocalJSX {
         "rux-monitoring-icon": RuxMonitoringIcon;
         "rux-progress": RuxProgress;
         "rux-status": RuxStatus;
+        "rux-switch": RuxSwitch;
     }
 }
 export { LocalJSX as JSX };
@@ -20264,6 +20276,7 @@ declare module "@stencil/core" {
             "rux-monitoring-icon": LocalJSX.RuxMonitoringIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
+            "rux-switch": LocalJSX.RuxSwitch & JSXBase.HTMLAttributes<HTMLRuxSwitchElement>;
         }
     }
 }
