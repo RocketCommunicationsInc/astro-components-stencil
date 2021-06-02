@@ -3,7 +3,7 @@ import { Prop, Component, h } from '@stencil/core'
 @Component({
     tag: 'rux-button-group',
     styleUrl: 'rux-button-group.scss',
-    shadow: false,
+    shadow: true,
 })
 export class RuxButtonGroup {
     @Prop() align: 'left' | 'center' | 'right' = 'left'
