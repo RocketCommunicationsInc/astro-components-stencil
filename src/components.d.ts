@@ -13,7 +13,6 @@ export namespace Components {
         "iconOnly": boolean;
         "outline": boolean;
         "size"?: 'small' | 'large';
-        "type": string;
     }
     interface RuxButtonGroup {
         "align": 'left' | 'center' | 'right';
@@ -12807,7 +12806,6 @@ declare namespace LocalJSX {
         "iconOnly"?: boolean;
         "outline"?: boolean;
         "size"?: 'small' | 'large';
-        "type"?: string;
     }
     interface RuxButtonGroup {
         "align"?: 'left' | 'center' | 'right';

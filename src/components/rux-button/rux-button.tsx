@@ -9,7 +9,7 @@ export class RuxButton {
     @Prop({ reflect: true }) icon: string = ''
     @Prop({ reflect: true, attribute: 'iconOnly' }) iconOnly: boolean = false
     @Prop() outline: boolean = false
-    @Prop() type: string = 'button'
+    // @Prop() type: string = 'button'
     @Prop({ reflect: true }) disabled = false
     @Prop({ reflect: true }) size?: 'small' | 'large'
 
