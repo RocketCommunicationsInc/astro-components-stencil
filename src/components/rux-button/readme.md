@@ -131,7 +131,6 @@ For more information about AstroUXDS usage outside of a Web Component environmen
 | `iconOnly` | `icononly` |             | `boolean`            | `false`     |
 | `outline`  | `outline`  |             | `boolean`            | `false`     |
 | `size`     | `size`     |             | `"large" \| "small"` | `undefined` |
-| `type`     | `type`     |             | `string`             | `'button'`  |
 
 
 ## CSS Custom Properties
