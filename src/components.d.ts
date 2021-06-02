@@ -5354,6 +5354,9 @@ export namespace Components {
         "status": Status;
     }
     interface RuxSwitch {
+        "checked": boolean;
+        "name": string;
+        "value"?: string | null;
     }
 }
 declare global {
@@ -18156,6 +18159,13 @@ declare namespace LocalJSX {
         "status"?: Status;
     }
     interface RuxSwitch {
+        "checked"?: boolean;
+        "name"?: string;
+        /**
+          * Emitted when the value property has changed.
+         */
+        "onRux-change"?: (event: CustomEvent<any>) => void;
+        "value"?: string | null;
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;
