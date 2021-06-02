@@ -10,7 +10,6 @@ describe('rux-button', () => {
             icon: '',
             iconOnly: false,
             outline: false,
-            type: 'button',
             disabled: false,
         })
     })

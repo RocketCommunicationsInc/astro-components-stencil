@@ -24,10 +24,10 @@ export const StandardButton = () => {
     return html`
         <div style="padding: 10%; display: flex; justify-content: center;">
             <rux-button
-                .size="${size}"
                 ?disabled="${disabled}"
+                ?icon-only="${iconOnly}"
                 ?outline="${outline}"
-                .iconOnly="${iconOnly}"
+                .size="${size}"
                 .icon="${withIcon ? 'settings' : null}"
                 >Button</rux-button
             >
@@ -54,10 +54,10 @@ export const slottedIconButton = () => {
     return html`
         <div style="padding: 10%; display: flex; justify-content: center;">
             <rux-button
-                .size="${size}"
                 ?disabled="${disabled}"
                 ?outline="${outline}"
-                .iconOnly="${iconOnly}"
+                ?icon-only="${iconOnly}"
+                .size="${size}"
             >
                 <rux-icon
                     icon="palette"
@@ -151,7 +151,7 @@ export const AllButtonVariants = () => html`
     >
         <ul class="button-list">
             <li>
-                <rux-button size="small" iconOnly icon="settings"
+                <rux-button size="small" icon-only icon="settings"
                     >Small icon-only button</rux-button
                 >
                 <rux-button size="small">Small button</rux-button>
@@ -162,7 +162,7 @@ export const AllButtonVariants = () => html`
                 >
             </li>
             <li>
-                <rux-button size="small" iconOnly disabled icon="settings"
+                <rux-button size="small" icon-only disabled icon="settings"
                     >Small disabled icon-only button</rux-button
                 >
                 <rux-button size="small" disabled
@@ -175,7 +175,7 @@ export const AllButtonVariants = () => html`
                 >
             </li>
             <li>
-                <rux-button size="small" iconOnly outline icon="settings"
+                <rux-button size="small" icon-only outline icon="settings"
                     >Small outline icon-only button</rux-button
                 >
                 <rux-button size="small" outline
@@ -190,7 +190,7 @@ export const AllButtonVariants = () => html`
             <li>
                 <rux-button
                     size="small"
-                    iconOnly
+                    icon-only
                     disabled
                     outline
                     icon="settings"
@@ -208,7 +208,7 @@ export const AllButtonVariants = () => html`
         </ul>
         <ul class="button-list">
             <li>
-                <rux-button iconOnly icon="settings"
+                <rux-button icon-only icon="settings"
                     >Standard icon-only button</rux-button
                 >
                 <rux-button>Standard button</rux-button>
@@ -219,7 +219,7 @@ export const AllButtonVariants = () => html`
                 >
             </li>
             <li>
-                <rux-button iconOnly disabled icon="settings"
+                <rux-button icon-only disabled icon="settings"
                     >Standard disabled icon-only button</rux-button
                 >
                 <rux-button disabled>Standard disabled button</rux-button>
@@ -230,7 +230,7 @@ export const AllButtonVariants = () => html`
                 >
             </li>
             <li>
-                <rux-button iconOnly outline icon="settings"
+                <rux-button icon-only outline icon="settings"
                     >Standard outline icon-only button</rux-button
                 >
                 <rux-button outline>Standard outline button</rux-button>
@@ -241,7 +241,7 @@ export const AllButtonVariants = () => html`
                 >
             </li>
             <li>
-                <rux-button iconOnly disabled outline icon="settings"
+                <rux-button icon-only disabled outline icon="settings"
                     >Standard disabled outline icon-only button</rux-button
                 >
                 <rux-button outline disabled
@@ -256,7 +256,7 @@ export const AllButtonVariants = () => html`
         </ul>
         <ul class="button-list">
             <li>
-                <rux-button size="large" iconOnly icon="settings"
+                <rux-button size="large" icon-only icon="settings"
                     >Large icon-only button</rux-button
                 >
                 <rux-button size="large">Large button</rux-button>
@@ -267,7 +267,7 @@ export const AllButtonVariants = () => html`
                 >
             </li>
             <li>
-                <rux-button size="large" iconOnly disabled icon="settings"
+                <rux-button size="large" icon-only disabled icon="settings"
                     >Large disabled icon-only button</rux-button
                 >
                 <rux-button size="large" disabled
@@ -280,7 +280,7 @@ export const AllButtonVariants = () => html`
                 >
             </li>
             <li>
-                <rux-button size="large" iconOnly outline icon="settings"
+                <rux-button size="large" icon-only outline icon="settings"
                     >Large outline icon-only button</rux-button
                 >
                 <rux-button size="large" outline
@@ -295,7 +295,7 @@ export const AllButtonVariants = () => html`
             <li>
                 <rux-button
                     size="large"
-                    iconOnly
+                    icon-only
                     disabled
                     outline
                     icon="settings"

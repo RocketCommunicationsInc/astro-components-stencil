@@ -124,13 +124,13 @@ For more information about AstroUXDS usage outside of a Web Component environmen
 
 ## Properties
 
-| Property   | Attribute  | Description | Type                 | Default     |
-| ---------- | ---------- | ----------- | -------------------- | ----------- |
-| `disabled` | `disabled` |             | `boolean`            | `false`     |
-| `icon`     | `icon`     |             | `string`             | `''`        |
-| `iconOnly` | `icononly` |             | `boolean`            | `false`     |
-| `outline`  | `outline`  |             | `boolean`            | `false`     |
-| `size`     | `size`     |             | `"large" \| "small"` | `undefined` |
+| Property   | Attribute   | Description | Type                 | Default     |
+| ---------- | ----------- | ----------- | -------------------- | ----------- |
+| `disabled` | `disabled`  |             | `boolean`            | `false`     |
+| `icon`     | `icon`      |             | `string`             | `''`        |
+| `iconOnly` | `icon-only` |             | `boolean`            | `false`     |
+| `outline`  | `outline`   |             | `boolean`            | `false`     |
+| `size`     | `size`      |             | `"large" \| "small"` | `undefined` |
 
 
 ## CSS Custom Properties
