@@ -1,5 +1,4 @@
 import { Prop, Component, h } from '@stencil/core'
-import '../rux-icon/rux-icon'
 
 @Component({
     tag: 'rux-button',
