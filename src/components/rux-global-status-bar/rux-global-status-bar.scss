@@ -36,16 +36,44 @@ header {
 }
 
 .app-meta {
-    display: block;
+    // temporary styles to accomdate temp app state and user name
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    // display: block;
+
     padding: 0;
     // pulls app-meta content to justify left
     margin: 0 auto 0 10px;
     color: var(--inputBackground);
 }
 
+.app-info-wrapper {
+    flex-basis: 100%;
+}
+
+.temp-app-state {
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    margin-right: 11px;
+    font-size: 14px;
+    padding: 2px 4px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.temp-user-name {
+    flex-basis: 50%;
+    font-size: 14px;
+    padding: 2px;
+    letter-spacing: 0.5px;
+}
+
 .app-meta h1 {
     height: 40px;
     letter-spacing: 0.25px;
+    margin-bottom: 0px;
 }
 
 .app-name {
