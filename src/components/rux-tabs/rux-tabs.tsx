@@ -1,6 +1,4 @@
-import { Component, Host, h, Prop, Element, Listen, Watch } from '@stencil/core';
-import { RuxTab } from './rux-tab/rux-tab';
-import { RuxTabPanels } from './rux-tab-panels/rux-tab-panels'
+import { Component, Host, h, Prop, Element, Listen } from '@stencil/core';
 import { RuxTabPanel } from './rux-tab-panel/rux-tab-panel';
 
 
@@ -10,15 +8,33 @@ import { RuxTabPanel } from './rux-tab-panel/rux-tab-panel';
   shadow: true,
 })
 
+//on load: default should be 
+//selectedTabId should be this._tabs[0].id, and change when diff tab is clicked on
+//_tabs gets filled on connectedCallback thru the _addTabs func
+// _panels needs to be filled by _registerPanels, but needs to have uniform data being sent as params to _registerPanels.
+// currently has diff event detail formats so can't run forEach sometimes
+// Not sure we need id on ruxtabs
+/*
+On load: default tab selected, panels registered and loaded into _panels prop
+- Only first tab should be selected, and only first tab panel info should be shown. 
+ - Am I handling hidden class anywhere? 
+- On a click of a diff tab, _selectedTabId should change based on the emitted event from rux-tab. 
+- selected class should be added/removed based on new _selectedTabId
+- On a click of a diff tab, panel info should change (hidden class) 
+
+
+
+
+
+*/
 
 
 export class RuxTabs {
 
-  @Prop({ mutable: true }) id: string = "";
+  @Prop({ mutable: true }) ruxTabsId: string = "";
   @Prop() small: boolean = false;
-  //? This might need to be <ruxtabpanel> 
-  @Prop() _panels: Array<RuxTabPanel> = []
-  @Prop() _panelsGroup: string = '';
+  @Prop() _panels: Array<HTMLRuxTabsPanelElement> = []
+  // @Prop() _panelsGroup: string = '';
   @Prop() _tabs: Array<HTMLRuxTabElement> = [];
   @Prop() _selectedTabId: string = '';
 
@@ -29,10 +45,11 @@ export class RuxTabs {
     // console.log('heard sendId', e)
     this._selectedTabId = e.detail;
   }
-  @Watch('_selectedTabId')
-  tabSwitcher(e){
-    this._registerPanels(e)
-  }
+  // @Watch('_selectedTabId')
+  // tabSwitcher(e){
+  //   console.log(e, 'E IN TABSWITCHER')
+  //   this._registerPanels(e)
+  // }
   @Listen('registerPanels', {target: 'window'})
   handleListen(e){
     // console.log('heard the registerPanels e', e);
@@ -50,20 +67,29 @@ export class RuxTabs {
     // console.log(this.host, 'host')
     //build tabs arr
     this._addTabs();
+    this._addPanels();
     this._selectedTabId = this._tabs[0].id;
     // console.log(this._tabs, 'tabs here');
   }
 
   _addTabs(){
     this._tabs = Array.from(this.host.querySelectorAll('rux-tab'));
+    console.log(`tabs added: ${this._tabs}`)
     //get all id's from tabs rendered 
+  }
+  _addPanels(){
+    console.log('inside add panels')
+    this._panels = Array.from(this.host.querySelectorAll('rux-tab-panel'));
+    console.log('panels added, here: ', this._panels)
   }
 
   _registerPanels(e) {
     console.log(e.detail, 'E DETAIL')
+    console.log(typeof this._panels, '_panels type')
     e.detail.forEach(panel => {
       console.log(`Pannel Attr Val: ${panel.attributes[0].value}, selcted tab id: ${this._selectedTabId}`)
       if(panel.attributes[0].value === this._selectedTabId){
+        console.log(panel, 'PANEL')
         console.log(`panel.attr[0].val: ${panel.attributes[0].value}, selectedTab: ${this._selectedTabId}`)
         this._panels.push(panel);
       }
@@ -92,7 +118,7 @@ export class RuxTabs {
     this._panels.forEach((panel) => panel.classes.push('hidden'));
   }
 
-  //! Error on tab click, this._setTab is not a funciton
+  
   _setTab(selectedTab) {
     console.log('inside settab')
     this._reset();
@@ -100,7 +126,7 @@ export class RuxTabs {
 
     // find the panel whose aria-labeldby attribute matches the tab’s id
     const selectedPanel = this._panels.find(
-        (panel) => panel.el.getAttribute('aria-labelledby') === selectedTab.getAttribute('id')
+        (panel) => panel.getAttribute('aria-labelledby') === selectedTab.getAttribute('id')
     );
 
     if (selectedTab) selectedTab.selected = true;

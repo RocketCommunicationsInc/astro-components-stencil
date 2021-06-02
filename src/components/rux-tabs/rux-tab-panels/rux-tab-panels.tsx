@@ -1,5 +1,4 @@
-import { Component, Host, h, Prop, Element, Event, EventEmitter, Watch } from '@stencil/core';
-import { RuxTabPanel } from '../rux-tab-panel/rux-tab-panel';
+import { Component, Host, h, Prop, Element, Event, EventEmitter } from '@stencil/core';
 
 @Component({
     tag: 'rux-tab-panels',
@@ -35,7 +34,7 @@ export class RuxTabPanels {
     //     this._getSlottedChildren();
     // }
 
-    @Event({ eventName: 'registerPanels'}) registerPanels: EventEmitter<HTMLRuxTabPanelsElement[]> //! Might need to be panel not panels
+    @Event() registerPanels: EventEmitter<HTMLRuxTabPanelsElement[]> //! Might need to be panel not panels
     _registerTabPanels(children: HTMLRuxTabPanelsElement[]){
         console.log('attempt register panels')
         

@@ -5,7 +5,6 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { RuxTabPanel } from "./components/rux-tabs/rux-tab-panel/rux-tab-panel";
 export namespace Components {
     interface RuxButton {
         "disabled": boolean;
@@ -5315,18 +5314,17 @@ export namespace Components {
     }
     interface RuxTab {
         "disabled": boolean;
-        "id": string;
+        "ruxTabId": string;
         "selected": boolean;
     }
     interface RuxTabPanels {
         "slottedChildren": Array<HTMLRuxTabPanelsElement>;
     }
     interface RuxTabs {
-        "_panels": Array<RuxTabPanel>;
-        "_panelsGroup": string;
+        "_panels": Array<HTMLRuxTabsPanelElement>;
         "_selectedTabId": string;
         "_tabs": Array<HTMLRuxTabElement>;
-        "id": string;
+        "ruxTabsId": string;
         "small": boolean;
     }
     interface RuxTabsPanel {
@@ -18094,8 +18092,8 @@ declare namespace LocalJSX {
     }
     interface RuxTab {
         "disabled"?: boolean;
-        "id"?: string;
         "onSendId"?: (event: CustomEvent<string>) => void;
+        "ruxTabId"?: string;
         "selected"?: boolean;
     }
     interface RuxTabPanels {
@@ -18103,11 +18101,10 @@ declare namespace LocalJSX {
         "slottedChildren"?: Array<HTMLRuxTabPanelsElement>;
     }
     interface RuxTabs {
-        "_panels"?: Array<RuxTabPanel>;
-        "_panelsGroup"?: string;
+        "_panels"?: Array<HTMLRuxTabsPanelElement>;
         "_selectedTabId"?: string;
         "_tabs"?: Array<HTMLRuxTabElement>;
-        "id"?: string;
+        "ruxTabsId"?: string;
         "small"?: boolean;
     }
     interface RuxTabsPanel {

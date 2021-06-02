@@ -7,7 +7,7 @@ import { Component, Host, h, Prop, Element, Event, EventEmitter } from '@stencil
 })
 export class RuxTab {
 
-  @Prop({ mutable: true }) id: string = "";
+  @Prop({ mutable: true }) ruxTabId: string = "";
   @Prop({ reflect: true }) selected: boolean = false;
   @Prop({ reflect: true }) disabled: boolean = false;
   //* Need to be able to change selected through clicks. 
@@ -35,7 +35,7 @@ export class RuxTab {
     if(this.disabled){
       e.stopImmediatePropagation();
     }
-    this._sendTabId(this.id)
+    this._sendTabId(this.ruxTabId)
 
   } 
 
