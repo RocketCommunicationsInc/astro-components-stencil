@@ -23,10 +23,14 @@ describe('rux-button-group', () => {
 
         expect(page.root).toEqualHtml(`
           <rux-button-group>
-            <div class="rux-button-group rux-button-group--left">
-              <rux-button icon="" outline>
-                <mock:shadow-root>
-                  <button type="button" class="rux-button rux-button--outline">
+            <mock:shadow-root>
+              <div class="rux-button-group rux-button-group--left">
+                <slot></slot>
+              </div>
+            </mock:shadow-root>
+              <rux-button icon="" outline="">
+                  <mock:shadow-root>
+                  <button class="rux-button rux-button--outline" type="button">
                     <slot></slot>
                   </button>
                 </mock:shadow-root>
@@ -34,13 +38,12 @@ describe('rux-button-group', () => {
               </rux-button>
               <rux-button icon="">
                 <mock:shadow-root>
-                  <button type="button" class="rux-button">
+                  <button class="rux-button" type="button">
                     <slot></slot>
                   </button>
                 </mock:shadow-root>
                 Button
               </rux-button>
-            </div>
           </rux-button-group>
         `)
     })
@@ -53,8 +56,11 @@ describe('rux-button-group', () => {
 
         expect(page.root).toEqualHtml(`
           <rux-button-group align="right">
-            <div class="rux-button-group rux-button-group--right">
-            </div>
+            <mock:shadow-root>
+              <div class="rux-button-group rux-button-group--right">
+                <slot></slot>
+              </div>
+            </mock:shadow-root>
           </rux-button-group>
         `)
     })
