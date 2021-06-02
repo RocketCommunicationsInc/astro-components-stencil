@@ -18097,7 +18097,7 @@ declare namespace LocalJSX {
         "selected"?: boolean;
     }
     interface RuxTabPanels {
-        "onRegisterPanels"?: (event: CustomEvent<HTMLRuxTabPanelsElement>) => void;
+        "onRegisterPanels"?: (event: CustomEvent<HTMLRuxTabPanelsElement[]>) => void;
         "slottedChildren"?: Array<HTMLRuxTabPanelsElement>;
     }
     interface RuxTabs {

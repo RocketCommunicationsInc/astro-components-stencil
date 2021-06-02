@@ -24,13 +24,16 @@ export class RuxTabs {
   @Element() host: HTMLElement;
 
   @Listen('registerPanels')
-  handleListen(e){
-    this._registerPanels(e);
+  handleListen(e: CustomEvent<HTMLRuxTabPanelsElement[]>){
+    console.log('heard the registerPanels e', e);
+    // this._registerPanels(e);
   }
+
 
   connectedCallback(){
     // window.addEventListener('register-panels', this._registerPanels);
-    this.host.addEventListener('click', this._onClick);
+    this.host.addEventListener('click', (e) => this._onClick(e));
+    console.log(this.host, 'host')
     //build tabs arr
     this._addTabs();
     console.log(this._tabs, 'tabs here');
@@ -48,6 +51,9 @@ export class RuxTabs {
   }
 
   _onClick(e) {
+    console.log('click');
+    console.log(e, 'e')
+
     if (e.target.getAttribute('role') === 'tab' && e.target.getAttribute('disabled') === null) {
       this._setTab(e.target);
     }
@@ -62,7 +68,9 @@ export class RuxTabs {
 
   //! Error on tab click, this._setTab is not a funciton
   _setTab(selectedTab) {
+    console.log('inside settab')
     this._reset();
+    console.log(this._panels, 'panels prop')
 
     // find the panel whose aria-labeldby attribute matches the tab’s id
     const selectedPanel = this._panels.find(

@@ -13,23 +13,34 @@ export class RuxTabPanels {
 
     _getSlottedChildren(){
         const slot = this.el.shadowRoot.querySelector('slot');
+        console.log(slot, 'slot _getslotted');
         const childNodes = slot.assignedNodes({flatten: true});
         this.slottedChildren = Array.prototype.filter.call(childNodes, (node) => node.nodeType == Node.ELEMENT_NODE);
-
+        console.log(this.slottedChildren, 'slottedChildren on panels')
     }
     connectedCallback(){
         this.el.setAttribute('style', 'position: relative; width: 100%;');
+
+    }
+    //! Want willLoad instead
+    componentDidLoad(){
+        this._getSlottedChildren();
+        console.log('calling registerTabPanels');
+        this._registerTabPanels(this.slottedChildren);
+       
     }
 
-    @Event({
-        eventName: 'registerPanels'
-    }) registerPanels: EventEmitter<HTMLRuxTabPanelsElement> //! Might need to be panel not panels
-    _registerTabPanels(){
-        this.slottedChildren.map(child => {
-            console.log(child, "a child here inside of _registerTabPanels");
-            this.registerPanels.emit(child);
-        })
+    @Event() registerPanels: EventEmitter<HTMLRuxTabPanelsElement[]> //! Might need to be panel not panels
+    _registerTabPanels(children: HTMLRuxTabPanelsElement[]){
+        console.log('attempt register panels')
+        //* Emit the whole arr, map on parent
+        this.registerPanels.emit(children);
+        // this.slottedChildren.map(child => {
+        //     console.log(child, "a child here inside of _registerTabPanels");
+        //     this.registerPanels.emit(child);
+        // })
     }
+
 
 
     render() {
