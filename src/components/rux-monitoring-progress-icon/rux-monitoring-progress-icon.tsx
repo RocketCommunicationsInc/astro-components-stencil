@@ -15,9 +15,9 @@ export interface RangeItem {
   shadow: true,
 })
 export class RuxMonitoringProgressIcon {
+  _circumference = 56 * 2 * Math.PI
 
   @State() _status: Status
-  @State() _circumference: number = 56 * 2 * Math.PI
   @State() _graphProgress: number = 0
 
   /**
@@ -98,7 +98,7 @@ export class RuxMonitoringProgressIcon {
             status: 'serious',
           },
           {
-            threshold: 101,
+            threshold: 100,
             status: 'critical',
           },
         ];
@@ -115,10 +115,12 @@ export class RuxMonitoringProgressIcon {
 
   updateProgress() {
     this._status = this.range.find((range) => this.progress <= range.threshold).status || this.range[0].status;
-    this._graphProgress = this._circumference - (this.progress / this.max) * this._circumference;
+    this._graphProgress = this._circumference - (this.progress / (this.max - this.min)) * this._circumference;
   }
 
   render() {
+    console.log(this._graphProgress)
+
     return (
       <div
         id="rux-advanced-status__icon"
