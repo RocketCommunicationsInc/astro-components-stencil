@@ -35,7 +35,8 @@ export class RuxSwitch {
     /**
      * Emitted when the value property has changed.
      */
-    @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter<SwitchChangeEvent>
+    @Event({ eventName: 'rux-change' })
+    ruxChange!: EventEmitter<SwitchChangeEvent>
 
     @Watch('checked')
     checkedChanged(checked: boolean) {
@@ -52,13 +53,20 @@ export class RuxSwitch {
     render() {
         const { inputId, name, disabled, checked } = this
         return (
-            <Host onClick={this.handleClick}>
+            <Host
+                onClick={this.handleClick}
+                aria-checked={`${checked}`}
+                aria-hidden={disabled ? 'true' : null}
+                role="switch"
+            >
                 <div class="rux-switch">
                     <input
+                        aria-checked={`${checked}`}
                         id={inputId}
                         class="rux-switch__input"
                         type="checkbox"
                         name={name}
+                        role="switch"
                         disabled={disabled}
                         checked={checked}
                     />
