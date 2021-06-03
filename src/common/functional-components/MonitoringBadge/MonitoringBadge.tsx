@@ -1,6 +1,6 @@
 import { FunctionalComponent, h} from '@stencil/core'
 
-const collapseNotifications = (value: number) => {
+export const collapseNotifications = (value: number) => {
     const n = Math.floor(value);
   
     // don't show any values less than 0

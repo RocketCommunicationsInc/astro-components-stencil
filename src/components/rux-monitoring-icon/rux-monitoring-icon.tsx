@@ -1,6 +1,6 @@
 import { Component, h, Prop, Watch } from '@stencil/core';
 import { Status } from '../../common/commonTypes.module'
-import MonitoringBadge from '../../common/functional-components/MonitoringBadge'
+import MonitoringBadge from '../../common/functional-components/MonitoringBadge/MonitoringBadge'
 import MonitoringLabel from '../../common/functional-components/MonitoringLabel'
 
 @Component({
