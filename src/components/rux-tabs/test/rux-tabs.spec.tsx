@@ -19,59 +19,23 @@ describe('rux-tabs', () => {
       </rux-tabs>
     `)
     })
-    it('hears the registerPanels event and adds panels', async () => {
-        const ruxTabs = new RuxTabs()
-
-        const page = await newSpecPage({
-            components: [RuxTabs, RuxTabPanels, RuxTab, RuxTabPanel],
-            html: `<rux-tabs id="tab-set-id-1">
-          <rux-tab id="tab-id-1">Tab 1 title</rux-tab>
-          <rux-tab id="tab-id-2">Tab 2 title</rux-tab>
-          <rux-tab id="tab-id-3">Tab 3 title</rux-tab>
-        </rux-tabs>
-        
-        <rux-tab-panels aria-labelledby="tab-set-id-1">
-          <rux-tab-panel aria-labelledby="tab-id-1">Tab 1 HTML content</rux-tab-panel>
-          <rux-tab-panel aria-labelledby="tab-id-2">Tab 2 HTML content</rux-tab-panel>
-          <rux-tab-panel aria-labelledby="tab-id-3">Tab 3 HTML content</rux-tab-panel>
-        </rux-tab-panels>`,
-        })
-        expect(ruxTabs._panels.length).toBe(3)
-    })
-    it('adds tabs correctly', async () => {
-        const ruxTabs = new RuxTabs()
-        const page = await newSpecPage({
-            components: [RuxTabs, RuxTabPanels, RuxTab, RuxTabPanel],
-            html: `<rux-tabs id="tab-set-id-1">
-        <rux-tab id="tab-id-1">Tab 1 title</rux-tab>
-        <rux-tab id="tab-id-2">Tab 2 title</rux-tab>
-        <rux-tab id="tab-id-3">Tab 3 title</rux-tab>
-      </rux-tabs>
-      
-      <rux-tab-panels aria-labelledby="tab-set-id-1">
-        <rux-tab-panel aria-labelledby="tab-id-1">Tab 1 HTML content</rux-tab-panel>
-        <rux-tab-panel aria-labelledby="tab-id-2">Tab 2 HTML content</rux-tab-panel>
-        <rux-tab-panel aria-labelledby="tab-id-3">Tab 3 HTML content</rux-tab-panel>
-      </rux-tab-panels>`,
-        })
-        expect(ruxTabs._tabs.length).toBe(3)
-    })
     it('hides everything using _reset method', async () => {
         const ruxTabs = new RuxTabs()
-        //   const page = await newSpecPage({
-        //       components: [RuxTabs, RuxTabPanels, RuxTab, RuxTabPanel],
-        //       html: `<rux-tabs id="tab-set-id-1">
-        //   <rux-tab id="tab-id-1">Tab 1 title</rux-tab>
-        //   <rux-tab id="tab-id-2">Tab 2 title</rux-tab>
-        //   <rux-tab id="tab-id-3">Tab 3 title</rux-tab>
-        // </rux-tabs>
+        const page = await newSpecPage({
+            components: [RuxTabs, RuxTab, RuxTabPanels, RuxTabPanel],
+            html: `<rux-tabs id="tab-set-id-1">
+                    <rux-tab id="tab-id-1"></rux-tab>
+                </rux-tabs>
+                <rux-tab-panels aria-labelledby="tab-set-id-1">
+                  <rux-tab-panel aria-labelledby="tab-id-1"></rux-tab-panel>
+                </rux-tab-panels>
+          `,
+        })
+        const tabs = page.root.shadowRoot.querySelectorAll('rux-tab')
+        const panels = page.root.shadowRoot.querySelectorAll('rux-tab-panel')
+        tabs.forEach((tab) => ruxTabs._tabs.push(tab))
+        panels.forEach((panel) => ruxTabs._panels.push(panel))
 
-        // <rux-tab-panels aria-labelledby="tab-set-id-1">
-        //   <rux-tab-panel aria-labelledby="tab-id-1">Tab 1 HTML content</rux-tab-panel>
-        //   <rux-tab-panel aria-labelledby="tab-id-2">Tab 2 HTML content</rux-tab-panel>
-        //   <rux-tab-panel aria-labelledby="tab-id-3">Tab 3 HTML content</rux-tab-panel>
-        // </rux-tab-panels>`,
-        //   })
         ruxTabs._reset()
         ruxTabs._tabs.forEach((tab) => expect(tab.selected).toBe(false))
         ruxTabs._panels.forEach((panel) =>
