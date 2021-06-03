@@ -7,6 +7,7 @@ import {
     Host,
     h,
 } from '@stencil/core'
+import { SwitchChangeEvent } from './rux-switch.model'
 
 @Component({
     tag: 'rux-switch',
@@ -15,14 +16,26 @@ import {
 })
 export class RuxSwitch {
     private inputId = `rux-switch-${id++}`
+    /**
+     * The name of the form input element
+     */
     @Prop() name: string
-    @Prop() disabled: boolean = false
-    @Prop({ mutable: true }) checked: boolean = false
+    /**
+     * Disables the button via HTML `disabled` attribute.
+     * Button takes on a distinct visual state.
+     * Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
+     */
+    @Prop() disabled?: boolean = false
+
+    /**
+     * Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.
+     */
+    @Prop({ mutable: true }) checked?: boolean = false
 
     /**
      * Emitted when the value property has changed.
      */
-    @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
+    @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter<SwitchChangeEvent>
 
     @Watch('checked')
     checkedChanged(checked: boolean) {
@@ -31,8 +44,8 @@ export class RuxSwitch {
         })
     }
 
-    handleClick(e) {
-        e.preventDefault()
+    handleClick(event: MouseEvent) {
+        event.preventDefault()
         this.checked = !this.checked
     }
 
