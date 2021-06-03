@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { Classification } from "./common/commonTypes.module";
+import { Classification, Status } from "./common/commonTypes.module";
 export namespace Components {
     interface RuxButton {
         "disabled": boolean;
@@ -13,6 +13,9 @@ export namespace Components {
         "iconOnly": boolean;
         "outline": boolean;
         "size"?: 'small' | 'large';
+    }
+    interface RuxButtonGroup {
+        "align": 'left' | 'center' | 'right';
     }
     interface RuxClassificationMarking {
         /**
@@ -5349,13 +5352,20 @@ export namespace Components {
         "icon": string;
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
+    interface RuxMonitoringIcon {
+        "icon": string;
+        "label": string;
+        "notifications": number;
+        "status": Status;
+        "sublabel": string;
+    }
     interface RuxProgress {
         "hideLabel": boolean;
         "max": number;
         "value": number;
     }
     interface RuxStatus {
-        "status": string;
+        "status": Status;
     }
 }
 declare global {
@@ -5364,6 +5374,12 @@ declare global {
     var HTMLRuxButtonElement: {
         prototype: HTMLRuxButtonElement;
         new (): HTMLRuxButtonElement;
+    };
+    interface HTMLRuxButtonGroupElement extends Components.RuxButtonGroup, HTMLStencilElement {
+    }
+    var HTMLRuxButtonGroupElement: {
+        prototype: HTMLRuxButtonGroupElement;
+        new (): HTMLRuxButtonGroupElement;
     };
     interface HTMLRuxClassificationMarkingElement extends Components.RuxClassificationMarking, HTMLStencilElement {
     }
@@ -11713,6 +11729,12 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement;
         new (): HTMLRuxIconZoomOutMapElement;
     };
+    interface HTMLRuxMonitoringIconElement extends Components.RuxMonitoringIcon, HTMLStencilElement {
+    }
+    var HTMLRuxMonitoringIconElement: {
+        prototype: HTMLRuxMonitoringIconElement;
+        new (): HTMLRuxMonitoringIconElement;
+    };
     interface HTMLRuxProgressElement extends Components.RuxProgress, HTMLStencilElement {
     }
     var HTMLRuxProgressElement: {
@@ -11727,6 +11749,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
+        "rux-button-group": HTMLRuxButtonGroupElement;
         "rux-classification-marking": HTMLRuxClassificationMarkingElement;
         "rux-clock": HTMLRuxClockElement;
         "rux-global-status-bar": HTMLRuxGlobalStatusBarElement;
@@ -12785,6 +12808,7 @@ declare global {
         "rux-icon-zoom-in-map": HTMLRuxIconZoomInMapElement;
         "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
+        "rux-monitoring-icon": HTMLRuxMonitoringIconElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-status": HTMLRuxStatusElement;
     }
@@ -12796,6 +12820,9 @@ declare namespace LocalJSX {
         "iconOnly"?: boolean;
         "outline"?: boolean;
         "size"?: 'small' | 'large';
+    }
+    interface RuxButtonGroup {
+        "align"?: 'left' | 'center' | 'right';
     }
     interface RuxClassificationMarking {
         /**
@@ -18132,16 +18159,24 @@ declare namespace LocalJSX {
         "icon"?: string;
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
+    interface RuxMonitoringIcon {
+        "icon"?: string;
+        "label"?: string;
+        "notifications"?: number;
+        "status"?: Status;
+        "sublabel"?: string;
+    }
     interface RuxProgress {
         "hideLabel"?: boolean;
         "max"?: number;
         "value"?: number;
     }
     interface RuxStatus {
-        "status"?: string;
+        "status"?: Status;
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;
+        "rux-button-group": RuxButtonGroup;
         "rux-classification-marking": RuxClassificationMarking;
         "rux-clock": RuxClock;
         "rux-global-status-bar": RuxGlobalStatusBar;
@@ -19200,6 +19235,7 @@ declare namespace LocalJSX {
         "rux-icon-zoom-in-map": RuxIconZoomInMap;
         "rux-icon-zoom-out": RuxIconZoomOut;
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
+        "rux-monitoring-icon": RuxMonitoringIcon;
         "rux-progress": RuxProgress;
         "rux-status": RuxStatus;
     }
@@ -19209,6 +19245,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "rux-button": LocalJSX.RuxButton & JSXBase.HTMLAttributes<HTMLRuxButtonElement>;
+            "rux-button-group": LocalJSX.RuxButtonGroup & JSXBase.HTMLAttributes<HTMLRuxButtonGroupElement>;
             "rux-classification-marking": LocalJSX.RuxClassificationMarking & JSXBase.HTMLAttributes<HTMLRuxClassificationMarkingElement>;
             "rux-clock": LocalJSX.RuxClock & JSXBase.HTMLAttributes<HTMLRuxClockElement>;
             "rux-global-status-bar": LocalJSX.RuxGlobalStatusBar & JSXBase.HTMLAttributes<HTMLRuxGlobalStatusBarElement>;
@@ -20267,6 +20304,7 @@ declare module "@stencil/core" {
             "rux-icon-zoom-in-map": LocalJSX.RuxIconZoomInMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomInMapElement>;
             "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
+            "rux-monitoring-icon": LocalJSX.RuxMonitoringIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
         }
