@@ -13,11 +13,11 @@ export class RuxTab {
     /**
      *  f present, overrides which tab is selected on load / mount. By default, the first <rux-tab> item is selected.
      */
-    @Prop({ reflect: true }) selected: boolean = false
+    @Prop({ reflect: true, mutable: true }) selected: boolean = false
     /**
      * If present, sets a disabled state on this tab item, indicating it cannot be selected by user action.
      */
-    @Prop({ reflect: true }) disabled: boolean = false
+    @Prop({ reflect: true, mutable: true }) disabled: boolean = false
 
     @Element() el: HTMLElement
 

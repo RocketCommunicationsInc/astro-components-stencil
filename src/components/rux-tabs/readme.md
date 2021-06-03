@@ -85,16 +85,18 @@ Astro UXDS Tab (child) properties are passed as simple attributes on the individ
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
-| Property         | Attribute          | Description | Type                       | Default |
-| ---------------- | ------------------ | ----------- | -------------------------- | ------- |
-| `_panels`        | --                 |             | `HTMLRuxTabPanelElement[]` | `[]`    |
-| `_selectedTabId` | `_selected-tab-id` |             | `string`                   | `''`    |
-| `_tabs`          | --                 |             | `HTMLRuxTabElement[]`      | `[]`    |
-| `ruxTabsId`      | `rux-tabs-id`      |             | `string`                   | `""`    |
-| `small`          | `small`            |             | `boolean`                  | `false` |
+| Property         | Attribute          | Description                                                                                                                                                                              | Type                       | Default |
+| ---------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------- |
+| `_panels`        | --                 |                                                                                                                                                                                          | `HTMLRuxTabPanelElement[]` | `[]`    |
+| `_selectedTabId` | `_selected-tab-id` |                                                                                                                                                                                          | `string`                   | `''`    |
+| `_tabs`          | --                 |                                                                                                                                                                                          | `HTMLRuxTabElement[]`      | `[]`    |
+| `ruxTabsId`      | `rux-tabs-id`      | Associates this tab container with a Tabs Panel container element. Must match the aria-labelledby attribute on a <rux-tabs-panels> container element elsewhere within the HTML document. | `string`                   | `''`    |
+| `small`          | `small`            | If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses. Previously compact                                                                      | `boolean`                  | `false` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

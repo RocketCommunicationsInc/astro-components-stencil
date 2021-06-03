@@ -9,14 +9,13 @@ export class RuxTabs {
     /**
      *  Associates this tab container with a Tabs Panel container element. Must match the aria-labelledby attribute on a <rux-tabs-panels> container element elsewhere within the HTML document.
      */
-    @Prop() ruxTabsId: string = ''
+    @Prop({ mutable: true }) ruxTabsId: string = ''
     /**
      *  If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses. Previously compact
      */
-    @Prop() small: boolean = false
-    @Prop() _panels: Array<HTMLRuxTabPanelElement> = []
+    @Prop({ mutable: true }) small: boolean = false
+    @Prop({ mutable: true }) _panels: Array<HTMLRuxTabPanelElement> = []
     @Prop({ mutable: true }) _tabs: Array<HTMLRuxTabElement> = []
-    @Prop({ mutable: true }) _selectedTabId: string = ''
 
     @Element() ruxTabsEl: HTMLElement
 
@@ -28,7 +27,6 @@ export class RuxTabs {
     connectedCallback() {
         this.ruxTabsEl.addEventListener('click', (e) => this._onClick(e))
         this._addTabs()
-        this._selectedTabId = this._tabs[0].id
     }
 
     _addTabs() {
@@ -39,7 +37,7 @@ export class RuxTabs {
         e.detail.forEach((panel) => {
             this._panels.push(panel)
         })
-
+        // Default to first tab if none are selected
         const selectedTab =
             this._tabs.find((tab) => tab.selected) || this._tabs[0]
         this._setTab(selectedTab)

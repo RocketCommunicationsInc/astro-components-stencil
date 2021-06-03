@@ -5333,7 +5333,6 @@ export namespace Components {
     }
     interface RuxTabs {
         "_panels": Array<HTMLRuxTabPanelElement>;
-        "_selectedTabId": string;
         "_tabs": Array<HTMLRuxTabElement>;
         /**
           * Associates this tab container with a Tabs Panel container element. Must match the aria-labelledby attribute on a <rux-tabs-panels> container element elsewhere within the HTML document.
@@ -18126,7 +18125,6 @@ declare namespace LocalJSX {
     }
     interface RuxTabs {
         "_panels"?: Array<HTMLRuxTabPanelElement>;
-        "_selectedTabId"?: string;
         "_tabs"?: Array<HTMLRuxTabElement>;
         /**
           * Associates this tab container with a Tabs Panel container element. Must match the aria-labelledby attribute on a <rux-tabs-panels> container element elsewhere within the HTML document.
