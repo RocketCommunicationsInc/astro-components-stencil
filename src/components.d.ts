@@ -6,6 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { Classification, Status } from "./common/commonTypes.module";
+import { SwitchChangeEvent } from "./components/rux-switch/rux-switch.model";
 export namespace Components {
     interface RuxButton {
         "disabled": boolean;
@@ -5354,9 +5355,18 @@ export namespace Components {
         "status": Status;
     }
     interface RuxSwitch {
-        "checked": boolean;
+        /**
+          * Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.
+         */
+        "checked"?: boolean;
+        /**
+          * Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled"?: boolean;
+        /**
+          * The name of the form input element
+         */
         "name": string;
-        "value"?: string | null;
     }
 }
 declare global {
@@ -18159,13 +18169,22 @@ declare namespace LocalJSX {
         "status"?: Status;
     }
     interface RuxSwitch {
+        /**
+          * Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.
+         */
         "checked"?: boolean;
+        /**
+          * Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled"?: boolean;
+        /**
+          * The name of the form input element
+         */
         "name"?: string;
         /**
           * Emitted when the value property has changed.
          */
-        "onRux-change"?: (event: CustomEvent<any>) => void;
-        "value"?: string | null;
+        "onRux-change"?: (event: CustomEvent<SwitchChangeEvent>) => void;
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;

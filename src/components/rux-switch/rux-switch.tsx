@@ -11,7 +11,7 @@ import { SwitchChangeEvent } from './rux-switch.model'
 
 @Component({
     tag: 'rux-switch',
-    styleUrl: 'rux-switch.css',
+    styleUrl: 'rux-switch.scss',
     shadow: true,
 })
 export class RuxSwitch {
