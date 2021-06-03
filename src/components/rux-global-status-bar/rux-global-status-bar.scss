@@ -50,6 +50,7 @@ header {
 
 .app-info-wrapper {
     flex-basis: 100%;
+    display: flex;
 }
 
 .temp-app-state {
@@ -71,20 +72,18 @@ header {
 }
 
 .app-meta h1 {
-    height: 40px;
     letter-spacing: 0.25px;
     margin-bottom: 0px;
 }
 
 .app-name {
-    display: inline-block;
     font-size: 2rem;
     font-weight: 400;
     margin-left: 13px;
+    white-space: nowrap;
 }
 
 .app-domain {
-    display: inline-block;
     font-size: 2rem;
     font-weight: 700;
 }
@@ -92,6 +91,7 @@ header {
 .app-version {
     font-size: 1.1875rem;
     font-weight: 300;
+    display: inline-block;
     /* color: rgba(255, 255, 255, 0.298039); */
 
     margin-left: 0.5em;
