@@ -7,11 +7,7 @@ import { Component, Host, h, Prop, Element } from '@stencil/core'
 })
 export class RuxTab {
     /**
-     *  Associates this tab with the tab content in a Tab Panel content element. Must match the aria-labelledby attribute on a <rux-tabs-panel> element elsewhere within the HTML document, within a <rux-tab-panels> container.
-     */
-    @Prop({ mutable: true }) ruxTabId: string = ''
-    /**
-     *  f present, overrides which tab is selected on load / mount. By default, the first <rux-tab> item is selected.
+     *  If present, overrides which tab is selected on load / mount. By default, the first <rux-tab> item is selected.
      */
     @Prop({ reflect: true, mutable: true }) selected: boolean = false
     /**

@@ -127,8 +127,8 @@ graph TD;
   rux-monitoring-icon --> rux-icon
   rux-monitoring-icon --> rux-status
   style rux-monitoring-icon fill:#f9f,stroke:#333,stroke-width:4px
-````
+```
 
----
+----------------------------------------------
 
-_Built with [StencilJS](https://stenciljs.com/)_
+*Built with [StencilJS](https://stenciljs.com/)*

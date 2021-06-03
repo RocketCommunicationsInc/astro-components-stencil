@@ -7,14 +7,12 @@ import { Component, Host, h, Prop, Element, Listen } from '@stencil/core'
 })
 export class RuxTabs {
     /**
-     *  Associates this tab container with a Tabs Panel container element. Must match the aria-labelledby attribute on a <rux-tabs-panels> container element elsewhere within the HTML document.
+     *  Holds the <rux-tab-panel> components based on the event emitted from the <rux-tab-panels> component.
      */
-    @Prop({ mutable: true }) ruxTabsId: string = ''
-    /**
-     *  If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses. Previously compact
-     */
-    @Prop({ mutable: true }) small: boolean = false
     @Prop({ mutable: true }) _panels: Array<HTMLRuxTabPanelElement> = []
+    /**
+     *  Holds all <rux-tab> components that are children of <rux-tabs>.
+     */
     @Prop({ mutable: true }) _tabs: Array<HTMLRuxTabElement> = []
 
     @Element() ruxTabsEl: HTMLElement

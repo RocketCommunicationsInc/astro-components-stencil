@@ -5359,30 +5359,27 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * Associates this tab with the tab content in a Tab Panel content element. Must match the aria-labelledby attribute on a <rux-tabs-panel> element elsewhere within the HTML document, within a <rux-tab-panels> container.
-         */
-        "ruxTabId": string;
-        /**
-          * f present, overrides which tab is selected on load / mount. By default, the first <rux-tab> item is selected.
+          * If present, overrides which tab is selected on load / mount. By default, the first <rux-tab> item is selected.
          */
         "selected": boolean;
     }
     interface RuxTabPanel {
     }
     interface RuxTabPanels {
+        /**
+          * Holds all slotted children of given <rux-tab-panels> component.
+         */
         "slottedChildren": Array<HTMLRuxTabPanelsElement>;
     }
     interface RuxTabs {
+        /**
+          * Holds the <rux-tab-panel> components based on the event emitted from the <rux-tab-panels> component.
+         */
         "_panels": Array<HTMLRuxTabPanelElement>;
+        /**
+          * Holds all <rux-tab> components that are children of <rux-tabs>.
+         */
         "_tabs": Array<HTMLRuxTabElement>;
-        /**
-          * Associates this tab container with a Tabs Panel container element. Must match the aria-labelledby attribute on a <rux-tabs-panels> container element elsewhere within the HTML document.
-         */
-        "ruxTabsId": string;
-        /**
-          * If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses. Previously compact
-         */
-        "small": boolean;
     }
 }
 declare global {
@@ -18211,11 +18208,7 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * Associates this tab with the tab content in a Tab Panel content element. Must match the aria-labelledby attribute on a <rux-tabs-panel> element elsewhere within the HTML document, within a <rux-tab-panels> container.
-         */
-        "ruxTabId"?: string;
-        /**
-          * f present, overrides which tab is selected on load / mount. By default, the first <rux-tab> item is selected.
+          * If present, overrides which tab is selected on load / mount. By default, the first <rux-tab> item is selected.
          */
         "selected"?: boolean;
     }
@@ -18223,19 +18216,20 @@ declare namespace LocalJSX {
     }
     interface RuxTabPanels {
         "onRegisterPanels"?: (event: CustomEvent<HTMLRuxTabPanelsElement[]>) => void;
+        /**
+          * Holds all slotted children of given <rux-tab-panels> component.
+         */
         "slottedChildren"?: Array<HTMLRuxTabPanelsElement>;
     }
     interface RuxTabs {
+        /**
+          * Holds the <rux-tab-panel> components based on the event emitted from the <rux-tab-panels> component.
+         */
         "_panels"?: Array<HTMLRuxTabPanelElement>;
+        /**
+          * Holds all <rux-tab> components that are children of <rux-tabs>.
+         */
         "_tabs"?: Array<HTMLRuxTabElement>;
-        /**
-          * Associates this tab container with a Tabs Panel container element. Must match the aria-labelledby attribute on a <rux-tabs-panels> container element elsewhere within the HTML document.
-         */
-        "ruxTabsId"?: string;
-        /**
-          * If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses. Previously compact
-         */
-        "small"?: boolean;
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;

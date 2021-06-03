@@ -83,17 +83,32 @@ Astro UXDS Tab (child) properties are passed as simple attributes on the individ
 ...
 ```
 
+### Tabs Container Attributes
+
+| Attribute | Type    | Default | Required | Description                                                                                                                                                                                  |
+| --------- | ------- | ------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `id`      | String  | —       | Yes      | Associates this tab container with a Tabs Panel container element. Must match the `aria-labelledby` attribute on a `<rux-tabs-panels>` container element elsewhere within the HTML document. |
+| `small`   | Boolean | `false` | No       | If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses. Previously `compact`.                                                                       |
+
+### Tab Child Attributes
+
+| Attribute  | Type    | Default | Required | Description                                                                                                                                                                                                                    |
+| ---------- | ------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `id`       | String  | —       | Yes      | Associates this tab with the tab content in a Tab Panel content element. Must match the `aria-labelledby` attribute on a `<rux-tabs-panel>` element elsewhere within the HTML document, within a `<rux-tab-panels>` container. |
+| `selected` | Boolean | `false` | No       | If present, overrides which tab is selected on load / mount. By default, the first `<rux-tab>` item is selected.                                                                                                               |
+| `disabled` | Boolean | `false` | No       | If present, sets a disabled state on this tab item, indicating it cannot be selected by user action.                                                                                                                           |
+
+---
+
 <!-- Auto Generated Below -->
 
 
 ## Properties
 
-| Property    | Attribute     | Description                                                                                                                                                                              | Type                       | Default |
-| ----------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------- |
-| `_panels`   | --            |                                                                                                                                                                                          | `HTMLRuxTabPanelElement[]` | `[]`    |
-| `_tabs`     | --            |                                                                                                                                                                                          | `HTMLRuxTabElement[]`      | `[]`    |
-| `ruxTabsId` | `rux-tabs-id` | Associates this tab container with a Tabs Panel container element. Must match the aria-labelledby attribute on a <rux-tabs-panels> container element elsewhere within the HTML document. | `string`                   | `''`    |
-| `small`     | `small`       | If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses. Previously compact                                                                      | `boolean`                  | `false` |
+| Property  | Attribute | Description                                                                                          | Type                       | Default |
+| --------- | --------- | ---------------------------------------------------------------------------------------------------- | -------------------------- | ------- |
+| `_panels` | --        | Holds the <rux-tab-panel> components based on the event emitted from the <rux-tab-panels> component. | `HTMLRuxTabPanelElement[]` | `[]`    |
+| `_tabs`   | --        | Holds all <rux-tab> components that are children of <rux-tabs>.                                      | `HTMLRuxTabElement[]`      | `[]`    |
 
 
 ----------------------------------------------
