@@ -16,7 +16,7 @@ export interface RangeItem {
 })
 export class RuxMonitoringProgressIcon {
 
-  @State() _status: Status = 'normal'
+  @State() _status: Status
   @State() _circumference: number = 56 * 2 * Math.PI
   @State() _graphProgress: number = 0
 
