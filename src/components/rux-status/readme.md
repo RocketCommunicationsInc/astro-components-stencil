@@ -1,17 +1,27 @@
 # rux-status
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `status` | `status`  |             | `string` | `undefined` |
+| Property | Attribute | Description | Type                                                                     | Default     |
+| -------- | --------- | ----------- | ------------------------------------------------------------------------ | ----------- |
+| `status` | `status`  |             | `"caution" \| "critical" \| "normal" \| "off" \| "serious" \| "standby"` | `undefined` |
 
+## Dependencies
 
-----------------------------------------------
+### Used by
 
-*Built with [StencilJS](https://stenciljs.com/)*
+-   [rux-monitoring-icon](../rux-monitoring-icon)
+
+### Graph
+
+```mermaid
+graph TD;
+  rux-monitoring-icon --> rux-status
+  style rux-status fill:#f9f,stroke:#333,stroke-width:4px
+```
+
+---
+
+_Built with [StencilJS](https://stenciljs.com/)_
