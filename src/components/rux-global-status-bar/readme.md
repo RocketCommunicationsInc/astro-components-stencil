@@ -74,13 +74,30 @@ There is one unnnamed slot in the Global Status Bar. This slot is intended for a
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
-| Property  | Attribute | Description | Type     | Default     |
-| --------- | --------- | ----------- | -------- | ----------- |
-| `appname` | `appname` |             | `string` | `undefined` |
-| `version` | `version` |             | `string` | `undefined` |
+| Property     | Attribute     | Description                                                                         | Type     | Default     |
+| ------------ | ------------- | ----------------------------------------------------------------------------------- | -------- | ----------- |
+| `appDomain`  | `app-domain`  | Sets the domain of the application to be displayed in the default app-meta element  | `string` | `undefined` |
+| `appName`    | `app-name`    | Sets the name of the application to be displayed in the default app-meta element    | `string` | `undefined` |
+| `appVersion` | `app-version` | Sets the version of the application to be displayed in the default app-meta element | `string` | `undefined` |
+| `menuIcon`   | `menu-icon`   | Sets the icon to be displayed in the default rux-icon component                     | `string` | `"apps"`    |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+## Dependencies
+
+### Depends on
+
+- [rux-icon](../rux-icon)
+
+### Graph
+```mermaid
+graph TD;
+  rux-global-status-bar --> rux-icon
+  style rux-global-status-bar fill:#f9f,stroke:#333,stroke-width:4px
+```
+
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

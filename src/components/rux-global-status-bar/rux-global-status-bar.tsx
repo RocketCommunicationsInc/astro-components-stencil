@@ -4,21 +4,29 @@ import { AppVersion } from '../../common/functional-components/appVersion'
 import { AppDomain } from '../../common/functional-components/appDomain'
 import iconsJSON from '../../stories/rux-icons.json'
 
-//create single flat array of icon names from the rux-icons.json file
-
-
-
-
 @Component({
   tag: 'rux-global-status-bar',
   styleUrl: 'rux-global-status-bar.scss',
   shadow: true,
 })
 export class RuxGlobalStatusBar {
-  @Prop() appName?: string;
-  @Prop() appVersion?: string;
+  /**
+   * Sets the domain of the application to be displayed in the default app-meta element
+   */
   @Prop() appDomain?: string;
+  /**
+   * Sets the name of the application to be displayed in the default app-meta element
+   */
+  @Prop() appName?: string;
+  /**
+   * Sets the version of the application to be displayed in the default app-meta element
+   */
+  @Prop() appVersion?: string;
+  /**
+   * Sets the icon to be displayed in the default rux-icon component
+   */
   @Prop({ mutable: true, reflect: true }) menuIcon?: string = "apps";
+  
   iconList = []
 
   connectedCallback(){
@@ -51,25 +59,31 @@ export class RuxGlobalStatusBar {
     return (
       <Host>
         <header>
+
           <slot name="left-side">
-            {/* this icon is a placholder until waffle-menu icon is included in the rux-icon library */}
+            {/* this icon is a placholder until waffle-menu icon is included in the rux-icon library or menu component is built*/}
             <rux-icon icon={`${this.menuIcon}`} size="small" />
           </slot>
+
           <slot name="app-meta">
             {/* app=meta div content is fallback component when app-meta slot is unfilled */}
             <div class="app-meta">
               <div class="app-info-wrapper">
-                <AppDomain domain={this.appDomain} />
+                <AppDomain domain={this.appDomain.toUpperCase()} />
                 <AppName name={this.appName.toUpperCase()}>
                   <AppVersion version={this.appVersion} />
                 </AppName>
               </div>
+              {/* these divs are placeholders until an app state component and user display component are built */}
               <div class="temp-app-state">App state</div>
               <div class="temp-user-name">User Name</div>
             </div>
           </slot>
-        <slot></slot>
-        <slot name="right-side"></slot>
+
+          <slot></slot>
+          
+          <slot name="right-side"></slot>
+          
       </header>
       </Host>
     );

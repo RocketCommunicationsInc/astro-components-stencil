@@ -55,9 +55,21 @@ export namespace Components {
         "timezone": string;
     }
     interface RuxGlobalStatusBar {
+        /**
+          * Sets the domain of the application to be displayed in the default app-meta element
+         */
         "appDomain"?: string;
+        /**
+          * Sets the name of the application to be displayed in the default app-meta element
+         */
         "appName"?: string;
+        /**
+          * Sets the version of the application to be displayed in the default app-meta element
+         */
         "appVersion"?: string;
+        /**
+          * Sets the icon to be displayed in the default rux-icon component
+         */
         "menuIcon"?: string;
     }
     interface RuxIcon {
@@ -12826,9 +12838,21 @@ declare namespace LocalJSX {
         "timezone"?: string;
     }
     interface RuxGlobalStatusBar {
+        /**
+          * Sets the domain of the application to be displayed in the default app-meta element
+         */
         "appDomain"?: string;
+        /**
+          * Sets the name of the application to be displayed in the default app-meta element
+         */
         "appName"?: string;
+        /**
+          * Sets the version of the application to be displayed in the default app-meta element
+         */
         "appVersion"?: string;
+        /**
+          * Sets the icon to be displayed in the default rux-icon component
+         */
         "menuIcon"?: string;
     }
     interface RuxIcon {
