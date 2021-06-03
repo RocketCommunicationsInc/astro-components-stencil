@@ -5366,7 +5366,7 @@ export namespace Components {
         /**
           * The name of the form input element
          */
-        "name": string;
+        "name"?: string;
     }
 }
 declare global {

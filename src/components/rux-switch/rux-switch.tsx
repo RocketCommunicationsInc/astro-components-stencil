@@ -19,7 +19,7 @@ export class RuxSwitch {
     /**
      * The name of the form input element
      */
-    @Prop() name: string
+    @Prop() name?: string
     /**
      * Disables the button via HTML `disabled` attribute.
      * Button takes on a distinct visual state.
