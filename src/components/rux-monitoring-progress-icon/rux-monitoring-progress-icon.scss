@@ -45,11 +45,6 @@
     width: 4.5rem;
 }
 
-// rux-icon {
-//     order: 2;
-//     margin: 0 auto;
-// }
-
 rux-status {
     position: absolute;
     top: -0.25rem;
@@ -105,42 +100,6 @@ rux-status {
 .rux-advanced-status__hidden {
     display: none;
 }
-
-// :host([status='off']) {
-//     rux-icon {
-//         fill: var(--colorOff);
-//     }
-// }
-
-// :host([status='standby']) {
-//     rux-icon {
-//         fill: var(--colorStandby);
-//     }
-// }
-
-// :host([status='normal']) {
-//     rux-icon {
-//         fill: var(--colorNormal);
-//     }
-// }
-
-// :host([status='caution']) {
-//     rux-icon {
-//         fill: var(--colorCaution);
-//     }
-// }
-
-// :host([status='serious']) {
-//     rux-icon {
-//         fill: var(--colorSerious);
-//     }
-// }
-
-// :host([status='critical']) {
-//     rux-icon {
-//         fill: var(--colorCritical);
-//     }
-// }
 
 svg {
     margin: 0 auto;
