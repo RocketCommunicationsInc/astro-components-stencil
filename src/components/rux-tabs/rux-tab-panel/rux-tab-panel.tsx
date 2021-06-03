@@ -1,18 +1,21 @@
-import { Component, Host, h, Prop, Element } from '@stencil/core';
+import { Component, Host, h, Element } from '@stencil/core';
 
 @Component({
-    tag: 'rux-tabs-panel',
+    tag: 'rux-tab-panel',
     styleUrl: 'rux-tab-panel.scss',
     shadow: true
 })
 export class RuxTabPanel{
 
-    @Prop() classes: Array<string> = [];
+@Element() el: HTMLElement
 
-    @Element() el: HTMLElement
-
-    connectedCallback(){
+connectedCallback(){
+        console.log('callback on panel')
         this.el.setAttribute('role', 'tabpanel');
+    }
+
+    componentWillLoad(){
+        console.log('component will load')
     }
 
     render(){

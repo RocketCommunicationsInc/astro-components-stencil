@@ -5,6 +5,7 @@
     z-index: 1;
 }
 :host(.hidden) {
+    display: none;
     position: absolute;
     visibility: hidden;
     z-index: -1;

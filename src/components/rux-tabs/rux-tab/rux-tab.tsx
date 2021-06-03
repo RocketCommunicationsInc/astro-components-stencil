@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, Element, Event, EventEmitter } from '@stencil/core';
+import { Component, Host, h, Prop, Element} from '@stencil/core';
 
 @Component({
   tag: 'rux-tab',
@@ -25,17 +25,17 @@ export class RuxTab {
   }
 
   //* Send the tab id when clicked in order to compare it with the panel id and show correct stuff
-  @Event() sendId: EventEmitter<string>
-  _sendTabId(tabId: string){
-    console.log('sendId event trig w/ id of: ', tabId)
-    this.sendId.emit(tabId)
-  }
+  // @Event() sendId: EventEmitter<string>
+  // _sendTabId(tabId: string){
+  //   console.log('sendId event trig w/ id of: ', tabId)
+  //   this.sendId.emit(tabId)
+  // }
 
   clickHandler(e){
     if(this.disabled){
       e.stopImmediatePropagation();
     }
-    this._sendTabId(this.ruxTabId)
+    // this._sendTabId(this.ruxTabId)
 
   } 
 

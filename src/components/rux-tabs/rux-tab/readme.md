@@ -14,13 +14,6 @@
 | `selected` | `selected`   |             | `boolean` | `false` |
 
 
-## Events
-
-| Event    | Description | Type                  |
-| -------- | ----------- | --------------------- |
-| `sendId` |             | `CustomEvent<string>` |
-
-
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

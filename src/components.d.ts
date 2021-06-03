@@ -5317,18 +5317,17 @@ export namespace Components {
         "ruxTabId": string;
         "selected": boolean;
     }
+    interface RuxTabPanel {
+    }
     interface RuxTabPanels {
         "slottedChildren": Array<HTMLRuxTabPanelsElement>;
     }
     interface RuxTabs {
-        "_panels": Array<HTMLRuxTabsPanelElement>;
+        "_panels": Array<HTMLRuxTabPanelElement>;
         "_selectedTabId": string;
         "_tabs": Array<HTMLRuxTabElement>;
         "ruxTabsId": string;
         "small": boolean;
-    }
-    interface RuxTabsPanel {
-        "classes": Array<string>;
     }
 }
 declare global {
@@ -11698,6 +11697,12 @@ declare global {
         prototype: HTMLRuxTabElement;
         new (): HTMLRuxTabElement;
     };
+    interface HTMLRuxTabPanelElement extends Components.RuxTabPanel, HTMLStencilElement {
+    }
+    var HTMLRuxTabPanelElement: {
+        prototype: HTMLRuxTabPanelElement;
+        new (): HTMLRuxTabPanelElement;
+    };
     interface HTMLRuxTabPanelsElement extends Components.RuxTabPanels, HTMLStencilElement {
     }
     var HTMLRuxTabPanelsElement: {
@@ -11709,12 +11714,6 @@ declare global {
     var HTMLRuxTabsElement: {
         prototype: HTMLRuxTabsElement;
         new (): HTMLRuxTabsElement;
-    };
-    interface HTMLRuxTabsPanelElement extends Components.RuxTabsPanel, HTMLStencilElement {
-    }
-    var HTMLRuxTabsPanelElement: {
-        prototype: HTMLRuxTabsPanelElement;
-        new (): HTMLRuxTabsPanelElement;
     };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
@@ -12778,9 +12777,9 @@ declare global {
         "rux-progress": HTMLRuxProgressElement;
         "rux-status": HTMLRuxStatusElement;
         "rux-tab": HTMLRuxTabElement;
+        "rux-tab-panel": HTMLRuxTabPanelElement;
         "rux-tab-panels": HTMLRuxTabPanelsElement;
         "rux-tabs": HTMLRuxTabsElement;
-        "rux-tabs-panel": HTMLRuxTabsPanelElement;
     }
 }
 declare namespace LocalJSX {
@@ -18092,23 +18091,21 @@ declare namespace LocalJSX {
     }
     interface RuxTab {
         "disabled"?: boolean;
-        "onSendId"?: (event: CustomEvent<string>) => void;
         "ruxTabId"?: string;
         "selected"?: boolean;
+    }
+    interface RuxTabPanel {
     }
     interface RuxTabPanels {
         "onRegisterPanels"?: (event: CustomEvent<HTMLRuxTabPanelsElement[]>) => void;
         "slottedChildren"?: Array<HTMLRuxTabPanelsElement>;
     }
     interface RuxTabs {
-        "_panels"?: Array<HTMLRuxTabsPanelElement>;
+        "_panels"?: Array<HTMLRuxTabPanelElement>;
         "_selectedTabId"?: string;
         "_tabs"?: Array<HTMLRuxTabElement>;
         "ruxTabsId"?: string;
         "small"?: boolean;
-    }
-    interface RuxTabsPanel {
-        "classes"?: Array<string>;
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;
@@ -19172,9 +19169,9 @@ declare namespace LocalJSX {
         "rux-progress": RuxProgress;
         "rux-status": RuxStatus;
         "rux-tab": RuxTab;
+        "rux-tab-panel": RuxTabPanel;
         "rux-tab-panels": RuxTabPanels;
         "rux-tabs": RuxTabs;
-        "rux-tabs-panel": RuxTabsPanel;
     }
 }
 export { LocalJSX as JSX };
@@ -20242,9 +20239,9 @@ declare module "@stencil/core" {
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
             "rux-tab": LocalJSX.RuxTab & JSXBase.HTMLAttributes<HTMLRuxTabElement>;
+            "rux-tab-panel": LocalJSX.RuxTabPanel & JSXBase.HTMLAttributes<HTMLRuxTabPanelElement>;
             "rux-tab-panels": LocalJSX.RuxTabPanels & JSXBase.HTMLAttributes<HTMLRuxTabPanelsElement>;
             "rux-tabs": LocalJSX.RuxTabs & JSXBase.HTMLAttributes<HTMLRuxTabsElement>;
-            "rux-tabs-panel": LocalJSX.RuxTabsPanel & JSXBase.HTMLAttributes<HTMLRuxTabsPanelElement>;
         }
     }
 }

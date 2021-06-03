@@ -7,13 +7,13 @@
 
 ## Properties
 
-| Property         | Attribute          | Description | Type                  | Default |
-| ---------------- | ------------------ | ----------- | --------------------- | ------- |
-| `_panels`        | --                 |             | `RuxTabPanel[]`       | `[]`    |
-| `_selectedTabId` | `_selected-tab-id` |             | `string`              | `''`    |
-| `_tabs`          | --                 |             | `HTMLRuxTabElement[]` | `[]`    |
-| `ruxTabsId`      | `rux-tabs-id`      |             | `string`              | `""`    |
-| `small`          | `small`            |             | `boolean`             | `false` |
+| Property         | Attribute          | Description | Type                       | Default |
+| ---------------- | ------------------ | ----------- | -------------------------- | ------- |
+| `_panels`        | --                 |             | `HTMLRuxTabPanelElement[]` | `[]`    |
+| `_selectedTabId` | `_selected-tab-id` |             | `string`                   | `''`    |
+| `_tabs`          | --                 |             | `HTMLRuxTabElement[]`      | `[]`    |
+| `ruxTabsId`      | `rux-tabs-id`      |             | `string`                   | `""`    |
+| `small`          | `small`            |             | `boolean`                  | `false` |
 
 
 ----------------------------------------------

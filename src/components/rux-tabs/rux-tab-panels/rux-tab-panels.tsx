@@ -2,12 +2,13 @@ import { Component, Host, h, Prop, Element, Event, EventEmitter } from '@stencil
 
 @Component({
     tag: 'rux-tab-panels',
-    styleUrl: 'rux-tab-panels.scss',
+    styleUrl: '.././rux-tab-panel/rux-tab-panel.scss',
     shadow: true
 })
 export class RuxTabPanels {
 
     @Prop() slottedChildren: Array<HTMLRuxTabPanelsElement> = [];
+
     @Element() el: HTMLElement;
 
     _getSlottedChildren(){
@@ -25,9 +26,7 @@ export class RuxTabPanels {
     //! Want willLoad instead
     componentDidLoad(){
         this._getSlottedChildren();
-        console.log('calling registerTabPanels');
-        this._registerTabPanels(this.slottedChildren);
-       
+        this._registerTabPanels(this.slottedChildren);       
     }
     // @Watch('slottedChildren')
     // watchHandler(){
@@ -37,9 +36,7 @@ export class RuxTabPanels {
     @Event() registerPanels: EventEmitter<HTMLRuxTabPanelsElement[]> //! Might need to be panel not panels
     _registerTabPanels(children: HTMLRuxTabPanelsElement[]){
         console.log('attempt register panels')
-        
         //* Emit the whole arr, map on parent
-        console.log(children, 'children to emit');
         this.registerPanels.emit(children);
 
         // this.slottedChildren.map(child => {
@@ -52,9 +49,9 @@ export class RuxTabPanels {
 
     render() {
         return (
-            <Host>
+          <Host>
                 <slot></slot>
-            </Host>
+                </Host>
         )
     }
 }

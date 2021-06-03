@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop, Element, Listen } from '@stencil/core';
-import { RuxTabPanel } from './rux-tab-panel/rux-tab-panel';
 
 
 @Component({
@@ -33,79 +32,75 @@ export class RuxTabs {
 
   @Prop({ mutable: true }) ruxTabsId: string = "";
   @Prop() small: boolean = false;
-  @Prop() _panels: Array<HTMLRuxTabsPanelElement> = []
+  @Prop() _panels: Array<HTMLRuxTabPanelElement> = []
   // @Prop() _panelsGroup: string = '';
   @Prop() _tabs: Array<HTMLRuxTabElement> = [];
   @Prop() _selectedTabId: string = '';
 
-  @Element() host: HTMLElement;
+  @Element() ruxTabsEl: HTMLElement;
 
-  @Listen('sendId', {target: 'window'})
-  handleListenSendId(e){
-    // console.log('heard sendId', e)
-    this._selectedTabId = e.detail;
-  }
-  // @Watch('_selectedTabId')
-  // tabSwitcher(e){
-  //   console.log(e, 'E IN TABSWITCHER')
-  //   this._registerPanels(e)
+  // @Listen('sendId', {target: 'window'})
+  // handleListenSendId(e){
+  //   // console.log('heard sendId', e)
+  //   this._selectedTabId = e.detail;
   // }
   @Listen('registerPanels', {target: 'window'})
   handleListen(e){
-    // console.log('heard the registerPanels e', e);
-    // e.detail.forEach(panel => {
-    //   console.log(panel.attributes[0].value, 'TESTING HERE')
-    //   console.log(this.host.getAttribute('id'), 'TESTING HOST ID')
-    // })
-    this._registerPanels(e);
+    this._registerPanels(e); 
   }
 
 
   connectedCallback(){
     // window.addEventListener('register-panels', this._registerPanels);
-    this.host.addEventListener('click', (e) => this._onClick(e));
-    // console.log(this.host, 'host')
+    this.ruxTabsEl.addEventListener('click', (e) => this._onClick(e));
+    // console.log(this.ruxTabsEl, 'ruxTabsEl')
     //build tabs arr
     this._addTabs();
-    this._addPanels();
+    // this._addPanels();
     this._selectedTabId = this._tabs[0].id;
     // console.log(this._tabs, 'tabs here');
   }
 
   _addTabs(){
-    this._tabs = Array.from(this.host.querySelectorAll('rux-tab'));
+    this._tabs = Array.from(this.ruxTabsEl.querySelectorAll('rux-tab'));
     console.log(`tabs added: ${this._tabs}`)
     //get all id's from tabs rendered 
   }
-  _addPanels(){
-    console.log('inside add panels')
-    this._panels = Array.from(this.host.querySelectorAll('rux-tab-panel'));
-    console.log('panels added, here: ', this._panels)
-  }
+  // _addPanels(){
+  //   console.log('inside add panels')
+  //   this._panels = Array.from(this.ruxTabsEl.querySelectorAll('rux-tab-panel'));
+  //   console.log('panels added, here: ', this._panels)
+  // }
 
   _registerPanels(e) {
     console.log(e.detail, 'E DETAIL')
-    console.log(typeof this._panels, '_panels type')
     e.detail.forEach(panel => {
-      console.log(`Pannel Attr Val: ${panel.attributes[0].value}, selcted tab id: ${this._selectedTabId}`)
-      if(panel.attributes[0].value === this._selectedTabId){
-        console.log(panel, 'PANEL')
-        console.log(`panel.attr[0].val: ${panel.attributes[0].value}, selectedTab: ${this._selectedTabId}`)
-        this._panels.push(panel);
-      }
+      this._panels.push(panel)
     })
-    // if (e.detail. === this.host.getAttribute('id')){
-    //   this._panels = Array.from(e.detail.panels);
-    // }
-    // if tab isn't selected, default to the first tab
+    console.log('panels here: ', this._panels)
+    // let temp: Array<HTMLRuxTabsPanelElement> = [];
+    // //Pushes the panel that matches the selected tab id, thus telling us which panel needs to be shown
+    // e.detail.forEach(panel => {
+    //   console.log(`Pannel Attr Val: ${panel.attributes[0].value}, selcted tab id: ${this._selectedTabId}`)
+    //   if(panel.attributes[0].value === this._selectedTabId){
+    //     console.log(panel, 'PANEL')
+    //     console.log(`panel.attr[0].val: ${panel.attributes[0].value}, selectedTab: ${this._selectedTabId}`)
+    //     temp.push(panel);
+    //   }
+    // })
+    // console.log(temp, "TEMP arr");
+    // // if (e.detail. === this.ruxTabsEl.getAttribute('id')){
+    // //   this._panels = Array.from(e.detail.panels);
+    // // }
+    // // if tab isn't selected, default to the first tab
+    // this._panels = temp;
+    // console.log(this._panels, 'panels has this inside')
+
     const selectedTab = this._tabs.find((tab) => tab.selected) || this._tabs[0];
     this._setTab(selectedTab);
   }
 
   _onClick(e) {
-    console.log('click');
-    console.log(e, 'e')
-
     if (e.target.getAttribute('role') === 'tab' && e.target.getAttribute('disabled') === null) {
       this._setTab(e.target);
     }
@@ -115,24 +110,24 @@ export class RuxTabs {
     // hide everything
     this._tabs.forEach((tab) => (tab.selected = false));
     //* classLIst on rux-tab-panel is an array of strings.
-    this._panels.forEach((panel) => panel.classes.push('hidden'));
+    this._panels.forEach((panel) => panel.classList.add('hidden'));
   }
 
   
   _setTab(selectedTab) {
-    console.log('inside settab')
     this._reset();
-    console.log(this._panels, 'panels prop')
 
     // find the panel whose aria-labeldby attribute matches the tab’s id
     const selectedPanel = this._panels.find(
         (panel) => panel.getAttribute('aria-labelledby') === selectedTab.getAttribute('id')
     );
 
-    if (selectedTab) selectedTab.selected = true;
+    // if (selectedTab) selectedTab.selected = true;
     //* Find the index in the classList arr where 'hidden' is, remove it. May be a more optimal way to do this.
-    let index = selectedPanel.classes.indexOf('hidden');
-    if (selectedPanel) selectedPanel.classes.splice(index);
+    // let index = selectedPanel.classes.indexOf('hidden');
+    // if (selectedPanel) selectedPanel.classes.splice(index);
+    if(selectedTab) selectedTab.selected = true;
+    if(selectedPanel) selectedPanel.classList.remove('hidden');
   }
 
   render() {
