@@ -5337,19 +5337,55 @@ export namespace Components {
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
     interface RuxMonitoringIcon {
+        /**
+          * Displays an Astro icon matching this string. For a [full list of available icons,  see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+         */
         "icon": string;
+        /**
+          * Displays a label below the icon
+         */
         "label": string;
+        /**
+          * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon.  Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands,  `'1.5M'` for millions, and `'1.5B'` for billions. The badge uses `'∞'` for one trillion or higher.
+         */
         "notifications": number;
+        /**
+          * Styles the icon according to the Astro Status colors.  Valid options are the Astro statuses `critical`, `serious`, `caution`, `normal`, `standby` and `off`
+         */
         "status": Status;
+        /**
+          * Displays a smaller label underneath the icon label
+         */
         "sublabel": string;
     }
     interface RuxMonitoringProgressIcon {
+        /**
+          * Displays a label below the icon
+         */
         "label": string;
+        /**
+          * Sets the maximum value for the progress range. When progress is this number it will read 100%.  When it is halfway between min and max it will read 50%
+         */
         "max"?: number;
+        /**
+          * Sets the minimum value for the progress range. When progress is this number it reads 0%.  When it is halfway between min and max it will read 50%
+         */
         "min"?: number;
+        /**
+          * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon.  Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands, `'1.5M'`  for millions, and `'1.5B'` for billions. The badge uses `'∞'` for one trillion or higher.
+         */
         "notifications"?: number;
+        /**
+          * Displays this value as a percentage in the center of the donut graph, and styles a proportional  segment of the graph. Progress can be positive or negative (the later useful for countdowns).  The progress value must exist within the thresholds specified in the range property below.
+         */
         "progress": number;
+        /**
+          * No	Items in this Array define thresholds for changing the status style of the progress icon.  For each item in the Array, the icon will be styled with the given status while the progress value  is less than the Array item’s threshold and equal to or greater than the next largest item‘s threshold.  Both progress and the Array items’ threshold values can be positive or negative,  so long as they are consistent and the threshold values span no more than 100 numbers.  The component assumes the Array's first status threshold begins at 0.
+         */
         "range"?: Array<RangeItem>;
+        /**
+          * Displays a smaller label underneath the icon label
+         */
         "sublabel"?: string;
     }
     interface RuxProgress {
@@ -18136,19 +18172,55 @@ declare namespace LocalJSX {
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
     interface RuxMonitoringIcon {
+        /**
+          * Displays an Astro icon matching this string. For a [full list of available icons,  see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+         */
         "icon": string;
+        /**
+          * Displays a label below the icon
+         */
         "label": string;
+        /**
+          * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon.  Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands,  `'1.5M'` for millions, and `'1.5B'` for billions. The badge uses `'∞'` for one trillion or higher.
+         */
         "notifications"?: number;
+        /**
+          * Styles the icon according to the Astro Status colors.  Valid options are the Astro statuses `critical`, `serious`, `caution`, `normal`, `standby` and `off`
+         */
         "status"?: Status;
+        /**
+          * Displays a smaller label underneath the icon label
+         */
         "sublabel"?: string;
     }
     interface RuxMonitoringProgressIcon {
+        /**
+          * Displays a label below the icon
+         */
         "label": string;
+        /**
+          * Sets the maximum value for the progress range. When progress is this number it will read 100%.  When it is halfway between min and max it will read 50%
+         */
         "max"?: number;
+        /**
+          * Sets the minimum value for the progress range. When progress is this number it reads 0%.  When it is halfway between min and max it will read 50%
+         */
         "min"?: number;
+        /**
+          * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon.  Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands, `'1.5M'`  for millions, and `'1.5B'` for billions. The badge uses `'∞'` for one trillion or higher.
+         */
         "notifications"?: number;
+        /**
+          * Displays this value as a percentage in the center of the donut graph, and styles a proportional  segment of the graph. Progress can be positive or negative (the later useful for countdowns).  The progress value must exist within the thresholds specified in the range property below.
+         */
         "progress": number;
+        /**
+          * No	Items in this Array define thresholds for changing the status style of the progress icon.  For each item in the Array, the icon will be styled with the given status while the progress value  is less than the Array item’s threshold and equal to or greater than the next largest item‘s threshold.  Both progress and the Array items’ threshold values can be positive or negative,  so long as they are consistent and the threshold values span no more than 100 numbers.  The component assumes the Array's first status threshold begins at 0.
+         */
         "range"?: Array<RangeItem>;
+        /**
+          * Displays a smaller label underneath the icon label
+         */
         "sublabel"?: string;
     }
     interface RuxProgress {

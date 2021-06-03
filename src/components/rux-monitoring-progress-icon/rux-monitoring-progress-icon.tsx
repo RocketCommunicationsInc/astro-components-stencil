@@ -20,15 +20,17 @@ export class RuxMonitoringProgressIcon {
   @State() _circumference: number = 56 * 2 * Math.PI
   @State() _graphProgress: number = 0
 
-  /*
+  /**
   * Displays a label below the icon
   */
   @Prop() label!: string;
-  /*
+
+  /**
   * Displays a smaller label underneath the icon label 
   */
   @Prop() sublabel?: string;
-  /*
+
+  /**
   * No	Items in this Array define thresholds for changing the status style of the progress icon. 
   * For each item in the Array, the icon will be styled with the given status while the progress value 
   * is less than the Array item’s threshold and equal to or greater than the next largest item‘s threshold. 
@@ -37,23 +39,27 @@ export class RuxMonitoringProgressIcon {
   * The component assumes the Array's first status threshold begins at 0.
   */
  @Prop({mutable: true}) range?: Array<RangeItem>
-  /*
+
+  /**
   * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon. 
   * Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands, `'1.5M'` 
   * for millions, and `'1.5B'` for billions. The badge uses `'∞'` for one trillion or higher.
   */
-  @Prop() notifications?: number = 0;
-  /*
+  @Prop() notifications?: number = 0
+
+  /**
   * Sets the minimum value for the progress range. When progress is this number it reads 0%. 
   * When it is halfway between min and max it will read 50%
   */
   @Prop() min?: number = 0
-  /*
+
+  /**
   * Sets the maximum value for the progress range. When progress is this number it will read 100%. 
   * When it is halfway between min and max it will read 50%
   */
   @Prop() max?: number = 100
-  /*
+
+  /**
   * Displays this value as a percentage in the center of the donut graph, and styles a proportional 
   * segment of the graph. Progress can be positive or negative (the later useful for countdowns). 
   * The progress value must exist within the thresholds specified in the range property below.
