@@ -15,6 +15,11 @@ export interface RangeItem {
   shadow: true,
 })
 export class RuxMonitoringProgressIcon {
+
+  @State() _status: Status = 'normal'
+  @State() _circumference: number = 56 * 2 * Math.PI
+  @State() _graphProgress: number = 0
+
   /*
   * Displays a label below the icon
   */
@@ -24,12 +29,6 @@ export class RuxMonitoringProgressIcon {
   */
   @Prop() sublabel?: string;
   /*
-  * Displays this value as a percentage in the center of the donut graph, and styles a proportional 
-  * segment of the graph. Progress can be positive or negative (the later useful for countdowns). 
-  * The progress value must exist within the thresholds specified in the range property below.
-  */
-  @Prop({reflect: true}) progress!: number
-  /*
   * No	Items in this Array define thresholds for changing the status style of the progress icon. 
   * For each item in the Array, the icon will be styled with the given status while the progress value 
   * is less than the Array item’s threshold and equal to or greater than the next largest item‘s threshold. 
@@ -37,7 +36,7 @@ export class RuxMonitoringProgressIcon {
   * so long as they are consistent and the threshold values span no more than 100 numbers. 
   * The component assumes the Array's first status threshold begins at 0.
   */
- @Prop() range?: Array<RangeItem>
+ @Prop({mutable: true}) range?: Array<RangeItem>
   /*
   * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon. 
   * Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands, `'1.5M'` 
@@ -54,10 +53,12 @@ export class RuxMonitoringProgressIcon {
   * When it is halfway between min and max it will read 50%
   */
   @Prop() max?: number = 100
-
-  @State() status: Status
-  @State() _circumference: number = 56 * 2 * Math.PI
-  @State() _graphProgress: number = 0
+  /*
+  * Displays this value as a percentage in the center of the donut graph, and styles a proportional 
+  * segment of the graph. Progress can be positive or negative (the later useful for countdowns). 
+  * The progress value must exist within the thresholds specified in the range property below.
+  */
+  @Prop({reflect: true}) progress!: number
 
   @Watch('progress')
   checkProgress(newValue: number, oldValue: number) {
@@ -96,14 +97,18 @@ export class RuxMonitoringProgressIcon {
           },
         ];
       }
-      this.range = this.range.sort((a, b) => (a.threshold > b.threshold ? 1 : -1));
+      this.range = this.range.sort((a, b) => (a.threshold >= b.threshold ? 1 : -1));
 
       this.updateProgress();
     }
   }
 
+  get status(): string {
+    return this._status
+  }
+
   updateProgress() {
-    this.status = this.range.find((range) => this.progress < range.threshold).status || this.range[0].status;
+    this._status = this.range.find((range) => this.progress <= range.threshold).status || this.range[0].status;
     this._graphProgress = this._circumference - (this.progress / this.max) * this._circumference;
   }
 
@@ -115,9 +120,9 @@ export class RuxMonitoringProgressIcon {
         title={`${this.notifications} ${this.label} ${this.sublabel}`}
       >
         <div class="rux-advanced-status__icon-group">
-          <rux-status status={this.status}></rux-status>
+          <rux-status status={this._status}></rux-status>
 
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class={`rux-status--${this.status}`}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class={`rux-status--${this._status}`}>
             <g id="progress">
               <circle 
                 cx="60" 
