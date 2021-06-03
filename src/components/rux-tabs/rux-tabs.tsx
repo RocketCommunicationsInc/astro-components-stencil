@@ -6,11 +6,17 @@ import { Component, Host, h, Prop, Element, Listen } from '@stencil/core'
     shadow: true,
 })
 export class RuxTabs {
-    @Prop({ mutable: true }) ruxTabsId: string = ''
+    /**
+     *  Associates this tab container with a Tabs Panel container element. Must match the aria-labelledby attribute on a <rux-tabs-panels> container element elsewhere within the HTML document.
+     */
+    @Prop() ruxTabsId: string = ''
+    /**
+     *  If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses. Previously compact
+     */
     @Prop() small: boolean = false
     @Prop() _panels: Array<HTMLRuxTabPanelElement> = []
-    @Prop() _tabs: Array<HTMLRuxTabElement> = []
-    @Prop() _selectedTabId: string = ''
+    @Prop({ mutable: true }) _tabs: Array<HTMLRuxTabElement> = []
+    @Prop({ mutable: true }) _selectedTabId: string = ''
 
     @Element() ruxTabsEl: HTMLElement
 

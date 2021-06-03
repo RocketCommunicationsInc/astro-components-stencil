@@ -14,9 +14,14 @@ import {
     shadow: true,
 })
 export class RuxTabPanels {
-    @Prop() slottedChildren: Array<HTMLRuxTabPanelsElement> = []
+    @Prop({ mutable: true })
+    slottedChildren: Array<HTMLRuxTabPanelsElement> = []
 
     @Element() el: HTMLElement
+
+    connectedCallback() {
+        this.el.setAttribute('style', 'position: relative; width: 100%;')
+    }
 
     _getSlottedChildren() {
         const slot = this.el.shadowRoot.querySelector('slot')
@@ -26,16 +31,16 @@ export class RuxTabPanels {
             (node) => node.nodeType == Node.ELEMENT_NODE
         )
     }
-    connectedCallback() {
-        this.el.setAttribute('style', 'position: relative; width: 100%;')
-    }
-    //! Want willLoad instead
+
+    //! didLoad is triggering a warning about re-renders since slottedChildren changes. I've
+    //! tried willLoad, willRender, and inside the connectedCallback, but get errors of nodes
+    //! being undefined due to it not filling them in time. Race condition problem
     componentDidLoad() {
         this._getSlottedChildren()
         this._registerTabPanels(this.slottedChildren)
     }
 
-    @Event() registerPanels: EventEmitter<HTMLRuxTabPanelsElement[]> //! Might need to be panel not panels
+    @Event() registerPanels: EventEmitter<HTMLRuxTabPanelsElement[]>
     _registerTabPanels(children: HTMLRuxTabPanelsElement[]) {
         //* Emit the whole arr, map on parent
         this.registerPanels.emit(children)

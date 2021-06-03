@@ -5313,8 +5313,17 @@ export namespace Components {
         "status": string;
     }
     interface RuxTab {
+        /**
+          * If present, sets a disabled state on this tab item, indicating it cannot be selected by user action.
+         */
         "disabled": boolean;
+        /**
+          * Associates this tab with the tab content in a Tab Panel content element. Must match the aria-labelledby attribute on a <rux-tabs-panel> element elsewhere within the HTML document, within a <rux-tab-panels> container.
+         */
         "ruxTabId": string;
+        /**
+          * f present, overrides which tab is selected on load / mount. By default, the first <rux-tab> item is selected.
+         */
         "selected": boolean;
     }
     interface RuxTabPanel {
@@ -5326,7 +5335,13 @@ export namespace Components {
         "_panels": Array<HTMLRuxTabPanelElement>;
         "_selectedTabId": string;
         "_tabs": Array<HTMLRuxTabElement>;
+        /**
+          * Associates this tab container with a Tabs Panel container element. Must match the aria-labelledby attribute on a <rux-tabs-panels> container element elsewhere within the HTML document.
+         */
         "ruxTabsId": string;
+        /**
+          * If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses. Previously compact
+         */
         "small": boolean;
     }
 }
@@ -18090,8 +18105,17 @@ declare namespace LocalJSX {
         "status"?: string;
     }
     interface RuxTab {
+        /**
+          * If present, sets a disabled state on this tab item, indicating it cannot be selected by user action.
+         */
         "disabled"?: boolean;
+        /**
+          * Associates this tab with the tab content in a Tab Panel content element. Must match the aria-labelledby attribute on a <rux-tabs-panel> element elsewhere within the HTML document, within a <rux-tab-panels> container.
+         */
         "ruxTabId"?: string;
+        /**
+          * f present, overrides which tab is selected on load / mount. By default, the first <rux-tab> item is selected.
+         */
         "selected"?: boolean;
     }
     interface RuxTabPanel {
@@ -18104,7 +18128,13 @@ declare namespace LocalJSX {
         "_panels"?: Array<HTMLRuxTabPanelElement>;
         "_selectedTabId"?: string;
         "_tabs"?: Array<HTMLRuxTabElement>;
+        /**
+          * Associates this tab container with a Tabs Panel container element. Must match the aria-labelledby attribute on a <rux-tabs-panels> container element elsewhere within the HTML document.
+         */
         "ruxTabsId"?: string;
+        /**
+          * If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses. Previously compact
+         */
         "small"?: boolean;
     }
     interface IntrinsicElements {
