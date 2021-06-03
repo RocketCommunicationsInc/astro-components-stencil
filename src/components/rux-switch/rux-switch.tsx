@@ -1,4 +1,12 @@
-import { Component, Event, Watch, EventEmitter, Prop, Host, h } from '@stencil/core'
+import {
+    Component,
+    Event,
+    Watch,
+    EventEmitter,
+    Prop,
+    Host,
+    h,
+} from '@stencil/core'
 
 @Component({
     tag: 'rux-switch',
@@ -6,45 +14,46 @@ import { Component, Event, Watch, EventEmitter, Prop, Host, h } from '@stencil/c
     shadow: true,
 })
 export class RuxSwitch {
-    private inputId = `rux-switch-${id++}`;
-    @Prop() value?: string | null = 'on'
+    private inputId = `rux-switch-${id++}`
     @Prop() name: string
-    @Prop() checked: boolean = false;
+    @Prop() disabled: boolean = false
+    @Prop({ mutable: true }) checked: boolean = false
 
-     /**
-   * Emitted when the value property has changed.
-   */
-  @Event({eventName: 'rux-change'}) ruxChange!: EventEmitter;
+    /**
+     * Emitted when the value property has changed.
+     */
+    @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
 
-  @Watch('checked')
-  checkedChanged(checked: boolean) {
-    this.ruxChange.emit(checked);
-  }
+    @Watch('checked')
+    checkedChanged(checked: boolean) {
+        this.ruxChange.emit({
+            checked: checked,
+        })
+    }
 
-    handleClick() {
-      this.checked = !this.checked;
+    handleClick(e) {
+        e.preventDefault()
+        this.checked = !this.checked
     }
 
     render() {
+        const { inputId, name, disabled, checked } = this
         return (
             <Host onClick={this.handleClick}>
                 <div class="rux-switch">
                     <input
-                        id={this.inputId}
+                        id={inputId}
                         class="rux-switch__input"
                         type="checkbox"
-                        name={this.name}
-                        checked={this.checked}
+                        name={name}
+                        disabled={disabled}
+                        checked={checked}
                     />
-                    <label
-                        class="rux-switch__button"
-                        htmlFor={this.inputId}
-                    >
-                    </label>
+                    <label class="rux-switch__button" htmlFor={inputId}></label>
                 </div>
             </Host>
         )
     }
 }
 
-let id = 0;
+let id = 0
