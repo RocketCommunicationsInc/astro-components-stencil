@@ -54,32 +54,32 @@ A sample of a `range` Array. This sample is also the default value for `range`. 
 ```json
 [
     {
-        // for progress values from 0 to 16:
+        // for progress values from 0 to 17:
         "threshold": 17,
         "status": "off"
     },
     {
-        // for progress values from 17 to 32:
+        // for progress values from 18 to 33:
         "threshold": 33,
         "status": "standby"
     },
     {
-        // for progress values from 33 to 48:
+        // for progress values from 34 to 49:
         "threshold": 49,
         "status": "normal"
     },
     {
-        // for progress values from 49 to 64:
+        // for progress values from 50 to 65:
         "threshold": 65,
         "status": "caution"
     },
     {
-        // for progress values from 64 to 80:
+        // for progress values from 66 to 81:
         "threshold": 81,
         "status": "serious"
     },
     {
-        // for progress values from 81 to 99:
+        // for progress values from 82 to 100:
         "threshold": 100,
         "status": "critical"
     }
@@ -95,33 +95,32 @@ A sample of a `range` Array. This sample is also the default value for `range`. 
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
-| Property                | Attribute       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Type          | Default     |
-| ----------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ----------- |
-| `label` _(required)_    | `label`         | Displays a label below the icon                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | `string`      | `undefined` |
-| `max`                   | `max`           | Sets the maximum value for the progress range. When progress is this number it will read 100%.  When it is halfway between min and max it will read 50%                                                                                                                                                                                                                                                                                                                                                                                                    | `number`      | `100`       |
-| `min`                   | `min`           | Sets the minimum value for the progress range. When progress is this number it reads 0%.  When it is halfway between min and max it will read 50%                                                                                                                                                                                                                                                                                                                                                                                                          | `number`      | `0`         |
-| `notifications`         | `notifications` | If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon.  Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands, `'1.5M'`  for millions, and `'1.5B'` for billions. The badge uses `'∞'` for one trillion or higher.                                                                                                                                                                                                                                                        | `number`      | `0`         |
-| `progress` _(required)_ | `progress`      | Displays this value as a percentage in the center of the donut graph, and styles a proportional  segment of the graph. Progress can be positive or negative (the later useful for countdowns).  The progress value must exist within the thresholds specified in the range property below.                                                                                                                                                                                                                                                                 | `number`      | `undefined` |
-| `range`                 | --              | No	Items in this Array define thresholds for changing the status style of the progress icon.  For each item in the Array, the icon will be styled with the given status while the progress value  is less than the Array item’s threshold and equal to or greater than the next largest item‘s threshold.  Both progress and the Array items’ threshold values can be positive or negative,  so long as they are consistent and the threshold values span no more than 100 numbers.  The component assumes the Array's first status threshold begins at 0. | `RangeItem[]` | `undefined` |
-| `sublabel`              | `sublabel`      | Displays a smaller label underneath the icon label                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | `string`      | `undefined` |
-
+| Property                | Attribute       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Type          | Default     |
+| ----------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ----------- |
+| `label` _(required)_    | `label`         | Displays a label below the icon                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | `string`      | `undefined` |
+| `max`                   | `max`           | Sets the maximum value for the progress range. When progress is this number it will read 100%. When it is halfway between min and max it will read 50%                                                                                                                                                                                                                                                                                                                                                                                                | `number`      | `100`       |
+| `min`                   | `min`           | Sets the minimum value for the progress range. When progress is this number it reads 0%. When it is halfway between min and max it will read 50%                                                                                                                                                                                                                                                                                                                                                                                                      | `number`      | `0`         |
+| `notifications`         | `notifications` | If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon. Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands, `'1.5M'` for millions, and `'1.5B'` for billions. The badge uses `'∞'` for one trillion or higher.                                                                                                                                                                                                                                                     | `number`      | `0`         |
+| `progress` _(required)_ | `progress`      | Displays this value as a percentage in the center of the donut graph, and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below.                                                                                                                                                                                                                                                              | `number`      | `undefined` |
+| `range`                 | --              | No Items in this Array define thresholds for changing the status style of the progress icon. For each item in the Array, the icon will be styled with the given status while the progress value is less than the Array item’s threshold and equal to or greater than the next largest item‘s threshold. Both progress and the Array items’ threshold values can be positive or negative, so long as they are consistent and the threshold values span no more than 100 numbers. The component assumes the Array's first status threshold begins at 0. | `RangeItem[]` | `undefined` |
+| `sublabel`              | `sublabel`      | Displays a smaller label underneath the icon label                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | `string`      | `undefined` |
 
 ## Dependencies
 
 ### Depends on
 
-- [rux-status](../rux-status)
+-   [rux-status](../rux-status)
 
 ### Graph
+
 ```mermaid
 graph TD;
   rux-monitoring-progress-icon --> rux-status
   style rux-monitoring-progress-icon fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
-----------------------------------------------
+---
 
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_
