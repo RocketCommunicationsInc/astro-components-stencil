@@ -26,6 +26,7 @@ export class RuxTabPanels {
         this.el.setAttribute('style', 'position: relative; width: 100%;')
     }
 
+    //maybe do get _slottedChildren?
     _getSlottedChildren() {
         const slot = this.el.shadowRoot.querySelector('slot')
         const childNodes = slot.assignedNodes({ flatten: true })
