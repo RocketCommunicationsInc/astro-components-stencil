@@ -31,11 +31,10 @@ export class RuxMonitoringProgressIcon {
   @Prop() sublabel?: string;
 
   /**
-  * No	Items in this Array define thresholds for changing the status style of the progress icon. 
+  * Items in this Array define thresholds for changing the status style of the progress icon. 
   * For each item in the Array, the icon will be styled with the given status while the progress value 
-  * is less than the Array item’s threshold and equal to or greater than the next largest item‘s threshold. 
-  * Both progress and the Array items’ threshold values can be positive or negative, 
-  * so long as they are consistent and the threshold values span no more than 100 numbers. 
+  * is less than or equal to the Array item’s threshold and greater than the next smallest item‘s threshold. 
+  * Both progress and the Array items’ threshold values can be positive or negative. 
   * The component assumes the Array's first status threshold begins at 0.
   */
  @Prop({mutable: true}) range?: Array<RangeItem>
@@ -54,7 +53,7 @@ export class RuxMonitoringProgressIcon {
   @Prop() min?: number = 0
 
   /**
-  * Sets the maximum value for the progress range. When progress is this number it will read 100%. 
+  * Sets the maximum value for the progress range. When progress is this number it reads 100%. 
   * When it is halfway between min and max it will read 50%
   */
   @Prop() max?: number = 100
@@ -119,8 +118,6 @@ export class RuxMonitoringProgressIcon {
   }
 
   render() {
-    console.log(this._graphProgress)
-
     return (
       <div
         id="rux-advanced-status__icon"
@@ -155,7 +152,7 @@ export class RuxMonitoringProgressIcon {
             </g>
           </svg>
           <div class="rux-advanced-status__progress">
-            {Math.ceil((this.progress / this.max) * 100)}%
+            {Math.ceil((this.progress / (this.max - this.min)) * 100)}%
           </div>
           
           <MonitoringBadge notifications={this.notifications} />
