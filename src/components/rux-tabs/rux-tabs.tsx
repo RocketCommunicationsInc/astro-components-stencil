@@ -7,11 +7,11 @@ import { Component, Host, h, Prop, Element, Listen } from '@stencil/core'
 })
 export class RuxTabs {
     /**
-     *  Holds the <rux-tab-panel> components based on the event emitted from the <rux-tab-panels> component.
+     *  Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
      */
     @Prop({ mutable: true }) _panels: Array<HTMLRuxTabPanelElement> = []
     /**
-     *  Holds all <rux-tab> components that are children of <rux-tabs>.
+     *  Holds all `<rux-tab>` components that are children of `<rux-tabs>`.
      */
     @Prop({ mutable: true }) _tabs: Array<HTMLRuxTabElement> = []
 

@@ -15,7 +15,7 @@ import {
 })
 export class RuxTabPanels {
     /**
-     * Holds all slotted children of given <rux-tab-panels> component.
+     * Holds all slotted children of given '<rux-tab-panels>' component.
      */
     @Prop({ mutable: true })
     slottedChildren: Array<HTMLRuxTabPanelsElement> = []
