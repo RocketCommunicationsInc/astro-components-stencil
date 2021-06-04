@@ -31,8 +31,8 @@ export class RuxMonitoringProgressIcon {
   * Items in this Array define thresholds for changing the status style of the progress icon.
   * For each item in the Array, the icon will be styled with the given status while the progress value
   * is less than or equal to the Array item’s threshold and greater than the next smallest item‘s threshold.
-  * Both progress and the Array items’ threshold valeues can be positive or negative.
-  * If no min is specified the component assumes the Array's first status threshold begins at 0.
+  * Both progress and the Array items’ threshold values can be positive or negative.
+  * If no min is specified, the component assumes the Array's first status threshold begins at 0.
   */
  @Prop({mutable: true}) range?: Array<RangeItem>
 
@@ -44,13 +44,13 @@ export class RuxMonitoringProgressIcon {
   @Prop() notifications?: number = 0
 
   /**
-  * Sets the minimum value for the progress range. When progress is this number it reads 0%.
+  * Sets the minimum value for the progress range. When progress is this number, it reads 0%.
   * When it is halfway between min and max, it will read 50%
   */
   @Prop() min?: number = 0
 
   /**
-  * Sets the maximum value for the progress range. When progress is this number it reads 100%.
+  * Sets the maximum value for the progress range. When progress is this number, it reads 100%.
   * When it is halfway between min and max, it will read 50%
   */
   @Prop() max?: number = 100
@@ -66,7 +66,7 @@ export class RuxMonitoringProgressIcon {
   @Watch('progress')
   checkProgress(newValue: number, oldValue: number) {
     if (newValue !== oldValue) {
-      this.updateProgress()
+      this._updateProgress()
     }
   }
 
@@ -105,7 +105,7 @@ export class RuxMonitoringProgressIcon {
       }
       this.range = this.range.sort((a, b) => (a.threshold >= b.threshold ? 1 : -1));
 
-      this.updateProgress();
+      this._updateProgress();
     }
   }
 
@@ -113,7 +113,7 @@ export class RuxMonitoringProgressIcon {
     return this._status
   }
 
-  updateProgress() {
+  private _updateProgress() {
     this._status = this.range.find((range) => this.progress <= range.threshold).status || this.range[0].status;
     this._graphProgress = this._circumference - ((this.progress - this.min) / (this.max - this.min)) * this._circumference;
   }

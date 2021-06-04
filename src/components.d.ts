@@ -5353,7 +5353,7 @@ export namespace Components {
          */
         "notifications": number;
         /**
-          * Styles the icon according to the Astro Status colors. Valid options are the Astro statuses `critical`, `serious`, `caution`, `normal`, `standby`, and `off`
+          * Styles the icon according to the Astro Status colors. Valid options are the Astro statuses `critical`, `serious`, `caution`, `normal`, `standby`, and `off`.
          */
         "status": Status;
         /**
@@ -5367,11 +5367,11 @@ export namespace Components {
          */
         "label": string;
         /**
-          * Sets the maximum value for the progress range. When progress is this number it reads 100%. When it is halfway between min and max, it will read 50%
+          * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%
          */
         "max"?: number;
         /**
-          * Sets the minimum value for the progress range. When progress is this number it reads 0%. When it is halfway between min and max, it will read 50%
+          * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%
          */
         "min"?: number;
         /**
@@ -5383,7 +5383,7 @@ export namespace Components {
          */
         "progress": number;
         /**
-          * Items in this Array define thresholds for changing the status style of the progress icon. For each item in the Array, the icon will be styled with the given status while the progress value is less than or equal to the Array item’s threshold and greater than the next smallest item‘s threshold. Both progress and the Array items’ threshold valeues can be positive or negative. If no min is specified the component assumes the Array's first status threshold begins at 0.
+          * Items in this Array define thresholds for changing the status style of the progress icon. For each item in the Array, the icon will be styled with the given status while the progress value is less than or equal to the Array item’s threshold and greater than the next smallest item‘s threshold. Both progress and the Array items’ threshold values can be positive or negative. If no min is specified, the component assumes the Array's first status threshold begins at 0.
          */
         "range"?: Array<RangeItem>;
         /**
@@ -18198,7 +18198,7 @@ declare namespace LocalJSX {
          */
         "notifications"?: number;
         /**
-          * Styles the icon according to the Astro Status colors. Valid options are the Astro statuses `critical`, `serious`, `caution`, `normal`, `standby`, and `off`
+          * Styles the icon according to the Astro Status colors. Valid options are the Astro statuses `critical`, `serious`, `caution`, `normal`, `standby`, and `off`.
          */
         "status"?: Status;
         /**
@@ -18212,11 +18212,11 @@ declare namespace LocalJSX {
          */
         "label": string;
         /**
-          * Sets the maximum value for the progress range. When progress is this number it reads 100%. When it is halfway between min and max, it will read 50%
+          * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%
          */
         "max"?: number;
         /**
-          * Sets the minimum value for the progress range. When progress is this number it reads 0%. When it is halfway between min and max, it will read 50%
+          * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%
          */
         "min"?: number;
         /**
@@ -18228,7 +18228,7 @@ declare namespace LocalJSX {
          */
         "progress": number;
         /**
-          * Items in this Array define thresholds for changing the status style of the progress icon. For each item in the Array, the icon will be styled with the given status while the progress value is less than or equal to the Array item’s threshold and greater than the next smallest item‘s threshold. Both progress and the Array items’ threshold valeues can be positive or negative. If no min is specified the component assumes the Array's first status threshold begins at 0.
+          * Items in this Array define thresholds for changing the status style of the progress icon. For each item in the Array, the icon will be styled with the given status while the progress value is less than or equal to the Array item’s threshold and greater than the next smallest item‘s threshold. Both progress and the Array items’ threshold values can be positive or negative. If no min is specified, the component assumes the Array's first status threshold begins at 0.
          */
         "range"?: Array<RangeItem>;
         /**

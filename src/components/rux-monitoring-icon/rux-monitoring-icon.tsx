@@ -11,7 +11,7 @@ import MonitoringLabel from '../../common/functional-components/MonitoringLabel'
 export class RuxMonitoringIcon {
   /**
   * Styles the icon according to the Astro Status colors.
-  * Valid options are the Astro statuses `critical`, `serious`, `caution`, `normal`, `standby`, and `off`
+  * Valid options are the Astro statuses `critical`, `serious`, `caution`, `normal`, `standby`, and `off`.
   */
   @Prop({reflect: true}) status: Status = 'normal'
 
