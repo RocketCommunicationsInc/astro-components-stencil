@@ -34,7 +34,7 @@ export class RuxMonitoringIcon {
   /**
   * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon.
   * Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands,
-  * `'1.5M'` for millions, and `'1.5B'` for billions. The badge uses `'∞'` for one trillion or higher.
+  * `'1.5M'` for millions, and `'1.5B'` for billions, and uses `'∞'` for one trillion or higher.
   */
   @Prop() notifications: number = 0;
 
