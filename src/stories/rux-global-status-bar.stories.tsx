@@ -15,7 +15,7 @@ export default {
 }
 
 export const GlobalStatusBar = () => {
-  const appDomainKnob = text ('App Domain', 'GRM');
+  const appDomainKnob = text ('App Domain', 'Astro');
   const appNameKnob = text('App Name', 'Dashboard');
   const appVersionKnob = text('Version', '4.0 alpha');
   const menuIconKnob = text('Menu Icon', 'apps');
@@ -39,7 +39,7 @@ GlobalStatusBar.parameters = {
 }
 
 export const GlobalStatusBarWithSlotContent = () => {
-  const appDomainKnob = text ('App Domain', 'GRM');
+  const appDomainKnob = text ('App Domain', 'Astro');
   const appNameKnob = text('App Name', 'Dashboard');
   const appVersionKnob = text('Version', '4.0 alpha');
   const menuIconKnob = text('Menu Icon', 'apps');
@@ -48,7 +48,7 @@ export const GlobalStatusBarWithSlotContent = () => {
     <div style="display: flex; justify-content: center;">
       <rux-global-status-bar class="dark-theme" .appDomain="${appDomainKnob}" .appName="${appNameKnob}" .appVersion="${appVersionKnob}" .menuIcon="${menuIconKnob}">
         <rux-clock></rux-clock>
-        <rux-button slot="right-side" >Master off</rux-button>
+        <rux-button slot="right-side" >Emergency shut off</rux-button>
       </rux-global-status-bar>
     </div>
   `;
@@ -67,7 +67,7 @@ GlobalStatusBarWithSlotContent.parameters = {
 }
 
 export const GlobalStatusBarWithTabs = () => {
-  const appDomainKnob = text ('App Domain', 'GRM');
+  const appDomainKnob = text ('App Domain', 'Astro');
   const appNameKnob = text('App Name', 'Dashboard');
   const appVersionKnob = text('Version', '4.0 alpha');
   const menuIconKnob = text('Menu Icon', 'apps');
@@ -80,7 +80,7 @@ export const GlobalStatusBarWithTabs = () => {
                 <rux-tab id="tab-id-1-2">Tab 2</rux-tab>
                 <rux-tab id="tab-id-1-3">Tab 3</rux-tab>
             </rux-tabs>
-            <rux-button>Master off</rux-button>
+            <rux-button>Emergency shut off</rux-button>
         </rux-global-status-bar>
         <rux-tab-panels aria-labelledby="tab-set-id-1">
             <rux-tab-panel aria-labelledby="tab-id-1-1">

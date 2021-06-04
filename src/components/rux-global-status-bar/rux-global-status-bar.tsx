@@ -1,8 +1,8 @@
 import { Prop, Component, Host, h, Watch } from '@stencil/core';
-import { AppName } from '../../common/functional-components/appName'
-import { AppVersion } from '../../common/functional-components/appVersion'
-import { AppDomain } from '../../common/functional-components/appDomain'
-import iconsJSON from '../../stories/rux-icons.json'
+import { AppName } from '../../common/functional-components/appName';
+import { AppVersion } from '../../common/functional-components/appVersion';
+import { AppDomain } from '../../common/functional-components/appDomain';
+import iconsJSON from '../../stories/rux-icons.json';
 
 @Component({
   tag: 'rux-global-status-bar',
@@ -61,7 +61,7 @@ export class RuxGlobalStatusBar {
         <header>
 
           <slot name="left-side">
-            {/* this icon is a placholder until waffle-menu icon is included in the rux-icon library or menu component is built*/}
+            {/* this icon is a placeholder until waffle-menu icon is included in the rux-icon library or menu component is built*/}
             <rux-icon icon={`${this.menuIcon}`} size="small" style={{"width": "32px"}}/>
           </slot>
 
