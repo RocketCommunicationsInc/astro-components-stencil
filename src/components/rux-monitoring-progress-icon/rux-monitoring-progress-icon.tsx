@@ -6,7 +6,7 @@ import MonitoringLabel from '../../common/functional-components/MonitoringLabel'
 
 export interface RangeItem {
   threshold: number,
-  status: Status
+  status: Status,
 }
 
 @Component({
@@ -16,9 +16,6 @@ export interface RangeItem {
 })
 export class RuxMonitoringProgressIcon {
   _circumference = 56 * 2 * Math.PI
-
-  @State() _status: Status
-  @State() _graphProgress: number = 0
 
   /**
   * Displays a label below the icon
@@ -31,36 +28,37 @@ export class RuxMonitoringProgressIcon {
   @Prop() sublabel?: string;
 
   /**
-  * Items in this Array define thresholds for changing the status style of the progress icon. 
-  * For each item in the Array, the icon will be styled with the given status while the progress value 
-  * is less than or equal to the Array item’s threshold and greater than the next smallest item‘s threshold. 
-  * Both progress and the Array items’ threshold values can be positive or negative. 
-  * The component assumes the Array's first status threshold begins at 0.
+  * Items in this Array define thresholds for changing the status style of the progress icon.
+  * For each item in the Array, the icon will be styled with the given status while the progress value
+  * is less than or equal to the Array item’s threshold and greater than the next smallest item‘s threshold.
+  * Both progress and the Array items’ threshold valeues can be positive or negative.
+  * If no min is specified the component assumes the Array's first status threshold begins at 0.
   */
  @Prop({mutable: true}) range?: Array<RangeItem>
 
   /**
-  * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon. 
-  * Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands, `'1.5M'` 
-  * for millions, and `'1.5B'` for billions. The badge uses `'∞'` for one trillion or higher.
+  * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon.
+  * Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands, `'1.5M'`
+  * for millions, `'1.5B'` for billions, and `'∞'` for one trillion or higher.
   */
   @Prop() notifications?: number = 0
 
   /**
-  * Sets the minimum value for the progress range. When progress is this number it reads 0%. 
-  * When it is halfway between min and max it will read 50%
+  * Sets the minimum value for the progress range. When progress is this number it reads 0%.
+  * When it is halfway between min and max, it will read 50%
   */
   @Prop() min?: number = 0
 
   /**
-  * Sets the maximum value for the progress range. When progress is this number it reads 100%. 
-  * When it is halfway between min and max it will read 50%
+  * Sets the maximum value for the progress range. When progress is this number it reads 100%.
+  * When it is halfway between min and max, it will read 50%
   */
   @Prop() max?: number = 100
 
   /**
-  * Displays this value as a percentage in the center of the donut graph, and styles a proportional 
-  * segment of the graph. Progress can be positive or negative (the later useful for countdowns). 
+  * Displays this value as a percentage of where it lies between min and max
+  * in the center of the donut graph and styles a proportional
+  * segment of the graph. Progress can be positive or negative (the later useful for countdowns).
   * The progress value must exist within the thresholds specified in the range property below.
   */
   @Prop({reflect: true}) progress!: number
@@ -72,9 +70,12 @@ export class RuxMonitoringProgressIcon {
     }
   }
 
+  @State() _status: Status
+  @State() _graphProgress: number = 0
+
   componentWillLoad() {
     if (Number.isInteger(this.progress)) {
-      if (!this.range) {
+      if (!this.range || this.range.length === 0) {
         this.range = [
           {
             threshold: 17,
@@ -114,7 +115,7 @@ export class RuxMonitoringProgressIcon {
 
   updateProgress() {
     this._status = this.range.find((range) => this.progress <= range.threshold).status || this.range[0].status;
-    this._graphProgress = this._circumference - (this.progress / (this.max - this.min)) * this._circumference;
+    this._graphProgress = this._circumference - ((this.progress - this.min) / (this.max - this.min)) * this._circumference;
   }
 
   render() {
@@ -152,7 +153,7 @@ export class RuxMonitoringProgressIcon {
             </g>
           </svg>
           <div class="rux-advanced-status__progress">
-            {Math.ceil((this.progress / (this.max - this.min)) * 100)}%
+            {Math.ceil(((this.progress - this.min) / (this.max - this.min)) * 100)}%
           </div>
           
           <MonitoringBadge notifications={this.notifications} />

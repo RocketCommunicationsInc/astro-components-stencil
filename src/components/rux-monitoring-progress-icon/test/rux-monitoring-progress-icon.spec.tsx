@@ -62,13 +62,23 @@ describe('rux-monitoring-progress-icon', () => {
       {
         threshold: 1100,
         status: 'serious'
-      }
+      },
     ]
     progressIcon.updateProgress()
     expect(progressIcon.status).toBe('normal')
+    expect(Math.ceil(((progressIcon.progress - progressIcon.min) / (progressIcon.max - progressIcon.min)) * 100)).toBe(58)
 
     progressIcon.progress = 1100
     progressIcon.updateProgress()
     expect(progressIcon.status).toBe('serious')
+  })
+
+  it('works with empty range array', () => {
+    const progressIcon = new RuxMonitoringProgressIcon()
+
+    progressIcon.progress = 50
+    progressIcon.range = []
+    progressIcon.componentWillLoad()
+    expect(progressIcon.status).toBe('caution')
   })
 });
