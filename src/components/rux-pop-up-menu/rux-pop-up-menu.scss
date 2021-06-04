@@ -1,3 +1,42 @@
 :host {
-  display: block;
+    display: block;
+
+    /**
+      * @prop --popupMenuBackgroundColor: Pop Up Menu Backround Color
+    */
+    --popupMenuBackgroundColor: var(--inputBackground);
+
+    /**
+      * @prop --popupMenuBorderColor: Pop Up Menu Border Color
+    */
+    --popupMenuBorderColor: var(--primary);
+
+    /**
+      * @prop --popupMenuTextColor: Pop Up Menu Text Color
+    */
+    --popupMenuTextColor: var(--primaryElementText);
+
+    /**
+      * @prop --popupMenuBorderColor: Pop Up Menu Caret Background Color
+    */
+    --popupCaretBackgroundColor: var(--primary);
+
+    /**
+      * @prop --popupMenuItemBackgroundColor: Pop Up Menu Item Background Color
+    */
+    --popupMenuItemBackgroundColor: var(--primary);
+
+    /**
+      * @prop --popupMenuItemHoverBackgroundColor: Pop Up Menu Item Hover Background Color
+    */
+    --popupMenuItemHoverBackgroundColor: var(--primaryLight);
+
+    /**
+      * @prop --popupMenuItemHoverTextColor: Pop Up Menu Item Hover Text Color
+    */
+    --popupMenuItemHoverTextColor: var(--primaryElementText);
+    /**
+      * @prop --popupMenuItemDividerBorderColor: Pop Up Menu Item Divider Border Color
+    */
+    --popupMenuItemDividerBorderColor: var(--primaryElementText);
 }
