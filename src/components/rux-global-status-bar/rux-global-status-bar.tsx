@@ -62,7 +62,7 @@ export class RuxGlobalStatusBar {
 
           <slot name="left-side">
             {/* this icon is a placholder until waffle-menu icon is included in the rux-icon library or menu component is built*/}
-            <rux-icon icon={`${this.menuIcon}`} size="small" />
+            <rux-icon icon={`${this.menuIcon}`} size="small" style={{"width": "32px"}}/>
           </slot>
 
           <slot name="app-meta">
