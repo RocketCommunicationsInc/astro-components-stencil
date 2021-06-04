@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { Classification, Status } from "./common/commonTypes.module";
 import { RangeItem } from "./components/rux-monitoring-progress-icon/rux-monitoring-progress-icon";
+import { SwitchChangeEvent } from "./components/rux-switch/rux-switch.model";
 export namespace Components {
     interface RuxButton {
         "disabled": boolean;
