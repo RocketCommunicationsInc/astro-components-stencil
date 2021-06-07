@@ -5400,6 +5400,20 @@ export namespace Components {
     interface RuxStatus {
         "status": Status;
     }
+    interface RuxSwitch {
+        /**
+          * Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.
+         */
+        "checked"?: boolean;
+        /**
+          * Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled"?: boolean;
+        /**
+          * The name of the form input element
+         */
+        "name"?: string;
+    }
     interface RuxTab {
         /**
           * If present, sets a disabled state on this tab item, indicating it cannot be selected by user action.
@@ -5427,20 +5441,6 @@ export namespace Components {
           * Holds all `<rux-tab>` components that are children of `<rux-tabs>`.
          */
         "_tabs": Array<HTMLRuxTabElement>;
-    }
-    interface RuxSwitch {
-        /**
-          * Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.
-         */
-        "checked"?: boolean;
-        /**
-          * Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
-         */
-        "disabled"?: boolean;
-        /**
-          * The name of the form input element
-         */
-        "name"?: string;
     }
 }
 declare global {
@@ -11828,6 +11828,12 @@ declare global {
         prototype: HTMLRuxStatusElement;
         new (): HTMLRuxStatusElement;
     };
+    interface HTMLRuxSwitchElement extends Components.RuxSwitch, HTMLStencilElement {
+    }
+    var HTMLRuxSwitchElement: {
+        prototype: HTMLRuxSwitchElement;
+        new (): HTMLRuxSwitchElement;
+    };
     interface HTMLRuxTabElement extends Components.RuxTab, HTMLStencilElement {
     }
     var HTMLRuxTabElement: {
@@ -11851,12 +11857,6 @@ declare global {
     var HTMLRuxTabsElement: {
         prototype: HTMLRuxTabsElement;
         new (): HTMLRuxTabsElement;
-    }
-    interface HTMLRuxSwitchElement extends Components.RuxSwitch, HTMLStencilElement {
-    }
-    var HTMLRuxSwitchElement: {
-        prototype: HTMLRuxSwitchElement;
-        new (): HTMLRuxSwitchElement;
     };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
@@ -12923,11 +12923,11 @@ declare global {
         "rux-monitoring-progress-icon": HTMLRuxMonitoringProgressIconElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-status": HTMLRuxStatusElement;
+        "rux-switch": HTMLRuxSwitchElement;
         "rux-tab": HTMLRuxTabElement;
         "rux-tab-panel": HTMLRuxTabPanelElement;
         "rux-tab-panels": HTMLRuxTabPanelsElement;
         "rux-tabs": HTMLRuxTabsElement;
-        "rux-switch": HTMLRuxSwitchElement;
     }
 }
 declare namespace LocalJSX {
@@ -18322,6 +18322,24 @@ declare namespace LocalJSX {
     interface RuxStatus {
         "status"?: Status;
     }
+    interface RuxSwitch {
+        /**
+          * Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.
+         */
+        "checked"?: boolean;
+        /**
+          * Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled"?: boolean;
+        /**
+          * The name of the form input element
+         */
+        "name"?: string;
+        /**
+          * Emitted when the value property has changed.
+         */
+        "onRux-change"?: (event: CustomEvent<SwitchChangeEvent>) => void;
+    }
     interface RuxTab {
         /**
           * If present, sets a disabled state on this tab item, indicating it cannot be selected by user action.
@@ -18350,24 +18368,6 @@ declare namespace LocalJSX {
           * Holds all `<rux-tab>` components that are children of `<rux-tabs>`.
          */
         "_tabs"?: Array<HTMLRuxTabElement>;
-    }
-    interface RuxSwitch {
-        /**
-          * Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.
-         */
-        "checked"?: boolean;
-        /**
-          * Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
-         */
-        "disabled"?: boolean;
-        /**
-          * The name of the form input element
-         */
-        "name"?: string;
-        /**
-          * Emitted when the value property has changed.
-         */
-        "onRux-change"?: (event: CustomEvent<SwitchChangeEvent>) => void;
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;
@@ -19434,11 +19434,11 @@ declare namespace LocalJSX {
         "rux-monitoring-progress-icon": RuxMonitoringProgressIcon;
         "rux-progress": RuxProgress;
         "rux-status": RuxStatus;
+        "rux-switch": RuxSwitch;
         "rux-tab": RuxTab;
         "rux-tab-panel": RuxTabPanel;
         "rux-tab-panels": RuxTabPanels;
         "rux-tabs": RuxTabs;
-        "rux-switch": RuxSwitch;
     }
 }
 export { LocalJSX as JSX };
@@ -20509,11 +20509,11 @@ declare module "@stencil/core" {
             "rux-monitoring-progress-icon": LocalJSX.RuxMonitoringProgressIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringProgressIconElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
+            "rux-switch": LocalJSX.RuxSwitch & JSXBase.HTMLAttributes<HTMLRuxSwitchElement>;
             "rux-tab": LocalJSX.RuxTab & JSXBase.HTMLAttributes<HTMLRuxTabElement>;
             "rux-tab-panel": LocalJSX.RuxTabPanel & JSXBase.HTMLAttributes<HTMLRuxTabPanelElement>;
             "rux-tab-panels": LocalJSX.RuxTabPanels & JSXBase.HTMLAttributes<HTMLRuxTabPanelsElement>;
             "rux-tabs": LocalJSX.RuxTabs & JSXBase.HTMLAttributes<HTMLRuxTabsElement>;
-            "rux-switch": LocalJSX.RuxSwitch & JSXBase.HTMLAttributes<HTMLRuxSwitchElement>;
         }
     }
 }
