@@ -1,12 +1,4 @@
-import {
-    Component,
-    Host,
-    h,
-    Prop,
-    Element,
-    Event,
-    EventEmitter,
-} from '@stencil/core'
+import { Component, Host, h, Element, Event, EventEmitter } from '@stencil/core'
 
 @Component({
     tag: 'rux-tab-panels',
@@ -14,12 +6,6 @@ import {
     shadow: true,
 })
 export class RuxTabPanels {
-    /**
-     * Holds all slotted children of given '<rux-tab-panels>' component.
-     */
-    @Prop({ mutable: true })
-    slottedChildren: Array<HTMLRuxTabPanelsElement> = []
-
     @Element() el: HTMLElement
 
     connectedCallback() {
@@ -29,23 +15,19 @@ export class RuxTabPanels {
     _getSlottedChildren() {
         const slot = this.el.shadowRoot.querySelector('slot')
         const childNodes = slot.assignedNodes({ flatten: true })
-        this.slottedChildren = Array.prototype.filter.call(
+        const children = Array.prototype.filter.call(
             childNodes,
             (node) => node.nodeType == Node.ELEMENT_NODE
         )
+        return children
     }
 
-    //! didLoad is triggering a warning about re-renders since slottedChildren changes. I've
-    //! tried willLoad, willRender, and inside the connectedCallback, but get errors of nodes
-    //! being undefined due to it not filling them in time. Race condition problem
     componentDidLoad() {
-        this._getSlottedChildren()
-        this._registerTabPanels(this.slottedChildren)
+        this._registerTabPanels(this._getSlottedChildren())
     }
 
     @Event() registerPanels: EventEmitter<HTMLRuxTabPanelsElement[]>
     _registerTabPanels(children: HTMLRuxTabPanelsElement[]) {
-        //* Emit the whole arr, map on parent
         this.registerPanels.emit(children)
     }
 

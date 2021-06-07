@@ -5427,10 +5427,6 @@ export namespace Components {
     interface RuxTabPanel {
     }
     interface RuxTabPanels {
-        /**
-          * Holds all slotted children of given '<rux-tab-panels>' component.
-         */
-        "slottedChildren": Array<HTMLRuxTabPanelsElement>;
     }
     interface RuxTabs {
         /**
@@ -18354,10 +18350,6 @@ declare namespace LocalJSX {
     }
     interface RuxTabPanels {
         "onRegisterPanels"?: (event: CustomEvent<HTMLRuxTabPanelsElement[]>) => void;
-        /**
-          * Holds all slotted children of given '<rux-tab-panels>' component.
-         */
-        "slottedChildren"?: Array<HTMLRuxTabPanelsElement>;
     }
     interface RuxTabs {
         /**
