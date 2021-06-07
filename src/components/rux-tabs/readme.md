@@ -98,26 +98,6 @@ Astro UXDS Tab (child) properties are passed as simple attributes on the individ
 | `selected` | Boolean | `false` | No       | If present, overrides which tab is selected on load / mount. By default, the first `<rux-tab>` item is selected.                                                                                                               |
 | `disabled` | Boolean | `false` | No       | If present, sets a disabled state on this tab item, indicating it cannot be selected by user action.                                                                                                                           |
 
----
-
-## Revision History
-
-##### **4.0**
-
--   Renamed `compact` property to `small`.
--   Removed/deprecated undocumented `interior` and `transparent` tab styles.
--   Replaced [Polymer 3](https://www.polymer-project.org) implementation with [LitElement](https://lit-element.polymer-project.org/) for improved speed and interoperability with JS Frameworks as well as simpler template declaration now available in vanilla JavaScript.
-
-##### **1.4**
-
--   Added `rux_` and BEM compatible classes to all `satcom_` NOTE: `satcom_` will be removed in a future version
--   Removed prefixed transitions
--   Removed prefixed gradients
--   Updated colors for WCAG compliance
--   Swapped condensed font for standard
-
----
-
 <!-- Auto Generated Below -->
 
 ## Properties
