@@ -61,7 +61,6 @@ export class RuxGlobalStatusBar {
         <header>
 
           <slot name="left-side">
-            {/* this icon is a placeholder until waffle-menu icon is included in the rux-icon library or menu component is built*/}
             <rux-icon icon={`${this.menuIcon}`} size="small" style={{"width": "32px"}}/>
           </slot>
 
@@ -74,9 +73,9 @@ export class RuxGlobalStatusBar {
                   <AppVersion version={this.appVersion} />
                 </AppName>
               </div>
-              {/* these divs are placeholders until an app state component and user display component are built */}
+              {/* these divs are placeholders until an app state component and username display component are built */}
               <div class="temp-app-state">App state</div>
-              <div class="temp-user-name">User Name</div>
+              <div class="temp-user-name">Username</div>
             </div>
           </slot>
 

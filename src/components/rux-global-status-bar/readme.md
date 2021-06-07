@@ -1,6 +1,6 @@
 # Global Status Bar
 
-The Global Status Bar is a full-width view across the top of an application — an area commonly reserved for global status, global command, and top-level navigation. The Global Status Bar often includes: Application Name, Applicatoin State, Monitoring Icons, Top Level Navigation, and an Emergency Button.
+The Global Status Bar is a full-width view across the top of an application — an area commonly reserved for global status, global command, and top-level navigation. The Global Status Bar often includes: Application Name, Application State, Monitoring Icons, Top Level Navigation, and an Emergency Button.
 
 ## Guidelines
 
@@ -50,7 +50,7 @@ The Global Status Bar component uses both named and unnamed slots. These slots c
 
 #### Named Slots
 
-There are three named slots in the Global Status Bar: left-side, app-meta, right-side. These can be used by declaring a slot attribute with the corresponding value on the element you want to be placed in that slot.
+There are three named slots in the Global Status Bar: left-side, app-meta, and right-side. These can be used by declaring a slot attribute with the corresponding value on the element you want to be placed in that slot.
 
 -   left-side (`<div slot="left-side" />`): places the content with the left-side slot attribute on the far left of the Global Status Bar. The default component in the left-side slot is a `<rux-icon icon="apps" size="small">` which can be replaced by declaring a left-side slot in your markup or the icon can be changed by declaring a new menu-icon attribute. If a menu-icon attribute value is provided that does not match an icon in the rux-icon libary, then a console error will be displayed.
 -   app-meta (`<div slot="app-meta" />`): places the content with the app-meta slot attribute just to the right of the left-side slot, a common location for an application name and app state. This slot is in the middle of the Global Status Bar component, however its margin pushes it to the left. The default elements in the app-meta slot are heading 1 elements showing the default values for the appDomain, appName, and appVersion properties. The app-meta slot also contains placeholder divs for an application state and username component. These default elements can be replaced by declaring a app-meta slot in your markup or the default app-meta information can be changed by setting the optional properties of app-domain, app-name, and app-version.
@@ -58,7 +58,7 @@ There are three named slots in the Global Status Bar: left-side, app-meta, right
 
 #### Unnamed Slots
 
-There is one unnnamed slot in the Global Status Bar. This slot is intended for any other elements or components you would like placed in the status bar separate from common components such as a menu icon and application name. Any children elements of the Global Status Bar that are not named slots will be considered slotted into this unnamed slot. Status bar elements like the [Clock](https://www.astrouxds.com/ui-components/clock), [Tabs](https://www.astrouxds.com/ui-components/tabs), and [Buttons](https://www.astrouxds.com/ui-components/buttons) and even plain HTML can be inserted into the body of the Global Status Bar using the component’s [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot).
+There is one unnamed slot in the Global Status Bar. This slot is intended for any other elements or components you would like placed in the status bar separate from common components such as a menu icon and application name. Any children elements of the Global Status Bar that are not named slots will be considered slotted into this unnamed slot. Status bar elements like the [Clock](https://www.astrouxds.com/ui-components/clock), [Tabs](https://www.astrouxds.com/ui-components/tabs), [Buttons](https://www.astrouxds.com/ui-components/buttons), and even plain HTML can be inserted into the body of the Global Status Bar using the component’s [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot).
 
 ```xml
  <rux-global-status-bar class="dark-theme" appname="Astro App" version="3.0">
@@ -66,7 +66,7 @@ There is one unnnamed slot in the Global Status Bar. This slot is intended for a
     <!-- Default component for app-meta slot rendered here-->
 	 <rux-clock></rux-clock>
 	 <div><!-- Any HTML here --></div>
-	 <rux-button slot="right-side">Master off</rux-button>
+	 <rux-button slot="right-side">Emergency shut off</rux-button>
  </rux-global-status-bar>
 ```
 

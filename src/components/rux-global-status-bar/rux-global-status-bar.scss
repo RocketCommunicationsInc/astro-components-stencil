@@ -40,7 +40,7 @@ rux-icon {
 }
 
 .app-meta {
-    // temporary style change to accomdate temp app state and user name
+    // temporary style change to accomodate temp app state and username
     // may change based on how app state component is designed
     display: inline-flex;
     flex-wrap: wrap;
@@ -89,7 +89,7 @@ rux-icon {
 // all temp classes and their subsequent styling will be replaced with internal component styles.
 .temp-app-state {
     box-sizing: border-box;
-    color: #ffffff;
+    color: var(--colorWhite);
     background-color: var(--colorTertiaryDarken4);
     border-radius: 2px;
     font-size: 14px;
@@ -97,13 +97,13 @@ rux-icon {
     letter-spacing: 0.5px;
     text-align: center;
     height: 22px;
+    margin-right: 6px;
 }
 
 .temp-user-name {
     box-sizing: border-box;
     flex-basis: 50%;
     font-size: 14px;
-    padding: 2px 6px;
+    padding: 2px 0px;
     letter-spacing: 0.5px;
-    margin-left: 10px;
 }
