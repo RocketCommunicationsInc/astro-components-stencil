@@ -35,6 +35,10 @@ header {
     box-sizing: border-box;
 }
 
+rux-icon {
+    height: 54px;
+}
+
 .app-meta {
     // temporary style change to accomdate temp app state and user name
     // may change based on how app state component is designed
@@ -51,12 +55,14 @@ header {
 .app-info-wrapper {
     flex-basis: 100%;
     display: flex;
+    margin-bottom: 6px;
 }
 
 .app-meta h1 {
     letter-spacing: 0.25px;
     margin-bottom: 0px;
     margin-top: 0px;
+    height: 32px;
 }
 
 .app-name {
@@ -82,19 +88,22 @@ header {
 
 // all temp classes and their subsequent styling will be replaced with internal component styles.
 .temp-app-state {
-    color: white;
-    background-color: black;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: var(--colorTertiaryDarken4);
     border-radius: 2px;
-    margin-right: 11px;
     font-size: 14px;
-    padding: 2px 4px;
+    padding: 2px 6px;
     letter-spacing: 0.5px;
     text-align: center;
+    height: 22px;
 }
 
 .temp-user-name {
+    box-sizing: border-box;
     flex-basis: 50%;
     font-size: 14px;
-    padding: 2px;
+    padding: 2px 6px;
     letter-spacing: 0.5px;
+    margin-left: 10px;
 }
