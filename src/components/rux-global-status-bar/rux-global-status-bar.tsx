@@ -78,9 +78,9 @@ export class RuxGlobalStatusBar {
               <div class="temp-user-name">Username</div>
             </div>
           </slot>
-
-          <slot></slot>
-          
+          <div class="slotted-content">
+            <slot></slot>
+          </div>
           <slot name="right-side"></slot>
           
       </header>
