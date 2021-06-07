@@ -1,5 +1,9 @@
 :host,
 .rux-tabs {
+    /**
+    *   @prop --tabBorderColor: Tab border color
+    */
+    --tabBorderColor: transparent;
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
