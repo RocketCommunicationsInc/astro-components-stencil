@@ -52,12 +52,35 @@ export const NotificationAutoClose = () => {
     const toggleBanner = boolean('Enable Banner', true)
     const statusOptions = ['standby', 'normal', 'caution', 'critical']
     const statusKnob = select('Status', statusOptions, 'standby')
+
+    // const closeDelayLabel = 'Close Delay'
+    // const closeDelayDefault = 3
+    // const closeDelayOptions = {
+    //     range: true,
+    //     min: 2,
+    //     max: 10,
+    //     step: 1,
+    // }
+    // const closeDelay = number(
+    //     closeDelayLabel,
+    //     closeDelayDefault,
+    //     closeDelayOptions
+    // )
+
+    //! closeDelay updates on the <rux-notification> component, but does not re-render and thus the
+    //! close delay stays at 3 by default. Looking into this issue, I found an article that basically said
+    //! just upgrade from knobs to controls. For now, do we even want the 'Close Delay' slider if it doesn't
+    //! actually change the delay?
+
+    //!It's defaulting to 2 sec because all values in slider aren't formated right - they are being taken in
+    //! but the update funciton as ms, so it defaults to 2000 ms
     const closeDelay = number('Close Delay', 3, {
         range: true,
         min: 2,
         max: 10,
         step: 1,
     })
+
     const messageKnob = text(
         'Banner Message',
         `This is a notification banner. It will disappear in ${closeDelay}000 ms.`
@@ -66,7 +89,7 @@ export const NotificationAutoClose = () => {
         <div style="display: flex; flex-flow: column; justify-content: center;">
             <rux-notification
                 ?open="${toggleBanner}"
-                closeAfter="${closeDelay}"
+                close-after="${closeDelay}"
                 status="${statusKnob}"
                 message="${messageKnob}"
             >
