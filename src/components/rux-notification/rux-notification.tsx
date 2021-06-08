@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core'
+import { Component, Host, h, Prop, Watch } from '@stencil/core'
 
 @Component({
     tag: 'rux-notification',
@@ -26,6 +26,11 @@ export class RuxNotification {
     @Prop() closeAfter: number = null
     @Prop() timeoutRef: number = null
 
+    @Watch('open')
+    watchHandler() {
+        console.log('watching open prop')
+        this.updated()
+    }
     connectedCallback() {
         this.updated()
     }

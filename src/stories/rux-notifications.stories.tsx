@@ -53,37 +53,21 @@ export const NotificationAutoClose = () => {
     const statusOptions = ['standby', 'normal', 'caution', 'critical']
     const statusKnob = select('Status', statusOptions, 'standby')
 
-    // const closeDelayLabel = 'Close Delay'
-    // const closeDelayDefault = 3
-    // const closeDelayOptions = {
-    //     range: true,
-    //     min: 2,
-    //     max: 10,
-    //     step: 1,
-    // }
-    // const closeDelay = number(
-    //     closeDelayLabel,
-    //     closeDelayDefault,
-    //     closeDelayOptions
-    // )
-
-    //! closeDelay updates on the <rux-notification> component, but does not re-render and thus the
-    //! close delay stays at 3 by default. Looking into this issue, I found an article that basically said
-    //! just upgrade from knobs to controls. For now, do we even want the 'Close Delay' slider if it doesn't
-    //! actually change the delay?
-
-    //!It's defaulting to 2 sec because all values in slider aren't formated right - they are being taken in
-    //! but the update funciton as ms, so it defaults to 2000 ms
-    const closeDelay = number('Close Delay', 3, {
+    //* Previous implementation was using second values, which <rux-notification> takes in as ms values.
+    //* Changing the default, min and max close delay values to ms values (hence the 2000 - 10000 slider)
+    //* allows for the values to be correct and the notification to close at the correct time.
+    //* It does look kinda weird to have a slider from 2000 - 10000, so suggestions are welcome.
+    const closeDelay = number('Close Delay', 3000, {
         range: true,
-        min: 2,
-        max: 10,
-        step: 1,
+        min: 2000,
+        max: 10000,
+        step: 1000,
     })
 
+    //! This message does not currently update when closeDelay does, likely because it isn't ever re-rendering
     const messageKnob = text(
         'Banner Message',
-        `This is a notification banner. It will disappear in ${closeDelay}000 ms.`
+        `This is a notification banner. It will disappear in ${closeDelay} ms.`
     )
     return html`
         <div style="display: flex; flex-flow: column; justify-content: center;">
