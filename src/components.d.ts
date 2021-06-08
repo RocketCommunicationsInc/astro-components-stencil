@@ -5392,6 +5392,13 @@ export namespace Components {
          */
         "sublabel"?: string;
     }
+    interface RuxNotification {
+        "closeAfter": number;
+        "message": string;
+        "open": boolean;
+        "status": string;
+        "target": string;
+    }
     interface RuxProgress {
         "hideLabel": boolean;
         "max": number;
@@ -11812,6 +11819,12 @@ declare global {
         prototype: HTMLRuxMonitoringProgressIconElement;
         new (): HTMLRuxMonitoringProgressIconElement;
     };
+    interface HTMLRuxNotificationElement extends Components.RuxNotification, HTMLStencilElement {
+    }
+    var HTMLRuxNotificationElement: {
+        prototype: HTMLRuxNotificationElement;
+        new (): HTMLRuxNotificationElement;
+    };
     interface HTMLRuxProgressElement extends Components.RuxProgress, HTMLStencilElement {
     }
     var HTMLRuxProgressElement: {
@@ -12917,6 +12930,7 @@ declare global {
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
         "rux-monitoring-icon": HTMLRuxMonitoringIconElement;
         "rux-monitoring-progress-icon": HTMLRuxMonitoringProgressIconElement;
+        "rux-notification": HTMLRuxNotificationElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-status": HTMLRuxStatusElement;
         "rux-switch": HTMLRuxSwitchElement;
@@ -18310,6 +18324,13 @@ declare namespace LocalJSX {
          */
         "sublabel"?: string;
     }
+    interface RuxNotification {
+        "closeAfter"?: number;
+        "message"?: string;
+        "open"?: boolean;
+        "status"?: string;
+        "target"?: string;
+    }
     interface RuxProgress {
         "hideLabel"?: boolean;
         "max"?: number;
@@ -19424,6 +19445,7 @@ declare namespace LocalJSX {
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
         "rux-monitoring-icon": RuxMonitoringIcon;
         "rux-monitoring-progress-icon": RuxMonitoringProgressIcon;
+        "rux-notification": RuxNotification;
         "rux-progress": RuxProgress;
         "rux-status": RuxStatus;
         "rux-switch": RuxSwitch;
@@ -20499,6 +20521,7 @@ declare module "@stencil/core" {
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
             "rux-monitoring-icon": LocalJSX.RuxMonitoringIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>;
             "rux-monitoring-progress-icon": LocalJSX.RuxMonitoringProgressIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringProgressIconElement>;
+            "rux-notification": LocalJSX.RuxNotification & JSXBase.HTMLAttributes<HTMLRuxNotificationElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
             "rux-switch": LocalJSX.RuxSwitch & JSXBase.HTMLAttributes<HTMLRuxSwitchElement>;
