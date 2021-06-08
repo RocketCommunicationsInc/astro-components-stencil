@@ -52,8 +52,8 @@ The Global Status Bar component uses both named and unnamed slots. These slots c
 
 There are three named slots in the Global Status Bar: left-side, app-meta, and right-side. These can be used by declaring a slot attribute with the corresponding value on the element you want to be placed in that slot.
 
--   left-side (`<div slot="left-side" />`): places the content with the left-side slot attribute on the far left of the Global Status Bar. The default component in the left-side slot is a `<rux-icon icon="apps" size="small">` which can be replaced by declaring a left-side slot in your markup or the icon can be changed by declaring a new menu-icon attribute. If a menu-icon attribute value is provided that does not match an icon in the rux-icon libary, then a console error will be displayed.
--   app-meta (`<div slot="app-meta" />`): places the content with the app-meta slot attribute just to the right of the left-side slot, a common location for an application name and app state. This slot is in the middle of the Global Status Bar component, however its margin pushes it to the left. The default elements in the app-meta slot are heading 1 elements showing the default values for the appDomain, appName, and appVersion properties. The app-meta slot also contains placeholder divs for an application state and username component. These default elements can be replaced by declaring a app-meta slot in your markup or the default app-meta information can be changed by setting the optional properties of app-domain, app-name, and app-version.
+-   left-side (`<div slot="left-side" />`): places the content with the left-side slot attribute on the far left of the Global Status Bar. If the includeIcon prop is set to true then the default component in the left-side slot is a `<rux-icon icon="apps" size="small">` which can be replaced by declaring a left-side slot in your markup. If you only want a different icon you can declare a different icon property on the rux-icon using the menuIcon prop on global status bar. If a menu-icon attribute value is provided that does not match an icon in the rux-icon libary, then no icon will be displayed.
+-   app-meta (`<div slot="app-meta" />`): places the content with the app-meta slot attribute just to the right of the left-side slot, a common location for an application name and app state. This slot is in the middle of the Global Status Bar component, however its margin-right pushes it to the left. If the includeAppMeta prop is set to true then the default elements in the app-meta slot are heading 1 elements showing the values for the appDomain, appName, and appVersion properties. The app-meta slot also contains placeholder divs for an application state and username component. These default elements can be replaced by declaring a app-meta slot in your markup or the default app-meta information can be changed by setting the optional properties of app-domain, app-name, and app-version.
 -   right-side (`<div slot="right-side" />`): places the content with the right-side slot attribute on the far right of the Global Status Bar. This slot has no default elements and will only display if a child element with the right-side slot attribute is included in your markup.
 
 #### Unnamed Slots
@@ -72,29 +72,32 @@ There is one unnamed slot in the Global Status Bar. This slot is intended for an
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
-| Property     | Attribute     | Description                                                                         | Type     | Default     |
-| ------------ | ------------- | ----------------------------------------------------------------------------------- | -------- | ----------- |
-| `appDomain`  | `app-domain`  | Sets the domain of the application to be displayed in the default app-meta element  | `string` | `undefined` |
-| `appName`    | `app-name`    | Sets the name of the application to be displayed in the default app-meta element    | `string` | `undefined` |
-| `appVersion` | `app-version` | Sets the version of the application to be displayed in the default app-meta element | `string` | `undefined` |
-| `menuIcon`   | `menu-icon`   | Sets the icon to be displayed in the default rux-icon component                     | `string` | `"apps"`    |
+| Property         | Attribute          | Description                                                                         | Type      | Default     |
+| ---------------- | ------------------ | ----------------------------------------------------------------------------------- | --------- | ----------- |
+| `appDomain`      | `app-domain`       | Sets the domain of the application to be displayed in the default app-meta element  | `string`  | `undefined` |
+| `appName`        | `app-name`         | Sets the name of the application to be displayed in the default app-meta element    | `string`  | `undefined` |
+| `appVersion`     | `app-version`      | Sets the version of the application to be displayed in the default app-meta element | `string`  | `undefined` |
+| `includeAppMeta` | `include-app-meta` | Declares whether the app-meta information will be shown in the global status bar    | `boolean` | `false`     |
+| `includeIcon`    | `include-icon`     | Declares whether a rux-icon will be shown in the global status bar                  | `boolean` | `false`     |
+| `menuIcon`       | `menu-icon`        | Sets the icon to be displayed in the default rux-icon component                     | `string`  | `"apps"`    |
+
 
 ## Dependencies
 
-### Depends On
+### Depends on
 
--   [rux-icon](../rux-icon)
+- [rux-icon](../rux-icon)
 
 ### Graph
-
 ```mermaid
 graph TD;
   rux-global-status-bar --> rux-icon
   style rux-global-status-bar fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
----
+----------------------------------------------
 
-_Built with [StencilJS](https://stenciljs.com/)_
+*Built with [StencilJS](https://stenciljs.com/)*
