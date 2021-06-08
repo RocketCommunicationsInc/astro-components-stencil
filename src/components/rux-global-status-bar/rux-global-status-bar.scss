@@ -34,7 +34,7 @@ slot[name='left-side'] > rux-icon {
     height: 54px;
 }
 
-.app-meta {
+slot[name='app-meta'] > * {
     // temporary style change to accomodate temp app state and username; may change based on how app state component is designed
     display: inline-flex;
     flex-wrap: wrap;
@@ -61,11 +61,11 @@ slot[name='left-side'] > rux-icon {
 
 .app-domain {
     font-weight: 700;
+    margin-right: 13px;
 }
 
 .app-name {
     font-weight: 400;
-    margin-left: 13px;
     white-space: nowrap;
 }
 
