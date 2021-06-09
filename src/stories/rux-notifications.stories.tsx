@@ -53,21 +53,17 @@ export const NotificationAutoClose = () => {
     const statusOptions = ['standby', 'normal', 'caution', 'critical']
     const statusKnob = select('Status', statusOptions, 'standby')
 
-    //* Previous implementation was using second values, which <rux-notification> takes in as ms values.
-    //* Changing the default, min and max close delay values to ms values (hence the 2000 - 10000 slider)
-    //* allows for the values to be correct and the notification to close at the correct time.
-    //* It does look kinda weird to have a slider from 2000 - 10000, so suggestions are welcome.
-    const closeDelay = number('Close Delay', 3000, {
+    const closeDelay = number('Close Delay', 3, {
         range: true,
-        min: 2000,
-        max: 10000,
-        step: 1000,
+        min: 2,
+        max: 10,
+        step: 1,
     })
 
     //! This message does not currently update when closeDelay does, likely because it isn't ever re-rendering
     const messageKnob = text(
         'Banner Message',
-        `This is a notification banner. It will disappear in ${closeDelay} ms.`
+        `This is a notification banner. It will disappear in ${closeDelay} seconds.`
     )
     return html`
         <div style="display: flex; flex-flow: column; justify-content: center;">

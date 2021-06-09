@@ -25,7 +25,10 @@ describe('rux-notification', () => {
   it('closes when the close icon is clicked', async() => {
     const page = await newE2EPage();
     await page.setContent('<rux-notification message="close me"></rux-notification>')
-    const el = await page.find('rux-notification')
-    //How to find right place to click?
+    //the rux-icon onClick closes the notification by removing the open attr
+    const notif = await page.find('rux-notification')
+    const closeIcon = await page.find('rux-icon')
+    await closeIcon.click();
+    expect(notif).not.toHaveAttribute('open');
   })
 });

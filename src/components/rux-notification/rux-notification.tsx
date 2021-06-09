@@ -23,8 +23,8 @@ export class RuxNotification {
     /**
      *  If provided, the banner will automatically close after this amount of time. Accepts value either in milliseconds or seconds (which will be converted to milliseconds internally), between `2000` and `10000`, or `2` and `10`, respectively. Any number provided outside of the `2000`-`10000` range will be ignored in favor of the default 2000ms delay. <br>If `closeAfter` is not passed or if it is given an undefined or `null` value, the banner will stay open until the user closes it.
      */
-    @Prop() closeAfter: number = null
-    @Prop() timeoutRef: number = null
+    @Prop({ mutable: true }) closeAfter: number = null
+    @Prop({ mutable: true }) timeoutRef: number = null
 
     @Watch('open')
     watchHandler() {
@@ -36,17 +36,14 @@ export class RuxNotification {
     }
 
     updated() {
-        // let timeoutRef = null
         if (this._closeAfter && this.open) {
             this.timeoutRef = window.setTimeout(() => {
                 this.open = false
             }, this._closeAfter)
         }
-        // return timeoutRef
     }
 
     _onClick() {
-        // const timeoutRef = this.updated()
         if (this.timeoutRef) {
             clearTimeout(this.timeoutRef)
         }
@@ -54,16 +51,19 @@ export class RuxNotification {
     }
 
     get _closeAfter() {
-        // console.log(this.closeAfter, 'Close After')
-        if (this.closeAfter && this.closeAfter <= 10) {
-            // if the number is 10 or less, it must be ms
+        //* as long as it's less than 1000, they put in seconds. Convert that here.
+        if (this.closeAfter && this.closeAfter <= 999) {
+            //it's in seconds
+            this.closeAfter *= 1000 // change into ms
         }
 
         if (
             (this.closeAfter && this.closeAfter > 10000) ||
             (this.closeAfter && this.closeAfter < 2000)
         ) {
+            //? This sets the maximum amount of time a banner could be live for to 10 seconds. Would we ever want more?
             // if this number is larger than 10s or smaller than 2s, enforce minimum 2s delay
+            //? I'm thinking a 2 second defualt is kinda fast and that a 3 would be better. Thoughts?
             this.closeAfter = 2000
         }
 
