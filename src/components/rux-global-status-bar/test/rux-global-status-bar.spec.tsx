@@ -39,9 +39,8 @@ describe('rux-global-status-bar', () => {
               <div class="app-meta">
                 <div class="app-info-wrapper">
                   <h1 class="app-domain">ASTRO</h1>
-                  <h1 class="app-name">TEST APP NAME
-                    <span class="app-version">test v1.0</span>
-                  </h1>
+                  <h1 class="app-name">TEST APP NAME</h1>
+                  <span class="app-version">test v1.0</span>
                 </div>
                 <div class="temp-app-state">App state</div>
                 <div class="temp-username">Username</div>
@@ -77,9 +76,8 @@ describe('rux-global-status-bar', () => {
               <div class="app-meta">
                 <div class="app-info-wrapper">
                   <h1 class="app-domain">ASTRO</h1>
-                  <h1 class="app-name">TEST APP NAME
-                    <span class="app-version">test v1.0</span>
-                  </h1>
+                  <h1 class="app-name">TEST APP NAME</h1>
+                  <span class="app-version">test v1.0</span>
                 </div>
                 <div class="temp-app-state">App state</div>
                 <div class="temp-username">Username</div>

@@ -45,13 +45,10 @@ slot[name='app-meta'] > * {
     color: var(--inputBackground);
 }
 
-.app-meta {
-    min-width: 170px;
-}
-
 .app-info-wrapper {
     flex-basis: 100%;
     display: flex;
+    align-items: baseline;
     margin-bottom: 6px;
 }
 
@@ -70,6 +67,7 @@ slot[name='app-meta'] > * {
 
 .app-name {
     font-weight: 400;
+    margin-right: 0.3em;
     white-space: nowrap;
 }
 
@@ -77,7 +75,7 @@ slot[name='app-meta'] > * {
     display: inline-block;
     font-size: 1.1875rem;
     font-weight: 300;
-    margin-left: 0.5em;
+    white-space: nowrap;
 }
 
 .slotted-content {
