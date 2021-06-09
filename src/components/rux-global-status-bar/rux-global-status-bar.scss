@@ -50,6 +50,7 @@ slot[name='app-meta'] > * {
     display: flex;
     align-items: baseline;
     margin-bottom: 6px;
+    min-width: 170px;
 }
 
 .app-meta h1 {
@@ -96,6 +97,7 @@ slot[name='app-meta'] > * {
     text-align: center;
     height: 22px;
     margin-right: 6px;
+    white-space: nowrap;
 }
 
 .temp-username {
