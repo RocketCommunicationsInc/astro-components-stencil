@@ -22,13 +22,4 @@ describe('rux-notification', () => {
     //Checking open attr right before time is up to make sure it doesn't close a ms too early
     setTimeout( () => expect(el).toHaveAttribute('open'), 2999);
   })
-  it('closes when the close icon is clicked', async() => {
-    const page = await newE2EPage();
-    await page.setContent('<rux-notification message="close me"></rux-notification>')
-    //the rux-icon onClick closes the notification by removing the open attr
-    const notif = await page.find('rux-notification')
-    const closeIcon = await page.find('rux-icon')
-    await closeIcon.click();
-    expect(notif).not.toHaveAttribute('open');
-  })
 });
