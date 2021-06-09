@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Host, h, Prop, Element, State } from '@stencil/core';
 
 interface MenuItem {
   id: string,
@@ -15,11 +15,59 @@ interface Seperator{
   shadow: true,
 })
 export class RuxPopUpMenu {
+
+  left: number
+  top: number
+
+  @Element() el: HTMLElement
+
+  @State() _trigger: HTMLElement
   /**
    * An array of objects that defines the pop up menu’s labels.
    * Note: when used in an Angular environment you may need to stringify the data property.
    */
   @Prop() data!: Array<MenuItem | Seperator>
+
+  @Prop() selected?: object
+
+  @Prop({reflect: true}) expanded: boolean
+
+  connectedCallback() {
+    this._trigger = this.el.parentElement.querySelector(`[aria-controls="${this.el.id}"]`);
+    // this._trigger.addEventListener('mousedown', this._handleClick);
+  }
+
+  disconnectedCallback() {
+    // this._trigger.removeEventListener('mousedown', this._handleClick);
+  }
+
+  _setMenuPosition() {
+    const menuBounds = this.el.getBoundingClientRect();
+    const triggerBounds = this._trigger.getBoundingClientRect();
+    const caret = parseInt(getComputedStyle(this.el, ':after').height);
+
+    const padding = 16;
+
+    this.left =
+      menuBounds.width + triggerBounds.left - padding > window.innerWidth
+        ? triggerBounds.right - menuBounds.width
+        : triggerBounds.left - padding;
+
+    this.top = triggerBounds.bottom + padding / 2 + caret / 2;
+
+    if (menuBounds.height + triggerBounds.bottom + padding > window.innerHeight) {
+      this.top = triggerBounds.top - menuBounds.height - caret;
+      this.el.classList.add('from-top');
+    } else {
+      this.el.classList.remove('from-top');
+    }
+
+    this.el.style.left = `${this.left}px`;
+    this.el.style.top = `${this.top}px`;
+
+    const caretLeft = triggerBounds.left - this.left;
+    this.el.style.setProperty('--caretLeft', `${caretLeft}px`);
+  }
 
   render() {
     return (
