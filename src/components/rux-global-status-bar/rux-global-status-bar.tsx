@@ -1,5 +1,5 @@
 import { Prop, Component, Host, h } from '@stencil/core';
-import { AppMeta } from '../../common/functional-components/appMeta';
+import { AppMeta } from './appMeta/appMeta';
 
 @Component({
   tag: 'rux-global-status-bar',
