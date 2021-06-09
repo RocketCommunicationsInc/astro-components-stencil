@@ -35,7 +35,7 @@ slot[name='left-side'] > rux-icon {
 }
 
 slot[name='app-meta'] > * {
-    // temporary style change to accomodate temp app state and username; may change based on how app state component is designed
+    // temporary style change to accommodate temp app state and username; may change based on how app state component is designed
     display: inline-flex;
     flex-wrap: wrap;
 
@@ -96,7 +96,7 @@ slot[name='app-meta'] > * {
     margin-right: 6px;
 }
 
-.temp-user-name {
+.temp-username {
     box-sizing: border-box;
     flex-basis: 50%;
     font-size: 14px;

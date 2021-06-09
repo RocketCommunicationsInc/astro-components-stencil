@@ -46,7 +46,7 @@ export class RuxGlobalStatusBar {
               <AppMeta domain={this.appDomain?.toUpperCase()} name={this.appName?.toUpperCase()} version={this.appVersion}>
                 {/* these divs are placeholders until an app state component and username display component are built */}
                 <div class="temp-app-state">App state</div>
-                <div class="temp-user-name">Username</div>
+                <div class="temp-username">Username</div>
               </AppMeta>
             }
           </slot>
