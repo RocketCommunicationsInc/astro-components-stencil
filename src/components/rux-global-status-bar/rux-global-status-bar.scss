@@ -45,6 +45,10 @@ slot[name='app-meta'] > * {
     color: var(--inputBackground);
 }
 
+.app-meta {
+    min-width: 170px;
+}
+
 .app-info-wrapper {
     flex-basis: 100%;
     display: flex;
