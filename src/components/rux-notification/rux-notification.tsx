@@ -28,7 +28,6 @@ export class RuxNotification {
 
     @Watch('open')
     watchHandler() {
-        console.log('watching open prop')
         this.updated()
     }
     connectedCallback() {
