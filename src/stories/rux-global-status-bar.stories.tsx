@@ -16,7 +16,6 @@ export default {
 
 export const GlobalStatusBar = () => {
     const includeIconKnob = boolean ('Include Icon', true);
-    const includeAppMetaKnob = boolean ('Include App Meta', true);
     const appDomainKnob = text ('App Domain', 'Astro');
     const appNameKnob = text('App Name', 'Dashboard');
     const appVersionKnob = text('Version', '4.0 alpha');
@@ -27,7 +26,6 @@ export const GlobalStatusBar = () => {
     <div style="display: flex; justify-content: center;">
         <rux-global-status-bar
             .includeIcon="${includeIconKnob}" 
-            .includeAppMeta="${includeAppMetaKnob}"
             .appDomain="${appDomainKnob}" 
             .appName="${appNameKnob}" 
             .appVersion="${appVersionKnob}"
@@ -50,7 +48,6 @@ GlobalStatusBar.parameters = {
 
 export const GlobalStatusBarWithSlotContent = () => {
     const includeIconKnob = boolean ('Include Icon', true);
-    const includeAppMetaKnob = boolean ('Include App Meta', true);
     const appDomainKnob = text ('App Domain', 'Astro');
     const appNameKnob = text('App Name', 'Dashboard');
     const appVersionKnob = text('Version', '4.0 alpha');
@@ -58,7 +55,7 @@ export const GlobalStatusBarWithSlotContent = () => {
 
     return html`
         <div style="display: flex; justify-content: center;">
-        <rux-global-status-bar class="dark-theme" .includeIcon="${includeIconKnob}" .includeAppMeta="${includeAppMetaKnob}" .appDomain="${appDomainKnob}" .appName="${appNameKnob}" .appVersion="${appVersionKnob}" .menuIcon="${menuIconKnob}">
+        <rux-global-status-bar class="dark-theme" .includeIcon="${includeIconKnob}" .appDomain="${appDomainKnob}" .appName="${appNameKnob}" .appVersion="${appVersionKnob}" .menuIcon="${menuIconKnob}">
             <rux-clock></rux-clock>
             <rux-button slot="right-side" >Emergency shut off</rux-button>
         </rux-global-status-bar>
@@ -80,7 +77,6 @@ GlobalStatusBarWithSlotContent.parameters = {
 
 export const GlobalStatusBarWithTabs = () => {
     const includeIconKnob = boolean ('Include Icon', true);
-    const includeAppMetaKnob = boolean ('Include App Meta', true);
     const appDomainKnob = text ('App Domain', 'Astro');
     const appNameKnob = text('App Name', 'Dashboard');
     const appVersionKnob = text('Version', '4.0 alpha');
@@ -88,7 +84,7 @@ export const GlobalStatusBarWithTabs = () => {
 
     return html`
     <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-        <rux-global-status-bar class="dark-theme" .includeIcon="${includeIconKnob}" .includeAppMeta="${includeAppMetaKnob}" .appDomain="${appDomainKnob}" .appName="${appNameKnob}" .appVersion="${appVersionKnob}" .menuIcon="${menuIconKnob}">
+        <rux-global-status-bar class="dark-theme" .includeIcon="${includeIconKnob}" .appDomain="${appDomainKnob}" .appName="${appNameKnob}" .appVersion="${appVersionKnob}" .menuIcon="${menuIconKnob}">
             <rux-tabs id="tab-set-id-1">
                 <rux-tab id="tab-id-1">Tab 1</rux-tab>
                 <rux-tab id="tab-id-2">Tab 2</rux-tab>

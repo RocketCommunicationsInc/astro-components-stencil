@@ -73,10 +73,6 @@ export namespace Components {
          */
         "appVersion"?: string;
         /**
-          * Declares whether the app-meta information will be shown in the global status bar
-         */
-        "includeAppMeta"?: boolean;
-        /**
           * Declares whether a rux-icon will be shown in the global status bar
          */
         "includeIcon"?: boolean;
@@ -13012,10 +13008,6 @@ declare namespace LocalJSX {
           * Sets the version of the application to be displayed in the default app-meta element
          */
         "appVersion"?: string;
-        /**
-          * Declares whether the app-meta information will be shown in the global status bar
-         */
-        "includeAppMeta"?: boolean;
         /**
           * Declares whether a rux-icon will be shown in the global status bar
          */

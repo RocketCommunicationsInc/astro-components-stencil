@@ -12,10 +12,6 @@ export class RuxGlobalStatusBar {
    */
   @Prop() includeIcon?: boolean = false
   /**
-   * Declares whether the app-meta information will be shown in the global status bar
-   */
-  @Prop() includeAppMeta?: boolean = false
-  /**
    * Sets the domain of the application to be displayed in the default app-meta element
    */
   @Prop() appDomain?: string;
@@ -42,9 +38,9 @@ export class RuxGlobalStatusBar {
           </slot>
           
           <slot name="app-meta">
-            {this.includeAppMeta &&
+            {(this.appDomain || this.appName || this.appVersion) &&
               <AppMeta domain={this.appDomain?.toUpperCase()} name={this.appName?.toUpperCase()} version={this.appVersion}>
-                {/* these divs are placeholders until an app state component and username display component are built */}
+                {/* TODO: these divs are placeholders until an app state component and username display component are built */}
                 <div class="temp-app-state">App state</div>
                 <div class="temp-username">Username</div>
               </AppMeta>
