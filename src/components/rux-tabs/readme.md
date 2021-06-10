@@ -63,7 +63,7 @@ The Astro UXDS Tabs pattern is configured using properties passed into the custo
 </rux-tab-panels>
 ```
 
-The `small` property may passed as a simple attribute on the Astro UXDS Tabs container element:
+The `small` property may be passed as a simple attribute on the Astro UXDS Tabs container element:
 
 ```xml
 <rux-tabs small id="tab-set-id-1">
@@ -100,7 +100,6 @@ Astro UXDS Tab (child) properties are passed as simple attributes on the individ
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
 | Property  | Attribute | Description                                                                                              | Type                       | Default |
@@ -108,14 +107,12 @@ Astro UXDS Tab (child) properties are passed as simple attributes on the individ
 | `_panels` | --        | Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component. | `HTMLRuxTabPanelElement[]` | `[]`    |
 | `_tabs`   | --        | Holds all `<rux-tab>` components that are children of `<rux-tabs>`.                                      | `HTMLRuxTabElement[]`      | `[]`    |
 
-
 ## CSS Custom Properties
 
 | Name               | Description      |
 | ------------------ | ---------------- |
 | `--tabBorderColor` | Tab border color |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

@@ -9,11 +9,11 @@
     */
     --iconDefaultSize: 3rem;
 
-    fill: var(--iconColor);
+    // fill: var(--iconColor);
     display: inline-flex;
     height: var(--iconDefaultSize);
     width: var(--iconDefaultSize);
-    fill: var(--iconColor);
+    // fill: var(--iconColor);
 }
 
 svg,
@@ -23,7 +23,6 @@ svg > svg {
 }
 .icon {
     display: inline-flex;
-    //align-items: center
 }
 
 .rux-button--outline rux-icon {

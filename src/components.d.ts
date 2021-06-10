@@ -5407,9 +5407,9 @@ export namespace Components {
          */
         "open": boolean;
         /**
-          * Displays an icon from the [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/) in the log entry's row. Possible values include 'off', 'standby', 'normal', 'caution', 'serious', and 'critical'
+          * Displays an icon from the [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/) in the log entry's row. Possible values include 'off', 'standby', 'normal', 'caution', 'serious', and 'critical'.
          */
-        "status": string;
+        "status": Status;
     }
     interface RuxProgress {
         "hideLabel": boolean;
@@ -18351,9 +18351,9 @@ declare namespace LocalJSX {
          */
         "open"?: boolean;
         /**
-          * Displays an icon from the [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/) in the log entry's row. Possible values include 'off', 'standby', 'normal', 'caution', 'serious', and 'critical'
+          * Displays an icon from the [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/) in the log entry's row. Possible values include 'off', 'standby', 'normal', 'caution', 'serious', and 'critical'.
          */
-        "status"?: string;
+        "status"?: Status;
     }
     interface RuxProgress {
         "hideLabel"?: boolean;

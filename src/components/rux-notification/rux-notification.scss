@@ -26,6 +26,7 @@
     stroke: var(--colorStandbyDarken1);
     fill: var(--colorStandbyDarken1);
 }
+
 :host([status='normal']) {
     background-color: var(--colorNormalLighten2);
     stroke: var(--colorNormalDarken1);
