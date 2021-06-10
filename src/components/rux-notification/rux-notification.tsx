@@ -67,6 +67,17 @@ export class RuxNotification {
 
         return this.closeAfter
     }
+    get _fill() {
+        const statusColors = {
+            standby: 'rgb(36, 163, 204)',
+            normal: 'rgb(69, 192, 0)',
+            caution: 'rgb(151, 139, 35)',
+            critical: 'rgb(204, 45, 45)',
+        }
+        if (this.status in statusColors) {
+            return statusColors[this.status]
+        }
+    }
     render() {
         return (
             <Host>
@@ -80,6 +91,7 @@ export class RuxNotification {
                     style={{
                         'align-items': 'center',
                         'justify-content': 'flex-end',
+                        fill: `${this._fill}`,
                     }}
                 ></rux-icon>
                 <slot></slot>
