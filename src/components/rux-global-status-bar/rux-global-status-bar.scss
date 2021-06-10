@@ -31,6 +31,10 @@ header {
 }
 
 slot[name='left-side'] > rux-icon {
+    height: 34px;
+}
+
+slot[name='left-side'] > .shifted-up {
     height: 54px;
 }
 
@@ -83,6 +87,10 @@ slot[name='app-meta'] > * {
     display: inline-flex;
     justify-content: center;
     flex-basis: 100%;
+}
+
+.app-state-wrapper {
+    display: flex;
 }
 
 // all temp classes and their subsequent styling will be replaced with internal component styles.
