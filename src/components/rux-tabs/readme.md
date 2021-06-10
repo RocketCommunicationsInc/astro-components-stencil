@@ -113,6 +113,17 @@ Astro UXDS Tab (child) properties are passed as simple attributes on the individ
 | ------------------ | ---------------- |
 | `--tabBorderColor` | Tab border color |
 
+### RuxTab
+
+| Name                       | Description               |
+| -------------------------- | ------------------------- |
+| `-- tabBackgroundColor`    | Tab background color      |
+| `--tabBorderColor`         | Tab border color          |
+| `--tabHoverTextColor`      | Tab hover text color      |
+| `--tabSelectedBorderColor` | Tab selected border color |
+| `--tabSelectedTextColor`   | Tab selected text color   |
+| `--tabTextColor`           | Tab text color            |
+
 ---
 
 _Built with [StencilJS](https://stenciljs.com/)_
