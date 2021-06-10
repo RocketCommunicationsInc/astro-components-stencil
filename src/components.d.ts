@@ -81,6 +81,10 @@ export namespace Components {
          */
         "includeIcon"?: boolean;
         /**
+          * Declares whether the username component will be shown in the app-meta slot
+         */
+        "includeUsername"?: boolean;
+        /**
           * Sets the icon to be displayed in the default rux-icon component
          */
         "menuIcon"?: string;
@@ -13020,6 +13024,10 @@ declare namespace LocalJSX {
           * Declares whether a rux-icon will be shown in the global status bar
          */
         "includeIcon"?: boolean;
+        /**
+          * Declares whether the username component will be shown in the app-meta slot
+         */
+        "includeUsername"?: boolean;
         /**
           * Sets the icon to be displayed in the default rux-icon component
          */

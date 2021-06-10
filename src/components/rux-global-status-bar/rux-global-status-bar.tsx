@@ -16,6 +16,10 @@ export class RuxGlobalStatusBar {
    */
   @Prop() includeAppState?: boolean = true
   /**
+   * Declares whether the username component will be shown in the app-meta slot
+   */
+  @Prop() includeUsername?: boolean = true
+  /**
    * Sets the domain of the application to be displayed in the default app-meta element
    */
   @Prop() appDomain?: string;
@@ -38,19 +42,17 @@ export class RuxGlobalStatusBar {
         <header>
 
           <slot name="left-side">
-            {this.includeIcon && <rux-icon icon={`${this.menuIcon}`} size="small" class={this.includeAppState ? 'shifted-up' : null} />}
+            {this.includeIcon && <rux-icon icon={`${this.menuIcon}`} size="small" class={this.includeAppState || this.includeUsername ? 'shifted-up' : null} />}
           </slot>
           
           <slot name="app-meta">
             {(this.appDomain || this.appName || this.appVersion) &&
               <AppMeta domain={this.appDomain?.toUpperCase()} name={this.appName?.toUpperCase()} version={this.appVersion}>
               {/* TODO: these divs are placeholders until an app state component and username display component are built */}
-              {this.includeAppState &&
                 <div class="app-state-wrapper">
-                  <div class="temp-app-state">App state</div>
-                  <div class="temp-username">Username</div>
+                  {this.includeAppState && <div class="temp-app-state">App state</div>}
+                  {this.includeUsername && <div class="temp-username">Username</div>}
                 </div>
-              }
               </AppMeta>
             }
           </slot>

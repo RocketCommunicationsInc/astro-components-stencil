@@ -26,10 +26,10 @@ describe('rux-global-status-bar', () => {
   it('renders with icon and app meta', async () => {
     const page = await newSpecPage({
       components: [RuxGlobalStatusBar],
-      html: `<rux-global-status-bar include-icon include-app-state app-domain="ASTRO" app-name="Test App Name" app-version="test v1.0"></rux-global-status-bar>`,
+      html: `<rux-global-status-bar include-icon include-app-state include-username app-domain="ASTRO" app-name="Test App Name" app-version="test v1.0"></rux-global-status-bar>`,
     });
     expect(page.root).toEqualHtml(`
-      <rux-global-status-bar include-icon include-app-state  app-domain="ASTRO" app-name="Test App Name" app-version="test v1.0" menu-icon="apps">
+      <rux-global-status-bar include-icon include-app-state include-username app-domain="ASTRO" app-name="Test App Name" app-version="test v1.0" menu-icon="apps">
         <mock:shadow-root>
           <header>
             <slot name="left-side">
@@ -61,14 +61,14 @@ describe('rux-global-status-bar', () => {
   it('renders with icon, app meta and slotted content', async () => {
     const page = await newSpecPage({
       components: [RuxGlobalStatusBar],
-      html: `<rux-global-status-bar include-icon include-app-state app-domain="ASTRO" app-name="Test App Name" app-version="test v1.0">
+      html: `<rux-global-status-bar include-icon include-app-state include-username app-domain="ASTRO" app-name="Test App Name" app-version="test v1.0">
                 <div>Tab links<div>
                 <button slot="right-side">Emergency shut off</button>
             </rux-global-status-bar>`,
     });
     page.waitForChanges()
     expect(page.root).toEqualHtml(`
-      <rux-global-status-bar include-icon include-app-state app-domain="ASTRO" app-name="Test App Name" app-version="test v1.0" menu-icon="apps">
+      <rux-global-status-bar include-icon include-app-state include-username app-domain="ASTRO" app-name="Test App Name" app-version="test v1.0" menu-icon="apps">
         <mock:shadow-root>
           <header>
             <slot name="left-side">
