@@ -61,15 +61,15 @@ export namespace Components {
     }
     interface RuxGlobalStatusBar {
         /**
-          * Sets the domain of the application to be displayed in the default app-meta element
+          * Sets the domain of the application to be displayed in the app-meta element
          */
         "appDomain"?: string;
         /**
-          * Sets the name of the application to be displayed in the default app-meta element
+          * Sets the name of the application to be displayed in the app-meta element
          */
         "appName"?: string;
         /**
-          * Sets the version of the application to be displayed in the default app-meta element
+          * Sets the version of the application to be displayed in the app-meta element
          */
         "appVersion"?: string;
         /**
@@ -77,7 +77,7 @@ export namespace Components {
          */
         "includeAppState"?: boolean;
         /**
-          * Declares whether a rux-icon will be shown in the global status bar
+          * Declares whether a rux-icon will be shown in the left-side slot
          */
         "includeIcon"?: boolean;
         /**
@@ -13005,15 +13005,15 @@ declare namespace LocalJSX {
     }
     interface RuxGlobalStatusBar {
         /**
-          * Sets the domain of the application to be displayed in the default app-meta element
+          * Sets the domain of the application to be displayed in the app-meta element
          */
         "appDomain"?: string;
         /**
-          * Sets the name of the application to be displayed in the default app-meta element
+          * Sets the name of the application to be displayed in the app-meta element
          */
         "appName"?: string;
         /**
-          * Sets the version of the application to be displayed in the default app-meta element
+          * Sets the version of the application to be displayed in the app-meta element
          */
         "appVersion"?: string;
         /**
@@ -13021,7 +13021,7 @@ declare namespace LocalJSX {
          */
         "includeAppState"?: boolean;
         /**
-          * Declares whether a rux-icon will be shown in the global status bar
+          * Declares whether a rux-icon will be shown in the left-side slot
          */
         "includeIcon"?: boolean;
         /**

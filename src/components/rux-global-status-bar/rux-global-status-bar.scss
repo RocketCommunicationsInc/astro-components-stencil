@@ -92,7 +92,7 @@ slot[name='left-side'] > .shifted-up,
 }
 
 // all temp classes and their subsequent styling will be replaced with internal component styles.
-.temp-app-state {
+.app-state {
     box-sizing: border-box;
     color: var(--colorWhite);
     background-color: var(--colorTertiaryDarken4);
@@ -106,7 +106,7 @@ slot[name='left-side'] > .shifted-up,
     white-space: nowrap;
 }
 
-.temp-username {
+.username {
     box-sizing: border-box;
     flex-basis: 50%;
     font-size: 14px;

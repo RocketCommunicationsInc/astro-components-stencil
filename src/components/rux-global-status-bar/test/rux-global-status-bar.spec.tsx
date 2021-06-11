@@ -43,8 +43,8 @@ describe('rux-global-status-bar', () => {
                   <span class="app-version">test v1.0</span>
                 </div>
                 <div class="app-state-wrapper">
-                  <div class="temp-app-state">App state</div>
-                  <div class="temp-username">Username</div>
+                  <div class="app-state">App state</div>
+                  <div class="username">Username</div>
                 </div>
               </div>
             </slot>
@@ -82,8 +82,8 @@ describe('rux-global-status-bar', () => {
                   <span class="app-version">test v1.0</span>
                 </div>
                 <div class="app-state-wrapper">
-                  <div class="temp-app-state">App state</div>
-                  <div class="temp-username">Username</div>
+                  <div class="app-state">App state</div>
+                  <div class="username">Username</div>
                 </div>
               </div>
             </slot>

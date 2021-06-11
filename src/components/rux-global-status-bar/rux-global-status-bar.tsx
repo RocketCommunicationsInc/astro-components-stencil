@@ -8,7 +8,7 @@ import { AppMeta } from './appMeta/appMeta';
 })
 export class RuxGlobalStatusBar {
     /**
-   * Declares whether a rux-icon will be shown in the global status bar
+   * Declares whether a rux-icon will be shown in the left-side slot
    */
   @Prop() includeIcon?: boolean = false
   /**
@@ -20,15 +20,15 @@ export class RuxGlobalStatusBar {
    */
   @Prop() includeUsername?: boolean = false
   /**
-   * Sets the domain of the application to be displayed in the default app-meta element
+   * Sets the domain of the application to be displayed in the app-meta element
    */
   @Prop() appDomain?: string;
   /**
-   * Sets the name of the application to be displayed in the default app-meta element
+   * Sets the name of the application to be displayed in the app-meta element
    */
   @Prop() appName?: string;
   /**
-   * Sets the version of the application to be displayed in the default app-meta element
+   * Sets the version of the application to be displayed in the app-meta element
    */
   @Prop() appVersion?: string;
   /**
@@ -48,10 +48,9 @@ export class RuxGlobalStatusBar {
           <slot name="app-meta">
             {(this.appDomain || this.appName || this.appVersion) &&
               <AppMeta domain={this.appDomain?.toUpperCase()} name={this.appName?.toUpperCase()} version={this.appVersion}>
-              {/* TODO: these divs are placeholders until an app state component and username display component are built */}
                 <div class="app-state-wrapper">
-                  {this.includeAppState && <div class="temp-app-state">App state</div>}
-                  {this.includeUsername && <div class="temp-username">Username</div>}
+                  {this.includeAppState && <div class="app-state">App state</div>}
+                  {this.includeUsername && <div class="username">Username</div>}
                 </div>
               </AppMeta>
             }
