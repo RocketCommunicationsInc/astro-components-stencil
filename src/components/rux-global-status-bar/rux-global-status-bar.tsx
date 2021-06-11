@@ -14,11 +14,11 @@ export class RuxGlobalStatusBar {
   /**
    * Declares whether the app-state component will be shown in the app-meta slot
    */
-  @Prop() includeAppState?: boolean = true
+  @Prop() includeAppState?: boolean = false
   /**
    * Declares whether the username component will be shown in the app-meta slot
    */
-  @Prop() includeUsername?: boolean = true
+  @Prop() includeUsername?: boolean = false
   /**
    * Sets the domain of the application to be displayed in the default app-meta element
    */
