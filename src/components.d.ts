@@ -5393,7 +5393,6 @@ export namespace Components {
         "sublabel"?: string;
     }
     interface RuxNotification {
-        "_timeoutRef": number;
         /**
           * If provided, the banner will automatically close after this amount of time. Accepts value either in milliseconds or seconds (which will be converted to milliseconds internally), between `2000` and `10000`, or `2` and `10`, respectively. Any number provided outside of the `2000`-`10000` range will be ignored in favor of the default 2000ms delay. <br>If `closeAfter` is not passed or if it is given an undefined or `null` value, the banner will stay open until the user closes it.
          */
@@ -18337,7 +18336,6 @@ declare namespace LocalJSX {
         "sublabel"?: string;
     }
     interface RuxNotification {
-        "_timeoutRef"?: number;
         /**
           * If provided, the banner will automatically close after this amount of time. Accepts value either in milliseconds or seconds (which will be converted to milliseconds internally), between `2000` and `10000`, or `2` and `10`, respectively. Any number provided outside of the `2000`-`10000` range will be ignored in favor of the default 2000ms delay. <br>If `closeAfter` is not passed or if it is given an undefined or `null` value, the banner will stay open until the user closes it.
          */

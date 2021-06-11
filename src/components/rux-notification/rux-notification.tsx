@@ -23,7 +23,8 @@ export class RuxNotification {
      *  If provided, the banner will automatically close after this amount of time. Accepts value either in milliseconds or seconds (which will be converted to milliseconds internally), between `2000` and `10000`, or `2` and `10`, respectively. Any number provided outside of the `2000`-`10000` range will be ignored in favor of the default 2000ms delay. <br>If `closeAfter` is not passed or if it is given an undefined or `null` value, the banner will stay open until the user closes it.
      */
     @Prop({ mutable: true }) closeAfter: number = null
-    @Prop({ mutable: true }) _timeoutRef: number = null
+
+    private _timeoutRef: number = null
 
     @Watch('open')
     watchHandler() {
@@ -67,17 +68,6 @@ export class RuxNotification {
 
         return this.closeAfter
     }
-    get _fill() {
-        const statusColors = {
-            standby: 'rgb(36, 163, 204)',
-            normal: 'rgb(69, 192, 0)',
-            caution: 'rgb(151, 139, 35)',
-            critical: 'rgb(204, 45, 45)',
-        }
-        if (this.status in statusColors) {
-            return statusColors[this.status]
-        }
-    }
     render() {
         return (
             <Host>
@@ -88,13 +78,7 @@ export class RuxNotification {
                     onClick={() => this._onClick()}
                     icon="close"
                     size="small"
-                    style={{
-                        'align-items': 'center',
-                        'justify-content': 'flex-end',
-                        fill: `${this._fill}`,
-                    }}
                 ></rux-icon>
-                <slot></slot>
             </Host>
         )
     }

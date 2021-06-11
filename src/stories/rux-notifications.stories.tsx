@@ -60,11 +60,11 @@ export const NotificationAutoClose = () => {
         step: 1,
     })
 
-    //! This message used to say "... It will close in ${closeDelay} seconds", however if you changed the delay slider,
-    //! It wouldn't update the message. I changed it to how it is to avoid misleading info on the message.
     const messageKnob = text(
         'Banner Message',
-        `This is a notification banner. It will close when the Close Delay timer is up.`
+        `This is a notification banner. It will disappear in ${
+            closeDelay * 1000
+        } ms.`
     )
     return html`
         <div style="display: flex; flex-flow: column; justify-content: center;">
