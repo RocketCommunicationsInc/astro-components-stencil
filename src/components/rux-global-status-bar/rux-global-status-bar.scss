@@ -30,6 +30,10 @@ header {
     box-sizing: border-box;
 }
 
+slot[name='left-side'] > * {
+    margin-right: 10px;
+}
+
 slot[name='left-side'] > rux-icon {
     height: 34px;
 }
@@ -45,7 +49,7 @@ slot[name='app-meta'] > * {
 
     padding: 0;
     // pulls app-meta content to justify left
-    margin: 0px auto 0px 10px;
+    margin: 0px auto 0px 0px;
     color: var(--inputBackground);
 }
 
