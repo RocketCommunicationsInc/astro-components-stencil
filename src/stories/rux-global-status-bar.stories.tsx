@@ -16,6 +16,42 @@ export default {
 
 export const GlobalStatusBar = () => {
     const includeIconKnob = boolean('Include Icon', true);
+    const includeAppStateKnob = boolean('Include App State', false);
+    const includeUsernameKnob = boolean ('Include Username', false);
+    const appDomainKnob = text ('App Domain', 'Astro');
+    const appNameKnob = text('App Name', 'Dashboard');
+    const appVersionKnob = text('Version', '4.0 alpha');
+    const menuIconKnob = text('Menu Icon', 'apps');
+
+
+  return html`
+    <div style="display: flex; justify-content: center;">
+        <rux-global-status-bar
+            .includeIcon="${includeIconKnob}"
+            .includeAppState="${includeAppStateKnob}"
+            .includeUsername="${includeUsernameKnob}"  
+            .appDomain="${appDomainKnob}" 
+            .appName="${appNameKnob}" 
+            .appVersion="${appVersionKnob}"
+            .menuIcon="${menuIconKnob}"
+        >
+        </rux-global-status-bar>
+    </div>
+  `;
+};
+
+GlobalStatusBar.parameters = {
+    exports: {
+        render,
+        html,
+    },
+    readme: {
+        sidebar: readme,
+    },
+}
+
+export const GlobalStatusBarWithAppState = () => {
+    const includeIconKnob = boolean('Include Icon', true);
     const includeAppStateKnob = boolean('Include App State', true);
     const includeUsernameKnob = boolean ('Include Username', true);
     const appDomainKnob = text ('App Domain', 'Astro');
@@ -40,7 +76,9 @@ export const GlobalStatusBar = () => {
   `;
 };
 
-GlobalStatusBar.parameters = {
+GlobalStatusBarWithAppState.storyName = 'Global Status Bar with App State and Username'
+
+GlobalStatusBarWithAppState.parameters = {
     exports: {
         render,
         html,
