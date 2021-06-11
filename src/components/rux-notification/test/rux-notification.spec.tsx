@@ -14,7 +14,6 @@ describe('rux-notification', () => {
                hello there
              </div>
              <rux-icon icon="close" label="Close notification" role="button" size="small"></rux-icon>      
-          <slot></slot>
         </mock:shadow-root>
       </rux-notification>
     `)
