@@ -26,7 +26,8 @@
         "astro": "npm-run-all --parallel start storybook",
         "build-astro-prod": "npm-run-all build build-storybook",
         "prettier": "prettier --write --loglevel warn .",
-        "pretty-quick": "pretty-quick --staged"
+        "pretty-quick": "pretty-quick --staged",
+        "prepare": "husky install"
     },
     "dependencies": {
         "@stencil/core": "~2.5.2",
