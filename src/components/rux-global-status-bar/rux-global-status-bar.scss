@@ -30,27 +30,29 @@ header {
     box-sizing: border-box;
 }
 
-slot[name='left-side'] > * {
+slot[name='left-side'] > *,
+::slotted(*[slot='left-side']) {
     margin-right: 10px;
 }
 
-slot[name='left-side'] > rux-icon {
+slot[name='left-side'] > rux-icon,
+::slotted(rux-icon[slot='left-side']) {
     height: 34px;
 }
 
-slot[name='left-side'] > .shifted-up {
+slot[name='left-side'] > .shifted-up,
+::slotted(.shifted-up[slot='left-side']) {
     height: 54px;
 }
 
-slot[name='app-meta'] > * {
-    // temporary style change to accommodate temp app state and username; may change based on how app state component is designed
+.app-meta,
+::slotted(*[slot='app-meta']) {
     display: inline-flex;
     flex-wrap: wrap;
-
     padding: 0;
-    // pulls app-meta content to justify left
     margin: 0px auto 0px 0px;
     color: var(--inputBackground);
+    white-space: nowrap;
 }
 
 .app-info-wrapper {
@@ -77,20 +79,12 @@ slot[name='app-meta'] > * {
 .app-name {
     font-weight: 400;
     margin-right: 0.3em;
-    white-space: nowrap;
 }
 
 .app-version {
     display: inline-block;
     font-size: 1.1875rem;
     font-weight: 300;
-    white-space: nowrap;
-}
-
-.slotted-content {
-    display: inline-flex;
-    justify-content: center;
-    flex-basis: 100%;
 }
 
 .app-state-wrapper {
@@ -119,4 +113,10 @@ slot[name='app-meta'] > * {
     padding: 2px 0px;
     height: 22px;
     letter-spacing: 0.5px;
+}
+
+.slotted-content {
+    display: inline-flex;
+    justify-content: center;
+    flex-basis: 100%;
 }
