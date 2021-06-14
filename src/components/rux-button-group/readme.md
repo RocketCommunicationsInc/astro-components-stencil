@@ -33,3 +33,17 @@ By default button group aligns buttons to the left. Alternatively an `align` pro
 | `align`  | `align`   |             | `"N/A" \| "right" \| "center"` | `N/A`   |
 
 Read the [Rux-Buttons Readme](/?path=/info/components-buttons--standard-button) for more information.
+
+<!-- Auto Generated Below -->
+
+
+## Properties
+
+| Property | Attribute | Description | Type                            | Default  |
+| -------- | --------- | ----------- | ------------------------------- | -------- |
+| `align`  | `align`   |             | `"center" \| "left" \| "right"` | `'left'` |
+
+
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

@@ -60,8 +60,34 @@ export namespace Components {
         "timezone": string;
     }
     interface RuxGlobalStatusBar {
-        "appname": string;
-        "version": string;
+        /**
+          * Sets the domain of the application to be displayed in the app-meta element
+         */
+        "appDomain"?: string;
+        /**
+          * Sets the name of the application to be displayed in the app-meta element
+         */
+        "appName"?: string;
+        /**
+          * Sets the version of the application to be displayed in the app-meta element
+         */
+        "appVersion"?: string;
+        /**
+          * Declares whether the app-state component will be shown in the app-meta slot
+         */
+        "includeAppState"?: boolean;
+        /**
+          * Declares whether a rux-icon will be shown in the left-side slot
+         */
+        "includeIcon"?: boolean;
+        /**
+          * Declares whether the username component will be shown in the app-meta slot
+         */
+        "includeUsername"?: boolean;
+        /**
+          * Sets the icon to be displayed in the default rux-icon component
+         */
+        "menuIcon"?: string;
     }
     interface RuxIcon {
         "color": string;
@@ -5392,6 +5418,24 @@ export namespace Components {
          */
         "sublabel"?: string;
     }
+    interface RuxNotification {
+        /**
+          * If provided, the banner will automatically close after this amount of time. Accepts value either in milliseconds or seconds (which will be converted to milliseconds internally), between `2000` and `10000`, or `2` and `10`, respectively. Any number provided outside of the `2000`-`10000` range will be ignored in favor of the default 2000ms delay. <br>If `closeAfter` is not passed or if it is given an undefined or `null` value, the banner will stay open until the user closes it.
+         */
+        "closeAfter": number;
+        /**
+          * Message for the notification banner.
+         */
+        "message": string;
+        /**
+          * Set to true to display the Banner and begin countdown to close (if a close-after Number value is provided).
+         */
+        "open": boolean;
+        /**
+          * Displays an icon from the [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/) in the log entry's row. Possible values include 'off', 'standby', 'normal', 'caution', 'serious', and 'critical'.
+         */
+        "status": Status;
+    }
     interface RuxProgress {
         "hideLabel": boolean;
         "max": number;
@@ -5413,6 +5457,30 @@ export namespace Components {
           * The name of the form input element
          */
         "name"?: string;
+    }
+    interface RuxTab {
+        /**
+          * If present, sets a disabled state on this tab item, indicating it cannot be selected by user action.
+         */
+        "disabled": boolean;
+        /**
+          * If present, overrides which tab is selected on load / mount. By default, the first <rux-tab> item is selected.
+         */
+        "selected": boolean;
+    }
+    interface RuxTabPanel {
+    }
+    interface RuxTabPanels {
+    }
+    interface RuxTabs {
+        /**
+          * Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
+         */
+        "_panels": Array<HTMLRuxTabPanelElement>;
+        /**
+          * Holds all `<rux-tab>` components that are children of `<rux-tabs>`.
+         */
+        "_tabs": Array<HTMLRuxTabElement>;
     }
 }
 declare global {
@@ -11788,6 +11856,12 @@ declare global {
         prototype: HTMLRuxMonitoringProgressIconElement;
         new (): HTMLRuxMonitoringProgressIconElement;
     };
+    interface HTMLRuxNotificationElement extends Components.RuxNotification, HTMLStencilElement {
+    }
+    var HTMLRuxNotificationElement: {
+        prototype: HTMLRuxNotificationElement;
+        new (): HTMLRuxNotificationElement;
+    };
     interface HTMLRuxProgressElement extends Components.RuxProgress, HTMLStencilElement {
     }
     var HTMLRuxProgressElement: {
@@ -11805,6 +11879,30 @@ declare global {
     var HTMLRuxSwitchElement: {
         prototype: HTMLRuxSwitchElement;
         new (): HTMLRuxSwitchElement;
+    };
+    interface HTMLRuxTabElement extends Components.RuxTab, HTMLStencilElement {
+    }
+    var HTMLRuxTabElement: {
+        prototype: HTMLRuxTabElement;
+        new (): HTMLRuxTabElement;
+    };
+    interface HTMLRuxTabPanelElement extends Components.RuxTabPanel, HTMLStencilElement {
+    }
+    var HTMLRuxTabPanelElement: {
+        prototype: HTMLRuxTabPanelElement;
+        new (): HTMLRuxTabPanelElement;
+    };
+    interface HTMLRuxTabPanelsElement extends Components.RuxTabPanels, HTMLStencilElement {
+    }
+    var HTMLRuxTabPanelsElement: {
+        prototype: HTMLRuxTabPanelsElement;
+        new (): HTMLRuxTabPanelsElement;
+    };
+    interface HTMLRuxTabsElement extends Components.RuxTabs, HTMLStencilElement {
+    }
+    var HTMLRuxTabsElement: {
+        prototype: HTMLRuxTabsElement;
+        new (): HTMLRuxTabsElement;
     };
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
@@ -12869,9 +12967,14 @@ declare global {
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
         "rux-monitoring-icon": HTMLRuxMonitoringIconElement;
         "rux-monitoring-progress-icon": HTMLRuxMonitoringProgressIconElement;
+        "rux-notification": HTMLRuxNotificationElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-status": HTMLRuxStatusElement;
         "rux-switch": HTMLRuxSwitchElement;
+        "rux-tab": HTMLRuxTabElement;
+        "rux-tab-panel": HTMLRuxTabPanelElement;
+        "rux-tab-panels": HTMLRuxTabPanelsElement;
+        "rux-tabs": HTMLRuxTabsElement;
     }
 }
 declare namespace LocalJSX {
@@ -12926,8 +13029,34 @@ declare namespace LocalJSX {
         "timezone"?: string;
     }
     interface RuxGlobalStatusBar {
-        "appname"?: string;
-        "version"?: string;
+        /**
+          * Sets the domain of the application to be displayed in the app-meta element
+         */
+        "appDomain"?: string;
+        /**
+          * Sets the name of the application to be displayed in the app-meta element
+         */
+        "appName"?: string;
+        /**
+          * Sets the version of the application to be displayed in the app-meta element
+         */
+        "appVersion"?: string;
+        /**
+          * Declares whether the app-state component will be shown in the app-meta slot
+         */
+        "includeAppState"?: boolean;
+        /**
+          * Declares whether a rux-icon will be shown in the left-side slot
+         */
+        "includeIcon"?: boolean;
+        /**
+          * Declares whether the username component will be shown in the app-meta slot
+         */
+        "includeUsername"?: boolean;
+        /**
+          * Sets the icon to be displayed in the default rux-icon component
+         */
+        "menuIcon"?: string;
     }
     interface RuxIcon {
         "color"?: string;
@@ -18258,6 +18387,24 @@ declare namespace LocalJSX {
          */
         "sublabel"?: string;
     }
+    interface RuxNotification {
+        /**
+          * If provided, the banner will automatically close after this amount of time. Accepts value either in milliseconds or seconds (which will be converted to milliseconds internally), between `2000` and `10000`, or `2` and `10`, respectively. Any number provided outside of the `2000`-`10000` range will be ignored in favor of the default 2000ms delay. <br>If `closeAfter` is not passed or if it is given an undefined or `null` value, the banner will stay open until the user closes it.
+         */
+        "closeAfter"?: number;
+        /**
+          * Message for the notification banner.
+         */
+        "message"?: string;
+        /**
+          * Set to true to display the Banner and begin countdown to close (if a close-after Number value is provided).
+         */
+        "open"?: boolean;
+        /**
+          * Displays an icon from the [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/) in the log entry's row. Possible values include 'off', 'standby', 'normal', 'caution', 'serious', and 'critical'.
+         */
+        "status"?: Status;
+    }
     interface RuxProgress {
         "hideLabel"?: boolean;
         "max"?: number;
@@ -18283,6 +18430,31 @@ declare namespace LocalJSX {
           * Emitted when the value property has changed.
          */
         "onRux-change"?: (event: CustomEvent<SwitchChangeEvent>) => void;
+    }
+    interface RuxTab {
+        /**
+          * If present, sets a disabled state on this tab item, indicating it cannot be selected by user action.
+         */
+        "disabled"?: boolean;
+        /**
+          * If present, overrides which tab is selected on load / mount. By default, the first <rux-tab> item is selected.
+         */
+        "selected"?: boolean;
+    }
+    interface RuxTabPanel {
+    }
+    interface RuxTabPanels {
+        "onRegisterPanels"?: (event: CustomEvent<HTMLRuxTabPanelsElement[]>) => void;
+    }
+    interface RuxTabs {
+        /**
+          * Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
+         */
+        "_panels"?: Array<HTMLRuxTabPanelElement>;
+        /**
+          * Holds all `<rux-tab>` components that are children of `<rux-tabs>`.
+         */
+        "_tabs"?: Array<HTMLRuxTabElement>;
     }
     interface IntrinsicElements {
         "rux-button": RuxButton;
@@ -19347,9 +19519,14 @@ declare namespace LocalJSX {
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
         "rux-monitoring-icon": RuxMonitoringIcon;
         "rux-monitoring-progress-icon": RuxMonitoringProgressIcon;
+        "rux-notification": RuxNotification;
         "rux-progress": RuxProgress;
         "rux-status": RuxStatus;
         "rux-switch": RuxSwitch;
+        "rux-tab": RuxTab;
+        "rux-tab-panel": RuxTabPanel;
+        "rux-tab-panels": RuxTabPanels;
+        "rux-tabs": RuxTabs;
     }
 }
 export { LocalJSX as JSX };
@@ -20418,9 +20595,14 @@ declare module "@stencil/core" {
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
             "rux-monitoring-icon": LocalJSX.RuxMonitoringIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>;
             "rux-monitoring-progress-icon": LocalJSX.RuxMonitoringProgressIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringProgressIconElement>;
+            "rux-notification": LocalJSX.RuxNotification & JSXBase.HTMLAttributes<HTMLRuxNotificationElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
             "rux-switch": LocalJSX.RuxSwitch & JSXBase.HTMLAttributes<HTMLRuxSwitchElement>;
+            "rux-tab": LocalJSX.RuxTab & JSXBase.HTMLAttributes<HTMLRuxTabElement>;
+            "rux-tab-panel": LocalJSX.RuxTabPanel & JSXBase.HTMLAttributes<HTMLRuxTabPanelElement>;
+            "rux-tab-panels": LocalJSX.RuxTabPanels & JSXBase.HTMLAttributes<HTMLRuxTabPanelsElement>;
+            "rux-tabs": LocalJSX.RuxTabs & JSXBase.HTMLAttributes<HTMLRuxTabsElement>;
         }
     }
 }
