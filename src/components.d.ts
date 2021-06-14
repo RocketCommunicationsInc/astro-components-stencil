@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { Classification, Status } from "./common/commonTypes.module";
 import { RangeItem } from "./components/rux-monitoring-progress-icon/rux-monitoring-progress-icon";
+import { MenuItem, Seperator } from "./components/rux-pop-up-menu/rux-pop-up-menu";
 import { SwitchChangeEvent } from "./components/rux-switch/rux-switch.model";
 export namespace Components {
     interface RuxButton {
@@ -5366,6 +5367,10 @@ export namespace Components {
         "icon": string;
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
+    interface RuxMenuItem {
+    }
+    interface RuxMenuItemDivider {
+    }
     interface RuxMonitoringIcon {
         /**
           * Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
@@ -5435,6 +5440,13 @@ export namespace Components {
           * Displays an icon from the [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/) in the log entry's row. Possible values include 'off', 'standby', 'normal', 'caution', 'serious', and 'critical'.
          */
         "status": Status;
+    }
+    interface RuxPopUpMenu {
+        /**
+          * An array of objects that defines the pop up menu’s labels. Note: when used in an Angular environment you may need to stringify the data property.
+         */
+        "data": Array<MenuItem | Seperator>;
+        "expanded": boolean;
     }
     interface RuxProgress {
         "hideLabel": boolean;
@@ -11844,6 +11856,18 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement;
         new (): HTMLRuxIconZoomOutMapElement;
     };
+    interface HTMLRuxMenuItemElement extends Components.RuxMenuItem, HTMLStencilElement {
+    }
+    var HTMLRuxMenuItemElement: {
+        prototype: HTMLRuxMenuItemElement;
+        new (): HTMLRuxMenuItemElement;
+    };
+    interface HTMLRuxMenuItemDividerElement extends Components.RuxMenuItemDivider, HTMLStencilElement {
+    }
+    var HTMLRuxMenuItemDividerElement: {
+        prototype: HTMLRuxMenuItemDividerElement;
+        new (): HTMLRuxMenuItemDividerElement;
+    };
     interface HTMLRuxMonitoringIconElement extends Components.RuxMonitoringIcon, HTMLStencilElement {
     }
     var HTMLRuxMonitoringIconElement: {
@@ -11861,6 +11885,12 @@ declare global {
     var HTMLRuxNotificationElement: {
         prototype: HTMLRuxNotificationElement;
         new (): HTMLRuxNotificationElement;
+    };
+    interface HTMLRuxPopUpMenuElement extends Components.RuxPopUpMenu, HTMLStencilElement {
+    }
+    var HTMLRuxPopUpMenuElement: {
+        prototype: HTMLRuxPopUpMenuElement;
+        new (): HTMLRuxPopUpMenuElement;
     };
     interface HTMLRuxProgressElement extends Components.RuxProgress, HTMLStencilElement {
     }
@@ -12965,9 +12995,12 @@ declare global {
         "rux-icon-zoom-in-map": HTMLRuxIconZoomInMapElement;
         "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
+        "rux-menu-item": HTMLRuxMenuItemElement;
+        "rux-menu-item-divider": HTMLRuxMenuItemDividerElement;
         "rux-monitoring-icon": HTMLRuxMonitoringIconElement;
         "rux-monitoring-progress-icon": HTMLRuxMonitoringProgressIconElement;
         "rux-notification": HTMLRuxNotificationElement;
+        "rux-pop-up-menu": HTMLRuxPopUpMenuElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-status": HTMLRuxStatusElement;
         "rux-switch": HTMLRuxSwitchElement;
@@ -18335,6 +18368,10 @@ declare namespace LocalJSX {
         "icon"?: string;
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
+    interface RuxMenuItem {
+    }
+    interface RuxMenuItemDivider {
+    }
     interface RuxMonitoringIcon {
         /**
           * Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
@@ -18404,6 +18441,13 @@ declare namespace LocalJSX {
           * Displays an icon from the [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/) in the log entry's row. Possible values include 'off', 'standby', 'normal', 'caution', 'serious', and 'critical'.
          */
         "status"?: Status;
+    }
+    interface RuxPopUpMenu {
+        /**
+          * An array of objects that defines the pop up menu’s labels. Note: when used in an Angular environment you may need to stringify the data property.
+         */
+        "data": Array<MenuItem | Seperator>;
+        "expanded"?: boolean;
     }
     interface RuxProgress {
         "hideLabel"?: boolean;
@@ -19517,9 +19561,12 @@ declare namespace LocalJSX {
         "rux-icon-zoom-in-map": RuxIconZoomInMap;
         "rux-icon-zoom-out": RuxIconZoomOut;
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
+        "rux-menu-item": RuxMenuItem;
+        "rux-menu-item-divider": RuxMenuItemDivider;
         "rux-monitoring-icon": RuxMonitoringIcon;
         "rux-monitoring-progress-icon": RuxMonitoringProgressIcon;
         "rux-notification": RuxNotification;
+        "rux-pop-up-menu": RuxPopUpMenu;
         "rux-progress": RuxProgress;
         "rux-status": RuxStatus;
         "rux-switch": RuxSwitch;
@@ -20593,9 +20640,12 @@ declare module "@stencil/core" {
             "rux-icon-zoom-in-map": LocalJSX.RuxIconZoomInMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomInMapElement>;
             "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
+            "rux-menu-item": LocalJSX.RuxMenuItem & JSXBase.HTMLAttributes<HTMLRuxMenuItemElement>;
+            "rux-menu-item-divider": LocalJSX.RuxMenuItemDivider & JSXBase.HTMLAttributes<HTMLRuxMenuItemDividerElement>;
             "rux-monitoring-icon": LocalJSX.RuxMonitoringIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>;
             "rux-monitoring-progress-icon": LocalJSX.RuxMonitoringProgressIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringProgressIconElement>;
             "rux-notification": LocalJSX.RuxNotification & JSXBase.HTMLAttributes<HTMLRuxNotificationElement>;
+            "rux-pop-up-menu": LocalJSX.RuxPopUpMenu & JSXBase.HTMLAttributes<HTMLRuxPopUpMenuElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
             "rux-switch": LocalJSX.RuxSwitch & JSXBase.HTMLAttributes<HTMLRuxSwitchElement>;

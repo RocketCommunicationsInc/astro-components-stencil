@@ -9,9 +9,7 @@ export class RuxMenuItemDivider {
 
   render() {
     return (
-      <li role="separator">
-        <slot></slot>
-      </li>
+      <li role="separator"></li>
     );
   }
 

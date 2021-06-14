@@ -1,0 +1,41 @@
+:host {
+    /**
+      * @prop --popupMenuTextColor: Pop Up Menu Text Color
+    */
+    --popupMenuTextColor: var(--primaryElementText);
+
+    /**
+      * @prop --popupMenuItemBackgroundColor: Pop Up Menu Item Background Color
+    */
+    --popupMenuItemBackgroundColor: var(--primary);
+
+    /**
+      * @prop --popupMenuItemHoverBackgroundColor: Pop Up Menu Item Hover Background Color
+    */
+    --popupMenuItemHoverBackgroundColor: var(--primaryLight);
+
+    /**
+      * @prop --popupMenuItemHoverTextColor: Pop Up Menu Item Hover Text Color
+    */
+    --popupMenuItemHoverTextColor: var(--primaryElementText);
+
+    display: block;
+    padding: 0.15rem 0.75rem;
+    color: var(--popupMenuTextColor);
+    text-decoration: none;
+
+    min-width: 15em;
+    max-width: 20em;
+
+    word-wrap: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    background-color: transparent; /* Testing for now */
+
+    &:hover {
+        background-color: var(--popupMenuItemHoverBackgroundColor);
+        color: var(--popupMenuItemHoverTextColor);
+    }
+}

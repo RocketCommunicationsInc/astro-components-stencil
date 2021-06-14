@@ -1,11 +1,11 @@
 import { Component, Host, h, Prop, Element, State } from '@stencil/core';
 
-interface MenuItem {
+export interface MenuItem {
   id: string,
   label: string
 } 
 
-interface Seperator{
+export interface Seperator{
   role: "separator"
 }
 
@@ -22,13 +22,13 @@ export class RuxPopUpMenu {
   @Element() el: HTMLElement
 
   @State() _trigger: HTMLElement
+  @State() selected?: MenuItem
+
   /**
    * An array of objects that defines the pop up menu’s labels.
    * Note: when used in an Angular environment you may need to stringify the data property.
    */
   @Prop() data!: Array<MenuItem | Seperator>
-
-  @Prop() selected?: object
 
   @Prop({reflect: true}) expanded: boolean
 
@@ -68,6 +68,71 @@ export class RuxPopUpMenu {
     const caretLeft = triggerBounds.left - this.left;
     this.el.style.setProperty('--caretLeft', `${caretLeft}px`);
   }
+
+  //   handleClick() {
+//     this.show();
+//   }
+
+//   handleOutsideClick(e) {
+//     const target = e
+//         .composedPath()
+//         .find((element) => element.id && element.id === this._trigger.getAttribute('aria-controls'));
+//     target ? this._trigger.addEventListener('mousedown', this._click) : this.hide();
+//   }
+
+//   handleMenuItemClick(e) {
+//     this.selected =  this.data.find((item) => item.id === e.currentTarget.dataset.key);
+//     if(!!this.onPopUpMenuItemSelected){
+//       this.onPopUpMenuItemSelected(this.selected);
+//     }
+//     this.dispatchEvent(
+//         new CustomEvent('pop-up-menu-item-selected', {
+//           detail: {
+//             selected: this.selected,
+//           },
+//           bubbles: true,
+//           composed: true,
+//         })
+//     );
+//     this.hide();
+//   }
+
+//   show() {
+//     this._setMenuPosition();
+//     this.expanded = true;
+//     if(!!this.onPopUpMenuExpandedChange){
+//       this.onPopUpMenuExpandedChange(true);
+//     }
+
+//     const debounce = setTimeout(() => {
+//       window.addEventListener('resize', () => this._setMenuPosition());
+//       window.addEventListener('mousedown', this._handleOutsideClick);
+//       clearTimeout(debounce);
+//     }, 10);
+
+//     this._trigger.removeEventListener('mousedown', this._handleClick);
+
+//     this._menuItems = this.shadowRoot.querySelectorAll('[role="menuitem"]');
+//     this._menuItems.forEach((item) => {
+//       item.addEventListener('mouseup', this._handleMenuItemClick);
+//     });
+//   }
+
+//   hide() {
+//     this.expanded = false;
+//     if(!!this.onPopUpMenuExpandedChange){
+//       this.onPopUpMenuExpandedChange(false);
+//     }
+
+//     window.removeEventListener('mousedown', this._handleOutsideClick);
+//     window.removeEventListener('resize', this);
+
+//     this._menuItems.forEach((item) => {
+//       item.removeEventListener('mouseup', this._handleMenuItemClick);
+//     });
+
+//     this._trigger.addEventListener('mousedown', this._handleClick);
+//   }
 
   render() {
     return (
@@ -132,6 +197,7 @@ export class RuxPopUpMenu {
 //     super.disconnectedCallback();
 //   }
 
+//? Why does this exist? It doesn't appear to be called anywhere
 //   findInObject(arr, key) {
 //     arr.forEach((a) => {
 //       if (a.key === key) {
