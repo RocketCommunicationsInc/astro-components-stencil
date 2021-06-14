@@ -35,10 +35,6 @@
       * @prop --popupMenuItemHoverTextColor: Pop Up Menu Item Hover Text Color
     */
     --popupMenuItemHoverTextColor: var(--primaryElementText);
-    /**
-      * @prop --popupMenuItemDividerBorderColor: Pop Up Menu Item Divider Border Color
-    */
-    --popupMenuItemDividerBorderColor: var(--primaryElementText);
 
     /**
       * @prop --caretLeft: Position of Caret
@@ -157,9 +153,9 @@ li:not([role='seperator']):hover {
     transform: rotate(180deg);
 }
 
-[role='seperator'] {
-    pointer-events: none;
-    height: 6px;
-    border-top: 1px dashed var(--popupMenuItemSeperatorBorderColor) !important;
-    margin: 6px 0.5rem 0 0.5rem;
-}
+// [role='seperator'] {
+//     pointer-events: none;
+//     height: 6px;
+//     border-top: 1px dashed var(--popupMenuItemSeperatorBorderColor) !important;
+//     margin: 6px 0.5rem 0 0.5rem;
+// }

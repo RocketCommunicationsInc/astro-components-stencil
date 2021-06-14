@@ -1,0 +1,13 @@
+:host {
+    /**
+      * @prop --popupMenuItemDividerBorderColor: Pop Up Menu Item Divider Border Color
+    */
+    --popupMenuItemDividerBorderColor: var(--primaryElementText);
+
+    display: block;
+
+    pointer-events: none;
+    height: 6px;
+    border-top: 1px dashed var(--popupMenuItemSeperatorBorderColor) !important;
+    margin: 6px 0.5rem 0 0.5rem;
+}
