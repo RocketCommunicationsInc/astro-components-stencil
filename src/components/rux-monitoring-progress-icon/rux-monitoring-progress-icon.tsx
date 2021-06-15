@@ -19,7 +19,7 @@ export class RuxMonitoringProgressIcon {
     /**
      * Displays a label below the icon
      */
-    @Prop() label!: string
+    @Prop() label?: string
 
     /**
      * Displays a smaller label underneath the icon label
@@ -33,26 +33,51 @@ export class RuxMonitoringProgressIcon {
      * Both progress and the Array items’ threshold values can be positive or negative.
      * If no min is specified, the component assumes the Array's first status threshold begins at 0.
      */
-    @Prop({ mutable: true }) range?: Array<RangeItem>
+    @Prop({ mutable: true }) range: Array<RangeItem> = [
+        {
+            threshold: 17,
+            status: 'off',
+        },
+        {
+            threshold: 33,
+            status: 'standby',
+        },
+        {
+            threshold: 49,
+            status: 'normal',
+        },
+        {
+            threshold: 65,
+            status: 'caution',
+        },
+        {
+            threshold: 81,
+            status: 'serious',
+        },
+        {
+            threshold: 100,
+            status: 'critical',
+        },
+    ]
 
     /**
      * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon.
      * Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands, `'1.5M'`
      * for millions, `'1.5B'` for billions, and `'∞'` for one trillion or higher.
      */
-    @Prop() notifications?: number = 0
+    @Prop() notifications?: number
 
     /**
      * Sets the minimum value for the progress range. When progress is this number, it reads 0%.
      * When it is halfway between min and max, it will read 50%
      */
-    @Prop() min?: number = 0
+    @Prop() min: number = 0
 
     /**
      * Sets the maximum value for the progress range. When progress is this number, it reads 100%.
      * When it is halfway between min and max, it will read 50%
      */
-    @Prop() max?: number = 100
+    @Prop() max: number = 100
 
     /**
      * Displays this value as a percentage of where it lies between min and max
@@ -60,7 +85,7 @@ export class RuxMonitoringProgressIcon {
      * segment of the graph. Progress can be positive or negative (the later useful for countdowns).
      * The progress value must exist within the thresholds specified in the range property below.
      */
-    @Prop({ reflect: true }) progress!: number
+    @Prop({ reflect: true }) progress: number = 0
 
     @Watch('progress')
     checkProgress(newValue: number, oldValue: number) {
@@ -69,39 +94,11 @@ export class RuxMonitoringProgressIcon {
         }
     }
 
-    @State() _status: Status
+    @State() _status: Status = 'off'
     @State() _graphProgress: number = 0
 
     componentWillLoad() {
         if (Number.isInteger(this.progress)) {
-            if (!this.range || this.range.length === 0) {
-                this.range = [
-                    {
-                        threshold: 17,
-                        status: 'off',
-                    },
-                    {
-                        threshold: 33,
-                        status: 'standby',
-                    },
-                    {
-                        threshold: 49,
-                        status: 'normal',
-                    },
-                    {
-                        threshold: 65,
-                        status: 'caution',
-                    },
-                    {
-                        threshold: 81,
-                        status: 'serious',
-                    },
-                    {
-                        threshold: 100,
-                        status: 'critical',
-                    },
-                ]
-            }
             this.range = this.range.sort((a, b) =>
                 a.threshold >= b.threshold ? 1 : -1
             )
@@ -115,9 +112,11 @@ export class RuxMonitoringProgressIcon {
     }
 
     updateProgress() {
-        this._status =
-            this.range.find((range) => this.progress <= range.threshold)
-                .status || this.range[0].status
+        const rangeStatus = this.range.find(
+            (range) => this.progress <= range.threshold
+        )
+        this._status = rangeStatus ? rangeStatus.status : this.range[0].status
+
         this._graphProgress =
             this._circumference -
             ((this.progress - this.min) / (this.max - this.min)) *
