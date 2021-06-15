@@ -5,8 +5,8 @@ import { militaryTimezones } from '../military-timezones'
 const RealDate = Date.now
 
 beforeAll(() => {
-    //Swap Date.now() with global mock
-    global.Date.now = jest.fn(() => new Date('1988-04-22 01:02:03').getTime())
+    //Swap Date.now() with global mock - 1988-04-22 01:02:03
+    global.Date.now = jest.fn(() => 577688523000)
 })
 
 afterAll(() => {
