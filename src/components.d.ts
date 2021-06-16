@@ -93,7 +93,10 @@ export namespace Components {
         "color": string;
         "icon": string;
         "label": string;
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": | 'extra-small'
+        | 'small'
+        | 'normal'
+        | 'large';
         "viewBox": string;
     }
     interface RuxIcon360 {
@@ -13076,7 +13079,10 @@ declare namespace LocalJSX {
         "color"?: string;
         "icon"?: string;
         "label"?: string;
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: | 'extra-small'
+        | 'small'
+        | 'normal'
+        | 'large';
         "viewBox"?: string;
     }
     interface RuxIcon360 {
