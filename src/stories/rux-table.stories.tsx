@@ -59,7 +59,7 @@ export const HTMLTable = () => {
     <div style="padding: 2rem;">
 			<rux-table class="rux-table">
         <rux-table-header>
-          <rux-table-header-row>
+        <rux-table-header-row>
             ${columnData.map(
                 (column) => html`
                     ${column.headerName == ''
@@ -69,30 +69,29 @@ export const HTMLTable = () => {
                           >`}
                 `
             )}
-            <rux-table-header-cell>
-          </rux-table-header-row>
         </rux-table-header>
-
+        </rux-table-header-row>
         <rux-table-body>
-        ${rowData.map(
-            (row) => html`
-					<rux-table-row ?data-selected="${row.selected}">
-          <rux-table-cell>${row.currentTag}</rux-table-cell>
-          <rux-table-cell>${row.originalTag}</rux-table-cell>
-          <rux-table-cell>${row.sensor}</rux-table-cell>
-          <rux-table-cell>${row.astat}</rux-table-cell>
-          <rux-table-cell>${row.obsTime}</rux-table-cell>
-          <rux-table-cell>${row.obType}</rux-table-cell>
-          <rux-table-cell>${row.azRtAsc}</rux-table-cell>
-          <rux-table-cell>${row.elDec}</rux-table-cell>
-          <rux-table-cell>${row.range}</rux-table-cell>
-          <rux-table-cell>${row.rangeRate}</rux-table-cell>
-          </rux-table-row>
+
+          ${rowData.map(
+              (row) => html`
+                  <rux-table-row ?data-selected="${row.selected}">
+                      <rux-table-cell>${row.currentTag}</rux-table-cell>
+                      <rux-table-cell>${row.originalTag}</rux-table-cell>
+                      <rux-table-cell>${row.sensor}</rux-table-cell>
+                      <rux-table-cell>${row.astat}</rux-table-cell>
+                      <rux-table-cell>${row.obsTime}</rux-table-cell>
+                      <rux-table-cell>${row.obType}</rux-table-cell>
+                      <rux-table-cell>${row.azRtAsc}</rux-table-cell>
+                      <rux-table-cell>${row.elDec}</rux-table-cell>
+                      <rux-table-cell>${row.range}</rux-table-cell>
+                      <rux-table-cell>${row.rangeRate}</rux-table-cell>
+                  </rux-table-row>
+              `
+          )}
         </rux-table-body>
 
-        `
-        )}
-      </table>
+      </rux-table>
     </div>
 
   `
