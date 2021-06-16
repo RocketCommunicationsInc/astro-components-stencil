@@ -5470,6 +5470,13 @@ export namespace Components {
     }
     interface RuxTabPanel {}
     interface RuxTabPanels {}
+    interface RuxTable {}
+    interface RuxTableBody {}
+    interface RuxTableCell {}
+    interface RuxTableHeader {}
+    interface RuxTableHeaderCell {}
+    interface RuxTableHeaderRow {}
+    interface RuxTableRow {}
     interface RuxTabs {
         /**
          * Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
@@ -12963,6 +12970,55 @@ declare global {
         prototype: HTMLRuxTabPanelsElement
         new (): HTMLRuxTabPanelsElement
     }
+    interface HTMLRuxTableElement
+        extends Components.RuxTable,
+            HTMLStencilElement {}
+    var HTMLRuxTableElement: {
+        prototype: HTMLRuxTableElement
+        new (): HTMLRuxTableElement
+    }
+    interface HTMLRuxTableBodyElement
+        extends Components.RuxTableBody,
+            HTMLStencilElement {}
+    var HTMLRuxTableBodyElement: {
+        prototype: HTMLRuxTableBodyElement
+        new (): HTMLRuxTableBodyElement
+    }
+    interface HTMLRuxTableCellElement
+        extends Components.RuxTableCell,
+            HTMLStencilElement {}
+    var HTMLRuxTableCellElement: {
+        prototype: HTMLRuxTableCellElement
+        new (): HTMLRuxTableCellElement
+    }
+    interface HTMLRuxTableHeaderElement
+        extends Components.RuxTableHeader,
+            HTMLStencilElement {}
+    var HTMLRuxTableHeaderElement: {
+        prototype: HTMLRuxTableHeaderElement
+        new (): HTMLRuxTableHeaderElement
+    }
+    interface HTMLRuxTableHeaderCellElement
+        extends Components.RuxTableHeaderCell,
+            HTMLStencilElement {}
+    var HTMLRuxTableHeaderCellElement: {
+        prototype: HTMLRuxTableHeaderCellElement
+        new (): HTMLRuxTableHeaderCellElement
+    }
+    interface HTMLRuxTableHeaderRowElement
+        extends Components.RuxTableHeaderRow,
+            HTMLStencilElement {}
+    var HTMLRuxTableHeaderRowElement: {
+        prototype: HTMLRuxTableHeaderRowElement
+        new (): HTMLRuxTableHeaderRowElement
+    }
+    interface HTMLRuxTableRowElement
+        extends Components.RuxTableRow,
+            HTMLStencilElement {}
+    var HTMLRuxTableRowElement: {
+        prototype: HTMLRuxTableRowElement
+        new (): HTMLRuxTableRowElement
+    }
     interface HTMLRuxTabsElement
         extends Components.RuxTabs,
             HTMLStencilElement {}
@@ -14040,6 +14096,13 @@ declare global {
         'rux-tab': HTMLRuxTabElement
         'rux-tab-panel': HTMLRuxTabPanelElement
         'rux-tab-panels': HTMLRuxTabPanelsElement
+        'rux-table': HTMLRuxTableElement
+        'rux-table-body': HTMLRuxTableBodyElement
+        'rux-table-cell': HTMLRuxTableCellElement
+        'rux-table-header': HTMLRuxTableHeaderElement
+        'rux-table-header-cell': HTMLRuxTableHeaderCellElement
+        'rux-table-header-row': HTMLRuxTableHeaderRowElement
+        'rux-table-row': HTMLRuxTableRowElement
         'rux-tabs': HTMLRuxTabsElement
     }
 }
@@ -19513,6 +19576,13 @@ declare namespace LocalJSX {
             event: CustomEvent<HTMLRuxTabPanelsElement[]>
         ) => void
     }
+    interface RuxTable {}
+    interface RuxTableBody {}
+    interface RuxTableCell {}
+    interface RuxTableHeader {}
+    interface RuxTableHeaderCell {}
+    interface RuxTableHeaderRow {}
+    interface RuxTableRow {}
     interface RuxTabs {
         /**
          * Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
@@ -20593,6 +20663,13 @@ declare namespace LocalJSX {
         'rux-tab': RuxTab
         'rux-tab-panel': RuxTabPanel
         'rux-tab-panels': RuxTabPanels
+        'rux-table': RuxTable
+        'rux-table-body': RuxTableBody
+        'rux-table-cell': RuxTableCell
+        'rux-table-header': RuxTableHeader
+        'rux-table-header-cell': RuxTableHeaderCell
+        'rux-table-header-row': RuxTableHeaderRow
+        'rux-table-row': RuxTableRow
         'rux-tabs': RuxTabs
     }
 }
@@ -22738,6 +22815,20 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxTabPanelElement>
             'rux-tab-panels': LocalJSX.RuxTabPanels &
                 JSXBase.HTMLAttributes<HTMLRuxTabPanelsElement>
+            'rux-table': LocalJSX.RuxTable &
+                JSXBase.HTMLAttributes<HTMLRuxTableElement>
+            'rux-table-body': LocalJSX.RuxTableBody &
+                JSXBase.HTMLAttributes<HTMLRuxTableBodyElement>
+            'rux-table-cell': LocalJSX.RuxTableCell &
+                JSXBase.HTMLAttributes<HTMLRuxTableCellElement>
+            'rux-table-header': LocalJSX.RuxTableHeader &
+                JSXBase.HTMLAttributes<HTMLRuxTableHeaderElement>
+            'rux-table-header-cell': LocalJSX.RuxTableHeaderCell &
+                JSXBase.HTMLAttributes<HTMLRuxTableHeaderCellElement>
+            'rux-table-header-row': LocalJSX.RuxTableHeaderRow &
+                JSXBase.HTMLAttributes<HTMLRuxTableHeaderRowElement>
+            'rux-table-row': LocalJSX.RuxTableRow &
+                JSXBase.HTMLAttributes<HTMLRuxTableRowElement>
             'rux-tabs': LocalJSX.RuxTabs &
                 JSXBase.HTMLAttributes<HTMLRuxTabsElement>
         }
