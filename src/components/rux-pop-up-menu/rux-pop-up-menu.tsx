@@ -1,13 +1,5 @@
 import { Component, Host, h, Prop, Element, State, EventEmitter, Event, Watch } from '@stencil/core';
 
-export interface MenuItem {
-  id: string,
-  label: string
-} 
-
-export interface Seperator{
-  role: "separator"
-}
 
 @Component({
   tag: 'rux-pop-up-menu',
@@ -24,46 +16,30 @@ export class RuxPopUpMenu {
   @State() _anchorEl: HTMLElement
   // @State() selected?: MenuItem
 
-  /**
-   * An array of objects that defines the pop up menu’s labels.
-   * Note: when used in an Angular environment you may need to stringify the data property.
-   */
-  @Prop() data!: Array<MenuItem | Seperator>
-
   @Prop() anchorEl?: HTMLElement
   
   @Prop({reflect: true, mutable: true}) isOpen: boolean
 
-  @Watch('isOpen')
-  menuOpenChanged(newMenuOpenState: boolean, oldMenuOpenState: boolean) {
-    if (newMenuOpenState !== oldMenuOpenState){
-      if (newMenuOpenState){
-        this._menuOpenHandler()
-      } else {
-        this._menuCloseHandler()
-      }
-    }
-  }
+  /**
+   * Emitted when the menu is about to open.
+   */
+  @Event() menuWillOpen: EventEmitter<void>
 
-  // /**
-  //  * Lifecycle method fired when the menu enters.
-  //  */
-  // @Prop() onEnter?: Function
+  /**
+   * Emitted when the menu is about to close
+   */
+  @Event() menuWillClose: EventEmitter<void>
 
-  // /**
-  //  * Lifecycle method fired when the menu exits.
-  //  */
-  // @Prop() onExit?: Function
+  /**
+   * Emitted when the menu is open.
+   */
+  @Event() menuDidOpen: EventEmitter<void>
 
-  @Event({composed: true,}) popUpMenuOpen: EventEmitter
-  _menuOpenHandler() {
-    this.popUpMenuOpen.emit()
-  }
-
-  @Event({composed: true,}) popUpMenuClose: EventEmitter
-  _menuCloseHandler() {
-    this.popUpMenuClose.emit()
-  }
+  /**
+   * Emitted when the menu is closed.
+   */
+  @Event() menuDidClose: EventEmitter<void>
+ 
 
   connectedCallback() {
     if (!this.anchorEl) {
@@ -105,10 +81,14 @@ export class RuxPopUpMenu {
   }
 
   _handleClick() {
-    this.show();
+    if (!this.isOpen){
+      this.show();
+    } else {
+      this.hide()
+    }
   }
 
-  _handleOutsideClick(e) {
+  _handleOutsideClick(e: MouseEvent) {
     const target = e
         .composedPath()
         .find((element: HTMLElement) => element.id && element.id === this._anchorEl.getAttribute('aria-controls'));
@@ -133,6 +113,7 @@ export class RuxPopUpMenu {
 //   }
 
   show() {
+    this.menuWillOpen.emit()
     this._setMenuPosition();
     this.isOpen = true;
     // if(this.onEnter){
@@ -147,6 +128,8 @@ export class RuxPopUpMenu {
 
     this._anchorEl.removeEventListener('mousedown', this._handleClick);
 
+    this.menuDidOpen.emit()
+
     // * Creates the menu items and attaches listeners. Not needed when using menu-item components
     // this._menuItems = this.shadowRoot.querySelectorAll('[role="menuitem"]');
     // this._menuItems.forEach((item) => {
@@ -155,6 +138,7 @@ export class RuxPopUpMenu {
   }
 
   hide() {
+    this.menuWillClose.emit()
     this.isOpen = false;
     // if(this.onExit){
     //   this.onExit();
