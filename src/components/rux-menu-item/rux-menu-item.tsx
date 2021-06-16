@@ -1,4 +1,4 @@
-import { Component, Host, h, Element, Prop } from '@stencil/core';
+import { Component, Host, h, Element, Prop, EventEmitter, Event } from '@stencil/core';
 
 @Component({
   tag: 'rux-menu-item',
@@ -6,18 +6,25 @@ import { Component, Host, h, Element, Prop } from '@stencil/core';
   shadow: true,
 })
 export class RuxMenuItem {
-  @Element() el!: HTMLElement
+  @Element() el!: HTMLRuxMenuItemElement
 
-  @Prop() onClick?: Function
-  // @Prop({reflect: true}) label: string
+  /**
+   * Emitted when item is clicked
+   */
+  @Event() itemClicked: EventEmitter<HTMLRuxMenuItemElement>
+
+  @Prop({reflect: true}) disabled: boolean = false
 
   render() {
+    const {disabled} = this
     return (
-      <Host>
+      <Host
+        aria-disabled={disabled ? 'true' : null}
+      >
         <li
           // data-key={this.el.id}
           // role="menuitem"
-          // onClick={this.onClick()}
+          onClick={() => this.itemClicked.emit(this.el)}
         >
           <slot></slot>
         </li>
