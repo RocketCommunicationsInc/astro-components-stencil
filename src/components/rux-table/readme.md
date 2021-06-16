@@ -23,6 +23,28 @@
 </rux-table>
 ```
 
+## CSS Custom Properties
+
+| Name                                   | Description                            |
+| -------------------------------------- | -------------------------------------- |
+| `--tableBorderColor`                   | Table background color                 |
+| `--tableControlsBackgroundColor`       | Table controls background color        |
+| `--tableFilterBorderColor`             | Table filter border color              |
+| `--tableFilterDisabledBackgroundColor` | Table filter disabled background color |
+| `--tableFilterDisabledBorderColor`     | Table filter disabled border color     |
+| `--tableHeaderAccentColor`             | Table header accent color              |
+| `--tableHeaderBackgroundColor`         | Table header background color          |
+| `--tableHeaderBorderColor`             | Table header border color              |
+| `--tableHeaderBoxShadow`               | Table header box shadow                |
+| `--tableHeaderTextColor`               | Table header text color                |
+| `--tableRowBackgroundColor`            | Table row background color             |
+| `--tableRowBorderColor`                | Table row border color                 |
+| `--tableRowHoverBackgroundColor`       | Table row hover background color       |
+| `--tableRowHoverTextColor`             | Table row hover text color             |
+| `--tableRowSelectedBackgroundColor`    | Table row selected background color    |
+| `--tableRowSelectedBorderColor`        | Table row selected border color        |
+| `--tableRowTextColor`                  | Table row text color                   |
+
 ---
 
 _Built with [StencilJS](https://stenciljs.com/)_
