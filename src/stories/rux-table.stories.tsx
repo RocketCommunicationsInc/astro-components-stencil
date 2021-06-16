@@ -70,7 +70,7 @@ export const HTMLTable = () => {
 
           ${rowData.map(
               (row) => html`
-                  <rux-table-row ?data-selected="${row.selected}">
+                  <rux-table-row selected="${row.selected}">
                       <rux-table-cell>${row.currentTag}</rux-table-cell>
                       <rux-table-cell>${row.originalTag}</rux-table-cell>
                       <rux-table-cell>${row.sensor}</rux-table-cell>
@@ -135,7 +135,7 @@ export const HTMLControlsTable = () => {
                 <rux-table-body>
                     ${rowData.map(
                         (row, index) => html`
-                            <rux-table-row ?data-selected="${row.selected}">
+                            <rux-table-row selected="${row.selected}">
                                 <rux-table-cell>
                                     ${row.control
                                         ? html` ${checkBox(index)}`
