@@ -2,6 +2,13 @@
     display: table-row;
 }
 
+:host([data-selected]) {
+    background: var(--tableRowSelectedBackgroundColor);
+    ::slotted(rux-table-cell) {
+        border-color: var(--tableRowSelectedBorderColor);
+    }
+}
+
 ::slotted(rux-table-cell:first-child) {
     padding-left: 1.875rem;
 }
