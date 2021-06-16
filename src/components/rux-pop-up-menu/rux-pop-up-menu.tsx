@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, Element, State } from '@stencil/core';
+import { Component, Host, h, Prop, Element, State, EventEmitter, Event, Watch } from '@stencil/core';
 
 export interface MenuItem {
   id: string,
@@ -19,10 +19,10 @@ export class RuxPopUpMenu {
   left: number
   top: number
 
-  @Element() el: HTMLElement
+  @Element() el!: HTMLRuxPopUpMenuElement
 
-  @State() _trigger: HTMLElement
-  @State() selected?: MenuItem
+  @State() _anchorEl: HTMLElement
+  // @State() selected?: MenuItem
 
   /**
    * An array of objects that defines the pop up menu’s labels.
@@ -30,20 +30,55 @@ export class RuxPopUpMenu {
    */
   @Prop() data!: Array<MenuItem | Seperator>
 
-  @Prop({reflect: true}) expanded: boolean
+  @Prop() anchorEl?: HTMLElement
+  
+  @Prop({reflect: true, mutable: true}) isOpen: boolean
+
+  @Watch('isOpen')
+  menuOpenChanged(newMenuOpenState: boolean, oldMenuOpenState: boolean) {
+    if (newMenuOpenState !== oldMenuOpenState){
+      if (newMenuOpenState){
+        this._menuOpenHandler()
+      } else {
+        this._menuCloseHandler()
+      }
+    }
+  }
+
+  // /**
+  //  * Lifecycle method fired when the menu enters.
+  //  */
+  // @Prop() onEnter?: Function
+
+  // /**
+  //  * Lifecycle method fired when the menu exits.
+  //  */
+  // @Prop() onExit?: Function
+
+  @Event({composed: true,}) popUpMenuOpen: EventEmitter
+  _menuOpenHandler() {
+    this.popUpMenuOpen.emit()
+  }
+
+  @Event({composed: true,}) popUpMenuClose: EventEmitter
+  _menuCloseHandler() {
+    this.popUpMenuClose.emit()
+  }
 
   connectedCallback() {
-    this._trigger = this.el.parentElement.querySelector(`[aria-controls="${this.el.id}"]`);
-    // this._trigger.addEventListener('mousedown', this._handleClick);
+    if (!this.anchorEl) {
+      this._anchorEl = this.el.parentElement.querySelector(`[aria-controls="${this.el.id}"]`);
+      this._anchorEl.addEventListener('mousedown', this._handleClick);
+    }
   }
 
   disconnectedCallback() {
-    // this._trigger.removeEventListener('mousedown', this._handleClick);
+    this._anchorEl.removeEventListener('mousedown', this._handleClick);
   }
 
   _setMenuPosition() {
     const menuBounds = this.el.getBoundingClientRect();
-    const triggerBounds = this._trigger.getBoundingClientRect();
+    const triggerBounds = this._anchorEl.getBoundingClientRect();
     const caret = parseInt(getComputedStyle(this.el, ':after').height);
 
     const padding = 16;
@@ -69,16 +104,16 @@ export class RuxPopUpMenu {
     this.el.style.setProperty('--caretLeft', `${caretLeft}px`);
   }
 
-  //   handleClick() {
-//     this.show();
-//   }
+  _handleClick() {
+    this.show();
+  }
 
-//   handleOutsideClick(e) {
-//     const target = e
-//         .composedPath()
-//         .find((element) => element.id && element.id === this._trigger.getAttribute('aria-controls'));
-//     target ? this._trigger.addEventListener('mousedown', this._click) : this.hide();
-//   }
+  _handleOutsideClick(e) {
+    const target = e
+        .composedPath()
+        .find((element: HTMLElement) => element.id && element.id === this._anchorEl.getAttribute('aria-controls'));
+    target ? this._anchorEl.addEventListener('mousedown', this._handleClick) : this.hide();
+  }
 
 //   handleMenuItemClick(e) {
 //     this.selected =  this.data.find((item) => item.id === e.currentTarget.dataset.key);
@@ -97,42 +132,43 @@ export class RuxPopUpMenu {
 //     this.hide();
 //   }
 
-//   show() {
-//     this._setMenuPosition();
-//     this.expanded = true;
-//     if(!!this.onPopUpMenuExpandedChange){
-//       this.onPopUpMenuExpandedChange(true);
-//     }
+  show() {
+    this._setMenuPosition();
+    this.isOpen = true;
+    // if(this.onEnter){
+    //   this.onEnter();
+    // }
 
-//     const debounce = setTimeout(() => {
-//       window.addEventListener('resize', () => this._setMenuPosition());
-//       window.addEventListener('mousedown', this._handleOutsideClick);
-//       clearTimeout(debounce);
-//     }, 10);
+    const debounce = setTimeout(() => {
+      window.addEventListener('resize', () => this._setMenuPosition());
+      window.addEventListener('mousedown', this._handleOutsideClick);
+      clearTimeout(debounce);
+    }, 10);
 
-//     this._trigger.removeEventListener('mousedown', this._handleClick);
+    this._anchorEl.removeEventListener('mousedown', this._handleClick);
 
-//     this._menuItems = this.shadowRoot.querySelectorAll('[role="menuitem"]');
-//     this._menuItems.forEach((item) => {
-//       item.addEventListener('mouseup', this._handleMenuItemClick);
-//     });
-//   }
+    // * Creates the menu items and attaches listeners. Not needed when using menu-item components
+    // this._menuItems = this.shadowRoot.querySelectorAll('[role="menuitem"]');
+    // this._menuItems.forEach((item) => {
+    //   item.addEventListener('mouseup', this._handleMenuItemClick);
+    // });
+  }
 
-//   hide() {
-//     this.expanded = false;
-//     if(!!this.onPopUpMenuExpandedChange){
-//       this.onPopUpMenuExpandedChange(false);
-//     }
+  hide() {
+    this.isOpen = false;
+    // if(this.onExit){
+    //   this.onExit();
+    // }
 
-//     window.removeEventListener('mousedown', this._handleOutsideClick);
-//     window.removeEventListener('resize', this);
+    window.removeEventListener('mousedown', this._handleOutsideClick);
+    window.removeEventListener('resize', this._setMenuPosition);
 
-//     this._menuItems.forEach((item) => {
-//       item.removeEventListener('mouseup', this._handleMenuItemClick);
-//     });
+    // this._menuItems.forEach((item) => {
+    //   item.removeEventListener('mouseup', this._handleMenuItemClick);
+    // });
 
-//     this._trigger.addEventListener('mousedown', this._handleClick);
-//   }
+    this._anchorEl.addEventListener('mousedown', this._handleClick);
+  }
 
   render() {
     return (

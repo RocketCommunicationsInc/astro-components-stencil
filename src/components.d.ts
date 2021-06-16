@@ -5368,6 +5368,7 @@ export namespace Components {
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
     interface RuxMenuItem {
+        "onClick"?: Function;
     }
     interface RuxMenuItemDivider {
     }
@@ -5442,11 +5443,12 @@ export namespace Components {
         "status": Status;
     }
     interface RuxPopUpMenu {
+        "anchorEl"?: HTMLElement;
         /**
           * An array of objects that defines the pop up menu’s labels. Note: when used in an Angular environment you may need to stringify the data property.
          */
         "data": Array<MenuItem | Seperator>;
-        "expanded": boolean;
+        "open": boolean;
     }
     interface RuxProgress {
         "hideLabel": boolean;
@@ -18369,6 +18371,7 @@ declare namespace LocalJSX {
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
     interface RuxMenuItem {
+        "onClick"?: Function;
     }
     interface RuxMenuItemDivider {
     }
@@ -18443,11 +18446,14 @@ declare namespace LocalJSX {
         "status"?: Status;
     }
     interface RuxPopUpMenu {
+        "anchorEl"?: HTMLElement;
         /**
           * An array of objects that defines the pop up menu’s labels. Note: when used in an Angular environment you may need to stringify the data property.
          */
         "data": Array<MenuItem | Seperator>;
-        "expanded"?: boolean;
+        "onPopUpMenuClose"?: (event: CustomEvent<any>) => void;
+        "onPopUpMenuOpen"?: (event: CustomEvent<any>) => void;
+        "open"?: boolean;
     }
     interface RuxProgress {
         "hideLabel"?: boolean;

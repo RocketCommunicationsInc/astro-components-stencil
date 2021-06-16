@@ -1,4 +1,4 @@
-:host {
+li {
     /**
       * @prop --popupMenuTextColor: Pop Up Menu Text Color
     */
@@ -23,6 +23,7 @@
     padding: 0.15rem 0.75rem;
     color: var(--popupMenuTextColor);
     text-decoration: none;
+    font-size: 1rem;
 
     min-width: 15em;
     max-width: 20em;
@@ -38,4 +39,12 @@
         background-color: var(--popupMenuItemHoverBackgroundColor);
         color: var(--popupMenuItemHoverTextColor);
     }
+
+    height: 1rem;
+}
+
+::slotted {
+    color: var(--popupMenuTextColor);
+    text-decoration: none;
+    font-size: 1rem;
 }

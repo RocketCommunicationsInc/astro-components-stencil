@@ -11,30 +11,30 @@
     */
     --popupMenuBorderColor: var(--primary);
 
-    /**
-      * @prop --popupMenuTextColor: Pop Up Menu Text Color
-    */
-    --popupMenuTextColor: var(--primaryElementText);
+    // /**
+    //   * @prop --popupMenuTextColor: Pop Up Menu Text Color
+    // */
+    // --popupMenuTextColor: var(--primaryElementText);
 
     /**
       * @prop --popupMenuBorderColor: Pop Up Menu Caret Background Color
     */
     --popupCaretBackgroundColor: var(--primary);
 
-    /**
-      * @prop --popupMenuItemBackgroundColor: Pop Up Menu Item Background Color
-    */
-    --popupMenuItemBackgroundColor: var(--primary);
+    // /**
+    //   * @prop --popupMenuItemBackgroundColor: Pop Up Menu Item Background Color
+    // */
+    // --popupMenuItemBackgroundColor: var(--primary);
 
-    /**
-      * @prop --popupMenuItemHoverBackgroundColor: Pop Up Menu Item Hover Background Color
-    */
-    --popupMenuItemHoverBackgroundColor: var(--primaryLight);
+    // /**
+    //   * @prop --popupMenuItemHoverBackgroundColor: Pop Up Menu Item Hover Background Color
+    // */
+    // --popupMenuItemHoverBackgroundColor: var(--primaryLight);
 
-    /**
-      * @prop --popupMenuItemHoverTextColor: Pop Up Menu Item Hover Text Color
-    */
-    --popupMenuItemHoverTextColor: var(--primaryElementText);
+    // /**
+    //   * @prop --popupMenuItemHoverTextColor: Pop Up Menu Item Hover Text Color
+    // */
+    // --popupMenuItemHoverTextColor: var(--primaryElementText);
 
     /**
       * @prop --caretLeft: Position of Caret
@@ -122,25 +122,25 @@ li:first-of-type {
     border-radius: 2px 2px 0 0;
 }
 
-li:not([role='seperator']) {
-    display: block;
-    padding: 0.15rem 0.75rem;
-    color: var(--popupMenuTextColor);
-    text-decoration: none;
+// li:not([role='seperator']) {
+//     display: block;
+//     padding: 0.15rem 0.75rem;
+//     color: var(--popupMenuTextColor);
+//     text-decoration: none;
 
-    min-width: 15em;
-    max-width: 20em;
+//     min-width: 15em;
+//     max-width: 20em;
 
-    word-wrap: none;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
+//     word-wrap: none;
+//     white-space: nowrap;
+//     text-overflow: ellipsis;
+//     overflow: hidden;
+// }
 
-li:not([role='seperator']):hover {
-    background-color: var(--popupMenuItemHoverBackgroundColor);
-    color: var(--popupMenuItemHoverTextColor);
-}
+// li:not([role='seperator']):hover {
+//     background-color: var(--popupMenuItemHoverBackgroundColor);
+//     color: var(--popupMenuItemHoverTextColor);
+// }
 
 :host(.from-top) {
     border-top-width: 1px;
