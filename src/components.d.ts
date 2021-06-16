@@ -5476,7 +5476,12 @@ export namespace Components {
     interface RuxTableHeader {}
     interface RuxTableHeaderCell {}
     interface RuxTableHeaderRow {}
-    interface RuxTableRow {}
+    interface RuxTableRow {
+        /**
+         * Changes the background color of the row. Can be applied to multiple rows at once.
+         */
+        selected: boolean
+    }
     interface RuxTabs {
         /**
          * Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
@@ -19582,7 +19587,12 @@ declare namespace LocalJSX {
     interface RuxTableHeader {}
     interface RuxTableHeaderCell {}
     interface RuxTableHeaderRow {}
-    interface RuxTableRow {}
+    interface RuxTableRow {
+        /**
+         * Changes the background color of the row. Can be applied to multiple rows at once.
+         */
+        selected?: boolean
+    }
     interface RuxTabs {
         /**
          * Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.

@@ -1,11 +1,3 @@
-# rux-table
-
-<!-- Auto Generated Below -->
-
-## Usage
-
-### Simple
-
 ```html
 <rux-table>
     <rux-table-header>
@@ -22,7 +14,3 @@
     </rux-table-body>
 </rux-table>
 ```
-
----
-
-_Built with [StencilJS](https://stenciljs.com/)_
