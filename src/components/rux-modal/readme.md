@@ -9,11 +9,18 @@
 
 | Property       | Attribute       | Description | Type      | Default     |
 | -------------- | --------------- | ----------- | --------- | ----------- |
-| `confirmText`  | `confirm-text`  |             | `string`  | `undefined` |
-| `denyText`     | `deny-text`     |             | `string`  | `undefined` |
-| `modalMessage` | `modal-message` |             | `string`  | `undefined` |
-| `modalTitle`   | `modal-title`   |             | `string`  | `undefined` |
+| `confirmText`  | `confirm-text`  |             | `string`  | `'Confirm'` |
+| `denyText`     | `deny-text`     |             | `string`  | `'Cancel'`  |
+| `modalMessage` | `modal-message` |             | `string`  | `''`        |
+| `modalTitle`   | `modal-title`   |             | `string`  | `''`        |
 | `open`         | `open`          |             | `boolean` | `false`     |
+
+
+## Events
+
+| Event         | Description | Type                   |
+| ------------- | ----------- | ---------------------- |
+| `modalClosed` |             | `CustomEvent<boolean>` |
 
 
 ## CSS Custom Properties
@@ -30,11 +37,13 @@
 
 ### Depends on
 
+- [rux-button-group](../rux-button-group)
 - [rux-button](../rux-button)
 
 ### Graph
 ```mermaid
 graph TD;
+  rux-modal --> rux-button-group
   rux-modal --> rux-button
   rux-button --> rux-icon
   style rux-modal fill:#f9f,stroke:#333,stroke-width:4px
