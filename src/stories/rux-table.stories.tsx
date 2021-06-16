@@ -30,16 +30,16 @@ const agRowData = Array(24)
 for (let i = 0; i < agRowData.length; i++) {
     agRowData[i] = {
         selected: false,
-        currentTag: getRandomNum(19999999, 9999999),
-        originalTag: '0000' + getRandomNum(11111, 99999),
-        sensor: getRandomNum(250, 450),
-        astat: getRandomNum(-1, 3) > 0 ? 'FULL' : 'SP_FULL',
+        currentTag: 19999999,
+        originalTag: '000011111',
+        sensor: 450,
+        astat: 'FULL',
         obsTime: '2020 158 01:23:45:678',
-        obType: 'OBTYPE_' + getRandomNum(1, 9),
-        azRtAsc: getRandomNum(120, 150, 4),
-        elDec: getRandomNum(1000, 3500, 3),
-        range: getRandomNum(1500, 7500, 3),
-        rangeRate: getRandomNum(-10, 10, 5),
+        obType: 'OBTYPE_5',
+        azRtAsc: 150,
+        elDec: 3500,
+        range: 7500,
+        rangeRate: 100,
     }
 }
 
@@ -124,34 +124,49 @@ export const HTMLControlsTable = () => {
     }
     return html`
         <div style="display: flex; padding: 2vh; justify-content: center;">
-            <table class="rux-table">
-                <tr class="rux-table__column-head">
-                    ${columnData.map(
-                        (column) => html` <th>${column.headerName}</th> `
+            <rux-table>
+                <rux-table-header>
+                    <rux-table-header-row>
+                        ${columnData.map(
+                            (column) =>
+                                html`
+                                    <rux-table-header-cell
+                                        >${column.headerName}</rux-table-header-cell
+                                    >
+                                `
+                        )}
+                    </rux-table-header-row>
+                </rux-table-header>
+                <rux-table-body>
+                    ${rowData.map(
+                        (row, index) => html`
+                            <rux-table-row ?data-selected="${row.selected}">
+                                <rux-table-cell>
+                                    ${row.control
+                                        ? html` ${checkBox(index)}`
+                                        : html` &nbsp; `}
+                                </rux-table-cell>
+                                <rux-table-cell
+                                    >${row.currentTag}</rux-table-cell
+                                >
+                                <rux-table-cell
+                                    >${row.originalTag}</rux-table-cell
+                                >
+                                <rux-table-cell>${row.sensor}</rux-table-cell>
+                                <rux-table-cell>${row.astat}</rux-table-cell>
+                                <rux-table-cell>${row.obsTime}</rux-table-cell>
+                                <rux-table-cell>${row.obType}</rux-table-cell>
+                                <rux-table-cell>${row.azRtAsc}</rux-table-cell>
+                                <rux-table-cell>${row.elDec}</rux-table-cell>
+                                <rux-table-cell>${row.range}</rux-table-cell>
+                                <rux-table-cell
+                                    >${row.rangeRate}</rux-table-cell
+                                >
+                            </rux-table-row>
+                        `
                     )}
-                </tr>
-                ${rowData.map(
-                    (row, index) => html`
-                        <tr ?data-selected="${row.selected}">
-                            <td>
-                                ${row.control
-                                    ? html` ${checkBox(index)}`
-                                    : html` &nbsp; `}
-                            </td>
-                            <td>${row.currentTag}</td>
-                            <td>${row.originalTag}</td>
-                            <td>${row.sensor}</td>
-                            <td>${row.astat}</td>
-                            <td>${row.obsTime}</td>
-                            <td>${row.obType}</td>
-                            <td>${row.azRtAsc}</td>
-                            <td>${row.elDec}</td>
-                            <td>${row.range}</td>
-                            <td>${row.rangeRate}</td>
-                        </tr>
-                    `
-                )}
-            </table>
+                </rux-table-body>
+            </rux-table>
         </div>
     `
 }
