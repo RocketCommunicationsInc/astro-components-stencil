@@ -9,6 +9,11 @@
     }
 }
 
+:host(:hover:not([data-selected])) {
+    background: var(--tableRowHoverBackgroundColor);
+    color: var(--tableRowHoverTextColor);
+}
+
 ::slotted(rux-table-cell:first-child) {
     padding-left: 1.875rem;
 }
