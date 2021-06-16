@@ -2,14 +2,14 @@
     display: table-row;
 }
 
-:host([data-selected]) {
+:host(.is-selected) {
     background: var(--tableRowSelectedBackgroundColor);
     ::slotted(rux-table-cell) {
         border-color: var(--tableRowSelectedBorderColor);
     }
 }
 
-:host(:hover:not([data-selected])) {
+:host(:hover:not(.is-selected)) {
     background: var(--tableRowHoverBackgroundColor);
     color: var(--tableRowHoverTextColor);
 }

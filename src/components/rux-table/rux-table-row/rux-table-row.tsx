@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core'
+import { Component, Prop, Host, h } from '@stencil/core'
 
 @Component({
     tag: 'rux-table-row',
@@ -6,9 +6,18 @@ import { Component, Host, h } from '@stencil/core'
     shadow: true,
 })
 export class RuxTableRow {
+    /**
+     * Changes the background color of the row. Can be applied to multiple rows at once.
+     */
+    @Prop({ attribute: 'selected' }) selected = false
+
     render() {
         return (
-            <Host>
+            <Host
+                class={{
+                    'is-selected': this.selected,
+                }}
+            >
                 <slot></slot>
             </Host>
         )
