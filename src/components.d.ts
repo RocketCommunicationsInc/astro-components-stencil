@@ -7,7 +7,6 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { Classification, Status } from "./common/commonTypes.module";
 import { RangeItem } from "./components/rux-monitoring-progress-icon/rux-monitoring-progress-icon";
-import { MenuItem, Seperator } from "./components/rux-pop-up-menu/rux-pop-up-menu";
 import { SwitchChangeEvent } from "./components/rux-switch/rux-switch.model";
 export namespace Components {
     interface RuxButton {
@@ -5368,7 +5367,7 @@ export namespace Components {
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
     interface RuxMenuItem {
-        "onClick"?: Function;
+        "disabled": boolean;
     }
     interface RuxMenuItemDivider {
     }
@@ -5444,11 +5443,7 @@ export namespace Components {
     }
     interface RuxPopUpMenu {
         "anchorEl"?: HTMLElement;
-        /**
-          * An array of objects that defines the pop up menu’s labels. Note: when used in an Angular environment you may need to stringify the data property.
-         */
-        "data": Array<MenuItem | Seperator>;
-        "open": boolean;
+        "isOpen": boolean;
     }
     interface RuxProgress {
         "hideLabel": boolean;
@@ -18371,7 +18366,11 @@ declare namespace LocalJSX {
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
     interface RuxMenuItem {
-        "onClick"?: Function;
+        "disabled"?: boolean;
+        /**
+          * Emitted when item is clicked
+         */
+        "onItemClicked"?: (event: CustomEvent<HTMLRuxMenuItemElement>) => void;
     }
     interface RuxMenuItemDivider {
     }
@@ -18447,13 +18446,23 @@ declare namespace LocalJSX {
     }
     interface RuxPopUpMenu {
         "anchorEl"?: HTMLElement;
+        "isOpen"?: boolean;
         /**
-          * An array of objects that defines the pop up menu’s labels. Note: when used in an Angular environment you may need to stringify the data property.
+          * Emitted when the menu is closed.
          */
-        "data": Array<MenuItem | Seperator>;
-        "onPopUpMenuClose"?: (event: CustomEvent<any>) => void;
-        "onPopUpMenuOpen"?: (event: CustomEvent<any>) => void;
-        "open"?: boolean;
+        "onMenuDidClose"?: (event: CustomEvent<void>) => void;
+        /**
+          * Emitted when the menu is open.
+         */
+        "onMenuDidOpen"?: (event: CustomEvent<void>) => void;
+        /**
+          * Emitted when the menu is about to close
+         */
+        "onMenuWillClose"?: (event: CustomEvent<void>) => void;
+        /**
+          * Emitted when the menu is about to open.
+         */
+        "onMenuWillOpen"?: (event: CustomEvent<void>) => void;
     }
     interface RuxProgress {
         "hideLabel"?: boolean;

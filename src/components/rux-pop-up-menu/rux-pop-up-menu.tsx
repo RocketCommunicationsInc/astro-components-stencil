@@ -18,7 +18,7 @@ export class RuxPopUpMenu {
 
   @Prop() anchorEl?: HTMLElement
   
-  @Prop({reflect: true, mutable: true}) isOpen: boolean
+  @Prop({reflect: true, mutable: true}) isOpen: boolean = false
 
   /**
    * Emitted when the menu is about to open.
@@ -39,9 +39,11 @@ export class RuxPopUpMenu {
    * Emitted when the menu is closed.
    */
   @Event() menuDidClose: EventEmitter<void>
- 
 
   connectedCallback() {
+    this._handleClick = this._handleClick.bind(this)
+    this._handleOutsideClick = this._handleOutsideClick.bind(this)
+
     if (!this.anchorEl) {
       this._anchorEl = this.el.parentElement.querySelector(`[aria-controls="${this.el.id}"]`);
       this._anchorEl.addEventListener('mousedown', this._handleClick);
@@ -81,11 +83,7 @@ export class RuxPopUpMenu {
   }
 
   _handleClick() {
-    if (!this.isOpen){
-      this.show();
-    } else {
-      this.hide()
-    }
+      this.show()
   }
 
   _handleOutsideClick(e: MouseEvent) {
@@ -157,7 +155,10 @@ export class RuxPopUpMenu {
   render() {
     return (
       <Host>
-        <slot></slot>
+        <ul role="menu" aria-expanded={`${this.isOpen}`}>
+          <slot></slot>
+        </ul>
+        <slot name="menu-end"></slot>
       </Host>
     );
   }
