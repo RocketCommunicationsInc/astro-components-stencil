@@ -5415,6 +5415,7 @@ export namespace Components {
     }
     interface RuxLog {
         data: LogRow[]
+        filter?: string
         timezone: string
     }
     interface RuxMonitoringIcon {
@@ -19582,6 +19583,7 @@ declare namespace LocalJSX {
     }
     interface RuxLog {
         data?: LogRow[]
+        filter?: string
         timezone?: string
     }
     interface RuxMonitoringIcon {
