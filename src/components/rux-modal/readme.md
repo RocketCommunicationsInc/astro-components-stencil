@@ -53,20 +53,20 @@ Pass properties as attributes of the Astro Dialog Box custom element:
 
 ## Properties
 
-| Property       | Attribute       | Description | Type      | Default     |
-| -------------- | --------------- | ----------- | --------- | ----------- |
-| `confirmText`  | `confirm-text`  |             | `string`  | `'Confirm'` |
-| `denyText`     | `deny-text`     |             | `string`  | `'Cancel'`  |
-| `modalMessage` | `modal-message` |             | `string`  | `''`        |
-| `modalTitle`   | `modal-title`   |             | `string`  | `''`        |
-| `open`         | `open`          |             | `boolean` | `false`     |
+| Property       | Attribute       | Description                  | Type      | Default     |
+| -------------- | --------------- | ---------------------------- | --------- | ----------- |
+| `confirmText`  | `confirm-text`  | Text for confirmation button | `string`  | `'Confirm'` |
+| `denyText`     | `deny-text`     | Text for close button        | `string`  | `'Cancel'`  |
+| `modalMessage` | `modal-message` | Modal body message           | `string`  | `''`        |
+| `modalTitle`   | `modal-title`   | Modal header title           | `string`  | `''`        |
+| `open`         | `open`          | Shows and hides modal        | `boolean` | `false`     |
 
 
 ## Events
 
-| Event         | Description | Type                   |
-| ------------- | ----------- | ---------------------- |
-| `modalClosed` |             | `CustomEvent<boolean>` |
+| Event         | Description                           | Type                   |
+| ------------- | ------------------------------------- | ---------------------- |
+| `modalClosed` | Event that is fired when modal closes | `CustomEvent<boolean>` |
 
 
 ## CSS Custom Properties

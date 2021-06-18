@@ -6,17 +6,29 @@ import { Component, h, Prop, Event, EventEmitter } from '@stencil/core'
     shadow: true,
 })
 export class RuxModal {
-    /* Shows and hides modal */
+    /**
+     * Shows and hides modal
+     */
     @Prop({ reflect: true }) open: boolean = false
-    /* Modal body message */
+    /**
+     * Modal body message
+     */
     @Prop() modalMessage: string = ''
-    /* Modal header title */
+    /**
+     * Modal header title
+     */
     @Prop() modalTitle: string = ''
-    /* Text for confirmation button */
+    /**
+     * Text for confirmation button
+     */
     @Prop() confirmText: string = 'Confirm'
-    /* Text for close button */
+    /**
+     * Text for close button
+     */
     @Prop() denyText: string = 'Cancel'
-    /* Event that is fired when modal closes */
+    /**
+     * Event that is fired when modal closes
+     */
     @Event({
         eventName: 'modalClosed',
         composed: true,

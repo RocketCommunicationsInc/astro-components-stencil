@@ -5370,10 +5370,25 @@ export namespace Components {
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
     interface RuxModal {
+        /**
+          * Text for confirmation button
+         */
         "confirmText": string;
+        /**
+          * Text for close button
+         */
         "denyText": string;
+        /**
+          * Modal body message
+         */
         "modalMessage": string;
+        /**
+          * Modal header title
+         */
         "modalTitle": string;
+        /**
+          * Shows and hides modal
+         */
         "open": boolean;
     }
     interface RuxMonitoringIcon {
@@ -18356,11 +18371,29 @@ declare namespace LocalJSX {
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
     interface RuxModal {
+        /**
+          * Text for confirmation button
+         */
         "confirmText"?: string;
+        /**
+          * Text for close button
+         */
         "denyText"?: string;
+        /**
+          * Modal body message
+         */
         "modalMessage"?: string;
+        /**
+          * Modal header title
+         */
         "modalTitle"?: string;
+        /**
+          * Event that is fired when modal closes
+         */
         "onModalClosed"?: (event: CustomEvent<boolean>) => void;
+        /**
+          * Shows and hides modal
+         */
         "open"?: boolean;
     }
     interface RuxMonitoringIcon {
