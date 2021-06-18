@@ -6,6 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal'
 import { Classification, Status } from './common/commonTypes.module'
+import { LogRow } from './components/rux-log/rux-log.model'
 import { RangeItem } from './components/rux-monitoring-progress-icon/rux-monitoring-progress-icon'
 import { SwitchChangeEvent } from './components/rux-switch/rux-switch.model'
 export namespace Components {
@@ -5411,6 +5412,10 @@ export namespace Components {
         color: string
         icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
+    }
+    interface RuxLog {
+        data: LogRow[]
+        timezone: string
     }
     interface RuxMonitoringIcon {
         /**
@@ -12967,6 +12972,11 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement
         new (): HTMLRuxIconZoomOutMapElement
     }
+    interface HTMLRuxLogElement extends Components.RuxLog, HTMLStencilElement {}
+    var HTMLRuxLogElement: {
+        prototype: HTMLRuxLogElement
+        new (): HTMLRuxLogElement
+    }
     interface HTMLRuxMonitoringIconElement
         extends Components.RuxMonitoringIcon,
             HTMLStencilElement {}
@@ -14146,6 +14156,7 @@ declare global {
         'rux-icon-zoom-in-map': HTMLRuxIconZoomInMapElement
         'rux-icon-zoom-out': HTMLRuxIconZoomOutElement
         'rux-icon-zoom-out-map': HTMLRuxIconZoomOutMapElement
+        'rux-log': HTMLRuxLogElement
         'rux-monitoring-icon': HTMLRuxMonitoringIconElement
         'rux-monitoring-progress-icon': HTMLRuxMonitoringProgressIconElement
         'rux-notification': HTMLRuxNotificationElement
@@ -19569,6 +19580,10 @@ declare namespace LocalJSX {
         icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
+    interface RuxLog {
+        data?: LogRow[]
+        timezone?: string
+    }
     interface RuxMonitoringIcon {
         /**
          * Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
@@ -20765,6 +20780,7 @@ declare namespace LocalJSX {
         'rux-icon-zoom-in-map': RuxIconZoomInMap
         'rux-icon-zoom-out': RuxIconZoomOut
         'rux-icon-zoom-out-map': RuxIconZoomOutMap
+        'rux-log': RuxLog
         'rux-monitoring-icon': RuxMonitoringIcon
         'rux-monitoring-progress-icon': RuxMonitoringProgressIcon
         'rux-notification': RuxNotification
@@ -22910,6 +22926,8 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>
             'rux-icon-zoom-out-map': LocalJSX.RuxIconZoomOutMap &
                 JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>
+            'rux-log': LocalJSX.RuxLog &
+                JSXBase.HTMLAttributes<HTMLRuxLogElement>
             'rux-monitoring-icon': LocalJSX.RuxMonitoringIcon &
                 JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>
             'rux-monitoring-progress-icon': LocalJSX.RuxMonitoringProgressIcon &
