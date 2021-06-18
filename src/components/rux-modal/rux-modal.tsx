@@ -40,9 +40,11 @@ export class RuxModal {
         this._validateParams()
     }
 
-    _handleModalChoice(e) {
+    _handleModalChoice(e: MouseEvent) {
         // convert string value to boolean
-        const choice = e.currentTarget.dataset.value === 'true'
+        const target = e.currentTarget as HTMLElement
+        const choice = target.dataset.value === 'true'
+        console.log('choice', choice)
         this.modalCloseEvent.emit(choice)
         this.open = false
     }
