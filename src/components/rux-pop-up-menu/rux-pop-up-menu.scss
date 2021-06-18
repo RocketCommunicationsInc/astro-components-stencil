@@ -81,10 +81,10 @@
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 }
 
-:host([expanded]) {
+:host([open]) {
     pointer-events: auto;
     opacity: 1;
-    transition: opacity 0.0667s ease-in;
+    transition: opacity 0.1667s ease-in;
 }
 
 :host::after {

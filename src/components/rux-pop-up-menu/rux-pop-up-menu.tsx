@@ -8,8 +8,7 @@ import { Component, Host, h, Prop, Element, State, EventEmitter, Event, Watch } 
 })
 export class RuxPopUpMenu {
 
-  left: number
-  top: number
+  width: number
 
   @Element() el!: HTMLRuxPopUpMenuElement
 
@@ -18,7 +17,7 @@ export class RuxPopUpMenu {
 
   @Prop() anchorEl?: HTMLElement
   
-  @Prop({reflect: true, mutable: true}) isOpen: boolean = false
+  @Prop({reflect: true, mutable: true}) open: boolean = false
 
   /**
    * Emitted when the menu is about to open.
@@ -56,29 +55,35 @@ export class RuxPopUpMenu {
 
   _setMenuPosition() {
     const menuBounds = this.el.getBoundingClientRect();
-    const triggerBounds = this._anchorEl.getBoundingClientRect();
+    const anchorBounds = this._anchorEl.getBoundingClientRect();
     const caret = parseInt(getComputedStyle(this.el, ':after').height);
+    let top: number
+    let left: number
 
-    const padding = 16;
+    const padding = 8;
+             
+    console.log('this.width', this.width)
+    console.log('anchorBounds.left', anchorBounds.left)
+    console.log('window.innerWidth', window.innerWidth)
+     
+    left =
+      menuBounds.width + anchorBounds.left - padding > window.innerWidth
+        ? anchorBounds.right - menuBounds.width - padding
+        : anchorBounds.left + padding;
 
-    this.left =
-      menuBounds.width + triggerBounds.left - padding > window.innerWidth
-        ? triggerBounds.right - menuBounds.width
-        : triggerBounds.left - padding;
+    top = anchorBounds.bottom + padding / 2 + caret / 2;
 
-    this.top = triggerBounds.bottom + padding / 2 + caret / 2;
-
-    if (menuBounds.height + triggerBounds.bottom + padding > window.innerHeight) {
-      this.top = triggerBounds.top - menuBounds.height - caret;
+    if (menuBounds.height + anchorBounds.bottom + padding > window.innerHeight) {
+      top = anchorBounds.top - menuBounds.height - caret;
       this.el.classList.add('from-top');
     } else {
       this.el.classList.remove('from-top');
     }
 
-    this.el.style.left = `${this.left}px`;
-    this.el.style.top = `${this.top}px`;
+    this.el.style.left = `${left}px`;
+    this.el.style.top = `${top}px`;
 
-    const caretLeft = triggerBounds.left - this.left;
+    const caretLeft = anchorBounds.left - left + padding;
     this.el.style.setProperty('--caretLeft', `${caretLeft}px`);
   }
 
@@ -113,10 +118,7 @@ export class RuxPopUpMenu {
   show() {
     this.menuWillOpen.emit()
     this._setMenuPosition();
-    this.isOpen = true;
-    // if(this.onEnter){
-    //   this.onEnter();
-    // }
+    this.open = true;
 
     const debounce = setTimeout(() => {
       window.addEventListener('resize', () => this._setMenuPosition());
@@ -137,7 +139,7 @@ export class RuxPopUpMenu {
 
   hide() {
     this.menuWillClose.emit()
-    this.isOpen = false;
+    this.open = false;
     // if(this.onExit){
     //   this.onExit();
     // }
@@ -155,7 +157,7 @@ export class RuxPopUpMenu {
   render() {
     return (
       <Host>
-        <ul role="menu" aria-expanded={`${this.isOpen}`}>
+        <ul role="menu" aria-expanded={`${this.open}`}>
           <slot></slot>
         </ul>
         <slot name="menu-end"></slot>
