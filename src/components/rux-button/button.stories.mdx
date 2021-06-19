@@ -1,0 +1,15 @@
+import { html, render } from 'lit-html'
+import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
+
+<Meta title="Test/button" component="rux-button" />
+
+<Story name="positive">
+    <rux-button>Hello</rux-button>
+</Story>
+
+<Canvas>
+    <Story name="possditive">
+        <rux-button>Hello</rux-button>
+    </Story>
+</Canvas>
