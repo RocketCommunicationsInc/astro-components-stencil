@@ -1,15 +1,49 @@
-import { html, render } from 'lit-html'
 import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
+import { html, render } from 'lit-html'
 
-<Meta title="Test/button" component="rux-button" />
+<Meta
+    title="Components/Butt"
+    component="rux-button"
+    argTypes={extractArgTypes('rux-button')}
+/>
 
-<Story name="positive">
-    <rux-button>Hello</rux-button>
-</Story>
+# Hello
+
+<rux-button>ok</rux-button>
+<rux-tabs id="tab-set-id-1">
+<rux-tab id="tab-id-1">Tab 1 title</rux-tab>
+<rux-tab id="tab-id-2">Tab 2 title</rux-tab>
+<rux-tab id="tab-id-3">Tab 3 title</rux-tab>
+</rux-tabs>
+
+<rux-tab-panels aria-labelledby="tab-set-id-1">
+  <rux-tab-panel aria-labelledby="tab-id-1">
+    ```html
+    <rux-button>Test</rux-button>
+    ```
+
+  </rux-tab-panel>
+  <rux-tab-panel aria-labelledby="tab-id-2">Tab 2 HTML content</rux-tab-panel>
+  <rux-tab-panel aria-labelledby="tab-id-3">Tab 3 HTML content</rux-tab-panel>
+</rux-tab-panels>
+
+export const StandardButton = (args) => {
+    return html`
+        <div style="padding: 10%; display: flex; justify-content: center;">
+            <rux-button
+                ?disabled="${args.disabled}"
+                ?icon-only="${args.iconOnly}"
+                ?outline="${args.outline}"
+                .size="${args.size}"
+                .icon="${args.withIcon ? 'settings' : null}"
+                >Button</rux-button
+            >
+        </div>
+    `
+}
+;<Story name="positive">{StandardButton.bind({})}</Story>
 
 <Canvas>
-    <Story name="possditive">
-        <rux-button>Hello</rux-button>
-    </Story>
+    <Story name="positive">{StandardButton.bind()}</Story>
 </Canvas>
