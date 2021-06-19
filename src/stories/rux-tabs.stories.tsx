@@ -1,4 +1,5 @@
 import { html, render } from 'lit-html'
+import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
 import { boolean, withKnobs } from '@storybook/addon-knobs'
 
 //@ts-ignore
@@ -6,7 +7,14 @@ import readme from '../components/rux-tabs/readme.md'
 
 export default {
     title: 'Components/Tabs',
+    component: 'rux-tabs',
     decorators: [withKnobs],
+    subcomponents: {
+        'rux-tab': 'rux-tab',
+        'rux-tab-panel': 'rux-tab-panel',
+        'rux-tab panels': 'rux-tab-panels',
+    },
+    argTypes: extractArgTypes('rux-tabs'),
     parameters: {
         readme: {
             sidebar: readme,
@@ -14,7 +22,7 @@ export default {
     },
 }
 
-export const Tabs = () => {
+export const Tabs = (args) => {
     const smallKnob = boolean('Small', false)
     const disabledKnob = boolean('Disabled 3rd Tab', true)
 
