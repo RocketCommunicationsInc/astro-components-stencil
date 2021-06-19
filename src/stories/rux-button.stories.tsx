@@ -1,7 +1,6 @@
 import { html, render } from 'lit-html'
 import { boolean, select, withKnobs } from '@storybook/addon-knobs'
 import RuxButtonReadme from '../components/rux-button/readme.md'
-import RuxButtonGroupReadme from '../components/rux-button-group/readme.md'
 import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
 
 const sizeOptions = {
@@ -11,7 +10,6 @@ const sizeOptions = {
 }
 
 const args = extractArgTypes('rux-button')
-console.log('arrrr', args)
 
 export default {
     title: 'Components/Buttons',
@@ -20,14 +18,6 @@ export default {
 }
 
 export const StandardButton = (args) => {
-    // const size = select('Size', sizeOptions, '')
-    // const disabled = boolean('Disabled', false)
-    // const outline = boolean('Outline', false)
-    // const withIcon = boolean('With icon', false)
-    // const iconOnly = boolean('Icon only', false)
-
-    console.log('disabled', args)
-
     return html`
         <div style="padding: 10%; display: flex; justify-content: center;">
             <rux-button
@@ -42,11 +32,12 @@ export const StandardButton = (args) => {
     `
 }
 
-export const Primary = () => html`<rux-button primary></rux-button>`
-export const Basic = (args) => html`<rux-button {...args}></rux-button>`
-Basic.args = { disabled: true }
-
 StandardButton.parameters = {
+    docs: {
+        source: {
+            code: '<rux-button>Button</rux-button>',
+        },
+    },
     exports: {
         render,
         html,
@@ -56,11 +47,8 @@ StandardButton.parameters = {
     },
 }
 
-export const slottedIconButton = () => {
-    const size = select('Size', sizeOptions, 'small')
-    const disabled = boolean('Disabled', false)
-    const outline = boolean('Outline', false)
-    const iconOnly = boolean('Icon only', false)
+export const slottedIconButton = (args) => {
+    const { size, disabled, outline, iconOnly } = args
 
     return html`
         <div style="padding: 10%; display: flex; justify-content: center;">
@@ -89,54 +77,6 @@ slottedIconButton.story = {
         readme: {
             sidebar: RuxButtonReadme,
         },
-    },
-}
-
-export const GroupedButtons = () => {
-    const alignOptions = {
-        Default: '',
-        Right: 'right',
-        Center: 'center',
-    }
-
-    const align = select('Align', alignOptions, 'right')
-
-    return html`
-        <style>
-            .light-theme {
-                --exampleContainerBackgroundColor: var(--primaryElementText);
-                --exampleContainerBorderColor: var(--colorQuaternaryLighten1);
-            }
-            .dark-theme {
-                --exampleContainerBackgroundColor: var(--colorTertiaryDarken1);
-                --exampleContainerBorderColor: var(--colorTertiary);
-            }
-            .example-container {
-                min-width: 20rem;
-                background: var(--exampleContainerBackgroundColor);
-                border: 1px solid var(--exampleContainerBorderColor);
-                padding: 0.625rem;
-                display: block;
-            }
-        </style>
-        <div style="padding: 10%; display: flex; justify-content: center;">
-            <div class="example-container">
-                <rux-button-group .align="${align}">
-                    <rux-button outline>Cancel</rux-button>
-                    <rux-button>Continue</rux-button>
-                </rux-button-group>
-            </div>
-        </div>
-    `
-}
-
-GroupedButtons.parameters = {
-    exports: {
-        render,
-        html,
-    },
-    readme: {
-        sidebar: RuxButtonGroupReadme,
     },
 }
 

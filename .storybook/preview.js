@@ -15,6 +15,7 @@ export const parameters = {
     docs: {
         extractArgTypes,
         extractComponentDescription,
+        theme: themes.dark,
     },
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
