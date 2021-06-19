@@ -1,12 +1,24 @@
 import themes from './theme'
 import { addDecorator } from '@storybook/web-components'
 import { addReadme } from 'storybook-readme/html'
+import {
+    extractArgTypes,
+    extractComponentDescription,
+    setStencilDocJson,
+} from '@pxtrn/storybook-addon-docs-stencil'
 
+import docJson from '../dist/docs.json'
+if (docJson) setStencilDocJson(docJson)
 addDecorator(addReadme)
 
 export const parameters = {
+    docs: {
+        extractArgTypes,
+        extractComponentDescription,
+    },
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
+        hideNoControlsWarning: true,
         matchers: {
             color: /(background|color)$/i,
             date: /Date$/,

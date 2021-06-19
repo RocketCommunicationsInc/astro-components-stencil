@@ -10,5 +10,6 @@ module.exports = {
         '@storybook/addon-a11y',
         'storybook-readme',
         'storybook-addon-themes',
+        '@pxtrn/storybook-addon-docs-stencil',
     ],
 }

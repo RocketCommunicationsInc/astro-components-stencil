@@ -2,6 +2,7 @@ import { html, render } from 'lit-html'
 import { boolean, select, withKnobs } from '@storybook/addon-knobs'
 import RuxButtonReadme from '../components/rux-button/readme.md'
 import RuxButtonGroupReadme from '../components/rux-button-group/readme.md'
+import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
 
 const sizeOptions = {
     Small: 'small',
@@ -9,31 +10,41 @@ const sizeOptions = {
     Large: 'large',
 }
 
+const args = extractArgTypes('rux-button')
+console.log('arrrr', args)
+
 export default {
     title: 'Components/Buttons',
-    decorators: [withKnobs],
+    component: 'rux-button',
+    argTypes: args,
 }
 
-export const StandardButton = () => {
-    const size = select('Size', sizeOptions, '')
-    const disabled = boolean('Disabled', false)
-    const outline = boolean('Outline', false)
-    const withIcon = boolean('With icon', false)
-    const iconOnly = boolean('Icon only', false)
+export const StandardButton = (args) => {
+    // const size = select('Size', sizeOptions, '')
+    // const disabled = boolean('Disabled', false)
+    // const outline = boolean('Outline', false)
+    // const withIcon = boolean('With icon', false)
+    // const iconOnly = boolean('Icon only', false)
+
+    console.log('disabled', args)
 
     return html`
         <div style="padding: 10%; display: flex; justify-content: center;">
             <rux-button
-                ?disabled="${disabled}"
-                ?icon-only="${iconOnly}"
-                ?outline="${outline}"
-                .size="${size}"
-                .icon="${withIcon ? 'settings' : null}"
+                ?disabled="${args.disabled}"
+                ?icon-only="${args.iconOnly}"
+                ?outline="${args.outline}"
+                .size="${args.size}"
+                .icon="${args.withIcon ? 'settings' : null}"
                 >Button</rux-button
             >
         </div>
     `
 }
+
+export const Primary = () => html`<rux-button primary></rux-button>`
+export const Basic = (args) => html`<rux-button {...args}></rux-button>`
+Basic.args = { disabled: true }
 
 StandardButton.parameters = {
     exports: {
