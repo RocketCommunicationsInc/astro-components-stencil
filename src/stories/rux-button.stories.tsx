@@ -3,6 +3,7 @@ import RuxButtonReadme from '../components/rux-button/readme.md'
 import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
 
 const args = extractArgTypes('rux-button')
+console.log('args', args)
 
 export default {
     title: 'Components/Buttons',

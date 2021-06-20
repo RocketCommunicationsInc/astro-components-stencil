@@ -10,10 +10,25 @@ import { RangeItem } from './components/rux-monitoring-progress-icon/rux-monitor
 import { SwitchChangeEvent } from './components/rux-switch/rux-switch.model'
 export namespace Components {
     interface RuxButton {
+        /**
+         * Toggles disabled attribute on the button
+         */
         disabled: boolean
+        /**
+         * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+         */
         icon: string
+        /**
+         * Hides slotted text from the button by setting rux-button--icon-only class
+         */
         iconOnly: boolean
+        /**
+         * Changes button style from solid to outline by setting rux-button--outline class
+         */
         outline: boolean
+        /**
+         * Changes size of a button from standard to small or large by setting sizing classes
+         */
         size?: 'small' | 'large'
     }
     interface RuxButtonGroup {
@@ -14045,10 +14060,25 @@ declare global {
 }
 declare namespace LocalJSX {
     interface RuxButton {
+        /**
+         * Toggles disabled attribute on the button
+         */
         disabled?: boolean
+        /**
+         * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+         */
         icon?: string
+        /**
+         * Hides slotted text from the button by setting rux-button--icon-only class
+         */
         iconOnly?: boolean
+        /**
+         * Changes button style from solid to outline by setting rux-button--outline class
+         */
         outline?: boolean
+        /**
+         * Changes size of a button from standard to small or large by setting sizing classes
+         */
         size?: 'small' | 'large'
     }
     interface RuxButtonGroup {

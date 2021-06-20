@@ -68,5 +68,6 @@
         "storybook-addon-themes": "~6.1.0",
         "storybook-readme": "~5.0.9",
         "svgo": "~2.3.0"
-    }
+    },
+    "customElements": "custom-elements.json"
 }
