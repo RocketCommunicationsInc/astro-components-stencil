@@ -3,30 +3,27 @@ import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
 import { html, render } from 'lit-html'
 
 <Meta
-    title="Components/Butt"
+    title="MDX/Button"
     component="rux-button"
     argTypes={extractArgTypes('rux-button')}
 />
 
-# Hello
+# Button
 
-<rux-button>ok</rux-button>
-<rux-tabs id="tab-set-id-1">
-<rux-tab id="tab-id-1">Tab 1 title</rux-tab>
-<rux-tab id="tab-id-2">Tab 2 title</rux-tab>
-<rux-tab id="tab-id-3">Tab 3 title</rux-tab>
+<div>
+<rux-tabs small id="tab-set-id-1">
+<rux-tab id="tab-id-1">Vue</rux-tab>
+<rux-tab id="tab-id-2">React</rux-tab>
+<rux-tab id="tab-id-3">Angular</rux-tab>
 </rux-tabs>
 
 <rux-tab-panels aria-labelledby="tab-set-id-1">
   <rux-tab-panel aria-labelledby="tab-id-1">
-    ```html
-    <rux-button>Test</rux-button>
-    ```
-
   </rux-tab-panel>
   <rux-tab-panel aria-labelledby="tab-id-2">Tab 2 HTML content</rux-tab-panel>
   <rux-tab-panel aria-labelledby="tab-id-3">Tab 3 HTML content</rux-tab-panel>
 </rux-tab-panels>
+</div>
 
 export const StandardButton = (args) => {
     return html`
@@ -47,3 +44,10 @@ export const StandardButton = (args) => {
 <Canvas>
     <Story name="positive">{StandardButton.bind()}</Story>
 </Canvas>
+
+## Tree Shaking
+
+```html
+import { RuxButtonGroup } from 'astro-web-components/dist/custom-elements'
+customElements.define('rux-button-group', RuxButtonGroup)
+```

@@ -73,7 +73,7 @@ import StackAlt from './assets/stackalt.svg'
     display: block;
     margin-bottom: 2px;
   }
-  
+
   .link-item img {
     height: 40px;
     width: 40px;
@@ -111,10 +111,39 @@ import StackAlt from './assets/stackalt.svg'
     display: inline-block;
   }
 
-  
+
 `}</style>
 
-# Welcome to Storybook
+# Introduction
+
+## Installation
+
+<div>
+<rux-tabs small id="tab-set-id-1">
+<rux-tab id="tab-id-1">HTML</rux-tab>
+<rux-tab id="tab-id-2">Vue</rux-tab>
+<rux-tab id="tab-id-3">React</rux-tab>
+<rux-tab id="tab-id-4">Angular</rux-tab>
+</rux-tabs>
+
+<rux-tab-panels aria-labelledby="tab-set-id-1">
+  <rux-tab-panel aria-labelledby="tab-id-1">
+    Astro ships with a zero-config lazy loader that is usable in the browser.
+
+    <script type="module">
+      import { defineCustomElements } from "https://unpkg.com/notastro@0.0.10/loader";
+      defineCustomElements();
+    </script>
+
+
+    ### Manual Install
+
+  </rux-tab-panel>
+  <rux-tab-panel aria-labelledby="tab-id-2">Tab 2 HTML content</rux-tab-panel>
+  <rux-tab-panel aria-labelledby="tab-id-3">Tab 3 HTML content</rux-tab-panel>
+  <rux-tab-panel aria-labelledby="tab-id-4">Tab 3 HTML content</rux-tab-panel>
+</rux-tab-panels>
+</div>
 
 Storybook helps you build UI components in isolation from your app's business logic, data, and context.
 That makes it easy to develop hard-to-reach states. Save these UI states as **stories** to revisit during development, testing, or QA.
