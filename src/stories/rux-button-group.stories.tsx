@@ -7,7 +7,7 @@ import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
 const args = extractArgTypes('rux-button-group')
 
 export default {
-    title: 'Components/Buttons',
+    title: 'Components/ButtonGroup',
     component: 'rux-button-group',
     subcomponents: { 'rux-button': 'rux-button' },
     argTypes: args,

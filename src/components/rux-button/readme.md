@@ -6,10 +6,6 @@ Buttons allow users to trigger actions.
 
 -   [Astro UXDS: Buttons](http://www.astrouxds.com/ui-components/buttons)
 
-## Web Components Usage
-
-## Basic HTML Usage
-
 <!-- Auto Generated Below -->
 
 ## Usage
@@ -29,6 +25,18 @@ Buttons allow users to trigger actions.
 | `iconOnly` | `icon-only` |             | `boolean`            | `false`     |
 | `outline`  | `outline`   |             | `boolean`            | `false`     |
 | `size`     | `size`      |             | `"large" \| "small"` | `undefined` |
+
+## Slots
+
+| Slot        | Description |
+| ----------- | ----------- |
+| `"default"` | test        |
+
+## Shadow Parts
+
+| Part     | Description                  |
+| -------- | ---------------------------- |
+| `"icon"` | the shadow part for the icon |
 
 ## CSS Custom Properties
 

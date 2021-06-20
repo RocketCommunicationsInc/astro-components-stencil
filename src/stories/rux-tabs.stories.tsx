@@ -24,7 +24,6 @@ export default {
 
 export const Tabs = (args) => {
     const smallKnob = boolean('Small', false)
-    const disabledKnob = boolean('Disabled 3rd Tab', true)
 
     return html`
         <style>
@@ -36,7 +35,7 @@ export const Tabs = (args) => {
             <rux-tabs ?small="${smallKnob}" id="tab-set-id-1">
                 <rux-tab id="tab-id-1">Tab 1</rux-tab>
                 <rux-tab id="tab-id-2">Tab 2</rux-tab>
-                <rux-tab ?disabled="${disabledKnob}" id="tab-id-3"
+                <rux-tab ?disabled="${args.disabled}" id="tab-id-3"
                     >Tab 3</rux-tab
                 >
             </rux-tabs>

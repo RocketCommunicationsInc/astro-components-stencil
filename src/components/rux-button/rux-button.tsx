@@ -1,5 +1,9 @@
 import { Prop, Component, h } from '@stencil/core'
 
+/**
+ * @slot default - test
+ * @part icon - the shadow part for the icon
+ */
 @Component({
     tag: 'rux-button',
     styleUrl: 'rux-button.scss',

@@ -1,13 +1,6 @@
 import { html, render } from 'lit-html'
-import { boolean, select, withKnobs } from '@storybook/addon-knobs'
 import RuxButtonReadme from '../components/rux-button/readme.md'
 import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
-
-const sizeOptions = {
-    Small: 'small',
-    Standard: '',
-    Large: 'large',
-}
 
 const args = extractArgTypes('rux-button')
 
