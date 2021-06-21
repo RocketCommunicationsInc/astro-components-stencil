@@ -1,5 +1,9 @@
-# rux-log
+# RuxLog
 
+## Guidelines
+
+-   [Astro UXDS: Log](http://www.astrouxds.com/ui-components/log)
+-   [Astro UXDS: Notification System](https://www.astrouxds.com/design-guidelines/notifications)
 <!-- Auto Generated Below -->
 
 ## Properties
