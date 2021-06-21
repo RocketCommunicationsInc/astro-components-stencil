@@ -3,16 +3,16 @@
     overflow: hidden;
 }
 
-.header-event-cell {
+.rux-log__header-event-cell {
     width: 80%;
 }
 
-.header--event {
+.header-event-container {
     display: flex;
     align-items: center;
 }
 
-.event-filter {
+.rux-log__filter {
     margin-left: auto;
 }
 
@@ -20,7 +20,7 @@ rux-table-header-cell {
     width: 1%;
 }
 
-.notification {
+.rux-log__notification {
     width: 2000%;
     align-content: center;
     color: var(--logFilterTextColor);

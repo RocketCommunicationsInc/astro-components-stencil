@@ -4,16 +4,15 @@ import { LogRow } from './rux-log.model'
 /**
  * A Log is a tabular representation of application events and may include username, priority, equipment type, signal type, etc. As part of the [Notification System](https://www.astrouxds.com/design-guidelines/notifications), Logs provide sorting and filtering function for examining events.
  * @slot table - for advanced control, you may pass in your own table
- * @slot table-header
- * @slot table-header-row
- * @slot notification
- * @slot table-body
- * @part log--notification
+ * @slot table-header - the log's table header
+ * @slot table-header-row - the log's table header row
+ * @slot table-body - the log's table body
+ * @part log--notification - the filter notification
  *
  */
 @Component({
     tag: 'rux-log',
-    styleUrl: 'rux-log.css',
+    styleUrl: 'rux-log.scss',
     shadow: true,
 })
 export class RuxLog {
@@ -25,13 +24,14 @@ export class RuxLog {
      * Accepts [IANA timezone string format](https://www.iana.org/time-zones) such as `America/Los_Angeles`. Default timezone is `UTC`. See [`toLocaleString()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString#Parameters) for more details.
      */
     @Prop() timezone: string = 'UTC'
+
     /**
      * A string to filter the array to return only the children whose `message` property contains a case-insensitive substring match.
      */
     @Prop({ mutable: true, reflect: true }) filter?: string
 
-    setFilter(e: any) {
-        this.filter = e.target.value
+    setFilter(e: Event) {
+        this.filter = (e.target as HTMLInputElement).value
     }
 
     get filteredData(): LogRow[] {
@@ -55,11 +55,11 @@ export class RuxLog {
                                             Time
                                         </rux-table-header-cell>
                                         <rux-table-header-cell></rux-table-header-cell>
-                                        <rux-table-header-cell class="header-event-cell">
-                                            <div class="header--event">
+                                        <rux-table-header-cell class="rux-log__header-event-cell">
+                                            <div class="header-event-container">
                                                 Event
                                                 <input
-                                                    class="event-filter"
+                                                    class="rux-log__filter"
                                                     onInput={(event) =>
                                                         this.setFilter(event)
                                                     }
@@ -73,19 +73,14 @@ export class RuxLog {
                         </slot>
 
                         {this.filter && (
-                            <slot name="notification">
-                                <div
-                                    class="notification"
-                                    part="log--notification"
-                                >
-                                    A filter with <b>{this.filter}</b> is
-                                    enabled.{' '}
-                                    {this.data.length -
-                                        this.filteredData.length}{' '}
-                                    of {this.data.length} records are currently
-                                    hidden.
-                                </div>
-                            </slot>
+                            <div
+                                class="rux-log__notification"
+                                part="log--notification"
+                            >
+                                A filter with <b>{this.filter}</b> is enabled.{' '}
+                                {this.data.length - this.filteredData.length} of{' '}
+                                {this.data.length} records are currently hidden.
+                            </div>
                         )}
 
                         <slot name="table-body">
