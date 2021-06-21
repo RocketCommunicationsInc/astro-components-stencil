@@ -61,44 +61,27 @@ For more advanced customization, RuxLog exposes the entire table element and eac
 
 | Slot                 | Description                                          |
 | -------------------- | ---------------------------------------------------- |
-| `"notification"`     |                                                      |
 | `"table"`            | for advanced control, you may pass in your own table |
-| `"table-body"`       |                                                      |
-| `"table-header"`     |                                                      |
-| `"table-header-row"` |                                                      |
+| `"table-body"`       | the log's table body                                 |
+| `"table-header"`     | the log's table header                               |
+| `"table-header-row"` | the log's table header row                           |
 
 ## Shadow Parts
 
-| Part                  | Description |
-| --------------------- | ----------- |
-| `"log--notification"` |             |
+| Part                  | Description             |
+| --------------------- | ----------------------- |
+| `"log--notification"` | the filter notification |
 
 ## Dependencies
 
 ### Depends on
 
--   [rux-table](../rux-table)
--   [rux-table-header](../rux-table/rux-table-header)
--   [rux-table-header-row](../rux-table/rux-table-header-row)
--   [rux-table-header-cell](../rux-table/rux-table-header-cell)
--   [rux-table-body](../rux-table/rux-table-body)
--   [rux-table-row](../rux-table/rux-table-row)
--   [rux-table-cell](../rux-table/rux-table-cell)
--   [rux-datetime](../rux-datetime)
 -   [rux-status](../rux-status)
 
 ### Graph
 
 ```mermaid
 graph TD;
-  rux-log --> rux-table
-  rux-log --> rux-table-header
-  rux-log --> rux-table-header-row
-  rux-log --> rux-table-header-cell
-  rux-log --> rux-table-body
-  rux-log --> rux-table-row
-  rux-log --> rux-table-cell
-  rux-log --> rux-datetime
   rux-log --> rux-status
   style rux-log fill:#f9f,stroke:#333,stroke-width:4px
 ```
