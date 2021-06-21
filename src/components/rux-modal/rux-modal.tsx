@@ -9,15 +9,15 @@ export class RuxModal {
     /**
      * Shows and hides modal
      */
-    @Prop({ reflect: true }) open: boolean = false
+    @Prop({ reflect: true }) open!: boolean
     /**
      * Modal body message
      */
-    @Prop() modalMessage: string = ''
+    @Prop() modalMessage!: string
     /**
      * Modal header title
      */
-    @Prop() modalTitle: string = ''
+    @Prop() modalTitle!: string
     /**
      * Text for confirmation button
      */
@@ -36,39 +36,18 @@ export class RuxModal {
     })
     modalCloseEvent: EventEmitter<boolean>
 
-    constructor() {
-        this._validateParams()
-    }
+    constructor() {}
 
     _handleModalChoice(e: MouseEvent) {
         // convert string value to boolean
         const target = e.currentTarget as HTMLElement
         const choice = target.dataset.value === 'true'
-        console.log('choice', choice)
         this.modalCloseEvent.emit(choice)
         this.open = false
     }
 
-    _validateParams() {
-        let errorText = ''
-        // in the event neither Confirm/Deny text is supplied provide
-        // a default cancel button to get out of the modal
-        if (!this.modalTitle || !this.modalMessage) {
-            errorText += 'No '
-        }
-
-        if (!this.modalTitle) {
-            errorText += 'modal title '
-        }
-
-        if (!this.modalMessage) {
-            errorText +=
-                (errorText === 'No ' ? 'modal text' : ' or modal text') + ' '
-        }
-
-        if (errorText.length) {
-            console.error(errorText + 'have been passed to on the modal')
-        }
+    connectedCallback() {
+        this.validate('rux-modal', ['open', 'modalMessage', 'modalTitle'])
     }
 
     render() {
@@ -112,5 +91,36 @@ export class RuxModal {
                 </dialog>
             </div>
         )
+    }
+
+    // TODO find a way to share logic to put this validation into
+    // Stencil prevents using native extends class functionality
+    private validate(componentTag: string, requiredProps: string[]) {
+        const erroredFields = []
+        const isBlank = (prop) => typeof prop === 'undefined'
+        requiredProps.forEach((key) =>
+            isBlank(this[key]) ? erroredFields.push(this.kebabize(key)) : null
+        )
+
+        if (erroredFields.length) {
+            throw new Error(
+                `[${componentTag}]: Following propert${
+                    erroredFields.length > 1 ? 'ies' : 'y'
+                } (${erroredFields.join(', ')}) ${
+                    erroredFields.length > 1 ? 'are' : 'is'
+                } required`
+            )
+        }
+    }
+
+    private kebabize = (str) => {
+        return str
+            .split('')
+            .map((letter, idx) => {
+                return letter.toUpperCase() === letter
+                    ? `${idx !== 0 ? '-' : ''}${letter.toLowerCase()}`
+                    : letter
+            })
+            .join('')
     }
 }

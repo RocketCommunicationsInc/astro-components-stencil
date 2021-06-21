@@ -2,12 +2,10 @@ import { html, render } from 'lit-html'
 import { boolean, text, withKnobs } from '@storybook/addon-knobs'
 import { withActions } from '@storybook/addon-actions'
 
-// import { RuxModal } from '../src/components/rux-modal/rux-modal.js'
 import readme from '../components/rux-modal/readme.md'
 
 export default {
     title: 'Components/Dialog Box',
-    // decorators: [withKnobs],
     decorators: [withActions('modalClosed', { depth: 100 }), withKnobs],
 }
 
@@ -19,12 +17,12 @@ export const DialogBox = () => {
     const denyText = text('Deny button text', 'Cancel')
     return html`
         <div style="display: flex; flex-flow: column; justify-content: center;">
-            <rux-modal
+            <!-- ?open="${toggleModal}"
                 modal-message="${message}"
-                modal-title="${title}"
+                modal-title="${title}" -->
+            <rux-modal
                 confirm-text="${confirmText}"
                 deny-text="${denyText}"
-                ?open="${toggleModal}"
             ></rux-modal>
         </div>
     `
