@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, Element, State, EventEmitter, Event, Watch } from '@stencil/core';
+import { Component, Host, h, Prop, Element, State, EventEmitter, Event, Method } from '@stencil/core';
 
 
 @Component({
@@ -51,7 +51,7 @@ export class RuxPopUpMenu {
 
     if (!this.anchorEl) {
       this._anchorEl = this.el.parentElement.querySelector(`[aria-controls="${this.el.id}"]`);
-      this.triggerEl = this.el.parentElement.querySelector(`[aria-controls="${this.el.id}"]`);
+      this.triggerEl = this._anchorEl
       this.triggerEl.addEventListener('mousedown', this._handleClick);
     } else {
       this._anchorEl = this.anchorEl
@@ -62,6 +62,54 @@ export class RuxPopUpMenu {
 
   disconnectedCallback() {
     this.triggerEl.removeEventListener('mousedown', this._handleClick);
+  }
+
+  /**
+   * Returns 'true' if the menu is open
+   */
+  @Method()
+  async isOpen(): Promise<boolean> {
+    return Promise.resolve(this.open)
+  }
+
+  /**
+   * Opens the menu. If the menu is already open it returns 'false'.
+   */
+  @Method()
+  async show(): Promise<boolean> {
+    if (this.open){
+      return Promise.resolve(false)
+    }
+
+    this._show()
+    return Promise.resolve(true)
+  }
+
+  /**
+   * Closes the menu. If the menu is already closed it returns 'false'.
+   */
+  @Method()
+  async close(): Promise<boolean> {
+    if (!this.open){
+      return Promise.resolve(false)
+    }
+
+    this._hide()
+    return Promise.resolve(true)
+  }
+
+  /**
+   * Toggles the menu open or close. Will return 'true' on menu open and 'false' on menu close
+   */
+  @Method()
+  async toggle(): Promise<boolean> {
+    if (this.open) {
+      this._hide()
+      return false
+    } else {
+      this._show()
+      return true
+    }
   }
 
   _setMenuPosition() {
@@ -95,17 +143,17 @@ export class RuxPopUpMenu {
   }
 
   _handleClick() {
-      this.show()
+      this._show()
   }
 
   _handleOutsideClick(e: MouseEvent) {
     const target = e
         .composedPath()
         .find((element: HTMLElement) => element.id && element.id === this.triggerEl.getAttribute('aria-controls'));
-    target ? this.triggerEl.addEventListener('mousedown', this._handleClick) : this.hide();
+    target ? this.triggerEl.addEventListener('mousedown', this._handleClick) : this._hide();
   }
 
-  show() {
+  _show() {
     this.menuWillOpen.emit()
     this._setMenuPosition();
     this.open = true;
@@ -121,7 +169,7 @@ export class RuxPopUpMenu {
     this.menuDidOpen.emit()
   }
 
-  hide() {
+  _hide() {
     this.menuWillClose.emit()
     this.open = false;
 
