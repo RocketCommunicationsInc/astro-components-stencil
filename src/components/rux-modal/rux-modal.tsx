@@ -96,9 +96,9 @@ export class RuxModal {
     // TODO find a way to share logic to put this validation into
     // Stencil prevents using native extends class functionality
     private validate(componentTag: string, requiredProps: string[]) {
-        const erroredFields = []
-        const isBlank = (prop) => typeof prop === 'undefined'
-        requiredProps.forEach((key) =>
+        const erroredFields: string[] = []
+        const isBlank = (prop: any) => typeof prop === 'undefined'
+        requiredProps.forEach((key: string) =>
             isBlank(this[key]) ? erroredFields.push(this.kebabize(key)) : null
         )
 
@@ -113,10 +113,10 @@ export class RuxModal {
         }
     }
 
-    private kebabize = (str) => {
+    private kebabize = (str: string) => {
         return str
             .split('')
-            .map((letter, idx) => {
+            .map((letter: string, idx: number) => {
                 return letter.toUpperCase() === letter
                     ? `${idx !== 0 ? '-' : ''}${letter.toLowerCase()}`
                     : letter
