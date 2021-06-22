@@ -1,4 +1,4 @@
-li {
+:host {
     /**
       * @prop --popupMenuTextColor: Pop Up Menu Text Color
     */
@@ -20,27 +20,30 @@ li {
     --popupMenuItemHoverTextColor: var(--primaryElementText);
 
     display: block;
-    padding: 0.15rem 0.75rem;
-    color: var(--popupMenuTextColor);
-    text-decoration: none;
-    font-size: 1rem;
 
-    min-width: 15em;
-    max-width: 20em;
+    li {
+        padding: 0.15rem 0.75rem;
+        color: var(--popupMenuTextColor);
+        text-decoration: none;
+        font-size: 1rem;
 
-    word-wrap: none;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+        min-width: 15em;
+        max-width: 20em;
 
-    background-color: transparent; /* Testing for now */
+        word-wrap: none;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
 
-    &:hover {
-        background-color: var(--popupMenuItemHoverBackgroundColor);
-        color: var(--popupMenuItemHoverTextColor);
+        background-color: transparent; /* Testing for now */
+
+        // height: 1rem;
+
+        &:hover {
+            background-color: var(--popupMenuItemHoverBackgroundColor);
+            color: var(--popupMenuItemHoverTextColor);
+        }
     }
-
-    height: 1rem;
 }
 
 ::slotted {

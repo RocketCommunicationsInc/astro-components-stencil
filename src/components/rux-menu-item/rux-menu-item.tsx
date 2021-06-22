@@ -1,5 +1,10 @@
 import { Component, Host, h, Element, Prop, EventEmitter, Event } from '@stencil/core';
 
+// interface clickEvent {
+//   text: string,
+//   value?: any
+// }
+
 @Component({
   tag: 'rux-menu-item',
   styleUrl: 'rux-menu-item.scss',
@@ -11,9 +16,26 @@ export class RuxMenuItem {
   /**
    * Emitted when item is clicked
    */
-  @Event() itemClicked: EventEmitter<HTMLRuxMenuItemElement>
+  @Event() itemClicked: EventEmitter<object>
+  private itemOnClick = () => {
+    if (this.value) {
+      this.itemClicked.emit({value: this.value})
+      console.log(this.value)
+    } else {
+      console.log(this.el.textContent)
+      this.itemClicked.emit({value: this.el.textContent})
+    }
+  }
 
+  /**
+   * Disables the item
+  */
   @Prop({reflect: true}) disabled: boolean = false
+
+  /**
+   * Value returned when item is selected. If no value is given, the text content will be used.
+   */
+  @Prop() value: any
 
   render() {
     const {disabled} = this
@@ -24,8 +46,10 @@ export class RuxMenuItem {
         <li
           // data-key={this.el.id}
           // role="menuitem"
-          onClick={() => this.itemClicked.emit(this.el)}
+          onClick={() => this.itemOnClick()}
+          // disabled={this.disabled}
         >
+          <slot name="start"></slot>
           <slot></slot>
         </li>
       </Host>
