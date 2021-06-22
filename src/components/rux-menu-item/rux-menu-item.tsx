@@ -15,9 +15,7 @@ export class RuxMenuItem {
   private itemOnClick = () => {
     if (this.value) {
       this.itemClicked.emit({value: this.value})
-      console.log(this.value)
     } else {
-      console.log(this.el.textContent)
       this.itemClicked.emit({value: this.el.textContent})
     }
   }
@@ -33,10 +31,9 @@ export class RuxMenuItem {
   @Prop() value: any
 
   render() {
-    const {disabled} = this
     return (
       <Host
-        aria-disabled={disabled ? 'true' : null}
+        aria-disabled={this.disabled ? 'true' : null}
       >
         <li
           onClick={() => this.itemOnClick()}

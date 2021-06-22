@@ -1,23 +1,19 @@
 :host {
     /**
-      * @prop --menuTextColor: Pop Up Menu Text Color
+      * @prop --menuTextColor: Menu Text Color
     */
-    // --menuTextColor: var(--primaryElementText);
 
     /**
-      * @prop --menuItemBackgroundColor: Pop Up Menu Item Background Color
+      * @prop --menuItemBackgroundColor: Menu Item Background Color
     */
-    // --menuItemBackgroundColor: var(--primary);
 
     /**
-      * @prop --menuItemHoverBackgroundColor: Pop Up Menu Item Hover Background Color
+      * @prop --menuItemHoverBackgroundColor: Menu Item Hover Background Color
     */
-    // --menuItemHoverBackgroundColor: var(--primaryLight);
 
     /**
-      * @prop --menuItemHoverTextColor: Pop Up Menu Item Hover Text Color
+      * @prop --menuItemHoverTextColor: Menu Item Hover Text Color
     */
-    // --menuItemHoverTextColor: var(--primaryElementText);
 
     display: block;
 
@@ -48,7 +44,6 @@
 
 :host([disabled]) {
     cursor: var(--disabledCursor);
-    // color: rgba(var(--menuTextColor), 0.4);
 
     li {
         opacity: var(--disabledOpacity);
@@ -58,9 +53,3 @@
         }
     }
 }
-
-// ::slotted {
-//     color: var(--menuTextColor);
-//     text-decoration: none;
-//     font-size: 1rem;
-// }
