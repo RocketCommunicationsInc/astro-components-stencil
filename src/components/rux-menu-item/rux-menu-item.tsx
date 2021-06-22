@@ -11,12 +11,12 @@ export class RuxMenuItem {
   /**
    * Emitted when item is clicked
    */
-  @Event() itemClicked: EventEmitter<object>
+  @Event() menuItemClicked: EventEmitter<object>
   private itemOnClick = () => {
     if (this.value) {
-      this.itemClicked.emit({value: this.value})
+      this.menuItemClicked.emit({value: this.value})
     } else {
-      this.itemClicked.emit({value: this.el.textContent})
+      this.menuItemClicked.emit({value: this.el.textContent})
     }
   }
 
