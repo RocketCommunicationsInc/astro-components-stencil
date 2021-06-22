@@ -8,15 +8,21 @@ import { Component, Host, h, Prop, Element, State, EventEmitter, Event, Watch } 
 })
 export class RuxPopUpMenu {
 
-  width: number
-
   @Element() el!: HTMLRuxPopUpMenuElement
 
   @State() _anchorEl: HTMLElement
-  // @State() selected?: MenuItem
+  
+  @Prop({mutable: true}) triggerEl: HTMLElement
 
+  /**
+   * Element to anchor the menu to. If none is given the menu will anchor
+   * to the trigger element where aria-controls === menu id
+   */
   @Prop() anchorEl?: HTMLElement
   
+  /**
+   * Boolean which controls when to show the menu
+   */
   @Prop({reflect: true, mutable: true}) open: boolean = false
 
   /**
@@ -45,12 +51,17 @@ export class RuxPopUpMenu {
 
     if (!this.anchorEl) {
       this._anchorEl = this.el.parentElement.querySelector(`[aria-controls="${this.el.id}"]`);
-      this._anchorEl.addEventListener('mousedown', this._handleClick);
+      this.triggerEl = this.el.parentElement.querySelector(`[aria-controls="${this.el.id}"]`);
+      this.triggerEl.addEventListener('mousedown', this._handleClick);
+    } else {
+      this._anchorEl = this.anchorEl
+      this.triggerEl = document.querySelector(`[aria-controls="${this.el.id}"]`);
+      this.triggerEl.addEventListener('mousedown', this._handleClick)
     }
   }
 
   disconnectedCallback() {
-    this._anchorEl.removeEventListener('mousedown', this._handleClick);
+    this.triggerEl.removeEventListener('mousedown', this._handleClick);
   }
 
   _setMenuPosition() {
@@ -62,10 +73,6 @@ export class RuxPopUpMenu {
 
     const padding = 8;
              
-    console.log('this.width', this.width)
-    console.log('anchorBounds.left', anchorBounds.left)
-    console.log('window.innerWidth', window.innerWidth)
-     
     left =
       menuBounds.width + anchorBounds.left - padding > window.innerWidth
         ? anchorBounds.right - menuBounds.width - padding
@@ -94,26 +101,9 @@ export class RuxPopUpMenu {
   _handleOutsideClick(e: MouseEvent) {
     const target = e
         .composedPath()
-        .find((element: HTMLElement) => element.id && element.id === this._anchorEl.getAttribute('aria-controls'));
-    target ? this._anchorEl.addEventListener('mousedown', this._handleClick) : this.hide();
+        .find((element: HTMLElement) => element.id && element.id === this.triggerEl.getAttribute('aria-controls'));
+    target ? this.triggerEl.addEventListener('mousedown', this._handleClick) : this.hide();
   }
-
-//   handleMenuItemClick(e) {
-//     this.selected =  this.data.find((item) => item.id === e.currentTarget.dataset.key);
-//     if(!!this.onPopUpMenuItemSelected){
-//       this.onPopUpMenuItemSelected(this.selected);
-//     }
-//     this.dispatchEvent(
-//         new CustomEvent('pop-up-menu-item-selected', {
-//           detail: {
-//             selected: this.selected,
-//           },
-//           bubbles: true,
-//           composed: true,
-//         })
-//     );
-//     this.hide();
-//   }
 
   show() {
     this.menuWillOpen.emit()
@@ -129,34 +119,21 @@ export class RuxPopUpMenu {
     this._anchorEl.removeEventListener('mousedown', this._handleClick);
 
     this.menuDidOpen.emit()
-
-    // * Creates the menu items and attaches listeners. Not needed when using menu-item components
-    // this._menuItems = this.shadowRoot.querySelectorAll('[role="menuitem"]');
-    // this._menuItems.forEach((item) => {
-    //   item.addEventListener('mouseup', this._handleMenuItemClick);
-    // });
   }
 
   hide() {
     this.menuWillClose.emit()
     this.open = false;
-    // if(this.onExit){
-    //   this.onExit();
-    // }
 
     window.removeEventListener('mousedown', this._handleOutsideClick);
     window.removeEventListener('resize', this._setMenuPosition);
-
-    // this._menuItems.forEach((item) => {
-    //   item.removeEventListener('mouseup', this._handleMenuItemClick);
-    // });
 
     this._anchorEl.addEventListener('mousedown', this._handleClick);
   }
 
   render() {
     return (
-      <Host>
+      <Host aria-hidden={!this.open}>
         <ul role="menu" aria-expanded={`${this.open}`}>
           <slot></slot>
         </ul>
@@ -167,32 +144,7 @@ export class RuxPopUpMenu {
 
 }
 
-// import { LitElement, html, css } from 'lit-element';
 
-// export class RuxPopUpMenu extends LitElement {
-//   static get properties() {
-//     return {
-//       data: {
-//         type: Array,
-//       },
-//       selected: {
-//         type: Object,
-//       },
-//       expanded: {
-//         type: Boolean,
-//         reflect: true,
-//       },
-//       _trigger: {
-//         type: Object,
-//       },
-//       onPopUpMenuItemSelected: {
-//         type: Function
-//       },
-//       onPopUpMenuExpandedChange: {
-//         type: Function
-//       }
-//     };
-//   }
 
 //   constructor() {
 //     super();
