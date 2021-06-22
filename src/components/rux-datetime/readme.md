@@ -4,6 +4,25 @@ RuxDatetime is a utility component that provides a convenient wrapper around the
 
 <!-- Auto Generated Below -->
 
+## Usage
+
+### Simple
+
+```html
+<rux-datetime
+    date="Fri Jun 18 2021 13:50:02 GMT-0400 (Eastern Daylight Time)"
+    year="2-digit"
+    month="2-digit"
+    day="2-digit"
+    hour="2-digit"
+    minute="2-digit"
+    second="2-digit"
+    hour-12="true"
+    time-zone="America/Los_Angeles"
+>
+</rux-datetime>
+```
+
 ## Properties
 
 | Property       | Attribute        | Description                      | Type                                                      | Default      |
@@ -11,7 +30,7 @@ RuxDatetime is a utility component that provides a convenient wrapper around the
 | `date`         | `date`           | The date time to be formatted    | `Date \| string`                                          | `new Date()` |
 | `day`          | `day`            | Format options for day           | `"2-digit" \| "numeric"`                                  | `undefined`  |
 | `hour`         | `hour`           | Format options for hour          | `"2-digit" \| "numeric"`                                  | `undefined`  |
-| `hour12`       | `hour-1-2`       | Display date in 12 hour time.    | `boolean`                                                 | `false`      |
+| `hour12`       | `hour-12`        | Display date in 12 hour time.    | `boolean`                                                 | `false`      |
 | `locale`       | `locale`         | The locale                       | `string`                                                  | `'default'`  |
 | `minute`       | `minute`         | Format options for minute        | `"2-digit" \| "numeric"`                                  | `undefined`  |
 | `month`        | `month`          | Format options for month         | `"2-digit" \| "long" \| "narrow" \| "numeric" \| "short"` | `undefined`  |
