@@ -5367,7 +5367,14 @@ export namespace Components {
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
     interface RuxMenuItem {
+        /**
+          * Disables the item
+         */
         "disabled": boolean;
+        /**
+          * Value returned when item is selected. If no value is given, the text content will be used.
+         */
+        "value": any;
     }
     interface RuxMenuItemDivider {
     }
@@ -5442,8 +5449,34 @@ export namespace Components {
         "status": Status;
     }
     interface RuxPopUpMenu {
+        /**
+          * Element to anchor the menu to. If none is given the menu will anchor to the trigger element where aria-controls === menu id
+         */
         "anchorEl"?: HTMLElement;
-        "isOpen": boolean;
+        /**
+          * Closes the menu. If the menu is already closed it returns 'false'.
+         */
+        "close": () => Promise<boolean>;
+        /**
+          * Returns 'true' if the menu is open
+         */
+        "isOpen": () => Promise<boolean>;
+        /**
+          * Boolean which controls when to show the menu
+         */
+        "open": boolean;
+        /**
+          * Opens the menu. If the menu is already open it returns 'false'.
+         */
+        "show": () => Promise<boolean>;
+        /**
+          * Toggles the menu open or close. Will return 'true' on menu open and 'false' on menu close
+         */
+        "toggle": () => Promise<boolean>;
+        /**
+          * Optional element to trigger opening and closing of the menu. If none is supplied the element where aria-controls === menu id will be assigned
+         */
+        "triggerEl": HTMLElement;
     }
     interface RuxProgress {
         "hideLabel": boolean;
@@ -18366,11 +18399,18 @@ declare namespace LocalJSX {
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
     interface RuxMenuItem {
+        /**
+          * Disables the item
+         */
         "disabled"?: boolean;
         /**
           * Emitted when item is clicked
          */
-        "onItemClicked"?: (event: CustomEvent<HTMLRuxMenuItemElement>) => void;
+        "onMenuItemClicked"?: (event: CustomEvent<object>) => void;
+        /**
+          * Value returned when item is selected. If no value is given, the text content will be used.
+         */
+        "value"?: any;
     }
     interface RuxMenuItemDivider {
     }
@@ -18445,8 +18485,10 @@ declare namespace LocalJSX {
         "status"?: Status;
     }
     interface RuxPopUpMenu {
+        /**
+          * Element to anchor the menu to. If none is given the menu will anchor to the trigger element where aria-controls === menu id
+         */
         "anchorEl"?: HTMLElement;
-        "isOpen"?: boolean;
         /**
           * Emitted when the menu is closed.
          */
@@ -18463,6 +18505,14 @@ declare namespace LocalJSX {
           * Emitted when the menu is about to open.
          */
         "onMenuWillOpen"?: (event: CustomEvent<void>) => void;
+        /**
+          * Boolean which controls when to show the menu
+         */
+        "open"?: boolean;
+        /**
+          * Optional element to trigger opening and closing of the menu. If none is supplied the element where aria-controls === menu id will be assigned
+         */
+        "triggerEl"?: HTMLElement;
     }
     interface RuxProgress {
         "hideLabel"?: boolean;
