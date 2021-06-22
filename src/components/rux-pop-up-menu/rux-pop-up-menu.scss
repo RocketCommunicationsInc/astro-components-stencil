@@ -2,39 +2,39 @@
     display: block;
 
     /**
-      * @prop --popupMenuBackgroundColor: Pop Up Menu Backround Color
+      * @prop --menuBackgroundColor: Pop Up Menu Backround Color
     */
-    --popupMenuBackgroundColor: var(--inputBackground);
+    --menuBackgroundColor: var(--inputBackground);
 
     /**
-      * @prop --popupMenuBorderColor: Pop Up Menu Border Color
+      * @prop --menuBorderColor: Pop Up Menu Border Color
     */
-    --popupMenuBorderColor: var(--primary);
-
-    // /**
-    //   * @prop --popupMenuTextColor: Pop Up Menu Text Color
-    // */
-    // --popupMenuTextColor: var(--primaryElementText);
+    --menuBorderColor: var(--primary);
 
     /**
-      * @prop --popupMenuBorderColor: Pop Up Menu Caret Background Color
+      * @prop --menuTextColor: Pop Up Menu Text Color
+    */
+    --menuTextColor: var(--primaryElementText);
+
+    /**
+      * @prop --menuBorderColor: Pop Up Menu Caret Background Color
     */
     --popupCaretBackgroundColor: var(--primary);
 
-    // /**
-    //   * @prop --popupMenuItemBackgroundColor: Pop Up Menu Item Background Color
-    // */
-    // --popupMenuItemBackgroundColor: var(--primary);
+    /**
+      * @prop --menuItemBackgroundColor: Pop Up Menu Item Background Color
+    */
+    --menuItemBackgroundColor: var(--primary);
 
-    // /**
-    //   * @prop --popupMenuItemHoverBackgroundColor: Pop Up Menu Item Hover Background Color
-    // */
-    // --popupMenuItemHoverBackgroundColor: var(--primaryLight);
+    /**
+      * @prop --menuItemHoverBackgroundColor: Pop Up Menu Item Hover Background Color
+    */
+    --menuItemHoverBackgroundColor: var(--primaryLight);
 
-    // /**
-    //   * @prop --popupMenuItemHoverTextColor: Pop Up Menu Item Hover Text Color
-    // */
-    // --popupMenuItemHoverTextColor: var(--primaryElementText);
+    /**
+      * @prop --menuItemHoverTextColor: Pop Up Menu Item Hover Text Color
+    */
+    --menuItemHoverTextColor: var(--primaryElementText);
 
     /**
       * @prop --caretLeft: Position of Caret
@@ -62,8 +62,8 @@
 
     color: var(--colorBlack, rgb(0, 0, 0));
 
-    background-color: var(--popupMenuBorderColor);
-    border: 1px solid var(--popupMenuBorderColor);
+    background-color: var(--menuBorderColor);
+    border: 1px solid var(--menuBorderColor);
     border-top-width: 4px;
     z-index: 10000;
 
@@ -106,7 +106,7 @@ ul {
     padding: 0;
     margin: 0;
 
-    background-color: var(--popupMenuBackgroundColor);
+    background-color: var(--menuBackgroundColor);
 
     z-index: 2;
     border-radius: 2px;
@@ -122,29 +122,9 @@ li:first-of-type {
     border-radius: 2px 2px 0 0;
 }
 
-rux-menu-item {
-    display: block;
-    padding: 0.15rem 0.75rem;
-    color: var(--popupMenuTextColor);
-    text-decoration: none;
-
-    min-width: 15em;
-    max-width: 20em;
-
-    word-wrap: none;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    &:hover {
-        background-color: var(--popupMenuItemHoverBackgroundColor);
-        color: var(--popupMenuItemHoverTextColor);
-    }
-}
-
 li:not([role='seperator']):hover {
-    background-color: var(--popupMenuItemHoverBackgroundColor);
-    color: var(--popupMenuItemHoverTextColor);
+    background-color: var(--menuItemHoverBackgroundColor);
+    color: var(--menuItemHoverTextColor);
 }
 
 :host(.from-top) {
@@ -157,10 +137,3 @@ li:not([role='seperator']):hover {
     bottom: -23px;
     transform: rotate(180deg);
 }
-
-// [role='seperator'] {
-//     pointer-events: none;
-//     height: 6px;
-//     border-top: 1px dashed var(--popupMenuItemSeperatorBorderColor) !important;
-//     margin: 6px 0.5rem 0 0.5rem;
-// }
