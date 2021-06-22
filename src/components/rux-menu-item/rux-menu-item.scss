@@ -1,29 +1,29 @@
 :host {
     /**
-      * @prop --popupMenuTextColor: Pop Up Menu Text Color
+      * @prop --menuTextColor: Pop Up Menu Text Color
     */
-    --popupMenuTextColor: var(--primaryElementText);
+    // --menuTextColor: var(--primaryElementText);
 
     /**
-      * @prop --popupMenuItemBackgroundColor: Pop Up Menu Item Background Color
+      * @prop --menuItemBackgroundColor: Pop Up Menu Item Background Color
     */
-    --popupMenuItemBackgroundColor: var(--primary);
+    // --menuItemBackgroundColor: var(--primary);
 
     /**
-      * @prop --popupMenuItemHoverBackgroundColor: Pop Up Menu Item Hover Background Color
+      * @prop --menuItemHoverBackgroundColor: Pop Up Menu Item Hover Background Color
     */
-    --popupMenuItemHoverBackgroundColor: var(--primaryLight);
+    // --menuItemHoverBackgroundColor: var(--primaryLight);
 
     /**
-      * @prop --popupMenuItemHoverTextColor: Pop Up Menu Item Hover Text Color
+      * @prop --menuItemHoverTextColor: Pop Up Menu Item Hover Text Color
     */
-    --popupMenuItemHoverTextColor: var(--primaryElementText);
+    // --menuItemHoverTextColor: var(--primaryElementText);
 
     display: block;
 
     li {
         padding: 0.15rem 0.75rem;
-        color: var(--popupMenuTextColor);
+        color: var(--menuTextColor);
         text-decoration: none;
         font-size: 1rem;
 
@@ -40,14 +40,27 @@
         // height: 1rem;
 
         &:hover {
-            background-color: var(--popupMenuItemHoverBackgroundColor);
-            color: var(--popupMenuItemHoverTextColor);
+            background-color: var(--menuItemHoverBackgroundColor);
+            color: var(--menuItemHoverTextColor);
         }
     }
 }
 
-::slotted {
-    color: var(--popupMenuTextColor);
-    text-decoration: none;
-    font-size: 1rem;
+:host([disabled]) {
+    cursor: var(--disabledCursor);
+    // color: rgba(var(--menuTextColor), 0.4);
+
+    li {
+        opacity: var(--disabledOpacity);
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
 }
+
+// ::slotted {
+//     color: var(--menuTextColor);
+//     text-decoration: none;
+//     font-size: 1rem;
+// }

@@ -1,10 +1,5 @@
 import { Component, Host, h, Element, Prop, EventEmitter, Event } from '@stencil/core';
 
-// interface clickEvent {
-//   text: string,
-//   value?: any
-// }
-
 @Component({
   tag: 'rux-menu-item',
   styleUrl: 'rux-menu-item.scss',
@@ -44,10 +39,7 @@ export class RuxMenuItem {
         aria-disabled={disabled ? 'true' : null}
       >
         <li
-          // data-key={this.el.id}
-          // role="menuitem"
           onClick={() => this.itemOnClick()}
-          // disabled={this.disabled}
         >
           <slot name="start"></slot>
           <slot></slot>
