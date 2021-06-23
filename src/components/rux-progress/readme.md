@@ -85,16 +85,14 @@ Indeterminate progress
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
-| Property    | Attribute    | Description | Type      | Default |
-| ----------- | ------------ | ----------- | --------- | ------- |
-| `hideLabel` | `hide-label` |             | `boolean` | `false` |
-| `max`       | `max`        |             | `number`  | `100`   |
-| `value`     | `value`      |             | `number`  | `0`     |
+| Property    | Attribute    | Description                                                                                                                                                                                         | Type      | Default |
+| ----------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------- |
+| `hideLabel` | `hide-label` | Displays text output of progress as a percentage. Note: when using a max value other than 100 output is displated as value/max (e.g., 1450/2000)                                                    | `boolean` | `false` |
+| `max`       | `max`        | For use with progress bars that have maximum value greater or less than 100.                                                                                                                        | `number`  | `100`   |
+| `value`     | `value`      | Displays current progress value between 1 and 100 (or the max, if defined below). Note: if this paramater isn’t present or if it is set to 0 the progress bar will display its indeterminate state. | `number`  | `0`     |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

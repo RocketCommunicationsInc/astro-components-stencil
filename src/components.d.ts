@@ -10,13 +10,31 @@ import { RangeItem } from './components/rux-monitoring-progress-icon/rux-monitor
 import { SwitchChangeEvent } from './components/rux-switch/rux-switch.model'
 export namespace Components {
     interface RuxButton {
+        /**
+         * Toggles disabled attribute on the button
+         */
         disabled: boolean
+        /**
+         * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+         */
         icon: string
+        /**
+         * Hides slotted text from the button by setting rux-button--icon-only class
+         */
         iconOnly: boolean
+        /**
+         * Changes button style from solid to outline by setting rux-button--outline class
+         */
         outline: boolean
+        /**
+         * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
+         */
         size?: 'small' | 'large'
     }
     interface RuxButtonGroup {
+        /**
+         * The alignment of buttons within the group
+         */
         align: 'left' | 'center' | 'right'
     }
     interface RuxClassificationMarking {
@@ -10718,11 +10736,23 @@ export namespace Components {
         status: Status
     }
     interface RuxProgress {
+        /**
+         * Displays text output of progress as a percentage. Note: when using a max value other than 100 output is displated as value/max (e.g., 1450/2000)
+         */
         hideLabel: boolean
+        /**
+         * For use with progress bars that have maximum value greater or less than 100.
+         */
         max: number
+        /**
+         * Displays current progress value between 1 and 100 (or the max, if defined below). Note: if this paramater isn’t present or if it is set to 0 the progress bar will display its indeterminate state.
+         */
         value: number
     }
     interface RuxStatus {
+        /**
+         * Sets the status symbol, valid options are critical, serious, caution, normal, standby and off
+         */
         status?: Status
     }
     interface RuxSwitch {
@@ -19326,13 +19356,31 @@ declare global {
 }
 declare namespace LocalJSX {
     interface RuxButton {
+        /**
+         * Toggles disabled attribute on the button
+         */
         disabled?: boolean
+        /**
+         * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+         */
         icon?: string
+        /**
+         * Hides slotted text from the button by setting rux-button--icon-only class
+         */
         iconOnly?: boolean
+        /**
+         * Changes button style from solid to outline by setting rux-button--outline class
+         */
         outline?: boolean
+        /**
+         * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
+         */
         size?: 'small' | 'large'
     }
     interface RuxButtonGroup {
+        /**
+         * The alignment of buttons within the group
+         */
         align?: 'left' | 'center' | 'right'
     }
     interface RuxClassificationMarking {
@@ -30034,11 +30082,23 @@ declare namespace LocalJSX {
         status?: Status
     }
     interface RuxProgress {
+        /**
+         * Displays text output of progress as a percentage. Note: when using a max value other than 100 output is displated as value/max (e.g., 1450/2000)
+         */
         hideLabel?: boolean
+        /**
+         * For use with progress bars that have maximum value greater or less than 100.
+         */
         max?: number
+        /**
+         * Displays current progress value between 1 and 100 (or the max, if defined below). Note: if this paramater isn’t present or if it is set to 0 the progress bar will display its indeterminate state.
+         */
         value?: number
     }
     interface RuxStatus {
+        /**
+         * Sets the status symbol, valid options are critical, serious, caution, normal, standby and off
+         */
         status?: Status
     }
     interface RuxSwitch {
@@ -30071,6 +30131,9 @@ declare namespace LocalJSX {
     }
     interface RuxTabPanel {}
     interface RuxTabPanels {
+        /**
+         * Emits a list of the Tab Panels that have been passed in
+         */
         onRegisterPanels?: (
             event: CustomEvent<HTMLRuxTabPanelsElement[]>
         ) => void

@@ -7,6 +7,9 @@ import { Status, StatusTypes } from '../../common/commonTypes.module'
     shadow: true,
 })
 export class RuxStatus {
+    /**
+     * Sets the status symbol, valid options are critical, serious, caution, normal, standby and off
+     */
     @Prop({ reflect: true }) status?: Status
 
     @Watch('status')
