@@ -43,6 +43,32 @@ RuxLog is a simple collection of other Astro components: Table, Status, Input, a
 ]
 ```
 
+### Updating Data
+
+When updating your array data, use non-mutable array operators (`map` and `filter`) instead of mutable operators (`push` and `unshift`)
+
+#### Do
+
+```html
+<rux-log></rux-log>
+
+const data = [ { timestamp: new Date(1557503698781), status: 'standby', message:
+'Antenna DGS 2 has weak signal.', } ] const log =
+document.querySelector('rux-log') log.data = data log.data = [ ...data, {
+timestamp: new Date(), status: 'critical', event: 'my new event } ]
+```
+
+#### Don't
+
+```html
+<rux-log></rux-log>
+
+const data = [ { timestamp: new Date(1557503698781), status: 'standby', message:
+'Antenna DGS 2 has weak signal.', } ] const log =
+document.querySelector('rux-log') log.data = data data.push( { timestamp: new
+Date(), status: 'critical', event: 'my new event } ) log.data = data
+```
+
 ### Advanced Customization
 
 For more advanced customization, RuxLog exposes the entire table element and each individual table element as slots. When using your own table implementation, you will be responsible for handling the filtering on your own.
