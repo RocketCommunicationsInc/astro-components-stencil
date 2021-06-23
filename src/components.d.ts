@@ -10656,7 +10656,7 @@ export namespace Components {
         /**
          * Displays a smaller label underneath the icon label
          */
-        sublabel: string
+        sublabel?: string
     }
     interface RuxMonitoringProgressIcon {
         /**

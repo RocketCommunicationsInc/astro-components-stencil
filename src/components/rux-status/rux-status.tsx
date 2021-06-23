@@ -1,9 +1,6 @@
 import { Prop, Host, Component, h, Watch } from '@stencil/core'
-import { Status } from '../../common/commonTypes.module'
+import { Status, StatusTypes } from '../../common/commonTypes.module'
 
-type StatusTypes = {
-    [id: string]: boolean
-}
 @Component({
     tag: 'rux-status',
     styleUrl: 'rux-status.scss',
