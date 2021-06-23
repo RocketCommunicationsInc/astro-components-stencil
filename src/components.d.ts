@@ -90,11 +90,22 @@ export namespace Components {
         menuIcon?: string
     }
     interface RuxIcon {
-        color: string
+        /**
+         * The icon color
+         */
+        color?: string
+        /**
+         * The icon name
+         */
         icon: string
-        label: string
+        /**
+         * The icon label
+         */
+        label?: string
+        /**
+         * The size of the icon
+         */
         size: 'extra-small' | 'small' | 'normal' | 'large'
-        viewBox: string
     }
     interface RuxIcon360 {
         /**
@@ -19395,11 +19406,22 @@ declare namespace LocalJSX {
         menuIcon?: string
     }
     interface RuxIcon {
+        /**
+         * The icon color
+         */
         color?: string
-        icon?: string
+        /**
+         * The icon name
+         */
+        icon: string
+        /**
+         * The icon label
+         */
         label?: string
+        /**
+         * The size of the icon
+         */
         size?: 'extra-small' | 'small' | 'normal' | 'large'
-        viewBox?: string
     }
     interface RuxIcon360 {
         /**
