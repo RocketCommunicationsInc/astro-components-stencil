@@ -121,17 +121,15 @@ For more information about AstroUXDS usage outside of a Web Component environmen
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
-| Property   | Attribute   | Description | Type                 | Default     |
-| ---------- | ----------- | ----------- | -------------------- | ----------- |
-| `disabled` | `disabled`  |             | `boolean`            | `false`     |
-| `icon`     | `icon`      |             | `string`             | `''`        |
-| `iconOnly` | `icon-only` |             | `boolean`            | `false`     |
-| `outline`  | `outline`   |             | `boolean`            | `false`     |
-| `size`     | `size`      |             | `"large" \| "small"` | `undefined` |
-
+| Property   | Attribute   | Description | Type                              | Default     |
+| ---------- | ----------- | ----------- | --------------------------------- | ----------- |
+| `disabled` | `disabled`  |             | `boolean`                         | `false`     |
+| `icon`     | `icon`      |             | `string`                          | `''`        |
+| `iconOnly` | `icon-only` |             | `boolean`                         | `false`     |
+| `outline`  | `outline`   |             | `boolean`                         | `false`     |
+| `size`     | `size`      |             | `"large" \| "small" \| undefined` | `undefined` |
 
 ## CSS Custom Properties
 
@@ -153,20 +151,20 @@ For more information about AstroUXDS usage outside of a Web Component environmen
 | `--buttonOutlineTextColor`            | Button outline text color             |
 | `--buttonTextColor`                   | Button text color                     |
 
-
 ## Dependencies
 
 ### Depends on
 
-- [rux-icon](../rux-icon)
+-   [rux-icon](../rux-icon)
 
 ### Graph
+
 ```mermaid
 graph TD;
   rux-button --> rux-icon
   style rux-button fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
-----------------------------------------------
+---
 
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

@@ -113,17 +113,14 @@ In Astro 4.0, these groups have been flattened, and each icon is now imported di
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
-| Property  | Attribute  | Description | Type                                              | Default       |
-| --------- | ---------- | ----------- | ------------------------------------------------- | ------------- |
-| `color`   | `color`    |             | `string`                                          | `undefined`   |
-| `icon`    | `icon`     |             | `string`                                          | `undefined`   |
-| `label`   | `label`    |             | `string`                                          | `undefined`   |
-| `size`    | `size`     |             | `"extra-small" \| "large" \| "normal" \| "small"` | `'normal'`    |
-| `viewBox` | `view-box` |             | `string`                                          | `'0 0 24 24'` |
-
+| Property            | Attribute | Description          | Type                                              | Default     |
+| ------------------- | --------- | -------------------- | ------------------------------------------------- | ----------- |
+| `color`             | `color`   | The icon color       | `string \| undefined`                             | `undefined` |
+| `icon` _(required)_ | `icon`    | The icon name        | `string`                                          | `undefined` |
+| `label`             | `label`   | The icon label       | `string \| undefined`                             | `undefined` |
+| `size`              | `size`    | The size of the icon | `"extra-small" \| "large" \| "normal" \| "small"` | `'normal'`  |
 
 ## CSS Custom Properties
 
@@ -132,25 +129,26 @@ In Astro 4.0, these groups have been flattened, and each icon is now imported di
 | `--iconColor`       | the default color of the icon |
 | `--iconDefaultSize` | the default size of the icon  |
 
-
 ## Dependencies
 
 ### Used by
 
- - [rux-button](../rux-button)
- - [rux-global-status-bar](../rux-global-status-bar)
- - [rux-monitoring-icon](../rux-monitoring-icon)
- - [rux-notification](../rux-notification)
+-   [rux-button](../rux-button)
+-   [rux-global-status-bar](../rux-global-status-bar)
+-   [rux-monitoring-icon](../rux-monitoring-icon)
+-   [rux-notification](../rux-notification)
 
 ### Graph
+
 ```mermaid
 graph TD;
   rux-button --> rux-icon
+  rux-global-status-bar --> rux-icon
   rux-monitoring-icon --> rux-icon
   rux-notification --> rux-icon
   style rux-icon fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
-----------------------------------------------
+---
 
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_
