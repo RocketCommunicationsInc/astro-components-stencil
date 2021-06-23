@@ -15,25 +15,7 @@ export interface RangeItem {
 })
 export class RuxMonitoringProgressIcon {
     _circumference = 56 * 2 * Math.PI
-
-    /**
-     * Displays a label below the icon
-     */
-    @Prop() label?: string
-
-    /**
-     * Displays a smaller label underneath the icon label
-     */
-    @Prop() sublabel?: string
-
-    /**
-     * Items in this Array define thresholds for changing the status style of the progress icon.
-     * For each item in the Array, the icon will be styled with the given status while the progress value
-     * is less than or equal to the Array item’s threshold and greater than the next smallest item‘s threshold.
-     * Both progress and the Array items’ threshold values can be positive or negative.
-     * If no min is specified, the component assumes the Array's first status threshold begins at 0.
-     */
-    @Prop({ mutable: true }) range: Array<RangeItem> = [
+    private _defaultRangeList = [
         {
             threshold: 17,
             status: 'off',
@@ -58,7 +40,26 @@ export class RuxMonitoringProgressIcon {
             threshold: 100,
             status: 'critical',
         },
-    ]
+    ] as RangeItem[]
+
+    /**
+     * Displays a label below the icon
+     */
+    @Prop() label?: string
+
+    /**
+     * Displays a smaller label underneath the icon label
+     */
+    @Prop() sublabel?: string
+
+    /**
+     * Items in this Array define thresholds for changing the status style of the progress icon.
+     * For each item in the Array, the icon will be styled with the given status while the progress value
+     * is less than or equal to the Array item’s threshold and greater than the next smallest item‘s threshold.
+     * Both progress and the Array items’ threshold values can be positive or negative.
+     * If no min is specified, the component assumes the Array's first status threshold begins at 0.
+     */
+    @Prop({ mutable: true }) range!: Array<RangeItem>
 
     /**
      * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon.
@@ -98,6 +99,9 @@ export class RuxMonitoringProgressIcon {
     @State() _graphProgress: number = 0
 
     componentWillLoad() {
+        if (!this.range || this.range.length < 1) {
+            this.range = this._defaultRangeList
+        }
         if (Number.isInteger(this.progress)) {
             this.range = this.range.sort((a, b) =>
                 a.threshold >= b.threshold ? 1 : -1
