@@ -17,10 +17,10 @@ export const DialogBox = () => {
     const denyText = text('Deny button text', 'Cancel')
     return html`
         <div style="display: flex; flex-flow: column; justify-content: center;">
-            <!-- ?open="${toggleModal}"
-                modal-message="${message}"
-                modal-title="${title}" -->
             <rux-modal
+                ?open="${toggleModal}"
+                modal-message="${message}"
+                modal-title="${title}"
                 confirm-text="${confirmText}"
                 deny-text="${denyText}"
             ></rux-modal>

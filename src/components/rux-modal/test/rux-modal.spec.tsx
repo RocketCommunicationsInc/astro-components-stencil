@@ -13,29 +13,33 @@ describe('rux-modal', () => {
             confirmText,
             denyText,
         }).toEqual({
-            open: false,
-            modalMessage: '',
-            modalTitle: '',
+            open: undefined,
+            modalMessage: undefined,
+            modalTitle: undefined,
             confirmText: 'Confirm',
             denyText: 'Cancel',
         })
+
     })
+
 
     it('renders', async () => {
         const page = await newSpecPage({
             components: [RuxModal],
-            html: `<rux-modal></rux-modal>`,
+            html: `<rux-modal open="false" modal-title="test modal" modal-message="test modal message"></rux-modal>`,
         })
         expect(page.root).toEqualHtml(`
-      <rux-modal>
+      <rux-modal open="false" modal-title="test modal" modal-message="test modal message">
         <mock:shadow-root>
         <div class="rux-modal-container">
            <dialog class="rux-modal" role="dialog">
              <header class="rux-modal__titlebar">
-               <h1></h1>
+               <h1>test modal</h1>
              </header>
              <div class="rux-modal__content">
-               <div class="rux-modal__message"></div>
+               <div class="rux-modal__message">
+                test modal message
+               </div>
                <rux-button-group align="right">
                  <rux-button data-value="false" outline="" tabindex="-1">
                   Cancel
