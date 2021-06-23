@@ -8,220 +8,178 @@ import Plugin from './assets/plugin.svg'
 import Repo from './assets/repo.svg'
 import StackAlt from './assets/stackalt.svg'
 
-<Meta title="Example/Introduction" />
+<Meta title="AstroUXDS/Installation" />
 
-<style>{`
-  .subheading {
-    --mediumdark: '#999999';
-    font-weight: 900;
-    font-size: 13px;
-    color: #999;
-    letter-spacing: 6px;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    margin-top: 40px;
-  }
+# Installation
 
-  .link-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 10px;
-  }
+## Quick Start
 
-  @media (min-width: 620px) {
-    .link-list {
-      row-gap: 20px;
-      column-gap: 20px;
-      grid-template-columns: 1fr 1fr;
-    }
-  }
+To get up and running quickly, Astro web components are available via a CDN. Add the following to your `<head>`
 
-  @media all and (-ms-high-contrast:none) {
-  .link-list {
-      display: -ms-grid;
-      -ms-grid-columns: 1fr 1fr;
-      -ms-grid-rows: 1fr 1fr;
-    }
-  }
+```html
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap"
+    rel="stylesheet"
+/>
+<script src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic.js"></script>
+<link rel="stylesheet" href="/build/astro-web-components.css" />
+```
 
-  .link-item {
-    display: block;
-    padding: 20px 30px 20px 15px;
-    border: 1px solid #00000010;
-    border-radius: 5px;
-    transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
-    color: #333333;
-    display: flex;
-    align-items: flex-start;
-  }
+and you can start using all of Astro's components immediately in the browser.
 
-  .link-item:hover {
-    border-color: #1EA7FD50;
-    transform: translate3d(0, -3px, 0);
-    box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
-  }
+### Static HTML
 
-  .link-item:active {
-    border-color: #1EA7FD;
-    transform: translate3d(0, 0, 0);
-  }
+1. Install with npm
 
-  .link-item strong {
-    font-weight: 700;
-    display: block;
-    margin-bottom: 2px;
-  }
-  
-  .link-item img {
-    height: 40px;
-    width: 40px;
-    margin-right: 15px;
-    flex: none;
-  }
+```
+npm i @astrouxds/astro-web-components
+```
 
-  .link-item span {
-    font-size: 14px;
-    line-height: 20px;
-  }
+```html
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap"
+    rel="stylesheet"
+/>
+<link
+    rel="stylesheet"
+    href="/node_modules/astro-web-components/astro-web-components.css"
+/>
+<script type="module">
+    import { defineCustomElements } from '/node_modules/astro-web-components/loader'
+    defineCustomElements()
+</script>
+```
 
-  .tip {
-    display: inline-block;
-    border-radius: 1em;
-    font-size: 11px;
-    line-height: 12px;
-    font-weight: 700;
-    background: #E7FDD8;
-    color: #66BF3C;
-    padding: 4px 12px;
-    margin-right: 10px;
-    vertical-align: top;
-  }
+### Framework Integrations
 
-  .tip-wrapper {
-    font-size: 13px;
-    line-height: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
+1. Install
+   `npm i @astrouxds/astro-web-components`
 
-  .tip-wrapper code {
-    font-size: 12px;
-    display: inline-block;
-  }
+2. Import Astro's Assets
 
-  
-`}</style>
+```html
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="/build/astro-web-components.css" />
+```
 
-# Welcome to Storybook
+Astro includes a basic global style sheet for things like basic typography. [Roboto](https://fonts.google.com/specimen/Roboto) is used for the font.
+We recommend using Google's CDN; however, you can also pull down and serve your own copy of the font.
 
-Storybook helps you build UI components in isolation from your app's business logic, data, and context.
-That makes it easy to develop hard-to-reach states. Save these UI states as **stories** to revisit during development, testing, or QA.
+3. Bootstrap Your Application
 
-Browse example stories now by navigating to them in the sidebar.
-View their code in the `src/stories` directory to learn how they work.
-We recommend building UIs with a [**component-driven**](https://componentdriven.org) process starting with atomic components and ending with pages.
+#### Generic Framework
 
-<div className="subheading">Configure</div>
+```js
+import {
+    applyPolyfills,
+    defineCustomElements,
+} from 'astro-web-components/loader'
 
-<div className="link-list">
-    <a
-        className="link-item"
-        href="https://storybook.js.org/docs/react/addons/addon-types"
-        target="_blank"
-    >
-        <img src={Plugin} alt="plugin" />
-        <span>
-            <strong>Presets for popular tools</strong>
-            Easy setup for TypeScript, SCSS and more.
-        </span>
-    </a>
-    <a
-        className="link-item"
-        href="https://storybook.js.org/docs/react/configure/webpack"
-        target="_blank"
-    >
-        <img src={StackAlt} alt="Build" />
-        <span>
-            <strong>Build configuration</strong>
-            How to customize webpack and Babel
-        </span>
-    </a>
-    <a
-        className="link-item"
-        href="https://storybook.js.org/docs/react/configure/styling-and-css"
-        target="_blank"
-    >
-        <img src={Colors} alt="colors" />
-        <span>
-            <strong>Styling</strong>
-            How to load and configure CSS libraries
-        </span>
-    </a>
-    <a
-        className="link-item"
-        href="https://storybook.js.org/docs/react/get-started/setup#configure-storybook-for-your-stack"
-        target="_blank"
-    >
-        <img src={Flow} alt="flow" />
-        <span>
-            <strong>Data</strong>
-            Providers and mocking for data libraries
-        </span>
-    </a>
-</div>
+applyPolyfills().then(() => {
+    defineCustomElements()
+})
+```
 
-<div className="subheading">Learn</div>
+#### Vue
 
-<div className="link-list">
-    <a
-        className="link-item"
-        href="https://storybook.js.org/docs"
-        target="_blank"
-    >
-        <img src={Repo} alt="repo" />
-        <span>
-            <strong>Storybook documentation</strong>
-            Configure, customize, and extend
-        </span>
-    </a>
-    <a
-        className="link-item"
-        href="https://storybook.js.org/tutorials/"
-        target="_blank"
-    >
-        <img src={Direction} alt="direction" />
-        <span>
-            <strong>In-depth guides</strong>
-            Best practices from leading teams
-        </span>
-    </a>
-    <a
-        className="link-item"
-        href="https://github.com/storybookjs/storybook"
-        target="_blank"
-    >
-        <img src={Code} alt="code" />
-        <span>
-            <strong>GitHub project</strong>
-            View the source and add issues
-        </span>
-    </a>
-    <a
-        className="link-item"
-        href="https://discord.gg/storybook"
-        target="_blank"
-    >
-        <img src={Comments} alt="comments" />
-        <span>
-            <strong>Discord chat</strong>
-            Chat with maintainers and the community
-        </span>
-    </a>
-</div>
+```
+import Vue from 'vue';
+import App from './App.vue';
 
-<div className="tip-wrapper">
-    <span className="tip">Tip</span>Edit the Markdown in{' '}
-    <code>src/stories/Introduction.stories.mdx</code>
-</div>
+import { applyPolyfills, defineCustomElements } from 'astro-web-components/loader';
+
+Vue.config.productionTip = false;
+
+// Tell Vue to ignore all components defined in the astro-web-components package
+Vue.config.ignoredElements = [/rux-\w*/];
+
+// Bind the custom elements to the window object
+applyPolyfills().then(() => {
+  defineCustomElements();
+});
+
+new Vue({
+  render: h => h(App)
+}).$mount('#app');
+```
+
+#### Angular
+
+1. Include `CUSTOM_ELEMENTS_SCHEMA` in any module that uses an Astro component.
+
+```
+import { BrowserModule } from '@angular/platform-browser';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, FormsModule],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+})
+export class AppModule {}
+```
+
+2. Define your Custom Elements in main.ts
+
+```
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
+
+// Note: loader import location set using "esmLoaderPath" within the output target config
+import { defineCustomElements } from 'astro-web-components/loader';
+
+if (environment.production) {
+  enableProdMode();
+}
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.log(err));
+defineCustomElements();
+```
+
+#### React
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+// test-component is the name of our made up Web Component that we have
+// published to npm:
+import { applyPolyfills, defineCustomElements } from 'astro-web-components/loader';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
+
+applyPolyfills().then(() => {
+  defineCustomElements();
+});
+```
+
+### Treeshaking + Bundlers
+
+Astro ships with a convienent lazy-loader, but if you'd rather more control over your build process and are using an existing bundler
+that supports treeshaking, you can also cherry-pick only the components you actually use. For example:
+
+```
+import { RuxClock } from 'astro-web-components/dist/components/rux-clock'
+customElements.define('rux-clock', RuxClock)
+```
+
+NOTE: You will need to manually call `customElements.define` for every component you wish to use and their dependencies.
+Refer to each component's documentation to see their dependencies at a glance.
