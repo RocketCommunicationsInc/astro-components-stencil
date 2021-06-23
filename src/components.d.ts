@@ -10712,7 +10712,7 @@ export namespace Components {
         value: number
     }
     interface RuxStatus {
-        status: Status
+        status?: Status
     }
     interface RuxSwitch {
         /**

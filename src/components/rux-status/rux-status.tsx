@@ -1,13 +1,16 @@
-import { Prop, Component, Host, h, Watch } from '@stencil/core'
+import { Prop, Host, Component, h, Watch } from '@stencil/core'
 import { Status } from '../../common/commonTypes.module'
 
+type StatusTypes = {
+    [id: string]: boolean
+}
 @Component({
     tag: 'rux-status',
     styleUrl: 'rux-status.scss',
     shadow: true,
 })
 export class RuxStatus {
-    @Prop({ reflect: true }) status: Status
+    @Prop({ reflect: true }) status?: Status
 
     @Watch('status')
     validateStatus(newValue: string) {
@@ -18,7 +21,8 @@ export class RuxStatus {
             caution: true,
             serious: true,
             critical: true,
-        }
+        } as StatusTypes
+
         if (!statusTypes[newValue]) {
             throw new Error('valid status required')
         }
