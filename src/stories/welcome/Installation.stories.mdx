@@ -1,14 +1,6 @@
 import { Meta } from '@storybook/addon-docs/blocks'
-import Code from './assets/code-brackets.svg'
-import Colors from './assets/colors.svg'
-import Comments from './assets/comments.svg'
-import Direction from './assets/direction.svg'
-import Flow from './assets/flow.svg'
-import Plugin from './assets/plugin.svg'
-import Repo from './assets/repo.svg'
-import StackAlt from './assets/stackalt.svg'
 
-<Meta title="AstroUXDS/Installation" />
+<Meta title="Astro UXDS/Welcome/Installation" />
 
 # Installation
 
@@ -22,37 +14,23 @@ To get up and running quickly, Astro web components are available via a CDN. Add
     href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap"
     rel="stylesheet"
 />
-<script src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic.js"></script>
-<link rel="stylesheet" href="/build/astro-web-components.css" />
-```
-
-and you can start using all of Astro's components immediately in the browser.
-
-### Static HTML
-
-1. Install with npm
-
-```
-npm i @astrouxds/astro-web-components
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css"
+/>
+<script
+    type="module"
+    src="https://unpkg.com/@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.esm.js"
+></script>
 ```
 
 ```html
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap"
-    rel="stylesheet"
-/>
-<link
-    rel="stylesheet"
-    href="/node_modules/astro-web-components/astro-web-components.css"
-/>
-<script type="module">
-    import { defineCustomElements } from '/node_modules/astro-web-components/loader'
-    defineCustomElements()
-</script>
+<body>
+    <rux-button>Hello World</rux-button>
+</body>
 ```
 
-### Framework Integrations
+### Integrations
 
 1. Install
    `npm i @astrouxds/astro-web-components`
@@ -72,6 +50,24 @@ Astro includes a basic global style sheet for things like basic typography. [Rob
 We recommend using Google's CDN; however, you can also pull down and serve your own copy of the font.
 
 3. Bootstrap Your Application
+
+#### Static HTML
+
+```html
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap"
+    rel="stylesheet"
+/>
+<link
+    rel="stylesheet"
+    href="/node_modules/astro-web-components/astro-web-components.css"
+/>
+<script type="module">
+    import { defineCustomElements } from '/node_modules/astro-web-components/loader'
+    defineCustomElements()
+</script>
+```
 
 #### Generic Framework
 
