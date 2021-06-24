@@ -1,0 +1,73 @@
+import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
+import { html, render } from 'lit-html'
+const args = extractArgTypes('rux-icon')
+import ruxIconsJson from './rux-icons.json'
+const allIcons = ruxIconsJson['solid']
+const iconSections = Object.keys(allIcons)
+
+
+
+<Meta
+    title="Components/Icons"
+    component="rux-icon"
+    argTypes={args}
+/>
+
+<style>{`
+  body {
+  }
+
+  section {
+  }
+
+  .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    align-items: center;
+
+  }
+
+  .icon__name {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+
+`}</style>
+
+export const AllIcons = () => {
+  return html`
+    ${iconSections.map(icon => html`
+    <section>
+      <h3>${icon}</h3>
+      <div class="icon-grid">
+      ${allIcons[icon].map(i => html`
+        <div class="icon-item">
+          <rux-icon icon="${i.icon}"></rux-icon>
+          <span class="icon__name">${i.icon}</span>
+        </div>
+      `)}
+        </div>
+      </section>
+    `)}
+  `
+}
+
+<Canvas>
+    <Story
+        parameters={{
+            docs: { source: { code: '<rux-global-status-bar></rux-global-status-bar>' } },
+        }}
+        name="Icons"
+    >
+        {AllIcons.bind()}
+    </Story>
+</Canvas>
