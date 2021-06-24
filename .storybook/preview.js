@@ -16,6 +16,9 @@ export const parameters = {
     a11y: {
         element: '#root',
     },
+    docs: {
+        theme: themes.dark,
+    },
     themes: {
         default: 'Dark Theme',
         list: [

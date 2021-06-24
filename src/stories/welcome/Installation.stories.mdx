@@ -50,7 +50,7 @@ We recommend using Google's CDN; however, you can also pull down and serve your 
 
 3. Bootstrap Your Application
 
-#### Static HTML
+#### Static HTML (w/ ESM Modules)
 
 ```html
 // Import Astro's base styles
@@ -85,89 +85,96 @@ applyPolyfills().then(() => {
 
 #### Vue
 
-```
+```js
+import Vue from 'vue'
+import App from './App.vue'
+
 // Import Astro's base styles
-import 'astro-web-components/dist/astro-web-components/astro-web-components.css'
-import Vue from 'vue';
-import App from './App.vue';
+import '@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css'
+import {
+    applyPolyfills,
+    defineCustomElements,
+} from '@astrouxds/astro-web-components/loader'
 
-import { applyPolyfills, defineCustomElements } from 'astro-web-components/loader';
-
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 // Tell Vue to ignore all components defined in the astro-web-components package
-Vue.config.ignoredElements = [/rux-\w*/];
+Vue.config.ignoredElements = [/rux-\w*/]
 
 // Bind the custom elements to the window object
 applyPolyfills().then(() => {
-  defineCustomElements();
-});
+    defineCustomElements()
+})
 
 new Vue({
-  render: h => h(App)
-}).$mount('#app');
+    render: (h) => h(App),
+}).$mount('#app')
 ```
 
 #### Angular
 
 1. Include `CUSTOM_ELEMENTS_SCHEMA` in any module that uses an Astro component.
 
-```
-import { BrowserModule } from '@angular/platform-browser';
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+```js
+import { BrowserModule } from '@angular/platform-browser'
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './app.component'
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, FormsModule],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    declarations: [AppComponent],
+    imports: [BrowserModule, FormsModule],
+    bootstrap: [AppComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}
 ```
 
 2. Define your Custom Elements in main.ts
 
-```
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+```js
+import { enableProdMode } from '@angular/core'
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import { AppModule } from './app/app.module'
+import { environment } from './environments/environment'
 
 // Note: loader import location set using "esmLoaderPath" within the output target config
-import { defineCustomElements } from 'astro-web-components/loader';
+import { defineCustomElements } from '@astrouxds/astro-web-components/loader'
 
 if (environment.production) {
-  enableProdMode();
+    enableProdMode()
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.log(err));
-defineCustomElements();
+platformBrowserDynamic()
+    .bootstrapModule(AppModule)
+    .catch((err) => console.log(err))
+defineCustomElements()
 ```
 
 #### React
 
-```
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+```js
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+import registerServiceWorker from './registerServiceWorker'
 
 // test-component is the name of our made up Web Component that we have
 // published to npm:
-import { applyPolyfills, defineCustomElements } from 'astro-web-components/loader';
+import {
+    applyPolyfills,
+    defineCustomElements,
+} from '@astrouxds/astro-web-components/loader'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+ReactDOM.render(<App />, document.getElementById('root'))
+registerServiceWorker()
 
 applyPolyfills().then(() => {
-  defineCustomElements();
-});
+    defineCustomElements()
+})
 ```
 
 ### Treeshaking + Bundlers
@@ -175,8 +182,8 @@ applyPolyfills().then(() => {
 Astro ships with a convienent lazy-loader, but if you'd rather more control over your build process and are using an existing bundler
 that supports treeshaking, you can also cherry-pick only the components you actually use. For example:
 
-```
-import { RuxClock } from 'astro-web-components/dist/components/rux-clock'
+```js
+import { RuxClock } from '@astrouxds/astro-web-components/dist/components/rux-clock'
 customElements.define('rux-clock', RuxClock)
 ```
 
