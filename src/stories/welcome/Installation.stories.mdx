@@ -35,7 +35,7 @@ To get up and running quickly, Astro web components are available via a CDN. Add
 1. Install
    `npm i @astrouxds/astro-web-components`
 
-2. Import Astro's Assets
+2. Import Astro's Fonts
 
 ```html
 <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -43,10 +43,9 @@ To get up and running quickly, Astro web components are available via a CDN. Add
     href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap"
     rel="stylesheet"
 />
-<link rel="stylesheet" href="/build/astro-web-components.css" />
 ```
 
-Astro includes a basic global style sheet for things like basic typography. [Roboto](https://fonts.google.com/specimen/Roboto) is used for the font.
+[Roboto](https://fonts.google.com/specimen/Roboto) is used for the font.
 We recommend using Google's CDN; however, you can also pull down and serve your own copy of the font.
 
 3. Bootstrap Your Application
@@ -54,10 +53,10 @@ We recommend using Google's CDN; however, you can also pull down and serve your 
 #### Static HTML
 
 ```html
-<link rel="preconnect" href="https://fonts.gstatic.com" />
+// Import Astro's base styles
 <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap"
     rel="stylesheet"
+    href="/node_modules/@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css"
 />
 <link
     rel="stylesheet"
@@ -72,6 +71,8 @@ We recommend using Google's CDN; however, you can also pull down and serve your 
 #### Generic Framework
 
 ```js
+// Import Astro's base styles
+import 'astro-web-components/dist/astro-web-components/astro-web-components.css'
 import {
     applyPolyfills,
     defineCustomElements,
@@ -85,6 +86,8 @@ applyPolyfills().then(() => {
 #### Vue
 
 ```
+// Import Astro's base styles
+import 'astro-web-components/dist/astro-web-components/astro-web-components.css'
 import Vue from 'vue';
 import App from './App.vue';
 
