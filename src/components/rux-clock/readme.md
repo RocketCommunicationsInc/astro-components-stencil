@@ -4,7 +4,7 @@ Clock shows the current date and time, and optional AOS and LOS timers. It will 
 
 ## Guidelines
 
-- [Astro UXDS: Clock](https://www.astrouxds.com/ui-components/clock)
+-   [Astro UXDS: Clock](https://www.astrouxds.com/ui-components/clock)
 
 ## Web Components Usage
 
@@ -33,7 +33,7 @@ Or, [download the Astro UXDS Components as a .zip](https://github.com/RocketComm
 This example assumes you're using the NPM package in `node_modules`. Otherwise, import the component using the path to the Astro Components directory in your project.
 
 ```javascript
-import { RuxClock } from '@astrouxds/rux-clock/rux-clock.js';
+import { RuxClock } from '@astrouxds/rux-clock/rux-clock.js'
 ```
 
 ### 3. Render the Astro Clock Web Component
@@ -49,7 +49,6 @@ Define AOS and LOS with valid [Unix Time Stamp](http://pubs.opengroup.org/online
 ```xml
 <rux-clock aos="1557503698781" los="2019-05-10T16:21:12.000Z" small></rux-clock>
 ```
-
 
 <!-- Auto Generated Below -->
 

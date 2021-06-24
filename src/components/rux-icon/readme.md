@@ -127,21 +127,27 @@ In Astro 4.0, these groups have been flattened, and each icon is now imported di
 
 ## CSS Custom Properties
 
-| Name          | Description                   |
-| ------------- | ----------------------------- |
-| `--iconColor` | the default color of the icon |
+| Name                | Description                   |
+| ------------------- | ----------------------------- |
+| `--iconColor`       | the default color of the icon |
+| `--iconDefaultSize` | the default size of the icon  |
 
 
 ## Dependencies
 
 ### Used by
 
+ - [rux-button](../rux-button)
+ - [rux-global-status-bar](../rux-global-status-bar)
  - [rux-monitoring-icon](../rux-monitoring-icon)
+ - [rux-notification](../rux-notification)
 
 ### Graph
 ```mermaid
 graph TD;
+  rux-button --> rux-icon
   rux-monitoring-icon --> rux-icon
+  rux-notification --> rux-icon
   style rux-icon fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

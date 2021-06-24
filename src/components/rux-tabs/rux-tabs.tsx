@@ -1,159 +1,81 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Host, h, Prop, Element, Listen } from '@stencil/core'
 
 @Component({
-  tag: 'rux-tabs',
-  styleUrl: 'rux-tabs.scss',
-  shadow: true,
+    tag: 'rux-tabs',
+    styleUrl: 'rux-tabs.scss',
+    shadow: true,
 })
 export class RuxTabs {
+    /**
+     *  Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
+     */
+    @Prop({ mutable: true }) _panels: Array<HTMLRuxTabPanelElement> = []
+    /**
+     *  Holds all `<rux-tab>` components that are children of `<rux-tabs>`.
+     */
+    @Prop({ mutable: true }) _tabs: Array<HTMLRuxTabElement> = []
 
-  @Prop({ mutable: true }) id: string = "";
-  @Prop() small: boolean = false;
-  
+    @Element() ruxTabsEl: HTMLElement
 
-  render() {
-    return (
-      <Host>
-        
-       
-        <slot></slot>
-      </Host>
-    );
-  }
-
-}
-
-//rux-tabs is a group/list of tabs
-//has attributes of id and //? role? 
-
-
-
-/*
-
-
-
-import { LitElement, html } from 'lit-element';
-import { RuxTab } from './rux-tab.js';
-import { RuxTabPanels } from './rux-tab-panels.js';
-import { RuxTabPanel } from './rux-tab-panel.js';
-
-export class RuxTabs extends LitElement {
-  static get is() {
-    return 'rux-tabs';
-  }
-  static get properties() {
-    return {
-      small: {
-        type: Boolean,
-      },
-    };
-  }
-
-  constructor() {
-    super();
-    this.small = false;
-    this._panels = [];
-    this._panelGroup = '';
-
-    this._registerPanelsListener = this._registerPanels.bind(this);
-  }
-
-  connectedCallback() {
-    super.connectedCallback();
-    window.addEventListener('register-panels', this._registerPanelsListener);
-    this.addEventListener('click', this._onClick);
-
-    set the role to tab
-    this.setAttribute('role', 'tablist');
-  }
-
-  disconnectedCallback() {
-    window.removeEventListener('register-panels', this._registerPanelsListener);
-    this.removeEventListener('click', this._onClick);
-    super.disconnectedCallback();
-  }
-
-  _onClick(e) {
-    if (e.target.getAttribute('role') === 'tab' && e.target.getAttribute('disabled') === null) {
-      this._setTab(e.target);
-    }
-  }
-
-  get _tabs() {
-    return Array.from(this.querySelectorAll('rux-tab'));
-  }
-
-  _registerPanels(e) {
-    if (e.detail.for === this.getAttribute('id')) {
-      this._panels = Array.from(e.detail.panels);
+    @Listen('registerPanels', { target: 'window' })
+    handleListen(e) {
+        this._registerPanels(e)
     }
 
-    // if a tab isn’t selected in markup then default to first tab in the list
-    const selectedTab = this._tabs.find((tab) => tab.selected) || this._tabs[0];
-    this._setTab(selectedTab);
-  }
+    connectedCallback() {
+        this.ruxTabsEl.addEventListener('click', (e) => this._onClick(e))
+        this._addTabs()
+    }
 
-  _reset() {
-    // hide everything
-    this._tabs.forEach((tab) => (tab.selected = false));
-    this._panels.forEach((panel) => panel.classList.add('hidden'));
-  }
+    _addTabs() {
+        this._tabs = Array.from(this.ruxTabsEl.querySelectorAll('rux-tab'))
+    }
 
-  _setTab(selectedTab) {
-    this._reset();
+    _registerPanels(e) {
+        e.detail.forEach((panel) => {
+            this._panels.push(panel)
+        })
+        // Default to first tab if none are selected
+        const selectedTab =
+            this._tabs.find((tab) => tab.selected) || this._tabs[0]
+        this._setTab(selectedTab)
+    }
 
-    find the panel whose aria-labeldby attribute matches the tab’s id
-    const selectedPanel = this._panels.find(
-        (panel) => panel.getAttribute('aria-labelledby') === selectedTab.getAttribute('id')
-    );
-
-    if (selectedTab) selectedTab.selected = true;
-    if (selectedPanel) selectedPanel.classList.remove('hidden');
-  }
-
-  render() {
-    return html`
-      <style>
-        :host,
-        .rux-tabs {
-          box-sizing: border-box;
-          display: flex;
-          justify-content: flex-start;
-          font-size: 1.5rem;
-
-          min-height: 5.625rem;
-          height: 100%;
-          width: auto;
-          margin: 0;
-          padding: 0;
-
-          -moz-user-select: none;
-          -khtml-user-select: none;
-          -webkit-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-
-          contain: content;  This improves CSS performance see: https://developers.google.com/web/updates/2016/06/css-containment 
-				}
-				.rux-tabs .rux-tab {
-					border-bottom: 5px solid var(--tabBorderColor);
-				}
-
-        :host([small]) {
-          min-height: 3.125rem;
-          font-size: 1rem;
+    _onClick(e) {
+        if (
+            e.target.getAttribute('role') === 'tab' &&
+            e.target.getAttribute('disabled') === null
+        ) {
+            this._setTab(e.target)
         }
-      </style>
+    }
 
-      <slot></slot>
-    `;
-  }
+    _reset() {
+        // hide everything
+        this._tabs.forEach((tab) => (tab.selected = false))
+        //* classLIst on rux-tab-panel is an array of strings.
+        this._panels.forEach((panel) => panel.classList.add('hidden'))
+    }
+
+    _setTab(selectedTab) {
+        this._reset()
+
+        // find the panel whose aria-labeldby attribute matches the tab’s id
+        const selectedPanel = this._panels.find(
+            (panel) =>
+                panel.getAttribute('aria-labelledby') ===
+                selectedTab.getAttribute('id')
+        )
+
+        if (selectedTab) selectedTab.selected = true
+        if (selectedPanel) selectedPanel.classList.remove('hidden')
+    }
+
+    render() {
+        return (
+            <Host>
+                <slot></slot>
+            </Host>
+        )
+    }
 }
-
-customElements.define('rux-tabs', RuxTabs);
-
-
-
-
-
-*/
