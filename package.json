@@ -25,6 +25,7 @@
         "generate": "stencil generate",
         "generate:icons": "node src/utils/generate-icons.js",
         "storybook": "start-storybook -p 6006 -s ./dist",
+        "storybook-next": "start-storybook -p 6006 -s ./dist -c .storybook-next",
         "build-storybook": "build-storybook -c .storybook -s ./dist",
         "astro": "npm-run-all --parallel start storybook",
         "build-astro-prod": "npm-run-all build build-storybook",
@@ -40,6 +41,7 @@
     "license": "MIT",
     "devDependencies": {
         "@babel/core": "~7.13.16",
+        "@pxtrn/storybook-addon-docs-stencil": "~1.0.0",
         "@stencil/sass": "~1.4.1",
         "@storybook/addon-actions": "~6.2.9",
         "@storybook/addon-essentials": "~6.2.9",

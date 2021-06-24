@@ -1,7 +1,7 @@
 module.exports = {
     stories: [
-        '../src/stories/*.stories.mdx',
-        '../src/stories/*.stories.@(js|jsx|ts|tsx)',
+        '../src/stories-next/*.stories.mdx',
+        '../src/stories-next/*.stories.@(js|jsx|ts|tsx)',
     ],
     addons: [
         '@storybook/addon-links',
@@ -10,5 +10,6 @@ module.exports = {
         '@storybook/addon-a11y',
         'storybook-readme',
         'storybook-addon-themes',
+        '@pxtrn/storybook-addon-docs-stencil',
     ],
 }
