@@ -1,0 +1,39 @@
+import { html, render } from 'lit-html'
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
+import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
+
+<Meta
+    title="MDX/Classification Markings"
+    component="rux-classification-marking"
+    argTypes={extractArgTypes('rux-classification-marking')}
+/>
+
+export const ClassificationMarkings = (args) => {
+  return html`
+      <div style="display: flex; flex-flow: row; justify-content: center;margin-top:30px;">
+        <rux-classification-marking
+          classification="${args.classification}"
+          label="${args.label}"
+          ?tag="${args.tag}"
+        >
+        </rux-classification-marking>
+      </div>
+  `
+}
+
+
+<Canvas>
+    <Story
+        parameters={{
+            docs: { source: { code: '<rux-button>Button</rux-button>' } },
+        }}
+        name="ClassificationMarking"
+    >
+        {ClassificationMarkings.bind()}
+    </Story>
+</Canvas>
+
+
+<ArgsTable of="rux-classification-marking" />
+
+
