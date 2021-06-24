@@ -10,18 +10,9 @@ To get up and running quickly, Astro web components are available via a CDN. Add
 
 ```html
 <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap"
-    rel="stylesheet"
-/>
-<link
-    rel="stylesheet"
-    href="https://unpkg.com/@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css"
-/>
-<script
-    type="module"
-    src="https://unpkg.com/@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.esm.js"
-></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://unpkg.com/@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css"/>
+<script type="module" src="https://unpkg.com/@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.esm.js"></script>
 ```
 
 ```html
@@ -39,10 +30,7 @@ To get up and running quickly, Astro web components are available via a CDN. Add
 
 ```html
 <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap"
-    rel="stylesheet"
-/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap" rel="stylesheet"/>
 ```
 
 [Roboto](https://fonts.google.com/specimen/Roboto) is used for the font.
@@ -54,10 +42,7 @@ We recommend using Google's CDN; however, you can also pull down and serve your 
 
 ```html
 // Import Astro's base styles
-<link
-    rel="stylesheet"
-    href="/node_modules/@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css"
-/>
+<link rel="stylesheet" href="/node_modules/@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css"/>
 <script type="module">
     import { defineCustomElements } from '/node_modules/astro-web-components/loader'
     defineCustomElements()
