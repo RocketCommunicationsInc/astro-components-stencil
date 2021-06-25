@@ -5464,6 +5464,17 @@ export namespace Components {
     interface RuxProgress {
         "hideLabel": boolean;
         "max": number;
+        /**
+          * Displays text output of progress as a percentage. Note: when using a max value other than 100 output is displated as value/max (e.g., 1450/2000)
+         */
+        "hideLabel": boolean;
+        /**
+          * For progress bars where progress bars have a maximum value greater or less than 100
+         */
+        "max": number;
+        /**
+          * Current progress value between 0 and 100 (or the max, if defined below).
+         */
         "value": number;
     }
     interface RuxStatus {
@@ -18467,8 +18478,17 @@ declare namespace LocalJSX {
         "status"?: Status;
     }
     interface RuxProgress {
+        /**
+          * Displays text output of progress as a percentage. Note: when using a max value other than 100 output is displated as value/max (e.g., 1450/2000)
+         */
         "hideLabel"?: boolean;
+        /**
+          * For progress bars where progress bars have a maximum value greater or less than 100
+         */
         "max"?: number;
+        /**
+          * Current progress value between 0 and 100 (or the max, if defined below).
+         */
         "value"?: number;
     }
     interface RuxStatus {
