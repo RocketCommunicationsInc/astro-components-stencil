@@ -9,7 +9,7 @@ export class RuxModal {
     /**
      * Shows and hides modal
      */
-    @Prop({ reflect: true }) open!: boolean
+    @Prop({ reflect: true, mutable: true }) open!: boolean
     /**
      * Modal body message
      */
