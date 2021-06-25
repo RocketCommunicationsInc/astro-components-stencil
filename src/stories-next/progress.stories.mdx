@@ -1,0 +1,121 @@
+import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
+import { html, render } from 'lit-html'
+const args = extractArgTypes('rux-progress');
+args.value.defaultValue = 1
+console.log(args)
+
+<Meta
+    title="Components/Progress"
+    component="rux-progress"
+    argTypes={args}
+    />
+
+# Progress
+
+A visual indicator of a tasks progress. When indicating progress with a finite duration, use determinate progress. When indicating progress with an indefinite duration, use indeterminate progress.
+
+## Guidelines
+
+-   [Astro UXDS: Progress](https://astrouxds.com/components/progress/)
+
+export const DeterminateProgress = (args) => {
+    return html`
+        <div style="margin: 3rem auto;  padding: 2rem; text-align: center;">
+            <rux-progress
+                value="${args.value}"
+                .max=${args.max}
+                ?hide-label="${args.hideLabel}"
+            ></rux-progress>
+        </div>
+    `
+}
+
+<Canvas>
+    <Story
+        parameters={{
+            docs: { source: { code: '<rux-button>Button</rux-button>' } },
+        }}
+        name="Determinate Progress"
+    >
+        {DeterminateProgress.bind()}
+    </Story>
+</Canvas>
+
+<ArgsTable of="rux-progress" />
+
+export const DeterminateProgressMax = () => {
+    return html`
+        <div style="margin: 3rem auto;  padding: 2rem; text-align: center;">
+            <rux-progress
+                value="100"
+                max="100"
+            ></rux-progress>
+        </div>
+    `
+}
+
+<Canvas>
+    <Story
+        parameters={{
+            docs: { source: { code: '<rux-button>Button</rux-button>' } },
+        }}
+        name="Determinate Progress Max"
+    >
+        {DeterminateProgressMax.bind()}
+    </Story>
+</Canvas>
+
+
+export const IndeterminateProgress = () => html`
+    <div style="margin: 3rem auto; max-width: 5rem; text-align: center;">
+        <rux-progress></rux-progress>
+    </div>
+`
+
+<Canvas>
+    <Story
+        parameters={{
+            docs: { source: { code: '<rux-button>Button</rux-button>' } },
+        }}
+        name="Indeterminate Progress"
+    >
+        {IndeterminateProgress.bind()}
+    </Story>
+</Canvas>
+
+## Specific Framework Integrations
+
+<div>
+<rux-tabs small id="tab-set-id-1">
+<rux-tab id="tab-id-1">Vue</rux-tab>
+<rux-tab id="tab-id-2">React</rux-tab>
+<rux-tab id="tab-id-3">Angular</rux-tab>
+</rux-tabs>
+
+<rux-tab-panels aria-labelledby="tab-set-id-1">
+  <rux-tab-panel aria-labelledby="tab-id-1">
+
+```html
+<template>
+</template>
+```
+
+  </rux-tab-panel>
+  <rux-tab-panel aria-labelledby="tab-id-2">
+    Angular specific setup here
+  </rux-tab-panel>
+  <rux-tab-panel aria-labelledby="tab-id-3">
+    react specific setup here
+  </rux-tab-panel>
+</rux-tab-panels>
+</div>
+
+## Tree Shaking
+
+If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
+
+```js
+import { RuxProgress } from '@astrouxds/astro-web-components/dist/components/rux-progress.js'
+customElements.define('rux-progress', RuxProgress)
+```

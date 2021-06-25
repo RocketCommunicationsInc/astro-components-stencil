@@ -7,6 +7,9 @@ import { Status } from '../../common/commonTypes.module'
     shadow: true,
 })
 export class RuxStatus {
+    /**
+     * Sets the status symbol
+     */
     @Prop({ reflect: true }) status: Status
 
     @Watch('status')
