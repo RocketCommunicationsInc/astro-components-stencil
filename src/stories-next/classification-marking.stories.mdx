@@ -3,7 +3,7 @@ import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
 import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
 
 <Meta
-    title="MDX/Classification Markings"
+    title="Components/Classification Markings"
     component="rux-classification-marking"
     argTypes={extractArgTypes('rux-classification-marking')}
 />
@@ -15,7 +15,7 @@ Classification and control markings are required for digital products created fo
 For the most up-to-date policies, see the [ISOO Training Aids](https://www.archives.gov/isoo/training/training-aids) for classification marking policies and the [CUI Registry](https://www.archives.gov/cui) for control marking policies. In addition to these requirements, each government agency may have their own rules to use for classification and control markings.
 
 
-export const ClassificationMarkings = (args) => {
+export const Default = (args) => {
   return html`
     <div
         style="display: flex; flex-flow: column; justify-content: center; margin-bottom:50px; position: relative;"
@@ -26,7 +26,7 @@ export const ClassificationMarkings = (args) => {
           ?tag="${args.tag}"
         >
         </rux-classification-marking>
-        </div>
+      </div>
   `
 }
 
@@ -35,17 +35,26 @@ export const ClassificationMarkings = (args) => {
         parameters={{
             docs: { source: { code: '<rux-classification-marking classification="confidential"></rux-classification-marking>' } },
         }}
-        name="Classification Marking"
+        name="Default"
     >
-        {ClassificationMarkings.bind()}
+        {Default.bind()}
     </Story>
 </Canvas>
 
-export const ClassificationMarkingBanners = (args) => {
+<ArgsTable of="rux-classification-marking"/>
+
+
+#### Custom Marking Labels
+
+Applying the `label` property attribute to the classification custom element adds `label` text value to the marking in addition to its classification text.
+
+#### Marking Type Declaration
+
+By default classification markings rendered in banner format. Applying the `tag` property attribute sets the marking type. The `tag` attribute property defines the classification marking as a tag.
+
+export const AllBannerVariants = (args) => {
   return html`
-  <div
-        style="display: flex; flex-flow: column; justify-content: center; margin:20px;"
-    >
+    <div style="display: flex; flex-flow: column; justify-content: center; margin:20px;">
         <div
             style="display: flex; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
         >
@@ -97,13 +106,13 @@ export const ClassificationMarkingBanners = (args) => {
         parameters={{
             docs: { source: { code: '<rux-classification-marking classification="confidential">Button</rux-classification-marking>' } },
         }}
-        name="Banners"
+        name="All Banner Variants"
     >
-        {ClassificationMarkingBanners.bind()}
+        {AllBannerVariants.bind()}
     </Story>
 </Canvas>
 
-export const ClassificationMarkingTags = () =>  {
+export const AllTagVariants = () =>  {
 return html`
     <div
         style="display: flex; flex-flow: column; justify-content: flex-start; width: 400px; margin:60px auto;"
@@ -189,25 +198,14 @@ return html`
     </div>
 `}
 
-#### Custom Marking Labels
-
-Applying the `label` property attribute to the classification custom element adds `label` text value to the marking in addition to its classification text.
-
-#### Marking Type Declaration
-
-By default classification markings rendered in banner format. Applying the `tag` property attribute sets the marking type. The `tag` attribute property defines the classification marking as a tag.
 
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-classification-marking classification="unclassified" tag></rux-classification-marking>' } },
-        }}
-        name="Tags"
-    >
-        {ClassificationMarkingTags.bind()}
+    <Story name="All Tag Variants">
+        {AllTagVariants.bind()}
     </Story>
 </Canvas>
 
-<ArgsTable of="rux-classification-marking" />
+### Cherry Picking
 
+Coming Soon
 

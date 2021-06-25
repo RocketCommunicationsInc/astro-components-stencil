@@ -3,20 +3,11 @@ import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
 import { html, render } from 'lit-html'
 
 <Meta
-    title="MDX/Button"
+    title="Components/Button"
     component="rux-button"
     subcomponents={{ 'Rux Button Group': 'rux-button-group' }}
     argTypes={extractArgTypes('rux-button')}
 />
-
-<style>{`
-  a {
-    color: var(--fontLinkColor);
-  }
-  a:hover {
-    color: var(--fontLinkHoverColor);
-  }
-`}</style>
 
 # Button
 
@@ -26,7 +17,7 @@ Buttons allow users to trigger actions.
 
 -   [Astro UXDS: Buttons](http://www.astrouxds.com/ui-components/buttons)
 
-export const StandardButton = (args) => {
+export const Default = (args) => {
     return html`
         <div style="padding: 10%; display: flex; justify-content: center;">
             <rux-button
@@ -40,6 +31,14 @@ export const StandardButton = (args) => {
         </div>
     `
 }
+
+<Canvas>
+    <Story name="Default">
+        {Default.bind()}
+    </Story>
+</Canvas>
+
+<ArgsTable of="rux-button"/>
 
 export const slottedIconButton = (args) => {
     const { size, disabled, outline, iconOnly } = args
@@ -245,34 +244,13 @@ export const AllButtonVariants = () => {
                     >
                 </li>
             </ul>
-            <!-- <ul class="button-list">
-    <li>
-      <input class="rux-button" type="submit" value="input type=submit">
-    </li>
-    <li>
-      <input class="rux-button" type="button" value="input type=button">
-    </li>
-    <li>
-      <input class="rux-button" type="reset" value="input type=reset">
-    </li>
-    <li>
-      <input class="rux-button" type="submit" value="input disabled" disabled>
-    </li>
-  </ul> -->
         </div>
     `
 }
 
-<Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-button>Button</rux-button>' } },
-        }}
-        name="Standard"
-    >
-        {StandardButton.bind()}
-    </Story>
-</Canvas>
+### With Slotted Icon
+
+The component auto-imports the default Astro Icon Web Component for icons, if you specify one. Also, you can use [Slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots#Adding_flexibility_with_slots) to define icons within buttons. This method is best if you need to override the default icon library SVG file.
 
 <Canvas>
     <Story
@@ -284,6 +262,8 @@ export const AllButtonVariants = () => {
         {slottedIconButton.bind()}
     </Story>
 </Canvas>
+
+### All Variants
 
 <Canvas>
     <Story
@@ -298,7 +278,7 @@ export const AllButtonVariants = () => {
 
 <ArgsTable of="rux-button" />
 
-## Specific Framework Integrations
+### Specific Framework Integrations
 
 <div>
 <rux-tabs small id="tab-set-id-1">
@@ -326,7 +306,7 @@ export const AllButtonVariants = () => {
 </rux-tab-panels>
 </div>
 
-## Tree Shaking
+### Cherry Picking
 
 If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
 
