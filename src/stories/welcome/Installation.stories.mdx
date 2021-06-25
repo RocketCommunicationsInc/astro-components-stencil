@@ -164,9 +164,8 @@ Astro ships with a convienent lazy-loader, but if you'd rather more control over
 that supports treeshaking, you can also cherry-pick only the components you actually use. For example:
 
 ```js
-import { RuxClock } from '@astrouxds/astro-web-components/dist/components/rux-clock'
-customElements.define('rux-clock', RuxClock)
+import RuxClock from '@astrouxds/astro-web-components/dist/components/rux-clock.js'
 ```
 
-NOTE: You will need to manually call `customElements.define` for every component you wish to use and their dependencies.
-Refer to each component's documentation to see their dependencies at a glance.
+NOTE: You will also need to manually register all dependencies of each component. For example, Button also uses Icon so
+you will need to also import rux-icon. Refer to each component's documentation to see a list of their dependencies.
