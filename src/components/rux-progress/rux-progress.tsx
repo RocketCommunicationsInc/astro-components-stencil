@@ -7,20 +7,26 @@ import { Component, Host, h, Prop, Watch } from '@stencil/core'
 })
 export class RuxProgress {
     /**
-     * For use with progress bars that have maximum value greater or less than 100.
+     * Current progress value between 0 and 100 (or the max, if defined below).
+     */
+    @Prop({ mutable: true }) value: number = null
+    /**
+     * For progress bars where progress bars have a maximum value greater or less than 100
      */
     @Prop({ mutable: true }) max: number = 100
-    /**
-     * Displays current progress value between 1 and 100 (or the max, if defined below). Note: if this paramater isn’t present or if it is set to 0 the progress bar will display its indeterminate state.
-     */
-    @Prop({ mutable: true }) value: number = 0
     /**
      * Displays text output of progress as a percentage. Note: when using a max value other than 100 output is displated as value/max (e.g., 1450/2000)
      */
     @Prop({ mutable: true }) hideLabel: boolean = false
 
     getProgressAsString() {
-        return this.max === 100 ? `${this.value}%` : `${this.value}/${this.max}`
+        if (this.value === null) {
+            return '0%'
+        } else {
+            return this.max === 100
+                ? `${this.value}%`
+                : `${this.value}/${this.max}`
+        }
     }
     checkValueNotOverMax(max: number, value: number) {
         if (max < value) {
@@ -41,7 +47,7 @@ export class RuxProgress {
     render() {
         return (
             <Host>
-                {this.value ? (
+                {this.value != null ? (
                     [
                         <progress
                             class="rux-progress"

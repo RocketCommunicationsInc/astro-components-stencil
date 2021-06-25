@@ -10,31 +10,13 @@ import { RangeItem } from './components/rux-monitoring-progress-icon/rux-monitor
 import { SwitchChangeEvent } from './components/rux-switch/rux-switch.model'
 export namespace Components {
     interface RuxButton {
-        /**
-         * Toggles disabled attribute on the button
-         */
         disabled: boolean
-        /**
-         * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
-         */
         icon: string
-        /**
-         * Hides slotted text from the button by setting rux-button--icon-only class
-         */
         iconOnly: boolean
-        /**
-         * Changes button style from solid to outline by setting rux-button--outline class
-         */
         outline: boolean
-        /**
-         * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
-         */
         size?: 'small' | 'large'
     }
     interface RuxButtonGroup {
-        /**
-         * The alignment of buttons within the group
-         */
         align: 'left' | 'center' | 'right'
     }
     interface RuxClassificationMarking {
@@ -63,7 +45,7 @@ export namespace Components {
         /**
          * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
          */
-        hideTimezone?: boolean
+        hideTimezone: boolean
         /**
          * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax), displays a timestamp labeled "LOS" next to the standard clock.
          */
@@ -108,10561 +90,5280 @@ export namespace Components {
         menuIcon?: string
     }
     interface RuxIcon {
-        /**
-         * The icon color
-         */
-        color?: string
-        /**
-         * The icon name
-         */
+        color: string
         icon: string
-        /**
-         * The icon label
-         */
-        label?: string
-        /**
-         * The size of the icon
-         */
+        label: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
+        viewBox: string
     }
     interface RuxIcon360 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIcon3dRotation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIcon4k {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAcUnit {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccessAlarms {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccessTime {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccessibility {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccessibilityNew {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccessible {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccessibleForward {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccountBalance {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccountBalanceWallet {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccountBox {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccountCircle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAdb {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAdd {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddAPhoto {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddAlarm {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddAlert {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddBox {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddCircle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddCircleOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddComment {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddLocation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddPhotoAlternate {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddShoppingCart {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddToHomeScreen {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddToPhotos {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddToQueue {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAdjust {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatFlat {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatFlatAngled {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatIndividualSuite {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatLegroomExtra {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatLegroomNormal {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatLegroomReduced {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatReclineExtra {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatReclineNormal {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirplanemodeActive {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirplanemodeInactive {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirplay {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirportShuttle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAlarm {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAlarmAdd {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAlarmOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAlarmOn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAlbum {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAllInbox {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAllInclusive {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAllOut {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAlternateEmail {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAltitude {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAndroid {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAnnouncement {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAntenna {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAntennaOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAntennaReceive {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAntennaTransmit {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconApps {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArchive {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowBack {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowBackIos {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowDownward {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowDropDown {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowDropDownCircle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowDropUp {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowForward {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowForwardIos {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowLeft {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowRight {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowRightAlt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowUpward {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArtTrack {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAspectRatio {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssessment {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssignment {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssignmentFind {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssignmentLate {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssignmentReturn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssignmentReturned {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssignmentTurnedIn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssistant {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssistantPhoto {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAttachFile {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAttachMoney {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAttachment {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAudiotrack {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAutorenew {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAvTimer {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBackspace {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBackup {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBallot {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBarChart {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBattery20 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBattery30 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBattery50 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBattery60 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBattery80 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBattery90 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryAlert {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryCharging20 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryCharging30 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryCharging50 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryCharging60 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryCharging80 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryCharging90 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryChargingFull {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryFull {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryStd {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryUnknown {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBeachAccess {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBeenhere {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBlock {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBluetooth {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBluetoothAudio {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBluetoothConnected {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBluetoothDisabled {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBluetoothSearching {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBlurCircular {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBlurLinear {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBlurOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBlurOn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBook {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBookmark {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBookmarkBorder {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBookmarks {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderAll {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderBottom {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderClear {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderColor {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderHorizontal {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderInner {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderLeft {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderOuter {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderRight {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderStyle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderTop {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderVertical {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrandingWatermark {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness1 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness2 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness3 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness4 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness5 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness6 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness7 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightnessAuto {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightnessHigh {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightnessLow {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightnessMedium {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrokenImage {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrush {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBubbleChart {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBugReport {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBuild {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBurstMode {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBusiness {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBusinessCenter {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCached {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCake {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCalendarToday {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCalendarViewDay {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCall {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallEnd {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallMade {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallMerge {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallMissed {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallMissedOutgoing {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallReceived {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallSplit {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallToAction {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCamera {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCameraAlt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCameraEnhance {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCameraFront {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCameraRear {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCameraRoll {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCancel {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCancelPresentation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCardGiftcard {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCardMembership {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCardTravel {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCasino {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCast {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCastConnected {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCastForEducation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCategory {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCellWifi {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCenterFocusStrong {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCenterFocusWeak {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChangeHistory {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChat {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChatBubble {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChatBubbleOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCheck {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCheckBox {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCheckBoxOutlineBlank {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCheckCircle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCheckCircleOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChevronLeft {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChevronRight {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChildCare {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChildFriendly {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChromeReaderMode {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconClass {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconClear {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconClearAll {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconClose {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconClosedCaption {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloud {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloudCircle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloudDone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloudDownload {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloudOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloudQueue {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloudUpload {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCode {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCollections {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCollectionsBookmark {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconColorLens {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconColorize {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconComment {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCommute {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCompare {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCompareArrows {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCompassCalibration {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconComputer {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconConfirmationNumber {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconContactMail {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconContactPhone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconContactSupport {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconContacts {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconControlCamera {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconControlPoint {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconControlPointDuplicate {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCopyright {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCreate {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCreateNewFolder {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCreditCard {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCrop {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCrop169 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCrop32 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCrop54 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCrop75 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropDin {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropFree {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropLandscape {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropOriginal {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropPortrait {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropRotate {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropSquare {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDashboard {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDataUsage {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDateRange {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDehaze {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDelete {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeleteForever {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeleteOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeleteSweep {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDepartureBoard {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDescription {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDesktopAccessDisabled {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDesktopMac {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDesktopWindows {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDetails {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeveloperBoard {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeveloperMode {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeviceHub {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeviceUnknown {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDevices {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDevicesOther {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDialerSip {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDialpad {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirections {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsBike {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsBoat {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsBus {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsCar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsRailway {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsRun {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsSubway {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsTransit {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsWalk {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDiscFull {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDns {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDock {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDomain {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDomainDisabled {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDoneAll {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDoneOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDonutLarge {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDonutSmall {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDrafts {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDragHandle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDragIndicator {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDriveEta {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDuo {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDvr {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEdit {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEditAttributes {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEditLocation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEject {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEmail {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEnhancedEncryption {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEqualizer {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEquipment {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconError {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconErrorOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEuroSymbol {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEvStation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEvent {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEventAvailable {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEventBusy {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEventNote {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExitToApp {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExpandLess {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExpandMore {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExplicit {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExplore {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExploreOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExposure {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExposureNeg1 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExposureNeg2 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExposurePlus1 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExposurePlus2 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExposureZero {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExtension {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFace {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFastForward {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFastRewind {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFastfood {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFavorite {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFavoriteBorder {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFeaturedPlayList {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFeaturedVideo {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFeedback {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFiberDvr {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFiberManualRecord {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFiberNew {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFiberPin {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFiberSmartRecord {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFileCopy {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter1 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter2 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter3 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter4 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter5 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter6 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter7 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter8 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter9 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter9Plus {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterBAndW {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterCenterFocus {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterDrama {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterFrames {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterHdr {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterList {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterNone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterTiltShift {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterVintage {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFindInPage {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFindReplace {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFingerprint {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFirstPage {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFitnessCenter {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlag {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlare {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlashAuto {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlashOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlashOn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlight {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlightLand {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlightTakeoff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlip {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlipToBack {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlipToFront {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFolder {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFolderOpen {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFolderShared {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFolderSpecial {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFontDownload {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatAlignCenter {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatAlignJustify {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatAlignLeft {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatAlignRight {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatBold {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatClear {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatColorFill {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatColorReset {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatColorText {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatIndentDecrease {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatIndentIncrease {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatItalic {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatLineSpacing {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatListBulleted {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatListNumbered {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatListNumberedRtl {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatPaint {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatQuote {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatShapes {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatSize {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatStrikethrough {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatTextdirectionLToR {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatTextdirectionRToL {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatUnderlined {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconForum {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconForward {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconForward10 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconForward30 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconForward5 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFreeBreakfast {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFullscreen {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFullscreenExit {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFunctions {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGTranslate {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGamepad {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGames {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGavel {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGesture {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGetApp {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGif {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGolfCourse {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGpsFixed {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGpsNotFixed {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGpsOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGrade {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGradient {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGrain {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGraphicEq {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGridOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGridOn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGroup {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGroupAdd {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGroupWork {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHd {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHdrOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHdrOn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHdrStrong {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHdrWeak {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHeadset {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHeadsetMic {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHealing {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHearing {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHelp {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHelpOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHighQuality {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHighlight {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHighlightOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHistory {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHome {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHorizontalSplit {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHotTub {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHotel {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHourglassEmpty {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHourglassFull {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHowToReg {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHowToVote {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHttp {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHttps {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconImage {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconImageAspectRatio {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconImageSearch {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconImportContacts {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconImportExport {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconImportantDevices {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInbox {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconIndeterminateCheckBox {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInfo {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInput {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertChart {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertChartOutlined {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertComment {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertDriveFile {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertEmoticon {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertInvitation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertLink {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertPhoto {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInvertColors {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInvertColorsOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconIso {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboard {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardArrowDown {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardArrowLeft {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardArrowRight {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardArrowUp {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardBackspace {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardCapslock {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardHide {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardReturn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardTab {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardVoice {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKitchen {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLabel {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLabelImportant {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLabelOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLandscape {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLanguage {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLaptop {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLaptopChromebook {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLaptopMac {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLaptopWindows {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLastPage {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLaunch {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLayers {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLayersClear {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLeakAdd {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLeakRemove {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLens {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLibraryAdd {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLibraryBooks {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLibraryMusic {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLineStyle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLineWeight {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLinearScale {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLink {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLinkOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLinkedCamera {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconList {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconListAlt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLiveHelp {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLiveTv {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalActivity {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalAirport {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalAtm {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalBar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalCafe {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalConvenienceStore {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalDining {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalDrink {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalGasStation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalGroceryStore {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalHospital {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalHotel {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalLaundryService {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalLibrary {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalMall {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalMovies {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalOffer {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalParking {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalPharmacy {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalPhone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalPlay {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalPostOffice {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalPrintshop {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalSee {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalShipping {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalTaxi {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocationCity {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocationDisabled {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocationOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocationOn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocationSearching {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLock {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLockOpen {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks1 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks2 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks3 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks4 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks5 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks6 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLoop {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLoupe {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLowPriority {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLoyalty {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMail {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMailOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMap {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMarkunread {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMarkunreadMailbox {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMaximize {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMeetingRoom {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMemory {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMenu {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMergeType {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMessage {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMic {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMicNone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMicOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMinimize {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMissedVideoCall {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMission {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMms {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMobileFriendly {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMobileOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMobileScreenShare {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconModeComment {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMonetizationOn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMoney {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMoneyOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMonochromePhotos {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMood {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMoodBad {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMore {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMoreHoriz {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMoreVert {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMotorcycle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMouse {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMoveToInbox {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMovie {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMovieCreation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMovieFilter {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMultilineChart {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMusicNote {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMusicOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMusicVideo {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMyLocation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNature {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNaturePeople {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNavigateBefore {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNavigateNext {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNavigation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNearMe {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNetcom {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNetworkCell {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNetworkCheck {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNetworkLocked {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNetworkWifi {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNewReleases {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNextWeek {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNfc {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNoEncryption {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNoMeetingRoom {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNoSim {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotInterested {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotListedLocation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNote {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNoteAdd {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotes {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotificationImportant {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotifications {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotificationsActive {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotificationsNone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotificationsOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotificationsPaused {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOfflineBolt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOfflinePin {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOndemandVideo {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOpacity {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOpenInBrowser {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOpenInNew {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOpenWith {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOutlinedFlag {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPages {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPageview {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPalette {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPanTool {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPanorama {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPanoramaFishEye {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPanoramaHorizontal {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPanoramaVertical {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPanoramaWideAngle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPartyMode {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPause {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPauseCircleFilled {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPauseCircleOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPausePresentation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPayload {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPayment {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPeopleOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermCameraMic {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermContactCalendar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermDataSetting {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermDeviceInformation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermIdentity {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermMedia {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermPhoneMsg {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermScanWifi {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPerson {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPersonAdd {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPersonAddDisabled {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPersonOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPersonPin {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPersonPinCircle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPersonalVideo {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPets {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneAndroid {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneBluetoothSpeaker {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneCallback {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneForwarded {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneInTalk {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneIphone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneLocked {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneMissed {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonePaused {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonelink {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonelinkErase {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonelinkLock {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonelinkOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonelinkRing {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonelinkSetup {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoto {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoAlbum {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoCamera {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoFilter {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoLibrary {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoSizeSelectActual {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoSizeSelectLarge {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoSizeSelectSmall {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPictureAsPdf {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPictureInPicture {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPictureInPictureAlt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPieChart {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPinDrop {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlace {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlayArrow {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlayCircleFilled {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlayCircleFilledWhite {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlayCircleOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlayForWork {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlaylistAdd {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlaylistAddCheck {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlaylistPlay {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlusOne {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPoll {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPool {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPortableWifiOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPortrait {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPower {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPowerInput {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPowerOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPowerSettingsNew {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPregnantWoman {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPresentToAll {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPrint {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPrintDisabled {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPriorityHigh {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconProcessor {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconProcessorAlt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPropulsionPower {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPublic {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPublish {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconQueryBuilder {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconQuestionAnswer {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconQueue {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconQueueMusic {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconQueuePlayNext {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRadio {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRadioButtonChecked {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRadioButtonUnchecked {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRateReview {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReceipt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRecentActors {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRecordVoiceOver {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRedeem {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRedo {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRefresh {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRemove {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRemoveCircle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRemoveCircleOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRemoveFromQueue {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRemoveRedEye {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRemoveShoppingCart {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReorder {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRepeat {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRepeatOne {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReplay {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReplay10 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReplay30 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReplay5 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReply {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReplyAll {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReport {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReportOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReportProblem {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRestaurant {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRestaurantMenu {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRestore {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRestoreFromTrash {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRestorePage {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRingVolume {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRoom {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRoomService {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRotate90DegreesCc {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRotateLeft {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRotateRight {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRoundedCorner {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRouter {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRowing {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRssFeed {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRvHookup {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSatellite {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSatelliteOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSatelliteReceive {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSatelliteTransmit {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSave {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSaveAlt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScanner {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScatterPlot {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSchedule {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSchool {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScore {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScreenLockLandscape {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScreenLockPortrait {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScreenLockRotation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScreenRotation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScreenShare {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSdCard {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSdStorage {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSearch {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSeat {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSecurity {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSelectAll {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSend {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSentimentDissatisfied {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSentimentSatisfied {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSentimentSatisfiedAlt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSentimentVeryDissatisfied {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSentimentVerySatisfied {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettings {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsApplications {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsBackupRestore {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsBluetooth {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsBrightness {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsCell {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsEthernet {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsInputAntenna {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsInputComponent {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsInputComposite {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsInputHdmi {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsInputSvideo {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsOverscan {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsPhone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsPower {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsRemote {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsSystemDaydream {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsVoice {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShare {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShop {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShopTwo {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShoppingBasket {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShoppingCart {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShortText {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShowChart {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShuffle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShutterSpeed {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellular0Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellular1Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellular2Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellular3Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellular4Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularAlt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularConnectedNoInternet0Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularConnectedNoInternet1Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularConnectedNoInternet2Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularConnectedNoInternet3Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularConnectedNoInternet4Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularNoSim {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularNull {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi0Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi1Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi1BarLock {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi2Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi2BarLock {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi3Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi3BarLock {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi4Bar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi4BarLock {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifiOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSimCard {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSkipNext {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSkipPrevious {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSlideshow {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSlowMotionVideo {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSmartphone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSmokeFree {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSmokingRooms {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSms {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSmsFailed {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSnooze {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSolar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSort {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSortByAlpha {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpa {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpaceBar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpeaker {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpeakerGroup {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpeakerNotes {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpeakerNotesOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpeakerPhone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpellcheck {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStar {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStarBorder {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStarHalf {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStarRate {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStars {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStayCurrentLandscape {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStayCurrentPortrait {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStayPrimaryLandscape {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStayPrimaryPortrait {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStop {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStopScreenShare {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStorage {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStore {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStoreMallDirectory {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStraighten {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStreetview {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStrikethroughS {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStyle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSubdirectoryArrowLeft {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSubdirectoryArrowRight {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSubject {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSubscriptions {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSubtitles {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSubway {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSupervisedUserCircle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSupervisorAccount {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSurroundSound {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwapCalls {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwapHoriz {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwapHorizontalCircle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwapVert {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwapVerticalCircle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwitchCamera {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwitchVideo {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSync {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSyncDisabled {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSyncProblem {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSystemUpdate {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTab {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTabUnselected {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTableChart {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTablet {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTabletAndroid {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTabletMac {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTagFaces {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTapAndPlay {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTerrain {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTextFields {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTextFormat {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTextRotateUp {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTextRotateVertical {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTextRotationNone {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTextsms {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTexture {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTheaters {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconThermal {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconThumbDown {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconThumbDownAlt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconThumbUp {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconThumbUpAlt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconThumbsUpDown {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimeToLeave {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimelapse {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimeline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimer {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimer10 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimer3 {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimerOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTitle {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconToc {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconToday {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconToggleOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconToggleOn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconToll {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTonality {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTouchApp {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconToys {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTrackChanges {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTraffic {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTrain {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTram {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTransferWithinAStation {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTransform {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTransitEnterexit {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTranslate {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTrendingDown {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTrendingFlat {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTrendingUp {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTripOrigin {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTune {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTurnedIn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTurnedInNot {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTv {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTvOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUnarchive {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUndo {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUnfoldLess {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUnfoldMore {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUnsubscribe {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUpdate {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUsb {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVerifiedUser {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVerticalAlignBottom {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVerticalAlignCenter {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVerticalAlignTop {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVerticalSplit {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVibration {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVideoCall {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVideoLabel {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVideoLibrary {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVideocam {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVideocamOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVideogameAsset {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewAgenda {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewArray {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewCarousel {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewColumn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewComfy {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewCompact {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewDay {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewHeadline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewList {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewModule {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewQuilt {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewStream {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewWeek {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVignette {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVisibility {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVisibilityOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVoiceChat {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVoiceOverOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVoicemail {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVolumeDown {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVolumeMute {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVolumeOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVolumeUp {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVpnKey {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVpnLock {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWallpaper {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWarning {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWatch {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWatchLater {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWaves {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWbAuto {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWbCloudy {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWbIncandescent {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWbIridescent {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWbSunny {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWc {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWeb {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWebAsset {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWeekend {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWhatshot {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWhereToVote {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWidgets {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWifi {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWifiLock {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWifiOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWifiTethering {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWork {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWorkOff {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWorkOutline {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWrapText {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconYoutubeSearchedFor {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconZoomIn {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconZoomInMap {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconZoomOut {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconZoomOutMap {
-        /**
-         * The fill color for the icon
-         */
-        color?: string
-        /**
-         * The size of the icon
-         */
+        color: string
+        icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxMonitoringIcon {
@@ -10685,21 +5386,21 @@ export namespace Components {
         /**
          * Displays a smaller label underneath the icon label
          */
-        sublabel?: string
+        sublabel: string
     }
     interface RuxMonitoringProgressIcon {
         /**
          * Displays a label below the icon
          */
-        label?: string
+        label: string
         /**
          * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%
          */
-        max: number
+        max?: number
         /**
          * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%
          */
-        min: number
+        min?: number
         /**
          * If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon. Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands, `'1.5M'` for millions, `'1.5B'` for billions, and `'∞'` for one trillion or higher.
          */
@@ -10711,7 +5412,7 @@ export namespace Components {
         /**
          * Items in this Array define thresholds for changing the status style of the progress icon. For each item in the Array, the icon will be styled with the given status while the progress value is less than or equal to the Array item’s threshold and greater than the next smallest item‘s threshold. Both progress and the Array items’ threshold values can be positive or negative. If no min is specified, the component assumes the Array's first status threshold begins at 0.
          */
-        range: Array<RangeItem>
+        range?: Array<RangeItem>
         /**
          * Displays a smaller label underneath the icon label
          */
@@ -10721,7 +5422,7 @@ export namespace Components {
         /**
          * If provided, the banner will automatically close after this amount of time. Accepts value either in milliseconds or seconds (which will be converted to milliseconds internally), between `2000` and `10000`, or `2` and `10`, respectively. Any number provided outside of the `2000`-`10000` range will be ignored in favor of the default 2000ms delay. <br>If `closeAfter` is not passed or if it is given an undefined or `null` value, the banner will stay open until the user closes it.
          */
-        closeAfter?: number
+        closeAfter: number
         /**
          * Message for the notification banner.
          */
@@ -10741,19 +5442,16 @@ export namespace Components {
          */
         hideLabel: boolean
         /**
-         * For use with progress bars that have maximum value greater or less than 100.
+         * For progress bars where progress bars have a maximum value greater or less than 100
          */
         max: number
         /**
-         * Displays current progress value between 1 and 100 (or the max, if defined below). Note: if this paramater isn’t present or if it is set to 0 the progress bar will display its indeterminate state.
+         * Current progress value between 0 and 100 (or the max, if defined below).
          */
         value: number
     }
     interface RuxStatus {
-        /**
-         * Sets the status symbol, valid options are critical, serious, caution, normal, standby and off
-         */
-        status?: Status
+        status: Status
     }
     interface RuxSwitch {
         /**
@@ -19356,31 +14054,13 @@ declare global {
 }
 declare namespace LocalJSX {
     interface RuxButton {
-        /**
-         * Toggles disabled attribute on the button
-         */
         disabled?: boolean
-        /**
-         * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
-         */
         icon?: string
-        /**
-         * Hides slotted text from the button by setting rux-button--icon-only class
-         */
         iconOnly?: boolean
-        /**
-         * Changes button style from solid to outline by setting rux-button--outline class
-         */
         outline?: boolean
-        /**
-         * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
-         */
         size?: 'small' | 'large'
     }
     interface RuxButtonGroup {
-        /**
-         * The alignment of buttons within the group
-         */
         align?: 'left' | 'center' | 'right'
     }
     interface RuxClassificationMarking {
@@ -19454,10561 +14134,5280 @@ declare namespace LocalJSX {
         menuIcon?: string
     }
     interface RuxIcon {
-        /**
-         * The icon color
-         */
         color?: string
-        /**
-         * The icon name
-         */
-        icon: string
-        /**
-         * The icon label
-         */
+        icon?: string
         label?: string
-        /**
-         * The size of the icon
-         */
         size?: 'extra-small' | 'small' | 'normal' | 'large'
+        viewBox?: string
     }
     interface RuxIcon360 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIcon3dRotation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIcon4k {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAcUnit {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccessAlarms {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccessTime {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccessibility {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccessibilityNew {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccessible {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccessibleForward {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccountBalance {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccountBalanceWallet {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccountBox {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAccountCircle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAdb {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAdd {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddAPhoto {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddAlarm {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddAlert {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddBox {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddCircle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddCircleOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddComment {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddLocation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddPhotoAlternate {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddShoppingCart {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddToHomeScreen {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddToPhotos {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAddToQueue {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAdjust {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatFlat {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatFlatAngled {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatIndividualSuite {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatLegroomExtra {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatLegroomNormal {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatLegroomReduced {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatReclineExtra {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirlineSeatReclineNormal {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirplanemodeActive {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirplanemodeInactive {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirplay {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAirportShuttle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAlarm {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAlarmAdd {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAlarmOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAlarmOn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAlbum {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAllInbox {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAllInclusive {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAllOut {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAlternateEmail {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAltitude {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAndroid {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAnnouncement {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAntenna {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAntennaOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAntennaReceive {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAntennaTransmit {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconApps {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArchive {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowBack {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowBackIos {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowDownward {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowDropDown {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowDropDownCircle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowDropUp {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowForward {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowForwardIos {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowLeft {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowRight {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowRightAlt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArrowUpward {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconArtTrack {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAspectRatio {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssessment {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssignment {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssignmentFind {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssignmentLate {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssignmentReturn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssignmentReturned {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssignmentTurnedIn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssistant {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAssistantPhoto {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAttachFile {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAttachMoney {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAttachment {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAudiotrack {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAutorenew {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconAvTimer {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBackspace {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBackup {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBallot {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBarChart {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBattery20 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBattery30 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBattery50 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBattery60 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBattery80 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBattery90 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryAlert {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryCharging20 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryCharging30 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryCharging50 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryCharging60 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryCharging80 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryCharging90 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryChargingFull {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryFull {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryStd {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBatteryUnknown {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBeachAccess {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBeenhere {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBlock {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBluetooth {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBluetoothAudio {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBluetoothConnected {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBluetoothDisabled {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBluetoothSearching {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBlurCircular {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBlurLinear {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBlurOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBlurOn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBook {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBookmark {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBookmarkBorder {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBookmarks {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderAll {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderBottom {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderClear {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderColor {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderHorizontal {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderInner {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderLeft {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderOuter {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderRight {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderStyle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderTop {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBorderVertical {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrandingWatermark {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness1 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness2 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness3 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness4 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness5 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness6 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightness7 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightnessAuto {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightnessHigh {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightnessLow {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrightnessMedium {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrokenImage {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBrush {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBubbleChart {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBugReport {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBuild {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBurstMode {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBusiness {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconBusinessCenter {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCached {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCake {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCalendarToday {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCalendarViewDay {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCall {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallEnd {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallMade {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallMerge {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallMissed {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallMissedOutgoing {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallReceived {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallSplit {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCallToAction {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCamera {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCameraAlt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCameraEnhance {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCameraFront {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCameraRear {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCameraRoll {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCancel {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCancelPresentation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCardGiftcard {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCardMembership {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCardTravel {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCasino {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCast {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCastConnected {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCastForEducation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCategory {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCellWifi {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCenterFocusStrong {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCenterFocusWeak {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChangeHistory {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChat {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChatBubble {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChatBubbleOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCheck {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCheckBox {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCheckBoxOutlineBlank {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCheckCircle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCheckCircleOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChevronLeft {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChevronRight {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChildCare {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChildFriendly {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconChromeReaderMode {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconClass {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconClear {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconClearAll {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconClose {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconClosedCaption {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloud {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloudCircle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloudDone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloudDownload {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloudOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloudQueue {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCloudUpload {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCode {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCollections {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCollectionsBookmark {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconColorLens {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconColorize {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconComment {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCommute {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCompare {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCompareArrows {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCompassCalibration {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconComputer {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconConfirmationNumber {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconContactMail {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconContactPhone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconContactSupport {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconContacts {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconControlCamera {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconControlPoint {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconControlPointDuplicate {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCopyright {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCreate {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCreateNewFolder {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCreditCard {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCrop {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCrop169 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCrop32 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCrop54 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCrop75 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropDin {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropFree {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropLandscape {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropOriginal {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropPortrait {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropRotate {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconCropSquare {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDashboard {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDataUsage {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDateRange {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDehaze {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDelete {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeleteForever {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeleteOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeleteSweep {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDepartureBoard {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDescription {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDesktopAccessDisabled {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDesktopMac {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDesktopWindows {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDetails {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeveloperBoard {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeveloperMode {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeviceHub {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDeviceUnknown {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDevices {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDevicesOther {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDialerSip {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDialpad {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirections {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsBike {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsBoat {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsBus {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsCar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsRailway {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsRun {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsSubway {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsTransit {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDirectionsWalk {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDiscFull {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDns {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDock {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDomain {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDomainDisabled {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDoneAll {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDoneOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDonutLarge {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDonutSmall {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDrafts {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDragHandle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDragIndicator {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDriveEta {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDuo {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconDvr {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEdit {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEditAttributes {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEditLocation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEject {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEmail {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEnhancedEncryption {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEqualizer {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEquipment {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconError {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconErrorOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEuroSymbol {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEvStation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEvent {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEventAvailable {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEventBusy {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconEventNote {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExitToApp {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExpandLess {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExpandMore {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExplicit {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExplore {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExploreOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExposure {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExposureNeg1 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExposureNeg2 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExposurePlus1 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExposurePlus2 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExposureZero {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconExtension {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFace {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFastForward {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFastRewind {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFastfood {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFavorite {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFavoriteBorder {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFeaturedPlayList {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFeaturedVideo {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFeedback {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFiberDvr {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFiberManualRecord {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFiberNew {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFiberPin {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFiberSmartRecord {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFileCopy {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter1 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter2 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter3 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter4 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter5 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter6 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter7 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter8 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter9 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilter9Plus {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterBAndW {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterCenterFocus {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterDrama {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterFrames {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterHdr {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterList {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterNone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterTiltShift {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFilterVintage {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFindInPage {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFindReplace {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFingerprint {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFirstPage {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFitnessCenter {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlag {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlare {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlashAuto {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlashOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlashOn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlight {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlightLand {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlightTakeoff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlip {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlipToBack {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFlipToFront {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFolder {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFolderOpen {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFolderShared {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFolderSpecial {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFontDownload {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatAlignCenter {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatAlignJustify {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatAlignLeft {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatAlignRight {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatBold {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatClear {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatColorFill {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatColorReset {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatColorText {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatIndentDecrease {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatIndentIncrease {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatItalic {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatLineSpacing {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatListBulleted {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatListNumbered {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatListNumberedRtl {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatPaint {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatQuote {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatShapes {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatSize {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatStrikethrough {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatTextdirectionLToR {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatTextdirectionRToL {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFormatUnderlined {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconForum {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconForward {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconForward10 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconForward30 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconForward5 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFreeBreakfast {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFullscreen {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFullscreenExit {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconFunctions {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGTranslate {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGamepad {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGames {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGavel {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGesture {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGetApp {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGif {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGolfCourse {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGpsFixed {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGpsNotFixed {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGpsOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGrade {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGradient {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGrain {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGraphicEq {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGridOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGridOn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGroup {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGroupAdd {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconGroupWork {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHd {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHdrOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHdrOn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHdrStrong {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHdrWeak {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHeadset {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHeadsetMic {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHealing {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHearing {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHelp {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHelpOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHighQuality {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHighlight {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHighlightOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHistory {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHome {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHorizontalSplit {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHotTub {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHotel {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHourglassEmpty {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHourglassFull {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHowToReg {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHowToVote {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHttp {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconHttps {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconImage {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconImageAspectRatio {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconImageSearch {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconImportContacts {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconImportExport {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconImportantDevices {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInbox {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconIndeterminateCheckBox {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInfo {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInput {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertChart {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertChartOutlined {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertComment {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertDriveFile {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertEmoticon {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertInvitation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertLink {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInsertPhoto {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInvertColors {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconInvertColorsOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconIso {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboard {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardArrowDown {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardArrowLeft {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardArrowRight {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardArrowUp {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardBackspace {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardCapslock {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardHide {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardReturn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardTab {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKeyboardVoice {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconKitchen {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLabel {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLabelImportant {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLabelOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLandscape {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLanguage {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLaptop {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLaptopChromebook {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLaptopMac {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLaptopWindows {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLastPage {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLaunch {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLayers {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLayersClear {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLeakAdd {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLeakRemove {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLens {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLibraryAdd {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLibraryBooks {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLibraryMusic {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLineStyle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLineWeight {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLinearScale {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLink {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLinkOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLinkedCamera {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconList {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconListAlt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLiveHelp {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLiveTv {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalActivity {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalAirport {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalAtm {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalBar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalCafe {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalConvenienceStore {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalDining {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalDrink {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalGasStation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalGroceryStore {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalHospital {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalHotel {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalLaundryService {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalLibrary {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalMall {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalMovies {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalOffer {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalParking {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalPharmacy {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalPhone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalPlay {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalPostOffice {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalPrintshop {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalSee {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalShipping {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocalTaxi {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocationCity {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocationDisabled {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocationOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocationOn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLocationSearching {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLock {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLockOpen {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks1 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks2 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks3 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks4 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks5 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLooks6 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLoop {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLoupe {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLowPriority {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconLoyalty {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMail {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMailOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMap {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMarkunread {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMarkunreadMailbox {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMaximize {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMeetingRoom {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMemory {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMenu {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMergeType {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMessage {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMic {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMicNone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMicOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMinimize {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMissedVideoCall {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMission {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMms {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMobileFriendly {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMobileOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMobileScreenShare {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconModeComment {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMonetizationOn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMoney {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMoneyOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMonochromePhotos {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMood {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMoodBad {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMore {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMoreHoriz {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMoreVert {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMotorcycle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMouse {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMoveToInbox {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMovie {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMovieCreation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMovieFilter {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMultilineChart {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMusicNote {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMusicOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMusicVideo {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconMyLocation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNature {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNaturePeople {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNavigateBefore {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNavigateNext {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNavigation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNearMe {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNetcom {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNetworkCell {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNetworkCheck {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNetworkLocked {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNetworkWifi {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNewReleases {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNextWeek {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNfc {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNoEncryption {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNoMeetingRoom {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNoSim {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotInterested {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotListedLocation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNote {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNoteAdd {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotes {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotificationImportant {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotifications {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotificationsActive {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotificationsNone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotificationsOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconNotificationsPaused {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOfflineBolt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOfflinePin {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOndemandVideo {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOpacity {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOpenInBrowser {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOpenInNew {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOpenWith {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconOutlinedFlag {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPages {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPageview {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPalette {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPanTool {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPanorama {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPanoramaFishEye {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPanoramaHorizontal {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPanoramaVertical {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPanoramaWideAngle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPartyMode {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPause {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPauseCircleFilled {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPauseCircleOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPausePresentation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPayload {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPayment {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPeopleOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermCameraMic {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermContactCalendar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermDataSetting {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermDeviceInformation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermIdentity {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermMedia {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermPhoneMsg {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPermScanWifi {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPerson {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPersonAdd {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPersonAddDisabled {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPersonOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPersonPin {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPersonPinCircle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPersonalVideo {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPets {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneAndroid {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneBluetoothSpeaker {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneCallback {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneForwarded {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneInTalk {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneIphone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneLocked {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoneMissed {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonePaused {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonelink {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonelinkErase {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonelinkLock {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonelinkOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonelinkRing {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhonelinkSetup {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhoto {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoAlbum {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoCamera {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoFilter {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoLibrary {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoSizeSelectActual {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoSizeSelectLarge {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPhotoSizeSelectSmall {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPictureAsPdf {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPictureInPicture {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPictureInPictureAlt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPieChart {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPinDrop {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlace {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlayArrow {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlayCircleFilled {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlayCircleFilledWhite {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlayCircleOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlayForWork {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlaylistAdd {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlaylistAddCheck {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlaylistPlay {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPlusOne {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPoll {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPool {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPortableWifiOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPortrait {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPower {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPowerInput {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPowerOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPowerSettingsNew {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPregnantWoman {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPresentToAll {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPrint {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPrintDisabled {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPriorityHigh {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconProcessor {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconProcessorAlt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPropulsionPower {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPublic {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconPublish {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconQueryBuilder {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconQuestionAnswer {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconQueue {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconQueueMusic {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconQueuePlayNext {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRadio {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRadioButtonChecked {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRadioButtonUnchecked {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRateReview {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReceipt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRecentActors {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRecordVoiceOver {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRedeem {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRedo {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRefresh {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRemove {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRemoveCircle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRemoveCircleOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRemoveFromQueue {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRemoveRedEye {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRemoveShoppingCart {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReorder {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRepeat {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRepeatOne {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReplay {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReplay10 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReplay30 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReplay5 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReply {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReplyAll {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReport {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReportOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconReportProblem {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRestaurant {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRestaurantMenu {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRestore {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRestoreFromTrash {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRestorePage {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRingVolume {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRoom {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRoomService {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRotate90DegreesCc {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRotateLeft {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRotateRight {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRoundedCorner {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRouter {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRowing {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRssFeed {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconRvHookup {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSatellite {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSatelliteOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSatelliteReceive {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSatelliteTransmit {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSave {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSaveAlt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScanner {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScatterPlot {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSchedule {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSchool {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScore {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScreenLockLandscape {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScreenLockPortrait {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScreenLockRotation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScreenRotation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconScreenShare {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSdCard {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSdStorage {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSearch {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSeat {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSecurity {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSelectAll {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSend {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSentimentDissatisfied {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSentimentSatisfied {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSentimentSatisfiedAlt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSentimentVeryDissatisfied {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSentimentVerySatisfied {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettings {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsApplications {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsBackupRestore {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsBluetooth {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsBrightness {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsCell {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsEthernet {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsInputAntenna {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsInputComponent {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsInputComposite {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsInputHdmi {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsInputSvideo {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsOverscan {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsPhone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsPower {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsRemote {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsSystemDaydream {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSettingsVoice {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShare {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShop {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShopTwo {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShoppingBasket {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShoppingCart {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShortText {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShowChart {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShuffle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconShutterSpeed {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellular0Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellular1Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellular2Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellular3Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellular4Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularAlt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularConnectedNoInternet0Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularConnectedNoInternet1Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularConnectedNoInternet2Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularConnectedNoInternet3Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularConnectedNoInternet4Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularNoSim {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularNull {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalCellularOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi0Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi1Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi1BarLock {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi2Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi2BarLock {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi3Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi3BarLock {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi4Bar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifi4BarLock {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSignalWifiOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSimCard {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSkipNext {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSkipPrevious {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSlideshow {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSlowMotionVideo {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSmartphone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSmokeFree {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSmokingRooms {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSms {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSmsFailed {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSnooze {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSolar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSort {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSortByAlpha {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpa {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpaceBar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpeaker {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpeakerGroup {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpeakerNotes {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpeakerNotesOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpeakerPhone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSpellcheck {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStar {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStarBorder {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStarHalf {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStarRate {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStars {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStayCurrentLandscape {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStayCurrentPortrait {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStayPrimaryLandscape {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStayPrimaryPortrait {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStop {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStopScreenShare {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStorage {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStore {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStoreMallDirectory {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStraighten {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStreetview {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStrikethroughS {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconStyle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSubdirectoryArrowLeft {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSubdirectoryArrowRight {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSubject {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSubscriptions {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSubtitles {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSubway {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSupervisedUserCircle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSupervisorAccount {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSurroundSound {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwapCalls {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwapHoriz {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwapHorizontalCircle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwapVert {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwapVerticalCircle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwitchCamera {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSwitchVideo {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSync {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSyncDisabled {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSyncProblem {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconSystemUpdate {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTab {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTabUnselected {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTableChart {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTablet {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTabletAndroid {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTabletMac {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTagFaces {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTapAndPlay {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTerrain {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTextFields {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTextFormat {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTextRotateUp {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTextRotateVertical {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTextRotationNone {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTextsms {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTexture {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTheaters {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconThermal {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconThumbDown {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconThumbDownAlt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconThumbUp {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconThumbUpAlt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconThumbsUpDown {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimeToLeave {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimelapse {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimeline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimer {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimer10 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimer3 {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTimerOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTitle {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconToc {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconToday {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconToggleOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconToggleOn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconToll {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTonality {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTouchApp {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconToys {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTrackChanges {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTraffic {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTrain {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTram {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTransferWithinAStation {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTransform {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTransitEnterexit {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTranslate {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTrendingDown {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTrendingFlat {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTrendingUp {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTripOrigin {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTune {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTurnedIn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTurnedInNot {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTv {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconTvOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUnarchive {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUndo {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUnfoldLess {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUnfoldMore {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUnsubscribe {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUpdate {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconUsb {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVerifiedUser {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVerticalAlignBottom {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVerticalAlignCenter {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVerticalAlignTop {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVerticalSplit {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVibration {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVideoCall {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVideoLabel {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVideoLibrary {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVideocam {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVideocamOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVideogameAsset {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewAgenda {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewArray {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewCarousel {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewColumn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewComfy {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewCompact {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewDay {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewHeadline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewList {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewModule {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewQuilt {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewStream {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconViewWeek {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVignette {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVisibility {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVisibilityOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVoiceChat {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVoiceOverOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVoicemail {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVolumeDown {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVolumeMute {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVolumeOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVolumeUp {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVpnKey {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconVpnLock {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWallpaper {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWarning {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWatch {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWatchLater {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWaves {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWbAuto {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWbCloudy {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWbIncandescent {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWbIridescent {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWbSunny {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWc {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWeb {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWebAsset {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWeekend {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWhatshot {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWhereToVote {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWidgets {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWifi {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWifiLock {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWifiOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWifiTethering {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWork {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWorkOff {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWorkOutline {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconWrapText {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconYoutubeSearchedFor {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconZoomIn {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconZoomInMap {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconZoomOut {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxIconZoomOutMap {
-        /**
-         * The fill color for the icon
-         */
         color?: string
-        /**
-         * The size of the icon
-         */
+        icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
     interface RuxMonitoringIcon {
@@ -30037,7 +19436,7 @@ declare namespace LocalJSX {
         /**
          * Displays a label below the icon
          */
-        label?: string
+        label: string
         /**
          * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%
          */
@@ -30053,11 +19452,11 @@ declare namespace LocalJSX {
         /**
          * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below.
          */
-        progress?: number
+        progress: number
         /**
          * Items in this Array define thresholds for changing the status style of the progress icon. For each item in the Array, the icon will be styled with the given status while the progress value is less than or equal to the Array item’s threshold and greater than the next smallest item‘s threshold. Both progress and the Array items’ threshold values can be positive or negative. If no min is specified, the component assumes the Array's first status threshold begins at 0.
          */
-        range: Array<RangeItem>
+        range?: Array<RangeItem>
         /**
          * Displays a smaller label underneath the icon label
          */
@@ -30087,18 +19486,15 @@ declare namespace LocalJSX {
          */
         hideLabel?: boolean
         /**
-         * For use with progress bars that have maximum value greater or less than 100.
+         * For progress bars where progress bars have a maximum value greater or less than 100
          */
         max?: number
         /**
-         * Displays current progress value between 1 and 100 (or the max, if defined below). Note: if this paramater isn’t present or if it is set to 0 the progress bar will display its indeterminate state.
+         * Current progress value between 0 and 100 (or the max, if defined below).
          */
         value?: number
     }
     interface RuxStatus {
-        /**
-         * Sets the status symbol, valid options are critical, serious, caution, normal, standby and off
-         */
         status?: Status
     }
     interface RuxSwitch {
@@ -30131,9 +19527,6 @@ declare namespace LocalJSX {
     }
     interface RuxTabPanel {}
     interface RuxTabPanels {
-        /**
-         * Emits a list of the Tab Panels that have been passed in
-         */
         onRegisterPanels?: (
             event: CustomEvent<HTMLRuxTabPanelsElement[]>
         ) => void
