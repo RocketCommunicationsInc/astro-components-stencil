@@ -1,0 +1,82 @@
+import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
+import { html, render } from 'lit-html'
+
+<Meta
+    title="Components/Monitoring Progress Icon"
+    component="rux-monitoring-progress-icon"
+    argTypes={extractArgTypes('rux-monitoring-progress-icon')}
+/>
+
+# Monitoring Progress Icon
+
+The Monitoring Progress Icon is a unique instance of the Monitoring Icon for displaying live progress of a monitored item. The Monitoring Progress Icon uses a "donut"-style progress meter rather than a specific icon.
+
+## Guidelines
+
+-   [Astro UXDS: Icons and Symbols](https://astrouxds.com/ui-components/icons-and-symbols)
+
+
+export const Default = (args) => {
+    return html`
+        <div style="margin: 3rem auto; max-width: 5rem; text-align: center;">
+            <rux-monitoring-progress-icon
+                progress="${args.progress}"
+                .max="${args.max}"
+                .min="${args.min}"
+                label="${args.label}"
+                .sublabel="${args.sublabel}"
+                .notifications="${args.notifications}"
+            ></rux-monitoring-progress-icon>
+        </div>
+    `
+}
+
+<Canvas>
+    <Story
+        args={{
+          progress: 50,
+          label: 'Progress'
+        }}
+        name="Default"
+    >
+        {Default.bind()}
+    </Story>
+</Canvas>
+
+<ArgsTable of="rux-monitoring-progress-icon" />
+
+## Specific Framework Integrations
+
+<div>
+<rux-tabs small id="tab-set-id-1">
+<rux-tab id="tab-id-1">Vue</rux-tab>
+<rux-tab id="tab-id-2">React</rux-tab>
+<rux-tab id="tab-id-3">Angular</rux-tab>
+</rux-tabs>
+
+<rux-tab-panels aria-labelledby="tab-set-id-1">
+  <rux-tab-panel aria-labelledby="tab-id-1">
+
+```html
+<template>
+    <rux-button-group align="right">
+        <rux-button outline>Cancel</rux-button>
+        <rux-button>Continue</rux-button>
+    </rux-button-group>
+</template>
+```
+
+  </rux-tab-panel>
+  <rux-tab-panel aria-labelledby="tab-id-2">
+    Angular specific setup here
+  </rux-tab-panel>
+  <rux-tab-panel aria-labelledby="tab-id-3">
+    react specific setup here
+  </rux-tab-panel>
+</rux-tab-panels>
+</div>
+
+## Cherry Picking
+Coming Soon
+

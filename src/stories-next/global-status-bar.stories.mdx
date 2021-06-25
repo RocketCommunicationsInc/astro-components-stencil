@@ -22,7 +22,7 @@ The Global Status Bar is a full-width view across the top of an application — 
 
 -   [Astro UXDS: Global Status Bar](https://astrouxds.com/ui-components/global-status-bar)
 
-export const GlobalStatusBar = (args) => {
+export const Default = (args) => {
     return html`
         <div style="display: flex; justify-content: center;">
             <rux-global-status-bar
@@ -44,11 +44,13 @@ export const GlobalStatusBar = (args) => {
         parameters={{
             docs: { source: { code: '<rux-global-status-bar></rux-global-status-bar>' } },
         }}
-        name="Global Status Bar"
+        name="Default"
     >
-        {GlobalStatusBar.bind()}
+        {Default.bind()}
     </Story>
 </Canvas>
+
+<ArgsTable of="rux-global-status-bar"/>
 
 ## With App State
 
@@ -75,7 +77,7 @@ export const GlobalStatusBarWithAppState = (args) => {
         parameters={{
             docs: { source: { code: '<rux-global-status-bar></rux-global-status-bar>' } },
         }}
-        name="Global Status Bar with App State"
+        name="With App State"
     >
         {GlobalStatusBarWithAppState.bind()}
     </Story>
@@ -108,7 +110,7 @@ export const GlobalStatusBarWithSlotContent = (args) => {
         parameters={{
             docs: { source: { code: '<rux-global-status-bar></rux-global-status-bar>' } },
         }}
-        name="Global Status Bar with Slot Content"
+        name="With Slot Content"
     >
         {GlobalStatusBarWithSlotContent.bind()}
     </Story>
@@ -164,17 +166,11 @@ export const GlobalStatusBarWithTabs = (args) => {
 }
 
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-global-status-bar></rux-global-status-bar>' } },
-        }}
-        name="Global Status Bar with Tabs"
-    >
+    <Story name="With Tabs">
         {GlobalStatusBarWithTabs.bind()}
     </Story>
 </Canvas>
 
-<ArgsTable of="rux-global-status-bar" />
 
 ### Using Slots
 
@@ -236,3 +232,6 @@ There is one unnamed slot in the Global Status Bar. This slot is intended for an
 	  <!-- Custom elements with named slot "right-side" are rendered here-->
  </rux-global-status-bar>
 ```
+
+### Cherry Picking
+Coming Soon
