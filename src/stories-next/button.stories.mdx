@@ -26,7 +26,9 @@ export const Default = (args) => {
                 ?outline="${args.outline}"
                 .size="${args.size}"
                 .icon="${args.icon}"
-                >Button</rux-button
+              >
+                Button
+              </rux-button
             >
         </div>
     `
@@ -51,7 +53,13 @@ export const slottedIconButton = (args) => {
     const { size, disabled, outline, iconOnly } = args
     return html`
         <div style="padding: 10%; display: flex; justify-content: center;">
-            <rux-button>
+            <rux-button
+                ?disabled="${args.disabled}"
+                ?icon-only="${args.iconOnly}"
+                ?outline="${args.outline}"
+                .size="${args.size}"
+                .icon="${args.icon}"
+            >
                 <rux-icon icon="palette"></rux-icon>
                 Slotted icon button
             </rux-button>
@@ -67,16 +75,27 @@ export const slottedIconButton = (args) => {
 
 ### Outline
 
-export const Outline = () => {
+export const Outline = (args) => {
     return html`
         <div style="padding: 10%; display: flex; justify-content: center;">
-            <rux-button outline>Button</rux-button>
+            <rux-button
+                ?disabled="${args.disabled}"
+                ?icon-only="${args.iconOnly}"
+                ?outline="${args.outline}"
+                .size="${args.size}"
+                .icon="${args.icon}"
+            >
+              Button
+            </rux-button>
         </div>
     `
 }
 
 <Canvas>
-    <Story name="Outline">
+    <Story
+      args={{outline: true}}
+      name="Outline"
+    >
         {Outline.bind()}
     </Story>
 </Canvas>

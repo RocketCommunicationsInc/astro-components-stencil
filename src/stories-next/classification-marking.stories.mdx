@@ -24,7 +24,7 @@ export const Default = (args) => {
         style="display: flex; flex-flow: column; justify-content: center; margin-bottom:50px; position: relative;"
     >
         <rux-classification-marking
-          .classification="${args.classification}"
+          classification="${args.classification}"
           .label="${args.label}"
           ?tag="${args.tag}"
         >
@@ -34,13 +34,8 @@ export const Default = (args) => {
 }
 
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-classification-marking classification="unclassified"></rux-classification-marking>' } },
-        }}
-        name="Default"
-    >
-        {Default.bind()}
+    <Story name="Default">
+      {Default.bind()}
     </Story>
 </Canvas>
 
@@ -60,8 +55,9 @@ export const WithLabel = (args) => {
         style="display: flex; flex-flow: column; justify-content: center; margin-bottom:50px; position: relative;"
       >
         <rux-classification-marking
-          classification="unclassified"
-          label="custom"
+          classification="${args.classification}"
+          .label="${args.label}"
+          ?tag="${args.tag}"
         >
         </rux-classification-marking>
       </div>
@@ -69,12 +65,7 @@ export const WithLabel = (args) => {
 }
 
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-classification-marking classification="unclassified" label="custom"></rux-classification-marking>' } },
-        }}
-        name="With Label"
-    >
+    <Story name="With Label">
         {WithLabel.bind()}
     </Story>
 </Canvas>
@@ -207,7 +198,14 @@ export const AllTagVariants = () =>  {
 By default classification markings rendered in banner format. Applying the `tag` property attribute sets the marking type. The `tag` attribute property defines the classification marking as a tag.
 
 <Canvas>
-    <Story name="All Tag Variants">
+    <Story
+        argTypes={{
+            classification: { table: { disable: true } },
+            label: { table: { disable: true } },
+            tag: { table: { disable: true } }
+        }}
+        name="All Tag Variants"
+      >
         {AllTagVariants.bind()}
     </Story>
 </Canvas>

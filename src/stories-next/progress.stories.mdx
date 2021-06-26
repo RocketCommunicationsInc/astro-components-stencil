@@ -1,14 +1,11 @@
 import { extractArgTypes } from '@pxtrn/storybook-addon-docs-stencil'
 import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
 import { html, render } from 'lit-html'
-const args = extractArgTypes('rux-progress');
-args.value.defaultValue = 1
-console.log(args)
 
 <Meta
     title="Components/Progress"
     component="rux-progress"
-    argTypes={args}
+    argTypes={extractArgTypes('rux-progress')}
     />
 
 # Progress
@@ -32,7 +29,12 @@ export const Default = (args) => {
 }
 
 <Canvas>
-    <Story name="Default">
+    <Story
+      args={{
+        value: 1
+      }}
+      name="Default"
+    >
       {Default.bind()}
     </Story>
 </Canvas>
@@ -46,12 +48,13 @@ export const Default = (args) => {
 
 ### Determinate Progress Max
 
-export const DeterminateProgressMax = () => {
+export const DeterminateProgressMax = (args) => {
     return html`
         <div style="margin: 3rem auto;  padding: 2rem; text-align: center;">
             <rux-progress
-                value="100"
-                max="100"
+                value="${args.value}"
+                .max=${args.max}
+                ?hide-label="${args.hideLabel}"
             ></rux-progress>
         </div>
     `
@@ -59,8 +62,9 @@ export const DeterminateProgressMax = () => {
 
 <Canvas>
     <Story
-        parameters={{
-            docs: { source: { code: '<rux-button>Button</rux-button>' } },
+        args={{
+          value: 100,
+          max: 100
         }}
         name="Determinate Progress Max"
     >
@@ -70,9 +74,13 @@ export const DeterminateProgressMax = () => {
 
 ### Indeterminate Progress
 
-export const IndeterminateProgress = () => html`
+export const IndeterminateProgress = (args) => html`
     <div style="margin: 3rem auto; max-width: 5rem; text-align: center;">
-        <rux-progress></rux-progress>
+        <rux-progress
+            value="${args.value}"
+            .max=${args.max}
+            ?hide-label="${args.hideLabel}"
+        ></rux-progress>
     </div>
 `
 

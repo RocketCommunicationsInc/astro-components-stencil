@@ -20,6 +20,8 @@ export const Default = (args) => {
     return html`
         <div style="padding: 10%; display: flex; justify-content: center;">
             <rux-clock
+                .aos="${args.aos}"
+                .los="${args.los}"
                 .timezone="${args.timezone}"
                 ?hide-timezone="${args.hideTimezone}"
                 ?hide-date="${args.hideDate}"
@@ -65,9 +67,6 @@ export const ClockWithAosLos = (args) => {
 
 <Canvas>
     <Story
-        parameters={{
-            docs: { source: { code: `<rux-clock los="${new Date().getTime()}" aos="${new Date().toISOString()}"></rux-clock>` } },
-        }}
         args={{
           aos: new Date().getTime(),
           los: new Date().toISOString()
