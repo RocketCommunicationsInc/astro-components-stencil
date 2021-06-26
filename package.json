@@ -26,7 +26,7 @@
         "generate:icons": "node src/utils/generate-icons.js",
         "storybook": "start-storybook -p 6006 -s ./dist",
         "storybook-next": "start-storybook -p 6006 -s ./dist -c .storybook-next",
-        "build-storybook": "build-storybook -c .storybook -s ./dist",
+        "build-storybook": "build-storybook -c .storybook-next -s ./dist",
         "astro": "npm-run-all --parallel start storybook",
         "build-astro-prod": "npm-run-all build build-storybook",
         "prettier": "prettier --write --loglevel warn .",
