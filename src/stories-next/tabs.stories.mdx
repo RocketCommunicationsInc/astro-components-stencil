@@ -5,7 +5,10 @@ import { html, render } from 'lit-html'
 <Meta
     title="Components/Tabs"
     component="rux-tabs"
-    subcomponents={{ 'Tab': 'rux-tab' }}
+    subcomponents={{
+      'RuxTab': 'rux-tab',
+      'RuxTabPanels': 'rux-tab-panels'
+      }}
     argTypes={extractArgTypes('rux-tabs')}
 />
 
@@ -107,7 +110,6 @@ export const Default = (args) => {
 ## API
 
 <ArgsTable of="rux-tabs" />
-<ArgsTable of="rux-tab-panels" />
 
 ## Variants
 
