@@ -44,14 +44,24 @@ export const Default = (args) => {
 </Canvas>
 
 
+## Usage
+
+The Astro UXDS Notification Banner hides from view using absolute positioning in CSS to slide up and outside of the parent element's content area. To ensure the notification hides properly, make sure the Notification Banner's parent element has both position: relative and overflow: hidden applied.
+
+## API
+
 <ArgsTable of="rux-notification"/>
+
+## Variants
+
+### Auto Close
 
 export const NotificationAutoClose = (args) => {
     return html`
         <div style="display: flex; flex-flow: column; justify-content: center;">
             <rux-notification
                 open="${true}"
-                closeAfter="${args.closeDelay}"
+                closeAfter="${args.closeAfter}"
                 status="${args.status}"
                 message="This is a notification banner. It will disappear in 2000 ms."
             >
@@ -65,15 +75,13 @@ export const NotificationAutoClose = (args) => {
       args={{
         closeAfter: 2000
       }}
-        parameters={{
-            docs: { source: { code: '<rux-button>Button</rux-button>' } },
-        }}
-        name="Auto Close"
+      name="Auto Close"
     >
         {NotificationAutoClose.bind()}
     </Story>
 </Canvas>
 
+### All Variants
 export const AllVariants = () => html`
     <div
         style="display: flex; flex-flow: column; justify-content: center; margin:20px;"

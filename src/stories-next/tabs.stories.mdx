@@ -19,8 +19,6 @@ Tabs are used to divide major areas of content and to indicate work process.
 
 ## Usage
 
-### 3. Render the Astro Tabs Web Component
-
 The Astro UXDS Tabs pattern makes use of four Web Components via [slots](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot):
 
 1. **Tabs:** Container for the tab bar, handles tabs logic and state
@@ -46,15 +44,6 @@ The Astro UXDS Tabs pattern is configured using properties passed into the custo
 </rux-tab-panels>
 ```
 
-The `small` property may be passed as a simple attribute on the Astro UXDS Tabs container element:
-
-```xml
-<rux-tabs small id="tab-set-id-1">
-  ...
-</rux-tabs>
-...
-```
-
 Astro UXDS Tab (child) properties are passed as simple attributes on the individual tabs themselves.
 
 ```xml
@@ -66,7 +55,7 @@ Astro UXDS Tab (child) properties are passed as simple attributes on the individ
 ...
 ```
 
-export const Tabs = (args) => {
+export const Default = (args) => {
     return html`
         <style>
             pre {
@@ -110,18 +99,23 @@ export const Tabs = (args) => {
 
 
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-button>Button</rux-button>' } },
-        }}
-        name="Tabs"
-    >
-        {Tabs.bind()}
+    <Story name="Default">
+      {Default.bind()}
     </Story>
 </Canvas>
 
+## API
 
-export const TabsCompact = () => {
+<ArgsTable of="rux-tabs" />
+<ArgsTable of="rux-tab-panels" />
+
+## Variants
+
+### Small
+
+The small property may be passed as a simple attribute on the Astro UXDS Tabs container element:
+
+export const Small = () => {
 return html`
     <div style="display: flex; flex-flow: column;">
         <div
@@ -154,9 +148,11 @@ return html`
 `
 }
 
-
-<ArgsTable of="rux-tabs" />
-<ArgsTable of="rux-tab-panels" />
+<Canvas>
+    <Story name="Small">
+      {Small.bind()}
+    </Story>
+</Canvas>
 
 ## Specific Framework Integrations
 
@@ -166,19 +162,14 @@ return html`
 <rux-tab id="tab-id-2">React</rux-tab>
 <rux-tab id="tab-id-3">Angular</rux-tab>
 </rux-tabs>
-
 <rux-tab-panels aria-labelledby="tab-set-id-1">
   <rux-tab-panel aria-labelledby="tab-id-1">
 
 ```html
 <template>
-    <rux-button-group align="right">
-        <rux-button outline>Cancel</rux-button>
-        <rux-button>Continue</rux-button>
-    </rux-button-group>
+  Coming Soon
 </template>
 ```
-
   </rux-tab-panel>
   <rux-tab-panel aria-labelledby="tab-id-2">
     Angular specific setup here
@@ -189,13 +180,6 @@ return html`
 </rux-tab-panels>
 </div>
 
-## Tree Shaking
+## Cherry Picking
 
-If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
-
-```js
-import { RuxButtonGroup, RuxButton, RuxIcon } from 'astro-web-components/dist/custom-elements'
-customElements.define('rux-button', RuxButton)
-customElements.define('rux-icon', RuxIcon)
-customElements.define('rux-button-group', RuxButtonGroup)
-```
+Coming Soon

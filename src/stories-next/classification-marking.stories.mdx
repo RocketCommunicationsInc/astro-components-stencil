@@ -44,8 +44,11 @@ export const Default = (args) => {
     </Story>
 </Canvas>
 
+## API
+
 <ArgsTable of="rux-classification-marking"/>
 
+## Variants
 
 ### With Label
 
@@ -76,6 +79,7 @@ export const WithLabel = (args) => {
     </Story>
 </Canvas>
 
+### All Banner Variants
 
 export const AllBannerVariants = (args) => {
   return html`
@@ -126,13 +130,13 @@ export const AllBannerVariants = (args) => {
   `
 }
 
-### All Banner Variants
-
 <Canvas>
     <Story name="All Banner Variants">
       {AllBannerVariants.bind()}
     </Story>
 </Canvas>
+
+### All Tag Variants
 
 export const AllTagVariants = () =>  {
   return html`
@@ -199,7 +203,6 @@ export const AllTagVariants = () =>  {
   `
   }
 
-### All Tag Variants
 
 By default classification markings rendered in banner format. Applying the `tag` property attribute sets the marking type. The `tag` attribute property defines the classification marking as a tag.
 
@@ -209,7 +212,7 @@ By default classification markings rendered in banner format. Applying the `tag`
     </Story>
 </Canvas>
 
-### Cherry Picking
+## Cherry Picking
 
 Coming Soon
 

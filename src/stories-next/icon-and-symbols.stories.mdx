@@ -10,33 +10,6 @@ import ruxIconsJson from './rux-icons.json'
     argTypes={args}
 />
 
-<style>{`
-  body {
-  }
-
-  section {
-  }
-
-  .icon-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.5rem;
-  }
-
-  .icon-item {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid;
-    align-items: center;
-
-  }
-
-  .icon__name {
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
-  }
-
-`}</style>
 
 # Icon
 
@@ -70,6 +43,8 @@ export const Default = (args) => {
         {Default.bind()}
     </Story>
 </Canvas>
+
+## API
 
 <ArgsTable of="rux-icon"/>
 

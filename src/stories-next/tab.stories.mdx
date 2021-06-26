@@ -21,22 +21,19 @@ Common button groupings follow these conventions:
 
 -   [Astro UXDS: Buttons](http://www.astrouxds.com/ui-components/buttons)
 
-export const Tab= (args) => {
+export const Default = (args) => {
     return html`
       <rux-tab id="tab1" .disabled=${args.disabled} .selected=${args.selected}>Tab 1</rux-tab>
     `
 }
 
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-button>Button</rux-button>' } },
-        }}
-        name="Tab (Single)"
-    >
-        {Tab.bind()}
+    <Story name="Default">
+      {Default.bind()}
     </Story>
 </Canvas>
+
+## API
 
 <ArgsTable of="rux-tab" />
 
@@ -54,10 +51,7 @@ export const Tab= (args) => {
 
 ```html
 <template>
-    <rux-button-group align="right">
-        <rux-button outline>Cancel</rux-button>
-        <rux-button>Continue</rux-button>
-    </rux-button-group>
+  Coming Soon
 </template>
 ```
 
@@ -71,13 +65,6 @@ export const Tab= (args) => {
 </rux-tab-panels>
 </div>
 
-## Tree Shaking
+## Cherry Picking
 
-If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
-
-```js
-import { RuxButtonGroup, RuxButton, RuxIcon } from 'astro-web-components/dist/custom-elements'
-customElements.define('rux-button', RuxButton)
-customElements.define('rux-icon', RuxIcon)
-customElements.define('rux-button-group', RuxButtonGroup)
-```
+Coming Soon

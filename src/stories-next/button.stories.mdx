@@ -38,30 +38,52 @@ export const Default = (args) => {
     </Story>
 </Canvas>
 
+## API
 <ArgsTable of="rux-button"/>
+
+## Variants
+
+### With Slotted Icon
+
+The component auto-imports the default Astro Icon Web Component for icons, if you specify one. Also, you can use [Slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots#Adding_flexibility_with_slots) to define icons within buttons. This method is best if you need to override the default icon library SVG file.
 
 export const slottedIconButton = (args) => {
     const { size, disabled, outline, iconOnly } = args
     return html`
         <div style="padding: 10%; display: flex; justify-content: center;">
-            <rux-button
-                ?disabled="${disabled}"
-                ?outline="${outline}"
-                ?icon-only="${iconOnly}"
-                .icon="${args.icon}"
-                .size="${size}"
-            >
-                <rux-icon
-                    icon="palette"
-                    color="${outline ? 'primary' : 'dark'}"
-                ></rux-icon>
+            <rux-button>
+                <rux-icon icon="palette"></rux-icon>
                 Slotted icon button
             </rux-button>
         </div>
     `
 }
 
-export const AllButtonVariants = () => {
+<Canvas>
+    <Story name="With Slotted Icon">
+        {slottedIconButton.bind()}
+    </Story>
+</Canvas>
+
+### Outline
+
+export const Outline = () => {
+    return html`
+        <div style="padding: 10%; display: flex; justify-content: center;">
+            <rux-button outline>Button</rux-button>
+        </div>
+    `
+}
+
+<Canvas>
+    <Story name="Outline">
+        {Outline.bind()}
+    </Story>
+</Canvas>
+
+### All Variants
+
+export const AllVariants = () => {
     return html`
         <style>
             .button-list {
@@ -248,38 +270,13 @@ export const AllButtonVariants = () => {
     `
 }
 
-### With Slotted Icon
-
-The component auto-imports the default Astro Icon Web Component for icons, if you specify one. Also, you can use [Slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots#Adding_flexibility_with_slots) to define icons within buttons. This method is best if you need to override the default icon library SVG file.
-
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-button>Button</rux-button>' } },
-        }}
-        name="Slotted Icon"
-    >
-        {slottedIconButton.bind()}
+    <Story name="All Variants">
+        {AllVariants.bind()}
     </Story>
 </Canvas>
 
-### All Variants
-
-<Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-button>Button</rux-button>' } },
-        }}
-        name="All Button Variants"
-    >
-        {AllButtonVariants.bind()}
-    </Story>
-</Canvas>
-
-<ArgsTable of="rux-button" />
-
-### Specific Framework Integrations
-
+## Specific Framework Integrations
 <div>
 <rux-tabs small id="tab-set-id-1">
 <rux-tab id="tab-id-1">Vue</rux-tab>
@@ -292,7 +289,10 @@ The component auto-imports the default Astro Icon Web Component for icons, if yo
 
 ```html
 <template>
-    <rux-button :disabled="true">Submit</rux-button>
+    <rux-button-group align="right">
+        <rux-button outline>Cancel</rux-button>
+        <rux-button>Continue</rux-button>
+    </rux-button-group>
 </template>
 ```
 
@@ -306,7 +306,7 @@ The component auto-imports the default Astro Icon Web Component for icons, if yo
 </rux-tab-panels>
 </div>
 
-### Cherry Picking
+## Cherry Picking
 
 If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
 

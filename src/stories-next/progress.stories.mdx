@@ -19,7 +19,7 @@ A visual indicator of a tasks progress. When indicating progress with a finite d
 
 -   [Astro UXDS: Progress](https://astrouxds.com/components/progress/)
 
-export const DeterminateProgress = (args) => {
+export const Default = (args) => {
     return html`
         <div style="margin: 3rem auto;  padding: 2rem; text-align: center;">
             <rux-progress
@@ -32,17 +32,19 @@ export const DeterminateProgress = (args) => {
 }
 
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-button>Button</rux-button>' } },
-        }}
-        name="Determinate Progress"
-    >
-        {DeterminateProgress.bind()}
+    <Story name="Default">
+      {Default.bind()}
     </Story>
 </Canvas>
 
+## API
+
 <ArgsTable of="rux-progress" />
+
+
+## Variants
+
+### Determinate Progress Max
 
 export const DeterminateProgressMax = () => {
     return html`
@@ -66,6 +68,7 @@ export const DeterminateProgressMax = () => {
     </Story>
 </Canvas>
 
+### Indeterminate Progress
 
 export const IndeterminateProgress = () => html`
     <div style="margin: 3rem auto; max-width: 5rem; text-align: center;">
@@ -74,12 +77,7 @@ export const IndeterminateProgress = () => html`
 `
 
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-button>Button</rux-button>' } },
-        }}
-        name="Indeterminate Progress"
-    >
+    <Story name="Indeterminate Progress">
         {IndeterminateProgress.bind()}
     </Story>
 </Canvas>
@@ -98,6 +96,7 @@ export const IndeterminateProgress = () => html`
 
 ```html
 <template>
+  Coming Soon
 </template>
 ```
 
@@ -111,11 +110,6 @@ export const IndeterminateProgress = () => html`
 </rux-tab-panels>
 </div>
 
-## Tree Shaking
+## Cherry Picking
 
-If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
-
-```js
-import { RuxProgress } from '@astrouxds/astro-web-components/dist/components/rux-progress.js'
-customElements.define('rux-progress', RuxProgress)
-```
+Coming Soon

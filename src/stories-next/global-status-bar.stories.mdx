@@ -50,22 +50,25 @@ export const Default = (args) => {
     </Story>
 </Canvas>
 
+## API
+
 <ArgsTable of="rux-global-status-bar"/>
 
-## With App State
+## Variants
 
-export const GlobalStatusBarWithAppState = (args) => {
+### With App State
+
+export const GlobalStatusBarWithAppState = () => {
     return html`
         <div style="display: flex; justify-content: center;">
             <rux-global-status-bar
-                .includeIcon="${args.includeIcon}"
-                include-app-state="${true}"
-                include-username="${true}"
-                .includeUsername="${args.includeUsername}"
-                .appDomain="${args.appDomain}"
-                .appName="${args.appName}"
-                .appVersion="${args.appVersion}"
-                .menuIcon="${args.menuIcon}"
+                include-app-state="true"
+                include-username="true"
+                app-domain="Astro"
+                app-name="Dashboard"
+                app-version="4.0 Alpha"
+                menu-icon="apps"
+                include-icon="true"
             >
             </rux-global-status-bar>
         </div>
@@ -73,30 +76,23 @@ export const GlobalStatusBarWithAppState = (args) => {
 }
 
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-global-status-bar></rux-global-status-bar>' } },
-        }}
-        name="With App State"
-    >
-        {GlobalStatusBarWithAppState.bind()}
+    <Story name="With App State">
+      {GlobalStatusBarWithAppState.bind()}
     </Story>
 </Canvas>
 
-## With Slot Content
+### With Slot Content
 
 export const GlobalStatusBarWithSlotContent = (args) => {
     return html`
         <div style="display: flex; justify-content: center;">
             <rux-global-status-bar
-                class="dark-theme"
-                .includeIcon="${args.includeIcon}"
-                .includeAppState="${args.includeAppState}"
-                .includeUsername="${args.includeUsername}"
-                .appDomain="${args.appDomain}"
-                .appName="${args.appName}"
-                .appVersion="${args.appVersion}"
-                .menuIcon="${args.menuIcon}"
+                include-icon="true"
+                app-domain="Astro"
+                app-name="Dashboard"
+                app-version="4.0 Alpha"
+                menu-icon="apps"
+                include-icon="true"
             >
                 <rux-clock></rux-clock>
                 <rux-button slot="right-side">Emergency shut off</rux-button>
@@ -106,12 +102,7 @@ export const GlobalStatusBarWithSlotContent = (args) => {
 }
 
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-global-status-bar></rux-global-status-bar>' } },
-        }}
-        name="With Slot Content"
-    >
+    <Story name="With Slot Content">
         {GlobalStatusBarWithSlotContent.bind()}
     </Story>
 </Canvas>
@@ -122,14 +113,11 @@ export const GlobalStatusBarWithTabs = (args) => {
     return html`
         <div style="display: flex; justify-content: center; flex-wrap: wrap;">
             <rux-global-status-bar
-                class="dark-theme"
-                .includeIcon="${args.includeIcon}"
-                .includeAppState="${args.includeAppState}"
-                .includeUsername="${args.includeUsername}"
-                .appDomain="${args.appDomain}"
-                .appName="${args.appName}"
-                .appVersion="${args.appVersion}"
-                .menuIcon="${args.menuIcon}"
+                app-domain="Astro"
+                app-name="Dashboard"
+                app-version="4.0 Alpha"
+                menu-icon="apps"
+                include-icon="true""
             >
                 <rux-tabs id="tab-set-id-1">
                     <rux-tab id="tab-id-1">Tab 1</rux-tab>
@@ -172,7 +160,7 @@ export const GlobalStatusBarWithTabs = (args) => {
 </Canvas>
 
 
-### Using Slots
+## Using Slots
 
 The Global Status Bar component uses both named and unnamed slots. These slots correspond to the location the slotted element will appear within the Global Status Bar.
 
