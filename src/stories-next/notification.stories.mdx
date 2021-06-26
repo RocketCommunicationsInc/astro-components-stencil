@@ -24,7 +24,7 @@ If another Notification Banner is waiting, it appears when the current Banner is
 
 -   [Astro UXDS: Notification Banner](https://www.astrouxds.com/ui-components/notification-banner)
 
-export const Notification = (args) => {
+export const Default = (args) => {
     return html`
         <div style="display: flex; flex-flow: column; justify-content: center;">
             <rux-notification
@@ -38,23 +38,20 @@ export const Notification = (args) => {
 }
 
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-button>Button</rux-button>' } },
-        }}
-        name="Standard"
-    >
-        {Notification.bind()}
+    <Story name="Default">
+      {Default.bind()}
     </Story>
 </Canvas>
 
+
+<ArgsTable of="rux-notification"/>
 
 export const NotificationAutoClose = (args) => {
     return html`
         <div style="display: flex; flex-flow: column; justify-content: center;">
             <rux-notification
                 open="${true}"
-                close-after="${args.closeDelay}"
+                closeAfter="${args.closeDelay}"
                 status="${args.status}"
                 message="This is a notification banner. It will disappear in 2000 ms."
             >
@@ -62,10 +59,12 @@ export const NotificationAutoClose = (args) => {
         </div>
     `
 }
-args.closeAfter.defaultValue = 2000
 
 <Canvas>
     <Story
+      args={{
+        closeAfter: 2000
+      }}
         parameters={{
             docs: { source: { code: '<rux-button>Button</rux-button>' } },
         }}
@@ -75,4 +74,51 @@ args.closeAfter.defaultValue = 2000
     </Story>
 </Canvas>
 
-<ArgsTable of="rux-notification"/>
+export const AllVariants = () => html`
+    <div
+        style="display: flex; flex-flow: column; justify-content: center; margin:20px;"
+    >
+        <div
+            style="display: flex; position: relative; height: 68px; margin-bottom: 20px; overflow: hidden;"
+        >
+            <rux-notification
+                open
+                status="standby"
+                message="Standby notification banner"
+            ></rux-notification>
+        </div>
+        <div
+            style="display: flex; position: relative; height: 68px; margin-bottom: 20px; overflow: hidden;"
+        >
+            <rux-notification
+                open
+                status="normal"
+                message="Normal notification banner"
+            ></rux-notification>
+        </div>
+        <div
+            style="display: flex; position: relative; height: 68px; margin-bottom: 20px; overflow: hidden;"
+        >
+            <rux-notification
+                open
+                status="caution"
+                message="Caution notification banner"
+            ></rux-notification>
+        </div>
+        <div
+            style="display: flex; position: relative; height: 68px; margin-bottom: 20px; overflow: hidden;"
+        >
+            <rux-notification
+                open
+                status="critical"
+                message="Critical notification banner"
+            ></rux-notification>
+        </div>
+    </div>
+`
+
+<Canvas>
+    <Story name="All Variants">
+        {AllVariants.bind()}
+    </Story>
+</Canvas>

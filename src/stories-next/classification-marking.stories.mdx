@@ -14,6 +14,9 @@ Classification and control markings are required for digital products created fo
 
 For the most up-to-date policies, see the [ISOO Training Aids](https://www.archives.gov/isoo/training/training-aids) for classification marking policies and the [CUI Registry](https://www.archives.gov/cui) for control marking policies. In addition to these requirements, each government agency may have their own rules to use for classification and control markings.
 
+## Guidelines
+
+- [Astro UXDS: Classification Markings](https://astrouxds.com/components/classification-markings/)
 
 export const Default = (args) => {
   return html`
@@ -33,7 +36,7 @@ export const Default = (args) => {
 <Canvas>
     <Story
         parameters={{
-            docs: { source: { code: '<rux-classification-marking classification="confidential"></rux-classification-marking>' } },
+            docs: { source: { code: '<rux-classification-marking classification="unclassified"></rux-classification-marking>' } },
         }}
         name="Default"
     >
@@ -44,13 +47,35 @@ export const Default = (args) => {
 <ArgsTable of="rux-classification-marking"/>
 
 
-#### Custom Marking Labels
+### With Label
 
 Applying the `label` property attribute to the classification custom element adds `label` text value to the marking in addition to its classification text.
 
-#### Marking Type Declaration
+export const WithLabel = (args) => {
+  return html`
+      <div
+        style="display: flex; flex-flow: column; justify-content: center; margin-bottom:50px; position: relative;"
+      >
+        <rux-classification-marking
+          classification="unclassified"
+          label="custom"
+        >
+        </rux-classification-marking>
+      </div>
+  `
+}
 
-By default classification markings rendered in banner format. Applying the `tag` property attribute sets the marking type. The `tag` attribute property defines the classification marking as a tag.
+<Canvas>
+    <Story
+        parameters={{
+            docs: { source: { code: '<rux-classification-marking classification="unclassified" label="custom"></rux-classification-marking>' } },
+        }}
+        name="With Label"
+    >
+        {WithLabel.bind()}
+    </Story>
+</Canvas>
+
 
 export const AllBannerVariants = (args) => {
   return html`
@@ -101,103 +126,82 @@ export const AllBannerVariants = (args) => {
   `
 }
 
+### All Banner Variants
+
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-classification-marking classification="confidential">Button</rux-classification-marking>' } },
-        }}
-        name="All Banner Variants"
-    >
-        {AllBannerVariants.bind()}
+    <Story name="All Banner Variants">
+      {AllBannerVariants.bind()}
     </Story>
 </Canvas>
 
 export const AllTagVariants = () =>  {
-return html`
-    <div
-        style="display: flex; flex-flow: column; justify-content: flex-start; width: 400px; margin:60px auto;"
-    >
-        <div
-            style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
-        >
-            <p
-                style="display:flex; width:225px; font-size:14px; font-style:italic; color:#d5d7d9; margin: 0 0 1rem 0;"
-            >
-                Top Secret//SCI
-            </p>
-            <rux-classification-marking
-                tag
-                classification="top-secret-sci"
-            ></rux-classification-marking>
-        </div>
-        <div
-            style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
-        >
-            <p
-                style="display:flex; width:225px; font-size:14px; font-style:italic; color:#d5d7d9; margin: 0 0 1rem 0;"
-            >
-                Top Secret
-            </p>
-            <rux-classification-marking
-                tag
-                classification="top-secret"
-            ></rux-classification-marking>
-        </div>
-        <div
-            style="display: flex; align-items:baseline;  position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
-        >
-            <p
-                style="display:flex; width:225px; font-size:14px; font-style:italic; color:#d5d7d9; margin: 0 0 1rem 0;"
-            >
-                Secret
-            </p>
-            <rux-classification-marking
-                tag
-                classification="secret"
-            ></rux-classification-marking>
-        </div>
-        <div
-            style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
-        >
-            <p
-                style="display:flex; width:225px; font-size:14px; font-style:italic; color:#d5d7d9; margin: 0 0 1rem 0;"
-            >
-                Confidential
-            </p>
-            <rux-classification-marking
-                tag
-                classification="confidential"
-            ></rux-classification-marking>
-        </div>
-        <div
-            style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
-        >
-            <p
-                style="display:flex; width:225px; font-size:14px; font-style:italic; color:#d5d7d9; margin: 0 0 1rem 0;"
-            >
-                Controlled Unclassified
-            </p>
-            <rux-classification-marking
-                tag
-                classification="controlled"
-            ></rux-classification-marking>
-        </div>
-        <div
-            style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
-        >
-            <p
-                style="display: flex; width:225px; font-size:13px; font-style:italic; color:#d5d7d9; margin: 0 0 1rem 0;"
-            >
-                Uncontrolled Unclassified
-            </p>
-            <rux-classification-marking
-                tag
-                classification="unclassified"
-            ></rux-classification-marking>
-        </div>
-    </div>
-`}
+  return html`
+      <div style="display: flex; flex-flow: column; justify-content: flex-start; width: 400px; margin:60px auto;">
+          <div style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;">
+              <p style="display:flex; width:225px; font-size:14px; font-style:italic; color:#d5d7d9; margin: 0 0 1rem 0;">
+                  Top Secret//SCI
+              </p>
+              <rux-classification-marking
+                  tag
+                  classification="top-secret-sci"
+              ></rux-classification-marking>
+          </div>
+          <div style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;">
+              <p style="display:flex; width:225px; font-size:14px; font-style:italic; color:#d5d7d9; margin: 0 0 1rem 0;">
+                  Top Secret
+              </p>
+              <rux-classification-marking tag classification="top-secret"></rux-classification-marking>
+          </div>
+          <div style="display: flex; align-items:baseline;  position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;">
+              <p style="display:flex; width:225px; font-size:14px; font-style:italic; color:#d5d7d9; margin: 0 0 1rem 0;">
+                  Secret
+              </p>
+              <rux-classification-marking tag classification="secret"></rux-classification-marking>
+          </div>
+          <div style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;">
+              <p
+                  style="display:flex; width:225px; font-size:14px; font-style:italic; color:#d5d7d9; margin: 0 0 1rem 0;"
+              >
+                  Confidential
+              </p>
+              <rux-classification-marking
+                  tag
+                  classification="confidential"
+              ></rux-classification-marking>
+          </div>
+          <div
+              style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
+          >
+              <p
+                  style="display:flex; width:225px; font-size:14px; font-style:italic; color:#d5d7d9; margin: 0 0 1rem 0;"
+              >
+                  Controlled Unclassified
+              </p>
+              <rux-classification-marking
+                  tag
+                  classification="controlled"
+              ></rux-classification-marking>
+          </div>
+          <div
+              style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
+          >
+              <p
+                  style="display: flex; width:225px; font-size:13px; font-style:italic; color:#d5d7d9; margin: 0 0 1rem 0;"
+              >
+                  Uncontrolled Unclassified
+              </p>
+              <rux-classification-marking
+                  tag
+                  classification="unclassified"
+              ></rux-classification-marking>
+          </div>
+      </div>
+  `
+  }
 
+### All Tag Variants
+
+By default classification markings rendered in banner format. Applying the `tag` property attribute sets the marking type. The `tag` attribute property defines the classification marking as a tag.
 
 <Canvas>
     <Story name="All Tag Variants">
