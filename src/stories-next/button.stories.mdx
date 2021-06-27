@@ -19,6 +19,7 @@ Buttons allow users to trigger actions.
 
 export const Default = (args) => {
     return html`
+        <div style="padding: 10%; display: flex; justify-content: center;">
             <rux-button
                 ?disabled="${args.disabled}"
                 ?icon-only="${args.iconOnly}"
@@ -29,12 +30,12 @@ export const Default = (args) => {
                 Button
               </rux-button
             >
+        </div>
     `
 }
 
 <Canvas>
-    <Story
-    name="Default">
+    <Story name="Default">
         {Default.bind()}
     </Story>
 </Canvas>

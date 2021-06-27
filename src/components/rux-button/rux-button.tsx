@@ -17,7 +17,11 @@ export class RuxButton {
     /*
       Hides slotted text from the button by setting rux-button--icon-only class
     */
-    @Prop({ reflect: true }) iconOnly: boolean = false
+    @Prop({
+        attribute: 'icon-only',
+        reflect: true,
+    })
+    iconOnly: boolean = false
     /*
       Changes button style from solid to outline by setting rux-button--outline class
     */
