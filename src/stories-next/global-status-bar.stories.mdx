@@ -128,7 +128,6 @@ export const GlobalStatusBarWithSlotContent = (args) => {
 
 export const GlobalStatusBarWithTabs = (args) => {
     return html`
-        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
             <rux-global-status-bar
                 .includeIcon="${args.includeIcon}"
                 .includeAppState="${args.includeAppState}"
@@ -168,7 +167,6 @@ export const GlobalStatusBarWithTabs = (args) => {
                     </div>
                 </rux-tab-panel>
             </rux-tab-panels>
-        </div>
     `
 }
 

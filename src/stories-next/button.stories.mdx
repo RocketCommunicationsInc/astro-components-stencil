@@ -19,7 +19,6 @@ Buttons allow users to trigger actions.
 
 export const Default = (args) => {
     return html`
-        <div style="padding: 10%; display: flex; justify-content: center;">
             <rux-button
                 ?disabled="${args.disabled}"
                 ?icon-only="${args.iconOnly}"
@@ -30,12 +29,12 @@ export const Default = (args) => {
                 Button
               </rux-button
             >
-        </div>
     `
 }
 
 <Canvas>
-    <Story name="Default">
+    <Story
+    name="Default">
         {Default.bind()}
     </Story>
 </Canvas>
@@ -294,36 +293,6 @@ export const AllVariants = () => {
         {AllVariants.bind()}
     </Story>
 </Canvas>
-
-## Specific Framework Integrations
-<div>
-<rux-tabs small id="tab-set-id-1">
-<rux-tab id="tab-id-1">Vue</rux-tab>
-<rux-tab id="tab-id-2">React</rux-tab>
-<rux-tab id="tab-id-3">Angular</rux-tab>
-</rux-tabs>
-
-<rux-tab-panels aria-labelledby="tab-set-id-1">
-  <rux-tab-panel aria-labelledby="tab-id-1">
-
-```html
-<template>
-    <rux-button-group align="right">
-        <rux-button outline>Cancel</rux-button>
-        <rux-button>Continue</rux-button>
-    </rux-button-group>
-</template>
-```
-
-  </rux-tab-panel>
-  <rux-tab-panel aria-labelledby="tab-id-2">
-    Angular specific setup here
-  </rux-tab-panel>
-  <rux-tab-panel aria-labelledby="tab-id-3">
-    react specific setup here
-  </rux-tab-panel>
-</rux-tab-panels>
-</div>
 
 ## Cherry Picking
 
