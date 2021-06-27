@@ -29,6 +29,7 @@ export const Default = (args) => {
         <div style="display: flex; flex-flow: column; justify-content: center;">
             <rux-notification
                 ?open="${args.open}"
+                .closeAfter="${args.closeAfter}"
                 status="${args.status}"
                 message="${args.message}"
             >
@@ -60,8 +61,8 @@ export const NotificationAutoClose = (args) => {
     return html`
         <div style="display: flex; flex-flow: column; justify-content: center;">
             <rux-notification
-                open="${true}"
-                closeAfter="${args.closeAfter}"
+                open="${args.open}"
+                .closeAfter="${args.closeAfter}"
                 status="${args.status}"
                 message="This is a notification banner. It will disappear in 2000 ms."
             >
@@ -73,6 +74,7 @@ export const NotificationAutoClose = (args) => {
 <Canvas>
     <Story
       args={{
+        open: true,
         closeAfter: 2000
       }}
       name="Auto Close"
