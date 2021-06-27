@@ -1,4 +1,5 @@
 import { create } from '@storybook/theming'
+import Logo from './logo.svg'
 
 let light = create({
     base: 'normal',
@@ -70,7 +71,7 @@ let dark = create({
 
     brandTitle: 'AstroUXDS',
     brandUrl: 'https://astrouxds.com',
-    brandImage: '/img/astro-logo-small-dark.svg',
+    brandImage: Logo,
 })
 
 export default { light, dark }
