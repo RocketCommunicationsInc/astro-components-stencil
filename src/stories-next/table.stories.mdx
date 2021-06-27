@@ -5,11 +5,12 @@ import { html, render } from 'lit-html'
 <Meta
     title="Components/Table"
     component="rux-table"
-    subcomponents={{ 'Rux Button': 'rux-button' }}
     argTypes={extractArgTypes('rux-table')}
 />
 
 # Table
+
+Table is a set of styled wrapper elements that mimic the native HTML table elements.
 
 ## Guidelines
 
@@ -94,6 +95,23 @@ const rowData = agRowData.slice(0).map((item) => {
 ## API
 
 <ArgsTable of="rux-table" />
+
+## Usage
+
+|Native HTML Element|Astro Component|
+|--- |--- |
+|table|rux-table|
+|thead|rux-table-header|
+|tr (in thead)|rux-table-header-row|
+|th|rux-table-header-cell|
+|tbody|rux-table-body|
+|tr (in tbody)|rux-table-row|
+|td|rux-table-cell|
+
+## Limitations
+
+Table uses [CSS Display Table](https://developer.mozilla.org/en-US/docs/Web/CSS/display) under the hood and as a result, there a few limitations.
+For example, colspan and rowspan attributes are currently not supported.
 
 ## Cherry Picking
 
