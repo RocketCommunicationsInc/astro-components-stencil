@@ -65,7 +65,12 @@ export const WithLabel = (args) => {
 }
 
 <Canvas>
-    <Story name="With Label">
+    <Story
+      args={{
+        label: 'customlabel'
+      }}
+      name="With Label"
+    >
         {WithLabel.bind()}
     </Story>
 </Canvas>
