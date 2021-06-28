@@ -82,8 +82,6 @@ export class RuxModal {
             'rux-button:not([hidden])'
         )
 
-        console.log('buttonSet', buttonSet)
-
         if (buttonSet.length > 0) {
             const defaultButton = buttonSet[buttonSet.length - 1]
             return defaultButton
