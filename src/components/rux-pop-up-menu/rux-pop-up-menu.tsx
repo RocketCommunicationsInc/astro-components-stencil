@@ -54,12 +54,16 @@ export class RuxPopUpMenu {
     this._handleClick = this._handleClick.bind(this)
     this._handleOutsideClick = this._handleOutsideClick.bind(this)
 
-    if (!this.anchorEl) {
-      this.anchorEl = this.el.parentElement.querySelector(`[aria-controls="${this.el.id}"]`);
-      this.triggerEl = this.anchorEl
-      this.triggerEl.addEventListener('mousedown', this._handleClick);
+    if(!this.triggerEl) {
+      if (!this.anchorEl) {
+        this.triggerEl = this.el.parentElement.querySelector(`[aria-controls="${this.el.id}"]`);
+        this.anchorEl = this.triggerEl
+        this.triggerEl.addEventListener('mousedown', this._handleClick);
+      } else {
+        this.triggerEl = document.querySelector(`[aria-controls="${this.el.id}"]`);
+        this.triggerEl.addEventListener('mousedown', this._handleClick)
+      }
     } else {
-      this.triggerEl = document.querySelector(`[aria-controls="${this.el.id}"]`);
       this.triggerEl.addEventListener('mousedown', this._handleClick)
     }
   }
