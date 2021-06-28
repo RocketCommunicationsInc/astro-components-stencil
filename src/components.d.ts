@@ -5368,25 +5368,25 @@ export namespace Components {
     }
     interface RuxModal {
         /**
-          * Text for confirmation button
+         * Text for confirmation button
          */
-        "confirmText": string;
+        confirmText: string
         /**
-          * Text for close button
+         * Text for close button
          */
-        "denyText": string;
+        denyText: string
         /**
-          * Modal body message
+         * Modal body message
          */
-        "modalMessage": string;
+        modalMessage: string
         /**
-          * Modal header title
+         * Modal header title
          */
-        "modalTitle": string;
+        modalTitle: string
         /**
-          * Shows and hides modal
+         * Shows and hides modal
          */
-        "open": boolean;
+        open: boolean
     }
     interface RuxMonitoringIcon {
         /**
@@ -5459,8 +5459,6 @@ export namespace Components {
         status: Status
     }
     interface RuxProgress {
-        "hideLabel": boolean;
-        "max": number;
         /**
          * Displays text output of progress as a percentage. Note: when using a max value other than 100 output is displated as value/max (e.g., 1450/2000)
          */
@@ -12944,18 +12942,15 @@ declare global {
         extends Components.RuxIconZoomOutMap,
             HTMLStencilElement {}
     var HTMLRuxIconZoomOutMapElement: {
-        prototype: HTMLRuxIconZoomOutMapElement;
-        new (): HTMLRuxIconZoomOutMapElement;
-    };
-    interface HTMLRuxModalElement extends Components.RuxModal, HTMLStencilElement {
-    }
-    var HTMLRuxModalElement: {
-        prototype: HTMLRuxModalElement;
-        new (): HTMLRuxModalElement;
-    };
-    interface HTMLRuxMonitoringIconElement extends Components.RuxMonitoringIcon, HTMLStencilElement {
         prototype: HTMLRuxIconZoomOutMapElement
         new (): HTMLRuxIconZoomOutMapElement
+    }
+    interface HTMLRuxModalElement
+        extends Components.RuxModal,
+            HTMLStencilElement {}
+    var HTMLRuxModalElement: {
+        prototype: HTMLRuxModalElement
+        new (): HTMLRuxModalElement
     }
     interface HTMLRuxMonitoringIconElement
         extends Components.RuxMonitoringIcon,
@@ -14135,6 +14130,7 @@ declare global {
         'rux-icon-zoom-in-map': HTMLRuxIconZoomInMapElement
         'rux-icon-zoom-out': HTMLRuxIconZoomOutElement
         'rux-icon-zoom-out-map': HTMLRuxIconZoomOutMapElement
+        'rux-modal': HTMLRuxModalElement
         'rux-monitoring-icon': HTMLRuxMonitoringIconElement
         'rux-monitoring-progress-icon': HTMLRuxMonitoringProgressIconElement
         'rux-notification': HTMLRuxNotificationElement
@@ -19514,29 +19510,29 @@ declare namespace LocalJSX {
     }
     interface RuxModal {
         /**
-          * Text for confirmation button
+         * Text for confirmation button
          */
-        "confirmText"?: string;
+        confirmText?: string
         /**
-          * Text for close button
+         * Text for close button
          */
-        "denyText"?: string;
+        denyText?: string
         /**
-          * Modal body message
+         * Modal body message
          */
-        "modalMessage": string;
+        modalMessage: string
         /**
-          * Modal header title
+         * Modal header title
          */
-        "modalTitle": string;
+        modalTitle: string
         /**
-          * Event that is fired when modal closes
+         * Event that is fired when modal closes
          */
-        "onModalClosed"?: (event: CustomEvent<boolean>) => void;
+        onModalClosed?: (event: CustomEvent<boolean>) => void
         /**
-          * Shows and hides modal
+         * Shows and hides modal
          */
-        "open": boolean;
+        open: boolean
     }
     interface RuxMonitoringIcon {
         /**
@@ -20742,6 +20738,7 @@ declare namespace LocalJSX {
         'rux-icon-zoom-in-map': RuxIconZoomInMap
         'rux-icon-zoom-out': RuxIconZoomOut
         'rux-icon-zoom-out-map': RuxIconZoomOutMap
+        'rux-modal': RuxModal
         'rux-monitoring-icon': RuxMonitoringIcon
         'rux-monitoring-progress-icon': RuxMonitoringProgressIcon
         'rux-notification': RuxNotification
@@ -22885,6 +22882,8 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>
             'rux-icon-zoom-out-map': LocalJSX.RuxIconZoomOutMap &
                 JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>
+            'rux-modal': LocalJSX.RuxModal &
+                JSXBase.HTMLAttributes<HTMLRuxModalElement>
             'rux-monitoring-icon': LocalJSX.RuxMonitoringIcon &
                 JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>
             'rux-monitoring-progress-icon': LocalJSX.RuxMonitoringProgressIcon &
