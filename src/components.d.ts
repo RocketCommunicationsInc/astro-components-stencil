@@ -59,6 +59,52 @@ export namespace Components {
          */
         timezone: string
     }
+    interface RuxDatetime {
+        /**
+         * The date time to be formatted
+         */
+        date: Date | string
+        /**
+         * Format options for day
+         */
+        day?: 'numeric' | '2-digit'
+        /**
+         * Format options for hour
+         */
+        hour?: 'numeric' | '2-digit'
+        /**
+         * Display date in 12 hour time.
+         */
+        hour12: boolean
+        /**
+         * The locale
+         */
+        locale: string
+        /**
+         * Format options for minute
+         */
+        minute?: 'numeric' | '2-digit'
+        /**
+         * Format options for month
+         */
+        month?: 'numeric' | '2-digit' | 'narrow' | 'short' | 'long'
+        /**
+         * Format options for second
+         */
+        second?: 'numeric' | '2-digit'
+        /**
+         * Format options for Timezone
+         */
+        timeZone?: string
+        /**
+         * Format options for Timezone name
+         */
+        timeZoneName?: 'short' | 'long'
+        /**
+         * Format options for year
+         */
+        year?: 'numeric' | '2-digit'
+    }
     interface RuxGlobalStatusBar {
         /**
          * Sets the domain of the application to be displayed in the app-meta element
@@ -5366,6 +5412,28 @@ export namespace Components {
         icon: string
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
+    interface RuxModal {
+        /**
+         * Text for confirmation button
+         */
+        confirmText: string
+        /**
+         * Text for close button
+         */
+        denyText: string
+        /**
+         * Modal body message
+         */
+        modalMessage: string
+        /**
+         * Modal header title
+         */
+        modalTitle: string
+        /**
+         * Shows and hides modal
+         */
+        open: boolean
+    }
     interface RuxMonitoringIcon {
         /**
          * Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
@@ -5530,6 +5598,13 @@ declare global {
     var HTMLRuxClockElement: {
         prototype: HTMLRuxClockElement
         new (): HTMLRuxClockElement
+    }
+    interface HTMLRuxDatetimeElement
+        extends Components.RuxDatetime,
+            HTMLStencilElement {}
+    var HTMLRuxDatetimeElement: {
+        prototype: HTMLRuxDatetimeElement
+        new (): HTMLRuxDatetimeElement
     }
     interface HTMLRuxGlobalStatusBarElement
         extends Components.RuxGlobalStatusBar,
@@ -12923,6 +12998,13 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement
         new (): HTMLRuxIconZoomOutMapElement
     }
+    interface HTMLRuxModalElement
+        extends Components.RuxModal,
+            HTMLStencilElement {}
+    var HTMLRuxModalElement: {
+        prototype: HTMLRuxModalElement
+        new (): HTMLRuxModalElement
+    }
     interface HTMLRuxMonitoringIconElement
         extends Components.RuxMonitoringIcon,
             HTMLStencilElement {}
@@ -13045,6 +13127,7 @@ declare global {
         'rux-button-group': HTMLRuxButtonGroupElement
         'rux-classification-marking': HTMLRuxClassificationMarkingElement
         'rux-clock': HTMLRuxClockElement
+        'rux-datetime': HTMLRuxDatetimeElement
         'rux-global-status-bar': HTMLRuxGlobalStatusBarElement
         'rux-icon': HTMLRuxIconElement
         'rux-icon-360': HTMLRuxIcon360Element
@@ -14101,6 +14184,7 @@ declare global {
         'rux-icon-zoom-in-map': HTMLRuxIconZoomInMapElement
         'rux-icon-zoom-out': HTMLRuxIconZoomOutElement
         'rux-icon-zoom-out-map': HTMLRuxIconZoomOutMapElement
+        'rux-modal': HTMLRuxModalElement
         'rux-monitoring-icon': HTMLRuxMonitoringIconElement
         'rux-monitoring-progress-icon': HTMLRuxMonitoringProgressIconElement
         'rux-notification': HTMLRuxNotificationElement
@@ -14170,6 +14254,52 @@ declare namespace LocalJSX {
          * Accepts the [IANA timezone string format](https://www.iana.org/time-zones) such as `'America/Los_Angeles'` or any single-character designation for a [military timezones](https://en.wikipedia.org/wiki/List_of_military_time_zones) (`'A'` through `'Z'`, excluding `'J'`), both case-insensitive. If no value for timezone is provided, the clock will use `'UTC'`. See [`toLocaleString()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString#Parameters) for more details.
          */
         timezone?: string
+    }
+    interface RuxDatetime {
+        /**
+         * The date time to be formatted
+         */
+        date?: Date | string
+        /**
+         * Format options for day
+         */
+        day?: 'numeric' | '2-digit'
+        /**
+         * Format options for hour
+         */
+        hour?: 'numeric' | '2-digit'
+        /**
+         * Display date in 12 hour time.
+         */
+        hour12?: boolean
+        /**
+         * The locale
+         */
+        locale?: string
+        /**
+         * Format options for minute
+         */
+        minute?: 'numeric' | '2-digit'
+        /**
+         * Format options for month
+         */
+        month?: 'numeric' | '2-digit' | 'narrow' | 'short' | 'long'
+        /**
+         * Format options for second
+         */
+        second?: 'numeric' | '2-digit'
+        /**
+         * Format options for Timezone
+         */
+        timeZone?: string
+        /**
+         * Format options for Timezone name
+         */
+        timeZoneName?: 'short' | 'long'
+        /**
+         * Format options for year
+         */
+        year?: 'numeric' | '2-digit'
     }
     interface RuxGlobalStatusBar {
         /**
@@ -19478,6 +19608,32 @@ declare namespace LocalJSX {
         icon?: string
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
+    interface RuxModal {
+        /**
+         * Text for confirmation button
+         */
+        confirmText?: string
+        /**
+         * Text for close button
+         */
+        denyText?: string
+        /**
+         * Modal body message
+         */
+        modalMessage: string
+        /**
+         * Modal header title
+         */
+        modalTitle: string
+        /**
+         * Event that is fired when modal closes
+         */
+        onModalClosed?: (event: CustomEvent<boolean>) => void
+        /**
+         * Shows and hides modal
+         */
+        open: boolean
+    }
     interface RuxMonitoringIcon {
         /**
          * Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
@@ -19626,6 +19782,7 @@ declare namespace LocalJSX {
         'rux-button-group': RuxButtonGroup
         'rux-classification-marking': RuxClassificationMarking
         'rux-clock': RuxClock
+        'rux-datetime': RuxDatetime
         'rux-global-status-bar': RuxGlobalStatusBar
         'rux-icon': RuxIcon
         'rux-icon-360': RuxIcon360
@@ -20682,6 +20839,7 @@ declare namespace LocalJSX {
         'rux-icon-zoom-in-map': RuxIconZoomInMap
         'rux-icon-zoom-out': RuxIconZoomOut
         'rux-icon-zoom-out-map': RuxIconZoomOutMap
+        'rux-modal': RuxModal
         'rux-monitoring-icon': RuxMonitoringIcon
         'rux-monitoring-progress-icon': RuxMonitoringProgressIcon
         'rux-notification': RuxNotification
@@ -20713,6 +20871,8 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxClassificationMarkingElement>
             'rux-clock': LocalJSX.RuxClock &
                 JSXBase.HTMLAttributes<HTMLRuxClockElement>
+            'rux-datetime': LocalJSX.RuxDatetime &
+                JSXBase.HTMLAttributes<HTMLRuxDatetimeElement>
             'rux-global-status-bar': LocalJSX.RuxGlobalStatusBar &
                 JSXBase.HTMLAttributes<HTMLRuxGlobalStatusBarElement>
             'rux-icon': LocalJSX.RuxIcon &
@@ -22825,6 +22985,8 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>
             'rux-icon-zoom-out-map': LocalJSX.RuxIconZoomOutMap &
                 JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>
+            'rux-modal': LocalJSX.RuxModal &
+                JSXBase.HTMLAttributes<HTMLRuxModalElement>
             'rux-monitoring-icon': LocalJSX.RuxMonitoringIcon &
                 JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>
             'rux-monitoring-progress-icon': LocalJSX.RuxMonitoringProgressIcon &
