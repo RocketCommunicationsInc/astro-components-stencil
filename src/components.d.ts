@@ -77,6 +77,52 @@ export namespace Components {
          */
         timezone: string
     }
+    interface RuxDatetime {
+        /**
+         * The date time to be formatted
+         */
+        date: Date | string
+        /**
+         * Format options for day
+         */
+        day?: 'numeric' | '2-digit'
+        /**
+         * Format options for hour
+         */
+        hour?: 'numeric' | '2-digit'
+        /**
+         * Display date in 12 hour time.
+         */
+        hour12: boolean
+        /**
+         * The locale
+         */
+        locale: string
+        /**
+         * Format options for minute
+         */
+        minute?: 'numeric' | '2-digit'
+        /**
+         * Format options for month
+         */
+        month?: 'numeric' | '2-digit' | 'narrow' | 'short' | 'long'
+        /**
+         * Format options for second
+         */
+        second?: 'numeric' | '2-digit'
+        /**
+         * Format options for Timezone
+         */
+        timeZone?: string
+        /**
+         * Format options for Timezone name
+         */
+        timeZoneName?: 'short' | 'long'
+        /**
+         * Format options for year
+         */
+        year?: 'numeric' | '2-digit'
+    }
     interface RuxGlobalStatusBar {
         /**
          * Sets the domain of the application to be displayed in the app-meta element
@@ -10781,6 +10827,18 @@ export namespace Components {
     }
     interface RuxTabPanel {}
     interface RuxTabPanels {}
+    interface RuxTable {}
+    interface RuxTableBody {}
+    interface RuxTableCell {}
+    interface RuxTableHeader {}
+    interface RuxTableHeaderCell {}
+    interface RuxTableHeaderRow {}
+    interface RuxTableRow {
+        /**
+         * Changes the background color of the row. Can be applied to multiple rows at once.
+         */
+        selected: boolean
+    }
     interface RuxTabs {
         /**
          * Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
@@ -10820,6 +10878,13 @@ declare global {
     var HTMLRuxClockElement: {
         prototype: HTMLRuxClockElement
         new (): HTMLRuxClockElement
+    }
+    interface HTMLRuxDatetimeElement
+        extends Components.RuxDatetime,
+            HTMLStencilElement {}
+    var HTMLRuxDatetimeElement: {
+        prototype: HTMLRuxDatetimeElement
+        new (): HTMLRuxDatetimeElement
     }
     interface HTMLRuxGlobalStatusBarElement
         extends Components.RuxGlobalStatusBar,
@@ -18274,6 +18339,55 @@ declare global {
         prototype: HTMLRuxTabPanelsElement
         new (): HTMLRuxTabPanelsElement
     }
+    interface HTMLRuxTableElement
+        extends Components.RuxTable,
+            HTMLStencilElement {}
+    var HTMLRuxTableElement: {
+        prototype: HTMLRuxTableElement
+        new (): HTMLRuxTableElement
+    }
+    interface HTMLRuxTableBodyElement
+        extends Components.RuxTableBody,
+            HTMLStencilElement {}
+    var HTMLRuxTableBodyElement: {
+        prototype: HTMLRuxTableBodyElement
+        new (): HTMLRuxTableBodyElement
+    }
+    interface HTMLRuxTableCellElement
+        extends Components.RuxTableCell,
+            HTMLStencilElement {}
+    var HTMLRuxTableCellElement: {
+        prototype: HTMLRuxTableCellElement
+        new (): HTMLRuxTableCellElement
+    }
+    interface HTMLRuxTableHeaderElement
+        extends Components.RuxTableHeader,
+            HTMLStencilElement {}
+    var HTMLRuxTableHeaderElement: {
+        prototype: HTMLRuxTableHeaderElement
+        new (): HTMLRuxTableHeaderElement
+    }
+    interface HTMLRuxTableHeaderCellElement
+        extends Components.RuxTableHeaderCell,
+            HTMLStencilElement {}
+    var HTMLRuxTableHeaderCellElement: {
+        prototype: HTMLRuxTableHeaderCellElement
+        new (): HTMLRuxTableHeaderCellElement
+    }
+    interface HTMLRuxTableHeaderRowElement
+        extends Components.RuxTableHeaderRow,
+            HTMLStencilElement {}
+    var HTMLRuxTableHeaderRowElement: {
+        prototype: HTMLRuxTableHeaderRowElement
+        new (): HTMLRuxTableHeaderRowElement
+    }
+    interface HTMLRuxTableRowElement
+        extends Components.RuxTableRow,
+            HTMLStencilElement {}
+    var HTMLRuxTableRowElement: {
+        prototype: HTMLRuxTableRowElement
+        new (): HTMLRuxTableRowElement
+    }
     interface HTMLRuxTabsElement
         extends Components.RuxTabs,
             HTMLStencilElement {}
@@ -18286,6 +18400,7 @@ declare global {
         'rux-button-group': HTMLRuxButtonGroupElement
         'rux-classification-marking': HTMLRuxClassificationMarkingElement
         'rux-clock': HTMLRuxClockElement
+        'rux-datetime': HTMLRuxDatetimeElement
         'rux-global-status-bar': HTMLRuxGlobalStatusBarElement
         'rux-icon': HTMLRuxIconElement
         'rux-icon-360': HTMLRuxIcon360Element
@@ -19351,6 +19466,13 @@ declare global {
         'rux-tab': HTMLRuxTabElement
         'rux-tab-panel': HTMLRuxTabPanelElement
         'rux-tab-panels': HTMLRuxTabPanelsElement
+        'rux-table': HTMLRuxTableElement
+        'rux-table-body': HTMLRuxTableBodyElement
+        'rux-table-cell': HTMLRuxTableCellElement
+        'rux-table-header': HTMLRuxTableHeaderElement
+        'rux-table-header-cell': HTMLRuxTableHeaderCellElement
+        'rux-table-header-row': HTMLRuxTableHeaderRowElement
+        'rux-table-row': HTMLRuxTableRowElement
         'rux-tabs': HTMLRuxTabsElement
     }
 }
@@ -19422,6 +19544,52 @@ declare namespace LocalJSX {
          * Accepts the [IANA timezone string format](https://www.iana.org/time-zones) such as `'America/Los_Angeles'` or any single-character designation for a [military timezones](https://en.wikipedia.org/wiki/List_of_military_time_zones) (`'A'` through `'Z'`, excluding `'J'`), both case-insensitive. If no value for timezone is provided, the clock will use `'UTC'`. See [`toLocaleString()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString#Parameters) for more details.
          */
         timezone?: string
+    }
+    interface RuxDatetime {
+        /**
+         * The date time to be formatted
+         */
+        date?: Date | string
+        /**
+         * Format options for day
+         */
+        day?: 'numeric' | '2-digit'
+        /**
+         * Format options for hour
+         */
+        hour?: 'numeric' | '2-digit'
+        /**
+         * Display date in 12 hour time.
+         */
+        hour12?: boolean
+        /**
+         * The locale
+         */
+        locale?: string
+        /**
+         * Format options for minute
+         */
+        minute?: 'numeric' | '2-digit'
+        /**
+         * Format options for month
+         */
+        month?: 'numeric' | '2-digit' | 'narrow' | 'short' | 'long'
+        /**
+         * Format options for second
+         */
+        second?: 'numeric' | '2-digit'
+        /**
+         * Format options for Timezone
+         */
+        timeZone?: string
+        /**
+         * Format options for Timezone name
+         */
+        timeZoneName?: 'short' | 'long'
+        /**
+         * Format options for year
+         */
+        year?: 'numeric' | '2-digit'
     }
     interface RuxGlobalStatusBar {
         /**
@@ -30138,6 +30306,18 @@ declare namespace LocalJSX {
             event: CustomEvent<HTMLRuxTabPanelsElement[]>
         ) => void
     }
+    interface RuxTable {}
+    interface RuxTableBody {}
+    interface RuxTableCell {}
+    interface RuxTableHeader {}
+    interface RuxTableHeaderCell {}
+    interface RuxTableHeaderRow {}
+    interface RuxTableRow {
+        /**
+         * Changes the background color of the row. Can be applied to multiple rows at once.
+         */
+        selected?: boolean
+    }
     interface RuxTabs {
         /**
          * Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
@@ -30153,6 +30333,7 @@ declare namespace LocalJSX {
         'rux-button-group': RuxButtonGroup
         'rux-classification-marking': RuxClassificationMarking
         'rux-clock': RuxClock
+        'rux-datetime': RuxDatetime
         'rux-global-status-bar': RuxGlobalStatusBar
         'rux-icon': RuxIcon
         'rux-icon-360': RuxIcon360
@@ -31218,6 +31399,13 @@ declare namespace LocalJSX {
         'rux-tab': RuxTab
         'rux-tab-panel': RuxTabPanel
         'rux-tab-panels': RuxTabPanels
+        'rux-table': RuxTable
+        'rux-table-body': RuxTableBody
+        'rux-table-cell': RuxTableCell
+        'rux-table-header': RuxTableHeader
+        'rux-table-header-cell': RuxTableHeaderCell
+        'rux-table-header-row': RuxTableHeaderRow
+        'rux-table-row': RuxTableRow
         'rux-tabs': RuxTabs
     }
 }
@@ -31233,6 +31421,8 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxClassificationMarkingElement>
             'rux-clock': LocalJSX.RuxClock &
                 JSXBase.HTMLAttributes<HTMLRuxClockElement>
+            'rux-datetime': LocalJSX.RuxDatetime &
+                JSXBase.HTMLAttributes<HTMLRuxDatetimeElement>
             'rux-global-status-bar': LocalJSX.RuxGlobalStatusBar &
                 JSXBase.HTMLAttributes<HTMLRuxGlobalStatusBarElement>
             'rux-icon': LocalJSX.RuxIcon &
@@ -33363,6 +33553,20 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxTabPanelElement>
             'rux-tab-panels': LocalJSX.RuxTabPanels &
                 JSXBase.HTMLAttributes<HTMLRuxTabPanelsElement>
+            'rux-table': LocalJSX.RuxTable &
+                JSXBase.HTMLAttributes<HTMLRuxTableElement>
+            'rux-table-body': LocalJSX.RuxTableBody &
+                JSXBase.HTMLAttributes<HTMLRuxTableBodyElement>
+            'rux-table-cell': LocalJSX.RuxTableCell &
+                JSXBase.HTMLAttributes<HTMLRuxTableCellElement>
+            'rux-table-header': LocalJSX.RuxTableHeader &
+                JSXBase.HTMLAttributes<HTMLRuxTableHeaderElement>
+            'rux-table-header-cell': LocalJSX.RuxTableHeaderCell &
+                JSXBase.HTMLAttributes<HTMLRuxTableHeaderCellElement>
+            'rux-table-header-row': LocalJSX.RuxTableHeaderRow &
+                JSXBase.HTMLAttributes<HTMLRuxTableHeaderRowElement>
+            'rux-table-row': LocalJSX.RuxTableRow &
+                JSXBase.HTMLAttributes<HTMLRuxTableRowElement>
             'rux-tabs': LocalJSX.RuxTabs &
                 JSXBase.HTMLAttributes<HTMLRuxTabsElement>
         }
