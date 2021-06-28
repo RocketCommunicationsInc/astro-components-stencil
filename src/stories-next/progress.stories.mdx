@@ -77,7 +77,7 @@ export const DeterminateProgressMax = (args) => {
 export const IndeterminateProgress = (args) => html`
     <div style="margin: 3rem auto; max-width: 5rem; text-align: center;">
         <rux-progress
-            value="${args.value}"
+            .value="${args.value}"
             .max=${args.max}
             ?hide-label="${args.hideLabel}"
         ></rux-progress>
