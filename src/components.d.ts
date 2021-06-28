@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal'
 import { Classification, Status } from './common/commonTypes.module'
 import { RangeItem } from './components/rux-monitoring-progress-icon/rux-monitoring-progress-icon'
+import { SegmentedButton } from './components/rux-segmented-button/rux-segmented-button'
 import { SwitchChangeEvent } from './components/rux-switch/rux-switch.model'
 export namespace Components {
     interface RuxButton {
@@ -5495,6 +5496,10 @@ export namespace Components {
          * Current progress value between 0 and 100 (or the max, if defined below).
          */
         value: number
+    }
+    interface RuxSegmentedButton {
+        data: SegmentedButton[]
+        selected: string
     }
     interface RuxStatus {
         status: Status
@@ -13004,6 +13009,13 @@ declare global {
         prototype: HTMLRuxProgressElement
         new (): HTMLRuxProgressElement
     }
+    interface HTMLRuxSegmentedButtonElement
+        extends Components.RuxSegmentedButton,
+            HTMLStencilElement {}
+    var HTMLRuxSegmentedButtonElement: {
+        prototype: HTMLRuxSegmentedButtonElement
+        new (): HTMLRuxSegmentedButtonElement
+    }
     interface HTMLRuxStatusElement
         extends Components.RuxStatus,
             HTMLStencilElement {}
@@ -14159,6 +14171,7 @@ declare global {
         'rux-monitoring-progress-icon': HTMLRuxMonitoringProgressIconElement
         'rux-notification': HTMLRuxNotificationElement
         'rux-progress': HTMLRuxProgressElement
+        'rux-segmented-button': HTMLRuxSegmentedButtonElement
         'rux-status': HTMLRuxStatusElement
         'rux-switch': HTMLRuxSwitchElement
         'rux-tab': HTMLRuxTabElement
@@ -19662,6 +19675,14 @@ declare namespace LocalJSX {
          */
         value?: number
     }
+    interface RuxSegmentedButton {
+        data?: SegmentedButton[]
+        /**
+         * Emitted when the value property has changed.
+         */
+        'onRux-change'?: (event: CustomEvent<any>) => void
+        selected?: string
+    }
     interface RuxStatus {
         status?: Status
     }
@@ -20787,6 +20808,7 @@ declare namespace LocalJSX {
         'rux-monitoring-progress-icon': RuxMonitoringProgressIcon
         'rux-notification': RuxNotification
         'rux-progress': RuxProgress
+        'rux-segmented-button': RuxSegmentedButton
         'rux-status': RuxStatus
         'rux-switch': RuxSwitch
         'rux-tab': RuxTab
@@ -22936,6 +22958,8 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxNotificationElement>
             'rux-progress': LocalJSX.RuxProgress &
                 JSXBase.HTMLAttributes<HTMLRuxProgressElement>
+            'rux-segmented-button': LocalJSX.RuxSegmentedButton &
+                JSXBase.HTMLAttributes<HTMLRuxSegmentedButtonElement>
             'rux-status': LocalJSX.RuxStatus &
                 JSXBase.HTMLAttributes<HTMLRuxStatusElement>
             'rux-switch': LocalJSX.RuxSwitch &
