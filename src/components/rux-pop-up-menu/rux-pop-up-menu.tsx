@@ -10,7 +10,7 @@ export class RuxPopUpMenu {
 
   @Element() el!: HTMLRuxPopUpMenuElement
 
-  @State() _anchorEl: HTMLElement
+  // @State() _anchorEl: HTMLElement
   
   /**
    * Optional element to trigger opening and closing of the menu.
@@ -22,7 +22,7 @@ export class RuxPopUpMenu {
    * Element to anchor the menu to. If none is given the menu will anchor
    * to the trigger element where aria-controls === menu id
    */
-  @Prop() anchorEl?: HTMLElement
+  @Prop({mutable: true}) anchorEl?: HTMLElement
   
   /**
    * Boolean which controls when to show the menu
@@ -54,11 +54,10 @@ export class RuxPopUpMenu {
     this._handleOutsideClick = this._handleOutsideClick.bind(this)
 
     if (!this.anchorEl) {
-      this._anchorEl = this.el.parentElement.querySelector(`[aria-controls="${this.el.id}"]`);
-      this.triggerEl = this._anchorEl
+      this.anchorEl = this.el.parentElement.querySelector(`[aria-controls="${this.el.id}"]`);
+      this.triggerEl = this.anchorEl
       this.triggerEl.addEventListener('mousedown', this._handleClick);
     } else {
-      this._anchorEl = this.anchorEl
       this.triggerEl = document.querySelector(`[aria-controls="${this.el.id}"]`);
       this.triggerEl.addEventListener('mousedown', this._handleClick)
     }
@@ -118,7 +117,7 @@ export class RuxPopUpMenu {
 
   _setMenuPosition() {
     const menuBounds = this.el.getBoundingClientRect();
-    const anchorBounds = this._anchorEl.getBoundingClientRect();
+    const anchorBounds = this.anchorEl.getBoundingClientRect();
     const caret = parseInt(getComputedStyle(this.el, ':after').height);
     let top: number
     let left: number
@@ -168,7 +167,7 @@ export class RuxPopUpMenu {
       clearTimeout(debounce);
     }, 10);
 
-    this._anchorEl.removeEventListener('mousedown', this._handleClick);
+    this.anchorEl.removeEventListener('mousedown', this._handleClick);
 
     this.menuDidOpen.emit()
   }
@@ -180,7 +179,7 @@ export class RuxPopUpMenu {
     window.removeEventListener('mousedown', this._handleOutsideClick);
     window.removeEventListener('resize', this._setMenuPosition);
 
-    this._anchorEl.addEventListener('mousedown', this._handleClick);
+    this.anchorEl.addEventListener('mousedown', this._handleClick);
   }
 
   render() {
