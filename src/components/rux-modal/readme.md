@@ -58,7 +58,7 @@ Pass properties as attributes of the Astro Rux Modal custom element:
 | `denyText`                  | `deny-text`     | Text for close button        | `string`  | `'Cancel'`  |
 | `modalMessage` _(required)_ | `modal-message` | Modal body message           | `string`  | `undefined` |
 | `modalTitle` _(required)_   | `modal-title`   | Modal header title           | `string`  | `undefined` |
-| `open`                      | `open`          | Shows and hides modal        | `boolean` | `false`     |
+| `open` _(required)_         | `open`          | Shows and hides modal        | `boolean` | `undefined` |
 
 ## Events
 

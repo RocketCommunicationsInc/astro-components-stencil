@@ -1,4 +1,13 @@
-import { Component, h, Prop, Event, EventEmitter } from '@stencil/core'
+import {
+    Component,
+    h,
+    Prop,
+    Event,
+    EventEmitter,
+    Element,
+    Listen,
+    Watch,
+} from '@stencil/core'
 
 @Component({
     tag: 'rux-modal',
@@ -36,9 +45,31 @@ export class RuxModal {
     })
     modalCloseEvent: EventEmitter<boolean>
 
+    @Element() private element: HTMLElement
+
+    @Listen('keydown')
+    handleKeyDown(ev: KeyboardEvent) {
+        if (ev.key === 'Enter') {
+            const button = this._getDefaultButton()
+            if (button) {
+                button.click()
+            }
+        }
+    }
+
+    @Watch('open')
+    validateName(isOpen: boolean) {
+        if (isOpen) {
+            const button = this._getDefaultButton()
+            if (button) {
+                button.focus()
+            }
+        }
+    }
+
     constructor() {}
 
-    _handleModalChoice(e: MouseEvent) {
+    private _handleModalChoice(e: MouseEvent) {
         // convert string value to boolean
         const target = e.currentTarget as HTMLElement
         const choice = target.dataset.value === 'true'
@@ -46,8 +77,31 @@ export class RuxModal {
         this.open = false
     }
 
+    private _getDefaultButton(): HTMLElement | null {
+        const buttonSet: NodeListOf<HTMLElement> = this.element.shadowRoot.querySelectorAll(
+            'rux-button:not([hidden])'
+        )
+
+        console.log('buttonSet', buttonSet)
+
+        if (buttonSet.length > 0) {
+            const defaultButton = buttonSet[buttonSet.length - 1]
+            return defaultButton
+        }
+
+        return null
+    }
+
     connectedCallback() {
         this.validate('rux-modal', ['open', 'modalMessage', 'modalTitle'])
+    }
+
+    componentDidRender() {
+        const button = this._getDefaultButton()
+        if (button) {
+            button.setAttribute('tabindex', '0')
+            setTimeout(() => button.focus())
+        }
     }
 
     render() {
