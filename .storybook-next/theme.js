@@ -15,7 +15,7 @@ let light = create({
 
     // Typography
     fontBase:
-        '"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;y',
+        '"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;',
     fontCode: '"Roboto Mono", monospace',
 
     // Text colors
