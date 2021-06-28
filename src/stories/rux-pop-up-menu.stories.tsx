@@ -1,5 +1,5 @@
 import { html, render } from 'lit-html';
-import { withKnobs, boolean, object } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 // import { withConsole } from '@storybook/addon-console';
 import Readme from '../components/rux-pop-up-menu/readme.md';
 
@@ -9,9 +9,6 @@ export default {
 };
 
 export const PopUpMenu = () => {
-  // const selectedMenuItem:object = {};
-  // selectedMenuItem.value = 'test';
-
   window.addEventListener('menuItemClicked', (e: CustomEvent) => {
     console.log('Pop Up Menu Item Selected', e.detail.value);
   });
