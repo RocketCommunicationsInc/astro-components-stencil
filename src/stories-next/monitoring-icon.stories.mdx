@@ -136,16 +136,21 @@ export const AllVariants = (args) => {
 }
 
 <Canvas>
-    <Story
-        parameters={{
-            docs: { source: { code: '<rux-button>Button</rux-button>' } },
-        }}
-        name="All Variants"
-    >
+    <Story name="All Variants">
         {AllVariants.bind()}
     </Story>
 </Canvas>
 
 ## Cherry Picking
 
-Coming Soon
+If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
+
+```js
+import { RuxMonitoringIcon } from '@astrouxds/astro-web-components/dist/components/rux-monitoring-icon'
+import { RuxStatus } from '@astrouxds/astro-web-components/dist/components/rux-status'
+// RuxIcon
+
+customElements.define('rux-monitoring-icon', RuxMonitoringIcon)
+customElements.define('rux-status', RuxStatus)
+// RuxIcon customElements.define()
+```

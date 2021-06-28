@@ -132,3 +132,12 @@ export const AllVariants = () => html`
         {AllVariants.bind()}
     </Story>
 </Canvas>
+
+## Cherry Picking
+
+If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
+
+```js
+import { RuxNotification } from '@astrouxds/astro-web-components/dist/components/rux-notification'
+customElements.define('rux-notification', RuxNotification)
+```

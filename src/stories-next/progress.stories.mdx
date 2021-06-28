@@ -72,7 +72,7 @@ export const DeterminateProgressMax = (args) => {
     </Story>
 </Canvas>
 
-### Indeterminate Progress
+## Indeterminate Progress
 
 export const IndeterminateProgress = (args) => html`
     <div style="margin: 3rem auto; max-width: 5rem; text-align: center;">
@@ -90,6 +90,12 @@ export const IndeterminateProgress = (args) => html`
     </Story>
 </Canvas>
 
-## Cherry Picking
+### Cherry Picking
 
-Coming Soon
+If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
+
+```js
+import { RuxProgress } from '@astrouxds/astro-web-components/dist/components/rux-progress'
+customElements.define('rux-progress', RuxProgress)
+```
+

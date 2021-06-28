@@ -217,5 +217,9 @@ By default classification markings rendered in banner format. Applying the `tag`
 
 ## Cherry Picking
 
-Coming Soon
+If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
 
+```js
+import { RuxClassificationMarking } from '@astrouxds/astro-web-components/dist/components/rux-classification-marking'
+customElements.define('rux-classification-marking', RuxClassificationMarking)
+```

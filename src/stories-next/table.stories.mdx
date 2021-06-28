@@ -118,10 +118,19 @@ For example, colspan and rowspan attributes are currently not supported.
 If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
 
 ```js
-import RuxButtonGroup from '@astrouxds/astro-web-components/dist/components/rux-button-group.js'
-import RuxButton from '@astrouxds/astro-web-components/dist/components/rux-button.js'
-import RuxIcon from '@astrouxds/astro-web-components/dist/components/rux-icon.js'
-customElements.define('rux-button', RuxButton)
-customElements.define('rux-icon', RuxIcon)
-customElements.define('rux-button-group', RuxButtonGroup)
+import RuxTable from '@astrouxds/astro-web-components/dist/components/rux-table'
+import RuxTableHeader from '@astrouxds/astro-web-components/dist/components/rux-table-header'
+import RuxTableHeaderRow from '@astrouxds/astro-web-components/dist/components/rux-table-header-row'
+import RuxTableHeaderCell from '@astrouxds/astro-web-components/dist/components/rux-table-header-cell'
+import RuxTableBody from '@astrouxds/astro-web-components/dist/components/rux-table-body'
+import RuxTableRow from '@astrouxds/astro-web-components/dist/components/rux-table-row'
+mport RuxTableCell from '@astrouxds/astro-web-components/dist/components/rux-table-cell'
+
+customElements.define('rux-table', RuxTable)
+customElements.define('rux-table-header', RuxTableHeader)
+customElements.define('rux-table-header-row', RuxTableHeaderRow)
+customElements.define('rux-table-header-cell', RuxTableHeaderCell)
+customElements.define('rux-table-body', RuxTableBody)
+customElements.define('rux-table-row', RuxTableRow)
+customElements.define('rux-table-cell', RuxTableCell)
 ```

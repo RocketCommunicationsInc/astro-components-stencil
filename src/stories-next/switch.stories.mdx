@@ -45,4 +45,11 @@ export const Switch = (args) => {
 
 ## Cherry Picking
 
-Coming Soon
+If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
+
+```js
+import { RuxSwitch } from '@astrouxds/astro-web-components/dist/components/rux-switch'
+customElements.define('rux-switch', RuxSwitch)
+```
+
+

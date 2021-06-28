@@ -111,4 +111,9 @@ Clock's timezone parameter can accept any military timezone.
 
 ## Cherry Picking
 
-Coming Soon
+If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
+
+```js
+import { RuxClock } from '@astrouxds/astro-web-components/dist/components/rux-clock'
+customElements.define('rux-clock', RuxClock)
+```

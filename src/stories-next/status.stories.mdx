@@ -90,4 +90,11 @@ return html`
 
 
 ## Cherry Picking
-Coming Soon
+
+If you're already utilizing a build system that supports treeshaking and want to only import this individual component:
+
+```js
+import { RuxStatus } from '@astrouxds/astro-web-components/dist/components/rux-status'
+customElements.define('rux-status', RuxStatus)
+```
+
