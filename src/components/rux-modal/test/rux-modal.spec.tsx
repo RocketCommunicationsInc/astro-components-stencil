@@ -1,4 +1,3 @@
-import { newSpecPage } from '@stencil/core/testing'
 import { RuxModal } from '../rux-modal'
 
 describe('rux-modal', () => {
