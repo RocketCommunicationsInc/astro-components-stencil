@@ -1,5 +1,8 @@
-import { Component, Host, h, Prop, Element, State, EventEmitter, Event, Method } from '@stencil/core';
+import { Component, Host, h, Prop, Element, EventEmitter, Event, Method } from '@stencil/core';
 
+/**
+ * @slot menu-end - Area below the menu list to insert elements. For example, confirmation and/or cancel button group.
+ */
 
 @Component({
   tag: 'rux-pop-up-menu',
@@ -10,8 +13,6 @@ export class RuxPopUpMenu {
 
   @Element() el!: HTMLRuxPopUpMenuElement
 
-  // @State() _anchorEl: HTMLElement
-  
   /**
    * Optional element to trigger opening and closing of the menu.
    * If none is supplied the element where aria-controls === menu id will be assigned
