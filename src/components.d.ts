@@ -18315,6 +18315,9 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement
         new (): HTMLRuxIconZoomOutMapElement
     }
+    interface HTMLRuxModalElement
+        extends Components.RuxModal,
+            HTMLStencilElement {}
     interface HTMLRuxLogElement extends Components.RuxLog, HTMLStencilElement {}
     var HTMLRuxLogElement: {
         prototype: HTMLRuxLogElement
