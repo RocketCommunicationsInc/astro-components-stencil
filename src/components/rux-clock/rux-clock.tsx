@@ -2,6 +2,7 @@ import { Watch, Prop, State, Component, Host, h } from '@stencil/core'
 import { getDayOfYear } from 'date-fns'
 import { format, utcToZonedTime, zonedTimeToUtc } from 'date-fns-tz'
 import { militaryTimezones } from './military-timezones'
+import { MilitaryTimezone } from './rux-clock.model'
 
 @Component({
     tag: 'rux-clock',
@@ -9,12 +10,12 @@ import { militaryTimezones } from './military-timezones'
     shadow: true,
 })
 export class RuxClock {
-    private _timer: number
+    private _timer!: number
     private _timezone: string = 'UTC'
-    private dayOfYear: number
+    private dayOfYear!: number
     private tzFormat: string = 'z'
 
-    @State() _time: string
+    @State() _time!: string
     /**
      * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
      */
@@ -35,7 +36,7 @@ export class RuxClock {
     @Prop({
         attribute: 'hide-timezone',
     })
-    hideTimezone: boolean
+    hideTimezone?: boolean
 
     /**
      * Hides the day of the year.
@@ -93,7 +94,8 @@ export class RuxClock {
     }
 
     convertTimezone(timezone: string) {
-        this._timezone = militaryTimezones[timezone.toUpperCase()]
+        const _militaryTimezones = militaryTimezones as MilitaryTimezone
+        this._timezone = _militaryTimezones[timezone.toUpperCase()]
         this.tzFormat = 'O'
         if (!this._timezone) {
             this._timezone = timezone

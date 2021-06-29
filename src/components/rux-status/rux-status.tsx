@@ -1,5 +1,5 @@
-import { Prop, Component, Host, h, Watch } from '@stencil/core'
-import { Status } from '../../common/commonTypes.module'
+import { Prop, Host, Component, h, Watch } from '@stencil/core'
+import { Status, StatusTypes } from '../../common/commonTypes.module'
 
 @Component({
     tag: 'rux-status',
@@ -8,9 +8,9 @@ import { Status } from '../../common/commonTypes.module'
 })
 export class RuxStatus {
     /**
-     * Sets the status symbol
+     * Sets the status symbol, valid options are critical, serious, caution, normal, standby and off
      */
-    @Prop({ reflect: true }) status: Status
+    @Prop({ reflect: true }) status?: Status
 
     @Watch('status')
     validateStatus(newValue: string) {
@@ -21,7 +21,8 @@ export class RuxStatus {
             caution: true,
             serious: true,
             critical: true,
-        }
+        } as StatusTypes
+
         if (!statusTypes[newValue]) {
             throw new Error('valid status required')
         }

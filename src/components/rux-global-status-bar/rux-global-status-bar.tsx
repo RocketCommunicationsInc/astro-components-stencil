@@ -67,7 +67,7 @@ export class RuxGlobalStatusBar {
                                 class={
                                     this.includeAppState || this.includeUsername
                                         ? 'shifted-up'
-                                        : null
+                                        : ''
                                 }
                             />
                         )}
