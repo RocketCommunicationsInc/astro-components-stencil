@@ -8,7 +8,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal'
 import { Classification, Status } from './common/commonTypes.module'
 import { LogRow } from './components/rux-log/rux-log.model'
 import { RangeItem } from './components/rux-monitoring-progress-icon/rux-monitoring-progress-icon'
-import { SegmentedButton } from './components/rux-segmented-button/rux-segmented-button'
+import { SegmentedButton } from './components/rux-segmented-button/rux-segmented-button.model'
 import { SwitchChangeEvent } from './components/rux-switch/rux-switch.model'
 export namespace Components {
     interface RuxButton {

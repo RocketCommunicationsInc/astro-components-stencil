@@ -7,11 +7,7 @@ import {
     Component,
     h,
 } from '@stencil/core'
-
-export type SegmentedButton = {
-    selected?: boolean
-    label: string
-}
+import { SegmentedButton } from './rux-segmented-button.model'
 
 @Component({
     tag: 'rux-segmented-button',
