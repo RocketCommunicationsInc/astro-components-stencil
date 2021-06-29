@@ -21,13 +21,13 @@ export class RuxButton {
         reflect: true,
     })
     iconOnly: boolean = false
-    /*
-      Changes button style from solid to secondary by setting rux-button--secondary class
-    */
+    /**
+     * Changes button style from solid to secondary by setting rux-button--secondary class
+     */
     @Prop() secondary: boolean = false
-    /*
-      Toggles disabled attribute on the button
-    */
+    /**
+     * Toggles disabled attribute on the button
+     */
     @Prop({ reflect: true }) disabled = false
 
     /**

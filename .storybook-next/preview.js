@@ -12,10 +12,19 @@ if (docJson) setStencilDocJson(docJson)
 addDecorator(addReadme)
 
 export const parameters = {
+    viewport: {
+        disable: true,
+    },
     docs: {
         extractArgTypes,
         extractComponentDescription,
         theme: themes.dark,
+    },
+    backgrounds: {
+        grid: {
+            disable: true,
+        },
+        disable: true,
     },
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
