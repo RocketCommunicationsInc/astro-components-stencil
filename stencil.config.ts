@@ -18,6 +18,9 @@ export const config: Config = {
             file: 'dist/docs.json',
         },
         {
+            type: 'dist-custom-elements',
+        },
+        {
             type: 'docs-readme',
             strict: true,
         },
