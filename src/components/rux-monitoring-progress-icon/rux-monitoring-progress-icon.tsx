@@ -70,13 +70,13 @@ export class RuxMonitoringProgressIcon {
 
     /**
      * Sets the minimum value for the progress range. When progress is this number, it reads 0%.
-     * When it is halfway between min and max, it will read 50%
+     * When it is halfway between min and max, it will read 50%.
      */
     @Prop() min: number = 0
 
     /**
      * Sets the maximum value for the progress range. When progress is this number, it reads 100%.
-     * When it is halfway between min and max, it will read 50%
+     * When it is halfway between min and max, it will read 50%.
      */
     @Prop() max: number = 100
 
@@ -84,7 +84,9 @@ export class RuxMonitoringProgressIcon {
      * Displays this value as a percentage of where it lies between min and max
      * in the center of the donut graph and styles a proportional
      * segment of the graph. Progress can be positive or negative (the later useful for countdowns).
-     * The progress value must exist within the thresholds specified in the range property below.
+     * The progress value must exist within the thresholds specified in the range property below, and must be
+     * an integer. If a non-integer value is passed in, progress will default to 0. If progress ever
+     * becomes less than min or greater than max, it will be set to equal min or max respectively.
      */
     @Prop({ reflect: true }) progress: number = 0
 
@@ -95,12 +97,9 @@ export class RuxMonitoringProgressIcon {
                 this.updateProgress()
             }
         } else {
-            console.warn(this._nonIntWarn)
             this.progress = 0
         }
     }
-    private _nonIntWarn: string =
-        'ASTRO: The given progress value is not an integer, and has been set to 0 to avoid any memory leaks.'
 
     @State() _status: Status = 'off'
     @State() _graphProgress: number = 0
@@ -116,7 +115,6 @@ export class RuxMonitoringProgressIcon {
 
             this.updateProgress()
         } else {
-            console.warn(this._nonIntWarn)
             this.progress = 0
         }
     }
@@ -127,15 +125,9 @@ export class RuxMonitoringProgressIcon {
 
     updateProgress() {
         if (this.progress > this.max) {
-            console.warn(
-                `ASTRO: Progress has become greater than the max of ${this.max}. Progress has been set to equal max in the meantime. Please make sure that progress cannot be greater than max.`
-            )
             this.progress = this.max
         }
         if (this.progress < this.min) {
-            console.warn(
-                `Progress has dropped below the min of ${this.min} and has been changed to equal min for the meantime. Please make sure that progress cannot go below the min.`
-            )
             this.progress = this.min
         }
         const rangeStatus = this.range.find(
