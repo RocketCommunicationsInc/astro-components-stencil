@@ -5,7 +5,6 @@ import {
     Prop,
     Element,
     Component,
-    Host,
     h,
 } from '@stencil/core'
 
@@ -22,8 +21,14 @@ export type SegmentedButton = {
 export class RuxSegmentedButton {
     @Element() el!: HTMLElement
 
+    /**
+     * Items in this Array are the individual button segments.
+     */
     @Prop() data: SegmentedButton[] = []
 
+    /**
+     * When passed in on load, this selects the first button segment with a matching label. When the selected segment changes, this property updates with the currently selected value, which reflects back to the component attribute. If no button segment label matches this string, then no segment is selected. This value takes priority over setting selected boolean property on the items in the data array.
+     */
     @Prop({ reflect: true, mutable: true }) selected: string = ''
 
     /**
@@ -48,9 +53,10 @@ export class RuxSegmentedButton {
         }
     }
 
-    _handleChange(e) {
-        this._setSelected(e.target.value)
-        this.ruxChange.emit(this.selected)
+    _handleChange(e: Event) {
+        const el = e.target as HTMLInputElement
+        this._setSelected(el.value)
+        this.ruxChange.emit(el.value)
     }
 
     connectedCallback() {
@@ -62,14 +68,14 @@ export class RuxSegmentedButton {
         }
     }
 
-    private _setSelected(label) {
+    private _setSelected(label: string) {
         this.data.map((item) => {
             item.selected = item.label === label
         })
         this.selected = label
     }
 
-    _slugify(label) {
+    private _slugify(label: string) {
         label = label.replace(/^\s+|\s+$/g, '') // trim
         label = label.toLowerCase()
 
@@ -81,12 +87,13 @@ export class RuxSegmentedButton {
         return label
     }
 
-    private _isSelected(label) {
+    private _isSelected(label: string) {
         if (this.selected === label) {
             return true
         }
 
-        if (this.data.find((item) => item.label === label).selected) {
+        const selectedData = this.data.find((item) => item.label === label)
+        if (selectedData && selectedData.selected) {
             return true
         }
 

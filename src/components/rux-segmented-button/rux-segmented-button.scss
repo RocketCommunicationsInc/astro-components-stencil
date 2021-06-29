@@ -1,8 +1,45 @@
 :host {
     display: block;
-}
+    /**
+      * @prop --segmentedButtonBorderColor: Segmented button border color
+      */
+    --segmentedButtonBorderColor: var(--primary);
 
-:host {
+    /**
+      * @prop --segmentedButtonBackgroundColor: Segmented button background color
+      */
+    --segmentedButtonBackgroundColor: none;
+
+    /**
+      * @prop --segmentedButtonTextColor: Segmented button text color
+      */
+    --segmentedButtonTextColor: var(--primary);
+
+    /**
+      * @prop --segmentedButtonHoverBackgroundColor: Segmented button hover background color
+      */
+    --segmentedButtonHoverBackgroundColor: var(--primaryLight);
+
+    /**
+      * @prop --segmentedButtonHoverTextColor: Segmented button hover text color
+      */
+    --segmentedButtonHoverTextColor: var(--primaryElementText);
+
+    /**
+      * @prop --segmentedButtonHoverBorderColor: Segmented button hover border color
+      */
+    --segmentedButtonHoverBorderColor: var(--primaryLight);
+
+    /**
+      * @prop --segmentedButtonSelectedBackgroundColor: Segmented button selected background color
+      */
+    --segmentedButtonSelectedBackgroundColor: var(--primary);
+
+    /**
+      * @prop --segmentedButtonSelectedTextColor: Segmented button selected text color
+      */
+    --segmentedButtonSelectedTextColor: var(--primaryElementText);
+
     box-sizing: border-box;
 }
 
