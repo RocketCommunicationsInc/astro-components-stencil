@@ -6,6 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal'
 import { Classification, Status } from './common/commonTypes.module'
+import { LogRow } from './components/rux-log/rux-log.model'
 import { RangeItem } from './components/rux-monitoring-progress-icon/rux-monitoring-progress-icon'
 import { SwitchChangeEvent } from './components/rux-switch/rux-switch.model'
 export namespace Components {
@@ -10711,6 +10712,42 @@ export namespace Components {
          */
         size: 'extra-small' | 'small' | 'normal' | 'large'
     }
+    interface RuxLog {
+        /**
+         * An array of objects to display as log
+         */
+        data: LogRow[]
+        /**
+         * A string to filter the array to return only the children whose `message` property contains a case-insensitive substring match.
+         */
+        filter?: string
+        /**
+         * Accepts [IANA timezone string format](https://www.iana.org/time-zones) such as `America/Los_Angeles`. Default timezone is `UTC`. See [`toLocaleString()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString#Parameters) for more details.
+         */
+        timezone: string
+    }
+    interface RuxModal {
+        /**
+         * Text for confirmation button
+         */
+        confirmText: string
+        /**
+         * Text for close button
+         */
+        denyText: string
+        /**
+         * Modal body message
+         */
+        modalMessage: string
+        /**
+         * Modal header title
+         */
+        modalTitle: string
+        /**
+         * Shows and hides modal
+         */
+        open: boolean
+    }
     interface RuxMonitoringIcon {
         /**
          * Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
@@ -18278,6 +18315,18 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement
         new (): HTMLRuxIconZoomOutMapElement
     }
+    interface HTMLRuxLogElement extends Components.RuxLog, HTMLStencilElement {}
+    var HTMLRuxLogElement: {
+        prototype: HTMLRuxLogElement
+        new (): HTMLRuxLogElement
+    }
+    interface HTMLRuxModalElement
+        extends Components.RuxModal,
+            HTMLStencilElement {}
+    var HTMLRuxModalElement: {
+        prototype: HTMLRuxModalElement
+        new (): HTMLRuxModalElement
+    }
     interface HTMLRuxMonitoringIconElement
         extends Components.RuxMonitoringIcon,
             HTMLStencilElement {}
@@ -19457,6 +19506,8 @@ declare global {
         'rux-icon-zoom-in-map': HTMLRuxIconZoomInMapElement
         'rux-icon-zoom-out': HTMLRuxIconZoomOutElement
         'rux-icon-zoom-out-map': HTMLRuxIconZoomOutMapElement
+        'rux-log': HTMLRuxLogElement
+        'rux-modal': HTMLRuxModalElement
         'rux-monitoring-icon': HTMLRuxMonitoringIconElement
         'rux-monitoring-progress-icon': HTMLRuxMonitoringProgressIconElement
         'rux-notification': HTMLRuxNotificationElement
@@ -30179,6 +30230,46 @@ declare namespace LocalJSX {
          */
         size?: 'extra-small' | 'small' | 'normal' | 'large'
     }
+    interface RuxLog {
+        /**
+         * An array of objects to display as log
+         */
+        data?: LogRow[]
+        /**
+         * A string to filter the array to return only the children whose `message` property contains a case-insensitive substring match.
+         */
+        filter?: string
+        /**
+         * Accepts [IANA timezone string format](https://www.iana.org/time-zones) such as `America/Los_Angeles`. Default timezone is `UTC`. See [`toLocaleString()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString#Parameters) for more details.
+         */
+        timezone?: string
+    }
+    interface RuxModal {
+        /**
+         * Text for confirmation button
+         */
+        confirmText?: string
+        /**
+         * Text for close button
+         */
+        denyText?: string
+        /**
+         * Modal body message
+         */
+        modalMessage: string
+        /**
+         * Modal header title
+         */
+        modalTitle: string
+        /**
+         * Event that is fired when modal closes
+         */
+        onModalClosed?: (event: CustomEvent<boolean>) => void
+        /**
+         * Shows and hides modal
+         */
+        open: boolean
+    }
     interface RuxMonitoringIcon {
         /**
          * Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
@@ -31390,6 +31481,8 @@ declare namespace LocalJSX {
         'rux-icon-zoom-in-map': RuxIconZoomInMap
         'rux-icon-zoom-out': RuxIconZoomOut
         'rux-icon-zoom-out-map': RuxIconZoomOutMap
+        'rux-log': RuxLog
+        'rux-modal': RuxModal
         'rux-monitoring-icon': RuxMonitoringIcon
         'rux-monitoring-progress-icon': RuxMonitoringProgressIcon
         'rux-notification': RuxNotification
@@ -33535,6 +33628,10 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>
             'rux-icon-zoom-out-map': LocalJSX.RuxIconZoomOutMap &
                 JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>
+            'rux-log': LocalJSX.RuxLog &
+                JSXBase.HTMLAttributes<HTMLRuxLogElement>
+            'rux-modal': LocalJSX.RuxModal &
+                JSXBase.HTMLAttributes<HTMLRuxModalElement>
             'rux-monitoring-icon': LocalJSX.RuxMonitoringIcon &
                 JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>
             'rux-monitoring-progress-icon': LocalJSX.RuxMonitoringProgressIcon &
