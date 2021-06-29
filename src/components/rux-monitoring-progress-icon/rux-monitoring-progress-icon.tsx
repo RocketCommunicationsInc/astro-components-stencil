@@ -138,13 +138,22 @@ export class RuxMonitoringProgressIcon {
             )
             this.progress = this.min
         }
-        this._status =
-            this.range.find((range) => this.progress <= range.threshold)
-                .status || this.range[0].status
+        const rangeStatus = this.range.find(
+            (range) => this.progress <= range.threshold
+        )
+        this._status = rangeStatus ? rangeStatus.status : this.range[0].status
+
         this._graphProgress =
             this._circumference -
             ((this.progress - this.min) / (this.max - this.min)) *
                 this._circumference
+        // this._status =
+        //     this.range.find((range) => this.progress <= range.threshold)
+        //         .status || this.range[0].status
+        // this._graphProgress =
+        //     this._circumference -
+        //     ((this.progress - this.min) / (this.max - this.min)) *
+        //         this._circumference
     }
 
     render() {
