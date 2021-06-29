@@ -18,7 +18,7 @@ npm i --save @astrouxds/rux-tabs
 
 You may use Yarn, NPM, or your Node package manager of choice. The `--save` flag adds this component as a dependency in your `package.json` file.
 
-#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components/src/master/) source to your project.
+#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components) source to your project.
 
 Via CLI:
 
@@ -100,7 +100,6 @@ Astro UXDS Tab (child) properties are passed as simple attributes on the individ
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
 | Property  | Attribute | Description                                                                                              | Type                       | Default |
@@ -108,16 +107,12 @@ Astro UXDS Tab (child) properties are passed as simple attributes on the individ
 | `_panels` | --        | Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component. | `HTMLRuxTabPanelElement[]` | `[]`    |
 | `_tabs`   | --        | Holds all `<rux-tab>` components that are children of `<rux-tabs>`.                                      | `HTMLRuxTabElement[]`      | `[]`    |
 
-
 ## CSS Custom Properties
-
-### RuxTabs
 
 | Name               | Description      |
 | ------------------ | ---------------- |
 | `--tabBorderColor` | Tab border color |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

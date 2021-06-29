@@ -18,7 +18,7 @@ npm i --save @astrouxds/rux-tabs
 
 You may use Yarn, NPM, or your Node package manager of choice. The `--save` flag adds this component as a dependency in your `package.json` file.
 
-#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components/src/master/) source to your project.
+#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components) source to your project.
 
 Via CLI:
 
@@ -127,5 +127,25 @@ Astro UXDS Tab (child) properties are passed as simple attributes on the individ
 ---
 
 <!-- Auto Generated Below -->
+
+## Properties
+
+| Property   | Attribute  | Description                                                                                                    | Type      | Default |
+| ---------- | ---------- | -------------------------------------------------------------------------------------------------------------- | --------- | ------- |
+| `disabled` | `disabled` | If present, sets a disabled state on this tab item, indicating it cannot be selected by user action.           | `boolean` | `false` |
+| `selected` | `selected` | If present, overrides which tab is selected on load / mount. By default, the first <rux-tab> item is selected. | `boolean` | `false` |
+
+## CSS Custom Properties
+
+| Name                       | Description               |
+| -------------------------- | ------------------------- |
+| `--tabBackgroundColor`     | Tab background color      |
+| `--tabBorderColor`         | Tab border color          |
+| `--tabHoverTextColor`      | Tab hover text color      |
+| `--tabSelectedBorderColor` | Tab selected border color |
+| `--tabSelectedTextColor`   | Tab selected text color   |
+| `--tabTextColor`           | Tab text color            |
+
+---
 
 _Built with [StencilJS](https://stenciljs.com/)_

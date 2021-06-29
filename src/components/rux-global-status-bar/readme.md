@@ -18,7 +18,7 @@ npm i -save @astrouxds/rux-global-status-bar
 
 You may use Yarn, NPM, or your Node package manager of choice. The `--save` flag adds this component as a dependency in your `package.json` file.
 
-#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components/src/master/) source to your project.
+#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components) source to your project.
 
 Via CLI:
 
@@ -108,7 +108,6 @@ There is one unnamed slot in the Global Status Bar. This slot is intended for an
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
 | Property          | Attribute           | Description                                                                 | Type      | Default     |
@@ -119,22 +118,22 @@ There is one unnamed slot in the Global Status Bar. This slot is intended for an
 | `includeAppState` | `include-app-state` | Declares whether the app-state component will be shown in the app-meta slot | `boolean` | `false`     |
 | `includeIcon`     | `include-icon`      | Declares whether a rux-icon will be shown in the left-side slot             | `boolean` | `false`     |
 | `includeUsername` | `include-username`  | Declares whether the username component will be shown in the app-meta slot  | `boolean` | `false`     |
-| `menuIcon`        | `menu-icon`         | Sets the icon to be displayed in the default rux-icon component             | `string`  | `"apps"`    |
-
+| `menuIcon`        | `menu-icon`         | Sets the icon to be displayed in the default rux-icon component             | `string`  | `'apps'`    |
 
 ## Dependencies
 
 ### Depends on
 
-- [rux-icon](../rux-icon)
+-   [rux-icon](../rux-icon)
 
 ### Graph
+
 ```mermaid
 graph TD;
   rux-global-status-bar --> rux-icon
   style rux-global-status-bar fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
-----------------------------------------------
+---
 
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_
