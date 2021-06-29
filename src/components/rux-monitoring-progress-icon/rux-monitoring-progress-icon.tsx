@@ -60,14 +60,21 @@ export class RuxMonitoringProgressIcon {
      * segment of the graph. Progress can be positive or negative (the later useful for countdowns).
      * The progress value must exist within the thresholds specified in the range property below.
      */
-    @Prop({ reflect: true }) progress!: number
+    @Prop({ reflect: true }) progress: number = 0
 
     @Watch('progress')
     checkProgress(newValue: number, oldValue: number) {
-        if (newValue !== oldValue) {
-            this.updateProgress()
+        if (Number.isInteger(this.progress)) {
+            if (newValue !== oldValue) {
+                this.updateProgress()
+            }
+        } else {
+            console.warn(this._nonIntWarn)
+            this.progress = 0
         }
     }
+    private _nonIntWarn: string =
+        'ASTRO: The given progress value is not an integer, and has been set to 0 to avoid any memory leaks.'
 
     @State() _status: Status
     @State() _graphProgress: number = 0
@@ -107,6 +114,9 @@ export class RuxMonitoringProgressIcon {
             )
 
             this.updateProgress()
+        } else {
+            console.warn(this._nonIntWarn)
+            this.progress = 0
         }
     }
 
@@ -115,6 +125,18 @@ export class RuxMonitoringProgressIcon {
     }
 
     updateProgress() {
+        if (this.progress > this.max) {
+            console.warn(
+                `ASTRO: Progress has become greater than the max of ${this.max}. Progress has been set to equal max in the meantime. Please make sure that progress cannot be greater than max.`
+            )
+            this.progress = this.max
+        }
+        if (this.progress < this.min) {
+            console.warn(
+                `Progress has dropped below the min of ${this.min} and has been changed to equal min for the meantime. Please make sure that progress cannot go below the min.`
+            )
+            this.progress = this.min
+        }
         this._status =
             this.range.find((range) => this.progress <= range.threshold)
                 .status || this.range[0].status
