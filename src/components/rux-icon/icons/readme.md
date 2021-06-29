@@ -2,16 +2,13 @@
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
-| Property | Attribute | Description | Type                                              | Default     |
-| -------- | --------- | ----------- | ------------------------------------------------- | ----------- |
-| `color`  | `color`   |             | `string`                                          | `undefined` |
-| `icon`   | `icon`    |             | `string`                                          | `undefined` |
-| `size`   | `size`    |             | `"extra-small" \| "large" \| "normal" \| "small"` | `undefined` |
+| Property | Attribute | Description                 | Type                                              | Default     |
+| -------- | --------- | --------------------------- | ------------------------------------------------- | ----------- |
+| `color`  | `color`   | The fill color for the icon | `string \| undefined`                             | `undefined` |
+| `size`   | `size`    | The size of the icon        | `"extra-small" \| "large" \| "normal" \| "small"` | `'normal'`  |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

@@ -18,7 +18,7 @@ npm i --save @astrouxds/rux-switch
 
 You may use Yarn, NPM, or your Node package manager of choice. The `--save` flag adds this component as a dependency in your `package.json` file.
 
-#### **Alternatively**, download the [Astro UXDS Component Library](https://bitbucket.org/rocketcom/astro-components/src/master/) source to your project.
+#### **Alternatively**, download the [Astro UXDS Component Library](https://bitbucket.org/rocketcom/astro-components) source to your project.
 
 Via CLI:
 
@@ -78,22 +78,19 @@ Configure the component using native HTML attributes.
 
 <!-- Auto Generated Below -->
 
-
 ## Properties
 
-| Property   | Attribute  | Description                                                                                                                                                                                 | Type      | Default     |
-| ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ----------- |
-| `checked`  | `checked`  | Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.                                                                            | `boolean` | `false`     |
-| `disabled` | `disabled` | Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored. | `boolean` | `false`     |
-| `name`     | `name`     | The name of the form input element                                                                                                                                                          | `string`  | `undefined` |
-
+| Property   | Attribute  | Description                                                                                                                                                                                 | Type                   | Default     |
+| ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------- |
+| `checked`  | `checked`  | Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.                                                                            | `boolean \| undefined` | `false`     |
+| `disabled` | `disabled` | Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored. | `boolean \| undefined` | `false`     |
+| `name`     | `name`     | The name of the form input element                                                                                                                                                          | `string \| undefined`  | `undefined` |
 
 ## Events
 
 | Event        | Description                                  | Type                             |
 | ------------ | -------------------------------------------- | -------------------------------- |
 | `rux-change` | Emitted when the value property has changed. | `CustomEvent<SwitchChangeEvent>` |
-
 
 ## CSS Custom Properties
 
@@ -106,7 +103,6 @@ Configure the component using native HTML attributes.
 | `--switchOffColor`         | the Switch off color          |
 | `--switchOnColor`          | the Switch on color           |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

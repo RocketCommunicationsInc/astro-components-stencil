@@ -20,7 +20,7 @@ npm i --save @astrouxds/rux-classification-marking
 
 You may use Yarn, NPM, or your Node package manager of choice. The `--save` flag adds this component as a dependency in your `package.json` file.
 
-#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components/src/master/) source to your project.
+#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components) source to your project.
 
 Via CLI:
 
@@ -99,7 +99,7 @@ Applying the `label` property attribute to the classification custom element add
 
 | Property         | Attribute        | Description                                                          | Type                                                                                               | Default          |
 | ---------------- | ---------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ---------------- |
-| `classification` | `classification` | Defines which classification marking will be displayed.              | `"confidential" \| "controlled" \| "secret" \| "top-secret" \| "top-secret-sci" \| "unclassified"` | `"unclassified"` |
+| `classification` | `classification` | Defines which classification marking will be displayed.              | `"confidential" \| "controlled" \| "secret" \| "top-secret" \| "top-secret-sci" \| "unclassified"` | `'unclassified'` |
 | `label`          | `label`          | Allows additional text labels to be added to the a marking           | `string`                                                                                           | `undefined`      |
 | `tag`            | `tag`            | Declares the marking as a `tag` rather than the default banner style | `boolean`                                                                                          | `false`          |
 

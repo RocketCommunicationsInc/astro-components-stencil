@@ -18,7 +18,7 @@ npm i --save @astrouxds/rux--monitoring-icon
 
 You may use Yarn, NPM, or your Node package manager of choice. The `--save` flag adds this component as a dependency in your `package.json` file.
 
-#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components/src/master/) source to your project.
+#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components) source to your project.
 
 Via CLI:
 
@@ -70,7 +70,7 @@ npm i --save @astrouxds/rux--monitoring-icon
 
 You may use Yarn, NPM, or your Node package manager of choice. The `--save` flag adds this component as a dependency in your `package.json` file.
 
-#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components/src/master/) source to your project.
+#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components) source to your project.
 
 Via CLI:
 
@@ -111,7 +111,7 @@ Pass properties as attributes of the Astro Monitoring Progress Icon custom eleme
 | `label` _(required)_ | `label`         | Displays a label below the icon                                                                                                                                                                                                                                                         | `string`                                                                 | `undefined` |
 | `notifications`      | `notifications` | If provided and greater than `0`, displays an outlined number badge at the bottom right of the icon. Numbers above `9999` are abbreviated to `'10K'` or `'100K'` for numbers in the thousands, `'1.5M'` for millions, `'1.5B'` for billions, and uses `'∞'` for one trillion or higher. | `number`                                                                 | `0`         |
 | `status`             | `status`        | Styles the icon according to the Astro Status colors. Valid options are the Astro statuses `critical`, `serious`, `caution`, `normal`, `standby`, and `off`.                                                                                                                            | `"caution" \| "critical" \| "normal" \| "off" \| "serious" \| "standby"` | `'normal'`  |
-| `sublabel`           | `sublabel`      | Displays a smaller label underneath the icon label                                                                                                                                                                                                                                      | `string`                                                                 | `undefined` |
+| `sublabel`           | `sublabel`      | Displays a smaller label underneath the icon label                                                                                                                                                                                                                                      | `string \| undefined`                                                    | `undefined` |
 
 
 ## Dependencies
@@ -132,3 +132,4 @@ graph TD;
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*
+````
