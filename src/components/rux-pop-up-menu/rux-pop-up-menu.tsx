@@ -146,7 +146,7 @@ export class RuxPopUpMenu {
     this.el.style.left = `${left}px`;
     this.el.style.top = `${top}px`;
 
-    const caretLeft = anchorBounds.left - left + padding;
+    const caretLeft = anchorBounds.left - left;
     this.el.style.setProperty('--caretLeft', `${caretLeft}px`);
   }
 

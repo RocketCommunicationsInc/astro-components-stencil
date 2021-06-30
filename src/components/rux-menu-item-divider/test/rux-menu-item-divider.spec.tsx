@@ -10,7 +10,7 @@ describe('rux-menu-item-divider', () => {
     expect(page.root).toEqualHtml(`
       <rux-menu-item-divider>
         <mock:shadow-root>
-          <slot></slot>
+          <li role="separator"></li>
         </mock:shadow-root>
       </rux-menu-item-divider>
     `);

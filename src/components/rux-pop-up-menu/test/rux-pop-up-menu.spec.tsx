@@ -14,5 +14,14 @@ describe('rux-pop-up-menu', () => {
         </mock:shadow-root>
       </rux-pop-up-menu>
     `);
-  });
+  })
+  it('attaches itself to a custom anchor element', () => {
+    const menu = new RuxPopUpMenu()
+    const div = document.createElement('div')
+    menu.anchorEl = div
+    menu.connectedCallback()
+    // expect
+  })
+  it('emits lifecycle events')
+  it('opens and closes the menu with the public methods')
 });

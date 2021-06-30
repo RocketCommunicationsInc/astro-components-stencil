@@ -13,6 +13,7 @@ export class RuxMenuItem {
    */
   @Event() menuItemClicked: EventEmitter<object>
   private itemOnClick = () => {
+    console.log('item clicked')
     if (!this.href) {
       if (this.value) {
         this.menuItemClicked.emit({value: this.value})
@@ -61,19 +62,29 @@ export class RuxMenuItem {
    */
   @Prop() download: string | undefined;
 
+  private isClickable(): boolean {
+    return !this.disabled
+  }  
+
   render() {
     const {disabled, href, rel, download, target, itemOnClick} = this
+    const clickable = this.isClickable()
     const TagType = href ? 'a' : 'div'
     const attributes = (TagType === 'a') 
     ? {download, href, rel, target}
     : {}
+    // Only sets onClick if the item is clickable for screen readers
+    const clickFunc = clickable ? {
+      onClick: () => {itemOnClick()}
+    } : {}
 
     return (
       <Host
         aria-disabled={disabled ? 'true' : null}
       >
         <li
-          onClick={() => itemOnClick()}
+          // onClick={() => itemOnClick()}
+          {...clickFunc}
         >
           <TagType
             {...attributes}

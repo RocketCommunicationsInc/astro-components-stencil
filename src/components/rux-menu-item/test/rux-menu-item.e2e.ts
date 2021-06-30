@@ -7,5 +7,6 @@ describe('rux-menu-item', () => {
 
     const element = await page.find('rux-menu-item');
     expect(element).toHaveClass('hydrated');
-  });
+  })
+  it('emits event with value or text content when clicked')
 });
