@@ -13,7 +13,6 @@ export class RuxMenuItem {
    */
   @Event() menuItemClicked: EventEmitter<object>
   private itemOnClick = () => {
-    console.log('item clicked')
     if (!this.href) {
       if (this.value) {
         this.menuItemClicked.emit({value: this.value})
@@ -83,7 +82,6 @@ export class RuxMenuItem {
         aria-disabled={disabled ? 'true' : null}
       >
         <li
-          // onClick={() => itemOnClick()}
           {...clickFunc}
         >
           <TagType
