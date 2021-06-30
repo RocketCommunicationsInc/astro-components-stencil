@@ -1,5 +1,9 @@
 import { Component, Host, h, Element, Prop, EventEmitter, Event } from '@stencil/core';
 
+/**
+ * @slot start - before element text. Typically used for icons
+ */
+
 @Component({
   tag: 'rux-menu-item',
   styleUrl: 'rux-menu-item.scss',
@@ -9,19 +13,15 @@ export class RuxMenuItem {
   @Element() el!: HTMLRuxMenuItemElement
 
   /**
-   * Emitted when item is clicked
+   * Emitted when item is clicked. Ex `{value : 10}`
    */
   @Event() menuItemClicked: EventEmitter<object>
   private itemOnClick = () => {
-    if (!this.href) {
-      if (this.value) {
-        this.menuItemClicked.emit({value: this.value})
-      } else {
-        this.menuItemClicked.emit({value: this.el.textContent})
-      }
+    if (this.value) {
+      this.menuItemClicked.emit({value: this.value})
     } else {
       this.menuItemClicked.emit({value: this.el.textContent})
-    }
+    } 
   }
 
   /**

@@ -17,13 +17,13 @@ export class RuxPopUpMenu {
    * Optional element to trigger opening and closing of the menu.
    * If none is supplied the element where aria-controls === menu id will be assigned
    */
-  @Prop({mutable: true}) triggerEl: HTMLElement
+  @Prop({mutable: true}) triggerEl: HTMLElement | undefined
 
   /**
    * Element to anchor the menu to. If none is given the menu will anchor
    * to the trigger element where aria-controls === menu id
    */
-  @Prop({mutable: true}) anchorEl?: HTMLElement
+  @Prop({mutable: true}) anchorEl: HTMLElement | undefined
   
   /**
    * Boolean which controls when to show the menu
@@ -65,6 +65,9 @@ export class RuxPopUpMenu {
       }
     } else {
       this.triggerEl.addEventListener('mousedown', this._handleClick)
+      if (!this.anchorEl){
+        this.anchorEl = this.triggerEl
+      }
     }
   }
 
@@ -73,7 +76,7 @@ export class RuxPopUpMenu {
   }
 
   /**
-   * Returns 'true' if the menu is open
+   * Returns 'true' if the menu is open, 'false' if it is not.
    */
   @Method()
   async isOpen(): Promise<boolean> {
@@ -189,7 +192,7 @@ export class RuxPopUpMenu {
 
   render() {
     return (
-      <Host aria-hidden={!this.open}>
+      <Host aria-hidden={!this.open ? "true" : "false"}>
         <ul role="menu" aria-expanded={`${this.open}`}>
           <slot></slot>
         </ul>
