@@ -17,7 +17,8 @@
 
     display: block;
 
-    li {
+    li,
+    a {
         padding: 0.15rem 0.75rem;
         color: var(--menuTextColor);
         text-decoration: none;
@@ -33,12 +34,16 @@
 
         background-color: transparent; /* Testing for now */
 
-        // height: 1rem;
-
         &:hover {
             background-color: var(--menuItemHoverBackgroundColor);
             color: var(--menuItemHoverTextColor);
         }
+    }
+
+    a {
+        display: block;
+        padding: 0px;
+        width: 100%;
     }
 }
 
