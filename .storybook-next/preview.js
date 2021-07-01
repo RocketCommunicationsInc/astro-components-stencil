@@ -5,9 +5,9 @@ import {
     extractArgTypes,
     extractComponentDescription,
     setStencilDocJson,
-} from '@pxtrn/storybook-addon-docs-stencil'
+} from '@astrouxds/storybook-addon-docs-stencil'
 
-import docJson from '../dist/docs.json'
+import docJson from '../docs.json'
 if (docJson) setStencilDocJson(docJson)
 addDecorator(addReadme)
 

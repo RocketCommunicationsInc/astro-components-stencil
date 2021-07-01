@@ -9,6 +9,6 @@ module.exports = {
         '@storybook/addon-essentials',
         '@storybook/addon-a11y',
         'storybook-addon-themes',
-        '@pxtrn/storybook-addon-docs-stencil',
+        '@astrouxds/storybook-addon-docs-stencil',
     ],
 }
