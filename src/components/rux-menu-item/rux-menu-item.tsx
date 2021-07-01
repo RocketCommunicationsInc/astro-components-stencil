@@ -13,18 +13,6 @@ export class RuxMenuItem {
   @Element() el!: HTMLRuxMenuItemElement
 
   /**
-   * Emitted when item is clicked. Ex `{value : 10}`
-   */
-  @Event() menuItemClicked: EventEmitter<object>
-  private itemOnClick = () => {
-    if (this.value) {
-      this.menuItemClicked.emit({value: this.value})
-    } else {
-      this.menuItemClicked.emit({value: this.el.textContent})
-    } 
-  }
-
-  /**
    * Disables the item
   */
   @Prop({reflect: true}) disabled: boolean = false
@@ -60,6 +48,18 @@ export class RuxMenuItem {
    * (the user can still change the file name if they want).
    */
   @Prop() download: string | undefined;
+
+  /**
+   * Emitted when item is clicked. Ex `{value : 10}`
+   */
+   @Event() menuItemClicked!: EventEmitter<object>
+   private itemOnClick = () => {
+     if (this.value) {
+       this.menuItemClicked.emit({value: this.value})
+     } else {
+       this.menuItemClicked.emit({value: this.el.textContent})
+     } 
+   }
 
   private isClickable(): boolean {
     return !this.disabled

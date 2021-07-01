@@ -10847,7 +10847,7 @@ export namespace Components {
         /**
           * Element to anchor the menu to. If none is given the menu will anchor to the trigger element where aria-controls === menu id
          */
-        "anchorEl": HTMLElement | undefined;
+        "anchorEl": HTMLElement;
         /**
           * Closes the menu. If the menu is already closed it returns 'false'.
          */
@@ -10871,7 +10871,7 @@ export namespace Components {
         /**
           * Optional element to trigger opening and closing of the menu. If none is supplied the element where aria-controls === menu id will be assigned
          */
-        "triggerEl": HTMLElement | undefined;
+        "triggerEl": HTMLElement;
     }
     interface RuxProgress {
         /**
@@ -29381,7 +29381,7 @@ declare namespace LocalJSX {
         /**
           * Element to anchor the menu to. If none is given the menu will anchor to the trigger element where aria-controls === menu id
          */
-        "anchorEl"?: HTMLElement | undefined;
+        "anchorEl": HTMLElement;
         /**
           * Emitted when the menu is closed.
          */
@@ -29405,7 +29405,7 @@ declare namespace LocalJSX {
         /**
           * Optional element to trigger opening and closing of the menu. If none is supplied the element where aria-controls === menu id will be assigned
          */
-        "triggerEl"?: HTMLElement | undefined;
+        "triggerEl": HTMLElement;
     }
     interface RuxProgress {
         /**
