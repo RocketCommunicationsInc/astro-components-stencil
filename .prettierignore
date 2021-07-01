@@ -2,4 +2,4 @@ dist
 loader
 storybook-static
 *.mdx
-
+*readme.md
