@@ -15,7 +15,7 @@ export const config: Config = {
         },
         {
             type: 'docs-json',
-            file: 'dist/docs.json',
+            file: './docs.json',
         },
         {
             type: 'dist-custom-elements',
