@@ -40,7 +40,7 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@astrouxds/storybook-addon-docs-stencil": "~1.0.0",
+        "@astrouxds/storybook-addon-docs-stencil": "~1.0.4",
         "@babel/core": "~7.13.16",
         "@stencil/sass": "~1.4.1",
         "@storybook/addon-a11y": "~6.3.0",
