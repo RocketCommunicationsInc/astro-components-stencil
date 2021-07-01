@@ -36,7 +36,7 @@ export class RuxClock {
     @Prop({
         attribute: 'hide-timezone',
     })
-    hideTimezone?: boolean
+    hideTimezone: boolean = false
 
     /**
      * Hides the day of the year.
@@ -44,12 +44,12 @@ export class RuxClock {
     @Prop({
         attribute: 'hide-date',
     })
-    hideDate?: boolean
+    hideDate: boolean = false
 
     /**
      * Applies a smaller clock style.
      */
-    @Prop() small?: boolean
+    @Prop() small: boolean = false
 
     @Watch('timezone')
     timezoneChanged() {
