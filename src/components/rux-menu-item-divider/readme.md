@@ -7,9 +7,9 @@
 
 ## CSS Custom Properties
 
-| Name                                | Description                           |
-| ----------------------------------- | ------------------------------------- |
-| `--popupMenuItemDividerBorderColor` | Pop Up Menu Item Divider Border Color |
+| Name                           | Description                    |
+| ------------------------------ | ------------------------------ |
+| `--menuItemDividerBorderColor` | Menu Item Divider Border Color |
 
 
 ----------------------------------------------

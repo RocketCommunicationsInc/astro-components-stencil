@@ -10723,6 +10723,34 @@ export namespace Components {
          */
         "timezone": string;
     }
+    interface RuxMenuItem {
+        /**
+          * Disables the item
+         */
+        "disabled": boolean;
+        /**
+          * This attribute instructs browsers to download a URL instead of navigating to it, so the user will be prompted to save it as a local file. If the attribute has a value, it is used as the pre-filled file name in the Save prompt (the user can still change the file name if they want).
+         */
+        "download": string | undefined;
+        /**
+          * Contains a URL or a URL fragment that the hyperlink points to. If this property is set, an anchor tag will be rendered.
+         */
+        "href": string | undefined;
+        /**
+          * Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
+         */
+        "rel": string | undefined;
+        /**
+          * Specifies where to display the linked URL. Only applies when an `href` is provided. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
+         */
+        "target": string | undefined;
+        /**
+          * Value returned when item is selected. If no value is given, the text content will be used.
+         */
+        "value": any;
+    }
+    interface RuxMenuItemDivider {
+    }
     interface RuxModal {
         /**
           * Text for confirmation button
@@ -10773,11 +10801,11 @@ export namespace Components {
          */
         "label"?: string;
         /**
-          * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%
+          * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%.
          */
         "max": number;
         /**
-          * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%
+          * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%.
          */
         "min": number;
         /**
@@ -10785,7 +10813,7 @@ export namespace Components {
          */
         "notifications"?: number;
         /**
-          * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below.
+          * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below, and must be an integer. If a non-integer value is passed in, progress will default to 0. If progress ever becomes less than min or greater than max, it will be set to equal min or max respectively.
          */
         "progress": number;
         /**
@@ -10814,6 +10842,36 @@ export namespace Components {
           * Displays an icon from the [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/) in the log entry's row. Possible values include 'off', 'standby', 'normal', 'caution', 'serious', and 'critical'.
          */
         "status": Status;
+    }
+    interface RuxPopUpMenu {
+        /**
+          * Element to anchor the menu to. If none is given the menu will anchor to the trigger element where aria-controls === menu id
+         */
+        "anchorEl": HTMLElement | undefined;
+        /**
+          * Closes the menu. If the menu is already closed it returns 'false'.
+         */
+        "close": () => Promise<boolean>;
+        /**
+          * Returns 'true' if the menu is open, 'false' if it is not.
+         */
+        "isOpen": () => Promise<boolean>;
+        /**
+          * Boolean which controls when to show the menu
+         */
+        "open": boolean;
+        /**
+          * Opens the menu. If the menu is already open it returns 'false'.
+         */
+        "show": () => Promise<boolean>;
+        /**
+          * Toggles the menu open or close. Will return 'true' on menu open and 'false' on menu close
+         */
+        "toggle": () => Promise<boolean>;
+        /**
+          * Optional element to trigger opening and closing of the menu. If none is supplied the element where aria-controls === menu id will be assigned
+         */
+        "triggerEl": HTMLElement | undefined;
     }
     interface RuxProgress {
         /**
@@ -17265,6 +17323,18 @@ declare global {
         prototype: HTMLRuxLogElement;
         new (): HTMLRuxLogElement;
     };
+    interface HTMLRuxMenuItemElement extends Components.RuxMenuItem, HTMLStencilElement {
+    }
+    var HTMLRuxMenuItemElement: {
+        prototype: HTMLRuxMenuItemElement;
+        new (): HTMLRuxMenuItemElement;
+    };
+    interface HTMLRuxMenuItemDividerElement extends Components.RuxMenuItemDivider, HTMLStencilElement {
+    }
+    var HTMLRuxMenuItemDividerElement: {
+        prototype: HTMLRuxMenuItemDividerElement;
+        new (): HTMLRuxMenuItemDividerElement;
+    };
     interface HTMLRuxModalElement extends Components.RuxModal, HTMLStencilElement {
     }
     var HTMLRuxModalElement: {
@@ -17288,6 +17358,12 @@ declare global {
     var HTMLRuxNotificationElement: {
         prototype: HTMLRuxNotificationElement;
         new (): HTMLRuxNotificationElement;
+    };
+    interface HTMLRuxPopUpMenuElement extends Components.RuxPopUpMenu, HTMLStencilElement {
+    }
+    var HTMLRuxPopUpMenuElement: {
+        prototype: HTMLRuxPopUpMenuElement;
+        new (): HTMLRuxPopUpMenuElement;
     };
     interface HTMLRuxProgressElement extends Components.RuxProgress, HTMLStencilElement {
     }
@@ -18436,10 +18512,13 @@ declare global {
         "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
         "rux-log": HTMLRuxLogElement;
+        "rux-menu-item": HTMLRuxMenuItemElement;
+        "rux-menu-item-divider": HTMLRuxMenuItemDividerElement;
         "rux-modal": HTMLRuxModalElement;
         "rux-monitoring-icon": HTMLRuxMonitoringIconElement;
         "rux-monitoring-progress-icon": HTMLRuxMonitoringProgressIconElement;
         "rux-notification": HTMLRuxNotificationElement;
+        "rux-pop-up-menu": HTMLRuxPopUpMenuElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-status": HTMLRuxStatusElement;
         "rux-switch": HTMLRuxSwitchElement;
@@ -29170,6 +29249,38 @@ declare namespace LocalJSX {
          */
         "timezone"?: string;
     }
+    interface RuxMenuItem {
+        /**
+          * Disables the item
+         */
+        "disabled"?: boolean;
+        /**
+          * This attribute instructs browsers to download a URL instead of navigating to it, so the user will be prompted to save it as a local file. If the attribute has a value, it is used as the pre-filled file name in the Save prompt (the user can still change the file name if they want).
+         */
+        "download"?: string | undefined;
+        /**
+          * Contains a URL or a URL fragment that the hyperlink points to. If this property is set, an anchor tag will be rendered.
+         */
+        "href"?: string | undefined;
+        /**
+          * Emitted when item is clicked. Ex `{value : 10}`
+         */
+        "onMenuItemClicked"?: (event: CustomEvent<object>) => void;
+        /**
+          * Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
+         */
+        "rel"?: string | undefined;
+        /**
+          * Specifies where to display the linked URL. Only applies when an `href` is provided. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
+         */
+        "target"?: string | undefined;
+        /**
+          * Value returned when item is selected. If no value is given, the text content will be used.
+         */
+        "value"?: any;
+    }
+    interface RuxMenuItemDivider {
+    }
     interface RuxModal {
         /**
           * Text for confirmation button
@@ -29224,11 +29335,11 @@ declare namespace LocalJSX {
          */
         "label"?: string;
         /**
-          * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%
+          * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%.
          */
         "max"?: number;
         /**
-          * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%
+          * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%.
          */
         "min"?: number;
         /**
@@ -29236,7 +29347,7 @@ declare namespace LocalJSX {
          */
         "notifications"?: number;
         /**
-          * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below.
+          * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below, and must be an integer. If a non-integer value is passed in, progress will default to 0. If progress ever becomes less than min or greater than max, it will be set to equal min or max respectively.
          */
         "progress"?: number;
         /**
@@ -29265,6 +29376,36 @@ declare namespace LocalJSX {
           * Displays an icon from the [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/) in the log entry's row. Possible values include 'off', 'standby', 'normal', 'caution', 'serious', and 'critical'.
          */
         "status"?: Status;
+    }
+    interface RuxPopUpMenu {
+        /**
+          * Element to anchor the menu to. If none is given the menu will anchor to the trigger element where aria-controls === menu id
+         */
+        "anchorEl"?: HTMLElement | undefined;
+        /**
+          * Emitted when the menu is closed.
+         */
+        "onMenuDidClose"?: (event: CustomEvent<void>) => void;
+        /**
+          * Emitted when the menu is open.
+         */
+        "onMenuDidOpen"?: (event: CustomEvent<void>) => void;
+        /**
+          * Emitted when the menu is about to close
+         */
+        "onMenuWillClose"?: (event: CustomEvent<void>) => void;
+        /**
+          * Emitted when the menu is about to open.
+         */
+        "onMenuWillOpen"?: (event: CustomEvent<void>) => void;
+        /**
+          * Boolean which controls when to show the menu
+         */
+        "open"?: boolean;
+        /**
+          * Optional element to trigger opening and closing of the menu. If none is supplied the element where aria-controls === menu id will be assigned
+         */
+        "triggerEl"?: HTMLElement | undefined;
     }
     interface RuxProgress {
         /**
@@ -30413,10 +30554,13 @@ declare namespace LocalJSX {
         "rux-icon-zoom-out": RuxIconZoomOut;
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
         "rux-log": RuxLog;
+        "rux-menu-item": RuxMenuItem;
+        "rux-menu-item-divider": RuxMenuItemDivider;
         "rux-modal": RuxModal;
         "rux-monitoring-icon": RuxMonitoringIcon;
         "rux-monitoring-progress-icon": RuxMonitoringProgressIcon;
         "rux-notification": RuxNotification;
+        "rux-pop-up-menu": RuxPopUpMenu;
         "rux-progress": RuxProgress;
         "rux-status": RuxStatus;
         "rux-switch": RuxSwitch;
@@ -31499,10 +31643,13 @@ declare module "@stencil/core" {
             "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
             "rux-log": LocalJSX.RuxLog & JSXBase.HTMLAttributes<HTMLRuxLogElement>;
+            "rux-menu-item": LocalJSX.RuxMenuItem & JSXBase.HTMLAttributes<HTMLRuxMenuItemElement>;
+            "rux-menu-item-divider": LocalJSX.RuxMenuItemDivider & JSXBase.HTMLAttributes<HTMLRuxMenuItemDividerElement>;
             "rux-modal": LocalJSX.RuxModal & JSXBase.HTMLAttributes<HTMLRuxModalElement>;
             "rux-monitoring-icon": LocalJSX.RuxMonitoringIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>;
             "rux-monitoring-progress-icon": LocalJSX.RuxMonitoringProgressIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringProgressIconElement>;
             "rux-notification": LocalJSX.RuxNotification & JSXBase.HTMLAttributes<HTMLRuxNotificationElement>;
+            "rux-pop-up-menu": LocalJSX.RuxPopUpMenu & JSXBase.HTMLAttributes<HTMLRuxPopUpMenuElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
             "rux-switch": LocalJSX.RuxSwitch & JSXBase.HTMLAttributes<HTMLRuxSwitchElement>;
