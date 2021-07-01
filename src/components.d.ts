@@ -18,15 +18,15 @@ export namespace Components {
         /**
          * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
          */
-        icon: string
+        icon?: string
         /**
          * Hides slotted text from the button by setting rux-button--icon-only class
          */
         iconOnly: boolean
         /**
-         * Changes button style from solid to outline by setting rux-button--outline class
+         * Changes button style from solid to secondary by setting rux-button--secondary class
          */
-        outline: boolean
+        secondary: boolean
         /**
          * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
          */
@@ -60,11 +60,11 @@ export namespace Components {
         /**
          * Hides the day of the year.
          */
-        hideDate?: boolean
+        hideDate: boolean
         /**
          * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
          */
-        hideTimezone?: boolean
+        hideTimezone: boolean
         /**
          * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax), displays a timestamp labeled "LOS" next to the standard clock.
          */
@@ -72,7 +72,7 @@ export namespace Components {
         /**
          * Applies a smaller clock style.
          */
-        small?: boolean
+        small: boolean
         /**
          * Accepts the [IANA timezone string format](https://www.iana.org/time-zones) such as `'America/Los_Angeles'` or any single-character designation for a [military timezones](https://en.wikipedia.org/wiki/List_of_military_time_zones) (`'A'` through `'Z'`, excluding `'J'`), both case-insensitive. If no value for timezone is provided, the clock will use `'UTC'`. See [`toLocaleString()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString#Parameters) for more details.
          */
@@ -140,15 +140,15 @@ export namespace Components {
         /**
          * Declares whether the app-state component will be shown in the app-meta slot
          */
-        includeAppState?: boolean
+        includeAppState: boolean
         /**
          * Declares whether a rux-icon will be shown in the left-side slot
          */
-        includeIcon?: boolean
+        includeIcon: boolean
         /**
          * Declares whether the username component will be shown in the app-meta slot
          */
-        includeUsername?: boolean
+        includeUsername: boolean
         /**
          * Sets the icon to be displayed in the default rux-icon component
          */
@@ -10842,11 +10842,11 @@ export namespace Components {
         /**
          * Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.
          */
-        checked?: boolean
+        checked: boolean
         /**
          * Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
          */
-        disabled?: boolean
+        disabled: boolean
         /**
          * The name of the form input element
          */
@@ -18315,9 +18315,6 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement
         new (): HTMLRuxIconZoomOutMapElement
     }
-    interface HTMLRuxModalElement
-        extends Components.RuxModal,
-            HTMLStencilElement {}
     interface HTMLRuxLogElement extends Components.RuxLog, HTMLStencilElement {}
     var HTMLRuxLogElement: {
         prototype: HTMLRuxLogElement
@@ -19545,9 +19542,9 @@ declare namespace LocalJSX {
          */
         iconOnly?: boolean
         /**
-         * Changes button style from solid to outline by setting rux-button--outline class
+         * Changes button style from solid to secondary by setting rux-button--secondary class
          */
-        outline?: boolean
+        secondary?: boolean
         /**
          * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
          */
