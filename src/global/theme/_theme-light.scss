@@ -176,12 +176,14 @@
     ==========================================================================
 
   */
-    --switchOffColor: var(--secondaryText);
+    --switchOffColor: rgb(234, 238, 244);
+    --switchOffBorderColor: rgb(100, 156, 189);
     --switchOnColor: var(--primary);
-    --switchHoverOnColor: var(--primaryDark);
-    --switchHoverOffColor: var(--primaryDark);
+    --switchHoverOnColor: var(--primary);
+    --switchHoverOffColor: var(--primary);
     --switchDisabledOnColor: var(--primary);
     --switchDisabledOffColor: var(--secondaryText);
+    --switchButtonHoverOffColor: var(--primaryDark);
     /*
 
     Push Button Colors

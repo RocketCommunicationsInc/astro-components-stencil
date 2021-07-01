@@ -78,6 +78,7 @@ Configure the component using native HTML attributes.
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property   | Attribute  | Description                                                                                                                                                                                 | Type                   | Default     |
@@ -86,11 +87,13 @@ Configure the component using native HTML attributes.
 | `disabled` | `disabled` | Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored. | `boolean \| undefined` | `false`     |
 | `name`     | `name`     | The name of the form input element                                                                                                                                                          | `string \| undefined`  | `undefined` |
 
+
 ## Events
 
 | Event        | Description                                  | Type                             |
 | ------------ | -------------------------------------------- | -------------------------------- |
 | `rux-change` | Emitted when the value property has changed. | `CustomEvent<SwitchChangeEvent>` |
+
 
 ## CSS Custom Properties
 
@@ -100,9 +103,10 @@ Configure the component using native HTML attributes.
 | `--switchDisabledOnColor`  | the Switch disabled on color  |
 | `--switchHoverOffColor`    | the Switch hover off color    |
 | `--switchHoverOnColor`     | the Switch hover on color     |
+| `--switchOffBorderColor`   | the Switch off border color   |
 | `--switchOffColor`         | the Switch off color          |
-| `--switchOnColor`          | the Switch on color           |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

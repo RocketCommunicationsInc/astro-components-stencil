@@ -1,17 +1,17 @@
 :host {
     display: block;
     /** @prop --switchOffColor: the Switch off color */
-    --switchOffColor: var(--secondaryText);
-    /** @prop --switchOnColor: the Switch on color */
-    --switchOnColor: var(--primary);
+    --switchOffColor: var(--backgroundColor);
     /** @prop --switchHoverOnColor: the Switch hover on color */
-    --switchHoverOnColor: var(--primaryLight);
+    --switchHoverOnColor: var(--primary);
     /** @prop --switchHoverOffColor: the Switch hover off color */
-    --switchHoverOffColor: var(--primaryLight);
+    --switchHoverOffColor: var(--primary);
     /** @prop --switchDisabledOnColor: the Switch disabled on color */
     --switchDisabledOnColor: var(--primary);
     /** @prop --switchDisabledOffColor: the Switch disabled off color */
     --switchDisabledOffColor: var(--secondaryText);
+    /** @prop --switchOffBorderColor: the Switch off border color*/
+    --switchOffBorderColor: rgb(43, 101, 155);
 }
 
 .rux-switch {
@@ -40,9 +40,9 @@
     display: flex;
     content: '';
 
-    border-radius: 5.5px;
+    border-radius: 4.7px;
     border: 1px solid;
-    border-color: var(--switchOffColor);
+    border-color: var(--switchOffBorderColor);
     background-color: var(--switchOffColor);
 
     height: 11px;
@@ -62,7 +62,7 @@
     .rux-switch__input:not(:disabled)
     + .rux-switch__button:before {
     border-color: var(--switchHoverOffColor);
-    background-color: var(--switchHoverOffColor);
+    background-color: var(--switchOffColor);
 }
 
 /* Track Hover Checked */
@@ -84,8 +84,8 @@
     width: 19px;
 
     border-radius: 50%;
-    border: 1px solid var(--switchOffColor);
-    background-color: var(--inputBackground);
+    border: 1px solid var(--switchHoverOffColor);
+    background-color: var(--switchOffColor);
 
     transition: 0.1s left linear, 0.1s border-color linear;
 }
@@ -93,22 +93,22 @@
 /* Button Active */
 .rux-switch__input:checked + .rux-switch__button::after {
     left: 50%;
-    border-color: var(--switchOnColor);
-    background-color: var(--inputBackground);
+    background-color: var(--switchOffColor);
+    border-color: var(--switchHoverOffColor);
 }
 
 /* Button Hover Unchecked */
 .rux-switch:hover
     .rux-switch__input:not(:disabled)
     + .rux-switch__button:after {
-    border-color: var(--switchHoverOffColor);
+    border-color: var(--switchButtonHoverOffColor);
 }
 
 /* Button Hover Checked */
 .rux-switch:hover
     .rux-switch__input:checked:not(:disabled)
     + .rux-switch__button:after {
-    border-color: var(--switchHoverOnColor);
+    border-color: var(--switchButtonHoverOffColor);
 }
 
 /* Disabled */
