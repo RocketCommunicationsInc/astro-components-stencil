@@ -3,3 +3,7 @@ loader
 storybook-static
 *.mdx
 *readme.md
+
+# Ignore Stencil Build files
+src/components.d.ts
+src/globals.d.ts
