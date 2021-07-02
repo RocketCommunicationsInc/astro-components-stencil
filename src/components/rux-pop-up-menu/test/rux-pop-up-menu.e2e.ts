@@ -49,10 +49,13 @@ describe('rux-pop-up-menu', () => {
     )
     const button = await page.find('button')
     const menu = await page.find('rux-pop-up-menu')
+    const open = true
     // Add triggerEl prop to menu
-    page.$eval('rux-pop-up-menu', (elm: AnyHTMLElement) => {
-      elm.triggerEl = button
-    },
+    await page.$eval('rux-pop-up-menu', 
+      (elm: any, button) => {
+        // const button = await page.find('button')
+        elm.triggerEl = button
+      },
       button
     )
     await page.waitForChanges();
