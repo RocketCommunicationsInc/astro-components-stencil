@@ -85,6 +85,8 @@ Pass properties as slotted components in the Astro Pop Up Menu or Astro Select M
 
 | Name                             | Description                      |
 | -------------------------------- | -------------------------------- |
+| `--disabledCursor`               | Cursor for Disabled Items        |
+| `--disabledOpacity`              | Opacity for Disabled Items       |
 | `--menuItemBackgroundColor`      | Menu Item Background Color       |
 | `--menuItemHoverBackgroundColor` | Menu Item Hover Background Color |
 | `--menuItemHoverTextColor`       | Menu Item Hover Text Color       |

@@ -80,11 +80,11 @@ Extending Astro Pop Up Menu with custom content. Content passed without a slot n
 
 ## Properties
 
-| Property    | Attribute | Description                                                                                                                                   | Type                       | Default     |
-| ----------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------- |
-| `anchorEl`  | --        | Element to anchor the menu to. If none is given the menu will anchor to the trigger element where aria-controls === menu id                   | `HTMLElement \| undefined` | `undefined` |
-| `open`      | `open`    | Boolean which controls when to show the menu                                                                                                  | `boolean`                  | `false`     |
-| `triggerEl` | --        | Optional element to trigger opening and closing of the menu. If none is supplied the element where aria-controls === menu id will be assigned | `HTMLElement \| undefined` | `undefined` |
+| Property                 | Attribute | Description                                                                                                                                   | Type          | Default     |
+| ------------------------ | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ----------- |
+| `anchorEl` _(required)_  | --        | Element to anchor the menu to. If none is given the menu will anchor to the trigger element where aria-controls === menu id                   | `HTMLElement` | `undefined` |
+| `open`                   | `open`    | Boolean which controls when to show the menu                                                                                                  | `boolean`     | `false`     |
+| `triggerEl` _(required)_ | --        | Optional element to trigger opening and closing of the menu. If none is supplied the element where aria-controls === menu id will be assigned | `HTMLElement` | `undefined` |
 
 
 ## Events
