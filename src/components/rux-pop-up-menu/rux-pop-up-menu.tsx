@@ -124,7 +124,6 @@ export class RuxPopUpMenu {
         this.triggerEl = triggerEl
         this.triggerEl.addEventListener('mousedown', this._handleClick);
       } else {
-        console.error('Error: No trigger element found for pop up menu. Either assign a trigger element via props or add `aria-controls=${pop-up-menu-id}` attribute to the trigger element')
         this.triggerEl = this.el
       }
     } else {
@@ -145,14 +144,6 @@ export class RuxPopUpMenu {
     let caretLeft: number
 
     const padding = 8;
-
-    // console.log('anchorEl', this.anchorEl)
-    // console.log('triggerEl', this.triggerEl)
-             
-    // left =
-    //   menuBounds.width + anchorBounds.left - padding > window.innerWidth
-    //     ? anchorBounds.right - menuBounds.width
-    //     : anchorBounds.left - padding;
 
     if (menuBounds.width + anchorBounds.left - padding > window.innerWidth) {
       left = anchorBounds.right - menuBounds.width
@@ -193,7 +184,6 @@ export class RuxPopUpMenu {
   }
 
   private _show() {
-    console.log('show fired')
     this.menuWillOpen.emit()
     this._setMenuPosition();
     this.open = true;
