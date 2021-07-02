@@ -109,10 +109,10 @@ export class RuxPopUpMenu {
   async toggle(): Promise<boolean> {
     if (this.open) {
       this._hide()
-      return false
+      return Promise.resolve(false)
     } else {
       this._show()
-      return true
+      return Promise.resolve(true)
     }
   }
 
