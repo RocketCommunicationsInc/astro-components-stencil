@@ -26,26 +26,8 @@ export class RuxPopUpMenu {
   @Prop({mutable: true}) anchorEl!: HTMLElement
   @Watch('triggerEl')
   @Watch('anchorEl')
-  tieElements(newValue: string) {
-    // console.log(newValue)
-    if(!this.triggerEl) {
-      const triggerEl: HTMLElement | null = document.querySelector(`[aria-controls="${this.el.id}"]`)
-
-      if (triggerEl) {
-        this.triggerEl = triggerEl
-        this.triggerEl.addEventListener('mousedown', this._handleClick);
-      } else {
-        console.error('Error: No trigger element found for pop up menu. Either assign a trigger element via props or add `aria-controls=${pop-up-menu-id}` attribute to the trigger element')
-        this.triggerEl = this.el
-      }
-    } else {
-      this.triggerEl.addEventListener('mousedown', this._handleClick)
-    }
-
-    if (!this.anchorEl) {
-      this.anchorEl = this.triggerEl
-    }
-
+  tieElements() {
+    this._bindElements()
   }
   
   /**
@@ -77,23 +59,7 @@ export class RuxPopUpMenu {
     this._handleClick = this._handleClick.bind(this)
     this._handleOutsideClick = this._handleOutsideClick.bind(this)
 
-    if(!this.triggerEl) {
-      const triggerEl: HTMLElement | null = document.querySelector(`[aria-controls="${this.el.id}"]`)
-
-      if (triggerEl) {
-        this.triggerEl = triggerEl
-        this.triggerEl.addEventListener('mousedown', this._handleClick);
-      } else {
-        console.error('Error: No trigger element found for pop up menu. Either assign a trigger element via props or add `aria-controls=${pop-up-menu-id}` attribute to the trigger element')
-        this.triggerEl = this.el
-      }
-    } else {
-      this.triggerEl.addEventListener('mousedown', this._handleClick)
-    }
-
-    if (!this.anchorEl) {
-      this.anchorEl = this.triggerEl
-    }
+    this._bindElements()
   }
 
   disconnectedCallback() {
@@ -150,22 +116,54 @@ export class RuxPopUpMenu {
     }
   }
 
-  _setMenuPosition() {
+  private _bindElements() {
+    if(!this.triggerEl) {
+      const triggerEl: HTMLElement | null = document.querySelector(`[aria-controls="${this.el.id}"]`)
+
+      if (triggerEl) {
+        this.triggerEl = triggerEl
+        this.triggerEl.addEventListener('mousedown', this._handleClick);
+      } else {
+        console.error('Error: No trigger element found for pop up menu. Either assign a trigger element via props or add `aria-controls=${pop-up-menu-id}` attribute to the trigger element')
+        this.triggerEl = this.el
+      }
+    } else {
+      this.triggerEl.addEventListener('mousedown', this._handleClick)
+    }
+
+    if (!this.anchorEl) {
+      this.anchorEl = this.triggerEl
+    }
+  }
+
+  private _setMenuPosition() {
     const menuBounds = this.el.getBoundingClientRect();
     const anchorBounds = this.anchorEl.getBoundingClientRect();
     const caret = parseInt(getComputedStyle(this.el, ':after').height);
     let top: number
     let left: number
+    let caretLeft: number
 
     const padding = 8;
 
     // console.log('anchorEl', this.anchorEl)
     // console.log('triggerEl', this.triggerEl)
              
-    left =
-      menuBounds.width + anchorBounds.left - padding > window.innerWidth
-        ? anchorBounds.right - menuBounds.width
-        : anchorBounds.left + padding;
+    // left =
+    //   menuBounds.width + anchorBounds.left - padding > window.innerWidth
+    //     ? anchorBounds.right - menuBounds.width
+    //     : anchorBounds.left - padding;
+
+    if (menuBounds.width + anchorBounds.left - padding > window.innerWidth) {
+      left = anchorBounds.right - menuBounds.width
+      caretLeft = menuBounds.width - 25
+    } else if (anchorBounds.left - padding > 0) {
+      left = anchorBounds.left - padding
+      caretLeft = 10
+    } else {
+      left = padding
+      caretLeft = 10
+    }
 
     top = anchorBounds.bottom + padding / 2 + caret / 2;
 
@@ -179,23 +177,22 @@ export class RuxPopUpMenu {
     this.el.style.left = `${left}px`;
     this.el.style.top = `${top}px`;
 
-    const caretLeft = anchorBounds.left - left + padding;
     this.el.style.setProperty('--caretLeft', `${caretLeft}px`);
   }
 
-  _handleClick(e: Event) {
+  private _handleClick(e: Event) {
     e.preventDefault()
     this._show()
   }
 
-  _handleOutsideClick(e: MouseEvent) {
+  private _handleOutsideClick(e: MouseEvent) {
     const target = e.composedPath().includes(this.el)
     if (!target) {
       this._hide()
     }
   }
 
-  _show() {
+  private _show() {
     console.log('show fired')
     this.menuWillOpen.emit()
     this._setMenuPosition();
@@ -212,7 +209,7 @@ export class RuxPopUpMenu {
     this.menuDidOpen.emit()
   }
 
-  _hide() {
+  private _hide() {
     this.menuWillClose.emit()
     this.open = false;
 
