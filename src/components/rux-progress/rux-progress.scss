@@ -76,8 +76,6 @@
     height: var(--progressHeight);
     max-width: var(--progressWidth);
     background: var(--progressDeterminateBarBackgroundColor);
-    transform-origin: 0 0;
-    transform: rotate(-90deg) translateX(-60px);
 }
 /* Indeterminate */
 .rux-progress:indeterminate {
