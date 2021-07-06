@@ -8,13 +8,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal'
 import { Classification, Status } from './common/commonTypes.module'
 import { LogRow } from './components/rux-log/rux-log.model'
 import { RangeItem } from './components/rux-monitoring-progress-icon/rux-monitoring-progress-icon'
-import { SegmentedButton } from './components/rux-segmented-button/rux-segmented-button.model'
 import { SwitchChangeEvent } from './components/rux-switch/rux-switch.model'
 export namespace Components {
     interface RuxButton {
-        /**
-         * Toggles disabled attribute on the button
-         */
         disabled: boolean
         /**
          * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
@@ -24,10 +20,7 @@ export namespace Components {
          * Hides slotted text from the button by setting rux-button--icon-only class
          */
         iconOnly: boolean
-        /**
-         * Changes button style from solid to outline by setting rux-button--outline class
-         */
-        outline: boolean
+        secondary: boolean
         /**
          * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
          */
@@ -18366,13 +18359,6 @@ declare global {
         prototype: HTMLRuxProgressElement
         new (): HTMLRuxProgressElement
     }
-    interface HTMLRuxSegmentedButtonElement
-        extends Components.RuxSegmentedButton,
-            HTMLStencilElement {}
-    var HTMLRuxSegmentedButtonElement: {
-        prototype: HTMLRuxSegmentedButtonElement
-        new (): HTMLRuxSegmentedButtonElement
-    }
     interface HTMLRuxStatusElement
         extends Components.RuxStatus,
             HTMLStencilElement {}
@@ -19530,7 +19516,6 @@ declare global {
         'rux-monitoring-progress-icon': HTMLRuxMonitoringProgressIconElement
         'rux-notification': HTMLRuxNotificationElement
         'rux-progress': HTMLRuxProgressElement
-        'rux-segmented-button': HTMLRuxSegmentedButtonElement
         'rux-status': HTMLRuxStatusElement
         'rux-switch': HTMLRuxSwitchElement
         'rux-tab': HTMLRuxTabElement
@@ -19548,9 +19533,6 @@ declare global {
 }
 declare namespace LocalJSX {
     interface RuxButton {
-        /**
-         * Toggles disabled attribute on the button
-         */
         disabled?: boolean
         /**
          * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
@@ -19560,10 +19542,7 @@ declare namespace LocalJSX {
          * Hides slotted text from the button by setting rux-button--icon-only class
          */
         iconOnly?: boolean
-        /**
-         * Changes button style from solid to outline by setting rux-button--outline class
-         */
-        outline?: boolean
+        secondary?: boolean
         /**
          * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
          */
@@ -31520,7 +31499,6 @@ declare namespace LocalJSX {
         'rux-monitoring-progress-icon': RuxMonitoringProgressIcon
         'rux-notification': RuxNotification
         'rux-progress': RuxProgress
-        'rux-segmented-button': RuxSegmentedButton
         'rux-status': RuxStatus
         'rux-switch': RuxSwitch
         'rux-tab': RuxTab
@@ -33674,8 +33652,6 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxNotificationElement>
             'rux-progress': LocalJSX.RuxProgress &
                 JSXBase.HTMLAttributes<HTMLRuxProgressElement>
-            'rux-segmented-button': LocalJSX.RuxSegmentedButton &
-                JSXBase.HTMLAttributes<HTMLRuxSegmentedButtonElement>
             'rux-status': LocalJSX.RuxStatus &
                 JSXBase.HTMLAttributes<HTMLRuxStatusElement>
             'rux-switch': LocalJSX.RuxSwitch &
