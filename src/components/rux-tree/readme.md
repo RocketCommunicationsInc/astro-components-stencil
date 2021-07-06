@@ -45,3 +45,15 @@ TreeNode has two slots:
 ```
 
 <!-- Auto Generated Below -->
+
+## CSS Custom Properties
+
+| Name                    | Description           |
+| ----------------------- | --------------------- |
+| `--treeBackgroundColor` | tree background color |
+| `--treeBorderColor`     | tree color            |
+| `--treeTextColor`       | tree text color       |
+
+---
+
+_Built with [StencilJS](https://stenciljs.com/)_

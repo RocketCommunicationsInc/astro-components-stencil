@@ -22,9 +22,18 @@ export class RuxTreeNode {
     @Element() el!: HTMLElement
     @State() children: Array<HTMLRuxTreeNodeElement> = []
 
+    /**
+     * Sets the expanded state
+     */
     @Prop({ mutable: true, reflect: true }) expanded = false
+    /**
+     * Sets the selected state
+     */
     @Prop({ mutable: true, reflect: true }) selected = false
 
+    /**
+     * Emit when user selects a tree node
+     */
     @Event({ eventName: 'rux-tree-node-selected' })
     ruxTreeNodeSelected!: EventEmitter<string>
 

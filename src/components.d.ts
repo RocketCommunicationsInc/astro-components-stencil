@@ -10882,8 +10882,16 @@ export namespace Components {
     }
     interface RuxTree {}
     interface RuxTreeNode {
+        /**
+         * Sets the expanded state
+         */
         expanded: boolean
+        /**
+         * Sets the selected state
+         */
         selected: boolean
+        setExpanded: (value: boolean) => Promise<void>
+        setSelected: (value: boolean) => Promise<void>
     }
 }
 declare global {
@@ -30430,7 +30438,17 @@ declare namespace LocalJSX {
     }
     interface RuxTree {}
     interface RuxTreeNode {
+        /**
+         * Sets the expanded state
+         */
         expanded?: boolean
+        /**
+         * Emit when user selects a tree node
+         */
+        'onRux-tree-node-selected'?: (event: CustomEvent<string>) => void
+        /**
+         * Sets the selected state
+         */
         selected?: boolean
     }
     interface IntrinsicElements {
