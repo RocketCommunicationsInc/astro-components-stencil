@@ -15,7 +15,7 @@ export class RuxMenuItem {
   /**
    * Disables the item
   */
-  @Prop({reflect: true}) disabled: boolean = false
+  @Prop({ reflect: true }) disabled: boolean = false
 
   /**
    * Value returned when item is selected. If no value is given, the text content will be used.
@@ -52,29 +52,26 @@ export class RuxMenuItem {
   /**
    * Emitted when item is clicked. Ex `{value : 10}`
    */
-   @Event() menuItemClicked!: EventEmitter<object>
-   private itemOnClick = () => {
-     if (this.value) {
-       this.menuItemClicked.emit({value: this.value})
-     } else {
-       this.menuItemClicked.emit({value: this.el.textContent})
-     } 
-   }
+  @Event() menuItemClicked!: EventEmitter<object>
+  private itemOnClick = () => {
+    const emittedValue = this.value ? this.value : this.el.textContent
+    this.menuItemClicked.emit({ value: emittedValue })
+  }
 
   private isClickable(): boolean {
     return !this.disabled
-  }  
+  }
 
   render() {
-    const {disabled, href, rel, download, target, itemOnClick} = this
+    const { disabled, href, rel, download, target, itemOnClick } = this
     const clickable = this.isClickable()
     const TagType = href ? 'a' : 'div'
-    const attributes = (TagType === 'a') 
-    ? {download, href, rel, target}
-    : {}
+    const attributes = (TagType === 'a')
+      ? { download, href, rel, target }
+      : {}
     // Only sets onClick if the item is clickable for screen readers
     const clickFunc = clickable ? {
-      onClick: () => {itemOnClick()}
+      onClick: () => { itemOnClick() }
     } : {}
 
     return (
