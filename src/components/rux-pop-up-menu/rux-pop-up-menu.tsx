@@ -17,23 +17,23 @@ export class RuxPopUpMenu {
    * Optional element to trigger opening and closing of the menu.
    * If none is supplied the element where aria-controls === menu id will be assigned
    */
-  @Prop({mutable: true}) triggerEl!: HTMLElement
+  @Prop({ mutable: true }) triggerEl?: HTMLElement
 
   /**
    * Element to anchor the menu to. If none is given the menu will anchor
    * to the trigger element where aria-controls === menu id
    */
-  @Prop({mutable: true}) anchorEl!: HTMLElement
+  @Prop({ mutable: true }) anchorEl?: HTMLElement
   @Watch('triggerEl')
   @Watch('anchorEl')
   tieElements() {
     this._bindElements()
   }
-  
+
   /**
    * Boolean which controls when to show the menu
    */
-  @Prop({reflect: true, mutable: true}) open: boolean = false
+  @Prop({ reflect: true, mutable: true }) open: boolean = false
 
   /**
    * Emitted when the menu is about to open.
@@ -63,7 +63,7 @@ export class RuxPopUpMenu {
   }
 
   disconnectedCallback() {
-    if (this.triggerEl){
+    if (this.triggerEl) {
       this.triggerEl.removeEventListener('mousedown', this._handleClick);
     }
   }
@@ -81,7 +81,7 @@ export class RuxPopUpMenu {
    */
   @Method()
   async show(): Promise<boolean> {
-    if (this.open){
+    if (this.open) {
       return Promise.resolve(false)
     }
 
@@ -94,7 +94,7 @@ export class RuxPopUpMenu {
    */
   @Method()
   async close(): Promise<boolean> {
-    if (!this.open){
+    if (!this.open) {
       return Promise.resolve(false)
     }
 
@@ -117,7 +117,7 @@ export class RuxPopUpMenu {
   }
 
   private _bindElements() {
-    if(!this.triggerEl) {
+    if (!this.triggerEl) {
       const triggerEl: HTMLElement | null = document.querySelector(`[aria-controls="${this.el.id}"]`)
 
       if (triggerEl) {
@@ -136,39 +136,41 @@ export class RuxPopUpMenu {
   }
 
   private _setMenuPosition() {
-    const menuBounds = this.el.getBoundingClientRect();
-    const anchorBounds = this.anchorEl.getBoundingClientRect();
-    const caret = parseInt(getComputedStyle(this.el, ':after').height);
-    let top: number
-    let left: number
-    let caretLeft: number
+    if (this.anchorEl) {
+      const menuBounds = this.el.getBoundingClientRect();
+      const anchorBounds = this.anchorEl.getBoundingClientRect();
+      const caret = parseInt(getComputedStyle(this.el, ':after').height);
+      let top: number
+      let left: number
+      let caretLeft: number
 
-    const padding = 8;
+      const padding = 8;
 
-    if (menuBounds.width + anchorBounds.left - padding > window.innerWidth) {
-      left = anchorBounds.right - menuBounds.width
-      caretLeft = menuBounds.width - 25
-    } else if (anchorBounds.left - padding > 0) {
-      left = anchorBounds.left - padding
-      caretLeft = 10
-    } else {
-      left = padding
-      caretLeft = 10
+      if (menuBounds.width + anchorBounds.left - padding > window.innerWidth) {
+        left = anchorBounds.right - menuBounds.width
+        caretLeft = menuBounds.width - 25
+      } else if (anchorBounds.left - padding > 0) {
+        left = anchorBounds.left - padding
+        caretLeft = 10
+      } else {
+        left = padding
+        caretLeft = 10
+      }
+
+      top = anchorBounds.bottom + padding / 2 + caret / 2;
+
+      if (menuBounds.height + anchorBounds.bottom + padding > window.innerHeight) {
+        top = anchorBounds.top - menuBounds.height - caret;
+        this.el.classList.add('from-top');
+      } else {
+        this.el.classList.remove('from-top');
+      }
+
+      this.el.style.left = `${left}px`;
+      this.el.style.top = `${top}px`;
+
+      this.el.style.setProperty('--caretLeft', `${caretLeft}px`);
     }
-
-    top = anchorBounds.bottom + padding / 2 + caret / 2;
-
-    if (menuBounds.height + anchorBounds.bottom + padding > window.innerHeight) {
-      top = anchorBounds.top - menuBounds.height - caret;
-      this.el.classList.add('from-top');
-    } else {
-      this.el.classList.remove('from-top');
-    }
-
-    this.el.style.left = `${left}px`;
-    this.el.style.top = `${top}px`;
-
-    this.el.style.setProperty('--caretLeft', `${caretLeft}px`);
   }
 
   private _handleClick(e: Event) {
@@ -194,7 +196,7 @@ export class RuxPopUpMenu {
       clearTimeout(debounce);
     }, 10);
 
-    this.triggerEl.removeEventListener('mousedown', this._handleClick);
+    this.triggerEl?.removeEventListener('mousedown', this._handleClick);
 
     this.menuDidOpen.emit()
   }
@@ -206,7 +208,7 @@ export class RuxPopUpMenu {
     window.removeEventListener('mousedown', this._handleOutsideClick);
     window.removeEventListener('resize', this._setMenuPosition);
 
-    this.triggerEl.addEventListener('mousedown', this._handleClick);
+    this.triggerEl?.addEventListener('mousedown', this._handleClick);
     this.menuDidClose.emit()
   }
 
