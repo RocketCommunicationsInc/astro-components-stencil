@@ -54,3 +54,17 @@
         fill: var(--colorCriticalDarken1);
     }
 }
+:host([status='off']) {
+    background-color: var(--colorOffLighten1);
+    rux-icon {
+        stroke: var(--colorOffDarken1);
+        fill: var(--colorOffDarken1);
+    }
+}
+:host([status='serious']) {
+    background-color: var(--colorSeriousLighten1);
+    rux-icon {
+        stroke: var(--colorSeriousDarken1);
+        fill: var(--colorSeriousDarken1);
+    }
+}
