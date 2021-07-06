@@ -8,6 +8,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal'
 import { Classification, Status } from './common/commonTypes.module'
 import { LogRow } from './components/rux-log/rux-log.model'
 import { RangeItem } from './components/rux-monitoring-progress-icon/rux-monitoring-progress-icon'
+import { SegmentedButton } from './components/rux-segmented-button/rux-segmented-button.model'
 import { SwitchChangeEvent } from './components/rux-switch/rux-switch.model'
 export namespace Components {
     interface RuxButton {
@@ -10770,11 +10771,11 @@ export namespace Components {
          */
         label?: string
         /**
-         * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%
+         * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%.
          */
         max: number
         /**
-         * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%
+         * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%.
          */
         min: number
         /**
@@ -10782,7 +10783,7 @@ export namespace Components {
          */
         notifications?: number
         /**
-         * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below.
+         * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below, and must be an integer. If a non-integer value is passed in, progress will default to 0. If progress ever becomes less than min or greater than max, it will be set to equal min or max respectively.
          */
         progress: number
         /**
@@ -18359,6 +18360,13 @@ declare global {
         prototype: HTMLRuxProgressElement
         new (): HTMLRuxProgressElement
     }
+    interface HTMLRuxSegmentedButtonElement
+        extends Components.RuxSegmentedButton,
+            HTMLStencilElement {}
+    var HTMLRuxSegmentedButtonElement: {
+        prototype: HTMLRuxSegmentedButtonElement
+        new (): HTMLRuxSegmentedButtonElement
+    }
     interface HTMLRuxStatusElement
         extends Components.RuxStatus,
             HTMLStencilElement {}
@@ -19516,6 +19524,7 @@ declare global {
         'rux-monitoring-progress-icon': HTMLRuxMonitoringProgressIconElement
         'rux-notification': HTMLRuxNotificationElement
         'rux-progress': HTMLRuxProgressElement
+        'rux-segmented-button': HTMLRuxSegmentedButtonElement
         'rux-status': HTMLRuxStatusElement
         'rux-switch': HTMLRuxSwitchElement
         'rux-tab': HTMLRuxTabElement
@@ -30296,11 +30305,11 @@ declare namespace LocalJSX {
          */
         label?: string
         /**
-         * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%
+         * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%.
          */
         max?: number
         /**
-         * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%
+         * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%.
          */
         min?: number
         /**
@@ -30308,7 +30317,7 @@ declare namespace LocalJSX {
          */
         notifications?: number
         /**
-         * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below.
+         * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below, and must be an integer. If a non-integer value is passed in, progress will default to 0. If progress ever becomes less than min or greater than max, it will be set to equal min or max respectively.
          */
         progress?: number
         /**
@@ -31499,6 +31508,7 @@ declare namespace LocalJSX {
         'rux-monitoring-progress-icon': RuxMonitoringProgressIcon
         'rux-notification': RuxNotification
         'rux-progress': RuxProgress
+        'rux-segmented-button': RuxSegmentedButton
         'rux-status': RuxStatus
         'rux-switch': RuxSwitch
         'rux-tab': RuxTab
@@ -33652,6 +33662,8 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxNotificationElement>
             'rux-progress': LocalJSX.RuxProgress &
                 JSXBase.HTMLAttributes<HTMLRuxProgressElement>
+            'rux-segmented-button': LocalJSX.RuxSegmentedButton &
+                JSXBase.HTMLAttributes<HTMLRuxSegmentedButtonElement>
             'rux-status': LocalJSX.RuxStatus &
                 JSXBase.HTMLAttributes<HTMLRuxStatusElement>
             'rux-switch': LocalJSX.RuxSwitch &
