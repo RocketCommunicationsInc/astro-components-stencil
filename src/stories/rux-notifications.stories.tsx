@@ -17,7 +17,14 @@ export default {
 
 export const Notification = () => {
     const toggleBanner = boolean('Enable Banner', true)
-    const statusOptions = ['standby', 'normal', 'caution', 'critical']
+    const statusOptions = [
+        'standby',
+        'normal',
+        'caution',
+        'critical',
+        'off',
+        'serious',
+    ]
     const statusKnob = select('Status', statusOptions, 'normal')
 
     const messageKnob = text(
