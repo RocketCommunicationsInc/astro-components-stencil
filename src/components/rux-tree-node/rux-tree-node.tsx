@@ -68,24 +68,6 @@ export class RuxTreeNode {
         this._setAriaLevel()
     }
 
-    // _setAriaExpanded() {
-    //     const slot = this.el.querySelector('slot') as HTMLSlotElement
-    //     if (slot) {
-    //         const assignedElements = slot.assignedElements({
-    //             flatten: true,
-    //         }) as HTMLElement[]
-
-    //         const accessibleTrigger = assignedElements[0]
-
-    //         if (accessibleTrigger) {
-    //             accessibleTrigger.setAttribute(
-    //                 'aria-expanded',
-    //                 this.expanded ? 'true' : 'false'
-    //             )
-    //         }
-    //     }
-    // }
-
     /**
      * Manually set the aria-level attribute.
      * Tree is responsible for setting the root node levels.
