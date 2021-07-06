@@ -8,9 +8,11 @@ describe('rux-tree', () => {
             html: `<rux-tree></rux-tree>`,
         })
         expect(page.root).toEqualHtml(`
-      <rux-tree>
+      <rux-tree role="tree">
         <mock:shadow-root>
+        <div>
           <slot></slot>
+          </div>
         </mock:shadow-root>
       </rux-tree>
     `)
