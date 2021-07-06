@@ -556,4 +556,67 @@ $theme: (
     --accordionOpenLabelBackground: rgb(40, 63, 88);
     --accordionHoverLabelBackground: rgb(46, 103, 153);
     --accordionColor: rgb(255, 255, 255);
+
+    /*
+
+    SEGMENTED BUTTON COLORS
+    ==========================================================================
+
+  */
+
+    /**
+    * @prop --segmentedButtonBackgroundColor: Segmented button background color
+    */
+    --segmentedButtonBackgroundColor: var(--backgroundColor);
+    /**
+    * @prop --segmentedButtonTextColor: Segmented button text color
+    */
+    --segmentedButtonTextColor: var(--primary);
+    /**
+    * @prop --segmentedButtonBorderColor: Segmented button border color
+    */
+    --segmentedButtonBorderColor: var(--primary);
+
+    /**
+    * @prop --segmentedButtonHoverBackgroundColor: Segmented button hover background color
+    */
+    --segmentedButtonHoverBackgroundColor: var(--backgroundColor);
+
+    /**
+    * @prop --segmentedButtonHoverTextColor: Segmented button hover text color
+    */
+    --segmentedButtonHoverTextColor: var(--primary);
+
+    /**
+    * @prop --segmentedButtonHoverBorderColor: Segmented button hover border color
+    */
+    --segmentedButtonHoverBorderColor: var(--primaryLight);
+
+    /**
+    * @prop --segmentedButtonSelectedBackgroundColor: Segmented button selected background color
+    */
+    --segmentedButtonSelectedBackgroundColor: #1c3f5e;
+
+    /**
+    * @prop --segmentedButtonSelectedTextColor: Segmented button selected text color
+    */
+    --segmentedButtonSelectedTextColor: var(--defaultText);
+    /**
+    * @prop --segmentedButtonSelectedBorderColor: Segmented button selected border color
+    */
+    --segmentedButtonSelectedBorderColor: var(--primary);
+
+    /**
+    * @prop --segmentedButtonSelectedHoverBackgroundColor: Segmented button selected hover background color
+    */
+    --segmentedButtonSelectedHoverBackgroundColor: #1c3f5e;
+
+    /**
+    * @prop --segmentedButtonSelectedHoverTextColor: Segmented button selected hover text color
+    */
+    --segmentedButtonSelectedHoverTextColor: var(--defaultText);
+    /**
+    * @prop --segmentedButtonSelectedHoverBorderColor: Segmented button selected hover border color
+    */
+    --segmentedButtonSelectedHoverBorderColor: var(--primary);
 }
