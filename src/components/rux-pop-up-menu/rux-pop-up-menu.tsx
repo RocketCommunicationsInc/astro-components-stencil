@@ -60,6 +60,10 @@ export class RuxPopUpMenu {
     this._handleOutsideClick = this._handleOutsideClick.bind(this)
 
     this._bindElements()
+
+    if (this.open) {
+      this._show()
+    }
   }
 
   disconnectedCallback() {
@@ -157,7 +161,7 @@ export class RuxPopUpMenu {
         caretLeft = 10
       }
 
-      top = anchorBounds.bottom + padding / 2 + caret / 2;
+      top = anchorBounds.bottom + padding / 2 + 19 / 2; /* changed caret ref to 19 for bug fix */
 
       if (menuBounds.height + anchorBounds.bottom + padding > window.innerHeight) {
         top = anchorBounds.top - menuBounds.height - caret;
