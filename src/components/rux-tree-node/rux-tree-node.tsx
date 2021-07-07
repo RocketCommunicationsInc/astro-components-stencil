@@ -59,11 +59,19 @@ export class RuxTreeNode {
         return this.children.length > 0
     }
 
+    /**
+     * Sets the expanded state
+     * @param value
+     */
     @Method()
     async setExpanded(value: boolean) {
         this.expanded = value
     }
 
+    /**
+     * Sets the selected state
+     * @param value
+     */
     @Method()
     async setSelected(value: boolean) {
         this.selected = value
