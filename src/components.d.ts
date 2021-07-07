@@ -8,6 +8,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal'
 import { Classification, Status } from './common/commonTypes.module'
 import { LogRow } from './components/rux-log/rux-log.model'
 import { RangeItem } from './components/rux-monitoring-progress-icon/rux-monitoring-progress-icon'
+import { SegmentedButton } from './components/rux-segmented-button/rux-segmented-button.model'
 import { SwitchChangeEvent } from './components/rux-switch/rux-switch.model'
 export namespace Components {
     interface RuxButton {
@@ -10826,6 +10827,16 @@ export namespace Components {
          */
         value?: number
     }
+    interface RuxSegmentedButton {
+        /**
+         * Items in this Array are the individual button segments.
+         */
+        data: SegmentedButton[]
+        /**
+         * When passed in on load, this selects the first button segment with a matching label. When the selected segment changes, this property updates with the currently selected value, which reflects back to the component attribute. If no button segment label matches this string, then no segment is selected. This value takes priority over setting selected boolean property on the items in the data array.
+         */
+        selected: string
+    }
     interface RuxStatus {
         /**
          * Sets the status symbol, valid options are critical, serious, caution, normal, standby and off
@@ -10890,7 +10901,15 @@ export namespace Components {
          * Sets the selected state
          */
         selected: boolean
+        /**
+         * Sets the expanded state
+         * @param value
+         */
         setExpanded: (value: boolean) => Promise<void>
+        /**
+         * Sets the selected state
+         * @param value
+         */
         setSelected: (value: boolean) => Promise<void>
     }
 }
@@ -18362,6 +18381,13 @@ declare global {
         prototype: HTMLRuxProgressElement
         new (): HTMLRuxProgressElement
     }
+    interface HTMLRuxSegmentedButtonElement
+        extends Components.RuxSegmentedButton,
+            HTMLStencilElement {}
+    var HTMLRuxSegmentedButtonElement: {
+        prototype: HTMLRuxSegmentedButtonElement
+        new (): HTMLRuxSegmentedButtonElement
+    }
     interface HTMLRuxStatusElement
         extends Components.RuxStatus,
             HTMLStencilElement {}
@@ -19533,6 +19559,7 @@ declare global {
         'rux-monitoring-progress-icon': HTMLRuxMonitoringProgressIconElement
         'rux-notification': HTMLRuxNotificationElement
         'rux-progress': HTMLRuxProgressElement
+        'rux-segmented-button': HTMLRuxSegmentedButtonElement
         'rux-status': HTMLRuxStatusElement
         'rux-switch': HTMLRuxSwitchElement
         'rux-tab': HTMLRuxTabElement
@@ -30371,6 +30398,20 @@ declare namespace LocalJSX {
          */
         value?: number
     }
+    interface RuxSegmentedButton {
+        /**
+         * Items in this Array are the individual button segments.
+         */
+        data?: SegmentedButton[]
+        /**
+         * Emitted when the value property has changed.
+         */
+        'onRux-change'?: (event: CustomEvent<any>) => void
+        /**
+         * When passed in on load, this selects the first button segment with a matching label. When the selected segment changes, this property updates with the currently selected value, which reflects back to the component attribute. If no button segment label matches this string, then no segment is selected. This value takes priority over setting selected boolean property on the items in the data array.
+         */
+        selected?: string
+    }
     interface RuxStatus {
         /**
          * Sets the status symbol, valid options are critical, serious, caution, normal, standby and off
@@ -31519,6 +31560,7 @@ declare namespace LocalJSX {
         'rux-monitoring-progress-icon': RuxMonitoringProgressIcon
         'rux-notification': RuxNotification
         'rux-progress': RuxProgress
+        'rux-segmented-button': RuxSegmentedButton
         'rux-status': RuxStatus
         'rux-switch': RuxSwitch
         'rux-tab': RuxTab
@@ -33674,6 +33716,8 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxNotificationElement>
             'rux-progress': LocalJSX.RuxProgress &
                 JSXBase.HTMLAttributes<HTMLRuxProgressElement>
+            'rux-segmented-button': LocalJSX.RuxSegmentedButton &
+                JSXBase.HTMLAttributes<HTMLRuxSegmentedButtonElement>
             'rux-status': LocalJSX.RuxStatus &
                 JSXBase.HTMLAttributes<HTMLRuxStatusElement>
             'rux-switch': LocalJSX.RuxSwitch &
