@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop, Watch } from '@stencil/core'
-import { Status } from '../../common/commonTypes.module'
 
 @Component({
     tag: 'rux-notification',
