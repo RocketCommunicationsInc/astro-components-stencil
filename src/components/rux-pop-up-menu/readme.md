@@ -50,9 +50,9 @@ Pass properties as attributes of the Astro Pop Up Menu custom element:
     </rux-pop-up-menu>
 ```
 
-Create a triggering element to initiate the pop up menu. 
+**Create a triggering element to initiate the pop up menu.**
 
-Option 1: **Note**: The trigger element _must_ have an `aria-controls` attribute with a value equal to the `id` of the `rux-pop-up-menu`.
+Option 1: Use an aria-controls trigger element. For this option to work the trigger element _must_ have an `aria-controls` attribute with a value equal to the `id` of the `rux-pop-up-menu`.
 
 ```xml
 <button
