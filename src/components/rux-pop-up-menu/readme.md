@@ -39,7 +39,7 @@ import { RuxPopUpMenu } from '@astrouxds/rux-pop-up-menu/rux-pop-up-menu.js'
 Pass properties as attributes of the Astro Pop Up Menu custom element:
 
 ```xml
-    <rux-pop-up-menu id="pop-up-menu" open>
+    <rux-pop-up-menu id="pop-up-menu">
         <rux-menu-item>Item 1</rux-menu-item>
         <rux-menu-item-divider></rux-menu-item-divider>
         <rux-menu-item value="2">Item 2</rux-menu-item>
