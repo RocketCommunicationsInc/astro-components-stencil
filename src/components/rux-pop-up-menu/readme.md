@@ -50,7 +50,9 @@ Pass properties as attributes of the Astro Pop Up Menu custom element:
     </rux-pop-up-menu>
 ```
 
-Create a triggering element to initiate the pop up menu. **Note**: The trigger element _must_ have an `aria-controls` attribute with a value equal to the `id` of the `rux-pop-up-menu`.
+Create a triggering element to initiate the pop up menu. 
+
+Option 1: **Note**: The trigger element _must_ have an `aria-controls` attribute with a value equal to the `id` of the `rux-pop-up-menu`.
 
 ```xml
 <button
@@ -59,6 +61,19 @@ Create a triggering element to initiate the pop up menu. **Note**: The trigger e
 >
     Open pop up menu
 </button>
+```
+
+Option 2: Pass a tigger and/or anchor element to the popup menu as props.
+
+```xml
+<script>
+    const popUpMenu = document.getElementById('pop-up-menu')
+    const buttonD = document.getElementById('button-D')
+    const buttonA = document.getElementById('button-A')
+
+    popUpMenu.triggerEl = buttonD
+    popUpMenu.anchorEl = buttonA
+</script>
 ```
 
 Extending Astro Pop Up Menu with custom content. Content passed without a slot name will be added to the list. Any content added after the list needs a `slot="menu-end"` attribute added. Any custom content that is passed into Astro Pop Up Menu will not be styled and will require custom styling.
