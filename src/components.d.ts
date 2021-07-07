@@ -8,6 +8,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal'
 import { Classification, Status } from './common/commonTypes.module'
 import { LogRow } from './components/rux-log/rux-log.model'
 import { RangeItem } from './components/rux-monitoring-progress-icon/rux-monitoring-progress-icon'
+import { SegmentedButton } from './components/rux-segmented-button/rux-segmented-button.model'
 import { SwitchChangeEvent } from './components/rux-switch/rux-switch.model'
 export namespace Components {
     interface RuxButton {
@@ -10776,11 +10777,11 @@ export namespace Components {
          */
         label?: string
         /**
-         * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%
+         * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%.
          */
         max: number
         /**
-         * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%
+         * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%.
          */
         min: number
         /**
@@ -10788,7 +10789,7 @@ export namespace Components {
          */
         notifications?: number
         /**
-         * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below.
+         * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below, and must be an integer. If a non-integer value is passed in, progress will default to 0. If progress ever becomes less than min or greater than max, it will be set to equal min or max respectively.
          */
         progress: number
         /**
@@ -10831,6 +10832,16 @@ export namespace Components {
          * Current progress value between 0 and 100 (or the max, if defined below).
          */
         value?: number
+    }
+    interface RuxSegmentedButton {
+        /**
+         * Items in this Array are the individual button segments.
+         */
+        data: SegmentedButton[]
+        /**
+         * When passed in on load, this selects the first button segment with a matching label. When the selected segment changes, this property updates with the currently selected value, which reflects back to the component attribute. If no button segment label matches this string, then no segment is selected. This value takes priority over setting selected boolean property on the items in the data array.
+         */
+        selected: string
     }
     interface RuxStatus {
         /**
@@ -10885,6 +10896,27 @@ export namespace Components {
          * Holds all `<rux-tab>` components that are children of `<rux-tabs>`.
          */
         _tabs: Array<HTMLRuxTabElement>
+    }
+    interface RuxTree {}
+    interface RuxTreeNode {
+        /**
+         * Sets the expanded state
+         */
+        expanded: boolean
+        /**
+         * Sets the selected state
+         */
+        selected: boolean
+        /**
+         * Sets the expanded state
+         * @param value
+         */
+        setExpanded: (value: boolean) => Promise<void>
+        /**
+         * Sets the selected state
+         * @param value
+         */
+        setSelected: (value: boolean) => Promise<void>
     }
 }
 declare global {
@@ -18355,6 +18387,13 @@ declare global {
         prototype: HTMLRuxProgressElement
         new (): HTMLRuxProgressElement
     }
+    interface HTMLRuxSegmentedButtonElement
+        extends Components.RuxSegmentedButton,
+            HTMLStencilElement {}
+    var HTMLRuxSegmentedButtonElement: {
+        prototype: HTMLRuxSegmentedButtonElement
+        new (): HTMLRuxSegmentedButtonElement
+    }
     interface HTMLRuxStatusElement
         extends Components.RuxStatus,
             HTMLStencilElement {}
@@ -18443,6 +18482,20 @@ declare global {
     var HTMLRuxTabsElement: {
         prototype: HTMLRuxTabsElement
         new (): HTMLRuxTabsElement
+    }
+    interface HTMLRuxTreeElement
+        extends Components.RuxTree,
+            HTMLStencilElement {}
+    var HTMLRuxTreeElement: {
+        prototype: HTMLRuxTreeElement
+        new (): HTMLRuxTreeElement
+    }
+    interface HTMLRuxTreeNodeElement
+        extends Components.RuxTreeNode,
+            HTMLStencilElement {}
+    var HTMLRuxTreeNodeElement: {
+        prototype: HTMLRuxTreeNodeElement
+        new (): HTMLRuxTreeNodeElement
     }
     interface HTMLElementTagNameMap {
         'rux-button': HTMLRuxButtonElement
@@ -19512,6 +19565,7 @@ declare global {
         'rux-monitoring-progress-icon': HTMLRuxMonitoringProgressIconElement
         'rux-notification': HTMLRuxNotificationElement
         'rux-progress': HTMLRuxProgressElement
+        'rux-segmented-button': HTMLRuxSegmentedButtonElement
         'rux-status': HTMLRuxStatusElement
         'rux-switch': HTMLRuxSwitchElement
         'rux-tab': HTMLRuxTabElement
@@ -19525,6 +19579,8 @@ declare global {
         'rux-table-header-row': HTMLRuxTableHeaderRowElement
         'rux-table-row': HTMLRuxTableRowElement
         'rux-tabs': HTMLRuxTabsElement
+        'rux-tree': HTMLRuxTreeElement
+        'rux-tree-node': HTMLRuxTreeNodeElement
     }
 }
 declare namespace LocalJSX {
@@ -30298,11 +30354,11 @@ declare namespace LocalJSX {
          */
         label?: string
         /**
-         * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%
+         * Sets the maximum value for the progress range. When progress is this number, it reads 100%. When it is halfway between min and max, it will read 50%.
          */
         max?: number
         /**
-         * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%
+         * Sets the minimum value for the progress range. When progress is this number, it reads 0%. When it is halfway between min and max, it will read 50%.
          */
         min?: number
         /**
@@ -30310,7 +30366,7 @@ declare namespace LocalJSX {
          */
         notifications?: number
         /**
-         * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below.
+         * Displays this value as a percentage of where it lies between min and max in the center of the donut graph and styles a proportional segment of the graph. Progress can be positive or negative (the later useful for countdowns). The progress value must exist within the thresholds specified in the range property below, and must be an integer. If a non-integer value is passed in, progress will default to 0. If progress ever becomes less than min or greater than max, it will be set to equal min or max respectively.
          */
         progress?: number
         /**
@@ -30353,6 +30409,20 @@ declare namespace LocalJSX {
          * Current progress value between 0 and 100 (or the max, if defined below).
          */
         value?: number
+    }
+    interface RuxSegmentedButton {
+        /**
+         * Items in this Array are the individual button segments.
+         */
+        data?: SegmentedButton[]
+        /**
+         * Emitted when the value property has changed.
+         */
+        'onRux-change'?: (event: CustomEvent<any>) => void
+        /**
+         * When passed in on load, this selects the first button segment with a matching label. When the selected segment changes, this property updates with the currently selected value, which reflects back to the component attribute. If no button segment label matches this string, then no segment is selected. This value takes priority over setting selected boolean property on the items in the data array.
+         */
+        selected?: string
     }
     interface RuxStatus {
         /**
@@ -30418,6 +30488,21 @@ declare namespace LocalJSX {
          * Holds all `<rux-tab>` components that are children of `<rux-tabs>`.
          */
         _tabs?: Array<HTMLRuxTabElement>
+    }
+    interface RuxTree {}
+    interface RuxTreeNode {
+        /**
+         * Sets the expanded state
+         */
+        expanded?: boolean
+        /**
+         * Emit when user selects a tree node
+         */
+        'onRux-tree-node-selected'?: (event: CustomEvent<string>) => void
+        /**
+         * Sets the selected state
+         */
+        selected?: boolean
     }
     interface IntrinsicElements {
         'rux-button': RuxButton
@@ -31487,6 +31572,7 @@ declare namespace LocalJSX {
         'rux-monitoring-progress-icon': RuxMonitoringProgressIcon
         'rux-notification': RuxNotification
         'rux-progress': RuxProgress
+        'rux-segmented-button': RuxSegmentedButton
         'rux-status': RuxStatus
         'rux-switch': RuxSwitch
         'rux-tab': RuxTab
@@ -31500,6 +31586,8 @@ declare namespace LocalJSX {
         'rux-table-header-row': RuxTableHeaderRow
         'rux-table-row': RuxTableRow
         'rux-tabs': RuxTabs
+        'rux-tree': RuxTree
+        'rux-tree-node': RuxTreeNode
     }
 }
 export { LocalJSX as JSX }
@@ -33640,6 +33728,8 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxNotificationElement>
             'rux-progress': LocalJSX.RuxProgress &
                 JSXBase.HTMLAttributes<HTMLRuxProgressElement>
+            'rux-segmented-button': LocalJSX.RuxSegmentedButton &
+                JSXBase.HTMLAttributes<HTMLRuxSegmentedButtonElement>
             'rux-status': LocalJSX.RuxStatus &
                 JSXBase.HTMLAttributes<HTMLRuxStatusElement>
             'rux-switch': LocalJSX.RuxSwitch &
@@ -33666,6 +33756,10 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLRuxTableRowElement>
             'rux-tabs': LocalJSX.RuxTabs &
                 JSXBase.HTMLAttributes<HTMLRuxTabsElement>
+            'rux-tree': LocalJSX.RuxTree &
+                JSXBase.HTMLAttributes<HTMLRuxTreeElement>
+            'rux-tree-node': LocalJSX.RuxTreeNode &
+                JSXBase.HTMLAttributes<HTMLRuxTreeNodeElement>
         }
     }
 }

@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-01T22:59:15",
+    "timestamp": "2021-07-07T14:47:39",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -74218,7 +74218,7 @@
                     "mutable": false,
                     "attr": "max",
                     "reflectToAttr": false,
-                    "docs": "Sets the maximum value for the progress range. When progress is this number, it reads 100%.\nWhen it is halfway between min and max, it will read 50%",
+                    "docs": "Sets the maximum value for the progress range. When progress is this number, it reads 100%.\nWhen it is halfway between min and max, it will read 50%.",
                     "docsTags": [],
                     "default": "100",
                     "values": [
@@ -74235,7 +74235,7 @@
                     "mutable": false,
                     "attr": "min",
                     "reflectToAttr": false,
-                    "docs": "Sets the minimum value for the progress range. When progress is this number, it reads 0%.\nWhen it is halfway between min and max, it will read 50%",
+                    "docs": "Sets the minimum value for the progress range. When progress is this number, it reads 0%.\nWhen it is halfway between min and max, it will read 50%.",
                     "docsTags": [],
                     "default": "0",
                     "values": [
@@ -74271,7 +74271,7 @@
                     "mutable": false,
                     "attr": "progress",
                     "reflectToAttr": true,
-                    "docs": "Displays this value as a percentage of where it lies between min and max\nin the center of the donut graph and styles a proportional\nsegment of the graph. Progress can be positive or negative (the later useful for countdowns).\nThe progress value must exist within the thresholds specified in the range property below.",
+                    "docs": "Displays this value as a percentage of where it lies between min and max\nin the center of the donut graph and styles a proportional\nsegment of the graph. Progress can be positive or negative (the later useful for countdowns).\nThe progress value must exist within the thresholds specified in the range property below, and must be\nan integer. If a non-integer value is passed in, progress will default to 0. If progress ever\nbecomes less than min or greater than max, it will be set to equal min or max respectively.",
                     "docsTags": [],
                     "default": "0",
                     "values": [
@@ -74393,11 +74393,11 @@
                 },
                 {
                     "name": "status",
-                    "type": "\"caution\" | \"critical\" | \"normal\" | \"off\" | \"serious\" | \"standby\"",
+                    "type": "\"caution\" | \"critical\" | \"normal\" | \"standby\"",
                     "mutable": false,
                     "attr": "status",
                     "reflectToAttr": false,
-                    "docs": "Displays an icon from the [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/) in the log entry's row. Possible values include 'off', 'standby', 'normal', 'caution', 'serious', and 'critical'.",
+                    "docs": "The background color. Possible values include 'standby', 'normal', 'caution', and 'critical'. See [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/).",
                     "docsTags": [],
                     "default": "'standby'",
                     "values": [
@@ -74411,14 +74411,6 @@
                         },
                         {
                             "value": "normal",
-                            "type": "string"
-                        },
-                        {
-                            "value": "off",
-                            "type": "string"
-                        },
-                        {
-                            "value": "serious",
                             "type": "string"
                         },
                         {
@@ -74543,6 +74535,110 @@
                     "name": "--progressWidth",
                     "annotation": "prop",
                     "docs": "The width of rux-progress"
+                }
+            ],
+            "slots": [],
+            "parts": [],
+            "dependents": [],
+            "dependencies": [],
+            "dependencyGraph": {}
+        },
+        {
+            "filePath": "./src/components/rux-segmented-button/rux-segmented-button.tsx",
+            "encapsulation": "shadow",
+            "tag": "rux-segmented-button",
+            "readme": "# Segmented Button\n\nSegmented Buttons allow users to select one item at a time from two to four options. Selecting one option automatically turns off the last selection made. Segmented Buttons are mutually exclusive.\n\n## Guidelines\n\n-   [Astro UXDS: Segmented Button](https://astrouxds.com/ui-components/segmented-button)\n\n### Usage\n\nPass an Array of segments via the `data` attribute on the Segmented Button custom element. Segment items in the `data` Array must be objects with a `label` string. The first item in the Array will be auto-selected unless another segment item has a `selected` property with a truthy value\n\n### Properties for items within the `data` Array\n\n| Property   | Type    | Default | Required | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |\n| ---------- | ------- | ------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| `label`    | String  | —       | Yes      | Defines the label for the button segment.                                                                                                                                                                                                                                                                                                                                                                                                                                   |\n| `selected` | Boolean | —       | No       | If true, selects this segment rather than the first segment in the `data` Array on mount. If more than one segment has a truthy `selected` value, the earliest one in the Array will register and the rest are ignored. Note that if the `selected` string property of the parent `rux-segmented-button` takes priority. When the selected segment changes within the component, this property updates with `true` or `false` if selected or not selected, on each segment. |\n\n### Events\n\n| Event Name | Description                                                                                                                                                                                                                                                       |\n| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| `change`   | Fires when a button segment is changed. Inspect the Event target to find the `data` and `selected` component properties. See [HTMLElement `change` event on MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event) for more information. |\n\n```js\ndocument.addEventListener('change', (e) =>\n    console.log('Target element:', e.target)\n)\n// > Target element: <rux-segmented-button>\n\ndocument.addEventListener('change', (e) =>\n    console.log('Selected Segment:', e.target.selected)\n)\n// > Selected Segment: Second Segment\n\ndocument.addEventListener('change', (e) =>\n    console.log('Array of Segments:', e.target.data)\n)\n// > Array of Segments: [{ label: \"First Segment\", selected: false }, { label: \"Second Segment\", selected: true }, { label: \"Third Segment\", selected: false }]\n```\n",
+            "docs": "Segmented Buttons allow users to select one item at a time from two to four options. Selecting one option automatically turns off the last selection made. Segmented Buttons are mutually exclusive.",
+            "docsTags": [],
+            "usage": {},
+            "props": [
+                {
+                    "name": "data",
+                    "type": "SegmentedButton[]",
+                    "mutable": false,
+                    "reflectToAttr": false,
+                    "docs": "Items in this Array are the individual button segments.",
+                    "docsTags": [],
+                    "default": "[]",
+                    "values": [
+                        {
+                            "type": "SegmentedButton[]"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                },
+                {
+                    "name": "selected",
+                    "type": "string",
+                    "mutable": true,
+                    "attr": "selected",
+                    "reflectToAttr": true,
+                    "docs": "When passed in on load, this selects the first button segment with a matching label. When the selected segment changes, this property updates with the currently selected value, which reflects back to the component attribute. If no button segment label matches this string, then no segment is selected. This value takes priority over setting selected boolean property on the items in the data array.",
+                    "docsTags": [],
+                    "default": "''",
+                    "values": [
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                }
+            ],
+            "methods": [],
+            "events": [
+                {
+                    "event": "rux-change",
+                    "detail": "any",
+                    "bubbles": true,
+                    "cancelable": true,
+                    "composed": true,
+                    "docs": "Emitted when the value property has changed.",
+                    "docsTags": []
+                }
+            ],
+            "listeners": [],
+            "styles": [
+                {
+                    "name": "--segmentedButtonBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "Segmented button background color"
+                },
+                {
+                    "name": "--segmentedButtonBorderColor",
+                    "annotation": "prop",
+                    "docs": "Segmented button border color"
+                },
+                {
+                    "name": "--segmentedButtonHoverBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "Segmented button hover background color"
+                },
+                {
+                    "name": "--segmentedButtonHoverBorderColor",
+                    "annotation": "prop",
+                    "docs": "Segmented button hover border color"
+                },
+                {
+                    "name": "--segmentedButtonHoverTextColor",
+                    "annotation": "prop",
+                    "docs": "Segmented button hover text color"
+                },
+                {
+                    "name": "--segmentedButtonSelectedBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "Segmented button selected background color"
+                },
+                {
+                    "name": "--segmentedButtonSelectedTextColor",
+                    "annotation": "prop",
+                    "docs": "Segmented button selected text color"
+                },
+                {
+                    "name": "--segmentedButtonTextColor",
+                    "annotation": "prop",
+                    "docs": "Segmented button text color"
                 }
             ],
             "slots": [],
@@ -75176,6 +75272,169 @@
                     "name": "--tabBorderColor",
                     "annotation": "prop",
                     "docs": "Tab border color"
+                }
+            ],
+            "slots": [],
+            "parts": [],
+            "dependents": [],
+            "dependencies": [],
+            "dependencyGraph": {}
+        },
+        {
+            "filePath": "./src/components/rux-tree/rux-tree.tsx",
+            "encapsulation": "shadow",
+            "tag": "rux-tree",
+            "readme": "# Tree\n\nA Tree navigation element presents a hierarchical set of related items, and allow users to explore and select items within that hierarchy. Each item can have a number of subitems.\n\nAn item can be expanded to reveal subitems, if any exist, and collapsed to hide subitems.\n\n## Guidelines\n\n-   [Astro UXDS: Tree](http://www.astrouxds.com/library/tree)\n\n## Usage\n\nA Tree can accept any number of node components through it's default slot.\n\n```html\n<rux-tree>\n    <rux-tree-node>Item 1</rux-tree-node>\n    <rux-tree-node>Item 2</rux-tree-node>\n    <rux-tree-node>Item 3</rux-tree-node>\n</rux-tree>\n```\n\nFor rendering tree nodes, use the `rux-tree-node` subcomponent.\n\n### Nesting\n\nTo create deeply nested Trees, use the `node` slot on the TreeNode component.\n\nTreeNode has two slots:\n\n1. Default - The parent content\n2. Node - Any child nodes\n\n```html\n<rux-tree-node>\n    I'm the parent\n    <rux-tree-node slot=\"node\">I'm a child (1)</rux-tree-node>\n    <rux-tree-node slot=\"node\">I'm a child (2)</rux-tree-node>\n    <rux-tree-node slot=\"node\">I'm a child (3)</rux-tree-node>\n    <rux-tree-node slot=\"node\">\n        I'm a child parent\n        <rux-tree-node slot=\"node\">I'm a grandchild</rux-tree-node>\n    </rux-tree-node>\n</rux-tree-node>\n```\n",
+            "docs": "A Tree navigation element presents a hierarchical set of related items, and allow users to explore and select items within that hierarchy. Each item can have a number of subitems.\n\nAn item can be expanded to reveal subitems, if any exist, and collapsed to hide subitems.",
+            "docsTags": [],
+            "usage": {},
+            "props": [],
+            "methods": [],
+            "events": [],
+            "listeners": [],
+            "styles": [
+                {
+                    "name": "--treeBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "tree background color"
+                },
+                {
+                    "name": "--treeBorderColor",
+                    "annotation": "prop",
+                    "docs": "tree color"
+                },
+                {
+                    "name": "--treeTextColor",
+                    "annotation": "prop",
+                    "docs": "tree text color"
+                }
+            ],
+            "slots": [],
+            "parts": [],
+            "dependents": [],
+            "dependencies": [],
+            "dependencyGraph": {}
+        },
+        {
+            "filePath": "./src/components/rux-tree-node/rux-tree-node.tsx",
+            "encapsulation": "shadow",
+            "tag": "rux-tree-node",
+            "readme": "# rux-tree-node\n",
+            "docs": "",
+            "docsTags": [],
+            "usage": {},
+            "props": [
+                {
+                    "name": "expanded",
+                    "type": "boolean",
+                    "mutable": true,
+                    "attr": "expanded",
+                    "reflectToAttr": true,
+                    "docs": "Sets the expanded state",
+                    "docsTags": [],
+                    "default": "false",
+                    "values": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                },
+                {
+                    "name": "selected",
+                    "type": "boolean",
+                    "mutable": true,
+                    "attr": "selected",
+                    "reflectToAttr": true,
+                    "docs": "Sets the selected state",
+                    "docsTags": [],
+                    "default": "false",
+                    "values": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                }
+            ],
+            "methods": [
+                {
+                    "name": "setExpanded",
+                    "returns": {
+                        "type": "Promise<void>",
+                        "docs": ""
+                    },
+                    "signature": "setExpanded(value: boolean) => Promise<void>",
+                    "parameters": [],
+                    "docs": "Sets the expanded state",
+                    "docsTags": [
+                        {
+                            "name": "param",
+                            "text": "value"
+                        }
+                    ]
+                },
+                {
+                    "name": "setSelected",
+                    "returns": {
+                        "type": "Promise<void>",
+                        "docs": ""
+                    },
+                    "signature": "setSelected(value: boolean) => Promise<void>",
+                    "parameters": [],
+                    "docs": "Sets the selected state",
+                    "docsTags": [
+                        {
+                            "name": "param",
+                            "text": "value"
+                        }
+                    ]
+                }
+            ],
+            "events": [
+                {
+                    "event": "rux-tree-node-selected",
+                    "detail": "string",
+                    "bubbles": true,
+                    "cancelable": true,
+                    "composed": true,
+                    "docs": "Emit when user selects a tree node",
+                    "docsTags": []
+                }
+            ],
+            "listeners": [],
+            "styles": [
+                {
+                    "name": "--treeAccentColor",
+                    "annotation": "prop",
+                    "docs": "tree accent color"
+                },
+                {
+                    "name": "--treeExpandedBorderColor",
+                    "annotation": "prop",
+                    "docs": "tree expanded border color"
+                },
+                {
+                    "name": "--treeHoverBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "tree hover background color"
+                },
+                {
+                    "name": "--treeHoverTextColor",
+                    "annotation": "prop",
+                    "docs": "tree hover text color"
+                },
+                {
+                    "name": "--treeSelectedAccentColor",
+                    "annotation": "prop",
+                    "docs": "tree selected accent color"
+                },
+                {
+                    "name": "--treeSelectedBorderColor",
+                    "annotation": "prop",
+                    "docs": "tree selected border color"
                 }
             ],
             "slots": [],
