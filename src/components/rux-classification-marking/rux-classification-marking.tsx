@@ -30,7 +30,7 @@ export class RuxClassificationMarking {
                 confidential: 'confidential',
                 secret: 'secret',
                 'top-secret': 'top secret',
-                'top-secret-sci': 'top secret//sci',
+                'top-secret-sci': 'top secret/sci',
                 unclassified: 'unclassified',
             },
             tag: {
@@ -38,7 +38,7 @@ export class RuxClassificationMarking {
                 confidential: 'c',
                 secret: 's',
                 'top-secret': 'ts',
-                'top-secret-sci': 'TS//SCI',
+                'top-secret-sci': 'TS/SCI',
                 unclassified: 'u',
             },
         }
