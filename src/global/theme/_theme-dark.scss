@@ -16,6 +16,7 @@
     --primaryLight: var(--colorSecondaryLighten2, #92cbff);
     --primaryLightHover: #92cbff4d; /* TODO: this is a temporary fix, the use of opacity from Sketch is new and not accounted for in CSS */
     --primaryDark: var(--colorSecondaryDarken1, #3a87cf);
+    --primaryDarker: var(--colorSecondaryDarken2, #2e6799);
     --primaryDarkHover: #6b8ca5;
     --primaryElementText: var(--colorTertiaryDarken4, #080c11);
     --inputBackground: var(--colorWhite, #ffffff);
@@ -161,13 +162,13 @@
     ==========================================================================
 
   */
-    --switchOffBorderColor: rgb(43, 101, 155);
+    --switchBackgroundColor: var(--backgroundColor);
+    --switchOffBorderColor: var(--colorSecondaryDarken2);
     --switchOnColor: var(--primary);
     --switchHoverOnColor: var(--primary);
     --switchHoverOffColor: var(--primary);
+    --switchBorderColor: var(--primary);
     --switchButtonHoverOffColor: var(--primaryLight);
-    --switchDisabledOnColor: var(--primary);
-    --switchDisabledOffColor: var(--secondaryText);
     /*
 
     Popup Menu Colors

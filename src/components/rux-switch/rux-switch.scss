@@ -1,15 +1,11 @@
 :host {
     display: block;
-    /** @prop --switchOffColor: the Switch off color */
-    --switchOffColor: var(--backgroundColor);
+    /** @prop --switchBackgroundColor: the Switch off color */
+    --switchBackgroundColor: var(--backgroundColor);
     /** @prop --switchHoverOnColor: the Switch hover on color */
     --switchHoverOnColor: var(--primary);
     /** @prop --switchHoverOffColor: the Switch hover off color */
     --switchHoverOffColor: var(--primary);
-    /** @prop --switchDisabledOnColor: the Switch disabled on color */
-    --switchDisabledOnColor: var(--primary);
-    /** @prop --switchDisabledOffColor: the Switch disabled off color */
-    --switchDisabledOffColor: var(--secondaryText);
     /** @prop --switchOffBorderColor: the Switch off border color*/
     --switchOffBorderColor: rgb(43, 101, 155);
 }
@@ -17,7 +13,6 @@
 .rux-switch {
     position: relative;
     display: flex;
-
     height: 22px;
     width: 42px;
 }
@@ -42,7 +37,7 @@
     border-radius: 4.7px;
     border: 1px solid;
     border-color: var(--switchOffBorderColor);
-    background-color: var(--switchOffColor);
+    background-color: var(--switchBackgroundColor);
 
     height: 10px;
     width: 30px;
@@ -61,7 +56,7 @@
     .rux-switch__input:not(:disabled)
     + .rux-switch__button:before {
     border-color: var(--switchHoverOffColor);
-    background-color: var(--switchOffColor);
+    background-color: var(--switchBackgroundColor);
 }
 
 /* Track Hover Checked */
@@ -79,12 +74,11 @@
     top: 1px;
     left: -4px;
     z-index: 3;
-    height: 19px;
-    width: 19px;
-
+    height: 18px;
+    width: 18px;
     border-radius: 50%;
     border: 1px solid var(--switchHoverOffColor);
-    background-color: var(--switchOffColor);
+    background-color: var(--switchBackgroundColor);
 
     transition: 0.1s left linear, 0.1s border-color linear;
 }
@@ -93,7 +87,7 @@
 .rux-switch__input:checked + .rux-switch__button::after {
     // left: 50%;
     left: 16px;
-    background-color: var(--switchOffColor);
+    background-color: var(--switchBackgroundColor);
     border-color: var(--switchHoverOffColor);
 }
 
