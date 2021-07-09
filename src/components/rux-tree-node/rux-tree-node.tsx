@@ -56,14 +56,37 @@ export class RuxTreeNode {
     @Listen('keydown')
     handleKeyDown(ev: KeyboardEvent) {
         if (ev.target !== ev.currentTarget) {
-            console.log('true')
-
             return true
         }
-        console.log(ev.key)
+
+        if (ev.key === 'ArrowRight') {
+            ev.preventDefault()
+            this.expandNextNode()
+        }
 
         if (ev.key === 'ArrowDown') {
-            this.focusNext()
+            ev.preventDefault()
+            this.focusNext(1)
+        }
+        if (ev.key === 'ArrowLeft') {
+            ev.preventDefault()
+            this.collapseParent()
+        }
+
+        if (ev.key === 'ArrowUp') {
+            ev.preventDefault()
+            this.focusNext(-1)
+        }
+
+        if (ev.key === 'Enter') {
+            ev.preventDefault()
+            this.setSelected(true)
+        }
+    }
+
+    expandNextNode() {
+        if (!this.expanded && this._hasChildren) {
+            this.setExpanded(true)
         }
     }
 
@@ -72,48 +95,47 @@ export class RuxTreeNode {
             '.parent'
         ) as HTMLRuxTreeNodeElement
         if (parent) {
-            parent.setAttribute('tabindex', '0')
-            // el.focusable = true;
             parent.focus()
-        } else {
-            console.log('no parent')
         }
     }
 
-    focusNext() {
-        const delta = 1
+    collapseParent() {
+        if (this.expanded) {
+            this.setExpanded(false)
+        } else if (this.el.parentElement) {
+            const parentTreeItemNode:
+                | Element
+                | null
+                | undefined = this.el.parentElement!.closest(
+                "[role='treeitem']"
+            )
+
+            if (parentTreeItemNode) {
+                this.focusItem(parentTreeItemNode as HTMLElement)
+            }
+        }
+    }
+    focusNext(direction: number) {
         const visibleNodes = this._getVisibleNodes()
-        console.log('visiblenodes', visibleNodes)
-        // console.log('thisnode', this.el);
-
-        const thisNode = visibleNodes.find(
-            (node) => node.id === this.componentId
-        )
-        console.log('thisnode', thisNode)
-
-        //@ts-ignore
         const currentIndex: number = visibleNodes.indexOf(this.el)
-        console.log('currentIndes', currentIndex)
-        console.log('el', this.el)
-
         if (currentIndex !== -1) {
             let nextElement: HTMLElement | undefined =
-                visibleNodes[currentIndex + delta]
+                visibleNodes[currentIndex + direction]
             if (nextElement !== undefined) {
                 while (nextElement.hasAttribute('disabled')) {
-                    const offset: number = delta >= 0 ? 1 : -1
-                    nextElement = visibleNodes[currentIndex + delta + offset]
+                    const offset: number = direction >= 0 ? 1 : -1
+                    nextElement =
+                        visibleNodes[currentIndex + direction + offset]
                     if (!nextElement) {
                         break
                     }
                 }
             }
 
-            // if (isHTMLElement(nextElement)) {
-            this.focusItem(nextElement)
-            // }
+            if (nextElement) {
+                this.focusItem(nextElement)
+            }
         }
-        console.log(this._getVisibleNodes())
     }
 
     _getVisibleNodes() {
@@ -157,6 +179,9 @@ export class RuxTreeNode {
     @Method()
     async setSelected(value: boolean) {
         this.selected = value
+        if (value) {
+            this.ruxTreeNodeSelected.emit(this.componentId)
+        }
     }
 
     handleSlotChange() {
@@ -188,7 +213,6 @@ export class RuxTreeNode {
     _handleTreeNodeClick(e: MouseEvent) {
         e.stopPropagation()
         this.setSelected(!this.selected)
-        this.ruxTreeNodeSelected.emit(this.componentId)
     }
 
     render() {
