@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-07-08T15:48:22",
+  "timestamp": "2021-07-09T18:27:12",
   "compiler": {
     "name": "@stencil/core",
     "version": "2.5.2",
@@ -75265,14 +75265,9 @@
       "listeners": [],
       "styles": [
         {
-          "name": "--switchDisabledOffColor",
+          "name": "--switchBackgroundColor",
           "annotation": "prop",
-          "docs": "the Switch disabled off color"
-        },
-        {
-          "name": "--switchDisabledOnColor",
-          "annotation": "prop",
-          "docs": "the Switch disabled on color"
+          "docs": "the Switch off color"
         },
         {
           "name": "--switchHoverOffColor",
@@ -75285,14 +75280,9 @@
           "docs": "the Switch hover on color"
         },
         {
-          "name": "--switchOffColor",
+          "name": "--switchOffBorderColor",
           "annotation": "prop",
-          "docs": "the Switch off color"
-        },
-        {
-          "name": "--switchOnColor",
-          "annotation": "prop",
-          "docs": "the Switch on color"
+          "docs": "the Switch off border color"
         }
       ],
       "slots": [],
