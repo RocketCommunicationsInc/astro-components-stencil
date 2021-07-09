@@ -59,92 +59,28 @@ export class RuxTreeNode {
             return true
         }
 
-        if (ev.key === 'ArrowRight') {
-            ev.preventDefault()
-            this.expandNextNode()
+        switch (ev.key) {
+            case 'ArrowUp':
+                ev.preventDefault()
+                this._focusNext(-1)
+                break
+            case 'ArrowRight':
+                ev.preventDefault()
+                this._expandNextNode()
+                break
+            case 'ArrowDown':
+                ev.preventDefault()
+                this._focusNext(1)
+                break
+            case 'ArrowLeft':
+                ev.preventDefault()
+                this._collapseParent()
+                break
+            case 'Enter':
+                ev.preventDefault()
+                this.setSelected(true)
+                break
         }
-
-        if (ev.key === 'ArrowDown') {
-            ev.preventDefault()
-            this.focusNext(1)
-        }
-        if (ev.key === 'ArrowLeft') {
-            ev.preventDefault()
-            this.collapseParent()
-        }
-
-        if (ev.key === 'ArrowUp') {
-            ev.preventDefault()
-            this.focusNext(-1)
-        }
-
-        if (ev.key === 'Enter') {
-            ev.preventDefault()
-            this.setSelected(true)
-        }
-    }
-
-    expandNextNode() {
-        if (!this.expanded && this._hasChildren) {
-            this.setExpanded(true)
-        }
-    }
-
-    focusItem(el: HTMLElement) {
-        const parent = el?.shadowRoot?.querySelector(
-            '.parent'
-        ) as HTMLRuxTreeNodeElement
-        if (parent) {
-            parent.focus()
-        }
-    }
-
-    collapseParent() {
-        if (this.expanded) {
-            this.setExpanded(false)
-        } else if (this.el.parentElement) {
-            const parentTreeItemNode:
-                | Element
-                | null
-                | undefined = this.el.parentElement!.closest(
-                "[role='treeitem']"
-            )
-
-            if (parentTreeItemNode) {
-                this.focusItem(parentTreeItemNode as HTMLElement)
-            }
-        }
-    }
-    focusNext(direction: number) {
-        const visibleNodes = this._getVisibleNodes()
-        const currentIndex: number = visibleNodes.indexOf(this.el)
-        if (currentIndex !== -1) {
-            let nextElement: HTMLElement | undefined =
-                visibleNodes[currentIndex + direction]
-            if (nextElement !== undefined) {
-                while (nextElement.hasAttribute('disabled')) {
-                    const offset: number = direction >= 0 ? 1 : -1
-                    nextElement =
-                        visibleNodes[currentIndex + direction + offset]
-                    if (!nextElement) {
-                        break
-                    }
-                }
-            }
-
-            if (nextElement) {
-                this.focusItem(nextElement)
-            }
-        }
-    }
-
-    _getVisibleNodes() {
-        const rootTree = this.getTree() as HTMLRuxTreeElement
-
-        const nodes = Array.from(rootTree.querySelectorAll('rux-tree-node'))
-        return nodes.filter(
-            (node: HTMLRuxTreeNodeElement) => node.offsetParent !== null
-        )
     }
 
     connectedCallback() {
@@ -157,10 +93,6 @@ export class RuxTreeNode {
 
     get _hasChildren() {
         return this.children.length > 0
-    }
-
-    private getTree(): HTMLElement | null {
-        return this.el.closest("[role='tree']") as HTMLRuxTreeElement
     }
 
     /**
@@ -213,6 +145,68 @@ export class RuxTreeNode {
     _handleTreeNodeClick(e: MouseEvent) {
         e.stopPropagation()
         this.setSelected(!this.selected)
+    }
+
+    _expandNextNode() {
+        if (!this.expanded && this._hasChildren) {
+            this.setExpanded(true)
+        }
+    }
+
+    _focusItem(el: HTMLRuxTreeNodeElement) {
+        const parent = el?.shadowRoot?.querySelector('.parent') as HTMLElement
+        if (parent) {
+            parent.focus()
+        }
+    }
+
+    _collapseParent() {
+        if (this.expanded) {
+            this.setExpanded(false)
+        } else if (this.el.parentElement) {
+            const parentTreeItemNode:
+                | Element
+                | null
+                | undefined = this.el.parentElement!.closest(
+                "[role='treeitem']"
+            )
+
+            if (parentTreeItemNode) {
+                this._focusItem(parentTreeItemNode as HTMLRuxTreeNodeElement)
+            }
+        }
+    }
+
+    _focusNext(direction: number) {
+        const visibleNodes = this._getVisibleNodes()
+        const currentIndex: number = visibleNodes.indexOf(this.el)
+        if (currentIndex !== -1) {
+            let nextElement: HTMLRuxTreeNodeElement | undefined =
+                visibleNodes[currentIndex + direction]
+            if (nextElement !== undefined) {
+                // Skips any disabled nodes
+                while (nextElement.hasAttribute('disabled')) {
+                    const offset: number = direction >= 0 ? 1 : -1
+                    nextElement =
+                        visibleNodes[currentIndex + direction + offset]
+                    if (!nextElement) {
+                        break
+                    }
+                }
+            }
+
+            if (nextElement) {
+                this._focusItem(nextElement as HTMLRuxTreeNodeElement)
+            }
+        }
+    }
+
+    _getVisibleNodes() {
+        const rootTree = this.el.closest("[role='tree']") as HTMLRuxTreeElement
+        const nodes = Array.from(rootTree.querySelectorAll('rux-tree-node'))
+        return nodes.filter(
+            (node: HTMLRuxTreeNodeElement) => node.offsetParent !== null
+        )
     }
 
     render() {
