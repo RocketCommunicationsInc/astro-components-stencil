@@ -47,22 +47,26 @@ export class RuxPopUpMenu {
     /**
      * Emitted when the menu is about to open.
      */
-    @Event() ruxMenuWillOpen!: EventEmitter<void>
+    @Event({ eventName: 'rux-menu-will-open' })
+    ruxMenuWillOpen!: EventEmitter<void>
 
     /**
      * Emitted when the menu is about to close
      */
-    @Event() ruxMenuWillClose!: EventEmitter<void>
+    @Event({ eventName: 'rux-menu-will-close' })
+    ruxMenuWillClose!: EventEmitter<void>
 
     /**
      * Emitted when the menu is open.
      */
-    @Event() ruxMenuDidOpen!: EventEmitter<void>
+    @Event({ eventName: 'rux-menu-did-open' })
+    ruxMenuDidOpen!: EventEmitter<void>
 
     /**
      * Emitted when the menu is closed.
      */
-    @Event() ruxMenuDidClose!: EventEmitter<void>
+    @Event({ eventName: 'rux-menu-did-close' })
+    ruxMenuDidClose!: EventEmitter<void>
 
     connectedCallback() {
         this._handleClick = this._handleClick.bind(this)

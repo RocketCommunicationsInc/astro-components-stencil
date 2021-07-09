@@ -39,6 +39,7 @@ export class RuxModal {
      * Event that is fired when modal closes
      */
     @Event({
+        eventName: 'rux-modal-closed',
         composed: true,
         bubbles: true,
     })
