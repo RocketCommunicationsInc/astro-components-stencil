@@ -29331,7 +29331,7 @@ declare namespace LocalJSX {
         /**
           * Emitted when item is clicked. Ex `{value : 10}`
          */
-        "onMenuItemClicked"?: (event: CustomEvent<object>) => void;
+        "onRuxMenuItemClicked"?: (event: CustomEvent<object>) => void;
         /**
           * Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
          */
@@ -29367,7 +29367,7 @@ declare namespace LocalJSX {
         /**
           * Event that is fired when modal closes
          */
-        "onModalClosed"?: (event: CustomEvent<boolean>) => void;
+        "onRuxModalClosed"?: (event: CustomEvent<boolean>) => void;
         /**
           * Shows and hides modal
          */
@@ -29451,19 +29451,19 @@ declare namespace LocalJSX {
         /**
           * Emitted when the menu is closed.
          */
-        "onMenuDidClose"?: (event: CustomEvent<void>) => void;
+        "onRuxMenuDidClose"?: (event: CustomEvent<void>) => void;
         /**
           * Emitted when the menu is open.
          */
-        "onMenuDidOpen"?: (event: CustomEvent<void>) => void;
+        "onRuxMenuDidOpen"?: (event: CustomEvent<void>) => void;
         /**
           * Emitted when the menu is about to close
          */
-        "onMenuWillClose"?: (event: CustomEvent<void>) => void;
+        "onRuxMenuWillClose"?: (event: CustomEvent<void>) => void;
         /**
           * Emitted when the menu is about to open.
          */
-        "onMenuWillOpen"?: (event: CustomEvent<void>) => void;
+        "onRuxMenuWillOpen"?: (event: CustomEvent<void>) => void;
         /**
           * Boolean which controls when to show the menu
          */
@@ -29495,7 +29495,7 @@ declare namespace LocalJSX {
         /**
           * Emitted when the value property has changed.
          */
-        "onRux-change"?: (event: CustomEvent<any>) => void;
+        "onRuxChange"?: (event: CustomEvent<any>) => void;
         /**
           * When passed in on load, this selects the first button segment with a matching label. When the selected segment changes, this property updates with the currently selected value, which reflects back to the component attribute. If no button segment label matches this string, then no segment is selected. This value takes priority over setting selected boolean property on the items in the data array.
          */
@@ -29523,7 +29523,7 @@ declare namespace LocalJSX {
         /**
           * Emitted when the value property has changed.
          */
-        "onRux-change"?: (event: CustomEvent<SwitchChangeEvent>) => void;
+        "onRuxChange"?: (event: CustomEvent<SwitchChangeEvent>) => void;
     }
     interface RuxTab {
         /**
@@ -29541,7 +29541,7 @@ declare namespace LocalJSX {
         /**
           * Emits a list of the Tab Panels that have been passed in
          */
-        "onRegisterPanels"?: (event: CustomEvent<HTMLRuxTabPanelsElement[]>) => void;
+        "onRuxRegisterPanels"?: (event: CustomEvent<HTMLRuxTabPanelsElement[]>) => void;
     }
     interface RuxTable {
     }
@@ -29581,7 +29581,7 @@ declare namespace LocalJSX {
         /**
           * Emit when user selects a tree node
          */
-        "onRux-tree-node-selected"?: (event: CustomEvent<string>) => void;
+        "onRuxTreeNodeSelected"?: (event: CustomEvent<string>) => void;
         /**
           * Sets the selected state
          */

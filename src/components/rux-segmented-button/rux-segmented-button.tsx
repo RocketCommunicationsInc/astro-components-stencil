@@ -30,7 +30,7 @@ export class RuxSegmentedButton {
     /**
      * Emitted when the value property has changed.
      */
-    @Event({ eventName: 'rux-change' })
+    @Event()
     ruxChange!: EventEmitter
 
     @Watch('data')
