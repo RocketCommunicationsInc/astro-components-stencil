@@ -29331,7 +29331,7 @@ declare namespace LocalJSX {
         /**
           * Emitted when item is clicked. Ex `{value : 10}`
          */
-        "onRux-menu-item-clicked"?: (event: CustomEvent<object>) => void;
+        "onRux-menu-item-selected"?: (event: CustomEvent<object>) => void;
         /**
           * Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
          */
@@ -29523,7 +29523,7 @@ declare namespace LocalJSX {
         /**
           * Emitted when the value property has changed.
          */
-        "onRuxChange"?: (event: CustomEvent<SwitchChangeEvent>) => void;
+        "onRux-change"?: (event: CustomEvent<SwitchChangeEvent>) => void;
     }
     interface RuxTab {
         /**

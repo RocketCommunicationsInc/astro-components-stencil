@@ -35,7 +35,7 @@ export class RuxSwitch {
     /**
      * Emitted when the value property has changed.
      */
-    @Event()
+    @Event({ eventName: 'rux-change' })
     ruxChange!: EventEmitter<SwitchChangeEvent>
 
     @Watch('checked')

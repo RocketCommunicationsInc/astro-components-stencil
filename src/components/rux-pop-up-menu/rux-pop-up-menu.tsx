@@ -214,7 +214,7 @@ export class RuxPopUpMenu {
     }
 
     private _show() {
-        this.menuWillOpen.emit()
+        this.ruxMenuWillOpen.emit()
         this._setMenuPosition()
         this.open = true
 
@@ -226,18 +226,18 @@ export class RuxPopUpMenu {
 
         this.triggerEl?.removeEventListener('mousedown', this._handleClick)
 
-        this.menuDidOpen.emit()
+        this.ruxMenuDidOpen.emit()
     }
 
     private _hide() {
-        this.menuWillClose.emit()
+        this.ruxMenuWillClose.emit()
         this.open = false
 
         window.removeEventListener('mousedown', this._handleOutsideClick)
         window.removeEventListener('resize', this._setMenuPosition)
 
         this.triggerEl?.addEventListener('mousedown', this._handleClick)
-        this.menuDidClose.emit()
+        this.ruxMenuDidClose.emit()
     }
 
     render() {
