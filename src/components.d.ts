@@ -19,7 +19,7 @@ export namespace Components {
         /**
           * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
          */
-        "icon"?: string;
+        "icon"?: string | null;
         /**
           * Hides slotted text from the button by setting rux-button--icon-only class
          */
@@ -18604,7 +18604,7 @@ declare namespace LocalJSX {
         /**
           * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
          */
-        "icon"?: string;
+        "icon"?: string | null;
         /**
           * Hides slotted text from the button by setting rux-button--icon-only class
          */
