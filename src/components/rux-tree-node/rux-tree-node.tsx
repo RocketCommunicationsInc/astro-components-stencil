@@ -217,12 +217,12 @@ export class RuxTreeNode {
                 role="treeitem"
                 aria-expanded={this.expanded ? 'true' : 'false'}
                 aria-selected={this.selected ? 'true' : 'false'}
-                id={this.componentId}
                 onClick={(event: MouseEvent) =>
                     this._handleTreeNodeClick(event)
                 }
             >
                 <div
+                    id={this.componentId}
                     class={{
                         'tree-node': true,
                         'tree-node--expanded': this.expanded,
