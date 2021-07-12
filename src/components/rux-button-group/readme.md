@@ -26,14 +26,6 @@ By default button group aligns buttons to the left. Alternatively an `align` pro
 </rux-button-group>
 ```
 
-## Properties
-
-| Property | Attribute | Description | Type                           | Default |
-| -------- | --------- | ----------- | ------------------------------ | ------- |
-| `align`  | `align`   |             | `"N/A" \| "right" \| "center"` | `N/A`   |
-
-Read the [Rux-Buttons Readme](/?path=/info/components-buttons--standard-button) for more information.
-
 <!-- Auto Generated Below -->
 
 
