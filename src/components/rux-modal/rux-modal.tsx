@@ -7,6 +7,7 @@ import {
     Element,
     Listen,
     Watch,
+    Host,
 } from '@stencil/core'
 
 @Component({
@@ -45,8 +46,9 @@ export class RuxModal {
     })
     ruxModalClosed!: EventEmitter<boolean>
 
-    @Element() private element!: HTMLElement
+    @Element() private element!: HTMLRuxModalElement
 
+    // confirm dialog if Enter key is pressed
     @Listen('keydown')
     handleKeyDown(ev: KeyboardEvent) {
         if (ev.key === 'Enter') {
@@ -57,13 +59,25 @@ export class RuxModal {
         }
     }
 
+    // close modal if click happens outside of dialog
+    @Listen('click')
+    handleClick(ev: MouseEvent) {
+        const el: HTMLElement = ev.composedPath()[0] as HTMLElement
+        if (el.tagName.toLowerCase() === 'rux-modal') {
+            this.ruxModalClosed.emit(false)
+            this.open = false
+        }
+    }
+
     @Watch('open')
     validateName(isOpen: boolean) {
         if (isOpen) {
-            const button = this._getDefaultButton()
-            if (button) {
-                button.focus()
-            }
+            setTimeout(() => {
+                const button = this._getDefaultButton()
+                if (button) {
+                    button.focus()
+                }
+            })
         }
     }
 
@@ -95,11 +109,13 @@ export class RuxModal {
     }
 
     componentDidRender() {
-        const button = this._getDefaultButton()
-        if (button) {
-            button.setAttribute('tabindex', '0')
-            setTimeout(() => button.focus())
-        }
+        setTimeout(() => {
+            const button = this._getDefaultButton()
+            if (button) {
+                button.setAttribute('tabindex', '0')
+                button.focus()
+            }
+        })
     }
 
     render() {
@@ -112,9 +128,13 @@ export class RuxModal {
             _handleModalChoice,
         } = this
 
-        return (
-            <div class="rux-modal-container">
-                <dialog class="rux-modal" role="dialog" open={open}>
+        return open ? (
+            <Host
+                class={{
+                    open: open,
+                }}
+            >
+                <dialog class="rux-modal__dialog" role="dialog">
                     <header class="rux-modal__titlebar">
                         <h1>{modalTitle}</h1>
                     </header>
@@ -141,8 +161,8 @@ export class RuxModal {
                         </rux-button-group>
                     </div>
                 </dialog>
-            </div>
-        )
+            </Host>
+        ) : null
     }
 
     // TODO find a way to share logic to put this validation into
