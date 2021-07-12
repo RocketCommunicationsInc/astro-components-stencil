@@ -17,7 +17,7 @@ export class RuxTabs {
 
     @Element() el!: HTMLElement
 
-    @Listen('registerPanels', { target: 'window' })
+    @Listen('rux-register-panels', { target: 'window' })
     handleListen(e: CustomEvent) {
         this._registerPanels(e)
     }
