@@ -9,7 +9,10 @@ export class RuxButtonGroup {
     /**
      * The horizontal alignment of buttons within the group
      */
-    @Prop() hAlign: 'left' | 'center' | 'right' = 'left'
+    @Prop({
+        attribute: 'h-align',
+    })
+    hAlign: 'left' | 'center' | 'right' = 'left'
 
     render() {
         const { hAlign } = this
