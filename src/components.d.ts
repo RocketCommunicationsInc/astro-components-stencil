@@ -10904,6 +10904,20 @@ export namespace Components {
          */
         "selected": string;
     }
+    interface RuxSelect {
+        /**
+          * Disables the item
+         */
+        "disabled": boolean;
+        /**
+          * Sets the Label for the Select
+         */
+        "label"?: string | undefined;
+        /**
+          * Sets the field as required
+         */
+        "required": boolean;
+    }
     interface RuxStatus {
         /**
           * Sets the status symbol, valid options are critical, serious, caution, normal, standby and off
@@ -17416,6 +17430,12 @@ declare global {
         prototype: HTMLRuxSegmentedButtonElement;
         new (): HTMLRuxSegmentedButtonElement;
     };
+    interface HTMLRuxSelectElement extends Components.RuxSelect, HTMLStencilElement {
+    }
+    var HTMLRuxSelectElement: {
+        prototype: HTMLRuxSelectElement;
+        new (): HTMLRuxSelectElement;
+    };
     interface HTMLRuxStatusElement extends Components.RuxStatus, HTMLStencilElement {
     }
     var HTMLRuxStatusElement: {
@@ -18578,6 +18598,7 @@ declare global {
         "rux-pop-up-menu": HTMLRuxPopUpMenuElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-segmented-button": HTMLRuxSegmentedButtonElement;
+        "rux-select": HTMLRuxSelectElement;
         "rux-status": HTMLRuxStatusElement;
         "rux-switch": HTMLRuxSwitchElement;
         "rux-tab": HTMLRuxTabElement;
@@ -29501,6 +29522,20 @@ declare namespace LocalJSX {
          */
         "selected"?: string;
     }
+    interface RuxSelect {
+        /**
+          * Disables the item
+         */
+        "disabled"?: boolean;
+        /**
+          * Sets the Label for the Select
+         */
+        "label"?: string | undefined;
+        /**
+          * Sets the field as required
+         */
+        "required"?: boolean;
+    }
     interface RuxStatus {
         /**
           * Sets the status symbol, valid options are critical, serious, caution, normal, standby and off
@@ -30659,6 +30694,7 @@ declare namespace LocalJSX {
         "rux-pop-up-menu": RuxPopUpMenu;
         "rux-progress": RuxProgress;
         "rux-segmented-button": RuxSegmentedButton;
+        "rux-select": RuxSelect;
         "rux-status": RuxStatus;
         "rux-switch": RuxSwitch;
         "rux-tab": RuxTab;
@@ -31751,6 +31787,7 @@ declare module "@stencil/core" {
             "rux-pop-up-menu": LocalJSX.RuxPopUpMenu & JSXBase.HTMLAttributes<HTMLRuxPopUpMenuElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-segmented-button": LocalJSX.RuxSegmentedButton & JSXBase.HTMLAttributes<HTMLRuxSegmentedButtonElement>;
+            "rux-select": LocalJSX.RuxSelect & JSXBase.HTMLAttributes<HTMLRuxSelectElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
             "rux-switch": LocalJSX.RuxSwitch & JSXBase.HTMLAttributes<HTMLRuxSwitchElement>;
             "rux-tab": LocalJSX.RuxTab & JSXBase.HTMLAttributes<HTMLRuxTabElement>;
