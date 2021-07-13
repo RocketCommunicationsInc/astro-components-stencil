@@ -17,7 +17,7 @@ Common button groupings follow these conventions:
 </rux-button-group>
 ```
 
-By default button group aligns buttons to the left. Alternatively an `align` property may be passed to change alignment to `"center"` or `"right"`.
+By default button group aligns buttons to the left. Alternatively an `h-align` property may be passed to change alignment to `"center"` or `"right"`.
 
 ```xml
 <rux-button-group h-align="right">
