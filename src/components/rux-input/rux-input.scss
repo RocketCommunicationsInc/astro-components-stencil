@@ -1,0 +1,36 @@
+:host {
+    display: block;
+
+    .rux-form-field {
+        display: flex;
+        flex-direction: column;
+
+        font-family: var(--fontFamily);
+        font-size: var(--fontSize);
+        color: var(--fontColor);
+    }
+    .rux-input {
+        box-sizing: border-box;
+        order: 2;
+        height: 2.125rem;
+        width: 100%;
+        padding: 0 0.625rem;
+        border: 1px solid var(--inputBorderColor);
+        border-radius: 4px;
+        font-size: 1rem;
+        font-size: var(--fontSize, 1rem);
+        color: var(--inputTextColor);
+    }
+
+    .rux-help-text {
+        margin-top: 0.625rem;
+        color: var(--secondaryText);
+        font-size: 0.875rem;
+        font-size: var(--fontSizeMD);
+        font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+        font-family: var(--fontFamily);
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+}

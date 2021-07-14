@@ -10716,6 +10716,12 @@ export namespace Components {
          */
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
+    interface RuxInput {
+        "errorText"?: string;
+        "helpText"?: string;
+        "label"?: string;
+        "placeholder"?: string;
+    }
     interface RuxLog {
         /**
           * An array of objects to display as log
@@ -17356,6 +17362,12 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement;
         new (): HTMLRuxIconZoomOutMapElement;
     };
+    interface HTMLRuxInputElement extends Components.RuxInput, HTMLStencilElement {
+    }
+    var HTMLRuxInputElement: {
+        prototype: HTMLRuxInputElement;
+        new (): HTMLRuxInputElement;
+    };
     interface HTMLRuxLogElement extends Components.RuxLog, HTMLStencilElement {
     }
     var HTMLRuxLogElement: {
@@ -18568,6 +18580,7 @@ declare global {
         "rux-icon-zoom-in-map": HTMLRuxIconZoomInMapElement;
         "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
+        "rux-input": HTMLRuxInputElement;
         "rux-log": HTMLRuxLogElement;
         "rux-menu-item": HTMLRuxMenuItemElement;
         "rux-menu-item-divider": HTMLRuxMenuItemDividerElement;
@@ -29301,6 +29314,12 @@ declare namespace LocalJSX {
          */
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
+    interface RuxInput {
+        "errorText"?: string;
+        "helpText"?: string;
+        "label"?: string;
+        "placeholder"?: string;
+    }
     interface RuxLog {
         /**
           * An array of objects to display as log
@@ -30649,6 +30668,7 @@ declare namespace LocalJSX {
         "rux-icon-zoom-in-map": RuxIconZoomInMap;
         "rux-icon-zoom-out": RuxIconZoomOut;
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
+        "rux-input": RuxInput;
         "rux-log": RuxLog;
         "rux-menu-item": RuxMenuItem;
         "rux-menu-item-divider": RuxMenuItemDivider;
@@ -31741,6 +31761,7 @@ declare module "@stencil/core" {
             "rux-icon-zoom-in-map": LocalJSX.RuxIconZoomInMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomInMapElement>;
             "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
+            "rux-input": LocalJSX.RuxInput & JSXBase.HTMLAttributes<HTMLRuxInputElement>;
             "rux-log": LocalJSX.RuxLog & JSXBase.HTMLAttributes<HTMLRuxLogElement>;
             "rux-menu-item": LocalJSX.RuxMenuItem & JSXBase.HTMLAttributes<HTMLRuxMenuItemElement>;
             "rux-menu-item-divider": LocalJSX.RuxMenuItemDivider & JSXBase.HTMLAttributes<HTMLRuxMenuItemDividerElement>;
