@@ -181,6 +181,26 @@
 
     /*
 
+    Popup Menu Colors & Menu Item/Divider
+    ==========================================================================
+
+    */
+
+    --popupMenuBackgroundColor: var(--backgroundColor);
+    --popupMenuBorderColor: var(--primaryLighter);
+    --popupMenuTextColor: var(--primary);
+
+    --popupCaretBackgroundColor: var(--primaryLighter);
+
+    --menuItemBackgroundColor: var(--backgroundColor);
+    --menuItemHoverBackgroundColor: rgba(206, 233, 252, 0.3);
+    --menuTextColor: var(--primary);
+    --menuItemHoverTextColor: var(--primaryLight);
+
+    --menuItemDividerBorderColor: var(--primary);
+
+    /*
+
     Push Button Colors
     ==========================================================================
 
