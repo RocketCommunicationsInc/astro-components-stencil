@@ -144,12 +144,16 @@
     --segmentedButtonHoverBorderColor: var(--primaryDark);
 
     /* Segmented Select */
-    --segmentedButtonSelectedBackgroundColor: #cee9fc;
+    --segmentedButtonSelectedBackgroundColor: var(
+        --colorSnowflakesLightSelected
+    );
     --segmentedButtonSelectedTextColor: var(--defaultText);
     --segmentedButtonSelectedHoverBorderColor: var(--primary);
 
     /* Segmented Selected & Hover */
-    --segmentedButtonSelectedHoverBackgroundColor: #cee9fc;
+    --segmentedButtonSelectedHoverBackgroundColor: var(
+        --colorSnowflakesLightSelected
+    );
     --segmentedButtonSelectedHoverTextColor: var(--defaultText);
     --segmentedButtonSelectedHoverBorderColor: var(--primary);
 
@@ -198,7 +202,7 @@
 
     --clockTextColor: var(--primaryElementText);
     --clockBackgroundColor: #101923;
-    --clockBorderColor: #1b2d3e;
+    --clockBorderColor: var(--colorSnowflakesDarkSurface);
     --clockLabelColor: var(--primaryElementText);
 
     /*
