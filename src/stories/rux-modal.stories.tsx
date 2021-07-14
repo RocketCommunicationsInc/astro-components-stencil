@@ -5,11 +5,11 @@ import { withActions } from '@storybook/addon-actions'
 import readme from '../components/rux-modal/readme.md'
 
 export default {
-    title: 'Components/Modal',
+    title: 'Components/Dialog Box',
     decorators: [withActions('rux-modal-closed', { depth: 100 }), withKnobs],
 }
 
-export const Confirmation = () => {
+export const DialogBox = () => {
     const toggleModal = boolean('Enable modal', true)
     const message = text('Modal message', 'Modal message')
     const title = text('Modal title', 'Modal title')
@@ -26,7 +26,7 @@ export const Confirmation = () => {
     `
 }
 
-Confirmation.parameters = {
+DialogBox.parameters = {
     exports: {
         render,
         html,
