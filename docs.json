@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-09T18:39:25",
+    "timestamp": "2021-07-14T23:05:55",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -207,18 +207,18 @@
             "filePath": "./src/components/rux-button-group/rux-button-group.tsx",
             "encapsulation": "shadow",
             "tag": "rux-button-group",
-            "readme": "# Grouped Buttons\n\nCommon button groupings follow these conventions:\n\n-   Cancel buttons are always presented to the left of actions such as “Submit.”\n\n-   Buttons within the same group should maintain their inherent size. Do not stretch one button to match another’s width.\n\n## Web Component Usage\n\n### 1. Render the Astro Button Group Web Component\n\n```xml\n<rux-button-group>\n  <rux-button>Button 1</rux-button>\n  <rux-button>Button 2</rux-button>\n</rux-button-group>\n```\n\nBy default button group aligns buttons to the left. Alternatively an `align` property may be passed to change alignment to `\"center\"` or `\"right\"`.\n\n```xml\n<rux-button-group align=\"right\">\n  <rux-button>Button 1</rux-button>\n  <rux-button>Button 2</rux-button>\n</rux-button-group>\n```\n\n## Properties\n\n| Property | Attribute | Description | Type                           | Default |\n| -------- | --------- | ----------- | ------------------------------ | ------- |\n| `align`  | `align`   |             | `\"N/A\" \\| \"right\" \\| \"center\"` | `N/A`   |\n\nRead the [Rux-Buttons Readme](/?path=/info/components-buttons--standard-button) for more information.\n",
+            "readme": "# Grouped Buttons\n\nCommon button groupings follow these conventions:\n\n-   Cancel buttons are always presented to the left of actions such as “Submit.”\n\n-   Buttons within the same group should maintain their inherent size. Do not stretch one button to match another’s width.\n\n## Web Component Usage\n\n### 1. Render the Astro Button Group Web Component\n\n```xml\n<rux-button-group>\n  <rux-button>Button 1</rux-button>\n  <rux-button>Button 2</rux-button>\n</rux-button-group>\n```\n\nBy default button group aligns buttons to the left. Alternatively an `h-align` property may be passed to change alignment to `\"center\"` or `\"right\"`.\n\n```xml\n<rux-button-group h-align=\"right\">\n  <rux-button>Button 1</rux-button>\n  <rux-button>Button 2</rux-button>\n</rux-button-group>\n```\n",
             "docs": "Common button groupings follow these conventions:\n\n-   Cancel buttons are always presented to the left of actions such as “Submit.”\n\n-   Buttons within the same group should maintain their inherent size. Do not stretch one button to match another’s width.",
             "docsTags": [],
             "usage": {},
             "props": [
                 {
-                    "name": "align",
+                    "name": "hAlign",
                     "type": "\"center\" | \"left\" | \"right\"",
                     "mutable": false,
-                    "attr": "align",
+                    "attr": "h-align",
                     "reflectToAttr": false,
-                    "docs": "The alignment of buttons within the group",
+                    "docs": "The horizontal alignment of buttons within the group",
                     "docsTags": [],
                     "default": "'left'",
                     "values": [
@@ -75051,6 +75051,26 @@
                     "docs": "Segmented button selected background color"
                 },
                 {
+                    "name": "--segmentedButtonSelectedBorderColor",
+                    "annotation": "prop",
+                    "docs": "Segmented button selected border color"
+                },
+                {
+                    "name": "--segmentedButtonSelectedHoverBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "Segmented button selected hover background color"
+                },
+                {
+                    "name": "--segmentedButtonSelectedHoverBorderColor",
+                    "annotation": "prop",
+                    "docs": "Segmented button selected hover border color"
+                },
+                {
+                    "name": "--segmentedButtonSelectedHoverTextColor",
+                    "annotation": "prop",
+                    "docs": "Segmented button selected hover text color"
+                },
+                {
                     "name": "--segmentedButtonSelectedTextColor",
                     "annotation": "prop",
                     "docs": "Segmented button selected text color"
@@ -75213,14 +75233,9 @@
             "listeners": [],
             "styles": [
                 {
-                    "name": "--switchDisabledOffColor",
+                    "name": "--switchBackgroundColor",
                     "annotation": "prop",
-                    "docs": "the Switch disabled off color"
-                },
-                {
-                    "name": "--switchDisabledOnColor",
-                    "annotation": "prop",
-                    "docs": "the Switch disabled on color"
+                    "docs": "the Switch off color"
                 },
                 {
                     "name": "--switchHoverOffColor",
@@ -75233,14 +75248,9 @@
                     "docs": "the Switch hover on color"
                 },
                 {
-                    "name": "--switchOffColor",
+                    "name": "--switchOffBorderColor",
                     "annotation": "prop",
-                    "docs": "the Switch off color"
-                },
-                {
-                    "name": "--switchOnColor",
-                    "annotation": "prop",
-                    "docs": "the Switch on color"
+                    "docs": "the Switch off border color"
                 }
             ],
             "slots": [],
