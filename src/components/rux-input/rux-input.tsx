@@ -38,6 +38,11 @@ export class RuxInput {
 
     @Prop() required: boolean = false
 
+    /**
+     * Renders a smaller version
+     */
+    @Prop() small: boolean = false
+
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
     @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
 
@@ -63,8 +68,15 @@ export class RuxInput {
     render() {
         return (
             <Host>
-                <div class="rux-form-field">
-                    <label htmlFor={this.inputId}>{this.label}</label>
+                <div
+                    class={{
+                        'rux-form-field': true,
+                        'rux-form-field--small': this.small,
+                    }}
+                >
+                    <label class="rux-input-label" htmlFor={this.inputId}>
+                        {this.label}
+                    </label>
                     <input
                         ref={(el) => (this.inputElement = el)}
                         name={this.name}

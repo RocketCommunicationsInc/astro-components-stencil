@@ -21,6 +21,12 @@ export const InputFields = () => html`
       li {
         list-style: none;
       }
+      .text-area-field {
+        height: 87px;
+      }
+      textarea {
+        min-height: 4.25rem;
+      }
       @media screen and (min-width: 550px){
         ul {
           grid-template-columns: repeat(2, 1fr);
@@ -85,7 +91,7 @@ export const InputFields = () => html`
         <li class="rux-form-field">
           <rux-input label="Invalid number" type="number" min="0" max="10" invalid error-text="Error text" placeholder="Enter a number between 0 and 10"></rux-input>
         </li>
-        <li class="rux-form-field">
+        <li class="text-area-field">
           <label for="input__textarea">Textarea</label>
           <textarea
             id="input__textarea"
@@ -145,81 +151,37 @@ export const InputFields = () => html`
       </ul>
       <ul class="rux-form">
         <li class="rux-form-field rux-form-field--small">
-          <label for="input__text-smaller">Smaller text input</label>
-          <input id="input__text-smaller" class="rux-input" type="text" placeholder="Text input" />
+          <rux-input label="Smaller text input" placeholder="Text input" small></rux-input>
         </li>
         <li class="rux-form-field rux-form-field--small">
-          <label for="input__number-smaller">Smaller number input</label>
-          <input id="input__number-smaller" class="rux-input" type="number" placeholder="Number Input" />
+          <rux-input label="Smaller number input" type="number" placeholder="Number Input" small></rux-input>
         </li>
         <li class="rux-form-field rux-form-field--small">
-          <label for="input__required-smaller">Smaller Is Required</label>
-          <input id="input__required-smaller" class="rux-input" type="text" value=" " required />
+          <rux-input label="Smaller Is Required" required small></rux-input>
         </li>
         <li class="rux-form-field rux-form-field--small">
-          <label for="input__invalid-smaller">Smaller invalid</label>
-          <input id="input__invalid-smaller" class="rux-input" type="text" required />
-          <span class="rux-error-text">Error text</span>
+          <rux-input label="Smaller invalid" invalid error-text="Error text" small></rux-input>
         </li>
         <li class="rux-form-field rux-form-field--small">
-          <label for="input__disabled-smaller">Smaller disabled</label>
-          <input id="input__disabled-smaller" class="rux-input" type="text" disabled />
+          <rux-input label="Smaller disabled" disabled small></rux-input>
         </li>
         <li class="rux-form-field rux-form-field--small">
-          <label for="input__password-smaller">Smaller password</label>
-          <input
-            id="input__password-smaller"
-            class="rux-input"
-            type="password"
-            placeholder="********"
-          />
+          <rux-input label="Smaller password" type="password" placeholder="********" small></rux-input>
         </li>
         <li class="rux-form-field rux-form-field--small">
-          <label for="input__url-smaller">Smaller web address</label>
-          <input
-            id="input__url-smaller"
-            class="rux-input"
-            type="url"
-            placeholder="https://domain.com"
-          />
+          <rux-input label="Smaller web address" type="url" placeholder="https://domain.com" small></rux-input>
         </li>
         <li class="rux-form-field rux-form-field--small">
-          <label for="input__email-smaller">Smaller email address</label>
-          <input
-            id="input__email-smaller"
-            class="rux-input"
-            type="email"
-            placeholder="user@domain.com"
-          />
+          <rux-input label="Smaller email address" placeholder="user@domain.com" type="email" small></rux-input>
         </li>
         <li class="rux-form-field rux-form-field--small">
-          <label for="input__tel-smaller">Smaller phone number</label>
-          <input
-            id="input__tel-smaller"
-            class="rux-input"
-            type="tel"
-            placeholder="(999) 999-9999"
-          />
+          <rux-input label="Smaller phone number" type="tel" placeholder="(999) 999-9999" small></rux-input>
         </li>
         <li class="rux-form-field rux-form-field--small">
-          <label for="input__search-smaller">Smaller search</label>
-          <input
-            id="input__search-smaller"
-            class="rux-input"
-            type="search"
-            placeholder="Enter search term"
-          />
+          <rux-input label="Smaller search" type="search" placeholder="Enter search term" small></rux-input>
         </li>
         <li class="rux-form-field rux-form-field--small">
-          <label for="input__number-smaller">Smaller number input</label>
-          <input
-            id="input__number-smaller"
-            class="rux-input"
-            type="number"
-            min="0"
-            max="10"
-            placeholder="Enter a number between 0 and 10"
-          />
+          <rux-input label="Smaller number input" type="number" min="0" max="10" placeholder="Enter a number between 0 and 10" small></rux-input>
         </li>
         <li class="rux-form-field rux-form-field--small">
           <label for="input__textarea-smaller">Smaller textarea</label>

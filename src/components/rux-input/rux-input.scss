@@ -38,6 +38,20 @@
         }
     }
 
+    .rux-form-field--small {
+        .rux-input-label {
+            font-size: var(--fontSizeMD);
+        }
+        .rux-input {
+            height: 1.625rem;
+            padding: 0.3rem;
+            font-size: var(--fontSizeMD);
+        }
+
+        .rux-input--search {
+            padding: 0.3rem 0 0.3rem 2rem;
+        }
+    }
     .rux-help-text {
         margin-top: 0.625rem;
         color: var(--secondaryText);
