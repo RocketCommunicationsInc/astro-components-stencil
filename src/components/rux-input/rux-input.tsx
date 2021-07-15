@@ -1,4 +1,12 @@
-import { Prop, Component, Host, h } from '@stencil/core'
+import {
+    Element,
+    Prop,
+    Component,
+    Event,
+    EventEmitter,
+    Host,
+    h,
+} from '@stencil/core'
 
 let id = 0
 
@@ -9,6 +17,7 @@ let id = 0
 })
 export class RuxInput {
     inputId = `input-${++id}`
+    inputElement?: HTMLInputElement
 
     @Prop() label?: string
     @Prop() placeholder?: string
@@ -29,12 +38,35 @@ export class RuxInput {
 
     @Prop() required: boolean = false
 
+    @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
+    @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
+
+    connectedCallback() {
+        this.onChange = this.onChange.bind(this)
+        this.onInput = this.onInput.bind(this)
+    }
+
+    onChange() {
+        if (this.inputElement) {
+            this.value = this.inputElement.value
+            this.ruxChange.emit()
+        }
+    }
+
+    onInput() {
+        if (this.inputElement) {
+            this.value = this.inputElement.value
+            this.ruxChange.emit()
+        }
+    }
+
     render() {
         return (
             <Host>
                 <div class="rux-form-field">
                     <label htmlFor={this.inputId}>{this.label}</label>
                     <input
+                        ref={(el) => (this.inputElement = el)}
                         name={this.name}
                         disabled={this.disabled}
                         type={this.type}
@@ -51,6 +83,8 @@ export class RuxInput {
                             'rux-input--search': this.type === 'search',
                         }}
                         id={this.inputId}
+                        onChange={this.onChange}
+                        onInput={this.onInput}
                     ></input>
                 </div>
 
