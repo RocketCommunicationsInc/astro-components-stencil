@@ -1,39 +1,66 @@
 :host {
-  display: block;
+    display: block;
 
-  /**
-    * @prop -- selectInactiveCaret: Caret Shown When the Select Menu is Closed
-  */
-  --selectInactiveCaret: url('data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%23080c11%22%20d%3D%22M0%200h10L5%205z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+    /**
+      * --selectMenuBackgroundColor: Background Color of the Select Input
+    */
 
-  /**
-    * @prop -- selectInactiveCaret: Caret Shown When the Select Menu is Open
-  */
-  --selectActiveCaret: url('data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20style%3D%22transform%3A%20rotate%28180deg%29%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%23080c11%22%20d%3D%22M0%200h10L5%205z%22%20fill-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+    /**
+      * --selectMenuTextColor: Text Color of the Select Input
+    */
 
+    /**
+      * --selectMenuTextHoverColor: Text Hover Color of the Select Menu
+    */
 
-  // position: relative;
-  // appearance: none;
-  // -webkit-appearance: none;
-  // -moz-appearance: none;
-  // border: 1px solid var(--inputBorderColorAlt);
-  // border-radius: 3px;
-  // border-radius: var(--buttonBorderRadius);
-  // color: var(--inputDark);
-  // font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  // font-family: var(--fontFamily);
-  // font-weight: normal;
-  // font-size: 1rem;
-  // padding: 0.438rem 3.125rem 0.438rem 0.5rem;
-  // background-color: var(--inputBackground);
-  // background-image: var(--selectInactiveCaret);
-  // background-position: center right 0.625rem;
-  // background-repeat: no-repeat;
-  // user-select: none; 
+    /**
+      * --selectMenuBorderColor: Border Color of the Select Input
+    */
 
-  &.rux-error-text {
+    /**
+      * --selectMenuBorderHoverColor: Border Hover Color of the Select Input
+    */
+
+    /**
+      * --selectMenuBorderFocusColor: Border Focus Color of the Select Input
+    */
+
+    /**
+      * --selectMenuBorderDisabledColor: Border Color of the Disabled Select Input
+    */
+
+    /**
+      * --selectMenuInvalidBorderColor: Border Color of the Invalid Select Input
+    */
+
+    /**
+      * @prop --selectHoverOptBackgroundColor: Background Hover Color of Select Menu Options
+    */
+
+    /**
+      * @prop --selectMenuCaretBackgroundColor: Background Color of the Caret Section
+    */
+
+    /**
+      * @prop --selectInactiveCaret: Caret Shown When the Select Menu is Closed
+    */
+
+    /**
+      * @prop --selectActiveCaret: Caret Shown When the Select Menu is Open
+    */
+
+    /**
+      * @prop --buttonBorderRadius: Border radius for Select Menu
+    */
+
+    /**
+      * @prop --fontFamily: Font Family for the Application
+    */
+}
+
+.rux-error-text {
     padding-left: 1.625rem;
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20128%20128%22%3E%0A%20%20%3Cpath%20fill%3D%22%23FF3030%22%20fill-rule%3D%22evenodd%22%20d%3D%22M64.031%205c8.461%200%2068.88%20107.243%2063.648%20114.184-5.232%206.942-120.805%205.477-127.212%200C-5.941%20113.708%2055.57%205%2064.03%205zm3.45%2075.894l1.822-34.893H56.946l1.82%2034.893h8.715zM56.803%2093.108c0%201.929.547%203.423%201.643%204.483%201.095%201.06%202.642%201.589%204.642%201.589%201.953%200%203.477-.542%204.572-1.625%201.095-1.084%201.643-2.566%201.643-4.447%200-1.952-.542-3.452-1.625-4.5-1.084-1.047-2.613-1.571-4.59-1.571-2.047%200-3.607.512-4.678%201.536-1.072%201.023-1.607%202.535-1.607%204.535z%22%2F%3E%0A%3C%2Fsvg%3E");
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20128%20128%22%3E%0A%20%20%3Cpath%20fill%3D%22%23FF3030%22%20fill-rule%3D%22evenodd%22%20d%3D%22M64.031%205c8.461%200%2068.88%20107.243%2063.648%20114.184-5.232%206.942-120.805%205.477-127.212%200C-5.941%20113.708%2055.57%205%2064.03%205zm3.45%2075.894l1.822-34.893H56.946l1.82%2034.893h8.715zM56.803%2093.108c0%201.929.547%203.423%201.643%204.483%201.095%201.06%202.642%201.589%204.642%201.589%201.953%200%203.477-.542%204.572-1.625%201.095-1.084%201.643-2.566%201.643-4.447%200-1.952-.542-3.452-1.625-4.5-1.084-1.047-2.613-1.571-4.59-1.571-2.047%200-3.607.512-4.678%201.536-1.072%201.023-1.607%202.535-1.607%204.535z%22%2F%3E%0A%3C%2Fsvg%3E');
     background-repeat: no-repeat;
     background-size: 1rem;
     background-position: center left 0rem;
@@ -41,82 +68,137 @@
     width: fit-content;
     -webkit-order: 3;
     order: 3;
-    margin-top: 0.625rem; 
-
-  }
-}
-
-.rux-form-field .rux-error-text, .rux-select + .rux-error-text {
-  padding-left: 1.625rem;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20128%20128%22%3E%0A%20%20%3Cpath%20fill%3D%22%23FF3030%22%20fill-rule%3D%22evenodd%22%20d%3D%22M64.031%205c8.461%200%2068.88%20107.243%2063.648%20114.184-5.232%206.942-120.805%205.477-127.212%200C-5.941%20113.708%2055.57%205%2064.03%205zm3.45%2075.894l1.822-34.893H56.946l1.82%2034.893h8.715zM56.803%2093.108c0%201.929.547%203.423%201.643%204.483%201.095%201.06%202.642%201.589%204.642%201.589%201.953%200%203.477-.542%204.572-1.625%201.095-1.084%201.643-2.566%201.643-4.447%200-1.952-.542-3.452-1.625-4.5-1.084-1.047-2.613-1.571-4.59-1.571-2.047%200-3.607.512-4.678%201.536-1.072%201.023-1.607%202.535-1.607%204.535z%22%2F%3E%0A%3C%2Fsvg%3E");
-  background-repeat: no-repeat;
-  background-size: 1rem;
-  background-position: center left 0rem;
-  text-align: left;
-  width: fit-content;
-  -webkit-order: 3;
-  order: 3;
-  margin-top: 0.625rem; 
+    margin-top: 0.625rem;
 }
 
 .rux-select {
-  --selectActiveCaret: url('data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20style%3D%22transform%3A%20rotate%28180deg%29%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%23080c11%22%20d%3D%22M0%200h10L5%205z%22%20fill-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
-  --selectInactiveCaret: url('data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%23080c11%22%20d%3D%22M0%200h10L5%205z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    border: 1px solid var(--selectMenuBorderColor);
+    border-radius: var(--buttonBorderRadius);
+    color: var(--selectMenuTextColor);
+    font-family: var(--fontFamily);
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 0.438rem 3.125rem 0.438rem 0.5rem;
+    background-color: var(--selectMenuBackgroundColor);
+    background-image: var(--selectInactiveCaret),
+        var(--selectMenuCaretBackgroundColor);
+    background-position: center right 0.625rem, center left 9.105rem;
+    background-repeat: no-repeat;
+    user-select: none;
 
-  position: relative;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: 1px solid var(--inputBorderColorAlt);
-  border-radius: 3px;
-  border-radius: var(--buttonBorderRadius);
-  color: var(--inputDark);
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-family: var(--fontFamily);
-  font-weight: normal;
-  font-size: 1rem;
-  padding: 0.438rem 3.125rem 0.438rem 0.5rem;
-  background-color: var(--inputBackground);
-  background-image: var(--selectInactiveCaret);
-  background-position: center right 0.625rem;
-  background-repeat: no-repeat;
-  user-select: none; 
+    &:hover {
+        cursor: pointer;
+        border: 1px solid var(--selectMenuBorderHoverColor);
+    }
+
+    &:active:not(:disabled) {
+        background-image: var(--selectActiveCaret);
+    }
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--selectMenuBorderFocusColor);
+        border-radius: var(--buttonBorderRadius);
+    }
+
+    &:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+        border-color: var(--selectMenuBorderDisabledColor);
+
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
+
+    &:invalid {
+        border: 1px solid var(--selectMenuInvalidBorderColor);
+    }
+
+    &::-ms-expand {
+        display: none;
+    }
+
+    &:focus::-ms-value {
+        background: transparent;
+    }
+
+    option,
+    optgroup {
+        background-color: var(--selectMenuBackgroundColor);
+        border: 1px solid var(--selectMenuBorderColor);
+        border-radius: 3px;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            color: var(--selectMenuTextHoverColor);
+            background-color: var(--selectHoverOptBackgroundColor);
+        }
+    }
 }
+// .rux-select {
+//   --selectActiveCaret: url('data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20style%3D%22transform%3A%20rotate%28180deg%29%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%23080c11%22%20d%3D%22M0%200h10L5%205z%22%20fill-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+//   --selectInactiveCaret: url('data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%23080c11%22%20d%3D%22M0%200h10L5%205z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
 
-.rux-select .rux-select optgroup,
-.rux-select option {
-  color: var(--inputDark);
-  background-color: var(--inputBackground); }
+//   position: relative;
+//   appearance: none;
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   border: 1px solid var(--inputBorderColorAlt);
+//   border-radius: 3px;
+//   border-radius: var(--buttonBorderRadius);
+//   color: var(--inputDark);
+//   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+//   font-family: var(--fontFamily);
+//   font-weight: normal;
+//   font-size: 1rem;
+//   padding: 0.438rem 3.125rem 0.438rem 0.5rem;
+//   background-color: var(--inputBackground);
+//   background-image: var(--selectInactiveCaret);
+//   background-position: center right 0.625rem;
+//   background-repeat: no-repeat;
+//   user-select: none;
+// }
 
-.rux-select .rux-select optgroup:hover,
-.rux-select option:hover {
-  background-color: var(--selectHoverOptBackgroundColor); }
+// .rux-select .rux-select optgroup,
+// .rux-select option {
+//   color: var(--inputDark);
+//   background-color: var(--inputBackground); }
 
-.rux-select:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-  border-color: var(--inputBorderColorDisabled); }
+// .rux-select .rux-select optgroup:hover,
+// .rux-select option:hover {
+//   background-color: var(--selectHoverOptBackgroundColor); }
 
-.rux-select:disabled:hover {
-  cursor: not-allowed; }
+// .rux-select:disabled {
+//   opacity: 0.4;
+//   cursor: not-allowed;
+//   border-color: var(--inputBorderColorDisabled); }
 
-.rux-select:focus {
-  outline: none;
-  border: 1px solid var(--primary);
-  border-radius: 3px;
-  border-radius: var(--buttonBorderRadius); }
+// .rux-select:disabled:hover {
+//   cursor: not-allowed; }
 
-.rux-select:active:not(:disabled) {
-  background-image: var(--selectActiveCaret); }
+// .rux-select:focus {
+//   outline: none;
+//   border: 1px solid var(--primary);
+//   border-radius: 3px;
+//   border-radius: var(--buttonBorderRadius); }
 
-.rux-select:hover {
-  cursor: pointer; }
+// .rux-select:active:not(:disabled) {
+//   background-image: var(--selectActiveCaret); }
 
-.rux-select::-ms-expand {
-  display: none; }
+// .rux-select:hover {
+//   cursor: pointer; }
 
-.rux-select:focus::-ms-value {
-  background: transparent; }
+// .rux-select::-ms-expand {
+//   display: none; }
 
-.rux-select:invalid {
-  border: 1px solid var(--inputInvalidBorderColor); }
+// .rux-select:focus::-ms-value {
+//   background: transparent; }
+
+// .rux-select:invalid {
+//   border: 1px solid var(--inputInvalidBorderColor); }
