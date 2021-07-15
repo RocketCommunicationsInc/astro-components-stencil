@@ -1,12 +1,4 @@
-import {
-    Element,
-    Prop,
-    Component,
-    Event,
-    EventEmitter,
-    Host,
-    h,
-} from '@stencil/core'
+import { Prop, Component, Event, EventEmitter, Host, h } from '@stencil/core'
 
 let id = 0
 
@@ -19,16 +11,60 @@ export class RuxInput {
     inputId = `input-${++id}`
     inputElement?: HTMLInputElement
 
+    /**
+     * The input label text
+     */
     @Prop() label?: string
+    /**
+     * The input placeholder text
+     */
     @Prop() placeholder?: string
-    @Prop() helpText?: string
-    @Prop() errorText?: string
+
+    /**
+     * The help or explanation text
+     */
+    @Prop({ attribute: 'help-text' }) helpText?: string
+
+    /**
+     * The validation error text
+     */
+    @Prop({ attribute: 'error-text' }) errorText?: string
+
+    /**
+     * Marks the input as invalid
+     */
     @Prop() invalid = false
+
+    /**
+     * The input value
+     */
     @Prop({ mutable: true, reflect: true }) value: string | number = ''
+
+    /**
+     * The input name
+     */
     @Prop() name = ''
 
-    @Prop() type = 'text'
+    /**
+     * The input type
+     */
+    @Prop() type:
+        | 'text'
+        | 'number'
+        | 'email'
+        | 'url'
+        | 'search'
+        | 'password'
+        | 'tel' = 'text'
+
+    /**
+     * The input min attribute
+     */
     @Prop() min?: string
+
+    /**
+     * The input max attribute
+     */
     @Prop() max?: string
 
     /**
@@ -36,14 +72,24 @@ export class RuxInput {
      */
     @Prop({ reflect: true }) disabled = false
 
+    /**
+     * Sets the input as disabled
+     */
     @Prop() required: boolean = false
 
     /**
-     * Renders a smaller version
+     * Styles the input element and label smaller for space-limited situations.
      */
     @Prop() small: boolean = false
 
+    /**
+     * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
+     */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
+
+    /**
+     * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+     */
     @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
 
     connectedCallback() {
@@ -61,7 +107,7 @@ export class RuxInput {
     onInput() {
         if (this.inputElement) {
             this.value = this.inputElement.value
-            this.ruxChange.emit()
+            this.ruxInput.emit()
         }
     }
 
