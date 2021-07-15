@@ -20,7 +20,7 @@ export const Default = (args) => {
         .disabled="${args.disabled}"
         .error-text="${args.errorText}"
         .invalid="${args.invalid}"
-        .helptext="${args.helptext}"
+        .help-text="${args.helptext}"
         .min="${args.min}"
         .max="${args.max}"
         .name="${args.name}"
@@ -37,8 +37,7 @@ export const Default = (args) => {
     <Story
       name="Default"
       args={{
-        helpText: 'asdf',
-        value: ' '
+        label: 'Input label',
       }}
     >
       {Default.bind()}
