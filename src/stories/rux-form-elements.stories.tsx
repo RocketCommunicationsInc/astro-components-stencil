@@ -52,79 +52,38 @@ export const InputFields = () => html`
         <li>
           <rux-input value=" " label="Is Required" required></rux-input>
         </li>
-        <li class="rux-form-field">
-          <label for="input__invalid">Invalid</label>
-          <input id="input__invalid" class="rux-input" type="text" required />
-          <span class="rux-error-text">Error text</span>
+        <li>
+          <rux-input label="Invalid" error-text="Error text" invalid="true"></rux-input>
         </li>
         <li class="rux-form-field">
-          <label for="input__disabled">Disabled</label>
-          <input id="input__disabled" class="rux-input" type="text" disabled />
+          <rux-input label="Disabled" disabled></rux-input>
         </li>
         <li class="rux-form-field">
-          <label for="input__password">Password</label>
-          <input id="input__password" class="rux-input" type="password" placeholder="********" />
+          <rux-input label="Password" type="password" placeholder="********"></rux-input>
         </li>
         <li class="rux-form-field">
-          <label for="input__invalid">Invalid password</label>
-          <input id="input__invalid" class="rux-input" type="password" required />
-          <span class="rux-error-text">Error text</span>
+          <rux-input label="Invalid password" error-text="Error text" type="password" invalid placeholder="********"></rux-input>
+        </li>
+        <li>
+          <rux-input label="Web address" type="url" placeholder="https://domain.com"></rux-input>
         </li>
         <li class="rux-form-field">
-          <label for="input__url">Web address</label>
-          <input id="input__url" class="rux-input" type="url" placeholder="https://domain.com" />
+          <rux-input type="email" label="Email address" placeholder="user@domain.com"></rux-input>
         </li>
         <li class="rux-form-field">
-          <label for="input__email">Email address</label>
-          <input id="input__email" class="rux-input" type="email" placeholder="user@domain.com" />
+          <rux-input type="tel" placeholder="(999) 999-9999" label="Phone number"></rux-input>
         </li>
         <li class="rux-form-field">
-          <label for="input__tel">Phone number</label>
-          <input id="input__tel" class="rux-input" type="tel" placeholder="(999) 999-9999" />
+          <rux-input label="Search" type="search" placeholder="Enter search term"></rux-input>
         </li>
         <li class="rux-form-field">
-          <label for="input__search">Search</label>
-          <input
-            id="input__search"
-            class="rux-input"
-            type="search"
-            placeholder="Enter search term"
-          />
+          <rux-input label="Invalid search" type="search" invalid placeholder="Enter search term" error-text="Error text" required>
         </li>
         <li class="rux-form-field">
-          <label for="input__search">Invalid search</label>
-          <input
-            id="input__search"
-            class="rux-input"
-            type="search"
-            required
-            placeholder="Enter search term"
-          />
-          <span class="rux-error-text">Error text</span>
+          <rux-input label="Number input" type="number" min="0" max="10" placeholder="Enter a number between 0 and 10"></rux-input>
         </li>
         <li class="rux-form-field">
-          <label for="input__number">Number input</label>
-          <input
-            id="input__number"
-            class="rux-input"
-            type="number"
-            min="0"
-            max="10"
-            placeholder="Enter a number between 0 and 10"
-          />
-        </li>
-        <li class="rux-form-field">
-          <label for="input__number">Invalid number</label>
-          <input
-            id="input__number"
-            class="rux-input"
-            type="number"
-            min="0"
-            max="10"
-            required
-            placeholder="Enter a number between 0 and 10"
-          />
-          <span class="rux-error-text">Error text</span>
+          <rux-input label="Invalid number" type="number" min="0" max="10" invalid error-text="Error text" placeholder="Enter a number between 0 and 10"></rux-input>
         </li>
         <li class="rux-form-field">
           <label for="input__textarea">Textarea</label>
