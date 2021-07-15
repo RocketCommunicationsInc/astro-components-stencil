@@ -38,7 +38,7 @@ export class RuxInput {
     /**
      * The input value
      */
-    @Prop({ mutable: true, reflect: true }) value: string | number = ''
+    @Prop({ mutable: true, reflect: true }) value: string = ''
 
     /**
      * The input name
