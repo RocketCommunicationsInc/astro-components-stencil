@@ -33,6 +33,20 @@
 | `rux-input`  | Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event) | `CustomEvent<any>` |
 
 
+## CSS Custom Properties
+
+| Name                        | Description                    |
+| --------------------------- | ------------------------------ |
+| `--inputBackgroundColor`    | the input background color     |
+| `--inputBorderColor`        | the input border color         |
+| `--inputFocusBorderColor`   | the input focus border color   |
+| `--inputFocusTextColor`     | the input focus text color     |
+| `--inputInvalidBorderColor` | the input invalid border color |
+| `--inputSearchCancel`       | the input search cancel        |
+| `--inputSearchIcon`         | the input search icon          |
+| `--inputTextColor`          | the input text color           |
+
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

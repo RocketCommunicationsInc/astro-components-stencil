@@ -10716,11 +10716,69 @@ export namespace Components {
          */
         "size": 'extra-small' | 'small' | 'normal' | 'large';
     }
-    interface RuxInput {
+    interface RuxInputField {
+        /**
+          * Disables the button via HTML disabled attribute. Button takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled": boolean;
+        /**
+          * The validation error text
+         */
         "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
         "helpText"?: string;
+        /**
+          * Marks the input as invalid
+         */
+        "invalid": boolean;
+        /**
+          * The input label text
+         */
         "label"?: string;
+        /**
+          * The input max attribute
+         */
+        "max"?: string;
+        /**
+          * The input min attribute
+         */
+        "min"?: string;
+        /**
+          * The input name
+         */
+        "name": string;
+        /**
+          * The input placeholder text
+         */
         "placeholder"?: string;
+        /**
+          * Sets the input as disabled
+         */
+        "required": boolean;
+        /**
+          * Styles the input element and label smaller for space-limited situations.
+         */
+        "small": boolean;
+        /**
+          * The input step attribute
+         */
+        "step"?: string;
+        /**
+          * The input type
+         */
+        "type": | 'text'
+        | 'number'
+        | 'email'
+        | 'url'
+        | 'search'
+        | 'password'
+        | 'tel';
+        /**
+          * The input value
+         */
+        "value": string;
     }
     interface RuxLog {
         /**
@@ -17362,11 +17420,11 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement;
         new (): HTMLRuxIconZoomOutMapElement;
     };
-    interface HTMLRuxInputElement extends Components.RuxInput, HTMLStencilElement {
+    interface HTMLRuxInputFieldElement extends Components.RuxInputField, HTMLStencilElement {
     }
-    var HTMLRuxInputElement: {
-        prototype: HTMLRuxInputElement;
-        new (): HTMLRuxInputElement;
+    var HTMLRuxInputFieldElement: {
+        prototype: HTMLRuxInputFieldElement;
+        new (): HTMLRuxInputFieldElement;
     };
     interface HTMLRuxLogElement extends Components.RuxLog, HTMLStencilElement {
     }
@@ -18580,7 +18638,7 @@ declare global {
         "rux-icon-zoom-in-map": HTMLRuxIconZoomInMapElement;
         "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
-        "rux-input": HTMLRuxInputElement;
+        "rux-input-field": HTMLRuxInputFieldElement;
         "rux-log": HTMLRuxLogElement;
         "rux-menu-item": HTMLRuxMenuItemElement;
         "rux-menu-item-divider": HTMLRuxMenuItemDividerElement;
@@ -29314,11 +29372,77 @@ declare namespace LocalJSX {
          */
         "size"?: 'extra-small' | 'small' | 'normal' | 'large';
     }
-    interface RuxInput {
+    interface RuxInputField {
+        /**
+          * Disables the button via HTML disabled attribute. Button takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled"?: boolean;
+        /**
+          * The validation error text
+         */
         "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
         "helpText"?: string;
+        /**
+          * Marks the input as invalid
+         */
+        "invalid"?: boolean;
+        /**
+          * The input label text
+         */
         "label"?: string;
+        /**
+          * The input max attribute
+         */
+        "max"?: string;
+        /**
+          * The input min attribute
+         */
+        "min"?: string;
+        /**
+          * The input name
+         */
+        "name"?: string;
+        /**
+          * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
+         */
+        "onRux-change"?: (event: CustomEvent<any>) => void;
+        /**
+          * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+         */
+        "onRux-input"?: (event: CustomEvent<any>) => void;
+        /**
+          * The input placeholder text
+         */
         "placeholder"?: string;
+        /**
+          * Sets the input as disabled
+         */
+        "required"?: boolean;
+        /**
+          * Styles the input element and label smaller for space-limited situations.
+         */
+        "small"?: boolean;
+        /**
+          * The input step attribute
+         */
+        "step"?: string;
+        /**
+          * The input type
+         */
+        "type"?: | 'text'
+        | 'number'
+        | 'email'
+        | 'url'
+        | 'search'
+        | 'password'
+        | 'tel';
+        /**
+          * The input value
+         */
+        "value"?: string;
     }
     interface RuxLog {
         /**
@@ -30668,7 +30792,7 @@ declare namespace LocalJSX {
         "rux-icon-zoom-in-map": RuxIconZoomInMap;
         "rux-icon-zoom-out": RuxIconZoomOut;
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
-        "rux-input": RuxInput;
+        "rux-input-field": RuxInputField;
         "rux-log": RuxLog;
         "rux-menu-item": RuxMenuItem;
         "rux-menu-item-divider": RuxMenuItemDivider;
@@ -31761,7 +31885,7 @@ declare module "@stencil/core" {
             "rux-icon-zoom-in-map": LocalJSX.RuxIconZoomInMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomInMapElement>;
             "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
-            "rux-input": LocalJSX.RuxInput & JSXBase.HTMLAttributes<HTMLRuxInputElement>;
+            "rux-input-field": LocalJSX.RuxInputField & JSXBase.HTMLAttributes<HTMLRuxInputFieldElement>;
             "rux-log": LocalJSX.RuxLog & JSXBase.HTMLAttributes<HTMLRuxLogElement>;
             "rux-menu-item": LocalJSX.RuxMenuItem & JSXBase.HTMLAttributes<HTMLRuxMenuItemElement>;
             "rux-menu-item-divider": LocalJSX.RuxMenuItemDivider & JSXBase.HTMLAttributes<HTMLRuxMenuItemDividerElement>;

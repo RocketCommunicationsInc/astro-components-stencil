@@ -3,12 +3,12 @@ import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
 import { html, render } from 'lit-html'
 
 <Meta
-    title="Components/Input"
-    component="rux-input"
-    argTypes={extractArgTypes('rux-input')}
+    title="Components/Input Field"
+    component="rux-input-field"
+    argTypes={extractArgTypes('rux-input-field')}
      parameters={{
        actions: {
-        handles: ['rux-input rux-input', 'rux-change rux-input'],
+        handles: ['rux-input-field rux-input-field', 'rux-change rux-input-field'],
       },
     }}
 />
@@ -25,7 +25,7 @@ Input Fields allow users to enter freeform text. Variations on this field often 
 export const Default = (args) => {
   console.log('args', args);
     return html`
-      <rux-input
+      <rux-input-field
         .label="${args.label}"
         .disabled="${args.disabled}"
         .errorText="${args.errorText}"
@@ -38,7 +38,7 @@ export const Default = (args) => {
         ?required="${args.required}"
         ?small="${args.small}"
         .value="${args.value}"
-      ></rux-input>
+      ></rux-input-field>
     `
 }
 
@@ -58,7 +58,7 @@ export const Default = (args) => {
 
 ## API
 
-<ArgsTable of="rux-input" />
+<ArgsTable of="rux-input-field" />
 
 ## Variants
 
@@ -66,7 +66,7 @@ export const Default = (args) => {
 
 export const Disabled = (args) => {
     return html`
-      <rux-input
+      <rux-input-field
         .label="${args.label}"
         .disabled="${args.disabled}"
         .error-text="${args.errorText}"
@@ -80,7 +80,7 @@ export const Disabled = (args) => {
         ?small="${args.small}"
         .value="${args.value}"
         .step="${args.step}"
-      ></rux-input>
+      ></rux-input-field>
       ${args.helpText}
     `
 }
@@ -101,7 +101,7 @@ export const Disabled = (args) => {
 
 export const Small = (args) => {
     return html`
-      <rux-input
+      <rux-input-field
         .label="${args.label}"
         .disabled="${args.disabled}"
         .errorText="${args.errorText}"
@@ -115,7 +115,7 @@ export const Small = (args) => {
         ?small="${args.small}"
         .value="${args.value}"
         .step="${args.step}"
-      ></rux-input>
+      ></rux-input-field>
     `
 }
 
@@ -135,7 +135,7 @@ export const Small = (args) => {
 
 export const HelpText = (args) => {
     return html`
-      <rux-input
+      <rux-input-field
         .label="${args.label}"
         .disabled="${args.disabled}"
         .errorText="${args.errorText}"
@@ -149,7 +149,7 @@ export const HelpText = (args) => {
         ?small="${args.small}"
         .value="${args.value}"
         .step="${args.step}"
-      ></rux-input>
+      ></rux-input-field>
     `
 }
 
@@ -170,7 +170,7 @@ export const HelpText = (args) => {
 
 export const Invalid = (args) => {
     return html`
-      <rux-input
+      <rux-input-field
         .label="${args.label}"
         .disabled="${args.disabled}"
         .errorText="${args.errorText}"
@@ -184,7 +184,7 @@ export const Invalid = (args) => {
         ?small="${args.small}"
         .value="${args.value}"
         .step="${args.step}"
-      ></rux-input>
+      ></rux-input-field>
     `
 }
 
@@ -223,13 +223,13 @@ export const Types = (args) => {
     }
     </style>
     <div class="grid">
-      <rux-input label="Text Input" type="text" placeholder="Text input"></rux-input>
-      <rux-input label="Number Input" type="number" placeholder="1"></rux-input>
-      <rux-input label="Phone Input" type="tel" placeholder="(999) 999-9999"></rux-input>
-      <rux-input label="Password Input" type="password" placeholder="Reindeer Flotilla"></rux-input>
-      <rux-input label="Web address" type="url" placeholder="http://example.com"></rux-input>
-      <rux-input label="Email" type="email" placeholder="user@example.com"></rux-input>
-      <rux-input label="Search" type="search" placeholder="Enter search term"></rux-input>
+      <rux-input-field label="Text Input" type="text" placeholder="Text input"></rux-input-field>
+      <rux-input-field label="Number Input" type="number" placeholder="1"></rux-input-field>
+      <rux-input-field label="Phone Input" type="tel" placeholder="(999) 999-9999"></rux-input-field>
+      <rux-input-field label="Password Input" type="password" placeholder="Reindeer Flotilla"></rux-input-field>
+      <rux-input-field label="Web address" type="url" placeholder="http://example.com"></rux-input-field>
+      <rux-input-field label="Email" type="email" placeholder="user@example.com"></rux-input-field>
+      <rux-input-field label="Search" type="search" placeholder="Enter search term"></rux-input-field>
     </div>
     `
 }

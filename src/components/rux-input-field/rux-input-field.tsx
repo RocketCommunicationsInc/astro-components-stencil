@@ -3,11 +3,11 @@ import { Prop, Component, Event, EventEmitter, Host, h } from '@stencil/core'
 let id = 0
 
 @Component({
-    tag: 'rux-input',
-    styleUrl: 'rux-input.scss',
+    tag: 'rux-input-field',
+    styleUrl: 'rux-input-field.scss',
     shadow: true,
 })
-export class RuxInput {
+export class RuxInputField {
     inputId = `input-${++id}`
     inputElement?: HTMLInputElement
 
