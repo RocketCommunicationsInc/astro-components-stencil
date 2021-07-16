@@ -75,7 +75,7 @@ export class RuxModal {
             setTimeout(() => {
                 const button = this._getDefaultButton()
                 button && button.focus()
-            }, 100)
+            })
         }
     }
 
@@ -107,7 +107,7 @@ export class RuxModal {
         setTimeout(() => {
             const button = this._getDefaultButton()
             button && button.focus()
-        }, 100)
+        })
     }
 
     render() {
