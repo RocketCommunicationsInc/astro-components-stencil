@@ -6,6 +6,11 @@ import { html, render } from 'lit-html'
     title="Components/Input"
     component="rux-input"
     argTypes={extractArgTypes('rux-input')}
+     parameters={{
+       actions: {
+        handles: ['rux-input rux-input', 'rux-change rux-input'],
+      },
+    }}
 />
 
 # Input
