@@ -74,10 +74,8 @@ export class RuxModal {
         if (isOpen) {
             setTimeout(() => {
                 const button = this._getDefaultButton()
-                if (button) {
-                    button.focus()
-                }
-            })
+                button && button.focus()
+            }, 100)
         }
     }
 
@@ -106,16 +104,10 @@ export class RuxModal {
 
     connectedCallback() {
         this.validate('rux-modal', ['open', 'modalMessage', 'modalTitle'])
-    }
-
-    componentDidRender() {
         setTimeout(() => {
             const button = this._getDefaultButton()
-            if (button) {
-                button.setAttribute('tabindex', '0')
-                button.focus()
-            }
-        })
+            button && button.focus()
+        }, 100)
     }
 
     render() {
