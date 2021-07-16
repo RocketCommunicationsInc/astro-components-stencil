@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-16T01:44:31",
+    "timestamp": "2021-07-12T18:46:42",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -76012,35 +76012,22 @@
             "usage": {},
             "props": [
                 {
-                    "name": "_panels",
-                    "type": "HTMLRuxTabPanelElement[]",
-                    "mutable": true,
+                    "name": "small",
+                    "type": "boolean | undefined",
+                    "mutable": false,
+                    "attr": "small",
                     "reflectToAttr": false,
-                    "docs": "Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.",
+                    "docs": "If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses.",
                     "docsTags": [],
-                    "default": "[]",
                     "values": [
                         {
-                            "type": "HTMLRuxTabPanelElement[]"
-                        }
-                    ],
-                    "optional": false,
-                    "required": false
-                },
-                {
-                    "name": "_tabs",
-                    "type": "HTMLRuxTabElement[]",
-                    "mutable": true,
-                    "reflectToAttr": false,
-                    "docs": "Holds all `<rux-tab>` components that are children of `<rux-tabs>`.",
-                    "docsTags": [],
-                    "default": "[]",
-                    "values": [
+                            "type": "boolean"
+                        },
                         {
-                            "type": "HTMLRuxTabElement[]"
+                            "type": "undefined"
                         }
                     ],
-                    "optional": false,
+                    "optional": true,
                     "required": false
                 }
             ],
@@ -76048,7 +76035,7 @@
             "events": [],
             "listeners": [
                 {
-                    "event": "registerPanels",
+                    "event": "rux-register-panels",
                     "target": "window",
                     "capture": false,
                     "passive": false

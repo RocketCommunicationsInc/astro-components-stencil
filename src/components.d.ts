@@ -11022,13 +11022,9 @@ export namespace Components {
     }
     interface RuxTabs {
         /**
-          * Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
+          * If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses.
          */
-        "_panels": Array<HTMLRuxTabPanelElement>;
-        /**
-          * Holds all `<rux-tab>` components that are children of `<rux-tabs>`.
-         */
-        "_tabs": Array<HTMLRuxTabElement>;
+        "small"?: boolean;
     }
     interface RuxTree {
     }
@@ -29706,13 +29702,9 @@ declare namespace LocalJSX {
     }
     interface RuxTabs {
         /**
-          * Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
+          * If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses.
          */
-        "_panels"?: Array<HTMLRuxTabPanelElement>;
-        /**
-          * Holds all `<rux-tab>` components that are children of `<rux-tabs>`.
-         */
-        "_tabs"?: Array<HTMLRuxTabElement>;
+        "small"?: boolean;
     }
     interface RuxTree {
     }
