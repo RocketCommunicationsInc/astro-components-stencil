@@ -83,6 +83,11 @@ export class RuxInput {
     @Prop() small: boolean = false
 
     /**
+     * The input step attribute
+     */
+    @Prop() step?: string
+
+    /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
@@ -131,6 +136,7 @@ export class RuxInput {
                         aria-invalid={this.invalid ? 'true' : 'false'}
                         placeholder={this.placeholder}
                         required={this.required}
+                        step={this.step}
                         min={this.min}
                         max={this.max}
                         value={this.value}
