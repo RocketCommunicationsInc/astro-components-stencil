@@ -101,8 +101,8 @@ export class RuxTextarea {
             <Host>
                 <div
                     class={{
-                        'rux-form-field': true,
-                        'rux-form-field--small': this.small,
+                        'rux-textarea-field': true,
+                        'rux-textarea-field--small': this.small,
                     }}
                 >
                     <label class="rux-input-label" htmlFor={this.inputId}>

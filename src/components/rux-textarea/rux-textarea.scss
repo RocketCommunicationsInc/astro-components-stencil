@@ -23,6 +23,11 @@
         }
     }
 
+    .rux-textarea-field--small {
+        padding: 0.3rem;
+        font-size: var(--fontSizeMD);
+    }
+
     .rux-help-text {
         margin-top: 0.625rem;
         color: var(--secondaryText);
