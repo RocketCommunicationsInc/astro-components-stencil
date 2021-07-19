@@ -8,9 +8,12 @@ describe('rux-textarea', () => {
             html: `<rux-textarea></rux-textarea>`,
         })
         expect(page.root).toEqualHtml(`
-      <rux-textarea>
+      <rux-textarea value="">
         <mock:shadow-root>
-          <slot></slot>
+        <div class="rux-textarea-field">
+          <label class="rux-textarea-label" htmlfor="input-1"></label>
+          <textarea aria-invalid="false" class="rux-textarea" id="input-1" value=""></textarea>
+        </div>
         </mock:shadow-root>
       </rux-textarea>
     `)

@@ -84,6 +84,11 @@ export class RuxTextarea {
      */
     @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
 
+    connectedCallback() {
+        this.onChange = this.onChange.bind(this)
+        this.onInput = this.onInput.bind(this)
+    }
+
     onChange(e: Event) {
         const target = e.target as HTMLInputElement
         this.value = target.value
@@ -91,6 +96,8 @@ export class RuxTextarea {
     }
 
     onInput(e: Event) {
+        console.log('heard input', e)
+
         const target = e.target as HTMLInputElement
         this.value = target.value
         this.ruxInput.emit()
