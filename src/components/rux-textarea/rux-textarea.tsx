@@ -105,7 +105,7 @@ export class RuxTextarea {
                         'rux-textarea-field--small': this.small,
                     }}
                 >
-                    <label class="rux-input-label" htmlFor={this.inputId}>
+                    <label class="rux-textarea-label" htmlFor={this.inputId}>
                         {this.label}
                     </label>
                     <textarea

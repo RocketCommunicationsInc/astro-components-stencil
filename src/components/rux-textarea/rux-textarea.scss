@@ -23,9 +23,23 @@
         }
     }
 
+    .rux-textarea-field {
+        display: flex;
+        flex-direction: column;
+
+        font-family: var(--fontFamily);
+        font-size: var(--fontSize);
+        color: var(--fontColor);
+    }
+
     .rux-textarea-field--small {
-        padding: 0.3rem;
-        font-size: var(--fontSizeMD);
+        .rux-textarea-label {
+            font-size: var(--fontSizeMD);
+        }
+        .rux-textarea {
+            padding: 0.3rem;
+            font-size: var(--fontSizeMD);
+        }
     }
 
     .rux-help-text {
