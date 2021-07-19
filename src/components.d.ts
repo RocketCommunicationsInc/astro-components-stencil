@@ -10963,6 +10963,58 @@ export namespace Components {
         "small"?: boolean;
     }
     interface RuxTextarea {
+        /**
+          * Disables the button via HTML disabled attribute. Button takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled": boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Marks the input as invalid
+         */
+        "invalid": boolean;
+        /**
+          * The input label text
+         */
+        "label"?: string;
+        /**
+          * The input maxLength attribute
+         */
+        "maxLength"?: string;
+        /**
+          * The input minLength attribute
+         */
+        "minLength"?: string;
+        /**
+          * The input name
+         */
+        "name": string;
+        /**
+          * The input placeholder text
+         */
+        "placeholder"?: string;
+        /**
+          * Sets the input as disabled
+         */
+        "required": boolean;
+        /**
+          * The input rows attribute
+         */
+        "rows"?: number;
+        /**
+          * Styles the input element and label smaller for space-limited situations.
+         */
+        "small": boolean;
+        /**
+          * The input value
+         */
+        "value": string;
     }
     interface RuxTree {
     }
@@ -29573,6 +29625,66 @@ declare namespace LocalJSX {
         "small"?: boolean;
     }
     interface RuxTextarea {
+        /**
+          * Disables the button via HTML disabled attribute. Button takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled"?: boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Marks the input as invalid
+         */
+        "invalid"?: boolean;
+        /**
+          * The input label text
+         */
+        "label"?: string;
+        /**
+          * The input maxLength attribute
+         */
+        "maxLength"?: string;
+        /**
+          * The input minLength attribute
+         */
+        "minLength"?: string;
+        /**
+          * The input name
+         */
+        "name"?: string;
+        /**
+          * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
+         */
+        "onRux-change"?: (event: CustomEvent<any>) => void;
+        /**
+          * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+         */
+        "onRux-input"?: (event: CustomEvent<any>) => void;
+        /**
+          * The input placeholder text
+         */
+        "placeholder"?: string;
+        /**
+          * Sets the input as disabled
+         */
+        "required"?: boolean;
+        /**
+          * The input rows attribute
+         */
+        "rows"?: number;
+        /**
+          * Styles the input element and label smaller for space-limited situations.
+         */
+        "small"?: boolean;
+        /**
+          * The input value
+         */
+        "value"?: string;
     }
     interface RuxTree {
     }
