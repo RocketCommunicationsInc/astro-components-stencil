@@ -9,7 +9,6 @@ let id = 0
 })
 export class RuxInputField {
     inputId = `input-${++id}`
-    inputElement?: HTMLInputElement
 
     /**
      * The input label text
@@ -102,18 +101,16 @@ export class RuxInputField {
         this.onInput = this.onInput.bind(this)
     }
 
-    onChange() {
-        if (this.inputElement) {
-            this.value = this.inputElement.value
-            this.ruxChange.emit()
-        }
+    onChange(e: Event) {
+        const target = e.target as HTMLInputElement
+        this.value = target.value
+        this.ruxChange.emit()
     }
 
-    onInput() {
-        if (this.inputElement) {
-            this.value = this.inputElement.value
-            this.ruxInput.emit()
-        }
+    onInput(e: Event) {
+        const target = e.target as HTMLInputElement
+        this.value = target.value
+        this.ruxInput.emit()
     }
 
     render() {
@@ -129,7 +126,6 @@ export class RuxInputField {
                         {this.label}
                     </label>
                     <input
-                        ref={(el) => (this.inputElement = el)}
                         name={this.name}
                         disabled={this.disabled}
                         type={this.type}
