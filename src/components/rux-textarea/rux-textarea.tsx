@@ -4,7 +4,7 @@ let id = 0
 
 @Component({
     tag: 'rux-textarea',
-    styleUrl: 'rux-textarea.css',
+    styleUrl: 'rux-textarea.scss',
     shadow: true,
 })
 export class RuxTextarea {
@@ -45,14 +45,19 @@ export class RuxTextarea {
     @Prop() name = ''
 
     /**
-     * The input min attribute
+     * The input minLength attribute
      */
-    @Prop() min?: string
+    @Prop({ attribute: 'min-length' }) minLength?: string
 
     /**
-     * The input max attribute
+     * The input maxLength attribute
      */
-    @Prop() max?: string
+    @Prop({ attribute: 'max-length' }) maxLength?: string
+
+    /**
+     * The input rows attribute
+     */
+    @Prop() rows?: number
 
     /**
      * Disables the button via HTML disabled attribute. Button takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
@@ -79,18 +84,16 @@ export class RuxTextarea {
      */
     @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
 
-    onChange() {
-        // if (this.inputElement) {
-        //     this.value = this.inputElement.value
-        //     this.ruxChange.emit()
-        // }
+    onChange(e: Event) {
+        const target = e.target as HTMLInputElement
+        this.value = target.value
+        this.ruxChange.emit()
     }
 
-    onInput() {
-        // if (this.inputElement) {
-        //     this.value = this.inputElement.value
-        //     this.ruxInput.emit()
-        // }
+    onInput(e: Event) {
+        const target = e.target as HTMLInputElement
+        this.value = target.value
+        this.ruxInput.emit()
     }
 
     render() {
@@ -111,15 +114,16 @@ export class RuxTextarea {
                         aria-invalid={this.invalid ? 'true' : 'false'}
                         placeholder={this.placeholder}
                         required={this.required}
-                        min={this.min}
-                        max={this.max}
+                        minlength={this.minLength}
+                        maxlength={this.maxLength}
                         value={this.value}
                         class={{
-                            'rux-input': true,
-                            'rux-input--disabled': this.disabled,
-                            'rux-input--invalid': this.invalid,
+                            'rux-textarea': true,
+                            'rux-textrea--disabled': this.disabled,
+                            'rux-textarea--invalid': this.invalid,
                         }}
                         id={this.inputId}
+                        rows={this.rows}
                         onChange={this.onChange}
                         onInput={this.onInput}
                     ></textarea>
