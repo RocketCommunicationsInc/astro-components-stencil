@@ -10962,6 +10962,8 @@ export namespace Components {
          */
         "small"?: boolean;
     }
+    interface RuxTextarea {
+    }
     interface RuxTree {
     }
     interface RuxTreeNode {
@@ -17490,6 +17492,12 @@ declare global {
         prototype: HTMLRuxTabsElement;
         new (): HTMLRuxTabsElement;
     };
+    interface HTMLRuxTextareaElement extends Components.RuxTextarea, HTMLStencilElement {
+    }
+    var HTMLRuxTextareaElement: {
+        prototype: HTMLRuxTextareaElement;
+        new (): HTMLRuxTextareaElement;
+    };
     interface HTMLRuxTreeElement extends Components.RuxTree, HTMLStencilElement {
     }
     var HTMLRuxTreeElement: {
@@ -18587,6 +18595,7 @@ declare global {
         "rux-table-header-row": HTMLRuxTableHeaderRowElement;
         "rux-table-row": HTMLRuxTableRowElement;
         "rux-tabs": HTMLRuxTabsElement;
+        "rux-textarea": HTMLRuxTextareaElement;
         "rux-tree": HTMLRuxTreeElement;
         "rux-tree-node": HTMLRuxTreeNodeElement;
     }
@@ -29563,6 +29572,8 @@ declare namespace LocalJSX {
          */
         "small"?: boolean;
     }
+    interface RuxTextarea {
+    }
     interface RuxTree {
     }
     interface RuxTreeNode {
@@ -30664,6 +30675,7 @@ declare namespace LocalJSX {
         "rux-table-header-row": RuxTableHeaderRow;
         "rux-table-row": RuxTableRow;
         "rux-tabs": RuxTabs;
+        "rux-textarea": RuxTextarea;
         "rux-tree": RuxTree;
         "rux-tree-node": RuxTreeNode;
     }
@@ -31756,6 +31768,7 @@ declare module "@stencil/core" {
             "rux-table-header-row": LocalJSX.RuxTableHeaderRow & JSXBase.HTMLAttributes<HTMLRuxTableHeaderRowElement>;
             "rux-table-row": LocalJSX.RuxTableRow & JSXBase.HTMLAttributes<HTMLRuxTableRowElement>;
             "rux-tabs": LocalJSX.RuxTabs & JSXBase.HTMLAttributes<HTMLRuxTabsElement>;
+            "rux-textarea": LocalJSX.RuxTextarea & JSXBase.HTMLAttributes<HTMLRuxTextareaElement>;
             "rux-tree": LocalJSX.RuxTree & JSXBase.HTMLAttributes<HTMLRuxTreeElement>;
             "rux-tree-node": LocalJSX.RuxTreeNode & JSXBase.HTMLAttributes<HTMLRuxTreeNodeElement>;
         }
