@@ -38,6 +38,8 @@ export const Default = (args) => {
         ?required="${args.required}"
         ?small="${args.small}"
         .value="${args.value}"
+        .step="${args.step}"
+        type=${args.type}
       ></rux-input-field>
     `
 }
@@ -46,6 +48,7 @@ export const Default = (args) => {
     <Story
       name="Default"
       args={{
+        type: 'text',
         label: 'Input label',
       }}
     >
@@ -80,6 +83,7 @@ export const Disabled = (args) => {
         ?small="${args.small}"
         .value="${args.value}"
         .step="${args.step}"
+        type=${args.type}
       ></rux-input-field>
       ${args.helpText}
     `
@@ -90,7 +94,8 @@ export const Disabled = (args) => {
       name="Disabled"
       args={{
         label: 'Disabled input',
-        disabled: true
+        disabled: true,
+        type: 'text'
       }}
     >
       {Disabled.bind()}
@@ -114,6 +119,7 @@ export const Small = (args) => {
         ?required="${args.required}"
         ?small="${args.small}"
         .value="${args.value}"
+        type=${args.type}
         .step="${args.step}"
       ></rux-input-field>
     `
@@ -124,7 +130,8 @@ export const Small = (args) => {
       name="Small"
       args={{
         label: 'Small Label',
-        small: true
+        small: true,
+        type: 'text'
       }}
     >
       {Small.bind()}
@@ -148,6 +155,7 @@ export const HelpText = (args) => {
         ?required="${args.required}"
         ?small="${args.small}"
         .value="${args.value}"
+        type=${args.type}
         .step="${args.step}"
       ></rux-input-field>
     `
@@ -158,7 +166,8 @@ export const HelpText = (args) => {
       name="Help Text"
       args={{
         label: 'Help text',
-        helpText: 'Help text'
+        helpText: 'Help text',
+        type: 'text'
       }}
     >
       {HelpText.bind()}
@@ -183,6 +192,7 @@ export const Invalid = (args) => {
         ?required="${args.required}"
         ?small="${args.small}"
         .value="${args.value}"
+        type=${args.type}
         .step="${args.step}"
       ></rux-input-field>
     `
@@ -194,7 +204,8 @@ export const Invalid = (args) => {
       args={{
         invalid: true,
         errorText: 'Field is required',
-        label: 'Input Field'
+        label: 'Input Field',
+        type: 'text'
       }}
     >
       {Invalid.bind()}
