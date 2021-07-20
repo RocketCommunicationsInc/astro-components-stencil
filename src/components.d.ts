@@ -39,6 +39,40 @@ export namespace Components {
          */
         "hAlign": 'left' | 'center' | 'right';
     }
+    interface RuxCheckbox {
+        /**
+          * The checkbox name
+         */
+        "checked": boolean;
+        /**
+          * Disables the checkbox via HTML disabled attribute. Checkbox takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled": boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * Toggles indeterminate state of a checkbox
+         */
+        "indeterminate": boolean;
+        /**
+          * The checkbox name
+         */
+        "name": string;
+        /**
+          * Sets the input as required
+         */
+        "required": boolean;
+        /**
+          * Styles the input element and label smaller for space-limited situations.
+         */
+        "small": boolean;
+        /**
+          * The checkbox value
+         */
+        "value": boolean;
+    }
     interface RuxClassificationMarking {
         /**
           * Defines which classification marking will be displayed.
@@ -10998,6 +11032,12 @@ declare global {
         prototype: HTMLRuxButtonGroupElement;
         new (): HTMLRuxButtonGroupElement;
     };
+    interface HTMLRuxCheckboxElement extends Components.RuxCheckbox, HTMLStencilElement {
+    }
+    var HTMLRuxCheckboxElement: {
+        prototype: HTMLRuxCheckboxElement;
+        new (): HTMLRuxCheckboxElement;
+    };
     interface HTMLRuxClassificationMarkingElement extends Components.RuxClassificationMarking, HTMLStencilElement {
     }
     var HTMLRuxClassificationMarkingElement: {
@@ -17505,6 +17545,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "rux-button": HTMLRuxButtonElement;
         "rux-button-group": HTMLRuxButtonGroupElement;
+        "rux-checkbox": HTMLRuxCheckboxElement;
         "rux-classification-marking": HTMLRuxClassificationMarkingElement;
         "rux-clock": HTMLRuxClockElement;
         "rux-datetime": HTMLRuxDatetimeElement;
@@ -18619,6 +18660,48 @@ declare namespace LocalJSX {
           * The horizontal alignment of buttons within the group
          */
         "hAlign"?: 'left' | 'center' | 'right';
+    }
+    interface RuxCheckbox {
+        /**
+          * The checkbox name
+         */
+        "checked"?: boolean;
+        /**
+          * Disables the checkbox via HTML disabled attribute. Checkbox takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled"?: boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * Toggles indeterminate state of a checkbox
+         */
+        "indeterminate"?: boolean;
+        /**
+          * The checkbox name
+         */
+        "name"?: string;
+        /**
+          * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
+         */
+        "onRux-change"?: (event: CustomEvent<any>) => void;
+        /**
+          * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+         */
+        "onRux-checkbox"?: (event: CustomEvent<any>) => void;
+        /**
+          * Sets the input as required
+         */
+        "required"?: boolean;
+        /**
+          * Styles the input element and label smaller for space-limited situations.
+         */
+        "small"?: boolean;
+        /**
+          * The checkbox value
+         */
+        "value"?: boolean;
     }
     interface RuxClassificationMarking {
         /**
@@ -29582,6 +29665,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "rux-button": RuxButton;
         "rux-button-group": RuxButtonGroup;
+        "rux-checkbox": RuxCheckbox;
         "rux-classification-marking": RuxClassificationMarking;
         "rux-clock": RuxClock;
         "rux-datetime": RuxDatetime;
@@ -30674,6 +30758,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "rux-button": LocalJSX.RuxButton & JSXBase.HTMLAttributes<HTMLRuxButtonElement>;
             "rux-button-group": LocalJSX.RuxButtonGroup & JSXBase.HTMLAttributes<HTMLRuxButtonGroupElement>;
+            "rux-checkbox": LocalJSX.RuxCheckbox & JSXBase.HTMLAttributes<HTMLRuxCheckboxElement>;
             "rux-classification-marking": LocalJSX.RuxClassificationMarking & JSXBase.HTMLAttributes<HTMLRuxClassificationMarkingElement>;
             "rux-clock": LocalJSX.RuxClock & JSXBase.HTMLAttributes<HTMLRuxClockElement>;
             "rux-datetime": LocalJSX.RuxDatetime & JSXBase.HTMLAttributes<HTMLRuxDatetimeElement>;
