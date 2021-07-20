@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-12T18:46:42",
+    "timestamp": "2021-07-20T23:18:21",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -207,18 +207,18 @@
             "filePath": "./src/components/rux-button-group/rux-button-group.tsx",
             "encapsulation": "shadow",
             "tag": "rux-button-group",
-            "readme": "# Grouped Buttons\n\nCommon button groupings follow these conventions:\n\n-   Cancel buttons are always presented to the left of actions such as “Submit.”\n\n-   Buttons within the same group should maintain their inherent size. Do not stretch one button to match another’s width.\n\n## Web Component Usage\n\n### 1. Render the Astro Button Group Web Component\n\n```xml\n<rux-button-group>\n  <rux-button>Button 1</rux-button>\n  <rux-button>Button 2</rux-button>\n</rux-button-group>\n```\n\nBy default button group aligns buttons to the left. Alternatively an `align` property may be passed to change alignment to `\"center\"` or `\"right\"`.\n\n```xml\n<rux-button-group align=\"right\">\n  <rux-button>Button 1</rux-button>\n  <rux-button>Button 2</rux-button>\n</rux-button-group>\n```\n\n## Properties\n\n| Property | Attribute | Description | Type                           | Default |\n| -------- | --------- | ----------- | ------------------------------ | ------- |\n| `align`  | `align`   |             | `\"N/A\" \\| \"right\" \\| \"center\"` | `N/A`   |\n\nRead the [Rux-Buttons Readme](/?path=/info/components-buttons--standard-button) for more information.\n",
+            "readme": "# Grouped Buttons\n\nCommon button groupings follow these conventions:\n\n-   Cancel buttons are always presented to the left of actions such as “Submit.”\n\n-   Buttons within the same group should maintain their inherent size. Do not stretch one button to match another’s width.\n\n## Web Component Usage\n\n### 1. Render the Astro Button Group Web Component\n\n```xml\n<rux-button-group>\n  <rux-button>Button 1</rux-button>\n  <rux-button>Button 2</rux-button>\n</rux-button-group>\n```\n\nBy default button group aligns buttons to the left. Alternatively an `h-align` property may be passed to change alignment to `\"center\"` or `\"right\"`.\n\n```xml\n<rux-button-group h-align=\"right\">\n  <rux-button>Button 1</rux-button>\n  <rux-button>Button 2</rux-button>\n</rux-button-group>\n```\n",
             "docs": "Common button groupings follow these conventions:\n\n-   Cancel buttons are always presented to the left of actions such as “Submit.”\n\n-   Buttons within the same group should maintain their inherent size. Do not stretch one button to match another’s width.",
             "docsTags": [],
             "usage": {},
             "props": [
                 {
-                    "name": "align",
+                    "name": "hAlign",
                     "type": "\"center\" | \"left\" | \"right\"",
                     "mutable": false,
-                    "attr": "align",
+                    "attr": "h-align",
                     "reflectToAttr": false,
-                    "docs": "The alignment of buttons within the group",
+                    "docs": "The horizontal alignment of buttons within the group",
                     "docsTags": [],
                     "default": "'left'",
                     "values": [
@@ -250,6 +250,145 @@
             "dependencyGraph": {
                 "rux-modal": ["rux-button-group"]
             }
+        },
+        {
+            "filePath": "./src/components/rux-checkbox/rux-checkbox.tsx",
+            "encapsulation": "shadow",
+            "tag": "rux-checkbox",
+            "docs": "",
+            "docsTags": [],
+            "usage": {},
+            "props": [
+                {
+                    "name": "checked",
+                    "type": "boolean",
+                    "mutable": false,
+                    "attr": "checked",
+                    "reflectToAttr": true,
+                    "docs": "The checkbox name",
+                    "docsTags": [],
+                    "default": "false",
+                    "values": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                },
+                {
+                    "name": "disabled",
+                    "type": "boolean",
+                    "mutable": false,
+                    "attr": "disabled",
+                    "reflectToAttr": true,
+                    "docs": "Disables the checkbox via HTML disabled attribute. Checkbox takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.",
+                    "docsTags": [],
+                    "default": "false",
+                    "values": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                },
+                {
+                    "name": "errorText",
+                    "type": "string | undefined",
+                    "mutable": false,
+                    "attr": "error-text",
+                    "reflectToAttr": false,
+                    "docs": "The validation error text",
+                    "docsTags": [],
+                    "values": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "undefined"
+                        }
+                    ],
+                    "optional": true,
+                    "required": false
+                },
+                {
+                    "name": "indeterminate",
+                    "type": "boolean",
+                    "mutable": false,
+                    "attr": "indeterminate",
+                    "reflectToAttr": true,
+                    "docs": "Toggles indeterminate state of a checkbox",
+                    "docsTags": [],
+                    "default": "false",
+                    "values": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "mutable": false,
+                    "attr": "name",
+                    "reflectToAttr": false,
+                    "docs": "The checkbox name",
+                    "docsTags": [],
+                    "default": "''",
+                    "values": [
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                },
+                {
+                    "name": "required",
+                    "type": "boolean",
+                    "mutable": false,
+                    "attr": "required",
+                    "reflectToAttr": false,
+                    "docs": "Sets the input as required",
+                    "docsTags": [],
+                    "default": "false",
+                    "values": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                }
+            ],
+            "methods": [],
+            "events": [
+                {
+                    "event": "rux-change",
+                    "detail": "any",
+                    "bubbles": true,
+                    "cancelable": true,
+                    "composed": true,
+                    "docs": "Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)",
+                    "docsTags": []
+                }
+            ],
+            "listeners": [
+                {
+                    "event": "click",
+                    "capture": false,
+                    "passive": false
+                }
+            ],
+            "styles": [],
+            "slots": [],
+            "parts": [],
+            "dependents": [],
+            "dependencies": [],
+            "dependencyGraph": {}
         },
         {
             "filePath": "./src/components/rux-classification-marking/rux-classification-marking.tsx",
@@ -74232,6 +74371,11 @@
                     "event": "keydown",
                     "capture": false,
                     "passive": false
+                },
+                {
+                    "event": "click",
+                    "capture": false,
+                    "passive": false
                 }
             ],
             "styles": [
@@ -75821,7 +75965,13 @@
                     "docsTags": []
                 }
             ],
-            "listeners": [],
+            "listeners": [
+                {
+                    "event": "keydown",
+                    "capture": false,
+                    "passive": false
+                }
+            ],
             "styles": [
                 {
                     "name": "--treeAccentColor",
