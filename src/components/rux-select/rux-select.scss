@@ -60,6 +60,10 @@
     /**
       * @prop --fontFamily: Font Family for the Application
     */
+
+    /**
+      * @prop --selectMenuLabelColor: Text Color of the Label
+    */
 }
 
 .rux-error-text {
@@ -75,6 +79,13 @@
     order: 3;
     margin-top: 0.625rem;
     color: var(--colorCritical);
+}
+
+label {
+    color: var(--selectMenuLabelColor);
+    margin-bottom: 10px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
 }
 
 .rux-select {

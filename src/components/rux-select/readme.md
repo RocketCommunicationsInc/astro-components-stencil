@@ -74,6 +74,7 @@ Select Menu renders a native `<select>` element and allows native `<option>` and
 | `--selectMenuCaretBackgroundColor`    | Background Color of the Caret Section         |
 | `--selectMenuHoverOptBackgroundColor` | Background Hover Color of Select Menu Options |
 | `--selectMenuInvalidBorderColor`      | Border Color of the Invalid Select Input      |
+| `--selectMenuLabelColor`              | Text Color of the Label                       |
 | `--selectMenuTextColor`               | Text Color of the Select Input                |
 | `--selectMenuTextHoverColor`          | Text Hover Color of the Select Menu           |
 | `--selectOptGroupTextColor`           | Text Color of Select Menu Option Group        |
