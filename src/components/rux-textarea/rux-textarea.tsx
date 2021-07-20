@@ -96,8 +96,6 @@ export class RuxTextarea {
     }
 
     onInput(e: Event) {
-        console.log('heard input', e)
-
         const target = e.target as HTMLInputElement
         this.value = target.value
         this.ruxInput.emit()
