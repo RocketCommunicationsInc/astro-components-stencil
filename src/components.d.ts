@@ -64,14 +64,6 @@ export namespace Components {
           * Sets the input as required
          */
         "required": boolean;
-        /**
-          * Styles the input element and label smaller for space-limited situations.
-         */
-        "small": boolean;
-        /**
-          * The checkbox value
-         */
-        "value": boolean;
     }
     interface RuxClassificationMarking {
         /**
@@ -18687,21 +18679,9 @@ declare namespace LocalJSX {
          */
         "onRux-change"?: (event: CustomEvent<any>) => void;
         /**
-          * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
-         */
-        "onRux-checkbox"?: (event: CustomEvent<any>) => void;
-        /**
           * Sets the input as required
          */
         "required"?: boolean;
-        /**
-          * Styles the input element and label smaller for space-limited situations.
-         */
-        "small"?: boolean;
-        /**
-          * The checkbox value
-         */
-        "value"?: boolean;
     }
     interface RuxClassificationMarking {
         /**

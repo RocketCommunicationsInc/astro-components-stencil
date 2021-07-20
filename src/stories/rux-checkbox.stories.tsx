@@ -1,7 +1,9 @@
+import { withActions } from '@storybook/addon-actions'
 import { html, render } from 'lit-html'
 
 export default {
     title: 'Components/Form Elements',
+    decorators: [withActions('rux-change', 'rux-checkbox')],
 }
 
 export const Checkboxes = () => {

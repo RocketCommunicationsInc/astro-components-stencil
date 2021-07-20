@@ -8,25 +8,21 @@ import {
     Listen,
 } from '@stencil/core'
 
+let id = 0
+
 @Component({
     tag: 'rux-checkbox',
     styleUrl: 'rux-checkbox.scss',
     shadow: true,
 })
 export class RuxCheckbox {
-    // inputId = `input-${++id}`
-    checkboxElement!: HTMLElement
+    checkboxId = `checkbox-${++id}`
     @Element() el!: HTMLRuxCheckboxElement
 
     /**
      * The validation error text
      */
     @Prop({ attribute: 'error-text' }) errorText?: string
-
-    /**
-     * The checkbox value
-     */
-    @Prop({ mutable: true, reflect: true }) value: boolean = false
 
     /**
      * The checkbox name
@@ -54,26 +50,16 @@ export class RuxCheckbox {
     @Prop() required: boolean = false
 
     /**
-     * Styles the input element and label smaller for space-limited situations.
-     */
-    @Prop() small: boolean = false
-
-    /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
-
-    /**
-     * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
-     */
-    @Event({ eventName: 'rux-checkbox' }) ruxCheckbox!: EventEmitter
 
     @Listen('click')
     handleClick() {
         if (this.isClickable()) {
             const input = this.el.shadowRoot?.querySelector(
                 'input'
-            ) as HTMLElement
+            ) as HTMLInputElement
             input.click()
         }
     }
@@ -89,21 +75,11 @@ export class RuxCheckbox {
 
     connectedCallback() {
         this.onChange = this.onChange.bind(this)
-        this.onCheck = this.onCheck.bind(this)
     }
 
-    onChange() {
-        if (this.checkboxElement) {
-            const emitedValue = this.value ? this.value : this.checked
-            this.ruxChange.emit(emitedValue)
-        }
-    }
-
-    onCheck() {
-        if (this.checkboxElement) {
-            const emitedValue = this.value ? this.value : this.checked
-            this.ruxCheckbox.emit(emitedValue)
-        }
+    private onChange() {
+        this.checked = !this.checked
+        this.ruxChange.emit(this.checked)
     }
 
     private isClickable(): boolean {
@@ -111,7 +87,14 @@ export class RuxCheckbox {
     }
 
     render() {
-        const { indeterminate, disabled, required, checked, name } = this
+        const {
+            checkboxId,
+            indeterminate,
+            disabled,
+            required,
+            checked,
+            name,
+        } = this
 
         return (
             <div
@@ -123,9 +106,11 @@ export class RuxCheckbox {
                 <input
                     type="checkbox"
                     name={name}
+                    id={checkboxId}
                     disabled={disabled}
                     required={required}
                     checked={checked}
+                    onChange={this.onChange}
                 />
                 <label htmlFor={name}>
                     <slot></slot>
