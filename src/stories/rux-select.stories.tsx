@@ -1,25 +1,20 @@
-import { extractArgTypes } from '@astrouxds/storybook-addon-docs-stencil'
-import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
-import { html, render } from 'lit-html'
+import { html, render } from 'lit-html';
+import { withKnobs } from '@storybook/addon-knobs'
 
-<Meta
-    title="Components/Select"
-    component="rux-select"
-=    argTypes={extractArgTypes('rux-select')}
-/>
+//@ts-ignore
+import selectMenuReadme from '../components/rux-select/readme.md'
 
-# Select
+export default {
+    title: 'Components/Select Menu',
+    decorators: [
+        withKnobs,
+    ],
+}
 
-Select Menus allow users to select a value from a list of values.
 
-## Guidelines
-
--   [Astro UXDS: Select Menu](https://astrouxds.com/components/select/)
--   [Astro UXDS: Form and Input Validation](https://www.astrouxds.com/ui-components/validation)
-
-export const Default = (args) => {
+export const SelectMenu = () => {
+    
     return html`
-
         <style>
             .demo-rows {
                 padding: 1rem 10%;
@@ -29,10 +24,10 @@ export const Default = (args) => {
                 align-items: center;
             }
 
-            .demo-row {
+            .demo-row{
                 width: 178px;
             }
-            .demo-row:not(:last-child) {
+            .demo-row:not(:last-child){
                 margin-bottom: 15px;
             }
 
@@ -40,7 +35,7 @@ export const Default = (args) => {
                 display: block;
             }
 
-            .demo-row label {
+            .demo-row label{
                 margin-bottom: 5px;
                 font-size: 1rem;
                 letter-spacing: 0.5px;
@@ -118,14 +113,17 @@ export const Default = (args) => {
                 <span class="rux-error-text">Error text</span>
             </div>
         </div>
-    `
+    `;
 }
 
-<Canvas>
-    <Story name="Default">
-        {Default.bind()}
-    </Story>
-</Canvas>
-
-## API
-<ArgsTable of="rux-select"/>
+SelectMenu.story = {
+    parameters: {
+        exports: {
+            render,
+            html,
+        },
+        readme: {
+            sidebar: selectMenuReadme,
+        },
+    },
+};
