@@ -1,11 +1,13 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Host, h, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'rux-select',
   styleUrl: 'rux-select.scss',
-  shadow: false,
+  scoped: true,
 })
 export class RuxSelect {
+  @Element() el!: HTMLRuxSelectElement
+
   /**
     * Disables the item
     */
@@ -19,20 +21,28 @@ export class RuxSelect {
   /**
     * Sets the Label for the Select
    */
-  @Prop() label?: string | undefined
+  @Prop() label?: string
 
   /**
-   * The text to display when the select is empty.
+   * Id for the Select Input
    */
-  // @Prop() placeholder?: string | null;
+  @Prop({attribute: 'input-id'}) inputId?: string
+
+  /**
+   * Id for the Label
+   */
+  @Prop({attribute: 'input-id'}) labelId?: string
+
 
   render() {
-    const {disabled, required, label} = this
+    const {disabled, required, label, inputId, labelId} = this
     return (
       <Host>
-        {label && <label>{label}</label>}
+        {label && <label id={labelId}>{label}</label>}
         <select
           class="rux-select"
+          id={inputId}
+          aria-labelledby={labelId}
           disabled={disabled}
           required={required}
         >

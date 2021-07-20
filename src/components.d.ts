@@ -10910,9 +10910,17 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
+          * Id for the Select Input
+         */
+        "inputId"?: string;
+        /**
           * Sets the Label for the Select
          */
-        "label"?: string | undefined;
+        "label"?: string;
+        /**
+          * Id for the Label
+         */
+        "labelId"?: string;
         /**
           * Sets the field as required
          */
@@ -29528,9 +29536,17 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
+          * Id for the Select Input
+         */
+        "inputId"?: string;
+        /**
           * Sets the Label for the Select
          */
-        "label"?: string | undefined;
+        "label"?: string;
+        /**
+          * Id for the Label
+         */
+        "labelId"?: string;
         /**
           * Sets the field as required
          */
