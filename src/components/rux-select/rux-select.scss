@@ -2,62 +2,19 @@
     display: block;
 
     /**
-      * --selectMenuBackgroundColor: Background Color of the Select Input
-    */
-
-    /**
-      * --selectMenuTextColor: Text Color of the Select Input
-    */
-
-    /**
-      * --selectMenuTextHoverColor: Text Hover Color of the Select Menu
-    */
-
-    /**
-      * --selectMenuBorderColor: Border Color of the Select Input
-    */
-
-    /**
-      * --selectMenuBorderHoverColor: Border Hover Color of the Select Input
-    */
-
-    /**
-      * --selectMenuBorderFocusColor: Border Focus Color of the Select Input
-    */
-
-    /**
-      * --selectMenuBorderDisabledColor: Border Color of the Disabled Select Input
-    */
-
-    /**
-      * --selectMenuInvalidBorderColor: Border Color of the Invalid Select Input
-    */
-
-    /**
-      * @prop --selectMenuHoverOptBackgroundColor: Background Hover Color of Select Menu Options
-    */
-
-    /**
-      * @prop --selectOptGroupTextColor: Text Color of Select Menu Option Group
-    */
-
-    /**
-      * @prop --selectInactiveCaret: Caret Shown When the Select Menu is Closed
-    */
-
-    /**
-      * @prop --selectActiveCaret: Caret Shown When the Select Menu is Open
-    */
-
-    /**
+      * @prop --selectMenuBackgroundColor: Background Color of the Select Input
+      * @prop --selectMenuTextColor: Text Color of the Select Input
+      * @prop --selectMenuBorderColor: Border Color of the Select Input
+      * @prop --selectMenuBorderHoverColor: Border Hover Color of the Select Input
+      * @prop --selectMenuBorderFocusColor: Border Focus Color of the Select Input
+      * @prop --selectMenuInvalidBorderColor: Border Color of the Invalid Select Input
+      * @prop --selectMenuOptHoverBackgroundColor: Background Hover Color of Select Menu Options
+      * @prop --selectMenuOptGroupTextColor: Text Color of Select Menu Option Group
+      * @prop --selectMenuOptTextHoverColor: Text Hover Color of the Select Menu Options
+      * @prop --selecMenutInactiveCaret: Caret Shown When the Select Menu is Closed
+      * @prop --selectMenuActiveCaret: Caret Shown When the Select Menu is Open
       * @prop --buttonBorderRadius: Border radius for Select Menu
-    */
-
-    /**
       * @prop --fontFamily: Font Family for the Application
-    */
-
-    /**
       * @prop --selectMenuLabelColor: Text Color of the Label
     */
 }
@@ -98,7 +55,7 @@ label {
     font-weight: normal;
     font-size: 1rem;
     padding: 0.438rem 3.125rem 0.438rem 0.5rem;
-    background-image: var(--selectInactiveCaret),
+    background-image: var(--selecMenutInactiveCaret),
         var(--selectMenuBackgroundColor);
     background-position: center right 0.625rem, center left 0rem;
     background-repeat: no-repeat;
@@ -110,7 +67,7 @@ label {
     }
 
     &:active:not(:disabled) {
-        background-image: var(--selectActiveCaret),
+        background-image: var(--selectMenuActiveCaret),
             var(--selectMenuBackgroundColor);
     }
 
@@ -122,7 +79,6 @@ label {
     &:disabled {
         opacity: 0.4;
         cursor: not-allowed;
-        border-color: var(--selectMenuBorderDisabledColor);
     }
 
     &.rux-select-invalid {
@@ -149,8 +105,8 @@ label {
         box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5);
 
         &:hover {
-            color: var(--selectMenuTextHoverColor);
-            background-color: var(--selectMenuHoverOptBackgroundColor);
+            color: var(--selectMenuOptTextHoverColor);
+            background-color: var(--selectMenuOptHoverBackgroundColor);
         }
     }
 }
