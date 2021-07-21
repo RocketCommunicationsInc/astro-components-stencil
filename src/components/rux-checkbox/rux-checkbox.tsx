@@ -28,6 +28,10 @@ export class RuxCheckbox {
      * The checkbox name
      */
     @Prop() name = ''
+    /**
+     * The checkbox name
+     */
+    @Prop({ reflect: true, mutable: true }) value: boolean = false
 
     /**
      * The checkbox name
@@ -71,6 +75,7 @@ export class RuxCheckbox {
           checkbox is initialized
         */
         this.el.removeAttribute('name')
+        this.value = this.checked
     }
 
     connectedCallback() {
@@ -79,6 +84,7 @@ export class RuxCheckbox {
 
     private onChange() {
         this.checked = !this.checked
+        this.value = this.checked
         this.ruxChange.emit(this.checked)
     }
 
