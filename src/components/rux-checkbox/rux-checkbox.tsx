@@ -78,12 +78,15 @@ export class RuxCheckbox {
     }
 
     connectedCallback() {
-        this.value = this.checked
+        if (!this.value) {
+            this.value = this.checked
+        }
         this.onChange = this.onChange.bind(this)
     }
 
     private onChange() {
-        this.checked = this.value = !this.checked
+        this.checked = !this.checked
+        this.value = this.checked
         this.ruxChange.emit(this.checked)
     }
 
