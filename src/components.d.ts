@@ -10914,6 +10914,10 @@ export namespace Components {
          */
         "inputId"?: string;
         /**
+          * Sets the Select as Invalid for Custom Validation Usage
+         */
+        "invalid": boolean;
+        /**
           * Sets the Label for the Select
          */
         "label"?: string;
@@ -29596,6 +29600,10 @@ declare namespace LocalJSX {
           * Id for the Select Input
          */
         "inputId"?: string;
+        /**
+          * Sets the Select as Invalid for Custom Validation Usage
+         */
+        "invalid"?: boolean;
         /**
           * Sets the Label for the Select
          */

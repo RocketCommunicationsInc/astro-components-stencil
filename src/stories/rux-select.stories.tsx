@@ -1,4 +1,4 @@
-import { html, render } from 'lit-html';
+import { html, render } from 'lit-html'
 import { withKnobs } from '@storybook/addon-knobs'
 
 //@ts-ignore
@@ -6,14 +6,10 @@ import selectMenuReadme from '../components/rux-select/readme.md'
 
 export default {
     title: 'Components/Select Menu',
-    decorators: [
-        withKnobs,
-    ],
+    decorators: [withKnobs],
 }
 
-
 export const SelectMenu = () => {
-    
     return html`
         <style>
             .demo-rows {
@@ -24,10 +20,10 @@ export const SelectMenu = () => {
                 align-items: center;
             }
 
-            .demo-row{
+            .demo-row {
                 width: 178px;
             }
-            .demo-row:not(:last-child){
+            .demo-row:not(:last-child) {
                 margin-bottom: 15px;
             }
 
@@ -35,7 +31,7 @@ export const SelectMenu = () => {
                 display: block;
             }
 
-            .demo-row label{
+            .demo-row label {
                 margin-bottom: 5px;
                 font-size: 1rem;
                 letter-spacing: 0.5px;
@@ -95,7 +91,7 @@ export const SelectMenu = () => {
             </div>
 
             <div class="demo-row">
-                <rux-select label="Invalid" required>
+                <rux-select label="Invalid" required invalid>
                     <option value="" selected>Select an option</option>
                     <optgroup label="Group one">
                         <option value="1.1">Option 1.1</option>
@@ -113,7 +109,7 @@ export const SelectMenu = () => {
                 <span class="rux-error-text">Error text</span>
             </div>
         </div>
-    `;
+    `
 }
 
 SelectMenu.story = {
@@ -126,4 +122,4 @@ SelectMenu.story = {
             sidebar: selectMenuReadme,
         },
     },
-};
+}

@@ -123,13 +123,9 @@ label {
         opacity: 0.4;
         cursor: not-allowed;
         border-color: var(--selectMenuBorderDisabledColor);
-
-        // &:hover {
-        //     cursor: not-allowed;
-        // }
     }
 
-    &:invalid {
+    &.rux-select-invalid {
         border: 1px solid var(--selectMenuInvalidBorderColor);
     }
 

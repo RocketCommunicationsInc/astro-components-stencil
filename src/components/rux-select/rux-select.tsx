@@ -33,13 +33,20 @@ export class RuxSelect {
      */
     @Prop({ attribute: 'label-id' }) labelId?: string
 
+    /**
+     * Sets the Select as Invalid for Custom Validation Usage
+     */
+    @Prop({ reflect: true }) invalid: boolean = false
+
     render() {
-        const { disabled, required, label, inputId, labelId } = this
+        const { disabled, required, label, inputId, labelId, invalid } = this
         return (
             <Host>
                 {label && <label id={labelId}>{label}</label>}
                 <select
-                    class="rux-select"
+                    class={
+                        'rux-select ' + (invalid ? 'rux-select-invalid' : '')
+                    }
                     id={inputId}
                     aria-labelledby={labelId}
                     disabled={disabled}

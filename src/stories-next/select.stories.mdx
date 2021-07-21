@@ -23,9 +23,10 @@ export const SelectMenu = (args) => {
             <rux-select
                 ?disabled="${args.disabled}"
                 ?required="${args.required}"
+                ?invalid="${args.invalid}"
                 label="${args.label}"
-                ?input-id="${args.inputId}"
-                ?label-id="${args.labelId}"
+                input-id="${args.inputId}"
+                label-id="${args.labelId}"
             >
                 <option value="" selected>Select an Option</option>
                 <optgroup label="Group one">

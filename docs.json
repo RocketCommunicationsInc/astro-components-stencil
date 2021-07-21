@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-21T15:42:51",
+    "timestamp": "2021-07-21T20:17:24",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -75120,6 +75120,23 @@
                         }
                     ],
                     "optional": true,
+                    "required": false
+                },
+                {
+                    "name": "invalid",
+                    "type": "boolean",
+                    "mutable": false,
+                    "attr": "invalid",
+                    "reflectToAttr": true,
+                    "docs": "Sets the Select as Invalid for Custom Validation Usage",
+                    "docsTags": [],
+                    "default": "false",
+                    "values": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "optional": false,
                     "required": false
                 },
                 {
