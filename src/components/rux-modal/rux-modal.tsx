@@ -110,6 +110,13 @@ export class RuxModal {
         })
     }
 
+    componentDidLoad() {
+        setTimeout(() => {
+            const button = this._getDefaultButton()
+            button && button.focus()
+        })
+    }
+
     render() {
         const {
             open,
