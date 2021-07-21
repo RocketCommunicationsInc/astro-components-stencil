@@ -25,6 +25,18 @@
 | `rux-change` | Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event) | `CustomEvent<any>` |
 
 
+## CSS Custom Properties
+
+| Name                                  | Description                    |
+| ------------------------------------- | ------------------------------ |
+| `--controlBorderColor`                | Checkbox border color          |
+| `--controlHoverBorderColor`           | Checkbox border color on hover |
+| `--controlLabelColor`                 | Label text color               |
+| `--controlOutlineBackgroundColor`     | Checkbox background color      |
+| `--controlSelectedOutlineBorderColor` | Selected checkbox border color |
+| `--controlTextColor`                  | Selected checkbox icon color   |
+
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

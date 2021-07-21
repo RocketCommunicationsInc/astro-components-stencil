@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-21T07:24:44",
+    "timestamp": "2021-07-21T17:43:31",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -404,7 +404,38 @@
                     "passive": false
                 }
             ],
-            "styles": [],
+            "styles": [
+                {
+                    "name": "--controlBorderColor",
+                    "annotation": "prop",
+                    "docs": "Checkbox border color"
+                },
+                {
+                    "name": "--controlHoverBorderColor",
+                    "annotation": "prop",
+                    "docs": "Checkbox border color on hover"
+                },
+                {
+                    "name": "--controlLabelColor",
+                    "annotation": "prop",
+                    "docs": "Label text color"
+                },
+                {
+                    "name": "--controlOutlineBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "Checkbox background color"
+                },
+                {
+                    "name": "--controlSelectedOutlineBorderColor",
+                    "annotation": "prop",
+                    "docs": "Selected checkbox border color"
+                },
+                {
+                    "name": "--controlTextColor",
+                    "annotation": "prop",
+                    "docs": "Selected checkbox icon color"
+                }
+            ],
             "slots": [],
             "parts": [],
             "dependents": [],
