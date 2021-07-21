@@ -75,16 +75,15 @@ export class RuxCheckbox {
           checkbox is initialized
         */
         this.el.removeAttribute('name')
-        this.value = this.checked
     }
 
     connectedCallback() {
+        this.value = this.checked
         this.onChange = this.onChange.bind(this)
     }
 
     private onChange() {
-        this.checked = !this.checked
-        this.value = this.checked
+        this.checked = this.value = !this.checked
         this.ruxChange.emit(this.checked)
     }
 
