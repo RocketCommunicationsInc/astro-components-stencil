@@ -6,6 +6,7 @@ import {
     EventEmitter,
     Element,
     Listen,
+    Watch,
 } from '@stencil/core'
 
 let id = 0
@@ -16,6 +17,11 @@ let id = 0
     shadow: true,
 })
 export class RuxCheckbox {
+    config = {
+        checked: null,
+        value: null,
+    }
+
     checkboxId = `checkbox-${++id}`
     @Element() el!: HTMLRuxCheckboxElement
 
@@ -31,12 +37,12 @@ export class RuxCheckbox {
     /**
      * The checkbox name
      */
-    @Prop({ reflect: true, mutable: true }) value: boolean = false
+    @Prop({ reflect: true, mutable: true }) value: boolean | null = null
 
     /**
      * The checkbox name
      */
-    @Prop({ reflect: true }) checked = false
+    @Prop({ reflect: true, mutable: true }) checked = false
 
     /**
      * Toggles indeterminate state of a checkbox
@@ -61,10 +67,18 @@ export class RuxCheckbox {
     @Listen('click')
     handleClick() {
         if (this.isClickable()) {
-            const input = this.el.shadowRoot?.querySelector(
-                'input'
-            ) as HTMLInputElement
+            const input = this.getInput()
             input.click()
+        }
+    }
+
+    @Watch('value')
+    handleValueChange(newValue: boolean | null) {
+        if (newValue === null) {
+            this.value = false
+            this.checked = false
+        } else {
+            this.checked = newValue
         }
     }
 
@@ -77,14 +91,21 @@ export class RuxCheckbox {
         this.el.removeAttribute('name')
     }
 
-    connectedCallback() {
-        if (!this.value) {
-            this.value = this.checked
-        }
+    componentWillLoad() {
         this.onChange = this.onChange.bind(this)
     }
 
-    private onChange() {
+    componentDidLoad() {
+        if (!this.value) {
+            this.value = this.checked
+        } else {
+            this.checked = this.value
+        }
+        this.value = this.checked
+        this.ruxChange.emit(this.checked)
+    }
+
+    private onChange(): void {
         this.checked = !this.checked
         this.value = this.checked
         this.ruxChange.emit(this.checked)
@@ -92,6 +113,10 @@ export class RuxCheckbox {
 
     private isClickable(): boolean {
         return !this.disabled
+    }
+
+    private getInput(): HTMLInputElement {
+        return this.el.shadowRoot?.querySelector('input') as HTMLInputElement
     }
 
     render() {

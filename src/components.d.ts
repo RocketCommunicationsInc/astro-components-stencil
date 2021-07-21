@@ -67,7 +67,7 @@ export namespace Components {
         /**
           * The checkbox name
          */
-        "value": boolean;
+        "value": boolean | null;
     }
     interface RuxClassificationMarking {
         /**
@@ -18689,7 +18689,7 @@ declare namespace LocalJSX {
         /**
           * The checkbox name
          */
-        "value"?: boolean;
+        "value"?: boolean | null;
     }
     interface RuxClassificationMarking {
         /**

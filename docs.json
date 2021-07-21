@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-21T04:54:31",
+    "timestamp": "2021-07-21T07:24:44",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -263,7 +263,7 @@
                 {
                     "name": "checked",
                     "type": "boolean",
-                    "mutable": false,
+                    "mutable": true,
                     "attr": "checked",
                     "reflectToAttr": true,
                     "docs": "The checkbox name",
@@ -366,16 +366,19 @@
                 },
                 {
                     "name": "value",
-                    "type": "boolean",
+                    "type": "boolean | null",
                     "mutable": true,
                     "attr": "value",
                     "reflectToAttr": true,
                     "docs": "The checkbox name",
                     "docsTags": [],
-                    "default": "false",
+                    "default": "null",
                     "values": [
                         {
                             "type": "boolean"
+                        },
+                        {
+                            "type": "null"
                         }
                     ],
                     "optional": false,

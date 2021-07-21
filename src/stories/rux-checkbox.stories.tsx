@@ -47,8 +47,8 @@ export const Checkboxes = () => {
                     <rux-checkbox
                         name="checkboxGroup"
                         id="checkbox4c"
-                        checked
                         indeterminate
+                        checked
                     >
                         Indeterminate
                     </rux-checkbox>

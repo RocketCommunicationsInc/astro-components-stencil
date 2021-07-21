@@ -15,7 +15,7 @@
 | `indeterminate` | `indeterminate` | Toggles indeterminate state of a checkbox                                                                                                                                                   | `boolean`             | `false`     |
 | `name`          | `name`          | The checkbox name                                                                                                                                                                           | `string`              | `''`        |
 | `required`      | `required`      | Sets the input as required                                                                                                                                                                  | `boolean`             | `false`     |
-| `value`         | `value`         | The checkbox name                                                                                                                                                                           | `boolean`             | `false`     |
+| `value`         | `value`         | The checkbox name                                                                                                                                                                           | `boolean \| null`     | `null`      |
 
 
 ## Events
