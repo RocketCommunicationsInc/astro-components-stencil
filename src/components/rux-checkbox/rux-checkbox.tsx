@@ -17,12 +17,7 @@ let id = 0
     shadow: true,
 })
 export class RuxCheckbox {
-    config = {
-        checked: null,
-        value: null,
-    }
-
-    checkboxId = `checkbox-${++id}`
+    checkboxId = `rux-checkbox-${++id}`
     @Element() el!: HTMLRuxCheckboxElement
 
     /**
@@ -93,9 +88,6 @@ export class RuxCheckbox {
 
     componentWillLoad() {
         this.onChange = this.onChange.bind(this)
-    }
-
-    componentDidLoad() {
         if (!this.value) {
             this.value = this.checked
         } else {
