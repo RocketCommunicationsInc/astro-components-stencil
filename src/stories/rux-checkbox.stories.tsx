@@ -1,5 +1,6 @@
 import { withActions } from '@storybook/addon-actions'
 import { html, render } from 'lit-html'
+import RuxCheckboxReadme from '../components/rux-checkbox/readme.md'
 
 export default {
     title: 'Components/Form Elements',
@@ -58,11 +59,12 @@ export const Checkboxes = () => {
     `
 }
 
-Checkboxes.story = {
-    parameters: {
-        exports: {
-            render,
-            html,
-        },
+Checkboxes.parameters = {
+    exports: {
+        render,
+        html,
+    },
+    readme: {
+        sidebar: RuxCheckboxReadme,
     },
 }

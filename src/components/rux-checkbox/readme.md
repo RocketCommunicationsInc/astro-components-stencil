@@ -1,6 +1,36 @@
-# rux-checkbox
+# Checkbox
+
+A Checkbox describes a state or value that can be either "True or False.” Checkboxes are not mutually exclusive. More than one Checkbox may be checked at the same time.
 
 
+## Guidelines
+
+- [Astro UXDS: Checkboxes](https://www.astrouxds.com/ui-components/checkbox)
+- [Astro UXDS: Form and Input Validation](https://www.astrouxds.com/ui-components/validation)
+
+## Basic HTML Usage
+
+### 1. Instalation 
+Download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components) source to your project.
+
+Via CLI:
+
+```sh
+git clone https://github.com/RocketCommunicationsInc/astro-components.git
+```
+
+### 2. Markup the component using HTML and the Astro CSS classes
+```xml
+<rux-checkbox
+    name="checkboxGroup"
+    id="checkbox4c"
+    indeterminate
+    checked
+    disabled
+>
+    Label Text
+</rux-checkbox>
+```
 
 <!-- Auto Generated Below -->
 
