@@ -1,20 +1,11 @@
 :host {
-    --controlTextColor: var(--colorSecondary500);
-    --controlLabelColor: var(--defaultText);
-    --controlBackgroundColor: var(--primary);
-    --controlOutlineBackgroundColor: var(--backgroundColor);
-    --controlBorderColor: var(--colorSecondaryDarken2);
-    --controlAccentColor: var(--primary);
-
-    --controlSelectedTextColor: var(--defaultText);
-    --controlSelectedBackgroundColor: var(--primaryDark);
+    --controlTextColor: var(--colorSecondary500); //*
+    --controlLabelColor: var(--defaultText); //*
+    --controlOutlineBackgroundColor: var(--backgroundColor); //*
+    --controlBorderColor: var(--colorSecondaryDarken2); //*
     --controlSelectedBorderColor: var(--colorSecondaryDarken2);
-    --controlHoverBorderColor: var(--primaryLight);
-
-    --controlSelectedOutlineBorderColor: var(--primary);
-
-    --controlHoverOutlineBackgroundColor: var(--backgroundColor);
-    --controlSelectedOutlineBackgroundColor: var(--backgroundColor);
+    --controlHoverBorderColor: var(--primaryLight); //*
+    --controlSelectedOutlineBorderColor: var(--primary); //*
 }
 
 .rux-checkbox {
