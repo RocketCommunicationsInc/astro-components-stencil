@@ -19,36 +19,36 @@ Select Menus allow users to select a value from a list of values.
 
 export const SelectMenu = (args) => {
     return html`
-        <rux-select
-            ?disabled="${args.disabled}"
-            ?required="${args.required}
-            ?label="${args.label}"
-            ?input-id="${args.inputId}"
-            ?label-id="${args.labelId}"
-        >
-            <option value="" selected>Select an Option</option>
-            <optgroup label="Group one">
-                <option>Option 1.1</option>
-                <option>Option 1.2</option>
-                <option>Option 1.3</option>
-                <option>Option 1.4</option>
-            </optgroup>
-            <optgroup label="Group two">
-                <option>Option 2.1</option>
-                <option>Option 2.2</option>
-                <option>Option 2.3</option>
-                <option>Option 2.4</option>
-            </optgroup>
-        </rux-select>
+        <div style="width: 200px; margin: 0 auto;">
+            <rux-select
+                ?disabled="${args.disabled}"
+                ?required="${args.required}"
+                label="${args.label}"
+                ?input-id="${args.inputId}"
+                ?label-id="${args.labelId}"
+            >
+                <option value="" selected>Select an Option</option>
+                <optgroup label="Group one">
+                    <option>Option 1.1</option>
+                    <option>Option 1.2</option>
+                    <option>Option 1.3</option>
+                    <option>Option 1.4</option>
+                </optgroup>
+                <optgroup label="Group two">
+                    <option>Option 2.1</option>
+                    <option>Option 2.2</option>
+                    <option>Option 2.3</option>
+                    <option>Option 2.4</option>
+                </optgroup>
+            </rux-select>
+        </div>
     `
 }
 
 <Canvas>
-    <Story 
+    <Story
         args={{
-            label: "Select Menu",
-            inputId: "my-select",
-            labelId: "select-label",
+            label: "Select Menu"
         }}
         name="Select Menu"
     >
