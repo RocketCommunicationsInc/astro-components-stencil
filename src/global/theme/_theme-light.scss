@@ -164,11 +164,11 @@
     --selectMenuBorderFocusColor: var(--primaryDark);
     --selectMenuBorderDisabledColor: #649cbd;
     --selectMenuInvalidBorderColor: #ff3838;
-    --selectMenuCaretBackgroundColor: linear-gradient(
-        rgba(206, 233, 252, 1),
-        rgba(206, 233, 252, 1)
+    --selectMenuBackgroundColor: linear-gradient(
+        to left,
+        #cee9fc 2rem,
+        #eaeef4 2rem
     );
-    --selectMenuBackgroundColor: rgb(234, 238, 244);
     --selectMenuTextColor: var(--primary);
     --selectMenuTextHoverColor: rgb(0, 72, 114);
     --selectHoverOptBackgroundColor: rgba(206, 233, 252, 0.3);

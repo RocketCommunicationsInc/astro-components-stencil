@@ -54,7 +54,7 @@ Select Menu renders a native `<select>` element and allows native `<option>` and
 | `disabled` | `disabled` | Disables the item             | `boolean`             | `false`     |
 | `inputId`  | `input-id` | Id for the Select Input       | `string \| undefined` | `undefined` |
 | `label`    | `label`    | Sets the Label for the Select | `string \| undefined` | `undefined` |
-| `labelId`  | `input-id` | Id for the Label              | `string \| undefined` | `undefined` |
+| `labelId`  | `label-id` | Id for the Label              | `string \| undefined` | `undefined` |
 | `required` | `required` | Sets the field as required    | `boolean`             | `false`     |
 
 
@@ -71,7 +71,6 @@ Select Menu renders a native `<select>` element and allows native `<option>` and
 | `--selectMenuBorderDisabledColor`     | Border Color of the Disabled Select Input     |
 | `--selectMenuBorderFocusColor`        | Border Focus Color of the Select Input        |
 | `--selectMenuBorderHoverColor`        | Border Hover Color of the Select Input        |
-| `--selectMenuCaretBackgroundColor`    | Background Color of the Caret Section         |
 | `--selectMenuHoverOptBackgroundColor` | Background Hover Color of Select Menu Options |
 | `--selectMenuInvalidBorderColor`      | Border Color of the Invalid Select Input      |
 | `--selectMenuLabelColor`              | Text Color of the Label                       |
