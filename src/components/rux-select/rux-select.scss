@@ -117,7 +117,6 @@ label {
     &:focus {
         outline: none;
         border: 1px solid var(--selectMenuBorderFocusColor);
-        border-radius: var(--buttonBorderRadius);
     }
 
     &:disabled {
@@ -125,9 +124,9 @@ label {
         cursor: not-allowed;
         border-color: var(--selectMenuBorderDisabledColor);
 
-        &:hover {
-            cursor: not-allowed;
-        }
+        // &:hover {
+        //     cursor: not-allowed;
+        // }
     }
 
     &:invalid {
@@ -145,17 +144,17 @@ label {
     optgroup {
         color: var(--selectMenuOptGroupTextColor);
         background-color: var(--selectMenuBackgroundColor);
+    }
 
-        option {
-            opacity: 1;
-            color: var(--selectMenuTextColor);
-            border-radius: 0px;
-            box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5);
+    option {
+        opacity: 1;
+        color: var(--selectMenuTextColor);
+        border-radius: 0px;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5);
 
-            &:hover {
-                color: var(--selectMenuTextHoverColor);
-                background-color: var(--selectMenuHoverOptBackgroundColor);
-            }
+        &:hover {
+            color: var(--selectMenuTextHoverColor);
+            background-color: var(--selectMenuHoverOptBackgroundColor);
         }
     }
 }
