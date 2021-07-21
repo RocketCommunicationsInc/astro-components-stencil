@@ -19,7 +19,7 @@ export namespace Components {
         /**
           * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
          */
-        "icon"?: string;
+        "icon"?: string | null;
         /**
           * Hides slotted text from the button by setting rux-button--icon-only class
          */
@@ -35,9 +35,9 @@ export namespace Components {
     }
     interface RuxButtonGroup {
         /**
-          * The alignment of buttons within the group
+          * The horizontal alignment of buttons within the group
          */
-        "align": 'left' | 'center' | 'right';
+        "hAlign": 'left' | 'center' | 'right';
     }
     interface RuxClassificationMarking {
         /**
@@ -10958,13 +10958,63 @@ export namespace Components {
     }
     interface RuxTabs {
         /**
-          * Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
+          * If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses.
          */
-        "_panels": Array<HTMLRuxTabPanelElement>;
+        "small"?: boolean;
+    }
+    interface RuxTextarea {
         /**
-          * Holds all `<rux-tab>` components that are children of `<rux-tabs>`.
+          * Disables the button via HTML disabled attribute. Button takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
-        "_tabs": Array<HTMLRuxTabElement>;
+        "disabled": boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Marks the input as invalid
+         */
+        "invalid": boolean;
+        /**
+          * The input label text
+         */
+        "label"?: string;
+        /**
+          * The input maxLength attribute
+         */
+        "maxLength"?: string;
+        /**
+          * The input minLength attribute
+         */
+        "minLength"?: string;
+        /**
+          * The input name
+         */
+        "name": string;
+        /**
+          * The input placeholder text
+         */
+        "placeholder"?: string;
+        /**
+          * Sets the input as disabled
+         */
+        "required": boolean;
+        /**
+          * The input rows attribute
+         */
+        "rows"?: number;
+        /**
+          * Styles the input element and label smaller for space-limited situations.
+         */
+        "small": boolean;
+        /**
+          * The input value
+         */
+        "value": string;
     }
     interface RuxTree {
     }
@@ -17494,6 +17544,12 @@ declare global {
         prototype: HTMLRuxTabsElement;
         new (): HTMLRuxTabsElement;
     };
+    interface HTMLRuxTextareaElement extends Components.RuxTextarea, HTMLStencilElement {
+    }
+    var HTMLRuxTextareaElement: {
+        prototype: HTMLRuxTextareaElement;
+        new (): HTMLRuxTextareaElement;
+    };
     interface HTMLRuxTreeElement extends Components.RuxTree, HTMLStencilElement {
     }
     var HTMLRuxTreeElement: {
@@ -18591,6 +18647,7 @@ declare global {
         "rux-table-header-row": HTMLRuxTableHeaderRowElement;
         "rux-table-row": HTMLRuxTableRowElement;
         "rux-tabs": HTMLRuxTabsElement;
+        "rux-textarea": HTMLRuxTextareaElement;
         "rux-tree": HTMLRuxTreeElement;
         "rux-tree-node": HTMLRuxTreeNodeElement;
     }
@@ -18604,7 +18661,7 @@ declare namespace LocalJSX {
         /**
           * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
          */
-        "icon"?: string;
+        "icon"?: string | null;
         /**
           * Hides slotted text from the button by setting rux-button--icon-only class
          */
@@ -18620,9 +18677,9 @@ declare namespace LocalJSX {
     }
     interface RuxButtonGroup {
         /**
-          * The alignment of buttons within the group
+          * The horizontal alignment of buttons within the group
          */
-        "align"?: 'left' | 'center' | 'right';
+        "hAlign"?: 'left' | 'center' | 'right';
     }
     interface RuxClassificationMarking {
         /**
@@ -29331,7 +29388,7 @@ declare namespace LocalJSX {
         /**
           * Emitted when item is clicked. Ex `{value : 10}`
          */
-        "onMenuItemClicked"?: (event: CustomEvent<object>) => void;
+        "onRux-menu-item-selected"?: (event: CustomEvent<object>) => void;
         /**
           * Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
          */
@@ -29367,7 +29424,7 @@ declare namespace LocalJSX {
         /**
           * Event that is fired when modal closes
          */
-        "onModalClosed"?: (event: CustomEvent<boolean>) => void;
+        "onRux-modal-closed"?: (event: CustomEvent<boolean>) => void;
         /**
           * Shows and hides modal
          */
@@ -29451,19 +29508,19 @@ declare namespace LocalJSX {
         /**
           * Emitted when the menu is closed.
          */
-        "onMenuDidClose"?: (event: CustomEvent<void>) => void;
+        "onRux-menu-did-close"?: (event: CustomEvent<void>) => void;
         /**
           * Emitted when the menu is open.
          */
-        "onMenuDidOpen"?: (event: CustomEvent<void>) => void;
+        "onRux-menu-did-open"?: (event: CustomEvent<void>) => void;
         /**
           * Emitted when the menu is about to close
          */
-        "onMenuWillClose"?: (event: CustomEvent<void>) => void;
+        "onRux-menu-will-close"?: (event: CustomEvent<void>) => void;
         /**
           * Emitted when the menu is about to open.
          */
-        "onMenuWillOpen"?: (event: CustomEvent<void>) => void;
+        "onRux-menu-will-open"?: (event: CustomEvent<void>) => void;
         /**
           * Boolean which controls when to show the menu
          */
@@ -29541,7 +29598,7 @@ declare namespace LocalJSX {
         /**
           * Emits a list of the Tab Panels that have been passed in
          */
-        "onRegisterPanels"?: (event: CustomEvent<HTMLRuxTabPanelsElement[]>) => void;
+        "onRux-register-panels"?: (event: CustomEvent<HTMLRuxTabPanelsElement[]>) => void;
     }
     interface RuxTable {
     }
@@ -29563,13 +29620,71 @@ declare namespace LocalJSX {
     }
     interface RuxTabs {
         /**
-          * Holds all `<rux-tab-panel>` components based on the event emitted from the `<rux-tab-panels>` component.
+          * If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses.
          */
-        "_panels"?: Array<HTMLRuxTabPanelElement>;
+        "small"?: boolean;
+    }
+    interface RuxTextarea {
         /**
-          * Holds all `<rux-tab>` components that are children of `<rux-tabs>`.
+          * Disables the button via HTML disabled attribute. Button takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
-        "_tabs"?: Array<HTMLRuxTabElement>;
+        "disabled"?: boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Marks the input as invalid
+         */
+        "invalid"?: boolean;
+        /**
+          * The input label text
+         */
+        "label"?: string;
+        /**
+          * The input maxLength attribute
+         */
+        "maxLength"?: string;
+        /**
+          * The input minLength attribute
+         */
+        "minLength"?: string;
+        /**
+          * The input name
+         */
+        "name"?: string;
+        /**
+          * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
+         */
+        "onRux-change"?: (event: CustomEvent<any>) => void;
+        /**
+          * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+         */
+        "onRux-input"?: (event: CustomEvent<any>) => void;
+        /**
+          * The input placeholder text
+         */
+        "placeholder"?: string;
+        /**
+          * Sets the input as disabled
+         */
+        "required"?: boolean;
+        /**
+          * The input rows attribute
+         */
+        "rows"?: number;
+        /**
+          * Styles the input element and label smaller for space-limited situations.
+         */
+        "small"?: boolean;
+        /**
+          * The input value
+         */
+        "value"?: string;
     }
     interface RuxTree {
     }
@@ -30672,6 +30787,7 @@ declare namespace LocalJSX {
         "rux-table-header-row": RuxTableHeaderRow;
         "rux-table-row": RuxTableRow;
         "rux-tabs": RuxTabs;
+        "rux-textarea": RuxTextarea;
         "rux-tree": RuxTree;
         "rux-tree-node": RuxTreeNode;
     }
@@ -31764,6 +31880,7 @@ declare module "@stencil/core" {
             "rux-table-header-row": LocalJSX.RuxTableHeaderRow & JSXBase.HTMLAttributes<HTMLRuxTableHeaderRowElement>;
             "rux-table-row": LocalJSX.RuxTableRow & JSXBase.HTMLAttributes<HTMLRuxTableRowElement>;
             "rux-tabs": LocalJSX.RuxTabs & JSXBase.HTMLAttributes<HTMLRuxTabsElement>;
+            "rux-textarea": LocalJSX.RuxTextarea & JSXBase.HTMLAttributes<HTMLRuxTextareaElement>;
             "rux-tree": LocalJSX.RuxTree & JSXBase.HTMLAttributes<HTMLRuxTreeElement>;
             "rux-tree-node": LocalJSX.RuxTreeNode & JSXBase.HTMLAttributes<HTMLRuxTreeNodeElement>;
         }

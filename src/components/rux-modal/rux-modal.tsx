@@ -39,11 +39,11 @@ export class RuxModal {
      * Event that is fired when modal closes
      */
     @Event({
-        eventName: 'modalClosed',
+        eventName: 'rux-modal-closed',
         composed: true,
         bubbles: true,
     })
-    modalCloseEvent!: EventEmitter<boolean>
+    ruxModalClosed!: EventEmitter<boolean>
 
     @Element() private element!: HTMLElement
 
@@ -73,7 +73,7 @@ export class RuxModal {
         // convert string value to boolean
         const target = e.currentTarget as HTMLElement
         const choice = target.dataset.value === 'true'
-        this.modalCloseEvent.emit(choice)
+        this.ruxModalClosed.emit(choice)
         this.open = false
     }
 
@@ -120,7 +120,7 @@ export class RuxModal {
                     </header>
                     <div class="rux-modal__content">
                         <div class="rux-modal__message">{modalMessage}</div>
-                        <rux-button-group align="right">
+                        <rux-button-group h-align="right">
                             <rux-button
                                 secondary={confirmText.length > 0}
                                 onClick={_handleModalChoice.bind(this)}

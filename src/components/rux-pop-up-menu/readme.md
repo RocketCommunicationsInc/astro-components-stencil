@@ -104,12 +104,12 @@ Extending Astro Pop Up Menu with custom content. Content passed without a slot n
 
 ## Events
 
-| Event           | Description                             | Type                |
-| --------------- | --------------------------------------- | ------------------- |
-| `menuDidClose`  | Emitted when the menu is closed.        | `CustomEvent<void>` |
-| `menuDidOpen`   | Emitted when the menu is open.          | `CustomEvent<void>` |
-| `menuWillClose` | Emitted when the menu is about to close | `CustomEvent<void>` |
-| `menuWillOpen`  | Emitted when the menu is about to open. | `CustomEvent<void>` |
+| Event                 | Description                             | Type                |
+| --------------------- | --------------------------------------- | ------------------- |
+| `rux-menu-did-close`  | Emitted when the menu is closed.        | `CustomEvent<void>` |
+| `rux-menu-did-open`   | Emitted when the menu is open.          | `CustomEvent<void>` |
+| `rux-menu-will-close` | Emitted when the menu is about to close | `CustomEvent<void>` |
+| `rux-menu-will-open`  | Emitted when the menu is about to open. | `CustomEvent<void>` |
 
 
 ## Methods
@@ -164,17 +164,15 @@ Type: `Promise<boolean>`
 
 ## CSS Custom Properties
 
-| Name                             | Description                             |
-| -------------------------------- | --------------------------------------- |
-| `--caretLeft`                    | Position of Caret                       |
-| `--caretSize`                    | Size of Caret                           |
-| `--menuBackgroundColor`          | Pop Up Menu Backround Color             |
-| `--menuBorderColor`              | Pop Up Menu Border Color                |
-| `--menuItemBackgroundColor`      | Pop Up Menu Item Background Color       |
-| `--menuItemHoverBackgroundColor` | Pop Up Menu Item Hover Background Color |
-| `--menuItemHoverTextColor`       | Pop Up Menu Item Hover Text Color       |
-| `--menuTextColor`                | Pop Up Menu Text Color                  |
-| `--transitionSpeed`              | Transition Time of Pop Up Animation     |
+| Name                          | Description                         |
+| ----------------------------- | ----------------------------------- |
+| `--caretLeft`                 | Position of Caret                   |
+| `--caretSize`                 | Size of Caret                       |
+| `--popupCaretBackgroundColor` | Pop Up Menu Caret Background Color  |
+| `--popupMenuBackgroundColor`  | Pop Up Menu Backround Color         |
+| `--popupMenuBorderColor`      | Pop Up Menu Border Color            |
+| `--popupMenuTextColor`        | Pop Up Menu Text Color              |
+| `--transitionSpeed`           | Transition Time of Pop Up Animation |
 
 
 ----------------------------------------------

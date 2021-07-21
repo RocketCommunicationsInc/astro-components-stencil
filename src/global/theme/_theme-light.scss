@@ -133,19 +133,29 @@
     Segmented Button Colors
     ==========================================================================
 
-  */
-    --segmentedButtonBorderColor: var(--primary);
-    --segmentedButtonBackgroundColor: none;
+    /* Segmented Unselected */
+    --segmentedButtonBackgroundColor: var(--backgroundColor);
     --segmentedButtonTextColor: var(--primary);
+    --segmentedButtonBorderColor: var(--primary);
 
     /* Segmented Hover */
-    --segmentedButtonHoverBackgroundColor: var(--primaryDark);
-    --segmentedButtonHoverTextColor: var(--primaryElementText);
+    --segmentedButtonHoverBackgroundColor: var(--backgroundColor);
+    --segmentedButtonHoverTextColor: var(--primary);
     --segmentedButtonHoverBorderColor: var(--primaryDark);
 
     /* Segmented Select */
-    --segmentedButtonSelectedBackgroundColor: var(--primary);
-    --segmentedButtonSelectedTextColor: var(--primaryElementText);
+    --segmentedButtonSelectedBackgroundColor: var(
+        --colorSnowflakesLightSelected
+    );
+    --segmentedButtonSelectedTextColor: var(--defaultText);
+    --segmentedButtonSelectedHoverBorderColor: var(--primary);
+
+    /* Segmented Selected & Hover */
+    --segmentedButtonSelectedHoverBackgroundColor: var(
+        --colorSnowflakesLightSelected
+    );
+    --segmentedButtonSelectedHoverTextColor: var(--defaultText);
+    --segmentedButtonSelectedHoverBorderColor: var(--primary);
 
     /*
 
@@ -171,6 +181,26 @@
 
     /*
 
+    Popup Menu Colors & Menu Item/Divider
+    ==========================================================================
+
+    */
+
+    --popupMenuBackgroundColor: var(--backgroundColor);
+    --popupMenuBorderColor: var(--primaryLighter);
+    --popupMenuTextColor: var(--primary);
+
+    --popupCaretBackgroundColor: var(--primaryLighter);
+
+    --menuItemBackgroundColor: var(--backgroundColor);
+    --menuItemHoverBackgroundColor: rgba(206, 233, 252, 0.3);
+    --menuTextColor: var(--primary);
+    --menuItemHoverTextColor: var(--primaryLight);
+
+    --menuItemDividerBorderColor: var(--primary);
+
+    /*
+
     Push Button Colors
     ==========================================================================
 
@@ -192,7 +222,7 @@
 
     --clockTextColor: var(--primaryElementText);
     --clockBackgroundColor: #101923;
-    --clockBorderColor: #1b2d3e;
+    --clockBorderColor: var(--colorSnowflakesDarkSurface);
     --clockLabelColor: var(--primaryElementText);
 
     /*
