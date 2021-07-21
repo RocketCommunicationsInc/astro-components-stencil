@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-20T23:18:21",
+    "timestamp": "2021-07-21T04:21:41",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -255,6 +255,7 @@
             "filePath": "./src/components/rux-checkbox/rux-checkbox.tsx",
             "encapsulation": "shadow",
             "tag": "rux-checkbox",
+            "readme": "# rux-checkbox\n\n\n",
             "docs": "",
             "docsTags": [],
             "usage": {},
@@ -353,6 +354,23 @@
                     "attr": "required",
                     "reflectToAttr": false,
                     "docs": "Sets the input as required",
+                    "docsTags": [],
+                    "default": "false",
+                    "values": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                },
+                {
+                    "name": "value",
+                    "type": "boolean",
+                    "mutable": true,
+                    "attr": "value",
+                    "reflectToAttr": true,
+                    "docs": "The checkbox name",
                     "docsTags": [],
                     "default": "false",
                     "values": [

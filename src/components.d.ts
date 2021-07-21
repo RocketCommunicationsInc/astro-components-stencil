@@ -64,6 +64,10 @@ export namespace Components {
           * Sets the input as required
          */
         "required": boolean;
+        /**
+          * The checkbox name
+         */
+        "value": boolean;
     }
     interface RuxClassificationMarking {
         /**
@@ -18682,6 +18686,10 @@ declare namespace LocalJSX {
           * Sets the input as required
          */
         "required"?: boolean;
+        /**
+          * The checkbox name
+         */
+        "value"?: boolean;
     }
     interface RuxClassificationMarking {
         /**
