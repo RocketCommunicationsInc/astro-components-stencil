@@ -330,13 +330,13 @@
 
   */
 
-    --inputBackgroundColor: var(--colorTertiaryDarken3);
-    --inputBorderColor: var(--colorSecondaryDarken2);
-    --inputBorderColorAlt: var(--colorTertiaryDarken4);
+    --inputBackgroundColor: var(--backgroundColor);
+    --inputBorderColor: var(--primaryDarker);
+    --inputBorderColorAlt: var(--inputDark);
     --inputTextColor: var(--defaultText);
 
     /* Input Focus */
-    --inputFocusBorderColor: var(--colorSecondaryLighten2);
+    --inputFocusBorderColor: var(--primaryLight);
     --inputFocusTextColor: var(--defaultText);
 
     --inputSelectionBackgroundColor: var(--colorSnowflakesDarkSelected);
