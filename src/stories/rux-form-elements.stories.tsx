@@ -21,12 +21,6 @@ export const InputFields = () => html`
       li {
         list-style: none;
       }
-      .text-area-field {
-        height: 87px;
-      }
-      textarea {
-        min-height: 4.25rem;
-      }
       @media screen and (min-width: 550px){
         ul {
           grid-template-columns: repeat(2, 1fr);
@@ -68,7 +62,7 @@ export const InputFields = () => html`
           <rux-input-field label="Password" type="password" placeholder="********"></rux-input-field>
         </li>
         <li class="rux-form-field">
-          <rux-input-field label="Invalid password" error-text="Error text" type="password" invalid placeholder="********"></rux-input-field>
+          <rux-input-field label="Invalid password" error-text="Error text" type="password" invalid></rux-input-field>
         </li>
         <li>
           <rux-input-field label="Web address" type="url" placeholder="https://domain.com"></rux-input-field>
@@ -92,12 +86,7 @@ export const InputFields = () => html`
           <rux-input-field label="Invalid number" type="number" min="0" max="10" invalid error-text="Error text" placeholder="Enter a number between 0 and 10"></rux-input-field>
         </li>
         <li class="text-area-field">
-          <label for="input__textarea">Textarea</label>
-          <textarea
-            id="input__textarea"
-            class="rux-input-field"
-            placeholder="Multiline text is ok"
-          ></textarea>
+          <rux-textarea label="Textarea" placeholder="Multiline text is ok"></rux-textarea>
         </li>
         <!-- Styles for these HTML5 input types still need to be implemented
     <li class="rux-form-field">
@@ -184,12 +173,7 @@ export const InputFields = () => html`
           <rux-input-field label="Smaller number input" type="number" min="0" max="10" placeholder="Enter a number between 0 and 10" small></rux-input-field>
         </li>
         <li class="rux-form-field rux-form-field--small">
-          <label for="input__textarea-smaller">Smaller textarea</label>
-          <textarea
-            id="input__textarea-smaller"
-            class="rux-input-field"
-            placeholder="Multiline text is ok"
-          ></textarea>
+          <rux-textarea label="Smaller textarea" placeholder="Multiline text is ok" small></rux-textarea>
         </li>
       </ul>
     </div>
