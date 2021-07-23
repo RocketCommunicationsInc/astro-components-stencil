@@ -38,6 +38,10 @@ Once your component has been created, rename the css file to .scss and update th
 
 [Cypress.io](https://cypress.io/) is used for E2E testing. E2E tests located in `src/component/tests/*.e2e.js`
 
+#### Writing Test
+
+Use the helper method `cy.visitStory()` to load your component's story. You only need to pass in the storybook id. For example: `http://localhost:6060/iframe.html?id=components-button--default-story&args=&viewMode=story` -> `cy.visitStory('components-button--default-story')`
+
 #### Running All Tests
 
 `npm run cy.test` - Spins up a Storybook server and runs Cypress against that.
