@@ -2,6 +2,10 @@ describe('Tree', () => {
     beforeEach(() => {
         cy.visitStory('components-tree--default-story')
     })
+    it('renders', async () => {
+        cy.get('rux-tree').should('have.class', 'hydrated')
+    })
+
     it('allows keyboard controls', async () => {
         const parent = cy.get('rux-tree-node').first().shadow().find('.parent')
         parent.focus()
