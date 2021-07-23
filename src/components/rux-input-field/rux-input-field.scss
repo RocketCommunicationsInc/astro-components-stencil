@@ -44,8 +44,7 @@
         width: 100%;
         padding: 0 0.625rem;
         border: 1px solid var(--inputBorderColor);
-        border-radius: 4px;
-        font-size: 1rem;
+        border-radius: 3px;
         font-size: var(--fontSize, 1rem);
         color: var(--inputTextColor);
         background-color: var(--inputBackgroundColor);
@@ -72,6 +71,13 @@
             border-color: var(--inputFocusBorderColor);
             outline: none;
             color: var(--inputFocusTextColor);
+        }
+        &::placeholder {
+            font-size: 1rem;
+            font-weight: normal;
+            font-family: var(--fontFamily);
+            color: var(--defaultText);
+            opacity: 0.6;
         }
     }
 

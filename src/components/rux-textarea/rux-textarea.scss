@@ -39,6 +39,13 @@
             outline: none;
             color: var(--inputFocusTextColor);
         }
+        &::placeholder {
+            font-size: 1rem;
+            font-weight: normal;
+            font-family: var(--fontFamily);
+            color: var(--defaultText);
+            opacity: 0.6;
+        }
     }
 
     .rux-textarea-label {
