@@ -2,6 +2,11 @@ describe('Tab', () => {
     beforeEach(() => {
         cy.visitStory('components-tabs--default-story')
     })
+
+    it('renders', () => {
+        cy.get('rux-tab').should('have.class', 'hydrated')
+    })
+
     it('first tab is selected by default', async () => {
         cy.get('#tab-id-1').should('have.attr', 'selected')
         cy.get('#tab-id-2').should('not.have.attr', 'selected')
