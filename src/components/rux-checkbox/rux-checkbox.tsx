@@ -6,7 +6,6 @@ import {
     EventEmitter,
     Element,
     Listen,
-    Watch,
 } from '@stencil/core'
 
 let id = 0
@@ -32,7 +31,7 @@ export class RuxCheckbox {
     /**
      * The checkbox name
      */
-    @Prop({ reflect: true, mutable: true }) value: boolean | null = null
+    @Prop({ reflect: true, mutable: true }) value: string = ''
 
     /**
      * The checkbox name
@@ -67,16 +66,6 @@ export class RuxCheckbox {
         }
     }
 
-    @Watch('value')
-    handleValueChange(newValue: boolean | null) {
-        if (newValue === null) {
-            this.value = false
-            this.checked = false
-        } else {
-            this.checked = newValue
-        }
-    }
-
     constructor() {
         /*
           There can't be duplicate names in order for name <=> for relationship to work
@@ -88,18 +77,10 @@ export class RuxCheckbox {
 
     componentWillLoad() {
         this.onChange = this.onChange.bind(this)
-        if (!this.value) {
-            this.value = this.checked
-        } else {
-            this.checked = this.value
-        }
-        this.value = this.checked
-        this.ruxChange.emit(this.checked)
     }
 
     private onChange(): void {
         this.checked = !this.checked
-        this.value = this.checked
         this.ruxChange.emit(this.checked)
     }
 
@@ -119,6 +100,7 @@ export class RuxCheckbox {
             required,
             checked,
             name,
+            value,
         } = this
 
         return (
@@ -135,6 +117,7 @@ export class RuxCheckbox {
                     disabled={disabled}
                     required={required}
                     checked={checked}
+                    value={value}
                     onChange={this.onChange}
                 />
                 <label htmlFor={name}>

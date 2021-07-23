@@ -29,7 +29,7 @@ describe('rux-checkbox', () => {
             checkboxId: 'rux-checkbox-1',
             errorText: undefined,
             name: '',
-            value: null,
+            value: '',
             checked: false,
             indeterminate: false,
             disabled: false,
