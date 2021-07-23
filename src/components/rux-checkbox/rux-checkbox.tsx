@@ -58,22 +58,7 @@ export class RuxCheckbox {
      */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
 
-    @Listen('click')
-    handleClick() {
-        if (this.isClickable()) {
-            const input = this.getInput()
-            input.click()
-        }
-    }
-
-    constructor() {
-        /*
-          There can't be duplicate names in order for name <=> for relationship to work
-          due to outlined reasons those fields need to be scraped from host element once
-          checkbox is initialized
-        */
-        this.el.removeAttribute('name')
-    }
+    constructor() {}
 
     componentWillLoad() {
         this.onChange = this.onChange.bind(this)
@@ -82,14 +67,6 @@ export class RuxCheckbox {
     private onChange(): void {
         this.checked = !this.checked
         this.ruxChange.emit(this.checked)
-    }
-
-    private isClickable(): boolean {
-        return !this.disabled
-    }
-
-    private getInput(): HTMLInputElement {
-        return this.el.shadowRoot?.querySelector('input') as HTMLInputElement
     }
 
     render() {
@@ -120,7 +97,7 @@ export class RuxCheckbox {
                     value={value}
                     onChange={this.onChange}
                 />
-                <label htmlFor={name}>
+                <label htmlFor={checkboxId}>
                     <slot></slot>
                 </label>
             </div>
