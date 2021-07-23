@@ -1,8 +1,8 @@
 describe('Tree', () => {
     beforeEach(() => {
-        cy.visit('components-tree--default-story&args=&viewMode=story')
+        cy.visitStory('components-tree--default-story')
     })
-    it('Visits the Kitchen Sink', async () => {
+    it('allows keyboard controls', async () => {
         const parent = cy.get('rux-tree-node').first().shadow().find('.parent')
         parent.focus()
         cy.focused().should('have.attr', 'expanded')

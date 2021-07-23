@@ -1,8 +1,6 @@
 describe('Tab', () => {
     beforeEach(() => {
-        cy.visit(
-            'iframe.html?id=components-tabs--default-story&args=&viewMode=story'
-        )
+        cy.visitStory('components-tabs--default-story')
     })
     it('first tab is selected by default', async () => {
         cy.get('#tab-id-1').should('have.attr', 'selected')

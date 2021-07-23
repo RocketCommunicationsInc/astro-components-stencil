@@ -19,6 +19,7 @@
         "start": "stencil build --dev --watch --serve",
         "test": "TZ=UTC stencil test --spec --e2e",
         "cypress:open": "cypress open",
+        "cy.run": "cypress run",
         "test.spec": "TZ=UTC stencil test --spec",
         "test.e2e": "TZ=UTC stencil test --e2e",
         "test.coverage": "TZ=UTC stencil test --spec --coverage",
