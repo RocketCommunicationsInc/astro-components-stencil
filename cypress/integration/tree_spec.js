@@ -1,8 +1,10 @@
-describe('My First Test', () => {
-    it('Visits the Kitchen Sink', async () => {
+describe('Tree', () => {
+    beforeEach(() => {
         cy.visit(
             'http://localhost:6006/iframe.html?id=components-tree--tree&args=&viewMode=story'
         )
+    })
+    it('Visits the Kitchen Sink', async () => {
         // cy.realPress('Enter');
         const parent = cy.get('rux-tree-node').first().shadow().find('.parent')
         parent.focus()
