@@ -10974,10 +10974,6 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * Text of the label.
-         */
-        "label": string;
-        /**
           * Max value of slider.
          */
         "max": number;
@@ -29740,10 +29736,6 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * Text of the label.
-         */
-        "label"?: string;
-        /**
           * Max value of slider.
          */
         "max"?: number;
@@ -29751,6 +29743,9 @@ declare namespace LocalJSX {
           * Min value of the slider.
          */
         "min"?: number;
+        /**
+          * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
+         */
         "onRux-input"?: (event: CustomEvent<any>) => void;
         /**
           * Step amount of slider value.
