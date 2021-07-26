@@ -27,32 +27,19 @@
     display: flex;
     flex-grow: 1;
     flex-flow: column;
+    cursor: pointer;
 }
 *[hidden] {
     display: none !important;
 }
 .rux-slider {
     display: flex;
-    flex-direction: column;
+    height: 10px;
+    :hover {
+        cursor: pointer;
+    }
 }
-.rux-slider__label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.25rem;
-    margin-bottom: 9px;
-}
-.rux-slider__control {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex-grow: 1;
-    position: relative;
-}
-.rux-slider label input {
-    margin-left: auto;
-    margin-right: 0;
-}
+
 .rux-range {
     -webkit-appearance: none;
     -moz-appearance: none;
