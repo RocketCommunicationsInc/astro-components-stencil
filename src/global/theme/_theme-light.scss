@@ -170,7 +170,7 @@
     --selectMenuInvalidBorderColor: rgb(255, 56, 56);
     --selectMenuBackgroundColor: linear-gradient(
         to left,
-        $light-selected 2rem,
+        var(--colorSnowflakesLightSelected) 2rem,
         var(--backgroundColor) 2rem
     );
     --selectMenuTextColor: var(--primary);
