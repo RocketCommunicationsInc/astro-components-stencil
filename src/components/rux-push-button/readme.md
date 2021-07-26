@@ -109,11 +109,11 @@ For more information about AstroUXDS usage outside of a Web Component environmen
 
 ## Properties
 
-| Property   | Attribute  | Description                                                                                                                                                                                               | Type      | Default |
-| ---------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------- |
-| `checked`  | `checked`  | Checks the push button via HTML `checked` attribute. Push button takes on a distinct "enabled" or "selected" visual state.                                                                                | `boolean` | `false` |
-| `disabled` | `disabled` | Disables the push button via HTML `disabled` attribute. Button takes on a distinct disabled visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored. | `boolean` | `false` |
-| `label`    | `label`    | The label of the push button. Can be overridden by placing content in the default slot of the rusx-push-button component.                                                                                 | `string`  | `''`    |
+| Property   | Attribute  | Description                                                                                                                                                                                               | Type      | Default         |
+| ---------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --------------- |
+| `checked`  | `checked`  | Checks the push button via HTML `checked` attribute. Push button takes on a distinct "enabled" or "selected" visual state.                                                                                | `boolean` | `false`         |
+| `disabled` | `disabled` | Disables the push button via HTML `disabled` attribute. Button takes on a distinct disabled visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored. | `boolean` | `false`         |
+| `label`    | `label`    | The label of the push button. Can be overridden by placing content in the default slot of the rusx-push-button component.                                                                                 | `string`  | `'Push Button'` |
 
 
 ## Events

@@ -1,11 +1,8 @@
-import { newE2EPage } from '@stencil/core/testing'
-
-describe('rux-push-button', () => {
+describe('Push Button', () => {
+    beforeEach(() => {
+        cy.visitStory('components-push-button--push-button-story')
+    })
     it('renders', async () => {
-        const page = await newE2EPage()
-        await page.setContent('<rux-push-button></rux-push-button>')
-
-        const element = await page.find('rux-push-button')
-        expect(element).toHaveClass('hydrated')
+        cy.get('rux-push-button').should('have.class', 'hydrated')
     })
 })
