@@ -10968,6 +10968,32 @@ export namespace Components {
          */
         "selected": string;
     }
+    interface RuxSlider {
+        /**
+          * Determines the if the slider is disabled.
+         */
+        "disabled": boolean;
+        /**
+          * Text of the label.
+         */
+        "label": string;
+        /**
+          * Max value of slider.
+         */
+        "max"?: number;
+        /**
+          * Min value of the slider.
+         */
+        "min"?: number;
+        /**
+          * Step amount of slider value.
+         */
+        "step"?: number;
+        /**
+          * Current value of the slider.
+         */
+        "value": number;
+    }
     interface RuxStatus {
         /**
           * Sets the status symbol, valid options are critical, serious, caution, normal, standby and off
@@ -17536,6 +17562,12 @@ declare global {
         prototype: HTMLRuxSegmentedButtonElement;
         new (): HTMLRuxSegmentedButtonElement;
     };
+    interface HTMLRuxSliderElement extends Components.RuxSlider, HTMLStencilElement {
+    }
+    var HTMLRuxSliderElement: {
+        prototype: HTMLRuxSliderElement;
+        new (): HTMLRuxSliderElement;
+    };
     interface HTMLRuxStatusElement extends Components.RuxStatus, HTMLStencilElement {
     }
     var HTMLRuxStatusElement: {
@@ -18705,6 +18737,7 @@ declare global {
         "rux-pop-up-menu": HTMLRuxPopUpMenuElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-segmented-button": HTMLRuxSegmentedButtonElement;
+        "rux-slider": HTMLRuxSliderElement;
         "rux-status": HTMLRuxStatusElement;
         "rux-switch": HTMLRuxSwitchElement;
         "rux-tab": HTMLRuxTabElement;
@@ -29701,6 +29734,32 @@ declare namespace LocalJSX {
          */
         "selected"?: string;
     }
+    interface RuxSlider {
+        /**
+          * Determines the if the slider is disabled.
+         */
+        "disabled"?: boolean;
+        /**
+          * Text of the label.
+         */
+        "label"?: string;
+        /**
+          * Max value of slider.
+         */
+        "max"?: number;
+        /**
+          * Min value of the slider.
+         */
+        "min"?: number;
+        /**
+          * Step amount of slider value.
+         */
+        "step"?: number;
+        /**
+          * Current value of the slider.
+         */
+        "value"?: number;
+    }
     interface RuxStatus {
         /**
           * Sets the status symbol, valid options are critical, serious, caution, normal, standby and off
@@ -30918,6 +30977,7 @@ declare namespace LocalJSX {
         "rux-pop-up-menu": RuxPopUpMenu;
         "rux-progress": RuxProgress;
         "rux-segmented-button": RuxSegmentedButton;
+        "rux-slider": RuxSlider;
         "rux-status": RuxStatus;
         "rux-switch": RuxSwitch;
         "rux-tab": RuxTab;
@@ -32012,6 +32072,7 @@ declare module "@stencil/core" {
             "rux-pop-up-menu": LocalJSX.RuxPopUpMenu & JSXBase.HTMLAttributes<HTMLRuxPopUpMenuElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-segmented-button": LocalJSX.RuxSegmentedButton & JSXBase.HTMLAttributes<HTMLRuxSegmentedButtonElement>;
+            "rux-slider": LocalJSX.RuxSlider & JSXBase.HTMLAttributes<HTMLRuxSliderElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
             "rux-switch": LocalJSX.RuxSwitch & JSXBase.HTMLAttributes<HTMLRuxSwitchElement>;
             "rux-tab": LocalJSX.RuxTab & JSXBase.HTMLAttributes<HTMLRuxTabElement>;
