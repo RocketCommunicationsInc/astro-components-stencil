@@ -53,9 +53,17 @@ export namespace Components {
          */
         "errorText"?: string;
         /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
           * Toggles indeterminate state of a checkbox
          */
         "indeterminate": boolean;
+        /**
+          * Sets the input as invalid
+         */
+        "invalid": boolean;
         /**
           * The checkbox name
          */
@@ -18671,9 +18679,17 @@ declare namespace LocalJSX {
          */
         "errorText"?: string;
         /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
           * Toggles indeterminate state of a checkbox
          */
         "indeterminate"?: boolean;
+        /**
+          * Sets the input as invalid
+         */
+        "invalid"?: boolean;
         /**
           * The checkbox name
          */

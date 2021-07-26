@@ -1,12 +1,4 @@
-import {
-    Component,
-    h,
-    Prop,
-    Event,
-    EventEmitter,
-    Element,
-    Listen,
-} from '@stencil/core'
+import { Component, h, Prop, Event, EventEmitter, Element } from '@stencil/core'
 
 let id = 0
 
@@ -18,6 +10,11 @@ let id = 0
 export class RuxCheckbox {
     checkboxId = `rux-checkbox-${++id}`
     @Element() el!: HTMLRuxCheckboxElement
+
+    /**
+     * The help or explanation text
+     */
+    @Prop({ attribute: 'help-text' }) helpText?: string
 
     /**
      * The validation error text
@@ -54,6 +51,11 @@ export class RuxCheckbox {
     @Prop() required: boolean = false
 
     /**
+     * Sets the input as invalid
+     */
+    @Prop() invalid: boolean = false
+
+    /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
@@ -78,28 +80,39 @@ export class RuxCheckbox {
             checked,
             name,
             value,
+            invalid,
         } = this
 
         return (
-            <div
-                class={{
-                    'rux-checkbox': true,
-                    'rux-checkbox--indeterminate': indeterminate,
-                }}
-            >
-                <input
-                    type="checkbox"
-                    name={name}
-                    id={checkboxId}
-                    disabled={disabled}
-                    required={required}
-                    checked={checked}
-                    value={value}
-                    onChange={this.onChange}
-                />
-                <label htmlFor={checkboxId}>
-                    <slot></slot>
-                </label>
+            <div class="rux-form-field">
+                <div
+                    class={{
+                        'rux-checkbox': true,
+                        'rux-checkbox--indeterminate': indeterminate,
+                        'rux-checkbox--invalid': invalid,
+                    }}
+                >
+                    <input
+                        type="checkbox"
+                        name={name}
+                        id={checkboxId}
+                        disabled={disabled}
+                        required={required}
+                        checked={checked}
+                        value={value}
+                        onChange={this.onChange}
+                    />
+                    <label htmlFor={checkboxId}>
+                        <slot></slot>
+                    </label>
+                </div>
+                {this.helpText && !this.errorText && (
+                    <div class="rux-help-text">{this.helpText}</div>
+                )}
+
+                {this.errorText && (
+                    <div class="rux-error-text">{this.errorText}</div>
+                )}
             </div>
         )
     }

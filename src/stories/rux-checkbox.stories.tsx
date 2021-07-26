@@ -20,6 +20,10 @@ export const Checkboxes = () => {
                 margin-bottom: 0;
                 list-style: none;
             }
+
+            section ul li:not(:last-child) {
+                margin-bottom: 15px;
+            }
         </style>
         <section>
             <ul>
@@ -52,6 +56,30 @@ export const Checkboxes = () => {
                         checked
                     >
                         Indeterminate
+                    </rux-checkbox>
+                </li>
+
+                <li>
+                    <rux-checkbox
+                        name="checkboxGroup"
+                        id="checkbox4c"
+                        indeterminate
+                        checked
+                        help-text="This is an example help text"
+                    >
+                        With Help Text
+                    </rux-checkbox>
+                </li>
+
+                <li>
+                    <rux-checkbox
+                        name="checkboxGroup"
+                        id="checkbox4c"
+                        indeterminate
+                        checked
+                        error-text="This is an example error text"
+                    >
+                        With Error Text
                     </rux-checkbox>
                 </li>
             </ul>
