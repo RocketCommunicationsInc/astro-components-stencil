@@ -206,10 +206,11 @@
 
   */
     --switchBackgroundColor: var(--backgroundColor);
-    --switchBorderColor: var(--colorPrimary);
     --switchOffBorderColor: var(--primaryLighter);
     --switchOnColor: var(--primary);
     --switchHoverOnColor: var(--primary);
+    --switchHoverOffColor: var(--primary);
+    --switchBorderColor: var(--primary);
     --switchButtonHoverOffColor: var(--primaryDark);
 
     /*
