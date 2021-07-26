@@ -33,7 +33,7 @@
         "storybook-next": "start-storybook -p 6006 -s ./dist -c .storybook-next",
         "build-storybook": "build-storybook -c .storybook-next -s ./dist",
         "astro": "concurrently \"npm run start\" \"npm run storybook\"",
-        "build-astro-prod": "concurrently \"npm run build\" \"npm run build-storybook\"",
+        "build-astro-prod": "npm run build && npm run build-storybook",
         "prettier": "prettier --write --loglevel warn .",
         "pretty-quick": "pretty-quick --staged",
         "prepare": "husky install"
