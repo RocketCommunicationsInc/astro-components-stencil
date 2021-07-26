@@ -28,4 +28,18 @@ describe('rux-push-button', () => {
         page.root.dispatchEvent(new MouseEvent('click'))
         expect(handleClick).toHaveBeenCalled()
     })
+
+    it('does not become checked when disabled', async () => {
+        const page = await newSpecPage({
+            components: [RuxPushButton],
+            html: `<rux-push-button disabled></rux-push-button>`,
+        })
+        page.waitForChanges()
+        const pushButton = page.body.querySelectorAll('rux-push-button')[0]
+        const handleClick = jest.fn()
+        page.root.addEventListener('click', handleClick)
+        page.root.dispatchEvent(new MouseEvent('click'))
+        expect(handleClick).toHaveBeenCalled()
+        expect(pushButton.hasAttribute('checked')).toBe(false)
+    })
 })
