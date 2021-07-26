@@ -55,8 +55,8 @@ export const SelectMenu = () => {
 
         <div class="demo-rows">
             <div class="demo-row">
-                <rux-select label="Select an Option">
-                    <option value="" selected>Select an Option</option>
+                <rux-select label="Select an option">
+                    <option value="" selected>Select an option</option>
                     <optgroup label="Group one">
                         <option>Option 1.1</option>
                         <option>Option 1.2</option>

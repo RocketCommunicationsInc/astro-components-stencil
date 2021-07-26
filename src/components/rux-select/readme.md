@@ -27,8 +27,8 @@ Pass properties as attributes of the Astro Select Menu custom element. Add nativ
 Select Menu renders a native `<select>` element and allows native `<option>` and `<optgroup>` elements to be inserted.
 
 ```xml
-<rux-select label="Select an Option">
-    <option value="" selected>Select an Option</option>
+<rux-select label="Select an option">
+    <option value="" selected>Select an option</option>
     <optgroup label="Group one">
         <option>Option 1.1</option>
         <option>Option 1.2</option>
@@ -65,19 +65,18 @@ Select Menu renders a native `<select>` element and allows native `<option>` and
 | ------------------------------------- | --------------------------------------------- |
 | `--buttonBorderRadius`                | Border radius for Select Menu                 |
 | `--fontFamily`                        | Font Family for the Application               |
-| `--selectActiveCaret`                 | Caret Shown When the Select Menu is Open      |
-| `--selectInactiveCaret`               | Caret Shown When the Select Menu is Closed    |
+| `--selecMenutInactiveCaret`           | Caret Shown When the Select Menu is Closed    |
+| `--selectMenuActiveCaret`             | Caret Shown When the Select Menu is Open      |
 | `--selectMenuBackgroundColor`         | Background Color of the Select Input          |
 | `--selectMenuBorderColor`             | Border Color of the Select Input              |
-| `--selectMenuBorderDisabledColor`     | Border Color of the Disabled Select Input     |
 | `--selectMenuBorderFocusColor`        | Border Focus Color of the Select Input        |
 | `--selectMenuBorderHoverColor`        | Border Hover Color of the Select Input        |
-| `--selectMenuHoverOptBackgroundColor` | Background Hover Color of Select Menu Options |
 | `--selectMenuInvalidBorderColor`      | Border Color of the Invalid Select Input      |
 | `--selectMenuLabelColor`              | Text Color of the Label                       |
+| `--selectMenuOptGroupTextColor`       | Text Color of Select Menu Option Group        |
+| `--selectMenuOptHoverBackgroundColor` | Background Hover Color of Select Menu Options |
+| `--selectMenuOptTextHoverColor`       | Text Hover Color of the Select Menu Options   |
 | `--selectMenuTextColor`               | Text Color of the Select Input                |
-| `--selectMenuTextHoverColor`          | Text Hover Color of the Select Menu           |
-| `--selectOptGroupTextColor`           | Text Color of Select Menu Option Group        |
 
 
 ----------------------------------------------
