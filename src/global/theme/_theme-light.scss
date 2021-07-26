@@ -19,6 +19,7 @@
     --primaryElementText: var(--colorWhite, #ffffff);
     --inputBackground: var(--colorWhite, #ffffff);
     --inputDark: #080c11;
+    $light-selected: #cee9fc;
 
     /* styles */
     --fontColor: var(--defaultText);
@@ -163,14 +164,14 @@
     ==========================================================================
 
   */
-    --selectMenuBorderColor: rgb(100, 156, 189);
+    --selectMenuBorderColor: var(--primaryLighter);
     --selectMenuBorderHoverColor: var(--primaryDark);
     --selectMenuBorderFocusColor: var(--primaryDark);
     --selectMenuInvalidBorderColor: rgb(255, 56, 56);
     --selectMenuBackgroundColor: linear-gradient(
         to left,
-        #cee9fc 2rem,
-        #eaeef4 2rem
+        $light-selected 2rem,
+        var(--backgroundColor) 2rem
     );
     --selectMenuTextColor: var(--primary);
     --selectMenuOptTextHoverColor: var(--primaryDark);
