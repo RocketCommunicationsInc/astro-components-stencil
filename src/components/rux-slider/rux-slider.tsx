@@ -1,4 +1,12 @@
-import { Component, Host, h, Prop, Element } from '@stencil/core'
+import {
+    Component,
+    Host,
+    h,
+    Prop,
+    Element,
+    Event,
+    EventEmitter,
+} from '@stencil/core'
 
 @Component({
     tag: 'rux-slider',
@@ -9,20 +17,20 @@ export class RuxSlider {
     /**
      * Min value of the slider.
      */
-    @Prop() min?: number = 0
+    @Prop() min: number = 0
     /**
      * Max value of slider.
      */
-    @Prop() max?: number = 100
+    @Prop() max: number = 100
     /**
      *
      * Step amount of slider value.
      */
-    @Prop() step?: number = 1
+    @Prop() step: number = 10
     /**
      * Current value of the slider.
      */
-    @Prop() value: number = 50
+    @Prop({ mutable: true }) value: number = 50
     /**
      *
      * Text of the label.
@@ -34,28 +42,33 @@ export class RuxSlider {
      */
     @Prop({ reflect: true }) disabled: boolean = false
 
+    @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
+
+    connectedCallback() {
+        this.onInput = this.onInput.bind(this)
+    }
     @Element() el!: HTMLInputElement
-    _updateValue(e: MouseEvent) {
-        //Update value as slider moves.
+
+    onInput(e: Event) {
+        //Update value as slider moves, emit the rux-input event.
         const target = e.target as HTMLInputElement
         this.value = parseInt(target.value)
-        let valueStr = this.value.toString()
         this.el.style.setProperty('--value', target.value)
+        this.ruxInput.emit()
     }
-
-    //could you use a class? like conditionally apply .thing--somestate and do :host.thing--somestate { --value: ‘whatev’ } ?
 
     render() {
         return (
             <Host>
                 <div class="rux-slider">
                     <input
-                        onClick={(e) => this._updateValue(e)}
+                        onInput={this.onInput}
                         type="range"
                         class="rux-range"
                         min={this.min}
                         max={this.max}
                         value={this.value}
+                        step={this.step}
                         disabled={this.disabled ? true : false}
                     ></input>
                 </div>

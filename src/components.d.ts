@@ -10980,15 +10980,15 @@ export namespace Components {
         /**
           * Max value of slider.
          */
-        "max"?: number;
+        "max": number;
         /**
           * Min value of the slider.
          */
-        "min"?: number;
+        "min": number;
         /**
           * Step amount of slider value.
          */
-        "step"?: number;
+        "step": number;
         /**
           * Current value of the slider.
          */
@@ -29751,6 +29751,7 @@ declare namespace LocalJSX {
           * Min value of the slider.
          */
         "min"?: number;
+        "onRux-input"?: (event: CustomEvent<any>) => void;
         /**
           * Step amount of slider value.
          */
