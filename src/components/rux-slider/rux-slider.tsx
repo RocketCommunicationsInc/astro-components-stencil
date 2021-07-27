@@ -52,7 +52,6 @@ export class RuxSlider {
     _getValueOnLoad() {
         //If val is not a number, change it to 0.
         if (!this.val && this.val != 0) {
-            console.log('changing val')
             this.val = 0
         }
         //If min is not a number, change it to 0
