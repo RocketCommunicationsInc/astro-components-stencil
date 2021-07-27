@@ -10972,23 +10972,24 @@ export namespace Components {
         /**
           * Determines the if the slider is disabled.
          */
-        "disabled": boolean;
+        "disabled"?: boolean;
+        "label": string;
         /**
           * Max value of slider.
          */
-        "max": number;
+        "max"?: number;
         /**
           * Min value of the slider.
          */
-        "min": number;
+        "min"?: number;
         /**
           * Step amount of slider value.
          */
-        "step": number;
+        "step"?: number;
         /**
           * Current value of the slider.
          */
-        "val": number;
+        "val"?: number;
     }
     interface RuxStatus {
         /**
@@ -29735,6 +29736,7 @@ declare namespace LocalJSX {
           * Determines the if the slider is disabled.
          */
         "disabled"?: boolean;
+        "label"?: string;
         /**
           * Max value of slider.
          */
