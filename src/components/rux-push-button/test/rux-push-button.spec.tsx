@@ -17,18 +17,6 @@ describe('rux-push-button', () => {
     `)
     })
 
-    it('handles event', async () => {
-        const page = await newSpecPage({
-            components: [RuxPushButton],
-            html: `<rux-push-button></rux-push-button>`,
-        })
-        page.waitForChanges()
-        const handleClick = jest.fn()
-        page.root.addEventListener('click', handleClick)
-        page.root.dispatchEvent(new MouseEvent('click'))
-        expect(handleClick).toHaveBeenCalled()
-    })
-
     it('auto increments its own unique id', async () => {
         const page = await newSpecPage({
             components: [RuxPushButton],
@@ -42,6 +30,18 @@ describe('rux-push-button', () => {
             .querySelector('input')
             .getAttribute('id')
         expect(inputId).toBe('rux-push-button-2')
+    })
+
+    it('handles event', async () => {
+        const page = await newSpecPage({
+            components: [RuxPushButton],
+            html: `<rux-push-button></rux-push-button>`,
+        })
+        page.waitForChanges()
+        const handleClick = jest.fn()
+        page.root.addEventListener('click', handleClick)
+        page.root.dispatchEvent(new MouseEvent('click'))
+        expect(handleClick).toHaveBeenCalled()
     })
 
     it('does not become checked when disabled', async () => {
