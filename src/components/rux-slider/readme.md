@@ -10,6 +10,7 @@
 | Property   | Attribute  | Description                               | Type                   | Default |
 | ---------- | ---------- | ----------------------------------------- | ---------------------- | ------- |
 | `disabled` | `disabled` | Determines the if the slider is disabled. | `boolean \| undefined` | `false` |
+| `label`    | `label`    |                                           | `string`               | `''`    |
 | `max`      | `max`      | Max value of slider.                      | `number \| undefined`  | `100`   |
 | `min`      | `min`      | Min value of the slider.                  | `number \| undefined`  | `0`     |
 | `step`     | `step`     | Step amount of slider value.              | `number \| undefined`  | `1`     |
