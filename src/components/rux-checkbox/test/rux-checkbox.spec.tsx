@@ -6,34 +6,34 @@ describe('rux-checkbox', () => {
         const checkbox = new RuxCheckbox()
         const {
             checkboxId,
-            errorText,
-            name,
-            value,
             checked,
-            indeterminate,
             disabled,
+            errorText,
+            indeterminate,
+            name,
             required,
+            value,
         } = checkbox
 
         expect(checkbox).toBeTruthy()
         expect({
             checkboxId,
-            errorText,
-            name,
-            value,
             checked,
-            indeterminate,
             disabled,
+            errorText,
+            indeterminate,
+            name,
             required,
+            value,
         }).toEqual({
             checkboxId: 'rux-checkbox-1',
-            errorText: undefined,
-            name: '',
-            value: '',
             checked: false,
-            indeterminate: false,
             disabled: false,
+            errorText: undefined,
+            indeterminate: false,
+            name: '',
             required: false,
+            value: '',
         })
     })
 

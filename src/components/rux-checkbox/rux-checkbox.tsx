@@ -74,15 +74,15 @@ export class RuxCheckbox {
     render() {
         const {
             checkboxId,
-            indeterminate,
-            disabled,
-            required,
             checked,
-            name,
-            value,
-            invalid,
+            disabled,
             errorText,
             helpText,
+            indeterminate,
+            invalid,
+            name,
+            required,
+            value,
         } = this
 
         return (
