@@ -2,13 +2,26 @@ import { withActions } from '@storybook/addon-actions'
 import { html, render } from 'lit-html'
 import RuxCheckboxReadme from '../components/rux-checkbox/readme.md'
 
-export default {
-    title: 'Components/Form Elements',
-    decorators: [withActions('rux-change', 'rux-checkbox')],
-}
+
+<Meta
+    title="Components/Form Elements"
+    component="rux-checkbox"
+    argTypes={extractArgTypes('rux-checkbox')}
+/>
+
+# Checkbox
+
+A Checkbox describes a state or value that can be either "True or False.” Checkboxes are not mutually exclusive. More than one Checkbox may be checked at the same time.
+
+## Guidelines
+
+- [Astro UXDS: Checkboxes](https://www.astrouxds.com/ui-components/checkbox)
+- [Astro UXDS: Form and Input Validation](https://www.astrouxds.com/ui-components/validation)
+
 
 export const Checkboxes = () => {
-    return html` <style>
+    return html`
+        <style>
             section {
                 display: flex;
                 justify-content: center;
@@ -80,12 +93,8 @@ export const Checkboxes = () => {
         </section>`
 }
 
-Checkboxes.parameters = {
-    exports: {
-        render,
-        html,
-    },
-    readme: {
-        sidebar: RuxCheckboxReadme,
-    },
-}
+<Canvas>
+    <Story name="Checkboxes">
+        {Checkboxes.bind()}
+    </Story>
+</Canvas>
