@@ -1,11 +1,8 @@
-import { newE2EPage } from '@stencil/core/testing'
-
-describe('rux-checkbox', () => {
+describe('Checkbox', () => {
+    beforeEach(() => {
+        cy.visitStory('components-form-elements--checkboxes')
+    })
     it('renders', async () => {
-        const page = await newE2EPage()
-        await page.setContent('<rux-checkbox></rux-checkbox>')
-
-        const element = await page.find('rux-checkbox')
-        expect(element).toHaveClass('hydrated')
+        cy.get('rux-checkbox').should('have.class', 'hydrated')
     })
 })
