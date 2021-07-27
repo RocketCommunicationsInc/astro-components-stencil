@@ -36,7 +36,6 @@ export class RuxSlider {
      * Determines the if the slider is disabled.
      */
     @Prop({ reflect: true }) disabled?: boolean = false
-    @Prop() label: string = ''
     /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */

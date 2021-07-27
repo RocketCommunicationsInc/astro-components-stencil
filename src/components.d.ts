@@ -10973,7 +10973,6 @@ export namespace Components {
           * Determines the if the slider is disabled.
          */
         "disabled"?: boolean;
-        "label": string;
         /**
           * Max value of slider.
          */
@@ -29736,7 +29735,6 @@ declare namespace LocalJSX {
           * Determines the if the slider is disabled.
          */
         "disabled"?: boolean;
-        "label"?: string;
         /**
           * Max value of slider.
          */

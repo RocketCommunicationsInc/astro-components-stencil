@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-27T21:47:49",
+    "timestamp": "2021-07-27T22:36:09",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -75478,23 +75478,6 @@
                     "required": false
                 },
                 {
-                    "name": "label",
-                    "type": "string",
-                    "mutable": false,
-                    "attr": "label",
-                    "reflectToAttr": false,
-                    "docs": "",
-                    "docsTags": [],
-                    "default": "''",
-                    "values": [
-                        {
-                            "type": "string"
-                        }
-                    ],
-                    "optional": false,
-                    "required": false
-                },
-                {
                     "name": "max",
                     "type": "number | undefined",
                     "mutable": false,
@@ -75588,7 +75571,73 @@
                 }
             ],
             "listeners": [],
-            "styles": [],
+            "styles": [
+                {
+                    "name": "--",
+                    "annotation": "prop",
+                    "docs": ""
+                },
+                {
+                    "name": "--sliderHoverThumbBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "Background color of the slider's thumb in a hover state."
+                },
+                {
+                    "name": "--sliderHoverThumbBorderColor",
+                    "annotation": "prop",
+                    "docs": "Border color of the slider's thumb in a hover state."
+                },
+                {
+                    "name": "--sliderSelectedThumbBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "Background color of the slider's thumb in a selected state."
+                },
+                {
+                    "name": "--sliderSelectedThumbBorderColor",
+                    "annotation": "prop",
+                    "docs": "Border color of the slider's thumb in a selected state."
+                },
+                {
+                    "name": "--sliderThumbBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "Background color of the slider's thumb."
+                },
+                {
+                    "name": "--sliderThumbBorderColor",
+                    "annotation": "prop",
+                    "docs": "Border color of the slider's thumb."
+                },
+                {
+                    "name": "--sliderThumbBorderSize",
+                    "annotation": "prop",
+                    "docs": "Size of slider's thumb border."
+                },
+                {
+                    "name": "--sliderThumbSize",
+                    "annotation": "prop",
+                    "docs": "Size of the slider's thumb, both width and height."
+                },
+                {
+                    "name": "--sliderTrackBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "Background color of the slider's track."
+                },
+                {
+                    "name": "--sliderTrackCursor",
+                    "annotation": "prop",
+                    "docs": "The type of cursor for the slider's track."
+                },
+                {
+                    "name": "--value",
+                    "annotation": "prop",
+                    "docs": "The current value of the slider."
+                },
+                {
+                    "name": "--valuePercent",
+                    "annotation": "prop",
+                    "docs": "The current value of the slider in a percent."
+                }
+            ],
             "slots": [],
             "parts": [],
             "dependents": [],

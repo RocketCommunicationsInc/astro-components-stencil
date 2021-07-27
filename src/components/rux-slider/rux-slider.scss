@@ -1,11 +1,48 @@
 :host {
-    --thumbSize: var(--sliderThumbSize);
-    --trackHeight: 1px;
-    --trackBeforeThumbHeight: 5px;
-    --trackCursor: pointer;
+    /**
+    * @prop --sliderThumbBackgroundColor: Background color of the slider's thumb.
+    */
+    /**
+    * @prop --sliderThumbBorderColor: Border color of the slider's thumb.
+    */
+    /**
+    * @prop --sliderHoverThumbBackgroundColor: Background color of the slider's thumb in a hover state.
+    */
+    /**
+    * @prop --sliderHoverThumbBorderColor: Border color of the slider's thumb in a hover state.
+    */
+    /**
+    * @prop --sliderTrackBackgroundColor: Background color of the slider's track.
+    */
+    /**
+    * @prop --sliderSelectedThumbBackgroundColor: Background color of the slider's thumb in a selected state.
+    */
+    /**
+    * @prop --sliderSelectedThumbBorderColor: Border color of the slider's thumb in a selected state.
+    */
+    /**
+    * @prop --sliderThumbSize: Size of the slider's thumb, both width and height.
+    */
+    /**
+    * @prop --sliderThumbBorderSize: Size of slider's thumb border.
+    */
+    /**
+    * @prop --sliderTrackCursor: The type of cursor for the slider's track.
+    */
+    /**
+    * @prop --value: The current value of the slider.
+    */
+    /**
+    * @prop --valuePercent: The current value of the slider in a percent.
+    */
+
+    --sliderThumbSize: 19px;
+    --sliderTrackHeight: 1px;
+    --sliderTrackBeforeThumbHeight: 5px;
+    --sliderTrackCursor: pointer;
     --value: 50;
     --valuePercent: calc(1% * var(--value));
-    --valueBeforeThumb: calc(1% * var(--value) - 1%);
+
     display: flex;
     flex-grow: 1;
     flex-flow: column;
@@ -18,7 +55,7 @@
     display: flex;
     height: 20px;
     :hover {
-        cursor: pointer;
+        cursor: var(--sliderTrackCursor);
     }
     :disabled {
         cursor: not-allowed;
@@ -45,10 +82,10 @@ input[type='range']:focus {
     align-items: center;
     max-width: 100%;
     /* width: 100%; */
-    cursor: var(--trackCursor, pointer);
+    cursor: var(--sliderTrackCursor, pointer);
     border-radius: 2.5px;
-    min-height: var(--trackHeight);
-    max-height: var(--trackBeforeThumbHeight);
+    min-height: var(--sliderTrackHeight);
+    max-height: var(--sliderTrackBeforeThumbHeight);
     background-image: linear-gradient(
             var(--sliderTrackBackgroundColor),
             var(--sliderTrackBackgroundColor)
@@ -70,9 +107,9 @@ input[type='range']:focus {
 .rux-range::-webkit-slider-thumb {
     -webkit-appearance: none;
     position: relative;
-    top: calc(var(--thumbSize) / -2.7);
-    height: var(--thumbSize);
-    width: var(--thumbSize);
+    top: calc(var(--sliderThumbSize) / -2.7);
+    height: var(--sliderThumbSize);
+    width: var(--sliderThumbSize);
     border-radius: 100%;
     border: var(--sliderThumbBorderSize) solid var(--sliderThumbBorderColor);
     background-color: var(--sliderThumbBackgroundColor);
