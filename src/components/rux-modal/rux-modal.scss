@@ -1,28 +1,21 @@
 :host {
     box-sizing: border-box;
 
-    /** @prop --modalTitleColor: Modal title color */
-    --modalTitleColor: var(--primaryElementText);
-    /** @prop --modalTextColor: Modal text color */
-    --modalTextColor: var(--defaultText);
-    /** @prop --modalBackgroundColor: Modal background color */
-    --modalBackgroundColor: var(--surfaceElements);
-    /** @prop --modalBorderColor: Modal border color */
-    --modalBorderColor: var(--primary);
-}
+    /**
+      * @prop --modalTitleColor: Modal title color
+      */
 
-:host(.open) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
+    /**
+      * @prop --modalTextColor: Modal text color
+      */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1100;
-    background-color: rgba(0, 0, 0, 0.5);
+    /**
+      * @prop --modalBackgroundColor: Modal background color
+      */
+
+    /**
+      * @prop --modalBorderColor: Modal border color
+      */
 }
 
 *,
@@ -42,6 +35,20 @@ rux-button-group {
 }
 
 .rux-modal {
+    &__wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1100;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
     &__dialog {
         position: relative;
         display: flex;
