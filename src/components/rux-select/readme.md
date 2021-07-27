@@ -49,34 +49,44 @@ Select Menu renders a native `<select>` element and allows native `<option>` and
 
 ## Properties
 
-| Property   | Attribute  | Description                                            | Type                  | Default     |
-| ---------- | ---------- | ------------------------------------------------------ | --------------------- | ----------- |
-| `disabled` | `disabled` | Disables the item                                      | `boolean`             | `false`     |
-| `inputId`  | `input-id` | Id for the Select Input                                | `string \| undefined` | `undefined` |
-| `invalid`  | `invalid`  | Sets the Select as Invalid for Custom Validation Usage | `boolean`             | `false`     |
-| `label`    | `label`    | Sets the Label for the Select                          | `string \| undefined` | `undefined` |
-| `labelId`  | `label-id` | Id for the Label                                       | `string \| undefined` | `undefined` |
-| `required` | `required` | Sets the field as required                             | `boolean`             | `false`     |
+| Property   | Attribute  | Description                                            | Type                  | Default                       |
+| ---------- | ---------- | ------------------------------------------------------ | --------------------- | ----------------------------- |
+| `disabled` | `disabled` | Disables the item                                      | `boolean`             | `false`                       |
+| `inputId`  | `input-id` | Id for the Select Input                                | `string \| undefined` | ``rux-select-${selectIds++}`` |
+| `invalid`  | `invalid`  | Sets the Select as Invalid for Custom Validation Usage | `boolean`             | `false`                       |
+| `label`    | `label`    | Sets the Label for the Select                          | `string \| undefined` | `undefined`                   |
+| `labelId`  | `label-id` | Id for the Label                                       | `string \| undefined` | `undefined`                   |
+| `name`     | `name`     | Sets the Name of the Input Element                     | `string \| undefined` | `undefined`                   |
+| `required` | `required` | Sets the field as required                             | `boolean`             | `false`                       |
+
+
+## Events
+
+| Event                | Description                                           | Type                |
+| -------------------- | ----------------------------------------------------- | ------------------- |
+| `rux-select-changed` | Event Emitted when the Value of the Select is Changed | `CustomEvent<void>` |
 
 
 ## CSS Custom Properties
 
-| Name                                  | Description                                   |
-| ------------------------------------- | --------------------------------------------- |
-| `--buttonBorderRadius`                | Border radius for Select Menu                 |
-| `--fontFamily`                        | Font Family for the Application               |
-| `--selecMenutInactiveCaret`           | Caret Shown When the Select Menu is Closed    |
-| `--selectMenuActiveCaret`             | Caret Shown When the Select Menu is Open      |
-| `--selectMenuBackgroundColor`         | Background Color of the Select Input          |
-| `--selectMenuBorderColor`             | Border Color of the Select Input              |
-| `--selectMenuBorderFocusColor`        | Border Focus Color of the Select Input        |
-| `--selectMenuBorderHoverColor`        | Border Hover Color of the Select Input        |
-| `--selectMenuInvalidBorderColor`      | Border Color of the Invalid Select Input      |
-| `--selectMenuLabelColor`              | Text Color of the Label                       |
-| `--selectMenuOptGroupTextColor`       | Text Color of Select Menu Option Group        |
-| `--selectMenuOptHoverBackgroundColor` | Background Hover Color of Select Menu Options |
-| `--selectMenuOptTextHoverColor`       | Text Hover Color of the Select Menu Options   |
-| `--selectMenuTextColor`               | Text Color of the Select Input                |
+| Name                                     | Description                                   |
+| ---------------------------------------- | --------------------------------------------- |
+| `--fontFamily`                           | Font Family for the Application               |
+| `--selecMenutInactiveCaret`              | Caret Shown When the Select Menu is Closed    |
+| `--selectMenuActiveCaret`                | Caret Shown When the Select Menu is Open      |
+| `--selectMenuBackgroundColor`            | Background Color of the Select Input          |
+| `--selectMenuBorderColor`                | Border Color of the Select Input              |
+| `--selectMenuBorderFocusColor`           | Border Focus Color of the Select Input        |
+| `--selectMenuBorderHoverColor`           | Border Hover Color of the Select Input        |
+| `--selectMenuBorderRadius`               | Border radius for Select Menu                 |
+| `--selectMenuInvalidBorder`              | Border Color of the Invalid Select Input      |
+| `--selectMenuLabelColor`                 | Text Color of the Label                       |
+| `--selectMenuOptGroupTextColor`          | Text Color of Select Menu Option Group        |
+| `--selectMenuOptHoverBackgroundColor`    | Background Hover Color of Select Menu Options |
+| `--selectMenuOptSelectedBackgroundColor` | Background Color of the Selected Option       |
+| `--selectMenuOptSelectedTextColor`       | Text Color of the Selected Option             |
+| `--selectMenuOptTextHoverColor`          | Text Hover Color of the Select Menu Options   |
+| `--selectMenuTextColor`                  | Text Color of the Select Input                |
 
 
 ----------------------------------------------

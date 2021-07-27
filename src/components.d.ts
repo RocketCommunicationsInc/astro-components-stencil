@@ -29763,6 +29763,9 @@ declare namespace LocalJSX {
           * Sets the Name of the Input Element
          */
         "name"?: string;
+        /**
+          * Event Emitted when the Value of the Select is Changed
+         */
         "onRux-select-changed"?: (event: CustomEvent<void>) => void;
         /**
           * Sets the field as required

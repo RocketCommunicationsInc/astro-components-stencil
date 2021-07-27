@@ -42,6 +42,9 @@ export class RuxSelect {
      */
     @Prop({ reflect: true }) name?: string
 
+    /**
+     * Event Emitted when the Value of the Select is Changed
+     */
     @Event({ eventName: 'rux-select-changed' })
     ruxSelectChanged!: EventEmitter<void>
 

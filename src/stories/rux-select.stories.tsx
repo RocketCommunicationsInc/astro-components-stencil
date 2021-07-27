@@ -5,7 +5,7 @@ import { withKnobs } from '@storybook/addon-knobs'
 import selectMenuReadme from '../components/rux-select/readme.md'
 
 export default {
-    title: 'Components/Select Menu',
+    title: 'Components/Form Elements',
     decorators: [withKnobs],
 }
 
@@ -50,12 +50,15 @@ export const SelectMenu = () => {
                 order: 3;
                 margin-top: 0.625rem;
                 color: var(--colorCritical);
+                font-size: var(--fontSizeMD);
+                font-family: var(--fontFamily);
+                font-weight: bold;
             }
         </style>
 
         <div class="demo-rows">
             <div class="demo-row">
-                <rux-select label="Select an option">
+                <rux-select label="Enabled">
                     <option value="" selected>Select an option</option>
                     <optgroup label="Group one">
                         <option>Option 1.1</option>
