@@ -84,19 +84,20 @@ export class RuxSlider {
     }
 
     render() {
+        const { min, max, val, step, disabled, onInput } = this
         return (
             <Host>
-                <div class="rux-slider" onClick={(e) => this.onInput(e)}>
+                <div class="rux-slider" onClick={(e) => onInput(e)}>
                     <label></label>
                     <input
-                        onInput={this.onInput}
+                        onInput={onInput}
                         type="range"
                         class="rux-range"
-                        min={this.min}
-                        max={this.max}
-                        value={this.val}
-                        step={this.step}
-                        disabled={this.disabled ? true : false}
+                        min={min}
+                        max={max}
+                        value={val}
+                        step={step}
+                        disabled={disabled}
                     ></input>
                 </div>
                 <slot></slot>
