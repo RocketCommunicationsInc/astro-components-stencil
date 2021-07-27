@@ -16,7 +16,7 @@ Pass properties as attributes of the Astro Select Menu custom element. Add nativ
 ```xml
 <rux-select
     required
-    label="Select an Option"
+    label="Select an option"
     input-id="my select"
     label-id="select label"
 ></rux-select>
@@ -43,7 +43,6 @@ Select Menu renders a native `<select>` element and allows native `<option>` and
     </optgroup>
 </rux-select>
 ```
-
 
 <!-- Auto Generated Below -->
 
