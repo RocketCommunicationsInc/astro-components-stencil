@@ -10990,6 +10990,10 @@ export namespace Components {
          */
         "labelId"?: string;
         /**
+          * Sets the Name of the Input Element
+         */
+        "name"?: string;
+        /**
           * Sets the field as required
          */
         "required": boolean;
@@ -29755,6 +29759,11 @@ declare namespace LocalJSX {
           * Id for the Label
          */
         "labelId"?: string;
+        /**
+          * Sets the Name of the Input Element
+         */
+        "name"?: string;
+        "onRux-select-changed"?: (event: CustomEvent<void>) => void;
         /**
           * Sets the field as required
          */

@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, Element } from '@stencil/core'
+import { Component, Host, h, Prop, Event, EventEmitter } from '@stencil/core'
 
 @Component({
     tag: 'rux-select',
@@ -6,8 +6,6 @@ import { Component, Host, h, Prop, Element } from '@stencil/core'
     scoped: true,
 })
 export class RuxSelect {
-    @Element() el!: HTMLRuxSelectElement
-
     /**
      * Disables the item
      */
@@ -26,7 +24,8 @@ export class RuxSelect {
     /**
      * Id for the Select Input
      */
-    @Prop({ attribute: 'input-id' }) inputId?: string
+    @Prop({ attribute: 'input-id' })
+    inputId?: string = `rux-select-${selectIds++}`
 
     /**
      * Id for the Label
@@ -38,19 +37,41 @@ export class RuxSelect {
      */
     @Prop({ reflect: true }) invalid: boolean = false
 
+    /**
+     * Sets the Name of the Input Element
+     */
+    @Prop({ reflect: true }) name?: string
+
+    @Event({ eventName: 'rux-select-changed' })
+    ruxSelectChanged!: EventEmitter<void>
+
     render() {
-        const { disabled, required, label, inputId, labelId, invalid } = this
+        const {
+            disabled,
+            required,
+            label,
+            inputId,
+            labelId,
+            invalid,
+            name,
+        } = this
+
         return (
             <Host>
-                {label && <label id={labelId}>{label}</label>}
+                {label && (
+                    <label id={labelId} htmlFor={inputId}>
+                        {label}
+                    </label>
+                )}
                 <select
                     class={
                         'rux-select ' + (invalid ? 'rux-select-invalid' : '')
                     }
                     id={inputId}
-                    aria-labelledby={labelId}
                     disabled={disabled}
                     required={required}
+                    name={name}
+                    onChange={() => this.ruxSelectChanged.emit()}
                 >
                     <slot></slot>
                 </select>
@@ -58,3 +79,5 @@ export class RuxSelect {
         )
     }
 }
+
+let selectIds = 0
