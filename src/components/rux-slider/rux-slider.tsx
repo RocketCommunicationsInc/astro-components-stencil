@@ -17,25 +17,25 @@ export class RuxSlider {
     /**
      * Min value of the slider.
      */
-    @Prop() min?: number = 0
+    @Prop() min: number = 0
     /**
      * Max value of slider.
      */
-    @Prop() max?: number = 100
+    @Prop() max: number = 100
     /**
      *
      * Step amount of slider value.
      */
-    @Prop() step?: number = 1
+    @Prop() step: number = 1
     /**
      * Current value of the slider.
      */
-    @Prop({ mutable: true }) val?: number = 50
+    @Prop({ mutable: true }) val: number = 50
     /**
      *
      * Determines the if the slider is disabled.
      */
-    @Prop({ reflect: true }) disabled?: boolean = false
+    @Prop({ reflect: true }) disabled: boolean = false
     /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
@@ -87,6 +87,7 @@ export class RuxSlider {
         return (
             <Host>
                 <div class="rux-slider" onClick={(e) => this.onInput(e)}>
+                    <label></label>
                     <input
                         onInput={this.onInput}
                         type="range"

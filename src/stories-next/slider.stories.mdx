@@ -5,12 +5,71 @@ import { html, render } from 'lit-html'
 <Meta
     title="Components/Slider"
     component="rux-slider"
-    argTypes="{extractArgTypes('rux-slider')}
+    argTypes="{extractArgTypes('rux-slider')}"
 />
 
 # Slider
+
+A Slider allows users to choose from a range of continuous and discrete values. The Slider displays the range of possible values and the Slider’s indicator displays the current value.
 
 ## Guidelines
 
 -   [Astro UXDS: Slider](https://www.astrouxds.com/components/slider/)
 
+export const Default = (args) => {
+    return html`
+        <rux-slider
+        .max="${args.max}"
+        .min="${args.min}"
+        .step="${args.step}"
+        .val="${args.val}"
+        .disabled="${args.disabled}"
+        ></rux-slider>
+    `
+}
+
+<Canvas>
+    <Story
+    name="Default"
+    args={{
+        max: 100,
+        min: 0,
+        val: 50
+    }}
+    >
+    {Default.bind()}
+    </Story>
+</Canvas>
+
+## API
+<ArgsTable of="rux-slider" />
+
+## Variants 
+
+### Disabled
+
+export const Disabled = (args) => {
+    return html`
+    <rux-slider
+        .max="${args.max}"
+        .min="${args.min}"
+        .step="${args.step}"
+        .val="${args.val}"
+        .disabled="${args.disabled}"
+    ></rux-slider>
+    `
+}
+
+<Canvas>
+    <Story
+        name="Disabled"
+        args={{
+            max: 100,
+            min: 0,
+            val: 50,
+            disabled: true
+        }}
+    >
+    {Disabled.bind()}
+    </Story>
+</Canvas>
