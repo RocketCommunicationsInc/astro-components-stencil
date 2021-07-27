@@ -361,9 +361,6 @@ $theme: (
 
     /*
 
-<<<<<<< HEAD
-    Toggle Colors
-=======
     Segmented Button Colors
     ==========================================================================
 
@@ -394,11 +391,11 @@ $theme: (
 
     /*
 
-    Drop Down/Select Colors
+    Drop Down/Select
     ==========================================================================
 
   */
-    --selectHoverOptBackgroundColor: var(--primaryLight);
+    --selectMenuBorderRadius: 3px;
     /*
 
     Switch Colors
@@ -415,7 +412,6 @@ $theme: (
     /*
 
     Popup Menu Colors
->>>>>>> next
     ==========================================================================
 
   */

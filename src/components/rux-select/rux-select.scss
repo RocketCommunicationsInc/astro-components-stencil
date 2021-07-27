@@ -7,15 +7,17 @@
       * @prop --selectMenuBorderColor: Border Color of the Select Input
       * @prop --selectMenuBorderHoverColor: Border Hover Color of the Select Input
       * @prop --selectMenuBorderFocusColor: Border Focus Color of the Select Input
-      * @prop --selectMenuInvalidBorderColor: Border Color of the Invalid Select Input
+      * @prop --selectMenuInvalidBorder: Border Color of the Invalid Select Input
       * @prop --selectMenuOptHoverBackgroundColor: Background Hover Color of Select Menu Options
       * @prop --selectMenuOptGroupTextColor: Text Color of Select Menu Option Group
       * @prop --selectMenuOptTextHoverColor: Text Hover Color of the Select Menu Options
       * @prop --selecMenutInactiveCaret: Caret Shown When the Select Menu is Closed
       * @prop --selectMenuActiveCaret: Caret Shown When the Select Menu is Open
-      * @prop --buttonBorderRadius: Border radius for Select Menu
+      * @prop --selectMenuBorderRadius: Border radius for Select Menu
       * @prop --fontFamily: Font Family for the Application
       * @prop --selectMenuLabelColor: Text Color of the Label
+      * @prop --selectMenuOptSelectedBackgroundColor: Background Color of the Selected Option
+      * @prop --selectMenuOptSelectedTextColor: Text Color of the Selected Option
     */
 }
 
@@ -82,7 +84,7 @@ label {
     }
 
     &.rux-select-invalid {
-        border: 1px solid var(--selectMenuInvalidBorderColor);
+        border: 1px solid var(--selectMenuInvalidBorder);
     }
 
     &::-ms-expand {
