@@ -81,6 +81,8 @@ export class RuxCheckbox {
             name,
             value,
             invalid,
+            errorText,
+            helpText,
         } = this
 
         return (
@@ -90,6 +92,9 @@ export class RuxCheckbox {
                         'rux-checkbox': true,
                         'rux-checkbox--indeterminate': indeterminate,
                         'rux-checkbox--invalid': invalid,
+                        'rux-checkbox--has-error': required,
+                        'rux-checkbox--has-text':
+                            errorText !== undefined || helpText !== undefined,
                     }}
                 >
                     <input
@@ -107,11 +112,11 @@ export class RuxCheckbox {
                     </label>
                 </div>
                 {this.helpText && !this.errorText && (
-                    <div class="rux-help-text">{this.helpText}</div>
+                    <div class="rux-help-text">{helpText}</div>
                 )}
 
                 {this.errorText && (
-                    <div class="rux-error-text">{this.errorText}</div>
+                    <div class="rux-error-text">{errorText}</div>
                 )}
             </div>
         )

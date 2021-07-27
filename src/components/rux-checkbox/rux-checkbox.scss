@@ -37,7 +37,7 @@
 .rux-checkbox {
     display: flex;
     position: relative;
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.625rem 0;
     line-height: 1.2;
 
     input[type='checkbox'] {
@@ -123,6 +123,29 @@
         border-top: 0px;
         border-bottom: 2px solid var(--controlTextColor);
         left: 5px;
+    }
+
+    &--has-error {
+        input[type='checkbox'],
+        input[type='checkbox']:checked {
+            + label {
+                &:after {
+                    border-color: var(--colorCritical);
+                }
+                &::before {
+                    border-color: var(--colorCritical);
+                }
+            }
+        }
+    }
+
+    &--has-text {
+        margin-bottom: 0px;
+    }
+
+    + .rux-help-text,
+    + .rux-error-text {
+        margin-bottom: 0.75rem;
     }
 }
 
