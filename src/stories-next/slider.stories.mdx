@@ -5,7 +5,12 @@ import { html, render } from 'lit-html'
 <Meta
     title="Components/Slider"
     component="rux-slider"
-    argTypes="{extractArgTypes('rux-slider')}"
+    argTypes={extractArgTypes('rux-slider')}
+    parameters={{
+        actions: {
+            handles: ['rux-input rux-slider'],
+        },
+    }}
 />
 
 # Slider
@@ -73,3 +78,12 @@ export const Disabled = (args) => {
     {Disabled.bind()}
     </Story>
 </Canvas>
+
+## Cherry Picking
+
+If you're already utilizing a build system that supports tree shaking and want to only import this individual component:
+
+```js
+import RuxSlider from '@astrouxds/astro-web-components/dist/components/rux-slider.js'
+customElements.define('rux-slider', RuxSlider)
+```
