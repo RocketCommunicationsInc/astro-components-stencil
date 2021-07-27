@@ -8,13 +8,13 @@ import {
     Watch,
 } from '@stencil/core'
 import { PushButtonChangeEvent } from './rux-push-button.model'
-
 @Component({
     tag: 'rux-push-button',
     styleUrl: 'rux-push-button.scss',
     shadow: true,
 })
 export class RuxPushButton {
+    private pushButtonId = `rux-push-button-${id++}`
     /**
      * Disables the push button via HTML `disabled` attribute.
      * Button takes on a distinct disabled visual state.
@@ -62,15 +62,20 @@ export class RuxPushButton {
             >
                 <input
                     class="rux-push-button__input"
-                    id="ruxSwitch"
+                    id={this.pushButtonId}
                     type="checkbox"
                     disabled={disabled}
                     checked={checked}
                 />
-                <label class="rux-push-button__button" htmlFor="ruxSwitch">
+                <label
+                    class="rux-push-button__button"
+                    htmlFor={this.pushButtonId}
+                >
                     <slot>{label}</slot>
                 </label>
             </Host>
         )
     }
 }
+
+let id = 0
