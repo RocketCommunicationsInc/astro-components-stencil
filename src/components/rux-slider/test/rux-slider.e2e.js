@@ -1,19 +1,11 @@
-import { newE2EPage } from '@stencil/core/testing'
+// import { newE2EPage } from '@stencil/core/testing'
 
 describe('rux-slider', () => {
-    it('renders', async () => {
-        const page = await newE2EPage()
-        await page.setContent('<rux-slider></rux-slider>')
-
-        const element = await page.find('rux-slider')
-        expect(element).toHaveClass('hydrated')
+    beforeEach(() => {
+        cy.visitStory('components-slider--default-story')
     })
-    it('changes val to 0 if given val is not valid', async () => {
-        const page = await newE2EPage()
-        await page.setContent('<rux-slider val="s"></rux-slider>')
-        const slider = await page.find('rux-slider')
-        slider.callMethod('')
-        expect(slider).toEqualAttribute('val', 0)
+    it('renders', async () => {
+        cy.get('rux-slider').should('have.calss', 'hydrated')
     })
 })
 
