@@ -1,6 +1,7 @@
 import { withActions } from '@storybook/addon-actions'
 import { html, render } from 'lit-html'
 import RuxCheckboxReadme from '../components/rux-checkbox/readme.md'
+import radioButtonsReadme from '../components/rux-radio/readme.md'
 
 export default {
     title: 'Components/Form Elements',
@@ -84,5 +85,44 @@ Checkboxes.parameters = {
     },
     readme: {
         sidebar: RuxCheckboxReadme,
+    },
+}
+
+export const RadioButtons = () => html`
+    <div style="padding: 10vh 5vw; display: flex; justify-content: center;">
+        <ul style="list-style:none;">
+            <li>
+                <rux-radio name="radio1c" value="one" checked
+                    >Radio button</rux-radio
+                >
+            </li>
+            <li>
+                <rux-radio name="radio1c" value="two"
+                    >Radio button checked</rux-radio
+                >
+            </li>
+            <li>
+                <rux-radio name="radio2c" value="three" checked disabled
+                    >Radio button disabled</rux-radio
+                >
+            </li>
+            <li>
+                <rux-radio name="radio2c" value="four" checked disabled
+                    >Radio button disabled checked</rux-radio
+                >
+            </li>
+        </ul>
+    </div>
+`
+
+RadioButtons.story = {
+    parameters: {
+        exports: {
+            render,
+            html,
+        },
+        readme: {
+            sidebar: radioButtonsReadme,
+        },
     },
 }

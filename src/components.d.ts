@@ -10996,6 +10996,40 @@ export namespace Components {
          */
         "value"?: number;
     }
+    interface RuxRadio {
+        /**
+          * Toggles checked state of a radio
+         */
+        "checked": boolean;
+        /**
+          * Disables the radio via HTML disabled attribute. Radio takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled": boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Sets the radio as invalid
+         */
+        "invalid": boolean;
+        /**
+          * The radio name
+         */
+        "name": string;
+        /**
+          * Sets the radio as required
+         */
+        "required": boolean;
+        /**
+          * The radio value
+         */
+        "value": string;
+    }
     interface RuxSegmentedButton {
         /**
           * Items in this Array are the individual button segments.
@@ -17574,6 +17608,12 @@ declare global {
         prototype: HTMLRuxProgressElement;
         new (): HTMLRuxProgressElement;
     };
+    interface HTMLRuxRadioElement extends Components.RuxRadio, HTMLStencilElement {
+    }
+    var HTMLRuxRadioElement: {
+        prototype: HTMLRuxRadioElement;
+        new (): HTMLRuxRadioElement;
+    };
     interface HTMLRuxSegmentedButtonElement extends Components.RuxSegmentedButton, HTMLStencilElement {
     }
     var HTMLRuxSegmentedButtonElement: {
@@ -18749,6 +18789,7 @@ declare global {
         "rux-notification": HTMLRuxNotificationElement;
         "rux-pop-up-menu": HTMLRuxPopUpMenuElement;
         "rux-progress": HTMLRuxProgressElement;
+        "rux-radio": HTMLRuxRadioElement;
         "rux-segmented-button": HTMLRuxSegmentedButtonElement;
         "rux-status": HTMLRuxStatusElement;
         "rux-switch": HTMLRuxSwitchElement;
@@ -29778,6 +29819,48 @@ declare namespace LocalJSX {
          */
         "value"?: number;
     }
+    interface RuxRadio {
+        /**
+          * Toggles checked state of a radio
+         */
+        "checked"?: boolean;
+        /**
+          * Disables the radio via HTML disabled attribute. Radio takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled"?: boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Sets the radio as invalid
+         */
+        "invalid"?: boolean;
+        /**
+          * The radio name
+         */
+        "name"?: string;
+        /**
+          * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
+         */
+        "onRux-change"?: (event: CustomEvent<any>) => void;
+        /**
+          * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+         */
+        "onRux-input"?: (event: CustomEvent<any>) => void;
+        /**
+          * Sets the radio as required
+         */
+        "required"?: boolean;
+        /**
+          * The radio value
+         */
+        "value"?: string;
+    }
     interface RuxSegmentedButton {
         /**
           * Items in this Array are the individual button segments.
@@ -31009,6 +31092,7 @@ declare namespace LocalJSX {
         "rux-notification": RuxNotification;
         "rux-pop-up-menu": RuxPopUpMenu;
         "rux-progress": RuxProgress;
+        "rux-radio": RuxRadio;
         "rux-segmented-button": RuxSegmentedButton;
         "rux-status": RuxStatus;
         "rux-switch": RuxSwitch;
@@ -32104,6 +32188,7 @@ declare module "@stencil/core" {
             "rux-notification": LocalJSX.RuxNotification & JSXBase.HTMLAttributes<HTMLRuxNotificationElement>;
             "rux-pop-up-menu": LocalJSX.RuxPopUpMenu & JSXBase.HTMLAttributes<HTMLRuxPopUpMenuElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
+            "rux-radio": LocalJSX.RuxRadio & JSXBase.HTMLAttributes<HTMLRuxRadioElement>;
             "rux-segmented-button": LocalJSX.RuxSegmentedButton & JSXBase.HTMLAttributes<HTMLRuxSegmentedButtonElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
             "rux-switch": LocalJSX.RuxSwitch & JSXBase.HTMLAttributes<HTMLRuxSwitchElement>;
