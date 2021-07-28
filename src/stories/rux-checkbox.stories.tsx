@@ -19,9 +19,6 @@ export const Checkboxes = () => {
                 margin-bottom: 0;
                 list-style: none;
             }
-            section ul li:not(:last-child) {
-                margin-bottom: 10px;
-            }
         </style>
         <section>
             <ul>

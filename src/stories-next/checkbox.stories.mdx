@@ -20,7 +20,7 @@ A Checkbox describes a state or value that can be either "True or False.” Chec
 
 
 export const Checkboxes = () => {
-    return html` <style>
+    return htmlreturn html` <style>
             section {
                 display: flex;
                 justify-content: center;
@@ -30,9 +30,6 @@ export const Checkboxes = () => {
                 margin-right: 1rem;
                 margin-bottom: 0;
                 list-style: none;
-            }
-            section ul li:not(:last-child) {
-                margin-bottom: 10px;
             }
         </style>
         <section>
