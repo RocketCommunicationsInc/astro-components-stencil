@@ -1,4 +1,10 @@
 :host {
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
     box-sizing: border-box;
     /**
     * @prop --controlLabelColor: Label text color
@@ -38,7 +44,7 @@
 .rux-checkbox {
     display: flex;
     position: relative;
-    margin: 0 0 0.625rem 0;
+    margin: 0 0 1rem 0;
     line-height: 1.2;
 
     input[type='checkbox'] {
@@ -81,10 +87,10 @@
             + label {
                 &::after {
                     position: absolute;
-                    top: 5px;
                     display: flex;
                     content: '';
 
+                    top: 5px;
                     height: 6px;
                     width: 12px;
                     left: 3px;
@@ -93,7 +99,7 @@
                     transform: rotate(125deg);
                 }
                 &::before {
-                    border-color: var(--controlSelectedOutlineBorderColor);
+                    border-color: var(--controlBorderColor);
                 }
             }
         }
@@ -106,25 +112,22 @@
         }
     }
 
-    input[invalid] &:hover {
-        input[type='checkbox']:not(:disabled) {
-            + label {
-                &::before {
-                    border-color: var(--controlHoverBorderColor);
-                }
+    input[type='checkbox']:not(:disabled):hover {
+        + label {
+            &::before {
+                border-color: var(--controlHoverBorderColor);
             }
         }
     }
 
     input[indeterminate]:checked + label::after {
         width: 10px !important;
-        height: 4px !important;
+        height: 5px !important;
         transform: rotate(0deg) !important;
         border-right: 0px !important;
         border-top: 0px !important;
-        border: 0px !important;
         border-bottom: 2px solid var(--controlTextColor) !important;
-        left: 5px !important;
+        left: 4px !important;
     }
 
     &--has-error {
