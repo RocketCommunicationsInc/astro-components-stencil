@@ -33,17 +33,17 @@ export class RuxCheckbox {
     /**
      * The checkbox name
      */
-    @Prop({ reflect: true, mutable: true }) checked = false
+    @Prop({ reflect: true, mutable: true }) checked: boolean = false
 
     /**
      * Toggles indeterminate state of a checkbox
      */
-    @Prop({ reflect: true }) indeterminate = false
+    @Prop({ reflect: true }) indeterminate: boolean = false
 
     /**
      * Disables the checkbox via HTML disabled attribute. Checkbox takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
      */
-    @Prop({ reflect: true }) disabled = false
+    @Prop({ reflect: true }) disabled: boolean = false
 
     /**
      * Sets the input as required
@@ -72,11 +72,26 @@ export class RuxCheckbox {
         this.onInput = this.onInput.bind(this)
     }
 
+    componentDidLoad() {
+        const input = this.el.shadowRoot?.querySelector(
+            'input'
+        ) as HTMLInputElement
+
+        if (input && this.indeterminate) {
+            // indeterminate property does not exist in HTML but is accessible via js
+            input.setAttribute(
+                'indeterminate',
+                this.indeterminate ? 'indeterminate' : ''
+            )
+        }
+    }
+
     private onChange(e: Event): void {
         const target = e.target as HTMLInputElement
         this.checked = target.checked
         this.ruxChange.emit(this.checked)
     }
+
     private onInput(e: Event) {
         const target = e.target as HTMLInputElement
         this.value = target.value
@@ -90,7 +105,6 @@ export class RuxCheckbox {
             disabled,
             errorText,
             helpText,
-            indeterminate,
             invalid,
             name,
             required,
@@ -116,7 +130,6 @@ export class RuxCheckbox {
                         required={required}
                         checked={checked}
                         value={value}
-                        indeterminate={indeterminate}
                         onChange={this.onChange}
                         onInput={this.onInput}
                     />

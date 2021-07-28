@@ -1,4 +1,5 @@
 :host {
+    box-sizing: border-box;
     /**
     * @prop --controlLabelColor: Label text color
     */
@@ -115,14 +116,15 @@
         }
     }
 
-    input[indeterminate]input[type='checkbox']:checked + label::after {
-        width: 10px;
-        height: 5px;
-        transform: rotate(0deg);
-        border-right: 0px;
-        border-top: 0px;
-        border-bottom: 2px solid var(--controlTextColor);
-        left: 5px;
+    input[indeterminate]:checked + label::after {
+        width: 10px !important;
+        height: 4px !important;
+        transform: rotate(0deg) !important;
+        border-right: 0px !important;
+        border-top: 0px !important;
+        border: 0px !important;
+        border-bottom: 2px solid var(--controlTextColor) !important;
+        left: 5px !important;
     }
 
     &--has-error {
