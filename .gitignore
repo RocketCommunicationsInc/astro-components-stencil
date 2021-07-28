@@ -3,7 +3,6 @@ www/
 loader/
 storybook-static/
 docs.json
-src/components.d.ts
 
 *~
 *.sw[mnpcod]
