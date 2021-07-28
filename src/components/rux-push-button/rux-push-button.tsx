@@ -46,9 +46,7 @@ export class RuxPushButton {
 
     @Watch('checked')
     checkedChanged(checked: boolean) {
-        this.ruxChange.emit({
-            checked: checked,
-        })
+        this.ruxChange.emit({ checked })
     }
 
     render() {

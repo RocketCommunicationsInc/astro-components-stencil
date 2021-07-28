@@ -2,7 +2,7 @@ import { newSpecPage } from '@stencil/core/testing'
 import { RuxPushButton } from '../rux-push-button'
 
 describe('rux-push-button', () => {
-    it('renders', async () => {
+    it('should render the default push button', async () => {
         const page = await newSpecPage({
             components: [RuxPushButton],
             html: `<rux-push-button></rux-push-button>`,
@@ -17,22 +17,27 @@ describe('rux-push-button', () => {
     `)
     })
 
-    it('auto increments its own unique id', async () => {
+    it('should auto increments its own unique id', async () => {
         const page = await newSpecPage({
             components: [RuxPushButton],
             html: `<rux-push-button></rux-push-button> <rux-push-button></rux-push-button>`,
         })
+        const firstPushButton = page.body.querySelectorAll('rux-push-button')[0]
         const secondPushButton = page.body.querySelectorAll(
             'rux-push-button'
         )[1]
-
-        const inputId = secondPushButton.shadowRoot
+        const firstInputId = firstPushButton.shadowRoot
             .querySelector('input')
             .getAttribute('id')
-        expect(inputId).toBe('rux-push-button-2')
+        const secondInputId = secondPushButton.shadowRoot
+            .querySelector('input')
+            .getAttribute('id')
+
+        expect(secondInputId).toBe('rux-push-button-2')
+        expect(firstInputId).not.toBe('rux-push-button-2')
     })
 
-    it('handles event', async () => {
+    it('should call handleClick on click event', async () => {
         const page = await newSpecPage({
             components: [RuxPushButton],
             html: `<rux-push-button></rux-push-button>`,
@@ -44,7 +49,7 @@ describe('rux-push-button', () => {
         expect(handleClick).toHaveBeenCalled()
     })
 
-    it('does not become checked when disabled', async () => {
+    it('shoudl not become checked when clicked while disabled', async () => {
         const page = await newSpecPage({
             components: [RuxPushButton],
             html: `<rux-push-button disabled></rux-push-button>`,
