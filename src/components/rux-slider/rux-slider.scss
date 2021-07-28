@@ -108,9 +108,9 @@ input[type='range']:focus {
     align-items: center;
     max-width: 100%;
     /* width: 100%; */
-    cursor: var(--trackCursor, pointer);
+    cursor: var(--sliderTrackCursor, pointer);
     border-radius: 2.5px;
-    min-height: var(--trackHeight);
+    min-height: var(--sliderTrackHeight);
     max-height: 5px;
     background-image: linear-gradient(
             var(--sliderTrackBackgroundColor),
@@ -142,9 +142,9 @@ input[type='range']:focus {
     align-items: center;
     max-width: 100%;
     /* width: 100%; */
-    cursor: var(--trackCursor, pointer);
+    cursor: var(--sliderTrackCursor, pointer);
     border-radius: 2.5px;
-    min-height: var(--trackHeight);
+    min-height: var(--sliderTrackHeight);
     max-height: 5px;
     background-image: linear-gradient(
             var(--sliderTrackBackgroundColor),
@@ -222,9 +222,9 @@ input[type='range']:focus {
 .rux-range::-moz-range-thumb {
     -moz-appearance: none;
     position: relative;
-    top: calc(var(--thumbSize) / -2.7);
-    height: var(--thumbSize);
-    width: var(--thumbSize);
+    top: calc(var(--sliderThumbSize) / -2.7);
+    height: var(--sliderThumbSize);
+    width: var(--sliderThumbSize);
     border-radius: 100%;
     border: var(--sliderThumbBorderSize) solid var(--sliderThumbBorderColor);
     background-color: var(--sliderThumbBackgroundColor);
@@ -247,9 +247,9 @@ input:-moz-focusring {
 /* Thumb -> Ms */
 .rux-range::-ms-thumb {
     position: relative;
-    top: calc(var(--thumbSize) / -2.7);
-    height: var(--thumbSize);
-    width: var(--thumbSize);
+    top: calc(var(--sliderThumbSize) / -2.7);
+    height: var(--sliderThumbSize);
+    width: var(--sliderThumbSize);
     border-radius: 100%;
     border: var(--sliderThumbBorderSize) solid var(--sliderThumbBorderColor);
     background-color: var(--sliderThumbBackgroundColor);

@@ -27,7 +27,6 @@
 
 | Name                                   | Description                                                 |
 | -------------------------------------- | ----------------------------------------------------------- |
-| `--`                                   |                                                             |
 | `--sliderHoverThumbBackgroundColor`    | Background color of the slider's thumb in a hover state.    |
 | `--sliderHoverThumbBorderColor`        | Border color of the slider's thumb in a hover state.        |
 | `--sliderSelectedThumbBackgroundColor` | Background color of the slider's thumb in a selected state. |

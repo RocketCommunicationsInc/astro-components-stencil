@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-27T22:36:09",
+    "timestamp": "2021-07-28T17:11:05",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -75572,11 +75572,6 @@
             ],
             "listeners": [],
             "styles": [
-                {
-                    "name": "--",
-                    "annotation": "prop",
-                    "docs": ""
-                },
                 {
                     "name": "--sliderHoverThumbBackgroundColor",
                     "annotation": "prop",
