@@ -10973,6 +10973,40 @@ export namespace Components {
          */
         "label": string;
     }
+    interface RuxRadio {
+        /**
+          * Toggles checked state of a radio
+         */
+        "checked": boolean;
+        /**
+          * Disables the radio via HTML disabled attribute. Radio takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled": boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Sets the radio as invalid
+         */
+        "invalid": boolean;
+        /**
+          * The radio name
+         */
+        "name": string;
+        /**
+          * Sets the radio as required
+         */
+        "required": boolean;
+        /**
+          * The radio value
+         */
+        "value": string;
+    }
     interface RuxSegmentedButton {
         /**
           * Items in this Array are the individual button segments.
@@ -17581,6 +17615,12 @@ declare global {
         prototype: HTMLRuxPushButtonElement;
         new (): HTMLRuxPushButtonElement;
     };
+    interface HTMLRuxRadioElement extends Components.RuxRadio, HTMLStencilElement {
+    }
+    var HTMLRuxRadioElement: {
+        prototype: HTMLRuxRadioElement;
+        new (): HTMLRuxRadioElement;
+    };
     interface HTMLRuxSegmentedButtonElement extends Components.RuxSegmentedButton, HTMLStencilElement {
     }
     var HTMLRuxSegmentedButtonElement: {
@@ -18762,6 +18802,7 @@ declare global {
         "rux-pop-up-menu": HTMLRuxPopUpMenuElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-push-button": HTMLRuxPushButtonElement;
+        "rux-radio": HTMLRuxRadioElement;
         "rux-segmented-button": HTMLRuxSegmentedButtonElement;
         "rux-select": HTMLRuxSelectElement;
         "rux-status": HTMLRuxStatusElement;
@@ -29764,6 +29805,48 @@ declare namespace LocalJSX {
          */
         "onRux-change"?: (event: CustomEvent<PushButtonChangeEvent>) => void;
     }
+    interface RuxRadio {
+        /**
+          * Toggles checked state of a radio
+         */
+        "checked"?: boolean;
+        /**
+          * Disables the radio via HTML disabled attribute. Radio takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled"?: boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Sets the radio as invalid
+         */
+        "invalid"?: boolean;
+        /**
+          * The radio name
+         */
+        "name"?: string;
+        /**
+          * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
+         */
+        "onRux-change"?: (event: CustomEvent<any>) => void;
+        /**
+          * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+         */
+        "onRux-input"?: (event: CustomEvent<any>) => void;
+        /**
+          * Sets the radio as required
+         */
+        "required"?: boolean;
+        /**
+          * The radio value
+         */
+        "value"?: string;
+    }
     interface RuxSegmentedButton {
         /**
           * Items in this Array are the individual button segments.
@@ -31029,6 +31112,7 @@ declare namespace LocalJSX {
         "rux-pop-up-menu": RuxPopUpMenu;
         "rux-progress": RuxProgress;
         "rux-push-button": RuxPushButton;
+        "rux-radio": RuxRadio;
         "rux-segmented-button": RuxSegmentedButton;
         "rux-select": RuxSelect;
         "rux-status": RuxStatus;
@@ -32125,6 +32209,7 @@ declare module "@stencil/core" {
             "rux-pop-up-menu": LocalJSX.RuxPopUpMenu & JSXBase.HTMLAttributes<HTMLRuxPopUpMenuElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-push-button": LocalJSX.RuxPushButton & JSXBase.HTMLAttributes<HTMLRuxPushButtonElement>;
+            "rux-radio": LocalJSX.RuxRadio & JSXBase.HTMLAttributes<HTMLRuxRadioElement>;
             "rux-segmented-button": LocalJSX.RuxSegmentedButton & JSXBase.HTMLAttributes<HTMLRuxSegmentedButtonElement>;
             "rux-select": LocalJSX.RuxSelect & JSXBase.HTMLAttributes<HTMLRuxSelectElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
