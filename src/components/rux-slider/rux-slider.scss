@@ -173,7 +173,7 @@ input[type='range']:focus {
 .rux-range::-webkit-slider-thumb {
     -webkit-appearance: none;
     position: relative;
-    top: calc(var(--sliderThumbSize) / -2.7);
+    top: calc(var(--sliderThumbSize) / -3);
     height: var(--sliderThumbSize);
     width: var(--sliderThumbSize);
     border-radius: 100%;
@@ -223,7 +223,7 @@ input[type='range']:focus {
 .rux-range::-moz-range-thumb {
     -moz-appearance: none;
     position: relative;
-    top: calc(var(--sliderThumbSize) / -2.7);
+    top: calc(var(--sliderThumbSize) / -3);
     height: var(--sliderThumbSize);
     width: var(--sliderThumbSize);
     border-radius: 100%;
@@ -248,7 +248,7 @@ input:-moz-focusring {
 /* Thumb -> Ms */
 .rux-range::-ms-thumb {
     position: relative;
-    top: calc(var(--sliderThumbSize) / -2.7);
+    top: calc(var(--sliderThumbSize) / -3);
     height: var(--sliderThumbSize);
     width: var(--sliderThumbSize);
     border-radius: 100%;

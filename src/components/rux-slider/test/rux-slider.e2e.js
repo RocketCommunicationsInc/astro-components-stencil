@@ -7,4 +7,7 @@ describe('rux-slider', () => {
     it('renders', async () => {
         cy.get('rux-slider').should('have.class', 'hydrated')
     })
+    it('slides', () => {
+        cy.get('rux-slider').click(20, 10)
+    })
 })
