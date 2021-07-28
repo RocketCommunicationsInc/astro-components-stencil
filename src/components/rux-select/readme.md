@@ -62,16 +62,15 @@ Select Menu renders a native `<select>` element and allows native `<option>` and
 
 ## Events
 
-| Event                | Description                                           | Type                |
-| -------------------- | ----------------------------------------------------- | ------------------- |
-| `rux-select-changed` | Event Emitted when the Value of the Select is Changed | `CustomEvent<void>` |
+| Event        | Description                                           | Type                |
+| ------------ | ----------------------------------------------------- | ------------------- |
+| `rux-change` | Event Emitted when the Value of the Select is Changed | `CustomEvent<void>` |
 
 
 ## CSS Custom Properties
 
 | Name                                     | Description                                   |
 | ---------------------------------------- | --------------------------------------------- |
-| `--fontFamily`                           | Font Family for the Application               |
 | `--selecMenutInactiveCaret`              | Caret Shown When the Select Menu is Closed    |
 | `--selectMenuActiveCaret`                | Caret Shown When the Select Menu is Open      |
 | `--selectMenuBackgroundColor`            | Background Color of the Select Input          |

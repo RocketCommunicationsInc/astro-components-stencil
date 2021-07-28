@@ -29766,7 +29766,7 @@ declare namespace LocalJSX {
         /**
           * Event Emitted when the Value of the Select is Changed
          */
-        "onRux-select-changed"?: (event: CustomEvent<void>) => void;
+        "onRux-change"?: (event: CustomEvent<void>) => void;
         /**
           * Sets the field as required
          */
