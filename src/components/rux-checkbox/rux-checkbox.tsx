@@ -31,7 +31,7 @@ export class RuxCheckbox {
     @Prop({ reflect: true, mutable: true }) value: string = ''
 
     /**
-     * The checkbox name
+     * Toggles checked state of a checkbox
      */
     @Prop({ reflect: true, mutable: true }) checked: boolean = false
 

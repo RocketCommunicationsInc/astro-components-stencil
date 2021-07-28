@@ -41,7 +41,7 @@ export namespace Components {
     }
     interface RuxCheckbox {
         /**
-          * The checkbox name
+          * Toggles checked state of a checkbox
          */
         "checked": boolean;
         /**
@@ -18799,7 +18799,7 @@ declare namespace LocalJSX {
     }
     interface RuxCheckbox {
         /**
-          * The checkbox name
+          * Toggles checked state of a checkbox
          */
         "checked"?: boolean;
         /**
