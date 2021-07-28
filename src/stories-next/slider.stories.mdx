@@ -23,6 +23,7 @@ A Slider allows users to choose from a range of continuous and discrete values. 
 
 export const Default = (args) => {
     return html`
+    <div style="padding: 5%">
         <rux-slider
         .max="${args.max}"
         .min="${args.min}"
@@ -30,6 +31,7 @@ export const Default = (args) => {
         .val="${args.val}"
         .disabled="${args.disabled}"
         ></rux-slider>
+    </div>
     `
 }
 
@@ -56,13 +58,15 @@ export const Default = (args) => {
 
 export const Disabled = (args) => {
     return html`
-    <rux-slider
-        .max="${args.max}"
-        .min="${args.min}"
-        .step="${args.step}"
-        .val="${args.val}"
-        .disabled="${args.disabled}"
-    ></rux-slider>
+    <div style="padding: 5%">
+        <rux-slider
+            .max="${args.max}"
+            .min="${args.min}"
+            .step="${args.step}"
+            .val="${args.val}"
+            .disabled="${args.disabled}"
+        ></rux-slider>
+    </div>
     `
 }
 
