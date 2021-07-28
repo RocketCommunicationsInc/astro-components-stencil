@@ -25,7 +25,7 @@ export class RuxSelect {
      * Id for the Select Input
      */
     @Prop({ attribute: 'input-id' })
-    inputId?: string = `rux-select-${selectIds++}`
+    inputId?: string
 
     /**
      * Id for the Label
@@ -82,5 +82,3 @@ export class RuxSelect {
         )
     }
 }
-
-let selectIds = 0
