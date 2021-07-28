@@ -115,7 +115,7 @@
         }
     }
 
-    &--indeterminate input[type='checkbox']:checked + label::after {
+    input[indeterminate]input[type='checkbox']:checked + label::after {
         width: 10px;
         height: 5px;
         transform: rotate(0deg);

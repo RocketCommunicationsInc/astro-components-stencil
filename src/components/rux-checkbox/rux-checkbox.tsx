@@ -90,7 +90,6 @@ export class RuxCheckbox {
                 <div
                     class={{
                         'rux-checkbox': true,
-                        'rux-checkbox--indeterminate': indeterminate,
                         'rux-checkbox--invalid': invalid,
                         'rux-checkbox--has-error': required,
                         'rux-checkbox--has-text':
@@ -106,6 +105,7 @@ export class RuxCheckbox {
                         checked={checked}
                         value={value}
                         onChange={this.onChange}
+                        indeterminate={indeterminate}
                     />
                     <label htmlFor={checkboxId}>
                         <slot></slot>
