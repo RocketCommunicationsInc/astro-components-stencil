@@ -102,6 +102,71 @@ input[type='range']:focus {
     opacity: var(--disabledOpacity, 0.4);
     cursor: var(--disabledCursor);
 }
+/* Track -> Moz */
+.rux-range::-moz-range-track {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    /* width: 100%; */
+    cursor: var(--trackCursor, pointer);
+    border-radius: 2.5px;
+    min-height: var(--trackHeight);
+    max-height: 5px;
+    background-image: linear-gradient(
+            var(--sliderTrackBackgroundColor),
+            var(--sliderTrackBackgroundColor)
+        ),
+        linear-gradient(
+            var(--sliderTrackBackgroundColor),
+            var(--sliderTrackBackgroundColor)
+        );
+    background-size: calc(1% * var(--value)) 5px, 100% 1px;
+    background-repeat: no-repeat no-repeat;
+    background-position: left, right;
+}
+.rux-range:disabled::-moz-range-track,
+.rux-range:disabled::-moz-range-progress {
+    opacity: var(--disabledOpacity, 0.4);
+    cursor: var(--disabledCursor);
+}
+.rux-range::-moz-range-progress {
+    background-color: var(--sliderSelectedTrackBackgroundColor);
+}
+.rux-input:disabled {
+    opacity: var(--disabledOpacity, 0.4);
+    cursor: var(--disabledCursor);
+}
+/* Track -> Ms */
+.rux-range::-ms-track {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    /* width: 100%; */
+    cursor: var(--trackCursor, pointer);
+    border-radius: 2.5px;
+    min-height: var(--trackHeight);
+    max-height: 5px;
+    background-image: linear-gradient(
+            var(--sliderTrackBackgroundColor),
+            var(--sliderTrackBackgroundColor)
+        ),
+        linear-gradient(
+            var(--sliderTrackBackgroundColor),
+            var(--sliderTrackBackgroundColor)
+        );
+    background-size: calc(1% * var(--value)) 5px, 100% 1px;
+    background-repeat: no-repeat no-repeat;
+    background-position: left, right;
+}
+.rux-range::-ms-fill-lower {
+    height: 2px;
+    background-color: rgb(77, 172, 255);
+}
+.rux-range::-ms-fill-upper {
+    height: 2px;
+    background-color: var(--sliderTrackBackgroundColor);
+}
+
 /*****  Thumb ******/
 /* Thumb -> Webkit */
 .rux-range::-webkit-slider-thumb {
@@ -152,4 +217,46 @@ input[type='range']:focus {
 .rux-range:not(:disabled)::-webkit-slider-thumb:focus,
 .rux-range:not(:disabled)::-webkit-slider-thumb:hover:not(:active) {
     background-color: var(--sliderHoverThumbBackgroundColor);
+}
+/* Thumb -> Moz */
+.rux-range::-moz-range-thumb {
+    -moz-appearance: none;
+    position: relative;
+    top: calc(var(--thumbSize) / -2.7);
+    height: var(--thumbSize);
+    width: var(--thumbSize);
+    border-radius: 100%;
+    border: var(--sliderThumbBorderSize) solid var(--sliderThumbBorderColor);
+    background-color: var(--sliderThumbBackgroundColor);
+    cursor: pointer;
+}
+.rux-range:not(:disabled)::-moz-range-thumb:active {
+    border-color: var(--sliderSelectedThumbBorderColor);
+    background-color: var(--backgroundColor);
+}
+.rux-range::-moz-range-thumb:hover {
+    border-color: var(--sliderHoverThumbBorderColor);
+}
+input:-moz-focusring {
+    outline: none;
+}
+.rux-range:disabled::-moz-range-thumb {
+    opacity: var(--disabledOpacity, 0.4);
+    cursor: var(--disabledCursor);
+}
+/* Thumb -> Ms */
+.rux-range::-ms-thumb {
+    position: relative;
+    top: calc(var(--thumbSize) / -2.7);
+    height: var(--thumbSize);
+    width: var(--thumbSize);
+    border-radius: 100%;
+    border: var(--sliderThumbBorderSize) solid var(--sliderThumbBorderColor);
+    background-color: var(--sliderThumbBackgroundColor);
+    cursor: pointer;
+    z-index: 6;
+}
+.rux-range:disabled::-ms-thumb {
+    opacity: 0.4;
+    cursor: not-allowed;
 }
