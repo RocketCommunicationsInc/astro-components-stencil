@@ -8,6 +8,7 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { Classification, Status } from "./common/commonTypes.module";
 import { LogRow } from "./components/rux-log/rux-log.model";
 import { RangeItem } from "./components/rux-monitoring-progress-icon/rux-monitoring-progress-icon";
+import { PushButtonChangeEvent } from "./components/rux-push-button/rux-push-button.model";
 import { SegmentedButton } from "./components/rux-segmented-button/rux-segmented-button.model";
 import { SwitchChangeEvent } from "./components/rux-switch/rux-switch.model";
 export namespace Components {
@@ -10960,6 +10961,20 @@ export namespace Components {
          */
         "value"?: number;
     }
+    interface RuxPushButton {
+        /**
+          * Checks the push button via HTML `checked` attribute. Push button takes on a distinct "enabled" or "selected" visual state.
+         */
+        "checked": boolean;
+        /**
+          * Disables the push button via HTML `disabled` attribute. Button takes on a distinct disabled visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled": boolean;
+        /**
+          * The label of the push button. Can be overridden by placing content in the default slot of the rusx-push-button component.
+         */
+        "label": string;
+    }
     interface RuxSegmentedButton {
         /**
           * Items in this Array are the individual button segments.
@@ -10969,6 +10984,36 @@ export namespace Components {
           * When passed in on load, this selects the first button segment with a matching label. When the selected segment changes, this property updates with the currently selected value, which reflects back to the component attribute. If no button segment label matches this string, then no segment is selected. This value takes priority over setting selected boolean property on the items in the data array.
          */
         "selected": string;
+    }
+    interface RuxSelect {
+        /**
+          * Disables the item
+         */
+        "disabled": boolean;
+        /**
+          * Id for the Select Input
+         */
+        "inputId"?: string;
+        /**
+          * Sets the Select as Invalid for Custom Validation Usage
+         */
+        "invalid": boolean;
+        /**
+          * Sets the Label for the Select
+         */
+        "label"?: string;
+        /**
+          * Id for the Label
+         */
+        "labelId"?: string;
+        /**
+          * Sets the Name of the Input Element
+         */
+        "name"?: string;
+        /**
+          * Sets the field as required
+         */
+        "required": boolean;
     }
     interface RuxStatus {
         /**
@@ -17532,11 +17577,23 @@ declare global {
         prototype: HTMLRuxProgressElement;
         new (): HTMLRuxProgressElement;
     };
+    interface HTMLRuxPushButtonElement extends Components.RuxPushButton, HTMLStencilElement {
+    }
+    var HTMLRuxPushButtonElement: {
+        prototype: HTMLRuxPushButtonElement;
+        new (): HTMLRuxPushButtonElement;
+    };
     interface HTMLRuxSegmentedButtonElement extends Components.RuxSegmentedButton, HTMLStencilElement {
     }
     var HTMLRuxSegmentedButtonElement: {
         prototype: HTMLRuxSegmentedButtonElement;
         new (): HTMLRuxSegmentedButtonElement;
+    };
+    interface HTMLRuxSelectElement extends Components.RuxSelect, HTMLStencilElement {
+    }
+    var HTMLRuxSelectElement: {
+        prototype: HTMLRuxSelectElement;
+        new (): HTMLRuxSelectElement;
     };
     interface HTMLRuxStatusElement extends Components.RuxStatus, HTMLStencilElement {
     }
@@ -18706,7 +18763,9 @@ declare global {
         "rux-notification": HTMLRuxNotificationElement;
         "rux-pop-up-menu": HTMLRuxPopUpMenuElement;
         "rux-progress": HTMLRuxProgressElement;
+        "rux-push-button": HTMLRuxPushButtonElement;
         "rux-segmented-button": HTMLRuxSegmentedButtonElement;
+        "rux-select": HTMLRuxSelectElement;
         "rux-status": HTMLRuxStatusElement;
         "rux-switch": HTMLRuxSwitchElement;
         "rux-tab": HTMLRuxTabElement;
@@ -29691,6 +29750,24 @@ declare namespace LocalJSX {
          */
         "value"?: number;
     }
+    interface RuxPushButton {
+        /**
+          * Checks the push button via HTML `checked` attribute. Push button takes on a distinct "enabled" or "selected" visual state.
+         */
+        "checked"?: boolean;
+        /**
+          * Disables the push button via HTML `disabled` attribute. Button takes on a distinct disabled visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
+         */
+        "disabled"?: boolean;
+        /**
+          * The label of the push button. Can be overridden by placing content in the default slot of the rusx-push-button component.
+         */
+        "label"?: string;
+        /**
+          * Emitted when the checked property has changed.
+         */
+        "onRux-change"?: (event: CustomEvent<PushButtonChangeEvent>) => void;
+    }
     interface RuxSegmentedButton {
         /**
           * Items in this Array are the individual button segments.
@@ -29704,6 +29781,40 @@ declare namespace LocalJSX {
           * When passed in on load, this selects the first button segment with a matching label. When the selected segment changes, this property updates with the currently selected value, which reflects back to the component attribute. If no button segment label matches this string, then no segment is selected. This value takes priority over setting selected boolean property on the items in the data array.
          */
         "selected"?: string;
+    }
+    interface RuxSelect {
+        /**
+          * Disables the item
+         */
+        "disabled"?: boolean;
+        /**
+          * Id for the Select Input
+         */
+        "inputId"?: string;
+        /**
+          * Sets the Select as Invalid for Custom Validation Usage
+         */
+        "invalid"?: boolean;
+        /**
+          * Sets the Label for the Select
+         */
+        "label"?: string;
+        /**
+          * Id for the Label
+         */
+        "labelId"?: string;
+        /**
+          * Sets the Name of the Input Element
+         */
+        "name"?: string;
+        /**
+          * Event Emitted when the Value of the Select is Changed
+         */
+        "onRux-change"?: (event: CustomEvent<void>) => void;
+        /**
+          * Sets the field as required
+         */
+        "required"?: boolean;
     }
     interface RuxStatus {
         /**
@@ -30921,7 +31032,9 @@ declare namespace LocalJSX {
         "rux-notification": RuxNotification;
         "rux-pop-up-menu": RuxPopUpMenu;
         "rux-progress": RuxProgress;
+        "rux-push-button": RuxPushButton;
         "rux-segmented-button": RuxSegmentedButton;
+        "rux-select": RuxSelect;
         "rux-status": RuxStatus;
         "rux-switch": RuxSwitch;
         "rux-tab": RuxTab;
@@ -32015,7 +32128,9 @@ declare module "@stencil/core" {
             "rux-notification": LocalJSX.RuxNotification & JSXBase.HTMLAttributes<HTMLRuxNotificationElement>;
             "rux-pop-up-menu": LocalJSX.RuxPopUpMenu & JSXBase.HTMLAttributes<HTMLRuxPopUpMenuElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
+            "rux-push-button": LocalJSX.RuxPushButton & JSXBase.HTMLAttributes<HTMLRuxPushButtonElement>;
             "rux-segmented-button": LocalJSX.RuxSegmentedButton & JSXBase.HTMLAttributes<HTMLRuxSegmentedButtonElement>;
+            "rux-select": LocalJSX.RuxSelect & JSXBase.HTMLAttributes<HTMLRuxSelectElement>;
             "rux-status": LocalJSX.RuxStatus & JSXBase.HTMLAttributes<HTMLRuxStatusElement>;
             "rux-switch": LocalJSX.RuxSwitch & JSXBase.HTMLAttributes<HTMLRuxSwitchElement>;
             "rux-tab": LocalJSX.RuxTab & JSXBase.HTMLAttributes<HTMLRuxTabElement>;
