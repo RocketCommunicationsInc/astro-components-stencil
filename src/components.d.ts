@@ -165,7 +165,7 @@ export namespace Components {
          */
         "icon": string;
         /**
-          * The icon label
+          * The icon SVG's title attribute. Used for accessibility. If none is provided, the icon name will be used.
          */
         "label"?: string;
         /**
@@ -18878,7 +18878,7 @@ declare namespace LocalJSX {
          */
         "icon": string;
         /**
-          * The icon label
+          * The icon SVG's title attribute. Used for accessibility. If none is provided, the icon name will be used.
          */
         "label"?: string;
         /**
