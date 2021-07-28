@@ -1,4 +1,57 @@
-# rux-slider
+# Slider
+
+A Slider allows users to choose from a range of continuous and discrete values. The Slider displays the range of possible values and the Slider’s indicator displays the current value.
+
+## Guidelines
+
+- [Astro UXDS: Slider](http://www.astrouxds.com/ui-components/slider)
+- [MDN: HTML Input Range](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
+
+## Web Components Usage
+
+### 1. Installation
+
+#### Install the Astro UXDS Slider package via Command Line (Preferred Method)
+
+```sh
+npm i -save @astrouxds/rux-slider
+```
+
+You may use Yarn, NPM, or your Node package manager of choice. The `--save` flag adds this component as a dependency in your `package.json` file.
+
+#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components/) source to your project.
+
+Via CLI:
+
+```sh
+git clone https://github.com/RocketCommunicationsInc/astro-components.git
+```
+
+Or, [download the Astro UXDS Components as a .zip](https://github.com/RocketCommunicationsInc/astro-components/archive/master.zip)
+
+### 2. Import the Astro Slider Web Component
+
+This example assumes you're using the NPM package in `node_modules`. Otherwise, import the component using the path to the Astro Components directory in your project.
+
+```javascript
+import { RuxSlider } from "@astrouxds/rux-slider/rux-slider.js";
+```
+
+### 3. Render the Astro Slider Web Component
+
+Pass properties via attributes similar to the native [HTML Input Range](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range) attributes:
+
+```xml
+<rux-slider
+  min="0"
+  max="400"
+  step="5"
+  val="200"
+  disabled
+  >
+</rux-slider>
+```
+
 
 
 
