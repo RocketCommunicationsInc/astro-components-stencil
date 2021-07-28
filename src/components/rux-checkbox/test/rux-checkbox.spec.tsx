@@ -43,13 +43,15 @@ describe('rux-checkbox', () => {
             html: `<rux-checkbox></rux-checkbox>`,
         })
         expect(page.root).toEqualHtml(`
-      <rux-checkbox>
+      <rux-checkbox value="">
         <mock:shadow-root>
-          <div class="rux-checkbox">
-              <input id="rux-checkbox-2" type="checkbox">
-              <label htmlfor="">
-                <slot></slot>
-              </label>
+          <div class="rux-form-field">
+            <div class="rux-checkbox">
+                <input id="rux-checkbox-2" type="checkbox" value="">
+                <label htmlfor="rux-checkbox-2">
+                  <slot></slot>
+                </label>
+            </div>
           </div>
         </mock:shadow-root>
       </rux-checkbox>
