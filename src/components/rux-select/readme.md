@@ -49,15 +49,15 @@ Select Menu renders a native `<select>` element and allows native `<option>` and
 
 ## Properties
 
-| Property   | Attribute  | Description                                            | Type                  | Default                       |
-| ---------- | ---------- | ------------------------------------------------------ | --------------------- | ----------------------------- |
-| `disabled` | `disabled` | Disables the item                                      | `boolean`             | `false`                       |
-| `inputId`  | `input-id` | Id for the Select Input                                | `string \| undefined` | ``rux-select-${selectIds++}`` |
-| `invalid`  | `invalid`  | Sets the Select as Invalid for Custom Validation Usage | `boolean`             | `false`                       |
-| `label`    | `label`    | Sets the Label for the Select                          | `string \| undefined` | `undefined`                   |
-| `labelId`  | `label-id` | Id for the Label                                       | `string \| undefined` | `undefined`                   |
-| `name`     | `name`     | Sets the Name of the Input Element                     | `string \| undefined` | `undefined`                   |
-| `required` | `required` | Sets the field as required                             | `boolean`             | `false`                       |
+| Property   | Attribute  | Description                                            | Type                  | Default     |
+| ---------- | ---------- | ------------------------------------------------------ | --------------------- | ----------- |
+| `disabled` | `disabled` | Disables the item                                      | `boolean`             | `false`     |
+| `inputId`  | `input-id` | Id for the Select Input                                | `string \| undefined` | `undefined` |
+| `invalid`  | `invalid`  | Sets the Select as Invalid for Custom Validation Usage | `boolean`             | `false`     |
+| `label`    | `label`    | Sets the Label for the Select                          | `string \| undefined` | `undefined` |
+| `labelId`  | `label-id` | Id for the Label                                       | `string \| undefined` | `undefined` |
+| `name`     | `name`     | Sets the Name of the Input Element                     | `string \| undefined` | `undefined` |
+| `required` | `required` | Sets the field as required                             | `boolean`             | `false`     |
 
 
 ## Events
