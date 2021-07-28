@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-26T18:28:43",
+    "timestamp": "2021-07-28T15:02:06",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -255,8 +255,8 @@
             "filePath": "./src/components/rux-checkbox/rux-checkbox.tsx",
             "encapsulation": "shadow",
             "tag": "rux-checkbox",
-            "readme": "# rux-checkbox\n\n\n",
-            "docs": "",
+            "readme": "# Checkbox\n\nA Checkbox describes a state or value that can be either \"True or False.” Checkboxes are not mutually exclusive. More than one Checkbox may be checked at the same time.\n\n\n## Guidelines\n\n- [Astro UXDS: Checkboxes](https://www.astrouxds.com/ui-components/checkbox)\n- [Astro UXDS: Form and Input Validation](https://www.astrouxds.com/ui-components/validation)\n\n## Basic HTML Usage\n\n### 1. Instalation \nDownload the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components) source to your project.\n\nVia CLI:\n\n```sh\ngit clone https://github.com/RocketCommunicationsInc/astro-components.git\n```\n\n### 2. Markup the component using HTML and the Astro CSS classes\n```xml\n<rux-checkbox\n    name=\"checkboxGroup\"\n    id=\"checkbox4c\"\n    indeterminate\n    checked\n    disabled\n>\n    Label Text\n</rux-checkbox>\n```\n",
+            "docs": "A Checkbox describes a state or value that can be either \"True or False.” Checkboxes are not mutually exclusive. More than one Checkbox may be checked at the same time.",
             "docsTags": [],
             "usage": {},
             "props": [
@@ -314,12 +314,48 @@
                     "required": false
                 },
                 {
+                    "name": "helpText",
+                    "type": "string | undefined",
+                    "mutable": false,
+                    "attr": "help-text",
+                    "reflectToAttr": false,
+                    "docs": "The help or explanation text",
+                    "docsTags": [],
+                    "values": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "undefined"
+                        }
+                    ],
+                    "optional": true,
+                    "required": false
+                },
+                {
                     "name": "indeterminate",
                     "type": "boolean",
                     "mutable": false,
                     "attr": "indeterminate",
                     "reflectToAttr": true,
                     "docs": "Toggles indeterminate state of a checkbox",
+                    "docsTags": [],
+                    "default": "false",
+                    "values": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                },
+                {
+                    "name": "invalid",
+                    "type": "boolean",
+                    "mutable": false,
+                    "attr": "invalid",
+                    "reflectToAttr": false,
+                    "docs": "Sets the input as invalid",
                     "docsTags": [],
                     "default": "false",
                     "values": [
@@ -366,19 +402,16 @@
                 },
                 {
                     "name": "value",
-                    "type": "boolean | null",
+                    "type": "string",
                     "mutable": true,
                     "attr": "value",
                     "reflectToAttr": true,
-                    "docs": "The checkbox name",
+                    "docs": "The checkbox value",
                     "docsTags": [],
-                    "default": "null",
+                    "default": "''",
                     "values": [
                         {
-                            "type": "boolean"
-                        },
-                        {
-                            "type": "null"
+                            "type": "string"
                         }
                     ],
                     "optional": false,
@@ -395,15 +428,18 @@
                     "composed": true,
                     "docs": "Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)",
                     "docsTags": []
-                }
-            ],
-            "listeners": [
+                },
                 {
-                    "event": "click",
-                    "capture": false,
-                    "passive": false
+                    "event": "rux-input",
+                    "detail": "any",
+                    "bubbles": true,
+                    "cancelable": true,
+                    "composed": true,
+                    "docs": "Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)",
+                    "docsTags": []
                 }
             ],
+            "listeners": [],
             "styles": [
                 {
                     "name": "--controlBorderColor",
