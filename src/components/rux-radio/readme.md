@@ -1,35 +1,25 @@
-# Checkbox
+# RadioButtons
 
-A Checkbox describes a state or value that can be either "True or False.” Checkboxes are not mutually exclusive. More than one Checkbox may be checked at the same time.
-
+Radio Buttons allow users to mutually select an option from a predefined set of options. When one selection is made, the previous selection becomes deselected. One option should always be selected.
 
 ## Guidelines
 
-- [Astro UXDS: Checkboxes](https://www.astrouxds.com/ui-components/checkbox)
-- [Astro UXDS: Form and Input Validation](https://www.astrouxds.com/ui-components/validation)
+-   [Astro UXDS: Radio Buttons](https://www.astrouxds.com/ui-components/radio-button)
+-   [Astro UXDS: Toggles](http://www.astrouxds.com/ui-components/toggle)
+-   [Astro UXDS: Form and Input Validation](https://www.astrouxds.com/ui-components/validation)
 
 ## Basic HTML Usage
 
-### 1. Instalation 
-Download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components) source to your project.
+### 1. Markup for the component
 
-Via CLI:
 
-```sh
-git clone https://github.com/RocketCommunicationsInc/astro-components.git
-```
-
-### 2. Markup the component using HTML and the Astro CSS classes
 ```xml
-<rux-checkbox
-    name="checkboxGroup"
-    id="checkbox4c"
-    indeterminate
-    checked
+  <rux-radio
+    name="radio1"
+    id="ruxId`"
     disabled
->
-    Label Text
-</rux-checkbox>
+    checked
+  ></rux-radio>
 ```
 
 <!-- Auto Generated Below -->

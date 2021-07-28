@@ -1,7 +1,7 @@
 import { withActions } from '@storybook/addon-actions'
 import { html, render } from 'lit-html'
 import RuxCheckboxReadme from '../components/rux-checkbox/readme.md'
-import radioButtonsReadme from '../components/rux-radio/readme.md'
+import RuxRadioReadme from '../components/rux-radio/readme.md'
 
 export default {
     title: 'Components/Form Elements',
@@ -122,7 +122,7 @@ RadioButtons.story = {
             html,
         },
         readme: {
-            sidebar: radioButtonsReadme,
+            sidebar: RuxRadioReadme,
         },
     },
 }
