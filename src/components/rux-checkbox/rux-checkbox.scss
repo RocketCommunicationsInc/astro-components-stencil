@@ -4,32 +4,24 @@
     *:after {
         box-sizing: inherit;
     }
-
-    box-sizing: border-box;
     /**
     * @prop --controlLabelColor: Label text color
     */
-    --controlLabelColor: var(--defaultText);
     /**
     * @prop --controlOutlineBackgroundColor: Checkbox background color
     */
-    --controlOutlineBackgroundColor: var(--backgroundColor);
     /**
     * @prop --controlBorderColor: Checkbox border color
     */
-    --controlBorderColor: var(--colorSecondaryDarken2);
     /**
     * @prop --controlHoverBorderColor: Checkbox border color on hover
     */
-    --controlHoverBorderColor: var(--primaryLight);
     /**
     * @prop --controlTextColor: Selected checkbox icon color
     */
-    --controlTextColor: var(--colorSecondary500);
     /**
     * @prop --controlSelectedOutlineBorderColor: Selected checkbox border color
     */
-    --controlSelectedOutlineBorderColor: var(--primary);
 }
 
 .rux-form-field {
