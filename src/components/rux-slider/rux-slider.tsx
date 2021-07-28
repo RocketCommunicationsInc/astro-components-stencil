@@ -69,7 +69,6 @@ export class RuxSlider {
         }
         //Min can't be > max
         if (this.min > this.max!) {
-            console.log('made it')
             if (this.step && this.step != 0) {
                 this.min = this.max! - this.step!
             } else {
@@ -91,11 +90,6 @@ export class RuxSlider {
 
         this.el.style.setProperty('--value', this.val!.toString())
         this._setValuePercent()
-        console.log(this.max, 'max')
-        console.log(this.min, 'min')
-        console.log(this.val, 'val')
-        console.log(this.step, 'step')
-        console.log(this.disabled, 'disabled')
     }
     //Sets the --valuePercent CSS var
     _setValuePercent() {
