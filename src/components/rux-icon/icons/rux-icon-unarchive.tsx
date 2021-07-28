@@ -17,21 +17,35 @@ export class RuxIconUnarchive {
      * The fill color for the icon
      */
     @Prop() color?: string
+
     /**
      * The size of the icon
      */
-    @Prop() size: 'extra-small' | 'small' | 'normal' | 'large' = 'normal'
 
+    @Prop() size: 'extra-small' | 'small' | 'normal' | 'large' | string =
+        'normal'
+
+    get iconSize() {
+        const sizes: { [key: string]: any } = {
+            'extra-small': '1rem',
+            small: '2rem',
+            normal: '3rem',
+            large: '4rem',
+        }
+
+        if (sizes[this.size]) {
+            return sizes[this.size]
+        } else {
+            return this.size
+        }
+    }
     render() {
         const style = {
             fill: this.color,
+            height: this.iconSize,
+            width: this.iconSize,
         }
-        return (
-            <div
-                class={`rux-icon--${this.size}`}
-                style={style}
-                innerHTML={svgIcon}
-            ></div>
-        )
+
+        return <div style={style} innerHTML={svgIcon}></div>
     }
 }

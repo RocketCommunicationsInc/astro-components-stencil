@@ -169,12 +169,13 @@ export namespace Components {
          */
         "label"?: string;
         /**
-          * The size of the icon
+          * The size of the icon. Can be 'extra-small', 'small', 'normal', 'large' or any custom value ('30px', '1rem', '3.321em')
          */
         "size": | 'extra-small'
         | 'small'
         | 'normal'
-        | 'large';
+        | 'large'
+        | string;
     }
     interface RuxIcon360 {
         /**
@@ -184,7 +185,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIcon3dRotation {
         /**
@@ -194,7 +195,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIcon4k {
         /**
@@ -204,7 +205,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAcUnit {
         /**
@@ -214,7 +215,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccessAlarms {
         /**
@@ -224,7 +225,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccessTime {
         /**
@@ -234,7 +235,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccessibility {
         /**
@@ -244,7 +245,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccessibilityNew {
         /**
@@ -254,7 +255,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccessible {
         /**
@@ -264,7 +265,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccessibleForward {
         /**
@@ -274,7 +275,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccountBalance {
         /**
@@ -284,7 +285,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccountBalanceWallet {
         /**
@@ -294,7 +295,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccountBox {
         /**
@@ -304,7 +305,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccountCircle {
         /**
@@ -314,7 +315,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAdb {
         /**
@@ -324,7 +325,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAdd {
         /**
@@ -334,7 +335,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddAPhoto {
         /**
@@ -344,7 +345,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddAlarm {
         /**
@@ -354,7 +355,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddAlert {
         /**
@@ -364,7 +365,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddBox {
         /**
@@ -374,7 +375,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddCircle {
         /**
@@ -384,7 +385,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddCircleOutline {
         /**
@@ -394,7 +395,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddComment {
         /**
@@ -404,7 +405,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddLocation {
         /**
@@ -414,7 +415,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddPhotoAlternate {
         /**
@@ -424,7 +425,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddShoppingCart {
         /**
@@ -434,7 +435,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddToHomeScreen {
         /**
@@ -444,7 +445,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddToPhotos {
         /**
@@ -454,7 +455,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddToQueue {
         /**
@@ -464,7 +465,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAdjust {
         /**
@@ -474,7 +475,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatFlat {
         /**
@@ -484,7 +485,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatFlatAngled {
         /**
@@ -494,7 +495,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatIndividualSuite {
         /**
@@ -504,7 +505,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatLegroomExtra {
         /**
@@ -514,7 +515,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatLegroomNormal {
         /**
@@ -524,7 +525,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatLegroomReduced {
         /**
@@ -534,7 +535,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatReclineExtra {
         /**
@@ -544,7 +545,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatReclineNormal {
         /**
@@ -554,7 +555,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirplanemodeActive {
         /**
@@ -564,7 +565,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirplanemodeInactive {
         /**
@@ -574,7 +575,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirplay {
         /**
@@ -584,7 +585,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirportShuttle {
         /**
@@ -594,7 +595,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAlarm {
         /**
@@ -604,7 +605,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAlarmAdd {
         /**
@@ -614,7 +615,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAlarmOff {
         /**
@@ -624,7 +625,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAlarmOn {
         /**
@@ -634,7 +635,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAlbum {
         /**
@@ -644,7 +645,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAllInbox {
         /**
@@ -654,7 +655,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAllInclusive {
         /**
@@ -664,7 +665,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAllOut {
         /**
@@ -674,7 +675,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAlternateEmail {
         /**
@@ -684,7 +685,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAltitude {
         /**
@@ -694,7 +695,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAndroid {
         /**
@@ -704,7 +705,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAnnouncement {
         /**
@@ -714,7 +715,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAntenna {
         /**
@@ -724,7 +725,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAntennaOff {
         /**
@@ -734,7 +735,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAntennaReceive {
         /**
@@ -744,7 +745,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAntennaTransmit {
         /**
@@ -754,7 +755,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconApps {
         /**
@@ -764,7 +765,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArchive {
         /**
@@ -774,7 +775,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowBack {
         /**
@@ -784,7 +785,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowBackIos {
         /**
@@ -794,7 +795,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowDownward {
         /**
@@ -804,7 +805,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowDropDown {
         /**
@@ -814,7 +815,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowDropDownCircle {
         /**
@@ -824,7 +825,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowDropUp {
         /**
@@ -834,7 +835,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowForward {
         /**
@@ -844,7 +845,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowForwardIos {
         /**
@@ -854,7 +855,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowLeft {
         /**
@@ -864,7 +865,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowRight {
         /**
@@ -874,7 +875,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowRightAlt {
         /**
@@ -884,7 +885,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowUpward {
         /**
@@ -894,7 +895,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArtTrack {
         /**
@@ -904,7 +905,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAspectRatio {
         /**
@@ -914,7 +915,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssessment {
         /**
@@ -924,7 +925,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssignment {
         /**
@@ -934,7 +935,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssignmentFind {
         /**
@@ -944,7 +945,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssignmentLate {
         /**
@@ -954,7 +955,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssignmentReturn {
         /**
@@ -964,7 +965,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssignmentReturned {
         /**
@@ -974,7 +975,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssignmentTurnedIn {
         /**
@@ -984,7 +985,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssistant {
         /**
@@ -994,7 +995,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssistantPhoto {
         /**
@@ -1004,7 +1005,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAttachFile {
         /**
@@ -1014,7 +1015,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAttachMoney {
         /**
@@ -1024,7 +1025,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAttachment {
         /**
@@ -1034,7 +1035,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAudiotrack {
         /**
@@ -1044,7 +1045,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAutorenew {
         /**
@@ -1054,7 +1055,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAvTimer {
         /**
@@ -1064,7 +1065,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBackspace {
         /**
@@ -1074,7 +1075,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBackup {
         /**
@@ -1084,7 +1085,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBallot {
         /**
@@ -1094,7 +1095,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBarChart {
         /**
@@ -1104,7 +1105,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBattery20 {
         /**
@@ -1114,7 +1115,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBattery30 {
         /**
@@ -1124,7 +1125,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBattery50 {
         /**
@@ -1134,7 +1135,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBattery60 {
         /**
@@ -1144,7 +1145,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBattery80 {
         /**
@@ -1154,7 +1155,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBattery90 {
         /**
@@ -1164,7 +1165,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryAlert {
         /**
@@ -1174,7 +1175,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryCharging20 {
         /**
@@ -1184,7 +1185,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryCharging30 {
         /**
@@ -1194,7 +1195,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryCharging50 {
         /**
@@ -1204,7 +1205,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryCharging60 {
         /**
@@ -1214,7 +1215,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryCharging80 {
         /**
@@ -1224,7 +1225,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryCharging90 {
         /**
@@ -1234,7 +1235,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryChargingFull {
         /**
@@ -1244,7 +1245,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryFull {
         /**
@@ -1254,7 +1255,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryStd {
         /**
@@ -1264,7 +1265,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryUnknown {
         /**
@@ -1274,7 +1275,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBeachAccess {
         /**
@@ -1284,7 +1285,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBeenhere {
         /**
@@ -1294,7 +1295,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBlock {
         /**
@@ -1304,7 +1305,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBluetooth {
         /**
@@ -1314,7 +1315,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBluetoothAudio {
         /**
@@ -1324,7 +1325,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBluetoothConnected {
         /**
@@ -1334,7 +1335,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBluetoothDisabled {
         /**
@@ -1344,7 +1345,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBluetoothSearching {
         /**
@@ -1354,7 +1355,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBlurCircular {
         /**
@@ -1364,7 +1365,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBlurLinear {
         /**
@@ -1374,7 +1375,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBlurOff {
         /**
@@ -1384,7 +1385,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBlurOn {
         /**
@@ -1394,7 +1395,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBook {
         /**
@@ -1404,7 +1405,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBookmark {
         /**
@@ -1414,7 +1415,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBookmarkBorder {
         /**
@@ -1424,7 +1425,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBookmarks {
         /**
@@ -1434,7 +1435,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderAll {
         /**
@@ -1444,7 +1445,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderBottom {
         /**
@@ -1454,7 +1455,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderClear {
         /**
@@ -1464,7 +1465,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderColor {
         /**
@@ -1474,7 +1475,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderHorizontal {
         /**
@@ -1484,7 +1485,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderInner {
         /**
@@ -1494,7 +1495,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderLeft {
         /**
@@ -1504,7 +1505,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderOuter {
         /**
@@ -1514,7 +1515,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderRight {
         /**
@@ -1524,7 +1525,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderStyle {
         /**
@@ -1534,7 +1535,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderTop {
         /**
@@ -1544,7 +1545,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderVertical {
         /**
@@ -1554,7 +1555,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrandingWatermark {
         /**
@@ -1564,7 +1565,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness1 {
         /**
@@ -1574,7 +1575,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness2 {
         /**
@@ -1584,7 +1585,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness3 {
         /**
@@ -1594,7 +1595,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness4 {
         /**
@@ -1604,7 +1605,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness5 {
         /**
@@ -1614,7 +1615,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness6 {
         /**
@@ -1624,7 +1625,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness7 {
         /**
@@ -1634,7 +1635,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightnessAuto {
         /**
@@ -1644,7 +1645,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightnessHigh {
         /**
@@ -1654,7 +1655,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightnessLow {
         /**
@@ -1664,7 +1665,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightnessMedium {
         /**
@@ -1674,7 +1675,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrokenImage {
         /**
@@ -1684,7 +1685,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrush {
         /**
@@ -1694,7 +1695,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBubbleChart {
         /**
@@ -1704,7 +1705,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBugReport {
         /**
@@ -1714,7 +1715,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBuild {
         /**
@@ -1724,7 +1725,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBurstMode {
         /**
@@ -1734,7 +1735,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBusiness {
         /**
@@ -1744,7 +1745,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBusinessCenter {
         /**
@@ -1754,7 +1755,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCached {
         /**
@@ -1764,7 +1765,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCake {
         /**
@@ -1774,7 +1775,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCalendarToday {
         /**
@@ -1784,7 +1785,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCalendarViewDay {
         /**
@@ -1794,7 +1795,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCall {
         /**
@@ -1804,7 +1805,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallEnd {
         /**
@@ -1814,7 +1815,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallMade {
         /**
@@ -1824,7 +1825,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallMerge {
         /**
@@ -1834,7 +1835,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallMissed {
         /**
@@ -1844,7 +1845,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallMissedOutgoing {
         /**
@@ -1854,7 +1855,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallReceived {
         /**
@@ -1864,7 +1865,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallSplit {
         /**
@@ -1874,7 +1875,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallToAction {
         /**
@@ -1884,7 +1885,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCamera {
         /**
@@ -1894,7 +1895,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCameraAlt {
         /**
@@ -1904,7 +1905,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCameraEnhance {
         /**
@@ -1914,7 +1915,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCameraFront {
         /**
@@ -1924,7 +1925,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCameraRear {
         /**
@@ -1934,7 +1935,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCameraRoll {
         /**
@@ -1944,7 +1945,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCancel {
         /**
@@ -1954,7 +1955,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCancelPresentation {
         /**
@@ -1964,7 +1965,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCardGiftcard {
         /**
@@ -1974,7 +1975,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCardMembership {
         /**
@@ -1984,7 +1985,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCardTravel {
         /**
@@ -1994,7 +1995,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCasino {
         /**
@@ -2004,7 +2005,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCast {
         /**
@@ -2014,7 +2015,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCastConnected {
         /**
@@ -2024,7 +2025,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCastForEducation {
         /**
@@ -2034,7 +2035,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCategory {
         /**
@@ -2044,7 +2045,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCellWifi {
         /**
@@ -2054,7 +2055,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCenterFocusStrong {
         /**
@@ -2064,7 +2065,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCenterFocusWeak {
         /**
@@ -2074,7 +2075,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChangeHistory {
         /**
@@ -2084,7 +2085,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChat {
         /**
@@ -2094,7 +2095,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChatBubble {
         /**
@@ -2104,7 +2105,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChatBubbleOutline {
         /**
@@ -2114,7 +2115,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCheck {
         /**
@@ -2124,7 +2125,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCheckBox {
         /**
@@ -2134,7 +2135,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCheckBoxOutlineBlank {
         /**
@@ -2144,7 +2145,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCheckCircle {
         /**
@@ -2154,7 +2155,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCheckCircleOutline {
         /**
@@ -2164,7 +2165,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChevronLeft {
         /**
@@ -2174,7 +2175,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChevronRight {
         /**
@@ -2184,7 +2185,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChildCare {
         /**
@@ -2194,7 +2195,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChildFriendly {
         /**
@@ -2204,7 +2205,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChromeReaderMode {
         /**
@@ -2214,7 +2215,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconClass {
         /**
@@ -2224,7 +2225,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconClear {
         /**
@@ -2234,7 +2235,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconClearAll {
         /**
@@ -2244,7 +2245,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconClose {
         /**
@@ -2254,7 +2255,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconClosedCaption {
         /**
@@ -2264,7 +2265,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloud {
         /**
@@ -2274,7 +2275,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloudCircle {
         /**
@@ -2284,7 +2285,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloudDone {
         /**
@@ -2294,7 +2295,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloudDownload {
         /**
@@ -2304,7 +2305,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloudOff {
         /**
@@ -2314,7 +2315,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloudQueue {
         /**
@@ -2324,7 +2325,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloudUpload {
         /**
@@ -2334,7 +2335,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCode {
         /**
@@ -2344,7 +2345,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCollections {
         /**
@@ -2354,7 +2355,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCollectionsBookmark {
         /**
@@ -2364,7 +2365,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconColorLens {
         /**
@@ -2374,7 +2375,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconColorize {
         /**
@@ -2384,7 +2385,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconComment {
         /**
@@ -2394,7 +2395,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCommute {
         /**
@@ -2404,7 +2405,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCompare {
         /**
@@ -2414,7 +2415,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCompareArrows {
         /**
@@ -2424,7 +2425,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCompassCalibration {
         /**
@@ -2434,7 +2435,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconComputer {
         /**
@@ -2444,7 +2445,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconConfirmationNumber {
         /**
@@ -2454,7 +2455,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconContactMail {
         /**
@@ -2464,7 +2465,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconContactPhone {
         /**
@@ -2474,7 +2475,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconContactSupport {
         /**
@@ -2484,7 +2485,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconContacts {
         /**
@@ -2494,7 +2495,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconControlCamera {
         /**
@@ -2504,7 +2505,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconControlPoint {
         /**
@@ -2514,7 +2515,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconControlPointDuplicate {
         /**
@@ -2524,7 +2525,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCopyright {
         /**
@@ -2534,7 +2535,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCreate {
         /**
@@ -2544,7 +2545,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCreateNewFolder {
         /**
@@ -2554,7 +2555,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCreditCard {
         /**
@@ -2564,7 +2565,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCrop {
         /**
@@ -2574,7 +2575,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCrop169 {
         /**
@@ -2584,7 +2585,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCrop32 {
         /**
@@ -2594,7 +2595,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCrop54 {
         /**
@@ -2604,7 +2605,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCrop75 {
         /**
@@ -2614,7 +2615,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropDin {
         /**
@@ -2624,7 +2625,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropFree {
         /**
@@ -2634,7 +2635,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropLandscape {
         /**
@@ -2644,7 +2645,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropOriginal {
         /**
@@ -2654,7 +2655,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropPortrait {
         /**
@@ -2664,7 +2665,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropRotate {
         /**
@@ -2674,7 +2675,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropSquare {
         /**
@@ -2684,7 +2685,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDashboard {
         /**
@@ -2694,7 +2695,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDataUsage {
         /**
@@ -2704,7 +2705,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDateRange {
         /**
@@ -2714,7 +2715,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDehaze {
         /**
@@ -2724,7 +2725,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDelete {
         /**
@@ -2734,7 +2735,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeleteForever {
         /**
@@ -2744,7 +2745,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeleteOutline {
         /**
@@ -2754,7 +2755,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeleteSweep {
         /**
@@ -2764,7 +2765,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDepartureBoard {
         /**
@@ -2774,7 +2775,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDescription {
         /**
@@ -2784,7 +2785,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDesktopAccessDisabled {
         /**
@@ -2794,7 +2795,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDesktopMac {
         /**
@@ -2804,7 +2805,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDesktopWindows {
         /**
@@ -2814,7 +2815,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDetails {
         /**
@@ -2824,7 +2825,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeveloperBoard {
         /**
@@ -2834,7 +2835,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeveloperMode {
         /**
@@ -2844,7 +2845,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeviceHub {
         /**
@@ -2854,7 +2855,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeviceUnknown {
         /**
@@ -2864,7 +2865,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDevices {
         /**
@@ -2874,7 +2875,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDevicesOther {
         /**
@@ -2884,7 +2885,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDialerSip {
         /**
@@ -2894,7 +2895,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDialpad {
         /**
@@ -2904,7 +2905,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirections {
         /**
@@ -2914,7 +2915,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsBike {
         /**
@@ -2924,7 +2925,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsBoat {
         /**
@@ -2934,7 +2935,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsBus {
         /**
@@ -2944,7 +2945,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsCar {
         /**
@@ -2954,7 +2955,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsRailway {
         /**
@@ -2964,7 +2965,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsRun {
         /**
@@ -2974,7 +2975,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsSubway {
         /**
@@ -2984,7 +2985,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsTransit {
         /**
@@ -2994,7 +2995,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsWalk {
         /**
@@ -3004,7 +3005,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDiscFull {
         /**
@@ -3014,7 +3015,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDns {
         /**
@@ -3024,7 +3025,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDock {
         /**
@@ -3034,7 +3035,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDomain {
         /**
@@ -3044,7 +3045,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDomainDisabled {
         /**
@@ -3054,7 +3055,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDone {
         /**
@@ -3064,7 +3065,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDoneAll {
         /**
@@ -3074,7 +3075,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDoneOutline {
         /**
@@ -3084,7 +3085,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDonutLarge {
         /**
@@ -3094,7 +3095,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDonutSmall {
         /**
@@ -3104,7 +3105,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDrafts {
         /**
@@ -3114,7 +3115,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDragHandle {
         /**
@@ -3124,7 +3125,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDragIndicator {
         /**
@@ -3134,7 +3135,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDriveEta {
         /**
@@ -3144,7 +3145,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDuo {
         /**
@@ -3154,7 +3155,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDvr {
         /**
@@ -3164,7 +3165,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEdit {
         /**
@@ -3174,7 +3175,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEditAttributes {
         /**
@@ -3184,7 +3185,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEditLocation {
         /**
@@ -3194,7 +3195,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEject {
         /**
@@ -3204,7 +3205,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEmail {
         /**
@@ -3214,7 +3215,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEnhancedEncryption {
         /**
@@ -3224,7 +3225,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEqualizer {
         /**
@@ -3234,7 +3235,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEquipment {
         /**
@@ -3244,7 +3245,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconError {
         /**
@@ -3254,7 +3255,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconErrorOutline {
         /**
@@ -3264,7 +3265,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEuroSymbol {
         /**
@@ -3274,7 +3275,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEvStation {
         /**
@@ -3284,7 +3285,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEvent {
         /**
@@ -3294,7 +3295,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEventAvailable {
         /**
@@ -3304,7 +3305,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEventBusy {
         /**
@@ -3314,7 +3315,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEventNote {
         /**
@@ -3324,7 +3325,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExitToApp {
         /**
@@ -3334,7 +3335,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExpandLess {
         /**
@@ -3344,7 +3345,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExpandMore {
         /**
@@ -3354,7 +3355,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExplicit {
         /**
@@ -3364,7 +3365,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExplore {
         /**
@@ -3374,7 +3375,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExploreOff {
         /**
@@ -3384,7 +3385,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExposure {
         /**
@@ -3394,7 +3395,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExposureNeg1 {
         /**
@@ -3404,7 +3405,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExposureNeg2 {
         /**
@@ -3414,7 +3415,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExposurePlus1 {
         /**
@@ -3424,7 +3425,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExposurePlus2 {
         /**
@@ -3434,7 +3435,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExposureZero {
         /**
@@ -3444,7 +3445,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExtension {
         /**
@@ -3454,7 +3455,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFace {
         /**
@@ -3464,7 +3465,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFastForward {
         /**
@@ -3474,7 +3475,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFastRewind {
         /**
@@ -3484,7 +3485,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFastfood {
         /**
@@ -3494,7 +3495,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFavorite {
         /**
@@ -3504,7 +3505,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFavoriteBorder {
         /**
@@ -3514,7 +3515,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFeaturedPlayList {
         /**
@@ -3524,7 +3525,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFeaturedVideo {
         /**
@@ -3534,7 +3535,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFeedback {
         /**
@@ -3544,7 +3545,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFiberDvr {
         /**
@@ -3554,7 +3555,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFiberManualRecord {
         /**
@@ -3564,7 +3565,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFiberNew {
         /**
@@ -3574,7 +3575,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFiberPin {
         /**
@@ -3584,7 +3585,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFiberSmartRecord {
         /**
@@ -3594,7 +3595,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFileCopy {
         /**
@@ -3604,7 +3605,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter {
         /**
@@ -3614,7 +3615,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter1 {
         /**
@@ -3624,7 +3625,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter2 {
         /**
@@ -3634,7 +3635,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter3 {
         /**
@@ -3644,7 +3645,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter4 {
         /**
@@ -3654,7 +3655,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter5 {
         /**
@@ -3664,7 +3665,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter6 {
         /**
@@ -3674,7 +3675,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter7 {
         /**
@@ -3684,7 +3685,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter8 {
         /**
@@ -3694,7 +3695,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter9 {
         /**
@@ -3704,7 +3705,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter9Plus {
         /**
@@ -3714,7 +3715,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterBAndW {
         /**
@@ -3724,7 +3725,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterCenterFocus {
         /**
@@ -3734,7 +3735,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterDrama {
         /**
@@ -3744,7 +3745,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterFrames {
         /**
@@ -3754,7 +3755,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterHdr {
         /**
@@ -3764,7 +3765,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterList {
         /**
@@ -3774,7 +3775,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterNone {
         /**
@@ -3784,7 +3785,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterTiltShift {
         /**
@@ -3794,7 +3795,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterVintage {
         /**
@@ -3804,7 +3805,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFindInPage {
         /**
@@ -3814,7 +3815,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFindReplace {
         /**
@@ -3824,7 +3825,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFingerprint {
         /**
@@ -3834,7 +3835,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFirstPage {
         /**
@@ -3844,7 +3845,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFitnessCenter {
         /**
@@ -3854,7 +3855,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlag {
         /**
@@ -3864,7 +3865,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlare {
         /**
@@ -3874,7 +3875,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlashAuto {
         /**
@@ -3884,7 +3885,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlashOff {
         /**
@@ -3894,7 +3895,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlashOn {
         /**
@@ -3904,7 +3905,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlight {
         /**
@@ -3914,7 +3915,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlightLand {
         /**
@@ -3924,7 +3925,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlightTakeoff {
         /**
@@ -3934,7 +3935,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlip {
         /**
@@ -3944,7 +3945,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlipToBack {
         /**
@@ -3954,7 +3955,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlipToFront {
         /**
@@ -3964,7 +3965,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFolder {
         /**
@@ -3974,7 +3975,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFolderOpen {
         /**
@@ -3984,7 +3985,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFolderShared {
         /**
@@ -3994,7 +3995,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFolderSpecial {
         /**
@@ -4004,7 +4005,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFontDownload {
         /**
@@ -4014,7 +4015,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatAlignCenter {
         /**
@@ -4024,7 +4025,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatAlignJustify {
         /**
@@ -4034,7 +4035,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatAlignLeft {
         /**
@@ -4044,7 +4045,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatAlignRight {
         /**
@@ -4054,7 +4055,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatBold {
         /**
@@ -4064,7 +4065,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatClear {
         /**
@@ -4074,7 +4075,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatColorFill {
         /**
@@ -4084,7 +4085,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatColorReset {
         /**
@@ -4094,7 +4095,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatColorText {
         /**
@@ -4104,7 +4105,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatIndentDecrease {
         /**
@@ -4114,7 +4115,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatIndentIncrease {
         /**
@@ -4124,7 +4125,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatItalic {
         /**
@@ -4134,7 +4135,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatLineSpacing {
         /**
@@ -4144,7 +4145,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatListBulleted {
         /**
@@ -4154,7 +4155,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatListNumbered {
         /**
@@ -4164,7 +4165,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatListNumberedRtl {
         /**
@@ -4174,7 +4175,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatPaint {
         /**
@@ -4184,7 +4185,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatQuote {
         /**
@@ -4194,7 +4195,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatShapes {
         /**
@@ -4204,7 +4205,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatSize {
         /**
@@ -4214,7 +4215,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatStrikethrough {
         /**
@@ -4224,7 +4225,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatTextdirectionLToR {
         /**
@@ -4234,7 +4235,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatTextdirectionRToL {
         /**
@@ -4244,7 +4245,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatUnderlined {
         /**
@@ -4254,7 +4255,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconForum {
         /**
@@ -4264,7 +4265,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconForward {
         /**
@@ -4274,7 +4275,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconForward10 {
         /**
@@ -4284,7 +4285,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconForward30 {
         /**
@@ -4294,7 +4295,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconForward5 {
         /**
@@ -4304,7 +4305,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFreeBreakfast {
         /**
@@ -4314,7 +4315,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFullscreen {
         /**
@@ -4324,7 +4325,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFullscreenExit {
         /**
@@ -4334,7 +4335,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFunctions {
         /**
@@ -4344,7 +4345,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGTranslate {
         /**
@@ -4354,7 +4355,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGamepad {
         /**
@@ -4364,7 +4365,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGames {
         /**
@@ -4374,7 +4375,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGavel {
         /**
@@ -4384,7 +4385,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGesture {
         /**
@@ -4394,7 +4395,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGetApp {
         /**
@@ -4404,7 +4405,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGif {
         /**
@@ -4414,7 +4415,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGolfCourse {
         /**
@@ -4424,7 +4425,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGpsFixed {
         /**
@@ -4434,7 +4435,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGpsNotFixed {
         /**
@@ -4444,7 +4445,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGpsOff {
         /**
@@ -4454,7 +4455,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGrade {
         /**
@@ -4464,7 +4465,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGradient {
         /**
@@ -4474,7 +4475,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGrain {
         /**
@@ -4484,7 +4485,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGraphicEq {
         /**
@@ -4494,7 +4495,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGridOff {
         /**
@@ -4504,7 +4505,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGridOn {
         /**
@@ -4514,7 +4515,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGroup {
         /**
@@ -4524,7 +4525,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGroupAdd {
         /**
@@ -4534,7 +4535,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGroupWork {
         /**
@@ -4544,7 +4545,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHd {
         /**
@@ -4554,7 +4555,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHdrOff {
         /**
@@ -4564,7 +4565,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHdrOn {
         /**
@@ -4574,7 +4575,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHdrStrong {
         /**
@@ -4584,7 +4585,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHdrWeak {
         /**
@@ -4594,7 +4595,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHeadset {
         /**
@@ -4604,7 +4605,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHeadsetMic {
         /**
@@ -4614,7 +4615,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHealing {
         /**
@@ -4624,7 +4625,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHearing {
         /**
@@ -4634,7 +4635,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHelp {
         /**
@@ -4644,7 +4645,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHelpOutline {
         /**
@@ -4654,7 +4655,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHighQuality {
         /**
@@ -4664,7 +4665,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHighlight {
         /**
@@ -4674,7 +4675,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHighlightOff {
         /**
@@ -4684,7 +4685,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHistory {
         /**
@@ -4694,7 +4695,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHome {
         /**
@@ -4704,7 +4705,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHorizontalSplit {
         /**
@@ -4714,7 +4715,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHotTub {
         /**
@@ -4724,7 +4725,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHotel {
         /**
@@ -4734,7 +4735,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHourglassEmpty {
         /**
@@ -4744,7 +4745,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHourglassFull {
         /**
@@ -4754,7 +4755,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHowToReg {
         /**
@@ -4764,7 +4765,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHowToVote {
         /**
@@ -4774,7 +4775,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHttp {
         /**
@@ -4784,7 +4785,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHttps {
         /**
@@ -4794,7 +4795,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconImage {
         /**
@@ -4804,7 +4805,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconImageAspectRatio {
         /**
@@ -4814,7 +4815,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconImageSearch {
         /**
@@ -4824,7 +4825,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconImportContacts {
         /**
@@ -4834,7 +4835,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconImportExport {
         /**
@@ -4844,7 +4845,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconImportantDevices {
         /**
@@ -4854,7 +4855,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInbox {
         /**
@@ -4864,7 +4865,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconIndeterminateCheckBox {
         /**
@@ -4874,7 +4875,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInfo {
         /**
@@ -4884,7 +4885,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInput {
         /**
@@ -4894,7 +4895,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertChart {
         /**
@@ -4904,7 +4905,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertChartOutlined {
         /**
@@ -4914,7 +4915,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertComment {
         /**
@@ -4924,7 +4925,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertDriveFile {
         /**
@@ -4934,7 +4935,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertEmoticon {
         /**
@@ -4944,7 +4945,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertInvitation {
         /**
@@ -4954,7 +4955,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertLink {
         /**
@@ -4964,7 +4965,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertPhoto {
         /**
@@ -4974,7 +4975,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInvertColors {
         /**
@@ -4984,7 +4985,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInvertColorsOff {
         /**
@@ -4994,7 +4995,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconIso {
         /**
@@ -5004,7 +5005,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboard {
         /**
@@ -5014,7 +5015,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardArrowDown {
         /**
@@ -5024,7 +5025,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardArrowLeft {
         /**
@@ -5034,7 +5035,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardArrowRight {
         /**
@@ -5044,7 +5045,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardArrowUp {
         /**
@@ -5054,7 +5055,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardBackspace {
         /**
@@ -5064,7 +5065,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardCapslock {
         /**
@@ -5074,7 +5075,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardHide {
         /**
@@ -5084,7 +5085,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardReturn {
         /**
@@ -5094,7 +5095,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardTab {
         /**
@@ -5104,7 +5105,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardVoice {
         /**
@@ -5114,7 +5115,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKitchen {
         /**
@@ -5124,7 +5125,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLabel {
         /**
@@ -5134,7 +5135,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLabelImportant {
         /**
@@ -5144,7 +5145,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLabelOff {
         /**
@@ -5154,7 +5155,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLandscape {
         /**
@@ -5164,7 +5165,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLanguage {
         /**
@@ -5174,7 +5175,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLaptop {
         /**
@@ -5184,7 +5185,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLaptopChromebook {
         /**
@@ -5194,7 +5195,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLaptopMac {
         /**
@@ -5204,7 +5205,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLaptopWindows {
         /**
@@ -5214,7 +5215,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLastPage {
         /**
@@ -5224,7 +5225,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLaunch {
         /**
@@ -5234,7 +5235,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLayers {
         /**
@@ -5244,7 +5245,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLayersClear {
         /**
@@ -5254,7 +5255,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLeakAdd {
         /**
@@ -5264,7 +5265,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLeakRemove {
         /**
@@ -5274,7 +5275,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLens {
         /**
@@ -5284,7 +5285,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLibraryAdd {
         /**
@@ -5294,7 +5295,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLibraryBooks {
         /**
@@ -5304,7 +5305,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLibraryMusic {
         /**
@@ -5314,7 +5315,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLineStyle {
         /**
@@ -5324,7 +5325,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLineWeight {
         /**
@@ -5334,7 +5335,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLinearScale {
         /**
@@ -5344,7 +5345,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLink {
         /**
@@ -5354,7 +5355,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLinkOff {
         /**
@@ -5364,7 +5365,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLinkedCamera {
         /**
@@ -5374,7 +5375,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconList {
         /**
@@ -5384,7 +5385,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconListAlt {
         /**
@@ -5394,7 +5395,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLiveHelp {
         /**
@@ -5404,7 +5405,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLiveTv {
         /**
@@ -5414,7 +5415,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalActivity {
         /**
@@ -5424,7 +5425,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalAirport {
         /**
@@ -5434,7 +5435,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalAtm {
         /**
@@ -5444,7 +5445,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalBar {
         /**
@@ -5454,7 +5455,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalCafe {
         /**
@@ -5464,7 +5465,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalConvenienceStore {
         /**
@@ -5474,7 +5475,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalDining {
         /**
@@ -5484,7 +5485,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalDrink {
         /**
@@ -5494,7 +5495,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalGasStation {
         /**
@@ -5504,7 +5505,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalGroceryStore {
         /**
@@ -5514,7 +5515,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalHospital {
         /**
@@ -5524,7 +5525,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalHotel {
         /**
@@ -5534,7 +5535,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalLaundryService {
         /**
@@ -5544,7 +5545,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalLibrary {
         /**
@@ -5554,7 +5555,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalMall {
         /**
@@ -5564,7 +5565,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalMovies {
         /**
@@ -5574,7 +5575,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalOffer {
         /**
@@ -5584,7 +5585,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalParking {
         /**
@@ -5594,7 +5595,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalPharmacy {
         /**
@@ -5604,7 +5605,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalPhone {
         /**
@@ -5614,7 +5615,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalPlay {
         /**
@@ -5624,7 +5625,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalPostOffice {
         /**
@@ -5634,7 +5635,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalPrintshop {
         /**
@@ -5644,7 +5645,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalSee {
         /**
@@ -5654,7 +5655,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalShipping {
         /**
@@ -5664,7 +5665,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalTaxi {
         /**
@@ -5674,7 +5675,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocationCity {
         /**
@@ -5684,7 +5685,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocationDisabled {
         /**
@@ -5694,7 +5695,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocationOff {
         /**
@@ -5704,7 +5705,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocationOn {
         /**
@@ -5714,7 +5715,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocationSearching {
         /**
@@ -5724,7 +5725,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLock {
         /**
@@ -5734,7 +5735,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLockOpen {
         /**
@@ -5744,7 +5745,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks {
         /**
@@ -5754,7 +5755,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks1 {
         /**
@@ -5764,7 +5765,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks2 {
         /**
@@ -5774,7 +5775,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks3 {
         /**
@@ -5784,7 +5785,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks4 {
         /**
@@ -5794,7 +5795,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks5 {
         /**
@@ -5804,7 +5805,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks6 {
         /**
@@ -5814,7 +5815,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLoop {
         /**
@@ -5824,7 +5825,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLoupe {
         /**
@@ -5834,7 +5835,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLowPriority {
         /**
@@ -5844,7 +5845,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLoyalty {
         /**
@@ -5854,7 +5855,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMail {
         /**
@@ -5864,7 +5865,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMailOutline {
         /**
@@ -5874,7 +5875,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMap {
         /**
@@ -5884,7 +5885,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMarkunread {
         /**
@@ -5894,7 +5895,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMarkunreadMailbox {
         /**
@@ -5904,7 +5905,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMaximize {
         /**
@@ -5914,7 +5915,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMeetingRoom {
         /**
@@ -5924,7 +5925,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMemory {
         /**
@@ -5934,7 +5935,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMenu {
         /**
@@ -5944,7 +5945,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMergeType {
         /**
@@ -5954,7 +5955,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMessage {
         /**
@@ -5964,7 +5965,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMic {
         /**
@@ -5974,7 +5975,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMicNone {
         /**
@@ -5984,7 +5985,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMicOff {
         /**
@@ -5994,7 +5995,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMinimize {
         /**
@@ -6004,7 +6005,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMissedVideoCall {
         /**
@@ -6014,7 +6015,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMission {
         /**
@@ -6024,7 +6025,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMms {
         /**
@@ -6034,7 +6035,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMobileFriendly {
         /**
@@ -6044,7 +6045,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMobileOff {
         /**
@@ -6054,7 +6055,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMobileScreenShare {
         /**
@@ -6064,7 +6065,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconModeComment {
         /**
@@ -6074,7 +6075,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMonetizationOn {
         /**
@@ -6084,7 +6085,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMoney {
         /**
@@ -6094,7 +6095,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMoneyOff {
         /**
@@ -6104,7 +6105,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMonochromePhotos {
         /**
@@ -6114,7 +6115,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMood {
         /**
@@ -6124,7 +6125,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMoodBad {
         /**
@@ -6134,7 +6135,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMore {
         /**
@@ -6144,7 +6145,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMoreHoriz {
         /**
@@ -6154,7 +6155,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMoreVert {
         /**
@@ -6164,7 +6165,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMotorcycle {
         /**
@@ -6174,7 +6175,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMouse {
         /**
@@ -6184,7 +6185,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMoveToInbox {
         /**
@@ -6194,7 +6195,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMovie {
         /**
@@ -6204,7 +6205,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMovieCreation {
         /**
@@ -6214,7 +6215,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMovieFilter {
         /**
@@ -6224,7 +6225,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMultilineChart {
         /**
@@ -6234,7 +6235,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMusicNote {
         /**
@@ -6244,7 +6245,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMusicOff {
         /**
@@ -6254,7 +6255,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMusicVideo {
         /**
@@ -6264,7 +6265,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMyLocation {
         /**
@@ -6274,7 +6275,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNature {
         /**
@@ -6284,7 +6285,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNaturePeople {
         /**
@@ -6294,7 +6295,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNavigateBefore {
         /**
@@ -6304,7 +6305,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNavigateNext {
         /**
@@ -6314,7 +6315,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNavigation {
         /**
@@ -6324,7 +6325,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNearMe {
         /**
@@ -6334,7 +6335,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNetcom {
         /**
@@ -6344,7 +6345,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNetworkCell {
         /**
@@ -6354,7 +6355,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNetworkCheck {
         /**
@@ -6364,7 +6365,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNetworkLocked {
         /**
@@ -6374,7 +6375,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNetworkWifi {
         /**
@@ -6384,7 +6385,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNewReleases {
         /**
@@ -6394,7 +6395,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNextWeek {
         /**
@@ -6404,7 +6405,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNfc {
         /**
@@ -6414,7 +6415,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNoEncryption {
         /**
@@ -6424,7 +6425,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNoMeetingRoom {
         /**
@@ -6434,7 +6435,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNoSim {
         /**
@@ -6444,7 +6445,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotInterested {
         /**
@@ -6454,7 +6455,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotListedLocation {
         /**
@@ -6464,7 +6465,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNote {
         /**
@@ -6474,7 +6475,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNoteAdd {
         /**
@@ -6484,7 +6485,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotes {
         /**
@@ -6494,7 +6495,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotificationImportant {
         /**
@@ -6504,7 +6505,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotifications {
         /**
@@ -6514,7 +6515,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotificationsActive {
         /**
@@ -6524,7 +6525,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotificationsNone {
         /**
@@ -6534,7 +6535,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotificationsOff {
         /**
@@ -6544,7 +6545,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotificationsPaused {
         /**
@@ -6554,7 +6555,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOfflineBolt {
         /**
@@ -6564,7 +6565,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOfflinePin {
         /**
@@ -6574,7 +6575,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOndemandVideo {
         /**
@@ -6584,7 +6585,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOpacity {
         /**
@@ -6594,7 +6595,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOpenInBrowser {
         /**
@@ -6604,7 +6605,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOpenInNew {
         /**
@@ -6614,7 +6615,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOpenWith {
         /**
@@ -6624,7 +6625,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOutlinedFlag {
         /**
@@ -6634,7 +6635,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPages {
         /**
@@ -6644,7 +6645,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPageview {
         /**
@@ -6654,7 +6655,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPalette {
         /**
@@ -6664,7 +6665,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPanTool {
         /**
@@ -6674,7 +6675,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPanorama {
         /**
@@ -6684,7 +6685,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPanoramaFishEye {
         /**
@@ -6694,7 +6695,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPanoramaHorizontal {
         /**
@@ -6704,7 +6705,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPanoramaVertical {
         /**
@@ -6714,7 +6715,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPanoramaWideAngle {
         /**
@@ -6724,7 +6725,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPartyMode {
         /**
@@ -6734,7 +6735,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPause {
         /**
@@ -6744,7 +6745,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPauseCircleFilled {
         /**
@@ -6754,7 +6755,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPauseCircleOutline {
         /**
@@ -6764,7 +6765,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPausePresentation {
         /**
@@ -6774,7 +6775,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPayload {
         /**
@@ -6784,7 +6785,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPayment {
         /**
@@ -6794,7 +6795,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPeopleOutline {
         /**
@@ -6804,7 +6805,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermCameraMic {
         /**
@@ -6814,7 +6815,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermContactCalendar {
         /**
@@ -6824,7 +6825,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermDataSetting {
         /**
@@ -6834,7 +6835,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermDeviceInformation {
         /**
@@ -6844,7 +6845,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermIdentity {
         /**
@@ -6854,7 +6855,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermMedia {
         /**
@@ -6864,7 +6865,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermPhoneMsg {
         /**
@@ -6874,7 +6875,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermScanWifi {
         /**
@@ -6884,7 +6885,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPerson {
         /**
@@ -6894,7 +6895,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPersonAdd {
         /**
@@ -6904,7 +6905,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPersonAddDisabled {
         /**
@@ -6914,7 +6915,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPersonOutline {
         /**
@@ -6924,7 +6925,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPersonPin {
         /**
@@ -6934,7 +6935,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPersonPinCircle {
         /**
@@ -6944,7 +6945,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPersonalVideo {
         /**
@@ -6954,7 +6955,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPets {
         /**
@@ -6964,7 +6965,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhone {
         /**
@@ -6974,7 +6975,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneAndroid {
         /**
@@ -6984,7 +6985,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneBluetoothSpeaker {
         /**
@@ -6994,7 +6995,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneCallback {
         /**
@@ -7004,7 +7005,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneForwarded {
         /**
@@ -7014,7 +7015,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneInTalk {
         /**
@@ -7024,7 +7025,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneIphone {
         /**
@@ -7034,7 +7035,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneLocked {
         /**
@@ -7044,7 +7045,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneMissed {
         /**
@@ -7054,7 +7055,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonePaused {
         /**
@@ -7064,7 +7065,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonelink {
         /**
@@ -7074,7 +7075,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonelinkErase {
         /**
@@ -7084,7 +7085,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonelinkLock {
         /**
@@ -7094,7 +7095,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonelinkOff {
         /**
@@ -7104,7 +7105,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonelinkRing {
         /**
@@ -7114,7 +7115,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonelinkSetup {
         /**
@@ -7124,7 +7125,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoto {
         /**
@@ -7134,7 +7135,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoAlbum {
         /**
@@ -7144,7 +7145,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoCamera {
         /**
@@ -7154,7 +7155,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoFilter {
         /**
@@ -7164,7 +7165,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoLibrary {
         /**
@@ -7174,7 +7175,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoSizeSelectActual {
         /**
@@ -7184,7 +7185,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoSizeSelectLarge {
         /**
@@ -7194,7 +7195,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoSizeSelectSmall {
         /**
@@ -7204,7 +7205,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPictureAsPdf {
         /**
@@ -7214,7 +7215,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPictureInPicture {
         /**
@@ -7224,7 +7225,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPictureInPictureAlt {
         /**
@@ -7234,7 +7235,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPieChart {
         /**
@@ -7244,7 +7245,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPinDrop {
         /**
@@ -7254,7 +7255,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlace {
         /**
@@ -7264,7 +7265,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlayArrow {
         /**
@@ -7274,7 +7275,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlayCircleFilled {
         /**
@@ -7284,7 +7285,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlayCircleFilledWhite {
         /**
@@ -7294,7 +7295,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlayCircleOutline {
         /**
@@ -7304,7 +7305,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlayForWork {
         /**
@@ -7314,7 +7315,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlaylistAdd {
         /**
@@ -7324,7 +7325,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlaylistAddCheck {
         /**
@@ -7334,7 +7335,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlaylistPlay {
         /**
@@ -7344,7 +7345,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlusOne {
         /**
@@ -7354,7 +7355,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPoll {
         /**
@@ -7364,7 +7365,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPool {
         /**
@@ -7374,7 +7375,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPortableWifiOff {
         /**
@@ -7384,7 +7385,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPortrait {
         /**
@@ -7394,7 +7395,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPower {
         /**
@@ -7404,7 +7405,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPowerInput {
         /**
@@ -7414,7 +7415,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPowerOff {
         /**
@@ -7424,7 +7425,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPowerSettingsNew {
         /**
@@ -7434,7 +7435,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPregnantWoman {
         /**
@@ -7444,7 +7445,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPresentToAll {
         /**
@@ -7454,7 +7455,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPrint {
         /**
@@ -7464,7 +7465,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPrintDisabled {
         /**
@@ -7474,7 +7475,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPriorityHigh {
         /**
@@ -7484,7 +7485,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconProcessor {
         /**
@@ -7494,7 +7495,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconProcessorAlt {
         /**
@@ -7504,7 +7505,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPropulsionPower {
         /**
@@ -7514,7 +7515,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPublic {
         /**
@@ -7524,7 +7525,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPublish {
         /**
@@ -7534,7 +7535,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconQueryBuilder {
         /**
@@ -7544,7 +7545,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconQuestionAnswer {
         /**
@@ -7554,7 +7555,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconQueue {
         /**
@@ -7564,7 +7565,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconQueueMusic {
         /**
@@ -7574,7 +7575,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconQueuePlayNext {
         /**
@@ -7584,7 +7585,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRadio {
         /**
@@ -7594,7 +7595,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRadioButtonChecked {
         /**
@@ -7604,7 +7605,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRadioButtonUnchecked {
         /**
@@ -7614,7 +7615,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRateReview {
         /**
@@ -7624,7 +7625,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReceipt {
         /**
@@ -7634,7 +7635,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRecentActors {
         /**
@@ -7644,7 +7645,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRecordVoiceOver {
         /**
@@ -7654,7 +7655,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRedeem {
         /**
@@ -7664,7 +7665,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRedo {
         /**
@@ -7674,7 +7675,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRefresh {
         /**
@@ -7684,7 +7685,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRemove {
         /**
@@ -7694,7 +7695,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRemoveCircle {
         /**
@@ -7704,7 +7705,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRemoveCircleOutline {
         /**
@@ -7714,7 +7715,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRemoveFromQueue {
         /**
@@ -7724,7 +7725,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRemoveRedEye {
         /**
@@ -7734,7 +7735,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRemoveShoppingCart {
         /**
@@ -7744,7 +7745,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReorder {
         /**
@@ -7754,7 +7755,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRepeat {
         /**
@@ -7764,7 +7765,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRepeatOne {
         /**
@@ -7774,7 +7775,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReplay {
         /**
@@ -7784,7 +7785,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReplay10 {
         /**
@@ -7794,7 +7795,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReplay30 {
         /**
@@ -7804,7 +7805,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReplay5 {
         /**
@@ -7814,7 +7815,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReply {
         /**
@@ -7824,7 +7825,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReplyAll {
         /**
@@ -7834,7 +7835,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReport {
         /**
@@ -7844,7 +7845,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReportOff {
         /**
@@ -7854,7 +7855,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReportProblem {
         /**
@@ -7864,7 +7865,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRestaurant {
         /**
@@ -7874,7 +7875,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRestaurantMenu {
         /**
@@ -7884,7 +7885,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRestore {
         /**
@@ -7894,7 +7895,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRestoreFromTrash {
         /**
@@ -7904,7 +7905,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRestorePage {
         /**
@@ -7914,7 +7915,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRingVolume {
         /**
@@ -7924,7 +7925,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRoom {
         /**
@@ -7934,7 +7935,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRoomService {
         /**
@@ -7944,7 +7945,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRotate90DegreesCc {
         /**
@@ -7954,7 +7955,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRotateLeft {
         /**
@@ -7964,7 +7965,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRotateRight {
         /**
@@ -7974,7 +7975,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRoundedCorner {
         /**
@@ -7984,7 +7985,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRouter {
         /**
@@ -7994,7 +7995,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRowing {
         /**
@@ -8004,7 +8005,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRssFeed {
         /**
@@ -8014,7 +8015,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRvHookup {
         /**
@@ -8024,7 +8025,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSatellite {
         /**
@@ -8034,7 +8035,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSatelliteOff {
         /**
@@ -8044,7 +8045,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSatelliteReceive {
         /**
@@ -8054,7 +8055,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSatelliteTransmit {
         /**
@@ -8064,7 +8065,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSave {
         /**
@@ -8074,7 +8075,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSaveAlt {
         /**
@@ -8084,7 +8085,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScanner {
         /**
@@ -8094,7 +8095,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScatterPlot {
         /**
@@ -8104,7 +8105,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSchedule {
         /**
@@ -8114,7 +8115,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSchool {
         /**
@@ -8124,7 +8125,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScore {
         /**
@@ -8134,7 +8135,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScreenLockLandscape {
         /**
@@ -8144,7 +8145,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScreenLockPortrait {
         /**
@@ -8154,7 +8155,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScreenLockRotation {
         /**
@@ -8164,7 +8165,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScreenRotation {
         /**
@@ -8174,7 +8175,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScreenShare {
         /**
@@ -8184,7 +8185,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSdCard {
         /**
@@ -8194,7 +8195,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSdStorage {
         /**
@@ -8204,7 +8205,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSearch {
         /**
@@ -8214,7 +8215,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSeat {
         /**
@@ -8224,7 +8225,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSecurity {
         /**
@@ -8234,7 +8235,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSelectAll {
         /**
@@ -8244,7 +8245,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSend {
         /**
@@ -8254,7 +8255,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSentimentDissatisfied {
         /**
@@ -8264,7 +8265,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSentimentSatisfied {
         /**
@@ -8274,7 +8275,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSentimentSatisfiedAlt {
         /**
@@ -8284,7 +8285,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSentimentVeryDissatisfied {
         /**
@@ -8294,7 +8295,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSentimentVerySatisfied {
         /**
@@ -8304,7 +8305,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettings {
         /**
@@ -8314,7 +8315,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsApplications {
         /**
@@ -8324,7 +8325,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsBackupRestore {
         /**
@@ -8334,7 +8335,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsBluetooth {
         /**
@@ -8344,7 +8345,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsBrightness {
         /**
@@ -8354,7 +8355,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsCell {
         /**
@@ -8364,7 +8365,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsEthernet {
         /**
@@ -8374,7 +8375,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsInputAntenna {
         /**
@@ -8384,7 +8385,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsInputComponent {
         /**
@@ -8394,7 +8395,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsInputComposite {
         /**
@@ -8404,7 +8405,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsInputHdmi {
         /**
@@ -8414,7 +8415,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsInputSvideo {
         /**
@@ -8424,7 +8425,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsOverscan {
         /**
@@ -8434,7 +8435,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsPhone {
         /**
@@ -8444,7 +8445,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsPower {
         /**
@@ -8454,7 +8455,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsRemote {
         /**
@@ -8464,7 +8465,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsSystemDaydream {
         /**
@@ -8474,7 +8475,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsVoice {
         /**
@@ -8484,7 +8485,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShare {
         /**
@@ -8494,7 +8495,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShop {
         /**
@@ -8504,7 +8505,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShopTwo {
         /**
@@ -8514,7 +8515,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShoppingBasket {
         /**
@@ -8524,7 +8525,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShoppingCart {
         /**
@@ -8534,7 +8535,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShortText {
         /**
@@ -8544,7 +8545,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShowChart {
         /**
@@ -8554,7 +8555,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShuffle {
         /**
@@ -8564,7 +8565,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShutterSpeed {
         /**
@@ -8574,7 +8575,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellular0Bar {
         /**
@@ -8584,7 +8585,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellular1Bar {
         /**
@@ -8594,7 +8595,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellular2Bar {
         /**
@@ -8604,7 +8605,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellular3Bar {
         /**
@@ -8614,7 +8615,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellular4Bar {
         /**
@@ -8624,7 +8625,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularAlt {
         /**
@@ -8634,7 +8635,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularConnectedNoInternet0Bar {
         /**
@@ -8644,7 +8645,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularConnectedNoInternet1Bar {
         /**
@@ -8654,7 +8655,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularConnectedNoInternet2Bar {
         /**
@@ -8664,7 +8665,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularConnectedNoInternet3Bar {
         /**
@@ -8674,7 +8675,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularConnectedNoInternet4Bar {
         /**
@@ -8684,7 +8685,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularNoSim {
         /**
@@ -8694,7 +8695,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularNull {
         /**
@@ -8704,7 +8705,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularOff {
         /**
@@ -8714,7 +8715,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi0Bar {
         /**
@@ -8724,7 +8725,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi1Bar {
         /**
@@ -8734,7 +8735,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi1BarLock {
         /**
@@ -8744,7 +8745,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi2Bar {
         /**
@@ -8754,7 +8755,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi2BarLock {
         /**
@@ -8764,7 +8765,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi3Bar {
         /**
@@ -8774,7 +8775,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi3BarLock {
         /**
@@ -8784,7 +8785,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi4Bar {
         /**
@@ -8794,7 +8795,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi4BarLock {
         /**
@@ -8804,7 +8805,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifiOff {
         /**
@@ -8814,7 +8815,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSimCard {
         /**
@@ -8824,7 +8825,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSkipNext {
         /**
@@ -8834,7 +8835,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSkipPrevious {
         /**
@@ -8844,7 +8845,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSlideshow {
         /**
@@ -8854,7 +8855,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSlowMotionVideo {
         /**
@@ -8864,7 +8865,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSmartphone {
         /**
@@ -8874,7 +8875,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSmokeFree {
         /**
@@ -8884,7 +8885,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSmokingRooms {
         /**
@@ -8894,7 +8895,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSms {
         /**
@@ -8904,7 +8905,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSmsFailed {
         /**
@@ -8914,7 +8915,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSnooze {
         /**
@@ -8924,7 +8925,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSolar {
         /**
@@ -8934,7 +8935,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSort {
         /**
@@ -8944,7 +8945,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSortByAlpha {
         /**
@@ -8954,7 +8955,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpa {
         /**
@@ -8964,7 +8965,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpaceBar {
         /**
@@ -8974,7 +8975,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpeaker {
         /**
@@ -8984,7 +8985,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpeakerGroup {
         /**
@@ -8994,7 +8995,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpeakerNotes {
         /**
@@ -9004,7 +9005,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpeakerNotesOff {
         /**
@@ -9014,7 +9015,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpeakerPhone {
         /**
@@ -9024,7 +9025,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpellcheck {
         /**
@@ -9034,7 +9035,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStar {
         /**
@@ -9044,7 +9045,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStarBorder {
         /**
@@ -9054,7 +9055,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStarHalf {
         /**
@@ -9064,7 +9065,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStarRate {
         /**
@@ -9074,7 +9075,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStars {
         /**
@@ -9084,7 +9085,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStayCurrentLandscape {
         /**
@@ -9094,7 +9095,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStayCurrentPortrait {
         /**
@@ -9104,7 +9105,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStayPrimaryLandscape {
         /**
@@ -9114,7 +9115,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStayPrimaryPortrait {
         /**
@@ -9124,7 +9125,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStop {
         /**
@@ -9134,7 +9135,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStopScreenShare {
         /**
@@ -9144,7 +9145,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStorage {
         /**
@@ -9154,7 +9155,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStore {
         /**
@@ -9164,7 +9165,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStoreMallDirectory {
         /**
@@ -9174,7 +9175,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStraighten {
         /**
@@ -9184,7 +9185,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStreetview {
         /**
@@ -9194,7 +9195,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStrikethroughS {
         /**
@@ -9204,7 +9205,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStyle {
         /**
@@ -9214,7 +9215,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSubdirectoryArrowLeft {
         /**
@@ -9224,7 +9225,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSubdirectoryArrowRight {
         /**
@@ -9234,7 +9235,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSubject {
         /**
@@ -9244,7 +9245,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSubscriptions {
         /**
@@ -9254,7 +9255,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSubtitles {
         /**
@@ -9264,7 +9265,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSubway {
         /**
@@ -9274,7 +9275,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSupervisedUserCircle {
         /**
@@ -9284,7 +9285,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSupervisorAccount {
         /**
@@ -9294,7 +9295,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSurroundSound {
         /**
@@ -9304,7 +9305,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwapCalls {
         /**
@@ -9314,7 +9315,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwapHoriz {
         /**
@@ -9324,7 +9325,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwapHorizontalCircle {
         /**
@@ -9334,7 +9335,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwapVert {
         /**
@@ -9344,7 +9345,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwapVerticalCircle {
         /**
@@ -9354,7 +9355,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwitchCamera {
         /**
@@ -9364,7 +9365,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwitchVideo {
         /**
@@ -9374,7 +9375,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSync {
         /**
@@ -9384,7 +9385,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSyncDisabled {
         /**
@@ -9394,7 +9395,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSyncProblem {
         /**
@@ -9404,7 +9405,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSystemUpdate {
         /**
@@ -9414,7 +9415,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTab {
         /**
@@ -9424,7 +9425,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTabUnselected {
         /**
@@ -9434,7 +9435,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTableChart {
         /**
@@ -9444,7 +9445,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTablet {
         /**
@@ -9454,7 +9455,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTabletAndroid {
         /**
@@ -9464,7 +9465,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTabletMac {
         /**
@@ -9474,7 +9475,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTagFaces {
         /**
@@ -9484,7 +9485,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTapAndPlay {
         /**
@@ -9494,7 +9495,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTerrain {
         /**
@@ -9504,7 +9505,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTextFields {
         /**
@@ -9514,7 +9515,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTextFormat {
         /**
@@ -9524,7 +9525,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTextRotateUp {
         /**
@@ -9534,7 +9535,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTextRotateVertical {
         /**
@@ -9544,7 +9545,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTextRotationNone {
         /**
@@ -9554,7 +9555,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTextsms {
         /**
@@ -9564,7 +9565,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTexture {
         /**
@@ -9574,7 +9575,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTheaters {
         /**
@@ -9584,7 +9585,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconThermal {
         /**
@@ -9594,7 +9595,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconThumbDown {
         /**
@@ -9604,7 +9605,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconThumbDownAlt {
         /**
@@ -9614,7 +9615,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconThumbUp {
         /**
@@ -9624,7 +9625,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconThumbUpAlt {
         /**
@@ -9634,7 +9635,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconThumbsUpDown {
         /**
@@ -9644,7 +9645,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimeToLeave {
         /**
@@ -9654,7 +9655,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimelapse {
         /**
@@ -9664,7 +9665,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimeline {
         /**
@@ -9674,7 +9675,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimer {
         /**
@@ -9684,7 +9685,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimer10 {
         /**
@@ -9694,7 +9695,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimer3 {
         /**
@@ -9704,7 +9705,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimerOff {
         /**
@@ -9714,7 +9715,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTitle {
         /**
@@ -9724,7 +9725,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconToc {
         /**
@@ -9734,7 +9735,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconToday {
         /**
@@ -9744,7 +9745,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconToggleOff {
         /**
@@ -9754,7 +9755,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconToggleOn {
         /**
@@ -9764,7 +9765,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconToll {
         /**
@@ -9774,7 +9775,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTonality {
         /**
@@ -9784,7 +9785,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTouchApp {
         /**
@@ -9794,7 +9795,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconToys {
         /**
@@ -9804,7 +9805,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTrackChanges {
         /**
@@ -9814,7 +9815,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTraffic {
         /**
@@ -9824,7 +9825,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTrain {
         /**
@@ -9834,7 +9835,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTram {
         /**
@@ -9844,7 +9845,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTransferWithinAStation {
         /**
@@ -9854,7 +9855,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTransform {
         /**
@@ -9864,7 +9865,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTransitEnterexit {
         /**
@@ -9874,7 +9875,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTranslate {
         /**
@@ -9884,7 +9885,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTrendingDown {
         /**
@@ -9894,7 +9895,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTrendingFlat {
         /**
@@ -9904,7 +9905,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTrendingUp {
         /**
@@ -9914,7 +9915,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTripOrigin {
         /**
@@ -9924,7 +9925,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTune {
         /**
@@ -9934,7 +9935,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTurnedIn {
         /**
@@ -9944,7 +9945,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTurnedInNot {
         /**
@@ -9954,7 +9955,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTv {
         /**
@@ -9964,7 +9965,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTvOff {
         /**
@@ -9974,7 +9975,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUnarchive {
         /**
@@ -9984,7 +9985,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUndo {
         /**
@@ -9994,7 +9995,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUnfoldLess {
         /**
@@ -10004,7 +10005,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUnfoldMore {
         /**
@@ -10014,7 +10015,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUnsubscribe {
         /**
@@ -10024,7 +10025,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUpdate {
         /**
@@ -10034,7 +10035,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUsb {
         /**
@@ -10044,7 +10045,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVerifiedUser {
         /**
@@ -10054,7 +10055,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVerticalAlignBottom {
         /**
@@ -10064,7 +10065,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVerticalAlignCenter {
         /**
@@ -10074,7 +10075,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVerticalAlignTop {
         /**
@@ -10084,7 +10085,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVerticalSplit {
         /**
@@ -10094,7 +10095,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVibration {
         /**
@@ -10104,7 +10105,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVideoCall {
         /**
@@ -10114,7 +10115,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVideoLabel {
         /**
@@ -10124,7 +10125,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVideoLibrary {
         /**
@@ -10134,7 +10135,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVideocam {
         /**
@@ -10144,7 +10145,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVideocamOff {
         /**
@@ -10154,7 +10155,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVideogameAsset {
         /**
@@ -10164,7 +10165,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewAgenda {
         /**
@@ -10174,7 +10175,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewArray {
         /**
@@ -10184,7 +10185,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewCarousel {
         /**
@@ -10194,7 +10195,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewColumn {
         /**
@@ -10204,7 +10205,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewComfy {
         /**
@@ -10214,7 +10215,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewCompact {
         /**
@@ -10224,7 +10225,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewDay {
         /**
@@ -10234,7 +10235,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewHeadline {
         /**
@@ -10244,7 +10245,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewList {
         /**
@@ -10254,7 +10255,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewModule {
         /**
@@ -10264,7 +10265,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewQuilt {
         /**
@@ -10274,7 +10275,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewStream {
         /**
@@ -10284,7 +10285,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewWeek {
         /**
@@ -10294,7 +10295,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVignette {
         /**
@@ -10304,7 +10305,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVisibility {
         /**
@@ -10314,7 +10315,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVisibilityOff {
         /**
@@ -10324,7 +10325,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVoiceChat {
         /**
@@ -10334,7 +10335,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVoiceOverOff {
         /**
@@ -10344,7 +10345,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVoicemail {
         /**
@@ -10354,7 +10355,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVolumeDown {
         /**
@@ -10364,7 +10365,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVolumeMute {
         /**
@@ -10374,7 +10375,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVolumeOff {
         /**
@@ -10384,7 +10385,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVolumeUp {
         /**
@@ -10394,7 +10395,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVpnKey {
         /**
@@ -10404,7 +10405,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVpnLock {
         /**
@@ -10414,7 +10415,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWallpaper {
         /**
@@ -10424,7 +10425,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWarning {
         /**
@@ -10434,7 +10435,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWatch {
         /**
@@ -10444,7 +10445,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWatchLater {
         /**
@@ -10454,7 +10455,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWaves {
         /**
@@ -10464,7 +10465,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWbAuto {
         /**
@@ -10474,7 +10475,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWbCloudy {
         /**
@@ -10484,7 +10485,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWbIncandescent {
         /**
@@ -10494,7 +10495,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWbIridescent {
         /**
@@ -10504,7 +10505,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWbSunny {
         /**
@@ -10514,7 +10515,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWc {
         /**
@@ -10524,7 +10525,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWeb {
         /**
@@ -10534,7 +10535,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWebAsset {
         /**
@@ -10544,7 +10545,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWeekend {
         /**
@@ -10554,7 +10555,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWhatshot {
         /**
@@ -10564,7 +10565,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWhereToVote {
         /**
@@ -10574,7 +10575,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWidgets {
         /**
@@ -10584,7 +10585,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWifi {
         /**
@@ -10594,7 +10595,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWifiLock {
         /**
@@ -10604,7 +10605,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWifiOff {
         /**
@@ -10614,7 +10615,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWifiTethering {
         /**
@@ -10624,7 +10625,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWork {
         /**
@@ -10634,7 +10635,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWorkOff {
         /**
@@ -10644,7 +10645,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWorkOutline {
         /**
@@ -10654,7 +10655,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWrapText {
         /**
@@ -10664,7 +10665,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconYoutubeSearchedFor {
         /**
@@ -10674,7 +10675,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconZoomIn {
         /**
@@ -10684,7 +10685,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconZoomInMap {
         /**
@@ -10694,7 +10695,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconZoomOut {
         /**
@@ -10704,7 +10705,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconZoomOutMap {
         /**
@@ -10714,7 +10715,7 @@ export namespace Components {
         /**
           * The size of the icon
          */
-        "size": 'extra-small' | 'small' | 'normal' | 'large';
+        "size": 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxInputField {
         /**
@@ -18882,12 +18883,13 @@ declare namespace LocalJSX {
          */
         "label"?: string;
         /**
-          * The size of the icon
+          * The size of the icon. Can be 'extra-small', 'small', 'normal', 'large' or any custom value ('30px', '1rem', '3.321em')
          */
         "size"?: | 'extra-small'
         | 'small'
         | 'normal'
-        | 'large';
+        | 'large'
+        | string;
     }
     interface RuxIcon360 {
         /**
@@ -18897,7 +18899,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIcon3dRotation {
         /**
@@ -18907,7 +18909,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIcon4k {
         /**
@@ -18917,7 +18919,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAcUnit {
         /**
@@ -18927,7 +18929,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccessAlarms {
         /**
@@ -18937,7 +18939,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccessTime {
         /**
@@ -18947,7 +18949,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccessibility {
         /**
@@ -18957,7 +18959,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccessibilityNew {
         /**
@@ -18967,7 +18969,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccessible {
         /**
@@ -18977,7 +18979,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccessibleForward {
         /**
@@ -18987,7 +18989,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccountBalance {
         /**
@@ -18997,7 +18999,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccountBalanceWallet {
         /**
@@ -19007,7 +19009,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccountBox {
         /**
@@ -19017,7 +19019,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAccountCircle {
         /**
@@ -19027,7 +19029,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAdb {
         /**
@@ -19037,7 +19039,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAdd {
         /**
@@ -19047,7 +19049,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddAPhoto {
         /**
@@ -19057,7 +19059,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddAlarm {
         /**
@@ -19067,7 +19069,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddAlert {
         /**
@@ -19077,7 +19079,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddBox {
         /**
@@ -19087,7 +19089,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddCircle {
         /**
@@ -19097,7 +19099,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddCircleOutline {
         /**
@@ -19107,7 +19109,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddComment {
         /**
@@ -19117,7 +19119,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddLocation {
         /**
@@ -19127,7 +19129,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddPhotoAlternate {
         /**
@@ -19137,7 +19139,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddShoppingCart {
         /**
@@ -19147,7 +19149,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddToHomeScreen {
         /**
@@ -19157,7 +19159,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddToPhotos {
         /**
@@ -19167,7 +19169,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAddToQueue {
         /**
@@ -19177,7 +19179,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAdjust {
         /**
@@ -19187,7 +19189,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatFlat {
         /**
@@ -19197,7 +19199,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatFlatAngled {
         /**
@@ -19207,7 +19209,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatIndividualSuite {
         /**
@@ -19217,7 +19219,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatLegroomExtra {
         /**
@@ -19227,7 +19229,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatLegroomNormal {
         /**
@@ -19237,7 +19239,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatLegroomReduced {
         /**
@@ -19247,7 +19249,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatReclineExtra {
         /**
@@ -19257,7 +19259,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirlineSeatReclineNormal {
         /**
@@ -19267,7 +19269,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirplanemodeActive {
         /**
@@ -19277,7 +19279,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirplanemodeInactive {
         /**
@@ -19287,7 +19289,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirplay {
         /**
@@ -19297,7 +19299,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAirportShuttle {
         /**
@@ -19307,7 +19309,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAlarm {
         /**
@@ -19317,7 +19319,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAlarmAdd {
         /**
@@ -19327,7 +19329,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAlarmOff {
         /**
@@ -19337,7 +19339,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAlarmOn {
         /**
@@ -19347,7 +19349,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAlbum {
         /**
@@ -19357,7 +19359,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAllInbox {
         /**
@@ -19367,7 +19369,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAllInclusive {
         /**
@@ -19377,7 +19379,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAllOut {
         /**
@@ -19387,7 +19389,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAlternateEmail {
         /**
@@ -19397,7 +19399,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAltitude {
         /**
@@ -19407,7 +19409,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAndroid {
         /**
@@ -19417,7 +19419,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAnnouncement {
         /**
@@ -19427,7 +19429,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAntenna {
         /**
@@ -19437,7 +19439,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAntennaOff {
         /**
@@ -19447,7 +19449,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAntennaReceive {
         /**
@@ -19457,7 +19459,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAntennaTransmit {
         /**
@@ -19467,7 +19469,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconApps {
         /**
@@ -19477,7 +19479,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArchive {
         /**
@@ -19487,7 +19489,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowBack {
         /**
@@ -19497,7 +19499,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowBackIos {
         /**
@@ -19507,7 +19509,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowDownward {
         /**
@@ -19517,7 +19519,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowDropDown {
         /**
@@ -19527,7 +19529,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowDropDownCircle {
         /**
@@ -19537,7 +19539,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowDropUp {
         /**
@@ -19547,7 +19549,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowForward {
         /**
@@ -19557,7 +19559,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowForwardIos {
         /**
@@ -19567,7 +19569,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowLeft {
         /**
@@ -19577,7 +19579,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowRight {
         /**
@@ -19587,7 +19589,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowRightAlt {
         /**
@@ -19597,7 +19599,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArrowUpward {
         /**
@@ -19607,7 +19609,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconArtTrack {
         /**
@@ -19617,7 +19619,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAspectRatio {
         /**
@@ -19627,7 +19629,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssessment {
         /**
@@ -19637,7 +19639,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssignment {
         /**
@@ -19647,7 +19649,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssignmentFind {
         /**
@@ -19657,7 +19659,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssignmentLate {
         /**
@@ -19667,7 +19669,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssignmentReturn {
         /**
@@ -19677,7 +19679,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssignmentReturned {
         /**
@@ -19687,7 +19689,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssignmentTurnedIn {
         /**
@@ -19697,7 +19699,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssistant {
         /**
@@ -19707,7 +19709,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAssistantPhoto {
         /**
@@ -19717,7 +19719,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAttachFile {
         /**
@@ -19727,7 +19729,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAttachMoney {
         /**
@@ -19737,7 +19739,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAttachment {
         /**
@@ -19747,7 +19749,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAudiotrack {
         /**
@@ -19757,7 +19759,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAutorenew {
         /**
@@ -19767,7 +19769,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconAvTimer {
         /**
@@ -19777,7 +19779,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBackspace {
         /**
@@ -19787,7 +19789,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBackup {
         /**
@@ -19797,7 +19799,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBallot {
         /**
@@ -19807,7 +19809,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBarChart {
         /**
@@ -19817,7 +19819,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBattery20 {
         /**
@@ -19827,7 +19829,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBattery30 {
         /**
@@ -19837,7 +19839,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBattery50 {
         /**
@@ -19847,7 +19849,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBattery60 {
         /**
@@ -19857,7 +19859,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBattery80 {
         /**
@@ -19867,7 +19869,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBattery90 {
         /**
@@ -19877,7 +19879,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryAlert {
         /**
@@ -19887,7 +19889,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryCharging20 {
         /**
@@ -19897,7 +19899,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryCharging30 {
         /**
@@ -19907,7 +19909,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryCharging50 {
         /**
@@ -19917,7 +19919,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryCharging60 {
         /**
@@ -19927,7 +19929,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryCharging80 {
         /**
@@ -19937,7 +19939,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryCharging90 {
         /**
@@ -19947,7 +19949,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryChargingFull {
         /**
@@ -19957,7 +19959,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryFull {
         /**
@@ -19967,7 +19969,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryStd {
         /**
@@ -19977,7 +19979,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBatteryUnknown {
         /**
@@ -19987,7 +19989,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBeachAccess {
         /**
@@ -19997,7 +19999,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBeenhere {
         /**
@@ -20007,7 +20009,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBlock {
         /**
@@ -20017,7 +20019,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBluetooth {
         /**
@@ -20027,7 +20029,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBluetoothAudio {
         /**
@@ -20037,7 +20039,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBluetoothConnected {
         /**
@@ -20047,7 +20049,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBluetoothDisabled {
         /**
@@ -20057,7 +20059,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBluetoothSearching {
         /**
@@ -20067,7 +20069,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBlurCircular {
         /**
@@ -20077,7 +20079,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBlurLinear {
         /**
@@ -20087,7 +20089,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBlurOff {
         /**
@@ -20097,7 +20099,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBlurOn {
         /**
@@ -20107,7 +20109,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBook {
         /**
@@ -20117,7 +20119,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBookmark {
         /**
@@ -20127,7 +20129,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBookmarkBorder {
         /**
@@ -20137,7 +20139,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBookmarks {
         /**
@@ -20147,7 +20149,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderAll {
         /**
@@ -20157,7 +20159,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderBottom {
         /**
@@ -20167,7 +20169,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderClear {
         /**
@@ -20177,7 +20179,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderColor {
         /**
@@ -20187,7 +20189,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderHorizontal {
         /**
@@ -20197,7 +20199,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderInner {
         /**
@@ -20207,7 +20209,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderLeft {
         /**
@@ -20217,7 +20219,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderOuter {
         /**
@@ -20227,7 +20229,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderRight {
         /**
@@ -20237,7 +20239,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderStyle {
         /**
@@ -20247,7 +20249,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderTop {
         /**
@@ -20257,7 +20259,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBorderVertical {
         /**
@@ -20267,7 +20269,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrandingWatermark {
         /**
@@ -20277,7 +20279,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness1 {
         /**
@@ -20287,7 +20289,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness2 {
         /**
@@ -20297,7 +20299,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness3 {
         /**
@@ -20307,7 +20309,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness4 {
         /**
@@ -20317,7 +20319,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness5 {
         /**
@@ -20327,7 +20329,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness6 {
         /**
@@ -20337,7 +20339,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightness7 {
         /**
@@ -20347,7 +20349,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightnessAuto {
         /**
@@ -20357,7 +20359,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightnessHigh {
         /**
@@ -20367,7 +20369,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightnessLow {
         /**
@@ -20377,7 +20379,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrightnessMedium {
         /**
@@ -20387,7 +20389,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrokenImage {
         /**
@@ -20397,7 +20399,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBrush {
         /**
@@ -20407,7 +20409,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBubbleChart {
         /**
@@ -20417,7 +20419,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBugReport {
         /**
@@ -20427,7 +20429,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBuild {
         /**
@@ -20437,7 +20439,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBurstMode {
         /**
@@ -20447,7 +20449,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBusiness {
         /**
@@ -20457,7 +20459,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconBusinessCenter {
         /**
@@ -20467,7 +20469,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCached {
         /**
@@ -20477,7 +20479,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCake {
         /**
@@ -20487,7 +20489,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCalendarToday {
         /**
@@ -20497,7 +20499,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCalendarViewDay {
         /**
@@ -20507,7 +20509,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCall {
         /**
@@ -20517,7 +20519,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallEnd {
         /**
@@ -20527,7 +20529,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallMade {
         /**
@@ -20537,7 +20539,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallMerge {
         /**
@@ -20547,7 +20549,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallMissed {
         /**
@@ -20557,7 +20559,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallMissedOutgoing {
         /**
@@ -20567,7 +20569,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallReceived {
         /**
@@ -20577,7 +20579,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallSplit {
         /**
@@ -20587,7 +20589,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCallToAction {
         /**
@@ -20597,7 +20599,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCamera {
         /**
@@ -20607,7 +20609,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCameraAlt {
         /**
@@ -20617,7 +20619,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCameraEnhance {
         /**
@@ -20627,7 +20629,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCameraFront {
         /**
@@ -20637,7 +20639,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCameraRear {
         /**
@@ -20647,7 +20649,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCameraRoll {
         /**
@@ -20657,7 +20659,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCancel {
         /**
@@ -20667,7 +20669,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCancelPresentation {
         /**
@@ -20677,7 +20679,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCardGiftcard {
         /**
@@ -20687,7 +20689,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCardMembership {
         /**
@@ -20697,7 +20699,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCardTravel {
         /**
@@ -20707,7 +20709,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCasino {
         /**
@@ -20717,7 +20719,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCast {
         /**
@@ -20727,7 +20729,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCastConnected {
         /**
@@ -20737,7 +20739,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCastForEducation {
         /**
@@ -20747,7 +20749,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCategory {
         /**
@@ -20757,7 +20759,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCellWifi {
         /**
@@ -20767,7 +20769,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCenterFocusStrong {
         /**
@@ -20777,7 +20779,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCenterFocusWeak {
         /**
@@ -20787,7 +20789,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChangeHistory {
         /**
@@ -20797,7 +20799,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChat {
         /**
@@ -20807,7 +20809,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChatBubble {
         /**
@@ -20817,7 +20819,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChatBubbleOutline {
         /**
@@ -20827,7 +20829,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCheck {
         /**
@@ -20837,7 +20839,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCheckBox {
         /**
@@ -20847,7 +20849,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCheckBoxOutlineBlank {
         /**
@@ -20857,7 +20859,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCheckCircle {
         /**
@@ -20867,7 +20869,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCheckCircleOutline {
         /**
@@ -20877,7 +20879,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChevronLeft {
         /**
@@ -20887,7 +20889,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChevronRight {
         /**
@@ -20897,7 +20899,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChildCare {
         /**
@@ -20907,7 +20909,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChildFriendly {
         /**
@@ -20917,7 +20919,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconChromeReaderMode {
         /**
@@ -20927,7 +20929,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconClass {
         /**
@@ -20937,7 +20939,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconClear {
         /**
@@ -20947,7 +20949,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconClearAll {
         /**
@@ -20957,7 +20959,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconClose {
         /**
@@ -20967,7 +20969,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconClosedCaption {
         /**
@@ -20977,7 +20979,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloud {
         /**
@@ -20987,7 +20989,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloudCircle {
         /**
@@ -20997,7 +20999,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloudDone {
         /**
@@ -21007,7 +21009,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloudDownload {
         /**
@@ -21017,7 +21019,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloudOff {
         /**
@@ -21027,7 +21029,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloudQueue {
         /**
@@ -21037,7 +21039,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCloudUpload {
         /**
@@ -21047,7 +21049,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCode {
         /**
@@ -21057,7 +21059,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCollections {
         /**
@@ -21067,7 +21069,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCollectionsBookmark {
         /**
@@ -21077,7 +21079,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconColorLens {
         /**
@@ -21087,7 +21089,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconColorize {
         /**
@@ -21097,7 +21099,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconComment {
         /**
@@ -21107,7 +21109,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCommute {
         /**
@@ -21117,7 +21119,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCompare {
         /**
@@ -21127,7 +21129,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCompareArrows {
         /**
@@ -21137,7 +21139,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCompassCalibration {
         /**
@@ -21147,7 +21149,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconComputer {
         /**
@@ -21157,7 +21159,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconConfirmationNumber {
         /**
@@ -21167,7 +21169,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconContactMail {
         /**
@@ -21177,7 +21179,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconContactPhone {
         /**
@@ -21187,7 +21189,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconContactSupport {
         /**
@@ -21197,7 +21199,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconContacts {
         /**
@@ -21207,7 +21209,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconControlCamera {
         /**
@@ -21217,7 +21219,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconControlPoint {
         /**
@@ -21227,7 +21229,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconControlPointDuplicate {
         /**
@@ -21237,7 +21239,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCopyright {
         /**
@@ -21247,7 +21249,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCreate {
         /**
@@ -21257,7 +21259,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCreateNewFolder {
         /**
@@ -21267,7 +21269,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCreditCard {
         /**
@@ -21277,7 +21279,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCrop {
         /**
@@ -21287,7 +21289,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCrop169 {
         /**
@@ -21297,7 +21299,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCrop32 {
         /**
@@ -21307,7 +21309,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCrop54 {
         /**
@@ -21317,7 +21319,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCrop75 {
         /**
@@ -21327,7 +21329,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropDin {
         /**
@@ -21337,7 +21339,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropFree {
         /**
@@ -21347,7 +21349,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropLandscape {
         /**
@@ -21357,7 +21359,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropOriginal {
         /**
@@ -21367,7 +21369,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropPortrait {
         /**
@@ -21377,7 +21379,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropRotate {
         /**
@@ -21387,7 +21389,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconCropSquare {
         /**
@@ -21397,7 +21399,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDashboard {
         /**
@@ -21407,7 +21409,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDataUsage {
         /**
@@ -21417,7 +21419,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDateRange {
         /**
@@ -21427,7 +21429,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDehaze {
         /**
@@ -21437,7 +21439,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDelete {
         /**
@@ -21447,7 +21449,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeleteForever {
         /**
@@ -21457,7 +21459,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeleteOutline {
         /**
@@ -21467,7 +21469,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeleteSweep {
         /**
@@ -21477,7 +21479,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDepartureBoard {
         /**
@@ -21487,7 +21489,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDescription {
         /**
@@ -21497,7 +21499,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDesktopAccessDisabled {
         /**
@@ -21507,7 +21509,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDesktopMac {
         /**
@@ -21517,7 +21519,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDesktopWindows {
         /**
@@ -21527,7 +21529,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDetails {
         /**
@@ -21537,7 +21539,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeveloperBoard {
         /**
@@ -21547,7 +21549,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeveloperMode {
         /**
@@ -21557,7 +21559,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeviceHub {
         /**
@@ -21567,7 +21569,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDeviceUnknown {
         /**
@@ -21577,7 +21579,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDevices {
         /**
@@ -21587,7 +21589,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDevicesOther {
         /**
@@ -21597,7 +21599,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDialerSip {
         /**
@@ -21607,7 +21609,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDialpad {
         /**
@@ -21617,7 +21619,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirections {
         /**
@@ -21627,7 +21629,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsBike {
         /**
@@ -21637,7 +21639,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsBoat {
         /**
@@ -21647,7 +21649,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsBus {
         /**
@@ -21657,7 +21659,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsCar {
         /**
@@ -21667,7 +21669,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsRailway {
         /**
@@ -21677,7 +21679,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsRun {
         /**
@@ -21687,7 +21689,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsSubway {
         /**
@@ -21697,7 +21699,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsTransit {
         /**
@@ -21707,7 +21709,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDirectionsWalk {
         /**
@@ -21717,7 +21719,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDiscFull {
         /**
@@ -21727,7 +21729,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDns {
         /**
@@ -21737,7 +21739,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDock {
         /**
@@ -21747,7 +21749,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDomain {
         /**
@@ -21757,7 +21759,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDomainDisabled {
         /**
@@ -21767,7 +21769,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDone {
         /**
@@ -21777,7 +21779,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDoneAll {
         /**
@@ -21787,7 +21789,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDoneOutline {
         /**
@@ -21797,7 +21799,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDonutLarge {
         /**
@@ -21807,7 +21809,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDonutSmall {
         /**
@@ -21817,7 +21819,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDrafts {
         /**
@@ -21827,7 +21829,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDragHandle {
         /**
@@ -21837,7 +21839,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDragIndicator {
         /**
@@ -21847,7 +21849,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDriveEta {
         /**
@@ -21857,7 +21859,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDuo {
         /**
@@ -21867,7 +21869,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconDvr {
         /**
@@ -21877,7 +21879,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEdit {
         /**
@@ -21887,7 +21889,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEditAttributes {
         /**
@@ -21897,7 +21899,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEditLocation {
         /**
@@ -21907,7 +21909,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEject {
         /**
@@ -21917,7 +21919,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEmail {
         /**
@@ -21927,7 +21929,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEnhancedEncryption {
         /**
@@ -21937,7 +21939,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEqualizer {
         /**
@@ -21947,7 +21949,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEquipment {
         /**
@@ -21957,7 +21959,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconError {
         /**
@@ -21967,7 +21969,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconErrorOutline {
         /**
@@ -21977,7 +21979,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEuroSymbol {
         /**
@@ -21987,7 +21989,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEvStation {
         /**
@@ -21997,7 +21999,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEvent {
         /**
@@ -22007,7 +22009,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEventAvailable {
         /**
@@ -22017,7 +22019,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEventBusy {
         /**
@@ -22027,7 +22029,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconEventNote {
         /**
@@ -22037,7 +22039,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExitToApp {
         /**
@@ -22047,7 +22049,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExpandLess {
         /**
@@ -22057,7 +22059,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExpandMore {
         /**
@@ -22067,7 +22069,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExplicit {
         /**
@@ -22077,7 +22079,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExplore {
         /**
@@ -22087,7 +22089,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExploreOff {
         /**
@@ -22097,7 +22099,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExposure {
         /**
@@ -22107,7 +22109,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExposureNeg1 {
         /**
@@ -22117,7 +22119,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExposureNeg2 {
         /**
@@ -22127,7 +22129,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExposurePlus1 {
         /**
@@ -22137,7 +22139,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExposurePlus2 {
         /**
@@ -22147,7 +22149,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExposureZero {
         /**
@@ -22157,7 +22159,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconExtension {
         /**
@@ -22167,7 +22169,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFace {
         /**
@@ -22177,7 +22179,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFastForward {
         /**
@@ -22187,7 +22189,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFastRewind {
         /**
@@ -22197,7 +22199,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFastfood {
         /**
@@ -22207,7 +22209,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFavorite {
         /**
@@ -22217,7 +22219,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFavoriteBorder {
         /**
@@ -22227,7 +22229,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFeaturedPlayList {
         /**
@@ -22237,7 +22239,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFeaturedVideo {
         /**
@@ -22247,7 +22249,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFeedback {
         /**
@@ -22257,7 +22259,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFiberDvr {
         /**
@@ -22267,7 +22269,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFiberManualRecord {
         /**
@@ -22277,7 +22279,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFiberNew {
         /**
@@ -22287,7 +22289,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFiberPin {
         /**
@@ -22297,7 +22299,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFiberSmartRecord {
         /**
@@ -22307,7 +22309,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFileCopy {
         /**
@@ -22317,7 +22319,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter {
         /**
@@ -22327,7 +22329,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter1 {
         /**
@@ -22337,7 +22339,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter2 {
         /**
@@ -22347,7 +22349,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter3 {
         /**
@@ -22357,7 +22359,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter4 {
         /**
@@ -22367,7 +22369,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter5 {
         /**
@@ -22377,7 +22379,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter6 {
         /**
@@ -22387,7 +22389,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter7 {
         /**
@@ -22397,7 +22399,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter8 {
         /**
@@ -22407,7 +22409,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter9 {
         /**
@@ -22417,7 +22419,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilter9Plus {
         /**
@@ -22427,7 +22429,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterBAndW {
         /**
@@ -22437,7 +22439,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterCenterFocus {
         /**
@@ -22447,7 +22449,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterDrama {
         /**
@@ -22457,7 +22459,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterFrames {
         /**
@@ -22467,7 +22469,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterHdr {
         /**
@@ -22477,7 +22479,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterList {
         /**
@@ -22487,7 +22489,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterNone {
         /**
@@ -22497,7 +22499,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterTiltShift {
         /**
@@ -22507,7 +22509,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFilterVintage {
         /**
@@ -22517,7 +22519,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFindInPage {
         /**
@@ -22527,7 +22529,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFindReplace {
         /**
@@ -22537,7 +22539,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFingerprint {
         /**
@@ -22547,7 +22549,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFirstPage {
         /**
@@ -22557,7 +22559,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFitnessCenter {
         /**
@@ -22567,7 +22569,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlag {
         /**
@@ -22577,7 +22579,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlare {
         /**
@@ -22587,7 +22589,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlashAuto {
         /**
@@ -22597,7 +22599,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlashOff {
         /**
@@ -22607,7 +22609,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlashOn {
         /**
@@ -22617,7 +22619,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlight {
         /**
@@ -22627,7 +22629,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlightLand {
         /**
@@ -22637,7 +22639,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlightTakeoff {
         /**
@@ -22647,7 +22649,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlip {
         /**
@@ -22657,7 +22659,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlipToBack {
         /**
@@ -22667,7 +22669,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFlipToFront {
         /**
@@ -22677,7 +22679,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFolder {
         /**
@@ -22687,7 +22689,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFolderOpen {
         /**
@@ -22697,7 +22699,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFolderShared {
         /**
@@ -22707,7 +22709,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFolderSpecial {
         /**
@@ -22717,7 +22719,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFontDownload {
         /**
@@ -22727,7 +22729,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatAlignCenter {
         /**
@@ -22737,7 +22739,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatAlignJustify {
         /**
@@ -22747,7 +22749,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatAlignLeft {
         /**
@@ -22757,7 +22759,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatAlignRight {
         /**
@@ -22767,7 +22769,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatBold {
         /**
@@ -22777,7 +22779,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatClear {
         /**
@@ -22787,7 +22789,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatColorFill {
         /**
@@ -22797,7 +22799,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatColorReset {
         /**
@@ -22807,7 +22809,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatColorText {
         /**
@@ -22817,7 +22819,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatIndentDecrease {
         /**
@@ -22827,7 +22829,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatIndentIncrease {
         /**
@@ -22837,7 +22839,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatItalic {
         /**
@@ -22847,7 +22849,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatLineSpacing {
         /**
@@ -22857,7 +22859,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatListBulleted {
         /**
@@ -22867,7 +22869,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatListNumbered {
         /**
@@ -22877,7 +22879,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatListNumberedRtl {
         /**
@@ -22887,7 +22889,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatPaint {
         /**
@@ -22897,7 +22899,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatQuote {
         /**
@@ -22907,7 +22909,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatShapes {
         /**
@@ -22917,7 +22919,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatSize {
         /**
@@ -22927,7 +22929,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatStrikethrough {
         /**
@@ -22937,7 +22939,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatTextdirectionLToR {
         /**
@@ -22947,7 +22949,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatTextdirectionRToL {
         /**
@@ -22957,7 +22959,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFormatUnderlined {
         /**
@@ -22967,7 +22969,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconForum {
         /**
@@ -22977,7 +22979,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconForward {
         /**
@@ -22987,7 +22989,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconForward10 {
         /**
@@ -22997,7 +22999,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconForward30 {
         /**
@@ -23007,7 +23009,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconForward5 {
         /**
@@ -23017,7 +23019,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFreeBreakfast {
         /**
@@ -23027,7 +23029,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFullscreen {
         /**
@@ -23037,7 +23039,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFullscreenExit {
         /**
@@ -23047,7 +23049,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconFunctions {
         /**
@@ -23057,7 +23059,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGTranslate {
         /**
@@ -23067,7 +23069,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGamepad {
         /**
@@ -23077,7 +23079,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGames {
         /**
@@ -23087,7 +23089,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGavel {
         /**
@@ -23097,7 +23099,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGesture {
         /**
@@ -23107,7 +23109,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGetApp {
         /**
@@ -23117,7 +23119,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGif {
         /**
@@ -23127,7 +23129,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGolfCourse {
         /**
@@ -23137,7 +23139,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGpsFixed {
         /**
@@ -23147,7 +23149,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGpsNotFixed {
         /**
@@ -23157,7 +23159,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGpsOff {
         /**
@@ -23167,7 +23169,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGrade {
         /**
@@ -23177,7 +23179,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGradient {
         /**
@@ -23187,7 +23189,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGrain {
         /**
@@ -23197,7 +23199,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGraphicEq {
         /**
@@ -23207,7 +23209,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGridOff {
         /**
@@ -23217,7 +23219,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGridOn {
         /**
@@ -23227,7 +23229,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGroup {
         /**
@@ -23237,7 +23239,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGroupAdd {
         /**
@@ -23247,7 +23249,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconGroupWork {
         /**
@@ -23257,7 +23259,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHd {
         /**
@@ -23267,7 +23269,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHdrOff {
         /**
@@ -23277,7 +23279,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHdrOn {
         /**
@@ -23287,7 +23289,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHdrStrong {
         /**
@@ -23297,7 +23299,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHdrWeak {
         /**
@@ -23307,7 +23309,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHeadset {
         /**
@@ -23317,7 +23319,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHeadsetMic {
         /**
@@ -23327,7 +23329,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHealing {
         /**
@@ -23337,7 +23339,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHearing {
         /**
@@ -23347,7 +23349,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHelp {
         /**
@@ -23357,7 +23359,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHelpOutline {
         /**
@@ -23367,7 +23369,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHighQuality {
         /**
@@ -23377,7 +23379,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHighlight {
         /**
@@ -23387,7 +23389,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHighlightOff {
         /**
@@ -23397,7 +23399,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHistory {
         /**
@@ -23407,7 +23409,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHome {
         /**
@@ -23417,7 +23419,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHorizontalSplit {
         /**
@@ -23427,7 +23429,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHotTub {
         /**
@@ -23437,7 +23439,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHotel {
         /**
@@ -23447,7 +23449,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHourglassEmpty {
         /**
@@ -23457,7 +23459,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHourglassFull {
         /**
@@ -23467,7 +23469,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHowToReg {
         /**
@@ -23477,7 +23479,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHowToVote {
         /**
@@ -23487,7 +23489,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHttp {
         /**
@@ -23497,7 +23499,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconHttps {
         /**
@@ -23507,7 +23509,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconImage {
         /**
@@ -23517,7 +23519,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconImageAspectRatio {
         /**
@@ -23527,7 +23529,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconImageSearch {
         /**
@@ -23537,7 +23539,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconImportContacts {
         /**
@@ -23547,7 +23549,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconImportExport {
         /**
@@ -23557,7 +23559,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconImportantDevices {
         /**
@@ -23567,7 +23569,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInbox {
         /**
@@ -23577,7 +23579,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconIndeterminateCheckBox {
         /**
@@ -23587,7 +23589,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInfo {
         /**
@@ -23597,7 +23599,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInput {
         /**
@@ -23607,7 +23609,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertChart {
         /**
@@ -23617,7 +23619,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertChartOutlined {
         /**
@@ -23627,7 +23629,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertComment {
         /**
@@ -23637,7 +23639,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertDriveFile {
         /**
@@ -23647,7 +23649,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertEmoticon {
         /**
@@ -23657,7 +23659,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertInvitation {
         /**
@@ -23667,7 +23669,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertLink {
         /**
@@ -23677,7 +23679,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInsertPhoto {
         /**
@@ -23687,7 +23689,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInvertColors {
         /**
@@ -23697,7 +23699,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconInvertColorsOff {
         /**
@@ -23707,7 +23709,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconIso {
         /**
@@ -23717,7 +23719,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboard {
         /**
@@ -23727,7 +23729,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardArrowDown {
         /**
@@ -23737,7 +23739,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardArrowLeft {
         /**
@@ -23747,7 +23749,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardArrowRight {
         /**
@@ -23757,7 +23759,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardArrowUp {
         /**
@@ -23767,7 +23769,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardBackspace {
         /**
@@ -23777,7 +23779,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardCapslock {
         /**
@@ -23787,7 +23789,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardHide {
         /**
@@ -23797,7 +23799,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardReturn {
         /**
@@ -23807,7 +23809,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardTab {
         /**
@@ -23817,7 +23819,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKeyboardVoice {
         /**
@@ -23827,7 +23829,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconKitchen {
         /**
@@ -23837,7 +23839,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLabel {
         /**
@@ -23847,7 +23849,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLabelImportant {
         /**
@@ -23857,7 +23859,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLabelOff {
         /**
@@ -23867,7 +23869,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLandscape {
         /**
@@ -23877,7 +23879,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLanguage {
         /**
@@ -23887,7 +23889,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLaptop {
         /**
@@ -23897,7 +23899,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLaptopChromebook {
         /**
@@ -23907,7 +23909,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLaptopMac {
         /**
@@ -23917,7 +23919,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLaptopWindows {
         /**
@@ -23927,7 +23929,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLastPage {
         /**
@@ -23937,7 +23939,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLaunch {
         /**
@@ -23947,7 +23949,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLayers {
         /**
@@ -23957,7 +23959,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLayersClear {
         /**
@@ -23967,7 +23969,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLeakAdd {
         /**
@@ -23977,7 +23979,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLeakRemove {
         /**
@@ -23987,7 +23989,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLens {
         /**
@@ -23997,7 +23999,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLibraryAdd {
         /**
@@ -24007,7 +24009,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLibraryBooks {
         /**
@@ -24017,7 +24019,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLibraryMusic {
         /**
@@ -24027,7 +24029,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLineStyle {
         /**
@@ -24037,7 +24039,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLineWeight {
         /**
@@ -24047,7 +24049,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLinearScale {
         /**
@@ -24057,7 +24059,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLink {
         /**
@@ -24067,7 +24069,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLinkOff {
         /**
@@ -24077,7 +24079,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLinkedCamera {
         /**
@@ -24087,7 +24089,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconList {
         /**
@@ -24097,7 +24099,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconListAlt {
         /**
@@ -24107,7 +24109,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLiveHelp {
         /**
@@ -24117,7 +24119,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLiveTv {
         /**
@@ -24127,7 +24129,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalActivity {
         /**
@@ -24137,7 +24139,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalAirport {
         /**
@@ -24147,7 +24149,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalAtm {
         /**
@@ -24157,7 +24159,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalBar {
         /**
@@ -24167,7 +24169,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalCafe {
         /**
@@ -24177,7 +24179,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalConvenienceStore {
         /**
@@ -24187,7 +24189,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalDining {
         /**
@@ -24197,7 +24199,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalDrink {
         /**
@@ -24207,7 +24209,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalGasStation {
         /**
@@ -24217,7 +24219,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalGroceryStore {
         /**
@@ -24227,7 +24229,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalHospital {
         /**
@@ -24237,7 +24239,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalHotel {
         /**
@@ -24247,7 +24249,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalLaundryService {
         /**
@@ -24257,7 +24259,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalLibrary {
         /**
@@ -24267,7 +24269,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalMall {
         /**
@@ -24277,7 +24279,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalMovies {
         /**
@@ -24287,7 +24289,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalOffer {
         /**
@@ -24297,7 +24299,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalParking {
         /**
@@ -24307,7 +24309,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalPharmacy {
         /**
@@ -24317,7 +24319,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalPhone {
         /**
@@ -24327,7 +24329,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalPlay {
         /**
@@ -24337,7 +24339,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalPostOffice {
         /**
@@ -24347,7 +24349,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalPrintshop {
         /**
@@ -24357,7 +24359,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalSee {
         /**
@@ -24367,7 +24369,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalShipping {
         /**
@@ -24377,7 +24379,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocalTaxi {
         /**
@@ -24387,7 +24389,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocationCity {
         /**
@@ -24397,7 +24399,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocationDisabled {
         /**
@@ -24407,7 +24409,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocationOff {
         /**
@@ -24417,7 +24419,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocationOn {
         /**
@@ -24427,7 +24429,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLocationSearching {
         /**
@@ -24437,7 +24439,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLock {
         /**
@@ -24447,7 +24449,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLockOpen {
         /**
@@ -24457,7 +24459,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks {
         /**
@@ -24467,7 +24469,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks1 {
         /**
@@ -24477,7 +24479,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks2 {
         /**
@@ -24487,7 +24489,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks3 {
         /**
@@ -24497,7 +24499,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks4 {
         /**
@@ -24507,7 +24509,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks5 {
         /**
@@ -24517,7 +24519,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLooks6 {
         /**
@@ -24527,7 +24529,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLoop {
         /**
@@ -24537,7 +24539,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLoupe {
         /**
@@ -24547,7 +24549,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLowPriority {
         /**
@@ -24557,7 +24559,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconLoyalty {
         /**
@@ -24567,7 +24569,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMail {
         /**
@@ -24577,7 +24579,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMailOutline {
         /**
@@ -24587,7 +24589,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMap {
         /**
@@ -24597,7 +24599,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMarkunread {
         /**
@@ -24607,7 +24609,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMarkunreadMailbox {
         /**
@@ -24617,7 +24619,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMaximize {
         /**
@@ -24627,7 +24629,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMeetingRoom {
         /**
@@ -24637,7 +24639,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMemory {
         /**
@@ -24647,7 +24649,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMenu {
         /**
@@ -24657,7 +24659,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMergeType {
         /**
@@ -24667,7 +24669,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMessage {
         /**
@@ -24677,7 +24679,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMic {
         /**
@@ -24687,7 +24689,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMicNone {
         /**
@@ -24697,7 +24699,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMicOff {
         /**
@@ -24707,7 +24709,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMinimize {
         /**
@@ -24717,7 +24719,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMissedVideoCall {
         /**
@@ -24727,7 +24729,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMission {
         /**
@@ -24737,7 +24739,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMms {
         /**
@@ -24747,7 +24749,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMobileFriendly {
         /**
@@ -24757,7 +24759,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMobileOff {
         /**
@@ -24767,7 +24769,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMobileScreenShare {
         /**
@@ -24777,7 +24779,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconModeComment {
         /**
@@ -24787,7 +24789,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMonetizationOn {
         /**
@@ -24797,7 +24799,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMoney {
         /**
@@ -24807,7 +24809,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMoneyOff {
         /**
@@ -24817,7 +24819,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMonochromePhotos {
         /**
@@ -24827,7 +24829,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMood {
         /**
@@ -24837,7 +24839,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMoodBad {
         /**
@@ -24847,7 +24849,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMore {
         /**
@@ -24857,7 +24859,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMoreHoriz {
         /**
@@ -24867,7 +24869,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMoreVert {
         /**
@@ -24877,7 +24879,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMotorcycle {
         /**
@@ -24887,7 +24889,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMouse {
         /**
@@ -24897,7 +24899,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMoveToInbox {
         /**
@@ -24907,7 +24909,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMovie {
         /**
@@ -24917,7 +24919,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMovieCreation {
         /**
@@ -24927,7 +24929,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMovieFilter {
         /**
@@ -24937,7 +24939,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMultilineChart {
         /**
@@ -24947,7 +24949,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMusicNote {
         /**
@@ -24957,7 +24959,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMusicOff {
         /**
@@ -24967,7 +24969,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMusicVideo {
         /**
@@ -24977,7 +24979,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconMyLocation {
         /**
@@ -24987,7 +24989,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNature {
         /**
@@ -24997,7 +24999,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNaturePeople {
         /**
@@ -25007,7 +25009,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNavigateBefore {
         /**
@@ -25017,7 +25019,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNavigateNext {
         /**
@@ -25027,7 +25029,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNavigation {
         /**
@@ -25037,7 +25039,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNearMe {
         /**
@@ -25047,7 +25049,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNetcom {
         /**
@@ -25057,7 +25059,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNetworkCell {
         /**
@@ -25067,7 +25069,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNetworkCheck {
         /**
@@ -25077,7 +25079,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNetworkLocked {
         /**
@@ -25087,7 +25089,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNetworkWifi {
         /**
@@ -25097,7 +25099,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNewReleases {
         /**
@@ -25107,7 +25109,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNextWeek {
         /**
@@ -25117,7 +25119,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNfc {
         /**
@@ -25127,7 +25129,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNoEncryption {
         /**
@@ -25137,7 +25139,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNoMeetingRoom {
         /**
@@ -25147,7 +25149,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNoSim {
         /**
@@ -25157,7 +25159,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotInterested {
         /**
@@ -25167,7 +25169,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotListedLocation {
         /**
@@ -25177,7 +25179,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNote {
         /**
@@ -25187,7 +25189,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNoteAdd {
         /**
@@ -25197,7 +25199,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotes {
         /**
@@ -25207,7 +25209,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotificationImportant {
         /**
@@ -25217,7 +25219,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotifications {
         /**
@@ -25227,7 +25229,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotificationsActive {
         /**
@@ -25237,7 +25239,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotificationsNone {
         /**
@@ -25247,7 +25249,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotificationsOff {
         /**
@@ -25257,7 +25259,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconNotificationsPaused {
         /**
@@ -25267,7 +25269,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOfflineBolt {
         /**
@@ -25277,7 +25279,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOfflinePin {
         /**
@@ -25287,7 +25289,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOndemandVideo {
         /**
@@ -25297,7 +25299,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOpacity {
         /**
@@ -25307,7 +25309,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOpenInBrowser {
         /**
@@ -25317,7 +25319,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOpenInNew {
         /**
@@ -25327,7 +25329,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOpenWith {
         /**
@@ -25337,7 +25339,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconOutlinedFlag {
         /**
@@ -25347,7 +25349,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPages {
         /**
@@ -25357,7 +25359,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPageview {
         /**
@@ -25367,7 +25369,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPalette {
         /**
@@ -25377,7 +25379,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPanTool {
         /**
@@ -25387,7 +25389,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPanorama {
         /**
@@ -25397,7 +25399,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPanoramaFishEye {
         /**
@@ -25407,7 +25409,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPanoramaHorizontal {
         /**
@@ -25417,7 +25419,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPanoramaVertical {
         /**
@@ -25427,7 +25429,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPanoramaWideAngle {
         /**
@@ -25437,7 +25439,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPartyMode {
         /**
@@ -25447,7 +25449,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPause {
         /**
@@ -25457,7 +25459,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPauseCircleFilled {
         /**
@@ -25467,7 +25469,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPauseCircleOutline {
         /**
@@ -25477,7 +25479,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPausePresentation {
         /**
@@ -25487,7 +25489,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPayload {
         /**
@@ -25497,7 +25499,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPayment {
         /**
@@ -25507,7 +25509,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPeopleOutline {
         /**
@@ -25517,7 +25519,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermCameraMic {
         /**
@@ -25527,7 +25529,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermContactCalendar {
         /**
@@ -25537,7 +25539,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermDataSetting {
         /**
@@ -25547,7 +25549,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermDeviceInformation {
         /**
@@ -25557,7 +25559,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermIdentity {
         /**
@@ -25567,7 +25569,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermMedia {
         /**
@@ -25577,7 +25579,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermPhoneMsg {
         /**
@@ -25587,7 +25589,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPermScanWifi {
         /**
@@ -25597,7 +25599,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPerson {
         /**
@@ -25607,7 +25609,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPersonAdd {
         /**
@@ -25617,7 +25619,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPersonAddDisabled {
         /**
@@ -25627,7 +25629,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPersonOutline {
         /**
@@ -25637,7 +25639,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPersonPin {
         /**
@@ -25647,7 +25649,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPersonPinCircle {
         /**
@@ -25657,7 +25659,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPersonalVideo {
         /**
@@ -25667,7 +25669,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPets {
         /**
@@ -25677,7 +25679,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhone {
         /**
@@ -25687,7 +25689,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneAndroid {
         /**
@@ -25697,7 +25699,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneBluetoothSpeaker {
         /**
@@ -25707,7 +25709,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneCallback {
         /**
@@ -25717,7 +25719,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneForwarded {
         /**
@@ -25727,7 +25729,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneInTalk {
         /**
@@ -25737,7 +25739,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneIphone {
         /**
@@ -25747,7 +25749,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneLocked {
         /**
@@ -25757,7 +25759,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoneMissed {
         /**
@@ -25767,7 +25769,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonePaused {
         /**
@@ -25777,7 +25779,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonelink {
         /**
@@ -25787,7 +25789,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonelinkErase {
         /**
@@ -25797,7 +25799,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonelinkLock {
         /**
@@ -25807,7 +25809,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonelinkOff {
         /**
@@ -25817,7 +25819,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonelinkRing {
         /**
@@ -25827,7 +25829,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhonelinkSetup {
         /**
@@ -25837,7 +25839,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhoto {
         /**
@@ -25847,7 +25849,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoAlbum {
         /**
@@ -25857,7 +25859,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoCamera {
         /**
@@ -25867,7 +25869,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoFilter {
         /**
@@ -25877,7 +25879,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoLibrary {
         /**
@@ -25887,7 +25889,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoSizeSelectActual {
         /**
@@ -25897,7 +25899,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoSizeSelectLarge {
         /**
@@ -25907,7 +25909,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPhotoSizeSelectSmall {
         /**
@@ -25917,7 +25919,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPictureAsPdf {
         /**
@@ -25927,7 +25929,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPictureInPicture {
         /**
@@ -25937,7 +25939,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPictureInPictureAlt {
         /**
@@ -25947,7 +25949,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPieChart {
         /**
@@ -25957,7 +25959,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPinDrop {
         /**
@@ -25967,7 +25969,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlace {
         /**
@@ -25977,7 +25979,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlayArrow {
         /**
@@ -25987,7 +25989,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlayCircleFilled {
         /**
@@ -25997,7 +25999,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlayCircleFilledWhite {
         /**
@@ -26007,7 +26009,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlayCircleOutline {
         /**
@@ -26017,7 +26019,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlayForWork {
         /**
@@ -26027,7 +26029,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlaylistAdd {
         /**
@@ -26037,7 +26039,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlaylistAddCheck {
         /**
@@ -26047,7 +26049,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlaylistPlay {
         /**
@@ -26057,7 +26059,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPlusOne {
         /**
@@ -26067,7 +26069,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPoll {
         /**
@@ -26077,7 +26079,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPool {
         /**
@@ -26087,7 +26089,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPortableWifiOff {
         /**
@@ -26097,7 +26099,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPortrait {
         /**
@@ -26107,7 +26109,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPower {
         /**
@@ -26117,7 +26119,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPowerInput {
         /**
@@ -26127,7 +26129,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPowerOff {
         /**
@@ -26137,7 +26139,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPowerSettingsNew {
         /**
@@ -26147,7 +26149,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPregnantWoman {
         /**
@@ -26157,7 +26159,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPresentToAll {
         /**
@@ -26167,7 +26169,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPrint {
         /**
@@ -26177,7 +26179,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPrintDisabled {
         /**
@@ -26187,7 +26189,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPriorityHigh {
         /**
@@ -26197,7 +26199,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconProcessor {
         /**
@@ -26207,7 +26209,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconProcessorAlt {
         /**
@@ -26217,7 +26219,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPropulsionPower {
         /**
@@ -26227,7 +26229,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPublic {
         /**
@@ -26237,7 +26239,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconPublish {
         /**
@@ -26247,7 +26249,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconQueryBuilder {
         /**
@@ -26257,7 +26259,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconQuestionAnswer {
         /**
@@ -26267,7 +26269,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconQueue {
         /**
@@ -26277,7 +26279,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconQueueMusic {
         /**
@@ -26287,7 +26289,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconQueuePlayNext {
         /**
@@ -26297,7 +26299,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRadio {
         /**
@@ -26307,7 +26309,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRadioButtonChecked {
         /**
@@ -26317,7 +26319,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRadioButtonUnchecked {
         /**
@@ -26327,7 +26329,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRateReview {
         /**
@@ -26337,7 +26339,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReceipt {
         /**
@@ -26347,7 +26349,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRecentActors {
         /**
@@ -26357,7 +26359,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRecordVoiceOver {
         /**
@@ -26367,7 +26369,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRedeem {
         /**
@@ -26377,7 +26379,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRedo {
         /**
@@ -26387,7 +26389,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRefresh {
         /**
@@ -26397,7 +26399,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRemove {
         /**
@@ -26407,7 +26409,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRemoveCircle {
         /**
@@ -26417,7 +26419,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRemoveCircleOutline {
         /**
@@ -26427,7 +26429,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRemoveFromQueue {
         /**
@@ -26437,7 +26439,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRemoveRedEye {
         /**
@@ -26447,7 +26449,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRemoveShoppingCart {
         /**
@@ -26457,7 +26459,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReorder {
         /**
@@ -26467,7 +26469,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRepeat {
         /**
@@ -26477,7 +26479,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRepeatOne {
         /**
@@ -26487,7 +26489,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReplay {
         /**
@@ -26497,7 +26499,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReplay10 {
         /**
@@ -26507,7 +26509,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReplay30 {
         /**
@@ -26517,7 +26519,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReplay5 {
         /**
@@ -26527,7 +26529,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReply {
         /**
@@ -26537,7 +26539,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReplyAll {
         /**
@@ -26547,7 +26549,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReport {
         /**
@@ -26557,7 +26559,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReportOff {
         /**
@@ -26567,7 +26569,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconReportProblem {
         /**
@@ -26577,7 +26579,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRestaurant {
         /**
@@ -26587,7 +26589,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRestaurantMenu {
         /**
@@ -26597,7 +26599,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRestore {
         /**
@@ -26607,7 +26609,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRestoreFromTrash {
         /**
@@ -26617,7 +26619,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRestorePage {
         /**
@@ -26627,7 +26629,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRingVolume {
         /**
@@ -26637,7 +26639,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRoom {
         /**
@@ -26647,7 +26649,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRoomService {
         /**
@@ -26657,7 +26659,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRotate90DegreesCc {
         /**
@@ -26667,7 +26669,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRotateLeft {
         /**
@@ -26677,7 +26679,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRotateRight {
         /**
@@ -26687,7 +26689,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRoundedCorner {
         /**
@@ -26697,7 +26699,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRouter {
         /**
@@ -26707,7 +26709,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRowing {
         /**
@@ -26717,7 +26719,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRssFeed {
         /**
@@ -26727,7 +26729,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconRvHookup {
         /**
@@ -26737,7 +26739,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSatellite {
         /**
@@ -26747,7 +26749,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSatelliteOff {
         /**
@@ -26757,7 +26759,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSatelliteReceive {
         /**
@@ -26767,7 +26769,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSatelliteTransmit {
         /**
@@ -26777,7 +26779,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSave {
         /**
@@ -26787,7 +26789,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSaveAlt {
         /**
@@ -26797,7 +26799,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScanner {
         /**
@@ -26807,7 +26809,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScatterPlot {
         /**
@@ -26817,7 +26819,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSchedule {
         /**
@@ -26827,7 +26829,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSchool {
         /**
@@ -26837,7 +26839,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScore {
         /**
@@ -26847,7 +26849,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScreenLockLandscape {
         /**
@@ -26857,7 +26859,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScreenLockPortrait {
         /**
@@ -26867,7 +26869,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScreenLockRotation {
         /**
@@ -26877,7 +26879,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScreenRotation {
         /**
@@ -26887,7 +26889,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconScreenShare {
         /**
@@ -26897,7 +26899,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSdCard {
         /**
@@ -26907,7 +26909,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSdStorage {
         /**
@@ -26917,7 +26919,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSearch {
         /**
@@ -26927,7 +26929,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSeat {
         /**
@@ -26937,7 +26939,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSecurity {
         /**
@@ -26947,7 +26949,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSelectAll {
         /**
@@ -26957,7 +26959,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSend {
         /**
@@ -26967,7 +26969,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSentimentDissatisfied {
         /**
@@ -26977,7 +26979,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSentimentSatisfied {
         /**
@@ -26987,7 +26989,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSentimentSatisfiedAlt {
         /**
@@ -26997,7 +26999,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSentimentVeryDissatisfied {
         /**
@@ -27007,7 +27009,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSentimentVerySatisfied {
         /**
@@ -27017,7 +27019,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettings {
         /**
@@ -27027,7 +27029,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsApplications {
         /**
@@ -27037,7 +27039,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsBackupRestore {
         /**
@@ -27047,7 +27049,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsBluetooth {
         /**
@@ -27057,7 +27059,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsBrightness {
         /**
@@ -27067,7 +27069,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsCell {
         /**
@@ -27077,7 +27079,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsEthernet {
         /**
@@ -27087,7 +27089,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsInputAntenna {
         /**
@@ -27097,7 +27099,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsInputComponent {
         /**
@@ -27107,7 +27109,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsInputComposite {
         /**
@@ -27117,7 +27119,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsInputHdmi {
         /**
@@ -27127,7 +27129,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsInputSvideo {
         /**
@@ -27137,7 +27139,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsOverscan {
         /**
@@ -27147,7 +27149,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsPhone {
         /**
@@ -27157,7 +27159,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsPower {
         /**
@@ -27167,7 +27169,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsRemote {
         /**
@@ -27177,7 +27179,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsSystemDaydream {
         /**
@@ -27187,7 +27189,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSettingsVoice {
         /**
@@ -27197,7 +27199,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShare {
         /**
@@ -27207,7 +27209,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShop {
         /**
@@ -27217,7 +27219,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShopTwo {
         /**
@@ -27227,7 +27229,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShoppingBasket {
         /**
@@ -27237,7 +27239,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShoppingCart {
         /**
@@ -27247,7 +27249,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShortText {
         /**
@@ -27257,7 +27259,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShowChart {
         /**
@@ -27267,7 +27269,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShuffle {
         /**
@@ -27277,7 +27279,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconShutterSpeed {
         /**
@@ -27287,7 +27289,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellular0Bar {
         /**
@@ -27297,7 +27299,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellular1Bar {
         /**
@@ -27307,7 +27309,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellular2Bar {
         /**
@@ -27317,7 +27319,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellular3Bar {
         /**
@@ -27327,7 +27329,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellular4Bar {
         /**
@@ -27337,7 +27339,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularAlt {
         /**
@@ -27347,7 +27349,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularConnectedNoInternet0Bar {
         /**
@@ -27357,7 +27359,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularConnectedNoInternet1Bar {
         /**
@@ -27367,7 +27369,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularConnectedNoInternet2Bar {
         /**
@@ -27377,7 +27379,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularConnectedNoInternet3Bar {
         /**
@@ -27387,7 +27389,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularConnectedNoInternet4Bar {
         /**
@@ -27397,7 +27399,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularNoSim {
         /**
@@ -27407,7 +27409,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularNull {
         /**
@@ -27417,7 +27419,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalCellularOff {
         /**
@@ -27427,7 +27429,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi0Bar {
         /**
@@ -27437,7 +27439,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi1Bar {
         /**
@@ -27447,7 +27449,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi1BarLock {
         /**
@@ -27457,7 +27459,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi2Bar {
         /**
@@ -27467,7 +27469,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi2BarLock {
         /**
@@ -27477,7 +27479,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi3Bar {
         /**
@@ -27487,7 +27489,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi3BarLock {
         /**
@@ -27497,7 +27499,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi4Bar {
         /**
@@ -27507,7 +27509,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifi4BarLock {
         /**
@@ -27517,7 +27519,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSignalWifiOff {
         /**
@@ -27527,7 +27529,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSimCard {
         /**
@@ -27537,7 +27539,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSkipNext {
         /**
@@ -27547,7 +27549,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSkipPrevious {
         /**
@@ -27557,7 +27559,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSlideshow {
         /**
@@ -27567,7 +27569,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSlowMotionVideo {
         /**
@@ -27577,7 +27579,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSmartphone {
         /**
@@ -27587,7 +27589,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSmokeFree {
         /**
@@ -27597,7 +27599,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSmokingRooms {
         /**
@@ -27607,7 +27609,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSms {
         /**
@@ -27617,7 +27619,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSmsFailed {
         /**
@@ -27627,7 +27629,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSnooze {
         /**
@@ -27637,7 +27639,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSolar {
         /**
@@ -27647,7 +27649,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSort {
         /**
@@ -27657,7 +27659,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSortByAlpha {
         /**
@@ -27667,7 +27669,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpa {
         /**
@@ -27677,7 +27679,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpaceBar {
         /**
@@ -27687,7 +27689,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpeaker {
         /**
@@ -27697,7 +27699,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpeakerGroup {
         /**
@@ -27707,7 +27709,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpeakerNotes {
         /**
@@ -27717,7 +27719,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpeakerNotesOff {
         /**
@@ -27727,7 +27729,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpeakerPhone {
         /**
@@ -27737,7 +27739,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSpellcheck {
         /**
@@ -27747,7 +27749,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStar {
         /**
@@ -27757,7 +27759,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStarBorder {
         /**
@@ -27767,7 +27769,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStarHalf {
         /**
@@ -27777,7 +27779,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStarRate {
         /**
@@ -27787,7 +27789,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStars {
         /**
@@ -27797,7 +27799,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStayCurrentLandscape {
         /**
@@ -27807,7 +27809,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStayCurrentPortrait {
         /**
@@ -27817,7 +27819,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStayPrimaryLandscape {
         /**
@@ -27827,7 +27829,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStayPrimaryPortrait {
         /**
@@ -27837,7 +27839,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStop {
         /**
@@ -27847,7 +27849,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStopScreenShare {
         /**
@@ -27857,7 +27859,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStorage {
         /**
@@ -27867,7 +27869,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStore {
         /**
@@ -27877,7 +27879,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStoreMallDirectory {
         /**
@@ -27887,7 +27889,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStraighten {
         /**
@@ -27897,7 +27899,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStreetview {
         /**
@@ -27907,7 +27909,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStrikethroughS {
         /**
@@ -27917,7 +27919,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconStyle {
         /**
@@ -27927,7 +27929,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSubdirectoryArrowLeft {
         /**
@@ -27937,7 +27939,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSubdirectoryArrowRight {
         /**
@@ -27947,7 +27949,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSubject {
         /**
@@ -27957,7 +27959,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSubscriptions {
         /**
@@ -27967,7 +27969,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSubtitles {
         /**
@@ -27977,7 +27979,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSubway {
         /**
@@ -27987,7 +27989,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSupervisedUserCircle {
         /**
@@ -27997,7 +27999,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSupervisorAccount {
         /**
@@ -28007,7 +28009,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSurroundSound {
         /**
@@ -28017,7 +28019,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwapCalls {
         /**
@@ -28027,7 +28029,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwapHoriz {
         /**
@@ -28037,7 +28039,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwapHorizontalCircle {
         /**
@@ -28047,7 +28049,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwapVert {
         /**
@@ -28057,7 +28059,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwapVerticalCircle {
         /**
@@ -28067,7 +28069,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwitchCamera {
         /**
@@ -28077,7 +28079,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSwitchVideo {
         /**
@@ -28087,7 +28089,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSync {
         /**
@@ -28097,7 +28099,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSyncDisabled {
         /**
@@ -28107,7 +28109,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSyncProblem {
         /**
@@ -28117,7 +28119,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconSystemUpdate {
         /**
@@ -28127,7 +28129,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTab {
         /**
@@ -28137,7 +28139,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTabUnselected {
         /**
@@ -28147,7 +28149,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTableChart {
         /**
@@ -28157,7 +28159,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTablet {
         /**
@@ -28167,7 +28169,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTabletAndroid {
         /**
@@ -28177,7 +28179,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTabletMac {
         /**
@@ -28187,7 +28189,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTagFaces {
         /**
@@ -28197,7 +28199,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTapAndPlay {
         /**
@@ -28207,7 +28209,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTerrain {
         /**
@@ -28217,7 +28219,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTextFields {
         /**
@@ -28227,7 +28229,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTextFormat {
         /**
@@ -28237,7 +28239,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTextRotateUp {
         /**
@@ -28247,7 +28249,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTextRotateVertical {
         /**
@@ -28257,7 +28259,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTextRotationNone {
         /**
@@ -28267,7 +28269,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTextsms {
         /**
@@ -28277,7 +28279,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTexture {
         /**
@@ -28287,7 +28289,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTheaters {
         /**
@@ -28297,7 +28299,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconThermal {
         /**
@@ -28307,7 +28309,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconThumbDown {
         /**
@@ -28317,7 +28319,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconThumbDownAlt {
         /**
@@ -28327,7 +28329,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconThumbUp {
         /**
@@ -28337,7 +28339,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconThumbUpAlt {
         /**
@@ -28347,7 +28349,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconThumbsUpDown {
         /**
@@ -28357,7 +28359,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimeToLeave {
         /**
@@ -28367,7 +28369,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimelapse {
         /**
@@ -28377,7 +28379,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimeline {
         /**
@@ -28387,7 +28389,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimer {
         /**
@@ -28397,7 +28399,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimer10 {
         /**
@@ -28407,7 +28409,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimer3 {
         /**
@@ -28417,7 +28419,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTimerOff {
         /**
@@ -28427,7 +28429,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTitle {
         /**
@@ -28437,7 +28439,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconToc {
         /**
@@ -28447,7 +28449,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconToday {
         /**
@@ -28457,7 +28459,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconToggleOff {
         /**
@@ -28467,7 +28469,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconToggleOn {
         /**
@@ -28477,7 +28479,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconToll {
         /**
@@ -28487,7 +28489,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTonality {
         /**
@@ -28497,7 +28499,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTouchApp {
         /**
@@ -28507,7 +28509,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconToys {
         /**
@@ -28517,7 +28519,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTrackChanges {
         /**
@@ -28527,7 +28529,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTraffic {
         /**
@@ -28537,7 +28539,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTrain {
         /**
@@ -28547,7 +28549,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTram {
         /**
@@ -28557,7 +28559,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTransferWithinAStation {
         /**
@@ -28567,7 +28569,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTransform {
         /**
@@ -28577,7 +28579,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTransitEnterexit {
         /**
@@ -28587,7 +28589,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTranslate {
         /**
@@ -28597,7 +28599,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTrendingDown {
         /**
@@ -28607,7 +28609,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTrendingFlat {
         /**
@@ -28617,7 +28619,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTrendingUp {
         /**
@@ -28627,7 +28629,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTripOrigin {
         /**
@@ -28637,7 +28639,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTune {
         /**
@@ -28647,7 +28649,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTurnedIn {
         /**
@@ -28657,7 +28659,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTurnedInNot {
         /**
@@ -28667,7 +28669,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTv {
         /**
@@ -28677,7 +28679,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconTvOff {
         /**
@@ -28687,7 +28689,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUnarchive {
         /**
@@ -28697,7 +28699,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUndo {
         /**
@@ -28707,7 +28709,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUnfoldLess {
         /**
@@ -28717,7 +28719,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUnfoldMore {
         /**
@@ -28727,7 +28729,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUnsubscribe {
         /**
@@ -28737,7 +28739,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUpdate {
         /**
@@ -28747,7 +28749,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconUsb {
         /**
@@ -28757,7 +28759,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVerifiedUser {
         /**
@@ -28767,7 +28769,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVerticalAlignBottom {
         /**
@@ -28777,7 +28779,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVerticalAlignCenter {
         /**
@@ -28787,7 +28789,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVerticalAlignTop {
         /**
@@ -28797,7 +28799,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVerticalSplit {
         /**
@@ -28807,7 +28809,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVibration {
         /**
@@ -28817,7 +28819,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVideoCall {
         /**
@@ -28827,7 +28829,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVideoLabel {
         /**
@@ -28837,7 +28839,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVideoLibrary {
         /**
@@ -28847,7 +28849,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVideocam {
         /**
@@ -28857,7 +28859,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVideocamOff {
         /**
@@ -28867,7 +28869,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVideogameAsset {
         /**
@@ -28877,7 +28879,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewAgenda {
         /**
@@ -28887,7 +28889,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewArray {
         /**
@@ -28897,7 +28899,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewCarousel {
         /**
@@ -28907,7 +28909,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewColumn {
         /**
@@ -28917,7 +28919,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewComfy {
         /**
@@ -28927,7 +28929,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewCompact {
         /**
@@ -28937,7 +28939,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewDay {
         /**
@@ -28947,7 +28949,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewHeadline {
         /**
@@ -28957,7 +28959,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewList {
         /**
@@ -28967,7 +28969,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewModule {
         /**
@@ -28977,7 +28979,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewQuilt {
         /**
@@ -28987,7 +28989,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewStream {
         /**
@@ -28997,7 +28999,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconViewWeek {
         /**
@@ -29007,7 +29009,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVignette {
         /**
@@ -29017,7 +29019,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVisibility {
         /**
@@ -29027,7 +29029,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVisibilityOff {
         /**
@@ -29037,7 +29039,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVoiceChat {
         /**
@@ -29047,7 +29049,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVoiceOverOff {
         /**
@@ -29057,7 +29059,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVoicemail {
         /**
@@ -29067,7 +29069,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVolumeDown {
         /**
@@ -29077,7 +29079,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVolumeMute {
         /**
@@ -29087,7 +29089,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVolumeOff {
         /**
@@ -29097,7 +29099,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVolumeUp {
         /**
@@ -29107,7 +29109,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVpnKey {
         /**
@@ -29117,7 +29119,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconVpnLock {
         /**
@@ -29127,7 +29129,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWallpaper {
         /**
@@ -29137,7 +29139,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWarning {
         /**
@@ -29147,7 +29149,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWatch {
         /**
@@ -29157,7 +29159,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWatchLater {
         /**
@@ -29167,7 +29169,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWaves {
         /**
@@ -29177,7 +29179,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWbAuto {
         /**
@@ -29187,7 +29189,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWbCloudy {
         /**
@@ -29197,7 +29199,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWbIncandescent {
         /**
@@ -29207,7 +29209,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWbIridescent {
         /**
@@ -29217,7 +29219,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWbSunny {
         /**
@@ -29227,7 +29229,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWc {
         /**
@@ -29237,7 +29239,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWeb {
         /**
@@ -29247,7 +29249,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWebAsset {
         /**
@@ -29257,7 +29259,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWeekend {
         /**
@@ -29267,7 +29269,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWhatshot {
         /**
@@ -29277,7 +29279,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWhereToVote {
         /**
@@ -29287,7 +29289,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWidgets {
         /**
@@ -29297,7 +29299,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWifi {
         /**
@@ -29307,7 +29309,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWifiLock {
         /**
@@ -29317,7 +29319,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWifiOff {
         /**
@@ -29327,7 +29329,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWifiTethering {
         /**
@@ -29337,7 +29339,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWork {
         /**
@@ -29347,7 +29349,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWorkOff {
         /**
@@ -29357,7 +29359,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWorkOutline {
         /**
@@ -29367,7 +29369,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconWrapText {
         /**
@@ -29377,7 +29379,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconYoutubeSearchedFor {
         /**
@@ -29387,7 +29389,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconZoomIn {
         /**
@@ -29397,7 +29399,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconZoomInMap {
         /**
@@ -29407,7 +29409,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconZoomOut {
         /**
@@ -29417,7 +29419,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxIconZoomOutMap {
         /**
@@ -29427,7 +29429,7 @@ declare namespace LocalJSX {
         /**
           * The size of the icon
          */
-        "size"?: 'extra-small' | 'small' | 'normal' | 'large';
+        "size"?: 'extra-small' | 'small' | 'normal' | 'large' | string;
     }
     interface RuxInputField {
         /**

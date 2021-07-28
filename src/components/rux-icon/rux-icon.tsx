@@ -9,13 +9,14 @@ export class RuxIcon {
     svg: string = ''
 
     /**
-     * The size of the icon
+     * The size of the icon. Can be 'extra-small', 'small', 'normal', 'large' or any custom value ('30px', '1rem', '3.321em')
      */
     @Prop({ reflect: true }) size:
         | 'extra-small'
         | 'small'
         | 'normal'
-        | 'large' = 'normal'
+        | 'large'
+        | string = 'normal'
     /**
      * The icon name
      */
