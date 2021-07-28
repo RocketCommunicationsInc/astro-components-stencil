@@ -126,10 +126,9 @@ In Astro 4.0, these groups have been flattened, and each icon is now imported di
 
 ## CSS Custom Properties
 
-| Name                | Description                   |
-| ------------------- | ----------------------------- |
-| `--iconColor`       | the default color of the icon |
-| `--iconDefaultSize` | the default size of the icon  |
+| Name          | Description                   |
+| ------------- | ----------------------------- |
+| `--iconColor` | the default color of the icon |
 
 
 ## Dependencies

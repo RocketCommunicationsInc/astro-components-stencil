@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-28T15:58:42",
+    "timestamp": "2021-07-28T20:02:44",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -1019,11 +1019,6 @@
                     "name": "--iconColor",
                     "annotation": "prop",
                     "docs": "the default color of the icon"
-                },
-                {
-                    "name": "--iconDefaultSize",
-                    "annotation": "prop",
-                    "docs": "the default size of the icon"
                 }
             ],
             "slots": [],
@@ -61610,6 +61605,118 @@
             "dependencyGraph": {}
         },
         {
+            "filePath": "./src/components/rux-push-button/rux-push-button.tsx",
+            "encapsulation": "shadow",
+            "tag": "rux-push-button",
+            "readme": "# Push Button\n\nPushbuttons are a variant of the toggle button which incorporate label and action into a single user interface element. Pushbuttons may provide a useful interface element where screen real estate is at a premium.\n\n## Guidelines\n\n- [Astro UXDS: Toggle & Push Button](http://www.astrouxds.com/ui-components/toggle)\n\n## Web Components Usage\n\n### 1. Installation\n\n#### Install the Astro UXDS Push Button package via Command Line (Preferred Method)\n\n```sh\nnpm i --save @astrouxds/rux-push-button\n```\n\nYou may use Yarn, NPM, or your Node package manager of choice. The `--save` flag adds this component as a dependency in your `package.json` file.\n\n#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components/) source to your project.\n\nVia CLI:\n\n```sh\ngit clone https://github.com/RocketCommunicationsInc/astro-components.git\n```\n\nOr, [download the Astro UXDS Components as a .zip](https://github.com/RocketCommunicationsInc/astro-components/archive/master.zip)\n\n### 2. Import the Astro Push Button Web Component\n\nThis example assumes you're using the NPM package in `node_modules`. Otherwise, import the component using the path to the Astro Components directory in your project.\n\n```javascript\nimport { RuxPushButton } from \"@astrouxds/rux-push-button/rux-push-button.js\";\n```\n\n### 3. Render the Astro Push Button Web Component\n\nPass properties as attributes of the Astro Push Button custom element.\n\nProvide a label for the Push Button inside the component node using the component’s [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot).\n\n```xml\n<rux-push-button checked>Push button label</rux-push-button>\n```\n## Basic HTML Usage\n\n### 1. Include the Astro UXDS CSS file\n\nLatest release is available in the [static css directory](https://github.com/RocketCommunicationsInc/astro-components/tree/master/static/css).\n\n```xml\n<link rel=\"stylesheet\" href=\"/your-project/path/astro.css\" />\n```\n\n### 2. Markup the component using HTML and the Astro CSS classes\n\nAstro CSS classes follow the [BEM-style](http://getbem.com/introduction/) naming convention.\n\n```xml\n <div class=\"rux-push-button\">\n  <input class=\"rux-push-button__input\" id=\"pb1\" type=\"checkbox\"></input>\n  <label class=\"rux-push-button__button\" for=\"pb1\">Push button label</label>\n</div>\n```\n\nApply attributes such as `disabled` and/or `checked` on the `<input>` element.\n\n```xml\n <div class=\"rux-push-button\">\n  <input class=\"rux-push-button__input\" id=\"pb1\" type=\"checkbox\" disabled checked></input>\n  <label class=\"rux-push-button__button\" for=\"pb1\">Push button label</label>\n</div>\n```\n\n### Attributes\n\n| Attribute  | Type    | Default | Required | Description                                                                                                                                                                                 |\n| ---------- | ------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| `disabled` | Boolean | `false` | No       | Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored. |\n| `checked`  | Boolean | `false` | No       | Checks the button via HTML `checked` attribute. Button takes on a distinct \"enabled\" or \"selected\" visual state.                                                                            |\n\nFor more information about AstroUXDS usage outside of a Web Component environment, please see [Astro UXDS Stylesheets](https://www.astrouxds.com/components/readme/#getting-started-with-html-%26-css)\n\n## Revision History\n\n##### **4.0**\n\n- Replaced [Polymer 3](https://www.polymer-project.org) implementation with [LitElement](https://lit-element.polymer-project.org/) for improved speed and interoperability with JS Frameworks as well as simpler template declaration now available in vanilla JavaScript.\n\n##### **2.1**\n\n- Moved Pushbuttons to its own style sheet\n\n##### **1.4**\n\n- Added `rux_` prefixes and BEM-compatible classes to all `satcom_`-prefixed elements. NOTE: `satcom_` will be removed in a future version\n- Removed prefixed linear gradients\n- Removed prefixed transition\n- Fixed added colon to checked pseudo class (e.g., checked became :checked)\n- Alignment issue fixed on toggle button label\n- Updated to WCAG colors\n- Updated transition speed\n",
+            "docs": "Pushbuttons are a variant of the toggle button which incorporate label and action into a single user interface element. Pushbuttons may provide a useful interface element where screen real estate is at a premium.",
+            "docsTags": [],
+            "usage": {},
+            "props": [
+                {
+                    "name": "checked",
+                    "type": "boolean",
+                    "mutable": true,
+                    "attr": "checked",
+                    "reflectToAttr": true,
+                    "docs": "Checks the push button via HTML `checked` attribute.\nPush button takes on a distinct \"enabled\" or \"selected\" visual state.",
+                    "docsTags": [],
+                    "default": "false",
+                    "values": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                },
+                {
+                    "name": "disabled",
+                    "type": "boolean",
+                    "mutable": false,
+                    "attr": "disabled",
+                    "reflectToAttr": false,
+                    "docs": "Disables the push button via HTML `disabled` attribute.\nButton takes on a distinct disabled visual state.\nCursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.",
+                    "docsTags": [],
+                    "default": "false",
+                    "values": [
+                        {
+                            "type": "boolean"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                },
+                {
+                    "name": "label",
+                    "type": "string",
+                    "mutable": false,
+                    "attr": "label",
+                    "reflectToAttr": false,
+                    "docs": "The label of the push button.\nCan be overridden by placing content in the default slot of the rusx-push-button component.",
+                    "docsTags": [],
+                    "default": "'Push Button'",
+                    "values": [
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "required": false
+                }
+            ],
+            "methods": [],
+            "events": [
+                {
+                    "event": "rux-change",
+                    "detail": "PushButtonChangeEvent",
+                    "bubbles": true,
+                    "cancelable": true,
+                    "composed": true,
+                    "docs": "Emitted when the checked property has changed.",
+                    "docsTags": []
+                }
+            ],
+            "listeners": [],
+            "styles": [
+                {
+                    "name": "--pushbuttonBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "the Push Button background color"
+                },
+                {
+                    "name": "--pushbuttonBorderColor",
+                    "annotation": "prop",
+                    "docs": "the Push Button border color"
+                },
+                {
+                    "name": "--pushbuttonSelectdBackgroundColor",
+                    "annotation": "prop",
+                    "docs": "the Push Button background color when checked"
+                },
+                {
+                    "name": "--pushbuttonSelectedBorderColor",
+                    "annotation": "prop",
+                    "docs": "the Push Button border color when checked"
+                },
+                {
+                    "name": "--pushbuttonSelectedTextColor",
+                    "annotation": "prop",
+                    "docs": "the Push Button text color when checked"
+                },
+                {
+                    "name": "--pushbuttonTextColor",
+                    "annotation": "prop",
+                    "docs": "the Push Button text color"
+                }
+            ],
+            "slots": [],
+            "parts": [],
+            "dependents": [],
+            "dependencies": [],
+            "dependencyGraph": {}
+        },
+        {
             "filePath": "./src/components/rux-segmented-button/rux-segmented-button.tsx",
             "encapsulation": "shadow",
             "tag": "rux-segmented-button",
@@ -61767,7 +61874,6 @@
                     "reflectToAttr": false,
                     "docs": "Id for the Select Input",
                     "docsTags": [],
-                    "default": "`rux-select-${selectIds++}`",
                     "values": [
                         {
                             "type": "string"
