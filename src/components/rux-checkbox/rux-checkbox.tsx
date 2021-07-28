@@ -26,7 +26,7 @@ export class RuxCheckbox {
      */
     @Prop() name = ''
     /**
-     * The checkbox name
+     * The checkbox value
      */
     @Prop({ reflect: true, mutable: true }) value: string = ''
 
@@ -60,15 +60,27 @@ export class RuxCheckbox {
      */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
 
+    /**
+     * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+     */
+    @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
+
     constructor() {}
 
     componentWillLoad() {
         this.onChange = this.onChange.bind(this)
+        this.onInput = this.onInput.bind(this)
     }
 
-    private onChange(): void {
-        this.checked = !this.checked
+    private onChange(e: Event): void {
+        const target = e.target as HTMLInputElement
+        this.checked = target.checked
         this.ruxChange.emit(this.checked)
+    }
+    private onInput(e: Event) {
+        const target = e.target as HTMLInputElement
+        this.value = target.value
+        this.ruxInput.emit()
     }
 
     render() {
@@ -104,8 +116,9 @@ export class RuxCheckbox {
                         required={required}
                         checked={checked}
                         value={value}
-                        onChange={this.onChange}
                         indeterminate={indeterminate}
+                        onChange={this.onChange}
+                        onInput={this.onInput}
                     />
                     <label htmlFor={checkboxId}>
                         <slot></slot>
