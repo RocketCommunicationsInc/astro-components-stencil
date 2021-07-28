@@ -43,7 +43,7 @@ export class RuxSlider {
     @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
 
     componentWillLoad() {
-        this._getValueOnLoad()
+        this._updateValue()
     }
 
     connectedCallback() {
@@ -55,10 +55,10 @@ export class RuxSlider {
     @Watch('min')
     @Watch('max')
     handleChange() {
-        this._getValueOnLoad()
+        this._updateValue()
     }
 
-    _getValueOnLoad() {
+    _updateValue() {
         //If val is not a number, change it to 0.
         if (!this.val && this.val != 0) {
             this.val = 0
