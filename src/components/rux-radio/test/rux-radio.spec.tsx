@@ -28,7 +28,6 @@ describe('rux-radio', () => {
             checked: false,
             disabled: false,
             errorText: undefined,
-            indeterminate: false,
             name: '',
             required: false,
             value: '',
