@@ -31,7 +31,7 @@ export class RuxSlider {
     /**
      * Current value of the slider.
      */
-    @Prop({ mutable: true }) val?: number = 50
+    @Prop({ mutable: true }) value?: number = 50
     /**
      *
      * Determines the if the slider is disabled.
@@ -52,7 +52,7 @@ export class RuxSlider {
     }
     @Element() el!: HTMLInputElement
 
-    @Watch('val')
+    @Watch('value')
     @Watch('min')
     @Watch('max')
     handleChange() {
@@ -60,9 +60,9 @@ export class RuxSlider {
     }
 
     _updateValue() {
-        //If val is not a number, change it to 0.
-        if (!this.val && this.val != 0) {
-            this.val = 0
+        //If value is not a number, change it to 0.
+        if (!this.value && this.value != 0) {
+            this.value = 0
         }
         //If min is not a number, change it to 0
         if (!this.min && this.min != 0) {
@@ -81,23 +81,23 @@ export class RuxSlider {
             this.max = 100
         }
         // If min is given and is greater than value, then set value to the min.
-        if (this.val && this.val < this.min) {
-            this.val = this.min
+        if (this.value && this.value < this.min) {
+            this.value = this.min
         }
         //If max is given and is less than value, set value to max
-        if (this.max && this.max < this.val) {
-            this.val = this.max
+        if (this.max && this.max < this.value) {
+            this.value = this.max
         }
         this._setValuePercent()
     }
     //Sets the --valuePercent CSS var
     _setValuePercent() {
-        const dif = ((this.val! - this.min!) / (this.max! - this.min!)) * 100
+        const dif = ((this.value! - this.min!) / (this.max! - this.min!)) * 100
         this.el.style.setProperty('--valuePercent', `${dif}%`)
     }
     onInput(e: Event) {
         const target = e.target as HTMLInputElement
-        this.val = parseInt(target.value)
+        this.value = parseInt(target.value)
         this._setValuePercent()
         this.ruxInput.emit()
     }
@@ -109,7 +109,7 @@ export class RuxSlider {
     }
 
     render() {
-        const { min, max, val, step, disabled, onInput } = this
+        const { min, max, value, step, disabled, onInput } = this
         return (
             <Host>
                 <div class="rux-slider">
@@ -119,7 +119,7 @@ export class RuxSlider {
                         class="rux-range"
                         min={min}
                         max={max}
-                        value={val}
+                        value={value}
                         step={step}
                         disabled={disabled}
                         aria-label="slider"
