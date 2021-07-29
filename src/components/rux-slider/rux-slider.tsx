@@ -112,7 +112,7 @@ export class RuxSlider {
         const { min, max, val, step, disabled, onInput } = this
         return (
             <Host>
-                <div class="rux-slider" onClick={(e) => onInput(e)}>
+                <div class="rux-slider">
                     <input
                         onInput={onInput}
                         type="range"
