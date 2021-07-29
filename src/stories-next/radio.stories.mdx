@@ -51,3 +51,12 @@ export const Default = () => html`
         {Default.bind()}
     </Story>
 </Canvas>
+
+## Cherry Picking
+
+If you're already utilizing a build system that supports tree shaking and want to only import this individual component:
+
+```js
+import RuxRadio from '@astrouxds/astro-web-components/dist/components/rux-radio.js'
+customElements.define('rux-radio', RuxRadio)
+```
