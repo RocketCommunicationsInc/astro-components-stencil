@@ -1,0 +1,53 @@
+import { withActions } from '@storybook/addon-actions'
+import { html, render } from 'lit-html'
+import RuxCheckboxReadme from '../components/rux-radio/readme.md'
+
+
+<Meta
+    title="Components/Radio"
+    component="rux-radio"
+    argTypes={extractArgTypes('rux-radio')}
+/>
+
+# RadioButtons
+
+Radio Buttons allow users to mutually select an option from a predefined set of options. When one selection is made, the previous selection becomes deselected. One option should always be selected.
+
+## Guidelines
+
+-   [Astro UXDS: Radio Buttons](https://www.astrouxds.com/ui-components/radio-button)
+-   [Astro UXDS: Toggles](http://www.astrouxds.com/ui-components/toggle)
+-   [Astro UXDS: Form and Input Validation](https://www.astrouxds.com/ui-components/validation)
+
+
+
+export const Default = () => html`
+    <div style="padding: 10vh 5vw; display: flex; justify-content: center;">
+        <ul style="list-style:none;">
+            <li>
+                <rux-radio name="radio1c" value="one">Radio button</rux-radio>
+            </li>
+            <li>
+                <rux-radio name="radio1c" value="two" checked
+                    >Radio button checked</rux-radio
+                >
+            </li>
+            <li>
+                <rux-radio name="radio2c" value="three" disabled
+                    >Radio button disabled</rux-radio
+                >
+            </li>
+            <li>
+                <rux-radio name="radio2c" value="four" checked disabled
+                    >Radio button disabled checked</rux-radio
+                >
+            </li>
+        </ul>
+    </div>
+`
+
+<Canvas>
+    <Story name="Default">
+        {Default.bind()}
+    </Story>
+</Canvas>

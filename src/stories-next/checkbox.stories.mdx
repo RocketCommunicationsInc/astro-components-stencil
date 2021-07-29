@@ -4,7 +4,7 @@ import RuxCheckboxReadme from '../components/rux-checkbox/readme.md'
 
 
 <Meta
-    title="Components/Form Elements"
+    title="Components/Checkbox"
     component="rux-checkbox"
     argTypes={extractArgTypes('rux-checkbox')}
 />
@@ -19,7 +19,7 @@ A Checkbox describes a state or value that can be either "True or False.” Chec
 - [Astro UXDS: Form and Input Validation](https://www.astrouxds.com/ui-components/validation)
 
 
-export const Checkboxes = () => {
+export const Default = () => {
     return htmlreturn html` <style>
             section {
                 display: flex;
@@ -90,8 +90,8 @@ export const Checkboxes = () => {
 }
 
 <Canvas>
-    <Story name="Checkboxes">
-        {Checkboxes.bind()}
+    <Story name="Default">
+        {Default.bind()}
     </Story>
 </Canvas>
 
