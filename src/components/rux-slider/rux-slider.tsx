@@ -31,7 +31,7 @@ export class RuxSlider {
     /**
      * Current value of the slider.
      */
-    @Prop({ mutable: true }) value?: number = 50
+    @Prop({ mutable: true }) value?: number = this.max! / 2
     /**
      *
      * Determines if the slider is disabled.
@@ -60,34 +60,39 @@ export class RuxSlider {
     }
 
     _updateValue() {
-        //If value is not a number, change it to 0.
+        // If value is not a number, change it to 0.
         if (!this.value && this.value != 0) {
             this.value = 0
         }
-        //If min is not a number, change it to 0
+        // If min is not a number, change it to 0
         if (!this.min && this.min != 0) {
             this.min = 0
-        }
-        //Min can't be > max
-        if (this.min > this.max!) {
-            if (this.step && this.step != 0) {
-                this.min = this.max! - this.step!
-            } else {
-                this.min = this.max! - 5
-            }
         }
         //If max is not a number, change it to 100
         if (!this.max && this.max != 0) {
             this.max = 100
+            this.value = this.max / 2
+        }
+        //If step is not a number, change it to 1
+        if (!this.step) {
+            this.step = 1
+        }
+        //Min can't be >= max
+        if (this.min >= this.max) {
+            this.min = this.max - this.step
         }
         // If min is given and is greater than value, then set value to the min.
         if (this.value && this.value < this.min) {
             this.value = this.min
         }
         //If max is given and is less than value, set value to max
-        if (this.max && this.max < this.value) {
+        if (this.max && this.max < this.value!) {
             this.value = this.max
         }
+        console.log(this.max, 'max')
+        console.log(this.min, 'min')
+        console.log(this.value, 'val')
+        console.log(this.step, 'step')
         this._setValuePercent()
     }
     //Sets the --valuePercent CSS var
