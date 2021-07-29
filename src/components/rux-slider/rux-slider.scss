@@ -30,9 +30,6 @@
     * @prop --sliderTrackCursor: The type of cursor for the slider's track.
     */
     /**
-    * @prop --value: The current value of the slider.
-    */
-    /**
     * @prop --valuePercent: The current value of the slider in a percent.
     */
 
@@ -41,8 +38,7 @@
     --sliderTrackHeight: 1px;
     --sliderTrackBeforeThumbHeight: 5px;
     --sliderTrackCursor: pointer;
-    --value: 50;
-    --valuePercent: calc(1% * var(--value));
+    --valuePercent: 50%;
 
     display: flex;
     flex-grow: 1;
@@ -95,7 +91,8 @@ input[type='range']:focus {
             var(--sliderTrackBackgroundColor),
             var(--sliderTrackBackgroundColor)
         );
-    background-size: var(--valuePercent) 5px, 100% 1px;
+    background-size: var(--valuePercent) var(--sliderTrackBeforeThumbHeight),
+        100% var(--sliderTrackHeight);
     background-repeat: no-repeat no-repeat;
     background-position: left, right;
 }
@@ -121,7 +118,8 @@ input[type='range']:focus {
             var(--sliderTrackBackgroundColor),
             var(--sliderTrackBackgroundColor)
         );
-    background-size: calc(1% * var(--value)) 5px, 100% 1px;
+    background-size: val(--valuePercent) var(--sliderTrackBeforeThumbHeight),
+        100% var(--sliderTrackHeight);
     background-repeat: no-repeat no-repeat;
     background-position: left, right;
 }
@@ -155,7 +153,8 @@ input[type='range']:focus {
             var(--sliderTrackBackgroundColor),
             var(--sliderTrackBackgroundColor)
         );
-    background-size: calc(1% * var(--value)) 5px, 100% 1px;
+    background-size: var(--valuePercent) var(--sliderTrackBeforeThumbHeight),
+        100% var(--sliderTrackHeight);
     background-repeat: no-repeat no-repeat;
     background-position: left, right;
 }

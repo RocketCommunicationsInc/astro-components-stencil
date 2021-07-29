@@ -87,8 +87,6 @@ export class RuxSlider {
         if (this.max && this.max < this.val) {
             this.val = this.max
         }
-
-        this.el.style.setProperty('--value', this.val!.toString())
         this._setValuePercent()
     }
     //Sets the --valuePercent CSS var
@@ -99,9 +97,7 @@ export class RuxSlider {
     onInput(e: Event) {
         const target = e.target as HTMLInputElement
         this.val = parseInt(target.value)
-        this.el.style.setProperty('--value', target.value)
         this._setValuePercent()
-
         this.ruxInput.emit()
     }
 
