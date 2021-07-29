@@ -11015,7 +11015,7 @@ export namespace Components {
     }
     interface RuxSlider {
         /**
-          * Determines the if the slider is disabled.
+          * Determines if the slider is disabled.
          */
         "disabled"?: boolean;
         /**
@@ -29843,7 +29843,7 @@ declare namespace LocalJSX {
     }
     interface RuxSlider {
         /**
-          * Determines the if the slider is disabled.
+          * Determines if the slider is disabled.
          */
         "disabled"?: boolean;
         /**

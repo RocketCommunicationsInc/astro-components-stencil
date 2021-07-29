@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-29T21:20:08",
+    "timestamp": "2021-07-29T21:58:49",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -75808,7 +75808,7 @@
                     "mutable": false,
                     "attr": "disabled",
                     "reflectToAttr": true,
-                    "docs": "Determines the if the slider is disabled.",
+                    "docs": "Determines if the slider is disabled.",
                     "docsTags": [],
                     "default": "false",
                     "values": [

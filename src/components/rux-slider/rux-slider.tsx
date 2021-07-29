@@ -34,7 +34,7 @@ export class RuxSlider {
     @Prop({ mutable: true }) value?: number = 50
     /**
      *
-     * Determines the if the slider is disabled.
+     * Determines if the slider is disabled.
      */
     @Prop({ reflect: true }) disabled?: boolean = false
     /**
