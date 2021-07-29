@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-28T20:19:58",
+    "timestamp": "2021-07-29T21:20:08",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -75797,8 +75797,8 @@
             "filePath": "./src/components/rux-slider/rux-slider.tsx",
             "encapsulation": "shadow",
             "tag": "rux-slider",
-            "readme": "# rux-slider\n\n\n",
-            "docs": "",
+            "readme": "# Slider\n\nA Slider allows users to choose from a range of continuous and discrete values. The Slider displays the range of possible values and the Slider’s indicator displays the current value.\n\n## Guidelines\n\n- [Astro UXDS: Slider](http://www.astrouxds.com/ui-components/slider)\n- [MDN: HTML Input Range](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)\n\n## Web Components Usage\n\n### 1. Installation\n\n#### Install the Astro UXDS Slider package via Command Line (Preferred Method)\n\n```sh\nnpm i -save @astrouxds/rux-slider\n```\n\nYou may use Yarn, NPM, or your Node package manager of choice. The `--save` flag adds this component as a dependency in your `package.json` file.\n\n#### **Alternatively**, download the [Astro UXDS Component Library](https://github.com/RocketCommunicationsInc/astro-components/) source to your project.\n\nVia CLI:\n\n```sh\ngit clone https://github.com/RocketCommunicationsInc/astro-components.git\n```\n\nOr, [download the Astro UXDS Components as a .zip](https://github.com/RocketCommunicationsInc/astro-components/archive/master.zip)\n\n### 2. Import the Astro Slider Web Component\n\nThis example assumes you're using the NPM package in `node_modules`. Otherwise, import the component using the path to the Astro Components directory in your project.\n\n```javascript\nimport { RuxSlider } from \"@astrouxds/rux-slider/rux-slider.js\";\n```\n\n### 3. Render the Astro Slider Web Component\n\nPass properties via attributes similar to the native [HTML Input Range](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range) attributes:\n\n```xml\n<rux-slider\n  min=\"0\"\n  max=\"400\"\n  step=\"5\"\n  val=\"200\"\n  disabled\n  >\n</rux-slider>\n```\n\n\n\n",
+            "docs": "A Slider allows users to choose from a range of continuous and discrete values. The Slider displays the range of possible values and the Slider’s indicator displays the current value.",
             "docsTags": [],
             "usage": {},
             "props": [
@@ -75883,10 +75883,10 @@
                     "required": false
                 },
                 {
-                    "name": "val",
+                    "name": "value",
                     "type": "number | undefined",
                     "mutable": true,
-                    "attr": "val",
+                    "attr": "value",
                     "reflectToAttr": false,
                     "docs": "Current value of the slider.",
                     "docsTags": [],
@@ -75968,9 +75968,9 @@
                     "docs": "The type of cursor for the slider's track."
                 },
                 {
-                    "name": "--value",
+                    "name": "--top",
                     "annotation": "prop",
-                    "docs": "The current value of the slider."
+                    "docs": "Determines the top value of the slider thumb."
                 },
                 {
                     "name": "--valuePercent",

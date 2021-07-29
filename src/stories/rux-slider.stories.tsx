@@ -22,7 +22,7 @@ export const Slider = () => {
                 .min="${minKnob}"
                 .max="${maxKnob}"
                 .step="${stepKnob}"
-                .val="${valKnob}"
+                .value="${valKnob}"
                 ?disabled="${disabledKnob}"
             >
             </rux-slider>

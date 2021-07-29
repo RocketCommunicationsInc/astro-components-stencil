@@ -11033,7 +11033,7 @@ export namespace Components {
         /**
           * Current value of the slider.
          */
-        "val"?: number;
+        "value"?: number;
     }
     interface RuxStatus {
         /**
@@ -29865,7 +29865,7 @@ declare namespace LocalJSX {
         /**
           * Current value of the slider.
          */
-        "val"?: number;
+        "value"?: number;
     }
     interface RuxStatus {
         /**

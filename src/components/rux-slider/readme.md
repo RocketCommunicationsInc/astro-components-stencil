@@ -66,7 +66,7 @@ Pass properties via attributes similar to the native [HTML Input Range](https://
 | `max`      | `max`      | Max value of slider.                      | `number \| undefined`  | `100`   |
 | `min`      | `min`      | Min value of the slider.                  | `number \| undefined`  | `0`     |
 | `step`     | `step`     | Step amount of slider value.              | `number \| undefined`  | `1`     |
-| `val`      | `val`      | Current value of the slider.              | `number \| undefined`  | `50`    |
+| `value`    | `value`    | Current value of the slider.              | `number \| undefined`  | `50`    |
 
 
 ## Events
@@ -90,7 +90,7 @@ Pass properties via attributes similar to the native [HTML Input Range](https://
 | `--sliderThumbSize`                    | Size of the slider's thumb, both width and height.          |
 | `--sliderTrackBackgroundColor`         | Background color of the slider's track.                     |
 | `--sliderTrackCursor`                  | The type of cursor for the slider's track.                  |
-| `--value`                              | The current value of the slider.                            |
+| `--top`                                | Determines the top value of the slider thumb.               |
 | `--valuePercent`                       | The current value of the slider in a percent.               |
 
 
