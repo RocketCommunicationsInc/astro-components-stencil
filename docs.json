@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-29T21:58:49",
+    "timestamp": "2021-07-29T23:29:27",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -75888,9 +75888,9 @@
                     "mutable": true,
                     "attr": "value",
                     "reflectToAttr": false,
-                    "docs": "Current value of the slider.",
+                    "docs": "Current value of the slider. The default value is halfway between the specified minimum and maximum. - [HTMLElement/<input type=\"range\">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)",
                     "docsTags": [],
-                    "default": "50",
+                    "default": "(this.max! - this.min!) / 2 + this.min!",
                     "values": [
                         {
                             "type": "number"

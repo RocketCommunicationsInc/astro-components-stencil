@@ -11031,7 +11031,7 @@ export namespace Components {
          */
         "step"?: number;
         /**
-          * Current value of the slider.
+          * Current value of the slider. The default value is halfway between the specified minimum and maximum. - [HTMLElement/<input type="range">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
          */
         "value"?: number;
     }
@@ -29863,7 +29863,7 @@ declare namespace LocalJSX {
          */
         "step"?: number;
         /**
-          * Current value of the slider.
+          * Current value of the slider. The default value is halfway between the specified minimum and maximum. - [HTMLElement/<input type="range">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
          */
         "value"?: number;
     }

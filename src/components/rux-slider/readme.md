@@ -60,13 +60,13 @@ Pass properties via attributes similar to the native [HTML Input Range](https://
 
 ## Properties
 
-| Property   | Attribute  | Description                           | Type                   | Default |
-| ---------- | ---------- | ------------------------------------- | ---------------------- | ------- |
-| `disabled` | `disabled` | Determines if the slider is disabled. | `boolean \| undefined` | `false` |
-| `max`      | `max`      | Max value of slider.                  | `number \| undefined`  | `100`   |
-| `min`      | `min`      | Min value of the slider.              | `number \| undefined`  | `0`     |
-| `step`     | `step`     | Step amount of slider value.          | `number \| undefined`  | `1`     |
-| `value`    | `value`    | Current value of the slider.          | `number \| undefined`  | `50`    |
+| Property   | Attribute  | Description                                                                                                                                                                                                      | Type                   | Default                                   |
+| ---------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------------------------------------- |
+| `disabled` | `disabled` | Determines if the slider is disabled.                                                                                                                                                                            | `boolean \| undefined` | `false`                                   |
+| `max`      | `max`      | Max value of slider.                                                                                                                                                                                             | `number \| undefined`  | `100`                                     |
+| `min`      | `min`      | Min value of the slider.                                                                                                                                                                                         | `number \| undefined`  | `0`                                       |
+| `step`     | `step`     | Step amount of slider value.                                                                                                                                                                                     | `number \| undefined`  | `1`                                       |
+| `value`    | `value`    | Current value of the slider. The default value is halfway between the specified minimum and maximum. - [HTMLElement/<input type="range">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range) | `number \| undefined`  | `(this.max! - this.min!) / 2 + this.min!` |
 
 
 ## Events

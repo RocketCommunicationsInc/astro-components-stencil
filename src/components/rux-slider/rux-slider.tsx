@@ -29,9 +29,10 @@ export class RuxSlider {
      */
     @Prop() step?: number = 1
     /**
-     * Current value of the slider.
+     * Current value of the slider. The default value is halfway between the specified minimum and maximum. - [HTMLElement/<input type="range">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
      */
-    @Prop({ mutable: true }) value?: number = this.max! / 2
+    @Prop({ mutable: true }) value?: number =
+        (this.max! - this.min!) / 2 + this.min!
     /**
      *
      * Determines if the slider is disabled.
@@ -60,10 +61,6 @@ export class RuxSlider {
     }
 
     _updateValue() {
-        // If value is not a number, change it to 0.
-        if (!this.value && this.value != 0) {
-            this.value = 0
-        }
         // If min is not a number, change it to 0
         if (!this.min && this.min != 0) {
             this.min = 0
@@ -71,7 +68,10 @@ export class RuxSlider {
         //If max is not a number, change it to 100
         if (!this.max && this.max != 0) {
             this.max = 100
-            this.value = this.max / 2
+        }
+        // If value is not a number, change it to default.
+        if (!this.value && this.value != 0) {
+            this.value = (this.max - this.min) / 2 + this.min
         }
         //If step is not a number, change it to 1
         if (!this.step) {
@@ -82,17 +82,14 @@ export class RuxSlider {
             this.min = this.max - this.step
         }
         // If min is given and is greater than value, then set value to the min.
-        if (this.value && this.value < this.min) {
+        if (this.value < this.min) {
             this.value = this.min
         }
         //If max is given and is less than value, set value to max
-        if (this.max && this.max < this.value!) {
+        if (this.max < this.value) {
             this.value = this.max
         }
-        console.log(this.max, 'max')
-        console.log(this.min, 'min')
-        console.log(this.value, 'val')
-        console.log(this.step, 'step')
+
         this._setValuePercent()
     }
     //Sets the --valuePercent CSS var
