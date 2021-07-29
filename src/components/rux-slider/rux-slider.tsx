@@ -44,6 +44,7 @@ export class RuxSlider {
 
     componentWillLoad() {
         this._updateValue()
+        this._getBrowser(navigator.userAgent.toLowerCase())
     }
 
     connectedCallback() {
@@ -99,6 +100,12 @@ export class RuxSlider {
         this.val = parseInt(target.value)
         this._setValuePercent()
         this.ruxInput.emit()
+    }
+    //Safari needs 0px top for the thumb to look normal.
+    _getBrowser(ua: string) {
+        if (ua.indexOf('safari') > -1 && ua.indexOf('chrome') == -1) {
+            this.el.style.setProperty('--top', '0px')
+        }
     }
 
     render() {

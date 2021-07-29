@@ -32,6 +32,9 @@
     /**
     * @prop --valuePercent: The current value of the slider in a percent.
     */
+    /**
+    * @prop --top: Determines the top value of the slider thumb.
+    */
 
     --sliderThumbSize: 19px;
     --sliderThumbBorderSize: 2px;
@@ -39,6 +42,7 @@
     --sliderTrackBeforeThumbHeight: 5px;
     --sliderTrackCursor: pointer;
     --valuePercent: 50%;
+    --top: calc(var(--sliderThumbSize) / -2.7);
 
     display: flex;
     flex-grow: 1;
@@ -109,7 +113,7 @@ input[type='range']:focus {
     cursor: var(--sliderTrackCursor, pointer);
     border-radius: 2.5px;
     min-height: var(--sliderTrackHeight);
-    max-height: 5px;
+    max-height: var(--sliderTrackBeforeThumbHeight);
     background-image: linear-gradient(
             var(--sliderTrackBackgroundColor),
             var(--sliderTrackBackgroundColor)
@@ -118,7 +122,8 @@ input[type='range']:focus {
             var(--sliderTrackBackgroundColor),
             var(--sliderTrackBackgroundColor)
         );
-    background-size: val(--valuePercent) var(--sliderTrackBeforeThumbHeight),
+    background-size: calc(1 * var(--valuePercent))
+            var(--sliderTrackBeforeThumbHeight),
         100% var(--sliderTrackHeight);
     background-repeat: no-repeat no-repeat;
     background-position: left, right;
@@ -172,7 +177,7 @@ input[type='range']:focus {
 .rux-range::-webkit-slider-thumb {
     -webkit-appearance: none;
     position: relative;
-    top: calc(var(--sliderThumbSize) / -2.7);
+    top: var(--top);
     height: var(--sliderThumbSize);
     width: var(--sliderThumbSize);
     border-radius: 100%;
@@ -222,7 +227,7 @@ input[type='range']:focus {
 .rux-range::-moz-range-thumb {
     -moz-appearance: none;
     position: relative;
-    top: calc(var(--sliderThumbSize) / -2.7);
+    top: var(--top);
     height: var(--sliderThumbSize);
     width: var(--sliderThumbSize);
     border-radius: 100%;
@@ -247,7 +252,7 @@ input:-moz-focusring {
 /* Thumb -> Ms */
 .rux-range::-ms-thumb {
     position: relative;
-    top: calc(var(--sliderThumbSize) / -2.7);
+    top: var(--top);
     height: var(--sliderThumbSize);
     width: var(--sliderThumbSize);
     border-radius: 100%;
