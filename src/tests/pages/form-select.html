@@ -23,22 +23,12 @@
         <div style="padding: 10%; display: flex; justify-content: center">
             <form id="form">
                 <rux-select label="Best Thing?" name="bestThing">
+                    <option selected></option>
                     <option value="red">Red</option>
                     <option value="blue">Blue</option>
                     <option value="green">Green</option>
                 </rux-select>
 
-                <rux-input-field
-                    id="firstName"
-                    label="First Name"
-                    name="firstName"
-                ></rux-input-field>
-                <rux-input-field
-                    id="favNumber"
-                    label="Favorite Number"
-                    type="number"
-                    name="favoriteNumber"
-                ></rux-input-field>
                 <button type="submit">submit</button>
             </form>
             <ul id="log"></ul>
