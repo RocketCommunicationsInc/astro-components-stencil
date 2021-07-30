@@ -19,12 +19,26 @@
         <link rel="stylesheet" href="/build/astro-web-components.css" />
     </head>
 
-    <body style="background: black">
+    <body class="dark-theme">
         <div style="padding: 10%; display: flex; justify-content: center">
             <form id="form">
-                <rux-input-field></rux-input-field>
-                <input id="input" name="timeStamp" type="text" />
-                <input id="input2" name="name" type="text" />
+                <rux-select label="Best Thing?" name="bestThing">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </rux-select>
+
+                <rux-input-field
+                    id="firstName"
+                    label="First Name"
+                    name="firstName"
+                ></rux-input-field>
+                <rux-input-field
+                    id="favNumber"
+                    label="Favorite Number"
+                    type="number"
+                    name="favoriteNumber"
+                ></rux-input-field>
                 <button type="submit">submit</button>
             </form>
             <ul id="log"></ul>
