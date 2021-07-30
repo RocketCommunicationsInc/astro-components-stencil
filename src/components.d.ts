@@ -11029,10 +11029,6 @@ export namespace Components {
          */
         "helpText"?: string;
         /**
-          * Sets the radio as invalid
-         */
-        "invalid": boolean;
-        /**
           * The radio name
          */
         "name": string;
@@ -29913,10 +29909,6 @@ declare namespace LocalJSX {
           * The help or explanation text
          */
         "helpText"?: string;
-        /**
-          * Sets the radio as invalid
-         */
-        "invalid"?: boolean;
         /**
           * The radio name
          */

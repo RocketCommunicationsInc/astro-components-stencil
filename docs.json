@@ -1,5 +1,5 @@
 {
-    "timestamp": "2021-07-29T19:16:16",
+    "timestamp": "2021-07-30T00:14:09",
     "compiler": {
         "name": "@stencil/core",
         "version": "2.5.2",
@@ -75742,23 +75742,6 @@
                         }
                     ],
                     "optional": true,
-                    "required": false
-                },
-                {
-                    "name": "invalid",
-                    "type": "boolean",
-                    "mutable": false,
-                    "attr": "invalid",
-                    "reflectToAttr": false,
-                    "docs": "Sets the radio as invalid",
-                    "docsTags": [],
-                    "default": "false",
-                    "values": [
-                        {
-                            "type": "boolean"
-                        }
-                    ],
-                    "optional": false,
                     "required": false
                 },
                 {

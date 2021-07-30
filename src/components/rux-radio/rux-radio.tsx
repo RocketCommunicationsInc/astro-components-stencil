@@ -54,11 +54,6 @@ export class RuxRadio {
     @Prop() required: boolean = false
 
     /**
-     * Sets the radio as invalid
-     */
-    @Prop() invalid: boolean = false
-
-    /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
@@ -115,7 +110,6 @@ export class RuxRadio {
             disabled,
             errorText,
             helpText,
-            invalid,
             name,
             required,
             value,
@@ -128,7 +122,6 @@ export class RuxRadio {
                 <div
                     class={{
                         'rux-radio': true,
-                        'rux-radio--invalid': invalid,
                         'rux-radio--has-error': required,
                         'rux-radio--has-text':
                             errorText !== undefined || helpText !== undefined,
