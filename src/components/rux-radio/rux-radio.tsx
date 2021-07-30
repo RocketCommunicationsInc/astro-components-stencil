@@ -96,8 +96,6 @@ export class RuxRadio {
         this.onInput = this.onInput.bind(this)
     }
 
-    componentDidLoad() {}
-
     private onChange(e: Event): void {
         const target = e.target as HTMLInputElement
         this.checked = target.checked
@@ -121,6 +119,8 @@ export class RuxRadio {
             name,
             required,
             value,
+            onChange,
+            onInput,
         } = this
 
         return (
@@ -142,20 +142,18 @@ export class RuxRadio {
                         required={required}
                         checked={checked}
                         value={value}
-                        onChange={this.onChange}
-                        onInput={this.onInput}
+                        onChange={onChange}
+                        onInput={onInput}
                     />
                     <label htmlFor={radioId}>
                         <slot></slot>
                     </label>
                 </div>
-                {this.helpText && !this.errorText && (
+                {helpText && !errorText && (
                     <div class="rux-help-text">{helpText}</div>
                 )}
 
-                {this.errorText && (
-                    <div class="rux-error-text">{errorText}</div>
-                )}
+                {errorText && <div class="rux-error-text">{errorText}</div>}
             </div>
         )
     }
