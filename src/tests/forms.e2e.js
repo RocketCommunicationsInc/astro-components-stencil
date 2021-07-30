@@ -1,11 +1,10 @@
 describe('Forms', () => {
     beforeEach(() => {
-        cy.visit('localhost:3333/tests/pages/forms.html')
+        cy.visit('localhost:4444/tests/pages/forms.html')
     })
-    it('renders', async () => {
-        cy.get('#input').type('Hello')
-        cy.get('#input2').type('Hello')
+    it('submits the correct select value when using a form', async () => {
+        cy.get('rux-select .rux-select').select('blue')
         cy.get('#form').submit()
-        cy.get('#log').contains('timeStamp:Hello')
+        cy.get('#log').contains('bestThing:blue')
     })
 })
