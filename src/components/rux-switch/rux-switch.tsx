@@ -25,7 +25,7 @@ export class RuxSwitch {
      * Button takes on a distinct visual state.
      * Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
      */
-    @Prop() disabled: boolean = false
+    @Prop({ reflect: true }) disabled: boolean = false
 
     /**
      * Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.
@@ -54,7 +54,6 @@ export class RuxSwitch {
         const { inputId, name, disabled, checked } = this
         return (
             <Host
-                onClick={this.handleClick}
                 aria-checked={`${checked}`}
                 aria-hidden={disabled ? 'true' : null}
                 role="switch"
@@ -68,7 +67,9 @@ export class RuxSwitch {
                         name={name}
                         role="switch"
                         disabled={disabled}
+                        aria-disabled={disabled ? 'true' : 'false'}
                         checked={checked}
+                        onClick={(e) => this.handleClick(e)}
                     />
                     <label class="rux-switch__button" htmlFor={inputId}></label>
                 </div>
