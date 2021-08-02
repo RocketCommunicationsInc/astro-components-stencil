@@ -47,6 +47,21 @@ export class RuxPopUpMenu {
      * Boolean which controls when to show the menu
      */
     @Prop({ reflect: true, mutable: true }) open: boolean = false
+    @Watch('open')
+    openMenu(open: Boolean) {
+        if (open) {
+            if (this.anchorEl) {
+                this._show()
+            } else {
+                this.open = false
+                console.error(
+                    'Unable to open pop up menu without an anchor element. See documentation'
+                )
+            }
+        } else {
+            this._hide()
+        }
+    }
 
     /**
      * Emitted when the menu is about to open.
@@ -110,7 +125,7 @@ export class RuxPopUpMenu {
             return Promise.resolve(false)
         }
 
-        this._show()
+        this.open = true
         return Promise.resolve(true)
     }
 
@@ -122,8 +137,7 @@ export class RuxPopUpMenu {
         if (!this.open) {
             return Promise.resolve(false)
         }
-
-        this._hide()
+        this.open = false
         return Promise.resolve(true)
     }
 
@@ -132,16 +146,16 @@ export class RuxPopUpMenu {
      */
     @Method()
     async toggle(): Promise<boolean> {
+        this.open = !this.open
         if (this.open) {
-            this._hide()
-            return Promise.resolve(false)
-        } else {
-            this._show()
             return Promise.resolve(true)
+        } else {
+            return Promise.resolve(false)
         }
     }
 
     private _bindElements() {
+        // find and set triggerEl if not given
         if (!this.triggerEl) {
             const triggerEl: HTMLElement | null = document.querySelector(
                 `[aria-controls="${this.el.id}"]`
@@ -150,17 +164,17 @@ export class RuxPopUpMenu {
             if (triggerEl) {
                 this.triggerEl = triggerEl
                 this.triggerEl.addEventListener('mousedown', this._handleClick)
-            } else {
-                this.triggerEl = this.el
             }
         } else {
             this.triggerEl.addEventListener('mousedown', this._handleClick)
         }
 
-        if (!this.anchorEl) {
+        if (!this.anchorEl && this.triggerEl) {
             this.anchorEl = this.triggerEl
+            this.anchorBounds = this.anchorEl.getBoundingClientRect()
+        } else if (this.anchorEl) {
+            this.anchorBounds = this.anchorEl.getBoundingClientRect()
         }
-        this.anchorBounds = this.anchorEl.getBoundingClientRect()
         this.menuBounds = this.el.getBoundingClientRect()
     }
 
@@ -214,35 +228,31 @@ export class RuxPopUpMenu {
 
     private _handleClick(e: Event) {
         e.preventDefault()
-        this._show()
+        this.open = true
     }
 
     private _handleOutsideClick(e: MouseEvent) {
-        const target = e.composedPath().includes(this.el)
-        if (!target) {
-            this._hide()
+        if (this.anchorEl) {
+            const menuClick = e.composedPath().includes(this.el)
+            const anchorClick = e.composedPath().includes(this.anchorEl)
+            if (!menuClick && !anchorClick) {
+                this.open = false
+            }
         }
     }
 
     private _show() {
-        if (this.anchorEl) {
-            this.ruxMenuWillOpen.emit()
-            this.open = true
+        this.ruxMenuWillOpen.emit()
 
-            const debounce = setTimeout(() => {
-                window.addEventListener('resize', () => this._setMenuPosition())
-                window.addEventListener('mousedown', this._handleOutsideClick)
-                clearTimeout(debounce)
-            }, 10)
+        const debounce = setTimeout(() => {
+            window.addEventListener('resize', () => this._setMenuPosition())
+            window.addEventListener('mousedown', this._handleOutsideClick)
+            clearTimeout(debounce)
+        }, 10)
 
-            this.triggerEl?.removeEventListener('mousedown', this._handleClick)
+        this.triggerEl?.removeEventListener('mousedown', this._handleClick)
 
-            this.ruxMenuDidOpen.emit()
-        } else {
-            console.error(
-                'Unable to open pop up menu properly without an anchor element'
-            )
-        }
+        this.ruxMenuDidOpen.emit()
     }
 
     private _hide() {
