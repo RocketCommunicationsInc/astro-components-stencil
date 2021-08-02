@@ -67,7 +67,6 @@ export class RuxSwitch {
                         name={name}
                         role="switch"
                         disabled={disabled}
-                        aria-disabled={disabled ? 'true' : 'false'}
                         checked={checked}
                         onClick={(e) => this.handleClick(e)}
                     />
