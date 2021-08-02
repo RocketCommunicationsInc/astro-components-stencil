@@ -48,6 +48,9 @@
             border: 1px solid var(--inputBorderColor);
             color: var(--inputTextColor);
         }
+        &--invalid:hover {
+            border: 1px solid var(--inputInvalidBorderColor);
+        }
         &::placeholder {
             font-size: 1rem;
             font-weight: normal;
