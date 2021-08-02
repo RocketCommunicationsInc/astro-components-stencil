@@ -84,8 +84,6 @@ export class RuxRadio {
         }
     }
 
-    constructor() {}
-
     componentWillLoad() {
         this.onChange = this.onChange.bind(this)
         this.onInput = this.onInput.bind(this)
