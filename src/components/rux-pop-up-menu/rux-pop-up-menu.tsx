@@ -124,7 +124,6 @@ export class RuxPopUpMenu {
         if (this.open) {
             return Promise.resolve(false)
         }
-
         this.open = true
         return Promise.resolve(true)
     }
@@ -155,7 +154,7 @@ export class RuxPopUpMenu {
     }
 
     private _bindElements() {
-        // find and set triggerEl if not given
+        // find and set triggerEl from aria-controls if not given
         if (!this.triggerEl) {
             const triggerEl: HTMLElement | null = document.querySelector(
                 `[aria-controls="${this.el.id}"]`
@@ -169,6 +168,7 @@ export class RuxPopUpMenu {
             this.triggerEl.addEventListener('mousedown', this._handleClick)
         }
 
+        // If a trigger element exists but no anchor, assign trigger to anchor
         if (!this.anchorEl && this.triggerEl) {
             this.anchorEl = this.triggerEl
             this.anchorBounds = this.anchorEl.getBoundingClientRect()
@@ -257,7 +257,6 @@ export class RuxPopUpMenu {
 
     private _hide() {
         this.ruxMenuWillClose.emit()
-        this.open = false
 
         window.removeEventListener('mousedown', this._handleOutsideClick)
         window.removeEventListener('resize', this._setMenuPosition)
