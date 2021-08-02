@@ -246,14 +246,6 @@ export class RuxPopUpMenu {
         if (!menuClick && !anchorClick && !triggerClick) {
             this.open = false
         }
-
-        // if (this.anchorEl) {
-        //     const menuClick = e.composedPath().includes(this.el)
-        //     const anchorClick = e.composedPath().includes(this.anchorEl)
-        //     if (!menuClick && !anchorClick) {
-        //         this.open = false
-        //     }
-        // }
     }
 
     private _show() {
