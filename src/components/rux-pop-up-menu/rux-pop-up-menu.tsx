@@ -232,13 +232,28 @@ export class RuxPopUpMenu {
     }
 
     private _handleOutsideClick(e: MouseEvent) {
-        if (this.anchorEl) {
-            const menuClick = e.composedPath().includes(this.el)
-            const anchorClick = e.composedPath().includes(this.anchorEl)
-            if (!menuClick && !anchorClick) {
-                this.open = false
-            }
+        let anchorClick: boolean
+        let triggerClick: boolean
+
+        const menuClick = e.composedPath().includes(this.el)
+        this.anchorEl
+            ? (anchorClick = e.composedPath().includes(this.anchorEl))
+            : (anchorClick = false)
+        this.triggerEl
+            ? (triggerClick = e.composedPath().includes(this.triggerEl))
+            : (triggerClick = false)
+
+        if (!menuClick && !anchorClick && !triggerClick) {
+            this.open = false
         }
+
+        // if (this.anchorEl) {
+        //     const menuClick = e.composedPath().includes(this.el)
+        //     const anchorClick = e.composedPath().includes(this.anchorEl)
+        //     if (!menuClick && !anchorClick) {
+        //         this.open = false
+        //     }
+        // }
     }
 
     private _show() {
