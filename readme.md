@@ -133,6 +133,17 @@ platformBrowserDynamic()
 defineCustomElements()
 ```
 
+3. Make use of ngModel with components 
+
+```xml
+<rux-input type="text" name="example" id="on" ngDefaultControl [(ngModel)]="myvar"/>
+```
+
+4. Setting dynamic data in for loop
+```xml
+<rux-classification-marking *ngFor="let type of types" [attr.classification]="type"></rux-classification-marking>
+  ```
+
 #### React
 
 ```js
