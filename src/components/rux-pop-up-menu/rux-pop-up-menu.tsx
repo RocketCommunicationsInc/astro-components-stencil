@@ -232,11 +232,9 @@ export class RuxPopUpMenu {
     }
 
     private _handleOutsideClick(e: MouseEvent) {
-        console.log('handleOutsideClick fired')
         const menuClick = e.composedPath().includes(this.el)
         if (!menuClick) {
             this.open = false
-            // this._hide()
         }
     }
 
@@ -256,7 +254,6 @@ export class RuxPopUpMenu {
 
     private _hide() {
         this.ruxMenuWillClose.emit()
-        // this.open = false
 
         window.removeEventListener('mousedown', this._handleOutsideClick)
         window.removeEventListener('resize', this._setMenuPosition)
