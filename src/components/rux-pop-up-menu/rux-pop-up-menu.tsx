@@ -48,19 +48,8 @@ export class RuxPopUpMenu {
      */
     @Prop({ reflect: true, mutable: true }) open: boolean = false
     @Watch('open')
-    openMenu(open: Boolean) {
-        if (open) {
-            if (this.anchorEl) {
-                this._show()
-            } else {
-                this.open = false
-                console.error(
-                    'Unable to open pop up menu without an anchor element. See documentation'
-                )
-            }
-        } else {
-            this._hide()
-        }
+    openMenu() {
+        this._toggleOpenClose()
     }
 
     /**
@@ -88,7 +77,7 @@ export class RuxPopUpMenu {
     ruxMenuDidClose!: EventEmitter<void>
 
     componentDidRender() {
-        this._setMenuPosition()
+        if (this.open) this._setMenuPosition()
     }
 
     connectedCallback() {
@@ -97,9 +86,7 @@ export class RuxPopUpMenu {
 
         this._bindElements()
 
-        if (this.open) {
-            this._show()
-        }
+        this._toggleOpenClose()
     }
 
     disconnectedCallback() {
@@ -113,7 +100,7 @@ export class RuxPopUpMenu {
      */
     @Method()
     async isOpen(): Promise<boolean> {
-        return Promise.resolve(this.open)
+        return this.open
     }
 
     /**
@@ -122,10 +109,10 @@ export class RuxPopUpMenu {
     @Method()
     async show(): Promise<boolean> {
         if (this.open) {
-            return Promise.resolve(false)
+            return false
         }
         this.open = true
-        return Promise.resolve(true)
+        return true
     }
 
     /**
@@ -134,10 +121,10 @@ export class RuxPopUpMenu {
     @Method()
     async close(): Promise<boolean> {
         if (!this.open) {
-            return Promise.resolve(false)
+            return false
         }
         this.open = false
-        return Promise.resolve(true)
+        return true
     }
 
     /**
@@ -147,9 +134,9 @@ export class RuxPopUpMenu {
     async toggle(): Promise<boolean> {
         this.open = !this.open
         if (this.open) {
-            return Promise.resolve(true)
+            return true
         } else {
-            return Promise.resolve(false)
+            return false
         }
     }
 
@@ -238,28 +225,35 @@ export class RuxPopUpMenu {
         }
     }
 
-    private _show() {
-        this.ruxMenuWillOpen.emit()
+    private _toggleOpenClose() {
+        if (this.open) {
+            if (!this.anchorEl) {
+                this.open = false
+                console.error(
+                    'Unable to open pop up menu without an anchor element. See documentation'
+                )
+                return
+            }
+            this.ruxMenuWillOpen.emit()
 
-        const debounce = setTimeout(() => {
-            window.addEventListener('resize', () => this._setMenuPosition())
-            window.addEventListener('mousedown', this._handleOutsideClick)
-            clearTimeout(debounce)
-        }, 10)
+            const debounce = setTimeout(() => {
+                window.addEventListener('resize', () => this._setMenuPosition())
+                window.addEventListener('mousedown', this._handleOutsideClick)
+                clearTimeout(debounce)
+            }, 10)
 
-        this.triggerEl?.removeEventListener('mousedown', this._handleClick)
+            this.triggerEl?.removeEventListener('mousedown', this._handleClick)
 
-        this.ruxMenuDidOpen.emit()
-    }
+            this.ruxMenuDidOpen.emit()
+        } else {
+            this.ruxMenuWillClose.emit()
 
-    private _hide() {
-        this.ruxMenuWillClose.emit()
+            window.removeEventListener('mousedown', this._handleOutsideClick)
+            window.removeEventListener('resize', this._setMenuPosition)
 
-        window.removeEventListener('mousedown', this._handleOutsideClick)
-        window.removeEventListener('resize', this._setMenuPosition)
-
-        this.triggerEl?.addEventListener('mousedown', this._handleClick)
-        this.ruxMenuDidClose.emit()
+            this.triggerEl?.addEventListener('mousedown', this._handleClick)
+            this.ruxMenuDidClose.emit()
+        }
     }
 
     render() {
