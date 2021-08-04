@@ -82,6 +82,7 @@ export class RuxPopUpMenu {
 
         this._bindElements()
 
+        this.el.style.visibility = 'hidden'
         if (this.open) {
             this._show()
         }
@@ -259,10 +260,7 @@ export class RuxPopUpMenu {
 
     render() {
         return (
-            <Host
-                style={{ visibility: 'hidden' }}
-                aria-hidden={!this.open ? 'true' : 'false'}
-            >
+            <Host aria-hidden={!this.open ? 'true' : 'false'}>
                 <ul role="menu" aria-expanded={`${this.open}`}>
                     <slot></slot>
                 </ul>
