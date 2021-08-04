@@ -227,6 +227,7 @@ export class RuxPopUpMenu {
     private _show() {
         if (this.anchorEl) {
             this.ruxMenuWillOpen.emit()
+            this.el.style.visibility = 'visible'
             this.open = true
 
             const debounce = setTimeout(() => {
@@ -258,7 +259,10 @@ export class RuxPopUpMenu {
 
     render() {
         return (
-            <Host aria-hidden={!this.open ? 'true' : 'false'}>
+            <Host
+                style={{ visibility: 'hidden' }}
+                aria-hidden={!this.open ? 'true' : 'false'}
+            >
                 <ul role="menu" aria-expanded={`${this.open}`}>
                     <slot></slot>
                 </ul>
