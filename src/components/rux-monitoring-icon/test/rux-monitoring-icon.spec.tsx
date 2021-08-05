@@ -45,4 +45,17 @@ describe('rux-monitoring-icon', () => {
             monitorIcon.validateStatus('')
         }).toThrowError('valid status required')
     })
+
+    it('gets the correct color', async () => {
+        const monitorIcon = new RuxMonitoringIcon()
+        expect(monitorIcon.iconColor).toBe('var(--colorNormal)')
+        monitorIcon.status = 'caution'
+        expect(monitorIcon.iconColor).toBe('var(--colorCaution)')
+        monitorIcon.status = 'off'
+        expect(monitorIcon.iconColor).toBe('var(--colorOff)')
+        monitorIcon.status = 'serious'
+        expect(monitorIcon.iconColor).toBe('var(--colorSerious)')
+        monitorIcon.status = 'critical'
+        expect(monitorIcon.iconColor).toBe('var(--colorCritical)')
+    })
 })
