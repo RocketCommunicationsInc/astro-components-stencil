@@ -21,7 +21,7 @@ describe('rux-monitoring-icon', () => {
            <div class="rux-advanced-status__status">
              <rux-status status="standby"></rux-status>
              </div>
-             <rux-icon class="rux-status--standby" icon="altitude"></rux-icon>
+             <rux-icon class="rux-status--standby" color="var(--colorStandby)" icon="altitude" size="2.7rem"></rux-icon>
              <div class="rux-advanced-status__badge">
                10K
              </div>
