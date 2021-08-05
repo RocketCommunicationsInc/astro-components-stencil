@@ -69,13 +69,12 @@ export class RuxNotification {
         return (
             <Host>
                 <div class="rux-notification__message">{`${this.message}`}</div>
-                <rux-icon
+                <rux-icon-close
                     role="button"
-                    label="Close notification"
+                    title="Close notification"
                     onClick={() => this._onClick()}
-                    icon="close"
                     size="small"
-                ></rux-icon>
+                ></rux-icon-close>
             </Host>
         )
     }

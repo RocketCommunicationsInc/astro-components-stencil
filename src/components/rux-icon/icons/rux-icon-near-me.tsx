@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/near-me.svg'
 @Component({
     tag: 'rux-icon-near-me',
     shadow: false,
+    styles:
+        'rux-icon-near-me {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconNearMe {
     /**
@@ -28,7 +30,7 @@ export class RuxIconNearMe {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconNearMe {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

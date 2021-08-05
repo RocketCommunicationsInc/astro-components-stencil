@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/departure-board.svg'
 @Component({
     tag: 'rux-icon-departure-board',
     shadow: false,
+    styles:
+        'rux-icon-departure-board {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconDepartureBoard {
     /**
@@ -28,7 +30,7 @@ export class RuxIconDepartureBoard {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconDepartureBoard {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/insert-comment.svg'
 @Component({
     tag: 'rux-icon-insert-comment',
     shadow: false,
+    styles:
+        'rux-icon-insert-comment {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconInsertComment {
     /**
@@ -28,7 +30,7 @@ export class RuxIconInsertComment {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconInsertComment {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

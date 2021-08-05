@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/track-changes.svg'
 @Component({
     tag: 'rux-icon-track-changes',
     shadow: false,
+    styles:
+        'rux-icon-track-changes {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconTrackChanges {
     /**
@@ -28,7 +30,7 @@ export class RuxIconTrackChanges {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconTrackChanges {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/voice-over-off.svg'
 @Component({
     tag: 'rux-icon-voice-over-off',
     shadow: false,
+    styles:
+        'rux-icon-voice-over-off {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconVoiceOverOff {
     /**
@@ -28,7 +30,7 @@ export class RuxIconVoiceOverOff {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconVoiceOverOff {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/grade.svg'
 @Component({
     tag: 'rux-icon-grade',
     shadow: false,
+    styles:
+        'rux-icon-grade {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconGrade {
     /**
@@ -28,7 +30,7 @@ export class RuxIconGrade {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconGrade {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

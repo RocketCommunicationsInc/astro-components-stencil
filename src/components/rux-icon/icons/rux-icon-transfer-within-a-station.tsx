@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/transfer-within-a-station.svg'
 @Component({
     tag: 'rux-icon-transfer-within-a-station',
     shadow: false,
+    styles:
+        'rux-icon-transfer-within-a-station {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconTransferWithinAStation {
     /**
@@ -28,7 +30,7 @@ export class RuxIconTransferWithinAStation {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconTransferWithinAStation {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

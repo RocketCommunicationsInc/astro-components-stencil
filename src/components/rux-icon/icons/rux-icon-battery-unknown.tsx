@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/battery-unknown.svg'
 @Component({
     tag: 'rux-icon-battery-unknown',
     shadow: false,
+    styles:
+        'rux-icon-battery-unknown {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconBatteryUnknown {
     /**
@@ -28,7 +30,7 @@ export class RuxIconBatteryUnknown {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconBatteryUnknown {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

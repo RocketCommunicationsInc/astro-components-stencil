@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/processor.svg'
 @Component({
     tag: 'rux-icon-processor',
     shadow: false,
+    styles:
+        'rux-icon-processor {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconProcessor {
     /**
@@ -28,7 +30,7 @@ export class RuxIconProcessor {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconProcessor {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

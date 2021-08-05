@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/sort-by-alpha.svg'
 @Component({
     tag: 'rux-icon-sort-by-alpha',
     shadow: false,
+    styles:
+        'rux-icon-sort-by-alpha {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSortByAlpha {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSortByAlpha {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSortByAlpha {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/stay-primary-landscape.svg'
 @Component({
     tag: 'rux-icon-stay-primary-landscape',
     shadow: false,
+    styles:
+        'rux-icon-stay-primary-landscape {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconStayPrimaryLandscape {
     /**
@@ -28,7 +30,7 @@ export class RuxIconStayPrimaryLandscape {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconStayPrimaryLandscape {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

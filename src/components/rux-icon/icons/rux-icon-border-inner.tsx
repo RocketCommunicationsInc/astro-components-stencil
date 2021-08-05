@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/border-inner.svg'
 @Component({
     tag: 'rux-icon-border-inner',
     shadow: false,
+    styles:
+        'rux-icon-border-inner {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconBorderInner {
     /**
@@ -28,7 +30,7 @@ export class RuxIconBorderInner {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconBorderInner {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

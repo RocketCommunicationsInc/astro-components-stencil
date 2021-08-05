@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/replay-10.svg'
 @Component({
     tag: 'rux-icon-replay-10',
     shadow: false,
+    styles:
+        'rux-icon-replay-10 {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconReplay10 {
     /**
@@ -28,7 +30,7 @@ export class RuxIconReplay10 {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconReplay10 {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

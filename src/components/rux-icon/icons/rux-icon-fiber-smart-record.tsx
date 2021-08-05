@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/fiber-smart-record.svg'
 @Component({
     tag: 'rux-icon-fiber-smart-record',
     shadow: false,
+    styles:
+        'rux-icon-fiber-smart-record {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconFiberSmartRecord {
     /**
@@ -28,7 +30,7 @@ export class RuxIconFiberSmartRecord {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconFiberSmartRecord {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

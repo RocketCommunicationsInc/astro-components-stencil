@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/add-circle.svg'
 @Component({
     tag: 'rux-icon-add-circle',
     shadow: false,
+    styles:
+        'rux-icon-add-circle {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAddCircle {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAddCircle {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAddCircle {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

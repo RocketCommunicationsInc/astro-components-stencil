@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/how-to-vote.svg'
 @Component({
     tag: 'rux-icon-how-to-vote',
     shadow: false,
+    styles:
+        'rux-icon-how-to-vote {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconHowToVote {
     /**
@@ -28,7 +30,7 @@ export class RuxIconHowToVote {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconHowToVote {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

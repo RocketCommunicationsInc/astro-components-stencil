@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/wifi.svg'
 @Component({
     tag: 'rux-icon-wifi',
     shadow: false,
+    styles:
+        'rux-icon-wifi {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconWifi {
     /**
@@ -28,7 +30,7 @@ export class RuxIconWifi {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconWifi {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

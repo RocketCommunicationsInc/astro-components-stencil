@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/note-add.svg'
 @Component({
     tag: 'rux-icon-note-add',
     shadow: false,
+    styles:
+        'rux-icon-note-add {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconNoteAdd {
     /**
@@ -28,7 +30,7 @@ export class RuxIconNoteAdd {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconNoteAdd {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

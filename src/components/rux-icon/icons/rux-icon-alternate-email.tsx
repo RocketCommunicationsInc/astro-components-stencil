@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/alternate-email.svg'
 @Component({
     tag: 'rux-icon-alternate-email',
     shadow: false,
+    styles:
+        'rux-icon-alternate-email {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAlternateEmail {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAlternateEmail {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAlternateEmail {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/perm-scan-wifi.svg'
 @Component({
     tag: 'rux-icon-perm-scan-wifi',
     shadow: false,
+    styles:
+        'rux-icon-perm-scan-wifi {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPermScanWifi {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPermScanWifi {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPermScanWifi {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

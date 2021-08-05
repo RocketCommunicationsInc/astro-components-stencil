@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/grid-off.svg'
 @Component({
     tag: 'rux-icon-grid-off',
     shadow: false,
+    styles:
+        'rux-icon-grid-off {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconGridOff {
     /**
@@ -28,7 +30,7 @@ export class RuxIconGridOff {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconGridOff {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

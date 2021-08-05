@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/find-in-page.svg'
 @Component({
     tag: 'rux-icon-find-in-page',
     shadow: false,
+    styles:
+        'rux-icon-find-in-page {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconFindInPage {
     /**
@@ -28,7 +30,7 @@ export class RuxIconFindInPage {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconFindInPage {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

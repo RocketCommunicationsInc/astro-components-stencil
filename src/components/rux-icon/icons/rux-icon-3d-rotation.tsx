@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/3d-rotation.svg'
 @Component({
     tag: 'rux-icon-3d-rotation',
     shadow: false,
+    styles:
+        'rux-icon-3d-rotation {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIcon3dRotation {
     /**
@@ -28,7 +30,7 @@ export class RuxIcon3dRotation {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIcon3dRotation {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/timer-3.svg'
 @Component({
     tag: 'rux-icon-timer-3',
     shadow: false,
+    styles:
+        'rux-icon-timer-3 {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconTimer3 {
     /**
@@ -28,7 +30,7 @@ export class RuxIconTimer3 {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconTimer3 {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

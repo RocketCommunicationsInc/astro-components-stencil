@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/movie-creation.svg'
 @Component({
     tag: 'rux-icon-movie-creation',
     shadow: false,
+    styles:
+        'rux-icon-movie-creation {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconMovieCreation {
     /**
@@ -28,7 +30,7 @@ export class RuxIconMovieCreation {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconMovieCreation {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

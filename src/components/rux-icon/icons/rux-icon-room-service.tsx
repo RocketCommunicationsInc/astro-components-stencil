@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/room-service.svg'
 @Component({
     tag: 'rux-icon-room-service',
     shadow: false,
+    styles:
+        'rux-icon-room-service {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconRoomService {
     /**
@@ -28,7 +30,7 @@ export class RuxIconRoomService {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconRoomService {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

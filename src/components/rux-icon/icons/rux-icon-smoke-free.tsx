@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/smoke-free.svg'
 @Component({
     tag: 'rux-icon-smoke-free',
     shadow: false,
+    styles:
+        'rux-icon-smoke-free {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSmokeFree {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSmokeFree {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSmokeFree {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

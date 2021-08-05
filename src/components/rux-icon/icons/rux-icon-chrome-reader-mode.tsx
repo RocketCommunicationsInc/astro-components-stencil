@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/chrome-reader-mode.svg'
 @Component({
     tag: 'rux-icon-chrome-reader-mode',
     shadow: false,
+    styles:
+        'rux-icon-chrome-reader-mode {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconChromeReaderMode {
     /**
@@ -28,7 +30,7 @@ export class RuxIconChromeReaderMode {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconChromeReaderMode {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

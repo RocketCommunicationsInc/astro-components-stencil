@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/settings-input-antenna.svg'
 @Component({
     tag: 'rux-icon-settings-input-antenna',
     shadow: false,
+    styles:
+        'rux-icon-settings-input-antenna {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSettingsInputAntenna {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSettingsInputAntenna {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSettingsInputAntenna {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

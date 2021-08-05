@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/airplanemode-active.svg'
 @Component({
     tag: 'rux-icon-airplanemode-active',
     shadow: false,
+    styles:
+        'rux-icon-airplanemode-active {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAirplanemodeActive {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAirplanemodeActive {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAirplanemodeActive {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

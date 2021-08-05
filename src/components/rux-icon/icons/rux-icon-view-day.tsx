@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/view-day.svg'
 @Component({
     tag: 'rux-icon-view-day',
     shadow: false,
+    styles:
+        'rux-icon-view-day {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconViewDay {
     /**
@@ -28,7 +30,7 @@ export class RuxIconViewDay {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconViewDay {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

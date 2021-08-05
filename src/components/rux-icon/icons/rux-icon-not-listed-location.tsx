@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/not-listed-location.svg'
 @Component({
     tag: 'rux-icon-not-listed-location',
     shadow: false,
+    styles:
+        'rux-icon-not-listed-location {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconNotListedLocation {
     /**
@@ -28,7 +30,7 @@ export class RuxIconNotListedLocation {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconNotListedLocation {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

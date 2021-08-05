@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/theaters.svg'
 @Component({
     tag: 'rux-icon-theaters',
     shadow: false,
+    styles:
+        'rux-icon-theaters {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconTheaters {
     /**
@@ -28,7 +30,7 @@ export class RuxIconTheaters {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconTheaters {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

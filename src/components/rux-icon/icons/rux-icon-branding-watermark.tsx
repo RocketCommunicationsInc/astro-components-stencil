@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/branding-watermark.svg'
 @Component({
     tag: 'rux-icon-branding-watermark',
     shadow: false,
+    styles:
+        'rux-icon-branding-watermark {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconBrandingWatermark {
     /**
@@ -28,7 +30,7 @@ export class RuxIconBrandingWatermark {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconBrandingWatermark {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

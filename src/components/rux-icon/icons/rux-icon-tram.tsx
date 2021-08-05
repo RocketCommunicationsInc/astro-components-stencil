@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/tram.svg'
 @Component({
     tag: 'rux-icon-tram',
     shadow: false,
+    styles:
+        'rux-icon-tram {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconTram {
     /**
@@ -28,7 +30,7 @@ export class RuxIconTram {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconTram {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

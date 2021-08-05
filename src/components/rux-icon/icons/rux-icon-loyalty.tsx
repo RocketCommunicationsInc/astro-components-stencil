@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/loyalty.svg'
 @Component({
     tag: 'rux-icon-loyalty',
     shadow: false,
+    styles:
+        'rux-icon-loyalty {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconLoyalty {
     /**
@@ -28,7 +30,7 @@ export class RuxIconLoyalty {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconLoyalty {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

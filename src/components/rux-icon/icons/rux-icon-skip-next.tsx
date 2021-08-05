@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/skip-next.svg'
 @Component({
     tag: 'rux-icon-skip-next',
     shadow: false,
+    styles:
+        'rux-icon-skip-next {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSkipNext {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSkipNext {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSkipNext {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

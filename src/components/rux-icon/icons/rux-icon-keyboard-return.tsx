@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/keyboard-return.svg'
 @Component({
     tag: 'rux-icon-keyboard-return',
     shadow: false,
+    styles:
+        'rux-icon-keyboard-return {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconKeyboardReturn {
     /**
@@ -28,7 +30,7 @@ export class RuxIconKeyboardReturn {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconKeyboardReturn {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

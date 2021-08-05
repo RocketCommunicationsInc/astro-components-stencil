@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/all-inclusive.svg'
 @Component({
     tag: 'rux-icon-all-inclusive',
     shadow: false,
+    styles:
+        'rux-icon-all-inclusive {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAllInclusive {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAllInclusive {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAllInclusive {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

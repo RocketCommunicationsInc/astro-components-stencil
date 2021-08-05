@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/phonelink-ring.svg'
 @Component({
     tag: 'rux-icon-phonelink-ring',
     shadow: false,
+    styles:
+        'rux-icon-phonelink-ring {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPhonelinkRing {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPhonelinkRing {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPhonelinkRing {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/view-week.svg'
 @Component({
     tag: 'rux-icon-view-week',
     shadow: false,
+    styles:
+        'rux-icon-view-week {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconViewWeek {
     /**
@@ -28,7 +30,7 @@ export class RuxIconViewWeek {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconViewWeek {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

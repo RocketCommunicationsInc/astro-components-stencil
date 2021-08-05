@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/remove-red-eye.svg'
 @Component({
     tag: 'rux-icon-remove-red-eye',
     shadow: false,
+    styles:
+        'rux-icon-remove-red-eye {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconRemoveRedEye {
     /**
@@ -28,7 +30,7 @@ export class RuxIconRemoveRedEye {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconRemoveRedEye {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

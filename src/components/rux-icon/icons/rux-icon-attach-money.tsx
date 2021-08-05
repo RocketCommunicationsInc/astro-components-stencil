@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/attach-money.svg'
 @Component({
     tag: 'rux-icon-attach-money',
     shadow: false,
+    styles:
+        'rux-icon-attach-money {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAttachMoney {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAttachMoney {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAttachMoney {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

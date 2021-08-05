@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/radio.svg'
 @Component({
     tag: 'rux-icon-radio',
     shadow: false,
+    styles:
+        'rux-icon-radio {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconRadio {
     /**
@@ -28,7 +30,7 @@ export class RuxIconRadio {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconRadio {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/queue-music.svg'
 @Component({
     tag: 'rux-icon-queue-music',
     shadow: false,
+    styles:
+        'rux-icon-queue-music {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconQueueMusic {
     /**
@@ -28,7 +30,7 @@ export class RuxIconQueueMusic {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconQueueMusic {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

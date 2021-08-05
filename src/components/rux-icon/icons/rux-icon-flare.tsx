@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/flare.svg'
 @Component({
     tag: 'rux-icon-flare',
     shadow: false,
+    styles:
+        'rux-icon-flare {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconFlare {
     /**
@@ -28,7 +30,7 @@ export class RuxIconFlare {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconFlare {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

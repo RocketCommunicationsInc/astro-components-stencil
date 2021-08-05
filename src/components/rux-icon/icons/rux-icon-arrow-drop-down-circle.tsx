@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/arrow-drop-down-circle.svg'
 @Component({
     tag: 'rux-icon-arrow-drop-down-circle',
     shadow: false,
+    styles:
+        'rux-icon-arrow-drop-down-circle {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconArrowDropDownCircle {
     /**
@@ -28,7 +30,7 @@ export class RuxIconArrowDropDownCircle {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconArrowDropDownCircle {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

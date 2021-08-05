@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/format-list-bulleted.svg'
 @Component({
     tag: 'rux-icon-format-list-bulleted',
     shadow: false,
+    styles:
+        'rux-icon-format-list-bulleted {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconFormatListBulleted {
     /**
@@ -28,7 +30,7 @@ export class RuxIconFormatListBulleted {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconFormatListBulleted {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

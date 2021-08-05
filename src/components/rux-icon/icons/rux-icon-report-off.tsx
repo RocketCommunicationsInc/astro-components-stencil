@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/report-off.svg'
 @Component({
     tag: 'rux-icon-report-off',
     shadow: false,
+    styles:
+        'rux-icon-report-off {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconReportOff {
     /**
@@ -28,7 +30,7 @@ export class RuxIconReportOff {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconReportOff {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

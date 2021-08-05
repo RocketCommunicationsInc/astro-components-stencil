@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/picture-in-picture.svg'
 @Component({
     tag: 'rux-icon-picture-in-picture',
     shadow: false,
+    styles:
+        'rux-icon-picture-in-picture {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPictureInPicture {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPictureInPicture {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPictureInPicture {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

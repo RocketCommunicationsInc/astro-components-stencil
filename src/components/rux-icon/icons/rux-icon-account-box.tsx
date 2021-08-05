@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/account-box.svg'
 @Component({
     tag: 'rux-icon-account-box',
     shadow: false,
+    styles:
+        'rux-icon-account-box {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAccountBox {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAccountBox {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAccountBox {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

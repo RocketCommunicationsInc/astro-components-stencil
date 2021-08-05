@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/stay-current-portrait.svg'
 @Component({
     tag: 'rux-icon-stay-current-portrait',
     shadow: false,
+    styles:
+        'rux-icon-stay-current-portrait {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconStayCurrentPortrait {
     /**
@@ -28,7 +30,7 @@ export class RuxIconStayCurrentPortrait {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconStayCurrentPortrait {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

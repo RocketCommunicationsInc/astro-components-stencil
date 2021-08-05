@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/personal-video.svg'
 @Component({
     tag: 'rux-icon-personal-video',
     shadow: false,
+    styles:
+        'rux-icon-personal-video {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPersonalVideo {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPersonalVideo {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPersonalVideo {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

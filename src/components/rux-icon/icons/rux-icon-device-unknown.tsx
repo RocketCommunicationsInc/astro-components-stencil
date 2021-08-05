@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/device-unknown.svg'
 @Component({
     tag: 'rux-icon-device-unknown',
     shadow: false,
+    styles:
+        'rux-icon-device-unknown {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconDeviceUnknown {
     /**
@@ -28,7 +30,7 @@ export class RuxIconDeviceUnknown {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconDeviceUnknown {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

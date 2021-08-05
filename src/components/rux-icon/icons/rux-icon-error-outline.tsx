@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/error-outline.svg'
 @Component({
     tag: 'rux-icon-error-outline',
     shadow: false,
+    styles:
+        'rux-icon-error-outline {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconErrorOutline {
     /**
@@ -28,7 +30,7 @@ export class RuxIconErrorOutline {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconErrorOutline {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

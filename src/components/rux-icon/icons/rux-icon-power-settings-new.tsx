@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/power-settings-new.svg'
 @Component({
     tag: 'rux-icon-power-settings-new',
     shadow: false,
+    styles:
+        'rux-icon-power-settings-new {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPowerSettingsNew {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPowerSettingsNew {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPowerSettingsNew {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

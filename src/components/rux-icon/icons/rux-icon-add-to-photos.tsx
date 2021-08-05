@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/add-to-photos.svg'
 @Component({
     tag: 'rux-icon-add-to-photos',
     shadow: false,
+    styles:
+        'rux-icon-add-to-photos {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAddToPhotos {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAddToPhotos {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAddToPhotos {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

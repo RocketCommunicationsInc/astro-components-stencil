@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/panorama-fish-eye.svg'
 @Component({
     tag: 'rux-icon-panorama-fish-eye',
     shadow: false,
+    styles:
+        'rux-icon-panorama-fish-eye {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPanoramaFishEye {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPanoramaFishEye {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPanoramaFishEye {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/child-care.svg'
 @Component({
     tag: 'rux-icon-child-care',
     shadow: false,
+    styles:
+        'rux-icon-child-care {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconChildCare {
     /**
@@ -28,7 +30,7 @@ export class RuxIconChildCare {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconChildCare {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

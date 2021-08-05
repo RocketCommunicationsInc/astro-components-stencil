@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/attach-file.svg'
 @Component({
     tag: 'rux-icon-attach-file',
     shadow: false,
+    styles:
+        'rux-icon-attach-file {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAttachFile {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAttachFile {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAttachFile {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/trending-down.svg'
 @Component({
     tag: 'rux-icon-trending-down',
     shadow: false,
+    styles:
+        'rux-icon-trending-down {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconTrendingDown {
     /**
@@ -28,7 +30,7 @@ export class RuxIconTrendingDown {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconTrendingDown {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

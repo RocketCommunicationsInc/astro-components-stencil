@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/sync-disabled.svg'
 @Component({
     tag: 'rux-icon-sync-disabled',
     shadow: false,
+    styles:
+        'rux-icon-sync-disabled {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSyncDisabled {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSyncDisabled {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSyncDisabled {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

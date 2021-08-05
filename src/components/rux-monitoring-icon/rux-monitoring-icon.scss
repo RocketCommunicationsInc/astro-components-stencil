@@ -99,39 +99,3 @@ rux-icon {
 .rux-advanced-status__hidden {
     display: none;
 }
-
-:host([status='off']) {
-    rux-icon {
-        fill: var(--colorOff);
-    }
-}
-
-:host([status='standby']) {
-    rux-icon {
-        fill: var(--colorStandby);
-    }
-}
-
-:host([status='normal']) {
-    rux-icon {
-        fill: var(--colorNormal);
-    }
-}
-
-:host([status='caution']) {
-    rux-icon {
-        fill: var(--colorCaution);
-    }
-}
-
-:host([status='serious']) {
-    rux-icon {
-        fill: var(--colorSerious);
-    }
-}
-
-:host([status='critical']) {
-    rux-icon {
-        fill: var(--colorCritical);
-    }
-}

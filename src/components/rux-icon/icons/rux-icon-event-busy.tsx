@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/event-busy.svg'
 @Component({
     tag: 'rux-icon-event-busy',
     shadow: false,
+    styles:
+        'rux-icon-event-busy {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconEventBusy {
     /**
@@ -28,7 +30,7 @@ export class RuxIconEventBusy {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconEventBusy {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

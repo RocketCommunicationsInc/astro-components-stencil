@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/person.svg'
 @Component({
     tag: 'rux-icon-person',
     shadow: false,
+    styles:
+        'rux-icon-person {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPerson {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPerson {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPerson {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

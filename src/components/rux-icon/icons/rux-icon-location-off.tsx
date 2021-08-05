@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/location-off.svg'
 @Component({
     tag: 'rux-icon-location-off',
     shadow: false,
+    styles:
+        'rux-icon-location-off {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconLocationOff {
     /**
@@ -28,7 +30,7 @@ export class RuxIconLocationOff {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconLocationOff {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

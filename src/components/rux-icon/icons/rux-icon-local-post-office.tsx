@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/local-post-office.svg'
 @Component({
     tag: 'rux-icon-local-post-office',
     shadow: false,
+    styles:
+        'rux-icon-local-post-office {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconLocalPostOffice {
     /**
@@ -28,7 +30,7 @@ export class RuxIconLocalPostOffice {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconLocalPostOffice {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/altitude.svg'
 @Component({
     tag: 'rux-icon-altitude',
     shadow: false,
+    styles:
+        'rux-icon-altitude {display: inline-flex; fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAltitude {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAltitude {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAltitude {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

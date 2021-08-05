@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/show-chart.svg'
 @Component({
     tag: 'rux-icon-show-chart',
     shadow: false,
+    styles:
+        'rux-icon-show-chart {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconShowChart {
     /**
@@ -28,7 +30,7 @@ export class RuxIconShowChart {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconShowChart {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

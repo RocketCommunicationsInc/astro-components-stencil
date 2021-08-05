@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/border-horizontal.svg'
 @Component({
     tag: 'rux-icon-border-horizontal',
     shadow: false,
+    styles:
+        'rux-icon-border-horizontal {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconBorderHorizontal {
     /**
@@ -28,7 +30,7 @@ export class RuxIconBorderHorizontal {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconBorderHorizontal {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/monetization-on.svg'
 @Component({
     tag: 'rux-icon-monetization-on',
     shadow: false,
+    styles:
+        'rux-icon-monetization-on {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconMonetizationOn {
     /**
@@ -28,7 +30,7 @@ export class RuxIconMonetizationOn {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconMonetizationOn {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

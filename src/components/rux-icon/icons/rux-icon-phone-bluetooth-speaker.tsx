@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/phone-bluetooth-speaker.svg'
 @Component({
     tag: 'rux-icon-phone-bluetooth-speaker',
     shadow: false,
+    styles:
+        'rux-icon-phone-bluetooth-speaker {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPhoneBluetoothSpeaker {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPhoneBluetoothSpeaker {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPhoneBluetoothSpeaker {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

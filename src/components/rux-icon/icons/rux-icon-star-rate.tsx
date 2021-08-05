@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/star-rate.svg'
 @Component({
     tag: 'rux-icon-star-rate',
     shadow: false,
+    styles:
+        'rux-icon-star-rate {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconStarRate {
     /**
@@ -28,7 +30,7 @@ export class RuxIconStarRate {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconStarRate {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

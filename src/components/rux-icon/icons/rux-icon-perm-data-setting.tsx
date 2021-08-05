@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/perm-data-setting.svg'
 @Component({
     tag: 'rux-icon-perm-data-setting',
     shadow: false,
+    styles:
+        'rux-icon-perm-data-setting {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPermDataSetting {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPermDataSetting {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPermDataSetting {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

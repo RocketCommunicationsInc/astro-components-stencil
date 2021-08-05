@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/restore-from-trash.svg'
 @Component({
     tag: 'rux-icon-restore-from-trash',
     shadow: false,
+    styles:
+        'rux-icon-restore-from-trash {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconRestoreFromTrash {
     /**
@@ -28,7 +30,7 @@ export class RuxIconRestoreFromTrash {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconRestoreFromTrash {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

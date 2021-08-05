@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/local-printshop.svg'
 @Component({
     tag: 'rux-icon-local-printshop',
     shadow: false,
+    styles:
+        'rux-icon-local-printshop {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconLocalPrintshop {
     /**
@@ -28,7 +30,7 @@ export class RuxIconLocalPrintshop {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconLocalPrintshop {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

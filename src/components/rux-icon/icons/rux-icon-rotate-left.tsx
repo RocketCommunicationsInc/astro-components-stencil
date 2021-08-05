@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/rotate-left.svg'
 @Component({
     tag: 'rux-icon-rotate-left',
     shadow: false,
+    styles:
+        'rux-icon-rotate-left {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconRotateLeft {
     /**
@@ -28,7 +30,7 @@ export class RuxIconRotateLeft {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconRotateLeft {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

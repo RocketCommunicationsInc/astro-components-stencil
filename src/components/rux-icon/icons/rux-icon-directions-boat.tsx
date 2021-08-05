@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/directions-boat.svg'
 @Component({
     tag: 'rux-icon-directions-boat',
     shadow: false,
+    styles:
+        'rux-icon-directions-boat {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconDirectionsBoat {
     /**
@@ -28,7 +30,7 @@ export class RuxIconDirectionsBoat {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconDirectionsBoat {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

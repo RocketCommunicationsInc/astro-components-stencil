@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/redo.svg'
 @Component({
     tag: 'rux-icon-redo',
     shadow: false,
+    styles:
+        'rux-icon-redo {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconRedo {
     /**
@@ -28,7 +30,7 @@ export class RuxIconRedo {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconRedo {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

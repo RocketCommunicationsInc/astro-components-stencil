@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/wb-incandescent.svg'
 @Component({
     tag: 'rux-icon-wb-incandescent',
     shadow: false,
+    styles:
+        'rux-icon-wb-incandescent {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconWbIncandescent {
     /**
@@ -28,7 +30,7 @@ export class RuxIconWbIncandescent {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconWbIncandescent {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/stop-screen-share.svg'
 @Component({
     tag: 'rux-icon-stop-screen-share',
     shadow: false,
+    styles:
+        'rux-icon-stop-screen-share {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconStopScreenShare {
     /**
@@ -28,7 +30,7 @@ export class RuxIconStopScreenShare {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconStopScreenShare {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/signal-cellular-no-sim.svg'
 @Component({
     tag: 'rux-icon-signal-cellular-no-sim',
     shadow: false,
+    styles:
+        'rux-icon-signal-cellular-no-sim {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSignalCellularNoSim {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSignalCellularNoSim {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSignalCellularNoSim {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

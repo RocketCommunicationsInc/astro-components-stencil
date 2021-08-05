@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/settings-input-hdmi.svg'
 @Component({
     tag: 'rux-icon-settings-input-hdmi',
     shadow: false,
+    styles:
+        'rux-icon-settings-input-hdmi {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSettingsInputHdmi {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSettingsInputHdmi {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSettingsInputHdmi {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

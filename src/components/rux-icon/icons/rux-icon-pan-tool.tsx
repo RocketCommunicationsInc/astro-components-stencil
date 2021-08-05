@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/pan-tool.svg'
 @Component({
     tag: 'rux-icon-pan-tool',
     shadow: false,
+    styles:
+        'rux-icon-pan-tool {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPanTool {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPanTool {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPanTool {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/satellite-receive.svg'
 @Component({
     tag: 'rux-icon-satellite-receive',
     shadow: false,
+    styles:
+        'rux-icon-satellite-receive {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSatelliteReceive {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSatelliteReceive {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSatelliteReceive {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

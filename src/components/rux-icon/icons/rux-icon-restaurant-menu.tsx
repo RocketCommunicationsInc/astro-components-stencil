@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/restaurant-menu.svg'
 @Component({
     tag: 'rux-icon-restaurant-menu',
     shadow: false,
+    styles:
+        'rux-icon-restaurant-menu {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconRestaurantMenu {
     /**
@@ -28,7 +30,7 @@ export class RuxIconRestaurantMenu {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconRestaurantMenu {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

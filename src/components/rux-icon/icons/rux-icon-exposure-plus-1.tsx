@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/exposure-plus-1.svg'
 @Component({
     tag: 'rux-icon-exposure-plus-1',
     shadow: false,
+    styles:
+        'rux-icon-exposure-plus-1 {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconExposurePlus1 {
     /**
@@ -28,7 +30,7 @@ export class RuxIconExposurePlus1 {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconExposurePlus1 {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

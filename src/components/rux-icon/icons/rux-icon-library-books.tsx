@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/library-books.svg'
 @Component({
     tag: 'rux-icon-library-books',
     shadow: false,
+    styles:
+        'rux-icon-library-books {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconLibraryBooks {
     /**
@@ -28,7 +30,7 @@ export class RuxIconLibraryBooks {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconLibraryBooks {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

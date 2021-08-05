@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/rss-feed.svg'
 @Component({
     tag: 'rux-icon-rss-feed',
     shadow: false,
+    styles:
+        'rux-icon-rss-feed {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconRssFeed {
     /**
@@ -28,7 +30,7 @@ export class RuxIconRssFeed {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconRssFeed {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

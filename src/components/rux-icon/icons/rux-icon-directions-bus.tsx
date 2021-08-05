@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/directions-bus.svg'
 @Component({
     tag: 'rux-icon-directions-bus',
     shadow: false,
+    styles:
+        'rux-icon-directions-bus {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconDirectionsBus {
     /**
@@ -28,7 +30,7 @@ export class RuxIconDirectionsBus {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconDirectionsBus {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

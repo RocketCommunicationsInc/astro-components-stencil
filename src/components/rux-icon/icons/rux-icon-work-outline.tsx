@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/work-outline.svg'
 @Component({
     tag: 'rux-icon-work-outline',
     shadow: false,
+    styles:
+        'rux-icon-work-outline {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconWorkOutline {
     /**
@@ -28,7 +30,7 @@ export class RuxIconWorkOutline {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconWorkOutline {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

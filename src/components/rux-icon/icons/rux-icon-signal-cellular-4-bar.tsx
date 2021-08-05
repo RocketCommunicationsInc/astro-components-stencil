@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/signal-cellular-4-bar.svg'
 @Component({
     tag: 'rux-icon-signal-cellular-4-bar',
     shadow: false,
+    styles:
+        'rux-icon-signal-cellular-4-bar {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSignalCellular4Bar {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSignalCellular4Bar {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSignalCellular4Bar {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

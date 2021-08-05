@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/brightness-7.svg'
 @Component({
     tag: 'rux-icon-brightness-7',
     shadow: false,
+    styles:
+        'rux-icon-brightness-7 {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconBrightness7 {
     /**
@@ -28,7 +30,7 @@ export class RuxIconBrightness7 {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconBrightness7 {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

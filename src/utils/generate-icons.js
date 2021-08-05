@@ -33,6 +33,7 @@ const getTemplateSvg = (iconPath, iconName) => {
     @Component({
       tag: 'rux-icon-${iconName}',
       shadow: false,
+      styles: "rux-icon-${iconName} {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}"
     })
     export class RuxIcon${toPascalCase(iconName)} {
       /**
@@ -44,7 +45,7 @@ const getTemplateSvg = (iconPath, iconName) => {
        * The size of the icon. Can be 'extra-small', 'small', 'normal', 'large', 'auto' or any custom value ('30px', '1rem', '3.321em')
        */
 
-      @Prop() size: 'extra-small' | 'small' | 'normal' | 'large' | 'auto' | string = 'auto'
+      @Prop() size: 'extra-small' | 'small' | 'normal' | 'large' | 'auto' | string = 'extra-small'
 
       get iconSize() {
 
@@ -69,7 +70,7 @@ const getTemplateSvg = (iconPath, iconName) => {
           width: this.iconSize
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>;
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>;
       }
     }
   `

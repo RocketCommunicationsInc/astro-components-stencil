@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/call-to-action.svg'
 @Component({
     tag: 'rux-icon-call-to-action',
     shadow: false,
+    styles:
+        'rux-icon-call-to-action {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconCallToAction {
     /**
@@ -28,7 +30,7 @@ export class RuxIconCallToAction {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconCallToAction {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

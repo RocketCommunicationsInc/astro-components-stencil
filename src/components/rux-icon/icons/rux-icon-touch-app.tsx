@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/touch-app.svg'
 @Component({
     tag: 'rux-icon-touch-app',
     shadow: false,
+    styles:
+        'rux-icon-touch-app {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconTouchApp {
     /**
@@ -28,7 +30,7 @@ export class RuxIconTouchApp {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconTouchApp {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

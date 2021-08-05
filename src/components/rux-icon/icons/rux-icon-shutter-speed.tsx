@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/shutter-speed.svg'
 @Component({
     tag: 'rux-icon-shutter-speed',
     shadow: false,
+    styles:
+        'rux-icon-shutter-speed {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconShutterSpeed {
     /**
@@ -28,7 +30,7 @@ export class RuxIconShutterSpeed {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconShutterSpeed {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

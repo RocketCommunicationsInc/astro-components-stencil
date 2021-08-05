@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/arrow-upward.svg'
 @Component({
     tag: 'rux-icon-arrow-upward',
     shadow: false,
+    styles:
+        'rux-icon-arrow-upward {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconArrowUpward {
     /**
@@ -28,7 +30,7 @@ export class RuxIconArrowUpward {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconArrowUpward {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

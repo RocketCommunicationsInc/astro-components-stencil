@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/donut-large.svg'
 @Component({
     tag: 'rux-icon-donut-large',
     shadow: false,
+    styles:
+        'rux-icon-donut-large {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconDonutLarge {
     /**
@@ -28,7 +30,7 @@ export class RuxIconDonutLarge {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconDonutLarge {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

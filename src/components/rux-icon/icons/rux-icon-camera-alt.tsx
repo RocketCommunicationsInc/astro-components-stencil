@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/camera-alt.svg'
 @Component({
     tag: 'rux-icon-camera-alt',
     shadow: false,
+    styles:
+        'rux-icon-camera-alt {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconCameraAlt {
     /**
@@ -28,7 +30,7 @@ export class RuxIconCameraAlt {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconCameraAlt {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

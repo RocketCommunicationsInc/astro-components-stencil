@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/play-circle-filled-white.svg'
 @Component({
     tag: 'rux-icon-play-circle-filled-white',
     shadow: false,
+    styles:
+        'rux-icon-play-circle-filled-white {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPlayCircleFilledWhite {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPlayCircleFilledWhite {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPlayCircleFilledWhite {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

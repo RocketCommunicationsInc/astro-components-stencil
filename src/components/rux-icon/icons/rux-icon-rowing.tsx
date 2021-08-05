@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/rowing.svg'
 @Component({
     tag: 'rux-icon-rowing',
     shadow: false,
+    styles:
+        'rux-icon-rowing {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconRowing {
     /**
@@ -28,7 +30,7 @@ export class RuxIconRowing {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconRowing {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

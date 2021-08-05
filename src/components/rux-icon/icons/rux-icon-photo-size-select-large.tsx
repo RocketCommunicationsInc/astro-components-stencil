@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/photo-size-select-large.svg'
 @Component({
     tag: 'rux-icon-photo-size-select-large',
     shadow: false,
+    styles:
+        'rux-icon-photo-size-select-large {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPhotoSizeSelectLarge {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPhotoSizeSelectLarge {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPhotoSizeSelectLarge {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

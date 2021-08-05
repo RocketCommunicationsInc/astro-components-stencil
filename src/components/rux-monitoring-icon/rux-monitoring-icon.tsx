@@ -53,6 +53,15 @@ export class RuxMonitoringIcon {
         }
     }
 
+    /**
+     * convert status to CSS custom prop
+     * ie: standby -> var(--colorStandby)
+     */
+    get iconColor() {
+        const capital = this.status[0].toUpperCase() + this.status.slice(1)
+        return `var(--color${capital})`
+    }
+
     render() {
         return (
             <div
@@ -68,6 +77,8 @@ export class RuxMonitoringIcon {
                     <rux-icon
                         icon={this.icon}
                         class={`rux-status--${this.status}`}
+                        size="2.7rem"
+                        color={this.iconColor}
                     ></rux-icon>
                     <MonitoringBadge notifications={this.notifications} />
                 </div>

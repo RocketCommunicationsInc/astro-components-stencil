@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/surround-sound.svg'
 @Component({
     tag: 'rux-icon-surround-sound',
     shadow: false,
+    styles:
+        'rux-icon-surround-sound {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSurroundSound {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSurroundSound {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSurroundSound {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

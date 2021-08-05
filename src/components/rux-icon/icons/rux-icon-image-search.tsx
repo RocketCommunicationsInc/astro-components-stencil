@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/image-search.svg'
 @Component({
     tag: 'rux-icon-image-search',
     shadow: false,
+    styles:
+        'rux-icon-image-search {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconImageSearch {
     /**
@@ -28,7 +30,7 @@ export class RuxIconImageSearch {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconImageSearch {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

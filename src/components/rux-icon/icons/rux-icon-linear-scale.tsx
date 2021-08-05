@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/linear-scale.svg'
 @Component({
     tag: 'rux-icon-linear-scale',
     shadow: false,
+    styles:
+        'rux-icon-linear-scale {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconLinearScale {
     /**
@@ -28,7 +30,7 @@ export class RuxIconLinearScale {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconLinearScale {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

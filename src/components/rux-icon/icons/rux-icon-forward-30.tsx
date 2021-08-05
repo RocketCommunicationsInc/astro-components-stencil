@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/forward-30.svg'
 @Component({
     tag: 'rux-icon-forward-30',
     shadow: false,
+    styles:
+        'rux-icon-forward-30 {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconForward30 {
     /**
@@ -28,7 +30,7 @@ export class RuxIconForward30 {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconForward30 {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

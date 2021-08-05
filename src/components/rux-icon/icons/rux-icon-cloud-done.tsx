@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/cloud-done.svg'
 @Component({
     tag: 'rux-icon-cloud-done',
     shadow: false,
+    styles:
+        'rux-icon-cloud-done {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconCloudDone {
     /**
@@ -28,7 +30,7 @@ export class RuxIconCloudDone {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconCloudDone {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

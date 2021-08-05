@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/help-outline.svg'
 @Component({
     tag: 'rux-icon-help-outline',
     shadow: false,
+    styles:
+        'rux-icon-help-outline {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconHelpOutline {
     /**
@@ -28,7 +30,7 @@ export class RuxIconHelpOutline {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconHelpOutline {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

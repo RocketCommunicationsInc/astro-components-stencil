@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/accessibility.svg'
 @Component({
     tag: 'rux-icon-accessibility',
     shadow: false,
+    styles:
+        'rux-icon-accessibility {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAccessibility {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAccessibility {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAccessibility {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/card-giftcard.svg'
 @Component({
     tag: 'rux-icon-card-giftcard',
     shadow: false,
+    styles:
+        'rux-icon-card-giftcard {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconCardGiftcard {
     /**
@@ -28,7 +30,7 @@ export class RuxIconCardGiftcard {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconCardGiftcard {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

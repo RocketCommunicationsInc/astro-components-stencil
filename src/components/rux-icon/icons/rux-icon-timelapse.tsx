@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/timelapse.svg'
 @Component({
     tag: 'rux-icon-timelapse',
     shadow: false,
+    styles:
+        'rux-icon-timelapse {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconTimelapse {
     /**
@@ -28,7 +30,7 @@ export class RuxIconTimelapse {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconTimelapse {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

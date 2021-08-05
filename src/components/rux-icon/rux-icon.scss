@@ -1,18 +1,4 @@
 :host {
-    /**
-        * @prop --iconColor: the default color of the icon
-    */
-    --iconColor: var(--iconDefaultColor);
-
     fill: var(--iconColor);
-    display: inline-flex;
-}
-
-svg,
-svg > svg {
-    height: 100%;
-    width: auto;
-}
-.icon {
     display: inline-flex;
 }

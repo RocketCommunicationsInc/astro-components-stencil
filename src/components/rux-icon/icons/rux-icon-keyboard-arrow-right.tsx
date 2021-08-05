@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/keyboard-arrow-right.svg'
 @Component({
     tag: 'rux-icon-keyboard-arrow-right',
     shadow: false,
+    styles:
+        'rux-icon-keyboard-arrow-right {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconKeyboardArrowRight {
     /**
@@ -28,7 +30,7 @@ export class RuxIconKeyboardArrowRight {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconKeyboardArrowRight {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

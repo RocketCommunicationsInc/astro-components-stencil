@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/flash-off.svg'
 @Component({
     tag: 'rux-icon-flash-off',
     shadow: false,
+    styles:
+        'rux-icon-flash-off {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconFlashOff {
     /**
@@ -28,7 +30,7 @@ export class RuxIconFlashOff {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconFlashOff {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

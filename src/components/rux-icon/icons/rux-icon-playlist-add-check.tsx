@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/playlist-add-check.svg'
 @Component({
     tag: 'rux-icon-playlist-add-check',
     shadow: false,
+    styles:
+        'rux-icon-playlist-add-check {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPlaylistAddCheck {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPlaylistAddCheck {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPlaylistAddCheck {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

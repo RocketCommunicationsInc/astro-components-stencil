@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/no-sim.svg'
 @Component({
     tag: 'rux-icon-no-sim',
     shadow: false,
+    styles:
+        'rux-icon-no-sim {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconNoSim {
     /**
@@ -28,7 +30,7 @@ export class RuxIconNoSim {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconNoSim {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/bluetooth-connected.svg'
 @Component({
     tag: 'rux-icon-bluetooth-connected',
     shadow: false,
+    styles:
+        'rux-icon-bluetooth-connected {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconBluetoothConnected {
     /**
@@ -28,7 +30,7 @@ export class RuxIconBluetoothConnected {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconBluetoothConnected {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/vertical-split.svg'
 @Component({
     tag: 'rux-icon-vertical-split',
     shadow: false,
+    styles:
+        'rux-icon-vertical-split {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconVerticalSplit {
     /**
@@ -28,7 +30,7 @@ export class RuxIconVerticalSplit {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconVerticalSplit {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

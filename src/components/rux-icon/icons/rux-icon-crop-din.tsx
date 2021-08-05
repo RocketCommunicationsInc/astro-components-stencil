@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/crop-din.svg'
 @Component({
     tag: 'rux-icon-crop-din',
     shadow: false,
+    styles:
+        'rux-icon-crop-din {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconCropDin {
     /**
@@ -28,7 +30,7 @@ export class RuxIconCropDin {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconCropDin {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/assistant-photo.svg'
 @Component({
     tag: 'rux-icon-assistant-photo',
     shadow: false,
+    styles:
+        'rux-icon-assistant-photo {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAssistantPhoto {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAssistantPhoto {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAssistantPhoto {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

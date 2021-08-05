@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/zoom-out-map.svg'
 @Component({
     tag: 'rux-icon-zoom-out-map',
     shadow: false,
+    styles:
+        'rux-icon-zoom-out-map {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconZoomOutMap {
     /**
@@ -28,7 +30,7 @@ export class RuxIconZoomOutMap {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconZoomOutMap {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

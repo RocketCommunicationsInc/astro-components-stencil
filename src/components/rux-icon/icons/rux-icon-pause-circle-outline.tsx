@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/pause-circle-outline.svg'
 @Component({
     tag: 'rux-icon-pause-circle-outline',
     shadow: false,
+    styles:
+        'rux-icon-pause-circle-outline {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPauseCircleOutline {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPauseCircleOutline {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPauseCircleOutline {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

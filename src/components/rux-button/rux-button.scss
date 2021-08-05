@@ -254,13 +254,6 @@
     width: 1rem;
 }
 
-.rux-button rux-icon {
-    fill: var(--buttonTextColor);
-}
-.rux-button--secondary rux-icon,
-.rux-button--secondary rux-icon svg > use {
-    fill: var(--buttonSecondaryTextColor);
-}
 .rux-button ::slotted(rux-icon) {
     fill: var(--buttonTextColor);
 }

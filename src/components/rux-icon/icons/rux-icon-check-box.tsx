@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/check-box.svg'
 @Component({
     tag: 'rux-icon-check-box',
     shadow: false,
+    styles:
+        'rux-icon-check-box {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconCheckBox {
     /**
@@ -28,7 +30,7 @@ export class RuxIconCheckBox {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconCheckBox {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -27,7 +27,7 @@
 :host,
 :host([status='standby']) {
     background-color: var(--colorStandbyLighten1);
-    rux-icon {
+    rux-icon-close .rux-icon {
         stroke: var(--colorStandbyDarken1);
         fill: var(--colorStandbyDarken1);
     }
@@ -35,21 +35,21 @@
 
 :host([status='normal']) {
     background-color: var(--colorNormalLighten2);
-    rux-icon {
+    rux-icon-close .rux-icon {
         stroke: var(--colorNormalDarken1);
         fill: var(--colorNormalDarken1);
     }
 }
 :host([status='caution']) {
     background-color: var(--colorCautionLighten1);
-    rux-icon {
+    rux-icon-close .rux-icon {
         stroke: var(--colorCautionDarken1);
         fill: var(--colorCautionDarken1);
     }
 }
 :host([status='critical']) {
     background-color: var(--colorCriticalLighten1);
-    rux-icon {
+    rux-icon-close .rux-icon {
         stroke: var(--colorCriticalDarken1);
         fill: var(--colorCriticalDarken1);
     }

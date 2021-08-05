@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/import-contacts.svg'
 @Component({
     tag: 'rux-icon-import-contacts',
     shadow: false,
+    styles:
+        'rux-icon-import-contacts {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconImportContacts {
     /**
@@ -28,7 +30,7 @@ export class RuxIconImportContacts {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconImportContacts {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

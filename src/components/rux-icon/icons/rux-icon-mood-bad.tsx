@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/mood-bad.svg'
 @Component({
     tag: 'rux-icon-mood-bad',
     shadow: false,
+    styles:
+        'rux-icon-mood-bad {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconMoodBad {
     /**
@@ -28,7 +30,7 @@ export class RuxIconMoodBad {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconMoodBad {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

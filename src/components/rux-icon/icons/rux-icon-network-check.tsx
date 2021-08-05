@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/network-check.svg'
 @Component({
     tag: 'rux-icon-network-check',
     shadow: false,
+    styles:
+        'rux-icon-network-check {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconNetworkCheck {
     /**
@@ -28,7 +30,7 @@ export class RuxIconNetworkCheck {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconNetworkCheck {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

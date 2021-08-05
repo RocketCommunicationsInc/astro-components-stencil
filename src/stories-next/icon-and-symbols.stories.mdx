@@ -49,6 +49,8 @@ export const Default = (args) => {
 
 <ArgsTable of="rux-icon"/>
 
+`<rux-icon>` is a utility wrapper component for individual icons. For example, `<rux-icon icon="apps">` will render the same thing as `<rux-icon-apps>`
+
 ## All Icons
 
 export const AllIcons = (args) => {
@@ -149,5 +151,18 @@ export const AllIcons = (args) => {
     </Story>
 </Canvas>
 
-### Cherry Picking
-Coming Soon
+## Cherry Picking
+
+If you're already utilizing a build system that supports tree shaking and want to only import this individual component:
+
+```js
+import { RuxIcon } from '@astrouxds/astro-web-components/dist/components/rux-icon'
+import { RuxIconClose } from '@astrouxds/astro-web-components/dist/components/rux-icon-close'
+
+customElements.define('rux-icon', RuxIcon)
+customElements.define('rux-icon-close', RuxIconClose)
+```
+
+Importing `RuxIcon` is entirely optional if you are cherry picking. You can instead use each individual icon component directly:
+`<rux-icon-close></rux-icon-close>` instead of `<rux-icon icon="close"></rux-icon>`
+

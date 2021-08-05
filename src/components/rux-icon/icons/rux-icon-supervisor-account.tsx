@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/supervisor-account.svg'
 @Component({
     tag: 'rux-icon-supervisor-account',
     shadow: false,
+    styles:
+        'rux-icon-supervisor-account {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSupervisorAccount {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSupervisorAccount {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSupervisorAccount {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

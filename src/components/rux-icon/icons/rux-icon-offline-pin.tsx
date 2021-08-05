@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/offline-pin.svg'
 @Component({
     tag: 'rux-icon-offline-pin',
     shadow: false,
+    styles:
+        'rux-icon-offline-pin {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconOfflinePin {
     /**
@@ -28,7 +30,7 @@ export class RuxIconOfflinePin {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconOfflinePin {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

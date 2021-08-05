@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/signal-cellular-connected-no-internet-0-bar.
 @Component({
     tag: 'rux-icon-signal-cellular-connected-no-internet-0-bar',
     shadow: false,
+    styles:
+        'rux-icon-signal-cellular-connected-no-internet-0-bar {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSignalCellularConnectedNoInternet0Bar {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSignalCellularConnectedNoInternet0Bar {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSignalCellularConnectedNoInternet0Bar {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

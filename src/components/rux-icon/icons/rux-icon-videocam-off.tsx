@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/videocam-off.svg'
 @Component({
     tag: 'rux-icon-videocam-off',
     shadow: false,
+    styles:
+        'rux-icon-videocam-off {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconVideocamOff {
     /**
@@ -28,7 +30,7 @@ export class RuxIconVideocamOff {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconVideocamOff {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

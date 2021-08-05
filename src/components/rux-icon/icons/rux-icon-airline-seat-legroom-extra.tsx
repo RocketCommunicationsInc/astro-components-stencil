@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/airline-seat-legroom-extra.svg'
 @Component({
     tag: 'rux-icon-airline-seat-legroom-extra',
     shadow: false,
+    styles:
+        'rux-icon-airline-seat-legroom-extra {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAirlineSeatLegroomExtra {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAirlineSeatLegroomExtra {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAirlineSeatLegroomExtra {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

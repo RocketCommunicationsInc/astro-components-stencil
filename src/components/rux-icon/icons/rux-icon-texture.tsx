@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/texture.svg'
 @Component({
     tag: 'rux-icon-texture',
     shadow: false,
+    styles:
+        'rux-icon-texture {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconTexture {
     /**
@@ -28,7 +30,7 @@ export class RuxIconTexture {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconTexture {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

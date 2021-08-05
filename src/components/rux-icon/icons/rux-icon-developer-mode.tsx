@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/developer-mode.svg'
 @Component({
     tag: 'rux-icon-developer-mode',
     shadow: false,
+    styles:
+        'rux-icon-developer-mode {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconDeveloperMode {
     /**
@@ -28,7 +30,7 @@ export class RuxIconDeveloperMode {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconDeveloperMode {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

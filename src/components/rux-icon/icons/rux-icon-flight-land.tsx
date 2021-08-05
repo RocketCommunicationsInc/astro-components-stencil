@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/flight-land.svg'
 @Component({
     tag: 'rux-icon-flight-land',
     shadow: false,
+    styles:
+        'rux-icon-flight-land {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconFlightLand {
     /**
@@ -28,7 +30,7 @@ export class RuxIconFlightLand {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconFlightLand {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

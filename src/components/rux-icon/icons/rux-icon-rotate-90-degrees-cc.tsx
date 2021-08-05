@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/rotate-90-degrees-cc.svg'
 @Component({
     tag: 'rux-icon-rotate-90-degrees-cc',
     shadow: false,
+    styles:
+        'rux-icon-rotate-90-degrees-cc {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconRotate90DegreesCc {
     /**
@@ -28,7 +30,7 @@ export class RuxIconRotate90DegreesCc {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconRotate90DegreesCc {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

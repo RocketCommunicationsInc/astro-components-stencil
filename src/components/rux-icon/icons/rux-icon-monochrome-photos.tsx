@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/monochrome-photos.svg'
 @Component({
     tag: 'rux-icon-monochrome-photos',
     shadow: false,
+    styles:
+        'rux-icon-monochrome-photos {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconMonochromePhotos {
     /**
@@ -28,7 +30,7 @@ export class RuxIconMonochromePhotos {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconMonochromePhotos {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

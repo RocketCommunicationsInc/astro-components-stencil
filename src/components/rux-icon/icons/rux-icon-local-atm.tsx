@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/local-atm.svg'
 @Component({
     tag: 'rux-icon-local-atm',
     shadow: false,
+    styles:
+        'rux-icon-local-atm {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconLocalAtm {
     /**
@@ -28,7 +30,7 @@ export class RuxIconLocalAtm {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconLocalAtm {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

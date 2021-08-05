@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/format-textdirection-l-to-r.svg'
 @Component({
     tag: 'rux-icon-format-textdirection-l-to-r',
     shadow: false,
+    styles:
+        'rux-icon-format-textdirection-l-to-r {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconFormatTextdirectionLToR {
     /**
@@ -28,7 +30,7 @@ export class RuxIconFormatTextdirectionLToR {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconFormatTextdirectionLToR {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

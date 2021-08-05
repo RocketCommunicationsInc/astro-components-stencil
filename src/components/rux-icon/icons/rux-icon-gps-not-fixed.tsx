@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/gps-not-fixed.svg'
 @Component({
     tag: 'rux-icon-gps-not-fixed',
     shadow: false,
+    styles:
+        'rux-icon-gps-not-fixed {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconGpsNotFixed {
     /**
@@ -28,7 +30,7 @@ export class RuxIconGpsNotFixed {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconGpsNotFixed {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/alarm-add.svg'
 @Component({
     tag: 'rux-icon-alarm-add',
     shadow: false,
+    styles:
+        'rux-icon-alarm-add {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconAlarmAdd {
     /**
@@ -28,7 +30,7 @@ export class RuxIconAlarmAdd {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconAlarmAdd {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

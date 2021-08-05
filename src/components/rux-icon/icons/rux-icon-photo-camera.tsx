@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/photo-camera.svg'
 @Component({
     tag: 'rux-icon-photo-camera',
     shadow: false,
+    styles:
+        'rux-icon-photo-camera {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPhotoCamera {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPhotoCamera {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPhotoCamera {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

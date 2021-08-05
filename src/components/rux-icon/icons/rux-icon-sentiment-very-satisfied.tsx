@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/sentiment-very-satisfied.svg'
 @Component({
     tag: 'rux-icon-sentiment-very-satisfied',
     shadow: false,
+    styles:
+        'rux-icon-sentiment-very-satisfied {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconSentimentVerySatisfied {
     /**
@@ -28,7 +30,7 @@ export class RuxIconSentimentVerySatisfied {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconSentimentVerySatisfied {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

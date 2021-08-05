@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/local-movies.svg'
 @Component({
     tag: 'rux-icon-local-movies',
     shadow: false,
+    styles:
+        'rux-icon-local-movies {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconLocalMovies {
     /**
@@ -28,7 +30,7 @@ export class RuxIconLocalMovies {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconLocalMovies {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

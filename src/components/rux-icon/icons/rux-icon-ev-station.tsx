@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/ev-station.svg'
 @Component({
     tag: 'rux-icon-ev-station',
     shadow: false,
+    styles:
+        'rux-icon-ev-station {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconEvStation {
     /**
@@ -28,7 +30,7 @@ export class RuxIconEvStation {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconEvStation {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

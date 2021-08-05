@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/playlist-play.svg'
 @Component({
     tag: 'rux-icon-playlist-play',
     shadow: false,
+    styles:
+        'rux-icon-playlist-play {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconPlaylistPlay {
     /**
@@ -28,7 +30,7 @@ export class RuxIconPlaylistPlay {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconPlaylistPlay {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

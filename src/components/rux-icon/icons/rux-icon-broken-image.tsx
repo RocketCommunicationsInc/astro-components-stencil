@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/broken-image.svg'
 @Component({
     tag: 'rux-icon-broken-image',
     shadow: false,
+    styles:
+        'rux-icon-broken-image {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconBrokenImage {
     /**
@@ -28,7 +30,7 @@ export class RuxIconBrokenImage {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconBrokenImage {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }

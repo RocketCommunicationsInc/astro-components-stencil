@@ -11,6 +11,8 @@ import svgIcon from '../../../icons/mic-none.svg'
 @Component({
     tag: 'rux-icon-mic-none',
     shadow: false,
+    styles:
+        'rux-icon-mic-none {display: inline-flex;} .rux-icon {fill: var(--iconDefaultColor);} svg, svg > svg { height: 100%; width: auto;}',
 })
 export class RuxIconMicNone {
     /**
@@ -28,7 +30,7 @@ export class RuxIconMicNone {
         | 'normal'
         | 'large'
         | 'auto'
-        | string = 'auto'
+        | string = 'extra-small'
 
     get iconSize() {
         const sizes: { [key: string]: any } = {
@@ -51,6 +53,6 @@ export class RuxIconMicNone {
             width: this.iconSize,
         }
 
-        return <div style={style} innerHTML={svgIcon}></div>
+        return <div class="rux-icon" style={style} innerHTML={svgIcon}></div>
     }
 }
