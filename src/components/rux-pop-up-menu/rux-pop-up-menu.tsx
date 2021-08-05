@@ -85,7 +85,6 @@ export class RuxPopUpMenu {
         this._handleOutsideClick = this._handleOutsideClick.bind(this)
 
         this._bindElements()
-        this.el.style.visibility = 'hidden'
         this._toggleOpenClose()
     }
 
@@ -235,7 +234,6 @@ export class RuxPopUpMenu {
                 return
             }
             this.ruxMenuWillOpen.emit()
-            this.el.style.visibility = 'visible'
             this.open = true
 
             const debounce = setTimeout(() => {

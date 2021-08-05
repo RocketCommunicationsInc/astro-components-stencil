@@ -8,7 +8,7 @@ describe('rux-pop-up-menu', () => {
             html: `<button aria-controls="menu">Button</button><rux-pop-up-menu id="menu"></rux-pop-up-menu>`,
         })
         expect(page.root).toEqualHtml(`
-      <rux-pop-up-menu aria-hidden="true" id="menu" style="visibility: hidden;">
+      <rux-pop-up-menu aria-hidden="true" id="menu">
         <mock:shadow-root>
           <ul aria-expanded="false" role="menu">
             <slot></slot>
