@@ -24,7 +24,7 @@ describe('Checkbox with Form', () => {
         cy.get('#log').should('not.contain', 'nativeCheckbox')
     })
 
-    it('submits a value of "on" if no value is provided', async () => {
+    it('submits a value of "on" if no value is provided', () => {
         cy.get('#ruxCheckbox2').shadow().find('input').click({ force: true })
         cy.get('#nativeCheckbox2').click()
         cy.get('#form-no-value').submit()
