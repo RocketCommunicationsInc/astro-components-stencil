@@ -4,7 +4,7 @@ describe('Push Button with Form', () => {
     })
     it('submits the correct value when using a form', () => {
         // Looks like there are some issues with Cypress + clicking range inputs so this will need to be tweaked a little
-        cy.get('#ruxPushButton').click()
+        cy.get('#ruxPushButton').shadow().find('input').click({ force: true })
         cy.get('#nativeCheckbox').click()
         cy.get('#form').submit()
         cy.get('#log').contains('ruxPushButton:true')
@@ -15,8 +15,8 @@ describe('Push Button with Form', () => {
         cy.get('#log').should('not.contain', 'ruxPushButton')
     })
     it('does not submit a value if checked and then unchecked', () => {
-        cy.get('#ruxPushButton').click()
-        cy.get('#ruxPushButton').click()
+        cy.get('#ruxPushButton').shadow().find('input').click({ force: true })
+        cy.get('#ruxPushButton').shadow().find('input').click({ force: true })
         cy.get('#form').submit()
         cy.get('#log').should('not.contain', 'ruxPushButton')
     })
@@ -36,5 +36,13 @@ describe('Push Button with Form', () => {
         cy.get('#ruxPushButton').click()
         cy.get('#form').submit()
         cy.get('#log').should('not.contain', 'ruxPushButtonDisabled')
+    })
+    it('submits a value of on if no value was given', () => {
+        cy.get('#ruxPushButtonNoVal')
+            .shadow()
+            .find('input')
+            .click({ force: true })
+        cy.get('#form').submit()
+        cy.get('#log').contains('ruxPushButtonNoVal:on')
     })
 })
