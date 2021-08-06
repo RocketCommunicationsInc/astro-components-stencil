@@ -6,8 +6,11 @@ import {
     Event,
     EventEmitter,
     Watch,
+    Element,
 } from '@stencil/core'
 import { PushButtonChangeEvent } from './rux-push-button.model'
+import { renderHiddenInput } from '../../utils/utils'
+
 @Component({
     tag: 'rux-push-button',
     styleUrl: 'rux-push-button.scss',
@@ -31,25 +34,61 @@ export class RuxPushButton {
      * Can be overridden by placing content in the default slot of the rusx-push-button component.
      */
     @Prop() label: string = 'Push Button'
-
+    @Prop() name: string = ''
+    @Prop({ reflect: true, mutable: true }) value: string = ''
     /**
      * Emitted when the checked property has changed.
      */
     @Event({ eventName: 'rux-change' })
     ruxChange!: EventEmitter<PushButtonChangeEvent>
 
-    handleClick(event: MouseEvent) {
-        event.preventDefault()
-        this.checked = !this.checked
+    @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
+
+    // handleClick(event: MouseEvent) {
+    //     event.preventDefault()
+    //     this.checked = !this.checked
+    //     const target = event.target as HTMLInputElement
+    //     console.log('Target Value: ', target.value)
+    //     this.value = target.value
+    // }
+    componentWillLoad() {
+        this.onInput = this.onInput.bind(this)
     }
 
     @Watch('checked')
     checkedChanged(checked: boolean) {
         this.ruxChange.emit({ checked })
     }
+    @Element() el!: HTMLRuxPushButtonElement
 
+    private onInput(e: Event) {
+        const target = e.target as HTMLInputElement
+        this.value = target.value
+        // console.log(
+        //     'TargetValue: ',
+        //     target.value,
+        //     'TargetChecked: ',
+        //     target.checked
+        // )
+        this.checked = target.checked
+        this.ruxInput.emit()
+    }
+    // private onChange(e: Event): void {
+    //     const target = e.target as HTMLInputElement
+    //     this.checked = target.checked
+    //     this.ruxChange.emit(this.checked)
+    // }
     render() {
-        const { disabled, checked, label } = this
+        const { disabled, checked, label, onInput } = this
+        if (checked) {
+            renderHiddenInput(
+                true,
+                this.el,
+                this.name,
+                this.value,
+                this.disabled
+            )
+        }
         return (
             <Host
                 aria-checked={`${checked}`}
@@ -62,14 +101,17 @@ export class RuxPushButton {
                     type="checkbox"
                     disabled={disabled}
                     checked={checked}
-                    onClick={(e) => this.handleClick(e)}
+                    // onClick={(e) => this.handleClick(e)}
+                    onInput={onInput}
+                    // onChange={this.onChange}
                 />
                 <label
                     class="rux-push-button__button"
                     htmlFor={this.pushButtonId}
                 >
-                    <slot>{label}</slot>
+                    {label}
                 </label>
+                <slot></slot>
             </Host>
         )
     }

@@ -16278,6 +16278,8 @@ export namespace Components {
           * The label of the push button. Can be overridden by placing content in the default slot of the rusx-push-button component.
          */
         "label": string;
+        "name": string;
+        "value": string;
     }
     interface RuxRadio {
         /**
@@ -40452,10 +40454,13 @@ declare namespace LocalJSX {
           * The label of the push button. Can be overridden by placing content in the default slot of the rusx-push-button component.
          */
         "label"?: string;
+        "name"?: string;
         /**
           * Emitted when the checked property has changed.
          */
         "onRux-change"?: (event: CustomEvent<PushButtonChangeEvent>) => void;
+        "onRux-input"?: (event: CustomEvent<any>) => void;
+        "value"?: string;
     }
     interface RuxRadio {
         /**
