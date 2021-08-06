@@ -94,7 +94,11 @@ export class RuxPushButton {
                 this.value ? this.value : 'on',
                 this.disabled
             )
+        } else {
+            let hiddenInput = document.querySelector('.aux-input')
+            if (hiddenInput) hiddenInput.remove()
         }
+
         return (
             <Host
                 aria-checked={`${checked}`}

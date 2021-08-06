@@ -10,8 +10,31 @@ describe('Push Button with Form', () => {
         cy.get('#log').contains('ruxPushButton:true')
         cy.get('#log').contains('nativeCheckbox:true')
     })
-
-    // it('does not allow input if disabled', () => {
-
-    // });
+    it('does not submit any value if not checked', () => {
+        cy.get('#form').submit()
+        cy.get('#log').should('not.contain', 'ruxPushButton')
+    })
+    it('does not submit a value if checked and then unchecked', () => {
+        cy.get('#ruxPushButton').click()
+        cy.get('#ruxPushButton').click()
+        cy.get('#form').submit()
+        cy.get('#log').should('not.contain', 'ruxPushButton')
+    })
+    it('does not allow input if disabled', () => {
+        cy.get('#ruxPushButtonDisabled')
+            .shadow()
+            .find('input')
+            .should('be.disabled')
+        cy.get('#ruxPushButtonDisabled')
+            .shadow()
+            .find('input')
+            .click({ force: true })
+        cy.get('#ruxPushButtonDisabled')
+            .shadow()
+            .find('input')
+            .should('not.be', 'checked')
+        cy.get('#ruxPushButton').click()
+        cy.get('#form').submit()
+        cy.get('#log').should('not.contain', 'ruxPushButtonDisabled')
+    })
 })
