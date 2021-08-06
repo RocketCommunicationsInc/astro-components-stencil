@@ -124,6 +124,9 @@ export class RuxInputField {
                 >
                     <label class="rux-input-label" htmlFor={this.inputId}>
                         {this.label}
+                        {this.required && (
+                            <span class="rux-input-label__asterisk">*</span>
+                        )}
                     </label>
                     <input
                         name={this.name}
@@ -148,7 +151,7 @@ export class RuxInputField {
                     ></input>
                 </div>
 
-                {this.helpText && (
+                {this.helpText && !this.errorText && (
                     <div class="rux-help-text">{this.helpText}</div>
                 )}
 
