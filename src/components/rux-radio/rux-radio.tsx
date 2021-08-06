@@ -121,7 +121,7 @@ export class RuxRadio {
                 true,
                 this.el,
                 this.name,
-                this.value,
+                this.value ? this.value : 'on',
                 this.disabled
             )
         }

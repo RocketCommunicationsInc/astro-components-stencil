@@ -23,7 +23,28 @@ describe('Radio with Form', () => {
         cy.get('#log').contains('ruxColor:on')
         cy.get('#log').contains('nativeColor:on')
     })
-    // it('does not allow input if disabled', () => {
 
-    // });
+    it('does not allow input if disabled', () => {
+        cy.get('#ruxRadioPurpleDisabled')
+            .shadow()
+            .find('input')
+            .should('be.disabled')
+        cy.get('#ruxRadioPurpleDisabled')
+            .shadow()
+            .find('input')
+            .click({ force: true })
+        cy.get('#ruxRadioPurpleDisabled')
+            .shadow()
+            .find('input')
+            .should('not.be', 'checked')
+        cy.get('#ruxRadioPurpleDisabled')
+            .shadow()
+            .find('input')
+            .then(($input) => {
+                $input.checked = false
+            })
+
+        cy.get('#form').submit()
+        cy.get('#log').should('not.contain', 'ruxRadioPurpleDisabled')
+    })
 })
