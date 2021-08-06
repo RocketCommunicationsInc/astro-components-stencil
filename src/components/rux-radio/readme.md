@@ -40,10 +40,9 @@ Radio Buttons allow users to mutually select an option from a predefined set of 
 
 ## Events
 
-| Event        | Description                                                                                                                                                                    | Type               |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| `rux-change` | Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)                                | `CustomEvent<any>` |
-| `rux-input`  | Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event) | `CustomEvent<any>` |
+| Event        | Description                                                                                                                                     | Type               |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| `rux-change` | Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event) | `CustomEvent<any>` |
 
 
 ## CSS Custom Properties

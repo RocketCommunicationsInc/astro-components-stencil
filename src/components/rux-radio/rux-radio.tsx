@@ -5,7 +5,6 @@ import {
     Event,
     EventEmitter,
     Element,
-    Listen,
     Watch,
 } from '@stencil/core'
 
@@ -18,6 +17,8 @@ let id = 0
 })
 export class RuxRadio {
     radioId = `rux-radio-${++id}`
+    private radioGroup: HTMLRuxRadioGroupElement | null = null
+
     @Element() el!: HTMLRuxRadioElement
 
     /**
@@ -59,65 +60,45 @@ export class RuxRadio {
      */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
 
-    /**
-     * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
-     */
-    @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
-
-    @Listen('click')
-    handleClick(ev: MouseEvent) {
-        // element being clicked on
-        const el: HTMLElement = ev.composedPath()[0] as HTMLElement
-        if (el.tagName === 'INPUT') {
-            const value = el.getAttribute('value')
-
-            const radioSiblings = document.querySelectorAll(
-                `rux-radio[name='${el.getAttribute('name')}']`
-            )
-
-            if (radioSiblings && radioSiblings.length) {
-                radioSiblings.forEach((ele) => {
-                    if (ele.getAttribute('value') !== value) {
-                        ele.removeAttribute('checked')
-                    }
-                })
-            }
-        }
-    }
-
     @Watch('checked')
     handleWatch() {
-        this.checkMultipleChecks()
+        if (this.checked) {
+            // this.getSiblingRadios().map((radio) => (radio.checked = false))
+        }
+        // this.ruxChange.emit()
     }
 
-    checkMultipleChecks() {
-        const radioSiblings = document.querySelectorAll(
-            `rux-radio[name='${this.el.getAttribute('name')}']`
-        )
-        if (this.checked) {
-            radioSiblings.forEach((sib) => {
-                if (sib.getAttribute('value') != this.value) {
-                    sib.removeAttribute('checked')
-                }
-            })
+    connectedCallback() {
+        this.handleClick = this.handleClick.bind(this)
+        this.radioGroup = this.el.closest('rux-radio-group')
+        this.syncFromGroup = this.syncFromGroup.bind(this)
+        if (this.radioGroup) {
+            this.syncFromGroup()
+            this.radioGroup.addEventListener('rux-change', this.syncFromGroup)
         }
     }
-    componentWillLoad() {
-        this.onChange = this.onChange.bind(this)
-        this.onInput = this.onInput.bind(this)
-        this.checkMultipleChecks()
+
+    handleClick(ev: MouseEvent) {
+        const target = ev.target as HTMLInputElement
+        console.log(target)
+
+        // this.checked = target.checked
     }
 
-    private onChange(e: Event): void {
-        const target = e.target as HTMLInputElement
-        this.checked = target.checked
-        this.ruxChange.emit(target.value)
+    getSiblingRadios() {
+        if (!this.radioGroup) {
+            return []
+        }
+        const radios = this.radioGroup.querySelectorAll('rux-radio')
+        return Array.from(radios).filter(
+            (radio) => radio !== this.el
+        ) as HTMLRuxRadioElement[]
     }
 
-    private onInput(e: Event) {
-        const target = e.target as HTMLInputElement
-        this.value = target.value
-        this.ruxInput.emit(target.value)
+    syncFromGroup() {
+        if (this.radioGroup && this.radioGroup.value) {
+            this.checked = this.radioGroup.value === this.value
+        }
     }
 
     render() {
@@ -130,8 +111,6 @@ export class RuxRadio {
             name,
             required,
             value,
-            onChange,
-            onInput,
         } = this
 
         return (
@@ -152,8 +131,7 @@ export class RuxRadio {
                         required={required}
                         checked={checked}
                         value={value}
-                        onChange={onChange}
-                        onInput={onInput}
+                        onClick={this.handleClick}
                     />
                     <label htmlFor={radioId}>
                         <slot></slot>

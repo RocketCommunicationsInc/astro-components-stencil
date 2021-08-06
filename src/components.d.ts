@@ -16309,6 +16309,32 @@ export namespace Components {
          */
         "value": string;
     }
+    interface RuxRadioGroup {
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Marks the radio group as invalid
+         */
+        "invalid": boolean;
+        /**
+          * The label of the radio group
+         */
+        "label"?: string;
+        /**
+          * The name of the radio group - submitted with form data. Must match the name of the radios in the group.
+         */
+        "name": string;
+        /**
+          * The value of the current selected radio in the group. Changing this will also mark that radio as checked in the UI.
+         */
+        "value"?: any | null;
+    }
     interface RuxSegmentedButton {
         /**
           * Items in this Array are the individual button segments.
@@ -22951,6 +22977,12 @@ declare global {
         prototype: HTMLRuxRadioElement;
         new (): HTMLRuxRadioElement;
     };
+    interface HTMLRuxRadioGroupElement extends Components.RuxRadioGroup, HTMLStencilElement {
+    }
+    var HTMLRuxRadioGroupElement: {
+        prototype: HTMLRuxRadioGroupElement;
+        new (): HTMLRuxRadioGroupElement;
+    };
     interface HTMLRuxSegmentedButtonElement extends Components.RuxSegmentedButton, HTMLStencilElement {
     }
     var HTMLRuxSegmentedButtonElement: {
@@ -24140,6 +24172,7 @@ declare global {
         "rux-progress": HTMLRuxProgressElement;
         "rux-push-button": HTMLRuxPushButtonElement;
         "rux-radio": HTMLRuxRadioElement;
+        "rux-radio-group": HTMLRuxRadioGroupElement;
         "rux-segmented-button": HTMLRuxSegmentedButtonElement;
         "rux-select": HTMLRuxSelectElement;
         "rux-slider": HTMLRuxSliderElement;
@@ -40483,10 +40516,6 @@ declare namespace LocalJSX {
          */
         "onRux-change"?: (event: CustomEvent<any>) => void;
         /**
-          * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
-         */
-        "onRux-input"?: (event: CustomEvent<any>) => void;
-        /**
           * Sets the radio as required
          */
         "required"?: boolean;
@@ -40494,6 +40523,33 @@ declare namespace LocalJSX {
           * The radio value
          */
         "value"?: string;
+    }
+    interface RuxRadioGroup {
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Marks the radio group as invalid
+         */
+        "invalid"?: boolean;
+        /**
+          * The label of the radio group
+         */
+        "label"?: string;
+        /**
+          * The name of the radio group - submitted with form data. Must match the name of the radios in the group.
+         */
+        "name"?: string;
+        "onRux-change"?: (event: CustomEvent<any>) => void;
+        /**
+          * The value of the current selected radio in the group. Changing this will also mark that radio as checked in the UI.
+         */
+        "value"?: any | null;
     }
     interface RuxSegmentedButton {
         /**
@@ -41788,6 +41844,7 @@ declare namespace LocalJSX {
         "rux-progress": RuxProgress;
         "rux-push-button": RuxPushButton;
         "rux-radio": RuxRadio;
+        "rux-radio-group": RuxRadioGroup;
         "rux-segmented-button": RuxSegmentedButton;
         "rux-select": RuxSelect;
         "rux-slider": RuxSlider;
@@ -42887,6 +42944,7 @@ declare module "@stencil/core" {
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-push-button": LocalJSX.RuxPushButton & JSXBase.HTMLAttributes<HTMLRuxPushButtonElement>;
             "rux-radio": LocalJSX.RuxRadio & JSXBase.HTMLAttributes<HTMLRuxRadioElement>;
+            "rux-radio-group": LocalJSX.RuxRadioGroup & JSXBase.HTMLAttributes<HTMLRuxRadioGroupElement>;
             "rux-segmented-button": LocalJSX.RuxSegmentedButton & JSXBase.HTMLAttributes<HTMLRuxSegmentedButtonElement>;
             "rux-select": LocalJSX.RuxSelect & JSXBase.HTMLAttributes<HTMLRuxSelectElement>;
             "rux-slider": LocalJSX.RuxSlider & JSXBase.HTMLAttributes<HTMLRuxSliderElement>;
