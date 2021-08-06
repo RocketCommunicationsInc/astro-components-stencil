@@ -27,25 +27,29 @@
                         id="ruxCheckbox"
                         name="ruxCheckbox"
                         value="foo"
-                        label="Checkbox"
                     >
                         Checkbox
+                    </rux-checkbox>
+
+                    <rux-checkbox
+                        id="ruxCheckboxDisabled"
+                        name="ruxCheckboxDisabled"
+                        disabled
+                    >
+                        Disabled
                     </rux-checkbox>
 
                     <input
                         id="nativeCheckbox"
                         type="checkbox"
                         name="nativeCheckbox"
+                        value="foo"
                     />
-                    <button type="submit">submit</button>
+                    <button id="submit" type="submit">submit</button>
                 </form>
 
-                <form id="form-no-value" style="width: 100%">
-                    <rux-checkbox
-                        id="ruxCheckbox2"
-                        name="ruxCheckbox"
-                        label="Checkbox"
-                    >
+                <form id="form-no-value" style="margin-top: 1rem; width: 100%">
+                    <rux-checkbox id="ruxCheckbox2" name="ruxCheckbox">
                         Checkbox
                     </rux-checkbox>
 
