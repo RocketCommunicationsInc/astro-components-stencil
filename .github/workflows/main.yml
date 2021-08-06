@@ -1,14 +1,12 @@
-name: Cypress
+name: End-to-End Testing
 on: pull_request
 jobs:
-    cypress:
+    cypress-storybook:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-
             - name: Install modules
               run: npm ci
-
             - name: Wait for Netlify
               uses: RocketCommunicationsInc/wait-for-netlify-action@3.2.0
               id: waitForDeployment
@@ -16,8 +14,16 @@ jobs:
                   site_id: 'dbdd8a33-42e5-4c0a-bfed-c57cca8b24cf'
               env:
                   NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
-
             - name: Run Cypress
               uses: cypress-io/github-action@v2
               with:
-                  config: baseUrl=${{ steps.waitForDeployment.outputs.url }}
+    cypress-stencil:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install modules
+              run: npm ci
+            - name: Run Cypress
+              uses: cypress-io/github-action@v2
+              with:
+                start: npm run start
