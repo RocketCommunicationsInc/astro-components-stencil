@@ -8,7 +8,6 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { Classification, Status } from "./common/commonTypes.module";
 import { LogRow } from "./components/rux-log/rux-log.model";
 import { RangeItem } from "./components/rux-monitoring-progress-icon/rux-monitoring-progress-icon";
-import { PushButtonChangeEvent } from "./components/rux-push-button/rux-push-button.model";
 import { SegmentedButton } from "./components/rux-segmented-button/rux-segmented-button.model";
 import { SwitchChangeEvent } from "./components/rux-switch/rux-switch.model";
 export namespace Components {
@@ -16275,10 +16274,16 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * The label of the push button. Can be overridden by placing content in the default slot of the rusx-push-button component.
+          * The label of the push button.
          */
         "label": string;
+        /**
+          * The name of the push button.
+         */
         "name": string;
+        /**
+          * The value of the push button.
+         */
         "value": string;
     }
     interface RuxRadio {
@@ -40451,15 +40456,24 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * The label of the push button. Can be overridden by placing content in the default slot of the rusx-push-button component.
+          * The label of the push button.
          */
         "label"?: string;
+        /**
+          * The name of the push button.
+         */
         "name"?: string;
         /**
-          * Emitted when the checked property has changed.
+          * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
          */
-        "onRux-change"?: (event: CustomEvent<PushButtonChangeEvent>) => void;
+        "onRux-change"?: (event: CustomEvent<any>) => void;
+        /**
+          * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
+         */
         "onRux-input"?: (event: CustomEvent<any>) => void;
+        /**
+          * The value of the push button.
+         */
         "value"?: string;
     }
     interface RuxRadio {

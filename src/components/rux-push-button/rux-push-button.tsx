@@ -5,10 +5,8 @@ import {
     h,
     Event,
     EventEmitter,
-    Watch,
     Element,
 } from '@stencil/core'
-import { PushButtonChangeEvent } from './rux-push-button.model'
 import { renderHiddenInput } from '../../utils/utils'
 
 @Component({
@@ -31,73 +29,54 @@ export class RuxPushButton {
     @Prop({ reflect: true, mutable: true }) checked: boolean = false
     /**
      * The label of the push button.
-     * Can be overridden by placing content in the default slot of the rusx-push-button component.
      */
     @Prop() label: string = 'Push Button'
+    /**
+     * The name of the push button.
+     */
     @Prop() name: string = ''
+    /**
+     * The value of the push button.
+     */
     @Prop({ reflect: true, mutable: true }) value: string = ''
     /**
-     * Emitted when the checked property has changed.
+     * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
      */
-    @Event({ eventName: 'rux-change' })
-    ruxChange!: EventEmitter<PushButtonChangeEvent>
-
-    // @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
-
+    @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
+    /**
+     * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
+     */
     @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
 
-    // handleClick(event: MouseEvent) {
-    //     event.preventDefault()
-    //     this.checked = !this.checked
-    //     const target = event.target as HTMLInputElement
-    //     console.log('Target Value: ', target.value)
-    //     this.value = target.value
-    // }
     componentWillLoad() {
         this.onInput = this.onInput.bind(this)
-        // this.onChange = this.onChange.bind(this)
+        this.onChange = this.onChange.bind(this)
     }
 
-    @Watch('checked')
-    checkedChanged(checked: boolean) {
-        this.ruxChange.emit({ checked })
-    }
     @Element() el!: HTMLRuxPushButtonElement
 
     private onInput(e: Event) {
         const target = e.target as HTMLInputElement
-        console.log(target, 'target onInput')
         this.value = target.value
-        this.checked = target.checked
-        // console.log(
-        //     'TargetValue: ',
-        //     target.value,
-        //     'TargetChecked: ',
-        //     target.checked
-        // )
-        // this.checked = target.checked
         this.ruxInput.emit()
     }
-    // private onChange(e: Event): void {
-    //     const target = e.target as HTMLInputElement
-    //     console.log(target, 'target onChange')
-    //     this.checked = target.checked
-    //     this.ruxChange.emit(this.checked)
-    // }
+    private onChange(e: Event) {
+        const target = e.target as HTMLInputElement
+        this.checked = target.checked
+        this.ruxChange.emit(this.checked)
+    }
+
     render() {
-        const { disabled, checked, label, onInput } = this
-        if (checked) {
-            renderHiddenInput(
-                true,
-                this.el,
-                this.name,
-                this.value ? this.value : 'on',
-                this.disabled
-            )
-        } else {
-            let hiddenInput = document.querySelector('.aux-input')
-            if (hiddenInput) hiddenInput.remove()
-        }
+        const { disabled, checked, label, onInput, onChange, value } = this
+
+        renderHiddenInput(
+            true,
+            this.el,
+            this.name,
+            this.value ? this.value : 'on',
+            this.disabled,
+            this.checked
+        )
 
         return (
             <Host
@@ -111,10 +90,9 @@ export class RuxPushButton {
                     type="checkbox"
                     disabled={disabled}
                     checked={checked}
-                    // onClick={(e) => this.handleClick(e)}
                     onInput={onInput}
-                    // onChange={this.onChange}
-                    value={this.value}
+                    onChange={onChange}
+                    value={value}
                 />
                 <label
                     class="rux-push-button__button"
