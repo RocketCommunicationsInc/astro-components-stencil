@@ -42,6 +42,8 @@ export class RuxPushButton {
     @Event({ eventName: 'rux-change' })
     ruxChange!: EventEmitter<PushButtonChangeEvent>
 
+    // @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
+
     @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
 
     // handleClick(event: MouseEvent) {
@@ -53,6 +55,7 @@ export class RuxPushButton {
     // }
     componentWillLoad() {
         this.onInput = this.onInput.bind(this)
+        // this.onChange = this.onChange.bind(this)
     }
 
     @Watch('checked')
@@ -63,18 +66,21 @@ export class RuxPushButton {
 
     private onInput(e: Event) {
         const target = e.target as HTMLInputElement
+        console.log(target, 'target onInput')
         this.value = target.value
+        this.checked = target.checked
         // console.log(
         //     'TargetValue: ',
         //     target.value,
         //     'TargetChecked: ',
         //     target.checked
         // )
-        this.checked = target.checked
+        // this.checked = target.checked
         this.ruxInput.emit()
     }
     // private onChange(e: Event): void {
     //     const target = e.target as HTMLInputElement
+    //     console.log(target, 'target onChange')
     //     this.checked = target.checked
     //     this.ruxChange.emit(this.checked)
     // }
@@ -85,7 +91,7 @@ export class RuxPushButton {
                 true,
                 this.el,
                 this.name,
-                this.value,
+                this.value ? this.value : 'on',
                 this.disabled
             )
         }
@@ -104,6 +110,7 @@ export class RuxPushButton {
                     // onClick={(e) => this.handleClick(e)}
                     onInput={onInput}
                     // onChange={this.onChange}
+                    value={this.value}
                 />
                 <label
                     class="rux-push-button__button"

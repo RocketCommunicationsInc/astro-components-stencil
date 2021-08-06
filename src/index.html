@@ -25,6 +25,7 @@
                 <rux-push-button
                     name="ruxPushButton"
                     id="ruxPushButton"
+                    value="Zelda"
                 ></rux-push-button>
                 <input
                     type="checkbox"
@@ -64,6 +65,7 @@
                     const values = data.values()
 
                     for (var value of data.entries()) {
+                        console.log(value)
                         const item = document.createElement('li')
                         item.innerHTML = `<strong>${value[0]}:</strong>${value[1]}`
                         log.appendChild(item)
