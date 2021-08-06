@@ -2,7 +2,7 @@ describe('Push Button with Form', () => {
     beforeEach(() => {
         cy.visit('localhost:4444/tests/pages/form-push-button.html')
     })
-    it('submits the correct value when using a form', async () => {
+    it('submits the correct value when using a form', () => {
         // Looks like there are some issues with Cypress + clicking range inputs so this will need to be tweaked a little
         cy.get('#ruxPushButton').click()
         cy.get('#nativeCheckbox').click()

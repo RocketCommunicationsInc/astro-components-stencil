@@ -52,7 +52,6 @@ export class RuxPushButton {
         const { disabled, checked, label } = this
         return (
             <Host
-                onClick={this.handleClick}
                 aria-checked={`${checked}`}
                 aria-hidden={disabled ? 'true' : null}
                 role="switch"
