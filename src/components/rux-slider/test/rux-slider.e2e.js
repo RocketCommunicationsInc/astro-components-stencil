@@ -24,7 +24,8 @@ describe('Slider with Form', () => {
     })
 
     it('submits the default value in default state without interaction', () => {
-        cy.get('#ruxSlider').click()
+        // Added a click to the document so ruxSlider value submits (bug?)
+        cy.get('#form').click()
         cy.get('#form').submit()
         cy.get('#log').contains('ruxSlider:50')
         cy.get('#log').contains('nativeSlider:50')
