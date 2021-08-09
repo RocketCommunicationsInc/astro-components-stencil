@@ -49,17 +49,17 @@ export class RuxPushButton {
     @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
 
     componentWillLoad() {
-        this.onInput = this.onInput.bind(this)
+        // this.onInput = this.onInput.bind(this)
         this.onChange = this.onChange.bind(this)
     }
 
     @Element() el!: HTMLRuxPushButtonElement
 
-    private onInput(e: Event) {
-        const target = e.target as HTMLInputElement
-        this.value = target.value
-        this.ruxInput.emit()
-    }
+    // private onInput(e: Event) {
+    //     const target = e.target as HTMLInputElement
+    //     this.value = target.value
+    //     this.ruxInput.emit()
+    // }
     private onChange(e: Event) {
         const target = e.target as HTMLInputElement
         this.checked = target.checked
@@ -67,7 +67,7 @@ export class RuxPushButton {
     }
 
     render() {
-        const { disabled, checked, label, onInput, onChange, value } = this
+        const { disabled, checked, label, onChange, value } = this
 
         renderHiddenInput(
             true,
@@ -90,7 +90,7 @@ export class RuxPushButton {
                     type="checkbox"
                     disabled={disabled}
                     checked={checked}
-                    onInput={onInput}
+                    // onInput={onInput}
                     onChange={onChange}
                     value={value}
                 />
