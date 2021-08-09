@@ -24,15 +24,6 @@ export const config: Config = {
             type: 'docs-readme',
             strict: true,
         },
-        {
-            type: 'www',
-            serviceWorker: null, // disable service workers,
-            copy: [
-                {
-                    src: 'tests/pages',
-                },
-            ],
-        },
     ],
     plugins: [sass(), svgOptimizerPlugin()],
 }
