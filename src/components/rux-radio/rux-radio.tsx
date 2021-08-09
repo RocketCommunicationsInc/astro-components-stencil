@@ -1,12 +1,4 @@
-import {
-    Component,
-    h,
-    Prop,
-    Event,
-    EventEmitter,
-    Element,
-    Watch,
-} from '@stencil/core'
+import { Component, h, Prop, Element } from '@stencil/core'
 
 let id = 0
 
@@ -55,21 +47,7 @@ export class RuxRadio {
      */
     @Prop() required: boolean = false
 
-    /**
-     * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
-     */
-    @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
-
-    @Watch('checked')
-    handleWatch() {
-        if (this.checked) {
-            // this.getSiblingRadios().map((radio) => (radio.checked = false))
-        }
-        // this.ruxChange.emit()
-    }
-
     connectedCallback() {
-        this.handleClick = this.handleClick.bind(this)
         this.radioGroup = this.el.closest('rux-radio-group')
         this.syncFromGroup = this.syncFromGroup.bind(this)
         if (this.radioGroup) {
@@ -78,21 +56,13 @@ export class RuxRadio {
         }
     }
 
-    handleClick(ev: MouseEvent) {
-        const target = ev.target as HTMLInputElement
-        console.log(target)
-
-        // this.checked = target.checked
-    }
-
-    getSiblingRadios() {
-        if (!this.radioGroup) {
-            return []
+    disconnectedCallback() {
+        if (this.radioGroup) {
+            this.radioGroup.removeEventListener(
+                'rux-change',
+                this.syncFromGroup
+            )
         }
-        const radios = this.radioGroup.querySelectorAll('rux-radio')
-        return Array.from(radios).filter(
-            (radio) => radio !== this.el
-        ) as HTMLRuxRadioElement[]
     }
 
     syncFromGroup() {
@@ -131,7 +101,6 @@ export class RuxRadio {
                         required={required}
                         checked={checked}
                         value={value}
-                        onClick={this.handleClick}
                     />
                     <label htmlFor={radioId}>
                         <slot></slot>
