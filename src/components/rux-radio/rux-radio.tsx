@@ -14,23 +14,13 @@ export class RuxRadio {
     @Element() el!: HTMLRuxRadioElement
 
     /**
-     * The help or explanation text
-     */
-    @Prop({ attribute: 'help-text' }) helpText?: string
-
-    /**
-     * The validation error text
-     */
-    @Prop({ attribute: 'error-text' }) errorText?: string
-
-    /**
      * The radio name
      */
     @Prop() name = ''
     /**
      * The radio value
      */
-    @Prop({ reflect: true, mutable: true }) value: string = ''
+    @Prop() value: string = ''
 
     /**
      * Toggles checked state of a radio
@@ -41,11 +31,6 @@ export class RuxRadio {
      * Disables the radio via HTML disabled attribute. Radio takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
      */
     @Prop({ reflect: true }) disabled: boolean = false
-
-    /**
-     * Sets the radio as required
-     */
-    @Prop() required: boolean = false
 
     connectedCallback() {
         this.radioGroup = this.el.closest('rux-radio-group')
@@ -65,6 +50,9 @@ export class RuxRadio {
         }
     }
 
+    /**
+     * Sets checked property when the parent Radio Group value changes.
+     */
     syncFromGroup() {
         if (this.radioGroup && this.radioGroup.value) {
             this.checked = this.radioGroup.value === this.value
@@ -72,33 +60,16 @@ export class RuxRadio {
     }
 
     render() {
-        const {
-            radioId,
-            checked,
-            disabled,
-            errorText,
-            helpText,
-            name,
-            required,
-            value,
-        } = this
+        const { radioId, checked, disabled, name, value } = this
 
         return (
             <div class="rux-form-field">
-                <div
-                    class={{
-                        'rux-radio': true,
-                        'rux-radio--has-error': required,
-                        'rux-radio--has-text':
-                            errorText !== undefined || helpText !== undefined,
-                    }}
-                >
+                <div class="rux-radio">
                     <input
                         type="radio"
                         name={name}
                         id={radioId}
                         disabled={disabled}
-                        required={required}
                         checked={checked}
                         value={value}
                     />
@@ -106,11 +77,6 @@ export class RuxRadio {
                         <slot></slot>
                     </label>
                 </div>
-                {helpText && !errorText && (
-                    <div class="rux-help-text">{helpText}</div>
-                )}
-
-                {errorText && <div class="rux-error-text">{errorText}</div>}
             </div>
         )
     }

@@ -16289,21 +16289,9 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
-          * The help or explanation text
-         */
-        "helpText"?: string;
-        /**
           * The radio name
          */
         "name": string;
-        /**
-          * Sets the radio as required
-         */
-        "required": boolean;
         /**
           * The radio value
          */
@@ -40500,25 +40488,9 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
-          * The help or explanation text
-         */
-        "helpText"?: string;
-        /**
           * The radio name
          */
         "name"?: string;
-        /**
-          * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
-         */
-        "onRux-change"?: (event: CustomEvent<any>) => void;
-        /**
-          * Sets the radio as required
-         */
-        "required"?: boolean;
         /**
           * The radio value
          */
