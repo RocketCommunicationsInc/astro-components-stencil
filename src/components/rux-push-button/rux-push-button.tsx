@@ -43,23 +43,13 @@ export class RuxPushButton {
      * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
      */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
-    /**
-     * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
-     */
-    @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
 
     componentWillLoad() {
-        // this.onInput = this.onInput.bind(this)
         this.onChange = this.onChange.bind(this)
     }
 
     @Element() el!: HTMLRuxPushButtonElement
 
-    // private onInput(e: Event) {
-    //     const target = e.target as HTMLInputElement
-    //     this.value = target.value
-    //     this.ruxInput.emit()
-    // }
     private onChange(e: Event) {
         const target = e.target as HTMLInputElement
         this.checked = target.checked
@@ -90,7 +80,6 @@ export class RuxPushButton {
                     type="checkbox"
                     disabled={disabled}
                     checked={checked}
-                    // onInput={onInput}
                     onChange={onChange}
                     value={value}
                 />

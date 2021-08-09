@@ -40468,10 +40468,6 @@ declare namespace LocalJSX {
          */
         "onRux-change"?: (event: CustomEvent<any>) => void;
         /**
-          * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
-         */
-        "onRux-input"?: (event: CustomEvent<any>) => void;
-        /**
           * The value of the push button.
          */
         "value"?: string;
