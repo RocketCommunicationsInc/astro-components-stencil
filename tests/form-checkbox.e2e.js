@@ -1,6 +1,6 @@
 describe('Checkbox with Form', () => {
     beforeEach(() => {
-        cy.visit('localhost:8080/tests/pages/form-checkbox.html')
+        cy.visit('localhost:4444/tests/pages/form-checkbox.html')
     })
     it('submits the correct select value when using a form', async () => {
         cy.get('#ruxCheckbox').click()

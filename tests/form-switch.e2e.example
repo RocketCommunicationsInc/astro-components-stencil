@@ -1,6 +1,6 @@
 describe('Switch with Form', () => {
   beforeEach(() => {
-      cy.visit('localhost:8080/tests/pages/form-switch.html')
+      cy.visit('localhost:4444/tests/pages/form-switch.html')
   })
   it('submits the correct value when using a form', async () => {
       cy.get('#ruxSwitch').click()
