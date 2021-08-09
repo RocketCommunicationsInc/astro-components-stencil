@@ -17,42 +17,7 @@
         <script nomodule src="/build/astro-web-components.js"></script>
 
         <link rel="stylesheet" href="/build/astro-web-components.css" />
-        <script
-            src="https://jspm.dev/@spectrum-web-components/bundle/elements.js"
-            type="module"
-        ></script>
-        <style></style>
     </head>
 
-    <body>
-        <sp-theme scale="large" color="dark">
-            <!-- Insert content requiring theme application here. -->
-            <sp-radio-group-n name="example" vertical>
-                <sp-radio emphasized value="kittens">Kittens</sp-radio>
-                <sp-radio emphasized value="puppies" checked>Puppies</sp-radio>
-            </sp-radio-group-n>
-
-            <sp-button onclick="alert('I was clicked');">Click me!</sp-button>
-            <!-- End content requiring theme application. -->
-        </sp-theme>
-        <rux-input-field name="test"></rux-input-field>
-        <form method="POST">
-            <rux-radio-group class="grp" name="test" value="blue" label="hello">
-                <rux-radio checked name="color" value="blue"> Blue </rux-radio>
-
-                <rux-radio name="color" disabled value="green">
-                    Green
-                </rux-radio>
-
-                <rux-radio name="color" value="red"> Red </rux-radio>
-            </rux-radio-group>
-            <button type="submit">save</button>
-        </form>
-        <script>
-            const gro = document.querySelector('rux-radio-group')
-            gro.addEventListener('rux-change', (e) => {
-                console.log('heard rux change', e)
-            })
-        </script>
-    </body>
+    <body></body>
 </html>
