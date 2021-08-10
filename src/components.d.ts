@@ -32,6 +32,10 @@ export namespace Components {
           * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
          */
         "size"?: 'small' | 'large';
+        /**
+          * The button type. Use 'submit' to submit native <form> data.
+         */
+        "type": 'submit' | 'button';
     }
     interface RuxButtonGroup {
         /**
@@ -24190,6 +24194,10 @@ declare namespace LocalJSX {
           * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
          */
         "size"?: 'small' | 'large';
+        /**
+          * The button type. Use 'submit' to submit native <form> data.
+         */
+        "type"?: 'submit' | 'button';
     }
     interface RuxButtonGroup {
         /**
