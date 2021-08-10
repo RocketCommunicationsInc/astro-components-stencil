@@ -33,7 +33,7 @@ export namespace Components {
          */
         "size"?: 'small' | 'large';
         /**
-          * The button type. Use 'submit' to submit native <form> data.
+          * The button type. Use 'submit' to submit native form data.
          */
         "type": 'submit' | 'button';
     }
@@ -24195,7 +24195,7 @@ declare namespace LocalJSX {
          */
         "size"?: 'small' | 'large';
         /**
-          * The button type. Use 'submit' to submit native <form> data.
+          * The button type. Use 'submit' to submit native form data.
          */
         "type"?: 'submit' | 'button';
     }

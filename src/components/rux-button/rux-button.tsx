@@ -40,7 +40,7 @@ export class RuxButton {
     @Prop({ reflect: true }) size?: 'small' | 'large'
 
     /**
-     * The button type. Use 'submit' to submit native <form> data.
+     * The button type. Use 'submit' to submit native form data.
      */
     @Prop() type: 'submit' | 'button' = 'button'
 
