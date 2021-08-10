@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element } from '@stencil/core'
+import { Component, h, Prop, Element, Event, EventEmitter } from '@stencil/core'
 
 let id = 0
 
@@ -32,7 +32,13 @@ export class RuxRadio {
      */
     @Prop({ reflect: true }) disabled: boolean = false
 
+    /**
+     * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
+     */
+    @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
+
     connectedCallback() {
+        this.onChange = this.onChange.bind(this)
         this.radioGroup = this.el.closest('rux-radio-group')
         this.syncFromGroup = this.syncFromGroup.bind(this)
         if (this.radioGroup) {
@@ -59,6 +65,12 @@ export class RuxRadio {
         }
     }
 
+    private onChange(e: Event): void {
+        const target = e.target as HTMLInputElement
+        this.checked = target.checked
+        this.ruxChange.emit(this.checked)
+    }
+
     render() {
         const { radioId, checked, disabled, name, value } = this
 
@@ -72,6 +84,7 @@ export class RuxRadio {
                         disabled={disabled}
                         checked={checked}
                         value={value}
+                        onChange={this.onChange}
                     />
                     <label htmlFor={radioId}>
                         <slot></slot>

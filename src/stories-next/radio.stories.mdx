@@ -7,6 +7,11 @@ import { html, render } from 'lit-html'
     component="rux-radio"
     subcomponents={{ 'Rux Radio Group': 'rux-radio-group' }}
     argTypes={extractArgTypes('rux-radio')}
+        parameters={{
+       actions: {
+        handles: ['rux-change rux-radio'],
+      },
+    }}
 />
 
 # Radio
