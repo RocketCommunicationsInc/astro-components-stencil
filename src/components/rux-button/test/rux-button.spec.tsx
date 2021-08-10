@@ -9,8 +9,10 @@ describe('rux-button', () => {
         expect(button).toEqual({
             icon: null,
             iconOnly: false,
+            handleClick: expect.any(Function),
             secondary: false,
             disabled: false,
+            type: 'button',
         })
     })
 
