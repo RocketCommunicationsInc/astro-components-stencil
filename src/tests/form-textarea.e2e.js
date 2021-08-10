@@ -12,8 +12,28 @@ describe('Text Area with Form', () => {
         cy.get('#form').submit()
         cy.get('#log').contains('noval:Eyes Up')
     })
+    //Native textarea does not submit a value if disabled
     it('does not submit value if disabled', () => {
         cy.get('#form').submit()
         cy.get('#log').should('not.contain', 'Disabled')
+    })
+    it('renders error text correctly', () => {
+        cy.get('#errorText')
+            .shadow()
+            .find('.rux-error-text')
+            .should('contain.text', 'ERROR')
+    })
+    it('renders help text correctly', () => {
+        cy.get('#helpText')
+            .shadow()
+            .find('.rux-help-text')
+            .should('contain.text', 'HELP')
+    })
+    it('renders error text over help text if both are passed in', () => {
+        cy.get('#bothText')
+            .shadow()
+            .find('.rux-error-text')
+            .should('contain.text', 'PLZ YES')
+        cy.get('#bothText').shadow().find('.rux-help-text').should('not.exist')
     })
 })
