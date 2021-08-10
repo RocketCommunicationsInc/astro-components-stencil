@@ -41,6 +41,23 @@ describe('Radio Group with Form', () => {
             })
 
         cy.get('#form').submit()
-        cy.get('#log').should('not.contain', 'ruxRadioPurpleDisabled')
+        cy.get('#log').should('not.contain', 'ruxColor:purple')
+    })
+
+    it('does not submit value if disabled', () => {
+        cy.get('#ruxRadioRed2').shadow().find('input').should('be.disabled')
+        cy.get('#ruxRadioRed2')
+            .shadow()
+            .find('input')
+            .should('not.be', 'checked')
+        cy.get('#ruxRadioRed2')
+            .shadow()
+            .find('input')
+            .then(($input) => {
+                $input.checked = false
+            })
+
+        cy.get('#form-checked-disabled').submit()
+        cy.get('#log').should('not.contain', 'ruxColor:red')
     })
 })

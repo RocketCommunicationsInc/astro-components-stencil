@@ -71,9 +71,22 @@ export class RuxRadioGroup {
         }
     }
 
+    selectedRadioIsDisabled(): boolean {
+        const radio = this.el.querySelector(
+            `rux-radio[value="${this.value}"]`
+        ) as HTMLRuxRadioElement
+        return radio && radio.disabled
+    }
+
     render() {
         if (this.value) {
-            renderHiddenInput(true, this.el, this.name, this.value, false)
+            renderHiddenInput(
+                true,
+                this.el,
+                this.name,
+                this.value,
+                this.selectedRadioIsDisabled()
+            )
         }
         return (
             <Host onClick={this.handleClick}>
