@@ -106,15 +106,14 @@ export class RuxCheckbox {
             value,
         } = this
 
-        if (this.checked) {
-            renderHiddenInput(
-                true,
-                this.el,
-                this.name,
-                this.value ? this.value : 'on',
-                this.disabled
-            )
-        }
+        renderHiddenInput(
+            true,
+            this.el,
+            this.name,
+            this.value ? this.value : 'on',
+            this.disabled,
+            this.checked
+        )
 
         return (
             <div class="rux-form-field">

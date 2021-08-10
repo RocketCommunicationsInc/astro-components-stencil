@@ -49,4 +49,11 @@ describe('Checkbox with Form', () => {
         cy.get('#form').submit()
         cy.get('#log').should('not.contain', 'ruxCheckboxDisabled')
     })
+
+    it('does not submit a value if checked and then unchecked', () => {
+        cy.get('#ruxCheckbox').shadow().find('input').click({ force: true })
+        cy.get('#ruxCheckbox').shadow().find('input').click({ force: true })
+        cy.get('#form').submit()
+        cy.get('#log').should('not.contain', 'ruxCheckbox')
+    })
 })
