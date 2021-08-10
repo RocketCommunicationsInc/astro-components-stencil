@@ -34,4 +34,20 @@ describe('Select with Form', () => {
         cy.get('#form').submit()
         cy.get('#log').should('not.contain', 'bestThing:green')
     })
+
+    //only required while shadow dom is disabled for rux-select
+    it('should show native validation message if required and submitted with no selection', () => {
+        cy.get('#ruxSelect').then(($ruxSelect) => {
+            $ruxSelect[0].setAttribute('required', true)
+        })
+        cy.get('[type="submit"]').click().click()
+        cy.get('#ruxSelect').find('select:invalid').should('have.length', 1)
+        cy.get('#ruxSelect')
+            .find('select')
+            .then(($select) => {
+                expect($select[0].validationMessage).to.eq(
+                    'Please select an item in the list.'
+                )
+            })
+    })
 })
