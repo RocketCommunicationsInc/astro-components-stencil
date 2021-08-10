@@ -62,6 +62,15 @@ export class RuxRadio {
     render() {
         const { radioId, checked, disabled, name, value } = this
 
+        if (this.checked) {
+            renderHiddenInput(
+                true,
+                this.el,
+                this.name,
+                this.value ? this.value : 'on',
+                this.disabled
+            )
+        }
         return (
             <div class="rux-form-field">
                 <div class="rux-radio">
