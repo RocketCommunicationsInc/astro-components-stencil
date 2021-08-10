@@ -1,3 +1,10 @@
+describe('Radio Group', () => {
+    it('renders', () => {
+        cy.visitStory('components-radio-group--default-story')
+        cy.get('rux-radio-group').should('have.class', 'hydrated')
+    })
+})
+
 describe('Radio Group with Form', () => {
     beforeEach(() => {
         cy.visit('localhost:4444/tests/pages/form-radio.html')
