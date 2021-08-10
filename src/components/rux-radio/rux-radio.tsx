@@ -6,7 +6,9 @@ import {
     EventEmitter,
     Element,
     Listen,
+    Watch,
 } from '@stencil/core'
+import { renderHiddenInput } from '../../utils/utils'
 
 let id = 0
 
@@ -84,9 +86,27 @@ export class RuxRadio {
         }
     }
 
+    @Watch('checked')
+    handleWatch() {
+        this.checkMultipleChecks()
+    }
+
+    checkMultipleChecks() {
+        const radioSiblings = document.querySelectorAll(
+            `rux-radio[name='${this.el.getAttribute('name')}']`
+        )
+        if (this.checked) {
+            radioSiblings.forEach((sib) => {
+                if (sib.getAttribute('value') != this.value) {
+                    sib.removeAttribute('checked')
+                }
+            })
+        }
+    }
     componentWillLoad() {
         this.onChange = this.onChange.bind(this)
         this.onInput = this.onInput.bind(this)
+        this.checkMultipleChecks()
     }
 
     private onChange(e: Event): void {
@@ -115,6 +135,15 @@ export class RuxRadio {
             onInput,
         } = this
 
+        if (this.checked) {
+            renderHiddenInput(
+                true,
+                this.el,
+                this.name,
+                this.value ? this.value : 'on',
+                this.disabled
+            )
+        }
         return (
             <div class="rux-form-field">
                 <div
