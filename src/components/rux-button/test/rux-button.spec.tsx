@@ -7,7 +7,6 @@ describe('rux-button', () => {
 
         expect(button).toBeTruthy()
         expect(button).toEqual({
-            icon: null,
             iconOnly: false,
             handleClick: expect.any(Function),
             secondary: false,

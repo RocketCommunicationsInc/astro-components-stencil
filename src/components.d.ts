@@ -9,7 +9,6 @@ import { Classification, Status } from "./common/commonTypes.module";
 import { LogRow } from "./components/rux-log/rux-log.model";
 import { RangeItem } from "./components/rux-monitoring-progress-icon/rux-monitoring-progress-icon";
 import { SegmentedButton } from "./components/rux-segmented-button/rux-segmented-button.model";
-import { SwitchChangeEvent } from "./components/rux-switch/rux-switch.model";
 export namespace Components {
     interface RuxButton {
         /**
@@ -17,9 +16,9 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+          * For a [button style guide, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
          */
-        "icon"?: string | null;
+        "icon"?: string;
         /**
           * Hides slotted text from the button by setting rux-button--icon-only class
          */
@@ -31,11 +30,7 @@ export namespace Components {
         /**
           * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
          */
-        "size"?: 'small' | 'large';
-        /**
-          * The button type. Use 'submit' to submit native form data.
-         */
-        "type": 'submit' | 'button';
+        "size"?: 'small' | 'medium' | 'large';
     }
     interface RuxButtonGroup {
         /**
@@ -16300,6 +16295,16 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
+          * The radio name
+         */
+        "name": string;
+        /**
+          * The radio value
+         */
+        "value": string;
+    }
+    interface RuxRadioGroup {
+        /**
           * The validation error text
          */
         "errorText"?: string;
@@ -16308,17 +16313,21 @@ export namespace Components {
          */
         "helpText"?: string;
         /**
-          * The radio name
+          * Marks the radio group as invalid
+         */
+        "invalid": boolean;
+        /**
+          * The label of the radio group
+         */
+        "label"?: string;
+        /**
+          * The name of the radio group - submitted with form data. Must match the name of the radios in the group.
          */
         "name": string;
         /**
-          * Sets the radio as required
+          * The value of the current selected radio in the group. Changing this will also mark that radio as checked in the UI.
          */
-        "required": boolean;
-        /**
-          * The radio value
-         */
-        "value": string;
+        "value"?: any | null;
     }
     interface RuxSegmentedButton {
         /**
@@ -16390,17 +16399,33 @@ export namespace Components {
     }
     interface RuxSwitch {
         /**
-          * Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.
+          * Toggles checked state of a switch
          */
         "checked": boolean;
         /**
-          * Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
+          * Disables the switch via HTML disabled attribute. Switch takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
         "disabled": boolean;
         /**
-          * The name of the form input element
+          * The validation error text
          */
-        "name"?: string;
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * The switch name
+         */
+        "name": string;
+        /**
+          * Sets the switch as required
+         */
+        "required": boolean;
+        /**
+          * The switch value
+         */
+        "value": string;
     }
     interface RuxTab {
         /**
@@ -22962,6 +22987,12 @@ declare global {
         prototype: HTMLRuxRadioElement;
         new (): HTMLRuxRadioElement;
     };
+    interface HTMLRuxRadioGroupElement extends Components.RuxRadioGroup, HTMLStencilElement {
+    }
+    var HTMLRuxRadioGroupElement: {
+        prototype: HTMLRuxRadioGroupElement;
+        new (): HTMLRuxRadioGroupElement;
+    };
     interface HTMLRuxSegmentedButtonElement extends Components.RuxSegmentedButton, HTMLStencilElement {
     }
     var HTMLRuxSegmentedButtonElement: {
@@ -24151,6 +24182,7 @@ declare global {
         "rux-progress": HTMLRuxProgressElement;
         "rux-push-button": HTMLRuxPushButtonElement;
         "rux-radio": HTMLRuxRadioElement;
+        "rux-radio-group": HTMLRuxRadioGroupElement;
         "rux-segmented-button": HTMLRuxSegmentedButtonElement;
         "rux-select": HTMLRuxSelectElement;
         "rux-slider": HTMLRuxSliderElement;
@@ -24179,9 +24211,9 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+          * For a [button style guide, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
          */
-        "icon"?: string | null;
+        "icon"?: string;
         /**
           * Hides slotted text from the button by setting rux-button--icon-only class
          */
@@ -24193,11 +24225,7 @@ declare namespace LocalJSX {
         /**
           * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
          */
-        "size"?: 'small' | 'large';
-        /**
-          * The button type. Use 'submit' to submit native form data.
-         */
-        "type"?: 'submit' | 'button';
+        "size"?: 'small' | 'medium' | 'large';
     }
     interface RuxButtonGroup {
         /**
@@ -40490,14 +40518,6 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
-          * The help or explanation text
-         */
-        "helpText"?: string;
-        /**
           * The radio name
          */
         "name"?: string;
@@ -40506,17 +40526,36 @@ declare namespace LocalJSX {
          */
         "onRux-change"?: (event: CustomEvent<any>) => void;
         /**
-          * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
-         */
-        "onRux-input"?: (event: CustomEvent<any>) => void;
-        /**
-          * Sets the radio as required
-         */
-        "required"?: boolean;
-        /**
           * The radio value
          */
         "value"?: string;
+    }
+    interface RuxRadioGroup {
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Marks the radio group as invalid
+         */
+        "invalid"?: boolean;
+        /**
+          * The label of the radio group
+         */
+        "label"?: string;
+        /**
+          * The name of the radio group - submitted with form data. Must match the name of the radios in the group.
+         */
+        "name"?: string;
+        "onRux-change"?: (event: CustomEvent<any>) => void;
+        /**
+          * The value of the current selected radio in the group. Changing this will also mark that radio as checked in the UI.
+         */
+        "value"?: any | null;
     }
     interface RuxSegmentedButton {
         /**
@@ -40600,21 +40639,41 @@ declare namespace LocalJSX {
     }
     interface RuxSwitch {
         /**
-          * Checks the button via HTML `checked` attribute. Button takes on a distinct "enabled" or "selected" visual state.
+          * Toggles checked state of a switch
          */
         "checked"?: boolean;
         /**
-          * Disables the button via HTML `disabled` attribute. Button takes on a distinct visual state. Cursor uses the `not-allowed` system replacement and all keyboard and mouse events are ignored.
+          * Disables the switch via HTML disabled attribute. Switch takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
         "disabled"?: boolean;
         /**
-          * The name of the form input element
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * The switch name
          */
         "name"?: string;
         /**
-          * Emitted when the value property has changed.
+          * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
          */
-        "onRux-change"?: (event: CustomEvent<SwitchChangeEvent>) => void;
+        "onRux-change"?: (event: CustomEvent<any>) => void;
+        /**
+          * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+         */
+        "onRux-input"?: (event: CustomEvent<any>) => void;
+        /**
+          * Sets the switch as required
+         */
+        "required"?: boolean;
+        /**
+          * The switch value
+         */
+        "value"?: string;
     }
     interface RuxTab {
         /**
@@ -41811,6 +41870,7 @@ declare namespace LocalJSX {
         "rux-progress": RuxProgress;
         "rux-push-button": RuxPushButton;
         "rux-radio": RuxRadio;
+        "rux-radio-group": RuxRadioGroup;
         "rux-segmented-button": RuxSegmentedButton;
         "rux-select": RuxSelect;
         "rux-slider": RuxSlider;
@@ -42910,6 +42970,7 @@ declare module "@stencil/core" {
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-push-button": LocalJSX.RuxPushButton & JSXBase.HTMLAttributes<HTMLRuxPushButtonElement>;
             "rux-radio": LocalJSX.RuxRadio & JSXBase.HTMLAttributes<HTMLRuxRadioElement>;
+            "rux-radio-group": LocalJSX.RuxRadioGroup & JSXBase.HTMLAttributes<HTMLRuxRadioGroupElement>;
             "rux-segmented-button": LocalJSX.RuxSegmentedButton & JSXBase.HTMLAttributes<HTMLRuxSegmentedButtonElement>;
             "rux-select": LocalJSX.RuxSelect & JSXBase.HTMLAttributes<HTMLRuxSelectElement>;
             "rux-slider": LocalJSX.RuxSlider & JSXBase.HTMLAttributes<HTMLRuxSliderElement>;
