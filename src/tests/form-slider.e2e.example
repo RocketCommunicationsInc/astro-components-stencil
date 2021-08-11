@@ -2,7 +2,7 @@ describe('Slider with Form', () => {
     beforeEach(() => {
         cy.visitForm('slider')
     })
-    it('submits the correct value when using a form', async () => {
+    it('submits the correct value when using a form', () => {
         // Looks like there are some issues with Cypress + clicking range inputs so this will need to be tweaked a little
         cy.get('#ruxSlider').click()
         cy.get('#nativeSlider').click()

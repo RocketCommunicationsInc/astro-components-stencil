@@ -2,7 +2,7 @@ describe('Radio with Form', () => {
     beforeEach(() => {
         cy.visitForm('radio')
     })
-    it('submits the correct value when using a form', async () => {
+    it('submits the correct value when using a form', () => {
         cy.get('#ruxRadioBlue').click()
         cy.get('#nativeRadioBlue').click()
         cy.get('#form').submit()
