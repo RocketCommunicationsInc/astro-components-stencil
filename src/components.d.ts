@@ -31,7 +31,7 @@ export namespace Components {
         /**
           * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
          */
-        "size": 'small' | 'medium' | 'large';
+        "size"?: 'small' | 'medium' | 'large';
     }
     interface RuxButtonGroup {
         /**

@@ -35,7 +35,7 @@ export class RuxButton {
      * rux-button--small
      * rux-button--large
      */
-    @Prop({ reflect: true }) size: 'small' | 'medium' | 'large' = 'medium'
+    @Prop({ reflect: true }) size?: 'small' | 'medium' | 'large'
 
     render() {
         const { size, iconOnly, secondary, disabled, icon } = this
