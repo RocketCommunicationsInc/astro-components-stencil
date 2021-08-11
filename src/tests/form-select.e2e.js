@@ -2,7 +2,7 @@ describe('Select with Form', () => {
     beforeEach(() => {
         cy.visit('localhost:4444/tests/pages/form-select.html')
     })
-    it(' should submit the correct value when using a form', () => {
+    it('should submit the correct value when selecting an option', () => {
         cy.get('#ruxSelect')
             .find('select')
             .select('blue')
@@ -11,7 +11,23 @@ describe('Select with Form', () => {
         cy.get('#log').contains('bestThing:blue')
     })
 
-    it(' should default to the option with no value', () => {
+    it('should submit the correct value when typing an option after focus', () => {
+        cy.get('#ruxSelect').find('select').realPress('Tab').realType('r')
+        cy.get('#ruxSelect').find('select').type('{enter}')
+        cy.get('#log').should('contain', 'bestThing:red')
+    })
+
+    it('should submit the correct value when selecting by arrow keys after focus', () => {
+        cy.get('#ruxSelect')
+            .find('select')
+            .realPress('Tab')
+            .realPress('ArrowDown', { delay: 200 })
+            .realType('b')
+        cy.get('#ruxSelect').find('select').type('{enter}')
+        cy.get('#log').should('contain', 'bestThing:blue')
+    })
+
+    it('should default to the option with no value', () => {
         cy.get('#ruxSelect').find('select').should('have.value', '')
     })
 
@@ -40,7 +56,7 @@ describe('Select with Form', () => {
         cy.get('#ruxSelect').then(($ruxSelect) => {
             $ruxSelect[0].setAttribute('required', true)
         })
-        cy.get('[type="submit"]').click().click()
+        cy.get('[type="submit"]').realClick()
         cy.get('#ruxSelect').find('select:invalid').should('have.length', 1)
         cy.get('#ruxSelect')
             .find('select')
