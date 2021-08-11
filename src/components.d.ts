@@ -17,9 +17,9 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+          * For a [button style guide, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
          */
-        "icon"?: string | null;
+        "icon"?: string;
         /**
           * Hides slotted text from the button by setting rux-button--icon-only class
          */
@@ -31,7 +31,7 @@ export namespace Components {
         /**
           * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
          */
-        "size"?: 'small' | 'large';
+        "size": 'small' | 'medium' | 'large';
     }
     interface RuxButtonGroup {
         /**
@@ -24175,9 +24175,9 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * For a [button styleguid, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+          * For a [button style guide, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
          */
-        "icon"?: string | null;
+        "icon"?: string;
         /**
           * Hides slotted text from the button by setting rux-button--icon-only class
          */
@@ -24189,7 +24189,7 @@ declare namespace LocalJSX {
         /**
           * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
          */
-        "size"?: 'small' | 'large';
+        "size"?: 'small' | 'medium' | 'large';
     }
     interface RuxButtonGroup {
         /**
