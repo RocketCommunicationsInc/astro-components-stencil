@@ -1,6 +1,6 @@
 describe('Push Button with Form', () => {
     beforeEach(() => {
-        cy.visit('localhost:4444/tests/pages/form-push-button.html')
+        cy.visitForm('push-button')
     })
     it('submits the correct value when using a form', () => {
         // Looks like there are some issues with Cypress + clicking range inputs so this will need to be tweaked a little

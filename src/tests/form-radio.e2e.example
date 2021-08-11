@@ -1,6 +1,6 @@
 describe('Radio with Form', () => {
     beforeEach(() => {
-        cy.visit('localhost:4444/tests/pages/form-radio.html')
+        cy.visitForm('radio')
     })
     it('submits the correct value when using a form', async () => {
         cy.get('#ruxRadioBlue').click()
