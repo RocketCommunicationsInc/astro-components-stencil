@@ -62,14 +62,7 @@ export class RuxModal {
     // close modal if click happens outside of dialog
     @Listen('click', { target: 'window' })
     handleClick(ev: MouseEvent) {
-        console.log('handleClick called', this.element)
-
-        const wrapper: HTMLElement = this.element.shadowRoot
-            ?.children[1] as HTMLElement
-
-        console.log('wrapper', wrapper)
-        console.log('ev.composedPath()[0]', ev.composedPath()[0])
-        console.log('compare', ev.composedPath()[0] === wrapper)
+        const wrapper = this._getWrapper()
 
         if (ev.composedPath()[0] === wrapper) {
             this.ruxModalClosed.emit(false)
@@ -107,6 +100,18 @@ export class RuxModal {
             return defaultButton
         }
 
+        return null
+    }
+
+    private _getWrapper(): HTMLElement | null {
+        const wrapperSet = this.element?.shadowRoot?.querySelectorAll(
+            '.rux-modal__wrapper'
+        ) as NodeListOf<HTMLElement>
+
+        if (wrapperSet.length > 0) {
+            const defaultButton = wrapperSet[0]
+            return defaultButton
+        }
         return null
     }
 
