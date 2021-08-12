@@ -49,7 +49,7 @@ export class RuxModal {
     @Element() private element!: HTMLRuxModalElement
 
     // confirm dialog if Enter key is pressed
-    @Listen('keydown')
+    @Listen('keydown', { target: 'window' })
     handleKeyDown(ev: KeyboardEvent) {
         if (ev.key === 'Enter') {
             const button = this._getDefaultButton()
