@@ -63,8 +63,14 @@ export class RuxModal {
     @Listen('click', { target: 'window' })
     handleClick(ev: MouseEvent) {
         console.log('handleClick called')
+
         const wrapper: HTMLElement = this.element?.shadowRoot
             ?.children[1] as HTMLElement
+
+        console.log('wrapper', wrapper)
+        console.log('ev.composedPath()[0]', ev.composedPath()[0])
+        console.log('compare', ev.composedPath()[0] === wrapper)
+
         if (ev.composedPath()[0] === wrapper) {
             this.ruxModalClosed.emit(false)
             this.open = false
