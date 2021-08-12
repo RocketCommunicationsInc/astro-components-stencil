@@ -64,7 +64,7 @@ export class RuxModal {
     handleClick(ev: MouseEvent) {
         console.log('handleClick called', this.element)
 
-        const wrapper: HTMLElement = this.element?.shadowRoot
+        const wrapper: HTMLElement = this.element.shadowRoot
             ?.children[1] as HTMLElement
 
         console.log('wrapper', wrapper)
