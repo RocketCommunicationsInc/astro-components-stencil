@@ -46,7 +46,7 @@ export class RuxModal {
     })
     ruxModalClosed!: EventEmitter<boolean>
 
-    @Element() private element!: HTMLRuxModalElement
+    @Element() element!: HTMLRuxModalElement
 
     // confirm dialog if Enter key is pressed
     @Listen('keydown', { target: 'window' })
@@ -62,7 +62,7 @@ export class RuxModal {
     // close modal if click happens outside of dialog
     @Listen('click', { target: 'window' })
     handleClick(ev: MouseEvent) {
-        console.log('handleClick called')
+        console.log('handleClick called', this.element)
 
         const wrapper: HTMLElement = this.element?.shadowRoot
             ?.children[1] as HTMLElement
