@@ -15,6 +15,7 @@ describe('Push Button with Form', () => {
         cy.get('#log').should('not.contain', 'ruxPushButton')
     })
     it('does not submit a value if checked and then unchecked', () => {
+        cy.get('#nativeCheckbox').click()
         cy.get('#ruxPushButton').shadow().find('input').click({ force: true })
         cy.get('#ruxPushButton').shadow().find('input').click({ force: true })
         cy.get('#form').submit()
