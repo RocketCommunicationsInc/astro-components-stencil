@@ -104,13 +104,12 @@ export class RuxModal {
     }
 
     private _getWrapper(): HTMLElement | null {
-        const wrapperSet = this.element?.shadowRoot?.querySelectorAll(
+        const wrapper = this.element?.shadowRoot?.querySelector(
             '.rux-modal__wrapper'
-        ) as NodeListOf<HTMLElement>
+        ) as HTMLElement
 
-        if (wrapperSet.length > 0) {
-            const defaultButton = wrapperSet[0]
-            return defaultButton
+        if (wrapper) {
+            return wrapper
         }
         return null
     }
