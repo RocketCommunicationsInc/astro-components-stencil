@@ -17,18 +17,55 @@
         <script nomodule src="/build/astro-web-components.js"></script>
 
         <link rel="stylesheet" href="/build/astro-web-components.css" />
+        <style>
+            #form > div:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        </style>
     </head>
 
     <body class="dark-theme">
         <div style="padding: 10%; display: flex; justify-content: center">
             <form id="form">
-                <rux-input-field
-                    label="Input Field"
-                    id="ruxInput"
-                    name="ruxInput"
-                >
-                </rux-input-field>
-                <input type="text" id="nativeInput" name="nativeInput" />
+                <div>
+                    <rux-input-field
+                        label="Input Field"
+                        id="ruxInput"
+                        name="ruxInput"
+                    >
+                    </rux-input-field>
+                    <input type="text" id="nativeInput" name="nativeInput" />
+                </div>
+
+                <div>
+                    <rux-input-field
+                        label="Disabled with value"
+                        id="ruxInput"
+                        name="ruxInput"
+                        value="Hello World"
+                        disabled
+                    >
+                    </rux-input-field>
+                    <input
+                        type="text"
+                        id="nativeInput"
+                        name="nativeInput"
+                        value="Hello World"
+                        disabled
+                    />
+                </div>
+
+                <div>
+                    <rux-input-field
+                        label="Required"
+                        id="ruxInput3"
+                        name="ruxInput3"
+                        required
+                        help-text="Test Help Text"
+                    >
+                    </rux-input-field>
+                    <input type="text" id="nativeInput3" name="nativeInput3" />
+                </div>
 
                 <button type="submit">submit</button>
             </form>
@@ -43,6 +80,7 @@
                 })
                 form.addEventListener('formdata', (e) => {
                     log.innerHTML = ''
+                    console.log('formData', e.formData)
                     // Get the form data from the event object
                     let data = e.formData
                     const values = data.values()
