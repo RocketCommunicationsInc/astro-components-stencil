@@ -60,9 +60,10 @@ export class RuxModal {
     }
 
     // close modal if click happens outside of dialog
-    @Listen('click')
+    @Listen('click', { target: 'window' })
     handleClick(ev: MouseEvent) {
-        const wrapper = this.element?.shadowRoot?.children[1]
+        const wrapper: HTMLElement = this.element?.shadowRoot
+            ?.children[1] as HTMLElement
         if (ev.composedPath()[0] === wrapper) {
             this.ruxModalClosed.emit(false)
             this.open = false
