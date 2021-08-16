@@ -1,6 +1,7 @@
 describe('Text Area with Form', () => {
     beforeEach(() => {
         cy.visitForm('textarea')
+        cy.get('#form').click()
     })
     it('submits the correct value when using a form', () => {
         cy.get('#formSumbitBtn').click()
