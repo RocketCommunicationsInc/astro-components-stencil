@@ -11,7 +11,7 @@ describe('Input Field with Form', () => {
     const testString = 'Hello World'
 
     beforeEach(() => {
-        cy.visit('localhost:4444/tests/pages/form-input-field.html')
+        cy.visitForm('input-field')
     })
 
     it('submits the correct value when using a form', async () => {
