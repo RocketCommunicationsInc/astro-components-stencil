@@ -11,7 +11,7 @@ describe('rux-slider', () => {
 
 describe('Slider with Form', () => {
     beforeEach(() => {
-        cy.visit('localhost:3333/tests/pages/form-slider.html')
+        cy.visitForm('slider')
     })
     it('submits the correct value when using a form', () => {
         // Unable to get positioning to work with click to change the value of either input.
