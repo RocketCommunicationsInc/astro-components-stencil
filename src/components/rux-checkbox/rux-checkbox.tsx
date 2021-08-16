@@ -1,4 +1,5 @@
 import { Component, h, Prop, Event, EventEmitter, Element } from '@stencil/core'
+import { renderHiddenInput } from '../../utils/utils'
 
 let id = 0
 
@@ -51,11 +52,6 @@ export class RuxCheckbox {
     @Prop() required: boolean = false
 
     /**
-     * Sets the input as invalid
-     */
-    @Prop() invalid: boolean = false
-
-    /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
@@ -105,18 +101,25 @@ export class RuxCheckbox {
             disabled,
             errorText,
             helpText,
-            invalid,
             name,
             required,
             value,
         } = this
+
+        renderHiddenInput(
+            true,
+            this.el,
+            this.name,
+            this.value ? this.value : 'on',
+            this.disabled,
+            this.checked
+        )
 
         return (
             <div class="rux-form-field">
                 <div
                     class={{
                         'rux-checkbox': true,
-                        'rux-checkbox--invalid': invalid,
                         'rux-checkbox--has-error': required,
                         'rux-checkbox--has-text':
                             errorText !== undefined || helpText !== undefined,
