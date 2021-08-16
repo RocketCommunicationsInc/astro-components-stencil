@@ -3,7 +3,7 @@ describe('Text Area with Form', () => {
         cy.visitForm('textarea')
     })
     it('submits the correct value when using a form', () => {
-        cy.get('#form').submit()
+        cy.get('#formSumbitBtn').click()
         cy.get('#log').contains('test1:TextArea Test 1')
         cy.get('#log').contains('native:Native Text Area')
     })
