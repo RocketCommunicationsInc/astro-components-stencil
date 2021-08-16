@@ -1,6 +1,6 @@
 describe('Text Area with Form', () => {
     beforeEach(() => {
-        cy.visit('localhost:4444/tests/pages/form-textarea.html')
+        cy.visitForm('textarea')
     })
     it('submits the correct value when using a form', async () => {
         await cy.get('#form').submit()
