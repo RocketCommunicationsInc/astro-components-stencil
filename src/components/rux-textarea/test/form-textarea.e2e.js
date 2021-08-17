@@ -4,6 +4,7 @@ describe('Text Area with Form', () => {
         cy.get('#form').click()
     })
     it('submits the correct value when using a form', () => {
+        cy.get('#textarea1').shadow().find('textarea').type('TextArea Test 1')
         cy.get('#formSumbitBtn').click()
         cy.get('#log').contains('test1:TextArea Test 1')
         cy.get('#log').contains('native:Native Text Area')
