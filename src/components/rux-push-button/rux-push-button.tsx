@@ -49,12 +49,12 @@ export class RuxPushButton {
     @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
 
     componentWillLoad() {
-        this.onChange = this.onChange.bind(this)
+        this._onChange = this._onChange.bind(this)
     }
 
     @Element() el!: HTMLRuxPushButtonElement
 
-    private onChange(e: Event) {
+    private _onChange(e: Event) {
         const target = e.target as HTMLInputElement
         this.checked = target.checked
         this.ruxChange.emit(this.checked)
@@ -65,7 +65,7 @@ export class RuxPushButton {
     }
 
     render() {
-        const { disabled, checked, label, onChange, value } = this
+        const { disabled, checked, label, _onChange, value, _onBlur } = this
 
         renderHiddenInput(
             true,
@@ -88,8 +88,8 @@ export class RuxPushButton {
                     type="checkbox"
                     disabled={disabled}
                     checked={checked}
-                    onChange={onChange}
-                    onBlur={() => this._onBlur()}
+                    onChange={_onChange}
+                    onBlur={() => _onBlur()}
                     value={value}
                 />
                 <label
