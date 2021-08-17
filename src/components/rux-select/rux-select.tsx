@@ -48,6 +48,16 @@ export class RuxSelect {
     @Event({ eventName: 'rux-change' })
     ruxSelectChanged!: EventEmitter<void>
 
+    /**
+     * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
+     */
+    @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
+
+    private _onBlur = () => {
+        console.log('h')
+        this.ruxBlur.emit()
+    }
+
     render() {
         const {
             disabled,
@@ -75,6 +85,7 @@ export class RuxSelect {
                     required={required}
                     name={name}
                     onChange={() => this.ruxSelectChanged.emit()}
+                    onBlur={() => this._onBlur()}
                 >
                     <slot></slot>
                 </select>
