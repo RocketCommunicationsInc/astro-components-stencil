@@ -21,8 +21,24 @@
 
     <body>
         <div style="padding: 5%">
+            <rux-push-button id="push"></rux-push-button>
             <rux-checkbox></rux-checkbox>
-            <rux-input-field></rux-input-field>
+            <br /> 
+            <rux-textarea></rux-textarea>
+            <input id="native" type="checkbox"></input>
         </div>
+        <script>
+            let native = document.getElementById('native');
+            let push = document.getElementById('push');
+            native.addEventListener('blur', (event) => {
+                console.log('BLUr EVENT')
+            })
+            native.addEventListener('focus', (event) => {
+                console.log('focus eve')
+            })
+            push.addEventListener('blur', (event) => {
+                console.log('push blur');
+            })
+        </script>
     </body>
 </html>

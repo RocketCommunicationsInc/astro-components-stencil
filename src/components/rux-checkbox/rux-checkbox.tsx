@@ -63,13 +63,13 @@ export class RuxCheckbox {
     /**
      * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
      */
-    @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
+    @Event() ruxBlur!: EventEmitter<void>
 
     constructor() {}
 
     componentWillLoad() {
-        this.onChange = this.onChange.bind(this)
-        this.onInput = this.onInput.bind(this)
+        this._onChange = this._onChange.bind(this)
+        this._onInput = this._onInput.bind(this)
     }
 
     componentDidLoad() {
@@ -86,19 +86,19 @@ export class RuxCheckbox {
         }
     }
 
-    private onChange(e: Event): void {
+    private _onChange(e: Event): void {
         const target = e.target as HTMLInputElement
         this.checked = target.checked
         this.ruxChange.emit(this.checked)
     }
 
-    private onInput(e: Event) {
+    private _onInput(e: Event) {
         const target = e.target as HTMLInputElement
         this.value = target.value
         this.ruxInput.emit()
     }
 
-    private onBlur = () => {
+    private _onBlur = () => {
         this.ruxBlur.emit()
     }
 
@@ -141,9 +141,9 @@ export class RuxCheckbox {
                         required={required}
                         checked={checked}
                         value={value}
-                        onChange={this.onChange}
-                        onInput={this.onInput}
-                        onBlur={() => this.onBlur()}
+                        onChange={this._onChange}
+                        onInput={this._onInput}
+                        onBlur={() => this._onBlur()}
                     />
                     <label htmlFor={checkboxId}>
                         <slot></slot>

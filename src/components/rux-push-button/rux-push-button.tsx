@@ -43,6 +43,10 @@ export class RuxPushButton {
      * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
      */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
+    /**
+     * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
+     */
+    @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
 
     componentWillLoad() {
         this.onChange = this.onChange.bind(this)
@@ -54,6 +58,10 @@ export class RuxPushButton {
         const target = e.target as HTMLInputElement
         this.checked = target.checked
         this.ruxChange.emit(this.checked)
+    }
+
+    private _onBlur = () => {
+        this.ruxBlur.emit()
     }
 
     render() {
@@ -81,6 +89,7 @@ export class RuxPushButton {
                     disabled={disabled}
                     checked={checked}
                     onChange={onChange}
+                    onBlur={() => this._onBlur()}
                     value={value}
                 />
                 <label

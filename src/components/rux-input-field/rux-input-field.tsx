@@ -118,7 +118,7 @@ export class RuxInputField {
         this.ruxInput.emit()
     }
 
-    private onBlur = () => {
+    private _onBlur = () => {
         this.ruxBlur.emit()
     }
 
@@ -157,7 +157,7 @@ export class RuxInputField {
                         id={this.inputId}
                         onChange={this.onChange}
                         onInput={this.onInput}
-                        onBlur={() => this.onBlur()}
+                        onBlur={() => this._onBlur()}
                     ></input>
                 </div>
 
