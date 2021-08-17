@@ -138,7 +138,7 @@ export class RuxPopUpMenu {
     }
 
     @Listen('rux-menu-item-selected')
-    handleListen(e: CustomEvent) {
+    handleListen() {
         this.open = false
     }
 
