@@ -76,6 +76,7 @@ export class RuxRadio {
     }
 
     private _onBlur = () => {
+        console.log('emit')
         this.ruxBlur.emit()
     }
 
