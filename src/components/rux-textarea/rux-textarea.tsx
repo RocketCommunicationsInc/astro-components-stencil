@@ -100,17 +100,17 @@ export class RuxTextarea {
     @Element() el!: HTMLRuxTextareaElement
 
     connectedCallback() {
-        this.onChange = this.onChange.bind(this)
-        this.onInput = this.onInput.bind(this)
+        this._onChange = this._onChange.bind(this)
+        this._onInput = this._onInput.bind(this)
     }
 
-    onChange(e: Event) {
+    private _onChange(e: Event) {
         const target = e.target as HTMLInputElement
         this.value = target.value
         this.ruxChange.emit()
     }
 
-    onInput(e: Event) {
+    private _onInput(e: Event) {
         const target = e.target as HTMLInputElement
         this.value = target.value
         this.ruxInput.emit()
@@ -149,8 +149,8 @@ export class RuxTextarea {
                         }}
                         id={this.inputId}
                         rows={this.rows}
-                        onChange={this.onChange}
-                        onInput={this.onInput}
+                        onChange={this._onChange}
+                        onInput={this._onInput}
                         onBlur={() => this._onBlur()}
                     ></textarea>
                 </div>
