@@ -60,6 +60,10 @@ export class RuxCheckbox {
      * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
      */
     @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
+    /**
+     * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
+     */
+    @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
 
     constructor() {}
 
@@ -92,6 +96,10 @@ export class RuxCheckbox {
         const target = e.target as HTMLInputElement
         this.value = target.value
         this.ruxInput.emit()
+    }
+
+    private onBlur = () => {
+        this.ruxBlur.emit()
     }
 
     render() {
@@ -135,6 +143,7 @@ export class RuxCheckbox {
                         value={value}
                         onChange={this.onChange}
                         onInput={this.onInput}
+                        onBlur={() => this.onBlur()}
                     />
                     <label htmlFor={checkboxId}>
                         <slot></slot>

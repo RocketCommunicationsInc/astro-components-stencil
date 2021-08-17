@@ -96,6 +96,11 @@ export class RuxInputField {
      */
     @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
 
+    /**
+     * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
+     */
+    @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
+
     connectedCallback() {
         this.onChange = this.onChange.bind(this)
         this.onInput = this.onInput.bind(this)
@@ -111,6 +116,10 @@ export class RuxInputField {
         const target = e.target as HTMLInputElement
         this.value = target.value
         this.ruxInput.emit()
+    }
+
+    private onBlur = () => {
+        this.ruxBlur.emit()
     }
 
     render() {
@@ -148,6 +157,7 @@ export class RuxInputField {
                         id={this.inputId}
                         onChange={this.onChange}
                         onInput={this.onInput}
+                        onBlur={() => this.onBlur()}
                     ></input>
                 </div>
 

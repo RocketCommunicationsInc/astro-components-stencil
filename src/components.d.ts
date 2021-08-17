@@ -24271,6 +24271,10 @@ declare namespace LocalJSX {
          */
         "name"?: string;
         /**
+          * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
+         */
+        "onRux-blur"?: (event: CustomEvent<any>) => void;
+        /**
           * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
          */
         "onRux-change"?: (event: CustomEvent<any>) => void;
@@ -40269,6 +40273,10 @@ declare namespace LocalJSX {
           * The input name
          */
         "name"?: string;
+        /**
+          * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
+         */
+        "onRux-blur"?: (event: CustomEvent<any>) => void;
         /**
           * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
          */
