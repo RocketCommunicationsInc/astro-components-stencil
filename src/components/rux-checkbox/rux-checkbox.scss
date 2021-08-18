@@ -41,7 +41,9 @@
 
     input[type='checkbox'] {
         -webkit-appearance: none;
-        display: none;
+        appearance: none;
+
+        // display: none;
 
         + label {
             position: relative;

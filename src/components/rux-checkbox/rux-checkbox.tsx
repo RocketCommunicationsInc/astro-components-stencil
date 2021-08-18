@@ -1,12 +1,4 @@
-import {
-    Component,
-    h,
-    Prop,
-    Event,
-    EventEmitter,
-    Element,
-    Host,
-} from '@stencil/core'
+import { Component, h, Prop, Event, EventEmitter, Element } from '@stencil/core'
 import { renderHiddenInput } from '../../utils/utils'
 
 let id = 0
@@ -18,7 +10,6 @@ let id = 0
 })
 export class RuxCheckbox {
     checkboxId = `rux-checkbox-${++id}`
-    private focusEl?: HTMLElement
     @Element() el!: HTMLRuxCheckboxElement
 
     /**
@@ -100,8 +91,6 @@ export class RuxCheckbox {
         const target = e.target as HTMLInputElement
         this.checked = target.checked
         this.ruxChange.emit(this.checked)
-        // console.log('Gonna focus: ', target)
-        // target.focus()
     }
 
     private _onInput(e: Event) {
@@ -111,35 +100,7 @@ export class RuxCheckbox {
     }
 
     private _onBlur = () => {
-        console.log('you did it')
         this.ruxBlur.emit()
-    }
-
-    // private _onClick = (ev: any) => {
-    //     ev.preventDefault()
-    //     // this.focusEl = ev.target
-    //     // console.log(this.focusEl, 'focus el')
-    //     // this.focusEl?.focus()
-    //     this.setFocus()
-    //     this.checked = !this.checked
-    // }
-    private setFocus() {
-        console.log('setFocus')
-        console.log(this.focusEl)
-        if (this.focusEl) {
-            this.focusEl.focus()
-        }
-    }
-    private _onClick = (e: MouseEvent) => {
-        console.log('heard click')
-        const target = e.target as HTMLInputElement
-        console.log(target)
-        // this.focusEl = target
-        this.setFocus()
-    }
-
-    private _onFocus = () => {
-        console.log('onFocus')
     }
 
     render() {
@@ -183,10 +144,7 @@ export class RuxCheckbox {
                         value={value}
                         onChange={this._onChange}
                         onInput={this._onInput}
-                        onClick={this._onClick}
-                        onFocus={() => this._onFocus()}
                         onBlur={() => this._onBlur()}
-                        ref={(focusEl) => (this.focusEl = focusEl)}
                     />
                     <label htmlFor={checkboxId}>
                         <slot></slot>
