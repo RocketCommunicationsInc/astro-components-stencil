@@ -139,7 +139,7 @@ export class RuxSlider {
         renderHiddenInput(true, el, name, JSON.stringify(this.value), disabled)
 
         return (
-            <Host onBlur={() => _onBlur}>
+            <Host>
                 <div class="rux-slider">
                     <input
                         onInput={_onInput}
