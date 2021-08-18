@@ -35,10 +35,10 @@
                 "
             >
                 <div>
-                    <rux-button aria-controls="popup-menu-1"
-                        >Open Menu</rux-button
-                    >
-                    <!-- <rux-icon icon="apps" aria-controls="popup-menu-1" style="display: inline-block; min-width: 19px;"></rux-icon> -->
+                    <rux-button aria-controls="popup-menu-1">
+                        Open Menu
+                    </rux-button>
+
                     <rux-pop-up-menu id="popup-menu-1">
                         <rux-menu-item>Item 1</rux-menu-item>
                         <rux-menu-item-divider></rux-menu-item-divider>
@@ -66,15 +66,10 @@
                 const menu = document.querySelectorAll('rux-menu-item')
 
                 menu.forEach((item) => {
-                    item.addEventListener(
-                        'rux-menu-item-selected',
-                        function (e) {
-                            const item = document.createElement('li')
-                            console.log('e', e)
-                            item.innerHTML = `<strong>Value:</strong>${e.detail.value}`
-                            log.appendChild(item)
-                        }
-                    )
+                    item.addEventListener('rux-menu-item-selected', (e) => {
+                        item.innerHTML = `<strong>Value:</strong>${e.detail.value}`
+                        log.appendChild(item)
+                    })
                 })
             </script>
         </div>
