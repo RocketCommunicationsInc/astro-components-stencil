@@ -99,7 +99,6 @@ export class RuxCheckbox {
     }
 
     private _onBlur = () => {
-        console.log('ON BLUR')
         this.ruxBlur.emit()
     }
 
