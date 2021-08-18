@@ -76,7 +76,6 @@ export class RuxRadio {
     }
 
     private _onBlur = () => {
-        console.log('emit')
         this.ruxBlur.emit()
     }
 
@@ -102,7 +101,7 @@ export class RuxRadio {
                         checked={checked}
                         value={value}
                         onChange={_onChange}
-                        onBlur={() => _onBlur}
+                        onBlur={() => _onBlur()}
                     />
                     <label htmlFor={radioId}>
                         <slot></slot>

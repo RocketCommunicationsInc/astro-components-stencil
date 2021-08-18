@@ -49,7 +49,8 @@
 
     input[type='radio'] {
         -webkit-appearance: none;
-        display: none;
+        appearance: none;
+        // display: none;
 
         + label {
             position: relative;
@@ -57,7 +58,7 @@
 
             align-items: center;
             justify-content: flex-start;
-
+            margin-left: -8px;
             color: var(--controlLabelColor);
             letter-spacing: 0.5px;
             cursor: pointer;
