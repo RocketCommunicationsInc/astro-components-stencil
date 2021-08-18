@@ -54,7 +54,6 @@ export class RuxSelect {
     @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
 
     private _onBlur = () => {
-        console.log('h')
         this.ruxBlur.emit()
     }
 
