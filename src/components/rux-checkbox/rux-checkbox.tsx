@@ -70,7 +70,6 @@ export class RuxCheckbox {
     componentWillLoad() {
         this._onChange = this._onChange.bind(this)
         this._onInput = this._onInput.bind(this)
-        this._onBlur = this._onBlur.bind(this)
     }
 
     componentDidLoad() {
@@ -100,6 +99,7 @@ export class RuxCheckbox {
     }
 
     private _onBlur = () => {
+        console.log('ON BLUR')
         this.ruxBlur.emit()
     }
 
