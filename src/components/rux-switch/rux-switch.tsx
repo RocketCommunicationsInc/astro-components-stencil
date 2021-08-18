@@ -80,7 +80,6 @@ export class RuxSwitch {
     }
 
     private _onBlur = () => {
-        console.log('h')
         this.ruxBlur.emit()
     }
 
