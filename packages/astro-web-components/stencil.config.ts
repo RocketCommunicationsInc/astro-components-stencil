@@ -1,5 +1,6 @@
 import { Config } from '@stencil/core'
 import { sass } from '@stencil/sass'
+import { reactOutputTarget } from '@stencil/react-output-target'
 import { svgOptimizerPlugin } from './src/utils/rollup-svg'
 
 export const config: Config = {
@@ -33,6 +34,11 @@ export const config: Config = {
                 },
             ],
         },
+        reactOutputTarget({
+            componentCorePackage: '@astrouxds/astro-web-components',
+            proxiesFile: '../astro-components-react/src/components.ts',
+            includeDefineCustomElements: true,
+        }),
     ],
     plugins: [sass(), svgOptimizerPlugin()],
 }
