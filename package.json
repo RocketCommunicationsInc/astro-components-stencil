@@ -1,7 +1,14 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "test.unit": "TZ=UTC stencil test --spec --coverage"
+  },
   "devDependencies": {
+    "@types/jest": "^26.0.21",
+    "husky": "~6.0.0",
+    "jest": "^26.6.3",
     "lerna": "^4.0.0"
   }
 }

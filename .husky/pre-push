@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running Tests"
+cd packages/astro-web-components
+npm run test.unit -- --changedSince=next --passWithNoTests
