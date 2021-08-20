@@ -156,7 +156,6 @@ export class RuxSlider {
             <Host>
                 <div class="rux-slider">
                     <input
-                        id="slider"
                         onInput={_onInput}
                         type="range"
                         class="rux-range"
