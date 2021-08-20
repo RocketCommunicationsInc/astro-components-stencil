@@ -1,0 +1,21 @@
+name: Unit Test
+on:
+    pull_request:
+        branches: [main]
+        types: [closed]
+    workflow_dispatch:
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Configure Committer
+              run: |
+                  git config user.name "Release Bot"
+                  git config user.email "<>"
+            - name: Run release chores
+              uses: qzb/standard-version@v1
+            - name: Publish
+              run: npm publish --tag next dist
+              with:
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
