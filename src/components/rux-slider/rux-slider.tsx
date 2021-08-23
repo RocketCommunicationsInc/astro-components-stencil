@@ -30,7 +30,7 @@ export class RuxSlider {
      */
     @Prop() step: number = 1
     /**
-     * Current value of the slider. The default value is halfway between the specified minimum and maximum. - [HTMLElement/<input type="range">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
+     * Current value of the slider. The default value is halfway between the specified minimum and maximum. - [HTMLElement/input_type_range>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
      */
     @Prop({ mutable: true }) value: number =
         (this.max! - this.min!) / 2 + this.min!
