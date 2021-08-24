@@ -39,7 +39,7 @@ export class RuxCheckbox {
     /**
      * Toggles indeterminate state of a checkbox
      */
-    @Prop({ reflect: true }) indeterminate: boolean = false
+    @Prop({ reflect: true, mutable: true }) indeterminate: boolean = false
 
     /**
      * Disables the checkbox via HTML disabled attribute. Checkbox takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
@@ -79,16 +79,19 @@ export class RuxCheckbox {
 
         if (input && this.indeterminate) {
             // indeterminate property does not exist in HTML but is accessible via js
-            input.setAttribute(
-                'indeterminate',
-                this.indeterminate ? 'indeterminate' : ''
-            )
+            input.indeterminate = true
         }
     }
 
     private _onChange(e: Event): void {
         const target = e.target as HTMLInputElement
-        this.checked = target.checked
+        if (!this.indeterminate) {
+            this.checked = target.checked
+        } else {
+            target.checked = true
+            this.checked = true
+            this.indeterminate = false
+        }
         this.ruxChange.emit(this.checked)
     }
 
