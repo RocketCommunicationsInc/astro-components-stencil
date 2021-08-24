@@ -1,7 +1,7 @@
 import { newSpecPage } from '@stencil/core/testing'
 import { RuxInputField } from '../rux-input-field'
 
-describe('rux-input', () => {
+describe('ruxInput', () => {
     it('renders', async () => {
         const page = await newSpecPage({
             components: [RuxInputField],

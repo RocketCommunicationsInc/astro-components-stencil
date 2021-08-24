@@ -99,17 +99,17 @@ export class RuxInputField {
     /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
-    @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
+    @Event({ eventName: 'ruxChange' }) ruxChange!: EventEmitter
 
     /**
      * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
      */
-    @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
+    @Event({ eventName: 'ruxInput' }) ruxInput!: EventEmitter
 
     /**
      * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
      */
-    @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
+    @Event({ eventName: 'ruxBlur' }) ruxBlur!: EventEmitter
 
     connectedCallback() {
         this._onChange = this._onChange.bind(this)
@@ -182,7 +182,7 @@ export class RuxInputField {
                         max={max}
                         value={value}
                         class={{
-                            'rux-input': true,
+                            ruxInput: true,
                             'rux-input--disabled': disabled,
                             'rux-input--invalid': invalid,
                             'rux-input--search': type === 'search',

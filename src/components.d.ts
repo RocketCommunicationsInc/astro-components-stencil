@@ -24273,15 +24273,15 @@ declare namespace LocalJSX {
         /**
           * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
          */
-        "onRux-blur"?: (event: CustomEvent<any>) => void;
+        "onRuxBlur"?: (event: CustomEvent<any>) => void;
         /**
           * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
          */
-        "onRux-change"?: (event: CustomEvent<any>) => void;
+        "onRuxChange"?: (event: CustomEvent<any>) => void;
         /**
           * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
          */
-        "onRux-input"?: (event: CustomEvent<any>) => void;
+        "onRuxInput"?: (event: CustomEvent<any>) => void;
         /**
           * Sets the input as required
          */
@@ -40276,15 +40276,15 @@ declare namespace LocalJSX {
         /**
           * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
          */
-        "onRux-blur"?: (event: CustomEvent<any>) => void;
+        "onRuxBlur"?: (event: CustomEvent<any>) => void;
         /**
           * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
          */
-        "onRux-change"?: (event: CustomEvent<any>) => void;
+        "onRuxChange"?: (event: CustomEvent<any>) => void;
         /**
           * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
          */
-        "onRux-input"?: (event: CustomEvent<any>) => void;
+        "onRuxInput"?: (event: CustomEvent<any>) => void;
         /**
           * The input placeholder text
          */
@@ -40346,7 +40346,7 @@ declare namespace LocalJSX {
         /**
           * Emitted when item is clicked. Ex `{value : 10}`
          */
-        "onRux-menu-item-selected"?: (event: CustomEvent<object>) => void;
+        "onRuxMenuItemSelected"?: (event: CustomEvent<object>) => void;
         /**
           * Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
          */
@@ -40382,7 +40382,7 @@ declare namespace LocalJSX {
         /**
           * Event that is fired when modal closes
          */
-        "onRux-modal-closed"?: (event: CustomEvent<boolean>) => void;
+        "onRuxModalClosed"?: (event: CustomEvent<boolean>) => void;
         /**
           * Shows and hides modal
          */
@@ -40466,19 +40466,19 @@ declare namespace LocalJSX {
         /**
           * Emitted when the menu is closed.
          */
-        "onRux-menu-did-close"?: (event: CustomEvent<void>) => void;
+        "onRuxMenuDidClose"?: (event: CustomEvent<void>) => void;
         /**
           * Emitted when the menu is open.
          */
-        "onRux-menu-did-open"?: (event: CustomEvent<void>) => void;
+        "onRuxMenuDidOpen"?: (event: CustomEvent<void>) => void;
         /**
           * Emitted when the menu is about to close
          */
-        "onRux-menu-will-close"?: (event: CustomEvent<void>) => void;
+        "onRuxMenuWillClose"?: (event: CustomEvent<void>) => void;
         /**
           * Emitted when the menu is about to open.
          */
-        "onRux-menu-will-open"?: (event: CustomEvent<void>) => void;
+        "onRuxMenuWillOpen"?: (event: CustomEvent<void>) => void;
         /**
           * Boolean which controls when to show the menu
          */
@@ -40522,11 +40522,11 @@ declare namespace LocalJSX {
         /**
           * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
          */
-        "onRux-blur"?: (event: CustomEvent<any>) => void;
+        "onRuxBlur"?: (event: CustomEvent<any>) => void;
         /**
           * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
          */
-        "onRux-change"?: (event: CustomEvent<any>) => void;
+        "onRuxChange"?: (event: CustomEvent<any>) => void;
         /**
           * The value of the push button.
          */
@@ -40548,11 +40548,11 @@ declare namespace LocalJSX {
         /**
           * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
          */
-        "onRux-blur"?: (event: CustomEvent<any>) => void;
+        "onRuxBlur"?: (event: CustomEvent<any>) => void;
         /**
           * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
          */
-        "onRux-change"?: (event: CustomEvent<any>) => void;
+        "onRuxChange"?: (event: CustomEvent<any>) => void;
         /**
           * The radio value
          */
@@ -40582,7 +40582,7 @@ declare namespace LocalJSX {
         /**
           * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
          */
-        "onRux-change"?: (event: CustomEvent<any>) => void;
+        "onRuxChange"?: (event: CustomEvent<any>) => void;
         /**
           * The value of the current selected radio in the group. Changing this will also mark that radio as checked in the UI.
          */
@@ -40596,7 +40596,7 @@ declare namespace LocalJSX {
         /**
           * Emitted when the value property has changed.
          */
-        "onRux-change"?: (event: CustomEvent<any>) => void;
+        "onRuxChange"?: (event: CustomEvent<any>) => void;
         /**
           * When passed in on load, this selects the first button segment with a matching label. When the selected segment changes, this property updates with the currently selected value, which reflects back to the component attribute. If no button segment label matches this string, then no segment is selected. This value takes priority over setting selected boolean property on the items in the data array.
          */
@@ -40630,11 +40630,11 @@ declare namespace LocalJSX {
         /**
           * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
          */
-        "onRux-blur"?: (event: CustomEvent<any>) => void;
+        "onRuxBlur"?: (event: CustomEvent<any>) => void;
         /**
           * Event Emitted when the Value of the Select is Changed
          */
-        "onRux-change"?: (event: CustomEvent<void>) => void;
+        "onRuxChange"?: (event: CustomEvent<void>) => void;
         /**
           * Sets the field as required
          */
@@ -40660,11 +40660,11 @@ declare namespace LocalJSX {
         /**
           * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
          */
-        "onRux-blur"?: (event: CustomEvent<any>) => void;
+        "onRuxBlur"?: (event: CustomEvent<any>) => void;
         /**
           * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
          */
-        "onRux-input"?: (event: CustomEvent<any>) => void;
+        "onRuxInput"?: (event: CustomEvent<any>) => void;
         /**
           * Step amount of slider value.
          */
@@ -40704,15 +40704,15 @@ declare namespace LocalJSX {
         /**
           * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
          */
-        "onRux-blur"?: (event: CustomEvent<any>) => void;
+        "onRuxBlur"?: (event: CustomEvent<any>) => void;
         /**
           * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
          */
-        "onRux-change"?: (event: CustomEvent<any>) => void;
+        "onRuxChange"?: (event: CustomEvent<any>) => void;
         /**
           * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
          */
-        "onRux-input"?: (event: CustomEvent<any>) => void;
+        "onRuxInput"?: (event: CustomEvent<any>) => void;
         /**
           * Sets the switch as required
          */
@@ -40738,7 +40738,7 @@ declare namespace LocalJSX {
         /**
           * Emits a list of the Tab Panels that have been passed in
          */
-        "onRux-register-panels"?: (event: CustomEvent<HTMLRuxTabPanelsElement[]>) => void;
+        "onRuxRegisterPanels"?: (event: CustomEvent<HTMLRuxTabPanelsElement[]>) => void;
     }
     interface RuxTable {
     }
@@ -40800,15 +40800,15 @@ declare namespace LocalJSX {
         /**
           * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
          */
-        "onRux-blur"?: (event: CustomEvent<any>) => void;
+        "onRuxBlur"?: (event: CustomEvent<any>) => void;
         /**
           * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
          */
-        "onRux-change"?: (event: CustomEvent<any>) => void;
+        "onRuxChange"?: (event: CustomEvent<any>) => void;
         /**
           * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
          */
-        "onRux-input"?: (event: CustomEvent<any>) => void;
+        "onRuxInput"?: (event: CustomEvent<any>) => void;
         /**
           * The input placeholder text
          */
@@ -40840,7 +40840,7 @@ declare namespace LocalJSX {
         /**
           * Emit when user selects a tree node
          */
-        "onRux-tree-node-selected"?: (event: CustomEvent<string>) => void;
+        "onRuxTreeNodeSelected"?: (event: CustomEvent<string>) => void;
         /**
           * Sets the selected state
          */

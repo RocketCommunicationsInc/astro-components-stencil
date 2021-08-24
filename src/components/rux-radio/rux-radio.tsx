@@ -35,11 +35,11 @@ export class RuxRadio {
     /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
-    @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
+    @Event({ eventName: 'ruxChange' }) ruxChange!: EventEmitter
     /**
      * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
      */
-    @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
+    @Event({ eventName: 'ruxBlur' }) ruxBlur!: EventEmitter
 
     connectedCallback() {
         this._onChange = this._onChange.bind(this)
@@ -47,16 +47,13 @@ export class RuxRadio {
         this.syncFromGroup = this.syncFromGroup.bind(this)
         if (this.radioGroup) {
             this.syncFromGroup()
-            this.radioGroup.addEventListener('rux-change', this.syncFromGroup)
+            this.radioGroup.addEventListener('ruxChange', this.syncFromGroup)
         }
     }
 
     disconnectedCallback() {
         if (this.radioGroup) {
-            this.radioGroup.removeEventListener(
-                'rux-change',
-                this.syncFromGroup
-            )
+            this.radioGroup.removeEventListener('ruxChange', this.syncFromGroup)
         }
     }
 
