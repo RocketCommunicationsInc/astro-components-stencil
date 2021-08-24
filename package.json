@@ -33,13 +33,13 @@
         "test": "concurrently npm:test.spec npm:test.e2e"
     },
     "dependencies": {
-        "@stencil/angular-output-target": "0.0.7",
         "@stencil/core": "~2.5.2",
         "date-fns": "~2.21.1",
         "date-fns-tz": "~1.1.4"
     },
     "license": "MIT",
     "devDependencies": {
+        "@stencil/angular-output-target": "0.0.7",
         "@astrouxds/storybook-addon-docs-stencil": "~1.0.7",
         "@babel/core": "~7.13.16",
         "@stencil/sass": "~1.4.1",
