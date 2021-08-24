@@ -15,19 +15,19 @@ export class RuxGlobalStatusBar {
     })
     includeIcon: boolean = false
     /**
-     * Declares whether the app-state component will be shown in the app-meta slot
+     * Declares what text will render and whether the app-state component will be shown in the app-meta slot
      */
     @Prop({
-        attribute: 'include-app-state',
+        attribute: 'app-state',
     })
-    includeAppState: boolean = false
+    appState?: boolean = false
     /**
-     * Declares whether the username component will be shown in the app-meta slot
+     * Declares what text will render and whether the username component will be shown in the app-meta slot
      */
     @Prop({
-        attribute: 'include-username',
+        attribute: 'username',
     })
-    includeUsername: boolean = false
+    username?: boolean = false
     /**
      * Sets the domain of the application to be displayed in the app-meta element
      */
@@ -65,7 +65,7 @@ export class RuxGlobalStatusBar {
                                 icon={`${this.menuIcon}`}
                                 size="small"
                                 class={
-                                    this.includeAppState || this.includeUsername
+                                    this.appState || this.username
                                         ? 'shifted-up'
                                         : ''
                                 }
@@ -83,11 +83,15 @@ export class RuxGlobalStatusBar {
                                 version={this.appVersion}
                             >
                                 <div class="app-state-wrapper">
-                                    {this.includeAppState && (
-                                        <div class="app-state">App state</div>
+                                    {this.appState && (
+                                        <div class="app-state">
+                                            {this.appState}
+                                        </div>
                                     )}
-                                    {this.includeUsername && (
-                                        <div class="username">Username</div>
+                                    {this.username && (
+                                        <div class="username">
+                                            {this.username}
+                                        </div>
                                     )}
                                 </div>
                             </AppMeta>
