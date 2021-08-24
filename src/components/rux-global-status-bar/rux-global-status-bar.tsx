@@ -59,7 +59,7 @@ export class RuxGlobalStatusBar {
      * Sets the icon to be displayed in the default rux-icon component
      */
     @Prop({ attribute: 'menu-icon', mutable: true, reflect: true })
-    menuIcon?: string = 'apps'
+    menuIcon: string = 'apps'
 
     render() {
         return (
