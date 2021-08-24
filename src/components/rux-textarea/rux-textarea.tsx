@@ -99,8 +99,6 @@ export class RuxTextarea {
 
     @Element() el!: HTMLRuxTextareaElement
 
-    @Element() el!: HTMLRuxTextareaElement
-
     connectedCallback() {
         this._onChange = this._onChange.bind(this)
         this._onInput = this._onInput.bind(this)
