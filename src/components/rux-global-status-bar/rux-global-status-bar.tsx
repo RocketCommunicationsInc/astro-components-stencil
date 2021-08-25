@@ -28,7 +28,7 @@ export class RuxGlobalStatusBar {
     @Prop({
         attribute: 'app-state',
     })
-    appState?: string = 'Development'
+    appState?: string = ''
     /**
      * Declares the color of the the app-state component background
      */

@@ -115,12 +115,12 @@ There is one unnamed slot in the Global Status Bar. This slot is intended for an
 | --------------- | ----------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ----------- |
 | `appDomain`     | `app-domain`      | Sets the domain of the application to be displayed in the app-meta element                            | `string \| undefined`                               | `undefined` |
 | `appName`       | `app-name`        | Sets the name of the application to be displayed in the app-meta element                              | `string \| undefined`                               | `undefined` |
-| `appState`      | `app-state`       | Declares what text will render and whether the app-state component will be shown in the app-meta slot | `boolean \| undefined`                              | `false`     |
+| `appState`      | `app-state`       | Declares what text will render and whether the app-state component will be shown in the app-meta slot | `string \| undefined`                               | `''`        |
 | `appStateColor` | `app-state-color` | Declares the color of the the app-state component background                                          | `"tag1" \| "tag2" \| "tag3" \| "tag4" \| undefined` | `'tag1'`    |
 | `appVersion`    | `app-version`     | Sets the version of the application to be displayed in the app-meta element                           | `string \| undefined`                               | `undefined` |
 | `includeIcon`   | `include-icon`    | Declares whether a rux-icon will be shown in the left-side slot                                       | `boolean`                                           | `false`     |
 | `menuIcon`      | `menu-icon`       | Sets the icon to be displayed in the default rux-icon component                                       | `string \| undefined`                               | `'apps'`    |
-| `username`      | `username`        | Declares what text will render and whether the username component will be shown in the app-meta slot  | `boolean \| undefined`                              | `false`     |
+| `username`      | `username`        | Declares what text will render and whether the username component will be shown in the app-meta slot  | `string \| undefined`                               | `''`        |
 
 
 ## Dependencies
