@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { Classification, Status, TagType } from "./common/commonTypes.module";
+import { Classification, Status } from "./common/commonTypes.module";
 import { LogRow } from "./components/rux-log/rux-log.model";
 import { RangeItem } from "./components/rux-monitoring-progress-icon/rux-monitoring-progress-icon";
 import { SegmentedButton } from "./components/rux-segmented-button/rux-segmented-button.model";
@@ -178,7 +178,7 @@ export namespace Components {
         /**
           * Declares the color of the the app-state component background
          */
-        "appStateColor"?: TagType;
+        "appStateColor"?: 'tag1' | 'tag2' | 'tag3' | 'tag4';
         /**
           * Sets the version of the application to be displayed in the app-meta element
          */
@@ -24397,7 +24397,7 @@ declare namespace LocalJSX {
         /**
           * Declares the color of the the app-state component background
          */
-        "appStateColor"?: TagType;
+        "appStateColor"?: 'tag1' | 'tag2' | 'tag3' | 'tag4';
         /**
           * Sets the version of the application to be displayed in the app-meta element
          */

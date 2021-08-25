@@ -14,8 +14,6 @@ export type Classification =
     | 'top-secret-sci'
     | 'unclassified'
 
-export type TagType = 'tag1' | 'tag2' | 'tag3' | 'tag4'
-
 export type StatusTypes = {
     [id: string]: boolean
 }

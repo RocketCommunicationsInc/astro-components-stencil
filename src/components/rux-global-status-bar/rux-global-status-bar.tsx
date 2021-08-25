@@ -1,14 +1,5 @@
 import { Prop, Component, Host, h } from '@stencil/core'
 import { AppMeta } from './appMeta/appMeta'
-import { TagType } from '../../common/commonTypes.module'
-
-const TagColor = {
-    tag1: '#00C7CB',
-    tag2: '#786DD3',
-    tag3: '#A200C1',
-    tag4: '#DA5309',
-}
-
 @Component({
     tag: 'rux-global-status-bar',
     styleUrl: 'rux-global-status-bar.scss',
@@ -35,7 +26,7 @@ export class RuxGlobalStatusBar {
     @Prop({
         attribute: 'app-state-color',
     })
-    appStateColor?: TagType = 'tag1'
+    appStateColor?: 'tag1' | 'tag2' | 'tag3' | 'tag4' = 'tag1'
     /**
      * Declares what text will render and whether the username component will be shown in the app-meta slot
      */
@@ -71,6 +62,13 @@ export class RuxGlobalStatusBar {
     menuIcon?: string = 'apps'
 
     render() {
+        const TagColor = {
+            tag1: '#00C7CB',
+            tag2: '#786DD3',
+            tag3: '#A200C1',
+            tag4: '#DA5309',
+        }
+
         return (
             <Host>
                 <header>
