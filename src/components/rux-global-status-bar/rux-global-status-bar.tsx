@@ -1,5 +1,13 @@
 import { Prop, Component, Host, h } from '@stencil/core'
 import { AppMeta } from './appMeta/appMeta'
+import { TagType } from '../../common/commonTypes.module'
+
+const TagColor = {
+    tag1: '#00C7CB',
+    tag2: '#786DD3',
+    tag3: '#A200C1',
+    tag4: '#DA5309',
+}
 
 @Component({
     tag: 'rux-global-status-bar',
@@ -20,14 +28,21 @@ export class RuxGlobalStatusBar {
     @Prop({
         attribute: 'app-state',
     })
-    appState?: boolean = false
+    appState?: string = 'Development'
+    /**
+     * Declares the color of the the app-state component background
+     */
+    @Prop({
+        attribute: 'app-state-color',
+    })
+    appStateColor?: TagType = 'tag1'
     /**
      * Declares what text will render and whether the username component will be shown in the app-meta slot
      */
     @Prop({
         attribute: 'username',
     })
-    username?: boolean = false
+    username?: string = ''
     /**
      * Sets the domain of the application to be displayed in the app-meta element
      */
@@ -84,7 +99,16 @@ export class RuxGlobalStatusBar {
                             >
                                 <div class="app-state-wrapper">
                                     {this.appState && (
-                                        <div class="app-state">
+                                        <div
+                                            class="app-state"
+                                            style={{
+                                                backgroundColor: `${
+                                                    TagColor[
+                                                        this.appStateColor!
+                                                    ]
+                                                }`,
+                                            }}
+                                        >
                                             {this.appState}
                                         </div>
                                     )}

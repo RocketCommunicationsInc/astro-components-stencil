@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { Classification, Status } from "./common/commonTypes.module";
+import { Classification, Status, TagType } from "./common/commonTypes.module";
 import { LogRow } from "./components/rux-log/rux-log.model";
 import { RangeItem } from "./components/rux-monitoring-progress-icon/rux-monitoring-progress-icon";
 import { SegmentedButton } from "./components/rux-segmented-button/rux-segmented-button.model";
@@ -172,25 +172,29 @@ export namespace Components {
          */
         "appName"?: string;
         /**
+          * Declares what text will render and whether the app-state component will be shown in the app-meta slot
+         */
+        "appState"?: string;
+        /**
+          * Declares the color of the the app-state component background
+         */
+        "appStateColor"?: TagType;
+        /**
           * Sets the version of the application to be displayed in the app-meta element
          */
         "appVersion"?: string;
-        /**
-          * Declares whether the app-state component will be shown in the app-meta slot
-         */
-        "includeAppState": boolean;
         /**
           * Declares whether a rux-icon will be shown in the left-side slot
          */
         "includeIcon": boolean;
         /**
-          * Declares whether the username component will be shown in the app-meta slot
-         */
-        "includeUsername": boolean;
-        /**
           * Sets the icon to be displayed in the default rux-icon component
          */
         "menuIcon"?: string;
+        /**
+          * Declares what text will render and whether the username component will be shown in the app-meta slot
+         */
+        "username"?: string;
     }
     interface RuxIcon {
         /**
@@ -24387,25 +24391,29 @@ declare namespace LocalJSX {
          */
         "appName"?: string;
         /**
+          * Declares what text will render and whether the app-state component will be shown in the app-meta slot
+         */
+        "appState"?: string;
+        /**
+          * Declares the color of the the app-state component background
+         */
+        "appStateColor"?: TagType;
+        /**
           * Sets the version of the application to be displayed in the app-meta element
          */
         "appVersion"?: string;
-        /**
-          * Declares whether the app-state component will be shown in the app-meta slot
-         */
-        "includeAppState"?: boolean;
         /**
           * Declares whether a rux-icon will be shown in the left-side slot
          */
         "includeIcon"?: boolean;
         /**
-          * Declares whether the username component will be shown in the app-meta slot
-         */
-        "includeUsername"?: boolean;
-        /**
           * Sets the icon to be displayed in the default rux-icon component
          */
         "menuIcon"?: string;
+        /**
+          * Declares what text will render and whether the username component will be shown in the app-meta slot
+         */
+        "username"?: string;
     }
     interface RuxIcon {
         /**
