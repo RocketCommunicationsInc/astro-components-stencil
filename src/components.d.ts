@@ -180,7 +180,7 @@ export namespace Components {
          */
         "appStateColor"?: 'tag1' | 'tag2' | 'tag3' | 'tag4';
         /**
-          * Sets the version of the application to be displayed in the app-meta element
+          * Declares whether the menu-icon will be shown in the left-side slot
          */
         "appVersion"?: string;
         /**
@@ -190,11 +190,7 @@ export namespace Components {
         /**
           * Sets the icon to be displayed in the default rux-icon component
          */
-        "menuIcon"?: string;
-        /**
-          * Declares what text will render and whether the username component will be shown in the app-meta slot
-         */
-        "username"?: string;
+        "menuIcon": string;
     }
     interface RuxIcon {
         /**
@@ -24399,7 +24395,7 @@ declare namespace LocalJSX {
          */
         "appStateColor"?: 'tag1' | 'tag2' | 'tag3' | 'tag4';
         /**
-          * Sets the version of the application to be displayed in the app-meta element
+          * Declares whether the menu-icon will be shown in the left-side slot
          */
         "appVersion"?: string;
         /**
