@@ -1,7 +1,6 @@
 # Astro Web Components
 
-> ⚠️ This repo is currently in alpha and under active development.⚠️️
-> ⚠️ Expect APIs to change⚠️
+> ⚠️ This repo is currently in alpha and under active development. Expect APIs to change ⚠️
 
 **Documentation:** https://astro-stencil.netlify.app/
 
