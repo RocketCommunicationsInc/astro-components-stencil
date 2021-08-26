@@ -70,10 +70,10 @@ export class RuxGlobalStatusBar {
 
     render() {
         const TagColor = {
-            tag1: '#00C7CB',
-            tag2: '#786DD3',
-            tag3: '#A200C1',
-            tag4: '#DA5309',
+            tag1: 'var(--colorTag1)',
+            tag2: 'var(--colorTag2)',
+            tag3: 'var(--colorTag3)',
+            tag4: 'var(--colorTag4)',
         }
 
         return (
