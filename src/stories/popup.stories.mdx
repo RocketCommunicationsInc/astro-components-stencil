@@ -6,7 +6,10 @@ import { html, render } from 'lit-html'
     title="Components/Pop Up Menu"
     component="rux-pop-up-menu"
     argTypes={extractArgTypes('rux-pop-up-menu')}
-    subcomponents={{ 'RuxMenuItem': 'rux-menu-item', 'RuxMenuItemDivider': 'rux-menu-item-divider' }}
+    subcomponents={{
+      'RuxMenuItem': 'rux-menu-item',
+      'RuxMenuItemDivider': 'rux-menu-item-divider'
+    }}
     parameters={{
        actions: {
         handles: [
@@ -86,7 +89,7 @@ export const WithAnchors = (args) => {
                 height: 100%;
                 width: 100%;
             }
-            button {
+            .button {
                 display: inline-block;
                 position: absolute;
             }
