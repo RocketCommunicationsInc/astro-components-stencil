@@ -95,7 +95,6 @@ export class RuxCheckbox {
     private _onInput(e: Event) {
         const target = e.target as HTMLInputElement
         this.value = target.value
-        this.checked = target.checked
         this.ruxInput.emit()
     }
 
