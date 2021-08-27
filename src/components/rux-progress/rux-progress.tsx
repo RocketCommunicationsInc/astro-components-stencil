@@ -25,7 +25,7 @@ export class RuxProgress {
             return this.value
         }
 
-        if (this.value === undefined) {
+        if (this.value === undefined || isNaN(this.value)) {
             return '0%'
         } else {
             return this.max === 100
