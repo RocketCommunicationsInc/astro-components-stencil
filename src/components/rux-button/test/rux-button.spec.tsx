@@ -40,7 +40,7 @@ describe('rux-button', () => {
         })
 
         expect(page.root).toEqualHtml(`
-          <rux-button class="rux-button--disabled" type="submit" secondary disabled>
+          <rux-button type="submit" secondary disabled>
             <mock:shadow-root>
               <button type="button" class="rux-button rux-button--secondary" disabled aria-disabled="true">
                 <slot></slot>

@@ -61,7 +61,7 @@
      * @prop --buttonSecondaryHoverBorderColor:  Button secondary hover border color
      */
 }
-:host(.rux-button--disabled) {
+:host([disabled]) {
     pointer-events: none;
 }
 .rux-button {

@@ -71,7 +71,7 @@ export class RuxButton {
     render() {
         const { size, iconOnly, secondary, disabled, icon } = this
         return (
-            <Host class={{ 'rux-button--disabled': disabled }}>
+            <Host>
                 <button
                     type="button"
                     onClick={this.handleClick}
