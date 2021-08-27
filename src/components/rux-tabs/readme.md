@@ -108,6 +108,13 @@ Astro UXDS Tab (child) properties are passed as simple attributes on the individ
 | `small`  | `small`   | If passed or set to true, displays the tabs in a smaller style, suitable for limited-space uses. | `boolean \| undefined` | `undefined` |
 
 
+## Slots
+
+| Slot          | Description                   |
+| ------------- | ----------------------------- |
+| `"(default)"` | Used for instances of rux-tab |
+
+
 ## CSS Custom Properties
 
 | Name               | Description      |
