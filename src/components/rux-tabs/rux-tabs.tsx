@@ -1,4 +1,14 @@
-import { Component, Host, h, State, Prop, Element, Listen } from '@stencil/core'
+import {
+    Component,
+    Host,
+    h,
+    State,
+    Prop,
+    Element,
+    Listen,
+    Event,
+    EventEmitter,
+} from '@stencil/core'
 
 /**
  * @slot (default) - Used for instances of rux-tab
@@ -29,8 +39,12 @@ export class RuxTabs {
         this._registerPanels(e)
     }
 
+    /**
+     * Fires whenever a new tab is selected, and emits the selected tab.
+     */
+    @Event({ eventName: 'rux-selected' }) ruxSelected!: EventEmitter
+
     connectedCallback() {
-        this.el.addEventListener('click', (e) => this._onClick(e))
         this._addTabs()
     }
 
@@ -50,6 +64,7 @@ export class RuxTabs {
 
     _onClick(e: MouseEvent) {
         const tab = e.target as HTMLRuxTabElement
+        this.ruxSelected.emit(tab)
         if (
             tab.getAttribute('role') === 'tab' &&
             tab.getAttribute('disabled') === null
@@ -81,7 +96,7 @@ export class RuxTabs {
 
     render() {
         return (
-            <Host>
+            <Host onClick={(e: MouseEvent) => this._onClick(e)}>
                 <slot></slot>
             </Host>
         )
