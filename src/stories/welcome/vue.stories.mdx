@@ -1,0 +1,183 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title="Astro UXDS/Welcome/Vue" />
+
+# Vue 2 Integration
+
+## Installation
+
+`npm i @astrouxds/astro-web-components`
+
+
+```js
+// main.js
+import Vue from 'vue'
+import App from './App.vue'
+
+Vue.config.productionTip = false
+
+// Import Astro's base styles
+import '@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css'
+import {
+    applyPolyfills,
+    defineCustomElements,
+} from '@astrouxds/astro-web-components/loader'
+
+// Tell Vue to ignore all components defined in the astro-web-components package
+Vue.config.ignoredElements = [/rux-\w*/]
+
+// Bind the custom elements to the window object
+applyPolyfills().then(() => {
+    defineCustomElements()
+})
+
+new Vue({
+  render: h => h(App),
+}).$mount('#app')
+
+```
+
+Import Roboto in your index.html
+
+```html
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@200;300;400;500;600;800&display=swap" rel="stylesheet"/>
+```
+
+
+
+## Setting Props
+
+### Basic Data
+
+For basic primitive types like `string`, `boolean`, `number`, set the attribute on the element:
+
+```js
+<rux-button size="large"></rux-button>
+```
+
+### Complex Data
+For non primitives like `array` or `object`, make use of Vue's .prop modifier:
+```js
+<template>
+  <div>
+    <rux-segmented-button :data.prop="data"></rux-segmented-button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "MyComponent",
+  data() {
+    return {
+      data: [
+        {
+          selected: true,
+          label: "One",
+        },
+        {
+          label: "Two",
+        },
+        {
+          label: "Three",
+        },
+      ],
+    };
+  },
+};
+</script>
+```
+## Using Slots
+
+Slots give you full control over the contents of a component.
+
+> Web Component Concept:
+> Slotted content lives outside of the shadow DOM and as a result, you are free to style them however you want.
+
+Vue's slots were inspired by the Web Component spec and as a result are very familiar.
+
+Some components may have multiple slots.
+
+```html
+<rux-global-status-bar>
+  <rux-icon slot="left-side" icon="apps"></rux-icon>
+  <div slot="app-meta">
+    <h1>Hello World</h1>
+  </div>
+</rux-global-status-bar>
+```
+
+## Listening to Events
+
+Astro Components emit their own custom events, prefixed with `rux`. You will likely use these to sync state between your Vue components and the Astro Web Components.
+
+```js
+<template>
+  <div>
+    <rux-input-field @rux-input="handleInput"></rux-input-field>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "MyComponent",
+  methods: {
+    handleInput(e) {
+      console.log("Heard input event!", e);
+    },
+  },
+};
+</script>
+```
+
+## Executing Public Methods
+
+Some components offer public methods that can be executed. These methods are async and can be executed by setting a ref on the element.
+
+```js
+<template>
+  <div>
+    <rux-tree>
+      <rux-tree-node ref="node">Hello</rux-tree-node>
+      <rux-tree-node>World</rux-tree-node>
+      </rux-tree>
+    <rux-button @click="selectNode">Select Node</rux-button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "MyComponent",
+  methods: {
+    selectNode() {
+      this.$refs.node.setSelected(true)
+    }
+  },
+};
+</script>
+```
+
+## Data Binding
+
+One current limitation with Web Components in Vue is that **v-model is not supported** because Astro Components emit their own custom events.
+Since `v-model` is just syntactic sugar for `:value` and `@input`, you just need to explicitly listen for `@rux-{event}`.
+
+```js
+<template>
+  <div>
+    <rux-input-field :value="firstName" @rux-input="firstName = $event.target.value"></rux-input-field>
+    {{firstName}}
+  </div>
+</template>
+
+<script>
+export default {
+  name: "MyComponent",
+  data() {
+    return {
+      firstName: ''
+    }
+  },
+};
+</script>
+```
