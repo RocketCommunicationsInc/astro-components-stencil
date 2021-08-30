@@ -24,8 +24,7 @@ export class RuxSelect {
     /**
      * Id for the Select Input
      */
-    @Prop({ attribute: 'input-id' })
-    inputId?: string
+    @Prop({ attribute: 'input-id' }) inputId?: string
 
     /**
      * Id for the Label
@@ -67,7 +66,7 @@ export class RuxSelect {
             invalid,
             name,
         } = this
-
+        console.log('input id', this.inputId)
         return (
             <Host>
                 {label && (
