@@ -45,7 +45,7 @@ export class RuxCheckbox {
     @Prop({ reflect: true, mutable: true }) checked: boolean = false
 
     /**
-     * Toggles indeterminate state of a checkbox
+     * Toggles indeterminate state of a checkbox. The indeterminate property does not exist in HTML, but can be set in JS. [HTML Checkbox & Indeterminate State](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate)
      */
     @Prop({ reflect: true, mutable: true }) indeterminate: boolean = false
 
@@ -156,6 +156,7 @@ export class RuxCheckbox {
                         disabled={disabled}
                         required={required}
                         checked={checked}
+                        //Allows storybook's indetermiante control to take effect.
                         indeterminate={indeterminate}
                         value={value}
                         onChange={this._onChange}
