@@ -127,6 +127,7 @@ export class RuxCheckbox {
             name,
             required,
             value,
+            indeterminate,
         } = this
 
         renderHiddenInput(
@@ -155,6 +156,7 @@ export class RuxCheckbox {
                         disabled={disabled}
                         required={required}
                         checked={checked}
+                        indeterminate={indeterminate}
                         value={value}
                         onChange={this._onChange}
                         onInput={this._onInput}
