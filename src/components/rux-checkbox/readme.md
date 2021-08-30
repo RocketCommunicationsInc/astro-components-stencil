@@ -58,6 +58,13 @@ git clone https://github.com/RocketCommunicationsInc/astro-components.git
 | `rux-input`  | Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event) | `CustomEvent<any>` |
 
 
+## Slots
+
+| Slot          | Description                |
+| ------------- | -------------------------- |
+| `"(default)"` | the label of the checkbox. |
+
+
 ## CSS Custom Properties
 
 | Name                                  | Description                    |

@@ -11,6 +11,9 @@ import { renderHiddenInput } from '../../utils/utils'
 
 let id = 0
 
+/**
+ * @slot (default) - the label of the checkbox.
+ */
 @Component({
     tag: 'rux-checkbox',
     styleUrl: 'rux-checkbox.scss',
