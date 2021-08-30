@@ -17,7 +17,10 @@ let id = 0
     shadow: true,
 })
 export class RuxCheckbox {
-    checkboxId = `rux-checkbox-${++id}`
+    private checkboxId = `rux-checkbox-${++id}`
+    private _inputEl?: HTMLInputElement
+    private _internalPropChange: boolean = false
+
     @Element() el!: HTMLRuxCheckboxElement
 
     /**
@@ -43,15 +46,40 @@ export class RuxCheckbox {
      * Toggles checked state of a checkbox
      */
     @Prop({ reflect: true, mutable: true }) checked: boolean = false
+    @Watch('checked')
+    updateChecked() {
+        if (this._inputEl) {
+            this._inputEl.checked = this.checked
+        }
+        if (!this._internalPropChange) {
+            if (this.checked && this.indeterminate) {
+                this._internalPropChange = true
+                this.indeterminate = false
+            }
+            this._onChange()
+        } else {
+            this._internalPropChange = false
+        }
+    }
 
     /**
      * Toggles indeterminate state of a checkbox
      */
     @Prop({ reflect: true, mutable: true }) indeterminate: boolean = false
-
     @Watch('indeterminate')
-    resetChecked() {
-        this.checked = false
+    updateIndeterminate() {
+        if (this._inputEl) {
+            this._inputEl.indeterminate = this.indeterminate
+        }
+        if (!this._internalPropChange) {
+            if (this.indeterminate && this.checked) {
+                this._internalPropChange = true
+                this.checked = false
+            }
+            this._onChange()
+        } else {
+            this._internalPropChange = false
+        }
     }
 
     /**
@@ -80,36 +108,39 @@ export class RuxCheckbox {
 
     constructor() {}
 
-    componentWillLoad() {
+    connectedCallback() {
+        this._onClick = this._onClick.bind(this)
         this._onChange = this._onChange.bind(this)
         this._onInput = this._onInput.bind(this)
     }
 
     componentDidLoad() {
-        const input = this.el.shadowRoot?.querySelector(
-            'input'
-        ) as HTMLInputElement
-
-        if (input && this.indeterminate) {
+        if (this._inputEl && this.indeterminate) {
             // indeterminate property does not exist in HTML but is accessible via js
-            input.indeterminate = true
+            this._inputEl.indeterminate = true
             this.checked = false
         }
     }
 
-    private _onChange(e: Event): void {
+    private _onChange(): void {
+        this.ruxChange.emit({
+            checked: this.checked,
+            indeterminate: this.indeterminate,
+        })
+    }
+
+    private _onClick(e: Event): void {
         const target = e.target as HTMLInputElement
         if (this.indeterminate) {
             this.indeterminate = false
-        }
-        this.checked = target.checked
-        this.ruxChange.emit(this.checked)
+            this.checked = true
+        } else this.checked = target.checked
+        this._onChange()
     }
 
     private _onInput(e: Event) {
         const target = e.target as HTMLInputElement
         this.value = target.value
-        this.checked = target.checked
         this.ruxInput.emit()
     }
 
@@ -156,9 +187,10 @@ export class RuxCheckbox {
                         required={required}
                         checked={checked}
                         value={value}
-                        onChange={this._onChange}
+                        onChange={this._onClick}
                         onInput={this._onInput}
                         onBlur={() => this._onBlur()}
+                        ref={(el) => (this._inputEl = el)}
                     />
                     <label htmlFor={checkboxId}>
                         <slot></slot>
