@@ -110,7 +110,6 @@ export class RuxCheckbox {
 
     connectedCallback() {
         this._onClick = this._onClick.bind(this)
-        this._onChange = this._onChange.bind(this)
         this._onInput = this._onInput.bind(this)
     }
 
