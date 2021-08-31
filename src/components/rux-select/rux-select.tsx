@@ -66,7 +66,7 @@ export class RuxSelect {
             invalid,
             name,
         } = this
-        console.log('input id', this.inputId)
+
         return (
             <Host>
                 {label && (
