@@ -1,0 +1,163 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title="Astro UXDS/Welcome/React" />
+
+# React Integration
+
+## Installation
+
+### Via NPM
+
+`npm i @astrouxds/react`
+
+#### Lazy Loading
+
+Astro Web Components make use of Stencil's automatic lazy loader which only loads components that are actually used on the page.
+
+First, import the @astrouxds/astro-web-components main CSS file into your `index.js` or `app.js` file.
+
+`import '@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css'`
+
+Next, import any desired astro component as you would any React component. 
+
+`import { RuxButton } from '@astrouxds/react'`
+
+You can now use Astro components as regular React components. 
+
+```jsx
+const MyComp = () => {
+    return (
+        <div>
+            <RuxButton>Rux Button</RuxButton>
+        </div>
+    )
+}
+
+```
+
+#### Cherry Picking
+
+If you need more control over your bundle size, you can also import and register individual components.
+Cherry picking components will result in a much smaller overall bundle size; however, you will need to manually register any component dependencies.
+This will be listed for each component in their documentation.
+
+***Cherry Picking is not currently available for @astrouxds/react.*** We plan on shipping two packages:
+
+ - @astrouxds/react, React wrapped Stencil components using Stencils lazy loader and custom elements definitions 
+ - @astrouxds/react-slim, React wrapped Stencil components that do not have custom element definitions, but does allow cherry picking
+
+## Setting Props
+
+Props are set the same way as any other React component. 
+
+```js
+const MyComp = () => {
+    return (
+        <div>
+            <RuxButton
+                size="small"
+            >
+            Rux Button
+            </RuxButton>
+        </div>
+    )
+}
+```
+
+## Using Slots
+
+Slots give you full control over the contents of a component. Some components may have multiple slots.
+
+> Web Component Concept:
+> Slotted content lives outside of the shadow DOM and as a result, you are free to style them however you want.
+
+```jsx
+const GlobalStatusBar = () => {
+  return (
+    <div>
+      <RuxGlobalStatusBar>
+        <RuxIcon slot="left-side" icon="apps" />
+        <div slot="app-meta">
+          <h1>Hello World</h1>
+        </div>
+      </RuxGlobalStatusBar>
+    </div>
+  );
+};
+```
+
+## Listening To Events
+
+Astro Components emit their own custom events, prefixed with `onRux-`.
+
+```jsx
+const MyComp = () => {
+    return (
+        <div>
+            <RuxInputField 
+                onRux-change={() => handleChange()}
+            />
+        </div>
+    )
+}
+```
+It is **highly** encouraged to listen to these custom events rather than default React events such as onChange. Because some 
+React events are different from their native JS counterparts, some bugs can arise from using default React 
+events. 
+
+## Methods
+
+Some components offer public methods that can be executed. These methods are async and can be executed by setting a ref on the element.
+The React docs for setting and using `ref` can be found [here](https://reactjs.org/docs/refs-and-the-dom.html).
+
+```jsx
+import React, { createRef } from "react";
+import { RuxButton, RuxTree, RuxTreeNode } from "@astrouxds/react";
+
+class Tree extends React.Component {
+  private treeRef = createRef<HTMLRuxTreeNodeElement>();
+
+  render() {
+    return (
+      <div>
+        <RuxTree>
+          <RuxTreeNode ref={this.treeRef}>Hello</RuxTreeNode>
+          <RuxTreeNode>World</RuxTreeNode>
+        </RuxTree>
+        <RuxButton onClick={() => this.treeRef.current.setSelected(true)}>
+          Set First Selected
+        </RuxButton>
+      </div>
+    );
+  }
+}
+
+export default Tree;
+```
+
+## Data Binding
+
+Because `@astrouxds/react` components are React components, data binding happens the same way.
+
+```jsx
+import React, { useState } from 'react'
+
+const MyComp = () => {
+
+    const [myInput, setMyInput] = useState("")
+
+    return (
+        <div>
+            <RuxInputField 
+                onRux-input={(e) => setMyInput(e.target.value))}
+            />
+        </div>
+    )
+}
+```
+React also has syntactic sugar for two way data binding, which can be found [here](https://reactjs.org/docs/two-way-binding-helpers.html)
+
+
+
+
+
