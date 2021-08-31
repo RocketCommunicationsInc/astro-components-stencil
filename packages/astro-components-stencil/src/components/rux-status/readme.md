@@ -89,12 +89,27 @@ Prior to Astro 4, the Astro UXDS Status Component was responsible for both the [
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
 | `status` | `status`  |             | `string` | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+## Dependencies
+
+### Used by
+
+ - [rux-monitoring-icon](../rux-monitoring-icon)
+
+### Graph
+```mermaid
+graph TD;
+  rux-monitoring-icon --> rux-status
+  style rux-status fill:#f9f,stroke:#333,stroke-width:4px
+```
+
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

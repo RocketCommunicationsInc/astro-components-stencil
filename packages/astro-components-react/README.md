@@ -1,6 +1,6 @@
 # Installation
 
-`npm i astro-in-react`
+`npm i @astrouxds/react`
 
 ## Import and Usage
 
@@ -10,13 +10,11 @@ First, import the css into either your index.js, app.js, or any CSS file you wou
 
 Next, Import any desired Astro components the same way you would any other React component.
 
-`import { RuxProgress } from 'astro-in-react'`
+`import { RuxProgress } from '@astrouxds/react'`
 
 You can now use astro-components as regular React components.
 
 ```
-import React from 'react';
-
 const MyComp = () => {
     return (
         <div>
@@ -24,8 +22,6 @@ const MyComp = () => {
         </div>
     )
 }
-
-export default MyComp;
 ```
 
 ## Astro Stencil Components Docs
@@ -44,7 +40,7 @@ This repo only has access to a limited number of Astro components translated to 
 - Using event listeners currently uses onRux prefix, followed by a dash and the name. ie, onRux-change. Not ideal, we are looking into changing it.
 - For using checkbox, push button, or switch onRux-change events, you need to check for the checked prop:
   ```
-          <RuxSwitch
+      <RuxSwitch
         value="switch"
         onRux-change={(e: React.ChangeEvent<HTMLRuxSwitchElement>) =>
           setSwitchVal(e.target.checked ? e.target.value : "")

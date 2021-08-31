@@ -74,6 +74,7 @@ There is one unnnamed slot in the Global Status Bar. This slot is intended for a
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property  | Attribute | Description | Type     | Default     |
@@ -81,6 +82,7 @@ There is one unnnamed slot in the Global Status Bar. This slot is intended for a
 | `appname` | `appname` |             | `string` | `undefined` |
 | `version` | `version` |             | `string` | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*
