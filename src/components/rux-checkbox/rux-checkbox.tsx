@@ -56,7 +56,7 @@ export class RuxCheckbox {
                 this._internalPropChange = true
                 this.indeterminate = false
             }
-            this._onChange()
+            this.ruxChange.emit()
         } else {
             this._internalPropChange = false
         }
@@ -76,7 +76,7 @@ export class RuxCheckbox {
                 this._internalPropChange = true
                 this.checked = false
             }
-            this._onChange()
+            this.ruxChange.emit()
         } else {
             this._internalPropChange = false
         }
@@ -121,20 +121,13 @@ export class RuxCheckbox {
         }
     }
 
-    private _onChange(): void {
-        this.ruxChange.emit({
-            checked: this.checked,
-            indeterminate: this.indeterminate,
-        })
-    }
-
     private _onClick(e: Event): void {
         const target = e.target as HTMLInputElement
         if (this.indeterminate) {
             this.indeterminate = false
             this.checked = true
         } else this.checked = target.checked
-        this._onChange()
+        this.ruxChange.emit()
     }
 
     private _onInput(e: Event) {
