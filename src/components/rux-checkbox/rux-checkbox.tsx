@@ -44,7 +44,7 @@ export class RuxCheckbox {
     /**
      * Toggles checked state of a checkbox
      */
-    @Prop({ reflect: true, mutable: true }) checked: boolean = false
+    @Prop({ reflect: true }) checked: boolean = false
     @Watch('checked')
     updateChecked() {
         if (this._inputEl) {
@@ -55,7 +55,7 @@ export class RuxCheckbox {
     /**
      * Toggles indeterminate state of a checkbox
      */
-    @Prop({ reflect: true, mutable: true }) indeterminate: boolean = false
+    @Prop({ reflect: true }) indeterminate: boolean = false
     @Watch('indeterminate')
     updateIndeterminate() {
         if (this._inputEl) {
