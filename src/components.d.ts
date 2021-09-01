@@ -126,6 +126,10 @@ export namespace Components {
          */
         "day"?: 'numeric' | '2-digit';
         /**
+          * Format options for era
+         */
+        "era"?: 'narrow' | 'short' | 'long';
+        /**
           * Format options for hour
          */
         "hour"?: 'numeric' | '2-digit';
@@ -157,6 +161,10 @@ export namespace Components {
           * Format options for Timezone name
          */
         "timeZoneName"?: 'short' | 'long';
+        /**
+          * Format options for weekday
+         */
+        "weekday"?: 'narrow' | 'short' | 'long';
         /**
           * Format options for year
          */
@@ -24345,6 +24353,10 @@ declare namespace LocalJSX {
          */
         "day"?: 'numeric' | '2-digit';
         /**
+          * Format options for era
+         */
+        "era"?: 'narrow' | 'short' | 'long';
+        /**
           * Format options for hour
          */
         "hour"?: 'numeric' | '2-digit';
@@ -24376,6 +24388,10 @@ declare namespace LocalJSX {
           * Format options for Timezone name
          */
         "timeZoneName"?: 'short' | 'long';
+        /**
+          * Format options for weekday
+         */
+        "weekday"?: 'narrow' | 'short' | 'long';
         /**
           * Format options for year
          */
