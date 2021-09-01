@@ -105,8 +105,8 @@ export class RuxCheckbox {
         const target = e.target as HTMLInputElement
         if (this.indeterminate) {
             this.indeterminate = false
-            this.checked = true
-        } else this.checked = target.checked
+        }
+        this.checked = target.checked
         this.ruxChange.emit()
     }
 
