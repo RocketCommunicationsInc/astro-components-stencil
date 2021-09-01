@@ -74,7 +74,7 @@ describe('Checkbox with Form', () => {
         cy.get('#log').should('not.contain', 'ruxCheckbox')
     })
 
-    it('should be checked when clicking an indeterminate checkbox', () => {
+    it('should be checked when clicking an unchecked indeterminate checkbox', () => {
         cy.get('#ruxCheckbox').invoke('prop', 'indeterminate', 'true')
         cy.get('#ruxCheckbox').shadow().find('input').click({ force: true })
         cy.get('#ruxCheckbox')
