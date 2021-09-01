@@ -19,7 +19,6 @@ let id = 0
 export class RuxCheckbox {
     private checkboxId = `rux-checkbox-${++id}`
     private _inputEl?: HTMLInputElement
-    private _internalPropChange: boolean = false
 
     @Element() el!: HTMLRuxCheckboxElement
 
@@ -51,15 +50,6 @@ export class RuxCheckbox {
         if (this._inputEl) {
             this._inputEl.checked = this.checked
         }
-        if (!this._internalPropChange) {
-            if (this.checked && this.indeterminate) {
-                this._internalPropChange = true
-                this.indeterminate = false
-            }
-            this.ruxChange.emit()
-        } else {
-            this._internalPropChange = false
-        }
     }
 
     /**
@@ -70,15 +60,6 @@ export class RuxCheckbox {
     updateIndeterminate() {
         if (this._inputEl) {
             this._inputEl.indeterminate = this.indeterminate
-        }
-        if (!this._internalPropChange) {
-            if (this.indeterminate && this.checked) {
-                this._internalPropChange = true
-                this.checked = false
-            }
-            this.ruxChange.emit()
-        } else {
-            this._internalPropChange = false
         }
     }
 
@@ -117,7 +98,6 @@ export class RuxCheckbox {
         if (this._inputEl && this.indeterminate) {
             // indeterminate property does not exist in HTML but is accessible via js
             this._inputEl.indeterminate = true
-            this.checked = false
         }
     }
 
@@ -152,14 +132,16 @@ export class RuxCheckbox {
             value,
         } = this
 
-        renderHiddenInput(
-            true,
-            this.el,
-            this.name,
-            this.value ? this.value : 'on',
-            this.disabled,
-            this.checked
-        )
+        if (!this.indeterminate) {
+            renderHiddenInput(
+                true,
+                this.el,
+                this.name,
+                this.value ? this.value : 'on',
+                this.disabled,
+                this.checked
+            )
+        }
 
         return (
             <div class="rux-form-field">
