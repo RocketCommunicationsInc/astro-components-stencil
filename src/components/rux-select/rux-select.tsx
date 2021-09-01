@@ -118,7 +118,6 @@ export class RuxSelect {
                         {label}
                     </label>
                 )}
-                whatup
                 <select
                     class={
                         'rux-select ' + (invalid ? 'rux-select-invalid' : '')
