@@ -18,13 +18,16 @@ First, import the @astrouxds/astro-web-components main CSS file into your `index
 
 `import '@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css'`
 
-Next, import any desired astro component as you would any React component. 
+Next, import any desired Astro component as you would any React component. 
 
 `import { RuxButton } from '@astrouxds/react'`
 
 You can now use Astro components as regular React components. 
 
 ```jsx
+import React from 'react'
+import { RuxButton } from '@astrouxds/react'
+
 const MyComp = () => {
     return (
         <div>
@@ -34,17 +37,6 @@ const MyComp = () => {
 }
 
 ```
-
-#### Cherry Picking
-
-If you need more control over your bundle size, you can also import and register individual components.
-Cherry picking components will result in a much smaller overall bundle size; however, you will need to manually register any component dependencies.
-This will be listed for each component in their documentation.
-
-***Cherry Picking is not currently available for @astrouxds/react.*** We plan on shipping two packages:
-
- - @astrouxds/react, React wrapped Stencil components using Stencils lazy loader and custom elements definitions 
- - @astrouxds/react-slim, React wrapped Stencil components that do not have custom element definitions, but does allow cherry picking
 
 ## Setting Props
 
@@ -110,6 +102,35 @@ events.
 Some components offer public methods that can be executed. These methods are async and can be executed by setting a ref on the element.
 The React docs for setting and using `ref` can be found [here](https://reactjs.org/docs/refs-and-the-dom.html).
 
+#### Functional Component
+```jsx
+import React, { useRef } from "react";
+import { RuxTree, RuxTreeNode, RuxButton } from "@astrouxds/react";
+
+const FuncTree = () => {
+
+  const treeRef = useRef(null);
+  const setFirst = (node) => {
+    node.current.setSelected(true);
+  };
+  return (
+    <div style={{ padding: "5%" }}>
+      <RuxTree>
+        <RuxTreeNode ref={treeRef}>Hello</RuxTreeNode>
+        <RuxTreeNode>World</RuxTreeNode>
+      </RuxTree>
+      <RuxButton onClick={() => setFirst(treeRef)}>
+        Set First Selected
+      </RuxButton>
+    </div>
+  );
+};
+
+export default FuncTree;
+
+```
+
+#### Class Component
 ```jsx
 import React, { createRef } from "react";
 import { RuxButton, RuxTree, RuxTreeNode } from "@astrouxds/react";
@@ -139,8 +160,10 @@ export default Tree;
 
 Because `@astrouxds/react` components are React components, data binding happens the same way.
 
+#### Functional Component
 ```jsx
 import React, { useState } from 'react'
+import { RuxInputField } from '@astrouxds/react'
 
 const MyComp = () => {
 
@@ -155,7 +178,34 @@ const MyComp = () => {
     )
 }
 ```
-React also has syntactic sugar for two way data binding, which can be found [here](https://reactjs.org/docs/two-way-binding-helpers.html)
+
+#### Class Component
+```jsx
+import React from 'react'
+import { RuxInputField } from '@astrouxds/react'
+
+class MyComp extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { myInput: "" }
+  }
+
+  handleInput(e){
+    this.setState({ myInput: e.target.value })
+  }
+  render() {
+    return(
+      <div>
+        <RuxInputField
+          onRux-input={(e) => this.handleInput(e)}
+        />
+      </div>
+    )
+  }
+}
+
+```
+React also has syntactic sugar for two way data binding, which can be found [here](https://reactjs.org/docs/two-way-binding-helpers.html).
 
 
 
