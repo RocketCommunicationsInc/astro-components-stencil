@@ -507,7 +507,7 @@ $quaternary: (
     --popupMenuItemBackgroundColor: var(--backgroundColor);
     //equates to --colorSnowflakesDarkSelected with alpha of 0.3
     --popupMenuItemHoverBackgroundColor: rgba(28, 63, 94, 0.3);
-    --popupMenuItemHoverTextColor: var(--primaryLight);
+    --popupMenuItemHoverTextColor: var(--colorSecondaryLighten2);
 
     --popupMenuItemSeparatorBorderColor: var(--primaryDarker);
     --menuItemDividerBorderColor: var(--primaryDarker);
