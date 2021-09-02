@@ -8,6 +8,7 @@ import {
     EventEmitter,
     Watch,
 } from '@stencil/core'
+import { isThursday } from 'date-fns'
 
 @Component({
     tag: 'rux-select',
@@ -76,7 +77,9 @@ export class RuxSelect {
         this._handleSlotChange = this._handleSlotChange.bind(this)
     }
     componentWillLoad() {
-        this._handleSlotChange()
+        if (this.value) {
+            this._handleSlotChange()
+        }
     }
 
     private _onBlur = () => {
