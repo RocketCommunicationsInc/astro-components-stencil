@@ -8,7 +8,6 @@ import {
     EventEmitter,
     Watch,
 } from '@stencil/core'
-import { isThursday } from 'date-fns'
 
 @Component({
     tag: 'rux-select',
