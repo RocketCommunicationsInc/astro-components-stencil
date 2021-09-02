@@ -20,6 +20,10 @@
     */
 }
 
+:host([hidden]) {
+    display: none;
+}
+
 .rux-error-text {
     display: inline-block;
     padding-left: 1.625rem;
@@ -81,6 +85,9 @@ label {
     &:disabled {
         opacity: 0.4;
         cursor: not-allowed;
+        &:hover {
+            border: 1px solid var(--selectMenuBorderColor);
+        }
     }
 
     &.rux-select-invalid {

@@ -18,10 +18,15 @@
     -ms-user-select: none;
     user-select: none;
 
-    contain: content; /* This improves CSS performance see: https://developers.google.com/web/updates/2016/06/css-containment */
+    contain: layout; /* This improves CSS performance see: https://developers.google.com/web/updates/2016/06/css-containment */
+}
+
+:host([hidden]) {
+    display: none;
 }
 
 header {
+    overflow: hidden;
     display: flex;
     height: 100%;
     width: 100%;
