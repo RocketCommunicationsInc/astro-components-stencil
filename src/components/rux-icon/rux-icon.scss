@@ -2,10 +2,11 @@
     /**
         * @prop --iconColor: the default color of the icon
     */
-    --iconColor: var(--iconDefaultColor);
+    // --iconColor: var(--iconDefaultColor);
 
-    fill: var(--iconColor);
+    // fill: var(--iconColor);
     display: inline-flex;
+    color: var(--iconDefaultColor);
 }
 
 :host([hidden]) {
@@ -19,4 +20,5 @@ svg > svg {
 }
 .icon {
     display: inline-flex;
+    // color: var(--iconDefaultColor);
 }
