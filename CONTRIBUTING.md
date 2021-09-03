@@ -16,6 +16,10 @@ In order to ship the RuxIcon component with all SVG assets included, we create i
 
 ### Fetching Icons From Figma
 
+Create a new `icons-config.json` file. Enter your Figma Personal Access Token and Figma File Id.
+
+`mv icons-config.json.example icons-config.json`
+
 Pull the latest icons from Figma
 
 `npm run icons.fetch`
