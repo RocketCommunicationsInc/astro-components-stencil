@@ -63,10 +63,13 @@ export class RuxRadioGroup {
     }
 
     componentDidLoad() {
-        const radios = Array.from(this.el.querySelectorAll('rux-radio'))
+        const radios = Array.from(
+            this.el.querySelectorAll('rux-radio')
+        ) as HTMLRuxRadioElement[]
+
         const isChecked = radios.filter((radio) => radio.checked)
 
-        if (!isChecked.length) {
+        if (radios.length && !isChecked.length) {
             radios[0].setAttribute('checked', 'checked')
         }
     }
