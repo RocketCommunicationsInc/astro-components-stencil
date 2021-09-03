@@ -62,6 +62,15 @@ export class RuxRadioGroup {
         this.handleClick = this.handleClick.bind(this)
     }
 
+    componentDidLoad() {
+        const radios = Array.from(this.el.querySelectorAll('rux-radio'))
+        const isChecked = radios.filter((radio) => radio.checked)
+
+        if (!isChecked.length) {
+            radios[0].setAttribute('checked', 'checked')
+        }
+    }
+
     handleClick(e: MouseEvent) {
         const selectedRadio =
             e.target && (e.target as HTMLElement).closest('rux-radio')
