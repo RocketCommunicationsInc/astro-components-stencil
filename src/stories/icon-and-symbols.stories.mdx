@@ -23,7 +23,6 @@ export const Default = (args) => {
   return html`
     <rux-icon
       icon="${args.icon}"
-      .color="${args.color}"
       .size="${args.size}"
       .label="${args.label}"
     ></rux-icon>
@@ -53,25 +52,14 @@ export const Default = (args) => {
 
 ### Customizing the Color
 
-#### Via the Color Property
-
-The `color` property accepts any valid color (hex, rgba, name, etc):
-
-```
-<rux-icon icon="settings" color="#FFF"></rux-icon>
-<rux-icon icon="settings" color="rgb(255, 255, 255)"></rux-icon>
-<rux-icon icon="settings" color="white"></rux-icon>
-```
-
 #### Via CSS
 
-You can also use the CSS `fill` property:
+Under the hood, all Icons have their fill property set to [currentColor](https://css-tricks.com/cascading-svg-fill-color/)
+so you can style them using the CSS `color` property:
 
 ```
-  <rux-icon icon="settings" style="fill: #FFF;"></rux-icon>
+  <rux-icon icon="settings" style="color: #FFF;"></rux-icon>
 ```
-
-**NOTE:** If you are using CSS to style the color, make sure to omit the `color` property on the component as this has a higher specificity and will override your CSS style.
 
 ### Customizing the Size
 
@@ -104,7 +92,6 @@ You can also manually set the `width` and `height` using CSS.
 
 export const AllIcons = (args) => {
   const displaySection = (section) => {
-    console.log('sec', section);
     return html`
       <div class="icon__section">
         <div class="icon-group__header">
@@ -112,7 +99,6 @@ export const AllIcons = (args) => {
         <span class="icon-style">Solid</span>
         </div>
       ${Object.keys(ruxIconsJson[section]).map(category => {
-        // const items = Object.values(ruxIconsJson[section][category]
         return html`
           <div>
             <div class="icon-list">
