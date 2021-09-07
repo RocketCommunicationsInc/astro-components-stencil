@@ -28,7 +28,7 @@ You have two options for importing Astro Web Components: Lazy Loading and Cherry
 
 #### Lazy Loading
 
-Astro Web Components make use of Stencil's automatic lazy loader which only loads components that are actually used on the page. In order to begin using the components and have themy styled correctly you will need to make some changes to the main.js file in your source folder. First, import the @astrouxds/astro-web-components main CSS. Then, import `defineCustomElements` from the @astrouxds node module and call it. After making those changes all Astro compoennts are able to be used by simply using their associated custom html tag such as `<rux-button>` or `<rux-icon>` within a Svelte component.
+Astro Web Components make use of Stencil's automatic lazy loader which only loads components that are actually used on the page. In order to begin using the components and have them styled correctly you will need to make some changes to the main.js file in your source folder. First, import the @astrouxds/astro-web-components main CSS. Then, import `defineCustomElements` from the @astrouxds node module and call it. After making those changes all Astro compoennts are able to be used by simply using their associated custom html tag such as `<rux-button>` or `<rux-icon>` within a Svelte component.
 
 ```js
 // main.js
@@ -121,6 +121,7 @@ Props are set the same way as any other Svelte component. Both primitive and com
     },
   ];
 </script>
+
 <!-- {range} prop is equivlent to range={range} -->
 <main>
   <rux-monitoring-progress-icon
@@ -139,7 +140,6 @@ Slots give you full control over the contents of a component. Some components ma
 
 > Web Component Concept:
 > Slotted content lives outside of the shadow DOM and as a result, you are free to style them however you want.
-
 
 ```html
 <rux-global-status-bar>
@@ -200,7 +200,7 @@ Some components offer public methods that can be executed. These methods are asy
 
 There is a limitation with Svelte and data binding on custom elements. Svelte's two-way binding syntax `bind:[prop]` is not supproted for custom element props. 
 
-The syntax in this example will *not* work as it will with native elements
+The syntax in this example will **not** work as it will with native elements
 ```html
 <script>
   let name
