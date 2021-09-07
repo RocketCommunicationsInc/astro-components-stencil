@@ -14,19 +14,19 @@
     /**
      * @prop --tableBorderColor: Table background color
      */
-    --tableBorderColor: var(--backgroundColor);
+    --tableBorderColor: var(--background);
     /**
       * @prop --tableHeaderBackgroundColor: Table header background color
       */
-    --tableHeaderBackgroundColor: var(--globalAppHeader);
+    --tableHeaderBackgroundColor: var(--global-status-bar);
     /**
       * @prop --tableHeaderBorderColor: Table header border color
       */
-    --tableHeaderBorderColor: var(--surfaceElements);
+    --tableHeaderBorderColor: var(--surface);
     /**
       * @prop --tableHeaderTextColor: Table header text color
       */
-    --tableHeaderTextColor: var(--defaultText);
+    --tableHeaderTextColor: var(--default-text);
     /**
       * @prop --tableHeaderBoxShadow: Table header box shadow
       */
@@ -38,15 +38,15 @@
     /**
       * @prop --tableRowBackgroundColor: Table row background color
       */
-    --tableRowBackgroundColor: var(--surfaceElements);
+    --tableRowBackgroundColor: var(--surface);
     /**
       * @prop --tableRowTextColor: Table row text color
       */
-    --tableRowTextColor: var(--defaultText);
+    --tableRowTextColor: var(--default-text);
     /**
       * @prop --tableRowBorderColor: Table row border color
       */
-    --tableRowBorderColor: var(--backgroundColor);
+    --tableRowBorderColor: var(--background);
     /**
       * @prop --tableRowHoverBackgroundColor: Table row hover background color
       */
@@ -54,11 +54,11 @@
     /**
       * @prop --tableRowHoverTextColor: Table row hover text color
       */
-    --tableRowHoverTextColor: var(--defaultText);
+    --tableRowHoverTextColor: var(--default-text);
     /**
       * @prop --tableRowSelectedBackgroundColor: Table row selected background color
       */
-    --tableRowSelectedBackgroundColor: var(--backgroundColor);
+    --tableRowSelectedBackgroundColor: var(--background);
     /**
       * @prop --tableRowSelectedBorderColor: Table row selected border color
       */
@@ -74,11 +74,11 @@
     /**
       * @prop --tableFilterDisabledBorderColor: Table filter disabled border color
       */
-    --tableFilterDisabledBorderColor: var(--backgroundColor);
+    --tableFilterDisabledBorderColor: var(--background);
     /**
       * @prop --tableFilterDisabledBackgroundColor: Table filter disabled background color
       */
-    --tableFilterDisabledBackgroundColor: var(--surfaceElements);
+    --tableFilterDisabledBackgroundColor: var(--surface);
 }
 
 :host([hidden]) {

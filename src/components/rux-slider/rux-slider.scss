@@ -208,7 +208,7 @@ input[type='range']:focus {
 
 .rux-range:not(:disabled)::-webkit-slider-thumb:active {
     border-color: var(--sliderSelectedThumbBorderColor);
-    background-color: var(--backgroundColor);
+    background-color: var(--background);
 }
 
 .rux-range:not(:disabled)::-webkit-slider-thumb:focus,
@@ -218,7 +218,7 @@ input[type='range']:focus {
 
 .rux-range:not(:disabled)::-webkit-slider-thumb:active {
     border-color: var(--sliderSelectedThumbBorderColor);
-    background-color: var(--backgroundColor);
+    background-color: var(--background);
 }
 
 .rux-range:not(:disabled)::-webkit-slider-thumb:focus,
@@ -239,7 +239,7 @@ input[type='range']:focus {
 }
 .rux-range:not(:disabled)::-moz-range-thumb:active {
     border-color: var(--sliderSelectedThumbBorderColor);
-    background-color: var(--backgroundColor);
+    background-color: var(--background);
 }
 .rux-range::-moz-range-thumb:hover {
     border-color: var(--sliderHoverThumbBorderColor);

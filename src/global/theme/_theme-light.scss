@@ -1,4 +1,33 @@
 .light-theme {
+    background: #eaeef4;
+    global-status-bar: #172635;
+    surface: #ffffff;
+    default-text: #292a2d;
+    secondary-text: #51555b;
+    placeholder-text: #292a2d99;
+    inverse-text: #ffffff;
+    primary: #005a8f;
+    primary-alt: #2f7aa7;
+    active: #649cbd;
+    selected: #cee9fc;
+    hover: #004872;
+    table-hover: #0048724d;
+    list-hover: #cee9fc4d;
+    scrollbar-shadow: #82818180;
+    table-header-shadow: linear-gradient(90deg, #0000006b 0%, #27405900 100%);
+    dialog-shadow-1: #00000024;
+    dialog-shadow-2: #0000001f;
+    dialog-shadow-3: #00000033;
+    banner-clear: #080c114d;
+    gsb-primary: #4dacff;
+    gsb-default-text: #ffffff;
+    classification-unclassified: #007a33;
+    classification-cui: #502b85;
+    classification-confidential: #0033a0;
+    classification-secret: #c8102e;
+    classification-top-secret: #ff8c00;
+    classification-top-secret-sci: #fce83a;
+
     /*
 
     Global Colors
@@ -21,10 +50,10 @@
     --inputDark: var(--colorTertiaryDarken4, #080c11);
 
     /* styles */
-    --fontColor: var(--defaultText);
-    --fontLowContrastColor: var(--secondaryText);
+    --fontColor: var(--default-text);
+    --fontLowContrastColor: var(--secondary-text);
     --fontInvertedColor: var(--primary);
-    --fontInvertedBackgroundColor: var(--backgroundColor);
+    --fontInvertedBackgroundColor: var(--background);
 
     --fontLinkColor: var(--primary);
     --fontLinkHoverColor: var(--primaryDark);
@@ -56,7 +85,7 @@
     --buttonHoverBorderColor: var(--primaryDark);
 
     /* Button Active State */
-    --buttonActiveControlTextColor: var(--defaultText);
+    --buttonActiveControlTextColor: var(--default-text);
     --buttonActiveBackgroundColor: var(--primary);
     --buttonActiveBorderColor: var(--primary);
 
@@ -78,21 +107,21 @@
 
   */
     --controlTextColor: var(--colorPrimary500);
-    --controlLabelColor: var(--defaultText);
+    --controlLabelColor: var(--default-text);
     --controlBackgroundColor: var(--primary);
-    --controlOutlineBackgroundColor: var(--backgroundColor);
+    --controlOutlineBackgroundColor: var(--background);
     --controlBorderColor: var(--colorPrimaryLighten2);
     --controlAccentColor: var(--primary);
 
-    --controlSelectedTextColor: var(--defaultText);
+    --controlSelectedTextColor: var(--default-text);
     --controlSelectedBackgroundColor: var(--primary);
     --controlSelectedBorderColor: var(--colorPrimaryLighten2);
     --controlHoverBorderColor: var(--primaryDark);
 
     --controlSelectedOutlineBorderColor: var(--primary);
 
-    --controlHoverOutlineBackgroundColor: var(--backgroundColor);
-    --controlSelectedOutlineBackgroundColor: var(--backgroundColor);
+    --controlHoverOutlineBackgroundColor: var(--background);
+    --controlSelectedOutlineBackgroundColor: var(--background);
 
     /*
 
@@ -112,13 +141,13 @@
     ==========================================================================
 
   */
-    --popupMenuBackgroundColor: var(--backgroundColor);
+    --popupMenuBackgroundColor: var(--background);
     --popupMenuBorderColor: var(--primaryLighter);
     --popupMenuTextColor: var(--primary);
 
     --popupCaretBackgroundColor: var(--primaryLighter);
 
-    --popupMenuItemBackgroundColor: var(--backgroundColor);
+    --popupMenuItemBackgroundColor: var(--background);
     //equates to --colorSnowflakesLightSelected with alpha of 0.3
     --menuItemHoverBackgroundColor: rgba(206, 233, 252, 0.3);
     --menuItemHoverTextColor: var(--primaryDark);
@@ -131,9 +160,9 @@
     ==========================================================================
 
   */
-    --sliderThumbBackgroundColor: var(--backgroundColor);
+    --sliderThumbBackgroundColor: var(--background);
     --sliderThumbBorderColor: var(--primary);
-    --sliderHoverThumbBackgroundColor: var(--backgroundColor);
+    --sliderHoverThumbBackgroundColor: var(--background);
     --sliderHoverThumbBorderColor: var(--primaryLight);
     --sliderTrackBackgroundColor: var(--primary);
     --sliderSelectedThumbBorderColor: var(--primaryLight);
@@ -146,12 +175,12 @@
 
   */
     /* Segmented Unselected */
-    --segmentedButtonBackgroundColor: var(--backgroundColor);
+    --segmentedButtonBackgroundColor: var(--background);
     --segmentedButtonTextColor: var(--primary);
     --segmentedButtonBorderColor: var(--primary);
 
     /* Segmented Hover */
-    --segmentedButtonHoverBackgroundColor: var(--backgroundColor);
+    --segmentedButtonHoverBackgroundColor: var(--background);
     --segmentedButtonHoverTextColor: var(--primary);
     --segmentedButtonHoverBorderColor: var(--primaryDark);
 
@@ -159,14 +188,14 @@
     --segmentedButtonSelectedBackgroundColor: var(
         --colorSnowflakesLightSelected
     );
-    --segmentedButtonSelectedTextColor: var(--defaultText);
+    --segmentedButtonSelectedTextColor: var(--default-text);
     --segmentedButtonSelectedBorderColor: var(--primary);
 
     /* Segmented Selected & Hover */
     --segmentedButtonSelectedHoverBackgroundColor: var(
         --colorSnowflakesLightSelected
     );
-    --segmentedButtonSelectedHoverTextColor: var(--defaultText);
+    --segmentedButtonSelectedHoverTextColor: var(--default-text);
     --segmentedButtonSelectedHoverBorderColor: var(--primary);
 
     /*
@@ -179,15 +208,15 @@
     --selectMenuBackgroundColor: linear-gradient(
         to left,
         var(--colorSnowflakesLightSelected) 2rem,
-        var(--backgroundColor) 2rem
+        var(--background) 2rem
     );
-    --selectMenuLabelColor: var(--defaultText);
+    --selectMenuLabelColor: var(--default-text);
     //snowflakesLightSelected at 0.3 opacity
     --selectMenuOptGroupTextColor: rgba(41, 42, 45, 0.6);
     --selectMenuOptHoverBackgroundColor: rgba(206, 233, 252, 0.3);
     --selectMenuOptTextHoverColor: var(--primaryDark);
     --selectMenuOptSelectedBackgroundColor: var(--lightSelected);
-    --selectMenuOptSelectedTextColor: var(--defaultText);
+    --selectMenuOptSelectedTextColor: var(--default-text);
     --selectMenuBorderColor: var(--primaryLighter);
     --selectMenuTextColor: var(--primary);
     --selectMenuBorderHoverColor: var(--primaryDark);
@@ -201,7 +230,7 @@
     ==========================================================================
 
   */
-    --switchBackgroundColor: var(--backgroundColor);
+    --switchBackgroundColor: var(--background);
     --switchOffBorderColor: var(--primaryLighter);
     --switchOnColor: var(--primary);
     --switchHoverOnColor: var(--primary);
@@ -221,7 +250,7 @@
 
     --pushbuttonSelectedBackgroundColor: var(--colorNormal);
     --pushbuttonSelectedBorderColor: var(--colorNormal);
-    --pushbuttonSelectedTextColor: var(--defaultText);
+    --pushbuttonSelectedTextColor: var(--default-text);
 
     /*
 
@@ -242,8 +271,8 @@
 
   */
     --modalTitleColor: var(--primaryElementText);
-    --modalTextColor: var(--defaultText);
-    --modalBackgroundColor: var(--surfaceElements);
+    --modalTextColor: var(--default-text);
+    --modalBackgroundColor: var(--surface);
     --modalBorderColor: var(--primary);
     /*
 
@@ -251,12 +280,12 @@
     ==========================================================================
 
   */
-    --logTextColor: var(--defaultText);
-    --logBackgroundColor: var(--surfaceElements);
-    --logBorderColor: var(--secondaryText);
+    --logTextColor: var(--default-text);
+    --logBackgroundColor: var(--surface);
+    --logBorderColor: var(--secondary-text);
 
-    --logHeaderTextColor: var(--defaultText);
-    --logHeaderBackgroundColor: var(--backgroundColor);
+    --logHeaderTextColor: var(--default-text);
+    --logHeaderBackgroundColor: var(--background);
 
     --logFilterBackgroundColor: var(--primaryLight);
     --logFilterTextColor: var(--primaryElementText);
@@ -267,8 +296,8 @@
     ==========================================================================
 
   */
-    --treeTextColor: var(--defaultText);
-    --treeBackgroundColor: var(--surfaceElements);
+    --treeTextColor: var(--default-text);
+    --treeBackgroundColor: var(--surface);
     --treeBorderColor: var(--primaryDark);
     --treeItemBorderColor: var(--primaryDark);
     --treeAccentColor: var(--primary);
@@ -279,14 +308,14 @@
     --treeHoverAccentColor: var(--primary);
 
     /* Selected */
-    --treeSelectedBackgroundColor: var(--surfaceElements);
+    --treeSelectedBackgroundColor: var(--surface);
     --treeSelectedBorderColor: var(--primaryDark);
-    --treeSelectedTextColor: var(--defaultText);
+    --treeSelectedTextColor: var(--default-text);
     --treeSelectedAccentColor: var(--primary);
 
-    --treeChildrenBackgroundColor: var(--surfaceElements);
+    --treeChildrenBackgroundColor: var(--surface);
 
-    --treeExpandedBorderColor: var(--backgroundColor);
+    --treeExpandedBorderColor: var(--background);
 
     /*
 
@@ -298,9 +327,9 @@
     --tabBackgroundColor: transparent;
     --tabBorderColor: transparent;
 
-    --tabHoverTextColor: var(--defaultText);
+    --tabHoverTextColor: var(--default-text);
 
-    --tabSelectedTextColor: var(--defaultText);
+    --tabSelectedTextColor: var(--default-text);
     --tabSelectedBorderColor: var(--primary);
 
     /*
@@ -309,7 +338,7 @@
     ==========================================================================
 
 	*/
-    --notificationTextColor: var(--defaultText);
+    --notificationTextColor: var(--default-text);
 
     /*
 
@@ -318,7 +347,7 @@
 
 	*/
     --classificationTextColorLight: var(--primaryElementText);
-    --classificationTextColorDark: var(--defaultText);
+    --classificationTextColorDark: var(--default-text);
 
     /*
 
@@ -341,10 +370,10 @@
     --inputBackgroundColor: var(--colorQuaternaryLighten3);
     --inputBorderColor: var(--colorPrimaryLighten2);
     --inputBorderColorAlt: var(--colorTertiaryDarken4);
-    --inputTextColor: var(--defaultText);
+    --inputTextColor: var(--default-text);
 
     --inputFocusBorderColor: var(--colorPrimaryDarken1);
-    --inputFocusTextColor: var(--defaultText);
+    --inputFocusTextColor: var(--default-text);
 
     --inputInvalidBorderColor: var(--colorCritical);
 
@@ -379,7 +408,7 @@
     // primary w/ opacity .7
     --scrollBarThumbBackgroundColor: rgba(0, 90, 143, 0.7);
     --scrollBarThumbBackgroundHoverColor: var(--colorPrimaryLighten1);
-    --scrollBarTrackBackgroundColor: var(--surfaceElements);
+    --scrollBarTrackBackgroundColor: var(--surface);
     --scrollBarVerticalBoxShadow: inset 3px 3px 3px 0px rgba(47, 72, 99, 0.5);
     --scrollBarHorizontalBoxShadow: inset 1px 3px 3px 0px rgba(47, 72, 99, 0.5);
     /*
@@ -389,20 +418,20 @@
 
   */
 
-    --timelineHeaderBackgroundColor: var(--surfaceElements);
-    --timelineHeaderTextColor: var(--defaultText);
+    --timelineHeaderBackgroundColor: var(--surface);
+    --timelineHeaderTextColor: var(--default-text);
 
-    --timelineRulerBackgroundColor: var(--surfaceElements);
-    --timelineRulerTextColor: var(--defaultText);
+    --timelineRulerBackgroundColor: var(--surface);
+    --timelineRulerTextColor: var(--default-text);
 
-    --timelineTrackLabelBackgroundColor: var(--surfaceElements);
-    --timelineTrackBackgroundColor: var(--surfaceElements);
+    --timelineTrackLabelBackgroundColor: var(--surface);
+    --timelineTrackBackgroundColor: var(--surface);
 
-    --timelineRegionBackgroundColor: var(--backgroundColor);
-    --timelineRegionTextColor: var(--defaultText);
+    --timelineRegionBackgroundColor: var(--background);
+    --timelineRegionTextColor: var(--default-text);
     --timelineRegionBorderColor: var(--primary);
 
-    --timelineRegionSelectedBorderColor: var(--defaultText);
+    --timelineRegionSelectedBorderColor: var(--default-text);
     --timelineRegionSelectedBackgroundColor: var(--primaryDark);
     --timelineRegionSelectedTextColor: var(--primaryElementText);
 
@@ -433,28 +462,28 @@
 
   */
 
-    --tableBorderColor: var(--backgroundColor);
+    --tableBorderColor: var(--background);
 
-    --tableHeaderBackgroundColor: var(--globalAppHeader);
-    --tableHeaderBorderColor: var(--surfaceElements);
+    --tableHeaderBackgroundColor: var(--global-status-bar);
+    --tableHeaderBorderColor: var(--surface);
     --tableHeaderTextColor: var(--primaryElementText);
     --tableHeaderBoxShadow: 0 0.1rem 0.45rem rgba(0, 0, 0, 0.2);
     --tableHeaderAccentColor: var(--primary);
 
-    --tableRowBackgroundColor: var(--surfaceElements);
-    --tableRowBorderColor: var(--backgroundColor);
-    --tableRowTextColor: var(--defaultText);
+    --tableRowBackgroundColor: var(--surface);
+    --tableRowBorderColor: var(--background);
+    --tableRowTextColor: var(--default-text);
 
     --tableRowHoverBackgroundColor: var(--primaryDarkHover);
-    --tableRowHoverTextColor: var(--defaultText);
+    --tableRowHoverTextColor: var(--default-text);
 
-    --tableRowSelectedBackgroundColor: var(--backgroundColor);
+    --tableRowSelectedBackgroundColor: var(--background);
     --tableRowSelectedBorderColor: var(--primary);
 
     --tableControlsBackgroundColor: var(--primary);
     --tableFilterBorderColor: var(--primary);
-    --tableFilterDisabledBorderColor: var(--backgroundColor);
-    --tableFilterDisabledBackgroundColor: var(--surfaceElements);
+    --tableFilterDisabledBorderColor: var(--background);
+    --tableFilterDisabledBackgroundColor: var(--surface);
 }
 
 li.light-theme {

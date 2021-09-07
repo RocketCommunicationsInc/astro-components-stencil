@@ -28,7 +28,7 @@ body {
     font-size: 1rem;
     color: var(--fontColor, rgb(255, 255, 255));
 
-    background-color: var(--backgroundColor);
+    background-color: var(--background);
     scrollbar-color: var(--scrollBarThumbBackgroundColor)
         var(--scrollBarTrackCornerBackgroundColor);
 }

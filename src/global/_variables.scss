@@ -1,6 +1,5 @@
 /* Astro 5 Simplified Colors */
 $theme: (
-    'backgroundColor': #101923,
     'defaultText': #ffffff,
     'secondaryText': #d4d8dd,
     'globalAppHeader': #172635,
@@ -65,6 +64,35 @@ $quaternary: (
 );
 
 :root {
+    --background: #101923;
+    --global-status-bar: #172635;
+    --surface: #1b2d3e;
+    --default-text: #ffffff;
+    --secondary-text: #d4d8dd;
+    --placeholder-text: #ffffff99;
+    --inverse-text: #080c11;
+    --primary: #4dacff;
+    --primary-alt: #3a87cf;
+    --active: #2b659b;
+    --selected: #1c3f5e;
+    --hover: #92cbff;
+    --table-hover: #92cbff4d;
+    --list-hover: #1c3f5e4d;
+    --scrollbar-shadow: #00000080;
+    --table-header-shadow: linear-gradient(90deg, #0000006b 0%, #27405900 100%);
+    --dialog-shadow-1: #00000040;
+    --dialog-shadow-2: #0000001f;
+    --dialog-shadow-3: #00000033;
+    --banner-clear: #080c114d;
+    --gsb-primary: #4dacff;
+    --gsb-default-text: #ffffff;
+    --classification-unclassified: #007a33;
+    --classification-cui: #502b85;
+    --classification-confidential: #0033a0;
+    --classification-secret: #c8102e;
+    --classification-top-secret: #ff8c00;
+    --classification-top-secret-sci: #fce83a;
+
     @each $class, $color in $primary {
         --colorPrimary#{$class}: #{$color};
     }
@@ -315,10 +343,10 @@ $quaternary: (
     }
 
     /* styles */
-    --fontColor: var(--defaultText);
-    --fontLowContrastColor: var(--secondaryText);
+    --fontColor: var(--default-text);
+    --fontLowContrastColor: var(--secondary-text);
     --fontInvertedColor: var(--primary);
-    --fontInvertedBackgroundColor: var(--backgroundColor);
+    --fontInvertedBackgroundColor: var(--background);
 
     --fontLinkColor: var(--primary);
     --fontLinkHoverColor: var(--primaryLight);
@@ -353,7 +381,7 @@ $quaternary: (
     --buttonHoverBorderColor: transparent;
 
     /* Button Active State */
-    --buttonActiveControlTextColor: var(--defaultText);
+    --buttonActiveControlTextColor: var(--default-text);
     --buttonActiveBackgroundColor: var(--primary);
     --buttonActiveBorderColor: var(--primary);
 
@@ -375,21 +403,21 @@ $quaternary: (
 
   */
     --controlTextColor: var(--colorSecondary500);
-    --controlLabelColor: var(--defaultText);
+    --controlLabelColor: var(--default-text);
     --controlBackgroundColor: var(--primary);
-    --controlOutlineBackgroundColor: var(--backgroundColor);
+    --controlOutlineBackgroundColor: var(--background);
     --controlBorderColor: var(--colorSecondaryDarken2);
     --controlAccentColor: var(--primary);
 
-    --controlSelectedTextColor: var(--defaultText);
+    --controlSelectedTextColor: var(--default-text);
     --controlSelectedBackgroundColor: var(--primaryDark);
     --controlSelectedBorderColor: var(--colorSecondaryDarken2);
     --controlHoverBorderColor: var(--primaryLight);
 
     --controlSelectedOutlineBorderColor: var(--primary);
 
-    --controlHoverOutlineBackgroundColor: var(--backgroundColor);
-    --controlSelectedOutlineBackgroundColor: var(--backgroundColor);
+    --controlHoverOutlineBackgroundColor: var(--background);
+    --controlSelectedOutlineBackgroundColor: var(--background);
 
     --radioGroupBorderColor: var(--controlBorderColor);
 
@@ -414,9 +442,9 @@ $quaternary: (
     ==========================================================================
 
   */
-    --sliderThumbBackgroundColor: var(--backgroundColor);
+    --sliderThumbBackgroundColor: var(--background);
     --sliderThumbBorderColor: var(--primary);
-    --sliderHoverThumbBackgroundColor: var(--backgroundColor);
+    --sliderHoverThumbBackgroundColor: var(--background);
     --sliderHoverThumbBorderColor: var(--primaryLight);
     --sliderTrackBackgroundColor: var(--primary);
     --sliderSelectedThumbBorderColor: var(--primaryLight);
@@ -429,12 +457,12 @@ $quaternary: (
 
   */
     /* Segmented Unselected */
-    --segmentedButtonBackgroundColor: var(--backgroundColor);
+    --segmentedButtonBackgroundColor: var(--background);
     --segmentedButtonTextColor: var(--primary);
     --segmentedButtonBorderColor: var(--primary);
 
     /* Segmented Hover */
-    --segmentedButtonHoverBackgroundColor: var(--backgroundColor);
+    --segmentedButtonHoverBackgroundColor: var(--background);
     --segmentedButtonHoverTextColor: var(--primary);
     --segmentedButtonHoverBorderColor: var(--primaryLight);
 
@@ -442,14 +470,14 @@ $quaternary: (
     --segmentedButtonSelectedBackgroundColor: var(
         --colorSnowflakesDarkSelected
     );
-    --segmentedButtonSelectedTextColor: var(--defaultText);
+    --segmentedButtonSelectedTextColor: var(--default-text);
     --segmentedButtonSelectedBorderColor: var(--primary);
 
     /* Segmented Selected & Hover */
     --segmentedButtonSelectedHoverBackgroundColor: var(
         --colorSnowflakesDarkSelected
     );
-    --segmentedButtonSelectedHoverTextColor: var(--defaultText);
+    --segmentedButtonSelectedHoverTextColor: var(--default-text);
     --segmentedButtonSelectedHoverBorderColor: var(--primary);
 
     /*
@@ -466,7 +494,7 @@ $quaternary: (
     --selectMenuBackgroundColor: linear-gradient(
         to left,
         var(--colorSnowflakesDarkSelected) 2rem,
-        var(--backgroundColor) 2rem
+        var(--background) 2rem
     );
     --selectMenuTextColor: var(--primary);
     --selectMenuTextHoverColor: var(--primary);
@@ -474,8 +502,8 @@ $quaternary: (
     --selectMenuOptHoverBackgroundColor: rgba(28, 63, 94, 0.3);
     --selectMenuOptGroupTextColor: rgba(255, 255, 255, 0.6);
     --selectMenuOptSelectedBackgroundColor: var(--colorSnowflakesDarkSelected);
-    --selectMenuOptSelectedTextColor: var(--defaultText);
-    --selectMenuLabelColor: var(--defaultText);
+    --selectMenuOptSelectedTextColor: var(--default-text);
+    --selectMenuLabelColor: var(--default-text);
     --selectMenuInactiveCaret: url('data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%234dacff%22%20d%3D%22M0%200h10L5%205z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
     --selectMenuActiveCaret: url('data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20style%3D%22transform%3A%20rotate%28180deg%29%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%234dacff%22%20d%3D%22M0%200h10L5%205z%22%20fill-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
 
@@ -485,7 +513,7 @@ $quaternary: (
     ==========================================================================
 
   */
-    --switchBackgroundColor: var(--backgroundColor);
+    --switchBackgroundColor: var(--background);
     --switchOffBorderColor: var(--primaryDarker);
     --switchOnColor: var(--primary);
     --switchHoverOnColor: var(--primary);
@@ -498,13 +526,13 @@ $quaternary: (
     ==========================================================================
 
   */
-    --popupMenuBackgroundColor: var(--backgroundColor);
+    --popupMenuBackgroundColor: var(--background);
     --popupMenuBorderColor: var(--primaryDarker);
     --popupMenuTextColor: var(--primary);
 
     --popupCaretBackgroundColor: var(--primaryDarker);
 
-    --popupMenuItemBackgroundColor: var(--backgroundColor);
+    --popupMenuItemBackgroundColor: var(--background);
     //equates to --colorSnowflakesDarkSelected with alpha of 0.3
     --popupMenuItemHoverBackgroundColor: rgba(28, 63, 94, 0.3);
     --popupMenuItemHoverTextColor: var(--primaryLight);
@@ -532,10 +560,10 @@ $quaternary: (
     ==========================================================================
 
   */
-    --clockTextColor: var(--defaultText);
-    --clockBackgroundColor: var(--backgroundColor);
-    --clockBorderColor: var(--surfaceElements);
-    --clockLabelColor: var(--defaultText);
+    --clockTextColor: var(--default-text);
+    --clockBackgroundColor: var(--background);
+    --clockBorderColor: var(--surface);
+    --clockLabelColor: var(--default-text);
 
     /*
 
@@ -544,8 +572,8 @@ $quaternary: (
 
   */
     --modalTitleColor: var(--primaryElementText);
-    --modalTextColor: var(--defaultText);
-    --modalBackgroundColor: var(--surfaceElements);
+    --modalTextColor: var(--default-text);
+    --modalBackgroundColor: var(--surface);
     --modalBorderColor: var(--primary);
     /*
 
@@ -555,12 +583,12 @@ $quaternary: (
     ==========================================================================
 
   */
-    --logTextColor: var(--defaultText);
-    --logBackgroundColor: var(--surfaceElements);
-    --logBorderColor: var(--backgroundColor);
+    --logTextColor: var(--default-text);
+    --logBackgroundColor: var(--surface);
+    --logBorderColor: var(--background);
 
-    --logHeaderTextColor: var(--defaultText);
-    --logHeaderBackgroundColor: var(--globalAppHeader);
+    --logHeaderTextColor: var(--default-text);
+    --logHeaderBackgroundColor: var(--global-status-bar);
 
     --logFilterBackgroundColor: var(--primaryDark);
     --logFilterTextColor: var(--primaryElementText);
@@ -571,8 +599,8 @@ $quaternary: (
     ==========================================================================
 
   */
-    --treeTextColor: var(--defaultText);
-    --treeBackgroundColor: var(--surfaceElements);
+    --treeTextColor: var(--default-text);
+    --treeBackgroundColor: var(--surface);
     --treeBorderColor: var(--primaryDark);
     --treeItemBorderColor: var(--primaryDark);
     --treeAccentColor: var(--primary);
@@ -583,14 +611,14 @@ $quaternary: (
     --treeHoverAccentColor: var(--primary);
 
     /* Selected */
-    --treeSelectedBackgroundColor: var(--surfaceElements);
+    --treeSelectedBackgroundColor: var(--surface);
     --treeSelectedBorderColor: var(--primaryDark);
-    --treeSelectedTextColor: var(--defaultText);
+    --treeSelectedTextColor: var(--default-text);
     --treeSelectedAccentColor: var(--primary);
 
-    --treeChildrenBackgroundColor: var(--surfaceElements);
+    --treeChildrenBackgroundColor: var(--surface);
 
-    --treeExpandedBorderColor: var(--backgroundColor);
+    --treeExpandedBorderColor: var(--background);
 
     /*
 
@@ -602,9 +630,9 @@ $quaternary: (
     --tabBackgroundColor: transparent;
     --tabBorderColor: transparent;
 
-    --tabHoverTextColor: var(--defaultText);
+    --tabHoverTextColor: var(--default-text);
 
-    --tabSelectedTextColor: var(--defaultText);
+    --tabSelectedTextColor: var(--default-text);
     --tabSelectedBorderColor: var(--primary);
 
     /*
@@ -621,7 +649,7 @@ $quaternary: (
     ==========================================================================
 
 	*/
-    --classificationTextColorLight: var(--defaultText);
+    --classificationTextColorLight: var(--default-text);
     --classificationTextColorDark: var(--primaryElementText);
 
     /*
@@ -645,11 +673,11 @@ $quaternary: (
     --inputBackgroundColor: var(--colorTertiaryDarken3);
     --inputBorderColor: var(--colorSecondaryDarken2);
     --inputBorderColorAlt: var(--colorTertiaryDarken4);
-    --inputTextColor: var(--defaultText);
+    --inputTextColor: var(--default-text);
 
     /* Input Focus */
     --inputFocusBorderColor: var(--colorSecondaryLighten2);
-    --inputFocusTextColor: var(--defaultText);
+    --inputFocusTextColor: var(--default-text);
 
     --inputInvalidBorderColor: var(--colorCritical);
 
@@ -705,22 +733,22 @@ $quaternary: (
 
   */
 
-    --timelineHeaderBackgroundColor: var(--surfaceElements);
-    --timelineHeaderTextColor: var(--defaultText);
+    --timelineHeaderBackgroundColor: var(--surface);
+    --timelineHeaderTextColor: var(--default-text);
 
-    --timelineRulerBackgroundColor: var(--surfaceElements);
-    --timelineRulerTextColor: var(--defaultText);
+    --timelineRulerBackgroundColor: var(--surface);
+    --timelineRulerTextColor: var(--default-text);
 
-    --timelineTrackLabelBackgroundColor: var(--surfaceElements);
-    --timelineTrackBackgroundColor: var(--surfaceElements);
+    --timelineTrackLabelBackgroundColor: var(--surface);
+    --timelineTrackBackgroundColor: var(--surface);
 
-    --timelineRegionBackgroundColor: var(--backgroundColor);
-    --timelineRegionTextColor: var(--defaultText);
+    --timelineRegionBackgroundColor: var(--background);
+    --timelineRegionTextColor: var(--default-text);
     --timelineRegionBorderColor: var(--primary);
 
     --timelineRegionSelectedBorderColor: var(--inputBackground);
     --timelineRegionSelectedBackgroundColor: var(--primaryDark);
-    --timelineRegionSelectedTextColor: var(--defaultText);
+    --timelineRegionSelectedTextColor: var(--default-text);
 
     --timelineRegionStatusColorNormal: var(--colorNormal);
     --timelineRegionStatusColorCritical: var(--colorCritical);
@@ -749,26 +777,26 @@ $quaternary: (
 
   */
 
-    --tableBorderColor: var(--backgroundColor);
+    --tableBorderColor: var(--background);
 
-    --tableHeaderBackgroundColor: var(--globalAppHeader);
-    --tableHeaderBorderColor: var(--surfaceElements);
-    --tableHeaderTextColor: var(--defaultText);
+    --tableHeaderBackgroundColor: var(--global-status-bar);
+    --tableHeaderBorderColor: var(--surface);
+    --tableHeaderTextColor: var(--default-text);
     --tableHeaderBoxShadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
     --tableHeaderAccentColor: var(--primary);
 
-    --tableRowBackgroundColor: var(--surfaceElements);
-    --tableRowTextColor: var(--defaultText);
-    --tableRowBorderColor: var(--backgroundColor);
+    --tableRowBackgroundColor: var(--surface);
+    --tableRowTextColor: var(--default-text);
+    --tableRowBorderColor: var(--background);
 
     --tableRowHoverBackgroundColor: var(--primaryLightHover);
-    --tableRowHoverTextColor: var(--defaultText);
+    --tableRowHoverTextColor: var(--default-text);
 
-    --tableRowSelectedBackgroundColor: var(--backgroundColor);
+    --tableRowSelectedBackgroundColor: var(--background);
     --tableRowSelectedBorderColor: var(--primary);
 
     --tableControlsBackgroundColor: var(--primary);
     --tableFilterBorderColor: var(--primary);
-    --tableFilterDisabledBorderColor: var(--backgroundColor);
-    --tableFilterDisabledBackgroundColor: var(--surfaceElements);
+    --tableFilterDisabledBorderColor: var(--background);
+    --tableFilterDisabledBackgroundColor: var(--surface);
 }
