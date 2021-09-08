@@ -46,18 +46,6 @@
             cursor: not-allowed;
             cursor: var(--disabledCursor);
         }
-    }
-
-    .rux-textarea-field {
-        display: flex;
-        flex-direction: column;
-
-        font-family: var(--fontFamily);
-        font-size: var(--fontSize);
-        color: var(--fontColor);
-    }
-
-    .rux-textarea {
         &:focus {
             border-color: var(--inputFocusBorderColor);
             outline: none;
@@ -82,6 +70,15 @@
             color: var(--inputTextColor);
             opacity: 0.6;
         }
+    }
+
+    .rux-textarea-field {
+        display: flex;
+        flex-direction: column;
+
+        font-family: var(--fontFamily);
+        font-size: var(--fontSize);
+        color: var(--fontColor);
     }
 
     .rux-textarea-label {
