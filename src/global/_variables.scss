@@ -1,9 +1,9 @@
 /* Astro 5 Simplified Colors */
 $theme: (
-    'defaultText': #ffffff,
-    'secondaryText': #d4d8dd,
-    'globalAppHeader': #172635,
-    'primary': #4dacff,
+    // 'defaultText': #ffffff,
+    // 'secondaryText': #d4d8dd,
+    // 'globalAppHeader': #172635,
+    // 'primary': #4dacff,
     // 'primaryDark': #3a87cf,
     // 'primaryDarker': #2b659b,
     // 'primaryDarkHover': #6b8ca5,
@@ -91,6 +91,108 @@ $quaternary: (
     --classification-secret: #c8102e;
     --classification-top-secret: #ff8c00;
     --classification-top-secret-sci: #fce83a;
+
+    --color-basics-white: #ffffff;
+    --color-basics-black: #000000;
+    --color-tag-1-100: #d0f4f4;
+    --color-tag-1-200: #a1e9eb;
+    --color-tag-1-300: #70dde0;
+    --color-tag-1-400: #3ed2d6;
+    --color-tag-1-500: #00c7cb;
+    --color-tag-1-600: #009fa3;
+    --color-tag-1-700: #00777a;
+    --color-tag-1-800: #035051;
+    --color-tag-1-900: #032828;
+    --color-tag-2-100: #e4e2f7;
+    --color-tag-2-200: #c9c5ed;
+    --color-tag-2-300: #aea8e5;
+    --color-tag-2-400: #938bdb;
+    --color-tag-2-500: #786dd3;
+    --color-tag-2-600: #6058a8;
+    --color-tag-2-700: #48417f;
+    --color-tag-2-800: #302c54;
+    --color-tag-2-900: #18152b;
+    --color-tag-3-100: #edcef3;
+    --color-tag-3-200: #da9ce7;
+    --color-tag-3-300: #c76ada;
+    --color-tag-3-400: #b534ce;
+    --color-tag-3-500: #a200c1;
+    --color-tag-3-600: #81009a;
+    --color-tag-3-700: #610074;
+    --color-tag-3-800: #41004d;
+    --color-tag-3-900: #200227;
+    --color-tag-4-100: #f8ddd1;
+    --color-tag-4-200: #f0baa3;
+    --color-tag-4-300: #ea9875;
+    --color-tag-4-400: #e27545;
+    --color-tag-4-500: #da5309;
+    --color-tag-4-600: #af420a;
+    --color-tag-4-700: #833209;
+    --color-tag-4-800: #572108;
+    --color-tag-4-900: #2b1105;
+    --color-primary-100: #cbdee9;
+    --color-primary-200: #98bdd3;
+    --color-primary-300: #649cbd;
+    --color-primary-400: #2f7aa7;
+    --color-primary-500: #005a8f;
+    --color-primary-600: #004872;
+    --color-primary-700: #003655;
+    --color-primary-800: #002439;
+    --color-primary-900: #00121c;
+    --color-status-critical-400: #ff5f60;
+    --color-status-critical-500: #ff3838;
+    --color-status-critical-800: #570d01;
+    --color-status-caution-400: #fded61;
+    --color-status-caution-500: #fce83a;
+    --color-status-caution-800: #554900;
+    --color-status-normal-400: #99f666;
+    --color-status-normal-500: #56f000;
+    --color-status-normal-800: #015800;
+    --color-status-standby-400: #5ce2ff;
+    --color-status-standby-500: #2dccff;
+    --color-status-standby-800: #224c58;
+    --color-status-off-400: #ced6e4;
+    --color-status-off-500: #9ea7ad;
+    --color-status-off-800: #32363a;
+    --color-status-serious-500: #ffb302;
+    --color-status-serious-800: #64451a;
+    --color-classification-unclassified: #007a33;
+    --color-classification-cui: #502b85;
+    --color-classification-confidential: #0033a0;
+    --color-classification-secret: #c8102e;
+    --color-classification-top-secret: #ff8c00;
+    --color-classification-top-secret-sci: #fce83a;
+    --color-secondary-100: #daeeff;
+    --color-secondary-200: #b7dcff;
+    --color-secondary-300: #92cbff;
+    --color-secondary-400: #6ebaff;
+    --color-secondary-500: #4dacff;
+    --color-secondary-600: #3a87cf;
+    --color-secondary-700: #2b659b;
+    --color-secondary-800: #1d4367;
+    --color-secondary-900: #0e2234;
+    --color-tertiary-100: #d4d8dd;
+    --color-tertiary-200: #a9b2bc;
+    --color-tertiary-300: #7e8c9b;
+    --color-tertiary-400: #52667a;
+    --color-tertiary-500: #274059;
+    --color-tertiary-600: #1f3347;
+    --color-tertiary-700: #172635;
+    --color-tertiary-800: #101923;
+    --color-tertiary-900: #080c11;
+    --color-quaternary-100: #f5f6f9;
+    --color-quaternary-200: #eaeef4;
+    --color-quaternary-300: #e1e6ef;
+    --color-quaternary-400: #d7dee9;
+    --color-quaternary-500: #ced6e4;
+    --color-quaternary-600: #a4abb6;
+    --color-quaternary-700: #7b8089;
+    --color-quaternary-800: #51555b;
+    --color-quaternary-900: #292a2d;
+    --color-snowflakes-dark-surface: #1b2d3e;
+    --color-snowflakes-light-shadow: #828181;
+    --color-snowflakes-dark-selected: #1c3f5e;
+    --color-snowflakes-light-selected: #cee9fc;
 
     @each $class, $color in $primary {
         --colorPrimary#{$class}: #{$color};
@@ -387,7 +489,7 @@ $quaternary: (
     /* Secondary Button Variant */
     --buttonSecondaryTextColor: var(--primary);
     --buttonSecondaryBackgroundColor: transparent;
-    --buttonSecondaryBorderColor: var(--colorPrimary, rgb(0, 90, 143));
+    --buttonSecondaryBorderColor: var(--primary, rgb(0, 90, 143));
 
     /* Secondary Button Variant Hover State */
     --buttonSecondaryHoverTextColor: var(--hover);
@@ -401,7 +503,7 @@ $quaternary: (
     For checkboxes, radio buttons etc …
 
   */
-    --controlTextColor: var(--colorSecondary500);
+    --controlTextColor: var(--color-secondary-500);
     --controlLabelColor: var(--default-text);
     --controlBackgroundColor: var(--primary);
     --controlOutlineBackgroundColor: var(--background);
@@ -657,7 +759,7 @@ $quaternary: (
     --cardBackgroundColor: var(--colorTertiaryDarken1);
 
     --cardHeaderBackgroundColor: var(--colorTertiaryDarken3);
-    --cardHeaderTextColor: var(--colorWhite, #fff);
+    --cardHeaderTextColor: var(--color-basics-white, #fff);
     /*
 
     Input/Text Field Colors

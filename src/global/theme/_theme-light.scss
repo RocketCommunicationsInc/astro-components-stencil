@@ -41,12 +41,12 @@
     --defaultText: var(--colorQuaternaryDarken4, #292a2d);
     --secondaryText: var(--colorQuaternaryDarken3, #51555b);
     --globalAppHeader: var(--colorTertiaryDarken2, #172635);
-    --primary: var(--colorPrimary, #005a8f);
+    // --primary: var(--colorPrimary, #005a8f);
     // --primaryLighter: var(--colorPrimaryLighten2, #92cbff);
     // --primaryDark: var(--colorPrimaryDarken1, #004872);
     // --primaryDarkHover: #0048724d; /* TODO: this is a temporary fix, the use of opacity from Sketch is new and not accounted for in CSS */
-    // --primaryElementText: var(--colorWhite, #ffffff);
-    --inputBackground: var(--colorWhite, #ffffff);
+    // --primaryElementText: var(--color-basics-white #ffffff);
+    --inputBackground: var(--color-basics-white, #ffffff);
     --inputDark: var(--colorTertiaryDarken4, #080c11);
 
     /* styles */
@@ -358,7 +358,7 @@
     --cardBackgroundColor: var(--colorQuaternaryLighten2);
 
     --cardHeaderBackgroundColor: var(--colorQuaternaryLighten1);
-    --cardHeaderTextColor: var(--colorWhite, #fff);
+    --cardHeaderTextColor: var(--color-basics-white, #fff);
 
     /*
 
