@@ -507,17 +507,12 @@
     ==========================================================================
 
   */
-    --popupMenuBackgroundColor: var(--background);
-
-    --popupMenuTextColor: var(--primary);
-
-    --popupMenuItemBackgroundColor: var(--background);
-    //equates to --color-snowflakes-dark-selected with alpha of 0.3
-    --popupMenuItemHoverBackgroundColor: rgba(28, 63, 94, 0.3);
-    --popupMenuItemHoverTextColor: var(--hover);
-
-    --popupMenuItemSeparatorBorderColor: var(--active);
-    // --menuItemDividerBorderColor: var(--menu-border-color);
+    // --popupMenuBackgroundColor: var(--background);
+    // --popupMenuTextColor: var(--primary);
+    // --popupMenuItemBackgroundColor: var(--background);
+    // --popupMenuItemHoverBackgroundColor: var(--menu-item-hover);
+    // --popupMenuItemHoverTextColor: var(--hover);
+    // --popupMenuItemSeparatorBorderColor: var(--active);
 
     /*
 
@@ -525,12 +520,12 @@
     ==========================================================================
 
   */
-    --pushbuttonBackgroundColor: none;
-    --pushbuttonBorderColor: var(--primary);
-    --pushbuttonTextColor: var(--primary);
+    // --pushbuttonBackgroundColor: none;
+    // --pushbuttonBorderColor: var(--primary);
+    // --pushbuttonTextColor: var(--primary);
 
-    --pushbuttonSelectedBackgroundColor: var(--colorNormal);
-    --pushbuttonSelectedBorderColor: var(--colorNormal);
+    // --pushbuttonSelectedBackgroundColor: var(--colorNormal);
+    // --pushbuttonSelectedBorderColor: var(--colorNormal);
     --pushbuttonSelectedTextColor: var(--inverse-text);
 
     /*

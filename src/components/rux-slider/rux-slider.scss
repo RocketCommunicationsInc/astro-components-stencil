@@ -1,48 +1,42 @@
 :host {
-    /**
-    * @prop --sliderThumbBackgroundColor: Background color of the slider's thumb.
-    */
-    /**
-    * @prop --sliderThumbBorderColor: Border color of the slider's thumb.
-    */
-    /**
-    * @prop --sliderHoverThumbBackgroundColor: Background color of the slider's thumb in a hover state.
-    */
-    /**
-    * @prop --sliderHoverThumbBorderColor: Border color of the slider's thumb in a hover state.
-    */
-    /**
-    * @prop --sliderTrackBackgroundColor: Background color of the slider's track.
-    */
-    /**
-    * @prop --sliderSelectedThumbBackgroundColor: Background color of the slider's thumb in a selected state.
-    */
-    /**
-    * @prop --sliderSelectedThumbBorderColor: Border color of the slider's thumb in a selected state.
-    */
-    /**
-    * @prop --sliderThumbSize: Size of the slider's thumb, both width and height.
-    */
-    /**
-    * @prop --sliderThumbBorderSize: Size of slider's thumb border.
-    */
-    /**
-    * @prop --sliderTrackCursor: The type of cursor for the slider's track.
-    */
-    /**
-    * @prop --valuePercent: The current value of the slider in a percent.
-    */
-    /**
-    * @prop --top: Determines the top value of the slider thumb.
-    */
+    /** @prop --sliderThumbBackgroundColor: Background color of the slider's thumb. */
+    --sliderThumbBackgroundColor: var(--background);
 
+    /** @prop --sliderThumbBorderColor: Border color of the slider's thumb.*/
+    --sliderThumbBorderColor: var(--primary);
+
+    /** @prop --sliderHoverThumbBackgroundColor: Background color of the slider's thumb in a hover state.*/
+    --sliderHoverThumbBackgroundColor: var(--background);
+
+    /** @prop --sliderHoverThumbBorderColor: Border color of the slider's thumb in a hover state.*/
+    --sliderHoverThumbBorderColor: var(--hover);
+
+    /** @prop --sliderTrackBackgroundColor: Background color of the slider's track.*/
+    --sliderTrackBackgroundColor: var(--primary);
+
+    /** @prop --sliderSelectedThumbBackgroundColor: Background color of the slider's thumb in a selected state.*/
+    --sliderSelectedTrackBackgroundColor: var(--primary);
+
+    /** @prop --sliderSelectedThumbBorderColor: Border color of the slider's thumb in a selected state.*/
+    --sliderSelectedThumbBorderColor: var(--hover);
+
+    /** @prop --sliderThumbSize: Size of the slider's thumb, both width and height.*/
     --sliderThumbSize: 19px;
+
+    /** @prop --sliderThumbBorderSize: Size of slider's thumb border.*/
     --sliderThumbBorderSize: 2px;
-    --sliderTrackHeight: 1px;
-    --sliderTrackBeforeThumbHeight: 5px;
-    --sliderTrackCursor: pointer;
+
+    /** @prop --valuePercent: The current value of the slider in a percent.*/
     --valuePercent: 50%;
+
+    /** @prop --top: Determines the top value of the slider thumb.*/
     --top: calc(var(--sliderThumbSize) / -2.7);
+
+    /** @prop --sliderTrackHeight: the slider track height */
+    --sliderTrackHeight: 1px;
+
+    /** @prop --sliderTrackBeforeThumbHeight: the slider track before thumb height */
+    --sliderTrackBeforeThumbHeight: 5px;
 
     display: flex;
     flex-grow: 1;
@@ -58,7 +52,7 @@
     display: flex;
     height: 20px;
     :hover {
-        cursor: var(--sliderTrackCursor);
+        cursor: pointer;
     }
     :disabled {
         cursor: not-allowed;
@@ -85,7 +79,7 @@ input[type='range']:focus {
     align-items: center;
     max-width: 100%;
     /* width: 100%; */
-    cursor: var(--sliderTrackCursor, pointer);
+    cursor: pointer;
     border-radius: 2.5px;
     min-height: var(--sliderTrackHeight);
     max-height: var(--sliderTrackBeforeThumbHeight);
@@ -112,7 +106,7 @@ input[type='range']:focus {
     align-items: center;
     max-width: 100%;
     /* width: 100%; */
-    cursor: var(--sliderTrackCursor, pointer);
+    cursor: pointer;
     border-radius: 2.5px;
     min-height: var(--sliderTrackHeight);
     max-height: var(--sliderTrackBeforeThumbHeight);
@@ -148,7 +142,7 @@ input[type='range']:focus {
     align-items: center;
     max-width: 100%;
     /* width: 100%; */
-    cursor: var(--sliderTrackCursor, pointer);
+    cursor: pointer;
     border-radius: 2.5px;
     min-height: var(--sliderTrackHeight);
     max-height: 5px;
