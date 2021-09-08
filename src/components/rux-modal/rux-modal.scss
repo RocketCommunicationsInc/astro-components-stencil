@@ -1,25 +1,25 @@
 :host {
     box-sizing: border-box;
-    --modalTitleColor: var(--inverse-text);
-    --modalTextColor: var(--default-text);
-    --modalBackgroundColor: var(--surface);
-    --modalBorderColor: var(--primary);
 
     /**
       * @prop --modalTitleColor: Modal title color
       */
+    --modalTitleColor: var(--inverse-text);
 
     /**
       * @prop --modalTextColor: Modal text color
       */
+    --modalTextColor: var(--default-text);
 
     /**
       * @prop --modalBackgroundColor: Modal background color
       */
+    --modalBackgroundColor: var(--surface);
 
     /**
       * @prop --modalBorderColor: Modal border color
       */
+    --modalBorderColor: var(--primary);
 
     display: contents;
 }
