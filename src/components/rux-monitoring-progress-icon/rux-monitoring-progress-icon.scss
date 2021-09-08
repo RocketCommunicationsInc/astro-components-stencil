@@ -76,7 +76,7 @@ rux-status {
 }
 
 .rux-advanced-status__label {
-    color: var(--fontColor);
+    color: var(--default-text);
     font-size: 0.875rem;
     text-align: center;
     text-overflow: ellipsis;
@@ -92,7 +92,7 @@ rux-status {
 
 .rux-advanced-status__sublabel {
     font-size: 0.65em;
-    color: var(--fontColor);
+    color: var(--default-text);
     opacity: 0.6;
     display: block;
 }

@@ -51,16 +51,16 @@
     --inputDark: var(--colorTertiaryDarken4, #080c11);
 
     /* styles */
-    --fontColor: var(--default-text);
-    --fontLowContrastColor: var(--secondary-text);
-    --fontInvertedColor: var(--primary);
-    --fontInvertedBackgroundColor: var(--background);
+    // --default-text: var(--default-text);
+    // --fontLowContrastColor: var(--secondary-text);
+    // --fontInvertedColor: var(--primary);
+    // --fontInvertedBackgroundColor: var(--background);
 
-    --fontLinkColor: var(--primary);
-    --fontLinkHoverColor: var(--primary-alt);
+    // --fontLinkColor: var(--primary);
+    // --fontLinkHoverColor: var(--primary-alt);
 
-    --wcagCompliance: rgba(0, 0, 0, 0.5);
-    --criticalBorder: #7f1c1c;
+    // --wcagCompliance: rgba(0, 0, 0, 0.5);
+    // --criticalBorder: #7f1c1c;
     --colorCritical: var(--color-status-critical-500);
     --colorSerious: var(--color-status-serious-500);
     --colorCaution: var(--color-status-caution-500);

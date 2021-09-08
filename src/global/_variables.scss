@@ -1,65 +1,3 @@
-/* Astro 5 Simplified Colors */
-$theme: (
-    // 'defaultText': #ffffff,
-    // 'secondaryText': #d4d8dd,
-    // 'globalAppHeader': #172635,
-    // 'primary': #4dacff,
-    // 'primaryDark': #3a87cf,
-    // 'primaryDarker': #2b659b,
-    // 'primaryDarkHover': #6b8ca5,
-    // 'primaryElementText': #080c11,
-    // 'inputBackground': #ffffff,
-    // 'inputDark': #080c11,,,
-);
-
-$primary: (
-    '100': #cbdee9,
-    '200': #98bdd3,
-    '300': #649cbd,
-    '400': #2f7aa7,
-    '500': #005a8f,
-    '600': #004872,
-    '700': #003655,
-    '800': #002439,
-    '900': #00121c,
-);
-
-$secondary: (
-    '100': #daeeff,
-    '200': #b7dcff,
-    '300': #92cbff,
-    '400': #6ebaff,
-    '500': #4dacff,
-    '600': #3a87cf,
-    '700': #2b659b,
-    '800': #1d4367,
-    '900': #0e2234,
-);
-
-$tertiary: (
-    '100': #d4d8dd,
-    '200': #a9b2bc,
-    '300': #7e8c9b,
-    '400': #52667a,
-    '500': #274059,
-    '600': #1f3347,
-    '700': #172635,
-    '800': #101923,
-    '900': #080c11,
-);
-
-$quaternary: (
-    '100': #f5f6f9,
-    '200': #eaeef4,
-    '300': #e1e6ef,
-    '400': #d7dee9,
-    '500': #ced6e4,
-    '600': #a4abb6,
-    '700': #7b8089,
-    '800': #51555b,
-    '900': #292a2d,
-);
-
 :root {
     --menu-border-color: #2b659b;
     --input-background: var(--color-basics-white);
@@ -188,22 +126,6 @@ $quaternary: (
     --color-snowflakes-light-shadow: #828181;
     --color-snowflakes-dark-selected: #1c3f5e;
     --color-snowflakes-light-selected: #cee9fc;
-
-    @each $class, $color in $primary {
-        --colorPrimary#{$class}: #{$color};
-    }
-
-    @each $class, $color in $secondary {
-        --colorSecondary#{$class}: #{$color};
-    }
-
-    @each $class, $color in $tertiary {
-        --colorTertiary#{$class}: #{$color};
-    }
-
-    @each $class, $color in $quaternary {
-        --colorQuaternary#{$class}: #{$color};
-    }
 
     --disabledControlOpacity: 0.4;
     --disabledControlCursor: not-allowed;
@@ -426,22 +348,19 @@ $quaternary: (
     =========================================================================
 	*/
     /* Astro 5 Simplified Colors */
-    @each $class, $color in $theme {
-        --#{$class}: #{$color};
-    }
 
     /* styles */
-    --fontColor: var(--default-text);
-    --fontLowContrastColor: var(--secondary-text);
-    --fontInvertedColor: var(--primary);
-    --fontInvertedBackgroundColor: var(--background);
+    // --default-text: var(--default-text);
+    // --fontLowContrastColor: var(--secondary-text);
+    // --fontInvertedColor: var(--primary);
+    // --fontInvertedBackgroundColor: var(--background);
 
-    --fontLinkColor: var(--primary);
-    --fontLinkHoverColor: var(--hover);
+    // --fontLinkColor: var(--primary);
+    // --fontLinkHoverColor: var(--hover);
 
     /* Status Custom */
-    --wcagCompliance: rgba(255, 255, 255, 0);
-    --criticalBorder: var(--colorCritical, rgb(255, 56, 56));
+    // --wcagCompliance: rgba(255, 255, 255, 0);
+    // --criticalBorder: var(--colorCritical, rgb(255, 56, 56));
 
     --colorCritical: var(--color-status-critical-500, rgb(255, 42, 4));
     --colorSerious: var(--color-status-serious-500, rgb(255, 175, 61));
@@ -577,7 +496,7 @@ $quaternary: (
     --selectMenuBorderRadius: 3px;
     --selectMenuBorderHoverColor: var(--hover);
     --selectMenuBorderFocusColor: var(--hover);
-    --selectMenuInvalidBorder: var(--criticalBorder);
+    --selectMenuInvalidBorder: var(--colorCritical);
     --selectMenuBackgroundColor: linear-gradient(
         to left,
         var(--color-snowflakes-dark-selected) 2rem,
