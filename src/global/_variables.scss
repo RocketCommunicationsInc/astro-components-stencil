@@ -5,7 +5,6 @@ $theme: (
     'globalAppHeader': #172635,
     'surfaceElements': #1b2d3e,
     'primary': #4dacff,
-    'primaryLight': #92cbff,
     'primaryLightHover': #92cbff4d,
     'primaryDark': #3a87cf,
     'primaryDarker': #2b659b,
@@ -349,7 +348,7 @@ $quaternary: (
     --fontInvertedBackgroundColor: var(--background);
 
     --fontLinkColor: var(--primary);
-    --fontLinkHoverColor: var(--primaryLight);
+    --fontLinkHoverColor: var(--hover);
 
     /* Status Custom */
     --wcagCompliance: rgba(255, 255, 255, 0);
@@ -377,7 +376,7 @@ $quaternary: (
 
     /* Button Hover State */
     --buttonHoverTextColor: var(--primaryElementText);
-    --buttonHoverBackgroundColor: var(--primaryLight);
+    --buttonHoverBackgroundColor: var(--hover);
     --buttonHoverBorderColor: transparent;
 
     /* Button Active State */
@@ -391,9 +390,9 @@ $quaternary: (
     --buttonSecondaryBorderColor: var(--colorPrimary, rgb(0, 90, 143));
 
     /* Secondary Button Variant Hover State */
-    --buttonSecondaryHoverTextColor: var(--primaryLight);
+    --buttonSecondaryHoverTextColor: var(--hover);
     --buttonSecondaryHoverBackgroundColor: transparent;
-    --buttonSecondaryHoverBorderColor: var(--primaryLight);
+    --buttonSecondaryHoverBorderColor: var(--hover);
 
     /*
 
@@ -412,7 +411,7 @@ $quaternary: (
     --controlSelectedTextColor: var(--default-text);
     --controlSelectedBackgroundColor: var(--primaryDark);
     --controlSelectedBorderColor: var(--colorSecondaryDarken2);
-    --controlHoverBorderColor: var(--primaryLight);
+    --controlHoverBorderColor: var(--hover);
 
     --controlSelectedOutlineBorderColor: var(--primary);
 
@@ -445,9 +444,9 @@ $quaternary: (
     --sliderThumbBackgroundColor: var(--background);
     --sliderThumbBorderColor: var(--primary);
     --sliderHoverThumbBackgroundColor: var(--background);
-    --sliderHoverThumbBorderColor: var(--primaryLight);
+    --sliderHoverThumbBorderColor: var(--hover);
     --sliderTrackBackgroundColor: var(--primary);
-    --sliderSelectedThumbBorderColor: var(--primaryLight);
+    --sliderSelectedThumbBorderColor: var(--hover);
     --sliderSelectedTrackBackgroundColor: var(--primary);
 
     /*
@@ -464,7 +463,7 @@ $quaternary: (
     /* Segmented Hover */
     --segmentedButtonHoverBackgroundColor: var(--background);
     --segmentedButtonHoverTextColor: var(--primary);
-    --segmentedButtonHoverBorderColor: var(--primaryLight);
+    --segmentedButtonHoverBorderColor: var(--hover);
 
     /* Segmented Selected */
     --segmentedButtonSelectedBackgroundColor: var(
@@ -488,8 +487,8 @@ $quaternary: (
   */
     --selectMenuBorderRadius: 3px;
     --selectMenuBorderColor: var(--primaryDarker);
-    --selectMenuBorderHoverColor: var(--primaryLight);
-    --selectMenuBorderFocusColor: var(--primaryLight);
+    --selectMenuBorderHoverColor: var(--hover);
+    --selectMenuBorderFocusColor: var(--hover);
     --selectMenuInvalidBorder: var(--criticalBorder);
     --selectMenuBackgroundColor: linear-gradient(
         to left,
@@ -498,7 +497,7 @@ $quaternary: (
     );
     --selectMenuTextColor: var(--primary);
     --selectMenuTextHoverColor: var(--primary);
-    --selectMenuOptTextHoverColor: var(--primaryLight);
+    --selectMenuOptTextHoverColor: var(--hover);
     --selectMenuOptHoverBackgroundColor: rgba(28, 63, 94, 0.3);
     --selectMenuOptGroupTextColor: rgba(255, 255, 255, 0.6);
     --selectMenuOptSelectedBackgroundColor: var(--colorSnowflakesDarkSelected);
@@ -519,7 +518,7 @@ $quaternary: (
     --switchHoverOnColor: var(--primary);
     --switchHoverOffColor: var(--primary);
     --switchBorderColor: var(--primary);
-    --switchButtonHoverOffColor: var(--primaryLight);
+    --switchButtonHoverOffColor: var(--hover);
     /*
 
     Popup Menu Colors
@@ -535,7 +534,7 @@ $quaternary: (
     --popupMenuItemBackgroundColor: var(--background);
     //equates to --colorSnowflakesDarkSelected with alpha of 0.3
     --popupMenuItemHoverBackgroundColor: rgba(28, 63, 94, 0.3);
-    --popupMenuItemHoverTextColor: var(--primaryLight);
+    --popupMenuItemHoverTextColor: var(--hover);
 
     --popupMenuItemSeparatorBorderColor: var(--primaryDarker);
     --menuItemDividerBorderColor: var(--primaryDarker);
@@ -606,7 +605,7 @@ $quaternary: (
     --treeAccentColor: var(--primary);
 
     /* Hover*/
-    --treeHoverBackgroundColor: var(--primaryLight);
+    --treeHoverBackgroundColor: var(--hover);
     --treeHoverTextColor: var(--primaryElementText);
     --treeHoverAccentColor: var(--primary);
 
