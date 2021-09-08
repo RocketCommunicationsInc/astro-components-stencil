@@ -6,10 +6,10 @@ $theme: (
     'primary': #4dacff,
     // 'primaryDark': #3a87cf,
     // 'primaryDarker': #2b659b,
-    'primaryDarkHover': #6b8ca5,
-    'primaryElementText': #080c11,
-    'inputBackground': #ffffff,
-    'inputDark': #080c11,
+    // 'primaryDarkHover': #6b8ca5,
+    // 'primaryElementText': #080c11,
+    // 'inputBackground': #ffffff,
+    // 'inputDark': #080c11,,
 );
 
 $primary: (
@@ -61,6 +61,7 @@ $quaternary: (
 );
 
 :root {
+    --input-background: var(--colorWhite);
     --background: #101923;
     --global-status-bar: #172635;
     --surface: #1b2d3e;
@@ -368,12 +369,12 @@ $quaternary: (
   */
 
     /* Button */
-    --buttonTextColor: var(--primaryElementText);
+    --buttonTextColor: var(--inverse-text);
     --buttonBackgroundColor: var(--primary);
     --buttonBorderColor: transparent;
 
     /* Button Hover State */
-    --buttonHoverTextColor: var(--primaryElementText);
+    --buttonHoverTextColor: var(--inverse-text);
     --buttonHoverBackgroundColor: var(--hover);
     --buttonHoverBorderColor: transparent;
 
@@ -549,7 +550,7 @@ $quaternary: (
 
     --pushbuttonSelectedBackgroundColor: var(--colorNormal);
     --pushbuttonSelectedBorderColor: var(--colorNormal);
-    --pushbuttonSelectedTextColor: var(--primaryElementText);
+    --pushbuttonSelectedTextColor: var(--inverse-text);
 
     /*
 
@@ -568,7 +569,7 @@ $quaternary: (
     ==========================================================================
 
   */
-    --modalTitleColor: var(--primaryElementText);
+    --modalTitleColor: var(--inverse-text);
     --modalTextColor: var(--default-text);
     --modalBackgroundColor: var(--surface);
     --modalBorderColor: var(--primary);
@@ -588,7 +589,7 @@ $quaternary: (
     --logHeaderBackgroundColor: var(--global-status-bar);
 
     --logFilterBackgroundColor: var(--primary-alt);
-    --logFilterTextColor: var(--primaryElementText);
+    --logFilterTextColor: var(--inverse-text);
 
     /*
 
@@ -604,7 +605,7 @@ $quaternary: (
 
     /* Hover*/
     --treeHoverBackgroundColor: var(--hover);
-    --treeHoverTextColor: var(--primaryElementText);
+    --treeHoverTextColor: var(--inverse-text);
     --treeHoverAccentColor: var(--primary);
 
     /* Selected */
@@ -638,7 +639,7 @@ $quaternary: (
     ==========================================================================
 
 	*/
-    --notificationTextColor: var(--primaryElementText);
+    --notificationTextColor: var(--inverse-text);
 
     /*
 
@@ -647,7 +648,7 @@ $quaternary: (
 
 	*/
     --classificationTextColorLight: var(--default-text);
-    --classificationTextColorDark: var(--primaryElementText);
+    --classificationTextColorDark: var(--inverse-text);
 
     /*
 
@@ -743,7 +744,7 @@ $quaternary: (
     --timelineRegionTextColor: var(--default-text);
     --timelineRegionBorderColor: var(--primary);
 
-    --timelineRegionSelectedBorderColor: var(--inputBackground);
+    --timelineRegionSelectedBorderColor: var(--input-background);
     --timelineRegionSelectedBackgroundColor: var(--primary-alt);
     --timelineRegionSelectedTextColor: var(--default-text);
 
