@@ -50,7 +50,7 @@
     }
 }
 :host([status='caution']) {
-    background-color: var(--colorCautionLighten1);
+    background-color: var(--color-status-caution-400);
     rux-icon {
         stroke: var(--colorCautionDarken1);
         color: var(--colorCautionDarken1);

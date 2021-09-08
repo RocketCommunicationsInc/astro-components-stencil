@@ -1,5 +1,5 @@
 .light-theme {
-    --menu-border-color: var(--colorPrimaryLighten2, #92cbff);
+    --menu-border-color: var(--color-primary-300, #92cbff);
     --background: #eaeef4;
     --global-status-bar: #172635;
     --surface: #ffffff;
@@ -24,12 +24,6 @@
     --banner-clear: #080c114d;
     --gsb-primary: #4dacff;
     --gsb-default-text: #ffffff;
-    --classification-unclassified: #007a33;
-    --classification-cui: #502b85;
-    --classification-confidential: #0033a0;
-    --classification-secret: #c8102e;
-    --classification-top-secret: #ff8c00;
-    --classification-top-secret-sci: #fce83a;
 
     --color-status-critical-500: #ff2a04;
     --color-status-caution-500: #fad800;
@@ -49,8 +43,8 @@
     --secondaryText: var(--colorQuaternaryDarken3, #51555b);
     --globalAppHeader: var(--colorTertiaryDarken2, #172635);
     // --primary: var(--primary, #005a8f);
-    // --primaryLighter: var(--colorPrimaryLighten2, #92cbff);
-    // --primaryDark: var(--colorPrimaryDarken1, #004872);
+    // --primaryLighter: var(--color-primary-300, #92cbff);
+    // --primaryDark: var(--color-primary-600, #004872);
     // --primaryDarkHover: #0048724d; /* TODO: this is a temporary fix, the use of opacity from Sketch is new and not accounted for in CSS */
     // --primaryElementText: var(--color-basics-white #ffffff);
     --inputBackground: var(--color-basics-white, #ffffff);
@@ -122,12 +116,12 @@
     --controlLabelColor: var(--default-text);
     --controlBackgroundColor: var(--primary);
     --controlOutlineBackgroundColor: var(--background);
-    --controlBorderColor: var(--colorPrimaryLighten2);
+    --controlBorderColor: var(--color-primary-300);
     --controlAccentColor: var(--primary);
 
     --controlSelectedTextColor: var(--default-text);
     --controlSelectedBackgroundColor: var(--primary);
-    --controlSelectedBorderColor: var(--colorPrimaryLighten2);
+    --controlSelectedBorderColor: var(--color-primary-300);
     --controlHoverBorderColor: var(--primary-alt);
 
     --controlSelectedOutlineBorderColor: var(--primary);
@@ -160,7 +154,7 @@
     // --popupCaretBackgroundColor: var(--primaryLighter);
 
     --popupMenuItemBackgroundColor: var(--background);
-    //equates to --colorSnowflakesLightSelected with alpha of 0.3
+    //equates to --color-snowflakes-light-selected with alpha of 0.3
     --menuItemHoverBackgroundColor: rgba(206, 233, 252, 0.3);
     --menuItemHoverTextColor: var(--primary-alt);
 
@@ -198,14 +192,14 @@
 
     /* Segmented Selected */
     --segmentedButtonSelectedBackgroundColor: var(
-        --colorSnowflakesLightSelected
+        --color-snowflakes-light-selected
     );
     --segmentedButtonSelectedTextColor: var(--default-text);
     --segmentedButtonSelectedBorderColor: var(--primary);
 
     /* Segmented Selected & Hover */
     --segmentedButtonSelectedHoverBackgroundColor: var(
-        --colorSnowflakesLightSelected
+        --color-snowflakes-light-selected
     );
     --segmentedButtonSelectedHoverTextColor: var(--default-text);
     --segmentedButtonSelectedHoverBorderColor: var(--primary);
@@ -219,7 +213,7 @@
     --selectMenuBorderFocusColor: var(--primary-alt);
     --selectMenuBackgroundColor: linear-gradient(
         to left,
-        var(--colorSnowflakesLightSelected) 2rem,
+        var(--color-snowflakes-light-selected) 2rem,
         var(--background) 2rem
     );
     --selectMenuLabelColor: var(--default-text);
@@ -367,7 +361,7 @@
     ==========================================================================
 
   */
-    --cardBackgroundColor: var(--colorQuaternaryLighten2);
+    --cardBackgroundColor: var(--color-quaternary-300);
 
     --cardHeaderBackgroundColor: var(--colorQuaternaryLighten1);
     --cardHeaderTextColor: var(--color-basics-white, #fff);
@@ -380,11 +374,11 @@
   */
 
     --inputBackgroundColor: var(--colorQuaternaryLighten3);
-    --inputBorderColor: var(--colorPrimaryLighten2);
+    --inputBorderColor: var(--color-primary-300);
     --inputBorderColorAlt: var(--colorTertiaryDarken4);
     --inputTextColor: var(--default-text);
 
-    --inputFocusBorderColor: var(--colorPrimaryDarken1);
+    --inputFocusBorderColor: var(--color-primary-600);
     --inputFocusTextColor: var(--default-text);
 
     --inputInvalidBorderColor: var(--colorCritical);
