@@ -1,53 +1,46 @@
 :host {
     display: block;
     box-sizing: border-box;
-    /**
-    * @prop --segmentedButtonBackgroundColor: Segmented button background color
-    */
 
-    /**
-    * @prop --segmentedButtonTextColor: Segmented button text color
-    */
+    /** @prop --segmentedButtonBackgroundColor: Segmented button background color */
+    --segmentedButtonBackgroundColor: var(--background);
 
-    /**
-    * @prop --segmentedButtonBorderColor: Segmented button border color
-    */
+    /** @prop --segmentedButtonTextColor: Segmented button text color*/
+    --segmentedButtonTextColor: var(--primary);
 
-    /**
-    * @prop --segmentedButtonHoverBackgroundColor: Segmented button hover background color
-    */
+    /** @prop --segmentedButtonBorderColor: Segmented button border color*/
+    --segmentedButtonBorderColor: var(--primary);
 
-    /**
-    * @prop --segmentedButtonHoverTextColor: Segmented button hover text color
-    */
+    /** @prop --segmentedButtonHoverBackgroundColor: Segmented button hover background color*/
+    --segmentedButtonHoverBackgroundColor: var(--background);
 
-    /**
-    * @prop --segmentedButtonHoverBorderColor: Segmented button hover border color
-    */
+    /** @prop --segmentedButtonHoverTextColor: Segmented button hover text color*/
+    --segmentedButtonHoverTextColor: var(--primary);
 
-    /**
-    * @prop --segmentedButtonSelectedBackgroundColor: Segmented button selected background color
-    */
+    /** @prop --segmentedButtonHoverBorderColor: Segmented button hover border color*/
+    --segmentedButtonHoverBorderColor: var(--hover);
 
-    /**
-    * @prop --segmentedButtonSelectedTextColor: Segmented button selected text color
-    */
+    /** @prop --segmentedButtonSelectedBackgroundColor: Segmented button selected background color*/
+    --segmentedButtonSelectedBackgroundColor: var(
+        --color-segmented-button-selected
+    );
 
-    /**
-    * @prop --segmentedButtonSelectedBorderColor: Segmented button selected border color
-    */
+    /** @prop --segmentedButtonSelectedTextColor: Segmented button selected text color*/
+    --segmentedButtonSelectedTextColor: var(--default-text);
 
-    /**
-    * @prop --segmentedButtonSelectedHoverBackgroundColor: Segmented button selected hover background color
-    */
+    /** @prop --segmentedButtonSelectedBorderColor: Segmented button selected border color*/
+    --segmentedButtonSelectedBorderColor: var(--primary);
 
-    /**
-    * @prop --segmentedButtonSelectedHoverTextColor: Segmented button selected hover text color
-    */
+    /** @prop --segmentedButtonSelectedHoverBackgroundColor: Segmented button selected hover background color*/
+    --segmentedButtonSelectedHoverBackgroundColor: var(
+        --color-segmented-button-selected
+    );
 
-    /**
-    * @prop --segmentedButtonSelectedHoverBorderColor: Segmented button selected hover border color
-    */
+    /** @prop --segmentedButtonSelectedHoverTextColor: Segmented button selected hover text color*/
+    --segmentedButtonSelectedHoverTextColor: var(--default-text);
+
+    /** @prop --segmentedButtonSelectedHoverBorderColor: Segmented button selected hover border color*/
+    --segmentedButtonSelectedHoverBorderColor: var(--primary);
 }
 
 :host([hidden]) {

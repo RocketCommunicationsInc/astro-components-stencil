@@ -1,6 +1,7 @@
 .light-theme {
     --menu-border-color: var(--color-primary-300, #92cbff);
     --menu-item-hover: #cee9fc4d;
+    --color-segmented-button-selected: var(--color-snowflakes-light-selected);
     --background: #eaeef4;
     --global-status-bar: #172635;
     --surface: #ffffff;
@@ -182,28 +183,28 @@
 
   */
     /* Segmented Unselected */
-    --segmentedButtonBackgroundColor: var(--background);
-    --segmentedButtonTextColor: var(--primary);
-    --segmentedButtonBorderColor: var(--primary);
+    // --segmentedButtonBackgroundColor: var(--background);
+    // --segmentedButtonTextColor: var(--primary);
+    // --segmentedButtonBorderColor: var(--primary);
 
-    /* Segmented Hover */
-    --segmentedButtonHoverBackgroundColor: var(--background);
-    --segmentedButtonHoverTextColor: var(--primary);
-    --segmentedButtonHoverBorderColor: var(--primary-alt);
+    // /* Segmented Hover */
+    // --segmentedButtonHoverBackgroundColor: var(--background);
+    // --segmentedButtonHoverTextColor: var(--primary);
+    // --segmentedButtonHoverBorderColor: var(--primary-alt);
 
-    /* Segmented Selected */
-    --segmentedButtonSelectedBackgroundColor: var(
-        --color-snowflakes-light-selected
-    );
-    --segmentedButtonSelectedTextColor: var(--default-text);
-    --segmentedButtonSelectedBorderColor: var(--primary);
+    // /* Segmented Selected */
+    // --segmentedButtonSelectedBackgroundColor: var(
+    //     --color-snowflakes-light-selected
+    // );
+    // --segmentedButtonSelectedTextColor: var(--default-text);
+    // --segmentedButtonSelectedBorderColor: var(--primary);
 
-    /* Segmented Selected & Hover */
-    --segmentedButtonSelectedHoverBackgroundColor: var(
-        --color-snowflakes-light-selected
-    );
-    --segmentedButtonSelectedHoverTextColor: var(--default-text);
-    --segmentedButtonSelectedHoverBorderColor: var(--primary);
+    // /* Segmented Selected & Hover */
+    // --segmentedButtonSelectedHoverBackgroundColor: var(
+    //     --color-snowflakes-light-selected
+    // );
+    // --segmentedButtonSelectedHoverTextColor: var(--default-text);
+    // --segmentedButtonSelectedHoverBorderColor: var(--primary);
 
     /*
 
