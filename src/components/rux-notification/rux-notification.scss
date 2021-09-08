@@ -1,8 +1,8 @@
-/**
+:host {
+    /**
   * @prop --notificationTextColor: The notification text color
   */
-
-:host {
+    --notificationTextColor: var(--color-tertiary-900);
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
