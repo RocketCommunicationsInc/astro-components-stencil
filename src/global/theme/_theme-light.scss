@@ -70,15 +70,15 @@
     --controlHoverOutlineBackgroundColor: var(--background);
     --controlSelectedOutlineBackgroundColor: var(--background);
 
-    --logTextColor: var(--default-text);
-    --logBackgroundColor: var(--surface);
-    --logBorderColor: var(--secondary-text);
+    // --logTextColor: var(--default-text);
+    // --logBackgroundColor: var(--surface);
+    // --logBorderColor: var(--secondary-text);
 
-    --logHeaderTextColor: var(--default-text);
-    --logHeaderBackgroundColor: var(--background);
+    // --logHeaderTextColor: var(--default-text);
+    // --logHeaderBackgroundColor: var(--background);
 
-    --logFilterBackgroundColor: var(--hover);
-    --logFilterTextColor: var(--inverse-text);
+    // --logFilterBackgroundColor: var(--hover);
+    // --logFilterTextColor: var(--inverse-text);
 
     --classificationTextColorLight: var(--inverse-text);
     --classificationTextColorDark: var(--default-text);
@@ -111,7 +111,7 @@
 
 	*/
 
-    --iconDefaultColor: var(--primary);
+    // --iconDefaultColor: var(--primary);
 
     /*
 
@@ -141,28 +141,28 @@
 
   */
 
-    --tableBorderColor: var(--background);
+    // --tableBorderColor: var(--background);
 
-    --tableHeaderBackgroundColor: var(--global-status-bar);
-    --tableHeaderBorderColor: var(--surface);
-    --tableHeaderTextColor: var(--inverse-text);
-    --tableHeaderBoxShadow: 0 0.1rem 0.45rem rgba(0, 0, 0, 0.2);
-    --tableHeaderAccentColor: var(--primary);
+    // --tableHeaderBackgroundColor: var(--global-status-bar);
+    // --tableHeaderBorderColor: var(--surface);
+    // --tableHeaderTextColor: var(--inverse-text);
+    // --tableHeaderBoxShadow: 0 0.1rem 0.45rem rgba(0, 0, 0, 0.2);
+    // --tableHeaderAccentColor: var(--primary);
 
-    --tableRowBackgroundColor: var(--surface);
-    --tableRowBorderColor: var(--background);
-    --tableRowTextColor: var(--default-text);
+    // --tableRowBackgroundColor: var(--surface);
+    // --tableRowBorderColor: var(--background);
+    // --tableRowTextColor: var(--default-text);
 
-    --tableRowHoverBackgroundColor: red;
-    --tableRowHoverTextColor: var(--default-text);
+    // --tableRowHoverBackgroundColor: red;
+    // --tableRowHoverTextColor: var(--default-text);
 
-    --tableRowSelectedBackgroundColor: var(--background);
-    --tableRowSelectedBorderColor: var(--primary);
+    // --tableRowSelectedBackgroundColor: var(--background);
+    // --tableRowSelectedBorderColor: var(--primary);
 
-    --tableControlsBackgroundColor: var(--primary);
-    --tableFilterBorderColor: var(--primary);
-    --tableFilterDisabledBorderColor: var(--background);
-    --tableFilterDisabledBackgroundColor: var(--surface);
+    // --tableControlsBackgroundColor: var(--primary);
+    // --tableFilterBorderColor: var(--primary);
+    // --tableFilterDisabledBorderColor: var(--background);
+    // --tableFilterDisabledBackgroundColor: var(--surface);
 }
 
 li.light-theme {

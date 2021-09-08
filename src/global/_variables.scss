@@ -214,15 +214,6 @@
     ==========================================================================
 
   */
-    --logTextColor: var(--default-text);
-    --logBackgroundColor: var(--surface);
-    --logBorderColor: var(--background);
-
-    --logHeaderTextColor: var(--default-text);
-    --logHeaderBackgroundColor: var(--global-status-bar);
-
-    --logFilterBackgroundColor: var(--primary-alt);
-    --logFilterTextColor: var(--inverse-text);
 
     --classificationTextColorLight: var(--default-text);
     --classificationTextColorDark: var(--inverse-text);
@@ -255,8 +246,6 @@
     ==========================================================================
 
 	*/
-
-    --iconDefaultColor: var(--primary);
 
     /*
 
@@ -296,71 +285,4 @@
     ==========================================================================
 
   */
-
-    --timelineHeaderBackgroundColor: var(--surface);
-    --timelineHeaderTextColor: var(--default-text);
-
-    --timelineRulerBackgroundColor: var(--surface);
-    --timelineRulerTextColor: var(--default-text);
-
-    --timelineTrackLabelBackgroundColor: var(--surface);
-    --timelineTrackBackgroundColor: var(--surface);
-
-    --timelineRegionBackgroundColor: var(--background);
-    --timelineRegionTextColor: var(--default-text);
-    --timelineRegionBorderColor: var(--primary);
-
-    --timelineRegionSelectedBorderColor: var(--input-background);
-    --timelineRegionSelectedBackgroundColor: var(--primary-alt);
-    --timelineRegionSelectedTextColor: var(--default-text);
-
-    --timelineRegionStatusColorNormal: var(--colorNormal);
-    --timelineRegionStatusColorCritical: var(--colorCritical);
-    --timelineRegionStatusColorSerious: var(--colorSerious);
-    --timelineRegionStatusColorCaution: var(--colorCautiom);
-    --timelineRegionStatusColorStandby: var(--colorStandby);
-    --timelineRegionStatusColorOff: var(--colorOff);
-
-    /*
-
-    ACCORDION COLORS
-    ==========================================================================
-
-  */
-    --accordionBorderColor: rgb(40, 63, 88);
-    --accordionContentBackground: rgb(20, 32, 44);
-    --accordionClosedLabelBackground: rgb(32, 50, 70);
-    --accordionOpenLabelBackground: rgb(40, 63, 88);
-    --accordionHoverLabelBackground: rgb(46, 103, 153);
-    --accordionColor: rgb(255, 255, 255);
-
-    /*
-
-    TABLE COLORS
-    ==========================================================================
-
-  */
-
-    --tableBorderColor: var(--background);
-
-    --tableHeaderBackgroundColor: var(--global-status-bar);
-    --tableHeaderBorderColor: var(--surface);
-    --tableHeaderTextColor: var(--default-text);
-    --tableHeaderBoxShadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
-    --tableHeaderAccentColor: var(--primary);
-
-    --tableRowBackgroundColor: var(--surface);
-    --tableRowTextColor: var(--default-text);
-    --tableRowBorderColor: var(--background);
-
-    --tableRowHoverBackgroundColor: var(--table-hover);
-    --tableRowHoverTextColor: var(--default-text);
-
-    --tableRowSelectedBackgroundColor: var(--background);
-    --tableRowSelectedBorderColor: var(--primary);
-
-    --tableControlsBackgroundColor: var(--primary);
-    --tableFilterBorderColor: var(--primary);
-    --tableFilterDisabledBorderColor: var(--background);
-    --tableFilterDisabledBackgroundColor: var(--surface);
 }

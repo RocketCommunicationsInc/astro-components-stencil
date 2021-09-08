@@ -3,6 +3,16 @@
   */
 
 :host {
+    --logTextColor: var(--default-text);
+    --logBackgroundColor: var(--surface);
+    --logBorderColor: var(--background);
+
+    --logHeaderTextColor: var(--default-text);
+    --logHeaderBackgroundColor: var(--global-status-bar);
+
+    --logFilterBackgroundColor: var(--primary-alt);
+    --logFilterTextColor: var(--inverse-text);
+
     display: block;
     overflow: hidden;
 }
