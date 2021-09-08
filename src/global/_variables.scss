@@ -3,9 +3,7 @@ $theme: (
     'defaultText': #ffffff,
     'secondaryText': #d4d8dd,
     'globalAppHeader': #172635,
-    'surfaceElements': #1b2d3e,
     'primary': #4dacff,
-    'primaryLightHover': #92cbff4d,
     'primaryDark': #3a87cf,
     'primaryDarker': #2b659b,
     'primaryDarkHover': #6b8ca5,
@@ -788,7 +786,7 @@ $quaternary: (
     --tableRowTextColor: var(--default-text);
     --tableRowBorderColor: var(--background);
 
-    --tableRowHoverBackgroundColor: var(--primaryLightHover);
+    --tableRowHoverBackgroundColor: var(--table-hover);
     --tableRowHoverTextColor: var(--default-text);
 
     --tableRowSelectedBackgroundColor: var(--background);
