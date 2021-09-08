@@ -5,19 +5,17 @@
       * @prop --popupMenuBackgroundColor: Pop Up Menu Backround Color
     */
 
-    --popupMenuBorderColor: var(--menu-border-color);
-    --popupCaretBackgroundColor: var(--menu-border-color);
+    --popupMenuBackgroundColor: var(--background);
+
     /**
       * @prop --popupMenuBorderColor: Pop Up Menu Border Color
     */
-
-    /**
-      * @prop --popupMenuTextColor: Pop Up Menu Text Color
-    */
+    --popupMenuBorderColor: var(--menu-border-color);
 
     /**
       * @prop --popupCaretBackgroundColor: Pop Up Menu Caret Background Color
     */
+    --popupCaretBackgroundColor: var(--menu-border-color);
 
     /**
       * @prop --caretLeft: Position of Caret
@@ -43,7 +41,7 @@
     position: absolute;
     pointer-events: none;
 
-    color: var(--popupMenuTextColor);
+    color: var(--primary);
 
     background-color: var(--popupMenuBorderColor);
     border: 1px solid var(--popupMenuBorderColor);

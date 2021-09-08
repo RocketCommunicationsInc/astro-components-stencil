@@ -1,5 +1,6 @@
 .light-theme {
     --menu-border-color: var(--color-primary-300, #92cbff);
+    --menu-item-hover: #cee9fc4d;
     --background: #eaeef4;
     --global-status-bar: #172635;
     --surface: #ffffff;
@@ -147,16 +148,16 @@
     ==========================================================================
 
   */
-    --popupMenuBackgroundColor: var(--background);
-    // --popupMenuBorderColor: var(--primaryLighter);
-    --popupMenuTextColor: var(--primary);
+    // --popupMenuBackgroundColor: var(--background);
+    // // --popupMenuBorderColor: var(--primaryLighter);
+    // --popupMenuTextColor: var(--primary);
 
-    // --popupCaretBackgroundColor: var(--primaryLighter);
+    // // --popupCaretBackgroundColor: var(--primaryLighter);
 
-    --popupMenuItemBackgroundColor: var(--background);
-    //equates to --color-snowflakes-light-selected with alpha of 0.3
-    --menuItemHoverBackgroundColor: rgba(206, 233, 252, 0.3);
-    --menuItemHoverTextColor: var(--primary-alt);
+    // --popupMenuItemBackgroundColor: var(--background);
+    // //equates to --color-snowflakes-light-selected with alpha of 0.3
+    // --menuItemHoverBackgroundColor: rgba(206, 233, 252, 0.3);
+    // --menuItemHoverTextColor: var(--primary-alt);
 
     // --menuItemDividerBorderColor: var(--primaryLighter);
 

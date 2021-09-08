@@ -2,18 +2,22 @@
     /**
       * @prop --popupMenuTextColor: Menu Text Color
     */
+    --popupMenuTextColor: var(--primary);
 
     /**
       * @prop --popupMenuItemBackgroundColor: Menu Item Background Color
     */
+    --popupMenuItemBackgroundColor: var(--background);
 
     /**
       * @prop --popupMenuItemHoverBackgroundColor: Menu Item Hover Background Color
     */
+    --popupMenuItemHoverBackgroundColor: var(--menu-item-hover);
 
     /**
       * @prop --popupMenuItemHoverTextColor: Menu Item Hover Text Color
     */
+    --popupMenuItemHoverTextColor: var(--hover);
 
     /**
       * @prop --disabledCursor: Cursor for Disabled Items
