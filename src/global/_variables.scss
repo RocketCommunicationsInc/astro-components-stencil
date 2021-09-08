@@ -377,31 +377,6 @@
 
   */
 
-    /* Button */
-    --buttonTextColor: var(--inverse-text);
-    --buttonBackgroundColor: var(--primary);
-    --buttonBorderColor: transparent;
-
-    /* Button Hover State */
-    --buttonHoverTextColor: var(--inverse-text);
-    --buttonHoverBackgroundColor: var(--hover);
-    --buttonHoverBorderColor: transparent;
-
-    /* Button Active State */
-    --buttonActiveControlTextColor: var(--default-text);
-    --buttonActiveBackgroundColor: var(--primary);
-    --buttonActiveBorderColor: var(--primary);
-
-    /* Secondary Button Variant */
-    --buttonSecondaryTextColor: var(--primary);
-    --buttonSecondaryBackgroundColor: transparent;
-    --buttonSecondaryBorderColor: var(--primary, rgb(0, 90, 143));
-
-    /* Secondary Button Variant Hover State */
-    --buttonSecondaryHoverTextColor: var(--hover);
-    --buttonSecondaryHoverBackgroundColor: transparent;
-    --buttonSecondaryHoverBorderColor: var(--hover);
-
     /*
 
     Control Colors

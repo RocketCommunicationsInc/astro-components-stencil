@@ -1,65 +1,80 @@
 :host {
-    /* Button */
     /**
      * @prop --buttonTextColor: Button text color
      */
+    --buttonTextColor: var(--inverse-text);
 
     /**
      * @prop --buttonBackgroundColor: Button background color
      */
+    --buttonBackgroundColor: var(--primary);
 
     /**
      * @prop --buttonBorderColor: Button border color
      */
+    --buttonBorderColor: transparent;
 
-    /* Button Hover State */
     /**
      * @prop --buttonHoverTextColor: Button hover text color
      */
+    --buttonHoverTextColor: var(--inverse-text);
 
     /**
      * @prop --buttonHoverBackgroundColor: Button hover background color
      */
+    --buttonHoverBackgroundColor: var(--hover);
+
     /**
      * @prop --buttonHoverBorderColor: Button hover border color
      */
+    --buttonHoverBorderColor: transparent;
 
     /* Button Active State */
     /**
      * @prop --buttonActiveControlTextColor: Button active text color
      */
+    --buttonActiveControlTextColor: var(--default-text);
 
     /**
      * @prop --buttonActiveBackgroundColor: Button active background color
      */
+    --buttonActiveBackgroundColor: var(--primary);
 
     /**
      * @prop --buttonActiveBorderColor: Button active border color
      */
+    --buttonActiveBorderColor: var(--primary);
 
     /**
      * @prop --buttonSecondaryTextColor: Button secondary text color
      */
 
+    --buttonSecondaryTextColor: var(--primary);
+
     /**
      * @prop --buttonSecondaryBackgroundColor: Button secondary background color
      */
+    --buttonSecondaryBackgroundColor: transparent;
 
     /**
      * @prop --buttonSecondaryBorderColor: Button secondary border color
      */
+    --buttonSecondaryBorderColor: var(--primary, rgb(0, 90, 143));
 
     /**
      * @prop --buttonSecondaryHoverTextColor: Button secondary hover text color
      */
+    --buttonSecondaryHoverTextColor: var(--hover);
 
     /**
      * @prop --buttonSecondaryHoverBackgroundColor:  Button secondary hover background color
      */
+    --buttonSecondaryHoverBackgroundColor: transparent;
 
     /**
      * @prop --buttonSecondaryHoverBorderColor:  Button secondary hover border color
      */
+    --buttonSecondaryHoverBorderColor: var(--hover);
 
     display: inline-block;
 }
