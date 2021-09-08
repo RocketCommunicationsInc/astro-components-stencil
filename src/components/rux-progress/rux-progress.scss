@@ -18,10 +18,12 @@
     /**
     * @prop --progressDeterminateBarBackgroundColor: Bar background color of determinate progress
     */
+    --progressDeterminateBarBackgroundColor: var(--primary);
 
     /**
     * @prop --progressDeterminateTrackBackgroundColor: Track background color of determinate progress
     */
+    --progressDeterminateTrackBackgroundColor: var(--surface);
 
     /**
     * @prop --progressDeterminateTrackBorderColor: Track border color of determinate progress.
