@@ -1,4 +1,5 @@
 .light-theme {
+    --menu-border-color: var(--colorPrimaryLighten2, #92cbff);
     --background: #eaeef4;
     --global-status-bar: #172635;
     --surface: #ffffff;
@@ -41,7 +42,7 @@
     --secondaryText: var(--colorQuaternaryDarken3, #51555b);
     --globalAppHeader: var(--colorTertiaryDarken2, #172635);
     --primary: var(--colorPrimary, #005a8f);
-    --primaryLighter: var(--colorPrimaryLighten2, #92cbff);
+    // --primaryLighter: var(--colorPrimaryLighten2, #92cbff);
     // --primaryDark: var(--colorPrimaryDarken1, #004872);
     // --primaryDarkHover: #0048724d; /* TODO: this is a temporary fix, the use of opacity from Sketch is new and not accounted for in CSS */
     // --primaryElementText: var(--colorWhite, #ffffff);
@@ -141,17 +142,17 @@
 
   */
     --popupMenuBackgroundColor: var(--background);
-    --popupMenuBorderColor: var(--primaryLighter);
+    // --popupMenuBorderColor: var(--primaryLighter);
     --popupMenuTextColor: var(--primary);
 
-    --popupCaretBackgroundColor: var(--primaryLighter);
+    // --popupCaretBackgroundColor: var(--primaryLighter);
 
     --popupMenuItemBackgroundColor: var(--background);
     //equates to --colorSnowflakesLightSelected with alpha of 0.3
     --menuItemHoverBackgroundColor: rgba(206, 233, 252, 0.3);
     --menuItemHoverTextColor: var(--primary-alt);
 
-    --menuItemDividerBorderColor: var(--primaryLighter);
+    // --menuItemDividerBorderColor: var(--primaryLighter);
 
     /*
 
@@ -216,7 +217,7 @@
     --selectMenuOptTextHoverColor: var(--primary-alt);
     --selectMenuOptSelectedBackgroundColor: var(--lightSelected);
     --selectMenuOptSelectedTextColor: var(--default-text);
-    --selectMenuBorderColor: var(--primaryLighter);
+    // --selectMenuBorderColor: var(--primaryLighter);
     --selectMenuTextColor: var(--primary);
     --selectMenuBorderHoverColor: var(--primary-alt);
     --selectMenuInvalidBorder: var(--statusDarkCritical);
@@ -230,7 +231,7 @@
 
   */
     --switchBackgroundColor: var(--background);
-    --switchOffBorderColor: var(--primaryLighter);
+    // --switchOffBorderColor: var(--primaryLighter);
     --switchOnColor: var(--primary);
     --switchHoverOnColor: var(--primary);
     --switchHoverOffColor: var(--primary);

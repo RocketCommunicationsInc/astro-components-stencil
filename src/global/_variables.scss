@@ -9,7 +9,7 @@ $theme: (
     // 'primaryDarkHover': #6b8ca5,
     // 'primaryElementText': #080c11,
     // 'inputBackground': #ffffff,
-    // 'inputDark': #080c11,,
+    // 'inputDark': #080c11,,,
 );
 
 $primary: (
@@ -61,6 +61,7 @@ $quaternary: (
 );
 
 :root {
+    --menu-border-color: #2b659b;
     --input-background: var(--colorWhite);
     --background: #101923;
     --global-status-bar: #172635;
@@ -485,7 +486,6 @@ $quaternary: (
 
   */
     --selectMenuBorderRadius: 3px;
-    --selectMenuBorderColor: var(--active);
     --selectMenuBorderHoverColor: var(--hover);
     --selectMenuBorderFocusColor: var(--hover);
     --selectMenuInvalidBorder: var(--criticalBorder);
@@ -512,8 +512,7 @@ $quaternary: (
 
   */
     --switchBackgroundColor: var(--background);
-    --switchOffBorderColor: var(--active);
-    --switchOnColor: var(--primary);
+
     --switchHoverOnColor: var(--primary);
     --switchHoverOffColor: var(--primary);
     --switchBorderColor: var(--primary);
@@ -525,10 +524,8 @@ $quaternary: (
 
   */
     --popupMenuBackgroundColor: var(--background);
-    --popupMenuBorderColor: var(--active);
-    --popupMenuTextColor: var(--primary);
 
-    --popupCaretBackgroundColor: var(--active);
+    --popupMenuTextColor: var(--primary);
 
     --popupMenuItemBackgroundColor: var(--background);
     //equates to --colorSnowflakesDarkSelected with alpha of 0.3
@@ -536,7 +533,7 @@ $quaternary: (
     --popupMenuItemHoverTextColor: var(--hover);
 
     --popupMenuItemSeparatorBorderColor: var(--active);
-    --menuItemDividerBorderColor: var(--active);
+    // --menuItemDividerBorderColor: var(--menu-border-color);
 
     /*
 

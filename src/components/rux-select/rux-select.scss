@@ -4,7 +4,7 @@
     /**
       * @prop --selectMenuBackgroundColor: Background Color of the Select Input
       * @prop --selectMenuTextColor: Text Color of the Select Input
-      * @prop --selectMenuBorderColor: Border Color of the Select Input
+
       * @prop --selectMenuBorderHoverColor: Border Hover Color of the Select Input
       * @prop --selectMenuBorderFocusColor: Border Focus Color of the Select Input
       * @prop --selectMenuInvalidBorder: Border Color of the Invalid Select Input
@@ -18,6 +18,11 @@
       * @prop --selectMenuOptSelectedBackgroundColor: Background Color of the Selected Option
       * @prop --selectMenuOptSelectedTextColor: Text Color of the Selected Option
     */
+
+    /**
+      * @prop --selectMenuBorderColor: Border Color of the Select Input*
+      */
+    --selectMenuBorderColor: var(--menu-border-color);
 }
 
 :host([hidden]) {

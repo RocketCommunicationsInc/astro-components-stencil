@@ -3,6 +3,8 @@
       * @prop --menuItemDividerBorderColor: Menu Item Divider Border Color
     */
 
+    --menuItemDividerBorderColor: var(--menu-border-color);
+
     display: block;
 
     li {
