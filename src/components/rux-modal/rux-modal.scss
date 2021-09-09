@@ -20,21 +20,6 @@
     display: contents;
 }
 
-:host(.rux-modal__wrapper) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1100;
-    background-color: rgba(0, 0, 0, 0.5);
-    @include mixins.animation(fadeIn, 0.5s);
-}
-
 //  this styling is only used in storybook up for presentational purposes
 //  default flex position takes up the entire body element en spills overlay
 //  on top of the docs page
@@ -50,6 +35,20 @@ rux-button-group {
 }
 
 .rux-modal {
+    &__wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1100;
+        background-color: rgba(0, 0, 0, 0.5);
+        @include mixins.animation(fadeIn, 0.5s);
+    }
     &__dialog {
         position: relative;
         display: flex;
