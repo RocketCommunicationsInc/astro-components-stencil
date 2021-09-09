@@ -3,19 +3,14 @@
 :host {
     /**
       * @prop --modalTitleColor: Modal title color
-      */
-
-    /**
       * @prop --modalTextColor: Modal text color
-      */
-
-    /**
       * @prop --modalBackgroundColor: Modal background color
-      */
-
-    /**
       * @prop --modalBorderColor: Modal border color
       */
+
+    /**
+      * @part wrapper - css part hook to style modal wrapper
+    */
 
     display: contents;
 }
