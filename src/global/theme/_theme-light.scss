@@ -1,12 +1,12 @@
 .light-theme {
-    --menu-border-color: var(--color-primary-300, #92cbff);
-    --menu-item-hover: #cee9fc4d;
+    --color-border-menu: var(--color-primary-300, #92cbff);
+    --color-menu-item-hover: #cee9fc4d;
     --color-segmented-button-selected: var(--color-snowflakes-light-selected);
     --background: #eaeef4;
     --global-status-bar: #172635;
     --surface: #ffffff;
     --default-text: #292a2d;
-    --secondary-text: #51555b;
+    --secondary-text: #020202;
     --placeholder-text: #292a2d99;
     --inverse-text: #ffffff;
     --primary: #005a8f;
@@ -34,109 +34,26 @@
     --color-status-standby-500: #64d9ff;
     --color-status-off-500: #8e9aa3;
 
-    /* Astro 5 Simplified Color Palette */
-    // --defaultText: var(--colorQuaternaryDarken4, #292a2d);
-    // --secondaryText: var(--colorQuaternaryDarken3, #51555b);
-    // --globalAppHeader: var(--colorTertiaryDarken2, #172635);
-    // --primary: var(--primary, #005a8f);
-    // --primaryLighter: var(--color-primary-300, #92cbff);
-    // --primaryDark: var(--color-primary-600, #004872);
-    // --primaryDarkHover: #0048724d; /* TODO: this is a temporary fix, the use of opacity from Sketch is new and not accounted for in CSS */
-    // --primaryElementText: var(--color-basics-white #ffffff);
-    // --inputBackground: var(--color-basics-white, #ffffff);
-    // --inputDark: var(--colorTertiaryDarken4, #080c11);
+    --color-critical: var(--color-status-critical-500);
+    --color-serious: var(--color-status-serious-500);
+    --color-caution: var(--color-status-caution-500);
+    --color-normal: var(--color-status-normal-500);
+    --color-standby: var(--color-status-standby-500);
+    --color-off: var(--color-status-off-500);
 
-    --colorCritical: var(--color-status-critical-500);
-    --colorSerious: var(--color-status-serious-500);
-    --colorCaution: var(--color-status-caution-500);
-    --colorNormal: var(--color-status-normal-500);
-    --colorStandby: var(--color-status-standby-500);
-    --colorOff: var(--color-status-off-500);
+    --color-classification-text-light: var(--inverse-text);
+    --color-classification-text-dark: var(--default-text);
 
-    // --controlTextColor: var(--colorPrimary500);
-    // --controlLabelColor: var(--default-text);
-    // --controlBackgroundColor: var(--primary);
-    // --controlOutlineBackgroundColor: var(--background);
-    // --controlBorderColor: var(--color-primary-300);
+    --status-symbols: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAAgCAMAAABzRoe3AAAA81BMVEUAAABaPhVcDwE7CQA6gJIAAAAATQAkTlsATgBcPxYrHAciGgkAAABcPxU0coUARgAxNTgnU2IoV2YzNjoAUgAtYXEzODovZngAUQAAUAAwNDg0dIk2d4sAOgAjKCgAGAAADQA+hJVZPBRcPxb62AAA4gD/rz1VSQBk2f//KgQiSldXDgEATQCOmqNXOxQwNDdoRhiGWx+tHAJiEAFZw+b1KAMAywDlnTb5qjv7rDzpnzdMpcNJn7xFlrGMmKGEj5g4eY82d4xxe4IyboIwaHskT15GTFEA2gAArAAAnAAAfgAAfABg0vddyu5cZGpg0fbOjTE6oyFAAAAAJHRSTlMA7cc4Kgj9+vbBJB4GypVn9vPu5t/Y18O8n4B/ckY6FRMdmtlkVn4PAAACq0lEQVRYw+2YaVPaUBSGqWbTWsK+b9pC6ek1lypGW1T2RUDb//9rmpsm3Nyc1DQfOhMc3k/cyUzmfeY5BxISh+xXzi7eJ/Y5ZyfGu30msPobQQSf/5KEmKZeymlarqQ3g28vJfMZVc3kk1LUYkdfA3OE+/duv3GCaACtskKcKOVWQP0i7FKMiHAcDHAc0L9zxwgQwKeAiAB1jZD1ylwuzdWaEK3u71BTAUaD/nbbH4wA1FpUBVdffLliAnD/DieIBKArZGO2nZgboujiLZIA437XSX8MkIyo4PpG7H9zzQTg/pwgEkBdIU9tT56IIjioATx0PXkAqEVWgAXg/pwgEkBLY/1FAq3lmX+V9RcJVLwHcqWQShUqcpgCLgD35wRRAMpk0/ZlQ8r8BkUY27XvZ/P57N7+OIaiv2QjS+1kG2EKuADcHxOEAzQVYvoBTKI0dwIA2Pw/T8HO9JntAYDk60/pYjIcThaUNkIUcAG4PyYIB9DJuo2yJjrf4FHXyhTSVUmqpmHKTiPfHstZ+vJ4aeXxhWblYAVYAO6PCcIBSmSFAVak5F7Pw4DND6TP2ek8DWyKBpAXClbogvVnBAtaCVaABeD+mCAcIMcmCM9Qzr2esSdoBtU/xyrM7BnKCAULdHLpZEILr2wBEnBhGL86OHc94+M/AmhkiQGWRHOvq7C1Gs/doZdgbh23oAr9UnToAgxp6pUvIrQB8gej9wP1/24ZOP2fAD+jAHAFXAAmwP1jNUK2Ai4AE+D+sVpiRwEXgAhQ/3h9jboKuABMIPaP1w8ZV8AFIAKhf8weJXYKBAGIgPeP2cMcVyAIwARu/7g9TnMFggBM4PSP2wuNR4EgABPc2v1j90rpUSAIwAQG6x+7l3qvAkEAJmD94/e3ileBIAATnJwmDjnkTeU3PTFjExFNx+YAAAAASUVORK5CYII=');
 
-    // --controlSelectedBorderColor: var(--color-primary-300);
-    // --controlHoverBorderColor: var(--primary-alt);
-
-    // --controlSelectedOutlineBorderColor: var(--primary);
-
-    // --controlHoverOutlineBackgroundColor: var(--background);
-    // --controlSelectedOutlineBackgroundColor: var(--background);
-
-    // --logTextColor: var(--default-text);
-    // --logBackgroundColor: var(--surface);
-    // --logBorderColor: var(--secondary-text);
-
-    // --logHeaderTextColor: var(--default-text);
-    // --logHeaderBackgroundColor: var(--background);
-
-    // --logFilterBackgroundColor: var(--hover);
-    // --logFilterTextColor: var(--inverse-text);
-
-    --classificationTextColorLight: var(--inverse-text);
-    --classificationTextColorDark: var(--default-text);
-
-    /*
-
-    Input/Text Field Colors
-    ==========================================================================
-
-  */
-
-    /*
-
-    Status Symbols
-    ==========================================================================
-
-  */
-
-    --statusSymbols: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAAgCAMAAABzRoe3AAAA81BMVEUAAABaPhVcDwE7CQA6gJIAAAAATQAkTlsATgBcPxYrHAciGgkAAABcPxU0coUARgAxNTgnU2IoV2YzNjoAUgAtYXEzODovZngAUQAAUAAwNDg0dIk2d4sAOgAjKCgAGAAADQA+hJVZPBRcPxb62AAA4gD/rz1VSQBk2f//KgQiSldXDgEATQCOmqNXOxQwNDdoRhiGWx+tHAJiEAFZw+b1KAMAywDlnTb5qjv7rDzpnzdMpcNJn7xFlrGMmKGEj5g4eY82d4xxe4IyboIwaHskT15GTFEA2gAArAAAnAAAfgAAfABg0vddyu5cZGpg0fbOjTE6oyFAAAAAJHRSTlMA7cc4Kgj9+vbBJB4GypVn9vPu5t/Y18O8n4B/ckY6FRMdmtlkVn4PAAACq0lEQVRYw+2YaVPaUBSGqWbTWsK+b9pC6ek1lypGW1T2RUDb//9rmpsm3Nyc1DQfOhMc3k/cyUzmfeY5BxISh+xXzi7eJ/Y5ZyfGu30msPobQQSf/5KEmKZeymlarqQ3g28vJfMZVc3kk1LUYkdfA3OE+/duv3GCaACtskKcKOVWQP0i7FKMiHAcDHAc0L9zxwgQwKeAiAB1jZD1ylwuzdWaEK3u71BTAUaD/nbbH4wA1FpUBVdffLliAnD/DieIBKArZGO2nZgboujiLZIA437XSX8MkIyo4PpG7H9zzQTg/pwgEkBdIU9tT56IIjioATx0PXkAqEVWgAXg/pwgEkBLY/1FAq3lmX+V9RcJVLwHcqWQShUqcpgCLgD35wRRAMpk0/ZlQ8r8BkUY27XvZ/P57N7+OIaiv2QjS+1kG2EKuADcHxOEAzQVYvoBTKI0dwIA2Pw/T8HO9JntAYDk60/pYjIcThaUNkIUcAG4PyYIB9DJuo2yJjrf4FHXyhTSVUmqpmHKTiPfHstZ+vJ4aeXxhWblYAVYAO6PCcIBSmSFAVak5F7Pw4DND6TP2ek8DWyKBpAXClbogvVnBAtaCVaABeD+mCAcIMcmCM9Qzr2esSdoBtU/xyrM7BnKCAULdHLpZEILr2wBEnBhGL86OHc94+M/AmhkiQGWRHOvq7C1Gs/doZdgbh23oAr9UnToAgxp6pUvIrQB8gej9wP1/24ZOP2fAD+jAHAFXAAmwP1jNUK2Ai4AE+D+sVpiRwEXgAhQ/3h9jboKuABMIPaP1w8ZV8AFIAKhf8weJXYKBAGIgPeP2cMcVyAIwARu/7g9TnMFggBM4PSP2wuNR4EgABPc2v1j90rpUSAIwAQG6x+7l3qvAkEAJmD94/e3ileBIAATnJwmDjnkTeU3PTFjExFNx+YAAAAASUVORK5CYII=');
-    /*
-
-
-    Scrollbar Colors -- Light
-    ==========================================================================
-
-  */
-    // primary w/ opacity .7
-    --scrollBarThumbBackgroundColor: rgba(0, 90, 143, 0.7);
-    --scrollBarThumbBackgroundHoverColor: var(--colorPrimaryLighten1);
-    --scrollBarTrackBackgroundColor: var(--surface);
-    --scrollBarVerticalBoxShadow: inset 3px 3px 3px 0px rgba(47, 72, 99, 0.5);
-    --scrollBarHorizontalBoxShadow: inset 1px 3px 3px 0px rgba(47, 72, 99, 0.5);
-    /*
-
-    TABLE COLORS
-    ==========================================================================
-
-  */
-
-    // --tableBorderColor: var(--background);
-
-    // --tableHeaderBackgroundColor: var(--global-status-bar);
-    // --tableHeaderBorderColor: var(--surface);
-    // --tableHeaderTextColor: var(--inverse-text);
-    // --tableHeaderBoxShadow: 0 0.1rem 0.45rem rgba(0, 0, 0, 0.2);
-    // --tableHeaderAccentColor: var(--primary);
-
-    // --tableRowBackgroundColor: var(--surface);
-    // --tableRowBorderColor: var(--background);
-    // --tableRowTextColor: var(--default-text);
-
-    // --tableRowHoverBackgroundColor: red;
-    // --tableRowHoverTextColor: var(--default-text);
-
-    // --tableRowSelectedBackgroundColor: var(--background);
-    // --tableRowSelectedBorderColor: var(--primary);
-
-    // --tableControlsBackgroundColor: var(--primary);
-    // --tableFilterBorderColor: var(--primary);
-    // --tableFilterDisabledBorderColor: var(--background);
-    // --tableFilterDisabledBackgroundColor: var(--surface);
+    --color-scrollbar-background-thumb: rgba(
+        0,
+        90,
+        143,
+        0.7
+    ); // --primary, opacity .7
+    --color-scrollbar-background-thumb-hover: #337ba5;
+    --color-scrollbar-background-track: var(--surface);
 }
 
 li.light-theme {

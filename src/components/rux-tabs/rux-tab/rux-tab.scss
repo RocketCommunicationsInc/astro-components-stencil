@@ -57,6 +57,6 @@
 }
 :host([disabled]) {
     color: var(--tabTextColor);
-    opacity: var(--disabledOpacity);
+    opacity: var(--disabled-opacity);
     cursor: not-allowed;
 }

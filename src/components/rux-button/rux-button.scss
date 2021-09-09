@@ -1,80 +1,64 @@
 :host {
     /**
-     * @prop --buttonTextColor: Button text color
+     * @prop --button-text-color: Button text color
      */
-    --buttonTextColor: var(--inverse-text);
+    --button-text-color: var(--inverse-text);
 
     /**
-     * @prop --buttonBackgroundColor: Button background color
+     * @prop --button-background-color: Button background color
      */
-    --buttonBackgroundColor: var(--primary);
+    --button-background-color: var(--primary);
 
     /**
-     * @prop --buttonBorderColor: Button border color
+     * @prop --button-border-color: Button border color
      */
-    --buttonBorderColor: transparent;
+    --button-border-color: transparent;
 
     /**
-     * @prop --buttonHoverTextColor: Button hover text color
+     * @prop --button-hover-background-color: Button hover background color
      */
-    --buttonHoverTextColor: var(--inverse-text);
+    --button-hover-background-color: var(--hover);
 
     /**
-     * @prop --buttonHoverBackgroundColor: Button hover background color
+     * @prop --button-hover-border-color: Button hover border color
      */
-    --buttonHoverBackgroundColor: var(--hover);
+    --button-hover-border-color: transparent;
 
     /**
-     * @prop --buttonHoverBorderColor: Button hover border color
+     * @prop --button-active-background-color: Button active background color
      */
-    --buttonHoverBorderColor: transparent;
-
-    /* Button Active State */
-    /**
-     * @prop --buttonActiveControlTextColor: Button active text color
-     */
-    --buttonActiveControlTextColor: var(--default-text);
+    --button-active-background-color: var(--primary);
 
     /**
-     * @prop --buttonActiveBackgroundColor: Button active background color
+     * @prop --button-active-border-color: Button active border color
      */
-    --buttonActiveBackgroundColor: var(--primary);
+    --button-active-border-color: var(--primary);
 
     /**
-     * @prop --buttonActiveBorderColor: Button active border color
+     * @prop --button-secondary-text-color: Button secondary text color
      */
-    --buttonActiveBorderColor: var(--primary);
+
+    --button-secondary-text-color: var(--primary);
 
     /**
-     * @prop --buttonSecondaryTextColor: Button secondary text color
+     * @prop --button-secondary-background-color: Button secondary background color
      */
-
-    --buttonSecondaryTextColor: var(--primary);
-
-    /**
-     * @prop --buttonSecondaryBackgroundColor: Button secondary background color
-     */
-    --buttonSecondaryBackgroundColor: transparent;
+    --button-secondary-background-color: transparent;
 
     /**
-     * @prop --buttonSecondaryBorderColor: Button secondary border color
+     * @prop --button-secondary-border-color: Button secondary border color
      */
-    --buttonSecondaryBorderColor: var(--primary, rgb(0, 90, 143));
+    --button-secondary-border-color: var(--primary, rgb(0, 90, 143));
 
     /**
-     * @prop --buttonSecondaryHoverTextColor: Button secondary hover text color
+     * @prop --button-secondary-hover-background-color:  Button secondary hover background color
      */
-    --buttonSecondaryHoverTextColor: var(--hover);
+    --button-secondary-hover-background-color: transparent;
 
     /**
-     * @prop --buttonSecondaryHoverBackgroundColor:  Button secondary hover background color
+     * @prop --button-secondary-hover-border-color:  Button secondary hover border color
      */
-    --buttonSecondaryHoverBackgroundColor: transparent;
-
-    /**
-     * @prop --buttonSecondaryHoverBorderColor:  Button secondary hover border color
-     */
-    --buttonSecondaryHoverBorderColor: var(--hover);
+    --button-secondary-hover-border-color: var(--hover);
 
     display: inline-block;
 }
@@ -96,10 +80,10 @@
     height: 2.125rem;
     min-width: 2.25rem;
 
-    border-radius: var(--buttonBorderRadius);
+    border-radius: var(--border-radius-button);
 
-    color: var(--buttonTextColor);
-    font-family: var(--fontFamily);
+    color: var(--button-text-color);
+    font-family: var(--font-family);
     font-size: 1rem;
 
     white-space: nowrap;
@@ -119,7 +103,7 @@
     }
 
     &:disabled {
-        opacity: var(--disabledOpacity);
+        opacity: var(--disabled-opacity);
         cursor: not-allowed;
         pointer-events: none;
     }
@@ -134,13 +118,13 @@
 
     // Press/Active States
     &:active:not([hover]):not([disabled]) {
-        border-color: var(--buttonActiveBorderColor) !important;
-        background-color: var(--buttonActiveBackgroundColor) !important;
+        border-color: var(--button-active-border-color) !important;
+        background-color: var(--button-active-background-color) !important;
     }
 
     &:hover:not([active]):not([disabled]):not(.rux-button--secondary) {
-        border-color: var(--buttonHoverBorderColor);
-        background-color: var(--buttonHoverBackgroundColor);
+        border-color: var(--button-hover-border-color);
+        background-color: var(--button-hover-background-color);
     }
 
     // .rux-button-group
@@ -152,8 +136,8 @@
     }
 
     &:not(.rux-button--secondary) {
-        border: 1px solid var(--buttonBorderColor);
-        background-color: var(--buttonBackgroundColor);
+        border: 1px solid var(--button-border-color);
+        background-color: var(--button-background-color);
     }
 
     // elements
@@ -169,26 +153,28 @@
         .rux-icon {
             height: auto;
             width: 100%;
-            fill: var(--buttonTextColor);
-            color: var(--buttonTextColor);
+            fill: var(--button-text-color);
+            color: var(--button-text-color);
         }
     }
 
     // variants
     // .rux-button--secondary
     &--secondary {
-        color: var(--buttonSecondaryTextColor);
-        background-color: var(--buttonSecondaryBackgroundColor);
-        border: 1px solid var(--buttonSecondaryBorderColor);
+        color: var(--button-secondary-text-color);
+        background-color: var(--button-secondary-background-color);
+        border: 1px solid var(--button-secondary-border-color);
         &:active:not([hover]):not([disabled]) {
-            border-color: var(--buttonSecondaryBorderColor) !important;
-            background-color: var(--buttonSecondaryBackgroundColor) !important;
+            border-color: var(--button-secondary-border-color) !important;
+            background-color: var(
+                --button-secondary-background-color
+            ) !important;
         }
 
         &:hover:not([disabled]) {
-            color: var(--buttonSecondaryTextColor);
-            background-color: var(--buttonSecondaryHoverBackgroundColor);
-            border-color: var(--buttonSecondaryHoverBorderColor);
+            color: var(--button-secondary-text-color);
+            background-color: var(--button-secondary-hover-background-color);
+            border-color: var(--button-secondary-hover-border-color);
         }
     }
 
@@ -269,15 +255,15 @@
 }
 
 .rux-button rux-icon {
-    color: var(--buttonTextColor);
+    color: var(--button-text-color);
 }
 .rux-button--secondary rux-icon,
 .rux-button--secondary rux-icon svg > use {
-    color: var(--buttonSecondaryTextColor);
+    color: var(--button-secondary-text-color);
 }
 .rux-button ::slotted(rux-icon) {
-    color: var(--buttonTextColor);
+    color: var(--button-text-color);
 }
 .rux-button--secondary ::slotted(rux-icon) {
-    color: var(--buttonSecondaryTextColor);
+    color: var(--button-secondary-text-color);
 }

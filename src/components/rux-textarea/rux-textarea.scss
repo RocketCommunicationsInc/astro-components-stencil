@@ -12,7 +12,7 @@
     --textareaBackgroundColor: var(--background);
 
     /** @prop --textareaInvalidBorderColor: Border color while in an invalid state*/
-    --textareaInvalidBorderColor: var(--colorCritical);
+    --textareaInvalidBorderColor: var(--color-critical);
 
     /**
      * @prop --textareaFocusBorderColor: Border color while in a focused state
@@ -33,8 +33,8 @@
         padding: 0.5rem;
         border: 1px solid var(--textareaBorderColor);
         border-radius: 3px;
-        font-family: var(--fontFamily);
-        font-size: var(--fontSize, 1rem);
+        font-family: var(--font-family);
+        font-size: var(--font-size, 1rem);
         color: var(--textareaTextColor);
         background-color: var(--textareaBackgroundColor);
         &--invalid {
@@ -42,7 +42,7 @@
         }
         &--disabled {
             opacity: 0.4;
-            opacity: var(--disabledOpacity);
+            opacity: var(--disabled-opacity);
             cursor: not-allowed;
             cursor: not-allowed;
         }
@@ -52,8 +52,8 @@
         display: flex;
         flex-direction: column;
 
-        font-family: var(--fontFamily);
-        font-size: var(--fontSize);
+        font-family: var(--font-family);
+        font-size: var(--font-size);
         color: var(--default-text);
     }
 
@@ -76,7 +76,7 @@
         &::placeholder {
             font-size: 1rem;
             font-weight: normal;
-            font-family: var(--fontFamily);
+            font-family: var(--font-family);
             color: var(--default-text);
             opacity: 0.6;
         }
@@ -92,11 +92,11 @@
 
     .rux-textarea-field--small {
         .rux-textarea-label {
-            font-size: var(--fontSizeMD);
+            font-size: var(--font-size-md);
         }
         .rux-textarea {
             padding: 0.3rem;
-            font-size: var(--fontSizeMD);
+            font-size: var(--font-size-md);
         }
     }
 
@@ -104,10 +104,10 @@
         margin-top: 0.625rem;
         color: var(--secondary-text);
         font-size: 0.875rem;
-        font-size: var(--fontSizeMD);
+        font-size: var(--font-size-md);
         font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
             Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-        font-family: var(--fontFamily);
+        font-family: var(--font-family);
         font-weight: normal;
         letter-spacing: 0.5px;
     }
@@ -123,12 +123,12 @@
         -webkit-order: 3;
         order: 3;
         margin-top: 0.625rem;
-        color: var(--colorCritical);
+        color: var(--color-critical);
         font-size: 0.875rem;
-        font-size: var(--fontSizeMD);
+        font-size: var(--font-size-md);
         font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
             Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-        font-family: var(--fontFamily);
+        font-family: var(--font-family);
         font-weight: bold;
     }
 }

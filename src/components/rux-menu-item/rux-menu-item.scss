@@ -12,7 +12,7 @@
     /**
       * @prop --popupMenuItemHoverBackgroundColor: Menu Item Hover Background Color
     */
-    --popupMenuItemHoverBackgroundColor: var(--menu-item-hover);
+    --popupMenuItemHoverBackgroundColor: var(--color-menu-item-hover);
 
     /**
       * @prop --popupMenuItemHoverTextColor: Menu Item Hover Text Color
@@ -20,7 +20,7 @@
     --popupMenuItemHoverTextColor: var(--hover);
 
     /**
-      * @prop --disabledOpacity: Opacity for Disabled Items
+      * @prop --disabled-opacity: Opacity for Disabled Items
     */
 
     display: block;
@@ -77,7 +77,7 @@
 
         a,
         div {
-            opacity: var(--disabledOpacity);
+            opacity: var(--disabled-opacity);
         }
     }
 }

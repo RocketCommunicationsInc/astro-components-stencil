@@ -102,7 +102,7 @@
         &:disabled {
             + .rux-switch__button {
                 cursor: not-allowed;
-                opacity: var(--disabledOpacity);
+                opacity: var(--disabled-opacity);
             }
         }
     }
@@ -113,10 +113,10 @@
                 + .rux-switch__button {
                     &::before,
                     &:after {
-                        border-color: var(--colorCritical);
+                        border-color: var(--color-critical);
                     }
                     &:before {
-                        background-color: var(--colorCritical);
+                        background-color: var(--color-critical);
                     }
                 }
             }
@@ -126,10 +126,10 @@
                     + .rux-switch__button {
                         &::before,
                         &:after {
-                            border-color: var(--colorCritical);
+                            border-color: var(--color-critical);
                         }
                         &:before {
-                            background-color: var(--colorCritical);
+                            background-color: var(--color-critical);
                         }
                     }
                 }
@@ -175,8 +175,8 @@
     display: flex;
     flex-direction: column;
 
-    font-family: var(--fontFamily);
-    font-size: var(--fontSize);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
     color: var(--default-text);
 }
 
@@ -184,10 +184,10 @@
     margin-top: 0.625rem;
     color: var(--secondary-text);
     font-size: 0.875rem;
-    font-size: var(--fontSizeMD);
+    font-size: var(--font-size-md);
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
         Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-    font-family: var(--fontFamily);
+    font-family: var(--font-family);
     font-weight: normal;
     letter-spacing: 0.5px;
 }
@@ -203,11 +203,11 @@
     -webkit-order: 3;
     order: 3;
     margin-top: 0.625rem;
-    color: var(--colorCritical);
+    color: var(--color-critical);
     font-size: 0.875rem;
-    font-size: var(--fontSizeMD);
+    font-size: var(--font-size-md);
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
         Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-    font-family: var(--fontFamily);
+    font-family: var(--font-family);
     font-weight: bold;
 }

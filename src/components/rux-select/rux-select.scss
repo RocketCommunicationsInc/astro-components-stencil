@@ -11,7 +11,7 @@
     --selectMenuBorderFocusColor: var(--hover);
 
     /** @prop --selectMenuInvalidBorder: Border Color of the Invalid Select Input*/
-    --selectMenuInvalidBorder: var(--colorCritical);
+    --selectMenuInvalidBorder: var(--color-critical);
 
     /** @prop --selectMenuOptHoverBackgroundColor: Background Hover Color of Select Menu Options */
     --selectMenuOptHoverBackgroundColor: rgba(28, 63, 94, 0.3);
@@ -48,7 +48,7 @@
     );
 
     /** @prop --selectMenuBorderColor: Border Color of the Select Input*/
-    --selectMenuBorderColor: var(--menu-border-color);
+    --selectMenuBorderColor: var(--color-border-menu);
 }
 
 :host([hidden]) {
@@ -67,11 +67,11 @@
     -webkit-order: 3;
     order: 3;
     margin-top: 0.625rem;
-    color: var(--colorCritical);
+    color: var(--color-critical);
 }
 
 label {
-    font-family: var(--fontFamily);
+    font-family: var(--font-family);
     display: inline-block;
     margin-bottom: 10px;
     color: var(--selectMenuLabelColor);
@@ -88,7 +88,7 @@ label {
     border: 1px solid var(--selectMenuBorderColor);
     border-radius: var(--selectMenuBorderRadius);
     color: var(--selectMenuTextColor);
-    font-family: var(--fontFamily);
+    font-family: var(--font-family);
     font-weight: normal;
     font-size: 1rem;
     padding: 0.438rem 3.125rem 0.438rem 0.5rem;

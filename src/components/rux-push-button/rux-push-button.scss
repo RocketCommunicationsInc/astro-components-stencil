@@ -10,10 +10,10 @@
     --pushbuttonTextColor: var(--primary);
 
     /** @prop --pushbuttonSelectedBackgroundColor: the Push Button background color when checked */
-    --pushbuttonSelectedBackgroundColor: var(--colorNormal);
+    --pushbuttonSelectedBackgroundColor: var(--color-normal);
 
     /** @prop --pushbuttonSelectedBorderColor: the Push Button border color when checked */
-    --pushbuttonSelectedBorderColor: var(--colorNormal);
+    --pushbuttonSelectedBorderColor: var(--color-normal);
 
     /** @prop --pushbuttonSelectedTextColor: the Push Button text color when checked */
     --pushbuttonSelectedTextColor: var(--color-tertiary-900);
@@ -27,7 +27,7 @@
     -ms-user-select: none;
     user-select: none;
     &[disabled] {
-        opacity: var(--disabledOpacity);
+        opacity: var(--disabled-opacity);
         cursor: not-allowed;
     }
 
@@ -47,7 +47,7 @@
             padding: 0 0.625rem;
             color: var(--pushbuttonTextColor);
             background-color: var(--pushbuttonBackgroundColor);
-            border-radius: var(--buttonBorderRadius);
+            border-radius: var(--border-radius-button);
             border: 1px solid var(--pushbuttonBorderColor);
         }
 
@@ -59,7 +59,7 @@
         }
 
         &__input:disabled + .rux-push-button__button {
-            opacity: var(--disabledOpacity);
+            opacity: var(--disabled-opacity);
             cursor: not-allowed;
         }
     }

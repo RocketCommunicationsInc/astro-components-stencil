@@ -26,7 +26,7 @@
     /**
     * @prop --inputInvalidBorderColor: the input invalid border color
     */
-    --inputInvalidBorderColor: var(--colorCritical);
+    --inputInvalidBorderColor: var(--color-critical);
 
     display: block;
 
@@ -34,8 +34,8 @@
         display: flex;
         flex-direction: column;
 
-        font-family: var(--fontFamily);
-        font-size: var(--fontSize);
+        font-family: var(--font-family);
+        font-size: var(--font-size);
         color: var(--default-text);
     }
     .rux-input {
@@ -46,7 +46,7 @@
         padding: 0 0.625rem;
         border: 1px solid var(--inputBorderColor);
         border-radius: 3px;
-        font-size: var(--fontSize, 1rem);
+        font-size: var(--font-size, 1rem);
         color: var(--inputTextColor);
         background-color: var(--inputBackgroundColor);
         &--invalid {
@@ -54,7 +54,7 @@
         }
         &--disabled {
             opacity: 0.4;
-            opacity: var(--disabledOpacity);
+            opacity: var(--disabled-opacity);
             cursor: not-allowed;
             cursor: not-allowed;
         }
@@ -87,7 +87,7 @@
         &::placeholder {
             font-size: 1rem;
             font-weight: normal;
-            font-family: var(--fontFamily);
+            font-family: var(--font-family);
             color: var(--default-text);
             opacity: 0.6;
         }
@@ -106,12 +106,12 @@
 
     .rux-form-field--small {
         .rux-input-label {
-            font-size: var(--fontSizeMD);
+            font-size: var(--font-size-md);
         }
         .rux-input {
             height: 1.625rem;
             padding: 0.3rem;
-            font-size: var(--fontSizeMD);
+            font-size: var(--font-size-md);
         }
 
         .rux-input--search {
@@ -122,10 +122,10 @@
         margin-top: 0.625rem;
         color: var(--secondary-text);
         font-size: 0.875rem;
-        font-size: var(--fontSizeMD);
+        font-size: var(--font-size-md);
         font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
             Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-        font-family: var(--fontFamily);
+        font-family: var(--font-family);
         font-weight: normal;
         letter-spacing: 0.5px;
     }
@@ -141,12 +141,12 @@
         -webkit-order: 3;
         order: 3;
         margin-top: 0.625rem;
-        color: var(--colorCritical);
+        color: var(--color-critical);
         font-size: 0.875rem;
-        font-size: var(--fontSizeMD);
+        font-size: var(--font-size-md);
         font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
             Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-        font-family: var(--fontFamily);
+        font-family: var(--font-family);
         font-weight: bold;
     }
 }

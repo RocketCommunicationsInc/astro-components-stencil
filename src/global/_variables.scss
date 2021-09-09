@@ -1,9 +1,4 @@
 :root {
-    --menu-border-color: #2b659b;
-
-    --menu-item-hover: #1c3f5e4d;
-    --color-segmented-button-selected: var(--color-snowflakes-dark-selected);
-    --input-background: var(--color-basics-white);
     --background: #101923;
     --global-status-bar: #172635;
     --surface: #1b2d3e;
@@ -130,101 +125,44 @@
     --color-snowflakes-dark-selected: #1c3f5e;
     --color-snowflakes-light-selected: #cee9fc;
 
-    /**
-    LEGACY
+    /*
+      Aliases
+      ==========================================================================
     */
 
-    --disabledOpacity: 0.4;
-    --buttonBorderRadius: 3px;
+    --color-border-menu: #2b659b;
+    --color-menu-item-hover: #1c3f5e4d;
+    --color-segmented-button-selected: var(--color-snowflakes-dark-selected);
+
+    --disabled-opacity: 0.4;
+    --border-radius-button: 3px;
 
     /* Typography */
-    --fontFamily: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    --font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
         Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-    --fontSize: 1rem; /* 16px */
-    --fontSizeXL: 1.125rem;
-    --fontSizeLG: 1rem;
-    --fontSizeMD: 0.875rem;
-    --fontSizeSM: 0.75rem;
-    --fontSizeXS: 0.65rem;
+    --font-size: 1rem; /* 16px */
+    --font-size-xl: 1.125rem;
+    --font-size-lg: 1rem;
+    --font-size-md: 0.875rem;
+    --font-size-sm: 0.75rem;
+    --font-size-xs: 0.65rem;
 
-    --fontFamilyLight: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-    --fontFamilyMono: 'Roboto Mono', monospace;
+    --font-family-mono: 'Roboto Mono', monospace;
 
-    --colorCritical: var(--color-status-critical-500, rgb(255, 42, 4));
-    --colorSerious: var(--color-status-serious-500, rgb(255, 175, 61));
-    --colorCaution: var(--color-status-caution-500, rgb(250, 216, 0));
-    --colorNormal: var(--color-status-normal-500, rgb(0, 226, 0));
-    --colorStandby: var(--color-status-standby-500, rgb(45, 204, 255));
-    --colorOff: var(--color-status-off-500, rgb(142, 154, 163));
+    --color-critical: var(--color-status-critical-500, rgb(255, 42, 4));
+    --color-serious: var(--color-status-serious-500, rgb(255, 175, 61));
+    --color-caution: var(--color-status-caution-500, rgb(250, 216, 0));
+    --color-normal: var(--color-status-normal-500, rgb(0, 226, 0));
+    --color-standby: var(--color-status-standby-500, rgb(45, 204, 255));
+    --color-off: var(--color-status-off-500, rgb(142, 154, 163));
 
-    --classificationTextColorLight: var(--default-text);
-    --classificationTextColorDark: var(--inverse-text);
+    --color-classification-text-light: var(--default-text);
+    --color-classification-text-dark: var(--inverse-text);
 
-    /*
+    --status-symbols: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAAgCAMAAABzRoe3AAAAgVBMVEUAAAD/tQv/swL/OTn/PDzftl9W8QBW8AAtzP8v0P9Z9gD/tAP/uQb/tAItzf8tzf+eqK2ep60uzP9X8QCfqK4uzf8uzf9X8QAuzP9X8ACeqK4vzP9Y8QAuzv9Y8gCeqq4wz/8xzv9A1f9Y8QD/tAP86DpW8AD/swL/ODgtzP+ep63tgXPUAAAAJXRSTlMAGNfAQAv98/IdG8Io52zz8+DZ2dC9trabm4F+a05OQjAaDG6dAJcYcwAAAfdJREFUWMPtmNlygkAQRScyrBp3QTZFNBj8/w9MCGI3dBOHMg9jyvOmVFnn1HUSULx4LibjN/HMTN7Po2cu+PY/cwUfPYg2XhKsbHsVJJ5gcaf+cjZb+lN3qJjxyWIw/lAwNMALreKKFTIJh215Y3sYFiD5AEn9oWBowM4uEPau65A6JcJJ/2ACg/pDwdCAo1W0sI6ixbTsMH18Akn9oWBgwK7xh4LWBmlJSB+dwCD+pEA5wLMLgo3OwcGpvzhxludZfH1Bz4EZrefzdWSqTSCJPylQDggLhhA+oD6/G7d+5W7qk9yV3C8uPyz2KhMYxJ8UKAd4Fhdg3SZwa3/4wLrA7fhfbuwVJpDEnxQoByQFS9I6wQ7ydR16js0FBCzMuxMY1J8WqAYEfEDQXPcr3RjbxNU7vsBEF0R0dwJJ/LkCxYAVH7Bqri8r3QzbZNU7S4FZ44B1/ymgA4zPfZwUA2w+wG6uzyrdHMvk1TszgZnjgLmgyL4T8Dbq8R+bWgUIgw4ABby/Vl8hIckAUMD7a3WIYQIYgC0Af73+jOIJpKAF1F+vf2QwAQxAC7C/ZrcSeAIpegvAX7ObOZgABiAF2F+322mYAAagBeCv2wMNTEAGIAWVv3aPlDABDMAW1P7aPdQjDBiALaj89ftZBSGl+LXgZIoXL/4VXyptNwzuHR/QAAAAAElFTkSuQmCC');
 
-    Input/Text Field Colors
-    ==========================================================================
-
-  */
-
-    // --inputBackgroundColor: var(--colorTertiaryDarken3);
-    // --inputBorderColor: var(--color-secondary-700);
-    // --inputBorderColorAlt: var(--colorTertiaryDarken4);
-    // --inputTextColor: var(--default-text);
-
-    /* Input Focus */
-    // --inputFocusBorderColor: var(--color-secondary-300);
-    // --inputFocusTextColor: var(--default-text);
-
-    // --inputInvalidBorderColor: var(--colorCritical);
-
-    // --inputSearchIcon: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.37 26.457a15.282 15.282 0 000-21.918c-6.176-6.052-16.187-6.052-22.361 0a15.274 15.274 0 00-1.541 20.166c-.367.147-.713.37-1.014.665L.926 34.709a3.056 3.056 0 000 4.383 3.208 3.208 0 004.472 0l9.528-9.339c.352-.345.604-.753.756-1.186 6.137 3.831 14.347 3.124 19.687-2.11zM24.193 4.043c6.454 0 11.686 5.129 11.686 11.455 0 6.326-5.232 11.455-11.686 11.455-6.455 0-11.687-5.129-11.687-11.455 0-6.326 5.232-11.455 11.687-11.455z' fill='%234dacff' fill-rule='evenodd'/%3E%3C/svg%3E");
-
-    // --inputSelectionBackgroundColor: var(--colorSecondaryLighten3);
-    /*
-
-    Icon Default Colors
-    ==========================================================================
-
-	*/
-
-    /*
-
-    Status Symbols
-    ==========================================================================
-
-  */
-
-    --statusSymbols: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAAgCAMAAABzRoe3AAAAgVBMVEUAAAD/tQv/swL/OTn/PDzftl9W8QBW8AAtzP8v0P9Z9gD/tAP/uQb/tAItzf8tzf+eqK2ep60uzP9X8QCfqK4uzf8uzf9X8QAuzP9X8ACeqK4vzP9Y8QAuzv9Y8gCeqq4wz/8xzv9A1f9Y8QD/tAP86DpW8AD/swL/ODgtzP+ep63tgXPUAAAAJXRSTlMAGNfAQAv98/IdG8Io52zz8+DZ2dC9trabm4F+a05OQjAaDG6dAJcYcwAAAfdJREFUWMPtmNlygkAQRScyrBp3QTZFNBj8/w9MCGI3dBOHMg9jyvOmVFnn1HUSULx4LibjN/HMTN7Po2cu+PY/cwUfPYg2XhKsbHsVJJ5gcaf+cjZb+lN3qJjxyWIw/lAwNMALreKKFTIJh215Y3sYFiD5AEn9oWBowM4uEPau65A6JcJJ/2ACg/pDwdCAo1W0sI6ixbTsMH18Akn9oWBgwK7xh4LWBmlJSB+dwCD+pEA5wLMLgo3OwcGpvzhxludZfH1Bz4EZrefzdWSqTSCJPylQDggLhhA+oD6/G7d+5W7qk9yV3C8uPyz2KhMYxJ8UKAd4Fhdg3SZwa3/4wLrA7fhfbuwVJpDEnxQoByQFS9I6wQ7ydR16js0FBCzMuxMY1J8WqAYEfEDQXPcr3RjbxNU7vsBEF0R0dwJJ/LkCxYAVH7Bqri8r3QzbZNU7S4FZ44B1/ymgA4zPfZwUA2w+wG6uzyrdHMvk1TszgZnjgLmgyL4T8Dbq8R+bWgUIgw4ABby/Vl8hIckAUMD7a3WIYQIYgC0Af73+jOIJpKAF1F+vf2QwAQxAC7C/ZrcSeAIpegvAX7ObOZgABiAF2F+322mYAAagBeCv2wMNTEAGIAWVv3aPlDABDMAW1P7aPdQjDBiALaj89ftZBSGl+LXgZIoXL/4VXyptNwzuHR/QAAAAAElFTkSuQmCC');
-    /*
-
-    Scrollbar Colors -- Dark
-    ==========================================================================
-
-  */
-
-    --scrollBarThumbBackgroundColor: var(
-        --colorSecondaryDarken2,
-        rgb(46, 103, 153)
-    );
-    --scrollBarThumbBackgroundHoverColor: var(
-        --colorSecondaryDarken1,
-        rgb(58, 129, 191)
-    );
-    --scrollBarTrackBackgroundColor: var(
-        --colorTertiaryDarken1,
-        rgb(32, 50, 70)
-    );
-    --scrollBarTrackCornerBackgroundColor: var(
-        --colorTertiaryDarken1,
-        rgb(32, 50, 70)
-    );
-
-    /*
-
-    Timeline Colors -- Dark
-    ==========================================================================
-
-  */
+    --color-scrollbar-background-thumb: #2e6799;
+    --color-scrollbar-background-thumb-hover: #3a81bf;
+    --color-scrollbar-background-track: #203246;
+    --color-scrollbar-corner-background: #203246;
 }
