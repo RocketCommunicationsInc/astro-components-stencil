@@ -28,11 +28,6 @@
     --switch-off-border-color: var(--active);
     padding-left: 1%;
 }
-
-:host([hidden]) {
-    display: none;
-}
-
 .rux-switch {
     position: relative;
     display: flex;
@@ -206,4 +201,7 @@
     font-size: var(--font-size-md);
     font-family: var(--font-family);
     font-weight: bold;
+}
+:host([hidden]) {
+    display: none;
 }
