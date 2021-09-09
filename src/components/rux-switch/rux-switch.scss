@@ -1,29 +1,31 @@
 :host {
     display: block;
 
-    /** @prop --switchButtonHoverOffColor: the Switch hover off color */
-    --switchButtonHoverOffColor: var(--hover);
+    /** @prop --switch-hover-off-color: the Switch hover off color */
+    --switch-hover-off-color: var(--hover);
 
     /**
-      * @prop --switchBackgroundColor: the Switch off color
+      * @prop --switch-background-color: the Switch off color
       */
 
-    --switchBackgroundColor: var(--background);
+    --switch-background-color: var(--background);
 
     /**
-      * @prop --switchHoverOnColor: the Switch hover on color
+      * @prop --switch-hover-on-color: the Switch hover on color
       */
-    --switchHoverOnColor: var(--primary);
+    --switch-hover-on-color: var(--primary);
 
     /**
-      * @prop --switchHoverOffColor: the Switch hover off color
+      * @prop --switch-hover-off-color: the Switch hover off color
       */
 
-    --switchHoverOffColor: var(--primary);
+    --switch-hover-off-color: var(--primary);
 
-    /** @prop --switchOnColor: the Switch on color */
-    --switchOnColor: var(--primary);
+    /** @prop --switch-on-color: the Switch on color */
+    --switch-on-color: var(--primary);
 
+    /** @prop --switch-off-border-color: the Switch off border color*/
+    --switch-off-border-color: var(--active);
     padding-left: 1%;
 }
 
@@ -52,8 +54,8 @@
 
             border-radius: 4.7px;
             border: 1px solid;
-            border-color: var(--switchOffBorderColor);
-            background-color: var(--switchBackgroundColor);
+            border-color: var(--switch-off-border-color);
+            background-color: var(--switch-background-color);
 
             height: 10px;
             width: 30px;
@@ -71,8 +73,8 @@
             height: 18px;
             width: 18px;
             border-radius: 50%;
-            border: 1px solid var(--switchHoverOffColor);
-            background-color: var(--switchBackgroundColor);
+            border: 1px solid var(--switch-hover-off-color);
+            background-color: var(--switch-background-color);
 
             transition: 0.1s left linear, 0.1s border-color linear;
         }
@@ -87,13 +89,13 @@
         &:checked {
             + .rux-switch__button {
                 &::before {
-                    border-color: var(--switchOnColor);
-                    background-color: var(--switchOnColor);
+                    border-color: var(--switch-on-color);
+                    background-color: var(--switch-on-color);
                 }
                 &::after {
                     left: 16px;
-                    background-color: var(--switchBackgroundColor);
-                    border-color: var(--switchHoverOffColor);
+                    background-color: var(--switch-background-color);
+                    border-color: var(--switch-hover-off-color);
                 }
             }
         }
@@ -144,10 +146,10 @@
             &:checked:not(:disabled) {
                 + .rux-switch__button {
                     &::before {
-                        border-color: var(--switchHoverOffColor);
+                        border-color: var(--switch-hover-off-color);
                     }
                     &:after {
-                        border-color: var(--switchButtonHoverOffColor);
+                        border-color: var(--switch-hover-off-color);
                     }
                 }
             }
@@ -155,7 +157,7 @@
             &:not(:disabled) {
                 + .rux-switch__button {
                     &::before {
-                        background-color: var(--switchBackgroundColor);
+                        background-color: var(--switch-background-color);
                     }
                 }
             }
@@ -163,7 +165,7 @@
             &:checked:not(:disabled) {
                 + .rux-switch__button {
                     &:before {
-                        background-color: var(--switchHoverOnColor);
+                        background-color: var(--switch-hover-on-color);
                     }
                 }
             }
