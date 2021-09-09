@@ -134,21 +134,8 @@
     LEGACY
     */
 
-    --disabledControlOpacity: 0.4;
-    --disabledControlCursor: not-allowed;
-
     --disabledOpacity: 0.4;
-    --disabledCursor: not-allowed;
-
     --buttonBorderRadius: 3px;
-    --defaultBorderRadius: 3px;
-
-    --controlOptionSize: 1.125rem; /* 18px */
-    --controlBorderRadius: 3px;
-
-    --labelFontSize: 1rem;
-    --smallLabelFontSize: 0.875rem;
-    --largeLabelFontSize: 1.125rem;
 
     /* Typography */
     --fontFamily: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -163,7 +150,6 @@
     --fontFamilyLight: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
         Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     --fontFamilyMono: 'Roboto Mono', monospace;
-
     --colorPrimaryLighten1: rgb(51, 123, 165);
     --colorSecondaryLighten3: rgb(184, 222, 255);
     --colorTertiaryDarken2: rgb(24, 38, 53);
@@ -189,24 +175,20 @@
     --colorStandby: var(--color-status-standby-500, rgb(45, 204, 255));
     --colorOff: var(--color-status-off-500, rgb(142, 154, 163));
 
-    --controlTextColor: var(--color-secondary-500);
-    --controlLabelColor: var(--default-text);
-    --controlBackgroundColor: var(--primary);
-    --controlOutlineBackgroundColor: var(--background);
-    --controlBorderColor: var(--color-secondary-700);
-    --controlAccentColor: var(--primary);
+    // --controlTextColor: var(--color-secondary-500);
+    // --controlLabelColor: var(--default-text);
+    // --controlBackgroundColor: var(--primary);
+    // --controlOutlineBackgroundColor: var(--background);
+    // --controlBorderColor: var(--color-secondary-700);
+    // --controlAccentColor: var(--primary);
+    // --controlOptionSize: 1.125rem; /* 18px */
+    // --controlBorderRadius: 3px;
+    // --controlSelectedTextColor: var(--default-text);
+    // --controlSelectedBackgroundColor: var(--primary-alt);
+    // --controlSelectedBorderColor: var(--color-secondary-700);
+    // --controlHoverBorderColor: var(--hover);
 
-    --controlSelectedTextColor: var(--default-text);
-    --controlSelectedBackgroundColor: var(--primary-alt);
-    --controlSelectedBorderColor: var(--color-secondary-700);
-    --controlHoverBorderColor: var(--hover);
-
-    --controlSelectedOutlineBorderColor: var(--primary);
-
-    --controlHoverOutlineBackgroundColor: var(--background);
-    --controlSelectedOutlineBackgroundColor: var(--background);
-
-    --radioGroupBorderColor: var(--controlBorderColor);
+    // --controlSelectedOutlineBackgroundColor: var(--background);
 
     /*
 
@@ -225,21 +207,20 @@
 
   */
 
-    --inputBackgroundColor: var(--colorTertiaryDarken3);
-    --inputBorderColor: var(--color-secondary-700);
-    --inputBorderColorAlt: var(--colorTertiaryDarken4);
-    --inputTextColor: var(--default-text);
+    // --inputBackgroundColor: var(--colorTertiaryDarken3);
+    // --inputBorderColor: var(--color-secondary-700);
+    // --inputBorderColorAlt: var(--colorTertiaryDarken4);
+    // --inputTextColor: var(--default-text);
 
     /* Input Focus */
-    --inputFocusBorderColor: var(--color-secondary-300);
-    --inputFocusTextColor: var(--default-text);
+    // --inputFocusBorderColor: var(--color-secondary-300);
+    // --inputFocusTextColor: var(--default-text);
 
-    --inputInvalidBorderColor: var(--colorCritical);
+    // --inputInvalidBorderColor: var(--colorCritical);
 
-    --inputSearchIcon: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.37 26.457a15.282 15.282 0 000-21.918c-6.176-6.052-16.187-6.052-22.361 0a15.274 15.274 0 00-1.541 20.166c-.367.147-.713.37-1.014.665L.926 34.709a3.056 3.056 0 000 4.383 3.208 3.208 0 004.472 0l9.528-9.339c.352-.345.604-.753.756-1.186 6.137 3.831 14.347 3.124 19.687-2.11zM24.193 4.043c6.454 0 11.686 5.129 11.686 11.455 0 6.326-5.232 11.455-11.686 11.455-6.455 0-11.687-5.129-11.687-11.455 0-6.326 5.232-11.455 11.687-11.455z' fill='%234dacff' fill-rule='evenodd'/%3E%3C/svg%3E");
-    --inputSearchCancel: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cpath fill='%234dacff' fill-rule='evenodd' d='M69.028 64l22.628 22.627-5.029 5.029L64 69.028 41.373 91.656l-5.029-5.029L58.972 64 36.344 41.373l5.029-5.029L64 58.972l22.627-22.628 5.029 5.029L69.028 64z'/%3E%3C/svg%3E");
+    // --inputSearchIcon: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.37 26.457a15.282 15.282 0 000-21.918c-6.176-6.052-16.187-6.052-22.361 0a15.274 15.274 0 00-1.541 20.166c-.367.147-.713.37-1.014.665L.926 34.709a3.056 3.056 0 000 4.383 3.208 3.208 0 004.472 0l9.528-9.339c.352-.345.604-.753.756-1.186 6.137 3.831 14.347 3.124 19.687-2.11zM24.193 4.043c6.454 0 11.686 5.129 11.686 11.455 0 6.326-5.232 11.455-11.686 11.455-6.455 0-11.687-5.129-11.687-11.455 0-6.326 5.232-11.455 11.687-11.455z' fill='%234dacff' fill-rule='evenodd'/%3E%3C/svg%3E");
 
-    --inputSelectionBackgroundColor: var(--colorSecondaryLighten3);
+    // --inputSelectionBackgroundColor: var(--colorSecondaryLighten3);
     /*
 
     Icon Default Colors

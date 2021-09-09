@@ -2,30 +2,31 @@
     /**
   * @prop --inputBackgroundColor: the input background color
   */
+    --inputBackgroundColor: var(--background);
     /**
     * @prop --inputBorderColor: the input border color
     */
+    --inputBorderColor: var(--active);
+
     /**
     * @prop --inputTextColor: the input text color
     */
+    --inputTextColor: var(--default-text);
     /**
     * @prop --inputFocusBorderColor: the input focus border color
     */
-    /**
-    * @prop --inputFocusTextColor: the input focus text color
-    */
+
+    --inputFocusBorderColor: var(--hover);
+
     /**
     * @prop --inputSelectionBackgroundColor: the background color of highlighted text
     */
+    --inputSelectionBackgroundColor: var(--color-secondary-300);
+
     /**
     * @prop --inputInvalidBorderColor: the input invalid border color
     */
-    /**
-    * @prop --inputSearchIcon: the input search icon
-    */
-    /**
-    * @prop --inputSearchCancel: the input search cancel
-    */
+    --inputInvalidBorderColor: var(--colorCritical);
 
     display: block;
 
@@ -55,14 +56,15 @@
             opacity: 0.4;
             opacity: var(--disabledOpacity);
             cursor: not-allowed;
-            cursor: var(--disabledCursor);
+            cursor: not-allowed;
         }
         &--search {
             -webkit-appearance: none;
             -moz-appearance: none;
             padding: 0.5rem 0.5rem 0.5rem 2rem;
-            background: var(--inputBackgroundColor) var(--inputSearchIcon) 10px/0.975rem
-                no-repeat;
+            background: var(--inputBackgroundColor)
+                url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.37 26.457a15.282 15.282 0 000-21.918c-6.176-6.052-16.187-6.052-22.361 0a15.274 15.274 0 00-1.541 20.166c-.367.147-.713.37-1.014.665L.926 34.709a3.056 3.056 0 000 4.383 3.208 3.208 0 004.472 0l9.528-9.339c.352-.345.604-.753.756-1.186 6.137 3.831 14.347 3.124 19.687-2.11zM24.193 4.043c6.454 0 11.686 5.129 11.686 11.455 0 6.326-5.232 11.455-11.686 11.455-6.455 0-11.687-5.129-11.687-11.455 0-6.326 5.232-11.455 11.687-11.455z' fill='%234dacff' fill-rule='evenodd'/%3E%3C/svg%3E")
+                10px/0.975rem no-repeat;
         }
     }
 
@@ -70,12 +72,10 @@
         &:focus {
             border-color: var(--inputFocusBorderColor);
             outline: none;
-            color: var(--inputFocusTextColor);
         }
         &:hover {
             border-color: var(--inputFocusBorderColor);
             outline: none;
-            color: var(--inputFocusTextColor);
         }
         &--disabled:hover {
             border: 1px solid var(--inputBorderColor);

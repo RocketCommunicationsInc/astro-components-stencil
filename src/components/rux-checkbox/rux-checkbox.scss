@@ -6,24 +6,21 @@
     }
 
     display: inline-block;
-    /**
-    * @prop --controlLabelColor: Label text color
-    */
-    /**
-    * @prop --controlOutlineBackgroundColor: Checkbox background color
-    */
-    /**
-    * @prop --controlBorderColor: Checkbox border color
-    */
-    /**
-    * @prop --controlHoverBorderColor: Checkbox border color on hover
-    */
-    /**
-    * @prop --controlTextColor: Selected checkbox icon color
-    */
-    /**
-    * @prop --controlSelectedOutlineBorderColor: Selected checkbox border color
-    */
+
+    /** @prop --checkboxLabelColor: Label text color*/
+    --checkboxLabelColor: var(--default-text);
+
+    /** @prop --checkboxBackgroundColor: Checkbox background color*/
+    --checkboxBackgroundColor: var(--background);
+
+    /** @prop --checkboxBorderColor: Checkbox border color*/
+    --checkboxBorderColor: var(--active);
+
+    /** @prop --checkboxCheckedColor: Checkmark color when checked*/
+    --checkboxCheckedColor: var(--primary);
+
+    /** @prop --checkboxHoverBorderColor: Hover border color*/
+    --checkboxHoverBorderColor: var(--hover);
 }
 
 :host([hidden]) {
@@ -56,7 +53,7 @@
             align-items: center;
             justify-content: flex-start;
 
-            color: var(--controlLabelColor);
+            color: var(--checkboxLabelColor);
             letter-spacing: 0.5px;
             cursor: pointer;
             margin-left: -7px;
@@ -70,14 +67,13 @@
 
                 align-self: start;
 
-                height: var(--controlOptionSize);
-                width: var(--controlOptionSize);
+                height: 1.125rem;
+                width: 1.125rem;
 
                 margin: 0 0.625rem 0 0;
 
-                background-color: var(--controlOutlineBackgroundColor);
-                border: 1px solid var(--controlBorderColor);
-                border-radius: 2px;
+                background-color: var(--checkboxBackroundColor);
+                border: 1px solid var(--checkboxBorderColor);
             }
         }
 
@@ -93,12 +89,12 @@
                     height: 6px;
                     width: 12px;
                     left: 3px;
-                    border-right: 2px solid var(--controlTextColor);
-                    border-top: 2px solid var(--controlTextColor);
+                    border-right: 2px solid var(--checkboxCheckedColor);
+                    border-top: 2px solid var(--checkboxCheckedColor);
                     transform: rotate(125deg);
                 }
                 &::before {
-                    border-color: var(--controlBorderColor);
+                    border-color: var(--checkboxBorderColor);
                 }
             }
         }
@@ -114,13 +110,13 @@
             transform: rotate(0deg) !important;
             border-right: 0px !important;
             border-top: 0px !important;
-            border-bottom: 2px solid var(--controlTextColor) !important;
+            border-bottom: 2px solid var(--checkboxCheckedColor) !important;
             left: 4px !important;
         }
 
         &:disabled {
             + label {
-                cursor: var(--disabledCursor);
+                cursor: not-allowed;
                 opacity: var(--disabledOpacity);
             }
         }
@@ -129,7 +125,7 @@
     input[type='checkbox']:not(:disabled):hover {
         + label {
             &::before {
-                border-color: var(--controlHoverBorderColor);
+                border-color: var(--checkboxHoverBorderColor);
             }
         }
     }

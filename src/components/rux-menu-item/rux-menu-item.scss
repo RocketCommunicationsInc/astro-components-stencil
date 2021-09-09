@@ -20,10 +20,6 @@
     --popupMenuItemHoverTextColor: var(--hover);
 
     /**
-      * @prop --disabledCursor: Cursor for Disabled Items
-    */
-
-    /**
       * @prop --disabledOpacity: Opacity for Disabled Items
     */
 
@@ -72,7 +68,7 @@
 }
 
 :host([disabled]) {
-    cursor: var(--disabledCursor);
+    cursor: not-allowed;
 
     li {
         &:hover {

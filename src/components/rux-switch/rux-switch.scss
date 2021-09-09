@@ -101,7 +101,7 @@
         // Disabled
         &:disabled {
             + .rux-switch__button {
-                cursor: var(--disabledCursor);
+                cursor: not-allowed;
                 opacity: var(--disabledOpacity);
             }
         }

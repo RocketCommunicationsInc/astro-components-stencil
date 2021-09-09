@@ -1,8 +1,9 @@
-/**
+:host {
+    /**
   * @prop --radioGroupBorderColor: the radio group border color
   */
+    --radioGroupBorderColor: var(--active);
 
-:host {
     display: block;
     .rux-radio-group {
         padding: 1rem; // 16px

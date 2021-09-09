@@ -41,6 +41,9 @@
 
     /** @prop --segmentedButtonSelectedHoverBorderColor: Segmented button selected hover border color*/
     --segmentedButtonSelectedHoverBorderColor: var(--primary);
+
+    /** @prop --segmentedButtonBorderRadius */
+    --segmentedButtonBorderRadius: 3px;
 }
 
 :host([hidden]) {
@@ -64,7 +67,7 @@
 
     list-style: none;
 
-    border-radius: var(--controlBorderRadius);
+    border-radius: var(--segmentedButtonBorderRadius);
     background-color: var(--segmentedButtonBackgroundColor);
 }
 
@@ -126,10 +129,12 @@
     border-left: none;
 }
 .rux-segmented-button__segment:first-child label {
-    border-radius: var(--controlBorderRadius) 0 0 var(--controlBorderRadius);
+    border-radius: var(--segmentedButtonBorderRadius) 0 0
+        var(--segmentedButtonBorderRadius);
 }
 .rux-segmented-button__segment:last-child label {
-    border-radius: 0 var(--controlBorderRadius) var(--controlBorderRadius) 0;
+    border-radius: 0 var(--segmentedButtonBorderRadius)
+        var(--segmentedButtonBorderRadius) 0;
 }
 
 /*

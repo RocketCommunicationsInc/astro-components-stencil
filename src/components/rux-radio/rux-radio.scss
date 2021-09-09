@@ -7,33 +7,21 @@
     display: inline-block;
 
     box-sizing: border-box;
-    /**
-  * @prop --controlLabelColor: Label text color
-  */
-    --controlLabelColor: var(--default-text);
-    /**
-  * @prop --controlOutlineBackgroundColor: Radio background color
-  */
-    --controlOutlineBackgroundColor: var(--background);
-    /**
-  * @prop --controlBorderColor: Radio border color
-  */
-    --controlBorderColor: var(--color-secondary-700);
-    /**
-  * @prop --controlHoverBorderColor: Radio border color on hover
-  */
-    --controlHoverBorderColor: var(--hover);
-    /**
-  * @prop --controlTextColor: Selected radio icon color
-  */
-    --controlTextColor: var(--color-secondary-500);
-    /**
-  * @prop --controlSelectedOutlineBorderColor: Selected radio border color
-  */
-    --controlSelectedOutlineBorderColor: var(--primary);
 
-    /** @prop --controlSelectedOutlineBackgroundColor: Selected radio outline background color */
-    /** @prop --controlSelectedBorderColor: Selected radio border color */
+    /** @prop --radioHoverBorderColor: Radio border color on hover*/
+    --radioHoverBorderColor: var(--hover);
+
+    /** @prop --radioBorderColor: Selected radio border color */
+    --radioBorderColor: var(--active);
+
+    /** @prop --radioLabelColor: label text color*/
+    --radioLabelColor: var(--default-text);
+
+    /** @prop --radioBackgroundColor: the radio background color*/
+    --radioBackgroundColor: var(--background);
+
+    /** @prop --radioSelectedColor: the radio selected color*/
+    --radioSelectedColor: var(--primary);
 }
 
 .rux-form-field {
@@ -62,7 +50,7 @@
             align-items: center;
             justify-content: flex-start;
             margin-left: -8px;
-            color: var(--controlLabelColor);
+            color: var(--radioLabelColor);
             letter-spacing: 0.5px;
             cursor: pointer;
 
@@ -75,12 +63,12 @@
 
                 align-self: start;
 
-                height: var(--controlOptionSize);
-                width: var(--controlOptionSize);
+                height: 1.125rem;
+                width: 1.125rem;
                 margin: 0 0.625rem 0 0;
-                border: 1px solid var(--controlSelectedBorderColor);
+                border: 1px solid var(--radioBorderColor);
                 border-radius: 100%;
-                background-color: var(--controlOutlineBackgroundColor);
+                background-color: var(--radioBackgroundColor);
             }
 
             &:after {
@@ -94,10 +82,8 @@
         &:checked {
             + label {
                 &::before {
-                    background-color: var(
-                        --controlSelectedOutlineBackgroundColor
-                    );
-                    border-color: var(--controlSelectedBorderColor);
+                    background-color: var(--radioBackgroundColor);
+                    border-color: var(--radioBorderColor);
                 }
 
                 &::after {
@@ -118,7 +104,7 @@
 
         &:disabled {
             + label {
-                cursor: var(--disabledCursor);
+                cursor: not-allowed;
                 opacity: var(--disabledOpacity);
             }
         }
@@ -128,7 +114,7 @@
             &:checked:hover {
                 + label {
                     &::before {
-                        border-color: var(--controlHoverBorderColor);
+                        border-color: var(--radioHoverBorderColor);
                     }
                 }
             }
@@ -138,7 +124,7 @@
             &:checked:hover {
                 + label {
                     &::after {
-                        background-color: var(--controlBackgroundColor);
+                        background-color: var(--radioSelectedColor);
                     }
                 }
             }

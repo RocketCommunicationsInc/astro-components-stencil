@@ -1,40 +1,28 @@
 :host {
     /**
-     * @prop --inputBorderColor: Border color of the textarea.
+     * @prop --textareaBorderColor: Border color of the textarea.
     */
+    --textareaBorderColor: var(--active);
     /**
-     * @prop --fontFamily: Font family for textarea
+     * @prop --textareaTextColor: Text color
     */
+    --textareaTextColor: var(--default-text);
+
+    /** @prop --textareaBackgroundColor: Background color*/
+    --textareaBackgroundColor: var(--background);
+
+    /** @prop --textareaInvalidBorderColor: Border color while in an invalid state*/
+    --textareaInvalidBorderColor: var(--colorCritical);
+
     /**
-     * @prop --inputTextColor: Text color
+     * @prop --textareaFocusBorderColor: Border color while in a focused state
     */
+    --textareaFocusBorderColor: var(--hover);
+
     /**
-     * @prop --fontSize: Font size
+     * @prop --textareaSelectionBackgroundColor: Background color while in a selected state
     */
-    /**
-     * @prop --inputBackgroundColor: Background color
-    */
-    /**
-     * @prop --inputInvalidBorderColor: Border color while in an invalid state
-    */
-    /**
-     * @prop --inputFocusBorderColor: Border color while in a focused state
-    */
-    /**
-     * @prop --inputFocusTextColor: Text color while in a focused state
-    */
-    /**
-     * @prop --inputSelectionBackgroundColor: Background color while in a selected state
-    */
-    /**
-     * @prop --defaultText: Default text color
-    */
-    /**
-     * @prop --fontSizeMD: Medium font size
-    */
-    /**
-     * @prop --secondaryText: Secondary text color
-    */
+    --textareaSelectionBackgroundColor: var(--color-secondary-300);
     display: block;
     .rux-textarea {
         box-sizing: border-box;
@@ -43,20 +31,20 @@
         min-height: 4.25rem;
         width: 100%;
         padding: 0.5rem;
-        border: 1px solid var(--inputBorderColor);
+        border: 1px solid var(--textareaBorderColor);
         border-radius: 3px;
         font-family: var(--fontFamily);
         font-size: var(--fontSize, 1rem);
-        color: var(--inputTextColor);
-        background-color: var(--inputBackgroundColor);
+        color: var(--textareaTextColor);
+        background-color: var(--textareaBackgroundColor);
         &--invalid {
-            border: 1px solid var(--inputInvalidBorderColor);
+            border: 1px solid var(--textareaInvalidBorderColor);
         }
         &--disabled {
             opacity: 0.4;
             opacity: var(--disabledOpacity);
             cursor: not-allowed;
-            cursor: var(--disabledCursor);
+            cursor: not-allowed;
         }
     }
 
@@ -71,21 +59,19 @@
 
     .rux-textarea {
         &:focus {
-            border-color: var(--inputFocusBorderColor);
+            border-color: var(--textareaFocusBorderColor);
             outline: none;
-            color: var(--inputFocusTextColor);
         }
         &:hover {
-            border-color: var(--inputFocusBorderColor);
+            border-color: var(--textareaFocusBorderColor);
             outline: none;
-            color: var(--inputFocusTextColor);
         }
         &--disabled:hover {
-            border: 1px solid var(--inputBorderColor);
-            color: var(--inputTextColor);
+            border: 1px solid var(--textareaBorderColor);
+            color: var(--textareaTextColor);
         }
         &--invalid:hover {
-            border: 1px solid var(--inputInvalidBorderColor);
+            border: 1px solid var(--textareaInvalidBorderColor);
         }
         &::placeholder {
             font-size: 1rem;
@@ -101,7 +87,7 @@
     }
 
     ::selection {
-        background-color: var(--inputSelectionBackgroundColor);
+        background-color: var(--textareaSelectionBackgroundColor);
     }
 
     .rux-textarea-field--small {

@@ -58,5 +58,5 @@
 :host([disabled]) {
     color: var(--tabTextColor);
     opacity: var(--disabledOpacity);
-    cursor: var(--disabledCursor);
+    cursor: not-allowed;
 }
