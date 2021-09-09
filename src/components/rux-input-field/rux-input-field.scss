@@ -121,10 +121,7 @@
     .rux-help-text {
         margin-top: 0.625rem;
         color: var(--secondary-text);
-        font-size: 0.875rem;
         font-size: var(--font-size-md);
-        font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-            Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
         font-family: var(--font-family);
         font-weight: normal;
         letter-spacing: 0.5px;
@@ -142,10 +139,7 @@
         order: 3;
         margin-top: 0.625rem;
         color: var(--color-critical);
-        font-size: 0.875rem;
         font-size: var(--font-size-md);
-        font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-            Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
         font-family: var(--font-family);
         font-weight: bold;
     }
