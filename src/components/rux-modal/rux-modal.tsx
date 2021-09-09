@@ -141,11 +141,7 @@ export class RuxModal {
 
         return (
             open && (
-                <Host
-                    class={{
-                        'rux-modal__wrapper': open,
-                    }}
-                >
+                <Host class="rux-modal__wrapper">
                     <dialog class="rux-modal__dialog" role="dialog">
                         <header class="rux-modal__titlebar">
                             <h1>{modalTitle}</h1>
