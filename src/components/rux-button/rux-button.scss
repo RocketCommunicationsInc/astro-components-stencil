@@ -228,17 +228,6 @@
         }
     }
 
-    &--critical,
-    &--critical:active:not([hover]):not([disabled]):not(.rux-button--secondary) {
-        background-color: var(--colorCriticalDarken1) !important;
-        border-color: var(--colorCriticalDarken1) !important;
-
-        &:hover:not([active]):not([disabled]) {
-            background-color: var(--colorCritical);
-            border-color: var(--colorCritical);
-        }
-    }
-
     &--icon-only {
         font-size: 0px;
         width: 3rem;
