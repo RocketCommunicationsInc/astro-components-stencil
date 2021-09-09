@@ -3,62 +3,62 @@
     width: 100%;
     border-collapse: separate;
     border-spacing: 0px;
-    color: var(--tableRowTextColor);
+    color: var(--table-row-text-color);
     border-style: solid;
     border-width: 1px;
-    border-color: var(--tableBorderColor);
-    background: var(--tableRowBackgroundColor);
+    border-color: var(--table-border-color);
+    background: var(--table-row-background-color);
     text-align: left;
     overflow: scroll;
 
     /**
-     * @prop --tableBorderColor: Table background color
+     * @prop --table-border-color: Table background color
      */
-    --tableBorderColor: var(--background);
+    --table-border-color: var(--background);
     /**
-      * @prop --tableHeaderBackgroundColor: Table header background color
+      * @prop --table-header-background-color: Table header background color
       */
-    --tableHeaderBackgroundColor: var(--global-status-bar);
+    --table-header-background-color: var(--global-status-bar);
     /**
-      * @prop --tableHeaderBorderColor: Table header border color
+      * @prop --table-header-border-color: Table header border color
       */
-    --tableHeaderBorderColor: var(--surface);
+    --table-header-border-color: var(--surface);
     /**
-      * @prop --tableHeaderTextColor: Table header text color
+      * @prop --table-header-text-color: Table header text color
       */
-    --tableHeaderTextColor: var(--default-text);
+    --table-header-text-color: var(--default-text);
     /**
-      * @prop --tableHeaderBoxShadow: Table header box shadow
+      * @prop --table-header-box-shadow: Table header box shadow
       */
-    --tableHeaderBoxShadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
+    --table-header-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
     /**
-      * @prop --tableRowBackgroundColor: Table row background color
+      * @prop --table-row-background-color: Table row background color
       */
-    --tableRowBackgroundColor: var(--surface);
+    --table-row-background-color: var(--surface);
     /**
-      * @prop --tableRowTextColor: Table row text color
+      * @prop --table-row-text-color: Table row text color
       */
-    --tableRowTextColor: var(--default-text);
+    --table-row-text-color: var(--default-text);
     /**
-      * @prop --tableRowBorderColor: Table row border color
+      * @prop --table-row-border-color: Table row border color
       */
-    --tableRowBorderColor: var(--background);
+    --table-row-border-color: var(--background);
     /**
-      * @prop --tableRowHoverBackgroundColor: Table row hover background color
+      * @prop --table-row-hover-background-color: Table row hover background color
       */
-    --tableRowHoverBackgroundColor: var(--table-hover);
+    --table-row-hover-background-color: var(--table-hover);
     /**
-      * @prop --tableRowHoverTextColor: Table row hover text color
+      * @prop --table-row-hover-text-color: Table row hover text color
       */
-    --tableRowHoverTextColor: var(--default-text);
+    --table-row-hover-text-color: var(--default-text);
     /**
-      * @prop --tableRowSelectedBackgroundColor: Table row selected background color
+      * @prop --table-row-selected-background-color: Table row selected background color
       */
-    --tableRowSelectedBackgroundColor: var(--background);
+    --table-row-selected-background-color: var(--background);
     /**
-      * @prop --tableRowSelectedBorderColor: Table row selected border color
+      * @prop --table-row-selected-border-color: Table row selected border color
       */
-    --tableRowSelectedBorderColor: var(--primary);
+    --table-row-selected-border-color: var(--primary);
 }
 
 :host([hidden]) {

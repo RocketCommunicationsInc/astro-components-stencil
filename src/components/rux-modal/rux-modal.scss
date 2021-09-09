@@ -2,24 +2,19 @@
     box-sizing: border-box;
 
     /**
-      * @prop --modalTitleColor: Modal title color
+      * @prop --modal-title-color: Modal title color
       */
-    --modalTitleColor: var(--inverse-text);
+    --modal-title-color: var(--inverse-text);
 
     /**
-      * @prop --modalTextColor: Modal text color
+      * @prop --modal-background-color: Modal background color
       */
-    --modalTextColor: var(--default-text);
+    --modal-background-color: var(--surface);
 
     /**
-      * @prop --modalBackgroundColor: Modal background color
+      * @prop --modal-border-color: Modal border color
       */
-    --modalBackgroundColor: var(--surface);
-
-    /**
-      * @prop --modalBorderColor: Modal border color
-      */
-    --modalBorderColor: var(--primary);
+    --modal-border-color: var(--primary);
 
     display: contents;
 }
@@ -60,10 +55,10 @@ rux-button-group {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: var(--modalBackgroundColor);
+        background-color: var(--modal-background-color);
         width: 28rem;
         height: 13.5rem;
-        border: 2px solid var(--modalBorderColor);
+        border: 2px solid var(--modal-border-color);
         border-radius: 4px;
         margin: auto;
         padding: 0;
@@ -80,7 +75,7 @@ rux-button-group {
         align-items: center;
         width: 100%;
         height: 2rem;
-        background-color: var(--modalBorderColor);
+        background-color: var(--modal-border-color);
         user-select: none;
         cursor: move;
         h1 {
@@ -89,7 +84,7 @@ rux-button-group {
             line-height: 1.2;
             padding: 0;
             margin: 0;
-            color: var(--modalTitleColor);
+            color: var(--modal-title-color);
         }
     }
 

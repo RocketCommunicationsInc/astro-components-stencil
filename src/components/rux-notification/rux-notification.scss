@@ -1,8 +1,8 @@
 :host {
     /**
-  * @prop --notificationTextColor: The notification text color
+  * @prop --notification-text-color: The notification text color
   */
-    --notificationTextColor: var(--color-tertiary-900);
+    --notification-text-color: var(--color-tertiary-900);
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -19,7 +19,7 @@
     transition: top 0.5s ease;
     box-sizing: border-box;
     font-size: var(--font-size-xl);
-    color: var(--notificationTextColor);
+    color: var(--notification-text-color);
     rux-icon {
         align-items: center;
         justify-content: flex-end;
