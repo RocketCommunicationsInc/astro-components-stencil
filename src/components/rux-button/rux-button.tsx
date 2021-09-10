@@ -82,7 +82,6 @@ export class RuxButton {
                         'rux-button--small': size === 'small',
                         'rux-button--large': size === 'large',
                         'rux-button--icon-only': iconOnly,
-                        'rux-button--disabled': disabled,
                     }}
                     aria-disabled={disabled ? 'true' : null}
                     disabled={disabled}
