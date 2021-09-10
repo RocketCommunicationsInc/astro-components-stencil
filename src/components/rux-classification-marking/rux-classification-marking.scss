@@ -88,3 +88,7 @@
 :host([classification='unclassified']) div {
     background-color: var(--color-classification-unclassified);
 }
+
+::slotted(rux-global-status-bar) {
+    top: 26px;
+}
