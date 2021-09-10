@@ -12,6 +12,7 @@
       * @part wrapper - css part hook to style modal wrapper
     */
 
+
     display: contents;
 }
 
@@ -49,10 +50,10 @@ rux-button-group {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: var(--modalBackgroundColor);
+        background-color: var(--modal-background-color);
         width: 28rem;
         height: 13.5rem;
-        border: 2px solid var(--modalBorderColor);
+        border: 2px solid var(--modal-border-color);
         border-radius: 4px;
         margin: auto;
         padding: 0;
@@ -69,7 +70,7 @@ rux-button-group {
         align-items: center;
         width: 100%;
         height: 2rem;
-        background-color: var(--modalBorderColor);
+        background-color: var(--modal-border-color);
         user-select: none;
         cursor: move;
         h1 {
@@ -78,7 +79,7 @@ rux-button-group {
             line-height: 1.2;
             padding: 0;
             margin: 0;
-            color: var(--modalTitleColor);
+            color: var(--modal-title-color);
         }
     }
 
@@ -87,7 +88,7 @@ rux-button-group {
         flex-direction: column;
         flex-grow: 1;
         padding: 1rem;
-        color: var(--defaultText);
+        color: var(--default-text);
     }
 
     &__message {
