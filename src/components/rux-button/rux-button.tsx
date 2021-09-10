@@ -78,9 +78,11 @@ export class RuxButton {
                     class={{
                         'rux-button': true,
                         'rux-button--secondary': secondary,
+                        'rux-button--default': !secondary,
                         'rux-button--small': size === 'small',
                         'rux-button--large': size === 'large',
                         'rux-button--icon-only': iconOnly,
+                        'rux-button--disabled': disabled,
                     }}
                     aria-disabled={disabled ? 'true' : null}
                     disabled={disabled}
