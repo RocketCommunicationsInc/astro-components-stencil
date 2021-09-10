@@ -21,6 +21,7 @@ describe('rux-classification-marking', () => {
       <rux-classification-marking>
         <mock:shadow-root>
           <div>unclassified</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -37,6 +38,7 @@ describe('rux-classification-marking banners', () => {
       <rux-classification-marking classification="unclassified">
         <mock:shadow-root>
           <div>unclassified</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -51,6 +53,7 @@ describe('rux-classification-marking banners', () => {
       <rux-classification-marking classification="controlled">
         <mock:shadow-root>
           <div>cui</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -65,6 +68,7 @@ describe('rux-classification-marking banners', () => {
       <rux-classification-marking classification="confidential">
         <mock:shadow-root>
           <div>confidential</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -79,6 +83,7 @@ describe('rux-classification-marking banners', () => {
       <rux-classification-marking classification="secret">
         <mock:shadow-root>
           <div>secret</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -93,6 +98,7 @@ describe('rux-classification-marking banners', () => {
       <rux-classification-marking classification="top-secret">
         <mock:shadow-root>
           <div>top secret</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -107,6 +113,7 @@ describe('rux-classification-marking banners', () => {
       <rux-classification-marking classification="top-secret-sci">
         <mock:shadow-root>
           <div>top secret//sci</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -121,6 +128,7 @@ describe('rux-classification-marking banners', () => {
       <rux-classification-marking classification="notapprovedoption">
         <mock:shadow-root>
           <div>Select a Classification Marking</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -137,6 +145,7 @@ describe('rux-classification-marking tags', () => {
       <rux-classification-marking classification="unclassified" tag>
         <mock:shadow-root>
           <div>u</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -151,6 +160,7 @@ describe('rux-classification-marking tags', () => {
       <rux-classification-marking classification="controlled" tag>
         <mock:shadow-root>
           <div>cui</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -165,6 +175,7 @@ describe('rux-classification-marking tags', () => {
       <rux-classification-marking classification="confidential" tag>
         <mock:shadow-root>
           <div>c</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -179,6 +190,7 @@ describe('rux-classification-marking tags', () => {
       <rux-classification-marking classification="secret" tag>
         <mock:shadow-root>
           <div>s</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -193,6 +205,7 @@ describe('rux-classification-marking tags', () => {
       <rux-classification-marking classification="top-secret" tag>
         <mock:shadow-root>
           <div>ts</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -207,6 +220,7 @@ describe('rux-classification-marking tags', () => {
       <rux-classification-marking classification="top-secret-sci" tag>
         <mock:shadow-root>
           <div>TS//SCI</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -221,6 +235,7 @@ describe('rux-classification-marking tags', () => {
       <rux-classification-marking classification="notapprovedoption" tag>
         <mock:shadow-root>
           <div>Select a Classification Marking</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -237,6 +252,7 @@ describe('rux-classification-marking label', () => {
       <rux-classification-marking classification="unclassified" label="-hello world-">
         <mock:shadow-root>
           <div>unclassified-hello world-</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -251,6 +267,7 @@ describe('rux-classification-marking label', () => {
       <rux-classification-marking classification="unclassified" tag label="-hello world-">
         <mock:shadow-root>
           <div>u-hello world-</div>
+          <slot></slot>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
