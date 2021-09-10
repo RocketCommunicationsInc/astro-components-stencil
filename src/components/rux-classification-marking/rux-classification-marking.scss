@@ -13,6 +13,12 @@
     display: none;
 }
 
+:host([footerBanner]) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 :host div {
     z-index: 1000;
     display: flex;
@@ -29,12 +35,18 @@
     overflow-wrap: anywhere;
     color: var(--color-classification-text-light);
     background-color: var(--color-classification-unclassified);
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     flex-wrap: nowrap;
     flex-grow: 1;
     width: 100%;
+}
+
+:host .footer-banner {
+    bottom: 0;
+    top: inherit;
+    position: fixed;
 }
 
 :host([tag]) div {

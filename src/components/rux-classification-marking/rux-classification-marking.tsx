@@ -19,6 +19,11 @@ export class RuxClassificationMarking {
      */
     @Prop({ reflect: true }) tag: boolean = false
 
+    /**
+     * Set whether to include a footer banner. Will only show if tag is set to false.
+     */
+    @Prop({ attribute: 'footer-banner' }) footerBanner?: boolean
+
     get type(): 'tag' | 'banner' {
         return this.tag ? 'tag' : 'banner'
     }
@@ -51,13 +56,30 @@ export class RuxClassificationMarking {
     }
 
     render() {
-        return (
-            <Host>
-                <div>
-                    {this._getDisplayData()}
-                    {this.label}
-                </div>
-            </Host>
-        )
+        if (this.footerBanner && !this.tag) {
+            return (
+                <Host>
+                    <div>
+                        {this._getDisplayData()}
+                        {this.label}
+                    </div>
+                    <slot></slot>
+                    <div class="footer-banner">
+                        {this._getDisplayData()}
+                        {this.label}
+                    </div>
+                </Host>
+            )
+        } else {
+            return (
+                <Host>
+                    <div>
+                        {this._getDisplayData()}
+                        {this.label}
+                    </div>
+                    <slot></slot>
+                </Host>
+            )
+        }
     }
 }
