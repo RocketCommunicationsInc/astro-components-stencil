@@ -46,7 +46,7 @@
 :host .footer-banner {
     bottom: 0;
     top: inherit;
-    position: fixed;
+    position: sticky;
 }
 
 :host([tag]) div {
