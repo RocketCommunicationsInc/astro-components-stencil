@@ -272,4 +272,25 @@ describe('rux-classification-marking label', () => {
       </rux-classification-marking>
     `)
     })
+
+    it('renders footer banner', async () => {
+        const page = await newSpecPage({
+            components: [RuxClassificationMarking],
+            html: `
+          <rux-classification-marking classification="secret" footer-banner=true>
+            <h1>Test title for footer banner</h1>
+          </rux-classification-marking>
+        `,
+        })
+        expect(page.root).toEqualHtml(`
+        <rux-classification-marking classification="secret" footer-banner="true">
+          <mock:shadow-root>
+            <div>secret</div>
+            <slot></slot>
+            <div class="footer-banner">secret</div>
+          </mock:shadow-root>
+          <h1>Test title for footer banner</h1>
+        </rux-classification-marking>
+      `)
+    })
 })
