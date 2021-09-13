@@ -82,6 +82,10 @@ export namespace Components {
          */
         "classification": Classification;
         /**
+          * Sets whether to include a footer banner thatt will only show if tag is set to false.
+         */
+        "footerBanner"?: boolean;
+        /**
           * Allows additional text labels to be added to the a marking
          */
         "label"?: string;
@@ -20110,6 +20114,10 @@ declare namespace LocalJSX {
           * Defines which classification marking will be displayed.
          */
         "classification"?: Classification;
+        /**
+          * Sets whether to include a footer banner thatt will only show if tag is set to false.
+         */
+        "footerBanner"?: boolean;
         /**
           * Allows additional text labels to be added to the a marking
          */

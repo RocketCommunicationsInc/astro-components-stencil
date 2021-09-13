@@ -20,7 +20,7 @@ export class RuxClassificationMarking {
     @Prop({ reflect: true }) tag: boolean = false
 
     /**
-     * Set whether to include a footer banner. Will only show if tag is set to false.
+     * Sets whether to include a footer banner. Footer banner will only show if tag is false.
      */
     @Prop({ attribute: 'footer-banner' }) footerBanner?: boolean
 
