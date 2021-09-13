@@ -107,14 +107,13 @@ rux-button-group {
     &__message {
         margin: 0.5rem 1.875rem 2.5rem 1.875rem;
     }
+    .rux-button {
+        box-shadow: none !important;
+    }
 }
 
 rux-icon {
     margin-right: 0.75rem;
-}
-
-.rux-modal .rux-button {
-    box-shadow: none !important;
 }
 
 @include mixins.keyframes(fadeIn) {
