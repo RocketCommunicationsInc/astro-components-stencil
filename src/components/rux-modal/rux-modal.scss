@@ -2,18 +2,31 @@
 
 :host {
     /**
-      * @prop --modalTitleColor: Modal title color
-      * @prop --modalTextColor: Modal text color
-      * @prop --modalBackgroundColor: Modal background color
-      * @prop --modalBorderColor: Modal border color
-      */
-
-    /**
-      * @part wrapper - css part hook to style modal wrapper
+    * @part wrapper - css part hook to style modal wrapper
     */
 
+    /**
+    * @prop --modal-title-color: Modal title color
+    */
+    --modal-title-color: var(--inverse-text);
+
+    /**
+    * @prop --modal-background-color: Modal background color
+    */
+    --modal-background-color: var(--surface);
+
+    /**
+    * @prop --modal-border-color: Modal border color
+    */
+    --modal-border-color: var(--primary);
 
     display: contents;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 //  this styling is only used in storybook up for presentational purposes
@@ -43,7 +56,7 @@ rux-button-group {
         align-items: center;
         z-index: 1100;
         background-color: rgba(0, 0, 0, 0.5);
-        @include mixins.animation(fadeIn, 0.5s);
+        // @include mixins.animation(fadeIn, 0.5s);
     }
     &__dialog {
         position: relative;
