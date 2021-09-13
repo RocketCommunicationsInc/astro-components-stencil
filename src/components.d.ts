@@ -82,7 +82,7 @@ export namespace Components {
          */
         "classification": Classification;
         /**
-          * Sets whether to include a footer banner thatt will only show if tag is set to false.
+          * Sets whether to include a footer banner. Footer banner will only show if tag is false.
          */
         "footerBanner"?: boolean;
         /**
@@ -20115,7 +20115,7 @@ declare namespace LocalJSX {
          */
         "classification"?: Classification;
         /**
-          * Sets whether to include a footer banner thatt will only show if tag is set to false.
+          * Sets whether to include a footer banner. Footer banner will only show if tag is false.
          */
         "footerBanner"?: boolean;
         /**
