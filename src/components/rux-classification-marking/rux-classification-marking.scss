@@ -13,12 +13,6 @@
     display: none;
 }
 
-:host([footerBanner]) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 :host div {
     z-index: 1000;
     display: flex;

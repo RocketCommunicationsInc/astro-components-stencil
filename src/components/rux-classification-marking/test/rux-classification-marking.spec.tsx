@@ -274,6 +274,7 @@ describe('rux-classification-marking label', () => {
     `)
     })
 
+    //This test does not test for the proper expectation but excludes the second footer-banner div due to an unknown bug in jest
     it('renders footer banner', async () => {
         const page = await newSpecPage({
             components: [RuxClassificationMarking],
