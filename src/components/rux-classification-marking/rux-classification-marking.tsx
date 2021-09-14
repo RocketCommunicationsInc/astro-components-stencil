@@ -1,6 +1,11 @@
 import { Component, Host, Prop, h, Element, Listen, State } from '@stencil/core'
 import { Classification } from '../../common/commonTypes.module'
 import { hasSlot } from '../../utils/utils'
+
+/**
+ * @part footer-banner - the footer banner
+ *
+ */
 @Component({
     tag: 'rux-classification-marking',
     styleUrl: 'rux-classification-marking.scss',
@@ -60,7 +65,7 @@ export class RuxClassificationMarking {
     }
 
     render() {
-        const { isWrapper, label } = this
+        const { isWrapper, label, tag } = this
         return (
             <Host>
                 <div>
@@ -68,7 +73,7 @@ export class RuxClassificationMarking {
                     {label}
                 </div>
                 <slot></slot>
-                {isWrapper && (
+                {isWrapper && !tag && (
                     <div class="footer-banner" part="footer-banner">
                         {this._getDisplayData()}
                         {label}
