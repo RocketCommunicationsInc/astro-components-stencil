@@ -1,4 +1,4 @@
-import { Component, Host, Prop, h, Element } from '@stencil/core'
+import { Component, Host, Prop, h, Element, Listen, State } from '@stencil/core'
 import { Classification } from '../../common/commonTypes.module'
 import { hasSlot } from '../../utils/utils'
 @Component({
@@ -21,11 +21,18 @@ export class RuxClassificationMarking {
      */
     @Prop({ reflect: true }) tag: boolean = false
 
+    @State() isWrapper: boolean = hasSlot(this.el)
+
+    @Listen('slotchange')
+    handleSlotChange() {
+        this.isWrapper = hasSlot(this.el)
+    }
+
     get type(): 'tag' | 'banner' {
         return this.tag ? 'tag' : 'banner'
     }
 
-    _getDisplayData() {
+    _getDisplayData(): string {
         const markings = {
             banner: {
                 controlled: 'cui',
@@ -53,30 +60,21 @@ export class RuxClassificationMarking {
     }
 
     render() {
-        if (hasSlot(this.el)) {
-            return (
-                <Host>
-                    <div>
-                        {this._getDisplayData()}
-                        {this.label}
-                    </div>
-                    <slot></slot>
+        const { isWrapper, label } = this
+        return (
+            <Host>
+                <div>
+                    {this._getDisplayData()}
+                    {label}
+                </div>
+                <slot></slot>
+                {isWrapper && (
                     <div class="footer-banner">
                         {this._getDisplayData()}
-                        {this.label}
+                        {label}
                     </div>
-                </Host>
-            )
-        } else {
-            return (
-                <Host>
-                    <div>
-                        {this._getDisplayData()}
-                        {this.label}
-                    </div>
-                    <slot></slot>
-                </Host>
-            )
-        }
+                )}
+            </Host>
+        )
     }
 }

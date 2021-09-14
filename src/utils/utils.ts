@@ -8,7 +8,7 @@ export const hasShadowDom = (el: HTMLElement) => {
     return !!el.shadowRoot && !!(el as any).attachShadow
 }
 
-export function hasSlot(el: HTMLElement, name?: string) {
+export function hasSlot(el: HTMLElement, name?: string): boolean {
     // Look for a named slot
     if (name) {
         return el.querySelector(`[slot="${name}"]`) !== null
