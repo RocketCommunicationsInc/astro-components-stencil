@@ -69,7 +69,7 @@ export class RuxClassificationMarking {
                 </div>
                 <slot></slot>
                 {isWrapper && (
-                    <div class="footer-banner">
+                    <div class="footer-banner" part="footer-banner">
                         {this._getDisplayData()}
                         {label}
                     </div>
