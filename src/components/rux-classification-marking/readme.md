@@ -98,12 +98,11 @@ Applying the `label` property attribute to the classification custom element add
 
 ## Properties
 
-| Property         | Attribute        | Description                                                                          | Type                                                                                               | Default          |
-| ---------------- | ---------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- | ---------------- |
-| `classification` | `classification` | Defines which classification marking will be displayed.                              | `"confidential" \| "controlled" \| "secret" \| "top-secret" \| "top-secret-sci" \| "unclassified"` | `'unclassified'` |
-| `footerBanner`   | `footer-banner`  | Sets whether to include a footer banner thatt will only show if tag is set to false. | `boolean \| undefined`                                                                             | `undefined`      |
-| `label`          | `label`          | Allows additional text labels to be added to the a marking                           | `string \| undefined`                                                                              | `undefined`      |
-| `tag`            | `tag`            | Declares the marking as a `tag` rather than the default banner style                 | `boolean`                                                                                          | `false`          |
+| Property         | Attribute        | Description                                                          | Type                                                                                               | Default          |
+| ---------------- | ---------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ---------------- |
+| `classification` | `classification` | Defines which classification marking will be displayed.              | `"confidential" \| "controlled" \| "secret" \| "top-secret" \| "top-secret-sci" \| "unclassified"` | `'unclassified'` |
+| `label`          | `label`          | Allows additional text labels to be added to the a marking           | `string \| undefined`                                                                              | `undefined`      |
+| `tag`            | `tag`            | Declares the marking as a `tag` rather than the default banner style | `boolean`                                                                                          | `false`          |
 
 
 ## CSS Custom Properties

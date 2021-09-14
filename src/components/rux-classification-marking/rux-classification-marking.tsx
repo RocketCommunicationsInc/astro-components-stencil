@@ -1,11 +1,13 @@
-import { Component, Host, Prop, h } from '@stencil/core'
+import { Component, Host, Prop, h, Element } from '@stencil/core'
 import { Classification } from '../../common/commonTypes.module'
+import { hasSlot } from '../../utils/utils'
 @Component({
     tag: 'rux-classification-marking',
     styleUrl: 'rux-classification-marking.scss',
     shadow: true,
 })
 export class RuxClassificationMarking {
+    @Element() el!: HTMLRuxClassificationMarkingElement
     /**
      * Defines which classification marking will be displayed.
      */
@@ -18,11 +20,6 @@ export class RuxClassificationMarking {
      * Declares the marking as a `tag` rather than the default banner style
      */
     @Prop({ reflect: true }) tag: boolean = false
-
-    /**
-     * Sets whether to include a footer banner. Footer banner will only show if tag is false.
-     */
-    @Prop({ attribute: 'footer-banner' }) footerBanner?: boolean
 
     get type(): 'tag' | 'banner' {
         return this.tag ? 'tag' : 'banner'
@@ -56,7 +53,7 @@ export class RuxClassificationMarking {
     }
 
     render() {
-        if (this.footerBanner && !this.tag) {
+        if (hasSlot(this.el)) {
             return (
                 <Host>
                     <div>
