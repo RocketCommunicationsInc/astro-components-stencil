@@ -33,7 +33,7 @@
     overflow-wrap: anywhere;
     color: var(--color-classification-text-light);
     background-color: var(--color-classification-unclassified);
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     flex-wrap: nowrap;
@@ -74,8 +74,4 @@
 }
 :host([classification='unclassified']) .rux-classification {
     background-color: var(--color-classification-unclassified);
-}
-
-::slotted(*:first-child) {
-    top: 26px;
 }
