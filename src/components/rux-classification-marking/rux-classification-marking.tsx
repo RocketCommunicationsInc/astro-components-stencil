@@ -65,16 +65,30 @@ export class RuxClassificationMarking {
     }
 
     render() {
-        const { isWrapper, label, tag } = this
+        const { isWrapper, label, tag, type } = this
         return (
             <Host>
-                <div>
+                <div
+                    class={{
+                        'rux-classification': true,
+                        'rux-classification--tag': type === 'tag',
+                        'rux-classification--banner': type === 'banner',
+                    }}
+                >
                     {this._getDisplayData()}
                     {label}
                 </div>
                 <slot></slot>
                 {isWrapper && !tag && (
-                    <div class="footer-banner" part="footer-banner">
+                    <div
+                        class={{
+                            'rux-classification': true,
+                            'rux-classification--banner': type === 'banner',
+                            'rux-classification--banner__footer':
+                                isWrapper === true,
+                        }}
+                        part="footer-banner"
+                    >
                         {this._getDisplayData()}
                         {label}
                     </div>

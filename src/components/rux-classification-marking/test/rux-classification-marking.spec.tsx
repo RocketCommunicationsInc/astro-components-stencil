@@ -21,8 +21,9 @@ describe('rux-classification-marking', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking>
         <mock:shadow-root>
-          <div>unclassified</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--banner">
+            unclassified
+          </div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -38,8 +39,7 @@ describe('rux-classification-marking banners', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="unclassified">
         <mock:shadow-root>
-          <div>unclassified</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--banner">unclassified</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -53,8 +53,7 @@ describe('rux-classification-marking banners', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="controlled">
         <mock:shadow-root>
-          <div>cui</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--banner">cui</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -68,8 +67,7 @@ describe('rux-classification-marking banners', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="confidential">
         <mock:shadow-root>
-          <div>confidential</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--banner">confidential</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -83,8 +81,7 @@ describe('rux-classification-marking banners', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="secret">
         <mock:shadow-root>
-          <div>secret</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--banner">secret</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -98,8 +95,7 @@ describe('rux-classification-marking banners', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="top-secret">
         <mock:shadow-root>
-          <div>top secret</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--banner">top secret</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -113,8 +109,7 @@ describe('rux-classification-marking banners', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="top-secret-sci">
         <mock:shadow-root>
-          <div>top secret//sci</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--banner">top secret//sci</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -128,8 +123,7 @@ describe('rux-classification-marking banners', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="notapprovedoption">
         <mock:shadow-root>
-          <div>Select a Classification Marking</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--banner">Select a Classification Marking</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -145,8 +139,7 @@ describe('rux-classification-marking tags', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="unclassified" tag>
         <mock:shadow-root>
-          <div>u</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--tag">u</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -160,8 +153,7 @@ describe('rux-classification-marking tags', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="controlled" tag>
         <mock:shadow-root>
-          <div>cui</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--tag">cui</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -175,8 +167,7 @@ describe('rux-classification-marking tags', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="confidential" tag>
         <mock:shadow-root>
-          <div>c</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--tag">c</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -190,8 +181,7 @@ describe('rux-classification-marking tags', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="secret" tag>
         <mock:shadow-root>
-          <div>s</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--tag">s</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -205,8 +195,7 @@ describe('rux-classification-marking tags', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="top-secret" tag>
         <mock:shadow-root>
-          <div>ts</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--tag">ts</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -220,8 +209,7 @@ describe('rux-classification-marking tags', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="top-secret-sci" tag>
         <mock:shadow-root>
-          <div>TS//SCI</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--tag">TS//SCI</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -235,8 +223,7 @@ describe('rux-classification-marking tags', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="notapprovedoption" tag>
         <mock:shadow-root>
-          <div>Select a Classification Marking</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--tag">Select a Classification Marking</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -252,8 +239,7 @@ describe('rux-classification-marking label', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="unclassified" label="-hello world-">
         <mock:shadow-root>
-          <div>unclassified-hello world-</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--banner">unclassified-hello world-</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
@@ -267,8 +253,7 @@ describe('rux-classification-marking label', () => {
         expect(page.root).toEqualHtml(`
       <rux-classification-marking classification="unclassified" tag label="-hello world-">
         <mock:shadow-root>
-          <div>u-hello world-</div>
-          <slot></slot>
+          <div class="rux-classification rux-classification--tag">u-hello world-</div>
         </mock:shadow-root>
       </rux-classification-marking>
     `)
