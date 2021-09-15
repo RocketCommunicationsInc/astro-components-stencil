@@ -105,12 +105,19 @@ Applying the `label` property attribute to the classification custom element add
 | `tag`            | `tag`            | Declares the marking as a `tag` rather than the default banner style | `boolean`                                                                                          | `false`          |
 
 
+## Shadow Parts
+
+| Part              | Description       |
+| ----------------- | ----------------- |
+| `"footer-banner"` | the footer banner |
+
+
 ## CSS Custom Properties
 
-| Name                             | Description                                           |
-| -------------------------------- | ----------------------------------------------------- |
-| `--classificationTextColorDark`  | the color of dark text in the classification marking  |
-| `--classificationTextColorLight` | the color of light text in the classification marking |
+| Name                                | Description                                           |
+| ----------------------------------- | ----------------------------------------------------- |
+| `--color-classification-text-dark`  | the color of dark text in the classification marking  |
+| `--color-classification-text-light` | the color of light text in the classification marking |
 
 
 ----------------------------------------------

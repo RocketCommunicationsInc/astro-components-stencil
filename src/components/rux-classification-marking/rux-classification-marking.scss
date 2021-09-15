@@ -1,73 +1,77 @@
 :host {
     /**
-     * @prop --classificationTextColorLight: the color of light text in the classification marking
+     * @prop --color-classification-text-light: the color of light text in the classification marking
      */
 
     /**
-     * @prop --classificationTextColorDark: the color of dark text in the classification marking
+     * @prop --color-classification-text-dark: the color of dark text in the classification marking
      */
+
+    display: block;
 }
 
-:host div {
+:host([hidden]) {
+    display: none;
+}
+
+.rux-classification {
+    font-size: var(--font-size);
+    font-weight: bold;
+    font-family: var(--font-family);
+    color: var(--color-classification-text-light);
+    background-color: var(--color-classification-unclassified);
+    text-transform: uppercase;
+}
+
+.rux-classification--banner {
     z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
     min-height: 26px;
-    box-sizing: border-box;
-    font-size: var(--fontSize);
-    font-weight: bold;
-    font-family: var(--fontFamily);
-    text-transform: uppercase;
-    transition: top 0.5s ease;
+    transition: top 10.5s ease;
     overflow-wrap: anywhere;
-    color: var(--classificationTextColorLight);
-    background-color: var(--classificationUnclassifiedBackgroundColor);
-    position: absolute;
+    color: var(--color-classification-text-light);
+    background-color: var(--color-classification-unclassified);
+    position: sticky;
     top: 0;
     left: 0;
     flex-wrap: nowrap;
     flex-grow: 1;
     width: 100%;
+    &__footer {
+        bottom: 0;
+        top: inherit;
+        position: sticky;
+    }
 }
 
-:host([tag]) div {
-    position: relative;
-    align-items: center;
-    top: auto;
-    left: auto;
-    min-height: auto;
+.rux-classification--tag {
     width: fit-content;
     line-height: 1;
     padding: 0.25rem 0.9375rem;
     border-radius: 3px;
-    font-size: var(--fontSizeMD);
-    flex-grow: 0;
+    font-size: var(--font-size-md);
 }
 
-:host([tag]) {
-    padding: 0.25rem 0.9375rem;
+:host([classification='top-secret-sci']) .rux-classification {
+    background-color: var(--color-classification-top-secret-sci);
+    color: var(--color-classification-text-dark);
 }
 
-:host([classification='top-secret-sci']) div {
-    background-color: var(--classificationTopSecretSCIBackgroundColor);
-    color: var(--classificationTextColorDark);
+:host([classification='top-secret']) .rux-classification {
+    background-color: var(--color-classification-top-secret);
+    color: var(--color-classification-text-dark);
 }
-
-:host([classification='top-secret']) div {
-    background-color: var(--classificationTopSecretBackgroundColor);
-    color: var(--classificationTextColorDark);
+:host([classification='secret']) .rux-classification {
+    background-color: var(--color-classification-secret);
 }
-:host([classification='secret']) div {
-    background-color: var(--classificationSecretBackgroundColor);
+:host([classification='confidential']) .rux-classification {
+    background-color: var(--color-classification-confidential);
 }
-:host([classification='confidential']) div {
-    background-color: var(--classificationConfidentialBackgroundColor);
+:host([classification='controlled']) .rux-classification {
+    background-color: var(--color-classification-cui);
 }
-:host([classification='controlled']) div {
-    background-color: var(--classificationControlledBackgroundColor);
-}
-:host([classification='unclassified']) div {
-    background-color: var(--classificationUnclassifiedBackgroundColor);
+:host([classification='unclassified']) .rux-classification {
+    background-color: var(--color-classification-unclassified);
 }
