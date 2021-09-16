@@ -1,6 +1,14 @@
 # Change Log
 
-## [0.0.14] (unreleased)
+## [0.0.15] (unreleased)
+
+### Breaking Changes
+
+#### Radio
+
+-   Label is no longer an unnamed slot. Use the `label` property instead.
+
+## [0.0.14] 2021-09-10
 
 ### Breaking Changes
 
