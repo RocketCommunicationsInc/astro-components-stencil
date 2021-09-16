@@ -8,15 +8,19 @@ import {
     EventEmitter,
     Watch,
 } from '@stencil/core'
+import { FormFieldInterface } from '../../common/interfaces.module'
 import { renderHiddenInput } from '../../utils/utils'
+
+let id = 0
 
 @Component({
     tag: 'rux-slider',
     styleUrl: 'rux-slider.scss',
     shadow: true,
 })
-export class RuxSlider {
+export class RuxSlider implements FormFieldInterface {
     @Element() el!: HTMLRuxSliderElement
+    sliderId = `rux-slider-${++id}`
     /**
      * Min value of the slider.
      */
@@ -42,6 +46,12 @@ export class RuxSlider {
      * Name of the Input Field for Form Submission
      */
     @Prop() name: string = ''
+
+    /**
+     * The slider label text
+     */
+    @Prop() label?: string
+
     /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
@@ -140,6 +150,8 @@ export class RuxSlider {
     render() {
         const {
             el,
+            sliderId,
+            label,
             min,
             max,
             value,
@@ -154,21 +166,30 @@ export class RuxSlider {
 
         return (
             <Host>
-                <div class="rux-slider">
-                    <input
-                        onInput={_onInput}
-                        type="range"
-                        class="rux-range"
-                        min={min}
-                        max={max}
-                        value={value}
-                        step={step}
-                        disabled={disabled}
-                        aria-label="slider"
-                        aria-disabled={disabled ? 'true' : 'false'}
-                        onBlur={() => _onBlur()}
-                    ></input>
+                <div class="rux-form-field">
+                    {label && (
+                        <label class="rux-input-label" htmlFor={sliderId}>
+                            {label}
+                        </label>
+                    )}
+                    <div class="rux-slider">
+                        <input
+                            id={sliderId}
+                            onInput={_onInput}
+                            type="range"
+                            class="rux-range"
+                            min={min}
+                            max={max}
+                            value={value}
+                            step={step}
+                            disabled={disabled}
+                            aria-label="slider"
+                            aria-disabled={disabled ? 'true' : 'false'}
+                            onBlur={() => _onBlur()}
+                        ></input>
+                    </div>
                 </div>
+
                 <slot></slot>
             </Host>
         )

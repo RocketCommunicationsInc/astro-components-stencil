@@ -48,6 +48,15 @@
     display: none;
 }
 
+.rux-form-field {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-bottom: var(--spacing-input-label-top);
+    }
+}
+
 .rux-slider {
     display: flex;
     height: 20px;
