@@ -94,7 +94,7 @@
     }
 
     .rux-input-label {
-        margin-bottom: 0.375rem;
+        margin-bottom: var(--spacing-input-label-top);
         &__asterisk {
             margin-left: 4px;
         }
