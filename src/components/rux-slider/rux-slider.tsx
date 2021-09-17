@@ -7,12 +7,16 @@ import {
     Event,
     EventEmitter,
     Watch,
+    State,
 } from '@stencil/core'
 import { FormFieldInterface } from '../../common/interfaces.module'
-import { renderHiddenInput } from '../../utils/utils'
+import { hasSlot, renderHiddenInput } from '../../utils/utils'
 
 let id = 0
 
+/**
+ * @slot label - The slider label
+ */
 @Component({
     tag: 'rux-slider',
     styleUrl: 'rux-slider.scss',
@@ -21,6 +25,7 @@ let id = 0
 export class RuxSlider implements FormFieldInterface {
     @Element() el!: HTMLRuxSliderElement
     sliderId = `rux-slider-${++id}`
+    @State() hasLabelSlot = false
     /**
      * Min value of the slider.
      */
@@ -64,11 +69,25 @@ export class RuxSlider implements FormFieldInterface {
     componentWillLoad() {
         this._updateValue()
         this._getBrowser(navigator.userAgent.toLowerCase())
+        this._handleSlotChange()
     }
 
     connectedCallback() {
         this._onInput = this._onInput.bind(this)
         this._onBlur = this._onBlur.bind(this)
+        this._handleSlotChange = this._handleSlotChange.bind(this)
+    }
+
+    disconnectedCallback() {
+        this.el!.shadowRoot!.removeEventListener(
+            'slotchange',
+            this._handleSlotChange
+        )
+    }
+
+    @Watch('label')
+    handleLabelChange() {
+        this._handleSlotChange()
     }
 
     @Watch('value')
@@ -84,6 +103,9 @@ export class RuxSlider implements FormFieldInterface {
         this.value = this._closestMultiple(this.value, this.step)
     }
 
+    get hasLabel() {
+        return this.label ? true : this.hasLabelSlot
+    }
     //Returns the closest multiple of two given numbers.
     private _closestMultiple(n: number, x: number) {
         if (x > n) return x
@@ -147,6 +169,10 @@ export class RuxSlider implements FormFieldInterface {
         }
     }
 
+    private _handleSlotChange() {
+        this.hasLabelSlot = hasSlot(this.el, 'label')
+    }
+
     render() {
         const {
             el,
@@ -167,11 +193,15 @@ export class RuxSlider implements FormFieldInterface {
         return (
             <Host>
                 <div class="rux-form-field">
-                    {label && (
-                        <label class="rux-input-label" htmlFor={sliderId}>
-                            {label}
-                        </label>
-                    )}
+                    <label
+                        class="rux-input-label"
+                        aria-hidden={this.hasLabel ? 'false' : 'true'}
+                        htmlFor={sliderId}
+                    >
+                        <span class={{ hidden: !this.hasLabel }}>
+                            <slot name="label">{label}</slot>
+                        </span>
+                    </label>
                     <div class="rux-slider">
                         <input
                             id={sliderId}
