@@ -64,6 +64,10 @@ export namespace Components {
          */
         "indeterminate": boolean;
         /**
+          * The checkbox label text. For HTML content, use the default slot instead.
+         */
+        "label"?: string;
+        /**
           * The checkbox name
          */
         "name": string;
@@ -12105,6 +12109,10 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
+          * The radio label text. For HTML content, use the default slot instead.
+         */
+        "label"?: string;
+        /**
           * The radio name
          */
         "name": string;
@@ -12189,6 +12197,10 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
+          * The slider label text
+         */
+        "label"?: string;
+        /**
           * Max value of slider.
          */
         "max": number;
@@ -12232,6 +12244,10 @@ export namespace Components {
           * The help or explanation text
          */
         "helpText"?: string;
+        /**
+          * The switch label
+         */
+        "label"?: string;
         /**
           * The switch name
          */
@@ -20083,6 +20099,10 @@ declare namespace LocalJSX {
           * Toggles indeterminate state of a checkbox. The indeterminate property does not exist in HTML, but can be set in JS. [HTML Checkbox & Indeterminate State](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate)
          */
         "indeterminate"?: boolean;
+        /**
+          * The checkbox label text. For HTML content, use the default slot instead.
+         */
+        "label"?: string;
         /**
           * The checkbox name
          */
@@ -32165,6 +32185,10 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
+          * The radio label text. For HTML content, use the default slot instead.
+         */
+        "label"?: string;
+        /**
           * The radio name
          */
         "name"?: string;
@@ -32273,6 +32297,10 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
+          * The slider label text
+         */
+        "label"?: string;
+        /**
           * Max value of slider.
          */
         "max"?: number;
@@ -32324,6 +32352,10 @@ declare namespace LocalJSX {
           * The help or explanation text
          */
         "helpText"?: string;
+        /**
+          * The switch label
+         */
+        "label"?: string;
         /**
           * The switch name
          */
