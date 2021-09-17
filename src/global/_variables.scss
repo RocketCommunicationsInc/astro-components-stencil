@@ -1,4 +1,4 @@
-:root {
+@mixin root-variables {
     --background: #101923;
     --global-status-bar: #172635;
     --surface: #1b2d3e;
@@ -165,4 +165,8 @@
     --color-scrollbar-background-thumb-hover: #3a81bf;
     --color-scrollbar-background-track: #203246;
     --color-scrollbar-corner-background: #203246;
+}
+
+:root {
+    @include root-variables;
 }
