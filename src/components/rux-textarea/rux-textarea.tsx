@@ -7,6 +7,7 @@ import {
     Prop,
     Element,
 } from '@stencil/core'
+import { FormFieldInterface } from '../../common/interfaces.module'
 import { renderHiddenInput } from '../../utils/utils'
 
 let id = 0
@@ -16,7 +17,7 @@ let id = 0
     styleUrl: 'rux-textarea.scss',
     shadow: true,
 })
-export class RuxTextarea {
+export class RuxTextarea implements FormFieldInterface {
     inputId = `rux-textarea-${++id}`
 
     /**
