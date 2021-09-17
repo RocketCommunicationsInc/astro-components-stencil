@@ -25,15 +25,17 @@ describe('rux-radio', () => {
     it('renders', async () => {
         const page = await newSpecPage({
             components: [RuxRadio],
-            html: `<rux-radio value="test" label="test"></rux-radio>`,
+            html: `<rux-radio value="test"></rux-radio>`,
         })
         expect(page.root).toEqualHtml(`
-      <rux-radio value="test" label="test">
+      <rux-radio value="test">
         <mock:shadow-root>
           <div class="rux-form-field">
             <div class="rux-radio">
                 <input id="rux-radio-2" type="radio" value="test">
-                <label htmlfor="rux-radio-2" class="rux-input-label">test</label>
+                <label htmlfor="rux-radio-2">
+                  <slot></slot>
+                </label>
             </div>
           </div>
         </mock:shadow-root>

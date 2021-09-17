@@ -1,5 +1,4 @@
 import { Component, h, Prop, Element, Event, EventEmitter } from '@stencil/core'
-import { FormFieldInterface } from '../../common/interfaces.module'
 
 let id = 0
 
@@ -8,7 +7,7 @@ let id = 0
     styleUrl: 'rux-radio.scss',
     shadow: true,
 })
-export class RuxRadio implements FormFieldInterface {
+export class RuxRadio {
     radioId = `rux-radio-${++id}`
     private radioGroup: HTMLRuxRadioGroupElement | null = null
 
@@ -32,11 +31,6 @@ export class RuxRadio implements FormFieldInterface {
      * Disables the radio via HTML disabled attribute. Radio takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
      */
     @Prop({ reflect: true }) disabled: boolean = false
-
-    /**
-     * The radio label text
-     */
-    @Prop() label?: string
 
     /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
@@ -87,7 +81,6 @@ export class RuxRadio implements FormFieldInterface {
 
     render() {
         const {
-            label,
             radioId,
             checked,
             disabled,
@@ -110,11 +103,9 @@ export class RuxRadio implements FormFieldInterface {
                         onChange={_onChange}
                         onBlur={() => _onBlur()}
                     />
-                    {label && (
-                        <label class="rux-input-label" htmlFor={radioId}>
-                            {label}
-                        </label>
-                    )}
+                    <label htmlFor={radioId}>
+                        <slot></slot>
+                    </label>
                 </div>
             </div>
         )
