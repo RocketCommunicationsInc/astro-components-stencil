@@ -7,6 +7,7 @@ import {
     Element,
     Host,
 } from '@stencil/core'
+import { FormFieldInterface } from '../../common/interfaces.module'
 import { renderHiddenInput } from '../../utils/utils'
 
 let id = 0
@@ -16,7 +17,7 @@ let id = 0
     styleUrl: 'rux-switch.scss',
     shadow: true,
 })
-export class RuxSwitch {
+export class RuxSwitch implements FormFieldInterface {
     switchId = `rux-switch-${++id}`
     @Element() el!: HTMLRuxSwitchElement
 
@@ -54,6 +55,11 @@ export class RuxSwitch {
      * Sets the switch as required
      */
     @Prop() required: boolean = false
+
+    /**
+     * The switch label
+     */
+    @Prop() label?: string
 
     /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
@@ -142,10 +148,11 @@ export class RuxSwitch {
                         onInput={this._onInput}
                         onBlur={() => this._onBlur()}
                     />
-                    <label
-                        class="rux-switch__button"
-                        htmlFor={switchId}
-                    ></label>
+                    <label class="rux-switch__button" htmlFor={switchId}>
+                        {this.label && (
+                            <span class="rux-switch__label">{this.label}</span>
+                        )}
+                    </label>
                 </div>
                 {this.helpText && !this.errorText && (
                     <div class="rux-help-text">{helpText}</div>
