@@ -7,6 +7,7 @@ import {
     h,
     Element,
 } from '@stencil/core'
+import { FormFieldInterface } from '../../common/interfaces.module'
 import { renderHiddenInput } from '../../utils/utils'
 
 let id = 0
@@ -16,7 +17,7 @@ let id = 0
     styleUrl: 'rux-input-field.scss',
     shadow: true,
 })
-export class RuxInputField {
+export class RuxInputField implements FormFieldInterface {
     @Element() el!: HTMLRuxCheckboxElement
     inputId = `rux-input-${++id}`
 
