@@ -25,7 +25,7 @@ export class RuxRadioGroup implements FormFieldInterface {
     @State() hasLabelSlot = false
 
     /**
-     * The label of the radio group
+     * The label of the radio group. For HTML content, use the `label` slot instead.
      */
     @Prop() label?: string
 

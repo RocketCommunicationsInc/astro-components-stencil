@@ -35,7 +35,7 @@ export class RuxSelect implements FormFieldInterface {
     @Prop({ reflect: true }) required: boolean = false
 
     /**
-     * Sets the Label for the Select
+     * The select label text. For HTML content, use the `label` slot instead.
      */
     @Prop() label?: string
 

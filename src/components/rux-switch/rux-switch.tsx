@@ -63,7 +63,7 @@ export class RuxSwitch implements FormFieldInterface {
     @Prop() required: boolean = false
 
     /**
-     * The switch label
+     * The switch label. For HTML content, use the `label` slot instead.
      */
     @Prop() label?: string
 

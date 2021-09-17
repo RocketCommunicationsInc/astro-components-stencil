@@ -29,7 +29,7 @@ export class RuxInputField implements FormFieldInterface {
     @State() hasLabelSlot = false
 
     /**
-     * The input label text
+     * The input label text. For HTML content, use the `label` slot instead.
      */
     @Prop() label?: string
     /**

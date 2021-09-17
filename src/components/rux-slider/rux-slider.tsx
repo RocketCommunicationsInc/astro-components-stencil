@@ -53,7 +53,7 @@ export class RuxSlider implements FormFieldInterface {
     @Prop() name: string = ''
 
     /**
-     * The slider label text
+     * The slider label text. For HTML content, use the `label` slot instead.
      */
     @Prop() label?: string
 
