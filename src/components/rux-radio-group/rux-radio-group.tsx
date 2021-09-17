@@ -74,6 +74,13 @@ export class RuxRadioGroup implements FormFieldInterface {
         this._handleSlotChange = this._handleSlotChange.bind(this)
     }
 
+    disconnectedCallback() {
+        this.el!.shadowRoot!.removeEventListener(
+            'slotchange',
+            this._handleSlotChange
+        )
+    }
+
     componentWillLoad() {
         const radios = Array.from(
             this.el.querySelectorAll('rux-radio')
