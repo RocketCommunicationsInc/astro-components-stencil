@@ -80,19 +80,21 @@ export class RuxSelect implements FormFieldInterface {
         this._syncOptionsFromValue()
     }
 
-    connectedCallback() {
-        this._handleSlotChange = this._handleSlotChange.bind(this)
+    @Watch('label')
+    handleLabelChange() {
+        this._handleLabelSlotChange()
     }
 
-    disconnectedCallback() {
-        this.el!.shadowRoot!.removeEventListener(
-            'slotchange',
-            this._handleSlotChange
-        )
+    connectedCallback() {
+        this._handleSlotChange = this._handleSlotChange.bind(this)
+        this._handleLabelSlotChange = this._handleLabelSlotChange.bind(this)
     }
 
     componentWillLoad() {
-        this._handleSlotChange()
+        this._handleLabelSlotChange()
+        if (this.value) {
+            this._handleSlotChange()
+        }
     }
 
     get hasLabel() {
@@ -103,8 +105,11 @@ export class RuxSelect implements FormFieldInterface {
         this.ruxBlur.emit()
     }
 
-    private _handleSlotChange() {
+    private _handleLabelSlotChange() {
         this.hasLabelSlot = hasSlot(this.el, 'label')
+    }
+
+    private _handleSlotChange() {
         this._syncOptionsFromValue()
     }
 
@@ -141,7 +146,7 @@ export class RuxSelect implements FormFieldInterface {
                 >
                     <span class={{ hidden: !this.hasLabel }}>
                         <slot
-                            onSlotchange={this._handleSlotChange}
+                            onSlotchange={this._handleLabelSlotChange}
                             name="label"
                         >
                             {label}
