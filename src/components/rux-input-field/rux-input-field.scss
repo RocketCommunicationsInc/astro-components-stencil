@@ -145,6 +145,7 @@
     }
 }
 
+.hidden,
 :host([hidden]) {
     display: none;
 }
