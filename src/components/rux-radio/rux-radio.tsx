@@ -1,5 +1,4 @@
 import { Component, h, Prop, Element, Event, EventEmitter } from '@stencil/core'
-import { FormFieldInterface } from '../../common/interfaces.module'
 
 let id = 0
 
@@ -12,7 +11,7 @@ let id = 0
     styleUrl: 'rux-radio.scss',
     shadow: true,
 })
-export class RuxRadio implements FormFieldInterface {
+export class RuxRadio {
     radioId = `rux-radio-${++id}`
     private radioGroup: HTMLRuxRadioGroupElement | null = null
 
