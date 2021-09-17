@@ -219,8 +219,6 @@ export class RuxSlider implements FormFieldInterface {
                         ></input>
                     </div>
                 </div>
-
-                <slot></slot>
             </Host>
         )
     }
