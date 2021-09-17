@@ -37,7 +37,7 @@ export class RuxRadio {
     @Prop({ reflect: true }) disabled: boolean = false
 
     /**
-     * The radio label text
+     * The radio label text. For HTML content, use the default slot instead.
      */
     @Prop() label?: string
 
