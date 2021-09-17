@@ -8,6 +8,7 @@ import {
     Host,
     h,
 } from '@stencil/core'
+import { FormFieldInterface } from '../../common/interfaces.module'
 import { renderHiddenInput } from '../../utils/utils'
 
 @Component({
@@ -15,7 +16,7 @@ import { renderHiddenInput } from '../../utils/utils'
     styleUrl: 'rux-radio-group.scss',
     shadow: true,
 })
-export class RuxRadioGroup {
+export class RuxRadioGroup implements FormFieldInterface {
     @Element() el!: HTMLElement
 
     /**
