@@ -27,16 +27,16 @@ export class RuxTextarea implements FormFieldInterface {
     @State() hasLabelSlot = false
 
     /**
-     * The input label text
+     * The textarea label text. For HTML content, use the `label` slot instead.
      */
     @Prop() label?: string
     /**
-     * The input placeholder text
+     * The textarea placeholder text
      */
     @Prop() placeholder?: string
 
     /**
-     * The help or explanation text
+     * The  or explanation text
      */
     @Prop({ attribute: 'help-text' }) helpText?: string
 
@@ -46,7 +46,7 @@ export class RuxTextarea implements FormFieldInterface {
     @Prop({ attribute: 'error-text' }) errorText?: string
 
     /**
-     * Marks the input as invalid
+     * Marks the textarea as invalid
      */
     @Prop() invalid = false
 
