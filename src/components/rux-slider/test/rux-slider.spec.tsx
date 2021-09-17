@@ -70,7 +70,6 @@ describe('rux-slider', () => {
               <input aria-disabled="false" aria-label="slider" id="rux-slider-3" class="rux-range" max="100" min="0" step="1" type="range" value="50">
             </div>
         </div>
-        <slot></slot>
         </mock:shadow-root>
         <div slot="label">hello</div>
         <input class="aux-input" type="hidden" value="50">
