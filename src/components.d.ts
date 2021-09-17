@@ -11850,7 +11850,7 @@ export namespace Components {
          */
         "invalid": boolean;
         /**
-          * The input label text
+          * The input label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -12135,7 +12135,7 @@ export namespace Components {
          */
         "invalid": boolean;
         /**
-          * The label of the radio group
+          * The label of the radio group. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -12171,7 +12171,7 @@ export namespace Components {
          */
         "invalid": boolean;
         /**
-          * Sets the Label for the Select
+          * The select label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -12197,7 +12197,7 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * The slider label text
+          * The slider label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -12245,7 +12245,7 @@ export namespace Components {
          */
         "helpText"?: string;
         /**
-          * The switch label
+          * The switch label. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -12309,15 +12309,15 @@ export namespace Components {
          */
         "errorText"?: string;
         /**
-          * The help or explanation text
+          * The  or explanation text
          */
         "helpText"?: string;
         /**
-          * Marks the input as invalid
+          * Marks the textarea as invalid
          */
         "invalid": boolean;
         /**
-          * The input label text
+          * The textarea label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -12333,7 +12333,7 @@ export namespace Components {
          */
         "name": string;
         /**
-          * The input placeholder text
+          * The textarea placeholder text
          */
         "placeholder"?: string;
         /**
@@ -31898,7 +31898,7 @@ declare namespace LocalJSX {
          */
         "invalid"?: boolean;
         /**
-          * The input label text
+          * The input label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -32219,7 +32219,7 @@ declare namespace LocalJSX {
          */
         "invalid"?: boolean;
         /**
-          * The label of the radio group
+          * The label of the radio group. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -32263,7 +32263,7 @@ declare namespace LocalJSX {
          */
         "invalid"?: boolean;
         /**
-          * Sets the Label for the Select
+          * The select label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -32297,7 +32297,7 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * The slider label text
+          * The slider label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -32353,7 +32353,7 @@ declare namespace LocalJSX {
          */
         "helpText"?: string;
         /**
-          * The switch label
+          * The switch label. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -32437,15 +32437,15 @@ declare namespace LocalJSX {
          */
         "errorText"?: string;
         /**
-          * The help or explanation text
+          * The  or explanation text
          */
         "helpText"?: string;
         /**
-          * Marks the input as invalid
+          * Marks the textarea as invalid
          */
         "invalid"?: boolean;
         /**
-          * The input label text
+          * The textarea label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -32473,7 +32473,7 @@ declare namespace LocalJSX {
          */
         "onRux-input"?: (event: CustomEvent<any>) => void;
         /**
-          * The input placeholder text
+          * The textarea placeholder text
          */
         "placeholder"?: string;
         /**

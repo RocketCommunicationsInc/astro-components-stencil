@@ -63,7 +63,7 @@ Pass properties via attributes similar to the native [HTML Input Range](https://
 | Property   | Attribute  | Description                                                                                                                                                                                                   | Type                  | Default                                   |
 | ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | ----------------------------------------- |
 | `disabled` | `disabled` | Determines if the slider is disabled.                                                                                                                                                                         | `boolean`             | `false`                                   |
-| `label`    | `label`    | The slider label text                                                                                                                                                                                         | `string \| undefined` | `undefined`                               |
+| `label`    | `label`    | The slider label text. For HTML content, use the `label` slot instead.                                                                                                                                        | `string \| undefined` | `undefined`                               |
 | `max`      | `max`      | Max value of slider.                                                                                                                                                                                          | `number`              | `100`                                     |
 | `min`      | `min`      | Min value of the slider.                                                                                                                                                                                      | `number`              | `0`                                       |
 | `name`     | `name`     | Name of the Input Field for Form Submission                                                                                                                                                                   | `string`              | `''`                                      |
@@ -77,6 +77,13 @@ Pass properties via attributes similar to the native [HTML Input Range](https://
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | `rux-blur`  | Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)            | `CustomEvent<any>` |
 | `rux-input` | Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event) | `CustomEvent<any>` |
+
+
+## Slots
+
+| Slot      | Description      |
+| --------- | ---------------- |
+| `"label"` | The slider label |
 
 
 ## CSS Custom Properties
