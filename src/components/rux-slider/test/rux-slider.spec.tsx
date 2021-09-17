@@ -20,7 +20,6 @@ describe('rux-slider', () => {
                   <input aria-disabled="false" aria-label="slider" id="rux-slider-1" class="rux-range" max="100" min="0" step="1" type="range" value="50">
                 </div>
             </div>
-            <slot></slot>
             </mock:shadow-root>
             <input class="aux-input" type="hidden" value="50">
           </rux-slider>
@@ -45,7 +44,6 @@ describe('rux-slider', () => {
                 <input aria-disabled="false" aria-label="slider" id="rux-slider-2" class="rux-range" max="100" min="0" step="1" type="range" value="50">
               </div>
           </div>
-          <slot></slot>
           </mock:shadow-root>
           <input class="aux-input" type="hidden" value="50">
         </rux-slider>
