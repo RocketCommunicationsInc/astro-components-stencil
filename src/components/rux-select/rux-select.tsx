@@ -7,15 +7,23 @@ import {
     Event,
     EventEmitter,
     Watch,
+    State,
 } from '@stencil/core'
+import { FormFieldInterface } from '../../common/interfaces.module'
+import { hasSlot } from '../../utils/utils'
 
+/**
+ * @slot (default) - The select options
+ * @slot label - The select label
+ */
 @Component({
     tag: 'rux-select',
     styleUrl: 'rux-select.scss',
     scoped: true,
 })
-export class RuxSelect {
+export class RuxSelect implements FormFieldInterface {
     @Element() el!: HTMLRuxSelectElement
+    @State() hasLabelSlot = false
     /**
      * Disables the select menu via HTML disabled attribute. Select menu takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
      */
@@ -75,10 +83,20 @@ export class RuxSelect {
     connectedCallback() {
         this._handleSlotChange = this._handleSlotChange.bind(this)
     }
+
+    disconnectedCallback() {
+        this.el!.shadowRoot!.removeEventListener(
+            'slotchange',
+            this._handleSlotChange
+        )
+    }
+
     componentWillLoad() {
-        if (this.value) {
-            this._handleSlotChange()
-        }
+        this._handleSlotChange()
+    }
+
+    get hasLabel() {
+        return this.label ? true : this.hasLabelSlot
     }
 
     private _onBlur = () => {
@@ -86,6 +104,7 @@ export class RuxSelect {
     }
 
     private _handleSlotChange() {
+        this.hasLabelSlot = hasSlot(this.el, 'label')
         this._syncOptionsFromValue()
     }
 
@@ -115,11 +134,20 @@ export class RuxSelect {
 
         return (
             <Host>
-                {label && (
-                    <label id={labelId} htmlFor={inputId}>
-                        {label}
-                    </label>
-                )}
+                <label
+                    id={labelId}
+                    htmlFor={inputId}
+                    aria-hidden={this.hasLabel ? 'false' : 'true'}
+                >
+                    <span class={{ hidden: !this.hasLabel }}>
+                        <slot
+                            onSlotchange={this._handleSlotChange}
+                            name="label"
+                        >
+                            {label}
+                        </slot>
+                    </span>
+                </label>
                 <select
                     class={
                         'rux-select ' + (invalid ? 'rux-select-invalid' : '')
