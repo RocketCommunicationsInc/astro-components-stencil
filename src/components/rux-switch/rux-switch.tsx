@@ -6,12 +6,17 @@ import {
     h,
     Element,
     Host,
+    Watch,
+    State,
 } from '@stencil/core'
 import { FormFieldInterface } from '../../common/interfaces.module'
-import { renderHiddenInput } from '../../utils/utils'
+import { hasSlot, renderHiddenInput } from '../../utils/utils'
 
 let id = 0
 
+/**
+ * @slot label - The switch label
+ */
 @Component({
     tag: 'rux-switch',
     styleUrl: 'rux-switch.scss',
@@ -20,6 +25,7 @@ let id = 0
 export class RuxSwitch implements FormFieldInterface {
     switchId = `rux-switch-${++id}`
     @Element() el!: HTMLRuxSwitchElement
+    @State() hasLabelSlot = false
 
     /**
      * The help or explanation text
@@ -76,9 +82,34 @@ export class RuxSwitch implements FormFieldInterface {
      */
     @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
 
+    @Watch('label')
+    handleLabelChange() {
+        this._handleSlotChange()
+    }
+
     componentWillLoad() {
+        this._handleSlotChange()
+    }
+
+    connectedCallback() {
         this._onChange = this._onChange.bind(this)
         this._onInput = this._onInput.bind(this)
+        this._handleSlotChange = this._handleSlotChange.bind(this)
+    }
+
+    disconnectedCallback() {
+        this.el!.shadowRoot!.removeEventListener(
+            'slotchange',
+            this._handleSlotChange
+        )
+    }
+
+    get hasLabel() {
+        return this.label ? true : this.hasLabelSlot
+    }
+
+    private _handleSlotChange() {
+        this.hasLabelSlot = hasSlot(this.el, 'label')
     }
 
     private _onChange(e: Event): void {
@@ -149,9 +180,19 @@ export class RuxSwitch implements FormFieldInterface {
                         onBlur={() => this._onBlur()}
                     />
                     <label class="rux-switch__button" htmlFor={switchId}>
-                        {this.label && (
-                            <span class="rux-switch__label">{this.label}</span>
-                        )}
+                        <span
+                            class={{
+                                'rux-switch__label': true,
+                                hidden: !this.hasLabel,
+                            }}
+                        >
+                            <slot
+                                onSlotchange={this._handleSlotChange}
+                                name="label"
+                            >
+                                {this.label}
+                            </slot>
+                        </span>
                     </label>
                 </div>
                 {this.helpText && !this.errorText && (
