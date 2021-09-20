@@ -150,6 +150,49 @@ export const WithErrorText = (args) => {
     </Story>
 </Canvas>
 
+## Customization
+
+### Horizontal Labels
+
+You can utilize the `form-field` and `label` Shadow Parts to have full control over label placement. For example:
+```css
+rux-checkbox-group::part(form-field) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+rux-checkbox-group::part(label) {
+  margin-right: var(--spacing-input-label-left);
+}
+```
+
+export const HorizontalLabel = (args) => {
+    return html`
+    <style>
+      #left-example::part(form-field) {
+        display: flex;
+        flex-direction: row;
+      }
+      #left-example::part(label) {
+        margin-right: var(--spacing-input-label-left);
+      }
+    </style>
+      <rux-checkbox-group id="left-example" label="Label">
+        <rux-checkbox value="1">one</rux-checkbox>
+        <rux-checkbox value="2">two</rux-checkbox>
+        <rux-checkbox value="3">three</rux-checkbox>
+      </rux-checkbox-group>
+    `
+}
+
+<Canvas>
+    <Story
+      name="Horizontal Label"
+    >
+      {HorizontalLabel.bind()}
+    </Story>
+</Canvas>
+
 ## Cherry Picking
 
 If you're already utilizing a build system that supports tree shaking and want to only import this individual component:

@@ -5,6 +5,8 @@ import { hasSlot } from '../../utils/utils'
  * @slot (default) - The checkbox elements
  * @slot label - The checkbox group label
  * @part container - The container div of checkbox elements
+ * @part form-field - The form-field wrapper container
+ * @part label - The input label when `label` prop is set
  */
 @Component({
     tag: 'rux-checkbox-group',
@@ -61,32 +63,38 @@ export class RuxCheckboxGroup {
     render() {
         return (
             <Host>
-                <div
-                    class={{
-                        'rux-label': true,
-                        hidden: !this.hasLabel,
-                    }}
-                >
-                    <slot onSlotchange={this._handleSlotChange} name="label">
-                        {this.label}
-                    </slot>
-                </div>
-                <div
-                    class={{
-                        'rux-checkbox-group': true,
-                        'rux-checkbox-group--invalid': this.invalid,
-                    }}
-                    part="container"
-                >
-                    <slot></slot>
-                </div>
-                {this.helpText && !this.errorText && (
-                    <div class="rux-help-text">{this.helpText}</div>
-                )}
+                <div class="rux-form-field" part="form-field">
+                    <div
+                        class={{
+                            'rux-label': true,
+                            hidden: !this.hasLabel,
+                        }}
+                        part="label"
+                    >
+                        <slot
+                            onSlotchange={this._handleSlotChange}
+                            name="label"
+                        >
+                            {this.label}
+                        </slot>
+                    </div>
+                    <div
+                        class={{
+                            'rux-checkbox-group': true,
+                            'rux-checkbox-group--invalid': this.invalid,
+                        }}
+                        part="container"
+                    >
+                        <slot></slot>
+                    </div>
+                    {this.helpText && !this.errorText && (
+                        <div class="rux-help-text">{this.helpText}</div>
+                    )}
 
-                {this.errorText && (
-                    <div class="rux-error-text">{this.errorText}</div>
-                )}
+                    {this.errorText && (
+                        <div class="rux-error-text">{this.errorText}</div>
+                    )}
+                </div>
             </Host>
         )
     }

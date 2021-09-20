@@ -10,13 +10,15 @@ describe('rux-checkbox-group', () => {
         expect(page.root).toEqualHtml(`
           <rux-checkbox-group>
             <mock:shadow-root>
-              <div class="hidden rux-label">
+            <div class="rux-form-field" part="form-field">
+              <div class="hidden rux-label" part="label">
                 <slot name="label"></slot>
               </div>
               <div class="rux-checkbox-group" part="container">
                 <slot></slot>
               </div>
             </mock:shadow-root>
+            </div>
           </rux-checkbox-group>
         `)
     })
@@ -28,11 +30,13 @@ describe('rux-checkbox-group', () => {
         expect(page.root).toEqualHtml(`
         <rux-checkbox-group label="hello">
           <mock:shadow-root>
-            <div class="rux-label">
+          <div class="rux-form-field" part="form-field">
+            <div class="rux-label" part="label">
               <slot name="label">hello</slot>
             </div>
             <div class="rux-checkbox-group" part="container">
               <slot></slot>
+            </div>
             </div>
           </mock:shadow-root>
         </rux-checkbox-group>
@@ -47,11 +51,13 @@ describe('rux-checkbox-group', () => {
         expect(page.root).toEqualHtml(`
       <rux-checkbox-group>
         <mock:shadow-root>
-          <div class="rux-label">
+        <div class="rux-form-field" part="form-field">
+          <div class="rux-label" part="label">
             <slot name="label"></slot>
           </div>
           <div class="rux-checkbox-group" part="container">
             <slot></slot>
+          </div>
           </div>
         </mock:shadow-root>
         <div slot="label">hello</div>
