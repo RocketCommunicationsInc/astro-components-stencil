@@ -33,7 +33,6 @@ export const Default = (args) => {
           ?disabled="${args.disabled}"
           ?checked="${args.checked}"
           ?indeterminate="${args.indeterminate}"
-          .errorText="${args.errorText}"
           .helpText="${args.helpText}"
           name="${args.name}"
           .value="${args.value}"
@@ -68,7 +67,6 @@ export const Checked = (args) => {
           ?disabled="${args.disabled}"
           ?checked="${args.checked}"
           ?indeterminate="${args.indeterminate}"
-          .errorText="${args.errorText}"
           .helpText="${args.helpText}"
           name="${args.name}"
           .value="${args.value}"
@@ -95,7 +93,6 @@ export const Disabled = (args) => {
           ?disabled="${args.disabled}"
           ?checked="${args.checked}"
           ?indeterminate="${args.indeterminate}"
-          .errorText="${args.errorText}"
           .helpText="${args.helpText}"
           name="${args.name}"
           .value="${args.value}"
@@ -124,7 +121,6 @@ export const Indeterminate = (args) => {
           ?disabled="${args.disabled}"
           ?checked="${args.checked}"
           ?indeterminate="${args.indeterminate}"
-          .errorText="${args.errorText}"
           .helpText="${args.helpText}"
           name="${args.name}"
           .value="${args.value}"
@@ -143,33 +139,6 @@ export const Indeterminate = (args) => {
     </Story>
 </Canvas>
 
-### With Error Text
-
-export const WithErrorText = (args) => {
-  return html`
-         <rux-checkbox
-          ?disabled="${args.disabled}"
-          ?checked="${args.checked}"
-          ?indeterminate="${args.indeterminate}"
-          .errorText="${args.errorText}"
-          .helpText="${args.helpText}"
-          name="${args.name}"
-          .value="${args.value}"
-        >
-          Checkbox Label
-        </rux-checkbox>
-  `
-}
-
-<Canvas>
-    <Story
-      args={{errorText: 'Error text'}}
-      name="With Error Text"
-    >
-        {WithErrorText.bind()}
-    </Story>
-</Canvas>
-
 ### With Help Text
 
 export const WithHelpText = (args) => {
@@ -178,7 +147,6 @@ export const WithHelpText = (args) => {
           ?disabled="${args.disabled}"
           ?checked="${args.checked}"
           ?indeterminate="${args.indeterminate}"
-          .errorText="${args.errorText}"
           .helpText="${args.helpText}"
           name="${args.name}"
           .value="${args.value}"
