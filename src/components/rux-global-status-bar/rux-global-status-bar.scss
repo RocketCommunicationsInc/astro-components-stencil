@@ -127,7 +127,7 @@ slot[name='left-side'] > .shifted-up,
     flex-basis: 100%;
 }
 
-//Preserves dark theme defaults for slotted elements in GSB
+//Preserves dark theme defaults for slotted elements in GSB since content must always be rendered in dark theme.
 ::slotted(*) {
     @include variables.root-variables;
 }
