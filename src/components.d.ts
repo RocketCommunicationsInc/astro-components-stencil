@@ -11842,7 +11842,7 @@ export namespace Components {
          */
         "helpText"?: string;
         /**
-          * Marks the input as invalid
+          * Presentational only. Renders the Input Field as invalid.
          */
         "invalid": boolean;
         /**
@@ -12127,7 +12127,7 @@ export namespace Components {
          */
         "helpText"?: string;
         /**
-          * Marks the radio group as invalid
+          * Presentational only. Renders the Radio Group as invalid.
          */
         "invalid": boolean;
         /**
@@ -12163,7 +12163,7 @@ export namespace Components {
          */
         "inputId"?: string;
         /**
-          * Sets the Select as Invalid for Custom Validation Usage
+          * Presentational only. Renders the Select Menu as invalid.
          */
         "invalid": boolean;
         /**
@@ -12249,10 +12249,6 @@ export namespace Components {
          */
         "name": string;
         /**
-          * Sets the switch as required
-         */
-        "required": boolean;
-        /**
           * The switch value
          */
         "value": string;
@@ -12309,7 +12305,7 @@ export namespace Components {
          */
         "helpText"?: string;
         /**
-          * Marks the textarea as invalid
+          * Presentational only. Renders the Textarea as invalid.
          */
         "invalid": boolean;
         /**
@@ -31886,7 +31882,7 @@ declare namespace LocalJSX {
          */
         "helpText"?: string;
         /**
-          * Marks the input as invalid
+          * Presentational only. Renders the Input Field as invalid.
          */
         "invalid"?: boolean;
         /**
@@ -32207,7 +32203,7 @@ declare namespace LocalJSX {
          */
         "helpText"?: string;
         /**
-          * Marks the radio group as invalid
+          * Presentational only. Renders the Radio Group as invalid.
          */
         "invalid"?: boolean;
         /**
@@ -32251,7 +32247,7 @@ declare namespace LocalJSX {
          */
         "inputId"?: string;
         /**
-          * Sets the Select as Invalid for Custom Validation Usage
+          * Presentational only. Renders the Select Menu as invalid.
          */
         "invalid"?: boolean;
         /**
@@ -32365,10 +32361,6 @@ declare namespace LocalJSX {
          */
         "onRux-input"?: (event: CustomEvent<any>) => void;
         /**
-          * Sets the switch as required
-         */
-        "required"?: boolean;
-        /**
           * The switch value
          */
         "value"?: string;
@@ -32433,7 +32425,7 @@ declare namespace LocalJSX {
          */
         "helpText"?: string;
         /**
-          * Marks the textarea as invalid
+          * Presentational only. Renders the Textarea as invalid.
          */
         "invalid"?: boolean;
         /**
