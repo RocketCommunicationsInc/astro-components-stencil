@@ -32,7 +32,6 @@ describe('rux-checkbox', () => {
             errorText: undefined,
             indeterminate: false,
             name: '',
-            required: false,
             value: '',
         })
     })
