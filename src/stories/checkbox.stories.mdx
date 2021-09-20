@@ -36,7 +36,6 @@ export const Default = (args) => {
           .errorText="${args.errorText}"
           .helpText="${args.helpText}"
           name="${args.name}"
-          ?required="${args.required}"
           .value="${args.value}"
         >
           Checkbox Label
@@ -72,7 +71,6 @@ export const Checked = (args) => {
           .errorText="${args.errorText}"
           .helpText="${args.helpText}"
           name="${args.name}"
-          ?required="${args.required}"
           .value="${args.value}"
         >
           Checkbox Label
@@ -100,7 +98,6 @@ export const Disabled = (args) => {
           .errorText="${args.errorText}"
           .helpText="${args.helpText}"
           name="${args.name}"
-          ?required="${args.required}"
           .value="${args.value}"
         >
           Checkbox Label
@@ -130,7 +127,6 @@ export const Indeterminate = (args) => {
           .errorText="${args.errorText}"
           .helpText="${args.helpText}"
           name="${args.name}"
-          ?required="${args.required}"
           .value="${args.value}"
         >
           Checkbox Label
@@ -158,7 +154,6 @@ export const WithErrorText = (args) => {
           .errorText="${args.errorText}"
           .helpText="${args.helpText}"
           name="${args.name}"
-          ?required="${args.required}"
           .value="${args.value}"
         >
           Checkbox Label
@@ -186,7 +181,6 @@ export const WithHelpText = (args) => {
           .errorText="${args.errorText}"
           .helpText="${args.helpText}"
           name="${args.name}"
-          ?required="${args.required}"
           .value="${args.value}"
         >
           Checkbox Label
@@ -200,34 +194,6 @@ export const WithHelpText = (args) => {
       name="With Help Text"
     >
         {WithHelpText.bind()}
-    </Story>
-</Canvas>
-
-### Required
-
-export const Required = (args) => {
-  return html`
-         <rux-checkbox
-          ?disabled="${args.disabled}"
-          ?checked="${args.checked}"
-          ?indeterminate="${args.indeterminate}"
-          .errorText="${args.errorText}"
-          .helpText="${args.helpText}"
-          name="${args.name}"
-          ?required="${args.required}"
-          .value="${args.value}"
-        >
-          Checkbox Label
-        </rux-checkbox>
-  `
-}
-
-<Canvas>
-    <Story
-      args={{required: true}}
-      name="Required"
-    >
-        {Required.bind()}
     </Story>
 </Canvas>
 

@@ -7,6 +7,7 @@ import {
     Element,
     Watch,
 } from '@stencil/core'
+
 import { FormFieldInterface } from '../../common/interfaces.module'
 import { renderHiddenInput } from '../../utils/utils'
 
@@ -78,11 +79,6 @@ export class RuxCheckbox implements FormFieldInterface {
     @Prop({ reflect: true }) disabled: boolean = false
 
     /**
-     * Sets the input as required
-     */
-    @Prop() required: boolean = false
-
-    /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
@@ -137,7 +133,6 @@ export class RuxCheckbox implements FormFieldInterface {
             errorText,
             helpText,
             name,
-            required,
             value,
             indeterminate,
         } = this
@@ -159,7 +154,6 @@ export class RuxCheckbox implements FormFieldInterface {
                     class={{
                         'rux-checkbox': true,
                         'rux-checkbox--indeterminate': indeterminate,
-                        'rux-checkbox--has-error': required,
                         'rux-checkbox--has-text':
                             errorText !== undefined || helpText !== undefined,
                     }}
@@ -169,7 +163,6 @@ export class RuxCheckbox implements FormFieldInterface {
                         name={name}
                         id={checkboxId}
                         disabled={disabled}
-                        required={required}
                         checked={checked}
                         //Allows storybook's indetermiante control to take effect.
                         indeterminate={indeterminate}

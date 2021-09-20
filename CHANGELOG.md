@@ -4,6 +4,10 @@
 
 ### Breaking Changes
 
+#### Checkbox
+
+-   `required` prop has been removed. Use Checkbox Group component instead to display invalid state.
+
 ## [0.0.14] 2021-09-10
 
 ### Breaking Changes

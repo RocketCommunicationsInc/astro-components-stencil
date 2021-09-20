@@ -130,24 +130,6 @@
         }
     }
 
-    &--has-error {
-        input[type='checkbox']:not(:disabled):hover + label::before {
-            border-color: var(--color-critical);
-        }
-
-        input[type='checkbox'],
-        input[type='checkbox']:checked {
-            + label {
-                &:after {
-                    border-color: var(--color-critical);
-                }
-                &::before {
-                    border-color: var(--color-critical);
-                }
-            }
-        }
-    }
-
     &--has-text {
         margin-bottom: 0px;
     }
