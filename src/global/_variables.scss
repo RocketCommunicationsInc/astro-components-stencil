@@ -2,7 +2,7 @@
     @include root-variables;
 }
 
-// Dark/Default Theme Variables Mixin.
+// Dark/Default Theme Variables Mixin
 // This a mixin to allow for variables to be included in the shadow dom of a component and overwrite global thmese when necessary.
 @mixin root-variables {
     --background: #101923;
