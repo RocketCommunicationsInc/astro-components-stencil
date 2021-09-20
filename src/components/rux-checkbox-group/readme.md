@@ -25,9 +25,11 @@
 
 ## Shadow Parts
 
-| Part          | Description                            |
-| ------------- | -------------------------------------- |
-| `"container"` | The container div of checkbox elements |
+| Part           | Description                              |
+| -------------- | ---------------------------------------- |
+| `"container"`  | The container div of checkbox elements   |
+| `"form-field"` | The form-field wrapper container         |
+| `"label"`      | The input label when `label` prop is set |
 
 
 ## CSS Custom Properties

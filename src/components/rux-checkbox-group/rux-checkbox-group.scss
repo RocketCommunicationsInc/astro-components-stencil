@@ -1,6 +1,6 @@
 :host {
     /** @prop --checkboxgroup-border-color: the radio group border color*/
-    --checkboxgroupradiogroup-border-color: var(--active);
+    --checkboxgroup-border-color: var(--active);
     display: block;
 }
 
@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    border: 1px solid var(--checkboxgroupradiogroup-border-color);
+    border: 1px solid var(--checkboxgroup-border-color);
     border-radius: 3px;
     &--invalid {
         border: 1px solid var(--color-critical);
