@@ -16,6 +16,8 @@ let id = 0
 
 /**
  * @slot label - The input label
+ * @part form-field - The form-field wrapper container
+ * @part label - The input label when `label` prop is set
  */
 @Component({
     tag: 'rux-input-field',
@@ -196,11 +198,13 @@ export class RuxInputField implements FormFieldInterface {
                         'rux-form-field': true,
                         'rux-form-field--small': small,
                     }}
+                    part="form-field"
                 >
                     <label
                         class={{
                             'rux-input-label': true,
                         }}
+                        part="label"
                         aria-hidden={this.hasLabel ? 'false' : 'true'}
                         htmlFor={inputId}
                     >
