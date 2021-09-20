@@ -7,6 +7,7 @@
 #### Checkbox
 
 -   `required` prop has been removed. Use Checkbox Group component instead to display invalid state.
+-   `errorText` prop has been removed. Use Checkbox Group component instead.
 
 ### Switch
 

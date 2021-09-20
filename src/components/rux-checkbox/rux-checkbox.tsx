@@ -33,11 +33,6 @@ export class RuxCheckbox implements FormFieldInterface {
     @Prop({ attribute: 'help-text' }) helpText?: string
 
     /**
-     * The validation error text
-     */
-    @Prop({ attribute: 'error-text' }) errorText?: string
-
-    /**
      * The checkbox name
      */
     @Prop() name = ''
@@ -130,7 +125,6 @@ export class RuxCheckbox implements FormFieldInterface {
             checkboxId,
             checked,
             disabled,
-            errorText,
             helpText,
             name,
             value,
@@ -154,8 +148,7 @@ export class RuxCheckbox implements FormFieldInterface {
                     class={{
                         'rux-checkbox': true,
                         'rux-checkbox--indeterminate': indeterminate,
-                        'rux-checkbox--has-text':
-                            errorText !== undefined || helpText !== undefined,
+                        'rux-checkbox--has-text': helpText !== undefined,
                     }}
                 >
                     <input
@@ -183,13 +176,7 @@ export class RuxCheckbox implements FormFieldInterface {
                         </span>
                     </label>
                 </div>
-                {this.helpText && !this.errorText && (
-                    <div class="rux-help-text">{helpText}</div>
-                )}
-
-                {this.errorText && (
-                    <div class="rux-error-text">{errorText}</div>
-                )}
+                {this.helpText && <div class="rux-help-text">{helpText}</div>}
             </div>
         )
     }
