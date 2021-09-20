@@ -4,7 +4,9 @@ import { Meta } from '@storybook/addon-docs/blocks'
 
 # Angular
 
-1. Include `CUSTOM_ELEMENTS_SCHEMA` in any module that uses an Astro component.
+## Integration of astro-web-components into an angular application.
+
+1. Include `CUSTOM_ELEMENTS_SCHEMA` in any module that uses an astro-web-component.
 
 ```js
 import { BrowserModule } from '@angular/platform-browser'
@@ -31,7 +33,6 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
 import { AppModule } from './app/app.module'
 import { environment } from './environments/environment'
 
-// Note: loader import location set using "esmLoaderPath" within the output target config
 import { defineCustomElements } from '@astrouxds/astro-web-components/loader'
 
 if (environment.production) {
@@ -42,4 +43,138 @@ platformBrowserDynamic()
     .bootstrapModule(AppModule)
     .catch((err) => console.log(err))
 defineCustomElements()
+```
+
+3. Add global components styling to angular application.
+
+```json
+ "architect": {
+    "build": {
+      "builder": "@angular-devkit/build-angular:browser",
+      "options": {
+        "styles": [
+          "./node_modules/@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css",
+        ],
+      },
+    },
+```
+
+4. (Optional) In order to set global astro-web-compoennts app styling onto your application.
+Add corresponding theme class (`dark-theme` or `light-theme`) to desire parent container.
+Usually the easiest way it to add it onto `<body>` tag of the `index.html` file.
+
+## Using Slots
+
+Slots give you full control over the contents of a component. Some components may have multiple slots.
+
+> Web Component Concept:
+> Slotted content lives outside of the shadow DOM and as a result, you are free to style them however you want.
+
+```html
+  <rux-global-status-bar>
+    <rux-icon slot="left-side" icon="apps" /></rux-icon>
+    <div slot="app-meta">
+      <h1>Hello World</h1>
+    </div>
+  </rux-global-status-bar>
+```
+
+## Listening To Events
+
+```html
+  <rux-input name="myInput" (rux-change)="onInputChange($event)">
+```
+
+In TypeScript, accessing the events target value requires some type assertion.
+
+```js
+
+onInputChange(e: CustomEvent<HTMLRuxInputFieldElement>){
+  const target = e.target as HTMLInputElement;
+  console.log(`Here is e.target.value: ${target.value}`)
+}
+```
+
+## Methods
+
+Some components offer public methods that can be executed. These methods are async and can be executed by setting a ViewChild decorator on the element.
+The Angular docs for setting and using `ViewChaild` decorator can be found [here](https://angular.io/api/core/ViewChild).
+
+```js
+export class HomeComponent {
+
+    @ViewChild('test') myTestComponent: ElementRef<HTMLRuxInputFieldElement>;
+
+    async onAction() {
+        await this.myTestComponent.nativeElement.testComponentMethod();
+    }
+}
+```
+
+
+## Integration of two-way data binding with form compoennts.
+
+To get web component to work with `ngModel` and `formControlName` directives `ngDefaultControl` must be set on the form element.
+It will set the default ControlValueAccessor for writing a value and listening to changes on input elements.
+
+```html
+  <rux-input name="myInput" ngDefaultControl [(ngModel)]="myInputVar"></rux-input>
+```
+
+Alternativally ControlValueAccessor directive may be created to omit the use of `ngDefaultControl`.
+ControlValueAccessor: Defines an interface that acts as a bridge between the Angular forms API and a native element in the DOM. Implement this interface to create a custom form control directive that integrates with Angular forms.
+
+```js
+import { Directive, ElementRef, forwardRef, HostListener } from '@angular/core';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+
+@Directive({
+  selector: 'rux-input',
+  providers: [
+    {
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => RuxInputDirective),
+      multi: true,
+    },
+  ],
+})
+export class RuxInputDirective {
+  onChange: any = () => {};
+  onTouched: any = () => {};
+
+  private _value: boolean;
+
+  get value() {
+    return this._value;
+  }
+
+  set value(val) {
+    if (val !== this._value) {
+      this._value = val;
+      this.onChange(this._value);
+      this.onTouched();
+    }
+  }
+
+  constructor(private elementRef: ElementRef) {}
+
+  @HostListener('rux-change', ['$event.detail'])
+  listenForValueChange(value) {
+    this.value = value;
+  }
+
+  writeValue(value) {
+    if (value) {
+      this.value = value;
+    }
+  }
+
+  registerOnChange(fn) {
+    this.onChange = fn;
+  }
+
+  registerOnTouched(fn) {
+    this.onTouched = fn;
+  }
+}
 ```
