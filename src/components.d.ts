@@ -12173,6 +12173,14 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
           * Id for the Select Input
          */
         "inputId"?: string;
@@ -12206,6 +12214,14 @@ export namespace Components {
           * Determines if the slider is disabled.
          */
         "disabled": boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
         /**
           * The slider label text. For HTML content, use the `label` slot instead.
          */
@@ -32278,6 +32294,14 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
           * Id for the Select Input
          */
         "inputId"?: string;
@@ -32319,6 +32343,14 @@ declare namespace LocalJSX {
           * Determines if the slider is disabled.
          */
         "disabled"?: boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
         /**
           * The slider label text. For HTML content, use the `label` slot instead.
          */

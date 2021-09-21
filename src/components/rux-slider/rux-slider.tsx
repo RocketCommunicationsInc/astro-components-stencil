@@ -1,6 +1,5 @@
 import {
     Component,
-    Host,
     h,
     Prop,
     Element,
@@ -9,6 +8,7 @@ import {
     Watch,
     State,
 } from '@stencil/core'
+import FormField from '../../common/functional-components/FormField/FormField'
 import { FormFieldInterface } from '../../common/interfaces.module'
 import { hasSlot, renderHiddenInput } from '../../utils/utils'
 
@@ -58,6 +58,16 @@ export class RuxSlider implements FormFieldInterface {
      * The slider label text. For HTML content, use the `label` slot instead.
      */
     @Prop() label?: string
+
+    /**
+     * The help or explanation text
+     */
+    @Prop({ attribute: 'help-text' }) helpText?: string
+
+    /**
+     * The validation error text
+     */
+    @Prop({ attribute: 'error-text' }) errorText?: string
 
     /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
@@ -193,7 +203,7 @@ export class RuxSlider implements FormFieldInterface {
         renderHiddenInput(true, el, name, JSON.stringify(this.value), disabled)
 
         return (
-            <Host>
+            <FormField helpText={this.helpText} errorText={this.errorText}>
                 <div class="rux-form-field" part="form-field">
                     <label
                         class="rux-input-label"
@@ -222,7 +232,7 @@ export class RuxSlider implements FormFieldInterface {
                         ></input>
                     </div>
                 </div>
-            </Host>
+            </FormField>
         )
     }
 }
