@@ -32,16 +32,6 @@
         cursor: not-allowed;
     }
 
-    &[checked] {
-        .rux-push-button {
-            &__button {
-                rux-icon::part(icon) {
-                    color: var(--pushbutton-selected-text-color);
-                }
-            }
-        }
-    }
-
     input {
         appearance: none;
         -webkit-appearance: none;
@@ -93,6 +83,9 @@
             color: var(--pushbutton-selected-text-color);
             background-color: var(--pushbutton-selected-background-color);
             border-color: var(--pushbutton-selected-border-color);
+            rux-icon {
+                color: var(--pushbutton-selected-text-color);
+            }
         }
 
         &__input:disabled + .rux-push-button__button {
