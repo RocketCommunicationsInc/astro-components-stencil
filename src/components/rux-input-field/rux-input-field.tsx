@@ -25,7 +25,7 @@ let id = 0
     shadow: true,
 })
 export class RuxInputField implements FormFieldInterface {
-    @Element() el!: HTMLRuxCheckboxElement
+    @Element() el!: HTMLRuxInputFieldElement
     inputId = `rux-input-${++id}`
 
     @State() hasLabelSlot = false
