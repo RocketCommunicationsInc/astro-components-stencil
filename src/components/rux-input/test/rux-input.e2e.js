@@ -3,7 +3,7 @@ describe('Input Field', () => {
         cy.visitStory('forms-input-field--default-story')
     })
     it('renders', () => {
-        cy.get('rux-input-field').should('have.class', 'hydrated')
+        cy.get('rux-input').should('have.class', 'hydrated')
     })
 })
 
