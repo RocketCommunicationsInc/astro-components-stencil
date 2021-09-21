@@ -52,10 +52,6 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
           * The help or explanation text
          */
         "helpText"?: string;
@@ -72,13 +68,27 @@ export namespace Components {
          */
         "name": string;
         /**
-          * Sets the input as required
-         */
-        "required": boolean;
-        /**
           * The checkbox value
          */
         "value": string;
+    }
+    interface RuxCheckboxGroup {
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Presentational only. Renders the Checkbox Group as invalid.
+         */
+        "invalid": boolean;
+        /**
+          * The label of the checkbox group. For HTML content, use the `label` slot instead.
+         */
+        "label"?: string;
     }
     interface RuxClassificationMarking {
         /**
@@ -11846,7 +11856,7 @@ export namespace Components {
          */
         "helpText"?: string;
         /**
-          * Marks the input as invalid
+          * Presentational only. Renders the Input Field as invalid.
          */
         "invalid": boolean;
         /**
@@ -12131,7 +12141,7 @@ export namespace Components {
          */
         "helpText"?: string;
         /**
-          * Marks the radio group as invalid
+          * Presentational only. Renders the Radio Group as invalid.
          */
         "invalid": boolean;
         /**
@@ -12167,7 +12177,7 @@ export namespace Components {
          */
         "inputId"?: string;
         /**
-          * Sets the Select as Invalid for Custom Validation Usage
+          * Presentational only. Renders the Select Menu as invalid.
          */
         "invalid": boolean;
         /**
@@ -12253,10 +12263,6 @@ export namespace Components {
          */
         "name": string;
         /**
-          * Sets the switch as required
-         */
-        "required": boolean;
-        /**
           * The switch value
          */
         "value": string;
@@ -12313,7 +12319,7 @@ export namespace Components {
          */
         "helpText"?: string;
         /**
-          * Marks the textarea as invalid
+          * Presentational only. Renders the Textarea as invalid.
          */
         "invalid": boolean;
         /**
@@ -12394,6 +12400,12 @@ declare global {
     var HTMLRuxCheckboxElement: {
         prototype: HTMLRuxCheckboxElement;
         new (): HTMLRuxCheckboxElement;
+    };
+    interface HTMLRuxCheckboxGroupElement extends Components.RuxCheckboxGroup, HTMLStencilElement {
+    }
+    var HTMLRuxCheckboxGroupElement: {
+        prototype: HTMLRuxCheckboxGroupElement;
+        new (): HTMLRuxCheckboxGroupElement;
     };
     interface HTMLRuxClassificationMarkingElement extends Components.RuxClassificationMarking, HTMLStencilElement {
     }
@@ -18951,6 +18963,7 @@ declare global {
         "rux-button": HTMLRuxButtonElement;
         "rux-button-group": HTMLRuxButtonGroupElement;
         "rux-checkbox": HTMLRuxCheckboxElement;
+        "rux-checkbox-group": HTMLRuxCheckboxGroupElement;
         "rux-classification-marking": HTMLRuxClassificationMarkingElement;
         "rux-clock": HTMLRuxClockElement;
         "rux-datetime": HTMLRuxDatetimeElement;
@@ -20088,10 +20101,6 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
           * The help or explanation text
          */
         "helpText"?: string;
@@ -20120,13 +20129,27 @@ declare namespace LocalJSX {
          */
         "onRux-input"?: (event: CustomEvent<any>) => void;
         /**
-          * Sets the input as required
-         */
-        "required"?: boolean;
-        /**
           * The checkbox value
          */
         "value"?: string;
+    }
+    interface RuxCheckboxGroup {
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Presentational only. Renders the Checkbox Group as invalid.
+         */
+        "invalid"?: boolean;
+        /**
+          * The label of the checkbox group. For HTML content, use the `label` slot instead.
+         */
+        "label"?: string;
     }
     interface RuxClassificationMarking {
         /**
@@ -31894,7 +31917,7 @@ declare namespace LocalJSX {
          */
         "helpText"?: string;
         /**
-          * Marks the input as invalid
+          * Presentational only. Renders the Input Field as invalid.
          */
         "invalid"?: boolean;
         /**
@@ -32215,7 +32238,7 @@ declare namespace LocalJSX {
          */
         "helpText"?: string;
         /**
-          * Marks the radio group as invalid
+          * Presentational only. Renders the Radio Group as invalid.
          */
         "invalid"?: boolean;
         /**
@@ -32259,7 +32282,7 @@ declare namespace LocalJSX {
          */
         "inputId"?: string;
         /**
-          * Sets the Select as Invalid for Custom Validation Usage
+          * Presentational only. Renders the Select Menu as invalid.
          */
         "invalid"?: boolean;
         /**
@@ -32373,10 +32396,6 @@ declare namespace LocalJSX {
          */
         "onRux-input"?: (event: CustomEvent<any>) => void;
         /**
-          * Sets the switch as required
-         */
-        "required"?: boolean;
-        /**
           * The switch value
          */
         "value"?: string;
@@ -32441,7 +32460,7 @@ declare namespace LocalJSX {
          */
         "helpText"?: string;
         /**
-          * Marks the textarea as invalid
+          * Presentational only. Renders the Textarea as invalid.
          */
         "invalid"?: boolean;
         /**
@@ -32513,6 +32532,7 @@ declare namespace LocalJSX {
         "rux-button": RuxButton;
         "rux-button-group": RuxButtonGroup;
         "rux-checkbox": RuxCheckbox;
+        "rux-checkbox-group": RuxCheckboxGroup;
         "rux-classification-marking": RuxClassificationMarking;
         "rux-clock": RuxClock;
         "rux-datetime": RuxDatetime;
@@ -33614,6 +33634,7 @@ declare module "@stencil/core" {
             "rux-button": LocalJSX.RuxButton & JSXBase.HTMLAttributes<HTMLRuxButtonElement>;
             "rux-button-group": LocalJSX.RuxButtonGroup & JSXBase.HTMLAttributes<HTMLRuxButtonGroupElement>;
             "rux-checkbox": LocalJSX.RuxCheckbox & JSXBase.HTMLAttributes<HTMLRuxCheckboxElement>;
+            "rux-checkbox-group": LocalJSX.RuxCheckboxGroup & JSXBase.HTMLAttributes<HTMLRuxCheckboxGroupElement>;
             "rux-classification-marking": LocalJSX.RuxClassificationMarking & JSXBase.HTMLAttributes<HTMLRuxClassificationMarkingElement>;
             "rux-clock": LocalJSX.RuxClock & JSXBase.HTMLAttributes<HTMLRuxClockElement>;
             "rux-datetime": LocalJSX.RuxDatetime & JSXBase.HTMLAttributes<HTMLRuxDatetimeElement>;
