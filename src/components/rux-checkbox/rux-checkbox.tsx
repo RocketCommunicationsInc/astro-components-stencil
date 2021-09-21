@@ -7,6 +7,7 @@ import {
     Element,
     Watch,
 } from '@stencil/core'
+import FormField from '../../common/functional-components/FormField/FormField'
 
 import { FormFieldInterface } from '../../common/interfaces.module'
 import { renderHiddenInput } from '../../utils/utils'
@@ -143,41 +144,42 @@ export class RuxCheckbox implements FormFieldInterface {
         }
 
         return (
-            <div class="rux-form-field">
-                <div
-                    class={{
-                        'rux-checkbox': true,
-                        'rux-checkbox--indeterminate': indeterminate,
-                        'rux-checkbox--has-text': helpText !== undefined,
-                    }}
-                >
-                    <input
-                        type="checkbox"
-                        name={name}
-                        id={checkboxId}
-                        disabled={disabled}
-                        checked={checked}
-                        //Allows storybook's indetermiante control to take effect.
-                        indeterminate={indeterminate}
-                        value={value}
-                        onChange={this._onClick}
-                        onInput={this._onInput}
-                        onBlur={() => this._onBlur()}
-                        ref={(el) => (this._inputEl = el)}
-                    />
-                    <label htmlFor={checkboxId}>
-                        {this.label}
-                        <span
-                            class={{
-                                hidden: !!this.label,
-                            }}
-                        >
-                            <slot></slot>
-                        </span>
-                    </label>
+            <FormField helpText={helpText}>
+                <div class="rux-form-field">
+                    <div
+                        class={{
+                            'rux-checkbox': true,
+                            'rux-checkbox--indeterminate': indeterminate,
+                            'rux-checkbox--has-text': helpText !== undefined,
+                        }}
+                    >
+                        <input
+                            type="checkbox"
+                            name={name}
+                            id={checkboxId}
+                            disabled={disabled}
+                            checked={checked}
+                            //Allows storybook's indetermiante control to take effect.
+                            indeterminate={indeterminate}
+                            value={value}
+                            onChange={this._onClick}
+                            onInput={this._onInput}
+                            onBlur={() => this._onBlur()}
+                            ref={(el) => (this._inputEl = el)}
+                        />
+                        <label htmlFor={checkboxId}>
+                            {this.label}
+                            <span
+                                class={{
+                                    hidden: !!this.label,
+                                }}
+                            >
+                                <slot></slot>
+                            </span>
+                        </label>
+                    </div>
                 </div>
-                {this.helpText && <div class="rux-help-text">{helpText}</div>}
-            </div>
+            </FormField>
         )
     }
 }

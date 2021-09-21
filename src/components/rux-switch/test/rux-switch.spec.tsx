@@ -47,6 +47,7 @@ describe('rux-switch', () => {
         expect(page.root).toEqualHtml(`
           <rux-switch aria-checked="false" class="rux-form-field" role="switch" value="">
             <mock:shadow-root>
+            <div>
                 <div class="rux-switch">
                   <input aria-checked="false" class="rux-switch__input" id="rux-switch-3" role="switch" type="checkbox" value="">
                   <label class="rux-switch__button" htmlfor="rux-switch-3">
@@ -54,6 +55,7 @@ describe('rux-switch', () => {
                     <slot name="label"></slot>
                   </span>
                   </label>
+                </div>
                 </div>
             </mock:shadow-root>
           </rux-switch>
@@ -68,6 +70,7 @@ describe('rux-switch', () => {
         expect(page.root).toEqualHtml(`
         <rux-switch label="hello" aria-checked="false" class="rux-form-field" role="switch" value="">
           <mock:shadow-root>
+          <div>
               <div class="rux-switch">
                 <input aria-checked="false" class="rux-switch__input" id="rux-switch-4" role="switch" type="checkbox" value="">
                 <label class="rux-switch__button" htmlfor="rux-switch-4">
@@ -76,6 +79,7 @@ describe('rux-switch', () => {
                 </span>
                 </label>
               </div>
+            </div>
           </mock:shadow-root>
         </rux-switch>
     `)
@@ -88,6 +92,7 @@ describe('rux-switch', () => {
         expect(page.root).toEqualHtml(`
       <rux-switch aria-checked="false" class="rux-form-field" role="switch" value="">
         <mock:shadow-root>
+        <div>
             <div class="rux-switch">
               <input aria-checked="false" class="rux-switch__input" id="rux-switch-5" role="switch" type="checkbox" value="">
               <label class="rux-switch__button" htmlfor="rux-switch-5">
@@ -95,6 +100,7 @@ describe('rux-switch', () => {
                 <slot name="label"></slot>
               </span>
               </label>
+            </div>
             </div>
         </mock:shadow-root>
         <div slot="label">hello</div>
