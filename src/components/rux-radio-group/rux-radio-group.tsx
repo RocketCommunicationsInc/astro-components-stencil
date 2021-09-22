@@ -9,7 +9,7 @@ import {
     Host,
     h,
 } from '@stencil/core'
-import FormField from '../../common/functional-components/FormField/FormField'
+import FormFieldMessage from '../../common/functional-components/FormFieldMessage/FormFieldMessage'
 import { FormFieldInterface } from '../../common/interfaces.module'
 import { hasSlot, renderHiddenInput } from '../../utils/utils'
 
@@ -136,34 +136,36 @@ export class RuxRadioGroup implements FormFieldInterface {
         }
         return (
             <Host onClick={this.handleClick}>
-                <FormField errorText={this.errorText} helpText={this.helpText}>
-                    <div class="rux-form-field" part="form-field">
-                        <div
-                            class={{
-                                'rux-label': true,
-                                hidden: !this.hasLabel,
-                            }}
-                            part="label"
+                <div class="rux-form-field" part="form-field">
+                    <div
+                        class={{
+                            'rux-label': true,
+                            hidden: !this.hasLabel,
+                        }}
+                        part="label"
+                    >
+                        <slot
+                            onSlotchange={this._handleSlotChange}
+                            name="label"
                         >
-                            <slot
-                                onSlotchange={this._handleSlotChange}
-                                name="label"
-                            >
-                                {this.label}
-                            </slot>
-                        </div>
-                        <div
-                            class={{
-                                'rux-radio-group': true,
-                                'rux-radio-group--invalid': this.invalid,
-                            }}
-                            role="radiogroup"
-                            part="radiogroup"
-                        >
-                            <slot></slot>
-                        </div>
+                            {this.label}
+                        </slot>
                     </div>
-                </FormField>
+                    <div
+                        class={{
+                            'rux-radio-group': true,
+                            'rux-radio-group--invalid': this.invalid,
+                        }}
+                        role="radiogroup"
+                        part="radiogroup"
+                    >
+                        <slot></slot>
+                    </div>
+                </div>
+                <FormFieldMessage
+                    errorText={this.errorText}
+                    helpText={this.helpText}
+                ></FormFieldMessage>
             </Host>
         )
     }

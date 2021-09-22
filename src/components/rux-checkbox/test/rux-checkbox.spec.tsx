@@ -8,7 +8,6 @@ describe('rux-checkbox', () => {
             checkboxId,
             checked,
             disabled,
-            errorText,
             indeterminate,
             name,
             value,
@@ -19,7 +18,6 @@ describe('rux-checkbox', () => {
             checkboxId,
             checked,
             disabled,
-            errorText,
             indeterminate,
             name,
             value,
@@ -42,7 +40,6 @@ describe('rux-checkbox', () => {
         expect(page.root).toEqualHtml(`
       <rux-checkbox value="">
         <mock:shadow-root>
-        <div>
           <div class="rux-form-field">
             <div class="rux-checkbox">
                 <input id="rux-checkbox-2" type="checkbox" value="">
@@ -52,7 +49,6 @@ describe('rux-checkbox', () => {
                   </span>
                 </label>
             </div>
-          </div>
           </div>
         </mock:shadow-root>
       </rux-checkbox>

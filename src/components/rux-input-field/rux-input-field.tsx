@@ -1,5 +1,6 @@
 import {
     Prop,
+    Host,
     Component,
     Event,
     EventEmitter,
@@ -8,7 +9,7 @@ import {
     State,
     Watch,
 } from '@stencil/core'
-import FormField from '../../common/functional-components/FormField/FormField'
+import FormFieldMessage from '../../common/functional-components/FormFieldMessage/FormFieldMessage'
 import { FormFieldInterface } from '../../common/interfaces.module'
 import { hasSlot, renderHiddenInput } from '../../utils/utils'
 
@@ -192,7 +193,7 @@ export class RuxInputField implements FormFieldInterface {
 
         renderHiddenInput(true, el, name, value, disabled)
         return (
-            <FormField errorText={errorText} helpText={helpText}>
+            <Host>
                 <div
                     class={{
                         'rux-form-field': true,
@@ -249,7 +250,11 @@ export class RuxInputField implements FormFieldInterface {
                         onBlur={() => _onBlur()}
                     ></input>
                 </div>
-            </FormField>
+                <FormFieldMessage
+                    errorText={errorText}
+                    helpText={helpText}
+                ></FormFieldMessage>
+            </Host>
         )
     }
 }

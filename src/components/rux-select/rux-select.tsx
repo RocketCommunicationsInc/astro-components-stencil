@@ -9,7 +9,7 @@ import {
     Watch,
     State,
 } from '@stencil/core'
-import FormField from '../../common/functional-components/FormField/FormField'
+import FormFieldMessage from '../../common/functional-components/FormFieldMessage/FormFieldMessage'
 import { FormFieldInterface } from '../../common/interfaces.module'
 import { hasSlot } from '../../utils/utils'
 
@@ -150,36 +150,37 @@ export class RuxSelect implements FormFieldInterface {
 
         return (
             <Host>
-                <FormField errorText={this.errorText} helpText={this.helpText}>
-                    <label
-                        id={labelId}
-                        htmlFor={inputId}
-                        aria-hidden={this.hasLabel ? 'false' : 'true'}
-                    >
-                        <span class={{ hidden: !this.hasLabel }}>
-                            <slot
-                                onSlotchange={this._handleLabelSlotChange}
-                                name="label"
-                            >
-                                {label}
-                            </slot>
-                        </span>
-                    </label>
-                    <select
-                        class={
-                            'rux-select ' +
-                            (invalid ? 'rux-select-invalid' : '')
-                        }
-                        id={inputId}
-                        disabled={disabled}
-                        required={required}
-                        name={name}
-                        onChange={(e) => this._onChange(e)}
-                        onBlur={() => this._onBlur()}
-                    >
-                        <slot onSlotchange={this._handleSlotChange}></slot>
-                    </select>
-                </FormField>
+                <label
+                    id={labelId}
+                    htmlFor={inputId}
+                    aria-hidden={this.hasLabel ? 'false' : 'true'}
+                >
+                    <span class={{ hidden: !this.hasLabel }}>
+                        <slot
+                            onSlotchange={this._handleLabelSlotChange}
+                            name="label"
+                        >
+                            {label}
+                        </slot>
+                    </span>
+                </label>
+                <select
+                    class={
+                        'rux-select ' + (invalid ? 'rux-select-invalid' : '')
+                    }
+                    id={inputId}
+                    disabled={disabled}
+                    required={required}
+                    name={name}
+                    onChange={(e) => this._onChange(e)}
+                    onBlur={() => this._onBlur()}
+                >
+                    <slot onSlotchange={this._handleSlotChange}></slot>
+                </select>
+                <FormFieldMessage
+                    errorText={this.errorText}
+                    helpText={this.helpText}
+                ></FormFieldMessage>
             </Host>
         )
     }

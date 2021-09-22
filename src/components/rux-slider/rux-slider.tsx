@@ -3,12 +3,13 @@ import {
     h,
     Prop,
     Element,
+    Host,
     Event,
     EventEmitter,
     Watch,
     State,
 } from '@stencil/core'
-import FormField from '../../common/functional-components/FormField/FormField'
+import FormFieldMessage from '../../common/functional-components/FormFieldMessage/FormFieldMessage'
 import { FormFieldInterface } from '../../common/interfaces.module'
 import { hasSlot, renderHiddenInput } from '../../utils/utils'
 
@@ -203,7 +204,7 @@ export class RuxSlider implements FormFieldInterface {
         renderHiddenInput(true, el, name, JSON.stringify(this.value), disabled)
 
         return (
-            <FormField helpText={this.helpText} errorText={this.errorText}>
+            <Host>
                 <div class="rux-form-field" part="form-field">
                     <label
                         class="rux-input-label"
@@ -232,7 +233,11 @@ export class RuxSlider implements FormFieldInterface {
                         ></input>
                     </div>
                 </div>
-            </FormField>
+                <FormFieldMessage
+                    helpText={this.helpText}
+                    errorText={this.errorText}
+                ></FormFieldMessage>
+            </Host>
         )
     }
 }

@@ -1,5 +1,5 @@
-import { Prop, Component, h, State, Element } from '@stencil/core'
-import FormField from '../../common/functional-components/FormField/FormField'
+import { Prop, Host, Component, h, State, Element } from '@stencil/core'
+import FormFieldMessage from '../../common/functional-components/FormFieldMessage/FormFieldMessage'
 import { hasSlot } from '../../utils/utils'
 
 /**
@@ -63,7 +63,7 @@ export class RuxCheckboxGroup {
 
     render() {
         return (
-            <FormField errorText={this.errorText} helpText={this.helpText}>
+            <Host>
                 <div class="rux-form-field" part="form-field">
                     <div
                         class={{
@@ -89,7 +89,11 @@ export class RuxCheckboxGroup {
                         <slot></slot>
                     </div>
                 </div>
-            </FormField>
+                <FormFieldMessage
+                    errorText={this.errorText}
+                    helpText={this.helpText}
+                ></FormFieldMessage>
+            </Host>
         )
     }
 }

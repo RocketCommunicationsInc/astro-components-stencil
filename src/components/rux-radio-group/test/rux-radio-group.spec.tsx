@@ -10,7 +10,6 @@ describe('rux-radio-group', () => {
         expect(page.root).toEqualHtml(`
           <rux-radio-group>
             <mock:shadow-root>
-            <div>
               <div class="rux-form-field" part="form-field">
                 <div class="hidden rux-label" part="label">
                   <slot name="label"></slot>
@@ -19,7 +18,6 @@ describe('rux-radio-group', () => {
                   <slot></slot>
                 </div>
               </div>
-            </div>
             </mock:shadow-root>
           </rux-radio-group>
         `)
@@ -32,7 +30,6 @@ describe('rux-radio-group', () => {
         expect(page.root).toEqualHtml(`
         <rux-radio-group label="hello">
           <mock:shadow-root>
-          <div>
           <div class="rux-form-field" part="form-field">
               <div class="rux-label" part="label">
                 <slot name="label">hello</slot>
@@ -41,7 +38,6 @@ describe('rux-radio-group', () => {
                 <slot></slot>
               </div>
             </div>
-          </div>
           </mock:shadow-root>
         </rux-radio-group>
       `)
@@ -55,7 +51,6 @@ describe('rux-radio-group', () => {
         expect(page.root).toEqualHtml(`
       <rux-radio-group>
         <mock:shadow-root>
-        <div>
         <div class="rux-form-field" part="form-field">
           <div class="rux-label" part="label">
             <slot name="label"></slot>
@@ -64,7 +59,6 @@ describe('rux-radio-group', () => {
             <slot></slot>
           </div>
           </div>
-        </div>
         </mock:shadow-root>
         <div slot="label">hello</div>
       </rux-radio-group>

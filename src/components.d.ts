@@ -12263,14 +12263,6 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
-          * The help or explanation text
-         */
-        "helpText"?: string;
-        /**
           * The switch label. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
@@ -32399,14 +32391,6 @@ declare namespace LocalJSX {
           * Disables the switch via HTML disabled attribute. Switch takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
         "disabled"?: boolean;
-        /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
-          * The help or explanation text
-         */
-        "helpText"?: string;
         /**
           * The switch label. For HTML content, use the `label` slot instead.
          */

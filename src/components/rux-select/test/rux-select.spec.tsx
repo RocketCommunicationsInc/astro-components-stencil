@@ -25,7 +25,6 @@ describe('rux-select', () => {
         })
         expect(page.root).toEqualHtml(`
      <rux-select label="Select an Option">
-     <div>
        <label aria-hidden="false">
         <span>
           <slot-fb name="label">
@@ -66,7 +65,6 @@ describe('rux-select', () => {
            </option>
          </optgroup>
        </select>
-       </div>
       </rux-select>
     `)
     })
@@ -95,7 +93,6 @@ describe('rux-select', () => {
         })
         expect(page.root).toEqualHtml(`
    <rux-select>
-   <div>
      <label aria-hidden="false">
       <span>
         <div slot="label">hello</div>
@@ -134,7 +131,6 @@ describe('rux-select', () => {
          </option>
        </optgroup>
      </select>
-     </div>
     </rux-select>
   `)
     })

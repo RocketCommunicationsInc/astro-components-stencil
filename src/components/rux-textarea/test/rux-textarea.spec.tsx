@@ -10,7 +10,6 @@ describe('rux-textarea', () => {
         expect(page.root).toEqualHtml(`
           <rux-textarea value="">
             <mock:shadow-root>
-            <div>
             <div class="rux-textarea-field" part="form-field">
               <label aria-hidden="true" class="rux-textarea-label" htmlfor="rux-textarea-1" part="label">
                 <span class="hidden">
@@ -18,7 +17,6 @@ describe('rux-textarea', () => {
                 </span>
               </label>
               <textarea aria-invalid="false" class="rux-textarea" id="rux-textarea-1" value=""></textarea>
-            </div>
             </div>
             </mock:shadow-root>
             <input class="aux-input" type="hidden" value="">
@@ -34,7 +32,6 @@ describe('rux-textarea', () => {
         expect(page.root).toEqualHtml(`
         <rux-textarea label="hello" value="">
           <mock:shadow-root>
-          <div>
           <div class="rux-textarea-field" part="form-field">
             <label aria-hidden="false" class="rux-textarea-label" htmlfor="rux-textarea-2" part="label">
               <span>
@@ -42,7 +39,6 @@ describe('rux-textarea', () => {
               </span>
             </label>
             <textarea aria-invalid="false" class="rux-textarea" id="rux-textarea-2" value=""></textarea>
-          </div>
           </div>
           </mock:shadow-root>
           <input class="aux-input" type="hidden" value="">
@@ -58,7 +54,6 @@ describe('rux-textarea', () => {
         expect(page.root).toEqualHtml(`
       <rux-textarea value="">
         <mock:shadow-root>
-          <div>
             <div class="rux-textarea-field" part="form-field">
               <label aria-hidden="false" class="rux-textarea-label" htmlfor="rux-textarea-3" part="label">
                 <span>
@@ -67,7 +62,6 @@ describe('rux-textarea', () => {
               </label>
               <textarea aria-invalid="false" class="rux-textarea" id="rux-textarea-3" value=""></textarea>
             </div>
-          </div>
         </mock:shadow-root>
         <div slot="label">hello</div>
         <input class="aux-input" type="hidden" value="">

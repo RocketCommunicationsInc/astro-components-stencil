@@ -6,8 +6,9 @@ import {
     EventEmitter,
     Element,
     Watch,
+    Host,
 } from '@stencil/core'
-import FormField from '../../common/functional-components/FormField/FormField'
+import FormFieldMessage from '../../common/functional-components/FormFieldMessage/FormFieldMessage'
 
 import { FormFieldInterface } from '../../common/interfaces.module'
 import { renderHiddenInput } from '../../utils/utils'
@@ -144,7 +145,7 @@ export class RuxCheckbox implements FormFieldInterface {
         }
 
         return (
-            <FormField helpText={helpText}>
+            <Host>
                 <div class="rux-form-field">
                     <div
                         class={{
@@ -179,7 +180,8 @@ export class RuxCheckbox implements FormFieldInterface {
                         </label>
                     </div>
                 </div>
-            </FormField>
+                <FormFieldMessage helpText={helpText}></FormFieldMessage>
+            </Host>
         )
     }
 }
