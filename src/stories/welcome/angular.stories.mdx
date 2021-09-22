@@ -4,6 +4,13 @@ import { Meta } from '@storybook/addon-docs/blocks'
 
 # Angular
 
+## Installation
+
+### Via NPM
+
+`npm i @astrouxds/astro-web-components`
+
+
 ## Integration of astro-web-components into an angular application.
 
 1. Include `CUSTOM_ELEMENTS_SCHEMA` in any module that uses an astro-web-component.
@@ -24,7 +31,7 @@ import { AppComponent } from './app.component'
 export class AppModule {}
 ```
 
-2. Define your Custom Elements in main.ts
+2. Define your Custom Elements in `main.ts`
 
 ```js
 import { enableProdMode } from '@angular/core'
@@ -45,7 +52,7 @@ platformBrowserDynamic()
 defineCustomElements()
 ```
 
-3. Add global components styling to angular application.
+3. Add global components styling to `angular.json`.
 
 ```json
  "architect": {
@@ -59,9 +66,38 @@ defineCustomElements()
     },
 ```
 
-4. (Optional) In order to set global astro-web-compoennts app styling onto your application.
-Add corresponding theme class (`dark-theme` or `light-theme`) to desire parent container.
-Usually the easiest way it to add it onto `<body>` tag of the `index.html` file.
+4. (Optional) In order to change global astro-web-compoennts styling from default `dark-theme` to `light-theme`.
+Add corresponding theme class (`light-theme`) to desire parent container.
+Usually the easiest way is to add it onto `<body>` tag of the `index.html` file.
+
+## Setting Props
+
+### Basic Data
+
+For basic primitive types like `string`, `boolean`, `number`, set the attribute on the element:
+
+```html
+<rux-button size="large"></rux-button>
+```
+
+### Dynamic Data
+
+Alternatively props can be set dynamically via property binding. This option comes in useful in `*ngFor` loops when
+data is not instantly available.
+
+```js
+const buttons = [
+    { size: 'small', type: 'button', text: 'First'},
+    { size: 'medium', type: 'button', text: 'Second'},
+    { size: 'large', type: 'submit', text: 'Submit'},
+];
+```
+
+```html
+<div *ngFor="let button of buttons">
+    <rux-button [size]="button.size" [type]="button.type">{{ button.text }}</rux-button>
+</div>
+```
 
 ## Using Slots
 
@@ -72,7 +108,7 @@ Slots give you full control over the contents of a component. Some components ma
 
 ```html
   <rux-global-status-bar>
-    <rux-icon slot="left-side" icon="apps" /></rux-icon>
+    <rux-icon slot="left-side" icon="apps"></rux-icon>
     <div slot="app-meta">
       <h1>Hello World</h1>
     </div>
@@ -100,13 +136,25 @@ onInputChange(e: CustomEvent<HTMLRuxInputFieldElement>){
 Some components offer public methods that can be executed. These methods are async and can be executed by setting a ViewChild decorator on the element.
 The Angular docs for setting and using `ViewChaild` decorator can be found [here](https://angular.io/api/core/ViewChild).
 
+```html
+      <rux-pop-up-menu #myPopUpMenu id="pop-up-menu">
+        <rux-menu-item value="1">Item 1</rux-menu-item>
+        <rux-menu-item-divider></rux-menu-item-divider>
+        <rux-menu-item value="2">Item 2</rux-menu-item>
+    </rux-pop-up-menu>
+```
+
 ```js
-export class HomeComponent {
+import { Component } from '@angular/core';
 
-    @ViewChild('test') myTestComponent: ElementRef<HTMLRuxInputFieldElement>;
-
+@Component({
+  selector: 'app-example',
+  templateUrl: './example.component.html',
+})
+export class ExampleComponent {
+    @ViewChild('myPopUpMenu') myTestPopUpMenu: ElementRef<HTMLRuxPopUpMenuElement>;
     async onAction() {
-        await this.myTestComponent.nativeElement.testComponentMethod();
+        await this.myTestPopUpMenu.nativeElement.isOpen();
     }
 }
 ```
@@ -129,6 +177,8 @@ import { Directive, ElementRef, forwardRef, HostListener } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Directive({
+  // directive taps directly into web component and changes its behavior by utilizing
+  // the same tag name as the original web component
   selector: 'rux-input',
   providers: [
     {
@@ -158,7 +208,7 @@ export class RuxInputDirective {
 
   constructor(private elementRef: ElementRef) {}
 
-  @HostListener('rux-change', ['$event.detail'])
+  @HostListener('rux-input', ['$event.detail'])
   listenForValueChange(value) {
     this.value = value;
   }
