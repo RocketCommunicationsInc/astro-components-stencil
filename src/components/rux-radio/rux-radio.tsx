@@ -44,7 +44,7 @@ export class RuxRadio {
     /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
-    @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
+    @Event({ eventName: 'rux-change', bubbles: false }) ruxChange!: EventEmitter
     /**
      * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
      */
