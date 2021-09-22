@@ -6,22 +6,32 @@ import {
     Host,
     h,
     Element,
+    State,
+    Watch,
 } from '@stencil/core'
-import { renderHiddenInput } from '../../utils/utils'
+import { FormFieldInterface } from '../../common/interfaces.module'
+import { hasSlot, renderHiddenInput } from '../../utils/utils'
 
 let id = 0
 
+/**
+ * @slot label - The input label
+ * @part form-field - The form-field wrapper container
+ * @part label - The input label when `label` prop is set
+ */
 @Component({
     tag: 'rux-input-field',
     styleUrl: 'rux-input-field.scss',
     shadow: true,
 })
-export class RuxInputField {
-    @Element() el!: HTMLRuxCheckboxElement
+export class RuxInputField implements FormFieldInterface {
+    @Element() el!: HTMLRuxInputFieldElement
     inputId = `rux-input-${++id}`
 
+    @State() hasLabelSlot = false
+
     /**
-     * The input label text
+     * The input label text. For HTML content, use the `label` slot instead.
      */
     @Prop() label?: string
     /**
@@ -40,7 +50,7 @@ export class RuxInputField {
     @Prop({ attribute: 'error-text' }) errorText?: string
 
     /**
-     * Marks the input as invalid
+     * Presentational only. Renders the Input Field as invalid.
      */
     @Prop() invalid = false
 
@@ -111,9 +121,30 @@ export class RuxInputField {
      */
     @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
 
+    @Watch('label')
+    handleLabelChange() {
+        this._handleSlotChange()
+    }
+
     connectedCallback() {
         this._onChange = this._onChange.bind(this)
         this._onInput = this._onInput.bind(this)
+        this._handleSlotChange = this._handleSlotChange.bind(this)
+    }
+
+    disconnectedCallback() {
+        this.el!.shadowRoot!.removeEventListener(
+            'slotchange',
+            this._handleSlotChange
+        )
+    }
+
+    componentWillLoad() {
+        this._handleSlotChange()
+    }
+
+    get hasLabel() {
+        return this.label ? true : this.hasLabelSlot
     }
 
     private _onChange(e: Event) {
@@ -130,6 +161,10 @@ export class RuxInputField {
 
     private _onBlur = () => {
         this.ruxBlur.emit()
+    }
+
+    private _handleSlotChange() {
+        this.hasLabelSlot = hasSlot(this.el, 'label')
     }
 
     render() {
@@ -163,12 +198,33 @@ export class RuxInputField {
                         'rux-form-field': true,
                         'rux-form-field--small': small,
                     }}
+                    part="form-field"
                 >
-                    <label class="rux-input-label" htmlFor={inputId}>
-                        {label}
-                        {this.required && (
-                            <span class="rux-input-label__asterisk">&#42;</span>
-                        )}
+                    <label
+                        class={{
+                            'rux-input-label': true,
+                        }}
+                        part="label"
+                        aria-hidden={this.hasLabel ? 'false' : 'true'}
+                        htmlFor={inputId}
+                    >
+                        <span
+                            class={{
+                                hidden: !this.hasLabel,
+                            }}
+                        >
+                            <slot
+                                name="label"
+                                onSlotchange={this._handleSlotChange}
+                            >
+                                {label}
+                                {this.required && (
+                                    <span class="rux-input-label__asterisk">
+                                        &#42;
+                                    </span>
+                                )}
+                            </slot>
+                        </span>
                     </label>
                     <input
                         name={name}

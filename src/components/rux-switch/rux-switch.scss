@@ -104,36 +104,6 @@
         }
     }
 
-    &--has-error {
-        .rux-switch {
-            &__input {
-                + .rux-switch__button {
-                    &::before,
-                    &:after {
-                        border-color: var(--color-critical);
-                    }
-                    &:before {
-                        background-color: var(--color-critical);
-                    }
-                }
-            }
-
-            &:hover {
-                .rux-switch__input {
-                    + .rux-switch__button {
-                        &::before,
-                        &:after {
-                            border-color: var(--color-critical);
-                        }
-                        &:before {
-                            background-color: var(--color-critical);
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     // :before -> Track, :after -> Button
     &:hover {
         .rux-switch__input {
@@ -166,6 +136,10 @@
             }
         }
     }
+}
+
+.rux-switch__label {
+    margin-left: 0.75rem;
 }
 
 .rux-form-field {
@@ -202,6 +176,7 @@
     font-family: var(--font-family);
     font-weight: bold;
 }
+.hidden,
 :host([hidden]) {
     display: none;
 }

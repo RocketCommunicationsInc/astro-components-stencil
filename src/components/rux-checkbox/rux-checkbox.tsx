@@ -7,6 +7,8 @@ import {
     Element,
     Watch,
 } from '@stencil/core'
+
+import { FormFieldInterface } from '../../common/interfaces.module'
 import { renderHiddenInput } from '../../utils/utils'
 
 let id = 0
@@ -19,7 +21,7 @@ let id = 0
     styleUrl: 'rux-checkbox.scss',
     shadow: true,
 })
-export class RuxCheckbox {
+export class RuxCheckbox implements FormFieldInterface {
     private checkboxId = `rux-checkbox-${++id}`
     private _inputEl?: HTMLInputElement
 
@@ -31,11 +33,6 @@ export class RuxCheckbox {
     @Prop({ attribute: 'help-text' }) helpText?: string
 
     /**
-     * The validation error text
-     */
-    @Prop({ attribute: 'error-text' }) errorText?: string
-
-    /**
      * The checkbox name
      */
     @Prop() name = ''
@@ -43,6 +40,11 @@ export class RuxCheckbox {
      * The checkbox value
      */
     @Prop({ reflect: true, mutable: true }) value: string = ''
+
+    /**
+     * The checkbox label text. For HTML content, use the default slot instead.
+     */
+    @Prop() label?: string
 
     /**
      * Toggles checked state of a checkbox
@@ -70,11 +72,6 @@ export class RuxCheckbox {
      * Disables the checkbox via HTML disabled attribute. Checkbox takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
      */
     @Prop({ reflect: true }) disabled: boolean = false
-
-    /**
-     * Sets the input as required
-     */
-    @Prop() required: boolean = false
 
     /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
@@ -128,10 +125,8 @@ export class RuxCheckbox {
             checkboxId,
             checked,
             disabled,
-            errorText,
             helpText,
             name,
-            required,
             value,
             indeterminate,
         } = this
@@ -153,9 +148,7 @@ export class RuxCheckbox {
                     class={{
                         'rux-checkbox': true,
                         'rux-checkbox--indeterminate': indeterminate,
-                        'rux-checkbox--has-error': required,
-                        'rux-checkbox--has-text':
-                            errorText !== undefined || helpText !== undefined,
+                        'rux-checkbox--has-text': helpText !== undefined,
                     }}
                 >
                     <input
@@ -163,7 +156,6 @@ export class RuxCheckbox {
                         name={name}
                         id={checkboxId}
                         disabled={disabled}
-                        required={required}
                         checked={checked}
                         //Allows storybook's indetermiante control to take effect.
                         indeterminate={indeterminate}
@@ -174,16 +166,17 @@ export class RuxCheckbox {
                         ref={(el) => (this._inputEl = el)}
                     />
                     <label htmlFor={checkboxId}>
-                        <slot></slot>
+                        {this.label}
+                        <span
+                            class={{
+                                hidden: !!this.label,
+                            }}
+                        >
+                            <slot></slot>
+                        </span>
                     </label>
                 </div>
-                {this.helpText && !this.errorText && (
-                    <div class="rux-help-text">{helpText}</div>
-                )}
-
-                {this.errorText && (
-                    <div class="rux-error-text">{errorText}</div>
-                )}
+                {this.helpText && <div class="rux-help-text">{helpText}</div>}
             </div>
         )
     }

@@ -1,4 +1,6 @@
-:root {
+// Dark/Default Theme Variables Mixin
+// This a mixin to allow for variables to be included in the shadow dom of a component and overwrite global thmese when necessary.
+@mixin root-variables {
     --background: #101923;
     --global-status-bar: #172635;
     --surface: #1b2d3e;
@@ -165,4 +167,16 @@
     --color-scrollbar-background-thumb-hover: #3a81bf;
     --color-scrollbar-background-track: #203246;
     --color-scrollbar-corner-background: #203246;
+
+    /*
+      Dev only
+      ==========================================================================
+    */
+    --spacing-input-label-top: 0.375rem;
+    --spacing-input-label-left: 0.625rem; //10px;
+}
+
+// Sets default theme variables for component library
+:root {
+    @include root-variables;
 }
