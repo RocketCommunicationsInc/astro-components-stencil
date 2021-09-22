@@ -9,8 +9,6 @@ import {
     Watch,
     State,
 } from '@stencil/core'
-import FormField from '../../common/functional-components/FormField/FormField'
-import { FormFieldInterface } from '../../common/interfaces.module'
 import { hasSlot, renderHiddenInput } from '../../utils/utils'
 
 let id = 0
@@ -23,20 +21,10 @@ let id = 0
     styleUrl: 'rux-switch.scss',
     shadow: true,
 })
-export class RuxSwitch implements FormFieldInterface {
+export class RuxSwitch {
     switchId = `rux-switch-${++id}`
     @Element() el!: HTMLRuxSwitchElement
     @State() hasLabelSlot = false
-
-    /**
-     * The help or explanation text
-     */
-    @Prop({ attribute: 'help-text' }) helpText?: string
-
-    /**
-     * The validation error text
-     */
-    @Prop({ attribute: 'error-text' }) errorText?: string
 
     /**
      * The switch name
@@ -125,15 +113,7 @@ export class RuxSwitch implements FormFieldInterface {
     }
 
     render() {
-        const {
-            switchId,
-            checked,
-            disabled,
-            errorText,
-            helpText,
-            name,
-            value,
-        } = this
+        const { switchId, checked, disabled, name, value } = this
 
         renderHiddenInput(
             true,
@@ -151,46 +131,41 @@ export class RuxSwitch implements FormFieldInterface {
                 aria-hidden={disabled ? 'true' : null}
                 role="switch"
             >
-                <FormField errorText={errorText} helpText={helpText}>
-                    <div
-                        class={{
-                            'rux-switch': true,
-                            'rux-switch--has-text':
-                                errorText !== undefined ||
-                                helpText !== undefined,
-                        }}
-                    >
-                        <input
-                            role="switch"
-                            type="checkbox"
-                            class="rux-switch__input"
-                            name={name}
-                            id={switchId}
-                            disabled={disabled}
-                            checked={checked}
-                            value={value}
-                            aria-checked={`${checked}`}
-                            onChange={this._onChange}
-                            onInput={this._onInput}
-                            onBlur={() => this._onBlur()}
-                        />
-                        <label class="rux-switch__button" htmlFor={switchId}>
-                            <span
-                                class={{
-                                    'rux-switch__label': true,
-                                    hidden: !this.hasLabel,
-                                }}
+                <div
+                    class={{
+                        'rux-switch': true,
+                    }}
+                >
+                    <input
+                        role="switch"
+                        type="checkbox"
+                        class="rux-switch__input"
+                        name={name}
+                        id={switchId}
+                        disabled={disabled}
+                        checked={checked}
+                        value={value}
+                        aria-checked={`${checked}`}
+                        onChange={this._onChange}
+                        onInput={this._onInput}
+                        onBlur={() => this._onBlur()}
+                    />
+                    <label class="rux-switch__button" htmlFor={switchId}>
+                        <span
+                            class={{
+                                'rux-switch__label': true,
+                                hidden: !this.hasLabel,
+                            }}
+                        >
+                            <slot
+                                onSlotchange={this._handleSlotChange}
+                                name="label"
                             >
-                                <slot
-                                    onSlotchange={this._handleSlotChange}
-                                    name="label"
-                                >
-                                    {this.label}
-                                </slot>
-                            </span>
-                        </label>
-                    </div>
-                </FormField>
+                                {this.label}
+                            </slot>
+                        </span>
+                    </label>
+                </div>
             </Host>
         )
     }
