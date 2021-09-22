@@ -1,6 +1,6 @@
 # Change Log
 
-## [0.0.15] (unreleased)
+## [0.0.15] 2021-09-22
 
 ### Breaking Changes
 
