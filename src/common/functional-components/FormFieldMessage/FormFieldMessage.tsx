@@ -10,14 +10,17 @@ const FormFieldMessage = (props: FormFieldMessageInterface, children: any) => {
 
     return (
         (helpText || errorText) && (
-            <div>
+            <div
+                class={{
+                    'rux-error-text': errorText !== undefined,
+                    'rux-help-text': helpText !== undefined && !errorText,
+                }}
+            >
                 {children}
 
-                {helpText && !errorText && (
-                    <div class="rux-help-text">{helpText}</div>
-                )}
+                {helpText && !errorText && helpText}
 
-                {errorText && <div class="rux-error-text">{errorText}</div>}
+                {errorText && errorText}
             </div>
         )
     )
