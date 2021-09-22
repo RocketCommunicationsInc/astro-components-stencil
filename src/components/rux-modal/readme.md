@@ -69,6 +69,13 @@ Pass properties as attributes of the Astro Rux Modal custom element:
 | `rux-modal-closed` | Event that is fired when modal closes | `CustomEvent<boolean>` |
 
 
+## Shadow Parts
+
+| Part        | Description               |
+| ----------- | ------------------------- |
+| `"wrapper"` | the modal wrapper overlay |
+
+
 ## CSS Custom Properties
 
 | Name                       | Description            |

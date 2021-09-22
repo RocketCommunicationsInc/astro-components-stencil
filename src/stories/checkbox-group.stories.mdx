@@ -3,51 +3,44 @@ import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
 import { html, render } from 'lit-html'
 
 <Meta
-    title="Forms/Radio Group"
-    component="rux-radio-group"
-    subcomponents={{ 'Rux Radio': 'rux-radio' }}
-    argTypes={extractArgTypes('rux-radio-group')}
-    parameters={{
-       actions: {
-        handles: ['rux-change rux-radio-group'],
-      },
-    }}
+    title="Forms/Checkbox Group"
+    component="rux-checkbox-group"
+    subcomponents={{ 'RuxCheckbox': 'rux-checkbox' }}
+    argTypes={extractArgTypes('rux-checkbox-group')}
 />
 
-# Radio Group
+# Checkbox Group
 
-Radio Group allows users to interact with a group of radio buttons as a single control. When one selection is made, the previous selection becomes deselected. One option should always be selected.
-
-The Radio Group component is responsible for checking and unchecking individual Radio component's inside the group. The Radio component is only responsible for displaying the checked or unchecked state.
+The Checkbox Group component is responsible for display invalid state and error text.
 
 ## Guidelines
 
--   [Astro UXDS: Radio Buttons](https://www.astrouxds.com/ui-components/radio-button)
+-   [Astro UXDS: Checkbox](https://www.astrouxds.com/ui-components/checkbox)
 -   [Astro UXDS: Form and Input Validation](https://www.astrouxds.com/ui-components/validation)
 
 
 export const Default = (args) => {
     return html`
-        <rux-radio-group
-          name="radios"
+        <rux-checkbox-group
+          name="checkboxes"
           .label="${args.label}"
           .value="${args.value}"
           ?invalid="${args.invalid}"
           .helpText="${args.helpText}"
           .errorText="${args.errorText}"
         >
-          <rux-radio value="one" name="radios">One</rux-radio>
-          <rux-radio value="two" name="radios">Two</rux-radio>
-          <rux-radio value="three" name="radios">Three</rux-radio>
-        </rux-radio-group>
+          <rux-checkbox value="one" name="checkboxes">One</rux-checkbox>
+          <rux-checkbox value="two" name="checkboxes">Two</rux-checkbox>
+          <rux-checkbox value="three" name="checkboxes">Three</rux-checkbox>
+        </rux-checkbox-group>
     `
 }
 
 <Canvas>
     <Story
       args={{
-        name: 'radios',
-        label: 'Radio group'
+        name: 'checkboxes',
+        label: 'Checkbox group'
       }}
       name="Default"
     >
@@ -57,13 +50,7 @@ export const Default = (args) => {
 
 ## API
 
-<ArgsTable of="rux-radio-group" />
-
-## Usage
-
-### Marking a radio as checked
-
-Make use of the `value` property to control the state of the checked radio value.
+<ArgsTable of="rux-checkbox-group" />
 
 ## Variants
 
@@ -71,26 +58,26 @@ Make use of the `value` property to control the state of the checked radio value
 
 export const Invalid = (args) => {
     return html`
-        <rux-radio-group
-          name="radios"
+        <rux-checkbox-group
+          name="checkboxes"
           .label="${args.label}"
           .value="${args.value}"
           ?invalid="${args.invalid}"
           .helpText="${args.helpText}"
           .errorText="${args.errorText}"
         >
-          <rux-radio value="one" name="radios">One</rux-radio>
-          <rux-radio value="two" name="radios">Two</rux-radio>
-          <rux-radio value="three" name="radios">Three</rux-radio>
-        </rux-radio-group>
+          <rux-checkbox value="one" name="checkboxes">One</rux-checkbox>
+          <rux-checkbox value="two" name="checkboxes">Two</rux-checkbox>
+          <rux-checkbox value="three" name="checkboxes">Three</rux-checkbox>
+        </rux-checkbox-group>
     `
 }
 
 <Canvas>
     <Story
       args={{
-        name: 'radios',
-        label: 'Radio group',
+        name: 'checkboxes',
+        label: 'Checkbox group',
         invalid: true
       }}
       name="Invalid"
@@ -103,26 +90,26 @@ export const Invalid = (args) => {
 
 export const WithHelpText = (args) => {
     return html`
-        <rux-radio-group
-          name="radios"
+        <rux-checkbox-group
+          name="checkboxes"
           .label="${args.label}"
           .value="${args.value}"
           ?invalid="${args.invalid}"
           .helpText="${args.helpText}"
           .errorText="${args.errorText}"
         >
-          <rux-radio value="one" name="radios">One</rux-radio>
-          <rux-radio value="two" name="radios">Two</rux-radio>
-          <rux-radio value="three" name="radios">Three</rux-radio>
-        </rux-radio-group>
+          <rux-checkbox value="one" name="checkboxes">One</rux-checkbox>
+          <rux-checkbox value="two" name="checkboxes">Two</rux-checkbox>
+          <rux-checkbox value="three" name="checkboxes">Three</rux-checkbox>
+        </rux-checkbox-group>
     `
 }
 
 <Canvas>
     <Story
       args={{
-        name: 'radios',
-        label: 'Radio group',
+        name: 'checkboxes',
+        label: 'Checkbox group',
         helpText: 'Help text'
       }}
       name="With Help Text"
@@ -135,26 +122,26 @@ export const WithHelpText = (args) => {
 
 export const WithErrorText = (args) => {
     return html`
-        <rux-radio-group
-          name="radios"
+        <rux-checkbox-group
+          name="checkboxes"
           .label="${args.label}"
           .value="${args.value}"
           ?invalid="${args.invalid}"
           .helpText="${args.helpText}"
           .errorText="${args.errorText}"
         >
-          <rux-radio value="one" name="radios">One</rux-radio>
-          <rux-radio value="two" name="radios">Two</rux-radio>
-          <rux-radio value="three" name="radios">Three</rux-radio>
-        </rux-radio-group>
+          <rux-checkbox value="one" name="checkboxes">One</rux-checkbox>
+          <rux-checkbox value="two" name="checkboxes">Two</rux-checkbox>
+          <rux-checkbox value="three" name="checkboxes">Three</rux-checkbox>
+        </rux-checkbox-group>
     `
 }
 
 <Canvas>
     <Story
       args={{
-        name: 'radios',
-        label: 'Radio group',
+        name: 'checkboxes',
+        label: 'Checkbox group',
         errorText: 'Error text'
       }}
       name="With Error Text"
@@ -169,12 +156,12 @@ export const WithErrorText = (args) => {
 
 You can utilize the `form-field` and `label` Shadow Parts to have full control over label placement. For example:
 ```css
-rux-radio-group::part(form-field) {
+rux-checkbox-group::part(form-field) {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-rux-radio-group::part(label) {
+rux-checkbox-group::part(label) {
   margin-right: var(--spacing-input-label-left);
 }
 ```
@@ -190,11 +177,11 @@ export const HorizontalLabel = (args) => {
         margin-right: var(--spacing-input-label-left);
       }
     </style>
-      <rux-radio-group id="left-example" label="Label">
-        <rux-radio value="1">one</rux-radio>
-        <rux-radio value="2">two</rux-radio>
-        <rux-radio value="3">three</rux-radio>
-      </rux-radio-group>
+      <rux-checkbox-group id="left-example" label="Label">
+        <rux-checkbox value="1">one</rux-checkbox>
+        <rux-checkbox value="2">two</rux-checkbox>
+        <rux-checkbox value="3">three</rux-checkbox>
+      </rux-checkbox-group>
     `
 }
 
@@ -211,9 +198,9 @@ export const HorizontalLabel = (args) => {
 If you're already utilizing a build system that supports tree shaking and want to only import this individual component:
 
 ```js
-import RuxRadio from '@astrouxds/astro-web-components/dist/components/rux-radio.js'
-import RuxRadioGroup from '@astrouxds/astro-web-components/dist/components/rux-radio-group.js'
-customElements.define('rux-radio', RuxRadio)
-customElements.define('rux-radio-group', RuxRadioGroup)
+import RuxCheckbox from '@astrouxds/astro-web-components/dist/components/rux-checkbox.js'
+import RuxCheckboxGroup from '@astrouxds/astro-web-components/dist/components/rux-checkbox-group.js'
+customElements.define('rux-checkbox', RuxCheckbox)
+customElements.define('rux-checkbox-group', RuxCheckboxGroup)
 ```
 

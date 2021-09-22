@@ -1,6 +1,6 @@
 describe('Radio Group', () => {
     it('renders', () => {
-        cy.visitStory('components-radio-group--default-story')
+        cy.visitStory('forms-radio-group--default-story')
         cy.get('rux-radio-group').should('have.class', 'hydrated')
     })
 })
@@ -9,6 +9,14 @@ describe('Radio Group with Form', () => {
     beforeEach(() => {
         cy.visitForm('radio')
     })
+
+    it('first radio is slected by default', () => {
+        cy.get('#ruxRadioDefaultOne')
+            .shadow()
+            .find('input')
+            .should('be.checked')
+    })
+
     it('submits the correct value when using a form', () => {
         cy.get('#ruxRadioBlue').shadow().find('input').click({ force: true })
         cy.get('#nativeRadioBlue').click()
