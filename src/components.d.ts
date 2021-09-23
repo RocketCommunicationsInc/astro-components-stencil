@@ -12036,12 +12036,9 @@ export namespace Components {
          */
         "open": boolean;
         /**
-          * The background color. Possible values include 'standby', 'normal', 'caution', and 'critical'. See [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/).
+          * The background color. Possible values include 'off', 'standby', 'normal', 'caution', 'serious' and 'critical'. See [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/).
          */
-        "status": | 'standby'
-        | 'normal'
-        | 'caution'
-        | 'critical';
+        "status": Status;
     }
     interface RuxPopUpMenu {
         /**
@@ -12097,6 +12094,14 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
+          * For a [button style guide, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+         */
+        "icon"?: string;
+        /**
+          * Hides slotted text from the button by setting rux-button--icon-only class
+         */
+        "iconOnly": boolean;
+        /**
           * The label of the push button.
          */
         "label": string;
@@ -12104,6 +12109,10 @@ export namespace Components {
           * The name of the push button.
          */
         "name": string;
+        /**
+          * Changes size of a push button from standard to small or large by setting sizing classes rux-button--small rux-button--large
+         */
+        "size"?: 'small' | 'medium' | 'large';
         /**
           * The value of the push button.
          */
@@ -12173,6 +12182,14 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
           * Id for the Select Input
          */
         "inputId"?: string;
@@ -12206,6 +12223,14 @@ export namespace Components {
           * Determines if the slider is disabled.
          */
         "disabled": boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
         /**
           * The slider label text. For HTML content, use the `label` slot instead.
          */
@@ -12246,14 +12271,6 @@ export namespace Components {
           * Disables the switch via HTML disabled attribute. Switch takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
         "disabled": boolean;
-        /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
-          * The help or explanation text
-         */
-        "helpText"?: string;
         /**
           * The switch label. For HTML content, use the `label` slot instead.
          */
@@ -32117,12 +32134,9 @@ declare namespace LocalJSX {
          */
         "open"?: boolean;
         /**
-          * The background color. Possible values include 'standby', 'normal', 'caution', and 'critical'. See [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/).
+          * The background color. Possible values include 'off', 'standby', 'normal', 'caution', 'serious' and 'critical'. See [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/).
          */
-        "status"?: | 'standby'
-        | 'normal'
-        | 'caution'
-        | 'critical';
+        "status"?: Status;
     }
     interface RuxPopUpMenu {
         /**
@@ -32178,6 +32192,14 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
+          * For a [button style guide, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+         */
+        "icon"?: string;
+        /**
+          * Hides slotted text from the button by setting rux-button--icon-only class
+         */
+        "iconOnly"?: boolean;
+        /**
           * The label of the push button.
          */
         "label"?: string;
@@ -32193,6 +32215,10 @@ declare namespace LocalJSX {
           * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
          */
         "onRux-change"?: (event: CustomEvent<any>) => void;
+        /**
+          * Changes size of a push button from standard to small or large by setting sizing classes rux-button--small rux-button--large
+         */
+        "size"?: 'small' | 'medium' | 'large';
         /**
           * The value of the push button.
          */
@@ -32278,6 +32304,14 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
           * Id for the Select Input
          */
         "inputId"?: string;
@@ -32319,6 +32353,14 @@ declare namespace LocalJSX {
           * Determines if the slider is disabled.
          */
         "disabled"?: boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
         /**
           * The slider label text. For HTML content, use the `label` slot instead.
          */
@@ -32367,14 +32409,6 @@ declare namespace LocalJSX {
           * Disables the switch via HTML disabled attribute. Switch takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
         "disabled"?: boolean;
-        /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
-          * The help or explanation text
-         */
-        "helpText"?: string;
         /**
           * The switch label. For HTML content, use the `label` slot instead.
          */
