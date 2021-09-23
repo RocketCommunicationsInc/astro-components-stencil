@@ -41,6 +41,14 @@
 | `"label"` | The input label |
 
 
+## Shadow Parts
+
+| Part           | Description                              |
+| -------------- | ---------------------------------------- |
+| `"form-field"` | The form-field wrapper container         |
+| `"label"`      | The input label when `label` prop is set |
+
+
 ## CSS Custom Properties
 
 | Name                                 | Description                              |
@@ -62,8 +70,8 @@
 ### Graph
 ```mermaid
 graph TD;
-  rux-log --> rux-input-field
-  style rux-input-field fill:#f9f,stroke:#333,stroke-width:4px
+  rux-log --> rux-input
+  style rux-input fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

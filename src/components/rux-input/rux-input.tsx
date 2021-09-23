@@ -1,14 +1,15 @@
 import {
     Prop,
+    Host,
     Component,
     Event,
     EventEmitter,
-    Host,
     h,
     Element,
     State,
     Watch,
 } from '@stencil/core'
+import FormFieldMessage from '../../common/functional-components/FormFieldMessage/FormFieldMessage'
 import { FormFieldInterface } from '../../common/interfaces.module'
 import { hasSlot, renderHiddenInput } from '../../utils/utils'
 
@@ -20,12 +21,12 @@ let id = 0
  * @part label - The input label when `label` prop is set
  */
 @Component({
-    tag: 'rux-input-field',
-    styleUrl: 'rux-input-field.scss',
+    tag: 'rux-input',
+    styleUrl: 'rux-input.scss',
     shadow: true,
 })
-export class RuxInputField implements FormFieldInterface {
-    @Element() el!: HTMLRuxInputFieldElement
+export class RuxInput implements FormFieldInterface {
+    @Element() el!: HTMLRuxInputElement
     inputId = `rux-input-${++id}`
 
     @State() hasLabelSlot = false
@@ -249,12 +250,10 @@ export class RuxInputField implements FormFieldInterface {
                         onBlur={() => _onBlur()}
                     ></input>
                 </div>
-
-                {helpText && !errorText && (
-                    <div class="rux-help-text">{helpText}</div>
-                )}
-
-                {errorText && <div class="rux-error-text">{errorText}</div>}
+                <FormFieldMessage
+                    errorText={errorText}
+                    helpText={helpText}
+                ></FormFieldMessage>
             </Host>
         )
     }
