@@ -11,7 +11,8 @@ For example, this won't work:
 <rux-button style="background:red;">button</rux-button>
 ```
 
-This is a feature of the Shadow DOM--outside styles cannot be applied to content inside the Shadow DOM. Luckily, the Web Component spec provides two solutions
+This is a feature of the Shadow DOM--outside styles cannot be applied to content inside the Shadow DOM. Shadow DOM gives us a clean, native way
+of encapsulating styles and protects your applications from breaking changes. Luckily, the Shadow DOM API provides two solutions
 to this problem: CSS Custom Properties and CSS Shadow Parts.
 
 
@@ -36,7 +37,8 @@ the styling of a component's underlying Shadow DOM parts.
 
 If a component has any available Shadow Parts, they will be documented under their API section.
 
-If you wanted to create a horizontal label, you could do the following:
+To style a Shadow Part, use the [::part` pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/::part).
+For example, if you wanted a horizontal label, you could style the `form-field` and `label` Shadow Parts:
 ```css
 rux-input::part(form-field) {
   flex-direction: row;
@@ -46,4 +48,3 @@ rux-input::part(label) {
   margin-right: 1rem;
 }
 ```
-
