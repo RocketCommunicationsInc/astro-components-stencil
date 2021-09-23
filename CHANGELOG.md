@@ -1,6 +1,6 @@
 # Change Log
 
-## [0.0.16] (unreleased)
+## [0.0.16] 2021-09-23
 
 ### Switch
 
@@ -31,8 +31,6 @@
 ### Switch
 
 -   `required` prop has been removed.
--   `help-text` prop has been removed.
--   `error-text` prop has been removed.
 
 ## [0.0.14] 2021-09-10
 
