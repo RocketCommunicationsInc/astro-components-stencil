@@ -19,6 +19,10 @@
 
 ### Breaking Changes
 
+#### Input Field
+
+-   Component has been renamed to `rux-input` for convenience.
+
 #### Checkbox
 
 -   `required` prop has been removed. Use Checkbox Group component instead to display invalid state.
@@ -27,6 +31,8 @@
 ### Switch
 
 -   `required` prop has been removed.
+-   `help-text` prop has been removed.
+-   `error-text` prop has been removed.
 
 ## [0.0.14] 2021-09-10
 

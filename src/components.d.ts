@@ -11842,7 +11842,7 @@ export namespace Components {
         | 'auto'
         | string;
     }
-    interface RuxInputField {
+    interface RuxInput {
         /**
           * Disables the button via HTML disabled attribute. Button takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
@@ -12182,6 +12182,14 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
           * Id for the Select Input
          */
         "inputId"?: string;
@@ -12215,6 +12223,14 @@ export namespace Components {
           * Determines if the slider is disabled.
          */
         "disabled": boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
         /**
           * The slider label text. For HTML content, use the `label` slot instead.
          */
@@ -12255,14 +12271,6 @@ export namespace Components {
           * Disables the switch via HTML disabled attribute. Switch takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
         "disabled": boolean;
-        /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
-          * The help or explanation text
-         */
-        "helpText"?: string;
         /**
           * The switch label. For HTML content, use the `label` slot instead.
          */
@@ -18776,11 +18784,11 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement;
         new (): HTMLRuxIconZoomOutMapElement;
     };
-    interface HTMLRuxInputFieldElement extends Components.RuxInputField, HTMLStencilElement {
+    interface HTMLRuxInputElement extends Components.RuxInput, HTMLStencilElement {
     }
-    var HTMLRuxInputFieldElement: {
-        prototype: HTMLRuxInputFieldElement;
-        new (): HTMLRuxInputFieldElement;
+    var HTMLRuxInputElement: {
+        prototype: HTMLRuxInputElement;
+        new (): HTMLRuxInputElement;
     };
     interface HTMLRuxLogElement extends Components.RuxLog, HTMLStencilElement {
     }
@@ -20033,7 +20041,7 @@ declare global {
         "rux-icon-zoom-in-map": HTMLRuxIconZoomInMapElement;
         "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
-        "rux-input-field": HTMLRuxInputFieldElement;
+        "rux-input": HTMLRuxInputElement;
         "rux-log": HTMLRuxLogElement;
         "rux-menu-item": HTMLRuxMenuItemElement;
         "rux-menu-item-divider": HTMLRuxMenuItemDividerElement;
@@ -31912,7 +31920,7 @@ declare namespace LocalJSX {
         | 'auto'
         | string;
     }
-    interface RuxInputField {
+    interface RuxInput {
         /**
           * Disables the button via HTML disabled attribute. Button takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
@@ -32292,6 +32300,14 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
           * Id for the Select Input
          */
         "inputId"?: string;
@@ -32333,6 +32349,14 @@ declare namespace LocalJSX {
           * Determines if the slider is disabled.
          */
         "disabled"?: boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
         /**
           * The slider label text. For HTML content, use the `label` slot instead.
          */
@@ -32381,14 +32405,6 @@ declare namespace LocalJSX {
           * Disables the switch via HTML disabled attribute. Switch takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
         "disabled"?: boolean;
-        /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
-          * The help or explanation text
-         */
-        "helpText"?: string;
         /**
           * The switch label. For HTML content, use the `label` slot instead.
          */
@@ -33607,7 +33623,7 @@ declare namespace LocalJSX {
         "rux-icon-zoom-in-map": RuxIconZoomInMap;
         "rux-icon-zoom-out": RuxIconZoomOut;
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
-        "rux-input-field": RuxInputField;
+        "rux-input": RuxInput;
         "rux-log": RuxLog;
         "rux-menu-item": RuxMenuItem;
         "rux-menu-item-divider": RuxMenuItemDivider;
@@ -34709,7 +34725,7 @@ declare module "@stencil/core" {
             "rux-icon-zoom-in-map": LocalJSX.RuxIconZoomInMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomInMapElement>;
             "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
-            "rux-input-field": LocalJSX.RuxInputField & JSXBase.HTMLAttributes<HTMLRuxInputFieldElement>;
+            "rux-input": LocalJSX.RuxInput & JSXBase.HTMLAttributes<HTMLRuxInputElement>;
             "rux-log": LocalJSX.RuxLog & JSXBase.HTMLAttributes<HTMLRuxLogElement>;
             "rux-menu-item": LocalJSX.RuxMenuItem & JSXBase.HTMLAttributes<HTMLRuxMenuItemElement>;
             "rux-menu-item-divider": LocalJSX.RuxMenuItemDivider & JSXBase.HTMLAttributes<HTMLRuxMenuItemDividerElement>;
