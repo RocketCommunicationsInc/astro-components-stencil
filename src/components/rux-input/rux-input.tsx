@@ -1,13 +1,13 @@
 import {
+    Prop,
+    Host,
     Component,
-    h,
     Event,
     EventEmitter,
-    Host,
-    Prop,
+    h,
     Element,
-    Watch,
     State,
+    Watch,
 } from '@stencil/core'
 import FormFieldMessage from '../../common/functional-components/FormFieldMessage/FormFieldMessage'
 import { FormFieldInterface } from '../../common/interfaces.module'
@@ -16,30 +16,32 @@ import { hasSlot, renderHiddenInput } from '../../utils/utils'
 let id = 0
 
 /**
- * @slot label - The textarea label
+ * @slot label - The input label
  * @part form-field - The form-field wrapper container
  * @part label - The input label when `label` prop is set
  */
 @Component({
-    tag: 'rux-textarea',
-    styleUrl: 'rux-textarea.scss',
+    tag: 'rux-input',
+    styleUrl: 'rux-input.scss',
     shadow: true,
 })
-export class RuxTextarea implements FormFieldInterface {
-    inputId = `rux-textarea-${++id}`
+export class RuxInput implements FormFieldInterface {
+    @Element() el!: HTMLRuxInputElement
+    inputId = `rux-input-${++id}`
+
     @State() hasLabelSlot = false
 
     /**
-     * The textarea label text. For HTML content, use the `label` slot instead.
+     * The input label text. For HTML content, use the `label` slot instead.
      */
     @Prop() label?: string
     /**
-     * The textarea placeholder text
+     * The input placeholder text
      */
     @Prop() placeholder?: string
 
     /**
-     * The  or explanation text
+     * The help or explanation text
      */
     @Prop({ attribute: 'help-text' }) helpText?: string
 
@@ -49,7 +51,7 @@ export class RuxTextarea implements FormFieldInterface {
     @Prop({ attribute: 'error-text' }) errorText?: string
 
     /**
-     * Presentational only. Renders the Textarea as invalid.
+     * Presentational only. Renders the Input Field as invalid.
      */
     @Prop() invalid = false
 
@@ -64,19 +66,26 @@ export class RuxTextarea implements FormFieldInterface {
     @Prop() name = ''
 
     /**
-     * The input minLength attribute
+     * The input type
      */
-    @Prop({ attribute: 'min-length' }) minLength?: string
+    @Prop() type:
+        | 'text'
+        | 'number'
+        | 'email'
+        | 'url'
+        | 'search'
+        | 'password'
+        | 'tel' = 'text'
 
     /**
-     * The input maxLength attribute
+     * The input min attribute
      */
-    @Prop({ attribute: 'max-length' }) maxLength?: string
+    @Prop() min?: string
 
     /**
-     * The input rows attribute
+     * The input max attribute
      */
-    @Prop() rows?: number
+    @Prop() max?: string
 
     /**
      * Disables the button via HTML disabled attribute. Button takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
@@ -94,6 +103,11 @@ export class RuxTextarea implements FormFieldInterface {
     @Prop() small: boolean = false
 
     /**
+     * The input step attribute
+     */
+    @Prop() step?: string
+
+    /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
     @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
@@ -102,12 +116,11 @@ export class RuxTextarea implements FormFieldInterface {
      * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
      */
     @Event({ eventName: 'rux-input' }) ruxInput!: EventEmitter
+
     /**
      * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
      */
     @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
-
-    @Element() el!: HTMLRuxTextareaElement
 
     @Watch('label')
     handleLabelChange() {
@@ -135,10 +148,6 @@ export class RuxTextarea implements FormFieldInterface {
         return this.label ? true : this.hasLabelSlot
     }
 
-    private _handleSlotChange() {
-        this.hasLabelSlot = hasSlot(this.el, 'label')
-    }
-
     private _onChange(e: Event) {
         const target = e.target as HTMLInputElement
         this.value = target.value
@@ -155,58 +164,95 @@ export class RuxTextarea implements FormFieldInterface {
         this.ruxBlur.emit()
     }
 
+    private _handleSlotChange() {
+        this.hasLabelSlot = hasSlot(this.el, 'label')
+    }
+
     render() {
-        renderHiddenInput(true, this.el, this.name, this.value, this.disabled)
+        const {
+            disabled,
+            el,
+            errorText,
+            helpText,
+            inputId,
+            invalid,
+            label,
+            max,
+            min,
+            name,
+            _onChange,
+            _onInput,
+            _onBlur,
+            placeholder,
+            required,
+            small,
+            step,
+            type,
+            value,
+        } = this
+
+        renderHiddenInput(true, el, name, value, disabled)
         return (
             <Host>
                 <div
                     class={{
-                        'rux-textarea-field': true,
-                        'rux-textarea-field--small': this.small,
+                        'rux-form-field': true,
+                        'rux-form-field--small': small,
                     }}
                     part="form-field"
                 >
                     <label
                         class={{
-                            'rux-textarea-label': true,
+                            'rux-input-label': true,
                         }}
-                        aria-hidden={this.hasLabel ? 'false' : 'true'}
-                        htmlFor={this.inputId}
                         part="label"
+                        aria-hidden={this.hasLabel ? 'false' : 'true'}
+                        htmlFor={inputId}
                     >
-                        <span class={{ hidden: !this.hasLabel }}>
+                        <span
+                            class={{
+                                hidden: !this.hasLabel,
+                            }}
+                        >
                             <slot
-                                onSlotchange={this._handleSlotChange}
                                 name="label"
+                                onSlotchange={this._handleSlotChange}
                             >
-                                {this.label}
+                                {label}
+                                {this.required && (
+                                    <span class="rux-input-label__asterisk">
+                                        &#42;
+                                    </span>
+                                )}
                             </slot>
                         </span>
                     </label>
-                    <textarea
-                        name={this.name}
-                        disabled={this.disabled}
-                        aria-invalid={this.invalid ? 'true' : 'false'}
-                        placeholder={this.placeholder}
-                        required={this.required}
-                        minlength={this.minLength}
-                        maxlength={this.maxLength}
-                        value={this.value}
+                    <input
+                        name={name}
+                        disabled={disabled}
+                        type={type}
+                        aria-invalid={invalid ? 'true' : 'false'}
+                        placeholder={placeholder}
+                        required={required}
+                        step={step}
+                        min={min}
+                        max={max}
+                        value={value}
                         class={{
-                            'rux-textarea': true,
-                            'rux-textarea--disabled': this.disabled,
-                            'rux-textarea--invalid': this.invalid,
+                            'rux-input': true,
+                            'rux-input--disabled': disabled,
+                            'rux-input--invalid': invalid,
+                            'rux-input--search': type === 'search',
                         }}
                         id={this.inputId}
-                        rows={this.rows}
-                        onChange={this._onChange}
-                        onInput={this._onInput}
-                        onBlur={() => this._onBlur()}
-                    ></textarea>
+                        onChange={_onChange}
+                        onInput={_onInput}
+                        onBlur={() => _onBlur()}
+                    ></input>
                 </div>
                 <FormFieldMessage
-                    helpText={this.helpText}
-                    errorText={this.errorText}
+                    errorText={errorText}
+                    helpText={helpText}
                 ></FormFieldMessage>
             </Host>
         )
