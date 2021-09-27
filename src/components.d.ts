@@ -32246,6 +32246,10 @@ declare namespace LocalJSX {
          */
         "onRux-blur"?: (event: CustomEvent<any>) => void;
         /**
+          * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
+         */
+        "onRux-change"?: (event: CustomEvent<any>) => void;
+        /**
           * The radio value
          */
         "value"?: string;

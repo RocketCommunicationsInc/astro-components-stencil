@@ -1,12 +1,41 @@
 import { Config } from '@stencil/core'
 import { sass } from '@stencil/sass'
 import { svgOptimizerPlugin } from './src/utils/rollup-svg'
+import {
+    angularOutputTarget,
+    ValueAccessorConfig,
+} from '@stencil/angular-output-target'
 // import { reactOutputTarget } from '@stencil/react-output-target';
-
+const angularValueAccessorBindings: ValueAccessorConfig[] = [
+    {
+        elementSelectors: ['rux-checkbox', 'rux-switch'],
+        event: 'rux-input',
+        targetAttr: 'checked',
+        type: 'boolean',
+    },
+    {
+        elementSelectors: ['rux-radio'],
+        event: 'rux-blur',
+        targetAttr: 'checked',
+        type: 'boolean',
+    },
+    {
+        elementSelectors: ['rux-input'],
+        event: 'rux-input',
+        targetAttr: 'value',
+        type: 'text',
+    },
+]
 export const config: Config = {
     namespace: 'astro-web-components',
     globalStyle: 'src/global/global.scss',
     outputTargets: [
+        angularOutputTarget({
+            componentCorePackage: '@astrouxds/astro-web-components',
+            directivesProxyFile:
+                '../astro-web-components-angular/src/directives/proxies.ts',
+            valueAccessorConfigs: angularValueAccessorBindings,
+        }),
         // reactOutputTarget({
         //   componentCorePackage: '@astrouxds/astro-web-components',
         //   proxiesFile: '../astro-in-react/src/components.ts',
