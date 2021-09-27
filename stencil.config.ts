@@ -36,6 +36,9 @@ export const config: Config = {
             serviceWorker: null, // disable service workers,
             copy: [
                 {
+                    src: '**/*.html',
+                },
+                {
                     src: 'tests/pages',
                 },
             ],
