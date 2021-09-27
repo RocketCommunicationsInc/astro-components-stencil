@@ -16,8 +16,8 @@ const angularValueAccessorBindings: ValueAccessorConfig[] = [
     {
         elementSelectors: ['rux-radio'],
         event: 'ruxBlur',
-        targetAttr: 'checked',
-        type: 'boolean',
+        targetAttr: 'value',
+        type: 'text',
     },
     {
         elementSelectors: ['rux-input'],
