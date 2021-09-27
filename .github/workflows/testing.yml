@@ -15,8 +15,9 @@ jobs:
             - name: Run Cypress
               uses: cypress-io/github-action@v2
               with:
-                  build: npm run build && npm run ci.server
-                  start: npm run test.e2e.run
+                  build: npm run build
+                  start: npm run ci.server, npm run test.e2e.run
+                  wait-on: 'http://localhost:3333'
     unit-test:
         runs-on: ubuntu-latest
         steps:
