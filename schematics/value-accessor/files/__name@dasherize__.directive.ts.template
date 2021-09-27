@@ -1,0 +1,52 @@
+import { Directive, ElementRef, forwardRef, HostListener } from '@angular/core';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+
+@Directive({
+  selector: '<%= dasherize(name) %>',
+  providers: [
+    {
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => RuxInputDirective),
+      multi: true,
+    },
+  ],
+})
+export class <%= classify(name) %>Directive {
+  onChange: any = () => {};
+  onTouched: any = () => {};
+
+  private _value: boolean;
+
+  get value() {
+    return this._value;
+  }
+
+  set value(val) {
+    if (val !== this._value) {
+      this._value = val;
+      this.onChange(this._value);
+      this.onTouched();
+    }
+  }
+
+  constructor(private elementRef: ElementRef) {}
+
+  @HostListener('rux-input', ['$event.detail'])
+  listenForValueChange(value) {
+    this.value = value;
+  }
+
+  writeValue(value) {
+    if (value) {
+      this.value = value;
+    }
+  }
+
+  registerOnChange(fn) {
+    this.onChange = fn;
+  }
+
+  registerOnTouched(fn) {
+    this.onTouched = fn;
+  }
+}

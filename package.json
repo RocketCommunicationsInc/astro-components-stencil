@@ -36,10 +36,10 @@
         "test.unit.watch": "TZ=UTC stencil test --spec --watchAll",
         "test.unit": "TZ=UTC stencil test --spec --coverage",
         "test": "concurrently npm:test.spec npm:test.e2e",
-        "build.schematics": "../../node_modules/.bin/tsc -p tsconfig.schematics.json",
-        "copy:schemas": "cp --parents schematics/*/schema.json ../../dist/",
-        "copy:files": "cp --parents -p schematics/*/files/** ../../dist/",
-        "copy:collection": "cp schematics/collection.json ../../dist/schematics/collection.json",
+        "build.schematics": "./node_modules/.bin/tsc -p tsconfig.schematics.json",
+        "copy:schemas": "rsync -R schematics/*/schema.json ./dist/",
+        "copy:files": "rsync -R -p schematics/*/files/** ./dist/",
+        "copy:collection": "cp schematics/collection.json ./dist/schematics/collection.json",
         "postbuild": "npm run copy:schemas && npm run copy:files && npm run copy:collection"
     },
     "peerDependencies": {
@@ -53,7 +53,6 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@angular-devkit/schematics": "~12.2.7",
         "@astrouxds/astro-figma-export": "~1.0.1",
         "@astrouxds/storybook-addon-docs-stencil": "~1.0.7",
         "@babel/core": "~7.13.16",
