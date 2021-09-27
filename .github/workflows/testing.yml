@@ -15,7 +15,7 @@ jobs:
             - name: Run Cypress
               uses: cypress-io/github-action@v2
               with:
-                  build: npm run build
+                  build: npm run build && npm run ci.serve
                   start: npm run test.e2e.run
     unit-test:
         runs-on: ubuntu-latest
