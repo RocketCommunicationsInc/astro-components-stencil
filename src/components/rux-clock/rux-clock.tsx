@@ -57,7 +57,7 @@ export class RuxClock {
     hideDate: boolean = false
 
     /**
-     * Hides the day of the year.
+     * Hides all of the labels.
      */
     @Prop({
         attribute: 'hide-labels',
@@ -149,7 +149,7 @@ export class RuxClock {
                         >
                             {this.dayOfYear}
                         </div>
-                        {this.hidelabels && (
+                        {!this.hidelabels && (
                             <div
                                 class="rux-clock__segment__label"
                                 id="rux-clock__day-of-year-label"
@@ -167,7 +167,7 @@ export class RuxClock {
                     >
                         {this.time}
                     </div>
-                    {this.hidelabels && (
+                    {!this.hidelabels && (
                         <div
                             class="rux-clock__segment__label"
                             id="rux-clock__time-label"
@@ -186,12 +186,14 @@ export class RuxClock {
                         >
                             {this.convertedAos}
                         </div>
-                        <div
-                            class="rux-clock__segment__label"
-                            id="rux-clock__time-label--aos"
-                        >
-                            AOS
-                        </div>
+                        {!this.hidelabels && (
+                            <div
+                                class="rux-clock__segment__label"
+                                id="rux-clock__time-label--aos"
+                            >
+                                AOS
+                            </div>
+                        )}
                     </div>
                 )}
 
@@ -204,12 +206,14 @@ export class RuxClock {
                         >
                             {this.convertedLos}
                         </div>
-                        <div
-                            class="rux-clock__segment__label"
-                            id="rux-clock__time-label--los"
-                        >
-                            LOS
-                        </div>
+                        {!this.hidelabels && (
+                            <div
+                                class="rux-clock__segment__label"
+                                id="rux-clock__time-label--los"
+                            >
+                                LOS
+                            </div>
+                        )}
                     </div>
                 )}
             </Host>

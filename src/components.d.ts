@@ -118,7 +118,7 @@ export namespace Components {
          */
         "hideTimezone": boolean;
         /**
-          * Hides the day of the year.
+          * Hides all of the labels.
          */
         "hidelabels": boolean;
         /**
@@ -20200,7 +20200,7 @@ declare namespace LocalJSX {
          */
         "hideTimezone"?: boolean;
         /**
-          * Hides the day of the year.
+          * Hides all of the labels.
          */
         "hidelabels"?: boolean;
         /**
