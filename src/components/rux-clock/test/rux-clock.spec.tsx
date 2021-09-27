@@ -62,26 +62,20 @@ describe('rux-clock', () => {
         })
 
         expect(page.root).toEqualHtml(`
-          <rux-clock hide-timezone>
+          <rux-clock hide-timezone=\"\">
             <mock:shadow-root>
-              <div class="rux-clock__segment rux-clock__day-of-the-year">
-                <div class="rux-clock__segment__value" aria-labelledby="rux-clock__day-of-year-label">
+              <div class=\"rux-clock__day-of-the-year rux-clock__segment\">
+                <div aria-labelledby=\"rux-clock__day-of-year-label\" class=\"rux-clock__segment__value\">
                   113
                 </div>
-                <div class="rux-clock__segment__label" id="rux-clock__day-of-year-label">
-                  Date
-                </div>
               </div>
-              <div class="rux-clock__segment rux-clock__time">
-                <div class="rux-clock__segment__value" aria-labelledby="rux-clock__time-label">
+              <div class=\"rux-clock__segment rux-clock__time\">
+                <div aria-labelledby=\"rux-clock__time-label\" class=\"rux-clock__segment__value\">
                   05:02:03
-                </div>
-                <div class="rux-clock__segment__label" id="rux-clock__time-label">
-                  Time
                 </div>
               </div>
             </mock:shadow-root>
-          </rux-clock
+          </rux-clock>
         `)
     })
 
@@ -92,14 +86,11 @@ describe('rux-clock', () => {
         })
 
         expect(page.root).toEqualHtml(`
-          <rux-clock hide-date>
+          <rux-clock hide-date=\"\">
             <mock:shadow-root>
-              <div class="rux-clock__segment rux-clock__time">
-                <div class="rux-clock__segment__value" aria-labelledby="rux-clock__time-label">
+              <div class=\"rux-clock__segment rux-clock__time\">
+                <div aria-labelledby=\"rux-clock__time-label\" class=\"rux-clock__segment__value\">
                   05:02:03 UTC
-                </div>
-                <div class="rux-clock__segment__label" id="rux-clock__time-label">
-                  Time
                 </div>
               </div>
             </mock:shadow-root>
