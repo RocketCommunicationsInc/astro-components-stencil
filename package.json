@@ -10,6 +10,10 @@
     "collection": "dist/collection/collection-manifest.json",
     "collection:main": "dist/collection/index.js",
     "unpkg": "dist/astro-web-components/astro-web-components.esm.js",
+    "schematics": "./schematics/collection.json",
+    "ng-add": {
+        "save": "dependencies"
+    },
     "files": [
         "dist/",
         "loader/"
@@ -17,7 +21,7 @@
     "scripts": {
         "build.stencil": "stencil build --docs",
         "build.storybook": "build-storybook -s ./dist",
-        "build": "npm run build.stencil && npm run build.storybook",
+        "build": "npm run build.stencil && npm run build.storybook && npm run build.schematics",
         "icons.fetch": "export-icons",
         "icons.generate": "node src/utils/generate-icons.js",
         "prepack": "npm run build",
@@ -31,7 +35,16 @@
         "test.e2e": "npm run build && npm run test.e2e.run",
         "test.unit.watch": "TZ=UTC stencil test --spec --watchAll",
         "test.unit": "TZ=UTC stencil test --spec --coverage",
-        "test": "concurrently npm:test.spec npm:test.e2e"
+        "test": "concurrently npm:test.spec npm:test.e2e",
+        "build.schematics": "../../node_modules/.bin/tsc -p tsconfig.schematics.json",
+        "copy:schemas": "cp --parents schematics/*/schema.json ../../dist/",
+        "copy:files": "cp --parents -p schematics/*/files/** ../../dist/",
+        "copy:collection": "cp schematics/collection.json ../../dist/schematics/collection.json",
+        "postbuild": "npm run copy:schemas && npm run copy:files && npm run copy:collection"
+    },
+    "peerDependencies": {
+        "@angular/common": "^7.2.0",
+        "@angular/core": "^7.2.0"
     },
     "dependencies": {
         "@stencil/core": "~2.5.2",
@@ -40,6 +53,7 @@
     },
     "license": "MIT",
     "devDependencies": {
+        "@angular-devkit/schematics": "~12.2.7",
         "@astrouxds/astro-figma-export": "~1.0.1",
         "@astrouxds/storybook-addon-docs-stencil": "~1.0.7",
         "@babel/core": "~7.13.16",
