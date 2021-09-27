@@ -42,7 +42,7 @@ export class RuxTabs {
     /**
      * Fires whenever a new tab is selected, and emits the selected tab.
      */
-    @Event({ eventName: 'rux-selected' }) ruxSelected!: EventEmitter
+    @Event({ eventName: 'ruxSelected' }) ruxSelected!: EventEmitter
 
     connectedCallback() {
         this._addTabs()

@@ -13,9 +13,9 @@
 
 ## Events
 
-| Event                    | Description                        | Type                  |
-| ------------------------ | ---------------------------------- | --------------------- |
-| `rux-tree-node-selected` | Emit when user selects a tree node | `CustomEvent<string>` |
+| Event                 | Description                        | Type                  |
+| --------------------- | ---------------------------------- | --------------------- |
+| `ruxTreeNodeSelected` | Emit when user selects a tree node | `CustomEvent<string>` |
 
 
 ## Methods

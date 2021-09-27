@@ -53,9 +53,9 @@ document.addEventListener('change', (e) =>
 
 ## Events
 
-| Event        | Description                                  | Type               |
-| ------------ | -------------------------------------------- | ------------------ |
-| `rux-change` | Emitted when the value property has changed. | `CustomEvent<any>` |
+| Event       | Description                                  | Type               |
+| ----------- | -------------------------------------------- | ------------------ |
+| `ruxChange` | Emitted when the value property has changed. | `CustomEvent<any>` |
 
 
 ## CSS Custom Properties

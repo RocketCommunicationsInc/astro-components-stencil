@@ -44,11 +44,11 @@ export class RuxRadio {
     /**
      * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
      */
-    @Event({ eventName: 'rux-blur' }) ruxBlur!: EventEmitter
+    @Event({ eventName: 'ruxBlur' }) ruxBlur!: EventEmitter
     /**
      * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
      */
-    @Event({ eventName: 'rux-change' }) ruxChange!: EventEmitter
+    @Event({ eventName: 'ruxChange' }) ruxChange!: EventEmitter
 
     connectedCallback() {
         this._onChange = this._onChange.bind(this)

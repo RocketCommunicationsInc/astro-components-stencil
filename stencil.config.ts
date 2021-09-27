@@ -9,19 +9,19 @@ import {
 const angularValueAccessorBindings: ValueAccessorConfig[] = [
     {
         elementSelectors: ['rux-checkbox', 'rux-switch'],
-        event: 'rux-input',
+        event: 'ruxInput',
         targetAttr: 'checked',
         type: 'boolean',
     },
     {
         elementSelectors: ['rux-radio'],
-        event: 'rux-blur',
+        event: 'ruxBlur',
         targetAttr: 'checked',
         type: 'boolean',
     },
     {
         elementSelectors: ['rux-input'],
-        event: 'rux-input',
+        event: 'ruxInput',
         targetAttr: 'value',
         type: 'text',
     },
