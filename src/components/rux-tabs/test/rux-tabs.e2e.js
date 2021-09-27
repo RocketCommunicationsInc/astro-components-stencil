@@ -1,6 +1,6 @@
 describe('Tab', () => {
     beforeEach(() => {
-        cy.visitStory('components-tabs--default-story')
+        cy.visitForm('rux-tabs')
     })
 
     it('renders', () => {

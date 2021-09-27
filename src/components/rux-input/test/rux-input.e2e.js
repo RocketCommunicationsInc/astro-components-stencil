@@ -2,7 +2,7 @@ describe('Input Field with Form', () => {
     const testString = 'Hello World'
 
     beforeEach(() => {
-        cy.visitForm('input-field')
+        cy.visitForm('rux-input')
         // makes sure form was clicked before submitting
         // submitting form directly via .submit() sometimes fails
         cy.get('#form').click()

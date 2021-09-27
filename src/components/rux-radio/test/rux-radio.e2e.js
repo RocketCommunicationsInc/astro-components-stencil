@@ -1,6 +1,6 @@
 describe('Radio', () => {
     beforeEach(() => {
-        cy.visitStory('forms-radio--default-story')
+        cy.visitForm('rux-radio')
     })
     it('renders', () => {
         cy.get('rux-radio').should('have.class', 'hydrated')

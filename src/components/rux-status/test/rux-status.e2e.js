@@ -1,6 +1,6 @@
 describe('Status', () => {
     beforeEach(() => {
-        cy.visitStory('components-status--default-story')
+        cy.visitForm('rux-status')
     })
     it('renders', () => {
         cy.get('rux-status').should('have.class', 'hydrated')

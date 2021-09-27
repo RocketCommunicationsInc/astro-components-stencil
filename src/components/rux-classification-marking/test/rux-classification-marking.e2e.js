@@ -1,6 +1,6 @@
 describe('Classificaton Marking', () => {
     beforeEach(() => {
-        cy.visitStory('components-classification-markings--default-story')
+        cy.visitForm('rux-classification-marking')
     })
     it('renders', () => {
         cy.get('rux-classification-marking').should('have.class', 'hydrated')

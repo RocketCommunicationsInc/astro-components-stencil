@@ -31,5 +31,5 @@ Cypress.Commands.add('visitStory', (component) => {
 })
 
 Cypress.Commands.add('visitForm', (component) => {
-    cy.visit(`tests/pages/form-${component}.html`)
+    cy.visit(`components/${component}/test`)
 })
