@@ -1,6 +1,6 @@
 describe('Select with Form', () => {
     beforeEach(() => {
-        cy.visitForm('rux-select')
+        cy.visitComponent('rux-select')
     })
 
     it('renders', () => {

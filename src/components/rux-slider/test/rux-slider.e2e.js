@@ -1,6 +1,6 @@
 describe('Slider with Form', () => {
     beforeEach(() => {
-        cy.visitForm('rux-slider')
+        cy.visitComponent('rux-slider')
     })
 
     it('renders', () => {

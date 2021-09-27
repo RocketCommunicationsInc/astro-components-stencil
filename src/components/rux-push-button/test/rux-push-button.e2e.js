@@ -1,6 +1,6 @@
 describe('Push Button with Form', () => {
     beforeEach(() => {
-        cy.visitForm('rux-push-button')
+        cy.visitComponent('rux-push-button')
     })
 
     it('renders', () => {

@@ -1,6 +1,6 @@
 describe('Notification', () => {
     beforeEach(() => {
-        cy.visitForm('rux-notification')
+        cy.visitComponent('rux-notification')
     })
     it('renders', () => {
         cy.get('rux-notification').should('have.class', 'hydrated')

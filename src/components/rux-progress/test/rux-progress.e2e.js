@@ -1,6 +1,6 @@
 describe('Progress', () => {
     beforeEach(() => {
-        cy.visitForm('rux-progress')
+        cy.visitComponent('rux-progress')
     })
     it('renders', () => {
         cy.get('rux-progress').should('have.class', 'hydrated')

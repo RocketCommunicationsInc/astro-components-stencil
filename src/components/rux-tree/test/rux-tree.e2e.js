@@ -1,6 +1,6 @@
 describe('Tree', () => {
     beforeEach(() => {
-        cy.visitForm('rux-tree')
+        cy.visitComponent('rux-tree')
     })
     it('renders', () => {
         cy.get('rux-tree').should('have.class', 'hydrated')

@@ -1,6 +1,6 @@
 describe('Pop Up Menu Item', () => {
     beforeEach(() => {
-        cy.visitForm('rux-pop-up-menu')
+        cy.visitComponent('rux-pop-up-menu')
     })
 
     it('renders', () => {

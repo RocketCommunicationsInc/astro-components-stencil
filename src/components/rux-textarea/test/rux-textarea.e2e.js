@@ -1,6 +1,6 @@
 describe('Text Area with Form', () => {
     beforeEach(() => {
-        cy.visitForm('rux-textarea')
+        cy.visitComponent('rux-textarea')
         cy.get('#form').click()
     })
 

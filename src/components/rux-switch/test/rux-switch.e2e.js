@@ -1,6 +1,6 @@
 describe('Switch with Form', () => {
     beforeEach(() => {
-        cy.visitForm('rux-switch')
+        cy.visitComponent('rux-switch')
     })
 
     it('renders', () => {

@@ -1,6 +1,6 @@
 describe('Radio Group with Form', () => {
     beforeEach(() => {
-        cy.visitForm('rux-radio-group')
+        cy.visitComponent('rux-radio-group')
     })
 
     it('renders', () => {

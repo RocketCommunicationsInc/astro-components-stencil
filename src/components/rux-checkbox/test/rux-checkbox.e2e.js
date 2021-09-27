@@ -1,6 +1,6 @@
 describe('Checkbox with Form', () => {
     beforeEach(() => {
-        cy.visitForm('rux-checkbox')
+        cy.visitComponent('rux-checkbox')
     })
 
     it('renders', () => {

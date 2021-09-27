@@ -1,6 +1,6 @@
 describe('Log', () => {
     beforeEach(() => {
-        cy.visitForm('rux-log')
+        cy.visitComponent('rux-log')
     })
     it('renders', () => {
         cy.get('rux-log').should('have.class', 'hydrated')

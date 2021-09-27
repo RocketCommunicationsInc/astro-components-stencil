@@ -1,6 +1,6 @@
 describe('Clock', () => {
     beforeEach(() => {
-        cy.visitForm('rux-clock')
+        cy.visitComponent('rux-clock')
     })
     it('renders', () => {
         cy.get('rux-clock').should('have.class', 'hydrated')

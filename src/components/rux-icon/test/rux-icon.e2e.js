@@ -1,6 +1,6 @@
 describe('Icon', () => {
     beforeEach(() => {
-        cy.visitForm('rux-icon')
+        cy.visitComponent('rux-icon')
     })
     it('renders', () => {
         cy.get('rux-icon').should('have.class', 'hydrated')
