@@ -11,7 +11,7 @@ import {
 } from '@stencil/core'
 import FormFieldMessage from '../../common/functional-components/FormFieldMessage/FormFieldMessage'
 import { FormFieldInterface } from '../../common/interfaces.module'
-import { hasSlot } from '../../utils/utils'
+import { hasSlot, renderHiddenInput } from '../../utils/utils'
 
 /**
  * @slot (default) - The select options
@@ -20,11 +20,13 @@ import { hasSlot } from '../../utils/utils'
 @Component({
     tag: 'rux-select',
     styleUrl: 'rux-select.scss',
-    scoped: true,
+    shadow: true,
 })
 export class RuxSelect implements FormFieldInterface {
     @Element() el!: HTMLRuxSelectElement
     @State() hasLabelSlot = false
+    selectEl!: HTMLSelectElement
+
     /**
      * Disables the select menu via HTML disabled attribute. Select menu takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
      */
@@ -58,7 +60,7 @@ export class RuxSelect implements FormFieldInterface {
     /**
      * Sets the Name of the Input Element
      */
-    @Prop({ reflect: true }) name?: string
+    @Prop({ reflect: true }) name = ''
 
     /**
      * The value of the selected option
@@ -121,14 +123,34 @@ export class RuxSelect implements FormFieldInterface {
     }
 
     private _handleSlotChange() {
+        this._syncOptionsWithNativeSelect()
         this._syncOptionsFromValue()
     }
 
-    private _syncOptionsFromValue() {
+    private _syncOptionsWithNativeSelect() {
         const options = [...Array.from(this.el.querySelectorAll('option'))]
-        options.map((option) => {
-            option.selected = option.value === this.value
-        })
+
+        if (this.selectEl) {
+            this.selectEl.innerHTML = ''
+            options.map((option) => {
+                const item = Object.assign(document.createElement('option'), {
+                    innerHTML: option.innerHTML,
+                    value: option.value,
+                })
+                this.selectEl.appendChild(item)
+            })
+        }
+    }
+
+    private _syncOptionsFromValue() {
+        if (this.selectEl) {
+            const options = [
+                ...Array.from(this.selectEl.querySelectorAll('option')),
+            ]
+            options.map((option: HTMLOptionElement) => {
+                option.selected = option.value === this.value
+            })
+        }
     }
 
     private _onChange(e: Event) {
@@ -148,6 +170,7 @@ export class RuxSelect implements FormFieldInterface {
             name,
         } = this
 
+        renderHiddenInput(true, this.el, this.name, this.value, this.disabled)
         return (
             <Host>
                 <label
@@ -168,15 +191,17 @@ export class RuxSelect implements FormFieldInterface {
                     class={
                         'rux-select ' + (invalid ? 'rux-select-invalid' : '')
                     }
+                    ref={(el) => (this.selectEl = el as HTMLSelectElement)}
                     id={inputId}
                     disabled={disabled}
                     required={required}
                     name={name}
                     onChange={(e) => this._onChange(e)}
                     onBlur={() => this._onBlur()}
-                >
+                ></select>
+                <div aria-hidden="true" class="hidden">
                     <slot onSlotchange={this._handleSlotChange}></slot>
-                </select>
+                </div>
                 <FormFieldMessage
                     errorText={this.errorText}
                     helpText={this.helpText}
