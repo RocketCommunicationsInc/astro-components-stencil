@@ -127,18 +127,55 @@ export class RuxSelect implements FormFieldInterface {
         this._syncOptionsFromValue()
     }
 
+    /**
+     * Copies the slotted content into the shadow-DOMed select element
+     */
     private _syncOptionsWithNativeSelect() {
         const options = [...Array.from(this.el.querySelectorAll('option'))]
+        const optionGroups = [
+            ...Array.from(this.el.querySelectorAll('optgroup')),
+        ]
 
-        if (this.selectEl) {
-            this.selectEl.innerHTML = ''
-            options.map((option) => {
-                const item = Object.assign(document.createElement('option'), {
-                    innerHTML: option.innerHTML,
-                    value: option.value,
+        if (optionGroups.length > 0) {
+            optionGroups.map((optgroup) => {
+                const groupEl = Object.assign(
+                    document.createElement('optgroup'),
+                    {
+                        label: optgroup.label,
+                    }
+                )
+
+                Array.from(optgroup.children).map((option) => {
+                    const opt = option as HTMLOptionElement
+                    const item = Object.assign(
+                        document.createElement('option'),
+                        {
+                            innerHTML: opt.innerHTML,
+                            value: opt.value,
+                        }
+                    )
+
+                    groupEl.appendChild(item)
                 })
-                this.selectEl.appendChild(item)
+
+                this.selectEl.appendChild(groupEl)
             })
+        } else {
+            if (options.length > 0) {
+                if (this.selectEl) {
+                    this.selectEl.innerHTML = ''
+                    options.map((option) => {
+                        const item = Object.assign(
+                            document.createElement('option'),
+                            {
+                                innerHTML: option.innerHTML,
+                                value: option.value,
+                            }
+                        )
+                        this.selectEl.appendChild(item)
+                    })
+                }
+            }
         }
     }
 
