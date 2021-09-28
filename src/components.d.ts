@@ -114,13 +114,13 @@ export namespace Components {
          */
         "hideDate": boolean;
         /**
+          * Hides all of the labels.
+         */
+        "hideLabels": boolean;
+        /**
           * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
          */
         "hideTimezone": boolean;
-        /**
-          * Hides all of the labels.
-         */
-        "hidelabels": boolean;
         /**
           * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax), displays a timestamp labeled "LOS" next to the standard clock.
          */
@@ -20196,13 +20196,13 @@ declare namespace LocalJSX {
          */
         "hideDate"?: boolean;
         /**
+          * Hides all of the labels.
+         */
+        "hideLabels"?: boolean;
+        /**
           * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
          */
         "hideTimezone"?: boolean;
-        /**
-          * Hides all of the labels.
-         */
-        "hidelabels"?: boolean;
         /**
           * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax), displays a timestamp labeled "LOS" next to the standard clock.
          */

@@ -62,7 +62,7 @@ export class RuxClock {
     @Prop({
         attribute: 'hide-labels',
     })
-    hidelabels: boolean = false
+    hideLabels: boolean = false
 
     /**
      * Applies a smaller clock style.
@@ -149,7 +149,7 @@ export class RuxClock {
                         >
                             {this.dayOfYear}
                         </div>
-                        {!this.hidelabels && (
+                        {!this.hideLabels && (
                             <div
                                 class="rux-clock__segment__label"
                                 id="rux-clock__day-of-year-label"
@@ -167,7 +167,7 @@ export class RuxClock {
                     >
                         {this.time}
                     </div>
-                    {!this.hidelabels && (
+                    {!this.hideLabels && (
                         <div
                             class="rux-clock__segment__label"
                             id="rux-clock__time-label"
@@ -186,7 +186,7 @@ export class RuxClock {
                         >
                             {this.convertedAos}
                         </div>
-                        {!this.hidelabels && (
+                        {!this.hideLabels && (
                             <div
                                 class="rux-clock__segment__label"
                                 id="rux-clock__time-label--aos"
@@ -206,7 +206,7 @@ export class RuxClock {
                         >
                             {this.convertedLos}
                         </div>
-                        {!this.hidelabels && (
+                        {!this.hideLabels && (
                             <div
                                 class="rux-clock__segment__label"
                                 id="rux-clock__time-label--los"
