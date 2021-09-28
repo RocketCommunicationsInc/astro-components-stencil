@@ -123,6 +123,8 @@ export class RuxSelect implements FormFieldInterface {
     }
 
     private _handleSlotChange() {
+        console.log('heard slot change')
+
         this._syncOptionsWithNativeSelect()
         this._syncOptionsFromValue()
     }
@@ -136,7 +138,7 @@ export class RuxSelect implements FormFieldInterface {
             ...Array.from(this.el.querySelectorAll('optgroup')),
         ]
 
-        if (optionGroups.length > 0) {
+        if (optionGroups.length > 0 && this.selectEl) {
             optionGroups.map((optgroup) => {
                 const groupEl = Object.assign(
                     document.createElement('optgroup'),
