@@ -11921,30 +11921,7 @@ export namespace Components {
         "timezone": string;
     }
     interface RuxMenuItem {
-        /**
-          * Disables the item
-         */
-        "disabled": boolean;
-        /**
-          * This attribute instructs browsers to download a URL instead of navigating to it, so the user will be prompted to save it as a local file. If the attribute has a value, it is used as the pre-filled file name in the Save prompt (the user can still change the file name if they want).
-         */
-        "download": string | undefined;
-        /**
-          * Contains a URL or a URL fragment that the hyperlink points to. If this property is set, an anchor tag will be rendered.
-         */
-        "href": string | undefined;
-        /**
-          * Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
-         */
-        "rel": string | undefined;
-        /**
-          * Specifies where to display the linked URL. Only applies when an `href` is provided. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
-         */
-        "target": string | undefined;
-        /**
-          * Value returned when item is selected. If no value is given, the text content will be used.
-         */
-        "value": any;
+        "value"?: string | number;
     }
     interface RuxMenuItemDivider {
     }
@@ -12208,7 +12185,7 @@ export namespace Components {
         /**
           * Sets the Name of the Input Element
          */
-        "name"?: string;
+        "name": string;
         /**
           * Sets the field as required
          */
@@ -32011,34 +31988,7 @@ declare namespace LocalJSX {
         "timezone"?: string;
     }
     interface RuxMenuItem {
-        /**
-          * Disables the item
-         */
-        "disabled"?: boolean;
-        /**
-          * This attribute instructs browsers to download a URL instead of navigating to it, so the user will be prompted to save it as a local file. If the attribute has a value, it is used as the pre-filled file name in the Save prompt (the user can still change the file name if they want).
-         */
-        "download"?: string | undefined;
-        /**
-          * Contains a URL or a URL fragment that the hyperlink points to. If this property is set, an anchor tag will be rendered.
-         */
-        "href"?: string | undefined;
-        /**
-          * Emitted when item is clicked. Ex `{value : 10}`
-         */
-        "onRux-menu-item-selected"?: (event: CustomEvent<object>) => void;
-        /**
-          * Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
-         */
-        "rel"?: string | undefined;
-        /**
-          * Specifies where to display the linked URL. Only applies when an `href` is provided. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
-         */
-        "target"?: string | undefined;
-        /**
-          * Value returned when item is selected. If no value is given, the text content will be used.
-         */
-        "value"?: any;
+        "value"?: string | number;
     }
     interface RuxMenuItemDivider {
     }
