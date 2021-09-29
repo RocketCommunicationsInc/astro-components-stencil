@@ -21,7 +21,8 @@ export class RuxOptionGroup {
      */
     @Prop() label?: string
 
-    @Event({ eventName: 'group-changed' })
+    /** @internal **/
+    @Event({ eventName: 'group-changed', composed: true })
     groupChanged!: EventEmitter<void>
 
     connectedCallback() {
@@ -30,7 +31,6 @@ export class RuxOptionGroup {
 
     _handleSlotChange() {
         this.groupChanged.emit()
-        console.log('option group slot changed')
     }
 
     render() {

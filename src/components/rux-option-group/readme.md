@@ -5,11 +5,11 @@
 <!-- Auto Generated Below -->
 
 
-## Events
+## Properties
 
-| Event           | Description | Type                |
-| --------------- | ----------- | ------------------- |
-| `group-changed` |             | `CustomEvent<void>` |
+| Property | Attribute | Description            | Type                  | Default     |
+| -------- | --------- | ---------------------- | --------------------- | ----------- |
+| `label`  | `label`   | The option group label | `string \| undefined` | `undefined` |
 
 
 ----------------------------------------------

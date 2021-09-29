@@ -29,7 +29,6 @@ export class RuxSelect implements FormFieldInterface {
     slotContainer?: HTMLElement
     selectEl!: HTMLSelectElement
 
-    @State() paint = false
     /**
      * Disables the select menu via HTML disabled attribute. Select menu takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
      */
@@ -103,9 +102,7 @@ export class RuxSelect implements FormFieldInterface {
 
     @Listen('group-changed')
     handleGroupChange() {
-        this.paint = !this.paint
-        this._testSync()
-        console.log('heard group change')
+        this._syncOptionsToNativeSelect()
     }
 
     connectedCallback() {
@@ -132,12 +129,19 @@ export class RuxSelect implements FormFieldInterface {
         this.hasLabelSlot = hasSlot(this.el, 'label')
     }
 
-    private _handleSlotChange() {
-        this._syncOptionsFromValue()
-        this._testSync()
+    private async _handleSlotChange() {
+        await this._syncOptionsToNativeSelect()
+        await this._syncOptionsFromValue()
     }
 
-    _testSync() {
+    /**
+     * The native select element doesn't play nicely with slots. If an <option> isn't a direct child element, it won't render properly.
+     * As a solution, we expose a slot outside the shadow-DOMed <select> and then manually copy the contents inside the shadow DOM.
+     *
+     * A RuxOptionGroup component is required because onSlotchange won't fire if we use the native <optgroup> and we change just its options.
+     * RuxOptionGroup exists only to fire a change event that we can listen to.
+     */
+    private _syncOptionsToNativeSelect() {
         const slot = this.slotContainer?.querySelector(
             'slot'
         ) as HTMLSlotElement
@@ -154,40 +158,57 @@ export class RuxSelect implements FormFieldInterface {
             assignedElements.map((item) => {
                 const option = item as HTMLOptionElement
                 if (option.tagName.toLowerCase() === 'option') {
-                    this.appendOption(option.innerHTML, option.value)
+                    this._appendOptionToNativeSelect(
+                        option.innerHTML,
+                        option.value,
+                        this.selectEl
+                    )
                 }
 
                 if (option.tagName.toLowerCase() === 'rux-option-group') {
                     const children = [
                         ...Array.from(option.querySelectorAll('option')),
                     ]
-                    this.appendGroup('group', children)
+                    this._appendOptGroupToNativeSelect(
+                        option.label ? option.label : 'Group',
+                        children
+                    )
                 }
             })
         }
+        return Promise.resolve()
     }
-    appendGroup(groupName: string, children: HTMLOptionElement[]) {
+
+    private _appendOptGroupToNativeSelect(
+        groupName: string,
+        children: HTMLOptionElement[]
+    ) {
         const group = Object.assign(document.createElement('optgroup'), {
             label: groupName,
         })
 
         children.map((option: any) => {
-            const item = Object.assign(document.createElement('option'), {
-                innerHTML: option.innerHTML,
-                value: option.value,
-            })
-            group.appendChild(item)
+            this._appendOptionToNativeSelect(
+                option.innerHTML,
+                option.value,
+                group
+            )
+            this.selectEl.appendChild(group)
         })
 
         this.selectEl.appendChild(group)
     }
 
-    appendOption(label: string, value: string) {
+    private _appendOptionToNativeSelect(
+        label: string,
+        value: string,
+        target: HTMLSelectElement | HTMLOptGroupElement
+    ) {
         const item = Object.assign(document.createElement('option'), {
             innerHTML: label,
             value: value,
         })
-        this.selectEl.appendChild(item)
+        target.appendChild(item)
     }
 
     private _syncOptionsFromValue() {
@@ -199,6 +220,7 @@ export class RuxSelect implements FormFieldInterface {
                 option.selected = option.value === this.value
             })
         }
+        return Promise.resolve()
     }
 
     private _onChange(e: Event) {
