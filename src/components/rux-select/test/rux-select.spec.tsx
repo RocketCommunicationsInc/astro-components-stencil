@@ -43,36 +43,40 @@ describe('rux-select', () => {
             components: [RuxSelect],
             html: `
             <rux-select>
-              <optgroup label="Group one">
-                <option value="1">one</option>
-                <option value="2">two</option>
-              </optgroup>
+              <option>outside option</option>
+              <rux-option-group label="Group one">
+                <option>inside option</option>
+              </rux-option-group>
+              <option>outside option</option>
             </rux-select>
           `,
         })
         expect(page.root).toEqualHtml(`
-      <rux-select>
-          <mock:shadow-root>
-              <label aria-hidden="true">
-                  <span class="hidden">
-                      <slot name="label"></slot>
-                  </span>
-              </label>
-              <select class="rux-select"></select>
-              <div aria-hidden="true" class="hidden">
-                  <slot></slot>
-              </div>
-          </mock:shadow-root>
-          <optgroup label="Group one">
-              <option value="1">
-                  one
-              </option>
-              <option value="2">
-                  two
-              </option>
-          </optgroup>
-          <input class="aux-input" type="hidden" value="">
-      </rux-select>
+        <rux-select>
+            <mock:shadow-root>
+                <label aria-hidden="true">
+                    <span class="hidden">
+                        <slot name="label"></slot>
+                    </span>
+                </label>
+                <select class="rux-select"></select>
+                <div aria-hidden="true" class="hidden">
+                    <slot></slot>
+                </div>
+            </mock:shadow-root>
+            <option>
+                outside option
+            </option>
+            <rux-option-group label="Group one">
+                <option>
+                    inside option
+                </option>
+            </rux-option-group>
+            <option>
+                outside option
+            </option>
+            <input class="aux-input" type="hidden" value="">
+        </rux-select>
     `)
     })
 })
