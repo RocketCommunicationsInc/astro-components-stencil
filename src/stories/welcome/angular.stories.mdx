@@ -42,6 +42,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
 import { AppModule } from './app/app.module'
 import { environment } from './environments/environment'
 
+// Import custom element function
 import { defineCustomElements } from '@astrouxds/astro-web-components/loader'
 
 if (environment.production) {
@@ -51,6 +52,8 @@ if (environment.production) {
 platformBrowserDynamic()
     .bootstrapModule(AppModule)
     .catch((err) => console.log(err))
+
+// Register cutom elements
 defineCustomElements()
 ```
 
