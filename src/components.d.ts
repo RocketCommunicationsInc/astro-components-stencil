@@ -12040,6 +12040,22 @@ export namespace Components {
          */
         "status": Status;
     }
+    interface RuxOption {
+        /**
+          * The option label
+         */
+        "label": string;
+        /**
+          * The option value
+         */
+        "value": string;
+    }
+    interface RuxOptionGroup {
+        /**
+          * The option group label
+         */
+        "label"?: string;
+    }
     interface RuxPopUpMenu {
         /**
           * Element to anchor the menu to. If none is given the menu will anchor to the trigger element where aria-controls === menu id
@@ -12208,7 +12224,7 @@ export namespace Components {
         /**
           * Sets the Name of the Input Element
          */
-        "name"?: string;
+        "name": string;
         /**
           * Sets the field as required
          */
@@ -18832,6 +18848,18 @@ declare global {
         prototype: HTMLRuxNotificationElement;
         new (): HTMLRuxNotificationElement;
     };
+    interface HTMLRuxOptionElement extends Components.RuxOption, HTMLStencilElement {
+    }
+    var HTMLRuxOptionElement: {
+        prototype: HTMLRuxOptionElement;
+        new (): HTMLRuxOptionElement;
+    };
+    interface HTMLRuxOptionGroupElement extends Components.RuxOptionGroup, HTMLStencilElement {
+    }
+    var HTMLRuxOptionGroupElement: {
+        prototype: HTMLRuxOptionGroupElement;
+        new (): HTMLRuxOptionGroupElement;
+    };
     interface HTMLRuxPopUpMenuElement extends Components.RuxPopUpMenu, HTMLStencilElement {
     }
     var HTMLRuxPopUpMenuElement: {
@@ -20049,6 +20077,8 @@ declare global {
         "rux-monitoring-icon": HTMLRuxMonitoringIconElement;
         "rux-monitoring-progress-icon": HTMLRuxMonitoringProgressIconElement;
         "rux-notification": HTMLRuxNotificationElement;
+        "rux-option": HTMLRuxOptionElement;
+        "rux-option-group": HTMLRuxOptionGroupElement;
         "rux-pop-up-menu": HTMLRuxPopUpMenuElement;
         "rux-progress": HTMLRuxProgressElement;
         "rux-push-button": HTMLRuxPushButtonElement;
@@ -32138,6 +32168,24 @@ declare namespace LocalJSX {
          */
         "status"?: Status;
     }
+    interface RuxOption {
+        /**
+          * The option label
+         */
+        "label": string;
+        "onRux-option-changed"?: (event: CustomEvent<void>) => void;
+        /**
+          * The option value
+         */
+        "value": string;
+    }
+    interface RuxOptionGroup {
+        /**
+          * The option group label
+         */
+        "label"?: string;
+        "onRux-option-group-changed"?: (event: CustomEvent<void>) => void;
+    }
     interface RuxPopUpMenu {
         /**
           * Element to anchor the menu to. If none is given the menu will anchor to the trigger element where aria-controls === menu id
@@ -33631,6 +33679,8 @@ declare namespace LocalJSX {
         "rux-monitoring-icon": RuxMonitoringIcon;
         "rux-monitoring-progress-icon": RuxMonitoringProgressIcon;
         "rux-notification": RuxNotification;
+        "rux-option": RuxOption;
+        "rux-option-group": RuxOptionGroup;
         "rux-pop-up-menu": RuxPopUpMenu;
         "rux-progress": RuxProgress;
         "rux-push-button": RuxPushButton;
@@ -34733,6 +34783,8 @@ declare module "@stencil/core" {
             "rux-monitoring-icon": LocalJSX.RuxMonitoringIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringIconElement>;
             "rux-monitoring-progress-icon": LocalJSX.RuxMonitoringProgressIcon & JSXBase.HTMLAttributes<HTMLRuxMonitoringProgressIconElement>;
             "rux-notification": LocalJSX.RuxNotification & JSXBase.HTMLAttributes<HTMLRuxNotificationElement>;
+            "rux-option": LocalJSX.RuxOption & JSXBase.HTMLAttributes<HTMLRuxOptionElement>;
+            "rux-option-group": LocalJSX.RuxOptionGroup & JSXBase.HTMLAttributes<HTMLRuxOptionGroupElement>;
             "rux-pop-up-menu": LocalJSX.RuxPopUpMenu & JSXBase.HTMLAttributes<HTMLRuxPopUpMenuElement>;
             "rux-progress": LocalJSX.RuxProgress & JSXBase.HTMLAttributes<HTMLRuxProgressElement>;
             "rux-push-button": LocalJSX.RuxPushButton & JSXBase.HTMLAttributes<HTMLRuxPushButtonElement>;
