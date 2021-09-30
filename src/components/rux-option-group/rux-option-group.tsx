@@ -22,7 +22,7 @@ export class RuxOptionGroup {
     @Prop() label?: string
 
     /** @internal **/
-    @Event({ eventName: 'group-changed', composed: true })
+    @Event({ eventName: 'rux-option-group-changed', composed: true })
     groupChanged!: EventEmitter<void>
 
     connectedCallback() {

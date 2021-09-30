@@ -100,8 +100,13 @@ export class RuxSelect implements FormFieldInterface {
         this._handleLabelSlotChange()
     }
 
-    @Listen('group-changed')
+    @Listen('rux-option-group-changed')
     handleGroupChange() {
+        this._syncOptionsToNativeSelect()
+    }
+
+    @Listen('rux-option-changed')
+    handleOptionChange() {
         this._syncOptionsToNativeSelect()
     }
 
@@ -147,9 +152,7 @@ export class RuxSelect implements FormFieldInterface {
         ) as HTMLSlotElement
 
         if (slot) {
-            if (this.selectEl) {
-                this.selectEl.innerHTML = ''
-            }
+            this.selectEl.innerHTML = ''
 
             const assignedElements = slot.assignedElements({
                 flatten: true,
@@ -157,9 +160,9 @@ export class RuxSelect implements FormFieldInterface {
 
             assignedElements.map((item) => {
                 const option = item as HTMLOptionElement
-                if (option.tagName.toLowerCase() === 'option') {
+                if (option.tagName.toLowerCase() === 'rux-option') {
                     this._appendOptionToNativeSelect(
-                        option.innerHTML,
+                        option.innerText,
                         option.value,
                         this.selectEl
                     )
@@ -167,7 +170,7 @@ export class RuxSelect implements FormFieldInterface {
 
                 if (option.tagName.toLowerCase() === 'rux-option-group') {
                     const children = [
-                        ...Array.from(option.querySelectorAll('option')),
+                        ...Array.from(option.querySelectorAll('rux-option')),
                     ]
                     this._appendOptGroupToNativeSelect(
                         option.label ? option.label : 'Group',
@@ -181,7 +184,7 @@ export class RuxSelect implements FormFieldInterface {
 
     private _appendOptGroupToNativeSelect(
         groupName: string,
-        children: HTMLOptionElement[]
+        children: HTMLRuxOptionElement[]
     ) {
         const group = Object.assign(document.createElement('optgroup'), {
             label: groupName,
@@ -274,7 +277,8 @@ export class RuxSelect implements FormFieldInterface {
                     class="hidden"
                     ref={(el) => (this.slotContainer = el)}
                 >
-                    <slot onSlotchange={this._handleSlotChange}></slot>
+                    {/* <slot onSlotchange={this._handleSlotChange}></slot> */}
+                    <slot></slot>
                 </div>
                 <FormFieldMessage
                     errorText={this.errorText}
