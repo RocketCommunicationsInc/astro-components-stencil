@@ -204,7 +204,7 @@ export class RuxSelect implements FormFieldInterface {
         target: HTMLSelectElement | HTMLOptGroupElement
     ) {
         const item = Object.assign(document.createElement('option'), {
-            innerHTML: label,
+            innerHTML: label ? label : '',
             value: value,
         })
         target.appendChild(item)
