@@ -28,7 +28,7 @@ export namespace Components {
          */
         "secondary": boolean;
         /**
-          * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
+          * Changes size of a button from medium to small or large by setting sizing classes rux-button--small rux-button--large
          */
         "size"?: 'small' | 'medium' | 'large';
         /**
@@ -52,10 +52,6 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
           * The help or explanation text
          */
         "helpText"?: string;
@@ -64,17 +60,35 @@ export namespace Components {
          */
         "indeterminate": boolean;
         /**
+          * The checkbox label text. For HTML content, use the default slot instead.
+         */
+        "label"?: string;
+        /**
           * The checkbox name
          */
         "name": string;
         /**
-          * Sets the input as required
-         */
-        "required": boolean;
-        /**
           * The checkbox value
          */
         "value": string;
+    }
+    interface RuxCheckboxGroup {
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Presentational only. Renders the Checkbox Group as invalid.
+         */
+        "invalid": boolean;
+        /**
+          * The label of the checkbox group. For HTML content, use the `label` slot instead.
+         */
+        "label"?: string;
     }
     interface RuxClassificationMarking {
         /**
@@ -94,11 +108,15 @@ export namespace Components {
         /**
           * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
          */
-        "aos"?: number;
+        "aos"?: string;
         /**
           * Hides the day of the year.
          */
         "hideDate": boolean;
+        /**
+          * Hides all of the labels.
+         */
+        "hideLabels": boolean;
         /**
           * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
          */
@@ -11828,7 +11846,7 @@ export namespace Components {
         | 'auto'
         | string;
     }
-    interface RuxInputField {
+    interface RuxInput {
         /**
           * Disables the button via HTML disabled attribute. Button takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
@@ -11842,11 +11860,11 @@ export namespace Components {
          */
         "helpText"?: string;
         /**
-          * Marks the input as invalid
+          * Presentational only. Renders the Input Field as invalid.
          */
         "invalid": boolean;
         /**
-          * The input label text
+          * The input label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -12022,12 +12040,9 @@ export namespace Components {
          */
         "open": boolean;
         /**
-          * The background color. Possible values include 'standby', 'normal', 'caution', and 'critical'. See [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/).
+          * The background color. Possible values include 'off', 'standby', 'normal', 'caution', 'serious' and 'critical'. See [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/).
          */
-        "status": | 'standby'
-        | 'normal'
-        | 'caution'
-        | 'critical';
+        "status": Status;
     }
     interface RuxPopUpMenu {
         /**
@@ -12083,6 +12098,14 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
+          * For a [button style guide, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+         */
+        "icon"?: string;
+        /**
+          * Hides slotted text from the button by setting rux-button--icon-only class
+         */
+        "iconOnly": boolean;
+        /**
           * The label of the push button.
          */
         "label": string;
@@ -12090,6 +12113,10 @@ export namespace Components {
           * The name of the push button.
          */
         "name": string;
+        /**
+          * Changes size of a push button from medium to small or large by setting sizing classes rux-button--small rux-button--large
+         */
+        "size"?: 'small' | 'medium' | 'large';
         /**
           * The value of the push button.
          */
@@ -12104,6 +12131,10 @@ export namespace Components {
           * Disables the radio via HTML disabled attribute. Radio takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
         "disabled": boolean;
+        /**
+          * The radio label text. For HTML content, use the default slot instead.
+         */
+        "label"?: string;
         /**
           * The radio name
          */
@@ -12123,11 +12154,11 @@ export namespace Components {
          */
         "helpText"?: string;
         /**
-          * Marks the radio group as invalid
+          * Presentational only. Renders the Radio Group as invalid.
          */
         "invalid": boolean;
         /**
-          * The label of the radio group
+          * The label of the radio group. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -12155,15 +12186,23 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
           * Id for the Select Input
          */
         "inputId"?: string;
         /**
-          * Sets the Select as Invalid for Custom Validation Usage
+          * Presentational only. Renders the Select Menu as invalid.
          */
         "invalid": boolean;
         /**
-          * Sets the Label for the Select
+          * The select label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -12188,6 +12227,18 @@ export namespace Components {
           * Determines if the slider is disabled.
          */
         "disabled": boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * The slider label text. For HTML content, use the `label` slot instead.
+         */
+        "label"?: string;
         /**
           * Max value of slider.
          */
@@ -12225,21 +12276,13 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * The validation error text
+          * The switch label. For HTML content, use the `label` slot instead.
          */
-        "errorText"?: string;
-        /**
-          * The help or explanation text
-         */
-        "helpText"?: string;
+        "label"?: string;
         /**
           * The switch name
          */
         "name": string;
-        /**
-          * Sets the switch as required
-         */
-        "required": boolean;
         /**
           * The switch value
          */
@@ -12293,15 +12336,15 @@ export namespace Components {
          */
         "errorText"?: string;
         /**
-          * The help or explanation text
+          * The  or explanation text
          */
         "helpText"?: string;
         /**
-          * Marks the input as invalid
+          * Presentational only. Renders the Textarea as invalid.
          */
         "invalid": boolean;
         /**
-          * The input label text
+          * The textarea label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -12317,7 +12360,7 @@ export namespace Components {
          */
         "name": string;
         /**
-          * The input placeholder text
+          * The textarea placeholder text
          */
         "placeholder"?: string;
         /**
@@ -12378,6 +12421,12 @@ declare global {
     var HTMLRuxCheckboxElement: {
         prototype: HTMLRuxCheckboxElement;
         new (): HTMLRuxCheckboxElement;
+    };
+    interface HTMLRuxCheckboxGroupElement extends Components.RuxCheckboxGroup, HTMLStencilElement {
+    }
+    var HTMLRuxCheckboxGroupElement: {
+        prototype: HTMLRuxCheckboxGroupElement;
+        new (): HTMLRuxCheckboxGroupElement;
     };
     interface HTMLRuxClassificationMarkingElement extends Components.RuxClassificationMarking, HTMLStencilElement {
     }
@@ -18739,11 +18788,11 @@ declare global {
         prototype: HTMLRuxIconZoomOutMapElement;
         new (): HTMLRuxIconZoomOutMapElement;
     };
-    interface HTMLRuxInputFieldElement extends Components.RuxInputField, HTMLStencilElement {
+    interface HTMLRuxInputElement extends Components.RuxInput, HTMLStencilElement {
     }
-    var HTMLRuxInputFieldElement: {
-        prototype: HTMLRuxInputFieldElement;
-        new (): HTMLRuxInputFieldElement;
+    var HTMLRuxInputElement: {
+        prototype: HTMLRuxInputElement;
+        new (): HTMLRuxInputElement;
     };
     interface HTMLRuxLogElement extends Components.RuxLog, HTMLStencilElement {
     }
@@ -18935,6 +18984,7 @@ declare global {
         "rux-button": HTMLRuxButtonElement;
         "rux-button-group": HTMLRuxButtonGroupElement;
         "rux-checkbox": HTMLRuxCheckboxElement;
+        "rux-checkbox-group": HTMLRuxCheckboxGroupElement;
         "rux-classification-marking": HTMLRuxClassificationMarkingElement;
         "rux-clock": HTMLRuxClockElement;
         "rux-datetime": HTMLRuxDatetimeElement;
@@ -19995,7 +20045,7 @@ declare global {
         "rux-icon-zoom-in-map": HTMLRuxIconZoomInMapElement;
         "rux-icon-zoom-out": HTMLRuxIconZoomOutElement;
         "rux-icon-zoom-out-map": HTMLRuxIconZoomOutMapElement;
-        "rux-input-field": HTMLRuxInputFieldElement;
+        "rux-input": HTMLRuxInputElement;
         "rux-log": HTMLRuxLogElement;
         "rux-menu-item": HTMLRuxMenuItemElement;
         "rux-menu-item-divider": HTMLRuxMenuItemDividerElement;
@@ -20048,7 +20098,7 @@ declare namespace LocalJSX {
          */
         "secondary"?: boolean;
         /**
-          * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
+          * Changes size of a button from medium to small or large by setting sizing classes rux-button--small rux-button--large
          */
         "size"?: 'small' | 'medium' | 'large';
         /**
@@ -20072,10 +20122,6 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * The validation error text
-         */
-        "errorText"?: string;
-        /**
           * The help or explanation text
          */
         "helpText"?: string;
@@ -20083,6 +20129,10 @@ declare namespace LocalJSX {
           * Toggles indeterminate state of a checkbox. The indeterminate property does not exist in HTML, but can be set in JS. [HTML Checkbox & Indeterminate State](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate)
          */
         "indeterminate"?: boolean;
+        /**
+          * The checkbox label text. For HTML content, use the default slot instead.
+         */
+        "label"?: string;
         /**
           * The checkbox name
          */
@@ -20100,13 +20150,27 @@ declare namespace LocalJSX {
          */
         "onRux-input"?: (event: CustomEvent<any>) => void;
         /**
-          * Sets the input as required
-         */
-        "required"?: boolean;
-        /**
           * The checkbox value
          */
         "value"?: string;
+    }
+    interface RuxCheckboxGroup {
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * Presentational only. Renders the Checkbox Group as invalid.
+         */
+        "invalid"?: boolean;
+        /**
+          * The label of the checkbox group. For HTML content, use the `label` slot instead.
+         */
+        "label"?: string;
     }
     interface RuxClassificationMarking {
         /**
@@ -20126,11 +20190,15 @@ declare namespace LocalJSX {
         /**
           * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
          */
-        "aos"?: number;
+        "aos"?: string;
         /**
           * Hides the day of the year.
          */
         "hideDate"?: boolean;
+        /**
+          * Hides all of the labels.
+         */
+        "hideLabels"?: boolean;
         /**
           * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
          */
@@ -31860,7 +31928,7 @@ declare namespace LocalJSX {
         | 'auto'
         | string;
     }
-    interface RuxInputField {
+    interface RuxInput {
         /**
           * Disables the button via HTML disabled attribute. Button takes on a distinct visual state. Cursor uses the not-allowed system replacement and all keyboard and mouse events are ignored.
          */
@@ -31874,11 +31942,11 @@ declare namespace LocalJSX {
          */
         "helpText"?: string;
         /**
-          * Marks the input as invalid
+          * Presentational only. Renders the Input Field as invalid.
          */
         "invalid"?: boolean;
         /**
-          * The input label text
+          * The input label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -32074,12 +32142,9 @@ declare namespace LocalJSX {
          */
         "open"?: boolean;
         /**
-          * The background color. Possible values include 'standby', 'normal', 'caution', and 'critical'. See [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/).
+          * The background color. Possible values include 'off', 'standby', 'normal', 'caution', 'serious' and 'critical'. See [Astro UXDS Status System](https://astrouxds.com/patterns/status-system/).
          */
-        "status"?: | 'standby'
-        | 'normal'
-        | 'caution'
-        | 'critical';
+        "status"?: Status;
     }
     interface RuxPopUpMenu {
         /**
@@ -32135,6 +32200,14 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
+          * For a [button style guide, see the Button section in Astro UXDS Guidelines](https://astrouxds.com/components/button) Displays an Astro icon matching this string. For a [full list of available icons, see the Icons section in Astro UXDS Guidelines](https://astrouxds.com/ui-components/icons-and-symbols)
+         */
+        "icon"?: string;
+        /**
+          * Hides slotted text from the button by setting rux-button--icon-only class
+         */
+        "iconOnly"?: boolean;
+        /**
           * The label of the push button.
          */
         "label"?: string;
@@ -32151,6 +32224,10 @@ declare namespace LocalJSX {
          */
         "onRux-change"?: (event: CustomEvent<any>) => void;
         /**
+          * Changes size of a push button from medium to small or large by setting sizing classes rux-button--small rux-button--large
+         */
+        "size"?: 'small' | 'medium' | 'large';
+        /**
           * The value of the push button.
          */
         "value"?: string;
@@ -32165,6 +32242,10 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
+          * The radio label text. For HTML content, use the default slot instead.
+         */
+        "label"?: string;
+        /**
           * The radio name
          */
         "name"?: string;
@@ -32172,10 +32253,6 @@ declare namespace LocalJSX {
           * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
          */
         "onRux-blur"?: (event: CustomEvent<any>) => void;
-        /**
-          * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
-         */
-        "onRux-change"?: (event: CustomEvent<any>) => void;
         /**
           * The radio value
          */
@@ -32191,11 +32268,11 @@ declare namespace LocalJSX {
          */
         "helpText"?: string;
         /**
-          * Marks the radio group as invalid
+          * Presentational only. Renders the Radio Group as invalid.
          */
         "invalid"?: boolean;
         /**
-          * The label of the radio group
+          * The label of the radio group. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -32231,15 +32308,23 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
           * Id for the Select Input
          */
         "inputId"?: string;
         /**
-          * Sets the Select as Invalid for Custom Validation Usage
+          * Presentational only. Renders the Select Menu as invalid.
          */
         "invalid"?: boolean;
         /**
-          * Sets the Label for the Select
+          * The select label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -32272,6 +32357,18 @@ declare namespace LocalJSX {
           * Determines if the slider is disabled.
          */
         "disabled"?: boolean;
+        /**
+          * The validation error text
+         */
+        "errorText"?: string;
+        /**
+          * The help or explanation text
+         */
+        "helpText"?: string;
+        /**
+          * The slider label text. For HTML content, use the `label` slot instead.
+         */
+        "label"?: string;
         /**
           * Max value of slider.
          */
@@ -32317,13 +32414,9 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * The validation error text
+          * The switch label. For HTML content, use the `label` slot instead.
          */
-        "errorText"?: string;
-        /**
-          * The help or explanation text
-         */
-        "helpText"?: string;
+        "label"?: string;
         /**
           * The switch name
          */
@@ -32340,10 +32433,6 @@ declare namespace LocalJSX {
           * Fired when an alteration to the input's value is committed by the user - [HTMLElement/change_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
          */
         "onRux-input"?: (event: CustomEvent<any>) => void;
-        /**
-          * Sets the switch as required
-         */
-        "required"?: boolean;
         /**
           * The switch value
          */
@@ -32405,15 +32494,15 @@ declare namespace LocalJSX {
          */
         "errorText"?: string;
         /**
-          * The help or explanation text
+          * The  or explanation text
          */
         "helpText"?: string;
         /**
-          * Marks the input as invalid
+          * Presentational only. Renders the Textarea as invalid.
          */
         "invalid"?: boolean;
         /**
-          * The input label text
+          * The textarea label text. For HTML content, use the `label` slot instead.
          */
         "label"?: string;
         /**
@@ -32441,7 +32530,7 @@ declare namespace LocalJSX {
          */
         "onRux-input"?: (event: CustomEvent<any>) => void;
         /**
-          * The input placeholder text
+          * The textarea placeholder text
          */
         "placeholder"?: string;
         /**
@@ -32481,6 +32570,7 @@ declare namespace LocalJSX {
         "rux-button": RuxButton;
         "rux-button-group": RuxButtonGroup;
         "rux-checkbox": RuxCheckbox;
+        "rux-checkbox-group": RuxCheckboxGroup;
         "rux-classification-marking": RuxClassificationMarking;
         "rux-clock": RuxClock;
         "rux-datetime": RuxDatetime;
@@ -33541,7 +33631,7 @@ declare namespace LocalJSX {
         "rux-icon-zoom-in-map": RuxIconZoomInMap;
         "rux-icon-zoom-out": RuxIconZoomOut;
         "rux-icon-zoom-out-map": RuxIconZoomOutMap;
-        "rux-input-field": RuxInputField;
+        "rux-input": RuxInput;
         "rux-log": RuxLog;
         "rux-menu-item": RuxMenuItem;
         "rux-menu-item-divider": RuxMenuItemDivider;
@@ -33582,6 +33672,7 @@ declare module "@stencil/core" {
             "rux-button": LocalJSX.RuxButton & JSXBase.HTMLAttributes<HTMLRuxButtonElement>;
             "rux-button-group": LocalJSX.RuxButtonGroup & JSXBase.HTMLAttributes<HTMLRuxButtonGroupElement>;
             "rux-checkbox": LocalJSX.RuxCheckbox & JSXBase.HTMLAttributes<HTMLRuxCheckboxElement>;
+            "rux-checkbox-group": LocalJSX.RuxCheckboxGroup & JSXBase.HTMLAttributes<HTMLRuxCheckboxGroupElement>;
             "rux-classification-marking": LocalJSX.RuxClassificationMarking & JSXBase.HTMLAttributes<HTMLRuxClassificationMarkingElement>;
             "rux-clock": LocalJSX.RuxClock & JSXBase.HTMLAttributes<HTMLRuxClockElement>;
             "rux-datetime": LocalJSX.RuxDatetime & JSXBase.HTMLAttributes<HTMLRuxDatetimeElement>;
@@ -34642,7 +34733,7 @@ declare module "@stencil/core" {
             "rux-icon-zoom-in-map": LocalJSX.RuxIconZoomInMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomInMapElement>;
             "rux-icon-zoom-out": LocalJSX.RuxIconZoomOut & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutElement>;
             "rux-icon-zoom-out-map": LocalJSX.RuxIconZoomOutMap & JSXBase.HTMLAttributes<HTMLRuxIconZoomOutMapElement>;
-            "rux-input-field": LocalJSX.RuxInputField & JSXBase.HTMLAttributes<HTMLRuxInputFieldElement>;
+            "rux-input": LocalJSX.RuxInput & JSXBase.HTMLAttributes<HTMLRuxInputElement>;
             "rux-log": LocalJSX.RuxLog & JSXBase.HTMLAttributes<HTMLRuxLogElement>;
             "rux-menu-item": LocalJSX.RuxMenuItem & JSXBase.HTMLAttributes<HTMLRuxMenuItemElement>;
             "rux-menu-item-divider": LocalJSX.RuxMenuItemDivider & JSXBase.HTMLAttributes<HTMLRuxMenuItemDividerElement>;
