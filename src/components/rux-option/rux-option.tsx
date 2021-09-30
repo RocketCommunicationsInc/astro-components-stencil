@@ -29,14 +29,17 @@ export class RuxOption {
      */
     @Prop() value!: string
 
+    /** The option label */
+    @Prop() label!: string
+
     /** @internal **/
     @Event({ eventName: 'rux-option-changed', composed: true })
     optionChanged!: EventEmitter<void>
 
     @Watch('value')
+    @Watch('label')
     handleValueChange() {
         this.optionChanged.emit()
-        console.log('emit option change')
     }
 
     connectedCallback() {
@@ -44,17 +47,10 @@ export class RuxOption {
     }
 
     _handleSlotChange() {
-        const text = this.el.innerText
-        console.log('heard option slot change--', text)
-
         this.optionChanged.emit()
     }
 
     render() {
-        return (
-            <Host>
-                <slot onSlotchange={this._handleSlotChange}></slot>
-            </Host>
-        )
+        return <Host>{this.label ? this.label : ''}</Host>
     }
 }

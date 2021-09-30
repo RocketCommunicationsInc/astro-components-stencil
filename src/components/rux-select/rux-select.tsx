@@ -158,11 +158,11 @@ export class RuxSelect implements FormFieldInterface {
                 flatten: true,
             }) as HTMLElement[]
 
-            assignedElements.map((item) => {
-                const option = item as HTMLOptionElement
+            assignedElements.map((item: any) => {
+                const option = item
                 if (option.tagName.toLowerCase() === 'rux-option') {
                     this._appendOptionToNativeSelect(
-                        option.innerText,
+                        option.label,
                         option.value,
                         this.selectEl
                     )
@@ -171,7 +171,7 @@ export class RuxSelect implements FormFieldInterface {
                 if (option.tagName.toLowerCase() === 'rux-option-group') {
                     const children = [
                         ...Array.from(option.querySelectorAll('rux-option')),
-                    ]
+                    ] as HTMLRuxOptionElement[]
                     this._appendOptGroupToNativeSelect(
                         option.label ? option.label : 'Group',
                         children
@@ -191,11 +191,7 @@ export class RuxSelect implements FormFieldInterface {
         })
 
         children.map((option: any) => {
-            this._appendOptionToNativeSelect(
-                option.innerHTML,
-                option.value,
-                group
-            )
+            this._appendOptionToNativeSelect(option.label, option.value, group)
             this.selectEl.appendChild(group)
         })
 
@@ -277,8 +273,7 @@ export class RuxSelect implements FormFieldInterface {
                     class="hidden"
                     ref={(el) => (this.slotContainer = el)}
                 >
-                    {/* <slot onSlotchange={this._handleSlotChange}></slot> */}
-                    <slot></slot>
+                    <slot onSlotchange={this._handleSlotChange}></slot>
                 </div>
                 <FormFieldMessage
                     errorText={this.errorText}
