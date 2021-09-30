@@ -34,7 +34,7 @@ export class RuxTabs {
      */
     @Prop() small?: boolean
 
-    @Listen('rux-register-panels', { target: 'window' })
+    @Listen('ruxRegisterPanels', { target: 'window' })
     handleListen(e: CustomEvent) {
         this._registerPanels(e)
     }
