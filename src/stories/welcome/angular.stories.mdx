@@ -11,9 +11,10 @@ import { Meta } from '@storybook/addon-docs/blocks'
 `npm i @astrouxds/astro-web-components`
 
 
-## Integration of astro-web-components into an angular application.
+## Integration of astro-web-components into an Angular application.
 
-1. Include `CUSTOM_ELEMENTS_SCHEMA` in any module that uses an astro-web-component.
+
+### Include `CUSTOM_ELEMENTS_SCHEMA` in any module that uses an astro-web-component.
 
 ```js
 import { BrowserModule } from '@angular/platform-browser'
@@ -31,7 +32,8 @@ import { AppComponent } from './app.component'
 export class AppModule {}
 ```
 
-2. Define your Custom Elements in `main.ts`
+#### Lazy Loading
+Define your Custom Elements in `main.ts`
 
 ```js
 import { enableProdMode } from '@angular/core'
@@ -52,7 +54,37 @@ platformBrowserDynamic()
 defineCustomElements()
 ```
 
-3. Add global components styling to `angular.json`.
+#### Cherry Picking
+
+If you need more control over your bundle size, you can also import and register individual components.
+Cherry picking components will result in a much smaller overall bundle size; however, you will need to manually register any component dependencies.
+This will be listed for each component in their documentation.
+
+
+```js
+import { enableProdMode } from '@angular/core'
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
+
+import { AppModule } from './app/app.module'
+import { environment } from './environments/environment'
+
+// Import Button
+import { RuxButton } from '@astrouxds/astro-web-components/dist/components/rux-button'
+
+if (environment.production) {
+    enableProdMode()
+}
+
+platformBrowserDynamic()
+    .bootstrapModule(AppModule)
+    .catch((err) => console.log(err))
+
+// Register Button
+customElements.define('rux-button', RuxButton)
+```
+
+
+#### Add global components styling to `angular.json`.
 
 ```json
  "architect": {
@@ -65,10 +97,6 @@ defineCustomElements()
       },
     },
 ```
-
-4. (Optional) In order to change global astro-web-compoennts styling from default `dark-theme` to `light-theme`.
-Add corresponding theme class (`light-theme`) to desire parent container.
-Usually the easiest way is to add it onto `<body>` tag of the `index.html` file.
 
 ## Setting Props
 
@@ -156,75 +184,5 @@ export class ExampleComponent {
     async onAction() {
         await this.myTestPopUpMenu.nativeElement.isOpen();
     }
-}
-```
-
-
-## Integration of two-way data binding with form compoennts.
-
-To get web component to work with `ngModel` and `formControlName` directives `ngDefaultControl` must be set on the form element.
-It will set the default ControlValueAccessor for writing a value and listening to changes on input elements.
-
-```html
-  <rux-input name="myInput" ngDefaultControl [(ngModel)]="myInputVar"></rux-input>
-```
-
-Alternativally ControlValueAccessor directive may be created to omit the use of `ngDefaultControl`.
-ControlValueAccessor: Defines an interface that acts as a bridge between the Angular forms API and a native element in the DOM. Implement this interface to create a custom form control directive that integrates with Angular forms.
-
-```js
-import { Directive, ElementRef, forwardRef, HostListener } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-
-@Directive({
-  // directive taps directly into web component and changes its behavior by utilizing
-  // the same tag name as the original web component
-  selector: 'rux-input',
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => RuxInputDirective),
-      multi: true,
-    },
-  ],
-})
-export class RuxInputDirective {
-  onChange: any = () => {};
-  onTouched: any = () => {};
-
-  private _value: boolean;
-
-  get value() {
-    return this._value;
-  }
-
-  set value(val) {
-    if (val !== this._value) {
-      this._value = val;
-      this.onChange(this._value);
-      this.onTouched();
-    }
-  }
-
-  constructor(private elementRef: ElementRef) {}
-
-  @HostListener('rux-input', ['$event.detail'])
-  listenForValueChange(value) {
-    this.value = value;
-  }
-
-  writeValue(value) {
-    if (value) {
-      this.value = value;
-    }
-  }
-
-  registerOnChange(fn) {
-    this.onChange = fn;
-  }
-
-  registerOnTouched(fn) {
-    this.onTouched = fn;
-  }
 }
 ```
