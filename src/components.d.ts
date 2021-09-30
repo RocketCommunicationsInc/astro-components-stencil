@@ -28,7 +28,7 @@ export namespace Components {
          */
         "secondary": boolean;
         /**
-          * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
+          * Changes size of a button from medium to small or large by setting sizing classes rux-button--small rux-button--large
          */
         "size"?: 'small' | 'medium' | 'large';
         /**
@@ -108,11 +108,15 @@ export namespace Components {
         /**
           * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
          */
-        "aos"?: number;
+        "aos"?: string;
         /**
           * Hides the day of the year.
          */
         "hideDate": boolean;
+        /**
+          * Hides all of the labels.
+         */
+        "hideLabels": boolean;
         /**
           * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
          */
@@ -12110,7 +12114,7 @@ export namespace Components {
          */
         "name": string;
         /**
-          * Changes size of a push button from standard to small or large by setting sizing classes rux-button--small rux-button--large
+          * Changes size of a push button from medium to small or large by setting sizing classes rux-button--small rux-button--large
          */
         "size"?: 'small' | 'medium' | 'large';
         /**
@@ -20094,7 +20098,7 @@ declare namespace LocalJSX {
          */
         "secondary"?: boolean;
         /**
-          * Changes size of a button from standard to small or large by setting sizing classes rux-button--small rux-button--large
+          * Changes size of a button from medium to small or large by setting sizing classes rux-button--small rux-button--large
          */
         "size"?: 'small' | 'medium' | 'large';
         /**
@@ -20186,11 +20190,15 @@ declare namespace LocalJSX {
         /**
           * When supplied with a valid [date string or value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#syntax) displays a timestamp labeled "AOS" next to the standard clock.
          */
-        "aos"?: number;
+        "aos"?: string;
         /**
           * Hides the day of the year.
          */
         "hideDate"?: boolean;
+        /**
+          * Hides all of the labels.
+         */
+        "hideLabels"?: boolean;
         /**
           * Hides the timezone in the main 24-hour clock. Timezone does not display on AOS/LOS.
          */
@@ -32216,7 +32224,7 @@ declare namespace LocalJSX {
          */
         "onRuxChange"?: (event: CustomEvent<any>) => void;
         /**
-          * Changes size of a push button from standard to small or large by setting sizing classes rux-button--small rux-button--large
+          * Changes size of a push button from medium to small or large by setting sizing classes rux-button--small rux-button--large
          */
         "size"?: 'small' | 'medium' | 'large';
         /**
