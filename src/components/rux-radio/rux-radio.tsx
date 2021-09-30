@@ -52,16 +52,13 @@ export class RuxRadio {
         this.syncFromGroup = this.syncFromGroup.bind(this)
         if (this.radioGroup) {
             this.syncFromGroup()
-            this.radioGroup.addEventListener('rux-change', this.syncFromGroup)
+            this.radioGroup.addEventListener('ruxChange', this.syncFromGroup)
         }
     }
 
     disconnectedCallback() {
         if (this.radioGroup) {
-            this.radioGroup.removeEventListener(
-                'rux-change',
-                this.syncFromGroup
-            )
+            this.radioGroup.removeEventListener('ruxChange', this.syncFromGroup)
         }
     }
 

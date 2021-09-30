@@ -137,7 +137,7 @@ export class RuxPopUpMenu {
         return this.open
     }
 
-    @Listen('rux-menu-item-selected')
+    @Listen('ruxMenuItemSelected')
     handleListen() {
         this.open = false
     }
