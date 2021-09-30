@@ -7,8 +7,8 @@ describe('rux-select', () => {
             components: [RuxSelect],
             html: `
             <rux-select label="test">
-            <option>one</option>
-            <option>two</option>
+                <rux-option label="one"></rux-option>
+                <rux-option label="two"></rux-option>
             </rux-select>
       `,
         })
@@ -27,12 +27,8 @@ describe('rux-select', () => {
                     <slot></slot>
                 </div>
             </mock:shadow-root>
-              <option>
-                  one
-              </option>
-              <option>
-                  two
-              </option>
+              <rux-option label="one"></rux-option>
+              <rux-option label="two"></rux-option>
               <input class="aux-input" type="hidden" value="">
           </rux-select>
       `)
@@ -43,11 +39,11 @@ describe('rux-select', () => {
             components: [RuxSelect],
             html: `
             <rux-select>
-              <option>outside option</option>
+              <rux-option label="outside option"></rux-option>
               <rux-option-group label="Group one">
-                <option>inside option</option>
+                <rux-option label="inside option"></rux-option>
               </rux-option-group>
-              <option>outside option</option>
+              <rux-option label="outside option"></rux-option>
             </rux-select>
           `,
         })
@@ -64,17 +60,11 @@ describe('rux-select', () => {
                     <slot></slot>
                 </div>
             </mock:shadow-root>
-            <option>
-                outside option
-            </option>
+            <rux-option label="outside option"></rux-option>
             <rux-option-group label="Group one">
-                <option>
-                    inside option
-                </option>
+                <rux-option label="inside option"></rux-option>
             </rux-option-group>
-            <option>
-                outside option
-            </option>
+            <rux-option label="outside option"></rux-option>
             <input class="aux-input" type="hidden" value="">
         </rux-select>
     `)
