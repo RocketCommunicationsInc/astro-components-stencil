@@ -62,11 +62,11 @@ export class RuxMenuItem {
      * Emitted when item is clicked. Ex `{value : 10}`
      */
     @Event({
-        eventName: 'rux-menu-item-selected',
+        eventName: 'ruxmenuitemselected',
         bubbles: true,
         composed: true,
     })
-    ruxMenuItemSelected!: EventEmitter<object>
+    ruxmenuitemselected!: EventEmitter<object>
 
     @Listen('click')
     handleClick() {
@@ -77,7 +77,7 @@ export class RuxMenuItem {
 
     private itemOnClick = () => {
         const emittedValue = this.value ? this.value : this.el.textContent
-        this.ruxMenuItemSelected.emit({ value: emittedValue })
+        this.ruxmenuitemselected.emit({ value: emittedValue })
     }
 
     render() {

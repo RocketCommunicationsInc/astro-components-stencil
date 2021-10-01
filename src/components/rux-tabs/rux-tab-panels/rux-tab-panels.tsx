@@ -36,10 +36,10 @@ export class RuxTabPanels {
     /**
      * Emits a list of the Tab Panels that have been passed in
      */
-    @Event({ eventName: 'rux-register-panels' })
-    ruxRegisterPanels!: EventEmitter<HTMLRuxTabPanelsElement[]>
+    @Event({ eventName: 'ruxregisterpanels' })
+    ruxregisterpanels!: EventEmitter<HTMLRuxTabPanelsElement[]>
     _registerTabPanels(children: HTMLRuxTabPanelsElement[]) {
-        this.ruxRegisterPanels.emit(children)
+        this.ruxregisterpanels.emit(children)
     }
 
     render() {
