@@ -40,7 +40,7 @@ Radio Buttons allow users to mutually select an option from a predefined set of 
 
 | Event     | Description                                                                                                                          | Type               |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| `ruxBlur` | Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event) | `CustomEvent<any>` |
+| `ruxblur` | Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event) | `CustomEvent<any>` |
 
 
 ## Slots

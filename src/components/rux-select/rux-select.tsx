@@ -78,13 +78,13 @@ export class RuxSelect implements FormFieldInterface {
     /**
      * Event Emitted when the Value of the Select is Changed
      */
-    @Event({ eventName: 'ruxChange' })
+    @Event({ eventName: 'ruxchange' })
     ruxSelectChanged!: EventEmitter<void>
 
     /**
      * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
      */
-    @Event({ eventName: 'ruxBlur' }) ruxBlur!: EventEmitter
+    @Event({ eventName: 'ruxblur' }) ruxBlur!: EventEmitter
 
     @Watch('value')
     onValueChange() {

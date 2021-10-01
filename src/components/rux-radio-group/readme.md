@@ -21,7 +21,7 @@
 
 | Event       | Description                                                                                                                                     | Type               |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| `ruxChange` | Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event) | `CustomEvent<any>` |
+| `ruxchange` | Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event) | `CustomEvent<any>` |
 
 
 ## Slots

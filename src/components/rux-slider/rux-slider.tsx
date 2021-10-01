@@ -73,11 +73,11 @@ export class RuxSlider implements FormFieldInterface {
     /**
      * Fired when the value of the input changes - [HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
      */
-    @Event({ eventName: 'ruxInput' }) ruxInput!: EventEmitter
+    @Event({ eventName: 'ruxinput' }) ruxInput!: EventEmitter
     /**
      * Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event)
      */
-    @Event({ eventName: 'ruxBlur' }) ruxBlur!: EventEmitter
+    @Event({ eventName: 'ruxblur' }) ruxBlur!: EventEmitter
 
     componentWillLoad() {
         this._updateValue()

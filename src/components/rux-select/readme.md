@@ -67,8 +67,8 @@ Select Menu renders a native `<select>` element and allows native `<option>` and
 
 | Event       | Description                                                                                                                          | Type                |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
-| `ruxBlur`   | Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event) | `CustomEvent<any>`  |
-| `ruxChange` | Event Emitted when the Value of the Select is Changed                                                                                | `CustomEvent<void>` |
+| `ruxblur`   | Fired when an element has lost focus - [HTMLElement/blur_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event) | `CustomEvent<any>`  |
+| `ruxchange` | Event Emitted when the Value of the Select is Changed                                                                                | `CustomEvent<void>` |
 
 
 ## Slots

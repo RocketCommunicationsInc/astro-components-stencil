@@ -106,10 +106,10 @@ Extending Astro Pop Up Menu with custom content. Content passed without a slot n
 
 | Event              | Description                             | Type                |
 | ------------------ | --------------------------------------- | ------------------- |
-| `ruxMenuDidClose`  | Emitted when the menu is closed.        | `CustomEvent<void>` |
-| `ruxMenuDidOpen`   | Emitted when the menu is open.          | `CustomEvent<void>` |
-| `ruxMenuWillClose` | Emitted when the menu is about to close | `CustomEvent<void>` |
-| `ruxMenuWillOpen`  | Emitted when the menu is about to open. | `CustomEvent<void>` |
+| `ruxmenudidclose`  | Emitted when the menu is closed.        | `CustomEvent<void>` |
+| `ruxmenudidopen`   | Emitted when the menu is open.          | `CustomEvent<void>` |
+| `ruxmenuwillclose` | Emitted when the menu is about to close | `CustomEvent<void>` |
+| `ruxmenuwillopen`  | Emitted when the menu is about to open. | `CustomEvent<void>` |
 
 
 ## Methods

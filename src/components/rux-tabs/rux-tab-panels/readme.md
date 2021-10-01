@@ -7,7 +7,7 @@
 
 | Event               | Description                                             | Type                                     |
 | ------------------- | ------------------------------------------------------- | ---------------------------------------- |
-| `ruxRegisterPanels` | Emits a list of the Tab Panels that have been passed in | `CustomEvent<HTMLRuxTabPanelsElement[]>` |
+| `ruxregisterpanels` | Emits a list of the Tab Panels that have been passed in | `CustomEvent<HTMLRuxTabPanelsElement[]>` |
 
 
 ## Slots

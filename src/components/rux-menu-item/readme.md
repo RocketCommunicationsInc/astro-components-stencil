@@ -71,7 +71,7 @@ Pass properties as slotted components in the Astro Pop Up Menu or Astro Select M
 
 | Event                 | Description                                     | Type                  |
 | --------------------- | ----------------------------------------------- | --------------------- |
-| `ruxMenuItemSelected` | Emitted when item is clicked. Ex `{value : 10}` | `CustomEvent<object>` |
+| `ruxmenuitemselected` | Emitted when item is clicked. Ex `{value : 10}` | `CustomEvent<object>` |
 
 
 ## Slots
